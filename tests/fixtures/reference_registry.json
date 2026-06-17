@@ -1,0 +1,6 @@
+{
+  "ref_a": "tests/fixtures/media/ref_a.png",
+  "ref_b": "tests/fixtures/media/ref_b.png",
+  "scene": "tests/fixtures/media/scene.png",
+  "keyframe": "tests/fixtures/media/keyframe.png"
+}

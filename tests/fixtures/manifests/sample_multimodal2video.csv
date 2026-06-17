@@ -1,0 +1,2 @@
+task_id,phase,task_type,provider,model_version,ratio,resolution_type,duration,video_resolution,prompt,reference_ids,output_name,status,review_status,notes
+TEST-M2V,phaseA,multimodal2video,dreamina_cli,seedance2.0fast_vip,16:9,,5,720p,test video prompt,keyframe|ref_a|ref_b|scene,TEST-M2V_output,,,

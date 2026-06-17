@@ -1,0 +1,20 @@
+{
+  "prompt_id": "A-SC-TEMPLE-COURTYARD-001",
+  "production_id": "chi_yan_tian_qiong",
+  "shot_id": null,
+  "asset_id": "A-SC-TEMPLE-COURTYARD-001",
+  "prompt_type": "asset_image",
+  "asset_role": "scene_environment",
+  "asset_scope": "production_scene_asset",
+  "version": "v1",
+  "prompt_text": "A cinematic semi-realistic 3D ancient Chinese temple courtyard in light rain, wet stone ground with clear reflections, dark wooden main hall in the background, distant bell tower, hanging prayer flags moving slightly in misty wind, cool blue-gray atmosphere, low saturation, subtle ink-wash mood, deep spatial perspective, no characters, no animals, no text, no watermark, no modern objects, no neon lights, no sci-fi elements.",
+  "negative_prompt": "no characters, no animals, no text, no watermark, no modern objects, no neon lights, no sci-fi elements",
+  "reference_ids": [],
+  "reference_roles": [],
+  "source_shot_id": null,
+  "status": "draft",
+  "lock_status": "not_locked",
+  "notes": "Phase F5 readiness package for first production scene asset; no submit executed.",
+  "created_at": "2026-06-13T14:30:07.733135+00:00",
+  "updated_at": "2026-06-13T14:30:07.733135+00:00"
+}

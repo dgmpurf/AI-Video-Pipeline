@@ -1,0 +1,9 @@
+Create a light-motion image-to-video test from the locked SHOT-01 keyframe.
+
+Preserve the locked spatial composition exactly. Both characters must remain in their current positions. Fenshou is the only black-red male figure on the left. Do not create any second black-red male silhouette. Shuangji remains on the right and faces left toward Fenshou. The middle open wet stone courtyard must remain visible. The camera position, temple background, courtyard layout, character scale, and left-right blocking must stay stable.
+
+Allowed motion only: fine rain movement, subtle mist drift, wet stone reflection shimmer, very subtle clothing and hair movement, slight breathing and stillness tension, and optional extremely slow camera push-in.
+
+Forbidden motion: no charging, no fighting, no character displacement, no new characters, no second Fenshou, no second Shuangji, no camera orbit, no dramatic zoom, no scene transition, no cutting to close-up, no changing character positions, and no changing courtyard layout.
+
+The mood should remain quiet, tense, cinematic, rain-soaked, cool blue-gray, and restrained. Keep the shot as a stable standoff keyframe with only ambient motion.

@@ -1,0 +1,23 @@
+{
+  "staging_dir": "staging",
+  "mock_output_dir": "mock_outputs",
+  "live_output_dir": "live_outputs",
+  "reports_dir": "reports",
+  "provider_requests_file": "provider_requests.jsonl",
+  "command_preview_file": "command_preview.csv",
+  "submitted_file": "submitted.csv",
+  "completed_file": "completed.csv",
+  "downloaded_file": "downloaded.csv",
+  "submitted_tasks_file": "submitted_tasks.csv",
+  "completed_tasks_file": "completed_tasks.csv",
+  "downloaded_files_file": "downloaded_files.csv",
+  "execution_log_file": "execution_log.txt",
+  "default_output_extension_by_task": {
+    "text2image": ".png",
+    "image2image": ".png",
+    "image2video": ".mp4",
+    "frames2video": ".mp4",
+    "multimodal2video": ".mp4"
+  },
+  "default_live_enabled": false
+}

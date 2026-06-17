@@ -1,0 +1,2 @@
+task_id,phase,task_type,provider,model_version,ratio,resolution_type,duration,video_resolution,prompt,reference_ids,output_name,status,review_status,notes
+TEST-I2I,phaseA,image2image,dreamina_cli,5.0,16:9,2k,,,test prompt,ref_a|ref_b|scene,TEST-I2I_output,,,

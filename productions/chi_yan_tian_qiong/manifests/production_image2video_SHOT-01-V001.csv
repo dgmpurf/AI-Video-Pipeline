@@ -1,0 +1,2 @@
+task_id,provider,task_type,model_version,prompt_path,image,duration,video_resolution,output_name,status
+SHOT-01-V001,dreamina_cli,image2video,seedance2.0,productions/chi_yan_tian_qiong/prompts/manual_SHOT-01-V001_image2video_light_motion_prompt.txt,productions/chi_yan_tian_qiong/locked_refs/SHOT-01-KF-004-rerun-03_locked_official_shot_01_keyframe.png,5,720p,SHOT-01-V001_light_motion_test.mp4,ready_for_manual_approved_submit

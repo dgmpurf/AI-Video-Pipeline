@@ -1,0 +1,27 @@
+{
+  "default_provider": "dreamina_cli",
+  "providers": {
+    "dreamina_cli": {
+      "enabled": true,
+      "mode": "cli",
+      "executable": "C:/Users/msjpurf/bin/dreamina.exe",
+      "allow_live_run": false
+    },
+    "kling_api": {
+      "enabled": false,
+      "mode": "stub"
+    },
+    "hailuo_api": {
+      "enabled": false,
+      "mode": "stub"
+    },
+    "runway_api": {
+      "enabled": false,
+      "mode": "stub"
+    },
+    "midjourney_image": {
+      "enabled": false,
+      "mode": "stub"
+    }
+  }
+}

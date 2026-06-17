@@ -1,0 +1,55 @@
+{
+  "prompt_id": "A-SC-TEMPLE-COURTYARD-004",
+  "production_id": "chi_yan_tian_qiong",
+  "shot_id": "SHOT-02",
+  "asset_id": "A-SC-TEMPLE-COURTYARD-004_main_hall_true_frontal_axis_stage",
+  "target_asset_name": "A-SC-TEMPLE-COURTYARD-004_main_hall_true_frontal_axis_stage",
+  "prompt_type": "asset_image",
+  "asset_role": "scene_environment",
+  "asset_scope": "production_scene_asset",
+  "task_type": "text2image",
+  "version": "v1",
+  "authoritative_prompt_source": "manual_prompt_txt",
+  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual_A-SC-TEMPLE-COURTYARD-004_main_hall_true_frontal_axis_stage_prompt.txt",
+  "prompt_text": "正面中轴视角，雨中古寺主殿正面，主殿正门正对镜头，主殿正门中线接近画面垂直中心线，左右石阶与石栏杆展开关系接近对称。多层飞檐木质结构，主殿作为中央背景主体，左右配殿与回廊退居两侧辅助背景。前方开阔湿石板广场，地面积水反射主殿轮廓，冷灰色雨雾弥漫，经幡悬挂，细密雨丝，半写实3D武侠风格，电影级打光，空无一人，肃杀静谧氛围。\n+\n+前景地面比例适中，不要让前景湿石板占据画面过多比例；中景为清楚可用的战斗舞台区域，适合后续两名角色在中央近身交锋。不要斜侧机位，不要角落透视构图，不要继续保留 oblique composition，不要让屋檐和边侧建筑压过主殿主体。不要人物，不要人影，不要僧人，不要香客，不要守卫，不要雕像人物，不要壁画人物，不要远处人影，不要伞下人形或类似角色暗示物。不要动物，不要文字，不要水印。",
+  "negative_prompt": "不要人物，不要人影，不要僧人，不要香客，不要守卫，不要雕像人物，不要壁画人物，不要远处人影，不要伞下人形或类似角色暗示物，不要动物，不要文字，不要水印",
+  "reference_ids": [
+    "A-SC-TEMPLE-COURTYARD-001"
+  ],
+  "reference_roles": [
+    {
+      "logical_id": "A-SC-TEMPLE-COURTYARD-001",
+      "role": "world_continuity_reference_only",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-001_locked_ancient_temple_rain_courtyard.png"
+    }
+  ],
+  "source_shot_id": "SHOT-02",
+  "status": "locked_after_human_review",
+  "needs_generation": false,
+  "locked": true,
+  "lock_status": "locked",
+  "review_status": "approved",
+  "preferred_candidate": true,
+  "manual_review_status": "approved",
+  "model_version": "4.7",
+  "ratio": "16:9",
+  "resolution_type": "2k",
+  "manifest_path": "productions/chi_yan_tian_qiong/manifests/production_text2image_A-SC-TEMPLE-COURTYARD-004.csv",
+  "scene_policy": "character_free_scene_only",
+  "narrative_function": "Generate a true frontal-axis empty combat-stage anchor for SHOT-02 without reusing A-SC-003 oblique composition.",
+  "active_sources": [
+    "sources/AI视频制作_实测规则库_V1.10_视角纠偏与场景锚点重构增补稿.md",
+    "sources/AI视频制作_实测规则库_V1.9_空间调度与远近站位控制_完整版_修正版_V1_9_2.md",
+    "sources/Dreamina_CLI工作流与执行规范_V1.1_官方Help校正版.md",
+    "sources/DreaminaBatcher_manifest_schema_V1.1_官方Help校正版.md",
+    "sources/dreamina_cli_help.md"
+  ],
+  "output_path": "productions/chi_yan_tian_qiong/runs/live/20260617_150916_A-SC-TEMPLE-COURTYARD-004/output/A-SC-TEMPLE-COURTYARD-004_main_hall_true_frontal_axis_stage.png",
+  "notes": "Preferred scene candidate for SHOT-02 main-hall-front combat staging. Human review passed and the image is now locked as the current scene anchor for SHOT-02-KF-002.",
+  "created_at": "2026-06-17T14:20:00+08:00",
+  "updated_at": "2026-06-17T17:18:00+08:00",
+  "locked_path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+  "sha256": "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452",
+  "width": 2560,
+  "height": 1440
+}

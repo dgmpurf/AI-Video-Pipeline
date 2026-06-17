@@ -1,0 +1,18 @@
+{
+  "task_id": "DREAMINA-PREFLIGHT-TEXT2IMAGE-001",
+  "task_type": "text2image",
+  "provider": "dreamina_cli",
+  "dry_run_run_id": "20260613_135650_dreamina_preflight_text2image_001",
+  "user_approved_live_run": false,
+  "provider_live_run_enabled": false,
+  "single_task_only": true,
+  "submit_query_download_happened": false,
+  "dreamina_command_executed": false,
+  "required_before_future_live_run": [
+    "human approval for exactly one task",
+    "provider config allow_live_run must be enabled intentionally",
+    "fs_write_plan must be reviewed",
+    "dry-run argv must be reviewed and must not contain pipeline-only fields",
+    "run directory name must contain exactly one timestamp prefix"
+  ]
+}

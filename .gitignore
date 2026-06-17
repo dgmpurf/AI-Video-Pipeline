@@ -1,0 +1,81 @@
+# Git ignore rules for AI_VIDEO_PIPELINE
+
+# Python runtime/cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# Project generated outputs and runtime artifacts
+.benchmarks/
+.pytest_cache/
+live_outputs/
+manual_imports/
+manual_tests/
+mock_outputs/
+staging/
+runs/
+output/
+outputs/
+downloads/
+input_media/
+raw_responses/
+
+# Production run trees / generated artifacts
+productions/*/runs/
+productions/*/runs/live/
+productions/*/output/
+productions/*/downloads/
+productions/*/input_media/
+productions/*/exports/
+
+# Execution metadata that should not be in baseline
+**/one_shot_live_authorization.json
+**/provider_requests.jsonl
+**/provider_responses.jsonl
+**/job_store.json
+**/execution_log.txt
+
+# Generated media (strict exclusion for baseline)
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.mp4
+*.mov
+*.mkv
+*.gif
+
+# Credentials / secrets
+*.env
+*.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.token
+
+# Logs and local temp
+*.log
+logs/
+tmp/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Keep empty directories when intentionally tracked via .gitkeep
+!**/.gitkeep

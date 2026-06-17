@@ -1,0 +1,55 @@
+{
+  "task_id": "SHOT-01-KF-001",
+  "production_id": "chi_yan_tian_qiong",
+  "prompt_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\productions\\chi_yan_tian_qiong\\prompts\\shot_01_keyframe_prompt_SHOT-01-KF-001.json",
+  "manifest_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\productions\\chi_yan_tian_qiong\\manifests\\production_image2image_SHOT-01-KF-001.csv",
+  "dry_run_run_dir": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\productions\\chi_yan_tian_qiong\\runs\\dry_run\\20260614_062853_SHOT-01-KF-001",
+  "dry_run_run_id": "20260614_062853_SHOT-01-KF-001",
+  "dry_run_argv": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "image2image",
+    "--model_version",
+    "5.0",
+    "--ratio",
+    "16:9",
+    "--prompt",
+    "Locked keyframe reference for shot SHOT-01-KF-001: a wide establishing composition of the ancient temple courtyard under light rain, wet stone ground with clear reflections, distant prayer flags moving in cool mist, and two locked character subjects standing in a stable cinematic pose with clear identity continuity.",
+    "--images",
+    "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\staging\\A-SC-TEMPLE-COURTYARD-001_locked_ancient_temple_rain_courtyard_f5ff8003157b.png",
+    "--images",
+    "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\staging\\A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject_83e21fe549d7.png",
+    "--images",
+    "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\staging\\A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject_f5c4f29083d9.png",
+    "--resolution_type",
+    "2k"
+  ],
+  "command_preview_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\productions\\chi_yan_tian_qiong\\runs\\dry_run\\20260614_062853_SHOT-01-KF-001\\command_preview.csv",
+  "provider_requests_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\productions\\chi_yan_tian_qiong\\runs\\dry_run\\20260614_062853_SHOT-01-KF-001\\provider_requests.jsonl",
+  "job_store_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\productions\\chi_yan_tian_qiong\\runs\\dry_run\\20260614_062853_SHOT-01-KF-001\\job_store.json",
+  "fs_write_plan_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\reports\\SHOT-01-KF-001_fs_write_plan.json",
+  "approval_checklist_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\reports\\SHOT-01-KF-001_LIVE_APPROVAL_CHECKLIST.json",
+  "default_live_gate": {
+    "allowed": false,
+    "reason": "live-run denied by safety gate",
+    "required_actions": [
+      "dreamina_cli live-run disabled by provider config",
+      "approve fs_write_plan",
+      "stage media before live-run"
+    ]
+  },
+  "hypothetical_readiness": {
+    "allowed": false,
+    "reason": "live-run denied by safety gate",
+    "required_actions": [
+      "dreamina_cli live-run disabled by provider config",
+      "approve fs_write_plan",
+      "stage media before live-run"
+    ],
+    "readiness_package_prepared": true,
+    "blocked_until_provider_live_run_enabled": true,
+    "blocked_until_fs_write_plan_reviewed": true
+  },
+  "providers_json_allow_live_run": false,
+  "submit_query_download_happened": false,
+  "external_path_touched": false
+}

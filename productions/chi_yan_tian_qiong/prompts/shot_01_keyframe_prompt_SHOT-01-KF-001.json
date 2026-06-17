@@ -1,0 +1,46 @@
+{
+  "prompt_id": "SHOT-01-KF-001",
+  "production_id": "chi_yan_tian_qiong",
+  "shot_id": "SHOT-01-KF-001",
+  "asset_id": null,
+  "prompt_type": "keyframe_image",
+  "version": "v1",
+  "prompt_text": "Locked keyframe reference for shot SHOT-01-KF-001: a wide establishing composition of the ancient temple courtyard under light rain, wet stone ground with clear reflections, distant prayer flags moving in cool mist, and two locked character subjects standing in a stable cinematic pose with clear identity continuity.",
+  "negative_prompt": "no text, no watermark, no logo, no modern objects, no animals, no extra people, no multiple views, no character deformation, no clipping, no duplicate layout, no low-light noise",
+  "reference_ids": [
+    "A-SC-TEMPLE-COURTYARD-001",
+    "A-CH-A-SUBJECT-001",
+    "A-CH-B-SUBJECT-001"
+  ],
+  "reference_roles": [
+    {
+      "order": 1,
+      "logical_id": "A-SC-TEMPLE-COURTYARD-001",
+      "role_type": "scene_environment",
+      "role_description": "Locked courtyard reference for scene continuity",
+      "lock_strength": "medium",
+      "allowed_drift": "low"
+    },
+    {
+      "order": 2,
+      "logical_id": "A-CH-A-SUBJECT-001",
+      "role_type": "character_subject",
+      "role_description": "Locked subject A for primary character continuity",
+      "lock_strength": "high",
+      "allowed_drift": "low"
+    },
+    {
+      "order": 3,
+      "logical_id": "A-CH-B-SUBJECT-001",
+      "role_type": "character_subject",
+      "role_description": "Locked subject B for composition and consistency",
+      "lock_strength": "high",
+      "allowed_drift": "low"
+    }
+  ],
+  "source_shot_id": "SHOT-01-KF-001",
+  "status": "draft",
+  "notes": "H1 shot-01 keyframe readiness package. No submit executed.",
+  "created_at": "2026-06-14T00:00:00+00:00",
+  "updated_at": "2026-06-14T00:00:00+00:00"
+}

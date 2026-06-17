@@ -1,0 +1,58 @@
+{
+  "shot_id": "SHOT-01",
+  "task_id": "SHOT-01-KF-004-rerun-03",
+  "candidate_id": "SHOT-01-KF-004-rerun-03_cand_001",
+  "historical_comparison": [
+    "SHOT-01-KF-003",
+    "SHOT-01-KF-004",
+    "SHOT-01-KF-004-rerun-02"
+  ],
+  "branch": "Branch B",
+  "status": "locked_official_keyframe",
+  "needs_generation": false,
+  "locked": true,
+  "preferred_candidate": true,
+  "output_path": "productions/chi_yan_tian_qiong/runs/live/20260615_230829_SHOT-01-KF-004-rerun-03/output/SHOT-01-KF-004-rerun-03_unique_fenshou_keyframe.png",
+  "submit_id": "263433e5-e46a-411b-a0f5-ad7497c556a8",
+  "query_status": "success",
+  "download_happened": true,
+  "integrity": {
+    "source": {
+      "exists": true,
+      "file_size": 4206279,
+      "sha256": "3befa37d9cfed78b8d2a798f4cfe831e81c1ce5817282753a2087f7d22cf45c8",
+      "openable": true,
+      "width": 2560,
+      "height": 1440,
+      "format": "PNG"
+    },
+    "locked": {
+      "exists": true,
+      "file_size": 4206279,
+      "sha256": "3befa37d9cfed78b8d2a798f4cfe831e81c1ce5817282753a2087f7d22cf45c8",
+      "openable": true,
+      "width": 2560,
+      "height": 1440,
+      "format": "PNG"
+    }
+  },
+  "visual_audit": {
+    "duplicate_male_character": "no",
+    "unique_fenshou_constraint_satisfied": "yes",
+    "shuangji_facing_direction_correct": "yes",
+    "left_right_spatial_placement_acceptable": "yes",
+    "middle_open_wet_stone_courtyard_preserved": "yes",
+    "candidate_quality_verdict": "approved official keyframe"
+  },
+  "composition_note": "Branch B with unique Fenshou constraint fixed the duplicate black-red male silhouette issue and was approved as the official SHOT-01 keyframe.",
+  "added_prompt_sentence": "左侧远处那个黑红男性是唯一的焚狩，画面中不允许再出现任何第二个黑红男性轮廓。",
+  "locked_refs": [
+    "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-001_locked_ancient_temple_rain_courtyard.png",
+    "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+    "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png"
+  ],
+  "updated_at": "2026-06-15T16:13:53.810172+00:00",
+  "official_keyframe": true,
+  "locked_path": "productions/chi_yan_tian_qiong/locked_refs/SHOT-01-KF-004-rerun-03_locked_official_shot_01_keyframe.png",
+  "source_output_path": "productions/chi_yan_tian_qiong/runs/live/20260615_230829_SHOT-01-KF-004-rerun-03/output/SHOT-01-KF-004-rerun-03_unique_fenshou_keyframe.png"
+}

@@ -1,0 +1,49 @@
+{
+  "task_id": "SHOT-01-V001",
+  "shot_id": "SHOT-01",
+  "task_type": "image2video",
+  "prompt_type": "shot_video_light_motion",
+  "status": "readiness_package_ready",
+  "needs_generation": true,
+  "locked": false,
+  "official_keyframe_source": "productions/chi_yan_tian_qiong/locked_refs/SHOT-01-KF-004-rerun-03_locked_official_shot_01_keyframe.png",
+  "input_image": "productions/chi_yan_tian_qiong/locked_refs/SHOT-01-KF-004-rerun-03_locked_official_shot_01_keyframe.png",
+  "model_version": "seedance2.0",
+  "duration": 5,
+  "video_resolution": "720p",
+  "ratio": null,
+  "ratio_policy": "omitted_for_image2video_inferred_from_input_image",
+  "prompt_source": "productions/chi_yan_tian_qiong/prompts/manual_SHOT-01-V001_image2video_light_motion_prompt.txt",
+  "prompt": "Create a light-motion image-to-video test from the locked SHOT-01 keyframe.\n\nPreserve the locked spatial composition exactly. Both characters must remain in their current positions. Fenshou is the only black-red male figure on the left. Do not create any second black-red male silhouette. Shuangji remains on the right and faces left toward Fenshou. The middle open wet stone courtyard must remain visible. The camera position, temple background, courtyard layout, character scale, and left-right blocking must stay stable.\n\nAllowed motion only: fine rain movement, subtle mist drift, wet stone reflection shimmer, very subtle clothing and hair movement, slight breathing and stillness tension, and optional extremely slow camera push-in.\n\nForbidden motion: no charging, no fighting, no character displacement, no new characters, no second Fenshou, no second Shuangji, no camera orbit, no dramatic zoom, no scene transition, no cutting to close-up, no changing character positions, and no changing courtyard layout.\n\nThe mood should remain quiet, tense, cinematic, rain-soaked, cool blue-gray, and restrained. Keep the shot as a stable standoff keyframe with only ambient motion.",
+  "preservation_requirements": [
+    "both characters remain in current positions",
+    "Fenshou remains the only black-red male on the left",
+    "Shuangji remains on the right and faces left toward Fenshou",
+    "middle open wet stone courtyard remains visible",
+    "camera and background structure remain stable"
+  ],
+  "allowed_motion": [
+    "fine rain movement",
+    "subtle mist drift",
+    "wet stone reflection shimmer",
+    "very subtle clothing and hair movement",
+    "slight breathing / stillness tension",
+    "optional extremely slow camera push-in"
+  ],
+  "forbidden_motion": [
+    "no charging",
+    "no fighting",
+    "no character displacement",
+    "no new characters",
+    "no second Fenshou",
+    "no second Shuangji",
+    "no camera orbit",
+    "no dramatic zoom",
+    "no scene transition",
+    "no cutting to close-up",
+    "no changing character positions",
+    "no changing courtyard layout"
+  ],
+  "created_at": "2026-06-16T03:25:08.509578+00:00",
+  "updated_at": "2026-06-16T03:25:08.509578+00:00"
+}

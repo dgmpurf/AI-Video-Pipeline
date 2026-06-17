@@ -1,0 +1,3 @@
+﻿task_id,phase,task_type,provider,model_version,ratio,resolution_type,duration,video_resolution,prompt,reference_ids,output_name,status,review_status,notes
+PHASEB-I2I,phaseB,image2image,dreamina_cli,5.0,16:9,2k,,,Phase B image2image prompt,tests/fixtures/media/ref_a.png|tests/fixtures/media/ref_b.png|tests/fixtures/media/scene.png,PHASEB-I2I_output,,,
+PHASEB-M2V,phaseB,multimodal2video,dreamina_cli,seedance2.0fast_vip,16:9,,5,720p,Phase B multimodal2video prompt,tests/fixtures/media/keyframe.png|tests/fixtures/media/ref_a.png|tests/fixtures/media/ref_b.png|tests/fixtures/media/scene.png,PHASEB-M2V_output,,,

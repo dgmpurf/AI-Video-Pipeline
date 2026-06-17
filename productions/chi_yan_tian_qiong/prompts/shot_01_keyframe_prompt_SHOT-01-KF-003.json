@@ -1,0 +1,95 @@
+{
+  "prompt_id": "SHOT-01-KF-003",
+  "production_id": "chi_yan_tian_qiong",
+  "shot_id": "SHOT-01-KF-003",
+  "asset_id": null,
+  "prompt_type": "keyframe_image",
+  "version": "v3",
+  "branch": "Branch B",
+  "source_branch_note": "productions/chi_yan_tian_qiong/reviews/image_reviews/SHOT-01_prompt_branch_review.md",
+  "latest_active_source": "sources/AI视频制作_实测规则库_V1.9_空间调度与远近站位控制_完整版_修正版_V1_9_2.md",
+  "branch_summary": "双远景同层左右分置。焚狩位于左侧远处区域，落点在左侧回廊与左后方建筑前的湿石板地带；霜玑位于右侧远处区域，落点在主殿右前方广场的右侧内侧区域；两人都远、都小、左右明确分开，中间保留大面积空旷湿石板地。",
+  "three_layer_positioning_matrix": {
+    "space_layer": [
+      "The locked temple courtyard image is used as the environment reference only.",
+      "The main hall, left corridor, left-rear building, wet stone ground, prayer flags, rain, mist, and blue-gray atmosphere come from the locked scene reference.",
+      "The composition must use a wide courtyard view with both characters far from the camera and small in frame.",
+      "The center of the image must keep a large open area of empty wet stone ground.",
+      "The characters must not be pasted onto the foreground camera plane.",
+      "The courtyard must read as a real navigable stage with clear left, center, and right ground zones."
+    ],
+    "character_blocking_layer": [
+      "Fenshou is far away on the left side of the courtyard, small in frame.",
+      "Fenshou's foot landing point is on the wet stone ground in front of the left corridor and left-rear building.",
+      "Shuangji is far away on the right side of the courtyard, small in frame.",
+      "Shuangji's foot landing point is in the inner-right area of the plaza in front of the main hall.",
+      "Both characters are on the same distant depth layer, separated left and right.",
+      "The gap between them remains a broad empty wet-stone action space.",
+      "They do not stand shoulder to shoulder, do not face the viewer as a lineup, and do not overlap."
+    ],
+    "camera_layer": [
+      "Use a wide cinematic keyframe across the rain-soaked courtyard.",
+      "The camera should prioritize spatial layout over character portrait detail.",
+      "The camera keeps both distant figures visible while preserving the temple architecture and open ground.",
+      "The composition forbids a foreground two-character poster, front-facing lineup, cropped feet, or edge-hugging near character."
+    ]
+  },
+  "prompt_text": "Reference image 1 is the locked temple courtyard environment. Use it for the ancient Chinese temple courtyard, light rain, wet reflective stone ground, dark wooden main hall, left corridor, left-rear building mass, distant tower, prayer flags, cool blue-gray mist, and cinematic spatial depth. Do not copy its camera angle as a rigid layout. Use it as environment identity and atmosphere.\n\nReference image 2 is the locked Fenshou full-body subject. Use it only for Fenshou's appearance: black high ponytail, stern male face, strong athletic build, black and dark red layered battle armor, boots, and cold martial presence. Do not copy the neutral front-facing pose from the subject reference.\n\nReference image 3 is the locked Shuangji full-body subject. Use it only for Shuangji's appearance: silver-blue high ponytail, calm cold face, blue-silver light armor, long robe silhouette, modest high-collar outfit, and restrained guardian presence. Do not copy the neutral front-facing pose from the subject reference.\n\nCreate a cinematic semi-realistic 3D keyframe for SHOT-01: the first confrontation in the rain-soaked temple courtyard.\n\nBranch B spatial rule: both characters are distant, small in frame, and placed on the same far depth layer with clear left-right separation. Fenshou stands far away in the left-side courtyard zone. His feet land on wet stone ground in front of the left corridor and the left-rear building. Shuangji stands far away in the right-side courtyard zone. Her feet land in the inner-right area of the plaza in front of the main hall. Both are far, both are small, and they are clearly separated left and right.\n\nKeep a large open area of empty wet stone ground in the center between them. The wet ground should visibly reflect rain, temple architecture, and small distant character silhouettes. The two characters must not become a foreground lineup, must not stand shoulder to shoulder, must not overlap, and must not face the viewer as a character poster. Their positions should feel like world-space blocking inside the courtyard, not a flat pasted composition.\n\nThe main temple hall remains the background anchor. The left corridor and left-rear building support Fenshou's far-left position. The main hall right-front plaza supports Shuangji's far-right position. The camera observes a wide cinematic courtyard composition that prioritizes spatial readability, atmosphere, and future combat space over close character portrait detail.\n\nRain falls through the scene. Prayer flags move slightly in the wind. Mist softens the background. The locked character designs and locked temple atmosphere remain recognizable.\n\nStyle: cinematic semi-realistic 3D wuxia fantasy, cool blue-gray atmosphere, low saturation, subtle ink-wash mood, detailed but not over-cluttered.\n\nRestrictions: no text, no watermark, no extra people, no animals, no character sheet layout, no three-view layout, no multiple poses, no extra heads, no duplicate Fenshou, no duplicate Shuangji, no merged bodies, no cropped feet, no modern objects, no neon lights, no sci-fi elements, no cartoon style, no cel-shading, no overpowered magic effects, no blood, do not make both characters face the viewer, do not place them as a foreground lineup, do not paste them onto the camera plane.",
+  "negative_prompt": "no text, no watermark, no extra people, no animals, no character sheet layout, no three-view layout, no multiple poses, no extra heads, no duplicate Fenshou, no duplicate Shuangji, no merged bodies, no cropped feet, no modern objects, no neon lights, no sci-fi elements, no cartoon style, no cel-shading, no overpowered magic effects, no blood, do not make both characters face the viewer, do not place them as a foreground lineup, do not paste them onto the camera plane",
+  "reference_ids": [
+    "A-SC-TEMPLE-COURTYARD-001",
+    "A-CH-A-SUBJECT-001",
+    "A-CH-B-SUBJECT-001"
+  ],
+  "resolved_references": [
+    {
+      "order": 1,
+      "logical_id": "A-SC-TEMPLE-COURTYARD-001",
+      "registry_relative_path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-001_locked_ancient_temple_rain_courtyard.png"
+    },
+    {
+      "order": 2,
+      "logical_id": "A-CH-A-SUBJECT-001",
+      "registry_relative_path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png"
+    },
+    {
+      "order": 3,
+      "logical_id": "A-CH-B-SUBJECT-001",
+      "registry_relative_path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png"
+    }
+  ],
+  "reference_roles": [
+    {
+      "order": 1,
+      "logical_id": "A-SC-TEMPLE-COURTYARD-001",
+      "role_type": "scene_environment",
+      "role_description": "Locked courtyard environment reference only; controls setting and atmosphere, not character blocking.",
+      "lock_strength": "medium",
+      "allowed_drift": "low"
+    },
+    {
+      "order": 2,
+      "logical_id": "A-CH-A-SUBJECT-001",
+      "role_type": "character_subject",
+      "role_description": "Locked Fenshou appearance reference only; does not control pose or placement.",
+      "lock_strength": "high",
+      "allowed_drift": "low"
+    },
+    {
+      "order": 3,
+      "logical_id": "A-CH-B-SUBJECT-001",
+      "role_type": "character_subject",
+      "role_description": "Locked Shuangji appearance reference only; does not control pose or placement.",
+      "lock_strength": "high",
+      "allowed_drift": "low"
+    }
+  ],
+  "source_shot_id": "SHOT-01",
+  "replaces_candidate_id": "SHOT-01-KF-002_cand_001",
+  "status": "draft_ready",
+  "needs_generation": true,
+  "locked": false,
+  "notes": "Branch B SHOT-01 keyframe package. No Dreamina command executed.",
+  "created_at": "2026-06-15T00:00:00+08:00",
+  "updated_at": "2026-06-15T00:00:00+08:00"
+}

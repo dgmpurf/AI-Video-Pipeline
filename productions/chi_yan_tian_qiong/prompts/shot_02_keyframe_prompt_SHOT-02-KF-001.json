@@ -1,0 +1,62 @@
+﻿{
+    "task_id":  "SHOT-02-KF-001",
+    "shot_id":  "SHOT-02",
+    "candidate_id":  "SHOT-02-KF-001_cand_001",
+    "prompt_type":  "keyframe_image",
+    "task_type":  "image2image",
+    "version":  "v001",
+    "branch":  "combat_keyframe_initial_package",
+    "status":  "historical_failed_composition_example",
+    "needs_generation":  false,
+    "locked":  false,
+    "preferred_candidate":  false,
+    "historical_status":  "failed_composition_example",
+    "failure_reason":  "Not preferred for SHOT-02. Kept only as a historical failed composition example after review.",
+    "authoritative_prompt_source":  "manual_prompt_txt",
+    "manual_prompt_path":  "productions/chi_yan_tian_qiong/prompts/manual_SHOT-02-KF-001_combat_keyframe_prompt.txt",
+    "model_version":  "4.7",
+    "ratio":  "16:9",
+    "resolution_type":  "2k",
+    "manifest_path":  "productions/chi_yan_tian_qiong/manifests/production_image2image_SHOT-02-KF-001.csv",
+    "locked_refs":  [
+                        "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-001_locked_ancient_temple_rain_courtyard.png",
+                        "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+                        "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png"
+                    ],
+    "reference_ids":  [
+                          "A-SC-TEMPLE-COURTYARD-001",
+                          "A-CH-A-SUBJECT-001",
+                          "A-CH-B-SUBJECT-001"
+                      ],
+    "source_requirements":  [
+                                "sources/AI视频制作_Source索引与使用优先级_V1.1.md",
+                                "sources/AI视频制作_实测规则库_V1.1.md",
+                                "sources/AI视频制作_实测规则库_V1.2_动作变身运镜增补稿.md",
+                                "sources/AI视频制作_实测规则库_V1.9_空间调度与远近站位控制_完整版_修正版_V1_9_2.md",
+                                "sources/Dreamina_CLI工作流与执行规范_V1.1_官方Help校正版.md",
+                                "sources/DreaminaBatcher_manifest_schema_V1.1_官方Help校正版.md",
+                                "sources/dreamina_cli_help.md"
+                            ],
+    "narrative_function":  "Cut from SHOT-01 quiet rainy standoff into a more intense combat moment.",
+    "continuity_policy":  "Independent combat keyframe; do not force continuous physical travel from SHOT-01 positions.",
+    "continuity_context":  {
+                               "official_shot_01_keyframe":  "productions/chi_yan_tian_qiong/locked_refs/SHOT-01-KF-004-rerun-03_locked_official_shot_01_keyframe.png",
+                               "usage":  "continuity_context_only",
+                               "composition_lock":  false,
+                               "justification":  "SHOT-02 should preserve story and world continuity after SHOT-01, but uses the locked scene and character refs as the actual image2image inputs."
+                           },
+    "evaluation_focus":  [
+                             "two characters only",
+                             "no duplicate Fenshou",
+                             "no duplicate Shuangji",
+                             "clear combat relationship",
+                             "no horizontal side-scroller game feel",
+                             "physically credible body mechanics",
+                             "Fenshou and Shuangji remain identifiable",
+                             "ancient rainy temple/courtyard continuity preserved",
+                             "no uncontrolled camera orbit or chaotic composition"
+                         ],
+    "prompt":  "图1 作为唯一场景构图与古寺庭院环境参考。保留雨中古寺、湿石板地、冷灰蓝雨雾、木质主殿、回廊、经幡和积水反光的连续性，但 SHOT-02 是从 SHOT-01 安静对峙切入更强战斗瞬间的独立关键帧，不要求人物从 SHOT-01 的原站位连续移动到这里。不要回到 SHOT-01 的远距离静态对峙感，这一张必须明显更近、更紧、更有压迫感。\n\n图2 作为焚狩角色外观参考，只用于角色外观，不用于站姿构图。保持黑发高束、黑红重甲、男性武者气质。\n\n图3 作为霜玑角色外观参考，只用于角色外观，不用于站姿构图。保持银蓝高束长发、蓝白银轻甲长衣、女性武者气质。\n\n生成一张半写实3D武侠电影关键帧，表现 SHOT-02 的第一轮近身交锋瞬间。\n\n画面中只有两个人：一个焚狩，一个霜玑。没有第三人，没有重复角色，没有分身。左侧偏前的黑红男性是唯一的焚狩，画面中不允许再出现任何第二个黑红男性轮廓。右侧偏后的银蓝女性是唯一的霜玑，画面中不允许再出现任何第二个银蓝女性轮廓。\n\n空间与机位：\n使用电影化三分之二斜侧机位，镜头略低、略向前推近，有明确前景湿石板、中景交锋区、背景古寺结构。不要横版游戏式纯侧面平拍，不要舞台侧视图，不要让两人贴在同一条水平线上。两人之间必须有清楚的前后层次和斜向对战轴线：焚狩在左前，霜玑在右后。庭院地面透视清楚，脚下落点真实贴合湿石板。\n\n战斗关系：\n这是第一轮贴身交换的冻结瞬间，不是静态对峙，也不是混乱群斗。焚狩位于画面左侧偏前的中景区域，身体压低重心，后脚踩稳湿石板，腰胯转动带动肩膀，正以沉重近身压迫向霜玑推进。焚狩的进攻已经逼近霜玑身前，形成明确的压迫感，但不要飞扑，不要奔跑残影，不要夸张冲刺，不要把动作做成大开大合失真姿势。\n\n霜玑位于画面右侧偏后的中景区域，身体朝向左侧的焚狩，头部和视线明确看向焚狩。她不是看镜头，不是正面角色展示。她正在以更轻、更灵活的身法应对焚狩的重压，表现为侧闪、让身、格挡或卸力的瞬间。霜玑的身体有明确回避与反应动势，前脚稳定落在湿石板上，后脚带出少量水花，肩膀、衣摆与发丝有受力反馈。\n\n身体力学：\n两人的脚都必须落在真实地面上，膝盖、腰胯、肩膀和手臂形成可信的发力链。交锋瞬间有短暂停顿感，衣摆、发丝、雨水和地面积水有轻微冲击反馈。不要软绵绵挥手，不要肢体穿模，不要多余肢体，不要人物漂浮，不要姿势断裂。\n\n构图目标：\n画面应像一张正式战斗关键帧，而不是双人角色立绘。焚狩和霜玑都要可辨认，但不需要近景头像展示。两人距离要足够近，能够明确读出“已经进入近身交锋范围”，但不要贴在一起，不要角色融合，不要互相遮挡得难以辨认。保留古寺庭院雨夜连续性，保留中间和前景部分湿石板空间，让战斗发生在庭院内的真实空间中。\n\n禁止项：\n不要文字，不要水印，不要设定卡，不要三视图，不要四联图。不要第二个焚狩，不要第二个霜玑，不要多余人物。不要横版格斗游戏感，不要纯侧面平拍，不要舞台侧视图，不要混乱运镜，不要镜头环绕，不要角色互相背对，不要两人都正面看镜头，不要让两人重新变成远景静态对峙，不要改变古寺庭院为其他场景。",
+    "created_at":  "2026-06-16T18:00:00+08:00",
+    "updated_at":  "2026-06-16T21:35:00+08:00"
+}

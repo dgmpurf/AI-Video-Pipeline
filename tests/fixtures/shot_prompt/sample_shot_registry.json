@@ -1,0 +1,22 @@
+{
+  "shots": [
+    {
+      "shot_id": "SHOT-TEST-001",
+      "production_id": "test_production",
+      "sequence_id": "SEQ-01",
+      "scene_id": "SCENE-01",
+      "shot_index": 1,
+      "title": "Close subject",
+      "shot_type": "establishing",
+      "duration_seconds": 4,
+      "story_beat": "Set emotional baseline",
+      "visual_goal": "Show subject in soft light",
+      "action_goal": "",
+      "camera_goal": "60mm close shot",
+      "required_asset_ids": ["fixture-001"],
+      "status": "draft",
+      "review_status": "pending_review",
+      "notes": "sample fixture shot"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "task_id": "A-CH-B-SUBJECT-001",
+  "production_id": "chi_yan_tian_qiong",
+  "prompt_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\productions\\chi_yan_tian_qiong\\prompts\\production_character_subject_prompt_A-CH-B-SUBJECT-001.json",
+  "manifest_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\productions\\chi_yan_tian_qiong\\manifests\\production_text2image_A-CH-B-SUBJECT-001.csv",
+  "dry_run_run_dir": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\productions\\chi_yan_tian_qiong\\runs\\dry_run\\20260614_051705_A-CH-B-SUBJECT-001",
+  "dry_run_run_id": "20260614_051705_A-CH-B-SUBJECT-001",
+  "dry_run_argv": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "text2image",
+    "--model_version",
+    "5.0",
+    "--ratio",
+    "9:16",
+    "--prompt",
+    "A full-body front-facing character subject reference of Shuangji, an adult female ancient fantasy martial guardian with a cold calm presence. She has long silver-blue hair tied in a high ponytail, a focused elegant expression, clear facial features, slender athletic build, blue and silver layered light armor combined with flowing long robe panels, modest high-collar outfit, practical shoulder and arm guards, clean readable silhouette, standing in a neutral strong pose with both feet visible, arms relaxed at her sides, cinematic semi-realistic 3D character design, high detail, consistent proportions, plain light gray studio background, no environment, no extra people, no weapon, no text, no watermark, no character sheet layout, no three-view layout, no multiple poses, no cropped feet, no revealing outfit, no exaggerated chest armor, no modern clothing, no sci-fi armor, no cartoon style, no cel-shading.",
+    "--resolution_type",
+    "2k"
+  ],
+  "command_preview_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\productions\\chi_yan_tian_qiong\\runs\\dry_run\\20260614_051705_A-CH-B-SUBJECT-001\\command_preview.csv",
+  "provider_requests_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\productions\\chi_yan_tian_qiong\\runs\\dry_run\\20260614_051705_A-CH-B-SUBJECT-001\\provider_requests.jsonl",
+  "job_store_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\productions\\chi_yan_tian_qiong\\runs\\dry_run\\20260614_051705_A-CH-B-SUBJECT-001\\job_store.json",
+  "fs_write_plan_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\reports\\A-CH-B-SUBJECT-001_fs_write_plan.json",
+  "approval_checklist_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\reports\\A-CH-B-SUBJECT-001_LIVE_APPROVAL_CHECKLIST.json",
+  "default_live_gate": {
+    "allowed": false,
+    "reason": "live-run denied by safety gate: dreamina_cli live-run disabled by provider config",
+    "required_actions": [
+      "dreamina_cli live-run disabled by provider config",
+      "approve fs_write_plan"
+    ]
+  },
+  "hypothetical_readiness": {
+    "allowed": false,
+    "reason": "live-run denied by safety gate: dreamina_cli live-run disabled by provider config",
+    "required_actions": [
+      "dreamina_cli live-run disabled by provider config",
+      "approve fs_write_plan"
+    ],
+    "readiness_package_prepared": true,
+    "blocked_until_provider_live_run_enabled": true,
+    "blocked_until_fs_write_plan_reviewed": true
+  },
+  "providers_json_allow_live_run": false,
+  "submit_query_download_happened": false,
+  "external_path_touched": false
+}

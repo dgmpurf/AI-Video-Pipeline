@@ -1,0 +1,94 @@
+{
+  "executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "checked_at": "2026-06-13T13:23:58.737531+00:00",
+  "commands": {
+    "text2image": {
+      "available": true,
+      "returncode": 0,
+      "flags": [
+        "--help",
+        "--model_version",
+        "--poll",
+        "--prompt",
+        "--ratio",
+        "--resolution_type",
+        "--session",
+        "--version"
+      ]
+    },
+    "image2image": {
+      "available": true,
+      "returncode": 0,
+      "flags": [
+        "--help",
+        "--images",
+        "--model_version",
+        "--poll",
+        "--prompt",
+        "--ratio",
+        "--resolution_type",
+        "--session",
+        "--version"
+      ]
+    },
+    "image2video": {
+      "available": true,
+      "returncode": 0,
+      "flags": [
+        "--duration",
+        "--help",
+        "--image",
+        "--model_version",
+        "--poll",
+        "--prompt",
+        "--session",
+        "--version",
+        "--video_resolution"
+      ]
+    },
+    "frames2video": {
+      "available": true,
+      "returncode": 0,
+      "flags": [
+        "--duration",
+        "--first",
+        "--help",
+        "--last",
+        "--model_version",
+        "--poll",
+        "--prompt",
+        "--session",
+        "--version",
+        "--video_resolution"
+      ]
+    },
+    "multimodal2video": {
+      "available": true,
+      "returncode": 0,
+      "flags": [
+        "--audio",
+        "--duration",
+        "--help",
+        "--image",
+        "--model_version",
+        "--poll",
+        "--prompt",
+        "--ratio",
+        "--session",
+        "--version",
+        "--video",
+        "--video_resolution"
+      ]
+    },
+    "query_result": {
+      "available": true,
+      "returncode": 0,
+      "flags": [
+        "--download_dir",
+        "--help",
+        "--submit_id",
+        "--version"
+      ]
+    }
+  }
+}

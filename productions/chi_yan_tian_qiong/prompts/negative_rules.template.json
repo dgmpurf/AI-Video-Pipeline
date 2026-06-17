@@ -1,0 +1,5 @@
+{
+  "asset_image": ["no_text", "no_watermark", "no_reference_card_artifact", "no_face_drift", "no_body_merge"],
+  "keyframe_image": ["no_text", "no_watermark", "no_three_view_artifact", "no_reference_card_artifact", "no_character_duplicate"],
+  "video": ["no_text", "no_watermark", "no_extra_people", "no_body_merge", "no_face_drift", "no_modern_objects"]
+}

@@ -1,0 +1,2 @@
+task_id,phase,task_type,provider,model_version,ratio,resolution_type,duration,video_resolution,prompt,reference_ids,output_name,status,review_status,notes
+DREAMINA-PREFLIGHT-TEXT2IMAGE-001,preflight,text2image,dreamina_cli,5.0,16:9,2k,,,"A simple cinematic ancient temple courtyard in light rain, wet stone ground, wooden hall, prayer flags, cool misty atmosphere, no characters, no text, no watermark.",,DREAMINA_PREFLIGHT_TEXT2IMAGE_001,,,

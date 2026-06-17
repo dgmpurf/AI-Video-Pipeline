@@ -1,0 +1,20 @@
+{
+  "shot_id": "SHOT-001",
+  "production_id": "chi_yan_tian_qiong",
+  "sequence_id": "SEQ-01",
+  "scene_id": "SCENE-01",
+  "shot_index": 1,
+  "title": "Open with broad reveal",
+  "shot_type": "establishing",
+  "duration_seconds": 6.0,
+  "story_beat": "Introduce the environment and tone",
+  "visual_goal": "Present a wide cinematic view with consistent lighting",
+  "action_goal": "",
+  "camera_goal": "Slow push-in with moderate parallax",
+  "required_asset_ids": ["fixture-001-A"],
+  "previous_shot_id": null,
+  "next_shot_id": null,
+  "status": "draft",
+  "review_status": "pending_review",
+  "notes": "Template shot registry entry"
+}

@@ -1,0 +1,20 @@
+{
+  "reference_roles": [
+    {
+      "order": 1,
+      "logical_id": "fixture-001",
+      "role_type": "character_subject",
+      "role_description": "primary character",
+      "lock_strength": "high",
+      "allowed_drift": "low"
+    },
+    {
+      "order": 2,
+      "logical_id": "fixture-002",
+      "role_type": "scene_environment",
+      "role_description": "ground context",
+      "lock_strength": "medium",
+      "allowed_drift": "medium"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "shots": [
+    {
+      "shot_id": "SHOT-01-KF-001",
+      "production_id": "chi_yan_tian_qiong",
+      "sequence_id": "SEQ-01",
+      "scene_id": "SCENE-01",
+      "shot_index": 1,
+      "title": "Temple courtyard with paired subjects",
+      "shot_type": "establishing",
+      "duration_seconds": 6.0,
+      "story_beat": "Scene opens on the locked temple location with both locked character subjects in view.",
+      "visual_goal": "Create a locked keyframe anchor that matches the core production environment and character continuity.",
+      "action_goal": "",
+      "camera_goal": "Slow forward reveal with stable horizon and balanced composition.",
+      "required_asset_ids": [
+        "A-SC-TEMPLE-COURTYARD-001",
+        "A-CH-A-SUBJECT-001",
+        "A-CH-B-SUBJECT-001"
+      ],
+      "previous_shot_id": null,
+      "next_shot_id": null,
+      "status": "draft",
+      "review_status": "pending_review",
+      "notes": "H1 shot-01 keyframe readiness package."
+    }
+  ]
+}

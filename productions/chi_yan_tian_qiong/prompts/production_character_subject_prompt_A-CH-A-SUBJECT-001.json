@@ -1,0 +1,20 @@
+{
+  "prompt_id": "A-CH-A-SUBJECT-001",
+  "production_id": "chi_yan_tian_qiong",
+  "shot_id": null,
+  "asset_id": "A-CH-A-SUBJECT-001",
+  "prompt_type": "asset_image",
+  "asset_role": "character",
+  "asset_scope": "production_character_subject",
+  "version": "v1",
+  "prompt_text": "A full-body front-facing character subject reference of Fenshou, an adult male ancient fantasy martial warrior. He has long black hair tied in a high ponytail, a stern focused expression, strong athletic build, black and dark red layered battle armor with sharp but practical metal plates, subtle crimson accents, black boots, clean readable silhouette, standing in a neutral strong pose with both feet visible, arms relaxed and fists lightly clenched, cinematic semi-realistic 3D character design, high detail, consistent proportions, plain light gray studio background, no environment, no extra people, no weapon, no text, no watermark, no character sheet layout, no three-view layout, no multiple poses, no cropped feet, no modern clothing, no sci-fi armor, no cartoon style, no cel-shading.",
+  "negative_prompt": "no characters, no extra people, no weapon, no text, no watermark, no character sheet layout, no three-view layout, no multiple poses, no cropped feet, no modern clothing, no sci-fi armor, no cartoon style, no cel-shading",
+  "reference_ids": [],
+  "reference_roles": [],
+  "source_shot_id": null,
+  "status": "draft",
+  "lock_status": "not_locked",
+  "notes": "Phase G1 readiness package for the first production character subject asset; no submit executed.",
+  "created_at": "2026-06-13T00:00:00+00:00",
+  "updated_at": "2026-06-13T00:00:00+00:00"
+}

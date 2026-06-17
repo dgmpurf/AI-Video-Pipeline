@@ -1,0 +1,37 @@
+﻿{
+  "assets": [
+    {
+      "logical_id": "fixture-001",
+      "candidate_id": "A",
+      "asset_type": "image",
+      "role": "source",
+      "relative_path": "assets/fixture-001-A.png",
+      "source_path": "tests/fixtures/media/ref_a.png",
+      "status": "candidate",
+      "review_status": "pending_review",
+      "origin_project": "test_production",
+      "source_task_id": "TASK-FIX-01",
+      "submit_id": "SUB-001",
+      "review_note": "",
+      "tags": ["test", "sample"],
+      "sha256": "fixture-sha-a",
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 0,
+      "created_at": "2026-06-13T00:00:00+00:00",
+      "updated_at": "2026-06-13T00:00:00+00:00"
+    }
+  ],
+  "relationships": [
+    {
+      "logical_id": "fixture-001",
+      "candidate_id": "A",
+      "related_logical_id": "fixture-002",
+      "related_candidate_id": "B",
+      "relationship_type": "alternate_candidate",
+      "is_canonical": true,
+      "created_at": "2026-06-13T00:00:00+00:00",
+      "note": "fixture relationship"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "shots": [
+    {
+      "shot_id": "SHOT-01-KF-003",
+      "production_id": "chi_yan_tian_qiong",
+      "sequence_id": "SEQ-01",
+      "scene_id": "SCENE-01",
+      "shot_index": 1,
+      "title": "Temple courtyard Branch B same-depth far standoff keyframe",
+      "shot_type": "action",
+      "duration_seconds": 6.0,
+      "story_beat": "Fenshou and Shuangji face each other across a broad rain-soaked temple courtyard before combat begins.",
+      "visual_goal": "Create a wide keyframe with both characters small, far away, same depth layer, and clearly separated left and right.",
+      "action_goal": "Two-character confrontation staged with a large open wet-stone action space between them.",
+      "camera_goal": "Wide cinematic courtyard composition prioritizing spatial readability over portrait scale.",
+      "required_asset_ids": [
+        "A-SC-TEMPLE-COURTYARD-001",
+        "A-CH-A-SUBJECT-001",
+        "A-CH-B-SUBJECT-001"
+      ],
+      "resolved_asset_paths": {
+        "A-SC-TEMPLE-COURTYARD-001": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-001_locked_ancient_temple_rain_courtyard.png",
+        "A-CH-A-SUBJECT-001": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+        "A-CH-B-SUBJECT-001": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png"
+      },
+      "previous_shot_id": "SHOT-01-KF-002",
+      "next_shot_id": null,
+      "branch": "Branch B",
+      "status": "draft_ready",
+      "needs_generation": true,
+      "locked": false,
+      "review_status": "pending_review",
+      "notes": "Branch B package based on V1.9.2 spatial blocking source. No Dreamina command executed.",
+      "three_layer_positioning_matrix": {
+        "space_layer": [
+          "Wide courtyard view with both characters far from the camera.",
+          "Large empty wet stone ground remains in the center between the two characters.",
+          "Fenshou uses the left-side corridor and left-rear building zone.",
+          "Shuangji uses the inner-right plaza zone in front of the main hall."
+        ],
+        "character_blocking_layer": [
+          "Fenshou is far-left, small in frame, feet planted on wet stone ground.",
+          "Shuangji is far-right, small in frame, feet planted on wet stone ground.",
+          "Both characters are on the same distant depth layer.",
+          "Left-right separation is explicit and the center remains open."
+        ],
+        "camera_layer": [
+          "Wide cinematic courtyard composition.",
+          "No foreground lineup.",
+          "No camera-plane pasted bodies.",
+          "No edge-hugging near character."
+        ]
+      }
+    }
+  ]
+}

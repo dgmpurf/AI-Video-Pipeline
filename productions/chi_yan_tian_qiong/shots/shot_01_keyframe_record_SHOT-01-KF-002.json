@@ -1,0 +1,57 @@
+{
+  "shots": [
+    {
+      "shot_id": "SHOT-01-KF-002",
+      "production_id": "chi_yan_tian_qiong",
+      "sequence_id": "SEQ-01",
+      "scene_id": "SCENE-01",
+      "shot_index": 1,
+      "title": "Temple gate courtyard standoff rerun keyframe",
+      "shot_type": "action",
+      "duration_seconds": 6.0,
+      "story_beat": "Fenshou and Shuangji face each other across the wet temple courtyard before combat begins.",
+      "visual_goal": "Create a medium-wide keyframe with scene depth, correct courtyard blocking, and locked character continuity.",
+      "action_goal": "Two-character confrontation staged across the mid-ground courtyard action zone.",
+      "camera_goal": "Three-quarter front-side angle across the courtyard; no front-facing character lineup.",
+      "required_asset_ids": [
+        "A-SC-TEMPLE-COURTYARD-001",
+        "A-CH-A-SUBJECT-001",
+        "A-CH-B-SUBJECT-001"
+      ],
+      "previous_shot_id": "SHOT-01-KF-001",
+      "next_shot_id": null,
+      "status": "draft",
+      "review_status": "pending_review",
+      "notes": "H3 rerun readiness package after SHOT-01-KF-001 needs_rerun decision.",
+      "three_layer_positioning_matrix": {
+        "space_layer": [
+          "The locked temple courtyard image is used as an environment reference only.",
+          "The main temple hall entrance is the background anchor.",
+          "The characters must stand in the mid-ground action zone of the wet stone courtyard, in front of the temple hall entrance.",
+          "They must not stand pasted onto the foreground camera plane.",
+          "The wet stone ground between them must remain visible as the future combat space.",
+          "The courtyard should feel like a real spatial stage, not a flat background."
+        ],
+        "character_blocking_layer": [
+          "Fenshou stands in the left-midground area of the courtyard, closer to the camera than Shuangji but still inside the courtyard space.",
+          "Fenshou's body is turned three-quarter toward the right, facing Shuangji.",
+          "His shoulders, chest, feet, and eyeline all point toward Shuangji, not toward the viewer.",
+          "Shuangji stands in the right-midground area of the courtyard, slightly farther back.",
+          "Shuangji's body is turned three-quarter toward the left, facing Fenshou.",
+          "Her shoulders, chest, feet, and eyeline all point toward Fenshou, not toward the viewer.",
+          "The two characters form a clear diagonal confrontation axis across the courtyard.",
+          "They are separated by visible wet stone ground.",
+          "They are not posing side by side for a poster."
+        ],
+        "camera_layer": [
+          "The camera observes from a three-quarter front-side angle across the courtyard.",
+          "The camera is not directly in front of the characters.",
+          "The shot is a cinematic medium-wide keyframe.",
+          "The temple hall entrance remains behind the confrontation as the background anchor.",
+          "The camera should capture both full-body characters, the space between them, and the temple architecture.",
+          "This is a confrontation scene, not a character lineup."
+        ]
+      }
+    }
+  ]
+}

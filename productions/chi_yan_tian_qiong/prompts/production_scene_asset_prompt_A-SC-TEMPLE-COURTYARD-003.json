@@ -1,0 +1,50 @@
+{
+  "prompt_id": "A-SC-TEMPLE-COURTYARD-003",
+  "production_id": "chi_yan_tian_qiong",
+  "shot_id": "SHOT-02",
+  "asset_id": "A-SC-TEMPLE-COURTYARD-003_main_hall_frontal_axis_stage",
+  "target_asset_name": "A-SC-TEMPLE-COURTYARD-003_main_hall_frontal_axis_stage",
+  "prompt_type": "asset_image",
+  "asset_role": "scene_environment",
+  "asset_scope": "production_scene_asset",
+  "task_type": "image2image",
+  "version": "v1",
+  "authoritative_prompt_source": "manual_prompt_txt",
+  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual_A-SC-TEMPLE-COURTYARD-003_main_hall_frontal_axis_stage_prompt.txt",
+  "prompt_text": "图1 作为当前 A-SC-TEMPLE-COURTYARD-002 场景版本参考。基于图1的雨中古寺庭院世界连续性、美术风格、湿石板地、冷灰蓝雨雾、木质主殿、回廊结构、经幡、积水反光和低饱和武侠电影气氛，重新生成一张新的古寺庭院空场图。\n\n注意：这一次不是简单延续图1的当前斜侧机位，也不是复制 A-SC-TEMPLE-COURTYARD-002 的 oblique composition。这是一次视角纠偏 / 机位纠偏 / 构图重定向。目标是在保留同一雨中古寺世界连续性的前提下，把镜头调整成更正面面对主殿、更居中、更稳定、更适合作为主殿前中轴战斗舞台的新版本。如果图1当前仍带有明显斜侧视角，本次必须主动纠偏为更正面的主殿中轴视角，不允许只在图1原有斜侧构图基础上做轻微修饰后继续保留 oblique composition。\n\n生成一张半写实3D武侠电影感古寺庭院空场图，作为 A-SC-TEMPLE-COURTYARD-003_main_hall_frontal_axis_stage。画面中不能有任何人物、角色、动物、黑影、人形轮廓、僧人、香客、守卫、伞下人形、雕像人物、壁画人物或战斗动作。这是场景锚点，不是最终关键帧。\n\n构图目标：\n主寺大殿 / 主阁楼必须是画面中央背景主体。镜头要比图1明显更正面地面对主殿，尽量回到主殿正门前方的中轴视角，而不是继续保持图1那种明显斜侧观看主殿的角度。主殿正门的中线应尽量接近画面垂直中心线，左右石阶、石栏杆和主殿正立面的展开关系要尽量接近对称，明确呈现“正面朝向主殿”的中轴构图感。主殿正门、石阶、石栏杆和正门前中轴区域必须更清楚、更完整、更正地呈现出来。不要让屋檐透视、侧边建筑、立柱或斜角遮挡主殿主体，不要让左右建筑边角抢走主殿中心感。\n\n空间结构：\n画面中央中景必须形成一个清楚、开阔、可用的主殿前中央湿石板战斗舞台。这个区域是未来 SHOT-02-KF-002 中两名角色近身交锋的主要落点区域，必须位于主殿石阶前方的中景湿石板区域，而不是偏到左右建筑边缘，也不是被推到前景空地最前端。中央战斗区要有真实地面透视和清楚的湿石板落脚空间。\n\n前景与左右空间：\n前景保留湿石板地和积水反光，但前景地面不能占据画面过多比例，不能压过中景战斗舞台。左侧和右侧都要保留未来人物进入和移动的空间：右侧可以支持霜玑从右侧切入中心，左侧或左前侧可以支持焚狩向中心压进。左右空间要可用，但主殿和中轴战斗区仍然是画面核心。\n\n环境连续性：\n保留雨中古寺、湿石板地、冷灰蓝雨雾、木质主殿、回廊结构、经幡或悬挂旗帜、积水反光、肃杀低饱和气氛和半写实3D武侠电影感。画面应该是同一古寺世界里的主殿正前方中央庭院空场战斗舞台，不能变成室内、街道、山门外远景、山路、桥面、废墟或其他地点。\n\n禁止项：\n不要人物，不要焚狩，不要霜玑，不要战斗，不要人形剪影，不要黑红男性轮廓，不要银蓝女性轮廓，不要僧人，不要香客，不要守卫，不要伞下人形，不要动物，不要人物雕像，不要壁画人物，不要远处人影，不要类似角色暗示物。不要武器作为焦点，不要文字，不要水印，不要角色设定卡，不要拼贴图，不要建筑细节特写，不要斜角落视角遮挡主殿，不要只剩空地而没有主殿背景锚点，不要改变为其他场景。\n",
+  "negative_prompt": "不要人物，不要焚狩，不要霜玑，不要战斗，不要人形剪影，不要黑红男性轮廓，不要银蓝女性轮廓，不要僧人、香客、守卫、伞下人形、动物、人物雕像、壁画人物、远处人影、文字、水印、拼贴图、建筑细节特写、斜侧角落主导构图或其他场景漂移。",
+  "reference_ids": [
+    "A-SC-TEMPLE-COURTYARD-002"
+  ],
+  "reference_roles": [
+    {
+      "logical_id": "A-SC-TEMPLE-COURTYARD-002",
+      "role": "primary_viewpoint_correction_reference",
+      "path": "productions/chi_yan_tian_qiong/runs/live/20260616_141522_A-SC-TEMPLE-COURTYARD-002/output/A-SC-TEMPLE-COURTYARD-002_main_hall_front_combat_stage.png"
+    }
+  ],
+  "world_continuity_context": {
+    "logical_id": "A-SC-TEMPLE-COURTYARD-001",
+    "usage": "context_only_not_actual_image_input",
+    "path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-001_locked_ancient_temple_rain_courtyard.png"
+  },
+  "source_shot_id": "SHOT-02",
+  "status": "draft_ready",
+  "needs_generation": true,
+  "locked": false,
+  "lock_status": "not_locked",
+  "review_status": "pending_human_package_review",
+  "model_version": "4.7",
+  "ratio": "16:9",
+  "resolution_type": "2k",
+  "manifest_path": "productions/chi_yan_tian_qiong/manifests/production_image2image_A-SC-TEMPLE-COURTYARD-003.csv",
+  "active_sources": [
+    "sources/AI视频制作_Source索引与使用优先级_V1.1.md",
+    "sources/AI视频制作_实测规则库_V1.9_空间调度与远近站位控制_完整版_修正版_V1_9_2.md",
+    "sources/AI视频制作_实测规则库_V1.10_视角纠偏与场景锚点重构增补稿.md",
+    "sources/Dreamina_CLI工作流与执行规范_V1.1_官方Help校正版.md",
+    "sources/DreaminaBatcher_manifest_schema_V1.1_官方Help校正版.md",
+    "sources/dreamina_cli_help.md"
+  ],
+  "notes": "Package-only reinforced viewpoint-correction scene anchor. Uses A-SC-TEMPLE-COURTYARD-002 output as the primary image2image reference; no submit/query/download executed."
+}

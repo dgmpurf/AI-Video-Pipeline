@@ -1,0 +1,20 @@
+task_id,phase,task_type,provider,model_version,ratio,resolution_type,duration,video_resolution,prompt,reference_ids,output_name,status,review_status,notes
+SHOT-01-KF-003,shot_keyframe,image2image,dreamina_cli,5.0,16:9,2k,,,"Reference image 1 is the locked temple courtyard environment. Use it for the ancient Chinese temple courtyard, light rain, wet reflective stone ground, dark wooden main hall, left corridor, left-rear building mass, distant tower, prayer flags, cool blue-gray mist, and cinematic spatial depth. Do not copy its camera angle as a rigid layout. Use it as environment identity and atmosphere.
+
+Reference image 2 is the locked Fenshou full-body subject. Use it only for Fenshou's appearance: black high ponytail, stern male face, strong athletic build, black and dark red layered battle armor, boots, and cold martial presence. Do not copy the neutral front-facing pose from the subject reference.
+
+Reference image 3 is the locked Shuangji full-body subject. Use it only for Shuangji's appearance: silver-blue high ponytail, calm cold face, blue-silver light armor, long robe silhouette, modest high-collar outfit, and restrained guardian presence. Do not copy the neutral front-facing pose from the subject reference.
+
+Create a cinematic semi-realistic 3D keyframe for SHOT-01: the first confrontation in the rain-soaked temple courtyard.
+
+Branch B spatial rule: both characters are distant, small in frame, and placed on the same far depth layer with clear left-right separation. Fenshou stands far away in the left-side courtyard zone. His feet land on wet stone ground in front of the left corridor and the left-rear building. Shuangji stands far away in the right-side courtyard zone. Her feet land in the inner-right area of the plaza in front of the main hall. Both are far, both are small, and they are clearly separated left and right.
+
+Keep a large open area of empty wet stone ground in the center between them. The wet ground should visibly reflect rain, temple architecture, and small distant character silhouettes. The two characters must not become a foreground lineup, must not stand shoulder to shoulder, must not overlap, and must not face the viewer as a character poster. Their positions should feel like world-space blocking inside the courtyard, not a flat pasted composition.
+
+The main temple hall remains the background anchor. The left corridor and left-rear building support Fenshou's far-left position. The main hall right-front plaza supports Shuangji's far-right position. The camera observes a wide cinematic courtyard composition that prioritizes spatial readability, atmosphere, and future combat space over close character portrait detail.
+
+Rain falls through the scene. Prayer flags move slightly in the wind. Mist softens the background. The locked character designs and locked temple atmosphere remain recognizable.
+
+Style: cinematic semi-realistic 3D wuxia fantasy, cool blue-gray atmosphere, low saturation, subtle ink-wash mood, detailed but not over-cluttered.
+
+Restrictions: no text, no watermark, no extra people, no animals, no character sheet layout, no three-view layout, no multiple poses, no extra heads, no duplicate Fenshou, no duplicate Shuangji, no merged bodies, no cropped feet, no modern objects, no neon lights, no sci-fi elements, no cartoon style, no cel-shading, no overpowered magic effects, no blood, do not make both characters face the viewer, do not place them as a foreground lineup, do not paste them onto the camera plane.",A-SC-TEMPLE-COURTYARD-001|A-CH-A-SUBJECT-001|A-CH-B-SUBJECT-001,SHOT-01-KF-003_branch_b_same_layer_far_standoff_keyframe,draft_ready,pending_review,Branch B SHOT-01 keyframe package; no submit executed.

@@ -1,0 +1,16 @@
+{
+  "task_id": "A-CH-A-SUBJECT-001",
+  "production_id": "chi_yan_tian_qiong",
+  "provider": "dreamina_cli",
+  "task_type": "text2image",
+  "user_approved_live_run": false,
+  "allow_single_task_only": true,
+  "allow_batch": false,
+  "allow_parallel": false,
+  "allow_auto_continue": false,
+  "allow_retry": false,
+  "dry_run_passed": true,
+  "fs_write_plan_reviewed": false,
+  "provider_live_run_enabled": false,
+  "notes": ""
+}

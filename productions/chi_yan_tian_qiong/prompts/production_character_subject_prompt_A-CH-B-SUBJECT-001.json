@@ -1,0 +1,20 @@
+{
+  "prompt_id": "A-CH-B-SUBJECT-001",
+  "production_id": "chi_yan_tian_qiong",
+  "shot_id": null,
+  "asset_id": "A-CH-B-SUBJECT-001",
+  "prompt_type": "asset_image",
+  "asset_role": "character",
+  "asset_scope": "production_character_subject",
+  "version": "v1",
+  "prompt_text": "A full-body front-facing character subject reference of Shuangji, an adult female ancient fantasy martial guardian with a cold calm presence. She has long silver-blue hair tied in a high ponytail, a focused elegant expression, clear facial features, slender athletic build, blue and silver layered light armor combined with flowing long robe panels, modest high-collar outfit, practical shoulder and arm guards, clean readable silhouette, standing in a neutral strong pose with both feet visible, arms relaxed at her sides, cinematic semi-realistic 3D character design, high detail, consistent proportions, plain light gray studio background, no environment, no extra people, no weapon, no text, no watermark, no character sheet layout, no three-view layout, no multiple poses, no cropped feet, no revealing outfit, no exaggerated chest armor, no modern clothing, no sci-fi armor, no cartoon style, no cel-shading.",
+  "negative_prompt": "no characters, no extra people, no weapon, no text, no watermark, no character sheet layout, no three-view layout, no multiple poses, no cropped feet, no modern clothing, no sci-fi armor, no cartoon style, no cel-shading",
+  "reference_ids": [],
+  "reference_roles": [],
+  "source_shot_id": null,
+  "status": "draft",
+  "lock_status": "not_locked",
+  "notes": "Phase G3 readiness package for the next production character subject asset; no submit executed.",
+  "created_at": "2026-06-14T00:00:00+00:00",
+  "updated_at": "2026-06-14T00:00:00+00:00"
+}

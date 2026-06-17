@@ -1,0 +1,2 @@
+task_id,phase,task_type,provider,model_version,ratio,resolution_type,duration,video_resolution,prompt,reference_ids,output_name,status,review_status,notes
+FAKE-LIVE-I2I,phaseF1,image2image,fake_live_provider,fake-model,16:9,2k,,,"fake live test prompt",ref_a|ref_b|scene,FAKE-LIVE-I2I_output,,,

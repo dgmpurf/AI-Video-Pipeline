@@ -1,0 +1,14 @@
+[
+  "C:/Users/msjpurf/bin/dreamina.exe",
+  "image2video",
+  "--model_version",
+  "seedance2.0fast_vip",
+  "--prompt",
+  "preflight image2video prompt",
+  "--duration",
+  "5",
+  "--video_resolution",
+  "720p",
+  "--image",
+  "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\staging\\preflight\\keyframe_c66cd3ae75dd.png"
+]

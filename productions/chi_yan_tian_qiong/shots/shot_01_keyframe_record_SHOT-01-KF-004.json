@@ -1,0 +1,37 @@
+{
+  "shots": [
+    {
+      "shot_id": "SHOT-01-KF-004",
+      "production_id": "chi_yan_tian_qiong",
+      "sequence_id": "SEQ-01",
+      "scene_id": "SCENE-01",
+      "shot_index": 1,
+      "title": "Manual Branch B model 4.7 same-depth far standoff keyframe",
+      "shot_type": "action",
+      "duration_seconds": 6.0,
+      "story_beat": "Fenshou and Shuangji face each other as two small distant figures across a rain-soaked temple courtyard.",
+      "visual_goal": "Use the manually verified Branch B prompt with locked scene composition, distant left-right placement, and Shuangji direction fix.",
+      "action_goal": "Two-character confrontation with both figures distant, small, and separated by a broad wet-stone courtyard.",
+      "camera_goal": "Preserve the locked scene camera and composition while avoiding the previous center-anchor/midground subject layout.",
+      "required_asset_ids": [
+        "A-SC-TEMPLE-COURTYARD-001",
+        "A-CH-A-SUBJECT-001",
+        "A-CH-B-SUBJECT-001"
+      ],
+      "resolved_asset_paths": {
+        "A-SC-TEMPLE-COURTYARD-001": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-001_locked_ancient_temple_rain_courtyard.png",
+        "A-CH-A-SUBJECT-001": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+        "A-CH-B-SUBJECT-001": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png"
+      },
+      "previous_shot_id": "SHOT-01-KF-003",
+      "next_shot_id": null,
+      "branch": "Branch B",
+      "manual_prompt_source_path": "productions/chi_yan_tian_qiong/prompts/manual_SHOT-01-KF-004_branch_b_model_4_7_direction_fix_prompt.txt",
+      "status": "draft_ready",
+      "needs_generation": true,
+      "locked": false,
+      "review_status": "pending_review",
+      "notes": "KF-004 package uses manual prompt txt as current source of truth. No runtime code changes."
+    }
+  ]
+}

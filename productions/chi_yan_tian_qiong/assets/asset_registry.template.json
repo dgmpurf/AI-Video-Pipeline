@@ -1,0 +1,37 @@
+﻿{
+  "assets": [
+    {
+      "logical_id": "sample_asset",
+      "candidate_id": "CANDIDATE-001",
+      "asset_type": "image",
+      "role": "source",
+      "relative_path": "assets/sample_asset.png",
+      "source_path": "tests/fixtures/media/ref_a.png",
+      "status": "candidate",
+      "review_status": "pending_review",
+      "origin_project": "chi_yan_tian_qiong",
+      "source_task_id": "TASK-REF-001",
+      "submit_id": "SUBMIT-001",
+      "review_note": "",
+      "tags": ["template", "demo"],
+      "sha256": "",
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 0,
+      "created_at": "2026-06-13T00:00:00+00:00",
+      "updated_at": "2026-06-13T00:00:00+00:00"
+    }
+  ],
+  "relationships": [
+    {
+      "logical_id": "sample_asset",
+      "candidate_id": "CANDIDATE-001",
+      "related_logical_id": "sample_asset",
+      "related_candidate_id": "CANDIDATE-002",
+      "relationship_type": "alternate_candidate",
+      "is_canonical": true,
+      "created_at": "2026-06-13T00:00:00+00:00",
+      "note": "optional"
+    }
+  ]
+}

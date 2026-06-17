@@ -1,0 +1,11 @@
+{
+  "project_root": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+  "allowed_write_roots": [
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE"
+  ],
+  "allowed_roots": [
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE"
+  ],
+  "allow_delete": false,
+  "allow_external_staging": false
+}

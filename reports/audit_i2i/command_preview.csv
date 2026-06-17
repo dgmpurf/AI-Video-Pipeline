@@ -1,0 +1,2 @@
+task_id,provider,task_type,command
+TEST-I2I,dreamina_cli,image2image,C:/Users/msjpurf/bin/dreamina.exe image2image --model_version 5.0 --ratio 16:9 --resolution_type 2k --images G:\AICODING\AI_VIDEO\AI_VIDEO_PIPELINE\staging\ref_a_0b35d7027e15.png --images G:\AICODING\AI_VIDEO\AI_VIDEO_PIPELINE\staging\ref_b_0bf38de3fdff.png --images G:\AICODING\AI_VIDEO\AI_VIDEO_PIPELINE\staging\scene_6b03c4325e6c.png --prompt test prompt --output_name TEST-I2I_output
