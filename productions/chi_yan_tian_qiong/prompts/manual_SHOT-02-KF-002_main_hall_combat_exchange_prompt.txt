@@ -1,27 +1,83 @@
-图1 作为唯一场景锚点与构图环境参考。场景必须使用 A-SC-TEMPLE-COURTYARD-002 的主殿正前方中央庭院战斗区：雨中古寺、湿石板地、冷灰蓝雨雾、木质主殿正面、左右回廊、经幡、积水反光、清楚的前景湿石板、中景交锋区和背景主殿结构。不要使用 SHOT-01 的远距离静态对峙构图，不要使用旧场景 A-SC-TEMPLE-COURTYARD-001 作为场景锚点。
+Reference image 1 is the locked SHOT-02 scene anchor:
+A-SC-TEMPLE-COURTYARD-004, the true frontal-axis main-hall combat-stage scene.
+Use it as the only scene composition and camera anchor. Preserve the rainy ancient
+temple continuity, the frontal main hall, the centered door and stone steps, the
+wet stone mid-courtyard combat-stage area, the left and right entry spaces, and
+the cold gray-blue rain lighting. Do not use A-SC-TEMPLE-COURTYARD-001,
+A-SC-TEMPLE-COURTYARD-002, A-SC-TEMPLE-COURTYARD-003, or any SHOT-01 keyframe
+as the scene anchor.
 
-图2 作为焚狩角色外观参考，只用于角色外观，不用于站姿构图。保持黑发高束、黑红重甲、男性武者气质。画面中只有一个焚狩。左侧或中左侧偏前的黑红男性是唯一的焚狩，画面中不允许再出现任何第二个黑红男性轮廓。
+Reference image 2 is the locked Fenshou full-body subject reference. Use it only
+for Fenshou's appearance: black high-tied hair, black-and-red heavy armor, male
+martial-warrior presence, body type, costume colors, and material language. It
+does not define pose, stance, scale, or composition. There must be exactly one
+Fenshou in the image.
 
-图3 作为霜玑角色外观参考，只用于角色外观，不用于站姿构图。保持银蓝高束长发、蓝白银轻甲长衣、女性武者气质。画面中只有一个霜玑。右侧切入的银蓝女性是唯一的霜玑，画面中不允许再出现任何第二个银蓝女性轮廓。
+Reference image 3 is the locked Shuangji full-body subject reference. Use it only
+for Shuangji's appearance: silver-blue high-tied long hair, blue-white-silver
+light armor and long robe, female martial-warrior presence, body type, costume
+colors, and material language. It does not define pose, stance, scale, or
+composition. There must be exactly one Shuangji in the image.
 
-生成一张半写实3D武侠电影关键帧，表现 SHOT-02 的第一轮近身战斗交换。地点是主殿正前方中央庭院战斗区，战斗发生在湿石板中庭，不是在远处背景，也不是重新回到静态站位。
+Generate one semi-realistic 3D wuxia cinematic keyframe for SHOT-02-KF-002:
+the first close-combat clash in front of the main hall.
 
-空间与机位：
-使用电影化三分之二斜侧机位，镜头略低、略向前推近。主殿正面和左右回廊提供清楚背景方向，湿石板地面透视必须清楚。画面要有明确前景地面、中景交锋区、背景主殿结构。不要横版游戏式纯侧面平拍，不要舞台侧视图，不要把两人贴在同一条水平线上。两人必须有前后层次和斜向对战轴线。
+The clash happens in the midground wet stone combat-stage area directly in front
+of the main hall door and stone steps. This is not a distant standoff, not a
+poster pose, not a character lineup, and not a side-scrolling game composition.
+The locked frontal main-hall axis remains the background anchor, while the two
+fighters create diagonal combat tension across the midground.
 
-战斗调度：
-焚狩位于画面中左侧偏前的中景区域，脚踩湿石板，重心压低，黑红重甲形成沉重压迫感。他正在稳步向中央战斗区压进，肩膀、腰胯和手臂形成可信的进攻发力链。
+Blocking:
+Fenshou approaches from the left / left-front side toward the central combat
+area. His feet are planted on the wet stone floor in the midground, his weight is
+low, and his shoulder, waist, knees, and arms show a believable forward attack
+chain. He is pressing inward from the left-front direction, not standing flat
+beside Shuangji on the same horizontal line.
+Fenshou drives inward from the left-front with a heavy forward martial strike or
+shoulder-led pressure, using fist / palm / elbow / shoulder pressure rather than
+random weapon action.
 
-霜玑从画面右侧向中心切入，身体朝向左侧的焚狩，头部和视线明确看向焚狩。她不是看镜头，不是角色展示站姿。霜玑的动作是快速切入后的近身应对，可以是侧身突入、斜向格挡、卸力或反击准备。她的位置应从右侧进入中庭交锋区，与焚狩形成清楚的右向左切入动势。
+Shuangji cuts in from the right side toward the central combat area. Her body
+faces left toward Fenshou; her head and eyes clearly look at Fenshou, not at the
+camera. She is entering the combat-stage space from the right with a fast
+diagonal response, not posing as a frontal character display.
+Shuangji meets Fenshou's pressure with a diagonal forearm guard / palm deflection.
+There is one clear contact or near-contact point between their arms in the
+central midground combat zone.
 
-第一轮交锋瞬间：
-两人已经进入近身交锋范围，但不要身体融合，不要互相遮挡到无法辨认。焚狩的进攻压力来自中左侧，霜玑从右侧切向中心形成迎击。画面必须读得出“霜玑从右切入中心，与焚狩在主殿前中央庭院区域发生第一轮交锋”。
+First clash instant:
+Freeze the instant just before or exactly at the first close-range clash.
+The two fighters have entered close-combat range, but their bodies must remain
+separate and readable. The image must clearly read as: Shuangji cuts in from the
+right and meets Fenshou's left-front pressure in the central wet stone combat
+area in front of the main hall. Their positions must have depth, diagonal
+orientation, and cinematic perspective. Do not place both characters flat on the
+same horizontal plane.
 
-身体力学：
-两人的脚都必须落在真实湿石板地面上。膝盖、腰胯、肩膀、手臂和武者姿态必须可信。衣摆、发丝、雨水和地面积水有轻微冲击反馈。可以有少量水花和衣摆动势，但不要奔跑残影，不要夸张飞扑，不要漂浮，不要多余肢体，不要肢体穿模，不要姿势断裂。
+Body mechanics:
+Both characters' feet must connect to the real wet stone floor. Knees, hips,
+shoulders, arms, martial stance, forearm guard, fist / palm / elbow / shoulder
+pressure, and the single contact or near-contact point must be physically
+credible. Add subtle impact feedback from clothing, hair, rain, and shallow
+puddles: small water splashes, wet reflections, cloth motion, and stone-floor
+response. Do not create floating bodies, exaggerated flying silhouettes, broken
+poses, fused bodies, extra limbs, soft-body distortions, or unreadable overlap.
 
-构图目标：
-画面应像正式电影战斗关键帧，而不是双人角色立绘，也不是横版格斗游戏截图。焚狩和霜玑都要可辨认，战斗关系要清楚，主殿前中央庭院战斗区要清楚。保留雨夜古寺连续性，保留湿石板反光和主殿正面压迫感。
+Camera and composition:
+Use a cinematic martial-arts keyframe camera, slightly low and forward, aligned
+with the frontal main-hall axis as the background anchor. Keep clear foreground
+wet stone, the midground clash zone, and the background main-hall structure. The
+main hall door and stone steps should remain legible behind the fighters. Avoid
+pure side-view flat staging, stage-theater side view, side-scrolling game feel,
+poster symmetry, and both characters facing the viewer.
 
-禁止项：
-不要文字，不要水印，不要设定卡，不要三视图，不要四联图。不要第三人，不要第二个焚狩，不要第二个霜玑，不要多余人物。不要横版格斗游戏感，不要纯侧面平拍，不要舞台侧视图，不要混乱运镜，不要镜头环绕，不要角色互相背对，不要两人都正面看镜头，不要远距离静态对峙，不要改变主殿前中央庭院为其他场景，不要使用旧场景构图作为场景锚点。
+Negative constraints:
+No text, no watermark, no setting card, no triptych, no four-panel layout. No
+third person, no duplicate Fenshou, no duplicate Shuangji, no extra people. No
+fused bodies, no extra limbs, no missing limbs. Do not add random weapons unless
+they are already clearly implied by the locked subject references. Do not let
+arms, torsos, clothing, or contact points cross in a way that makes the separated
+bodies unreadable. Do not turn this into a static distant standoff, a
+side-scrolling game screenshot, a character poster, a duel lineup, or a flat
+two-person display. Do not change the scene into another location.

@@ -2,7 +2,7 @@
 
 Task: SHOT-02-KF-002
 
-Status: draft_ready_waiting_scene_anchor
+Status: package_ready_no_submit
 
 Needs generation: true
 
@@ -10,30 +10,37 @@ Locked: false
 
 ## Scene Anchor Requirement
 
-- Required scene anchor: A-SC-TEMPLE-COURTYARD-002
-- Expected locked ref: productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-002_locked_main_hall_front_combat_stage.png
-- Current blocker: the A-SC-TEMPLE-COURTYARD-002 locked ref does not exist yet.
-- Submit policy: do not submit SHOT-02-KF-002 until A-SC-TEMPLE-COURTYARD-002 has been generated, human-approved, and locked.
+- Required scene anchor: A-SC-TEMPLE-COURTYARD-004
+- Locked ref: productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png
+- Anchor status: locked_after_human_review
+- Review status: approved
+- SHA256: 831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452
+- Submit policy: package only for now; do not submit until the user gives explicit approval for exactly one Dreamina image2image task.
 
 ## Staging Intent
 
-SHOT-02-KF-002 stages the first close combat exchange in front of the main hall central courtyard zone.
+SHOT-02-KF-002 stages the first close-combat clash in front of the main hall.
 
-Shuangji should cut in from the right toward the center and engage Fenshou in the wet stone mid-courtyard combat area.
+Fenshou approaches from the left / left-front side toward the central combat area. Shuangji cuts in from the right side toward the central combat area. They meet in the midground wet stone combat-stage area in front of the main hall door and stone steps.
+
+The result should read as a frozen instant before or at the first close-range clash, not a static distant standoff, poster pose, side-scrolling game composition, or flat two-person lineup.
 
 ## Required Visual Checks After Generation
 
 - exactly two characters only
 - one Fenshou only
 - one Shuangji only
-- A-SC-TEMPLE-COURTYARD-002 is the only scene anchor
-- no A-SC-TEMPLE-COURTYARD-001 scene fallback
+- A-SC-TEMPLE-COURTYARD-004 is the only scene anchor
+- no A-SC-TEMPLE-COURTYARD-001/002/003 scene fallback
 - no SHOT-01 far-distance static standoff
-- main hall front central courtyard zone is visible
+- main hall front central combat-stage area is visible
+- Fenshou enters from left / left-front toward center
 - Shuangji cuts in from right toward center
-- Fenshou is readable as the black-red male combatant
-- combat relationship is clear
+- first close-range clash relationship is clear
+- frontal main-hall axis remains the background anchor
+- midground diagonal combat tension is visible
 - side-scroller game feel avoided
+- no duplicate characters, no third person, no fused bodies, no extra limbs
 - body mechanics credible
 - rainy temple continuity preserved
 
@@ -46,4 +53,4 @@ Shuangji should cut in from the right toward the center and engage Fenshou in th
 
 ## Decision
 
-blocked_waiting_scene_anchor
+package_ready_no_submit

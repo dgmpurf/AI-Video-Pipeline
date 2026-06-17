@@ -1,48 +1,76 @@
-{
-  "task_id": "SHOT-02-KF-002",
-  "shot_id": "SHOT-02",
-  "candidate_id": "SHOT-02-KF-002_cand_001",
-  "prompt_type": "keyframe_image",
-  "task_type": "image2image",
-  "version": "v002",
-  "branch": "main_hall_front_combat_stage",
-  "status": "draft_ready_waiting_scene_anchor",
-  "needs_generation": true,
-  "locked": false,
-  "official_keyframe": false,
-  "authoritative_prompt_source": "manual_prompt_txt",
-  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual_SHOT-02-KF-002_main_hall_combat_exchange_prompt.txt",
-  "prompt_text": "图1 作为唯一场景锚点与构图环境参考。场景必须使用 A-SC-TEMPLE-COURTYARD-002 的主殿正前方中央庭院战斗区：雨中古寺、湿石板地、冷灰蓝雨雾、木质主殿正面、左右回廊、经幡、积水反光、清楚的前景湿石板、中景交锋区和背景主殿结构。不要使用 SHOT-01 的远距离静态对峙构图，不要使用旧场景 A-SC-TEMPLE-COURTYARD-001 作为场景锚点。\n\n图2 作为焚狩角色外观参考，只用于角色外观，不用于站姿构图。保持黑发高束、黑红重甲、男性武者气质。画面中只有一个焚狩。左侧或中左侧偏前的黑红男性是唯一的焚狩，画面中不允许再出现任何第二个黑红男性轮廓。\n\n图3 作为霜玑角色外观参考，只用于角色外观，不用于站姿构图。保持银蓝高束长发、蓝白银轻甲长衣、女性武者气质。画面中只有一个霜玑。右侧切入的银蓝女性是唯一的霜玑，画面中不允许再出现任何第二个银蓝女性轮廓。\n\n生成一张半写实3D武侠电影关键帧，表现 SHOT-02 的第一轮近身战斗交换。地点是主殿正前方中央庭院战斗区，战斗发生在湿石板中庭，不是在远处背景，也不是重新回到静态站位。\n\n空间与机位：\n使用电影化三分之二斜侧机位，镜头略低、略向前推近。主殿正面和左右回廊提供清楚背景方向，湿石板地面透视必须清楚。画面要有明确前景地面、中景交锋区、背景主殿结构。不要横版游戏式纯侧面平拍，不要舞台侧视图，不要把两人贴在同一条水平线上。两人必须有前后层次和斜向对战轴线。\n\n战斗调度：\n焚狩位于画面中左侧偏前的中景区域，脚踩湿石板，重心压低，黑红重甲形成沉重压迫感。他正在稳步向中央战斗区压进，肩膀、腰胯和手臂形成可信的进攻发力链。\n\n霜玑从画面右侧向中心切入，身体朝向左侧的焚狩，头部和视线明确看向焚狩。她不是看镜头，不是角色展示站姿。霜玑的动作是快速切入后的近身应对，可以是侧身突入、斜向格挡、卸力或反击准备。她的位置应从右侧进入中庭交锋区，与焚狩形成清楚的右向左切入动势。\n\n第一轮交锋瞬间：\n两人已经进入近身交锋范围，但不要身体融合，不要互相遮挡到无法辨认。焚狩的进攻压力来自中左侧，霜玑从右侧切向中心形成迎击。画面必须读得出“霜玑从右切入中心，与焚狩在主殿前中央庭院区域发生第一轮交锋”。\n\n身体力学：\n两人的脚都必须落在真实湿石板地面上。膝盖、腰胯、肩膀、手臂和武者姿态必须可信。衣摆、发丝、雨水和地面积水有轻微冲击反馈。可以有少量水花和衣摆动势，但不要奔跑残影，不要夸张飞扑，不要漂浮，不要多余肢体，不要肢体穿模，不要姿势断裂。\n\n构图目标：\n画面应像正式电影战斗关键帧，而不是双人角色立绘，也不是横版格斗游戏截图。焚狩和霜玑都要可辨认，战斗关系要清楚，主殿前中央庭院战斗区要清楚。保留雨夜古寺连续性，保留湿石板反光和主殿正面压迫感。\n\n禁止项：\n不要文字，不要水印，不要设定卡，不要三视图，不要四联图。不要第三人，不要第二个焚狩，不要第二个霜玑，不要多余人物。不要横版格斗游戏感，不要纯侧面平拍，不要舞台侧视图，不要混乱运镜，不要镜头环绕，不要角色互相背对，不要两人都正面看镜头，不要远距离静态对峙，不要改变主殿前中央庭院为其他场景，不要使用旧场景构图作为场景锚点。",
-  "manifest_path": "productions/chi_yan_tian_qiong/manifests/production_image2image_SHOT-02-KF-002.csv",
-  "reference_ids": [
-    "A-SC-TEMPLE-COURTYARD-002",
-    "A-CH-A-SUBJECT-001",
-    "A-CH-B-SUBJECT-001"
-  ],
-  "scene_anchor_policy": "A-SC-TEMPLE-COURTYARD-002 is the only scene anchor; do not use A-SC-TEMPLE-COURTYARD-001 or SHOT-01 keyframe as scene anchor.",
-  "required_scene_anchor": {
-    "logical_id": "A-SC-TEMPLE-COURTYARD-002",
-    "expected_locked_ref": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-002_locked_main_hall_front_combat_stage.png",
-    "current_status": "pending_generation_and_human_lock",
-    "submit_blocker": true
-  },
-  "locked_refs": [
-    "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-002_locked_main_hall_front_combat_stage.png",
-    "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
-    "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png"
-  ],
-  "settings": {
-    "provider": "dreamina_cli",
-    "model_version": "4.7",
-    "ratio": "16:9",
-    "resolution_type": "2k"
-  },
-  "staging": {
-    "location": "main hall front central courtyard combat zone",
-    "fenshou": "mid-left or center-left foreground/midground pressure",
-    "shuangji": "cuts in from the right toward center",
-    "combat_relationship": "first close combat exchange in the mid-courtyard"
-  },
-  "created_at": "2026-06-16T21:25:00+08:00",
-  "updated_at": "2026-06-16T21:25:00+08:00"
+﻿{
+    "task_id":  "SHOT-02-KF-002",
+    "shot_id":  "SHOT-02",
+    "candidate_id":  "SHOT-02-KF-002_cand_001",
+    "prompt_type":  "keyframe_image",
+    "task_type":  "image2image",
+    "version":  "v003",
+    "branch":  "main_hall_true_frontal_axis_first_clash",
+    "status":  "package_ready_no_submit",
+    "needs_generation":  true,
+    "locked":  false,
+    "official_keyframe":  false,
+    "authoritative_prompt_source":  "manual_prompt_txt",
+    "manual_prompt_path":  "productions/chi_yan_tian_qiong/prompts/manual_SHOT-02-KF-002_main_hall_combat_exchange_prompt.txt",
+    "manifest_path":  "productions/chi_yan_tian_qiong/manifests/production_image2image_SHOT-02-KF-002.csv",
+    "reference_ids":  [
+                          "A-SC-TEMPLE-COURTYARD-004",
+                          "A-CH-A-SUBJECT-001",
+                          "A-CH-B-SUBJECT-001"
+                      ],
+    "scene_anchor_policy":  "Use locked A-SC-TEMPLE-COURTYARD-004 as the only SHOT-02 scene and camera anchor.",
+    "required_scene_anchor":  {
+                                  "logical_id":  "A-SC-TEMPLE-COURTYARD-004",
+                                  "locked_ref":  "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+                                  "status":  "locked_after_human_review",
+                                  "review_status":  "approved",
+                                  "sha256":  "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452",
+                                  "dimensions":  "2560x1440"
+                              },
+    "locked_refs":  [
+                        "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+                        "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+                        "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png"
+                    ],
+    "settings":  {
+                     "provider":  "dreamina_cli",
+                     "model_version":  "4.7",
+                     "ratio":  "16:9",
+                     "resolution_type":  "2k",
+                     "poll":  0
+                 },
+    "staging":  {
+                    "location":  "midground wet stone combat-stage area directly in front of the main hall door and stone steps",
+                    "fenshou":  "approaches from the left / left-front side toward the central combat area",
+                    "shuangji":  "cuts in from the right side toward the central combat area",
+                    "combat_relationship":  "frozen instant before or at the first close-range clash"
+                },
+    "composition_constraints":  [
+                                    "Keep the frontal main-hall axis as the background anchor.",
+                                    "Use diagonal combat tension in the midground.",
+                                    "Keep depth and cinematic perspective.",
+                                    "Do not create a static distant standoff.",
+                                    "Do not create a poster pose.",
+                                    "Do not create a side-scrolling game composition.",
+                                    "Do not place both characters flat on the same horizontal plane.",
+                                    "No duplicated characters, no third person, no fused bodies, no extra limbs."
+                                ],
+    "source_read_status":  {
+                               "read_existing_sources":  [
+                                                             "sources/AI瑙嗛鍒朵綔_瀹炴祴瑙勫垯搴揰V1.2_鍔ㄤ綔鍙樿韩杩愰暅澧炶ˉ绋?md",
+                                                             "sources/AI瑙嗛鍒朵綔_瀹炴祴瑙勫垯搴揰V1.9_绌洪棿璋冨害涓庤繙杩戠珯浣嶆帶鍒禵瀹屾暣鐗坃淇鐗坃V1_9_2.md",
+                                                             "sources/AI瑙嗛鍒朵綔_瀹炴祴瑙勫垯搴揰V1.10_瑙嗚绾犲亸涓庡満鏅敋鐐归噸鏋勫琛ョ.md",
+                                                             "sources/Dreamina_CLI宸ヤ綔娴佷笌鎵ц瑙勮寖_V1.1_瀹樻柟Help鏍℃鐗?md",
+                                                             "sources/DreaminaBatcher_manifest_schema_V1.1_瀹樻柟Help鏍℃鐗?md",
+                                                             "sources/dreamina_cli_help.md",
+                                                             "sources/AI视频制作_Source索引与使用优先级_V1.2.md",
+                                                             "sources/AI视频制作_实测规则库_V1.10.1_视角重构短硬Prompt地图风格与CTRL_CAM补丁.md"
+                                                         ],
+                               "missing_requested_sources":  [
+
+                                                             ],
+                               "package_note":  "All requested source files were present during this re-audit; no missing requested source blockers remain."
+                           },
+    "created_at":  "2026-06-16T21:25:00+08:00",
+    "updated_at":  "2026-06-17T00:00:00+08:00"
 }
