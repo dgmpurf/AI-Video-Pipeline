@@ -3,9 +3,9 @@
 Task: SHOT-02-KF-002-R02_safe
 Parent task: SHOT-02-KF-002-R01
 
-Status: package_ready_no_submit
-Needs generation: true
-Locked: false
+Status: locked_official_keyframe
+Needs generation: false
+Locked: true
 
 ## Rerun Reason
 
@@ -112,3 +112,16 @@ SHOT_02_KF_002_R02_SAFE_PACKAGE_READY_NO_SUBMIT
   - slight horizontal-duel tendency recorded as minor visual risk
   - do not lock automatically
   - no auto-continue
+
+## Official Keyframe Lock Registration - 2026-06-17
+
+- approved_to_lock: true
+- lock_source: SHOT-02-KF-002-R02_safe
+- official_keyframe_for_shot: SHOT-02
+- locked: true
+- official_keyframe: true
+- candidate_status: locked_official
+- locked_keyframe_path: productions/chi_yan_tian_qiong/locked_refs/SHOT-02-KF-002_locked_main_hall_first_clash.png
+- acceptance: approved for official SHOT-02 keyframe
+- accepted minor risks: chain/whip-like hand element; slight horizontal-duel tendency
+- do not auto-lock in code pipeline; manual lock decision recorded only

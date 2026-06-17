@@ -1,6 +1,6 @@
 # Chi Yan Tian Qiong Production Status
 
-current_production_status: shot_02_scene_anchor_004_locked
+current_production_status: shot_02_kf_002_official_keyframe_locked
 
 ## Historical milestones
 - scene_and_first_character_subject_locked
@@ -86,8 +86,27 @@ current_production_status: shot_02_scene_anchor_004_locked
 - staging: Shuangji cuts in from the right toward center and engages Fenshou in the main hall front mid-courtyard combat area
 - recommended_preferred_scene_anchor: A-SC-TEMPLE-COURTYARD-004
 
+## SHOT-02 official keyframe (locked)
+- task_id: SHOT-02-KF-002-R02_safe
+- lock_source_task: SHOT-02-KF-002-R02_safe
+- prompt_path: productions/chi_yan_tian_qiong/prompts/shot_02_keyframe_prompt_SHOT-02-KF-002-R02_safe.json
+- manual_prompt_path: productions/chi_yan_tian_qiong/prompts/manual_SHOT-02-KF-002-R02_safe_main_hall_action_practice_prompt.txt
+- manifest_path: productions/chi_yan_tian_qiong/manifests/production_image2image_SHOT-02-KF-002-R02_safe.csv
+- status: locked_official_keyframe
+- official_keyframe_for_shot: SHOT-02
+- preferred_candidate: true
+- locked: true
+- official_keyframe: true
+- approved_to_lock: true
+- lock_target: productions/chi_yan_tian_qiong/locked_refs/SHOT-02-KF-002_locked_main_hall_first_clash.png
+- source_output: productions/chi_yan_tian_qiong/runs/live/SHOT-02-KF-002-R02_safe_20260617_204221/SHOT-02-KF-002-R02_safe_main_hall_action_practice.png
+- accepted_minor_risks:
+  - chain/whip-like hand element
+  - slight horizontal-duel tendency
+  - do not auto-continue to video generation
+
 ## Next recommended action
-- Submit SHOT-02-KF-002 only after explicit user approval for exactly one Dreamina image2image task (no batch, no auto-continue).
+- Use SHOT-02-KF-002-R02_safe as the official SHOT-02 keyframe for downstream planning; explicit user approval required before any next submission, no auto-continue.
 
 ## SHOT-02 viewpoint-correction scene reference readiness
 - task_id: A-SC-TEMPLE-COURTYARD-004

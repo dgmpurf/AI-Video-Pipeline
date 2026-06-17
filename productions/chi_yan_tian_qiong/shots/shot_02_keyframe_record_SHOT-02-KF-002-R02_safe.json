@@ -8,25 +8,32 @@
     "shot_id":  "SHOT-02",
     "candidate_id":  "SHOT-02-KF-002-R02_safe_cand_001",
     "branch":  "main_hall_true_frontal_axis_safe_action_practice_cn",
-    "status":  "success",
+    "status":  "locked_official_keyframe",
     "rerun_reason":  "R01 platform compliance issue; use sanitized refs and softer Chinese prompt.",
     "needs_generation":  true,
-    "locked":  false,
-    "official_keyframe":  false,
+    "locked":  true,
+    "official_keyframe":  true,
     "preferred_candidate":  true,
-    "candidate_status":  "preferred",
+    "candidate_status":  "locked_official",
+    "official_keyframe_for_shot":  "SHOT-02",
+    "lock_source":  "SHOT-02-KF-002-R02_safe",
     "current_preferred_keyframe_for_shot":  "SHOT-02",
+    "official_keyframe_path":  "productions/chi_yan_tian_qiong/locked_refs/SHOT-02-KF-002_locked_main_hall_first_clash.png",
+    "approved_to_lock":  true,
+    "lock_decision_reason":  "Preserves A-SC-004 anchor; two characters; clear near-contact; readable separated bodies; suitable official SHOT-02 keyframe despite accepted minor risks.",
     "review_result":  {
                          "result":  "preferred_candidate_passed",
+                         "candidate_status":  "locked_official",
                          "human_reviewer":  "manual",
                          "reviewed_at":  "2026-06-17T20:42:21+08:00",
                          "review_notes":  [
                                               "A-SC-004前殿主轴构图可读，门、石阶、栏杆清晰",
                                               "湿石板区域与雨雾反光保留",
                                               "仅两人：焚狩左侧、霜玑右侧，出现近距离前臂接触/近接触",
-                                              "可接受轻微风险：Fenshou手势可能含链状/鞭状元素；构图有轻微横向对决倾向"
+                                              "可接受轻微风险：Fenshou手势可能含链状/鞭状元素；构图有轻微横向对决倾向",
+                                              "approved_to_lock=true"
                                           ],
-                         "locked":  false
+                         "locked":  true
                      },
     "prompt_path":  "productions/chi_yan_tian_qiong/prompts/shot_02_keyframe_prompt_SHOT-02-KF-002-R02_safe.json",
     "manual_prompt_path":  "productions/chi_yan_tian_qiong/prompts/manual_SHOT-02-KF-002-R02_safe_main_hall_action_practice_prompt.txt",

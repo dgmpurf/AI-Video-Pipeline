@@ -58,7 +58,7 @@ dreamina image2image `
 
 ## Decision
 
-SHOT_02_KF_002_R02_SAFE_PACKAGE_READY_NO_SUBMIT
+SHOT_02_KF_002_R02_SAFE_LOCKED_OFFICIAL_KEYFRAME
 
 ## Single Submit Result - 2026-06-17
 
@@ -108,3 +108,13 @@ SHOT_02_KF_002_R02_SAFE_PACKAGE_READY_NO_SUBMIT
 - output path: productions/chi_yan_tian_qiong/runs/live/SHOT-02-KF-002-R02_safe_20260617_204221/SHOT-02-KF-002-R02_safe_main_hall_action_practice.png
 - do not lock this image yet
 - no batch/no retry/no auto-continue
+## Official Keyframe Lock Registration - 2026-06-17
+
+- lock decision: approved_to_lock=true
+- lock_source: SHOT-02-KF-002-R02_safe
+- lock target: productions/chi_yan_tian_qiong/locked_refs/SHOT-02-KF-002_locked_main_hall_first_clash.png
+- locked=true; official_keyframe=true; candidate_status=locked_official
+- lock risk log: chain/whip-like hand element and slight horizontal-duel tendency accepted
+- locked keyframe path: productions/chi_yan_tian_qiong/locked_refs/SHOT-02-KF-002_locked_main_hall_first_clash.png
+- approved by human for official keyframe status
+- status: official keyframe candidate now active; video generation not started automatically
