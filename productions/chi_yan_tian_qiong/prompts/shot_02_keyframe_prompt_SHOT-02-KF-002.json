@@ -6,7 +6,7 @@
     "task_type":  "image2image",
     "version":  "v003",
     "branch":  "main_hall_true_frontal_axis_first_clash",
-    "status":  "package_ready_no_submit",
+    "status":  "submitted_failed",
     "needs_generation":  true,
     "locked":  false,
     "official_keyframe":  false,
@@ -72,5 +72,20 @@
                                "package_note":  "All requested source files were present during this re-audit; no missing requested source blockers remain."
                            },
     "created_at":  "2026-06-16T21:25:00+08:00",
-    "updated_at":  "2026-06-17T00:00:00+08:00"
+    "updated_at":  "2026-06-17T20:07:54+08:00",
+    "submission":  {
+                       "submit_id":  "d5e31d12-29af-4d2d-a93b-62055843b172",
+                       "logid":  "2026061720061516925404700897502E2",
+                       "submit_gen_status":  "querying",
+                       "query_status":  "fail",
+                       "fail_reason":  "generation failed: final generation failed",
+                       "credit_count":  1,
+                       "submitted_at":  "2026-06-17T20:07:54+08:00",
+                       "queried_at":  "2026-06-17T20:07:54+08:00",
+                       "downloaded":  false,
+                       "output_path":  null,
+                       "run_dir":  null,
+                       "retry_count":  0,
+                       "auto_continue":  false
+                   }
 }

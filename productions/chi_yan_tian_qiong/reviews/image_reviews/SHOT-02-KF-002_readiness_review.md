@@ -54,3 +54,15 @@ The result should read as a frozen instant before or at the first close-range cl
 ## Decision
 
 package_ready_no_submit
+
+## Single Submit Result - 2026-06-17
+
+- submit_id: d5e31d12-29af-4d2d-a93b-62055843b172
+- logid: 2026061720061516925404700897502E2
+- submit status: querying
+- query status: fail
+- credit_count: 1
+- fail_reason: generation failed: final generation failed
+- download: not performed
+- retry: not performed
+- lock status: not locked

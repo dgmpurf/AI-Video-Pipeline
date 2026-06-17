@@ -1,44 +1,56 @@
-{
-  "task_id": "SHOT-02-KF-002",
-  "shot_id": "SHOT-02",
-  "candidate_id": "SHOT-02-KF-002_cand_001",
-  "branch": "main_hall_true_frontal_axis_first_clash",
-  "status": "package_ready_no_submit",
-  "needs_generation": true,
-  "locked": false,
-  "official_keyframe": false,
-  "prompt_path": "productions/chi_yan_tian_qiong/prompts/shot_02_keyframe_prompt_SHOT-02-KF-002.json",
-  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual_SHOT-02-KF-002_main_hall_combat_exchange_prompt.txt",
-  "manifest_path": "productions/chi_yan_tian_qiong/manifests/production_image2image_SHOT-02-KF-002.csv",
-  "scene_anchor_policy": "Use locked A-SC-TEMPLE-COURTYARD-004 as the only SHOT-02 scene anchor.",
-  "required_scene_anchor": {
-    "logical_id": "A-SC-TEMPLE-COURTYARD-004",
-    "locked_ref": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
-    "status": "locked_after_human_review",
-    "review_status": "approved",
-    "sha256": "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452"
-  },
-  "reference_ids": [
-    "A-SC-TEMPLE-COURTYARD-004",
-    "A-CH-A-SUBJECT-001",
-    "A-CH-B-SUBJECT-001"
-  ],
-  "locked_refs": [
-    "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
-    "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
-    "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png"
-  ],
-  "narrative_function": "First close-combat clash for SHOT-02 in front of the main hall.",
-  "staging_notes": [
-    "Fenshou approaches from the left / left-front side toward the central combat area.",
-    "Shuangji cuts in from the right side toward the central combat area.",
-    "They meet in the midground wet stone combat-stage area in front of the main hall.",
-    "This is the frozen instant before or at the first close-range clash.",
-    "Do not return to a static distant standoff or poster composition."
-  ],
-  "model_version": "4.7",
-  "ratio": "16:9",
-  "resolution_type": "2k",
-  "created_at": "2026-06-16T21:25:00+08:00",
-  "updated_at": "2026-06-17T00:00:00+08:00"
+﻿{
+    "task_id":  "SHOT-02-KF-002",
+    "shot_id":  "SHOT-02",
+    "candidate_id":  "SHOT-02-KF-002_cand_001",
+    "branch":  "main_hall_true_frontal_axis_first_clash",
+    "status":  "submitted_failed",
+    "needs_generation":  true,
+    "locked":  false,
+    "official_keyframe":  false,
+    "prompt_path":  "productions/chi_yan_tian_qiong/prompts/shot_02_keyframe_prompt_SHOT-02-KF-002.json",
+    "manual_prompt_path":  "productions/chi_yan_tian_qiong/prompts/manual_SHOT-02-KF-002_main_hall_combat_exchange_prompt.txt",
+    "manifest_path":  "productions/chi_yan_tian_qiong/manifests/production_image2image_SHOT-02-KF-002.csv",
+    "scene_anchor_policy":  "Use locked A-SC-TEMPLE-COURTYARD-004 as the only SHOT-02 scene anchor.",
+    "required_scene_anchor":  {
+                                  "logical_id":  "A-SC-TEMPLE-COURTYARD-004",
+                                  "locked_ref":  "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+                                  "status":  "locked_after_human_review",
+                                  "review_status":  "approved",
+                                  "sha256":  "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452"
+                              },
+    "reference_ids":  [
+                          "A-SC-TEMPLE-COURTYARD-004",
+                          "A-CH-A-SUBJECT-001",
+                          "A-CH-B-SUBJECT-001"
+                      ],
+    "locked_refs":  [
+                        "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+                        "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+                        "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png"
+                    ],
+    "narrative_function":  "First close-combat clash for SHOT-02 in front of the main hall.",
+    "staging_notes":  [
+                          "Fenshou approaches from the left / left-front side toward the central combat area.",
+                          "Shuangji cuts in from the right side toward the central combat area.",
+                          "They meet in the midground wet stone combat-stage area in front of the main hall.",
+                          "This is the frozen instant before or at the first close-range clash.",
+                          "Do not return to a static distant standoff or poster composition."
+                      ],
+    "model_version":  "4.7",
+    "ratio":  "16:9",
+    "resolution_type":  "2k",
+    "created_at":  "2026-06-16T21:25:00+08:00",
+    "updated_at":  "2026-06-17T20:07:54+08:00",
+    "submission":  {
+                       "submit_id":  "d5e31d12-29af-4d2d-a93b-62055843b172",
+                       "logid":  "2026061720061516925404700897502E2",
+                       "submit_gen_status":  "querying",
+                       "query_status":  "fail",
+                       "fail_reason":  "generation failed: final generation failed",
+                       "credit_count":  1,
+                       "downloaded":  false,
+                       "output_path":  null,
+                       "run_dir":  null,
+                       "retry_count":  0
+                   }
 }

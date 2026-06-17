@@ -76,3 +76,16 @@ dreamina image2image `
 
 SHOT_02_KF_002_PACKAGE_READY_NO_SUBMIT
 
+
+## Single Submit Result - 2026-06-17
+
+- submit_id: d5e31d12-29af-4d2d-a93b-62055843b172
+- logid: 2026061720061516925404700897502E2
+- submit status: querying
+- query status: fail
+- credit_count: 1
+- fail_reason: generation failed: final generation failed
+- run_dir: none
+- output path: none
+- validation result: not applicable because no output was downloaded
+- action taken: no retry, no batch, no auto-continue, no output lock
