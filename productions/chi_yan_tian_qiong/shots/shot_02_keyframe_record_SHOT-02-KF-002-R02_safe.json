@@ -1,0 +1,79 @@
+﻿{
+    "task_id":  "SHOT-02-KF-002-R02_safe",
+    "parent_task_id":  "SHOT-02-KF-002-R01",
+    "historical_attempts_preserved":  [
+                                          "SHOT-02-KF-002",
+                                          "SHOT-02-KF-002-R01"
+                                      ],
+    "shot_id":  "SHOT-02",
+    "candidate_id":  "SHOT-02-KF-002-R02_safe_cand_001",
+    "branch":  "main_hall_true_frontal_axis_safe_action_practice_cn",
+    "status":  "success",
+    "rerun_reason":  "R01 platform compliance issue; use sanitized refs and softer Chinese prompt.",
+    "needs_generation":  true,
+    "locked":  false,
+    "official_keyframe":  false,
+    "preferred_candidate":  true,
+    "candidate_status":  "preferred",
+    "current_preferred_keyframe_for_shot":  "SHOT-02",
+    "review_result":  {
+                         "result":  "preferred_candidate_passed",
+                         "human_reviewer":  "manual",
+                         "reviewed_at":  "2026-06-17T20:42:21+08:00",
+                         "review_notes":  [
+                                              "A-SC-004前殿主轴构图可读，门、石阶、栏杆清晰",
+                                              "湿石板区域与雨雾反光保留",
+                                              "仅两人：焚狩左侧、霜玑右侧，出现近距离前臂接触/近接触",
+                                              "可接受轻微风险：Fenshou手势可能含链状/鞭状元素；构图有轻微横向对决倾向"
+                                          ],
+                         "locked":  false
+                     },
+    "prompt_path":  "productions/chi_yan_tian_qiong/prompts/shot_02_keyframe_prompt_SHOT-02-KF-002-R02_safe.json",
+    "manual_prompt_path":  "productions/chi_yan_tian_qiong/prompts/manual_SHOT-02-KF-002-R02_safe_main_hall_action_practice_prompt.txt",
+    "manifest_path":  "productions/chi_yan_tian_qiong/manifests/production_image2image_SHOT-02-KF-002-R02_safe.csv",
+    "sanitized_refs_metadata_path":  "productions/chi_yan_tian_qiong/working_refs/safe_upload/SHOT-02-KF-002-R02/sanitized_refs_metadata_SHOT-02-KF-002-R02_safe.json",
+    "original_locked_refs":  [
+                                 "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+                                 "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+                                 "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png"
+                             ],
+    "sanitized_upload_refs":  [
+                                  "productions/chi_yan_tian_qiong/working_refs/safe_upload/SHOT-02-KF-002-R02/A-SC-TEMPLE-COURTYARD-004_safe_upload_1920.png",
+                                  "productions/chi_yan_tian_qiong/working_refs/safe_upload/SHOT-02-KF-002-R02/A-CH-A-SUBJECT-001_safe_upload_1920.png",
+                                  "productions/chi_yan_tian_qiong/working_refs/safe_upload/SHOT-02-KF-002-R02/A-CH-B-SUBJECT-001_safe_upload_1920.png"
+                              ],
+    "narrative_function":  "Safe rerun package for SHOT-02 close-range martial-arts action practice keyframe in front of the main hall.",
+    "staging_notes":  [
+                          "焚狩从画面左前方低重心进入中景。",
+                          "霜玑从画面右侧斜向进入中景。",
+                          "两人在主殿正门石阶前的中景湿石板区域做近距离武术动作对练。",
+                          "中央只有一个清晰前臂相接或近接触点。",
+                          "避免平台敏感冲突措辞；不要提交。"
+                      ],
+    "model_version":  "4.7",
+    "ratio":  "16:9",
+    "resolution_type":  "2k",
+    "created_at":  "2026-06-17T20:28:14+08:00",
+    "updated_at":  "2026-06-17T20:48:58+08:00",
+    "submission":  {
+                       "submit_id":  "5caf63aa-2f3e-414b-93c3-40394e8565f6",
+                       "logid":  "20260617203306169254047008655E2C2",
+                       "submit_gen_status":  "success",
+                       "query_status":  "success",
+                       "credit_count":  1,
+                       "submitted_at":  "2026-06-17T20:42:49+08:00",
+                       "queried_at":  "2026-06-17T20:42:49+08:00",
+                       "downloaded":  true,
+                       "output_path":  "productions\\chi_yan_tian_qiong\\runs\\live\\SHOT-02-KF-002-R02_safe_20260617_204221\\SHOT-02-KF-002-R02_safe_main_hall_action_practice.png",
+                       "run_dir":  "productions/chi_yan_tian_qiong/runs/live/SHOT-02-KF-002-R02_safe_20260617_204221",
+                       "validation":  {
+                                          "opened":  true,
+                                          "width":  2560,
+                                          "height":  1440,
+                                          "size_bytes":  4160657,
+                                          "sha256":  "6a573b598ab813e8ac7997a387303326a9f4836c52cc1ae91ca33ed207db60c7"
+                                      },
+                       "retry_count":  0,
+                       "auto_continue":  false
+                   }
+}
