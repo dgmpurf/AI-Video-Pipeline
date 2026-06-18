@@ -2,13 +2,13 @@
 
 Task: SHOT-02-V004
 Shot: SHOT-02
-Status: submitted_querying
+Status: human_review_usable_candidate
 Concept: rain_pressure_shell_camera_reaction / de-shielded volumetric rain displacement
 
 ## Prior Attempt Review
 
 - Prior task: SHOT-02-V003
-- Prior status: human_review_partial_success_stylized
+- Prior Status: human_review_usable_candidate
 - Prior technical validity: true
 - Prior success: contact point highlight; visible spherical/hemispherical rain-shell expansion; stronger spectacle than V002-CLI4.
 - Remaining issues: too smooth and too shield-like; reads as transparent barrier/dome; insufficient particle rain displacement; camera reaction still weak.
@@ -18,7 +18,7 @@ Concept: rain_pressure_shell_camera_reaction / de-shielded volumetric rain displ
 
 - Official keyframe: productions/chi_yan_tian_qiong/locked_refs/SHOT-02-KF-002_locked_main_hall_first_clash.png
 - Keyframe source task: SHOT-02-KF-002-R02_safe
-- Lock status: source keyframe locked as official SHOT-02 keyframe
+- Lock Status: human_review_usable_candidate
 
 ## Dreamina CLI Settings
 
@@ -84,3 +84,39 @@ SHOT_02_V004_RAIN_PRESSURE_SHELL_CAMERA_REACTION_PACKAGE_READY_NO_SUBMIT
 - locked=false
 - usable_video_candidate=false
 - human_review_required_after_download=true
+
+## Success Download Result
+
+- Status: human_review_usable_candidate
+- query_Status: human_review_usable_candidate
+- queue_Status: human_review_usable_candidate
+- submit_id: 180691eb-b1b8-41b3-bd9e-67102be24c2b
+- logid: 202606182151531692540470088981D66
+- output_path: productions\chi_yan_tian_qiong\runs\live\SHOT-02-V004_20260618_221001\SHOT-02-V004_rain_pressure_shell_camera_reaction_motion.mp4
+- output_size: 8757857
+- sha256: 352e41a31ba6a265baea5f5ad7b42c542bc36979d81e97fa105ad2e62fe5bcb5
+- duration: 4.042
+- resolution: 1280x720
+- fps: 24
+- frame_count: 97
+- final_master: false
+- locked: false
+- usable_video_candidate: false
+- human_review_required_after_download: true
+
+## Human Review Result
+
+- status: human_review_usable_candidate
+- human_review_result: strong_partial_success_usable_candidate
+- technical_valid: true
+- command_contract_valid: true
+- downloaded: true
+- usable_video_candidate: true
+- fallback_motion_clip: false
+- final_master: false
+- locked: false
+- best_edit_range: 1.00s-2.30s
+- alternate_edit_range: 1.20s-2.10s
+- success_points: central contact-point shockwave; broken rain-particle boundary; stronger rain-combat spectacle than V003; reduced smooth shield feeling
+- remaining_issues: still partly reads as water ring/water curtain; not fully realistic airborne rain displacement; camera recoil/micro-shake still subtle
+- next_recommended_action: keep as usable candidate; if higher realism is required, use peak keyframe plus frames2video/multiframe2video route
