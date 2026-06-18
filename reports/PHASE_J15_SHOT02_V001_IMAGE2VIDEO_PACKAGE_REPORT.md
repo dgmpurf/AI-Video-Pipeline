@@ -31,6 +31,32 @@ Date: 2026-06-17
 - Shot video record: productions/chi_yan_tian_qiong/shots/shot_02_video_record_SHOT-02-V001.json
 - Readiness review: productions/chi_yan_tian_qiong/reviews/image_reviews/SHOT-02-V001_image2video_readiness_review.md
 
+## Query and Download Result
+
+- submit_id: b3c0d827-29e7-4c1c-b928-c044b765b15b
+- logid: 202606172244121692540470081522881
+- query_status: success
+- queue_status: Finish
+- output_path: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V001_20260617_230616/SHOT-02-V001_stable_first_clash_motion.mp4
+- run_dir: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V001_20260617_230616
+- downloaded: true
+- output_exists: true
+- output_size_bytes: 7158147
+- output_sha256: 9fb9e5a3734c374b64f098a9e9ff0972463e52cb68ad11f96f4611e3d2a2fefe
+- duration_seconds: 5.016666666666667
+- resolution: 1280x720
+- fps: 24.119601328903656
+
+## Candidate Registration
+
+- status: success_usable_candidate
+- usable_video_candidate: true
+- fallback_motion_clip: true
+- final_master: false
+- locked: false
+- human_decision: SHOT-02-V001 is usable as a stable fallback / usable video candidate, but not the final high-impact combat beat.
+- motion_role: stable low-motion extension; fallback motion clip; not final high-impact combat rhythm.
+
 ## Command Preview Only
 
 Do not run this command until explicit live-submit approval is given:
@@ -48,14 +74,10 @@ dreamina image2video `
 
 ## Decision
 
-SHOT_02_V001_SUBMITTED_QUERYING_METADATA_RECORDED
+SHOT_02_V001_QUERY_ONCE_DONE_NO_AUTO_CONTINUE
+SHOT_02_V001_MARKED_AS_USABLE_CANDIDATE_NO_LOCK
 
-## Submit Metadata (recorded)
-- submit_id: b3c0d827-29e7-4c1c-b928-c044b765b15b
-- logid: 202606172244121692540470081522881
-- submit status: querying
-- query status: querying
-- queue status: Generating
-- credit_count: 70
+## Validation Result
 
-
+- JSON parse: pass
+- Manifest CSV parse: pass

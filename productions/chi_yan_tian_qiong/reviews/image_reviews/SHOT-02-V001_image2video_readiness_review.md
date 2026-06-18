@@ -2,7 +2,7 @@
 
 Task: SHOT-02-V001
 Shot: SHOT-02
-Status: submitted_querying
+Status: success_usable_candidate
 
 ## Source Keyframe
 
@@ -22,10 +22,30 @@ Status: submitted_querying
 ## Submit Metadata
 - submit_id: b3c0d827-29e7-4c1c-b928-c044b765b15b
 - logid: 202606172244121692540470081522881
-- submit status: querying
-- query status: querying
-- queue status: Generating
+- submit status: success
+- query status: success
+- queue status: Finish
 - credit_count: 70
+- run_dir: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V001_20260617_230616
+- output_path: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V001_20260617_230616/SHOT-02-V001_stable_first_clash_motion.mp4
+- output_exists: true
+- output_size_bytes: 7158147
+- output_sha256: 9fb9e5a3734c374b64f098a9e9ff0972463e52cb68ad11f96f4611e3d2a2fefe
+- video_duration: 5.016666666666667
+- video_width: 1280
+- video_height: 720
+- video_fps: 24.119601328903656
+- frame_count: 121
+- probe_method: opencv
+
+## Candidate Registration
+
+- usable_video_candidate: true
+- fallback_motion_clip: true
+- final_master: false
+- locked: false
+- human_decision: SHOT-02-V001 is usable as a stable fallback / usable video candidate, but not the final high-impact combat beat.
+- motion_role: stable low-motion extension; fallback motion clip; not final high-impact combat rhythm.
 
 ## Source Rules Applied
 
@@ -49,14 +69,6 @@ Status: submitted_querying
 - Avoid any second exchange, jump, spin, chase, large repositioning, weapon emphasis, camera orbit, scene cut, or poster reset.
 - Accepted keyframe risks remain present as source context: chain/whip-like hand element and slight horizontal-duel tendency.
 
-## Submit Metadata
-- submit_id: b3c0d827-29e7-4c1c-b928-c044b765b15b
-- logid: 202606172244121692540470081522881
-- submit status: querying
-- query status: querying
-- queue status: Generating
-- credit_count: 70
-
 ## Package Files
 
 - Manual prompt: productions/chi_yan_tian_qiong/prompts/manual_SHOT-02-V001_image2video_stable_first_clash_prompt.txt
@@ -66,9 +78,5 @@ Status: submitted_querying
 
 ## Decision
 
-SHOT_02_V001_SUBMITTED_QUERYING_METADATA_RECORDED
-
-
-
-
-
+SHOT_02_V001_QUERY_ONCE_DONE_NO_AUTO_CONTINUE
+SHOT_02_V001_MARKED_AS_USABLE_CANDIDATE_NO_LOCK

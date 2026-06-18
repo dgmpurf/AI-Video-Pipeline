@@ -1,6 +1,6 @@
 # Chi Yan Tian Qiong Production Status
 
-current_production_status: shot_02_kf_002_official_keyframe_locked
+current_production_status: shot_02_v001_usable_fallback_motion_candidate_registered
 
 ## Historical milestones
 - scene_and_first_character_subject_locked
@@ -105,8 +105,27 @@ current_production_status: shot_02_kf_002_official_keyframe_locked
   - slight horizontal-duel tendency
   - do not auto-continue to video generation
 
+## SHOT-02 video candidate / fallback motion clip
+- task_id: SHOT-02-V001
+- status: success_usable_candidate
+- output_path: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V001_20260617_230616/SHOT-02-V001_stable_first_clash_motion.mp4
+- submit_id: b3c0d827-29e7-4c1c-b928-c044b765b15b
+- logid: 202606172244121692540470081522881
+- usable_video_candidate: true
+- fallback_motion_clip: true
+- final_master: false
+- locked: false
+- file_size: 7158147
+- sha256: 9fb9e5a3734c374b64f098a9e9ff0972463e52cb68ad11f96f4611e3d2a2fefe
+- duration: 5.016666666666667
+- resolution: 1280x720
+- fps: 24.119601328903656
+- frame_count: 121
+- role: stable low-motion extension; usable fallback motion clip; not the final high-impact combat rhythm
+- next_allowed_action: human planning for V002 only after explicit approval; do not auto-continue
+
 ## Next recommended action
-- Use SHOT-02-KF-002-R02_safe as the official SHOT-02 keyframe for downstream planning; explicit user approval required before any next submission, no auto-continue.
+- Keep SHOT-02-V001 as a usable fallback motion clip and plan a stronger V002 only after explicit user approval; no auto-continue and no final master lock yet.
 
 ## SHOT-02 viewpoint-correction scene reference readiness
 - task_id: A-SC-TEMPLE-COURTYARD-004
