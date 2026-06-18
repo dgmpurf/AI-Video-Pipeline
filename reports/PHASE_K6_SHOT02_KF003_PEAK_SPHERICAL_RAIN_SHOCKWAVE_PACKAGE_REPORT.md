@@ -1,4 +1,4 @@
-# PHASE K6: SHOT-02-KF-003 Peak Spherical Rain Shockwave Image2Image Package Report
+﻿# PHASE K6: SHOT-02-KF-003 Peak Spherical Rain Shockwave Image2Image Package Report
 
 Date: 2026-06-18
 
@@ -68,15 +68,19 @@ dreamina image2image `
 
 ## Submission State
 
-- status: submitted_querying
+- status: success_downloaded_review_required
 - submit_id: 1065e52f-abd8-4c97-a1d5-dd289906b7b1
 - logid: 202606190009131692540470083719378
 - credit_count: 1
 - command_contract_valid: true
-- first_query_status: querying
-- queue_status: Generating
-- downloaded: false
-- output_path: null
+- first_query_status: success
+- queue_status: Finish
+- downloaded: true
+- run_dir: productions/chi_yan_tian_qiong/runs/live/SHOT-02-KF-003_20260619_004518
+- output_path: productions/chi_yan_tian_qiong/runs/live/SHOT-02-KF-003_20260619_004518/SHOT-02-KF-003_peak_spherical_rain_shockwave.png
+- output_dimensions: 2560x1440
+- output_size_bytes: 5051484
+- output_sha256: 5D5D25B6398071E17DD1CD9E9E69961A1132E133BB79DF298D37CCBB07B08CFD
 - official_keyframe: false
 - locked: false
 - human_review_required_after_download: true
@@ -88,6 +92,20 @@ dreamina image2image `
 - Because the optional effect reference video is absent, this package has no external effect still to guide the exact spherical rain-shell shape.
 - Do not lock or mark as preferred/final without human review.
 
+## Human Review Result
+
+- status: human_review_target_miss_over_effect
+- technical_valid: true
+- command_contract_valid: true
+- downloaded: true
+- official_keyframe: false
+- locked: false
+- usable_keyframe_candidate: false
+- human_review_result: target_miss_over_effect_multi_state
+- target_miss_reason: multiple water spheres; central contact reads as splash; image mixes contact moment and post-impact expansion; not suitable as clean peak keyframe for frames2video
+- lesson_learned: strong effect trigger words are useful, but should be used in video prompt with project anchors rather than overloading a static keyframe
+- next_recommended_task: SHOT-02-V005_spherical_rain_shockwave_reveal
+
 ## Validation Result
 
 - JSON parse: passed for prompt JSON and shot record.
@@ -95,7 +113,12 @@ dreamina image2image `
 - Primary input image path exists: true.
 - Optional effect reference path exists: false.
 - Effect reference used: false.
+- Output file exists: true.
+- Downloaded output size: 5051484.
+- Downloaded output sha256: 5D5D25B6398071E17DD1CD9E9E69961A1132E133BB79DF298D37CCBB07B08CFD.
+- Downloaded output dimensions: 2560x1440.
 
 ## Decision
 
-SHOT_02_KF_003_SUBMITTED_QUERYING
+SHOT_02_KF_003_HUMAN_REVIEW_TARGET_MISS_OVER_EFFECT
+
