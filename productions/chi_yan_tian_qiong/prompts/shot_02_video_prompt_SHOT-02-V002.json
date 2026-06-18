@@ -1,0 +1,78 @@
+{
+  "task_id": "SHOT-02-V002",
+  "shot_id": "SHOT-02",
+  "task_type": "image2video",
+  "prompt_type": "shot_video_hitstop_rain_blast_highlight",
+  "needs_generation": true,
+  "official_video_candidate": false,
+  "official_keyframe_source": "productions/chi_yan_tian_qiong/locked_refs/SHOT-02-KF-002_locked_main_hall_first_clash.png",
+  "input_image": "productions/chi_yan_tian_qiong/locked_refs/SHOT-02-KF-002_locked_main_hall_first_clash.png",
+  "model_version": "seedance2.0_vip",
+  "duration": 2,
+  "duration_policy": "integer_seconds; 2-second action highlight clip",
+  "video_resolution": "720p",
+  "ratio": null,
+  "ratio_policy": "omitted_for_image2video_inferred_from_input_image",
+  "image_input_count": 1,
+  "prompt_language": "Chinese",
+  "prompt_source": "productions/chi_yan_tian_qiong/prompts/manual_SHOT-02-V002_hitstop_rain_blast_prompt.txt",
+  "manifest_path": "productions/chi_yan_tian_qiong/manifests/production_image2video_SHOT-02-V002.csv",
+  "prompt": "使用锁定关键帧作为唯一首帧。保持雨中古寺主殿正面中轴、主殿正门、石阶、石栏杆、湿石板地面、焚狩和霜玑的位置、服装、身体关系和中央手臂接触点不变。\n\n这是一个 2 秒动作高光镜头，不是长镜头，不是新的连招。镜头重点是当前手臂接触点产生短促受力停顿，雨水和浅水坑从接触点附近被震开。\n\n前半秒：两人保持当前近距离手臂接触姿态，身体短暂停住，形成克制的受力停顿。镜头几乎固定，只出现很轻微的手持震动，不大幅推近，不绕圈。\n\n中间一秒：以两人手臂接触点为视觉中心，雨水、水珠和浅水坑波纹向外扩散，湿石板地面出现环形涟漪。衣摆、发丝和雨线被轻微震开。受力效果来自雨水和积水的物理反应，不是超自然特效。\n\n最后半秒：水珠继续飞散并落回湿石板，地面反光轻微闪动。两人仍保持接触姿态，身体分离可读，双脚踩地，主殿正门和石阶仍在背景中清楚可见。\n\n限制：不要让两人明显位移，不要让两人分开，不要新增第二次出招，不要跳跃，不要旋转，不要新增人物，不要重复角色，不要融合身体，不要多余肢体，不要切换场景，不要改变主殿背景，不要变成横版游戏侧拍，不要突然突出手中物件，不要文字水印。",
+  "planning_reference": [
+    "reports/PHASE_K1_COMBAT_RHYTHM_AND_CAMERA_REQUIREMENTS.md"
+  ],
+  "source_keyframe_context": {
+    "official_keyframe_task": "SHOT-02-KF-002-R02_safe",
+    "official_keyframe_for_shot": "SHOT-02",
+    "accepted_minor_risks": [
+      "Fenshou has a chain/whip-like hand element in the locked keyframe",
+      "composition has slight horizontal-duel tendency"
+    ]
+  },
+  "preservation_requirements": [
+    "preserve exact locked keyframe composition",
+    "preserve rainy ancient temple main hall frontal axis",
+    "preserve main hall door, stone steps, railings, wet stone floor, rain, and reflections",
+    "preserve exactly two characters only",
+    "Fenshou remains on the left",
+    "Shuangji remains on the right",
+    "preserve central close-range arm contact or near-contact point",
+    "bodies remain separated and readable",
+    "both feet remain planted on wet stone floor"
+  ],
+  "allowed_motion": [
+    "brief held pressure at the existing arm contact point",
+    "physical rainwater and puddle reaction near the contact point",
+    "outward water droplets and circular puddle ripples",
+    "slight hair, robe edge, rain line, and reflection movement",
+    "very light handheld vibration",
+    "locked camera or nearly locked camera"
+  ],
+  "forbidden_motion": [
+    "no obvious character displacement",
+    "no separation into a new exchange",
+    "no second move",
+    "no jump",
+    "no spin",
+    "no new characters",
+    "no duplicated characters",
+    "no body fusion",
+    "no extra limbs",
+    "no scene change",
+    "no main hall background change",
+    "no side-scrolling game composition",
+    "no sudden prop emphasis",
+    "no text or watermark"
+  ],
+  "status": "command_contract_invalid",
+  "command_contract_valid": false,
+  "invalid_reason": "duration=2 is not supported by current CLI image2video seedance2.0_vip; supported range is 4-15s",
+  "do_not_submit_via_cli": true,
+  "manual_web_possible": true,
+  "recommended_fix": "use SHOT-02-V002-CLI4 with duration=4 for CLI, then edit down to 1-2s",
+  "final_master": false,
+  "locked": false,
+  "usable_video_candidate": false,
+  "contract_audit_reference": "reports/PHASE_K2B_DREAMINA_CLI_EXECUTION_CONTRACT_AUDIT.md",
+  "created_at": "2026-06-18T00:00:00+08:00"
+}
