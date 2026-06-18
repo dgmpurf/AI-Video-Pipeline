@@ -60,3 +60,54 @@ Status: package_ready_no_submit
 ## Decision
 
 SHOT_02_V002_CLI4_PACKAGE_READY_NO_SUBMIT
+
+## Live Query / Download Result
+
+- query_status: success
+- queue_status: Finish
+- submit_id: e3342ada-9805-4322-82c5-6e246ef7f834
+- logid: 202606181510101692540470089439C60
+- credit_count: 56
+- download happened: yes
+- run_dir: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V002-CLI4_20260618_151532
+- output_path: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V002-CLI4_20260618_151532/SHOT-02-V002-CLI4_hitstop_rain_blast_motion.mp4
+- file_size: 8641277 bytes
+- sha256: 03cbb462e18b15361bc8ec9015421d4a80ad574106c58658db58f91281b7bc18
+- duration: 4.042 seconds
+- resolution: 1280x720
+- fps: 24
+- frame_count: not available; ffprobe not installed in local environment
+- final_master: false
+- locked: false
+- usable_video_candidate: false
+- review_required: true
+
+## Decision
+
+SHOT_02_V002_CLI4_SUCCESS_DOWNLOADED_REVIEW_REQUIRED
+
+## Human Review Result
+
+- status: human_review_target_miss
+- technical_valid: true
+- command_contract_valid: true
+- downloaded: true
+- usable_video_candidate: false
+- fallback_motion_clip: false
+- final_master: false
+- locked: false
+- human_review_result: target_miss
+- target_miss_reason: water effect manifested mainly as ground splash / side water curtain; intended volumetric rain-shell shockwave around central contact point was not achieved
+- next_recommended_task: SHOT-02-V003_volumetric_rain_shell
+
+### Target Miss Observations
+
+- water effect starts mostly from ground / puddles
+- visual focus shifts to side water curtains
+- rain in the air is not displaced enough
+- no clear spherical / hemispherical rain cavity around the contact point
+- camera does not clearly react to the shockwave
+
+### Decision
+
+SHOT_02_V002_CLI4_HUMAN_REVIEW_TARGET_MISS
