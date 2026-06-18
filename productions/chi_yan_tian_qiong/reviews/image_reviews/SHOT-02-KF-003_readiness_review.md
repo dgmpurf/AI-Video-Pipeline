@@ -2,7 +2,7 @@
 
 Task: SHOT-02-KF-003
 Shot: SHOT-02
-Status: package_ready_no_submit
+Status: submitted_querying
 Concept: peak_spherical_rain_shockwave
 
 ## Scope
@@ -29,6 +29,21 @@ Because the optional effect reference video is not present locally, this package
 - ratio: 16:9
 - resolution_type: 2k
 - reference image count: 1
+
+## Submission State
+
+- status: submitted_querying
+- submit_id: 1065e52f-abd8-4c97-a1d5-dd289906b7b1
+- logid: 202606190009131692540470083719378
+- credit_count: 1
+- command_contract_valid: true
+- first_query_status: querying
+- queue_status: Generating
+- downloaded: false
+- output_path: null
+- official_keyframe: false
+- locked: false
+- human_review_required_after_download: true
 
 ## Prompt Strategy
 
@@ -59,4 +74,4 @@ Because the optional effect reference video is not present locally, this package
 
 ## Decision
 
-SHOT_02_KF_003_PEAK_SPHERICAL_RAIN_SHOCKWAVE_PACKAGE_READY_NO_SUBMIT
+SHOT_02_KF_003_SUBMITTED_QUERYING
