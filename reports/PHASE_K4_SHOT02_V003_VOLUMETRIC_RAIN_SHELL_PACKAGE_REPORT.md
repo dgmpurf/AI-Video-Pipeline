@@ -8,7 +8,7 @@ Date: 2026-06-18
 - Create SHOT-02-V003 image2video package only.
 - Use the locked official SHOT-02 keyframe as the only input image.
 - Create a 4-second CLI-legal action spectacle source intended to be edited down to the strongest 1-2 seconds.
-- Submitted to Dreamina one live task; query result is still querying.
+- Submitted to Dreamina one live task; query result was success and media downloaded for review.
 - Do not modify Source files, runtime code, or configs/providers.json.
 
 ## V002-CLI4 Human Review Result
@@ -91,20 +91,29 @@ Pending local validation in this package step.
 
 ## Decision
 
-SHOT_02_V003_SUBMITTED_QUERYING_STATE
+SHOT_02_V003_SUCCESS_DOWNLOADED_REVIEW_REQUIRED
 
 ## Live Submit Metadata
 
 - submit_id: 5d8cce8c-5710-47ae-9b6b-0a189c357abc
 - logid: 2026061820113916925404700857686EC
-- submit/gen status: querying
-- queue_status: Generating
+- submit/gen status: success
+- query status: success
+- queue_status: Finish
 - command_contract_preflight: pass
 - command_contract_valid: true
-- first query status: querying
+- first query status: success
 - credit_count: 56
-- downloaded: false
-- output_path: none
+- downloaded: true
+- output_path: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V003_20260618_203419/SHOT-02-V003_volumetric_rain_shell_motion.mp4
+- media_validation:
+  - output_exists: true
+  - size_bytes: 7947770
+  - sha256: cf147b15eb48110df6c02e2316db488a83dbbb5434268a1a7439a98be4b7752a
+  - duration: 4.042
+  - resolution: 1280x720
+  - fps: 24
+  - frame_count: unavailable (ffprobe missing in environment)
 - final_master: false
 - locked: false
 - usable_video_candidate: false
@@ -126,3 +135,19 @@ SHOT_02_V003_SUBMITTED_QUERYING_STATE
 - final_edit_target_1_2s: True
 - forbidden_term_check: 爆炸=negative_constraint_only_count_1; 能量波=absent_or_not_used; 魔法冲击=absent_or_not_used; 雷电=negative_constraint_only_count_1; 火焰=negative_constraint_only_count_1; 武器=absent_or_not_used
 
+
+## Human Review Result
+
+- status: human_review_partial_success_stylized
+- technical_valid: true
+- command_contract_valid: true
+- downloaded: true
+- visual_direction_validated: true
+- human_review_result: partial_success_stylized
+- target_success_points: contact point highlight; visible spherical/hemispherical rain-shell expansion; stronger spectacle than V002-CLI4
+- remaining_issues: too smooth and too shield-like; reads as transparent barrier/dome; insufficient particle rain displacement; camera reaction still weak
+- stylized_alt_candidate: true
+- usable_video_candidate: false
+- final_master: false
+- locked: false
+- next_recommended_task: SHOT-02-V004_rain_pressure_shell_camera_reaction

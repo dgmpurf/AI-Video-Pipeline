@@ -2,7 +2,7 @@
 
 Task: SHOT-02-V003
 Shot: SHOT-02
-Status: submitted_querying
+Status: human_review_partial_success_stylized
 Concept: volumetric_rain_shell / contact-point rain-displacement shockwave
 
 ## Prior Attempt Review
@@ -80,7 +80,7 @@ Concept: volumetric_rain_shell / contact-point rain-displacement shockwave
 
 ## Decision
 
-SHOT_02_V003_SUBMITTED_QUERYING_STATE
+SHOT_02_V003_SUCCESS_DOWNLOADED_REVIEW_REQUIRED
 
 ## Live Submit State
 
@@ -92,13 +92,37 @@ SHOT_02_V003_SUBMITTED_QUERYING_STATE
 - video_resolution: 720p
 - command_contract_preflight: pass
 - command_contract_valid: true
-- first_query_status: querying
-- queue_status: Generating
-- submit_status: querying
+- first_query_status: success
+- queue_status: Finish
+- submit_status: success
 - credit_count: 56
-- downloaded: false
-- output_path: none
+- downloaded: true
+- output_path: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V003_20260618_203419/SHOT-02-V003_volumetric_rain_shell_motion.mp4
 - final_master: false
 - locked: false
 - usable_video_candidate: false
 - human_review_required_after_download: true
+- media_validation:
+  - output_exists: true
+  - size_bytes: 7947770
+  - sha256: cf147b15eb48110df6c02e2316db488a83dbbb5434268a1a7439a98be4b7752a
+  - duration: 4.042
+  - resolution: 1280x720
+  - fps: 24
+  - frame_count: unavailable
+
+## Human Review Result
+
+- status: human_review_partial_success_stylized
+- technical_valid: true
+- command_contract_valid: true
+- downloaded: true
+- visual_direction_validated: true
+- human_review_result: partial_success_stylized
+- target_success_points: contact point highlight; visible spherical/hemispherical rain-shell expansion; stronger spectacle than V002-CLI4
+- remaining_issues: too smooth and too shield-like; reads as transparent barrier/dome; insufficient particle rain displacement; camera reaction still weak
+- stylized_alt_candidate: true
+- usable_video_candidate: false
+- final_master: false
+- locked: false
+- next_recommended_task: SHOT-02-V004_rain_pressure_shell_camera_reaction

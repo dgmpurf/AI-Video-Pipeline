@@ -31,18 +31,41 @@
                           "target_miss_reason":  "water effect manifested mainly as ground splash / side water curtain; intended volumetric rain-shell shockwave around central contact point was not achieved"
                       },
     "allowed_next_action":  "Only submit after explicit user approval for exactly one Dreamina image2video task after command-contract preflight.",
-    "status":  "submitted_querying",
+    "status":  "human_review_partial_success_stylized",
     "submit_id":  "5d8cce8c-5710-47ae-9b6b-0a189c357abc",
     "logid":  "2026061820113916925404700857686EC",
     "credit_count":  56,
-    "command_contract_valid":  true,
-    "first_query_status":  "querying",
-    "queue_status":  "Generating",
-    "downloaded":  false,
-    "output_path":  null,
+    "query_status":  "success",
+    "first_query_status":  "success",
+    "queue_status":  "Finish",
+    "downloaded":  true,
+    "output_path":  "productions/chi_yan_tian_qiong/runs/live/SHOT-02-V003_20260618_203419/SHOT-02-V003_volumetric_rain_shell_motion.mp4",
+    "media_file_size":  7947770,
+    "media_sha256":  "cf147b15eb48110df6c02e2316db488a83dbbb5434268a1a7439a98be4b7752a",
+    "media_duration":  4.042,
+    "media_width":  1280,
+    "media_height":  720,
+    "media_fps":  24,
+    "media_frame_count":  null,
     "final_master":  false,
     "locked":  false,
     "usable_video_candidate":  false,
     "human_review_required_after_download":  true,
-    "created_at":  "2026-06-18T00:00:00+08:00"
+    "created_at":  "2026-06-18T00:00:00+08:00",
+    "technical_valid":  true,
+    "visual_direction_validated":  true,
+    "human_review_result":  "partial_success_stylized",
+    "target_success_points":  [
+                                  "contact point highlight",
+                                  "visible spherical/hemispherical rain-shell expansion",
+                                  "stronger spectacle than V002-CLI4"
+                              ],
+    "remaining_issues":  [
+                             "too smooth and too shield-like",
+                             "reads as transparent barrier/dome",
+                             "insufficient particle rain displacement",
+                             "camera reaction still weak"
+                         ],
+    "stylized_alt_candidate":  true,
+    "next_recommended_task":  "SHOT-02-V004_rain_pressure_shell_camera_reaction"
 }
