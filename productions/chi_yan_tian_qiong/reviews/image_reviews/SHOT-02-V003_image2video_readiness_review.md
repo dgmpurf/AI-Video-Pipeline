@@ -2,7 +2,7 @@
 
 Task: SHOT-02-V003
 Shot: SHOT-02
-Status: package_ready_no_submit
+Status: submitted_querying
 Concept: volumetric_rain_shell / contact-point rain-displacement shockwave
 
 ## Prior Attempt Review
@@ -80,4 +80,25 @@ Concept: volumetric_rain_shell / contact-point rain-displacement shockwave
 
 ## Decision
 
-SHOT_02_V003_VOLUMETRIC_RAIN_SHELL_PACKAGE_READY_NO_SUBMIT
+SHOT_02_V003_SUBMITTED_QUERYING_STATE
+
+## Live Submit State
+
+- submit_id: 5d8cce8c-5710-47ae-9b6b-0a189c357abc
+- logid: 2026061820113916925404700857686EC
+- task_type: image2video
+- model_version: seedance2.0_vip
+- duration: 4
+- video_resolution: 720p
+- command_contract_preflight: pass
+- command_contract_valid: true
+- first_query_status: querying
+- queue_status: Generating
+- submit_status: querying
+- credit_count: 56
+- downloaded: false
+- output_path: none
+- final_master: false
+- locked: false
+- usable_video_candidate: false
+- human_review_required_after_download: true

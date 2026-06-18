@@ -77,9 +77,18 @@
                              "no sudden prop emphasis",
                              "no text or watermark"
                          ],
-    "status":  "package_ready_no_submit",
+    "status":  "submitted_querying",
+    "submit_id":  "5d8cce8c-5710-47ae-9b6b-0a189c357abc",
+    "logid":  "2026061820113916925404700857686EC",
+    "credit_count":  56,
+    "command_contract_valid":  true,
+    "first_query_status":  "querying",
+    "queue_status":  "Generating",
+    "downloaded":  false,
+    "output_path":  null,
     "final_master":  false,
     "locked":  false,
     "usable_video_candidate":  false,
+    "human_review_required_after_download":  true,
     "created_at":  "2026-06-18T00:00:00+08:00"
 }

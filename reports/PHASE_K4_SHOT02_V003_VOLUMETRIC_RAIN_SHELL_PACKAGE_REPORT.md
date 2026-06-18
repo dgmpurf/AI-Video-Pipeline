@@ -8,7 +8,7 @@ Date: 2026-06-18
 - Create SHOT-02-V003 image2video package only.
 - Use the locked official SHOT-02 keyframe as the only input image.
 - Create a 4-second CLI-legal action spectacle source intended to be edited down to the strongest 1-2 seconds.
-- Do not submit, query, download, generate media, lock output, auto-continue, stage, or commit.
+- Submitted to Dreamina one live task; query result is still querying.
 - Do not modify Source files, runtime code, or configs/providers.json.
 
 ## V002-CLI4 Human Review Result
@@ -91,7 +91,24 @@ Pending local validation in this package step.
 
 ## Decision
 
-SHOT_02_V003_VOLUMETRIC_RAIN_SHELL_PACKAGE_READY_NO_SUBMIT
+SHOT_02_V003_SUBMITTED_QUERYING_STATE
+
+## Live Submit Metadata
+
+- submit_id: 5d8cce8c-5710-47ae-9b6b-0a189c357abc
+- logid: 2026061820113916925404700857686EC
+- submit/gen status: querying
+- queue_status: Generating
+- command_contract_preflight: pass
+- command_contract_valid: true
+- first query status: querying
+- credit_count: 56
+- downloaded: false
+- output_path: none
+- final_master: false
+- locked: false
+- usable_video_candidate: false
+- human_review_required_after_download: true
 
 ## Local Validation Result
 
