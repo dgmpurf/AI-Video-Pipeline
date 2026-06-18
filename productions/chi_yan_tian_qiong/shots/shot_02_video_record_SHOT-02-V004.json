@@ -37,9 +37,18 @@
                                                ]
                       },
     "allowed_next_action":  "Only submit after explicit user approval for exactly one Dreamina image2video task after command-contract preflight.",
-    "status":  "package_ready_no_submit",
+    "status":  "submitted_querying",
     "final_master":  false,
     "locked":  false,
     "usable_video_candidate":  false,
-    "created_at":  "2026-06-18T00:00:00+08:00"
+    "created_at":  "2026-06-18T00:00:00+08:00",
+    "submit_id":  "180691eb-b1b8-41b3-bd9e-67102be24c2b",
+    "logid":  "202606182151531692540470088981D66",
+    "credit_count":  56,
+    "first_query_status":  "querying",
+    "queue_status":  "Generating",
+    "downloaded":  false,
+    "output_path":  null,
+    "human_review_required_after_download":  true,
+    "output_name":  "SHOT-02-V004_rain_pressure_shell_camera_reaction_motion.mp4"
 }

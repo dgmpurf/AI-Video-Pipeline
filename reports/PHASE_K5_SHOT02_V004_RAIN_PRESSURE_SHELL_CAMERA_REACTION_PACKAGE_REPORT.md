@@ -92,4 +92,20 @@ Pending local validation in this package step.
 
 ## Decision
 
-SHOT_02_V004_RAIN_PRESSURE_SHELL_CAMERA_REACTION_PACKAGE_READY_NO_SUBMIT
+SHOT_02_V004_SUBMITTED_QUERYING
+
+## Submit Record
+
+- task: SHOT-02-V004
+- status: submitted_querying
+- submit_id: 180691eb-b1b8-41b3-bd9e-67102be24c2b
+- logid: 202606182151531692540470088981D66
+- credit_count: 56
+- command_contract_valid: true
+- first_query_status: querying
+- downloaded: false
+- output_path: null
+- final_master: false
+- locked: false
+- usable_video_candidate: false
+- human_review_required_after_download: true

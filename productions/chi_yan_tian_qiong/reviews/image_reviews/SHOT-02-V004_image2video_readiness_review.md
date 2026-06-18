@@ -2,7 +2,7 @@
 
 Task: SHOT-02-V004
 Shot: SHOT-02
-Status: package_ready_no_submit
+Status: submitted_querying
 Concept: rain_pressure_shell_camera_reaction / de-shielded volumetric rain displacement
 
 ## Prior Attempt Review
@@ -69,3 +69,18 @@ Concept: rain_pressure_shell_camera_reaction / de-shielded volumetric rain displ
 ## Decision
 
 SHOT_02_V004_RAIN_PRESSURE_SHELL_CAMERA_REACTION_PACKAGE_READY_NO_SUBMIT
+
+## Live Submit Record
+
+- status=submitted_querying
+- submit_id=180691eb-b1b8-41b3-bd9e-67102be24c2b
+- logid=202606182151531692540470088981D66
+- credit_count=56
+- command_contract_valid=true
+- first_query_status=querying
+- downloaded=false
+- output_path=null
+- final_master=false
+- locked=false
+- usable_video_candidate=false
+- human_review_required_after_download=true
