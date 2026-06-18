@@ -1,0 +1,55 @@
+{
+  "task_id": "SHOT-02-KF-003",
+  "shot_id": "SHOT-02",
+  "candidate_id": "SHOT-02-KF-003_cand_001",
+  "prompt_type": "keyframe_image",
+  "task_type": "image2image",
+  "package_concept": "peak_spherical_rain_shockwave",
+  "status": "package_ready_no_submit",
+  "needs_generation": true,
+  "locked": false,
+  "official_keyframe": false,
+  "preferred_candidate": false,
+  "candidate_status": "prepared",
+  "final_master": false,
+  "preserve_history": [
+    "SHOT-02-KF-002",
+    "SHOT-02-KF-002-R01",
+    "SHOT-02-KF-002-R02_safe",
+    "SHOT-02-V003",
+    "SHOT-02-V004"
+  ],
+  "goal": "Create a peak-impact keyframe where Fenshou and Shuangji collide at the central contact point and a large spherical shockwave pushes heavy rain outward into a circular rain curtain.",
+  "authoritative_prompt_source": "manual_prompt_txt",
+  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual_SHOT-02-KF-003_peak_spherical_rain_shockwave_prompt.txt",
+  "manifest_path": "productions/chi_yan_tian_qiong/manifests/production_image2image_SHOT-02-KF-003.csv",
+  "primary_composition_reference": "productions/chi_yan_tian_qiong/locked_refs/SHOT-02-KF-002_locked_main_hall_first_clash.png",
+  "optional_effect_reference_source": "manual_imports/effect_refs/jimeng_spherical_shockwave_example.mp4",
+  "effect_reference_used": false,
+  "effect_reference_still": null,
+  "effect_reference_note": "Optional effect reference video was not present locally at package time; no still was extracted or used.",
+  "settings": {
+    "provider": "dreamina_cli",
+    "model_version": "4.7",
+    "ratio": "16:9",
+    "resolution_type": "2k",
+    "poll": 0
+  },
+  "prompt_strategy": {
+    "language": "zh-CN",
+    "style": "short direct result-oriented",
+    "avoid_previous_long_prompt": true,
+    "visual_priority": [
+      "official locked SHOT-02 keyframe remains primary scene, character, and composition anchor",
+      "complete spherical shockwave visible in frame",
+      "rain pushed outward into circular water curtain and spherical rain shell",
+      "main hall frontal axis remains clear",
+      "exactly two separated readable characters"
+    ]
+  },
+  "reference_images_for_cli": [
+    "productions/chi_yan_tian_qiong/locked_refs/SHOT-02-KF-002_locked_main_hall_first_clash.png"
+  ],
+  "prompt": "参考图1作为主要场景、人物关系和构图参考。保持雨中古寺主殿正面中轴、主殿正门、石阶、湿石板地面、焚狩在左、霜玑在右、两人中央接触点和整体武侠电影气氛不变。\n\n生成一张半写实3D武侠电影关键帧，表现两人拳掌/手臂相交的峰值瞬间。以两人中央接触点为核心，爆发出一个大型球形冲击波，大雨中的雨丝、水珠和雨雾被向外弹开，形成清晰的圆形水幕和球形雨幕外壳。雨水飞溅细节清楚，冲击力强，有慢动作电影视觉效果。\n\n构图需要能看见完整球形冲击波，不要拳头大特写。两人仍在主殿石阶前中景湿石板区域，主殿背景仍然清楚可见。焚狩和霜玑身体分离可读，只有两个人，没有重复角色，没有第三人，没有融合身体，没有多余肢体。\n\n不要把冲击波变成纯地面水花，不要让水效只从脚下爆开。不要改变古寺场景，不要改变主殿正面中轴，不要变成现代城市，不要横版游戏侧拍，不要文字水印。",
+  "created_at": "2026-06-18T00:00:00+08:00"
+}
