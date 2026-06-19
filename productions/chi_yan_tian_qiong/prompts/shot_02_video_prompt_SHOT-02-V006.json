@@ -4,7 +4,7 @@
   "task_type": "image2video",
   "prompt_type": "shot_video_giant_rain_shockwave_lens_pass_cli4",
   "package_concept": "giant_rain_shockwave_lens_pass",
-  "status": "human_review_usable_extract_candidate",
+  "status": "human_review_extracts_ranked",
   "needs_generation": true,
   "official_video_candidate": false,
   "official_keyframe_source": "productions/chi_yan_tian_qiong/locked_refs/SHOT-02-KF-002_locked_main_hall_first_clash.png",
@@ -106,6 +106,7 @@
   "extract_candidate": true,
   "recommended_extract_cut01": "2.00s-4.00s",
   "recommended_extract_cut02": "2.00s-3.50s",
+  "recommended_extract_cut03": "2.00s-3.35s",
   "extract_outputs": [
     {
       "cut_id": "CUT01",
@@ -128,6 +129,17 @@
       "resolution": "1280x720",
       "fps": 24.15,
       "frame_count": 37
+    },
+    {
+      "cut_id": "CUT03",
+      "range": "2.00s-3.35s",
+      "path": "productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V006/SHOT-02-V006_CUT03_2p00_to_3p35_short_full_shockwave_extract.mp4",
+      "file_size": 1082032,
+      "sha256": "bbffd3551e84c54cad210674d6bb1b03f07d649e55d7f698684c94cb24702a6b",
+      "duration": 1.3250517598343685,
+      "resolution": "1280x720",
+      "fps": 24.15,
+      "frame_count": 32
     }
   ],
   "success_points": [
@@ -140,6 +152,16 @@
     "pre-impact particle build-up not convincing",
     "full 4s clip too slow"
   ],
-  "next_recommended_action": "keep CUT02 as high-impact candidate; optionally create separate pre-impact charge shot later",
-  "human_review_required_after_download": true
+  "next_recommended_action": "prepare short contact/hit-stop beat if needed; otherwise preserve CUT03 as current SHOT-02 shockwave highlight candidate",
+  "human_review_required_after_download": true,
+  "cut_roles": {
+    "CUT01": "long_full_shockwave_backup",
+    "CUT02": "tight_impact_extract_candidate",
+    "CUT03": "short_full_shockwave_extract_candidate"
+  },
+  "preferred_extract": "CUT03",
+  "preferred_extract_path": "productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V006/SHOT-02-V006_CUT03_2p00_to_3p35_short_full_shockwave_extract.mp4",
+  "recommended_edit_structure": "0.3-0.6s contact/hit-stop beat followed by CUT03 shockwave reveal",
+  "recommended_current_use": "CUT02_for_fast_impact_edit; CUT01_and_CUT03_for_larger_shockwave_reveal",
+  "next_review_required": "CUT03 human review"
 }

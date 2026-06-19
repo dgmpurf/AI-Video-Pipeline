@@ -2,7 +2,7 @@
 
 Task: SHOT-02-V006
 Shot: SHOT-02
-Status: human_review_usable_extract_candidate
+Status: human_review_extracts_ranked
 Concept: giant_rain_shockwave_lens_pass / large spherical shockwave pull-back reveal / rain curtain sweeps past camera
 
 ## Prior Attempt Review
@@ -61,7 +61,7 @@ Concept: giant_rain_shockwave_lens_pass / large spherical shockwave pull-back re
 
 ## Decision
 
-SHOT_02_V006_USABLE_EXTRACT_CANDIDATE
+SHOT_02_V006_EXTRACTS_RANKED
 
 ## Live Submit Record
 
@@ -90,7 +90,7 @@ SHOT_02_V006_USABLE_EXTRACT_CANDIDATE
 
 ## Human Review Extract Candidate
 
-- status=human_review_usable_extract_candidate
+- status=human_review_extracts_ranked
 - human_review_result=usable_extract_candidate
 - source_video_path=productions/chi_yan_tian_qiong/runs/live/SHOT-02-V006_20260619_165923/SHOT-02-V006_giant_rain_shockwave_lens_pass_motion.mp4
 - full_clip_usable=false
@@ -100,9 +100,18 @@ SHOT_02_V006_USABLE_EXTRACT_CANDIDATE
 - locked=false
 - recommended_extract_cut01=2.00s-4.00s
 - recommended_extract_cut02=2.00s-3.50s
+- recommended_extract_cut03=2.00s-3.35s
+- CUT01 role=long_full_shockwave_backup
+- CUT02 role=tight_impact_extract_candidate
+- CUT03 role=preferred_full_shockwave_short_extract_candidate
+- preferred_extract=CUT03
+- preferred_extract_path=productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V006/SHOT-02-V006_CUT03_2p00_to_3p35_short_full_shockwave_extract.mp4
+- recommended_edit_structure=0.3-0.6s contact/hit-stop beat followed by CUT03 shockwave reveal
+- next_recommended_action=prepare short contact/hit-stop beat if needed; otherwise preserve CUT03 as current SHOT-02 shockwave highlight candidate
+- next_review_required=CUT03 human review
 - success_points=large shockwave reveal after 2.0s; wide rain curtain; camera pull-back reveal works
 - remaining_issues=front section looks like water spraying from fists; pre-impact particle build-up not convincing; full 4s clip too slow
-- next_recommended_action=keep CUT02 as high-impact candidate; optionally create separate pre-impact charge shot later
+- recommended_current_use=prefer CUT02 for fast impact edit; CUT01/CUT03 for larger shockwave reveal
 
 ## Local Extract Validation
 
@@ -122,3 +131,11 @@ SHOT_02_V006_USABLE_EXTRACT_CANDIDATE
 - CUT02 resolution=1280x720
 - CUT02 fps=24.15
 - CUT02 frame_count=37
+- CUT03 path=productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V006/SHOT-02-V006_CUT03_2p00_to_3p35_short_full_shockwave_extract.mp4
+- CUT03 exists=true
+- CUT03 file_size=1082032
+- CUT03 sha256=bbffd3551e84c54cad210674d6bb1b03f07d649e55d7f698684c94cb24702a6b
+- CUT03 duration=1.3250517598343685
+- CUT03 resolution=1280x720
+- CUT03 fps=24.15
+- CUT03 frame_count=32
