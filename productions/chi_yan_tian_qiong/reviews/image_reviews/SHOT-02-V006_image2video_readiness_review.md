@@ -2,7 +2,7 @@
 
 Task: SHOT-02-V006
 Shot: SHOT-02
-Status: package_ready_no_submit
+Status: submitted_querying
 Concept: giant_rain_shockwave_lens_pass / large spherical shockwave pull-back reveal / rain curtain sweeps past camera
 
 ## Prior Attempt Review
@@ -61,4 +61,21 @@ Concept: giant_rain_shockwave_lens_pass / large spherical shockwave pull-back re
 
 ## Decision
 
-SHOT_02_V006_GIANT_RAIN_SHOCKWAVE_LENS_PASS_PACKAGE_READY_NO_SUBMIT
+SHOT_02_V006_SUBMITTED_QUERYING
+
+## Live Submit Record
+
+- status=submitted_querying
+- submit_id=44bcdf99-97c9-4d62-b47d-4c623f920b91
+- logid=20260619145824169254047008114EAC2
+- credit_count=56
+- command_contract_preflight=pass
+- command_contract_valid=true
+- first_query_status=querying
+- queue_status=Generating
+- downloaded=false
+- output_path=null
+- final_master=false
+- locked=false
+- usable_video_candidate=false
+- human_review_required_after_download=true

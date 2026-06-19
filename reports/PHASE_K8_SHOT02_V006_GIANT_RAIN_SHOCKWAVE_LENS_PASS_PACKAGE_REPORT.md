@@ -7,7 +7,7 @@ Date: 2026-06-19
 - Mark SHOT-02-V005 as human_review_partial_success_direction_validated.
 - Create SHOT-02-V006 image2video package only.
 - Use the original locked SHOT-02 first-clash keyframe as the only input image.
-- Do not submit, query, download, generate media, lock output, auto-continue, stage, or commit.
+- Do not download, generate media, lock output, or auto-continue.
 - Do not modify Source files, runtime code, or configs/providers.json.
 
 ## V005 Human Review Result
@@ -96,4 +96,21 @@ dreamina image2video `
 
 ## Decision
 
-SHOT_02_V006_GIANT_RAIN_SHOCKWAVE_LENS_PASS_PACKAGE_READY_NO_SUBMIT
+SHOT_02_V006_SUBMITTED_QUERYING
+
+## Live Submit Record
+
+- status: submitted_querying
+- submit_id: 44bcdf99-97c9-4d62-b47d-4c623f920b91
+- logid: 20260619145824169254047008114EAC2
+- credit_count: 56
+- command_contract_preflight: pass
+- command_contract_valid: true
+- first_query_status: querying
+- queue_status: Generating
+- downloaded: false
+- output_path: null
+- final_master: false
+- locked: false
+- usable_video_candidate: false
+- human_review_required_after_download: true
