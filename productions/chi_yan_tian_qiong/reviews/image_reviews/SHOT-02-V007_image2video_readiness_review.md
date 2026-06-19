@@ -1,8 +1,8 @@
-# SHOT-02-V007 Image2Video Readiness Review
+﻿# SHOT-02-V007 Image2Video Readiness Review
 
 Task: SHOT-02-V007
 Shot: SHOT-02
-Status: package_ready_no_submit
+Status: submitted_querying
 Concept: preimpact_pressure_charge / contact-point rain-particle build-up / hit-stop tension before shockwave
 
 ## Context
@@ -70,4 +70,20 @@ Concept: preimpact_pressure_charge / contact-point rain-particle build-up / hit-
 
 ## Decision
 
-SHOT_02_V007_PREIMPACT_PRESSURE_CHARGE_PACKAGE_READY_NO_SUBMIT
+SHOT_02_V007_PREIMPACT_PRESSURE_CHARGE_SUBMITTED_QUERYING
+
+## Submit Metadata
+- status: submitted_querying
+- submit_id: e9070a25-d412-4dfc-8b3d-1d872ac7fb64
+- logid: 20260619221705169254047008630EE57
+- credit_count: 56
+- command_contract_preflight: pass
+- command_contract_valid: true
+- first_query_status: querying
+- queue_status: Generating
+- downloaded: false
+- output_path: null
+- final_master: false
+- locked: false
+- usable_video_candidate: false
+- human_review_required_after_download: true

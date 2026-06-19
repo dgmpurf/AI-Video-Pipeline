@@ -1,4 +1,4 @@
-# PHASE K10: SHOT-02-V007 Preimpact Pressure Charge Image2Video Package Report
+﻿# PHASE K10: SHOT-02-V007 Preimpact Pressure Charge Image2Video Package Report
 
 Date: 2026-06-19
 
@@ -86,3 +86,19 @@ dreamina image2video `
 ## Decision
 
 SHOT_02_V007_PREIMPACT_PRESSURE_CHARGE_PACKAGE_READY_NO_SUBMIT
+
+## Submit Metadata
+- status: submitted_querying
+- submit_id: e9070a25-d412-4dfc-8b3d-1d872ac7fb64
+- logid: 20260619221705169254047008630EE57
+- credit_count: 56
+- command_contract_preflight: pass
+- command_contract_valid: true
+- first_query_status: querying
+- queue_status: Generating
+- downloaded: false
+- output_path: null
+- final_master: false
+- locked: false
+- usable_video_candidate: false
+- human_review_required_after_download: true
