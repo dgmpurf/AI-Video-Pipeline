@@ -4,7 +4,7 @@
   "task_type": "image2video",
   "prompt_type": "shot_video_giant_rain_shockwave_lens_pass_cli4",
   "package_concept": "giant_rain_shockwave_lens_pass",
-  "status": "human_review_extracts_ranked",
+  "status": "human_review_impact_edit_tests_ranked",
   "needs_generation": true,
   "official_video_candidate": false,
   "official_keyframe_source": "productions/chi_yan_tian_qiong/locked_refs/SHOT-02-KF-002_locked_main_hall_first_clash.png",
@@ -101,7 +101,7 @@
   "fps": 24.149377593360995,
   "frame_count": 97,
   "source_video_path": "productions/chi_yan_tian_qiong/runs/live/SHOT-02-V006_20260619_165923/SHOT-02-V006_giant_rain_shockwave_lens_pass_motion.mp4",
-  "human_review_result": "usable_extract_candidate",
+  "human_review_result": "impact_edit_tests_ranked",
   "full_clip_usable": false,
   "extract_candidate": true,
   "recommended_extract_cut01": "2.00s-4.00s",
@@ -157,11 +157,40 @@
   "cut_roles": {
     "CUT01": "long_full_shockwave_backup",
     "CUT02": "tight_impact_extract_candidate",
-    "CUT03": "short_full_shockwave_extract_candidate"
+    "CUT03": "preferred_full_shockwave_short_extract_candidate"
   },
   "preferred_extract": "CUT03",
   "preferred_extract_path": "productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V006/SHOT-02-V006_CUT03_2p00_to_3p35_short_full_shockwave_extract.mp4",
-  "recommended_edit_structure": "0.3-0.6s contact/hit-stop beat followed by CUT03 shockwave reveal",
+  "recommended_edit_structure": "0.50s contact/hit-stop beat followed by CUT03 shockwave reveal",
   "recommended_current_use": "CUT02_for_fast_impact_edit; CUT01_and_CUT03_for_larger_shockwave_reveal",
-  "next_review_required": "CUT03 human review"
+  "next_review_required": "CUT03 human review",
+  "test_a_path": "productions/chi_yan_tian_qiong/edits/tests/SHOT-02-impact-cut/SHOT-02_IMPACT_TEST_A_0p35s_hold_plus_CUT03.mp4",
+  "test_b_path": "productions/chi_yan_tian_qiong/edits/tests/SHOT-02-impact-cut/SHOT-02_IMPACT_TEST_B_0p50s_hold_plus_CUT03.mp4",
+  "CUT03_role": "preferred_full_shockwave_short_extract_candidate",
+  "test_a_role": "fast_impact_backup",
+  "test_b_role": "preferred_impact_edit_candidate",
+  "preferred_impact_edit": "TEST_B",
+  "preferred_impact_edit_path": "productions/chi_yan_tian_qiong/edits/tests/SHOT-02-impact-cut/SHOT-02_IMPACT_TEST_B_0p50s_hold_plus_CUT03.mp4",
+  "backup_impact_edit_path": "productions/chi_yan_tian_qiong/edits/tests/SHOT-02-impact-cut/SHOT-02_IMPACT_TEST_A_0p35s_hold_plus_CUT03.mp4",
+  "optional_later_refinement": "0.42s contact hold may be tested during final edit if 0.50s feels slightly long after sound design",
+  "further_dreamina_generation_needed": false,
+  "impact_edit_tests": {
+    "status": "human_review_impact_tests_ranked",
+    "test_a": {
+      "path": "productions/chi_yan_tian_qiong/edits/tests/SHOT-02-impact-cut/SHOT-02_IMPACT_TEST_A_0p35s_hold_plus_CUT03.mp4",
+      "role": "fast_impact_backup",
+      "duration_seconds": 0.35,
+      "status": "impact_backup"
+    },
+    "test_b": {
+      "path": "productions/chi_yan_tian_qiong/edits/tests/SHOT-02-impact-cut/SHOT-02_IMPACT_TEST_B_0p50s_hold_plus_CUT03.mp4",
+      "role": "preferred_impact_edit_candidate",
+      "duration_seconds": 0.5,
+      "status": "preferred_candidate"
+    },
+    "cut03": {
+      "path": "productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V006/SHOT-02-V006_CUT03_2p00_to_3p35_short_full_shockwave_extract.mp4",
+      "role": "preferred_full_shockwave_short_extract_candidate"
+    }
+  }
 }

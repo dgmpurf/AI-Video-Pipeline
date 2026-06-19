@@ -4,9 +4,9 @@ Date: 2026-06-19
 
 ## Scope
 
-- Rank extract candidates for SHOT-02-V006 and select a preferred full-shockwave short candidate.
+- Rank impact edit test candidates for SHOT-02-V006, confirm CUT03 remains preferred full-shockwave short extract, and select the preferred local impact edit test.
 - Keep the original locked SHOT-02 first-clash keyframe as the only input image.
-- Compare CUT01/CUT02/CUT03 segments from the same source output.
+- Compare CUT01/CUT02/CUT03 segments from the same source output and evaluate local impact edit tests TEST_A / TEST_B.
 - Do not lock output, mark final master, download media, or auto-continue.
 - Do not modify Source files, runtime code, or configs/providers.json.
 
@@ -96,7 +96,7 @@ dreamina image2video `
 
 ## Decision
 
-SHOT_02_V006_EXTRACTS_RANKED_READY
+SHOT_02_IMPACT_EDIT_TESTS_RANKED
 
 ## Live Submit Record
 
@@ -123,16 +123,24 @@ SHOT_02_V006_EXTRACTS_RANKED_READY
 - usable_video_candidate: false
 - human_review_required_after_download: true
 
-## Human Review Extract Candidate
+## Human Review Impact Edit Tests
 
-- status: human_review_extracts_ranked
-- human_review_result: usable_extract_candidate
+- status: human_review_impact_edit_tests_ranked
+- human_review_result: impact_edit_tests_ranked
 - source_video_path: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V006_20260619_165923/SHOT-02-V006_giant_rain_shockwave_lens_pass_motion.mp4
 - full_clip_usable: false
 - usable_video_candidate: false
 - extract_candidate: true
 - final_master: false
 - locked: false
+- CUT03 role: preferred_full_shockwave_short_extract_candidate
+- TEST_A path: productions/chi_yan_tian_qiong/edits/tests/SHOT-02-impact-cut/SHOT-02_IMPACT_TEST_A_0p35s_hold_plus_CUT03.mp4
+- TEST_A role: fast_impact_backup
+- TEST_B path: productions/chi_yan_tian_qiong/edits/tests/SHOT-02-impact-cut/SHOT-02_IMPACT_TEST_B_0p50s_hold_plus_CUT03.mp4
+- TEST_B role: preferred_impact_edit_candidate
+- preferred_impact_edit: TEST_B
+- preferred_impact_edit_path: productions/chi_yan_tian_qiong/edits/tests/SHOT-02-impact-cut/SHOT-02_IMPACT_TEST_B_0p50s_hold_plus_CUT03.mp4
+- backup_impact_edit_path: productions/chi_yan_tian_qiong/edits/tests/SHOT-02-impact-cut/SHOT-02_IMPACT_TEST_A_0p35s_hold_plus_CUT03.mp4
 - recommended_extract_cut01: 2.00s-4.00s
 - recommended_extract_cut02: 2.00s-3.50s
 - recommended_extract_cut03: 2.00s-3.35s
@@ -143,10 +151,12 @@ SHOT_02_V006_EXTRACTS_RANKED_READY
 - CUT03 role: preferred_full_shockwave_short_extract_candidate
 - preferred_extract: CUT03
 - preferred_extract_path: productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V006/SHOT-02-V006_CUT03_2p00_to_3p35_short_full_shockwave_extract.mp4
-- recommended_edit_structure: 0.3-0.6s contact/hit-stop beat followed by CUT03 shockwave reveal
+- recommended_edit_structure: 0.50s contact/hit-stop beat followed by CUT03 shockwave reveal
 - recommended_current_use: prefer CUT02 for fast impact edit; CUT01/CUT03 for larger shockwave reveal
 - next_recommended_action: prepare short contact/hit-stop beat if needed; otherwise preserve CUT03 as current SHOT-02 shockwave highlight candidate
-- next_review_required: CUT03 human review
+- optional_later_refinement: 0.42s contact hold may be tested during final edit if 0.50s feels slightly long after sound design
+- further_dreamina_generation_needed: false
+- next_review_required: none
 
 ## Local Extract Validation
 
