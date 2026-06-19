@@ -2,7 +2,7 @@
 
 Task: SHOT-02-V005
 Shot: SHOT-02
-Status: submitted_querying
+Status: human_review_partial_success_direction_validated
 Concept: spherical_rain_shockwave_reveal / strong-trigger rain shockwave with camera pull-back reveal
 
 ## Prior Attempt Review
@@ -61,20 +61,44 @@ Concept: spherical_rain_shockwave_reveal / strong-trigger rain shockwave with ca
 
 ## Decision
 
-SHOT_02_V005_SUBMITTED_QUERYING
+SHOT_02_V005_PARTIAL_SUCCESS_DIRECTION_VALIDATED
 
 ## Live Submit Record
 
-- status=submitted_querying
+- status=success_downloaded_review_required
 - submit_id=2af71f16-d097-4711-b28a-c34fb7d54e82
 - logid=20260619012030169254047008249ECB1
 - credit_count=56
 - command_contract_valid=true
 - first_query_status=querying
-- queue_status=Generating
-- downloaded=false
-- output_path=null
+- query_status=success
+- queue_status=Finish
+- downloaded=true
+- run_dir=productions/chi_yan_tian_qiong/runs/live/SHOT-02-V005_20260619_133555
+- output_path=productions/chi_yan_tian_qiong/runs/live/SHOT-02-V005_20260619_133555/SHOT-02-V005_spherical_rain_shockwave_reveal_motion.mp4
+- file_size=9234307
+- sha256=5cefa6e995b48c4ad4e59e69774777c98da90e162c53092f688daf78fc2f5d03
+- video_duration=4.016666666666667
+- resolution=1280x720
+- fps=24.149377593360995
+- frame_count=97
 - final_master=false
 - locked=false
 - usable_video_candidate=false
 - human_review_required_after_download=true
+
+## Human Review Result
+
+- status=human_review_partial_success_direction_validated
+- technical_valid=true
+- command_contract_valid=true
+- downloaded=true
+- usable_reference_clip=true
+- usable_video_candidate=false
+- final_master=false
+- locked=false
+- human_review_result=partial_success_direction_validated
+- success_points=spherical shockwave appears; rain/water reacts; strong-trigger prompt works; camera reveal direction partially works
+- remaining_issues=shockwave too small; scale does not reach visual distance; lacks pre-impact rain-particle build-up; camera pull-back not strong enough; shockwave edge does not sweep past camera foreground
+- lesson_learned=strong trigger words should remain, but V006 must add pre-impact particle build-up and larger camera pull-back reveal
+- next_recommended_task=SHOT-02-V006_giant_rain_shockwave_lens_pass
