@@ -2,7 +2,7 @@
   "shot_id": "SHOT-02",
   "task_id": "SHOT-02-V005",
   "task_type": "image2video",
-  "status": "package_ready_no_submit",
+  "status": "submitted_querying",
   "needs_generation": true,
   "official_video_candidate": false,
   "package_concept": "spherical_rain_shockwave_reveal",
@@ -37,5 +37,16 @@
   "final_master": false,
   "locked": false,
   "usable_video_candidate": false,
-  "created_at": "2026-06-19T00:00:00+08:00"
+  "created_at": "2026-06-19T00:00:00+08:00",
+  "submit_id": "2af71f16-d097-4711-b28a-c34fb7d54e82",
+  "logid": "20260619012030169254047008249ECB1",
+  "credit_count": 56,
+  "first_query_status": "querying",
+  "queue_status": "Generating",
+  "downloaded": false,
+  "output_path": null,
+  "final_master": false,
+  "locked": false,
+  "usable_video_candidate": false,
+  "human_review_required_after_download": true
 }

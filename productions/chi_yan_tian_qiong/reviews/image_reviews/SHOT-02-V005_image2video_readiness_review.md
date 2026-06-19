@@ -2,7 +2,7 @@
 
 Task: SHOT-02-V005
 Shot: SHOT-02
-Status: package_ready_no_submit
+Status: submitted_querying
 Concept: spherical_rain_shockwave_reveal / strong-trigger rain shockwave with camera pull-back reveal
 
 ## Prior Attempt Review
@@ -61,4 +61,20 @@ Concept: spherical_rain_shockwave_reveal / strong-trigger rain shockwave with ca
 
 ## Decision
 
-SHOT_02_V005_SPHERICAL_RAIN_SHOCKWAVE_REVEAL_PACKAGE_READY_NO_SUBMIT
+SHOT_02_V005_SUBMITTED_QUERYING
+
+## Live Submit Record
+
+- status=submitted_querying
+- submit_id=2af71f16-d097-4711-b28a-c34fb7d54e82
+- logid=20260619012030169254047008249ECB1
+- credit_count=56
+- command_contract_valid=true
+- first_query_status=querying
+- queue_status=Generating
+- downloaded=false
+- output_path=null
+- final_master=false
+- locked=false
+- usable_video_candidate=false
+- human_review_required_after_download=true

@@ -8,7 +8,7 @@ Date: 2026-06-19
 - Create SHOT-02-V005 image2video package only.
 - Use the original locked SHOT-02 first-clash keyframe as the only input image.
 - Do not use SHOT-02-KF-003 as a video keyframe.
-- Do not submit, query, download, generate media, lock output, auto-continue, stage, or commit.
+- Do not generate media, lock output, or auto-continue.
 - Do not modify Source files, runtime code, or configs/providers.json.
 
 ## KF-003 Human Review Result
@@ -95,4 +95,21 @@ dreamina image2video `
 
 ## Decision
 
-SHOT_02_V005_SPHERICAL_RAIN_SHOCKWAVE_REVEAL_PACKAGE_READY_NO_SUBMIT
+SHOT_02_V005_SUBMITTED_QUERYING
+
+## Live Submit Record
+
+- status: submitted_querying
+- submit_id: 2af71f16-d097-4711-b28a-c34fb7d54e82
+- logid: 20260619012030169254047008249ECB1
+- credit_count: 56
+- command_contract_preflight: pass
+- command_contract_valid: true
+- first_query_status: querying
+- queue_status: Generating
+- downloaded: false
+- output_path: null
+- final_master: false
+- locked: false
+- usable_video_candidate: false
+- human_review_required_after_download: true
