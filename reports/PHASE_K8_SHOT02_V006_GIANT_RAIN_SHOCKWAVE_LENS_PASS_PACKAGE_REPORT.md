@@ -96,21 +96,64 @@ dreamina image2video `
 
 ## Decision
 
-SHOT_02_V006_SUBMITTED_QUERYING
+SHOT_02_V006_USABLE_EXTRACT_CANDIDATE
 
 ## Live Submit Record
 
-- status: submitted_querying
+- status: success_downloaded_review_required
 - submit_id: 44bcdf99-97c9-4d62-b47d-4c623f920b91
 - logid: 20260619145824169254047008114EAC2
 - credit_count: 56
 - command_contract_preflight: pass
 - command_contract_valid: true
 - first_query_status: querying
-- queue_status: Generating
-- downloaded: false
-- output_path: null
+- queue_status: Finish
+- query_status: success
+- downloaded: true
+- run_dir: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V006_20260619_165923
+- output_path: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V006_20260619_165923/SHOT-02-V006_giant_rain_shockwave_lens_pass_motion.mp4
+- file_size: 8222075
+- sha256: 959fe1aeea02ce2954a5a3735010609292382a031826996bffa0ae739b20a236
+- video_duration: 4.016666666666667
+- resolution: 1280x720
+- fps: 24.149377593360995
+- frame_count: 97
 - final_master: false
 - locked: false
 - usable_video_candidate: false
 - human_review_required_after_download: true
+
+## Human Review Extract Candidate
+
+- status: human_review_usable_extract_candidate
+- human_review_result: usable_extract_candidate
+- source_video_path: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V006_20260619_165923/SHOT-02-V006_giant_rain_shockwave_lens_pass_motion.mp4
+- full_clip_usable: false
+- usable_video_candidate: false
+- extract_candidate: true
+- final_master: false
+- locked: false
+- recommended_extract_cut01: 2.00s-4.00s
+- recommended_extract_cut02: 2.00s-3.50s
+- success_points: large shockwave reveal after 2.0s; wide rain curtain; camera pull-back reveal works
+- remaining_issues: front section looks like water spraying from fists; pre-impact particle build-up not convincing; full 4s clip too slow
+- next_recommended_action: keep CUT02 as high-impact candidate; optionally create separate pre-impact charge shot later
+
+## Local Extract Validation
+
+- CUT01 path: productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V006/SHOT-02-V006_CUT01_2p00_to_4p00_giant_shockwave_extract.mp4
+- CUT01 exists: true
+- CUT01 file_size: 1765998
+- CUT01 sha256: fa66ad03e359e017e72d4ad1e9a605807d525ecf0904c60291d9ac2e1a204eb3
+- CUT01 duration: 2.028985507246377
+- CUT01 resolution: 1280x720
+- CUT01 fps: 24.15
+- CUT01 frame_count: 49
+- CUT02 path: productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V006/SHOT-02-V006_CUT02_2p00_to_3p50_tight_shockwave_extract.mp4
+- CUT02 exists: true
+- CUT02 file_size: 1301713
+- CUT02 sha256: 121b16c364c91b71ce3ce07fb47c7b7dca9fe339e66d004376ef62d52c18e059
+- CUT02 duration: 1.5320910973084887
+- CUT02 resolution: 1280x720
+- CUT02 fps: 24.15
+- CUT02 frame_count: 37
