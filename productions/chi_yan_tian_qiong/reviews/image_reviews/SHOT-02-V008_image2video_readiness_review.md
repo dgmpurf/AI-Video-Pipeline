@@ -2,7 +2,7 @@
 
 Task: SHOT-02-V008
 Shot: SHOT-02
-Status: submitted_querying
+Status: human_review_full_impact_beat_ranked
 Concept: aftershock_rain_recovery / rain mist settling / combatants stabilize after shockwave
 
 ## Context
@@ -33,7 +33,7 @@ Concept: aftershock_rain_recovery / rain mist settling / combatants stabilize af
 - backup_start_frame_path: productions/chi_yan_tian_qiong/derived_refs/SHOT-02-V008_start_frame_candidates/SHOT-02-V008_start_candidate_1p20s.png
 - backup_start_frame_sha256: aa50b6e53fad45c5b8c1d90d1f74ef1751201b5aae5c0f056cd1ade23062b4ba
 - review_notes: 1.15s is the preferred V008 start frame. 1.20s remains acceptable backup. 0.95s and 1.05s are slightly too early / still feel like shockwave continuation. 1.30s is usable but slightly too settled and has less aftershock energy.
-- Status: submitted_querying
+- Status: human_review_full_impact_beat_ranked
 - command_contract_valid: true
 - duration: 4
 - video_resolution: 720p
@@ -88,11 +88,24 @@ Concept: aftershock_rain_recovery / rain mist settling / combatants stabilize af
 
 ## Decision
 
-SHOT_02_V008_SUBMITTED_QUERYING
+SHOT_02_FULL_IMPACT_BEAT_RANKED
+
+## Full Impact Beat Ranking
+
+- status=human_review_full_impact_beat_ranked
+- preferred_full_impact_beat=FULL_B
+- preferred_full_impact_beat_path=productions/chi_yan_tian_qiong/edits/tests/SHOT-02-full-impact-beat/SHOT-02_FULL_TEST_B_C1_plus_V008B.mp4
+- fast_backup=FULL_A
+- extended_transition_backup=FULL_C
+- recommended_current_shot02_structure=V007C preimpact charge -> V006 CUT03 shockwave reveal -> V008B aftershock recovery
+- further_dreamina_generation_needed_for_current_impact_beat=false
+- final_master=false
+- locked=false
+- next_recommended_action=begin SHOT-02 broader edit assembly or prepare the next combat beat, not more shockwave generation
 
 ## Submit Metadata
 
-- status: submitted_querying
+- Status: success_downloaded_review_required
 - submit_id: 9c99d945-65c5-4e42-9d7a-f434313bec9a
 - logid: 20260620145104169254047008671EB9D
 - credit_count: 56
@@ -110,6 +123,26 @@ SHOT_02_V008_SUBMITTED_QUERYING
 - fail_reason: none returned
 - downloaded: false
 - output_path: null
+- final_master: false
+- locked: false
+- usable_video_candidate: false
+- human_review_required_after_download: true
+
+## Query / Download Metadata
+
+- status: success_downloaded_review_required
+- query_status: success
+- queue_status: Finish
+- downloaded: true
+- run_dir: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V008_20260620_171219
+- output_path: productions/chi_yan_tian_qiong/runs/live/SHOT-02-V008_20260620_171219/SHOT-02-V008_aftershock_rain_recovery_motion.mp4
+- file_size: 7306279
+- sha256: 375d0eff7aec2bcb44d660072507f0fcd639abef3120af7a6f4a5b59e25915c7
+- video_duration: 4.064
+- resolution: 1280x720
+- fps: 23.8681102362205
+- frame_count: 97
+- technical_valid: true
 - final_master: false
 - locked: false
 - usable_video_candidate: false
