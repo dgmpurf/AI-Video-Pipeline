@@ -2,7 +2,7 @@
 
 Task: SHOT-02-V008
 Shot: SHOT-02
-Status: package_ready_no_submit
+Status: submitted_querying
 Concept: aftershock_rain_recovery / rain mist settling / combatants stabilize after shockwave
 
 ## Context
@@ -33,7 +33,7 @@ Concept: aftershock_rain_recovery / rain mist settling / combatants stabilize af
 - backup_start_frame_path: productions/chi_yan_tian_qiong/derived_refs/SHOT-02-V008_start_frame_candidates/SHOT-02-V008_start_candidate_1p20s.png
 - backup_start_frame_sha256: aa50b6e53fad45c5b8c1d90d1f74ef1751201b5aae5c0f056cd1ade23062b4ba
 - review_notes: 1.15s is the preferred V008 start frame. 1.20s remains acceptable backup. 0.95s and 1.05s are slightly too early / still feel like shockwave continuation. 1.30s is usable but slightly too settled and has less aftershock energy.
-- status: package_ready_no_submit
+- Status: submitted_querying
 - command_contract_valid: true
 - duration: 4
 - video_resolution: 720p
@@ -88,5 +88,30 @@ Concept: aftershock_rain_recovery / rain mist settling / combatants stabilize af
 
 ## Decision
 
-SHOT_02_V008_AFTERSHOCK_RAIN_RECOVERY_PACKAGE_READY_NO_SUBMIT
+SHOT_02_V008_SUBMITTED_QUERYING
+
+## Submit Metadata
+
+- status: submitted_querying
+- submit_id: 9c99d945-65c5-4e42-9d7a-f434313bec9a
+- logid: 20260620145104169254047008671EB9D
+- credit_count: 56
+- task_type: image2video
+- model_version: seedance2.0_vip
+- duration: 4
+- video_resolution: 720p
+- selected_start_frame_time: 1.15s
+- selected_start_frame_sha256: 82deaa75293ae75be3bd2b4d1b2da82ce3e4f263a5380ed2ed01a4ec5b3030df
+- command_contract_preflight: pass
+- command_contract_valid: true
+- submit_gen_status: querying
+- first_query_status: querying
+- queue_status: Generating
+- fail_reason: none returned
+- downloaded: false
+- output_path: null
+- final_master: false
+- locked: false
+- usable_video_candidate: false
+- human_review_required_after_download: true
 

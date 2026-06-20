@@ -2,7 +2,7 @@
     "shot_id":  "SHOT-02",
     "task_id":  "SHOT-02-V008",
     "task_type":  "image2video",
-    "status":  "package_ready_no_submit",
+    "status":  "submitted_querying",
     "needs_generation":  true,
     "official_video_candidate":  false,
     "package_concept":  "aftershock_rain_recovery",
@@ -51,5 +51,14 @@
     "duration":  4,
     "video_resolution":  "720p",
     "ratio_omitted":  true,
-    "exactly_one_image":  true
+    "exactly_one_image":  true,
+    "submit_id":  "9c99d945-65c5-4e42-9d7a-f434313bec9a",
+    "logid":  "20260620145104169254047008671EB9D",
+    "credit_count":  56,
+    "command_contract_preflight":  "pass",
+    "first_query_status":  "querying",
+    "queue_status":  "Generating",
+    "downloaded":  false,
+    "output_path":  null,
+    "human_review_required_after_download":  true
 }

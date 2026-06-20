@@ -4,7 +4,7 @@
     "task_type":  "image2video",
     "prompt_type":  "shot_video_aftershock_rain_recovery_cli4",
     "package_concept":  "aftershock_rain_recovery",
-    "status":  "package_ready_no_submit",
+    "status":  "submitted_querying",
     "needs_generation":  true,
     "official_video_candidate":  false,
     "input_image":  "productions/chi_yan_tian_qiong/derived_refs/SHOT-02-V008_start_frame_candidates/SHOT-02-V008_start_candidate_1p15s.png",
@@ -87,5 +87,14 @@
     "backup_start_frame_sha256":  "aa50b6e53fad45c5b8c1d90d1f74ef1751201b5aae5c0f056cd1ade23062b4ba",
     "start_frame_selection_reason":  "1.15s best balances aftershock energy and recovery; 1.20s remains acceptable backup; 0.95s and 1.05s are too early; 1.30s is too settled.",
     "ratio_omitted":  true,
-    "exactly_one_image":  true
+    "exactly_one_image":  true,
+    "submit_id":  "9c99d945-65c5-4e42-9d7a-f434313bec9a",
+    "logid":  "20260620145104169254047008671EB9D",
+    "credit_count":  56,
+    "command_contract_preflight":  "pass",
+    "first_query_status":  "querying",
+    "queue_status":  "Generating",
+    "downloaded":  false,
+    "output_path":  null,
+    "human_review_required_after_download":  true
 }
