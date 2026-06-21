@@ -80,16 +80,37 @@ dreamina image2video `
   --poll 0
 ```
 
-## Download Stage (SHOT-02-V009, Existing Submit)
+## Codex Download Stage (SHOT-02-V009, Existing Submit)
 
 - `submit_id`: `1b359b01-a7c8-4d77-a9db-6c82251e36f4`
 - `logid`: `20260621001332169254047008993B0B1`
 - Download command attempted once with:
   - `dreamina query_result --submit_id 1b359b01-a7c8-4d77-a9db-6c82251e36f4 --download_dir <run_dir>`
-- Result: **failed** (local environment permission issue before media download).
+- Result: **failed locally** (Codex local environment permission issue before media download).
 - Non-sensitive error summary: Dreamina log initialization denied access to `C:\\Users\\msjpurf\\.dreamina_cli\\logs\\dreamina.log.2026-06-21_13`.
 - No clip output, contact sheet, or review frames generated in this step.
-- Next action: fix log ACL permissions and rerun the same `submit_id` download flow only once before any new attempt.
+- Interpretation: this was a local Codex logger block, not a remote generation failure.
+
+## Manual Download Ingest
+
+- Human manual download succeeded.
+- Standardized output path: `productions/chi_yan_tian_qiong/runs/live/SHOT-02-V009_manual_download/SHOT-02-V009_body_footwork_reaction_motion.mp4`
+- Original manual download file: `productions/chi_yan_tian_qiong/runs/live/SHOT-02-V009_manual_download/1b359b01-a7c8-4d77-a9db-6c82251e36f4_video_1.mp4`
+- File size: `6880052` bytes
+- SHA256: `44e724c924f57346428e0753fe784255a40ed47694ca00bced4520519795d195`
+- Duration: `4.016667s`
+- Resolution: `1280x720`
+- FPS: `24.149377593360995`
+- Frame count: `97`
+- Contact sheet: `productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V009/SHOT-02-V009_contact_sheet.jpg`
+- Review frames:
+  - `productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V009/SHOT-02-V009_frame_0p00s.jpg`
+  - `productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V009/SHOT-02-V009_frame_0p50s.jpg`
+  - `productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V009/SHOT-02-V009_frame_1p00s.jpg`
+  - `productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V009/SHOT-02-V009_frame_1p50s.jpg`
+  - `productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V009/SHOT-02-V009_frame_2p00s.jpg`
+  - `productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V009/SHOT-02-V009_frame_last_4p00s.jpg`
+- Human review status: pending.
 
 ## Risk Notes
 
@@ -112,4 +133,4 @@ dreamina image2video `
 
 ## Decision
 
-SHOT_02_V009_DOWNLOAD_FAILED
+SHOT_02_V009_MANUAL_DOWNLOAD_INGESTED_REVIEW_PENDING

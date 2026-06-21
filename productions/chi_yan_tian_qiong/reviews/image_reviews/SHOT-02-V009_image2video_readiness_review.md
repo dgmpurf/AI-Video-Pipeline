@@ -2,7 +2,7 @@
 
 Task: SHOT-02-V009
 Shot: SHOT-02
-Status: failed_download
+Status: success_downloaded_manual
 Concept: body_footwork_reaction / stance recovery / transition to next combat beat
 
 ## Context
@@ -79,9 +79,9 @@ Concept: body_footwork_reaction / stance recovery / transition to next combat be
 
 ## Decision
 
-SHOT-02-V009_DOWNLOAD_FAILED
+SHOT-02-V009_MANUAL_DOWNLOAD_INGESTED_REVIEW_PENDING
 
-## Download Attempt (Current Step)
+## Codex Logger Blocked Download Attempt
 
 - Existing submit id: `1b359b01-a7c8-4d77-a9db-6c82251e36f4`
 - Planned download run directory: `productions/chi_yan_tian_qiong/runs/live/SHOT-02-V009_<YYYYMMDD_HHMMSS>/`
@@ -90,9 +90,23 @@ SHOT-02-V009_DOWNLOAD_FAILED
 - Result: failure before media retrieval.
 - Non-sensitive failure: log initialization denied when opening `C:\\Users\\msjpurf\\.dreamina_cli\\logs\\dreamina.log.2026-06-21_13`.
 - No media generated in this step.
-- Next step: fix Dreamina log ACL and rerun the exact `submit_id` download flow only once when ready.
+- Diagnosis: local Codex CLI download was blocked by the Dreamina file logger path under the user profile; the remote generation itself was not proven failed by this local error.
+
+## Manual Download Ingest
+
+- Human manual download succeeded after the Codex logger failure.
+- Standardized local output path: `productions/chi_yan_tian_qiong/runs/live/SHOT-02-V009_manual_download/SHOT-02-V009_body_footwork_reaction_motion.mp4`
+- Original manual download file: `productions/chi_yan_tian_qiong/runs/live/SHOT-02-V009_manual_download/1b359b01-a7c8-4d77-a9db-6c82251e36f4_video_1.mp4`
+- File size: `6880052` bytes
+- SHA256: `44e724c924f57346428e0753fe784255a40ed47694ca00bced4520519795d195`
+- Duration: `4.016667s`
+- Resolution: `1280x720`
+- FPS: `24.149377593360995`
+- Frame count: `97`
+- Contact sheet: `productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V009/SHOT-02-V009_contact_sheet.jpg`
+- Human review status: pending.
 
 ## Review Impact
 
 - Keep `submitted_querying`/generation records as historical.
-- Do not mark `final_master`, `locked`, or `usable_video_candidate` until a successful download and human review.
+- Do not mark `final_master`, `locked`, or `usable_video_candidate` until human review.
