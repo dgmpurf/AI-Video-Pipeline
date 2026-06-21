@@ -2,7 +2,7 @@
 
 Task: SHOT-02-V009
 Shot: SHOT-02
-Status: package_ready_no_submit
+Status: failed_download
 Concept: body_footwork_reaction / stance recovery / transition to next combat beat
 
 ## Context
@@ -79,4 +79,20 @@ Concept: body_footwork_reaction / stance recovery / transition to next combat be
 
 ## Decision
 
-SHOT_02_V009_BODY_FOOTWORK_REACTION_PACKAGE_READY_NO_SUBMIT
+SHOT-02-V009_DOWNLOAD_FAILED
+
+## Download Attempt (Current Step)
+
+- Existing submit id: `1b359b01-a7c8-4d77-a9db-6c82251e36f4`
+- Planned download run directory: `productions/chi_yan_tian_qiong/runs/live/SHOT-02-V009_<YYYYMMDD_HHMMSS>/`
+- Download command used once:
+  - `dreamina query_result --submit_id 1b359b01-a7c8-4d77-a9db-6c82251e36f4 --download_dir <run_dir>`
+- Result: failure before media retrieval.
+- Non-sensitive failure: log initialization denied when opening `C:\\Users\\msjpurf\\.dreamina_cli\\logs\\dreamina.log.2026-06-21_13`.
+- No media generated in this step.
+- Next step: fix Dreamina log ACL and rerun the exact `submit_id` download flow only once when ready.
+
+## Review Impact
+
+- Keep `submitted_querying`/generation records as historical.
+- Do not mark `final_master`, `locked`, or `usable_video_candidate` until a successful download and human review.

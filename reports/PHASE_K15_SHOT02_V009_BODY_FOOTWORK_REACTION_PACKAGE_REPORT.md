@@ -80,6 +80,17 @@ dreamina image2video `
   --poll 0
 ```
 
+## Download Stage (SHOT-02-V009, Existing Submit)
+
+- `submit_id`: `1b359b01-a7c8-4d77-a9db-6c82251e36f4`
+- `logid`: `20260621001332169254047008993B0B1`
+- Download command attempted once with:
+  - `dreamina query_result --submit_id 1b359b01-a7c8-4d77-a9db-6c82251e36f4 --download_dir <run_dir>`
+- Result: **failed** (local environment permission issue before media download).
+- Non-sensitive error summary: Dreamina log initialization denied access to `C:\\Users\\msjpurf\\.dreamina_cli\\logs\\dreamina.log.2026-06-21_13`.
+- No clip output, contact sheet, or review frames generated in this step.
+- Next action: fix log ACL permissions and rerun the same `submit_id` download flow only once before any new attempt.
+
 ## Risk Notes
 
 - The model may restart shockwave language from the source frame context; prompt forbids new shockwave, second explosion, and water wall.
@@ -101,4 +112,4 @@ dreamina image2video `
 
 ## Decision
 
-SHOT_02_V009_BODY_FOOTWORK_REACTION_PACKAGE_READY_NO_SUBMIT
+SHOT_02_V009_DOWNLOAD_FAILED
