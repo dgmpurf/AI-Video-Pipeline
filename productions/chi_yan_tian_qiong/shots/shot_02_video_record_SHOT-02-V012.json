@@ -224,6 +224,11 @@
     "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V012/SHOT-02-V012_CUT02_0p75_to_1p75_speed_1p50x.mp4"
   ],
   "local_edit_contact_sheet": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V012/SHOT-02-V012_CUT_SPEED_TESTS_contact_sheet.jpg",
+  "local_edit_test_review_status": "codex_reviewed_pending_human",
+  "local_edit_best_candidate": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V012/SHOT-02-V012_CUT01_0p50_to_1p50_speed_1p50x.mp4",
+  "local_edit_best_candidate_reason": "Best diagnostic tiny-bridge candidate because 1.5x gets closest to the desired faster rhythm while preserving identity and a readable contact setup; however it still reads as one held exchange and does not solve contact density or impact.",
+  "local_edit_speed_preference": "1.5x",
+  "local_edit_final_decision": "pending_human_review",
   "no_query_result_run_after_submit": true,
   "no_download_run_after_submit": true,
   "no_retry_resubmit_batch": true,
