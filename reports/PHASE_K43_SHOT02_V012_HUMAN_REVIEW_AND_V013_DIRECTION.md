@@ -3,163 +3,192 @@
 Date: 2026-06-23
 Project root: G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE
 
-## Scope And Boundary Confirmation
+## Scope And Safety Boundaries
 
-This report records the human review result for SHOT-02-V012 and prepares the correction direction for SHOT-02-V013 only.
+This pass records the SHOT-02-V012 human review result, integrates the Codex K42 usable-with-cut recommendation as a secondary local-test option, and prepares the SHOT-02-V013 direction only.
 
 - Dreamina was not run.
-- No submit, query_result, download, retry, resubmit, or batch action was performed.
-- No media was generated, moved, deleted, staged, or committed.
-- No runtime code, configs/providers.json, Project Source, or prompt source files were modified.
-- SHOT-02-V012 is not final master and is not locked.
-- Final video approval still requires human review.
+- No submit, query_result, download, retry, resubmit, batch, image2video, image2image, or multimodal2video command was run.
+- No media edit was created in this pass.
+- No media was moved, deleted, staged, or committed.
+- No runtime code, configs/providers.json, Project Source, prompt package files, or source files were modified.
+- final_master=false.
+- locked=false.
+- Human review is required before any final or lock decision.
 
 ## Files Inspected
 
 - G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/shots/shot_02_video_record_SHOT-02-V012.json
 - G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K42_SHOT02_V012_VISUAL_REVIEW.md
 - G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K41_SHOT02_V012_QUERY_DOWNLOAD_RESULT.md
+- G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K39_SHOT02_V012_PACKAGE_REVIEW.md
+- G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K38_SHOT02_V012_MULTIMODAL_PACKAGE_READY.md
 - G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K37_SHUANGJI_IDENTITY_ANCHOR_HUMAN_APPROVED_LOCKED.md
+- G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/assets/asset_registry.json
 
-## V012 Human Review Result
+## V012 Final Human Decision
 
 SHOT-02-V012 is rejected for final use.
 
-Shuangji identity improved compared with V010/V011. The character no longer shows the earlier obvious male-coded drift, and the two-character setup is cleaner than V011 where applicable.
+Do not mark V012 final or locked. Human review overrides any automatic or Codex recommendation for final approval.
 
-The remaining blocker is not identity. The failure is action rhythm, power, contact density, and tail continuation. V012 should not be used as final footage.
+Codex K42 recommendation was usable_with_cut, not final pass. That recommendation is retained only as permission to run optional local cut/speed-up diagnostic tests later if useful. It does not mean the full 4s V012 clip passes final review.
 
-## What Improved
+Integrated V012 decision:
 
-- Shuangji female identity is better preserved.
-- The result is no longer strongly male-coded.
-- The two-character relationship is cleaner than the earlier V011 attempt where applicable.
-- The A-CH-B-IDENTITY-002 Shuangji identity anchor strategy remains useful.
+- status=human_rejected_for_final_usable_with_cut_test
+- human_review_status=rejected_for_final
+- final_master=false
+- locked=false
+- usable_for_final=false
+- official_video_candidate=false
+- usable_video_candidate=cut_test_only
+- primary_next_path=SHOT-02-V013 new generation with stronger action choreography
+- secondary_next_path=optional V012 local cut/speed-up test for review only
 
-## What Failed
+## What Improved In V012
 
-- Fight speed is too slow and should feel roughly 2x faster.
+- Shuangji identity improved significantly versus V010/V011.
+- Female identity is much more stable.
+- The A-CH-B-IDENTITY-002 Shuangji identity anchor strategy worked.
+- Fenshou identity and two-character integrity are acceptable.
+- The identity problem is largely solved compared with the earlier identity-drift attempts.
+
+## What Still Failed
+
+- Fight speed still needs to be at least roughly 2x faster.
 - Contact density is too low.
-- The clip does not contain enough short contact beats.
-- Power and impact feel are insufficient.
-- Action is not forceful enough.
-- Slow motion should not be used as the solution.
-- The final roughly 1 second eases off or settles instead of continuing the fight.
-- The action reads too much like a demonstration or controlled exchange instead of a sharp close-range clash.
+- Impact and power are insufficient.
+- The action lacks sharp collision-based force.
+- More combat detail beats are needed.
+- The final roughly 1 second settles or eases off instead of continuing to fight.
+- Do not solve impact by using slow motion.
+- The full 4s V012 clip is not useful as final.
 
-## V013 Direction
+## Codex K42 Integration
 
-V013 should preserve the improved identity strategy while redesigning the action rhythm around higher beat density, stronger contact, and continued motion through the tail.
+Codex K42 visual review verdict:
 
-Keep:
+- Codex recommendation: usable_with_cut
+- Shuangji identity: 5/5
+- Fenshou identity: 5/5
+- Character integrity: 5/5
+- Action speed: 3/5
+- Collision impact: 2/5
+- Edit usability: 3/5
+- Contamination risk: 2/5
 
-- Shuangji identity anchor:
+K42 best cut candidates:
+
+- 0.50s-1.50s
+- 0.75s-1.75s
+
+K42 speed-up tests recommended:
+
+- 1.25x
+- 1.5x
+
+Interpretation:
+
+- The K42 usable-with-cut result is useful as an edit diagnostic only.
+- Cut/speed tests cannot replace the need for V013 if impact choreography is missing.
+- V012 should not be used as a visual reference for next generation.
+- V012 can be used as a text failure reference: identity improved, but speed, impact, contact density, and tail continuation failed.
+
+## V013 Primary Direction
+
+V013 should keep:
+
+- Fenshou locked identity reference:
+  G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png
+- A-CH-B-IDENTITY-002 Shuangji identity anchor:
   G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png
-- Fenshou locked reference.
-- Temple scene reference.
+- Temple scene anchor:
+  G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png
+- Exclusion of V009/V010/V011 visual frames.
 
-Continue excluding:
+V013 must change:
 
-- V009 frame references.
-- V010 frame references.
-- V011 frame references.
+- Action density.
+- Speed.
+- Impact mechanics.
+- Tail continuation.
 
-V012 may be treated only as limited text guidance or loose composition context. It is not a final video, not an identity reference, and not an action reference for direct copying.
+Primary path:
+
+- Create a new SHOT-02-V013 generation package with stronger choreography.
+- Do not force V012 into final use.
+- Do not create full V013 package files in this pass.
 
 ## V013 Action Design Notes
 
-The first second must immediately deliver dense close-range fighting, not a pause or slow setup.
+Use concrete AI-video language:
 
-- 0.0s-1.0s should contain about four quick contact beats.
-- Beat 1: hard step-in and abrupt forearm or wrist contact.
-- Beat 2: immediate slap-away or deflection with visible rebound.
-- Beat 3: re-entry with shoulder or forearm pressure burst, not a hold.
-- Beat 4: short palm, elbow-line interruption, or quick counter beat.
-- 1.0s-4.0s should continue into another chain, not settle down.
-- The last roughly 1 second must continue attacking and defending instead of posing out.
-
-The desired feeling is a faster "da-da-da-da" close-range exchange with multiple short collision beats.
-
-## Force And Impact Language
-
-Use physical action language that pushes Dreamina toward sharper combat rhythm:
-
+- True-speed close-range combat, not slow motion.
+- At least four quick contact beats in the first 1.0s.
+- First beat: hard step-in and abrupt forearm/wrist contact.
+- Second beat: immediate slap-away / deflection with visible rebound.
+- Third beat: re-entry with shoulder/forearm pressure burst, not a hold.
+- Fourth beat: short palm / elbow-line interruption / quick counter beat.
+- 1.0s-4.0s continues into another chain, not a settled guard pose.
+- Final roughly 1s must continue attacking/defending.
+- Short impact, immediate rebound.
 - Sharp stop-start footwork.
 - Strong weight transfer.
 - Sudden acceleration and abrupt redirection.
 - Visible body recoil on contact.
 - Shoe skid on wet stone.
 - Small splashes kicked sideways.
-- Sleeve snap, robe snap, and hair whip.
-- Short impact followed by immediate rebound.
+- Sleeve snap, robe snap, hair whip.
+- No long arm-lock.
+- No slow pushing.
+- No pose-to-pose demonstration sparring.
+- No slow motion impact cheat.
 
-Avoid:
+Desired rhythm:
 
-- Long arm-lock.
-- Slow pushing.
-- Pose-to-pose demonstration sparring.
-- Slow motion impact cheat.
-- Static camera pullback while fighters remain frozen.
-- Tail section that settles into a poster-like pose.
-
-## Suggested V013 Package Strategy
-
-Recommended R01 reference count: exactly 3 refs.
-
-1. Fenshou identity reference:
-   G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png
-2. Shuangji highest-priority identity reference:
-   G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png
-3. Scene/world reference:
-   G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png
-
-Recommended task direction:
-
-- Use V013 as a new generation path.
-- Prioritize identity-protected fast close-range combat.
-- Keep reference duties clean: identity refs for character identity, scene ref for world/frontal-axis continuity.
-- Do not use V009/V010/V011/V012 frames as primary video-driving references for this correction.
+- Faster da-da-da-da close-range exchange.
+- Multiple short contact beats.
+- More physical force and collision.
+- Continued fighting through the tail instead of pose-out.
 
 ## Local Edit Recommendation
 
-Do not treat V012 as final.
+V012 should not be final.
 
-An optional future speed-test of V012 can exist only as a secondary experiment, but the primary path should be V013 new generation rather than forcing V012 in edit.
+V012 may proceed to optional cut/speed-up testing as a secondary diagnostic only:
 
-## Optional V013 Package Planning Stub
+- 0.50s-1.50s at normal speed, 1.25x, and 1.5x.
+- 0.75s-1.75s at normal speed, 1.25x, and 1.5x.
 
-Planned task id: SHOT-02-V013
+The local test should be evaluated only as a possible tiny bridge/extract. It should not be treated as a substitute for missing choreography.
 
-Package status: planning_only_no_submit
+Primary path remains V013 new generation with stronger choreography.
 
-Expected concept: identity_locked_fast_close_quarters_followup_attack
+## Metadata Update Summary
 
-Target correction:
+SHOT-02-V012 shot record now records:
 
-- Faster rhythm.
-- Higher contact density.
-- Stronger collision and recoil.
-- Continuous attack/defense through the final second.
-- Preserve Shuangji identity using A-CH-B-IDENTITY-002.
-
-## Metadata Updates
-
-SHOT-02-V012 shot record should reflect:
-
-- status=rejected_for_final_due_to_rhythm_and_impact_insufficient
-- human_review_status=rejected
-- final_master=false
-- locked=false
-- usable_for_final=false
-- official_video_candidate=false
-- usable_video_candidate=false
+- codex_visual_review_recommendation=usable_with_cut
+- human_review_overrides_codex_visual_review=true
+- status=human_rejected_for_final_usable_with_cut_test
+- human_review_status=rejected_for_final
 - identity_result=improved_pass
-- action_result=failed
+- action_result=failed_for_final
+- usable_video_candidate=cut_test_only
 - usable_as_identity_reference=false
 - usable_as_action_reference=false
-- usable_as_visual_reference_for_next_generation=limited_text_guidance_only
-- usable_as_loose_composition_reference=true
-- rejection_reason=identity_improved_but_speed_impact_and_tail_continuation_failed
+- usable_as_visual_reference_for_next_generation=false
+- usable_as_text_failure_reference_for_next_generation=true
+- local_edit_candidate=true
+- local_edit_candidate_type=cut_and_speed_test_only
+- recommended_cut_tests=0.50s-1.50s; 0.75s-1.75s
+- recommended_speed_tests=1.25x; 1.5x
+- primary_next_path=SHOT-02-V013 new generation with stronger action choreography
+- secondary_next_path=optional V012 local cut/speed-up test for review only
+- rejection_reason=identity_improved_but_speed_impact_contact_density_and_tail_continuation_failed
+- final_master=false
+- locked=false
 
 Final verdict:
-SHOT_02_V012_HUMAN_REJECTED_V013_DIRECTION_READY
+SHOT_02_V012_HUMAN_REJECTED_V013_DIRECTION_READY_WITH_OPTIONAL_CUT_TEST
