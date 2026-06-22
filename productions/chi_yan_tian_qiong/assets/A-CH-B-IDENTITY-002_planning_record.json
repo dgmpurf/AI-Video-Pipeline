@@ -5,8 +5,11 @@
   "asset_type": "image",
   "role": "character_identity_anchor",
   "concept": "shuangji_female_face_upper_body_identity_anchor",
-  "status": "success_downloaded_pending_human_review",
-  "review_status": "pending",
+  "status": "human_approved_locked_identity_anchor",
+  "review_status": "approved",
+  "human_review_status": "approved",
+  "codex_visual_review_recommendation": "recommend_human_review_pass",
+  "chatgpt_visual_review_recommendation": "recommend_human_review_pass",
   "provider": "dreamina_cli",
   "task_type": "image2image",
   "model_version": "4.7",
@@ -17,7 +20,7 @@
   "queried": true,
   "downloaded": true,
   "final_master": false,
-  "locked": false,
+  "locked": true,
   "submit_id": "cfbfaa22-2a4e-40bc-b14e-987de51c3912",
   "logid": "202606221604191692540470087516BB6",
   "credit_count": 1,
@@ -50,8 +53,14 @@
       "format": "PNG"
     }
   ],
-  "human_review_required": true,
-  "usable_as_identity_reference": "pending_human_review",
+  "human_review_required": false,
+  "usable_as_identity_reference": true,
+  "usable_as_video_reference": true,
+  "usable_as_action_reference": false,
+  "locked_ref_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+  "locked_ref_sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11",
+  "locked_ref_role": "Shuangji face / upper-body identity anchor only",
+  "caution": "Use for Shuangji identity, face, hairstyle, upper-body armor and female identity stability; do not use as action, rhythm, or scene reference.",
   "human_review_required_before_lock": true,
   "human_review_required_before_production_use": true,
   "purpose": "Create a stronger Shuangji female face / upper-body identity anchor before another SHOT-02-V012 video attempt.",
@@ -82,5 +91,5 @@
     "package_report": "reports/PHASE_K33_SHUANGJI_IDENTITY_ANCHOR_PACKAGE_READY.md"
   },
   "created_at": "2026-06-22T00:00:00+08:00",
-  "updated_at": "2026-06-22T16:12:58+08:00"
+  "updated_at": "2026-06-22T16:30:00+08:00"
 }

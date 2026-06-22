@@ -6,7 +6,7 @@ Date: 2026-06-22
 
 Review-prep index for downloaded `A-CH-B-IDENTITY-002-R01` Shuangji identity-anchor candidates.
 
-This asset is not locked and not approved. Human review is required before any candidate can be used as a production identity reference.
+This asset is human-approved and locked as a Shuangji identity anchor only. It is not an action, rhythm, scene, or camera reference.
 
 ## Source Task
 
@@ -14,9 +14,10 @@ This asset is not locked and not approved. Human review is required before any c
 - candidate_id: `A-CH-B-IDENTITY-002-R01`
 - task_type: `image2image`
 - submit_id: `cfbfaa22-2a4e-40bc-b14e-987de51c3912`
-- status: `success_downloaded_pending_human_review`
+- status: `human_approved_locked_identity_anchor`
+- human_review_status: `approved`
 - final_master: `false`
-- locked: `false`
+- locked: `true`
 
 ## Review Assets
 
@@ -43,10 +44,18 @@ Contact sheet:
 
 ## Current Decision State
 
-- `review_status=pending`
-- `usable_as_identity_reference=pending_human_review`
+- `review_status=approved`
+- `human_review_status=approved`
+- `selected_candidate=A-CH-B-IDENTITY-002-R01_candidate_01.png`
+- `usable_as_identity_reference=true`
+- `locked_ref_path=G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png`
+- `locked_ref_sha256=15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11`
 - `final_master=false`
-- `locked=false`
+- `locked=true`
+
+Approval note:
+
+Human review passed this candidate as the Shuangji identity anchor. Approval is identity-only: use for Shuangji face, female identity, hairstyle, upper-body armor, and white-blue robe-panel stability. Do not use as action/rhythm/scene/camera reference.
 
 ## Codex Visual Review
 
@@ -78,4 +87,12 @@ Notes:
 - Minor residual risk: slightly over-polished / beauty-portrait-like face relative to the full-body source.
 - Human review is still required before using this as a production identity reference.
 
-Final verdict: `SHUANGJI_IDENTITY_ANCHOR_SUCCESS_DOWNLOADED_REVIEW_READY`
+## Lock State
+
+- locked_ref_path: `G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png`
+- locked_ref_sha256: `15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11`
+- locked_ref_role: `Shuangji face / upper-body identity anchor only`
+- final_master: `false`
+- locked: `true`
+
+Final verdict: `SHUANGJI_IDENTITY_ANCHOR_HUMAN_APPROVED_LOCKED_METADATA_ONLY`

@@ -227,6 +227,52 @@
       "duration_seconds": null,
       "created_at": "2026-06-17T17:18:00+08:00",
       "updated_at": "2026-06-17T17:18:00+08:00"
+    },
+    {
+      "logical_id": "A-CH-B-IDENTITY-002",
+      "candidate_id": "A-CH-B-IDENTITY-002-R01",
+      "asset_type": "character_identity_anchor",
+      "role": "character_identity_anchor",
+      "character": "Shuangji",
+      "relative_path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+      "source_candidate_path": "productions/chi_yan_tian_qiong/runs/live/A-CH-B-IDENTITY-002_20260622_160419/A-CH-B-IDENTITY-002-R01_candidate_01.png",
+      "status": "locked",
+      "review_status": "approved",
+      "human_review_status": "approved",
+      "locked": true,
+      "final_master": false,
+      "origin_project": "AI_VIDEO_PIPELINE",
+      "source_task_id": "A-CH-B-IDENTITY-002",
+      "source_submit_id": "cfbfaa22-2a4e-40bc-b14e-987de51c3912",
+      "source_method": "image2image from A-CH-B-SUBJECT-001",
+      "review_note": "Human-approved Shuangji face / upper-body identity anchor after ChatGPT and Codex visual review recommendations. Use for Shuangji identity stability only.",
+      "intended_use": "highest-priority Shuangji identity reference for future V012 video",
+      "reference_duty": "identity only; face, female identity, silver-blue high ponytail, blue-silver armor collar/shoulders, white-blue robe panels",
+      "not_for": [
+        "action rhythm",
+        "combat pose",
+        "scene layout",
+        "camera motion"
+      ],
+      "tags": [
+        "character",
+        "shuangji",
+        "identity_anchor",
+        "face",
+        "upper_body",
+        "locked_ref",
+        "production_asset",
+        "shot_02",
+        "v012_reference"
+      ],
+      "sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11",
+      "width": 1440,
+      "height": 2560,
+      "format": "PNG",
+      "duration_seconds": null,
+      "created_at": "2026-06-22T16:30:00+08:00",
+      "updated_at": "2026-06-22T16:30:00+08:00"
     }
   ],
   "relationships": [
