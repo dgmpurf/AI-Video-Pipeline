@@ -211,6 +211,19 @@
     "V012 as final footage"
   ],
   "v012_local_edit_recommendation": "Do not treat V012 as final. Optional cut/speed-up tests may be created only as secondary diagnostics: 0.50s-1.50s and 0.75s-1.75s at normal speed, 1.25x, and 1.5x. Primary path remains V013 new generation with stronger choreography.",
+  "local_edit_tests_created": true,
+  "local_edit_test_type": "cut_and_speed_test",
+  "local_edit_test_status": "pending_human_review",
+  "local_edit_test_report": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K44_SHOT02_V012_CUT_SPEED_TESTS.md",
+  "local_edit_test_outputs": [
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V012/SHOT-02-V012_CUT01_0p50_to_1p50_normal.mp4",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V012/SHOT-02-V012_CUT01_0p50_to_1p50_speed_1p25x.mp4",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V012/SHOT-02-V012_CUT01_0p50_to_1p50_speed_1p50x.mp4",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V012/SHOT-02-V012_CUT02_0p75_to_1p75_normal.mp4",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V012/SHOT-02-V012_CUT02_0p75_to_1p75_speed_1p25x.mp4",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V012/SHOT-02-V012_CUT02_0p75_to_1p75_speed_1p50x.mp4"
+  ],
+  "local_edit_contact_sheet": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V012/SHOT-02-V012_CUT_SPEED_TESTS_contact_sheet.jpg",
   "no_query_result_run_after_submit": true,
   "no_download_run_after_submit": true,
   "no_retry_resubmit_batch": true,
