@@ -2,10 +2,10 @@
   "shot_id": "SHOT-02",
   "task_id": "SHOT-02-V011",
   "task_type": "multimodal2video",
-  "status": "package_ready_no_submit",
-  "package_status": "package_ready_no_submit",
+  "status": "submitted_querying",
+  "package_status": "submitted_querying",
   "submit_allowed": false,
-  "submitted": false,
+  "submitted": true,
   "queried": false,
   "downloaded": false,
   "needs_generation": true,
@@ -87,8 +87,21 @@
       "sha256": "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452"
     }
   ],
+  "submit_id": "8a387d83-a9a6-453a-81be-2a8dc93f1c1c",
+  "logid": "202606221452501692540470086931054",
+  "credit_count": 56,
+  "gen_status": "querying",
+  "queue_status": null,
+  "canary_status": "ok",
+  "command_contract_preflight": "passed",
+  "last_submit_command": "$prompt = Get-Content -Raw -Encoding UTF8 'G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/prompts/manual_SHOT-02-V011_multimodal_identity_locked_followup_attack_prompt.txt'; C:\\Users\\msjpurf\\bin\\dreamina.exe multimodal2video --image 'G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png' --image 'G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png' --image 'G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V009/SHOT-02-V009_frame_1p00s.jpg' --image 'G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V010/frame_06.jpg' --image 'G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png' --prompt $prompt --model_version seedance2.0_vip --duration 4 --video_resolution 720p --ratio '16:9' --poll 0",
+  "query_allowed_next": "only with explicit user approval",
+  "download_allowed_next": "only with explicit user approval",
+  "no_query_result_run_after_submit": true,
+  "no_download_run_after_submit": true,
+  "single_submit_result_report": "reports/PHASE_K29_SHOT02_V011_SINGLE_SUBMIT_RESULT.md",
   "no_dreamina_run_in_package_step": true,
-  "allowed_next_action": "Review package first; future submit requires explicit one-step user authorization and canary/preflight.",
+  "allowed_next_action": "Query existing submit_id only after explicit user authorization. Do not resubmit.",
   "created_at": "2026-06-22T00:00:00+08:00",
-  "updated_at": "2026-06-22T00:00:00+08:00"
+  "updated_at": "2026-06-22T14:52:50+08:00"
 }
