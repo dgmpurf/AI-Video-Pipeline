@@ -3,8 +3,8 @@
   "task_id": "SHOT-02-V012",
   "parent_shot_id": "SHOT-02",
   "task_type": "multimodal2video",
-  "status": "success_downloaded_pending_human_review",
-  "package_status": "success_downloaded_pending_human_review",
+  "status": "rejected_for_final_due_to_rhythm_and_impact_insufficient",
+  "package_status": "human_review_rejected_rhythm_and_impact_insufficient",
   "submit_allowed": false,
   "query_allowed": false,
   "download_allowed": false,
@@ -16,7 +16,16 @@
   "locked": false,
   "usable_video_candidate": false,
   "official_video_candidate": false,
-  "human_review_status": "pending",
+  "usable_for_final": false,
+  "identity_result": "improved_pass",
+  "action_result": "failed",
+  "usable_as_identity_reference": false,
+  "usable_as_action_reference": false,
+  "usable_as_visual_reference_for_next_generation": "limited_text_guidance_only",
+  "usable_as_loose_composition_reference": true,
+  "rejection_reason": "identity_improved_but_speed_impact_and_tail_continuation_failed",
+  "human_review_note": "V012 substantially improves Shuangji identity stability compared with V010/V011, but still fails final review because the fight remains too slow, lacks impact and contact density, and the last ~1 second should continue fighting rather than easing off. Do not use V012 as final footage.",
+  "human_review_status": "rejected",
   "human_review_required": true,
   "human_review_required_before_submit": true,
   "human_review_required_before_final": true,
@@ -137,6 +146,7 @@
   "query_download_report": "reports/PHASE_K41_SHOT02_V012_QUERY_DOWNLOAD_RESULT.md",
   "codex_visual_review_report": "reports/PHASE_K42_SHOT02_V012_VISUAL_REVIEW.md",
   "codex_visual_review_recommendation": "usable_with_cut",
+  "human_review_overrides_codex_visual_review": true,
   "codex_visual_review_summary": "V012 is clearly better than V011 on Shuangji identity and preserves two-character integrity, but the action reads as a single approach/contact/held exchange rather than the requested rapid da-da-da three-beat collision rhythm. Recommend human review and cut/speed-up testing rather than full-clip approval.",
   "codex_visual_review_scores": {
     "shuangji_identity_score": 5,
@@ -171,13 +181,27 @@
       "reason": "Tighter contact-focused window with clearer forearm/fist relationship and stable Shuangji identity; may need 1.25x-1.5x speed-up to feel less posed."
     }
   ],
-  "human_review_status": "pending",
+  "human_review_status": "rejected",
   "final_master": false,
   "locked": false,
+  "v013_direction_report": "reports/PHASE_K43_SHOT02_V012_HUMAN_REVIEW_AND_V013_DIRECTION.md",
+  "v013_recommended_strategy": "Keep the three clean references and redesign the action around higher contact density, stronger force, roughly 2x faster rhythm, and continued fighting through the tail.",
+  "v013_recommended_refs": [
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png"
+  ],
+  "v013_do_not_use_refs": [
+    "V009 frame refs",
+    "V010 frame refs",
+    "V011 frame refs",
+    "V012 as final footage"
+  ],
+  "v012_local_edit_recommendation": "Do not treat V012 as final. Optional future speed-test can exist only as a secondary experiment; primary path should be V013 new generation, not forcing V012.",
   "no_query_result_run_after_submit": true,
   "no_download_run_after_submit": true,
   "no_retry_resubmit_batch": true,
   "single_submit_result_report": "reports/PHASE_K40_SHOT02_V012_SINGLE_SUBMIT_RESULT.md",
   "created_at": "2026-06-22T00:00:00+08:00",
-  "updated_at": "2026-06-22T23:59:00+08:00"
+  "updated_at": "2026-06-23T00:00:00+08:00"
 }
