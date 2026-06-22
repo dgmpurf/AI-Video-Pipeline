@@ -1,0 +1,52 @@
+{
+  "logical_id": "A-CH-B-IDENTITY-002",
+  "candidate_id": "A-CH-B-IDENTITY-002-R01",
+  "production_id": "chi_yan_tian_qiong",
+  "asset_type": "image",
+  "role": "character_identity_anchor",
+  "concept": "shuangji_female_face_upper_body_identity_anchor",
+  "status": "package_ready_no_submit",
+  "review_status": "pending",
+  "provider": "dreamina_cli",
+  "task_type": "image2image",
+  "model_version": "4.7",
+  "ratio": "9:16",
+  "resolution_type": "2k",
+  "submit_allowed": false,
+  "submitted": false,
+  "queried": false,
+  "downloaded": false,
+  "final_master": false,
+  "locked": false,
+  "human_review_required_before_lock": true,
+  "human_review_required_before_production_use": true,
+  "purpose": "Create a stronger Shuangji female face / upper-body identity anchor before another SHOT-02-V012 video attempt.",
+  "why_needed": "SHOT-02-V010 and SHOT-02-V011 both failed Shuangji identity stability. V011 used all intended references but still drifted, so the next step is a clearer identity anchor rather than another direct video attempt.",
+  "input_reference": {
+    "logical_id": "A-CH-B-SUBJECT-001",
+    "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png",
+    "sha256": "f5c4f29083d9166466579f5af7387180bd8428f6071ba9b65b368873e5a7449a",
+    "role": "sole_identity_source",
+    "duty": "Preserve Shuangji identity, female face, silver-blue high ponytail, blue-silver armor, white-blue robe panels, and restrained wuxia temperament. Do not copy full-body pose or background."
+  },
+  "output_intent": "Clear upper-body / portrait identity reference with strong facial readability for future V012 video identity protection.",
+  "not_for": [
+    "final video",
+    "action shot",
+    "scene keyframe",
+    "locked production asset before human review"
+  ],
+  "expected_future_use": "If approved by human review, use as highest-priority Shuangji identity reference in a later SHOT-02-V012 package.",
+  "do_not_use": [
+    "SHOT-02-V010 contaminated frames",
+    "SHOT-02-V011 contaminated frames"
+  ],
+  "package_files": {
+    "manual_prompt": "productions/chi_yan_tian_qiong/prompts/manual_A-CH-B-IDENTITY-002_shuangji_female_face_upper_body_identity_anchor_prompt.txt",
+    "prompt_json": "productions/chi_yan_tian_qiong/prompts/A-CH-B-IDENTITY-002_shuangji_identity_anchor_prompt.json",
+    "manifest": "productions/chi_yan_tian_qiong/manifests/production_image2image_A-CH-B-IDENTITY-002.csv",
+    "package_report": "reports/PHASE_K33_SHUANGJI_IDENTITY_ANCHOR_PACKAGE_READY.md"
+  },
+  "created_at": "2026-06-22T00:00:00+08:00",
+  "updated_at": "2026-06-22T00:00:00+08:00"
+}
