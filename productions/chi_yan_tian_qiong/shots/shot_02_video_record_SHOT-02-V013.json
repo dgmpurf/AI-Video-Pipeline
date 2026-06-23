@@ -3,7 +3,7 @@
   "task_id": "SHOT-02-V013",
   "parent_shot_id": "SHOT-02",
   "task_type": "multimodal2video",
-  "status": "success_downloaded_pending_human_review",
+  "status": "human_review_strong_candidate_pending_final_selection",
   "package_status": "success_downloaded_pending_human_review",
   "submit_allowed": false,
   "query_allowed": false,
@@ -14,7 +14,7 @@
   "needs_generation": false,
   "final_master": false,
   "locked": false,
-  "human_review_status": "pending",
+  "human_review_status": "strong_candidate_pending_final_selection",
   "human_review_required": true,
   "human_review_required_before_submit": true,
   "human_review_required_before_final": true,
@@ -184,7 +184,7 @@
   "cut_extraction_recommended": "optional_for_pacing_review",
   "speed_up_testing_recommended": false,
   "local_cut_candidates_created": true,
-  "local_cut_candidate_status": "pending_human_review",
+  "local_cut_candidate_status": "pending_human_final_selection",
   "local_cut_candidate_report": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K51_SHOT02_V013_CUT_CANDIDATES.md",
   "local_cut_candidate_outputs": [
     "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V013/SHOT-02-V013_CUT01_0p00_to_2p20_best_close_combat_candidate.mp4",
@@ -223,10 +223,27 @@
     "file_size_bytes": 160490,
     "sha256": "42efa0417bb009321fc303057f0d99f1a36f22890c0e2bee3e26bbf13d0ce5d4"
   },
+  "usable_for_final": "pending_human_final_selection",
+  "official_video_candidate": true,
+  "usable_video_candidate": true,
+  "current_best_shot02_candidate": true,
+  "human_review_note": "V013 is very good and has no obvious major problem. It is the current strongest SHOT-02 candidate. Main remaining limitation is that the exchange is mostly hand-to-hand and slightly monotonous. Future enhancement may add legwork, lower-body attack-defense, and hand-foot coordination, but V013 should be preserved as the current strong candidate. Do not mark final or locked until explicit human approval.",
+  "improvement_over_v012": [
+    "identity stable",
+    "speed improved",
+    "contact density improved",
+    "impact improved",
+    "tail continuation improved"
+  ],
+  "remaining_limitation": "hand_exchange_slightly_monotonous",
+  "future_enhancement_direction": "V014 legwork / lower-body attack-defense / hand-foot coordination experiment",
+  "final_selection_required": true,
+  "explicit_lock_required": true,
+  "v014_direction_report": "reports/PHASE_K52_SHOT02_V013_STRONG_CANDIDATE_AND_V014_LEGWORK_DIRECTION.md",
   "human_review_next": true,
   "query_allowed_next": "not needed unless explicitly requested",
   "download_allowed_next": "not needed unless explicitly requested",
-  "allowed_next_action": "Human review of SHOT-02-V013 contact sheet and video. Do not mark final or locked until human approval.",
+  "allowed_next_action": "Human final-selection review of V013 full/CUT01/CUT02, or optional V014 legwork-combat package preparation. Do not mark final or locked until explicit human approval.",
   "created_at": "2026-06-23T00:00:00+08:00",
-  "updated_at": "2026-06-23T14:20:00+08:00"
+  "updated_at": "2026-06-23T15:35:00+08:00"
 }
