@@ -155,9 +155,38 @@
     "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V013/SHOT-02-V013_frame_10_last_4p00s.jpg"
   ],
   "query_download_report": "reports/PHASE_K49_SHOT02_V013_QUERY_DOWNLOAD_RESULT.md",
-  "query_allowed_next": "only with explicit user approval",
-  "download_allowed_next": "only with explicit user approval",
-  "allowed_next_action": "Later query/download of this exact submit_id only after explicit user approval. Do not query/download from this submit step.",
+  "codex_visual_review_report": "reports/PHASE_K50_SHOT02_V013_VISUAL_REVIEW.md",
+  "codex_visual_review_status": "completed",
+  "codex_visual_review_recommendation": "recommend_human_review_pass",
+  "visual_review_scores": {
+    "shuangji_identity_score": 5,
+    "fenshou_identity_score": 5,
+    "character_integrity_score": 5,
+    "action_speed_score": 4,
+    "contact_density_score": 4,
+    "collision_impact_score": 4,
+    "tail_continuation_score": 4,
+    "edit_usability_score": 4,
+    "contamination_risk_score": 2
+  },
+  "v013_better_than_v012_identity": true,
+  "v013_better_than_v012_speed": true,
+  "v013_better_than_v012_impact": true,
+  "v013_tail_continuation_improved": true,
+  "best_cut_candidate_01": {
+    "range": "0.00s-2.20s",
+    "reason": "Strongest identity-safe close-combat section with multiple contact and rebound beats before the rhythm softens."
+  },
+  "best_cut_candidate_02": {
+    "range": "0.20s-3.20s",
+    "reason": "Keeps the fast opening exchange plus later body/guard continuation while trimming the initial held setup and final tail."
+  },
+  "cut_extraction_recommended": "optional_for_pacing_review",
+  "speed_up_testing_recommended": false,
+  "human_review_next": true,
+  "query_allowed_next": "not needed unless explicitly requested",
+  "download_allowed_next": "not needed unless explicitly requested",
+  "allowed_next_action": "Human review of SHOT-02-V013 contact sheet and video. Do not mark final or locked until human approval.",
   "created_at": "2026-06-23T00:00:00+08:00",
-  "updated_at": "2026-06-23T12:45:00+08:00"
+  "updated_at": "2026-06-23T13:40:00+08:00"
 }
