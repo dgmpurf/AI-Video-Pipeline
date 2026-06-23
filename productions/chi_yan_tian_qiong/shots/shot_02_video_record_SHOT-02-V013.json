@@ -183,10 +183,50 @@
   },
   "cut_extraction_recommended": "optional_for_pacing_review",
   "speed_up_testing_recommended": false,
+  "local_cut_candidates_created": true,
+  "local_cut_candidate_status": "pending_human_review",
+  "local_cut_candidate_report": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K51_SHOT02_V013_CUT_CANDIDATES.md",
+  "local_cut_candidate_outputs": [
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V013/SHOT-02-V013_CUT01_0p00_to_2p20_best_close_combat_candidate.mp4",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V013/SHOT-02-V013_CUT02_0p20_to_3p20_trimmed_opening_continuation_candidate.mp4"
+  ],
+  "local_cut_contact_sheet": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V013/SHOT-02-V013_CUT_CANDIDATES_contact_sheet.jpg",
+  "local_cut_candidate_validation": {
+    "CUT01_0p00_to_2p20": {
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V013/SHOT-02-V013_CUT01_0p00_to_2p20_best_close_combat_candidate.mp4",
+      "exists": true,
+      "duration_seconds": 2.208333,
+      "resolution": "1280x720",
+      "fps": 24,
+      "avg_frame_rate": "24/1",
+      "r_frame_rate": "24/1",
+      "frame_count": 53,
+      "file_size_bytes": 1755232,
+      "sha256": "dae11211fa19818a947d865d789b16a35126da91de71b7ae5eb026b315548c23"
+    },
+    "CUT02_0p20_to_3p20": {
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V013/SHOT-02-V013_CUT02_0p20_to_3p20_trimmed_opening_continuation_candidate.mp4",
+      "exists": true,
+      "duration_seconds": 3.0,
+      "resolution": "1280x720",
+      "fps": 24,
+      "avg_frame_rate": "24/1",
+      "r_frame_rate": "24/1",
+      "frame_count": 72,
+      "file_size_bytes": 2369719,
+      "sha256": "f61e0a961968bc639fe0b621a632589f1e065d69b10b80a58723e1cc887d5926"
+    }
+  },
+  "local_cut_contact_sheet_validation": {
+    "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V013/SHOT-02-V013_CUT_CANDIDATES_contact_sheet.jpg",
+    "exists": true,
+    "file_size_bytes": 160490,
+    "sha256": "42efa0417bb009321fc303057f0d99f1a36f22890c0e2bee3e26bbf13d0ce5d4"
+  },
   "human_review_next": true,
   "query_allowed_next": "not needed unless explicitly requested",
   "download_allowed_next": "not needed unless explicitly requested",
   "allowed_next_action": "Human review of SHOT-02-V013 contact sheet and video. Do not mark final or locked until human approval.",
   "created_at": "2026-06-23T00:00:00+08:00",
-  "updated_at": "2026-06-23T13:40:00+08:00"
+  "updated_at": "2026-06-23T14:20:00+08:00"
 }
