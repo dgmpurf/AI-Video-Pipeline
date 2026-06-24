@@ -4,8 +4,8 @@
   "variant_id": "uploadsafe_hard_impact_fast_upperbody",
   "parent_shot_id": "SHOT-02",
   "task_type": "multimodal2video",
-  "status": "success_downloaded_pending_human_review",
-  "package_status": "success_downloaded_pending_human_review",
+  "status": "human_review_strong_positive_with_speed_note",
+  "package_status": "human_review_strong_positive_with_speed_note",
   "submit_status": "submitted_no_query",
   "submit_allowed": true,
   "query_allowed": false,
@@ -17,7 +17,7 @@
   "download_performed": true,
   "final_master": false,
   "locked": false,
-  "human_review_status": "pending_visual_review",
+  "human_review_status": "strong_positive_with_speed_note",
   "human_review_required": true,
   "provider": "dreamina_cli",
   "model_version": "seedance2.0_vip",
@@ -169,7 +169,38 @@
     "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V018/frame_04.jpg",
     "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V018/frame_05.jpg"
   ],
-  "result_note": "Downloaded result still requires human visual review; do not mark final or locked.",
+  "human_review_phase": "PHASE_K87",
+  "replacement_candidate_for_v013": false,
+  "usable_as_final": false,
+  "usable_as_current_strong_candidate": true,
+  "usable_as_local_edit_candidate": true,
+  "usable_as_speed_diagnostic_source": true,
+  "human_review_summary": "V018 is quite good overall. The camera, framing, and close-combat relationship are good, and the result is stronger than V017 in hard-impact direction. The remaining issue is that the rhythm still feels a bit slow. V018 is not final, not locked, and does not replace V013 CUT01 yet. Recommended next step is a local speed diagnostic before considering more generation.",
+  "strengths": [
+    "good camera/framing",
+    "good close-combat relationship",
+    "stronger hard-impact direction than V017",
+    "better than V015 and V017 for impact direction",
+    "identity generally stable",
+    "strong positive candidate for local edit testing"
+  ],
+  "limitations": [
+    "rhythm still slightly slow",
+    "needs local speed diagnostic before final/lock decision",
+    "not approved as final",
+    "not approved as replacement for V013 CUT01"
+  ],
+  "diagnosis": [
+    "V018 likely solved part of the hard-impact prompt issue",
+    "remaining weakness may be partly an edit-speed problem",
+    "local speed-up/cut diagnostic is recommended before burning more generation credits"
+  ],
+  "recommended_next_step": "create local V018 speed diagnostic candidates, such as 1.12x, 1.18x, and 1.25x, without Dreamina",
+  "positive_reference_to_preserve": "SHOT-02-V014-R02_uploadsafe",
+  "positive_with_notes_reference_v016": "SHOT-02-V016_uploadsafe",
+  "positive_with_notes_reference_v017": "SHOT-02-V017_uploadsafe",
+  "next_step_requires_human_approval": true,
+  "result_note": "Human review recorded V018 as a strong positive candidate with a speed note. It is not final, not locked, and does not replace V013 CUT01.",
   "no_query_result_was_run": false,
   "no_download_was_run": false,
   "no_retry_or_resubmit_was_run": true,
@@ -177,7 +208,7 @@
   "submit_allowed_next": false,
   "query_allowed_next": false,
   "download_allowed_next": false,
-  "allowed_next_action": "Human visual review of the downloaded MP4/contact sheet. Do not mark final or locked without explicit human approval.",
+  "allowed_next_action": "If explicitly approved, create local V018 speed diagnostic candidates at 1.12x, 1.18x, and 1.25x without Dreamina. Do not mark final or locked without explicit human approval.",
   "created_at": "2026-06-24T23:40:00+08:00",
-  "updated_at": "2026-06-25T00:20:00+08:00"
+  "updated_at": "2026-06-25T00:35:00+08:00"
 }
