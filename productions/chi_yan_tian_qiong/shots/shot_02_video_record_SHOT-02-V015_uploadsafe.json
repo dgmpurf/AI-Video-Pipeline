@@ -4,8 +4,8 @@
   "variant_id": "uploadsafe_fast_hand_exchange_micro_fx",
   "parent_shot_id": "SHOT-02",
   "task_type": "multimodal2video",
-  "status": "success_downloaded_pending_human_review",
-  "package_status": "success_downloaded_pending_human_review",
+  "status": "human_review_rejected_for_final_action_repetitive_slow_low_impact",
+  "package_status": "downloaded_human_review_rejected_for_final",
   "submit_allowed": true,
   "query_allowed": true,
   "download_allowed": false,
@@ -16,7 +16,7 @@
   "download_performed": true,
   "final_master": false,
   "locked": false,
-  "human_review_status": "pending_visual_review",
+  "human_review_status": "rejected_for_final",
   "human_review_required": true,
   "provider": "dreamina_cli",
   "model_version": "seedance2.0_vip",
@@ -226,9 +226,52 @@
       "sha256": "C864E87079C1DE634D16C20367524611BAA1A4C1E41A3DCEA3FA13CC2DBC68A2"
     }
   ],
-  "submit_result_note": "downloaded result still requires human visual review; do not mark final or locked",
+  "human_review_phase": "PHASE_K72",
+  "human_review_result": "rejected_for_final_action_repetitive_slow_low_impact",
+  "human_review_summary": "V015 is not as good as V014-R02. The fight speed is too slow, the hand-to-hand exchange is too repetitive, and the impact is insufficient. Adding micro-FX to repeated hand/forearm exchange did not solve the choreography problem. V015 should not be final, locked, or used to replace V013.",
+  "strengths": [
+    "character identity appears generally stable",
+    "visual baseline remains consistent with rainy temple fight",
+    "may contain limited reference value for what not to repeat"
+  ],
+  "limitations": [
+    "fight speed is slower than desired",
+    "hand-to-hand and forearm exchange repeats too much",
+    "hit power and impact are insufficient",
+    "attack variety is insufficient",
+    "micro-FX does not compensate for weak action design"
+  ],
+  "diagnosis": [
+    "weak impact is partly caused by slow speed",
+    "the larger issue is prompt and action design rather than only speed",
+    "the action over-emphasizes similar wrist slap, forearm parry, palm check, block, and forearm bind motifs",
+    "stretching the same motif across the clip makes the fight feel repetitive",
+    "the clip lacks disadvantage, line-stealing, legwork, off-balance recovery, and counter-re-entry"
+  ],
+  "relationship_to_v013": "SHOT-02-V013 CUT01 remains the locked current passed SHOT-02 segment. V015 does not affect that lock state and cannot replace it without explicit future human approval.",
+  "relationship_to_v014_r02": "SHOT-02-V014-R02 remains the stronger positive enhancement candidate and better 1980s-style combat direction reference. V015 does not replace it.",
+  "replacement_candidate_for_v013": false,
+  "stronger_than_v014_r02": false,
+  "usable_as_final": false,
+  "usable_as_primary_enhancement_candidate": false,
+  "usable_as_failure_reference_for_v016": true,
+  "v015_does_not_replace_v013": true,
+  "v015_does_not_replace_v014_r02": true,
+  "positive_reference_to_preserve": "SHOT-02-V014-R02_uploadsafe",
+  "recommended_next_direction": "SHOT-02-V016 lower-body / legwork / line-stealing correction package",
+  "v016_direction": "break repetitive hand exchange by adding front-foot cut-in, diagonal outside step, low kick threat, shin check, knee line seal, ankle sweep threat, off-line body displacement, wet stone skid, and immediate counter-re-entry",
+  "v016_force_impact_principle": "rear-foot push, hip and waist rotation, shoulder-driven compact strike, short contact and rebound, extremely short hit-stop only on key contacts, low stance, wet stone shoe skid, small water splash, robe hem flick, sleeve snap, hair whip, visible balance recovery, and immediate re-entry",
+  "v016_negative_direction": [
+    "do not repeat a long static hand exchange",
+    "do not rely on micro-FX to make weak choreography feel powerful",
+    "do not let both fighters stay planted for most of the clip",
+    "do not replace V013 CUT01 or V014-R02 without explicit human approval",
+    "do not mark final_master or locked"
+  ],
+  "review_report_k72": "reports/PHASE_K72_SHOT02_V015_HUMAN_REVIEW_REJECTION_AND_V016_DIRECTION.md",
+  "submit_result_note": "downloaded result was reviewed and rejected for final use; do not mark final or locked",
   "next_step_requires_human_authorization": true,
-  "allowed_next_action": "Human visual review of MP4/contact sheet. No final or lock decision without explicit human approval.",
+  "allowed_next_action": "Prepare V016 upload-safe correction package only if explicitly requested. No Dreamina submit/query/download without explicit approval.",
   "created_at": "2026-06-24T00:00:00+08:00",
-  "updated_at": "2026-06-24T17:04:00+08:00"
+  "updated_at": "2026-06-24T18:30:00+08:00"
 }
