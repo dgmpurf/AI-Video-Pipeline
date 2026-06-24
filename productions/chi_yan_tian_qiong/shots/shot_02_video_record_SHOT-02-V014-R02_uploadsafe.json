@@ -5,17 +5,17 @@
   "parent_shot_id": "SHOT-02",
   "source_package": "SHOT-02-V014",
   "task_type": "multimodal2video",
-  "status": "query_success_ready_for_human_download_approval",
-  "package_status": "query_success_ready_for_human_download_approval",
+  "status": "success_downloaded_pending_human_review",
+  "package_status": "success_downloaded_pending_human_review",
   "submit_allowed": true,
   "query_allowed": false,
   "download_allowed": false,
   "submitted": true,
   "queried": true,
-  "downloaded": false,
+  "downloaded": true,
   "final_master": false,
   "locked": false,
-  "human_review_status": "pending_future_download_review",
+  "human_review_status": "pending_visual_review",
   "human_review_required": true,
   "provider": "dreamina_cli",
   "model_version": "seedance2.0_vip",
@@ -84,7 +84,6 @@
   "queried_submit_id": "26508110-29da-4edc-abd2-5b0cf4b0afa0",
   "query_attempt_count": 1,
   "query_performed": true,
-  "download_performed": false,
   "next_step_requires_human_authorization": true,
   "dreamina_canary_result": {
     "status": "passed",
@@ -144,16 +143,70 @@
     "fail_reason": null
   },
   "download_available": true,
+  "download_phase": "PHASE_K64",
+  "download_performed": true,
+  "download_attempt_count": 1,
+  "local_output_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/runs/live/SHOT-02-V014-R02_20260624_143551/SHOT-02-V014-R02_uploadsafe_legwork_hand_foot_combo.mp4",
+  "local_output_sha256": "85FD208BC78C2DA7E3157D7D5E052B418A05FE808EF9A718FA7FF8925C136F08",
+  "local_output_file_size_bytes": 8815553,
+  "local_output_duration_seconds": 4.09,
+  "local_output_container_duration_seconds": 4.09,
+  "local_output_resolution": "1280x720",
+  "local_output_fps": 24.15,
+  "local_output_avg_frame_rate": 24.15,
+  "local_output_frame_count": 97,
+  "local_output_video_codec": "h264",
+  "contact_sheet_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V014-R02/SHOT-02-V014-R02_contact_sheet.jpg",
+  "contact_sheet_sha256": "9A805C4BB46FAD01FA4D773F63F8CD43F83362ACE691F9AE04B20527132618F5",
+  "review_frames_directory": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V014-R02/",
+  "review_frames": [
+    {
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V014-R02/frame_00.jpg",
+      "timestamp_seconds": 0.0,
+      "frame_index": 0,
+      "sha256": "A8CA8117791EB020CC4ED43F61B505E44A1BFB578E4B5FE11778EBCF45AEE213"
+    },
+    {
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V014-R02/frame_01.jpg",
+      "timestamp_seconds": 0.787,
+      "frame_index": 19,
+      "sha256": "B3ACA48E0FC5683621F91D1902D58C05F0CCA9325F4E53743FDBD9F94AC8588B"
+    },
+    {
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V014-R02/frame_02.jpg",
+      "timestamp_seconds": 1.615,
+      "frame_index": 39,
+      "sha256": "69C19A5FFD954435077CA3B60B10DA8BB2A8E6BA7BFC122C983FEA4A68CF159B"
+    },
+    {
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V014-R02/frame_03.jpg",
+      "timestamp_seconds": 2.402,
+      "frame_index": 58,
+      "sha256": "2740B595077661A74F9957BDC4EFD63DD3EB20CFD9B577A9F9BC36A9928EFA6A"
+    },
+    {
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V014-R02/frame_04.jpg",
+      "timestamp_seconds": 3.188,
+      "frame_index": 77,
+      "sha256": "3CA6DA9D4F6640EA2B4A31FC41D50188D6E0314B517F8D581BC61723DF0CBACB"
+    },
+    {
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V014-R02/frame_05.jpg",
+      "timestamp_seconds": 3.975,
+      "frame_index": 96,
+      "sha256": "B441FF99A6CBAD60C5A8D366B9CCB4C7C4F20E2187F3919AD4351157F22ABBA7"
+    }
+  ],
   "prior_original_package_failures": [
     "PHASE_K57 authsdk_transport_refresh_failure",
     "PHASE_K58 fenshou_reference_upload_timeout_imagex",
     "PHASE_K59 scene_reference_upload_no_file_upload"
   ],
-  "submit_result_note": "submit_id is not final success; query/download still required later with separate human authorization",
   "submit_allowed_next": false,
   "query_allowed_next": false,
-  "download_allowed_next": "only_with_explicit_human_approval",
-  "allowed_next_action": "Future download only if the human explicitly approves downloading submit_id 26508110-29da-4edc-abd2-5b0cf4b0afa0. No final/lock decision until human review after download.",
+  "download_allowed_next": false,
+  "submit_result_note": "Downloaded result still requires human visual review; do not mark final or locked.",
+  "allowed_next_action": "Human visual review of the MP4/contact sheet. Optional Codex visual review only if human asks. No final/lock decision without explicit human approval.",
   "created_at": "2026-06-24T00:00:00+08:00",
-  "updated_at": "2026-06-24T15:08:03+08:00"
+  "updated_at": "2026-06-24T15:20:00+08:00"
 }
