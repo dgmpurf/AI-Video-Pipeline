@@ -1,0 +1,29 @@
+@A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg = Fenshou identity only. Use only for the black/red armored male warrior identity: face, hair, armor, silhouette, body type, and aggressive forward pressure.
+@A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg = Highest-priority Shuangji female identity protection only. Use only for Shuangji's female face, female identity, silver-blue high ponytail, blue-silver armor collar/shoulders, white-blue robe panels, and calm sharp expression. Do not use this image as action, rhythm, scene, or camera reference.
+@A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg = Rainy ancient temple courtyard scene/world only. Use only for the frontal main-hall axis, wet stone courtyard, cold gray-blue rain light, and cinematic environment. Do not use this image as character identity reference.
+
+Use exactly the above three upload-safe JPG references. Do not use original PNG locked_refs. Do not use any SHOT-02-V009, SHOT-02-V010, SHOT-02-V011, SHOT-02-V012, or SHOT-02-V013 frames, cut frames, contact sheets, or downloaded video frames as visual references. Do not use the V014-R02 MP4 or V014-R02 contact sheet as active visual references. V014-R02 is only a text/action-rhythm baseline.
+
+画面中只有两个角色：焚狩和霜玑。焚狩是黑红重甲男性武者。霜玑是银蓝高马尾女性武者。霜玑的脸和女性身份必须严格跟随 @A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg。不要把霜玑变成白发男性修士，不要让霜玑 male-coded，不要交换角色，不要复制任何一个角色，不要出现第三人。
+
+这是 SHOT-02 的 5 秒快手交锋微玄幻反馈素材。目标是保留 V014-R02 里真实、舒服、1980s 风格近身搏斗质感，但加入非常克制的玄幻微反馈。不是大法术，不是大冲击波，不是慢动作炫技；仍然是雨中古寺里的贴身快速攻防。
+
+0.00s-0.80s：两人进入真速度近身护架。焚狩从左侧前压，后脚蹬住湿石板，肩膀紧凑向前，右前臂沿短线压向霜玑中线。霜玑用手腕拍击和前臂格挡接住来力，身体微侧，脚步小幅外撤。接触短促清脆，不要慢动作。
+
+0.80s-1.70s：焚狩连续接一个紧凑短掌和前臂推压，目标是霜玑中线。霜玑用银蓝前臂格挡并小步斜向外侧卸力。每次前臂碰撞只出现 0.2 秒以内的细小红蓝微火花，闪一下就消失。
+
+1.70s-2.80s：手上交锋略微加速，比 V014-R02 的节奏紧 10%-20%，但仍然清楚可读。腕部拍击、掌根 check、前臂 bind、肩膀顶压连续发生。每次接触立即反弹，不要软绵绵的快动作，不要长时间推手僵持。
+
+2.80s-3.80s：霜玑用短掌拨开焚狩压力，格挡边缘出现很短的银蓝光痕。焚狩立刻用重甲护臂回压，护手边缘拖出一点暗红余烬痕迹。两人脚下湿石板轻微打滑，冷雨被鞋底溅起小水花。
+
+3.80s-5.00s：不要摆造型收尾。两人继续打过最后一秒。一次短接触迫使其中一人微微偏线半步，但双方马上重新抢回中线。结束时仍在持续压迫和再进攻的状态，不要 freeze frame，不要 pose-out。
+
+力量和节奏：真实速度快打，低重心站架，后脚发力，腰胯旋转，肩膀驱动短打，短接触后立即反弹。关键碰撞点只允许 0.1s-0.2s 极短 hit-stop。湿石板鞋底滑移、小水花、衣袖甩动、衣摆 snap、发丝 whip、连续压力都要可见。不要 whole-clip slow motion，不要 slow-motion-only impact，不要 soft fast motion。
+
+允许的微玄幻反馈：前臂碰撞时细小红蓝 micro sparks；霜玑格挡时短促银蓝 light streak；焚狩压迫攻击时暗红 ember trace；低步移动时冷色 glowing rain splash；接触点 0.2 秒以内 brief contact flicker；出现后立刻消散的 subtle particle residue。
+
+禁止的大效果：no giant shockwave, no new giant shockwave, no second explosion, no circular water shield, no energy shield dome, no full-body aura burst, no large spell effect, no big magic beam.
+
+镜头：中近景近身打斗构图，两人都要在画面内，至少能看见手、肩、躯干和部分脚步。雨中古寺主殿正面中轴仍然可读。镜头可以有轻微手持跟随和战斗微调，压力交换时允许轻微 micro-push。不要旋转镜头，不要美图肖像漂移，不要静态海报漂移，不要用快速乱切破坏身体力学。
+
+限制：no male-coded Shuangji；no white-haired male cultivator Shuangji；不要给霜玑男性下颌、厚重男性眉骨或宽大男性躯干；no role swap；no duplicate Fenshou；no duplicate Shuangji；no third person；no extra limbs；no fused bodies；no weapons；no sword；no spear；no flying；no big jump；no big flying kick；no exaggerated wuxia jump；no acrobatic spin kick；no new giant shockwave；no second explosion；no circular water shield；no energy shield dome；no text；no watermark；no logo；no anime flat 2D style；no modern clothing；no whole-clip slow motion；no slow-motion-only impact；no held-contact choreography；no final pose-out；no freeze frame ending.
