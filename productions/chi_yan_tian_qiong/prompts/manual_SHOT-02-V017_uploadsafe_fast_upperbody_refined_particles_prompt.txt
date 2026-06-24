@@ -1,0 +1,39 @@
+@A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg = Fenshou identity only. Use only for the black/red armored male warrior identity: face, hair, armor, silhouette, body type, and aggressive forward pressure.
+@A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg = Highest-priority Shuangji female identity protection only. Use only for Shuangji's female face, female identity, silver-blue high ponytail, blue-silver armor collar/shoulders, white-blue robe panels, and calm sharp expression. Do not use this image as action, rhythm, scene, or camera reference.
+@A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg = Rainy ancient temple courtyard scene/world only. Use only for the frontal main-hall axis, wet stone courtyard, cold gray-blue rain light, and cinematic environment. Do not use this image as character identity reference.
+
+Use exactly the above three upload-safe JPG references. Do not use original PNG locked_refs. Do not use any SHOT-02-V009, SHOT-02-V010, SHOT-02-V011, SHOT-02-V012, or SHOT-02-V013 frames, cut frames, contact sheets, or downloaded video frames as visual references. Do not use the V014-R02 MP4 or V014-R02 contact sheet as active visual references. Do not use the V015 MP4 or V015 contact sheet as active visual references. Do not use the V016 MP4 or V016 contact sheet as active visual references. V014-R02 is only a positive text/action-quality reference. V016 is only a positive-with-notes text/action reference. V015 is only a failure reference for what not to repeat.
+
+画面中只有两个角色：焚狩和霜玑。焚狩是黑红重甲男性武者。霜玑是银蓝高马尾女性武者。霜玑的脸和女性身份必须严格跟随 @A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg。不要把霜玑变成白发男性修士，不要让霜玑 male-coded，不要交换角色，不要复制任何一个角色，不要出现第三人。
+
+这是 SHOT-02 的 5 秒 fast upper-body combat + refined particle correction 素材。目标是修正 V016 下盘段落略长、粒子/VFX 质感偏弱的问题，同时保留 V014-R02 的真实近身压迫感和 V016 的抢线/偏线思路。整体是真速度近身强打，不是大法术，不是大冲击波，不是慢动作炫技。
+
+动作比例：70% upper-body close combat，20% lower-body cut-in/off-balance beat，10% refined particle/environment feedback。下盘动作只能短暂出现，用来打破节奏和制造偏线，不要让 lower-body beat dominate the clip。
+
+0.00s-0.65s：第一帧立刻进入近身上半身交换。焚狩从左侧用紧凑 forearm-to-palm rhythm 前压，肩膀带动短打；霜玑用 tight wrist/forearm checks 快速化解。节奏要快、清楚、可读，不要长时间对视，不要停成摆拍。
+
+0.65s-1.35s：焚狩后脚蹬住湿石板，腰胯旋转，肩膀带动 palm/forearm entry 压进中线。霜玑向外侧切角，用短促 silver-blue defensive arc 贴近前臂边缘卸力。接触必须短，碰到后马上反弹继续。
+
+1.35s-2.10s：只插入一个短下盘 beat。焚狩前脚切入内侧或威胁 low line，持续少于一秒；霜玑用小幅 shin turn / knee-line guard 封住下路并调整重心。不要 dwell on legs，不要变成长时间腿法展示。
+
+2.10s-3.10s：快速回到上半身近身攻防。palm check、elbow-line pressure、shoulder bump、forearm deflection 连续发生。一个角色被轻微推离中线，鞋底在湿石板上滑出小水痕，然后马上恢复平衡。
+
+3.10s-4.15s：一个强接触点。焚狩紧凑短打撞上霜玑防守，只有 0.1s-0.2s 极短 hit-stop，然后立刻 rebound。refined particles 在接触点短暂爆开，并沿受力方向散开，不要停成发光贴纸。
+
+4.15s-5.00s：快速 counter-re-entry。两人继续短掌、前臂、肘线压力和脚步穿插，踩过湿石板继续抢位。最后一秒仍在持续攻防，不要 pose-out，不要 freeze frame，不要停止成海报。
+
+力量和节奏：true-speed fast combat，faster and sharper than V015，不要 soft fast motion，不要 slow-motion-only impact，不要 whole-clip slow motion。低重心站架，后脚发力，腰胯旋转，肩膀驱动短打，短接触后立即反弹，只有一个关键接触点 0.1s-0.2s 极短 hit-stop，可见偏线 displacement，快速 balance recovery，immediate re-entry。湿石板 shoe skid、小水花、robe hem flick、sleeve snap、hair whip、continuous pressure 都要可见。
+
+粒子/VFX 必须精致、短促、方向明确。不要把 generic spark/glow/streak 当成主要描述。粒子必须有明确 material、size/density、trajectory、duration、dispersal，并且和 rain / wet stone / contact 发生关系。
+
+霜玑粒子风格：fine silver-blue frost motes，cold rain droplets catching blue-white light，thin crescent-like defensive arcs close to the forearm，blue-white ice dust at the block edge。粒子 tiny，sparse-to-medium density，不是 glow cloud，0.2 秒内 disperses。
+
+焚狩粒子风格：dark-red ember grains，black-red heat dust，short ember trail following the compact strike path，fading ember particles pulled backward by motion。粒子 small and directional，不是 flame aura。
+
+环境粒子风格：rainwater cut into thin luminous mist by the force line，wet stone splash catching brief red-blue light，small drifting residue at the contact point。粒子沿受力方向 spread，并 quickly fade。
+
+接触粒子风格：very brief tight directional burst，no large glow ball，no sticker-like glow pasted on hands，no full-body aura，no big spell effect。粒子不能遮挡手、腿、肩、腰、脚步的身体力学。
+
+镜头：medium close combat framing。只有在短下盘 beat 出现时才短暂稍微放宽或下压，让两人从上半身到膝盖可见；然后快速回到上半身近身攻防构图。雨中古寺主殿正面中轴仍然可读。允许 subtle combat-following micro-adjustment，不要 spinning camera，不要 beauty portrait drift，不要 static poster drift，不要 fast cuts that destroy body mechanics。
+
+限制：no long lower-body-only sequence；no overlong legwork showcase；no generic red-blue spark blob；no cheap glow pasted on hands；no large glow ball；no full-body aura；no energy shield dome；no circular water shield；no giant shockwave；no new giant shockwave；no second explosion；no large spell effect；no big magic beam；no repeated forearm-only exchange；no long static hand exchange；no planted sparring for most of the clip；no soft fast motion；no slow-motion-only impact；no whole-clip slow motion；no held-contact choreography；no male-coded Shuangji；no white-haired male cultivator Shuangji；不要给霜玑男性下颌、厚重男性眉骨或宽大男性躯干；no role swap；no duplicate Fenshou；no duplicate Shuangji；no third person；no extra limbs；no fused bodies；no weapons；no sword；no spear；no flying；no big jump；no big flying kick；no exaggerated wuxia jump；no acrobatic spin kick；no text；no watermark；no logo；no modern clothing；no final pose-out；no freeze frame ending。

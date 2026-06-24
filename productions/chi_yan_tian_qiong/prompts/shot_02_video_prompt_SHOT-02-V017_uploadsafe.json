@@ -1,0 +1,285 @@
+{
+  "shot_id": "SHOT-02-V017",
+  "task_id": "SHOT-02-V017",
+  "variant_id": "uploadsafe_fast_upperbody_refined_particles",
+  "parent_shot_id": "SHOT-02",
+  "source_plan": "SHOT-02_long_fast_combat_multi_clip_plan",
+  "source_positive_candidate": "SHOT-02-V014-R02_uploadsafe",
+  "source_positive_with_notes_candidate": "SHOT-02-V016_uploadsafe",
+  "source_failure_reference": "SHOT-02-V015_uploadsafe",
+  "task_type": "multimodal2video",
+  "prompt_type": "uploadsafe_fast_upperbody_refined_particles",
+  "package_concept": "third long fast-combat clip with fast upper-body re-entry, short lower-body off-balance beat, and refined directional particle/environment feedback",
+  "status": "package_ready_no_submit",
+  "package_status": "package_ready_no_submit",
+  "submit_allowed": false,
+  "query_allowed": false,
+  "download_allowed": false,
+  "needs_generation": true,
+  "final_master": false,
+  "locked": false,
+  "human_review_status": "pending",
+  "human_review_required": true,
+  "human_review_required_before_submit": true,
+  "human_review_required_before_final": true,
+  "provider": "dreamina_cli",
+  "model_version": "seedance2.0_vip",
+  "duration": 5,
+  "video_resolution": "720p",
+  "ratio": "16:9",
+  "command_contract_valid": true,
+  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual_SHOT-02-V017_uploadsafe_fast_upperbody_refined_particles_prompt.txt",
+  "manifest_path": "productions/chi_yan_tian_qiong/manifests/production_multimodal2video_SHOT-02-V017_uploadsafe.csv",
+  "shot_record_path": "productions/chi_yan_tian_qiong/shots/shot_02_video_record_SHOT-02-V017_uploadsafe.json",
+  "package_report": "reports/PHASE_K78_SHOT02_V017_UPLOADSAFE_FAST_UPPERBODY_REFINED_PARTICLES_PACKAGE_READY.md",
+  "baseline_locked_version": "SHOT-02-V013-CUT01-LOCKED",
+  "replacement_policy": "cannot replace locked V013 CUT01 unless human explicitly approves future replacement",
+  "clip_role_in_long_fast_combat_section": "V017 third clip, fast upper-body re-entry with refined particle feedback",
+  "intended_edit_context": "possible third 4s-5s clip in a 10s-15s multi-clip fast-combat section",
+  "reference_count": 3,
+  "references": [
+    {
+      "id": "ref_01_fenshou_identity_uploadsafe",
+      "path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+      "filename": "A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+      "duty": "Fenshou identity only. Black/red armored male warrior, face, hair, armor, silhouette, body type, aggressive forward pressure.",
+      "priority": "high",
+      "identity_reference": true,
+      "scene_reference": false,
+      "action_reference": false,
+      "image_format": "JPEG",
+      "color_mode": "RGB",
+      "has_alpha": false,
+      "sha256": "70C01DEC0BC3AA0EADD9F554C731BE4991320B742CB2F9A2F1195A0D4F08BED3"
+    },
+    {
+      "id": "ref_02_shuangji_identity_uploadsafe",
+      "path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+      "filename": "A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+      "duty": "Highest-priority Shuangji female identity protection only. Female face, female identity, silver-blue high ponytail, blue-silver armor collar/shoulders, white-blue robe panels, calm sharp expression. Do not use as action/rhythm/scene/camera reference.",
+      "priority": "highest",
+      "identity_reference": true,
+      "scene_reference": false,
+      "action_reference": false,
+      "image_format": "JPEG",
+      "color_mode": "RGB",
+      "has_alpha": false,
+      "sha256": "FBC0E674E19D74C9BA4B8488E2C4DA79F0A415E1C6811D0613803150BD9BAD1D"
+    },
+    {
+      "id": "ref_03_scene_uploadsafe",
+      "path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "filename": "A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "duty": "Rainy ancient temple courtyard, frontal main-hall axis, wet stone floor, cinematic environment only. Do not use as character identity reference.",
+      "priority": "high",
+      "identity_reference": false,
+      "scene_reference": true,
+      "action_reference": false,
+      "image_format": "JPEG",
+      "color_mode": "RGB",
+      "has_alpha": false,
+      "sha256": "F2117D0AC806179DD2AC5F009D3483184B500BA2489512894059379C73BC531B"
+    }
+  ],
+  "original_reference_sources": [
+    {
+      "uploadsafe_path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+      "original_locked_ref_path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+      "original_sha256": "83E21FE549D737A4AC7FDBC23D9B883526F5AEBC668BDB1E107A149244A13D2F"
+    },
+    {
+      "uploadsafe_path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+      "original_locked_ref_path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+      "original_sha256": "15339627A18D20C00FFBF1321696C175C451F00CFF621E3E20D1162EC5890E11"
+    },
+    {
+      "uploadsafe_path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "original_locked_ref_path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+      "original_sha256": "831C8743C019D37334B64A5843C7E595B909F75090DE15BA55FF4730891AF452"
+    }
+  ],
+  "reference_exclusion_policy": {
+    "use_exactly_three_uploadsafe_jpg_references": true,
+    "do_not_use_original_png_refs_in_manifest": true,
+    "do_not_use_v014_r02_media_or_contact_sheet_as_active_refs": true,
+    "do_not_use_v015_media_or_contact_sheet_as_active_refs": true,
+    "do_not_use_v016_media_or_contact_sheet_as_active_refs": true,
+    "exclude_video_frames_from_prior_attempts": true
+  },
+  "contaminated_refs_excluded": [
+    "SHOT-02-V009 frames",
+    "SHOT-02-V010 frames",
+    "SHOT-02-V011 frames",
+    "SHOT-02-V012 frames",
+    "SHOT-02-V013 frames",
+    "V013 cut frames",
+    "V013 contact sheet",
+    "V014-R02 media/contact sheet as active visual reference",
+    "V015 media/contact sheet as active visual reference",
+    "V016 media/contact sheet as active visual reference"
+  ],
+  "identity_policy": {
+    "two_characters_only": true,
+    "fenshou_identity_source": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+    "shuangji_identity_source": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+    "shuangji_priority": "highest",
+    "prevent_male_coded_shuangji": true,
+    "prevent_white_haired_male_cultivator_shuangji": true,
+    "prevent_role_swap": true,
+    "prevent_duplicate_characters": true,
+    "prevent_third_person": true
+  },
+  "action_concept": "fast upper-body close combat with one short lower-body cut-in/off-balance beat and refined particle/environment feedback",
+  "action_ratio": {
+    "upper_body_close_combat": "70%",
+    "lower_body_cut_in_off_balance": "20%",
+    "refined_particle_environment_feedback": "10%"
+  },
+  "action_timing": [
+    {
+      "time_range": "0.00s-0.65s",
+      "beat": "start immediately in close upper-body exchange; Fenshou pressures with compact forearm-to-palm rhythm; Shuangji deflects with tight wrist/forearm checks; fast readable no stare-down"
+    },
+    {
+      "time_range": "0.65s-1.35s",
+      "beat": "Fenshou drives from rear foot into shoulder-led palm/forearm entry; Shuangji angles outside and redirects with a short silver-blue defensive arc; brief contact with immediate rebound"
+    },
+    {
+      "time_range": "1.35s-2.10s",
+      "beat": "insert only a short lower-body beat; Fenshou cuts front foot inside or threatens low line for less than one second; Shuangji seals with small shin turn/knee-line guard and shifts balance; do not dwell on legs"
+    },
+    {
+      "time_range": "2.10s-3.10s",
+      "beat": "return quickly to upper-body close combat: palm check, elbow-line pressure, shoulder bump, forearm deflection; one fighter pushed slightly off-line then recovers"
+    },
+    {
+      "time_range": "3.10s-4.15s",
+      "beat": "one strong contact beat; compact strike meets defense; 0.1s-0.2s hit-stop then rebound; refined particles burst at contact and disperse along force direction"
+    },
+    {
+      "time_range": "4.15s-5.00s",
+      "beat": "rapid counter-re-entry; both fighters continue short palm/forearm/elbow-line pressure while stepping through wet stone; no pose-out"
+    }
+  ],
+  "power_rhythm_language": [
+    "true-speed fast combat",
+    "faster and sharper than V015",
+    "do not let lower-body beat dominate the clip",
+    "grounded stance",
+    "rear-foot push",
+    "hip/waist rotation",
+    "shoulder-driven compact strike",
+    "short contact and immediate rebound",
+    "one extremely short key-contact hit-stop only",
+    "visible off-line displacement",
+    "rapid balance recovery",
+    "immediate re-entry",
+    "wet stone shoe skid",
+    "small water splash",
+    "robe hem flick",
+    "sleeve snap",
+    "hair whip",
+    "continuous pressure"
+  ],
+  "refined_particle_feedback": {
+    "principle": "precise particle material, size/density, trajectory, duration, and dispersal tied to rain, wet stone, and contact; particles must not obscure body mechanics",
+    "shuangji": [
+      "fine silver-blue frost motes",
+      "cold rain droplets catching blue-white light",
+      "thin crescent-like defensive arcs close to the forearm",
+      "blue-white ice dust at the block edge",
+      "tiny sparse-to-medium density particles, not a glow cloud",
+      "particles disperse within 0.2 seconds"
+    ],
+    "fenshou": [
+      "dark-red ember grains",
+      "black-red heat dust",
+      "short ember trail following the compact strike path",
+      "fading ember particles pulled backward by motion",
+      "small directional particles, not a flame aura"
+    ],
+    "environment": [
+      "rainwater cut into thin luminous mist by the force line",
+      "wet stone splash catching brief red-blue light",
+      "small drifting residue at the contact point",
+      "particles spread along the direction of force and fade quickly"
+    ],
+    "contact": [
+      "very brief tight directional burst",
+      "no large glow ball",
+      "no sticker-like glow pasted on hands",
+      "no full-body aura",
+      "no big spell effect"
+    ]
+  },
+  "camera_rhythm_strategy": [
+    "medium close combat framing",
+    "slightly widen only briefly during the short lower-body beat",
+    "both characters visible from upper body to knees only when necessary",
+    "return to upper-body combat framing quickly",
+    "frontal rainy temple axis remains readable",
+    "subtle combat-following micro-adjustment",
+    "no spinning camera",
+    "no beauty portrait drift",
+    "no static poster drift",
+    "avoid fast cuts that destroy body mechanics"
+  ],
+  "failure_modes_addressed": [
+    "V015 too slow",
+    "V015 repetitive hand/forearm exchange",
+    "V015 insufficient impact",
+    "V016 lower-body duration slightly too long",
+    "V016 particle effects weak / cheap"
+  ],
+  "negative_constraints": [
+    "no long lower-body-only sequence",
+    "no overlong legwork showcase",
+    "no generic red-blue spark blob",
+    "no cheap glow pasted on hands",
+    "no large glow ball",
+    "no full-body aura",
+    "no energy shield dome",
+    "no circular water shield",
+    "no giant shockwave",
+    "no new giant shockwave",
+    "no second explosion",
+    "no large spell effect",
+    "no big magic beam",
+    "no repeated forearm-only exchange",
+    "no long static hand exchange",
+    "no planted sparring for most of the clip",
+    "no soft fast motion",
+    "no slow-motion-only impact",
+    "no whole-clip slow motion",
+    "no held-contact choreography",
+    "no male-coded Shuangji",
+    "no white-haired male cultivator Shuangji",
+    "no masculine jaw / heavy male brow / broad male torso for Shuangji",
+    "no role swap",
+    "no duplicate Fenshou",
+    "no duplicate Shuangji",
+    "no third person",
+    "no extra limbs",
+    "no fused bodies",
+    "no weapons",
+    "no sword",
+    "no spear",
+    "no flying",
+    "no big jump",
+    "no big flying kick",
+    "no exaggerated wuxia jump",
+    "no acrobatic spin kick",
+    "no text",
+    "no watermark",
+    "no logo",
+    "no modern clothing",
+    "no final pose-out",
+    "no freeze frame ending"
+  ],
+  "allowed_next_action": "Human package review, then canary/preflight and exactly one submit only if explicitly approved.",
+  "created_at": "2026-06-24T22:20:00+08:00",
+  "updated_at": "2026-06-24T22:20:00+08:00"
+}
