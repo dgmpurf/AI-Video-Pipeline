@@ -4,19 +4,19 @@
   "variant_id": "uploadsafe_fast_hand_exchange_micro_fx",
   "parent_shot_id": "SHOT-02",
   "task_type": "multimodal2video",
-  "status": "query_success_no_download",
-  "package_status": "query_success_no_download",
+  "status": "success_downloaded_pending_human_review",
+  "package_status": "success_downloaded_pending_human_review",
   "submit_allowed": true,
   "query_allowed": true,
   "download_allowed": false,
   "submitted": true,
   "queried": true,
-  "downloaded": false,
+  "downloaded": true,
   "query_performed": true,
-  "download_performed": false,
+  "download_performed": true,
   "final_master": false,
   "locked": false,
-  "human_review_status": "pending_future_download_review",
+  "human_review_status": "pending_visual_review",
   "human_review_required": true,
   "provider": "dreamina_cli",
   "model_version": "seedance2.0_vip",
@@ -46,7 +46,9 @@
   "query_phase": "PHASE_K70",
   "queried_submit_id": "bf1f4ca2-0cce-492d-a128-dba16bffc72c",
   "query_attempt_count": 1,
-  "download_allowed_next": "only_with_explicit_human_approval",
+  "download_phase": "PHASE_K71",
+  "download_attempt_count": 1,
+  "download_allowed_next": false,
   "dreamina_canary_result": {
     "status": "passed",
     "version": "46b5b0e-dirty",
@@ -71,6 +73,18 @@
     "logger_access_denied": false,
     "login_auth_failure": false
   },
+  "dreamina_download_canary_result": {
+    "status": "passed",
+    "version": "46b5b0e-dirty",
+    "commit": "46b5b0e",
+    "build_time": "2026-06-03T19:39:25Z",
+    "user_credit_succeeded": true,
+    "user_id": "1611200923726843",
+    "vip_level": "maestro",
+    "total_credit_before_download": 2462,
+    "logger_access_denied": false,
+    "login_auth_failure": false
+  },
   "command_contract_preflight_result": {
     "status": "passed",
     "command_checked": "dreamina multimodal2video -h",
@@ -89,6 +103,7 @@
   },
   "exact_submit_command_summary": "& 'C:\\Users\\msjpurf\\bin\\dreamina.exe' multimodal2video --image <Fenshou upload-safe JPG> --image <Shuangji upload-safe JPG> --image <scene upload-safe JPG> --prompt <manual_SHOT-02-V015 prompt text> --duration 5 --ratio '16:9' --video_resolution '720p' --model_version 'seedance2.0_vip'",
   "query_command_summary": "& 'C:\\Users\\msjpurf\\bin\\dreamina.exe' query_result --submit_id=bf1f4ca2-0cce-492d-a128-dba16bffc72c",
+  "download_command_summary": "& 'C:\\Users\\msjpurf\\bin\\dreamina.exe' query_result --submit_id=bf1f4ca2-0cce-492d-a128-dba16bffc72c --download_dir 'G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/runs/live/SHOT-02-V015_20260624_164032/'",
   "active_reference_paths": [
     "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
     "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
@@ -165,9 +180,55 @@
     "fail_reason": null
   },
   "download_available": true,
-  "submit_result_note": "submit_id is not final success; query succeeded and download is available, but download still requires separate explicit human authorization",
+  "local_output_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/runs/live/SHOT-02-V015_20260624_164032/SHOT-02-V015_uploadsafe_fast_hand_exchange_micro_fx.mp4",
+  "local_output_sha256": "C9039A7C0E1CA5DC52564DA8689C90348169FDD1A8540799E7D2287EDDC036F9",
+  "local_output_file_size_bytes": 9501011,
+  "local_output_duration_seconds": 5.016667,
+  "local_output_container_duration_seconds": 5.085011,
+  "local_output_resolution": "1280x720",
+  "local_output_fps": 24.119601,
+  "local_output_avg_frame_rate": 24.119601,
+  "local_output_r_frame_rate": 60.0,
+  "local_output_frame_count": 121,
+  "local_output_video_codec": "h264",
+  "contact_sheet_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V015/SHOT-02-V015_contact_sheet.jpg",
+  "contact_sheet_sha256": "512895D2CED53A43E2B9FAD6DEFED735A36BDBFDBA73D41ED742A69682DBD82D",
+  "review_frames_directory": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V015/",
+  "review_frames": [
+    {
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V015/frame_00.jpg",
+      "timestamp_seconds": 0.0,
+      "sha256": "317DDE6D9E639E28E2D2812C38EEE12D46386F33F3E0260617F3BB0A596FDAA4"
+    },
+    {
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V015/frame_01.jpg",
+      "timestamp_seconds": 1.0,
+      "sha256": "6CCA4949955AA0A995956003622BFA693CEDB091C312F610322BE579F56053C2"
+    },
+    {
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V015/frame_02.jpg",
+      "timestamp_seconds": 2.0,
+      "sha256": "E8362C2CBDAF0CCFF1A8330C970FDE1BF177951C812848602C51327F01F39CD1"
+    },
+    {
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V015/frame_03.jpg",
+      "timestamp_seconds": 3.0,
+      "sha256": "D6E04F8A1CE60D5600B2D37ECB45375F2D2E78942BA55983F6772662B9B26130"
+    },
+    {
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V015/frame_04.jpg",
+      "timestamp_seconds": 4.0,
+      "sha256": "9E77F1A323AD930855CFECAAD3460D01644EF95A3C923CAC41A2A894018DB9F3"
+    },
+    {
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V015/frame_05.jpg",
+      "timestamp_seconds": 5.0,
+      "sha256": "C864E87079C1DE634D16C20367524611BAA1A4C1E41A3DCEA3FA13CC2DBC68A2"
+    }
+  ],
+  "submit_result_note": "downloaded result still requires human visual review; do not mark final or locked",
   "next_step_requires_human_authorization": true,
-  "allowed_next_action": "Future download only if the human explicitly approves downloading this exact submit_id.",
+  "allowed_next_action": "Human visual review of MP4/contact sheet. No final or lock decision without explicit human approval.",
   "created_at": "2026-06-24T00:00:00+08:00",
-  "updated_at": "2026-06-24T16:49:00+08:00"
+  "updated_at": "2026-06-24T17:04:00+08:00"
 }
