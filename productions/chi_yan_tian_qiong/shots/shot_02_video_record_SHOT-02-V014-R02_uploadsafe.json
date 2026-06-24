@@ -5,8 +5,8 @@
   "parent_shot_id": "SHOT-02",
   "source_package": "SHOT-02-V014",
   "task_type": "multimodal2video",
-  "status": "success_downloaded_pending_human_review",
-  "package_status": "success_downloaded_pending_human_review",
+  "status": "downloaded_human_review_positive_long_fast_combat_direction",
+  "package_status": "downloaded_human_review_positive_long_fast_combat_direction",
   "submit_allowed": true,
   "query_allowed": false,
   "download_allowed": false,
@@ -15,7 +15,7 @@
   "downloaded": true,
   "final_master": false,
   "locked": false,
-  "human_review_status": "pending_visual_review",
+  "human_review_status": "positive_needs_polish",
   "human_review_required": true,
   "provider": "dreamina_cli",
   "model_version": "seedance2.0_vip",
@@ -197,6 +197,33 @@
       "sha256": "B441FF99A6CBAD60C5A8D366B9CCB4C7C4F20E2187F3919AD4351157F22ABBA7"
     }
   ],
+  "human_review_phase": "PHASE_K65",
+  "replacement_candidate_for_v013": false,
+  "can_compare_against_locked_v013": true,
+  "human_review_summary": "V014-R02 is very good, realistic, and has an 1980s-style hand-to-hand fight feeling. It is a successful enhancement candidate. Remaining polish needs are more fantasy/particle effects, slightly more continuity because the event feels cut off, and optionally 10%-20% faster fight speed. The fast-combat language is comfortable enough to support a longer 10s-15s fight segment if camera work and action progression are handled properly.",
+  "strengths": [
+    "realistic hand-to-hand combat feel",
+    "strong old-school action movie texture",
+    "stable two-character combat relationship",
+    "good overall result",
+    "worth polishing",
+    "fast-combat language feels comfortable",
+    "can potentially support a longer fight segment"
+  ],
+  "limitations": [
+    "lacks xuanhuan / fantasy / particle effect feedback",
+    "action event feels slightly cut off",
+    "speed could optionally be 10%-20% faster",
+    "longer duration would require better camera/action progression"
+  ],
+  "long_form_fast_combat_direction": "Develop this fast-combat language into either a 10s-15s continuous fight segment or multiple 4s-5s fight clips edited together.",
+  "fast_combat_power_rule": "Power should come from grounded body mechanics, weight shift, short impact stops, rebounds, footwork, wet stone skid, water splashes, robe/sleeve/hair motion, and continuous pressure rather than relying mainly on slow motion.",
+  "recommended_next_direction": "SHOT-02 V015/V016/V017 fast-combat polish package planning",
+  "v015_direction": "Hand-combat polish with subtle fantasy particles and micro-energy feedback while preserving V014-R02 realism.",
+  "v016_direction": "Hand-foot escalation with low kicks, shin checks, knee line sealing, and foot sweep threats.",
+  "v017_direction": "Disadvantage and counter-recovery beat, one fighter briefly loses balance then re-enters with pressure.",
+  "possible_edit_structure": "Combine V015/V016/V017 as multiple short clips into a 10s-15s fight section.",
+  "next_step_requires_human_approval": true,
   "prior_original_package_failures": [
     "PHASE_K57 authsdk_transport_refresh_failure",
     "PHASE_K58 fenshou_reference_upload_timeout_imagex",
@@ -205,8 +232,8 @@
   "submit_allowed_next": false,
   "query_allowed_next": false,
   "download_allowed_next": false,
-  "submit_result_note": "Downloaded result still requires human visual review; do not mark final or locked.",
-  "allowed_next_action": "Human visual review of the MP4/contact sheet. Optional Codex visual review only if human asks. No final/lock decision without explicit human approval.",
+  "submit_result_note": "Human review is positive, but V014-R02 is still not final or locked. Future replacement of locked V013 CUT01 requires explicit human approval.",
+  "allowed_next_action": "Prepare V015/V016/V017 multi-clip fast-combat planning, or V015 polish package only, only if the human explicitly approves that next step.",
   "created_at": "2026-06-24T00:00:00+08:00",
-  "updated_at": "2026-06-24T15:20:00+08:00"
+  "updated_at": "2026-06-24T15:40:00+08:00"
 }
