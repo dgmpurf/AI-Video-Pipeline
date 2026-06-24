@@ -4,8 +4,8 @@
   "variant_id": "uploadsafe_hand_foot_line_steal",
   "parent_shot_id": "SHOT-02",
   "task_type": "multimodal2video",
-  "status": "success_downloaded_pending_human_review",
-  "package_status": "success_downloaded_pending_human_review",
+  "status": "human_review_positive_with_notes_pending_edit_or_future_comparison",
+  "package_status": "human_review_positive_with_notes",
   "submit_allowed": true,
   "query_allowed": false,
   "download_allowed": false,
@@ -16,8 +16,44 @@
   "download_performed": true,
   "final_master": false,
   "locked": false,
-  "human_review_status": "pending_visual_review",
+  "human_review_status": "positive_with_notes",
   "human_review_required": true,
+  "replacement_candidate_for_v013": false,
+  "usable_as_final": false,
+  "usable_as_current_positive_candidate": true,
+  "usable_as_local_edit_insert_candidate": true,
+  "usable_as_v017_direction_reference": true,
+  "human_review_summary": "V016 is acceptable and better than V015 because lower-body/legwork/line-stealing is visible. However, the lower-body section lasts a bit too long, and the current particle effects are weak or worse than no effect. Future direction should reduce lower-body duration and improve particle aesthetics.",
+  "strengths": [
+    "better than V015",
+    "lower-body/legwork/line-stealing visible",
+    "action variation improved versus repeated hand exchange",
+    "identity generally acceptable",
+    "usable as positive-with-notes candidate"
+  ],
+  "limitations": [
+    "lower-body section lasts a bit too long",
+    "particle effects look weak / cheap",
+    "current VFX does not improve impact enough",
+    "not approved as final",
+    "not approved as replacement for V013 CUT01"
+  ],
+  "v017_direction": [
+    "reduce lower-body duration",
+    "return faster to close upper-body hand/elbow/palm/shoulder exchange",
+    "preserve only a short lower-body cut-in or off-balance beat",
+    "improve particle aesthetics",
+    "use particles as elegant contact/environment feedback rather than generic sparks"
+  ],
+  "particle_fx_lesson": [
+    "generic tiny sparks, colored glow, and simple streaks can look cheap",
+    "future prompts need specific particle shape, source, trajectory, duration, density, and dispersal",
+    "particles should not obscure body mechanics",
+    "if particles cannot look good, fewer particles are better than cheap particles"
+  ],
+  "recommended_next_step": "prepare SHOT-02-V017 package with short legwork beat plus high-quality particle aesthetic direction",
+  "positive_reference_to_preserve": "SHOT-02-V014-R02_uploadsafe",
+  "next_step_requires_human_approval": true,
   "provider": "dreamina_cli",
   "model_version": "seedance2.0_vip",
   "duration": 5,
@@ -141,7 +177,7 @@
   "submit_allowed_next": false,
   "query_allowed_next": false,
   "download_allowed_next": false,
-  "allowed_next_action": "Human visual review of V016 MP4/contact sheet; do not mark final or locked without explicit future approval.",
+  "allowed_next_action": "Prepare SHOT-02-V017 package with shorter lower-body beat and stronger particle/aesthetic direction; any future submit still requires explicit human approval.",
   "created_at": "2026-06-24T18:40:00+08:00",
-  "updated_at": "2026-06-24T21:36:35+08:00"
+  "updated_at": "2026-06-24T22:05:00+08:00"
 }
