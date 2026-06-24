@@ -17,7 +17,7 @@
   "download_performed": true,
   "final_master": false,
   "locked": false,
-  "human_review_status": "strong_positive_with_speed_note",
+  "human_review_status": "strong_positive_with_speed_diagnostic_pending",
   "human_review_required": true,
   "provider": "dreamina_cli",
   "model_version": "seedance2.0_vip",
@@ -200,7 +200,59 @@
   "positive_with_notes_reference_v016": "SHOT-02-V016_uploadsafe",
   "positive_with_notes_reference_v017": "SHOT-02-V017_uploadsafe",
   "next_step_requires_human_approval": true,
-  "result_note": "Human review recorded V018 as a strong positive candidate with a speed note. It is not final, not locked, and does not replace V013 CUT01.",
+  "speed_diagnostic_status": "candidates_created_pending_human_review",
+  "speed_diagnostic_phase": "PHASE_K88",
+  "speed_diagnostic_source_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/runs/live/SHOT-02-V018_20260624_235359/SHOT-02-V018_uploadsafe_hard_impact_fast_upperbody.mp4",
+  "speed_diagnostic_source_sha256": "623877afb9beb6e83d36900507969051884f21239e372d42726c5e52f533b701",
+  "speed_diagnostic_source_duration_seconds": 5.016666666666667,
+  "speed_diagnostic_source_resolution": "1280x720",
+  "speed_diagnostic_source_fps": 24.119601328903656,
+  "speed_diagnostic_source_frame_count": 121,
+  "speed_diagnostic_tool": "Python/OpenCV frame resampling and mp4v re-encoding",
+  "speed_diagnostic_audio_preserved": false,
+  "speed_diagnostic_audio_note": "No audio preservation attempted because ffmpeg/ffprobe were unavailable; diagnostic candidates are video-only local edit tests.",
+  "speed_diagnostic_candidates": [
+    {
+      "multiplier": 1.12,
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/speed_diagnostics/SHOT-02-V018/SHOT-02-V018_speed_1p12x.mp4",
+      "sha256": "d05e106d5731b1b7fc68fb679819f723965edda4dcbd9afb05def3388b92486b",
+      "file_size_bytes": 5487849,
+      "duration_seconds": 4.519071310116086,
+      "resolution": "1280x720",
+      "fps": 24.12,
+      "frame_count": 109,
+      "validation_tool": "OpenCV cv2.VideoCapture"
+    },
+    {
+      "multiplier": 1.18,
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/speed_diagnostics/SHOT-02-V018/SHOT-02-V018_speed_1p18x.mp4",
+      "sha256": "f48ed132f0d8ff9a7c853698e4102900ebedcc86dbfb2f1ad680de96fb044a08",
+      "file_size_bytes": 5164289,
+      "duration_seconds": 4.270315091210613,
+      "resolution": "1280x720",
+      "fps": 24.12,
+      "frame_count": 103,
+      "validation_tool": "OpenCV cv2.VideoCapture"
+    },
+    {
+      "multiplier": 1.25,
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/speed_diagnostics/SHOT-02-V018/SHOT-02-V018_speed_1p25x.mp4",
+      "sha256": "27c97559badd91344ca5b78dc175aae423a7c1ebc871c8b8aace0eec1bacce59",
+      "file_size_bytes": 4934446,
+      "duration_seconds": 4.021558872305141,
+      "resolution": "1280x720",
+      "fps": 24.12,
+      "frame_count": 97,
+      "validation_tool": "OpenCV cv2.VideoCapture"
+    }
+  ],
+  "speed_diagnostic_contact_sheet_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V018-speed-diagnostics/SHOT-02-V018_speed_diagnostics_contact_sheet.jpg",
+  "speed_diagnostic_per_candidate_contact_sheets": [
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V018-speed-diagnostics/SHOT-02-V018_speed_1p12x_contact_sheet.jpg",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V018-speed-diagnostics/SHOT-02-V018_speed_1p18x_contact_sheet.jpg",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-02-V018-speed-diagnostics/SHOT-02-V018_speed_1p25x_contact_sheet.jpg"
+  ],
+  "result_note": "Speed diagnostic candidates are local edit tests only; do not mark final or locked before human review.",
   "no_query_result_was_run": false,
   "no_download_was_run": false,
   "no_retry_or_resubmit_was_run": true,
@@ -208,7 +260,7 @@
   "submit_allowed_next": false,
   "query_allowed_next": false,
   "download_allowed_next": false,
-  "allowed_next_action": "If explicitly approved, create local V018 speed diagnostic candidates at 1.12x, 1.18x, and 1.25x without Dreamina. Do not mark final or locked without explicit human approval.",
+  "allowed_next_action": "Human review of original V018 against 1.12x, 1.18x, and 1.25x speed diagnostic candidates. Do not mark final or locked without explicit human approval.",
   "created_at": "2026-06-24T23:40:00+08:00",
-  "updated_at": "2026-06-25T00:35:00+08:00"
+  "updated_at": "2026-06-25T00:48:00+08:00"
 }
