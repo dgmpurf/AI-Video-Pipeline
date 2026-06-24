@@ -1,0 +1,202 @@
+{
+  "plan_id": "SHOT-02_long_fast_combat_multi_clip_plan",
+  "phase": "PHASE_K66",
+  "status": "planning_only_no_submit",
+  "baseline_locked_version": "SHOT-02-V013-CUT01-LOCKED",
+  "baseline_locked_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V013/SHOT-02-V013_CUT01_0p00_to_2p20_best_close_combat_candidate.mp4",
+  "positive_candidate": "SHOT-02-V014-R02_uploadsafe",
+  "positive_candidate_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/runs/live/SHOT-02-V014-R02_20260624_143551/SHOT-02-V014-R02_uploadsafe_legwork_hand_foot_combo.mp4",
+  "target_total_edit_duration": "10s-15s",
+  "recommended_route": "multi_clip",
+  "route_rationale": "Shorter 4s-5s clips are safer for identity/action stability than one initial 10s-15s generation, while still allowing an edited 10s-15s fight passage.",
+  "dreamina_submit_allowed": false,
+  "submit_allowed": false,
+  "query_allowed": false,
+  "download_allowed": false,
+  "final_master": false,
+  "locked": false,
+  "human_review_required": true,
+  "replacement_policy": "cannot replace locked V013 CUT01 without explicit human approval",
+  "reference_strategy": {
+    "recommended_active_refs": [
+      {
+        "id": "fenshou_uploadsafe_identity",
+        "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+        "duty": "Fenshou identity only"
+      },
+      {
+        "id": "shuangji_uploadsafe_identity",
+        "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+        "duty": "highest-priority Shuangji female identity only"
+      },
+      {
+        "id": "temple_uploadsafe_scene",
+        "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+        "duty": "rainy temple scene/world only"
+      }
+    ],
+    "forbidden_visual_refs": [
+      "SHOT-02-V009 frames",
+      "SHOT-02-V010 frames",
+      "SHOT-02-V011 frames",
+      "SHOT-02-V012 frames",
+      "SHOT-02-V013 frames",
+      "V013 contact sheets",
+      "V013 downloaded video frames"
+    ],
+    "v014_r02_usage": "text baseline and optional action-rhythm observation, not mandatory visual reference for first V015 package",
+    "video_reference_policy": "separate experiment only because it increases upload complexity"
+  },
+  "core_fast_combat_power_principle": [
+    "power must not rely mainly on slow motion",
+    "slow motion allowed selectively but not as primary impact method",
+    "grounded stance",
+    "rear-foot push",
+    "hip/waist rotation",
+    "shoulder-driven compact strikes",
+    "short contact and immediate rebound",
+    "0.1s-0.2s micro hit-stop only at key contacts",
+    "footwork pressure",
+    "wet stone shoe skid",
+    "water splash",
+    "robe/sleeve snap",
+    "hair whip",
+    "balance recovery and re-entry",
+    "continuous pressure"
+  ],
+  "speed_strategy": {
+    "baseline": "true_speed",
+    "optional_perceived_speed_increase": "10%-20%",
+    "whole_clip_slow_motion": false,
+    "micro_hit_stop_only": true,
+    "local_speed_diagnostic_later": "optional after download if needed"
+  },
+  "duration_strategy": {
+    "clip_duration_target": "4s-5s each",
+    "total_edited_section": "10s-15s",
+    "avoid_initial_one_shot_15s_generation": true,
+    "future_single_10s_test_condition": "only if short clips remain stable and prompt includes internal action progression and camera variation"
+  },
+  "clips": {
+    "V015": {
+      "task_id": "SHOT-02-V015",
+      "purpose": "fast hand exchange with subtle fantasy micro-feedback",
+      "duration_target": "4s-5s",
+      "action_beats": [
+        "true-speed wrist slap",
+        "forearm parry",
+        "compact palm",
+        "shoulder pressure",
+        "short contact and immediate rebound",
+        "continue fighting through the final second"
+      ],
+      "camera_notes": [
+        "medium close combat framing",
+        "both characters visible enough for hands and upper body",
+        "subtle handheld combat-follow micro-adjustment",
+        "no spinning camera",
+        "no beauty portrait drift"
+      ],
+      "fx_notes": [
+        "red/blue micro sparks at forearm collision",
+        "silver-blue light streaks on Shuangji blocks",
+        "dark-red ember traces on Fenshou pressure attacks",
+        "subtle particle residue under 0.2s",
+        "no large VFX"
+      ],
+      "negative_constraints": [
+        "no new shockwave",
+        "no shield dome",
+        "no explosion",
+        "no weapons",
+        "no role swap",
+        "no male-coded Shuangji",
+        "no duplicate characters",
+        "no pose-out"
+      ]
+    },
+    "V016": {
+      "task_id": "SHOT-02-V016",
+      "purpose": "escalate from hand exchange to hand-foot coordination",
+      "duration_target": "4s-5s",
+      "action_beats": [
+        "one side cannot break through with hands",
+        "front-foot cut-in",
+        "diagonal outside-angle step",
+        "low kick attempt",
+        "shin check or lower-leg block",
+        "knee lift to seal the line",
+        "ankle or foot sweep threat without acrobatics",
+        "upper-body parry continues during lower-body attack",
+        "wet stone side splash from low steps",
+        "robe hem flicks with knee lift"
+      ],
+      "camera_notes": [
+        "slightly wider or slight dip when legwork begins",
+        "keep upper body to knees visible",
+        "frontal rainy temple axis remains readable"
+      ],
+      "fx_notes": [
+        "cold glowing rain splashes from low steps",
+        "brief light flicker at contact",
+        "subtle particles only"
+      ],
+      "negative_constraints": [
+        "no flying",
+        "no big jump",
+        "no big flying kick",
+        "no acrobatic spin kick",
+        "no giant shockwave",
+        "no second explosion",
+        "no energy shield dome",
+        "no weapons",
+        "no duplicate characters"
+      ]
+    },
+    "V017": {
+      "task_id": "SHOT-02-V017",
+      "purpose": "disadvantage and counter-recovery beat",
+      "duration_target": "4s-5s",
+      "action_beats": [
+        "one fighter is pushed off-line or loses balance briefly",
+        "shoe skids on wet stone",
+        "water splashes sideways",
+        "losing fighter stabilizes with a low stance or side step",
+        "immediate counter-re-entry with palm/forearm and footwork pressure",
+        "no pose-out",
+        "no final freeze",
+        "ending feels like the fight continues into the next clip"
+      ],
+      "camera_notes": [
+        "short tracking or micro push",
+        "keep both fighters in frame",
+        "avoid fast cuts that destroy body mechanics"
+      ],
+      "fx_notes": [
+        "brief contact flickers only",
+        "water and rain feedback tied to body mechanics",
+        "no full-body aura burst"
+      ],
+      "negative_constraints": [
+        "no final freeze",
+        "no pose-out",
+        "no role swap",
+        "no male-coded Shuangji",
+        "no third person",
+        "no extra limbs",
+        "no fused bodies",
+        "no text",
+        "no watermark",
+        "no logo"
+      ]
+    }
+  },
+  "recommended_next_steps": [
+    "Prepare V015 package only, no submit.",
+    "After V015 passes review, prepare V016 separately.",
+    "After V016 passes review, prepare V017 separately.",
+    "Do not create all three submit packages at once unless explicitly requested."
+  ],
+  "created_at": "2026-06-24T00:00:00+08:00",
+  "updated_at": "2026-06-24T00:00:00+08:00"
+}
