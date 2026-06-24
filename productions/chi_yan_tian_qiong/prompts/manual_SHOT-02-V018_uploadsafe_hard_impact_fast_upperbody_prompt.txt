@@ -1,0 +1,41 @@
+@A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg = Fenshou identity only. Use only for the black/red armored male warrior identity: face, hair, armor, silhouette, body type, and aggressive forward pressure.
+@A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg = Highest-priority Shuangji female identity protection only. Use only for Shuangji's female face, female identity, silver-blue high ponytail, blue-silver armor collar/shoulders, white-blue robe panels, and calm sharp expression. Do not use this image as action, rhythm, scene, or camera reference.
+@A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg = Rainy ancient temple courtyard scene/world only. Use only for the frontal main-hall axis, wet stone courtyard, cold gray-blue rain light, and cinematic environment. Do not use this image as character identity reference.
+
+Use exactly the above three upload-safe JPG references. Do not use original PNG locked_refs. Do not use any SHOT-02-V009, SHOT-02-V010, SHOT-02-V011, SHOT-02-V012, or SHOT-02-V013 frames, cut frames, contact sheets, or downloaded video frames as visual references. Do not use the V014-R02 MP4 or V014-R02 contact sheet as active visual references. Do not use the V015 MP4 or V015 contact sheet as active visual references. Do not use the V016 MP4 or V016 contact sheet as active visual references. Do not use the V017 MP4 or V017 contact sheet as active visual references. V014-R02, V016, and V017 are text/action-quality references only. V015 is only a failure reference for what not to repeat.
+
+画面中只有两个角色：焚狩和霜玑。焚狩是黑红重甲男性武者。霜玑是银蓝高马尾女性武者。霜玑的脸和女性身份必须严格跟随 @A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg。不要把霜玑变成白发男性修士，不要让霜玑 male-coded，不要交换角色，不要复制任何一个角色，不要出现第三人。
+
+这是 SHOT-02 的 5 秒 hard-impact fast upper-body close combat 素材。目标是修正 V017 速度太慢、接触太软、硬打击不足的问题。动作必须快、硬、短促、碰撞感明确。不要把重点放在粒子美化上，力量必须来自身体力学、护架被压垮、盔甲震动、强制偏线、后坐反应、脚底打滑、湿石板水花、袖摆甩动、衣摆抽动和头发甩动。
+
+不要过度使用 gentle check、soft redirect、elegant deflection、slow parry、long bind、held forearm contact、push-hands rhythm、demonstration-style exchange。需要使用更强的硬接触语言：crash into guard、jam the forearm line、snap contact and rebound、guard buckles inward、shoulder jolts back、torso forced off-line、rear foot skids on wet stone、palm strike lands on armor / shoulder guard、forearm collision stops abruptly then rebounds、defender forced half-step back、attacker immediately re-enters、hit-stop only at contact then fast continuation。
+
+0.00s-0.30s：第一帧立刻近距离开打，不要对视等待。焚狩从后脚蹬地向前压，肩膀压低，黑红重甲贴近霜玑护架。霜玑已经进入防守姿态，目光锁住焚狩，身体准备承受冲击。
+
+0.30s-0.65s：硬接触 beat 1。焚狩前臂 crash into Shuangji's guard，在肩膀/前臂高度发生碰撞。接触点突然停住只有一瞬间，霜玑护架向内 buckles inward，肩膀 jolts back，两人的手臂立即 rebound，不要长时间黏住。
+
+0.65s-0.95s：硬接触 beat 2。霜玑用紧凑 palm/forearm counter 反击到焚狩肩甲或上臂护甲位置，不打脸不打喉。焚狩 torso forced slightly off-line，后脚在湿石板上 skids，水花 sideways splash，然后他立刻 re-enter。
+
+0.95s-1.25s：硬接触 beat 3。焚狩 jam the forearm line，用短 palm 或 shoulder-led burst 穿过护架。霜玑吸收冲击，armor plate shakes，sleeve snaps，hair whips，她半步 pivot，不要像软漂移。
+
+1.25s-1.50s：硬接触 beat 4。霜玑切回中线，用 hard forearm collision 阻断焚狩再次前压。碰撞是 snap contact and immediate rebound。No held arm bind. No slow push.
+
+1.50s-2.60s：guard-collapse / forced-off-line phase。一个角色的护架被压缩向内，防守方被 forced half-step back 或 off-line，必须可见 torso shift、shoe skid、small water splash、robe hem flick、sleeve snap、armor jolt。攻击者不要停顿，attacker immediately re-enters。
+
+2.60s-3.60s：counter-re-entry phase。被带偏的角色迅速恢复平衡，用另一个 hard palm / forearm / shoulder-line entry 反击。接触点是 armor、shoulder guard、forearm 或 upper arm guard，不是脸、喉咙或眼睛。接触短促、突然、立即 rebound。
+
+3.60s-4.30s：一个清晰强接触 beat。只允许一个 0.1s-0.2s key-contact hit-stop。guard buckles，shoulder jolts，湿石板水花向侧面踢开，然后两人 rebound 并继续打，不要停成海报。
+
+4.30s-5.00s：最后一秒继续快速攻防。两人保持近距离 palm / forearm / elbow-line pressure，同时踩过湿石板抢位。不要 final pose-out，不要 freeze frame ending。
+
+硬冲击节奏要求：前 1.5 秒内至少四个 quick hard contact beats，at least four quick hard contact beats within first 1.5 seconds。节奏像 fast da-da-da-da contact，不是一个长时间 hold。整体 true-speed fast combat，faster and sharper than V017。只允许一到两个 0.1s-0.2s key-contact hit-stops。不要 whole-clip slow motion，不要 slow-motion-only impact，不要 long held-contact choreography，不要 demonstration-style pose transition，不要 soft pushing exchange，不要 push-hands rhythm。Contact must not slide through bodies。每个 contact beat 都必须包含 attack path、contact point、defender reaction、environment feedback、immediate rebound。
+
+接触点限制：forearm guard、palm into armor plate、shoulder guard、upper arm guard、chest/shoulder armor only if safe and non-gory。No face strike. No throat strike. No eye strike. No gore. No blood.
+
+力量与反应链：rear-foot push、hip/waist rotation、shoulder-driven compact strike、abrupt stop at contact、immediate rebound、guard buckles inward、shoulder jolts back、torso forced off-line、rear foot skids on wet stone、water splashes sideways、armor plate shakes、robe hem flicks、sleeve snaps、hair whips、rapid balance recovery、immediate re-entry、continuous pressure。
+
+粒子/VFX 必须低于硬打击优先级，particles lower priority than hard impact。只允许 tiny contact/environment feedback：tiny contact flecks from armor/forearm collision、brief cold rain mist cut by force、tiny dark-red ember dust at Fenshou contact、tiny silver-blue frost specks at Shuangji block edge。Particles fade within 0.2s。No large glow. No aura. No spell. No shield. No circular water shield. No energy dome. No giant shockwave. No second explosion. No large magic beam. 粒子不能遮挡身体力学。
+
+镜头：medium close combat framing。两人都要能看见手、肩、躯干和部分脚步。雨中古寺主殿正面中轴仍然可读。允许 subtle combat-following micro-adjustment 和 slight micro-push。不要 spinning camera，不要 beauty portrait drift，不要 static poster drift，不要 fast cuts that destroy body mechanics，不要 horizontal side-scroller game look，不要 stage-sparring wide pose showcase。
+
+限制：no slow-motion-only impact；no whole-clip slow motion；no soft fast motion；no gentle check rhythm；no push-hands rhythm；no long bind；no held forearm contact；no demonstration-style exchange；no final pose-out；no freeze frame ending；no long lower-body-only sequence；no overlong legwork showcase；no large glow ball；no full-body aura；no energy shield dome；no circular water shield；no giant shockwave；no new giant shockwave；no second explosion；no large spell effect；no big magic beam；no male-coded Shuangji；no white-haired male cultivator Shuangji；不要给霜玑男性下颌、厚重男性眉骨或宽大男性躯干；no role swap；no duplicate Fenshou；no duplicate Shuangji；no third person；no extra limbs；no fused bodies；no weapons；no sword；no spear；no flying；no big jump；no big flying kick；no exaggerated wuxia jump；no acrobatic spin kick；no text；no watermark；no logo；no modern clothing。
