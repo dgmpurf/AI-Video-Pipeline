@@ -1,0 +1,130 @@
+{
+  "phase": "PHASE_K95",
+  "status": "next_shot_selection_ready",
+  "created_at": "2026-06-25T00:00:00+08:00",
+  "purpose": "Text-only next-shot selection and handoff after SHOT-02 combat closeout.",
+  "source_context": {
+    "shot02_status": "combat_generation_cycle_closed",
+    "shot02_current_locked_edit_candidate": "SHOT-02-V018-speed-1p18x",
+    "shot02_backup_candidate": "SHOT-02-V018-speed-1p12x",
+    "shot02_historical_locked_passed_segment": "SHOT-02-V013-CUT01-LOCKED",
+    "shot02_final_master": false,
+    "whole_film_final_master": false,
+    "shot02_sequence_conform_plan": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K94_SHOT02_SEQUENCE_EDIT_CONFORM_PLAN.md",
+    "shot02_combat_closeout": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K93_SHOT02_COMBAT_STAGE_CLOSEOUT_AND_EDIT_CHECKLIST.md"
+  },
+  "inspected_sources": [
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/plans/",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/shots/",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/prompts/",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/manifests/",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/assets/asset_registry.json",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/shots/sample_shot_registry.phase_e.json",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/shots/shot_registry.template.json",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/shots/SHOT_REGISTRY_TEMPLATE.json",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K94_SHOT02_SEQUENCE_EDIT_CONFORM_PLAN.md",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K93_SHOT02_COMBAT_STAGE_CLOSEOUT_AND_EDIT_CHECKLIST.md",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/plans/SHOT-02_sequence_edit_conform_plan_after_combat_closeout.json",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/plans/SHOT-02_combat_stage_closeout_edit_checklist.json"
+  ],
+  "discovered_shot_status": [
+    {
+      "shot_id": "SHOT-01",
+      "summary": "Existing opening / establishing shot branch.",
+      "asset_refs": true,
+      "prompts": true,
+      "generated_candidates": true,
+      "locks": true,
+      "reports": true,
+      "status_note": "Has official locked keyframe SHOT-01-KF-004-rerun-03 and approved usable video candidate SHOT-01-V001. No current request indicates it should be revisited next."
+    },
+    {
+      "shot_id": "SHOT-02",
+      "summary": "Combat branch just closed.",
+      "asset_refs": true,
+      "prompts": true,
+      "generated_candidates": true,
+      "locks": true,
+      "reports": true,
+      "status_note": "Combat generation cycle closed after V018 1.18x lock; K94 recommends stopping SHOT-02 combat generation and moving either to another shot or to later explicit media-edit/conform."
+    },
+    {
+      "shot_id": "SHOT-03",
+      "summary": "No production record found.",
+      "asset_refs": false,
+      "prompts": false,
+      "generated_candidates": false,
+      "locks": false,
+      "reports": false,
+      "status_note": "No SHOT-03 prompt, manifest, shot record, report, or explicit narrative order was found in the inspected files."
+    },
+    {
+      "shot_id": "SHOT-001",
+      "summary": "Template / sample registry item only.",
+      "asset_refs": false,
+      "prompts": false,
+      "generated_candidates": false,
+      "locks": false,
+      "reports": false,
+      "status_note": "Appears only in templates/sample registry as a dummy draft entry, not an active production target."
+    }
+  ],
+  "recommended_next_target": {
+    "requires_human_decision": true,
+    "shot_id": null,
+    "reason": "No single next shot is safely inferable from current project files. The repository has strong SHOT-01 and SHOT-02 histories, but no authoritative SHOT-03 or next narrative shot plan.",
+    "candidate_directions": [
+      {
+        "option": "A",
+        "label": "start_next_narrative_shot_after_SHOT-02",
+        "description": "Human provides the next story beat / shot id, then K96 can prepare a planning package."
+      },
+      {
+        "option": "B",
+        "label": "do_sequence_level_conform_later",
+        "description": "Wait for explicit media-edit authorization and conform SHOT-01/SHOT-02 or SHOT-02 internals later."
+      },
+      {
+        "option": "C",
+        "label": "prepare_assets_for_another_planned_shot",
+        "description": "Human identifies another scene/character/action asset target before video generation."
+      },
+      {
+        "option": "D",
+        "label": "defer_source_update",
+        "description": "Prepare Source updates later after more shot cycles accumulate; do not do it automatically now."
+      }
+    ]
+  },
+  "recommended_next_phase": {
+    "phase": "PHASE_K96_HUMAN_NEXT_SHOT_DECISION",
+    "reason": "Human selection is needed before any prompt/package work, because no clear next production shot exists in current records."
+  },
+  "constraints": {
+    "no_dreamina": true,
+    "no_submit": true,
+    "no_query_result": true,
+    "no_download": true,
+    "no_media_operations": true,
+    "no_final_master": true,
+    "no_source_update_unless_human_asks": true,
+    "do_not_unlock_v013": true,
+    "do_not_modify_v013_media": true,
+    "do_not_stage_media_or_uploadsafe_jpgs": true
+  },
+  "safety_confirmation": {
+    "dreamina_was_not_run": true,
+    "submit_query_download_were_not_run": true,
+    "ai_media_was_not_generated": true,
+    "media_files_were_not_created_edited_moved_deleted_or_staged": true,
+    "upload_safe_jpgs_were_not_staged": true,
+    "dot_vs_was_not_staged": true,
+    "runtime_code_was_not_modified": true,
+    "configs_providers_json_was_not_modified": true,
+    "project_source_files_were_not_modified": true
+  },
+  "report_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K95_NEXT_SHOT_SELECTION_AND_HANDOFF.md",
+  "final_verdict": "NEXT_SHOT_SELECTION_NEEDS_HUMAN_DECISION"
+}
