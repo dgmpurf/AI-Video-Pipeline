@@ -1,0 +1,170 @@
+{
+  "phase": "PHASE_K97",
+  "shot_id": "SHOT-03",
+  "working_title": "temple_environment_escalation",
+  "status": "shot03_planning_package_ready",
+  "created_at": "2026-06-25T00:00:00+08:00",
+  "planning_scope": "text_only_planning_no_prompt_no_media",
+  "prior_context": {
+    "shot02_status": "closed",
+    "shot02_current_locked_edit_candidate": "SHOT-02-V018-speed-1p18x",
+    "shot02_backup_candidate": "SHOT-02-V018-speed-1p12x",
+    "shot02_historical_locked_passed_segment": "SHOT-02-V013-CUT01-LOCKED",
+    "shot02_final_master": false,
+    "whole_film_final_master": false,
+    "master_arc_scene": "scene_01_temple_rain_martial_arts",
+    "source_phase": "PHASE_K96"
+  },
+  "shot_function": [
+    "Escalate from close combat into temple architecture interaction.",
+    "Use environment tactically as part of the exchange, not as passive background.",
+    "Bridge SHOT-02 close combat toward SHOT-04 structural damage."
+  ],
+  "not_this_shot": [
+    "not full temple destruction",
+    "not snow mountain transition",
+    "not weapon combat",
+    "not kaiju/mech transformation",
+    "not final master"
+  ],
+  "environment_interaction_primitives": [
+    "pillar_line_movement",
+    "stairway_angle_change",
+    "corridor_pressure",
+    "roof_eaves_transition",
+    "roof_tile_slide",
+    "rain_slick_floor_slip_recovery",
+    "wooden_railing_rebound",
+    "hanging_lantern_or_banner_occlusion_if_available"
+  ],
+  "body_mechanics_requirements": [
+    "Footwork must show traction, slip, step recovery, pivot, and shoulder turn.",
+    "Strikes should have clear contact point and rebound.",
+    "Defenders should react through torso displacement, guard collapse, forced sidestep, or foot skid.",
+    "Avoid soft push-hands rhythm.",
+    "Avoid long held bind."
+  ],
+  "camera_requirements": [
+    "Maintain spatial clarity.",
+    "Avoid losing who is in foreground/background.",
+    "Use environment anchor points like pillars, roofline, stair edge, eaves, and corridor opening.",
+    "Camera can track laterally, rise with rooftop movement, or follow a displacement through architecture.",
+    "Avoid excessive shake that hides contact."
+  ],
+  "likely_shot_length_range": {
+    "planning_only": "4 to 5 seconds for first generation candidate",
+    "later_may_extend_if_sequence_demands": true
+  },
+  "candidate_visual_routes": {
+    "route_A_column_corridor_to_roof_edge": {
+      "description": "Fight moves through pillar/corridor line and ends near eaves or roof edge.",
+      "recommended": true,
+      "benefits": [
+        "Best continuity from SHOT-02 floor-level combat.",
+        "Uses clear architectural anchors for staging.",
+        "Can escalate environment without premature destruction."
+      ],
+      "risks": [
+        "Columns may hide contact if camera drifts too much.",
+        "Model may treat corridor and pillars as background only unless footwork interacts with them."
+      ]
+    },
+    "route_B_stairs_to_rooftop": {
+      "description": "Fight climbs wet stairs and transitions onto roof tiles.",
+      "recommended": true,
+      "benefits": [
+        "Strong visible escalation in vertical level.",
+        "Wet stairs and roof tiles give natural slip, pivot, and recovery beats.",
+        "Sets up later SHOT-04 roof/structure damage without destroying the temple yet."
+      ],
+      "risks": [
+        "Rooftop movement may become floaty wuxia if foot contact is not anchored.",
+        "Fast vertical transition may hurt continuity if the starting frame is still courtyard-level."
+      ]
+    },
+    "route_C_roof_only": {
+      "description": "Starts on roof tiles and uses sliding/eaves/roof edge.",
+      "recommended": "backup",
+      "benefits": [
+        "Clean roof-tile interaction and strong silhouette potential.",
+        "Good preparation for later structure-break escalation."
+      ],
+      "risk": "May lose continuity from SHOT-02 if not bridged."
+    },
+    "route_A_B_hybrid": {
+      "description": "Start through pillar/corridor pressure, then angle toward wet stairs/eaves without fully reaching a destructive rooftop beat.",
+      "recommended_for_human_decision": true,
+      "why_consider": "Combines the clearest continuity of Route A with the stronger escalation promise of Route B."
+    }
+  },
+  "continuity_requirements": [
+    "Keep rainy temple visual continuity from SHOT-02.",
+    "Keep both characters in the same identity system.",
+    "Maintain martial-arts realism before mythic escalation.",
+    "Leave room for SHOT-04 to escalate structural break."
+  ],
+  "available_reference_context": {
+    "character_refs": [
+      {
+        "logical_id": "A-CH-A-SUBJECT-001",
+        "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+        "duty": "Fenshou identity reference for later package design"
+      },
+      {
+        "logical_id": "A-CH-B-SUBJECT-001",
+        "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png",
+        "duty": "Shuangji full-body identity reference for later package design"
+      },
+      {
+        "logical_id": "A-CH-B-IDENTITY-002",
+        "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+        "duty": "Highest-priority Shuangji identity anchor for later package design"
+      }
+    ],
+    "scene_refs": [
+      {
+        "logical_id": "A-SC-TEMPLE-COURTYARD-004",
+        "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+        "duty": "Current locked rainy temple scene anchor"
+      },
+      {
+        "logical_id": "A-SC-TEMPLE-COURTYARD-001",
+        "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-001_locked_ancient_temple_rain_courtyard.png",
+        "duty": "General rainy temple courtyard reference"
+      }
+    ]
+  },
+  "risks": [
+    "model may turn environment into background only",
+    "model may overdo destruction too early",
+    "roof movement may become floaty/wuxia if not anchored by footwork",
+    "columns/eaves may confuse spatial positions",
+    "rain and particles may obscure contact"
+  ],
+  "recommended_next_phase": {
+    "phase": "PHASE_K98_SHOT03_PACKAGE_DESIGN_OR_HUMAN_ROUTE_SELECTION",
+    "options": [
+      "Ask human to pick Route A, Route B, Route C, or Route A/B hybrid.",
+      "If human wants a default, recommend Route A/B hybrid: corridor/pillar pressure into wet stairs or eaves transition.",
+      "K98 can create a prompt/manifest package only after a route is selected.",
+      "Do not submit without explicit authorization."
+    ]
+  },
+  "safety_confirmation": {
+    "dreamina_was_not_run": true,
+    "dreamina_version_was_not_run": true,
+    "dreamina_user_credit_was_not_run": true,
+    "submit_query_download_were_not_run": true,
+    "retry_resubmit_batch_were_not_run": true,
+    "ai_media_was_not_generated": true,
+    "media_files_were_not_created_edited_moved_deleted_or_staged": true,
+    "upload_safe_jpgs_were_not_staged": true,
+    "dot_vs_was_not_staged": true,
+    "runtime_code_was_not_modified": true,
+    "configs_providers_json_was_not_modified": true,
+    "project_source_files_were_not_modified": true,
+    "shot02_v013_v018_lock_states_were_not_altered": true
+  },
+  "report_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K97_SHOT03_TEMPLE_ENVIRONMENT_ESCALATION_PLANNING_PACKAGE.md",
+  "final_verdict": "SHOT03_TEMPLE_ENVIRONMENT_ESCALATION_PLANNING_READY"
+}
