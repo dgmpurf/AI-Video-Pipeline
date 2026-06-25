@@ -1,0 +1,134 @@
+{
+  "shot_id": "SHOT-02",
+  "phase": "PHASE_K93",
+  "status": "combat_generation_cycle_closed_after_v018_lock",
+  "created_at": "2026-06-25T00:00:00+08:00",
+  "source_phase": "PHASE_K92",
+  "purpose": "Text-only SHOT-02 combat stage closeout and future edit execution checklist after V018 1.18x was locked as the current SHOT-02 edit candidate.",
+  "current_locked_edit_candidate": {
+    "candidate_id": "SHOT-02-V018-speed-1p18x",
+    "source_task_id": "SHOT-02-V018",
+    "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/speed_diagnostics/SHOT-02-V018/SHOT-02-V018_speed_1p18x.mp4",
+    "sha256": "f48ed132f0d8ff9a7c853698e4102900ebedcc86dbfb2f1ad680de96fb044a08",
+    "duration_seconds": 4.270315091210613,
+    "frame_count": 103,
+    "resolution": "1280x720",
+    "fps": 24.12,
+    "lock_scope": "shot02_current_edit_candidate",
+    "locked": true,
+    "final_master": false,
+    "whole_film_final_master": false,
+    "role": "current_main_combat_candidate"
+  },
+  "backup_candidate": {
+    "candidate_id": "SHOT-02-V018-speed-1p12x",
+    "source_task_id": "SHOT-02-V018",
+    "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/speed_diagnostics/SHOT-02-V018/SHOT-02-V018_speed_1p12x.mp4",
+    "sha256": "d05e106d5731b1b7fc68fb679819f723965edda4dcbd9afb05def3388b92486b",
+    "duration_seconds": 4.519071310116086,
+    "frame_count": 109,
+    "resolution": "1280x720",
+    "fps": 24.12,
+    "role": "conservative_backup",
+    "locked": false,
+    "use_condition": "Test only if full sequence pacing makes 1.18x feel too fast."
+  },
+  "historical_locked_passed_segment": {
+    "candidate_id": "SHOT-02-V013-CUT01-LOCKED",
+    "source_task_id": "SHOT-02-V013",
+    "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V013/SHOT-02-V013_CUT01_0p00_to_2p20_best_close_combat_candidate.mp4",
+    "sha256": "dae11211fa19818a947d865d789b16a35126da91de71b7ae5eb026b315548c23",
+    "duration_seconds": 2.208333,
+    "frame_count": 53,
+    "resolution": "1280x720",
+    "fps": 24,
+    "role": "historical_locked_passed_segment",
+    "locked": true,
+    "preserved": true,
+    "not_replaced_by_v018": true,
+    "not_deleted": true,
+    "not_overwritten": true,
+    "not_modified_by_this_phase": true
+  },
+  "supporting_references": [
+    {
+      "task_id": "SHOT-02-V014-R02",
+      "role": "strong_positive_combat_energy_realism_reference",
+      "use_policy": "Use as a realism, hard-combat energy, and 1980s-feeling reference only. Do not treat as current locked edit candidate."
+    },
+    {
+      "task_id": "SHOT-02-V016",
+      "role": "possible_lower_body_line_steal_insert_reference",
+      "use_policy": "Optional lower-body or line-stealing insert/reference in a later edit-conform phase. Do not auto-insert."
+    },
+    {
+      "task_id": "SHOT-02-V017",
+      "role": "camera_framing_reference_slow_soft_action_caution",
+      "use_policy": "Useful for camera/framing lessons, but action is slow/soft and should not be used as the combat target."
+    },
+    {
+      "task_id": "SHOT-02-V015",
+      "role": "rejected_slow_repetitive_low_impact_caution",
+      "use_policy": "Use only as a negative reference for what to avoid."
+    }
+  ],
+  "avoid_patterns": [
+    "repeated soft forearm/palm check exchanges",
+    "slow push-hands rhythm",
+    "long bind/held-contact choreography",
+    "particle effects that reduce impact readability",
+    "overusing lower-body action so the fight loses upper-body impact",
+    "final pose-out or static poster hold",
+    "weak contact without rebound or body displacement"
+  ],
+  "edit_execution_checklist": [
+    "Use V018 1.18x as current main combat candidate.",
+    "Test V018 1.12x only if sequence-level pacing makes 1.18x feel too fast.",
+    "Preserve V013 as historical locked passed segment.",
+    "Do not auto-insert V014-R02 or V016 without a later edit-conform phase.",
+    "Do not generate V019 unless human explicitly asks for alternates.",
+    "Do not create final master without human approval.",
+    "Do not treat current edit candidate lock as whole-film final approval.",
+    "Do not stage media or upload-safe JPG files."
+  ],
+  "source_learning_candidates": [
+    "Local speed diagnostics can rescue slightly slow but otherwise strong AI-video generations.",
+    "Record primary speed candidate and conservative backup separately.",
+    "lock_scope must distinguish current edit candidate from whole-film final master.",
+    "Preserve older locked passed segments when a newer candidate is locked at a different scope.",
+    "After a strong candidate is found, stop generating and move to edit-map planning.",
+    "Repeated gentle checks and long binds tend to produce soft combat.",
+    "Hard-impact prompts benefit from collision, rebound, foot skid, and torso off-line feedback language.",
+    "Particle effects should stay secondary unless the shot is explicitly VFX-focused."
+  ],
+  "future_next_options": [
+    "Move to SHOT-02 sequence-level edit/conform planning.",
+    "Move to another shot.",
+    "Prepare a Source update later only after more shot cycles accumulate."
+  ],
+  "finalization_policy": {
+    "do_not_unlock_v013": true,
+    "do_not_delete_overwrite_move_or_modify_v013_media": true,
+    "do_not_mark_v018_whole_film_final_master": true,
+    "do_not_set_final_master_true": true,
+    "do_not_create_master_export": true,
+    "future_whole_shot_or_whole_film_final_master_requires_explicit_human_approval": true
+  },
+  "safety_confirmation": {
+    "dreamina_was_not_run": true,
+    "dreamina_version_was_not_run": true,
+    "dreamina_user_credit_was_not_run": true,
+    "submit_query_download_were_not_run": true,
+    "ai_generation_was_not_run": true,
+    "media_was_not_created_edited_moved_or_deleted": true,
+    "media_was_not_staged": true,
+    "upload_safe_jpgs_were_not_staged": true,
+    "dot_vs_was_not_staged": true,
+    "runtime_code_was_not_modified": true,
+    "configs_providers_json_was_not_modified": true,
+    "project_source_files_were_not_modified": true,
+    "v013_media_was_preserved": true
+  },
+  "report_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K93_SHOT02_COMBAT_STAGE_CLOSEOUT_AND_EDIT_CHECKLIST.md",
+  "final_verdict": "SHOT_02_COMBAT_STAGE_CLOSED_AFTER_V018_1P18X_LOCK_READY_FOR_SEQUENCE_PLANNING"
+}
