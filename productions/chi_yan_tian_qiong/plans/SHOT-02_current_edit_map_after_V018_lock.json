@@ -1,0 +1,101 @@
+{
+  "shot_id": "SHOT-02",
+  "phase": "PHASE_K92",
+  "status": "current_edit_map_after_v018_1p18x_lock",
+  "created_at": "2026-06-25T00:00:00+08:00",
+  "source_lock_phase": "PHASE_K91",
+  "purpose": "Text-only current edit map after human locked SHOT-02-V018 1.18x as the current SHOT-02 edit candidate.",
+  "current_edit_candidate": {
+    "candidate_id": "SHOT-02-V018-speed-1p18x",
+    "source_task_id": "SHOT-02-V018",
+    "role": "current_shot02_edit_candidate",
+    "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/speed_diagnostics/SHOT-02-V018/SHOT-02-V018_speed_1p18x.mp4",
+    "sha256": "f48ed132f0d8ff9a7c853698e4102900ebedcc86dbfb2f1ad680de96fb044a08",
+    "duration_seconds": 4.270315091210613,
+    "frame_count": 103,
+    "resolution": "1280x720",
+    "fps": 24.12,
+    "locked": true,
+    "lock_scope": "shot02_current_edit_candidate",
+    "final_master": false,
+    "whole_film_final_master": false,
+    "replaces_v013_cut01": false
+  },
+  "backup_candidate": {
+    "candidate_id": "SHOT-02-V018-speed-1p12x",
+    "source_task_id": "SHOT-02-V018",
+    "role": "conservative_backup_edit_candidate",
+    "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/speed_diagnostics/SHOT-02-V018/SHOT-02-V018_speed_1p12x.mp4",
+    "sha256": "d05e106d5731b1b7fc68fb679819f723965edda4dcbd9afb05def3388b92486b",
+    "duration_seconds": 4.519071310116086,
+    "frame_count": 109,
+    "resolution": "1280x720",
+    "fps": 24.12,
+    "locked": false,
+    "use_condition": "Use only if V018 1.18x feels too fast during later edit assembly."
+  },
+  "historical_locked_passed_segment": {
+    "candidate_id": "SHOT-02-V013-CUT01-LOCKED",
+    "source_task_id": "SHOT-02-V013",
+    "role": "historical_locked_passed_segment",
+    "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V013/SHOT-02-V013_CUT01_0p00_to_2p20_best_close_combat_candidate.mp4",
+    "sha256": "dae11211fa19818a947d865d789b16a35126da91de71b7ae5eb026b315548c23",
+    "duration_seconds": 2.208333,
+    "frame_count": 53,
+    "resolution": "1280x720",
+    "fps": 24,
+    "locked": true,
+    "preserved": true,
+    "not_deleted": true,
+    "not_overwritten": true,
+    "not_modified_by_this_phase": true
+  },
+  "supporting_references": [
+    {
+      "task_id": "SHOT-02-V014-R02",
+      "role": "strong_positive_style_and_energy_reference",
+      "use_policy": "Use as a style, combat energy, and realistic 80s-feeling reference only. It is not the current locked edit candidate."
+    },
+    {
+      "task_id": "SHOT-02-V016",
+      "role": "possible_lower_body_line_stealing_insert_candidate",
+      "use_policy": "Optional later insert/reference if a lower-body or line-stealing beat is needed. It is not locked as the current candidate."
+    },
+    {
+      "task_id": "SHOT-02-V017",
+      "role": "camera_and_framing_reference_with_slow_soft_action_note",
+      "use_policy": "Keep as a reference for camera/framing only. Do not use as the main action target."
+    },
+    {
+      "task_id": "SHOT-02-V015",
+      "role": "rejected_caution_reference",
+      "use_policy": "Avoid slow, repetitive, low-impact hand exchange patterns seen in this version."
+    }
+  ],
+  "edit_strategy": {
+    "primary": "Use SHOT-02-V018-speed-1p18x as the current main SHOT-02 edit candidate.",
+    "backup": "Keep SHOT-02-V018-speed-1p12x as the conservative fallback if 1.18x feels too fast during later assembly.",
+    "preservation": "Preserve SHOT-02-V013-CUT01-LOCKED as the historical locked passed segment; do not delete, overwrite, or treat it as replaced.",
+    "optional_future_insert_policy": "V014-R02 and V016 may inform or supply optional later inserts in a separate edit-conform phase, but they do not replace the locked V018 1.18x current edit candidate.",
+    "generation_policy": "No V019 or further SHOT-02 combat generation is recommended unless the human explicitly requests alternates."
+  },
+  "finalization_policy": {
+    "do_not_create_final_master_without_human_approval": true,
+    "do_not_replace_v013_without_human_approval": true,
+    "current_lock_applies_only_to": "shot02_current_edit_candidate",
+    "v018_final_master": false,
+    "whole_film_final_master": false,
+    "human_approval_required_for_final_master": true
+  },
+  "safety_confirmation": {
+    "dreamina_was_not_run": true,
+    "submit_query_download_were_not_run": true,
+    "ai_generation_was_not_run": true,
+    "media_files_were_not_created_or_modified": true,
+    "upload_safe_jpgs_were_not_modified": true,
+    "source_files_were_not_modified": true,
+    "configs_providers_json_was_not_modified": true
+  },
+  "report_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K92_SHOT02_CURRENT_EDIT_MAP_AFTER_V018_LOCK.md",
+  "final_verdict": "SHOT_02_CURRENT_EDIT_MAP_READY_AFTER_V018_1P18X_LOCK"
+}
