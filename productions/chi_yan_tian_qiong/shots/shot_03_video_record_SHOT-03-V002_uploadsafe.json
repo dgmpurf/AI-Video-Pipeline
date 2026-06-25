@@ -80,7 +80,7 @@
   "final_master": false,
   "locked": false,
   "human_review_required": true,
-  "human_review_status": "pending_visual_review",
+  "human_review_status": "failed_for_choreography_and_face_stability",
   "package_review_phase": "PHASE_K105",
   "package_review_status": "passed_ready_for_human_submit_decision",
   "package_review_report": "reports/PHASE_K105_SHOT03_V002_PACKAGE_REVIEW.md",
@@ -183,6 +183,37 @@
     "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V002/frame_04.jpg",
     "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V002/frame_05.jpg"
   ],
+  "human_review_phase": "PHASE_K108",
+  "human_review_report": "reports/PHASE_K108_SHOT03_V002_HUMAN_REVIEW_AND_V003_DIRECTION.md",
+  "usable_as_final": false,
+  "usable_as_direction_reference": false,
+  "usable_as_failure_reference": true,
+  "review_summary": "V002 fixed part of the exterior-start problem but became too chaotic. It overloaded the route with exterior veranda, columns, stairs, eaves, and rooftop/tiles in one short clip. The choreography feels messy, the roof appears too early, and face stability degrades. V002 should not be locked or final.",
+  "strengths": [
+    "exterior / semi-exterior temple veranda is more visible than V001",
+    "columns, railing, rain, and roof/eaves environment appear",
+    "continuity problem is partially addressed"
+  ],
+  "limitations": [
+    "choreography is chaotic",
+    "spatial progression is overloaded",
+    "rooftop / tile position appears too early",
+    "route feels jumpy",
+    "faces degrade in motion / close view",
+    "architecture does not become cleanly readable combat mechanism"
+  ],
+  "v003_direction": [
+    "simplify to exterior veranda / column corridor / railing combat only",
+    "keep one stable environment plane",
+    "do not go to rooftop",
+    "keep wet stairs only as background/edge, not main action",
+    "use columns and railing as active obstacles",
+    "allow very limited local breakage only",
+    "use medium or medium-wide camera to protect face stability",
+    "avoid extreme close-ups",
+    "keep both fighters grounded",
+    "no final or lock"
+  ],
   "source_review_phase": "PHASE_K103",
   "source_failure_reference": "SHOT-03-V001 mixed_positive_needs_continuity_fix",
   "source_failure_summary": "V001 had useful temple architecture interaction but confusing spatial continuity: deep interior/corridor start, abrupt eaves/roof ending, compressed route progression.",
@@ -212,8 +243,9 @@
     "no final master",
     "no locked result"
   ],
-  "next_phase_recommendation": "PHASE_K108_SHOT03_V002_HUMAN_VISUAL_REVIEW",
-  "result_note": "K107 queried the existing submit id once, downloaded once after success, validated local MP4, and created review contact sheet/frames. Downloaded result still requires human visual review; do not mark final or locked.",
+  "recommended_next_step": "prepare SHOT-03 V003 simplified exterior-column-corridor package, no submit",
+  "next_phase_recommendation": "PHASE_K109_SHOT03_V003_SIMPLIFIED_CORRIDOR_PACKAGE",
+  "result_note": "Human review rejected V002 for chaotic choreography, overloaded route, early rooftop drift, and face instability. V002 remains a failure/caution reference only; do not mark final or locked.",
   "created_at": "2026-06-25T19:03:23+08:00",
-  "updated_at": "2026-06-25T20:19:46+08:00"
+  "updated_at": "2026-06-25T20:30:53+08:00"
 }
