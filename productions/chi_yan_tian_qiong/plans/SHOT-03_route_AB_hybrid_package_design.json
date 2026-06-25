@@ -1,0 +1,199 @@
+{
+  "phase": "PHASE_K98",
+  "shot_id": "SHOT-03",
+  "working_title": "temple_architecture_interaction_escalation",
+  "status": "route_AB_hybrid_confirmed_package_design_ready",
+  "created_at": "2026-06-25T00:00:00+08:00",
+  "planning_scope": "text_only_package_design_no_dreamina_no_media",
+  "human_confirmation": {
+    "route_selected": "Route_A_B_hybrid",
+    "confirmation_text": "柱列廊道近身压迫 → 湿石阶高低差战斗 → 檐口/屋顶边缘收束"
+  },
+  "prior_context": {
+    "shot02_status": "closed",
+    "shot02_current_locked_edit_candidate": "SHOT-02-V018-speed-1p18x",
+    "shot02_backup_candidate": "SHOT-02-V018-speed-1p12x",
+    "shot02_historical_locked_passed_segment": "SHOT-02-V013-CUT01-LOCKED",
+    "shot02_final_master": false,
+    "whole_film_final_master": false,
+    "shot03_selected_by_k96": true,
+    "shot03_planning_package_ready_by_k97": true
+  },
+  "selected_route": {
+    "route_id": "SHOT03_ROUTE_AB_HYBRID",
+    "route_name": "column_corridor_pressure_to_wet_stairs_to_eaves_roof_edge",
+    "beat_01": {
+      "name": "column_corridor_close_pressure",
+      "environment": "pillars / corridor / rain-slick floor",
+      "function": "expand close combat into architecture line control",
+      "action_design": [
+        "characters remain close",
+        "pillars create occlusion and tactical line changes",
+        "one fighter uses column line to break angle",
+        "forearm, palm, and shoulder contacts are hard and brief"
+      ],
+      "camera_function": "lateral track through pillar/corridor line while keeping both fighters readable",
+      "future_prompt_notes": [
+        "make the pillar/corridor anchor active, not decorative",
+        "write contact point and rebound",
+        "avoid long bind and soft push-hands rhythm"
+      ]
+    },
+    "beat_02": {
+      "name": "wet_stair_height_difference_combat",
+      "environment": "wet stone stairs / step edge / railing if available",
+      "function": "introduce verticality, slip recovery, and forced displacement",
+      "action_design": [
+        "combat shifts onto rain-slick stone steps",
+        "height difference changes strike angles",
+        "footwork shows traction, slip, recovery, pivot, and forced sidestep",
+        "one fighter nearly loses footing but recovers into counter-pressure"
+      ],
+      "camera_function": "slight rising or diagonal follow only if the feet remain visibly anchored to steps",
+      "future_prompt_notes": [
+        "describe shoe/boot contact on wet step edges",
+        "use stair height to change guard and strike angles",
+        "forbid floaty rooftop leap or big jump"
+      ]
+    },
+    "beat_03": {
+      "name": "eaves_roof_edge_endpoint",
+      "environment": "eaves / roof edge / visible tiles / wooden structure",
+      "function": "end with spatial escalation cue toward SHOT-04",
+      "action_design": [
+        "combat reaches eaves or roof-edge area",
+        "tiles, roofline, and wooden eaves become visible anchors",
+        "ending implies next escalation toward roof or structure in SHOT-04",
+        "no full temple destruction in SHOT-03"
+      ],
+      "camera_function": "hold enough architecture for continuity and exit direction; do not hide contact behind eaves",
+      "future_prompt_notes": [
+        "use roof edge as endpoint, not full roof duel",
+        "keep structure intact except minor tile/wood feedback",
+        "leave larger damage for SHOT-04"
+      ]
+    }
+  },
+  "not_this_shot": [
+    "no full temple destruction",
+    "no snow mountain transition",
+    "no weapon combat",
+    "no kaiju/mech transformation",
+    "no final master",
+    "no large structural collapse",
+    "no over-dominant particles"
+  ],
+  "action_design": [
+    "close-range fist-and-foot combat",
+    "hard but brief contact beats",
+    "tactical use of pillars and stair height",
+    "footwork with traction, slip, recovery, pivot",
+    "defender reaction through torso displacement, guard collapse, forced sidestep, or foot skid",
+    "avoid soft push-hands rhythm",
+    "avoid long held bind"
+  ],
+  "environment_anchor_requirements": [
+    "at least one clear pillar/corridor anchor",
+    "at least one clear stair/step-height anchor",
+    "ending must show eaves/roof-edge/roofline anchor",
+    "rain-slick surface should affect footwork"
+  ],
+  "camera_design": [
+    "maintain spatial continuity across route",
+    "use lateral tracking or slight rising follow as fighters move from corridor to stairs",
+    "avoid excessive shake",
+    "avoid losing who is foreground/background",
+    "keep architecture readable"
+  ],
+  "identity_requirements": [
+    "Fenshou and Shuangji must remain visually distinct",
+    "no gender drift for Shuangji",
+    "no costume merge",
+    "no extra fighters"
+  ],
+  "reference_strategy_for_future_package": {
+    "use_existing_upload_safe_character_scene_anchors_if_available_and_approved": true,
+    "do_not_introduce_new_active_visual_refs_in_k98": true,
+    "future_k99_can_decide_exact_refs": true,
+    "known_locked_refs_for_future_consideration": [
+      {
+        "logical_id": "A-CH-A-SUBJECT-001",
+        "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+        "possible_duty": "Fenshou identity reference"
+      },
+      {
+        "logical_id": "A-CH-B-SUBJECT-001",
+        "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png",
+        "possible_duty": "Shuangji full-body identity reference"
+      },
+      {
+        "logical_id": "A-CH-B-IDENTITY-002",
+        "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+        "possible_duty": "highest-priority Shuangji identity anchor"
+      },
+      {
+        "logical_id": "A-SC-TEMPLE-COURTYARD-004",
+        "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+        "possible_duty": "rainy temple scene / world anchor"
+      }
+    ]
+  },
+  "future_package_design": {
+    "next_phase": "PHASE_K99_SHOT03_PACKAGE_READY_NO_SUBMIT",
+    "k99_should_prepare": [
+      "manual prompt text",
+      "prompt json",
+      "manifest csv",
+      "shot record json",
+      "readiness review markdown",
+      "package report"
+    ],
+    "k99_should_not_submit_unless_separately_authorized": true,
+    "likely_model": "seedance2.0_vip",
+    "likely_duration": "5s for first SHOT-03 candidate",
+    "likely_ratio": "16:9",
+    "likely_resolution": "720p",
+    "likely_task_type_to_review": "multimodal2video if multiple identity/scene references are needed; otherwise choose the smallest CLI-legal task type after command-contract preflight",
+    "active_route": "Route A/B hybrid",
+    "final_master": false,
+    "locked": false,
+    "human_review_required": true
+  },
+  "route_risks": [
+    "environment may become background only",
+    "model may jump to roof too early",
+    "stairs may become unreadable",
+    "roof movement may become floaty",
+    "rain may hide contact",
+    "destruction may escalate too early into SHOT-04/05"
+  ],
+  "mitigation": [
+    "explicitly name architectural anchors",
+    "describe foot contact and traction",
+    "keep roof edge as endpoint, not full roof duel",
+    "forbid full temple destruction in SHOT-03",
+    "use short hard contacts and rebound"
+  ],
+  "recommended_next_phase": {
+    "phase": "PHASE_K99_SHOT03_PACKAGE_READY_NO_SUBMIT",
+    "purpose": "create future prompt/json/manifest/shot-record package",
+    "no_submit_without_explicit_human_approval": true
+  },
+  "safety_confirmation": {
+    "dreamina_was_not_run": true,
+    "dreamina_version_was_not_run": true,
+    "dreamina_user_credit_was_not_run": true,
+    "submit_query_download_were_not_run": true,
+    "retry_resubmit_batch_were_not_run": true,
+    "ai_media_was_not_generated": true,
+    "media_files_were_not_created_edited_moved_deleted_or_staged": true,
+    "upload_safe_jpgs_were_not_staged": true,
+    "dot_vs_was_not_staged": true,
+    "runtime_code_was_not_modified": true,
+    "configs_providers_json_was_not_modified": true,
+    "project_source_files_were_not_modified": true,
+    "shot02_v013_v018_lock_states_were_not_altered": true
+  },
+  "report_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K98_SHOT03_ROUTE_AB_HYBRID_PACKAGE_DESIGN.md",
+  "final_verdict": "SHOT03_ROUTE_AB_HYBRID_PACKAGE_DESIGN_READY"
+}
