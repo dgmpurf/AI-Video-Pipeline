@@ -1,0 +1,152 @@
+{
+  "shot_id": "SHOT-02",
+  "phase": "PHASE_K94",
+  "status": "sequence_edit_conform_plan_ready_after_combat_closeout",
+  "created_at": "2026-06-25T00:00:00+08:00",
+  "planning_scope": "sequence_level_edit_conform_planning_only",
+  "no_media_operations": true,
+  "no_final_master": true,
+  "source_closeout_phase": "PHASE_K93",
+  "current_locked_edit_candidate": {
+    "candidate_id": "SHOT-02-V018-speed-1p18x",
+    "source_task_id": "SHOT-02-V018",
+    "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/speed_diagnostics/SHOT-02-V018/SHOT-02-V018_speed_1p18x.mp4",
+    "sha256": "f48ed132f0d8ff9a7c853698e4102900ebedcc86dbfb2f1ad680de96fb044a08",
+    "duration_seconds": 4.270315091210613,
+    "frame_count": 103,
+    "resolution": "1280x720",
+    "fps": 24.12,
+    "role": "main_current_combat_segment",
+    "lock_scope": "shot02_current_edit_candidate",
+    "locked": true,
+    "final_master": false,
+    "whole_film_final_master": false
+  },
+  "backup_candidate": {
+    "candidate_id": "SHOT-02-V018-speed-1p12x",
+    "source_task_id": "SHOT-02-V018",
+    "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/speed_diagnostics/SHOT-02-V018/SHOT-02-V018_speed_1p12x.mp4",
+    "sha256": "d05e106d5731b1b7fc68fb679819f723965edda4dcbd9afb05def3388b92486b",
+    "duration_seconds": 4.519071310116086,
+    "frame_count": 109,
+    "resolution": "1280x720",
+    "fps": 24.12,
+    "role": "conservative_backup_if_1p18x_feels_too_fast"
+  },
+  "historical_locked_passed_segment": {
+    "candidate_id": "SHOT-02-V013-CUT01-LOCKED",
+    "source_task_id": "SHOT-02-V013",
+    "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V013/SHOT-02-V013_CUT01_0p00_to_2p20_best_close_combat_candidate.mp4",
+    "sha256": "dae11211fa19818a947d865d789b16a35126da91de71b7ae5eb026b315548c23",
+    "duration_seconds": 2.208333,
+    "frame_count": 53,
+    "resolution": "1280x720",
+    "fps": 24,
+    "role": "historical_locked_passed_segment",
+    "preserved": true,
+    "not_replaced_by_v018": true
+  },
+  "supporting_references": [
+    {
+      "task_id": "SHOT-02-V014-R02",
+      "role": "strong_positive_combat_energy_reference",
+      "use_policy": "reference_only_or_later_optional_insert_decision"
+    },
+    {
+      "task_id": "SHOT-02-V016",
+      "role": "possible_lower_body_line_steal_insert_reference",
+      "use_policy": "later_edit_conform_decision_only"
+    },
+    {
+      "task_id": "SHOT-02-V017",
+      "role": "camera_framing_reference_but_slow_soft_action_caution",
+      "use_policy": "do_not_use_as_main_action_target"
+    },
+    {
+      "task_id": "SHOT-02-V015",
+      "role": "rejected_caution_reference",
+      "use_policy": "avoid_as_positive_target"
+    }
+  ],
+  "proposed_sequence_routes": {
+    "route_A_primary_simple": {
+      "description": "Use V018 1.18x as the whole current combat beat without extra inserts.",
+      "recommended": true,
+      "reason": "Cleanest route: uses the locked current edit candidate, preserves continuity, and avoids overcomplication before full sequence pacing is known."
+    },
+    "route_B_conservative_pacing": {
+      "description": "Use V018 1.12x if 1.18x feels too fast in full sequence or sound design context.",
+      "recommended_as_backup": true,
+      "reason": "Keeps the same V018 content while adding a little readability if neighboring shots are slower."
+    },
+    "route_C_insert_experiment_later": {
+      "description": "Optionally test V016 lower-body / line-steal or V014-R02 energy insert in a future conform phase only.",
+      "recommended_now": false,
+      "reason": "Avoid disturbing the locked current candidate before sequence-level pacing is known."
+    }
+  },
+  "suggested_cut_points_for_future_review": {
+    "note": "Planning-only estimates; do not cut media in this phase.",
+    "V018_1p18x_start": "Use from 0.00s unless later assembly needs pre-roll trim.",
+    "V018_1p18x_end": "Use near full 4.27s unless final beat feels too long.",
+    "possible_micro_trim_zones": [
+      {
+        "zone": "beginning",
+        "range": "0.00-0.15s",
+        "condition": "Only if the first pose feels static in sequence context."
+      },
+      {
+        "zone": "ending",
+        "range": "last 0.10-0.30s",
+        "condition": "Only if motion dies or transition requires."
+      }
+    ],
+    "avoid": "Do not cut through hard contact beats."
+  },
+  "sound_design_notes_for_later": [
+    "Add short cloth snap / armor jolt / foot skid / water splash on contact beats.",
+    "Keep hit-stop sound tight, not slow-motion-heavy.",
+    "Do not cover weak contact with loud sound if visual contact is unclear."
+  ],
+  "transition_notes_for_later": [
+    "Enter from previous shot on motion or camera energy, not static pose.",
+    "Exit on displacement / recovery / re-entry direction.",
+    "Use V018 1.12x if nearby shots are slower and 1.18x feels too abrupt."
+  ],
+  "do_not_use_patterns": [
+    "V015-style repeated soft forearm/palm checks",
+    "long binds",
+    "push-hands rhythm",
+    "overly dominant particles",
+    "slow-motion-only impact",
+    "auto-inserting V014-R02/V016 before conform review"
+  ],
+  "finalization_policy": {
+    "current_lock_applies_only_to": "shot02_current_edit_candidate",
+    "do_not_create_final_master_without_human_approval": true,
+    "do_not_replace_v013_without_human_approval": true,
+    "do_not_mark_whole_film_final_master": true,
+    "future_final_master_requires_explicit_human_approval": true
+  },
+  "recommended_next_steps": {
+    "option_A": "Stop SHOT-02 combat generation and move to another shot.",
+    "option_B": "Later do real local edit/conform with explicit media-edit authorization.",
+    "option_C": "Later prepare Source update after more shot cycles accumulate."
+  },
+  "safety_confirmation": {
+    "dreamina_was_not_run": true,
+    "dreamina_version_was_not_run": true,
+    "dreamina_user_credit_was_not_run": true,
+    "submit_query_download_were_not_run": true,
+    "ai_generation_was_not_run": true,
+    "media_files_were_not_created_edited_moved_deleted_or_staged": true,
+    "upload_safe_jpgs_were_not_staged": true,
+    "dot_vs_was_not_staged": true,
+    "runtime_code_was_not_modified": true,
+    "configs_providers_json_was_not_modified": true,
+    "project_source_files_were_not_modified": true,
+    "v013_media_was_preserved": true
+  },
+  "report_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K94_SHOT02_SEQUENCE_EDIT_CONFORM_PLAN.md",
+  "final_verdict": "SHOT_02_SEQUENCE_EDIT_CONFORM_PLAN_READY_AFTER_COMBAT_CLOSEOUT"
+}
