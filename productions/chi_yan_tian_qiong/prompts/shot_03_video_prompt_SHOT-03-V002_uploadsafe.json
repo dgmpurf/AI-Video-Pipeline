@@ -1,0 +1,214 @@
+{
+  "shot_id": "SHOT-03",
+  "version_id": "SHOT-03-V002",
+  "task_id": "SHOT-03-V002",
+  "variant_id": "uploadsafe_continuity_fix_exterior_veranda_stairs_eaves",
+  "parent_shot_id": "SHOT-03",
+  "task_type": "multimodal2video",
+  "prompt_type": "uploadsafe_continuity_fix_exterior_veranda_stairs_eaves",
+  "package_concept": "continuity-fix temple architecture interaction: exterior veranda / column corridor edge start to wet stairs to eaves/roof-edge endpoint with controlled local breakage",
+  "status": "package_ready_no_submit",
+  "package_status": "package_ready_no_submit",
+  "submit_allowed": false,
+  "query_allowed": false,
+  "download_allowed": false,
+  "needs_generation": true,
+  "final_master": false,
+  "locked": false,
+  "human_review_status": "pending_package_review",
+  "human_review_required": true,
+  "human_review_required_before_submit": true,
+  "human_review_required_before_final": true,
+  "provider": "dreamina_cli",
+  "model_version": "seedance2.0_vip",
+  "duration": 5,
+  "ratio": "16:9",
+  "video_resolution": "720p",
+  "command_contract_valid": true,
+  "active_route": "SHOT03_ROUTE_AB_HYBRID_CONTINUITY_FIX",
+  "route_summary": "exterior column corridor pressure -> wet stone stairs -> eaves/roof-edge endpoint",
+  "continuity_source": "SHOT-03-V001 mixed-positive but continuity issue; V002 fixes exterior start and route connective tissue",
+  "source_failure_reference": "SHOT-03-V001 mixed_positive_needs_continuity_fix",
+  "source_review_phase": "PHASE_K103",
+  "source_planning_phase": "PHASE_K103",
+  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual_SHOT-03-V002_uploadsafe_continuity_fix_exterior_veranda_stairs_eaves_prompt.txt",
+  "manifest_path": "productions/chi_yan_tian_qiong/manifests/production_multimodal2video_SHOT-03-V002_uploadsafe.csv",
+  "shot_record_path": "productions/chi_yan_tian_qiong/shots/shot_03_video_record_SHOT-03-V002_uploadsafe.json",
+  "package_report": "reports/PHASE_K104_SHOT03_V002_UPLOADSAFE_CONTINUITY_FIX_PACKAGE_READY.md",
+  "active_reference_paths": [
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg"
+  ],
+  "reference_labels": {
+    "Fenshou": "@FENSHOU_UPLOADSAFE",
+    "Shuangji": "@SHUANGJI_UPLOADSAFE",
+    "TempleScene": "@TEMPLE_SCENE_UPLOADSAFE"
+  },
+  "references": [
+    {
+      "id": "ref_01_fenshou_identity_uploadsafe",
+      "label": "@FENSHOU_UPLOADSAFE",
+      "path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+      "duty": "Fenshou identity only. Black/red armored male warrior, face, hair, armor, silhouette, body type, aggressive forward pressure.",
+      "priority": "high",
+      "identity_reference": true,
+      "scene_reference": false,
+      "action_reference": false,
+      "image_format": "JPEG",
+      "sha256": "70C01DEC0BC3AA0EADD9F554C731BE4991320B742CB2F9A2F1195A0D4F08BED3"
+    },
+    {
+      "id": "ref_02_shuangji_identity_uploadsafe",
+      "label": "@SHUANGJI_UPLOADSAFE",
+      "path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+      "duty": "Highest-priority Shuangji female identity protection only. Female face, female identity, silver-blue high ponytail, blue-silver armor collar/shoulders, white-blue robe panels. Do not use as action/rhythm/scene/camera reference.",
+      "priority": "highest",
+      "identity_reference": true,
+      "scene_reference": false,
+      "action_reference": false,
+      "image_format": "JPEG",
+      "sha256": "FBC0E674E19D74C9BA4B8488E2C4DA79F0A415E1C6811D0613803150BD9BAD1D"
+    },
+    {
+      "id": "ref_03_temple_scene_uploadsafe",
+      "label": "@TEMPLE_SCENE_UPLOADSAFE",
+      "path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "duty": "Rainy ancient temple exterior/veranda world only: frontal main-hall axis, exterior corridor, wet stone floor, wet stairs, railings, eaves, roofline, door/window lattice, cold gray-blue rainy mood. Do not use as character identity reference.",
+      "priority": "high",
+      "identity_reference": false,
+      "scene_reference": true,
+      "action_reference": false,
+      "image_format": "JPEG",
+      "sha256": "F2117D0AC806179DD2AC5F009D3483184B500BA2489512894059379C73BC531B"
+    }
+  ],
+  "reference_exclusion_policy": {
+    "use_exactly_three_uploadsafe_jpg_references": true,
+    "do_not_use_original_png_locked_refs_as_active_visual_refs": true,
+    "do_not_use_shot03_v001_mp4_contact_sheet_or_review_frames_as_active_visual_refs": true,
+    "do_not_use_v013_v014_r02_v015_v016_v017_v018_mp4_or_contact_sheets_as_active_visual_refs": true,
+    "do_not_stage_uploadsafe_jpgs": true
+  },
+  "route_timing_design": [
+    {
+      "time_range": "0.00s-1.40s",
+      "beat": "exterior veranda / column corridor edge start",
+      "requirements": [
+        "begin outside or semi-outside, not deep inside the hall",
+        "courtyard, rain, exterior corridor edge, column line, eaves, and railing should be readable",
+        "Fenshou and Shuangji are already fighting from SHOT-02 continuity",
+        "columns and railing shape the movement",
+        "one fighter drives the other sideways along the exterior column line",
+        "hard brief contact, rebound, and visible body reaction"
+      ]
+    },
+    {
+      "time_range": "1.40s-3.30s",
+      "beat": "wet stone stairs / height-difference combat",
+      "requirements": [
+        "fight moves naturally onto wet stone steps",
+        "step edges and height difference remain readable",
+        "show traction, foot skid, slip recovery, pivot, and forced sidestep",
+        "one fighter nearly loses footing, catches balance, and counters",
+        "railing or wooden panel may crack from body contact"
+      ]
+    },
+    {
+      "time_range": "3.30s-5.00s",
+      "beat": "eaves / roof-edge endpoint with controlled local damage",
+      "requirements": [
+        "fighters reach eaves or roof-edge area",
+        "roofline, tiles, wooden eaves, railing, or door/window lattice are visible",
+        "a few tiles slide or scatter",
+        "eaves wood splinters or lantern/banner is knocked aside",
+        "ending implies SHOT-04 structural escalation but does not perform it",
+        "no full temple collapse, no full roof duel, no snow transition"
+      ]
+    }
+  ],
+  "controlled_local_breakage_allowed": [
+    "railing cracks",
+    "wood panel / door lattice breaks",
+    "door or window lattice damage",
+    "a few roof tiles slide or scatter",
+    "eaves wood splinters",
+    "lantern or banner gets knocked aside",
+    "rainwater and splinters react to impact"
+  ],
+  "action_language_requirements": [
+    "close-range fist-and-foot combat",
+    "hard but brief contact beats",
+    "defender reaction through torso displacement, guard buckle, shoulder jolt, forced sidestep, foot skid, or recoil",
+    "tactical use of columns, railing, wet steps, eaves, tiles, and wood panels",
+    "footwork must show traction, step edge, slip, recovery, and pivot",
+    "environmental response must be local and controlled",
+    "no soft push-hands rhythm",
+    "no long held bind",
+    "no repeated gentle forearm/palm checks",
+    "no floaty wuxia movement",
+    "no big flying jump",
+    "no weapon combat"
+  ],
+  "camera_requirements": [
+    "start with exterior/semi-exterior spatial clarity",
+    "do not open deep inside the hall",
+    "keep courtyard / exterior veranda / column corridor edge readable",
+    "use column line, railing, wet step edge, eaves, roofline, and door/window lattice as clear architectural anchors",
+    "lateral tracking along the exterior column corridor is allowed",
+    "slight rising or diagonal follow during stairs is allowed only if feet remain grounded and visible",
+    "avoid excessive shake that hides contact",
+    "avoid occlusion that hides the actual contact point too long",
+    "avoid sudden teleport from stairs to roof/eaves; show connective movement"
+  ],
+  "identity_requirements": [
+    "Fenshou and Shuangji must remain visually distinct",
+    "no Shuangji gender drift",
+    "no costume merge",
+    "no duplicated bodies",
+    "no extra fighters",
+    "no face/body swapping",
+    "preserve rainy temple visual continuity"
+  ],
+  "not_this_shot": [
+    "no deep interior start",
+    "no temple destruction",
+    "no snow mountain",
+    "no weapons",
+    "no giant forms",
+    "no final master",
+    "no locked result"
+  ],
+  "negative_constraints": [
+    "no deep interior start",
+    "no full temple destruction",
+    "no large structural collapse",
+    "no major building failure",
+    "no snow mountain transition",
+    "no weapon combat",
+    "no giant forms",
+    "no mech or kaiju",
+    "no final master",
+    "no locked result",
+    "no over-dominant particles",
+    "no magic shields",
+    "no energy beam",
+    "no shockwave explosion",
+    "no giant water curtain",
+    "no slow push-hands",
+    "no long bind",
+    "no floating roof duel",
+    "no extra fighters",
+    "no gore",
+    "no text",
+    "no watermark"
+  ],
+  "prompt_text": "See manual prompt file: productions/chi_yan_tian_qiong/prompts/manual_SHOT-03-V002_uploadsafe_continuity_fix_exterior_veranda_stairs_eaves_prompt.txt",
+  "next_phase_recommendation": "PHASE_K105_SHOT03_V002_PACKAGE_REVIEW",
+  "result_note": "No-submit package only; human review required before any live submit authorization.",
+  "created_at": "2026-06-25T19:03:23+08:00",
+  "updated_at": "2026-06-25T19:03:23+08:00"
+}
