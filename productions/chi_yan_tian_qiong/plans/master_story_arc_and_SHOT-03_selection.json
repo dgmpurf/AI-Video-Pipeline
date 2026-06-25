@@ -1,0 +1,163 @@
+{
+  "phase": "PHASE_K96",
+  "status": "master_story_arc_ready_and_shot03_selected",
+  "created_at": "2026-06-25T00:00:00+08:00",
+  "planning_scope": "master_story_arc_and_next_active_target_selection_only",
+  "current_project_state": {
+    "shot02_status": "combat_closed",
+    "shot02_current_locked_edit_candidate": "SHOT-02-V018-speed-1p18x",
+    "shot02_backup_candidate": "SHOT-02-V018-speed-1p12x",
+    "shot02_historical_locked_passed_segment": "SHOT-02-V013-CUT01-LOCKED",
+    "shot02_final_master": false,
+    "whole_film_final_master": false,
+    "source_handoff_phase": "PHASE_K95"
+  },
+  "master_story_arc": {
+    "scene_01_temple_rain_martial_arts": {
+      "title": "Temple rain martial-arts combat",
+      "style": "cinematic wuxia realism with rain and temple architecture",
+      "story_function": "Fenshou and Shuangji fight in close-range fist-and-foot combat, using the temple environment as the fight escalates.",
+      "major_beats": [
+        "close-range fist-and-foot combat",
+        "use temple corridors, stairs, pillars, eaves, rooftops, slick wet surfaces, tiles, and wood structures",
+        "fight can escalate onto rooftops",
+        "one side may be knocked into and break temple structures or rooms",
+        "final temple-stage collision destroys the temple",
+        "no clear winner",
+        "final temple image is obscured by smoke, dust, and rain"
+      ]
+    },
+    "transition_01_temple_to_snow_mountain": {
+      "title": "Dusty rain to snowy fog",
+      "transition_logic": "The obscured smoky, dusty, rainy temple view transitions into snowy fog.",
+      "style_shift": "Cinematic rain realism shifts toward ink-wash / water-ink style."
+    },
+    "scene_02_snow_mountain_ink_weapon_combat": {
+      "title": "Snow mountain weapon combat",
+      "style": "ink-wash / water-ink snow mountain action",
+      "story_function": "The same two fighters continue combat with spear and long blade in a snow mountain environment.",
+      "major_beats": [
+        "same two fighters",
+        "spear and long blade weapon combat",
+        "use snow mountain terrain, fog, cliffs, ridges, and whiteout visibility",
+        "high-end cinematic reveal ideas may be explored later, including hawk-eye follow and breaking through fog",
+        "fight escalates until avalanche / mountain collapse"
+      ]
+    },
+    "transition_02_avalanche_to_offshore_platform": {
+      "title": "Avalanche mass to line-work platform world",
+      "transition_logic": "Camera follows a collapsing snow chunk as it transforms from ink-wash mass into line work.",
+      "style_shift": "Water-ink style shifts into sketch / line-drawing style."
+    },
+    "scene_03_offshore_platform_sketch_kaiju_vs_mech": {
+      "title": "Offshore platform kaiju vs mech escalation",
+      "style": "sketch / line-drawing style around a sea platform",
+      "story_function": "The conflict mutates into giant-scale combat near an offshore drilling platform.",
+      "major_beats": [
+        "offshore drilling platform over the sea",
+        "one fighter transforms into a giant kaiju-like monster",
+        "the other fighter transforms into a giant mech",
+        "they fight around and in the sea near the drilling platform",
+        "platform explodes",
+        "both sides fire large-scale energy attacks",
+        "huge explosion becomes the transition"
+      ]
+    },
+    "transition_03_explosion_to_outer_space": {
+      "title": "Huge explosion to outer space",
+      "transition_logic": "The platform-scale explosion expands into an outer-space / abstract visual field.",
+      "style_shift": "Sketch / line-drawing style shifts into abstract cosmic imagery."
+    },
+    "scene_04_outer_space_abstract_cosmic_manifestation": {
+      "title": "Outer space abstract cosmic manifestation",
+      "style": "abstract outer-space ending stage",
+      "story_function": "Both sides display Fa Tian Xiang Di scale / cosmic manifestation as the ending-stage conflict.",
+      "major_beats": [
+        "transition into outer space",
+        "visual style becomes abstract",
+        "both display Fa Tian Xiang Di scale / cosmic manifestation",
+        "this is the ending stage"
+      ]
+    }
+  },
+  "scene_01_shot_ladder": [
+    {
+      "shot_id": "SHOT-01",
+      "role": "prior setup / existing earlier material",
+      "status": "existing prior material",
+      "notes": "Existing official locked keyframe and usable video candidate provide earlier temple-sequence setup."
+    },
+    {
+      "shot_id": "SHOT-02",
+      "role": "close-range main fist-and-foot combat",
+      "status": "closed combat branch with locked edit candidate",
+      "notes": "Combat core is currently represented by SHOT-02-V018-speed-1p18x; final_master remains false."
+    },
+    {
+      "shot_id": "SHOT-03",
+      "role": "temple architecture interaction escalation",
+      "content": "Use corridors, stairs, pillars, eaves, rooftop access, rain-slick surfaces, tiles, and wood structures.",
+      "status": "selected_next_active_production_target",
+      "notes": "This shot should expand beyond clean close combat into environmental interaction, without jumping directly to full temple destruction."
+    },
+    {
+      "shot_id": "SHOT-04",
+      "role": "structural break / building damage escalation",
+      "content": "One side crashes into and breaks temple structures / rooms / roof edges.",
+      "status": "future_planning_target",
+      "notes": "Escalates architecture damage after SHOT-03 establishes environmental combat."
+    },
+    {
+      "shot_id": "SHOT-05",
+      "role": "temple-destruction climax and obscured transition setup",
+      "content": "No-winner collision, temple destruction, dust/smoke + rain occlusion, transition bridge to snow mountain.",
+      "status": "future_planning_target",
+      "notes": "Scene 1 climax and visual bridge into the snow mountain sequence."
+    }
+  ],
+  "next_active_target": {
+    "shot_id": "SHOT-03",
+    "working_title": "temple_architecture_interaction_escalation",
+    "reason": [
+      "SHOT-02 already solved the clean close-combat core.",
+      "The next missing narrative beat is environmental escalation.",
+      "The human explicitly wants temple architecture to be used in combat.",
+      "SHOT-03 can use architecture interaction before SHOT-04 structural break and SHOT-05 temple destruction."
+    ],
+    "selected": true
+  },
+  "constraints": {
+    "no_dreamina_yet": true,
+    "no_submit": true,
+    "no_query_result": true,
+    "no_download": true,
+    "no_media_ops": true,
+    "no_final_master": true,
+    "no_source_update_yet": true,
+    "do_not_unlock_v013": true,
+    "do_not_modify_v013_media": true
+  },
+  "recommended_next_phase": {
+    "phase": "PHASE_K97_SHOT03_TEMPLE_ENVIRONMENT_ESCALATION_PLANNING_PACKAGE",
+    "mode": "planning_package_only",
+    "notes": [
+      "Do not generate Dreamina prompts yet if more concept clarification is needed.",
+      "Focus on martial-arts realism and temple architecture interaction.",
+      "Use roof / eaves / stairs / corridors / slick wet surfaces.",
+      "Do not jump to full temple destruction yet."
+    ]
+  },
+  "safety_confirmation": {
+    "dreamina_was_not_run": true,
+    "submit_query_download_were_not_run": true,
+    "ai_media_was_not_generated": true,
+    "media_files_were_not_created_edited_moved_deleted_or_staged": true,
+    "upload_safe_jpgs_were_not_staged": true,
+    "dot_vs_was_not_staged": true,
+    "runtime_code_was_not_modified": true,
+    "configs_providers_json_was_not_modified": true,
+    "project_source_files_were_not_modified": true
+  },
+  "report_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/reports/PHASE_K96_MASTER_STORY_ARC_AND_SHOT03_SELECTION.md",
+  "final_verdict": "MASTER_STORY_ARC_READY_AND_SHOT03_SELECTED"
+}
