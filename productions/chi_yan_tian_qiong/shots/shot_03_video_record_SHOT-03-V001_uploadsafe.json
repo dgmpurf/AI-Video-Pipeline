@@ -3,8 +3,8 @@
   "version_id": "SHOT-03-V001",
   "task_id": "SHOT-03-V001",
   "variant_id": "uploadsafe_route_ab_hybrid_temple_environment_escalation",
-  "package_status": "success_downloaded_pending_human_review",
-  "status": "success_downloaded_pending_human_review",
+  "package_status": "human_review_mixed_positive_needs_continuity_fix",
+  "status": "human_review_mixed_positive_needs_continuity_fix",
   "task_type": "multimodal2video",
   "provider": "dreamina_cli",
   "model_version": "seedance2.0_vip",
@@ -80,7 +80,36 @@
   "final_master": false,
   "locked": false,
   "human_review_required": true,
-  "human_review_status": "pending_visual_review",
+  "human_review_status": "mixed_positive_needs_continuity_fix",
+  "usable_as_final": false,
+  "usable_as_direction_reference": true,
+  "review_summary": "V001 shows useful temple architecture interaction, including corridor/columns, wet stairs, and eaves/roof elements. However, the spatial continuity is confusing: the shot appears to start from inside the hall/corridor without a prior entry beat, and the ending near the roof/eaves feels abrupt. V001 should inform V002 but should not be locked or final.",
+  "strengths": [
+    "early combat is acceptable",
+    "architecture appears in the fight",
+    "column/corridor elements are visible",
+    "wet stairs are visible",
+    "eaves / roofline / railings appear",
+    "identities are generally usable"
+  ],
+  "limitations": [
+    "continuity from SHOT-02 is unclear",
+    "appears to start from inside the hall without setup",
+    "final eaves/roof position feels abrupt",
+    "route progression is compressed",
+    "architecture is not yet used enough as breakable/reactive combat material"
+  ],
+  "v002_direction": [
+    "exterior veranda / column corridor edge start",
+    "avoid deep interior start",
+    "maintain continuity from SHOT-02 courtyard",
+    "use columns, wet steps, railings, roof edge as readable anchors",
+    "allow controlled local breakage of railing, wood lattice, door panels, tiles, eaves, lantern/banner",
+    "no full temple destruction",
+    "no snow mountain transition",
+    "no weapons",
+    "no full roof duel"
+  ],
   "source_planning_phase": "PHASE_K98",
   "prior_context": {
     "shot02_status": "closed",
@@ -134,8 +163,11 @@
   "dreamina_canary_result": "passed: version 46b5b0e-dirty, user_credit succeeded, no logger/auth failure observed",
   "command_contract_preflight_result": "passed: multimodal2video supports repeatable image inputs, image<=9, seedance2.0_vip, duration 4-15s, ratio 16:9, video_resolution 720p",
   "route": "SHOT03_ROUTE_AB_HYBRID",
-  "next_phase_recommendation": "PHASE_K103_SHOT03_V001_HUMAN_VISUAL_REVIEW",
-  "result_note": "Downloaded result still requires human visual review; do not mark final or locked.",
+  "human_review_phase": "PHASE_K103",
+  "human_review_report": "reports/PHASE_K103_SHOT03_V001_HUMAN_REVIEW_AND_V002_DIRECTION.md",
+  "recommended_next_step": "prepare SHOT-03 V002 continuity-fix package, no submit",
+  "next_phase_recommendation": "PHASE_K104_SHOT03_V002_CONTINUITY_FIX_PACKAGE",
+  "result_note": "Human review recorded: mixed positive direction reference only; V001 is not final, not locked, and V002 should fix spatial continuity.",
   "created_at": "2026-06-25T00:00:00+08:00",
-  "updated_at": "2026-06-25T16:15:19+08:00"
+  "updated_at": "2026-06-25T18:54:56+08:00"
 }
