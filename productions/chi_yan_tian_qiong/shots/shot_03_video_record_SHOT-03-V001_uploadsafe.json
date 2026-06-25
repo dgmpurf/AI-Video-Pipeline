@@ -1,0 +1,104 @@
+{
+  "shot_id": "SHOT-03",
+  "version_id": "SHOT-03-V001",
+  "task_id": "SHOT-03-V001",
+  "variant_id": "uploadsafe_route_ab_hybrid_temple_environment_escalation",
+  "package_status": "package_ready_no_submit",
+  "status": "package_ready_no_submit",
+  "task_type": "multimodal2video",
+  "provider": "dreamina_cli",
+  "model_version": "seedance2.0_vip",
+  "duration": 5,
+  "ratio": "16:9",
+  "video_resolution": "720p",
+  "active_route": "SHOT03_ROUTE_AB_HYBRID",
+  "route_summary": "column/corridor close pressure -> wet stone stair height-difference combat -> eaves/roof-edge endpoint",
+  "active_reference_paths": [
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg"
+  ],
+  "input_references": [
+    {
+      "id": "ref_01_fenshou_identity_uploadsafe",
+      "label": "@FENSHOU_UPLOADSAFE",
+      "path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+      "duty": "Fenshou identity only. Black/red armored male warrior, face, hair, armor, silhouette, body type, aggressive forward pressure.",
+      "priority": "high",
+      "identity_reference": true,
+      "scene_reference": false,
+      "action_reference": false,
+      "sha256": "70C01DEC0BC3AA0EADD9F554C731BE4991320B742CB2F9A2F1195A0D4F08BED3"
+    },
+    {
+      "id": "ref_02_shuangji_identity_uploadsafe",
+      "label": "@SHUANGJI_UPLOADSAFE",
+      "path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+      "duty": "Highest-priority Shuangji female identity protection only. Female face, female identity, silver-blue high ponytail, blue-silver armor collar/shoulders, white-blue robe panels. Not action/rhythm/scene/camera reference.",
+      "priority": "highest",
+      "identity_reference": true,
+      "scene_reference": false,
+      "action_reference": false,
+      "sha256": "FBC0E674E19D74C9BA4B8488E2C4DA79F0A415E1C6811D0613803150BD9BAD1D"
+    },
+    {
+      "id": "ref_03_temple_scene_uploadsafe",
+      "label": "@TEMPLE_SCENE_UPLOADSAFE",
+      "path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "duty": "Rainy ancient temple courtyard scene/world only. Not character identity reference.",
+      "priority": "high",
+      "identity_reference": false,
+      "scene_reference": true,
+      "action_reference": false,
+      "sha256": "F2117D0AC806179DD2AC5F009D3483184B500BA2489512894059379C73BC531B"
+    }
+  ],
+  "reference_exclusion_policy": {
+    "use_exactly_three_uploadsafe_jpg_references": true,
+    "original_png_locked_refs_not_active_visual_refs": true,
+    "prior_mp4_or_contact_sheets_not_active_visual_refs": true,
+    "uploadsafe_jpgs_not_staged": true
+  },
+  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual_SHOT-03-V001_uploadsafe_route_ab_hybrid_temple_environment_escalation_prompt.txt",
+  "prompt_json_path": "productions/chi_yan_tian_qiong/prompts/shot_03_video_prompt_SHOT-03-V001_uploadsafe.json",
+  "manifest_path": "productions/chi_yan_tian_qiong/manifests/production_multimodal2video_SHOT-03-V001_uploadsafe.csv",
+  "package_report": "reports/PHASE_K99_SHOT03_V001_UPLOADSAFE_ROUTE_AB_HYBRID_PACKAGE_READY.md",
+  "submit_allowed": false,
+  "query_allowed": false,
+  "download_allowed": false,
+  "submitted": false,
+  "queried": false,
+  "downloaded": false,
+  "final_master": false,
+  "locked": false,
+  "human_review_required": true,
+  "human_review_status": "pending_package_review",
+  "source_planning_phase": "PHASE_K98",
+  "prior_context": {
+    "shot02_status": "closed",
+    "shot02_current_locked_edit_candidate": "SHOT-02-V018-speed-1p18x",
+    "shot03_selected_by_k96": true,
+    "shot03_planning_package_ready_by_k97": true,
+    "route_ab_hybrid_confirmed_by_k98": true
+  },
+  "route_timing_design": {
+    "beat_01": "0.00s-1.50s column/corridor close-pressure combat",
+    "beat_02": "1.50s-3.40s wet stone stair height-difference combat",
+    "beat_03": "3.40s-5.00s eaves / roof-edge endpoint"
+  },
+  "not_this_shot": [
+    "no full temple destruction",
+    "no large structural collapse",
+    "no snow mountain transition",
+    "no weapon combat",
+    "no giant forms",
+    "no final master"
+  ],
+  "next_phase_recommendation": "PHASE_K100_SHOT03_V001_PACKAGE_REVIEW",
+  "result_note": "No-submit package only; human review required before any live submit authorization.",
+  "created_at": "2026-06-25T00:00:00+08:00",
+  "updated_at": "2026-06-25T00:00:00+08:00"
+}
