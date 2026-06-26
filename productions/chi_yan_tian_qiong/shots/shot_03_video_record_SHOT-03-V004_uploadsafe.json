@@ -33,7 +33,14 @@
   "human_review_required": true,
   "human_review_required_before_submit": true,
   "human_review_required_before_final": true,
-  "human_review_status": "pending",
+  "human_review_status": "positive_clean_corridor_combat_needs_terrain_affordance_escalation",
+  "human_review_phase": "PHASE_K121",
+  "human_review_report": "reports/PHASE_K121_SHOT03_V004_HUMAN_REVIEW_AND_V005_TERRAIN_AFFORDANCE_DIRECTION.md",
+  "human_review_summary": "SHOT-03 V004 is a positive clean corridor combat candidate. Rhythm, continuity, identity stability, and exterior corridor space improved clearly over V003, but it is still ordinary corridor close-combat and not yet a full terrain-affordance solution.",
+  "usable_as_final": false,
+  "usable_as_positive_candidate": true,
+  "usable_as_terrain_reference": true,
+  "terrain_affordance_solution_complete": false,
   "submit_status": "submitted_querying_no_query",
   "submit_phase": "PHASE_K118",
   "submit_report": "reports/PHASE_K118_SHOT03_V004_SUBMIT_RESULT.md",
@@ -254,8 +261,46 @@
     "no giant forms",
     "no idle tail"
   ],
-  "next_phase_recommendation": "Review SHOT-03 V004 no-submit package, then request human authorization before any canary/preflight/submit.",
-  "result_note": "K120 created local Python/cv2 review frames and contact sheet from the already-downloaded SHOT-03 V004 MP4. No Dreamina command, submit, query_result, download, retry, or resubmit was run. Human visual review is pending.",
+  "v004_human_review_strengths": [
+    "action density improved over V003",
+    "corridor space stability improved",
+    "no wrong structural crack or unexplained building damage",
+    "identity stability improved",
+    "combat rhythm and continuity are usable"
+  ],
+  "v004_remaining_limitations": [
+    "still reads as ordinary corridor close-combat",
+    "does not yet show enough terrain affordance",
+    "does not fully use temple architecture as part of the fight language"
+  ],
+  "v005_direction": {
+    "status": "direction_only_no_package",
+    "concept": "single terrain-assisted attack in the exterior corridor zone",
+    "stable_area": "exterior corridor / columns / railing / wet stone floor",
+    "recommended_action": "One fighter plants one foot on a column base, wall, or railing support, changes attack angle, and delivers a downward elbow, fist, knee, or kick into the opponent's guard.",
+    "required_opponent_result": "hard guard compression, body displacement, short foot skid, and immediate re-entry or recovery",
+    "avoid": [
+      "full wall-run",
+      "floating",
+      "roof transition",
+      "structural breakage",
+      "full building destruction",
+      "packing every terrain idea into one 5s shot"
+    ],
+    "if_successful_next_escalation": "SHOT-04 can escalate to controlled architectural breakage across multiple shots."
+  },
+  "shot04_future_direction": {
+    "concept": "controlled building impact and suspense escalation",
+    "ideas": [
+      "body impact through wooden lattice, side hall door, or wall panel",
+      "smoke, dust, and rain concealment",
+      "hole-in-wall suspense",
+      "object thrown into or out of the hole"
+    ],
+    "planning_note": "Split these into multiple 5s shots instead of packing them into one generation."
+  },
+  "next_phase_recommendation": "Prepare SHOT-03 V005 direction/package only after human approval: one terrain-assisted attack in the same exterior corridor zone, without structural breakage.",
+  "result_note": "K121 recorded human review: SHOT-03 V004 is a positive clean corridor combat candidate and should be preserved, but it is not the full terrain-affordance solution. V005 should test one explicit terrain-assisted attack without structural breakage; later SHOT-04 can escalate to controlled architectural impact across separate shots.",
   "created_at": "2026-06-26T14:41:11+08:00",
-  "updated_at": "2026-06-26T18:05:00+08:00"
+  "updated_at": "2026-06-26T18:20:00+08:00"
 }
