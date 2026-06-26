@@ -80,7 +80,7 @@
   "final_master": false,
   "locked": false,
   "human_review_required": true,
-  "human_review_status": "pending_visual_review",
+  "human_review_status": "failed_for_action_density_impact_causal_damage_and_idle_tail",
   "package_review_phase": "PHASE_K110",
   "package_review_status": "passed_ready_for_human_submit_decision",
   "package_review_report": "reports/PHASE_K110_SHOT03_V003_PACKAGE_REVIEW.md",
@@ -188,6 +188,58 @@
     "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V003/SHOT-03-V003_frame_04.jpg",
     "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V003/SHOT-03-V003_frame_05.jpg"
   ],
+  "human_review_phase": "PHASE_K113",
+  "human_review_report": "reports/PHASE_K113_SHOT03_V003_HUMAN_REVIEW_AND_PROMPT_AUDIT.md",
+  "usable_as_final": false,
+  "usable_as_direction_reference": false,
+  "usable_as_failure_reference": true,
+  "prompt_audit_status": "failed_content_audit",
+  "actual_prompt_audited": "productions/chi_yan_tian_qiong/prompts/manual_SHOT-03-V003_uploadsafe_simplified_exterior_column_corridor_prompt.txt",
+  "review_summary": "V003 reduced spatial chaos compared with V002 but failed as combat. It spent too much time on leg movement / setup, had insufficient contact density, weak impact, incorrect wood crack causality, and an idle tail near the end. It should not be locked or final.",
+  "strengths": [
+    "single exterior corridor zone is more controlled than V002",
+    "roof duel and full stair route are mostly avoided",
+    "medium framing helps reduce extreme face risk"
+  ],
+  "limitations": [
+    "action density too low",
+    "first seconds overuse foot / leg movement",
+    "insufficient da-da-da continuous exchange",
+    "final second becomes idle / pose-like",
+    "environmental crack is not causally bound to a correct impact",
+    "impact feels weak"
+  ],
+  "actual_prompt_audit_findings": [
+    "0.00s-1.20s section is too much like setup / spatial establishment and does not require first contact within 0.15-0.30s",
+    "prompt does not require a minimum number of contact beats",
+    "prompt uses generic one character / another character language, weakening attack-defend causality",
+    "3.60s-5.00s clear endpoint / readable ending wording encourages idle pose or standing still",
+    "local architecture damage is allowed without a strict cause-effect chain, causing wrong wooden crack behavior",
+    "medium / medium-wide camera helps face stability but does not guarantee action density",
+    "negative constraints are long while positive action timing is not concrete enough"
+  ],
+  "why_not_fixed_by_speed_up": [
+    "speed-up would not create missing contact beats",
+    "speed-up would not repair the wrong wood-crack cause-effect chain",
+    "speed-up would not remove the underlying setup-heavy timing design",
+    "speed-up would still leave the final idle tail as weak combat material"
+  ],
+  "v004_required_changes": [
+    "first contact must happen within 0.15-0.30s",
+    "5-second combat must contain at least 5-6 clear contact beats",
+    "no pure setup / leg movement longer than 0.35s",
+    "last 0.8s must continue fighting and cut mid-exchange",
+    "remove clear endpoint / readable ending pose language",
+    "assign Fenshou and Shuangji actions explicitly, not one character / another character",
+    "bind any architecture damage to one clear impact chain or remove damage entirely",
+    "use fewer but stronger negative constraints",
+    "actual manual prompt must receive ChatGPT content audit before any future submit"
+  ],
+  "new_process_rule": "Codex package review is not enough for action prompts; future action prompt submit requires ChatGPT content audit.",
+  "source_update_recommendation": {
+    "new_source_file": "AI视频制作_实测规则库_V1.11_连续战斗动作密度与环境破坏因果增补稿.md",
+    "source_index_update": "AI视频制作_Source索引与使用优先级_V1.5.md"
+  },
   "source_review_phase": "PHASE_K108",
   "source_failure_reference": "SHOT-03-V002 failed_for_choreography_and_face_stability",
   "source_failure_summary": "V002 overloaded exterior veranda, columns, stairs, eaves, and rooftop/tiles in one 5-second clip, causing chaotic choreography, early rooftop drift, and face instability.",
@@ -219,8 +271,8 @@
     "no final master",
     "no locked result"
   ],
-  "next_phase_recommendation": "PHASE_K113_SHOT03_V003_HUMAN_VISUAL_REVIEW",
-  "result_note": "K112 queried the existing submit_id once, downloaded once after Dreamina returned success, validated local media, and prepared contact sheet/review frames. Result still requires human visual review and is not final or locked.",
+  "next_phase_recommendation": "PHASE_K114_SHOT03_V004_ACTION_DENSITY_AND_CAUSAL_DAMAGE_DIRECTION",
+  "result_note": "Human review rejected V003 for low action density, weak impact, wrong wood-crack causality, overlong leg/setup emphasis, and idle tail. V003 remains a failure reference only; do not mark final or locked.",
   "created_at": "2026-06-25T20:39:48+08:00",
-  "updated_at": "2026-06-25T21:03:28+08:00"
+  "updated_at": "2026-06-26T13:43:44+08:00"
 }
