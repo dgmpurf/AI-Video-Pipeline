@@ -3,8 +3,8 @@
   "version_id": "SHOT-03-V005",
   "task_id": "SHOT-03-V005",
   "variant_id": "uploadsafe_terrain_rebound_attack",
-  "package_status": "success_downloaded_pending_review_artifacts",
-  "status": "success_downloaded_pending_review_artifacts",
+  "package_status": "human_review_mixed_soft_force_speed_diagnostic_recommended",
+  "status": "human_review_mixed_soft_force_speed_diagnostic_recommended",
   "task_type": "multimodal2video",
   "provider": "dreamina_cli",
   "model_version": "seedance2.0_vip",
@@ -33,7 +33,63 @@
   "human_review_required": true,
   "human_review_required_before_submit": true,
   "human_review_required_before_final": true,
-  "human_review_status": "pending_review_artifacts_and_human_review",
+  "human_review_status": "terrain_attempt_mixed_but_soft_force_low_burst_rhythm",
+  "usable_as_final": false,
+  "usable_as_positive_candidate": false,
+  "usable_as_learning_case": true,
+  "usable_as_terrain_reference": true,
+  "terrain_affordance_attempt": true,
+  "needs_speed_diagnostic": true,
+  "needs_v006_prompt_redesign": true,
+  "human_review_phase": "PHASE_K128",
+  "human_review_report": "reports/PHASE_K128_SHOT03_V005_HUMAN_REVIEW_SOFT_FORCE_AND_SPEED_DIAGNOSTIC_PLAN.md",
+  "human_review_summary": "V005 shows a terrain-affordance attempt, but the fight feels too soft. Punch and leg attack speed do not match real force generation, the desired fast burst rhythm is missing, and terrain setup diluted contact density and power.",
+  "human_review_result": {
+    "status": "terrain_attempt_mixed_but_soft_force_low_burst_rhythm",
+    "fight_feels_too_soft": true,
+    "punch_and_leg_speed_too_soft": true,
+    "force_generation_not_convincing": true,
+    "lacks_fast_burst_rhythm": true,
+    "terrain_affordance_attempt_present": true,
+    "terrain_setup_diluted_contact_density": true,
+    "foot_plant_rebound_not_compact_explosive_force_chain": true,
+    "motion_reads_as_soft_jump_pose_slow_exchange": true,
+    "not_a_passed_terrain_combat_solution": true,
+    "usable_as_final": false,
+    "usable_as_positive_candidate": false,
+    "usable_as_learning_case": true,
+    "terrain_affordance_attempt": true,
+    "final_master": false,
+    "locked": false
+  },
+  "k128_key_analysis": [
+    "V005 did attempt terrain-affordance.",
+    "The action became too soft and slow.",
+    "Contact density was diluted by the terrain setup / jump-like action.",
+    "The foot plant / rebound did not read as a compact explosive force chain.",
+    "The next prompt should treat terrain contact as a very short trigger, not a full parkour action."
+  ],
+  "k129_speed_diagnostic_plan": {
+    "recommended": true,
+    "phase": "K129",
+    "mode": "local speed diagnostic only",
+    "speed_candidates": [
+      "1.12x",
+      "1.18x",
+      "1.25x"
+    ],
+    "note": "Speed diagnostic may improve rhythm but cannot fix structural force-chain issues."
+  },
+  "v006_prompt_redesign_direction": {
+    "terrain_contact_role": "very short trigger, not full parkour action",
+    "foot_plant": "extremely short foot plant on column base",
+    "knee_compression": true,
+    "no_hang_time": true,
+    "no_jump_display": true,
+    "immediate_downward_strike": true,
+    "hit_stop": "0.10s-0.15s only at impact",
+    "follow_up": "immediate dense follow-up contact beats"
+  },
   "submit_status": "success_downloaded_pending_review_artifacts",
   "submit_phase": "PHASE_K125",
   "submit_report": "reports/PHASE_K125_SHOT03_V005_SUBMIT_RESULT.md",
@@ -92,7 +148,7 @@
   ],
   "query_allowed_next": false,
   "download_allowed_next": false,
-  "next_required_phase": "human visual review of SHOT-03 V005",
+  "next_required_phase": "K129 local V005 speed diagnostic, then V006 prompt redesign if needed",
   "submit_result": {
     "submit_attempted": true,
     "submit_attempts_count": 1,
@@ -307,8 +363,8 @@
     "no readable ending",
     "no idle tail"
   ],
-  "next_phase_recommendation": "Human visual review of SHOT-03 V005 contact sheet and review frames required. Do not mark final or locked.",
+  "next_phase_recommendation": "Run K129 local speed diagnostic only at 1.12x, 1.18x, and 1.25x. If speed diagnostic is insufficient, redesign V006 prompt around compact terrain-triggered force generation.",
   "result_note": "K126 ran exactly one status-only query for the existing submit_id, observed gen_status=success, then ran exactly one download command to the timestamped run directory. The downloaded MP4 was renamed to the canonical SHOT-03-V005 filename and validated locally. No submit, retry, resubmit, query of another submit_id, contact sheet, or review-frame extraction was performed in K126.",
   "created_at": "2026-06-26T18:45:00+08:00",
-  "updated_at": "2026-06-26T21:20:00+08:00"
+  "updated_at": "2026-06-26T21:35:00+08:00"
 }
