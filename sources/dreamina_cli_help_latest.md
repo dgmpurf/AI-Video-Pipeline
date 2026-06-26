@@ -1,9 +1,48 @@
-﻿# Dreamina CLI 帮助信息
+# dreamina_cli_help_latest.md｜2026-06-21 本地帮助快照
 
-> 生成时间：2026-06-07 16:35:30
-## dreamina -h
+> 项目：AI 视频制作 / Dreamina CLI 执行层 Source  
+> 类型：本地 CLI help 原始输出快照 / 非规则解释文件  
+> 采集时间：2026-06-21 15:07:06 +08:00  
+> 采集环境：Microsoft Windows NT 10.0.19045.0, PowerShell 5.1.19041.6456  
+> Dreamina 可执行文件：`C:\Users\msjpurf\bin\dreamina.exe`  
+> Codex 采集身份：`desktop-0k9upov\codexsandboxonline`  
+> 说明：本文件记录一次本地 `dreamina` help/version 输出。执行层最高事实来源仍然是“当前运行时的 `dreamina <command> -h`”，本文件用于追踪 2026-06-21 时点的本地能力快照。  
+> 注意：本文件不包含 auth / session / token / key / env 内容。
 
-`	ext
+---
+
+# 0. 采集结论
+
+```json
+{
+  "version": "46b5b0e-dirty",
+  "commit": "46b5b0e",
+  "build_time": "2026-06-03T19:39:25Z"
+}
+```
+
+关键观察：
+
+```text
+1. 安装脚本可下载并覆盖 dreamina.exe，但本地 version 输出仍显示 46b5b0e-dirty / 2026-06-03。
+2. 因此，执行层不得只根据体验指南的 release note 推断本机能力；必须记录本地 dreamina version 与 dreamina <command> -h。
+3. image2video 仍显示：单张 --image，ratio 从输入图推断，不在命令中设置。
+4. Seedance 2.0 family 视频命令主流 duration 仍为 4–15 秒；multiframe2video 的短 segment 规则不能外推到 image2video。
+5. login 使用 OAuth Device Flow；Agent/Codex 无交互环境可用 login --headless + login checklogin。
+```
+
+---
+
+# 1. 原始本地 help 输出
+
+```text
+dreamina version
+{
+  "version": "46b5b0e-dirty",
+  "commit": "46b5b0e",
+  "build_time": "2026-06-03T19:39:25Z"
+}
+dreamina -h
 Usage:
   dreamina [flags]
 
@@ -15,7 +54,7 @@ About:
 Quick start:
   1. Run "dreamina login" to complete OAuth device login.
   2. For headless login, run "dreamina login --headless", then "dreamina login checklogin --device_code=<device_code>".
-  3. Run a generator command such as "dreamina text2image --prompt=\"a cat portrait\"".
+  3. Run a generator command such as "dreamina text2image --prompt="a cat portrait"".
   4. Use "dreamina query_result --submit_id=<id>" for async tasks, or "dreamina list_task" to review saved tasks.
   5. Use "dreamina user_credit" to check the current account credit balance.
 
@@ -36,7 +75,6 @@ Built-in Commands:
   user_credit          Show the current user's remaining credit balance
   version              Print build version and commit information
 
-
 Generator Commands:
   frames2video         Submit a Dreamina first-last-frames video task
   image2image          Submit a Dreamina image-to-image task
@@ -46,7 +84,6 @@ Generator Commands:
   multimodal2video     Dreamina flagship video mode (全能参考 / formerly ref2video) with all-around references and Seedance 2.0
   text2image           Submit a Dreamina text-to-image task
   text2video           Submit a Dreamina text-to-video task
-
 
 Examples:
   dreamina login
@@ -58,29 +95,80 @@ Examples:
   dreamina list_task --gen_status=success
   dreamina query_result --submit_id=550e8400-e29b-41d4-a716-446655440000
   dreamina text2image --prompt="a cat portrait" --ratio=1:1 --resolution_type=2k
-`\n\n## dreamina help -h
-
-`	ext
+dreamina login -h
 Usage:
-  dreamina help [command] [flags]
+  dreamina login [flags]
 
-Help provides help for any command in the application.
-Simply type dreamina help [path to command] for full details.
-
+Reuse the current local OAuth login state when it is still valid; otherwise start OAuth Device Flow.
+By default the CLI prints verification_uri, user_code, and device_code, then waits for authorization to complete.
+With --headless, the CLI prints the authorization material and exits without polling checklogin.
+The legacy browser callback and manual-import login flow are no longer used.
 
 Flags:
-  -h, --help   help for help
+      --headless   print OAuth authorization material and exit without polling checklogin
+  -h, --help       help for login
 
 Global Flags:
       --version   print build version information
-`\n\n## dreamina list_task -h
 
-`	ext
+Examples:
+  dreamina login
+  dreamina login --headless
+  dreamina login checklogin --device_code=<device_code> --poll=30
+dreamina login checklogin -h
+Usage:
+  dreamina login checklogin [flags]
+
+Check the authorization result for a prior headless OAuth Device Flow login.
+Pass the device_code printed by "dreamina login --headless" or "dreamina relogin --headless".
+--poll=N waits for up to N seconds; --poll=0 checks only once.
+
+Flags:
+      --device_code string   device code printed by a prior headless OAuth login
+  -h, --help                 help for checklogin
+      --poll int             wait for up to N seconds before timing out; 0 checks once
+
+Global Flags:
+      --version   print build version information
+
+Examples:
+  dreamina login checklogin --device_code=<device_code>
+  dreamina login checklogin --device_code=<device_code> --poll=30
+dreamina user_credit -h
+Usage:
+  dreamina user_credit [flags]
+
+Query the current logged-in user's remaining Dreamina credits.
+
+Flags:
+  -h, --help   help for user_credit
+
+Global Flags:
+      --version   print build version information
+
+Examples:
+  dreamina user_credit
+dreamina query_result -h
+Usage:
+  dreamina query_result [flags]
+
+Query one async task by submit_id.
+
+Flags:
+      --download_dir string   download result media into the target directory
+  -h, --help                  help for query_result
+      --submit_id string      task submit_id
+
+Global Flags:
+      --version   print build version information
+
+Examples:
+  dreamina query_result --submit_id=3f6eb41f425d23a3
+dreamina list_task -h
 Usage:
   dreamina list_task [flags]
 
 List tasks saved for the current logged-in user.
-
 
 Flags:
       --gen_status string      filter by gen_status
@@ -96,89 +184,7 @@ Global Flags:
 Examples:
   dreamina list_task
   dreamina list_task --gen_status=success
-`\n\n## dreamina login -h
-
-`	ext
-Usage:
-  dreamina login [flags]
-
-Reuse the current local OAuth login state when it is still valid; otherwise start OAuth Device Flow.
-By default the CLI prints verification_uri, user_code, and device_code, then waits for authorization to complete.
-With --headless, the CLI prints the authorization material and exits without polling checklogin.
-The legacy browser callback and manual-import login flow are no longer used.
-
-
-Flags:
-      --headless   print OAuth authorization material and exit without polling checklogin
-  -h, --help       help for login
-
-Global Flags:
-      --version   print build version information
-
-Examples:
-  dreamina login
-  dreamina login --headless
-  dreamina login checklogin --device_code=<device_code> --poll=30
-`\n\n## dreamina logout -h
-
-`	ext
-Usage:
-  dreamina logout [flags]
-
-Remove the local OAuth login state without touching tasks or config.
-
-
-Flags:
-  -h, --help   help for logout
-
-Global Flags:
-      --version   print build version information
-
-Examples:
-  dreamina logout
-`\n\n## dreamina query_result -h
-
-`	ext
-Usage:
-  dreamina query_result [flags]
-
-Query one async task by submit_id.
-
-
-Flags:
-      --download_dir string   download result media into the target directory
-  -h, --help                  help for query_result
-      --submit_id string      task submit_id
-
-Global Flags:
-      --version   print build version information
-
-Examples:
-  dreamina query_result --submit_id=3f6eb41f425d23a3
-`\n\n## dreamina relogin -h
-
-`	ext
-Usage:
-  dreamina relogin [flags]
-
-Remove the local OAuth login state first, then force a fresh OAuth Device Flow login.
-By default the CLI prints verification_uri, user_code, and device_code, then waits for authorization to complete.
-With --headless, the CLI prints the authorization material and exits without polling checklogin.
-
-
-Flags:
-      --headless   print OAuth authorization material and exit without polling checklogin
-  -h, --help       help for relogin
-
-Global Flags:
-      --version   print build version information
-
-Examples:
-  dreamina relogin
-  dreamina relogin --headless
-`\n\n## dreamina session -h
-
-`	ext
+dreamina session -h
 Usage:
   dreamina session [flags]
 
@@ -199,7 +205,6 @@ Notes:
 - Session 0 is the default session. It cannot be renamed or deleted.
 - Deleting a session will safely move its history back to the default session.
 
-
 Flags:
   -h, --help   help for session
 
@@ -207,25 +212,14 @@ Global Flags:
       --version   print build version information
 
 Examples:
-  # 1. Create a session
   dreamina session create
   dreamina session create "My Video Project"
-
-  # 2. List sessions (default 30; user-specified -n is capped at 100)
   dreamina session list
   dreamina session ls -n 100
-
-  # 3. Find a session by name
   dreamina session search "Video"
-
-  # 4. Rename a session
   dreamina session rename 10086 "New Project Name"
-
-  # 5. Delete a session
   dreamina session rm 10086
-`\n\n## dreamina session create -h
-
-`	ext
+dreamina session create -h
 Usage:
   dreamina session create [name] [flags]
 
@@ -237,8 +231,6 @@ Args:
 Notes:
 - name must be 1-50 characters after trimming spaces.
 
-
-
 Flags:
   -h, --help   help for create
 
@@ -248,9 +240,7 @@ Global Flags:
 Examples:
   dreamina session create
   dreamina session create "我的视频项目"
-`\n\n## dreamina session list -h
-
-`	ext
+dreamina session list -h
 Usage:
   dreamina session list [flags]
 
@@ -264,8 +254,6 @@ Output:
 - Table columns: ID, NAME, PINNED, UPDATED_AT
 - UPDATED_AT is formatted as local time: YYYY-MM-DD HH:MM
 
-
-
 Flags:
   -h, --help            help for list
   -n, --max-count int   maximum number of sessions to display (default 30)
@@ -277,17 +265,13 @@ Examples:
   dreamina session list
   dreamina session list -n 5
   dreamina session list -n 100
-`\n\n## dreamina session search -h
-
-`	ext
+dreamina session search -h
 Usage:
   dreamina session search <name> [flags]
 
 Search sessions by name.
 
 The CLI requests the first 100 sessions from the backend and matches records whose name contains the input string. Matching is case-sensitive.
-
-
 
 Flags:
   -h, --help   help for search
@@ -298,9 +282,7 @@ Global Flags:
 Examples:
   dreamina session search "视频"
   dreamina session search "我的年度总结"
-`\n\n## dreamina session rename -h
-
-`	ext
+dreamina session rename -h
 Usage:
   dreamina session rename <session_id> <new_name> [flags]
 
@@ -316,8 +298,6 @@ Notes:
 - Session 0 is the default session and cannot be renamed.
 - Negative session IDs are invalid.
 
-
-
 Flags:
   -h, --help   help for rename
 
@@ -326,9 +306,7 @@ Global Flags:
 
 Examples:
   dreamina session rename 10086 "2024年度宣传片"
-`\n\n## dreamina session delete -h
-
-`	ext
+dreamina session delete -h
 Usage:
   dreamina session delete <session_id> [flags]
 
@@ -339,8 +317,6 @@ Notes:
 - Negative session IDs are invalid.
 - This operation is safe. The backend performs a soft delete and will move related history records back to the default session.
 
-
-
 Flags:
   -h, --help   help for delete
 
@@ -350,81 +326,37 @@ Global Flags:
 Examples:
   dreamina session delete 10085
   dreamina session rm 10085
-`\n\n## dreamina user_credit -h
-
-`	ext
+dreamina text2image -h
 Usage:
-  dreamina user_credit [flags]
+  dreamina text2image [flags]
 
-Query the current logged-in user's remaining Dreamina credits.
-
-
-Flags:
-  -h, --help   help for user_credit
-
-Global Flags:
-      --version   print build version information
-
-Examples:
-  dreamina user_credit
-`\n\n## dreamina version -h
-
-`	ext
-Usage:
-  dreamina version [flags]
-
-Print build version and commit information
-
-
-Flags:
-  -h, --help   help for version
-
-Global Flags:
-      --version   print build version information
-
-Examples:
-  dreamina version
-`\n\n## dreamina frames2video -h
-
-`	ext
-Usage:
-  dreamina frames2video [flags]
-
-Upload two local images as first and last frames, then submit a Dreamina video generation task. The task is asynchronous, but --poll can wait briefly before falling back to query_result.
+Submit a Dreamina text-to-image task. The task is asynchronous, but --poll can wait briefly before falling back to query_result.
 
 Supported combinations:
-- model_version: 3.0, 3.5pro, seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip
-- seedance2.0_vip -> video_resolution 720p or 1080p; duration 4-15s
-- 3.0 -> video_resolution 720p; duration 3-10s
-- 3.5pro -> video_resolution 720p; duration 4-12s
-- all other seedance2.0 models -> video_resolution 720p; duration 4-15s
+- model_version: 3.0, 3.1, 4.0, 4.1, 4.5, 4.6, 4.7, 5.0
+- ratio: 21:9, 16:9, 3:2, 4:3, 1:1, 3:4, 2:3, 9:16
+- 3.0/3.1 -> resolution_type 1k or 2k
+- 4.0/4.1/4.5/4.6/4.7/5.0 -> resolution_type 2k or 4k
 
 Notes:
-- ratio is inferred from the first frame image size
-- default model_version: seedance2.0fast
-- omit --video_resolution to use the model default
-- 部分高内容安全风险模型在首次使用前，可能需要先在 Dreamina Web 端完成授权确认。若返回 AigcComplianceConfirmationRequired，请先完成授权后重试。
-
+- omit --model_version to use the default model
+- omit --resolution_type to use the model default
 
 Flags:
-      --first string              local first-frame image path
-      --last string               local last-frame image path
-      --prompt string             generation prompt
-      --session int               session id (default 0 "默认对话") 
-      --duration int              video duration in seconds; supported ranges: 3.0 -> 3-10, 3.5pro -> 4-12, seedance2.0 family -> 4-15 (default 5)
-      --video_resolution string   supported values by model: seedance2.0_vip -> 720p or 1080p; all other models -> 720p
-      --model_version string      supported values: 3.0, 3.5pro, seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip; default: seedance2.0fast
-      --poll int                  submit then poll query_result for up to N seconds at 1s intervals (0 disables polling)
-  -h, --help                      help for frames2video
+      --prompt string            generation prompt
+      --session int              session id (default 0 "默认对话") 
+      --ratio string             supported values: 21:9, 16:9, 3:2, 4:3, 1:1, 3:4, 2:3, 9:16
+      --resolution_type string   supported values by model: 3.0/3.1 -> 1k or 2k; 4.0/4.1/4.5/4.6/4.7/5.0 -> 2k or 4k; omit to use the model default
+      --model_version string     supported values: 3.0, 3.1, 4.0, 4.1, 4.5, 4.6, 4.7, 5.0
+      --poll int                 submit then poll query_result for up to N seconds at 1s intervals (0 disables polling)
+  -h, --help                     help for text2image
 
 Global Flags:
       --version   print build version information
 
 Examples:
-  dreamina frames2video --first=./start.png --last=./end.png --prompt="season changes"
-`\n\n## dreamina image2image -h
-
-`	ext
+  dreamina text2image --prompt="a cat portrait" --ratio=1:1 --resolution_type=2k
+dreamina image2image -h
 Usage:
   dreamina image2image [flags]
 
@@ -441,7 +373,6 @@ Notes:
 - omit --resolution_type to use the model default
 - 一次最多上传十张图片，否则可能导致生图失败
 
-
 Flags:
       --images strings           local input image paths
       --prompt string            edit prompt
@@ -457,9 +388,40 @@ Global Flags:
 
 Examples:
   dreamina image2image --images ./input.png --prompt="turn into watercolor"
-`\n\n## dreamina image2video -h
+dreamina text2video -h
+Usage:
+  dreamina text2video [flags]
 
-`	ext
+Submit a Dreamina text-to-video task. The task is asynchronous, but --poll can wait briefly before falling back to query_result.
+
+Supported combinations:
+- model_version: seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip
+- ratio: 1:1, 3:4, 16:9, 4:3, 9:16, 21:9
+- seedance2.0_vip -> video_resolution 720p or 1080p; duration 4-15s
+- all other models -> video_resolution 720p; duration 4-15s
+
+Notes:
+- default model_version: seedance2.0fast
+- omit --video_resolution to use the model default
+- omit --ratio to use the default ratio
+- 部分高内容安全风险模型在首次使用前，可能需要先在 Dreamina Web 端完成授权确认。若返回 AigcComplianceConfirmationRequired，请先完成授权后重试。
+
+Flags:
+      --prompt string             generation prompt
+      --session int               session id (default 0 "默认对话") 
+      --duration int              video duration in seconds; supported range: 4-15 (default 5)
+      --ratio string              supported values: 1:1, 3:4, 16:9, 4:3, 9:16, 21:9
+      --video_resolution string   supported values by model: seedance2.0_vip -> 720p or 1080p; all other models -> 720p
+      --model_version string      supported values: seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip; default: seedance2.0fast
+      --poll int                  submit then poll query_result for up to N seconds at 1s intervals (0 disables polling)
+  -h, --help                      help for text2video
+
+Global Flags:
+      --version   print build version information
+
+Examples:
+  dreamina text2video --prompt="a cat running" --duration=5
+dreamina image2video -h
 Usage:
   dreamina image2video [flags]
 
@@ -478,7 +440,6 @@ Notes:
 - duration, model_version, and video_resolution must be provided in a supported combination
 - 部分高内容安全风险模型在首次使用前，可能需要先在 Dreamina Web 端完成授权确认。若返回 AigcComplianceConfirmationRequired，请先完成授权后重试。
 
-
 Flags:
       --image string              local first-frame image path
       --prompt string             generation prompt
@@ -494,35 +455,42 @@ Global Flags:
 
 Examples:
   dreamina image2video --image=./first.png --prompt="camera push in"
-`\n\n## dreamina image_upscale -h
-
-`	ext
+dreamina frames2video -h
 Usage:
-  dreamina image_upscale [flags]
+  dreamina frames2video [flags]
 
-Upload one local image, then submit a Dreamina image upscale task. The task is asynchronous, but --poll can wait briefly before falling back to query_result.
+Upload two local images as first and last frames, then submit a Dreamina video generation task. The task is asynchronous, but --poll can wait briefly before falling back to query_result.
 
 Supported combinations:
-- resolution_type: 2k, 4k, 8k
-- 2k is available to non-VIP users
-- 4k and 8k require VIP
+- model_version: 3.0, 3.5pro, seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip
+- seedance2.0_vip -> video_resolution 720p or 1080p; duration 4-15s
+- 3.0 -> video_resolution 720p; duration 3-10s
+- 3.5pro -> video_resolution 720p; duration 4-12s
+- all other seedance2.0 models -> video_resolution 720p; duration 4-15s
 
+Notes:
+- ratio is inferred from the first frame image size
+- default model_version: seedance2.0fast
+- omit --video_resolution to use the model default
+- 部分高内容安全风险模型在首次使用前，可能需要先在 Dreamina Web 端完成授权确认。若返回 AigcComplianceConfirmationRequired，请先完成授权后重试。
 
 Flags:
-      --image string             local input image path
-      --session int              session id (default 0 "默认对话") 
-      --resolution_type string   supported values: 2k, 4k, 8k; 4k and 8k require VIP
-      --poll int                 submit then poll query_result for up to N seconds at 1s intervals (0 disables polling)
-  -h, --help                     help for image_upscale
+      --first string              local first-frame image path
+      --last string               local last-frame image path
+      --prompt string             generation prompt
+      --session int               session id (default 0 "默认对话") 
+      --duration int              video duration in seconds; supported ranges: 3.0 -> 3-10, 3.5pro -> 4-12, seedance2.0 family -> 4-15 (default 5)
+      --video_resolution string   supported values by model: seedance2.0_vip -> 720p or 1080p; all other models -> 720p
+      --model_version string      supported values: 3.0, 3.5pro, seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip; default: seedance2.0fast
+      --poll int                  submit then poll query_result for up to N seconds at 1s intervals (0 disables polling)
+  -h, --help                      help for frames2video
 
 Global Flags:
       --version   print build version information
 
 Examples:
-  dreamina image_upscale --image=./input.png --resolution_type=4k
-`\n\n## dreamina multiframe2video -h
-
-`	ext
+  dreamina frames2video --first=./start.png --last=./end.png --prompt="season changes"
+dreamina multiframe2video -h
 Usage:
   dreamina multiframe2video [flags]
 
@@ -541,7 +509,6 @@ Notes:
 - model_version and video_resolution overrides are not supported by this command
 - each duration segment is limited to [0.5, 8] seconds and total duration must be >= 2
 
-
 Flags:
       --images strings                    local reference image paths
       --prompt string                     shorthand prompt for exactly 2 images
@@ -558,9 +525,7 @@ Global Flags:
 Examples:
   dreamina multiframe2video --images ./a.png,./b.png --prompt="character turns around"
   dreamina multiframe2video --images ./a.png,./b.png,./c.png --transition-prompt="turn from A to B" --transition-prompt="turn from B to C"
-`\n\n## dreamina multimodal2video -h
-
-`	ext
+dreamina multimodal2video -h
 Usage:
   dreamina multimodal2video [flags]
 
@@ -580,7 +545,6 @@ Notes:
 - local files are uploaded automatically before submit
 - input limits: image<=9, video<=3, audio<=3
 - 部分高内容安全风险模型在首次使用前，可能需要先在 Dreamina Web 端完成授权确认。若返回 AigcComplianceConfirmationRequired，请先完成授权后重试。
-
 
 Flags:
       --image stringArray         repeat for each local input image path
@@ -602,95 +566,27 @@ Examples:
   dreamina multimodal2video --image ./input.png --prompt="turn this into a cinematic shot"
   dreamina multimodal2video --image ./input.png --audio ./music.mp3 --model_version=seedance2.0fast --duration=5
   dreamina multimodal2video --image ./input.png --video ./ref.mp4 --audio ./music.mp3 --model_version=seedance2.0fast --duration=5
-`\n\n## dreamina text2image -h
-
-`	ext
+dreamina image_upscale -h
 Usage:
-  dreamina text2image [flags]
+  dreamina image_upscale [flags]
 
-Submit a Dreamina text-to-image task. The task is asynchronous, but --poll can wait briefly before falling back to query_result.
+Upload one local image, then submit a Dreamina image upscale task. The task is asynchronous, but --poll can wait briefly before falling back to query_result.
 
 Supported combinations:
-- model_version: 3.0, 3.1, 4.0, 4.1, 4.5, 4.6, 4.7, 5.0
-- ratio: 21:9, 16:9, 3:2, 4:3, 1:1, 3:4, 2:3, 9:16
-- 3.0/3.1 -> resolution_type 1k or 2k
-- 4.0/4.1/4.5/4.6/4.7/5.0 -> resolution_type 2k or 4k
-
-Notes:
-- omit --model_version to use the default model
-- omit --resolution_type to use the model default
-
+- resolution_type: 2k, 4k, 8k
+- 2k is available to non-VIP users
+- 4k and 8k require VIP
 
 Flags:
-      --prompt string            generation prompt
+      --image string             local input image path
       --session int              session id (default 0 "默认对话") 
-      --ratio string             supported values: 21:9, 16:9, 3:2, 4:3, 1:1, 3:4, 2:3, 9:16
-      --resolution_type string   supported values by model: 3.0/3.1 -> 1k or 2k; 4.0/4.1/4.5/4.6/4.7/5.0 -> 2k or 4k; omit to use the model default
-      --model_version string     supported values: 3.0, 3.1, 4.0, 4.1, 4.5, 4.6, 4.7, 5.0
+      --resolution_type string   supported values: 2k, 4k, 8k; 4k and 8k require VIP
       --poll int                 submit then poll query_result for up to N seconds at 1s intervals (0 disables polling)
-  -h, --help                     help for text2image
+  -h, --help                     help for image_upscale
 
 Global Flags:
       --version   print build version information
 
 Examples:
-  dreamina text2image --prompt="a cat portrait" --ratio=1:1 --resolution_type=2k
-`\n\n## dreamina text2video -h
-
-`	ext
-Usage:
-  dreamina text2video [flags]
-
-Submit a Dreamina text-to-video task. The task is asynchronous, but --poll can wait briefly before falling back to query_result.
-
-Supported combinations:
-- model_version: seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip
-- ratio: 1:1, 3:4, 16:9, 4:3, 9:16, 21:9
-- seedance2.0_vip -> video_resolution 720p or 1080p; duration 4-15s
-- all other models -> video_resolution 720p; duration 4-15s
-
-Notes:
-- default model_version: seedance2.0fast
-- omit --video_resolution to use the model default
-- omit --ratio to use the default ratio
-- 部分高内容安全风险模型在首次使用前，可能需要先在 Dreamina Web 端完成授权确认。若返回 AigcComplianceConfirmationRequired，请先完成授权后重试。
-
-
-Flags:
-      --prompt string             generation prompt
-      --session int               session id (default 0 "默认对话") 
-      --duration int              video duration in seconds; supported range: 4-15 (default 5)
-      --ratio string              supported values: 1:1, 3:4, 16:9, 4:3, 9:16, 21:9
-      --video_resolution string   supported values by model: seedance2.0_vip -> 720p or 1080p; all other models -> 720p
-      --model_version string      supported values: seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip; default: seedance2.0fast
-      --poll int                  submit then poll query_result for up to N seconds at 1s intervals (0 disables polling)
-  -h, --help                      help for text2video
-
-Global Flags:
-      --version   print build version information
-
-Examples:
-  dreamina text2video --prompt="a cat running" --duration=5
-`\n\n## dreamina login checklogin -h
-
-`	ext
-Usage:
-  dreamina login checklogin [flags]
-
-Check the authorization result for a prior headless OAuth Device Flow login.
-Pass the device_code printed by "dreamina login --headless" or "dreamina relogin --headless".
---poll=N waits for up to N seconds; --poll=0 checks only once.
-
-
-Flags:
-      --device_code string   device code printed by a prior headless OAuth login
-  -h, --help                 help for checklogin
-      --poll int             wait for up to N seconds before timing out; 0 checks once
-
-Global Flags:
-      --version   print build version information
-
-Examples:
-  dreamina login checklogin --device_code=<device_code>
-  dreamina login checklogin --device_code=<device_code> --poll=30
-`\n\n
+  dreamina image_upscale --image=./input.png --resolution_type=4k
+```
