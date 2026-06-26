@@ -1,0 +1,172 @@
+{
+  "shot_id": "SHOT-03",
+  "version_id": "SHOT-03-V005",
+  "task_id": "SHOT-03-V005",
+  "variant_id": "uploadsafe_terrain_rebound_attack",
+  "parent_shot_id": "SHOT-03",
+  "task_type": "multimodal2video",
+  "prompt_type": "uploadsafe_terrain_affordance_column_foot_rebound_attack",
+  "package_concept": "single terrain-assisted column-foot rebound attack in rainy exterior corridor, revised after ChatGPT K123 audit",
+  "status": "package_ready_no_submit",
+  "package_status": "package_ready_no_submit",
+  "submit_allowed": false,
+  "query_allowed": false,
+  "download_allowed": false,
+  "needs_generation": true,
+  "final_master": false,
+  "locked": false,
+  "human_review_status": "pending_package_review",
+  "human_review_required": true,
+  "human_review_required_before_submit": true,
+  "human_review_required_before_final": true,
+  "provider": "dreamina_cli",
+  "model_version": "seedance2.0_vip",
+  "duration": 5,
+  "ratio": "16:9",
+  "video_resolution": "720p",
+  "command_contract_valid": true,
+  "chatgpt_prompt_content_audit_phase": "PHASE_K123",
+  "chatgpt_prompt_content_audit_result": "pass_with_minor_patch_required",
+  "k123_revisions_applied": [
+    "terrain anchor narrowed to wet round column base / column foot",
+    "attack action narrowed to right forearm with hammerfist-like downward smash",
+    "first contact timing clarified with 0.00s-0.12s close-range drive and 0.12s-0.28s first hard contact",
+    "camera angle clarified as slight exterior-corridor diagonal toward courtyard, not side-scroller",
+    "existing no-roof, no-full-wall-run, no-floating, no-structural-breakage, contact-density and identity constraints preserved"
+  ],
+  "active_route": "SHOT03_V005_TERRAIN_REBOUND_ATTACK",
+  "route_summary": "one stable exterior corridor / column / railing / wet stone zone with one wet round column-foot rebound attack",
+  "continuity_source": "SHOT-03-V004 positive clean corridor combat candidate, but needs terrain affordance escalation",
+  "source_review_phase": "PHASE_K121",
+  "source_prompt_draft_phase": "PHASE_K122",
+  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual_SHOT-03-V005_uploadsafe_terrain_rebound_attack_prompt.txt",
+  "manifest_path": "productions/chi_yan_tian_qiong/manifests/production_multimodal2video_SHOT-03-V005_uploadsafe.csv",
+  "shot_record_path": "productions/chi_yan_tian_qiong/shots/shot_03_video_record_SHOT-03-V005_uploadsafe.json",
+  "package_report": "reports/PHASE_K124_SHOT03_V005_PACKAGE_READY_AFTER_CHATGPT_AUDIT.md",
+  "active_reference_paths": [
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg"
+  ],
+  "reference_labels": {
+    "Fenshou": "@FENSHOU_UPLOADSAFE",
+    "Shuangji": "@SHUANGJI_UPLOADSAFE",
+    "TempleScene": "@TEMPLE_SCENE_UPLOADSAFE"
+  },
+  "references": [
+    {
+      "id": "ref_01_fenshou_identity_uploadsafe",
+      "label": "@FENSHOU_UPLOADSAFE",
+      "path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+      "duty": "Fenshou identity only. Black/red armored male warrior, face, hair, armor, silhouette, body type, aggressive forward pressure.",
+      "priority": "high",
+      "identity_reference": true,
+      "scene_reference": false,
+      "action_reference": false,
+      "image_format": "JPEG",
+      "sha256": "70C01DEC0BC3AA0EADD9F554C731BE4991320B742CB2F9A2F1195A0D4F08BED3"
+    },
+    {
+      "id": "ref_02_shuangji_identity_uploadsafe",
+      "label": "@SHUANGJI_UPLOADSAFE",
+      "path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+      "duty": "Highest-priority Shuangji female identity protection only. Female face, female identity, silver-blue high ponytail, blue-silver armor collar/shoulders, white-blue robe panels. Do not use as action/rhythm/scene/camera reference.",
+      "priority": "highest",
+      "identity_reference": true,
+      "scene_reference": false,
+      "action_reference": false,
+      "image_format": "JPEG",
+      "sha256": "FBC0E674E19D74C9BA4B8488E2C4DA79F0A415E1C6811D0613803150BD9BAD1D"
+    },
+    {
+      "id": "ref_03_temple_scene_uploadsafe",
+      "label": "@TEMPLE_SCENE_UPLOADSAFE",
+      "path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "duty": "Rainy ancient temple exterior/veranda world only: exterior corridor, columns, railing, wet stone floor, exterior eaves, courtyard rain, cold gray-blue rainy mood. Do not use as character identity reference.",
+      "priority": "high",
+      "identity_reference": false,
+      "scene_reference": true,
+      "action_reference": false,
+      "image_format": "JPEG",
+      "sha256": "F2117D0AC806179DD2AC5F009D3483184B500BA2489512894059379C73BC531B"
+    }
+  ],
+  "terrain_affordance_design": {
+    "main_terrain_anchor": "wet round column base / column foot beside exterior corridor pillar",
+    "main_attack_action": "right forearm with hammerfist-like downward smash",
+    "contact_target": "Shuangji crossed guard or shoulder armor, not face",
+    "terrain_contact_duration": "less than about 0.40s",
+    "terrain_breakage_allowed": false,
+    "terrain_affordance_count": 1
+  },
+  "contact_density_requirements": {
+    "first_contact_drive_window": "0.00s-0.12s",
+    "first_clear_hard_contact_window": "0.12s-0.28s",
+    "target_first_contact_window": "0.15s-0.30s",
+    "minimum_clear_contact_beats": 6,
+    "max_pure_adjustment_between_contacts": "0.20s-0.25s",
+    "final_0p8s_minimum_contact_beats": 2,
+    "final_frame_policy": "cut_mid_exchange"
+  },
+  "camera_requirements": {
+    "framing": "medium or medium-wide",
+    "angle": "slight exterior-corridor diagonal angle toward courtyard",
+    "avoid": [
+      "fully parallel side-on view",
+      "side-scroller feel",
+      "extreme face close-up",
+      "excessive shake",
+      "hiding terrain foot plant"
+    ]
+  },
+  "environment_rules": {
+    "structural_breakage_allowed": false,
+    "railing_motion_causality_required": true,
+    "allowed_non_structural_feedback": [
+      "rainwater splash from foot skid",
+      "wet boot scrape",
+      "robe or sleeve snap",
+      "hair whip",
+      "armor droplets",
+      "railing shake only under real body/forearm/shoulder pressure",
+      "brief column occlusion",
+      "lantern/banner/hanging cloth brushed by body airflow or proximity"
+    ],
+    "forbidden_environment_feedback": [
+      "wood cracks",
+      "railing cracks",
+      "pillar cracks",
+      "wall cracks",
+      "roof tile breakage",
+      "holes",
+      "splinters",
+      "unexplained damage",
+      "background structure self-damage",
+      "smoke-hole suspense"
+    ]
+  },
+  "not_this_shot": [
+    "no roof duel",
+    "no roof-tile combat",
+    "no full wall-run",
+    "no floating",
+    "no wire-fu",
+    "no full stair route",
+    "no deep interior start",
+    "no temple destruction",
+    "no structural breakage",
+    "no smoke-hole suspense",
+    "no weapons",
+    "no giant forms",
+    "no readable ending",
+    "no idle tail"
+  ],
+  "prompt_text": "See manual prompt file: productions/chi_yan_tian_qiong/prompts/manual_SHOT-03-V005_uploadsafe_terrain_rebound_attack_prompt.txt",
+  "next_phase_recommendation": "Package review, then human submit authorization before any Dreamina canary/preflight/submit.",
+  "result_note": "No-submit V005 package prepared after ChatGPT K123 minor patches. Human authorization required before K125.",
+  "created_at": "2026-06-26T18:45:00+08:00",
+  "updated_at": "2026-06-26T18:45:00+08:00"
+}
