@@ -3,8 +3,8 @@
   "version_id": "SHOT-03-V005",
   "task_id": "SHOT-03-V005",
   "variant_id": "uploadsafe_terrain_rebound_attack",
-  "package_status": "human_review_mixed_soft_force_speed_diagnostic_recommended",
-  "status": "human_review_mixed_soft_force_speed_diagnostic_recommended",
+  "package_status": "speed_diagnostics_created_pending_human_review",
+  "status": "speed_diagnostics_created_pending_human_review",
   "task_type": "multimodal2video",
   "provider": "dreamina_cli",
   "model_version": "seedance2.0_vip",
@@ -80,6 +80,63 @@
     ],
     "note": "Speed diagnostic may improve rhythm but cannot fix structural force-chain issues."
   },
+  "speed_diagnostic_status": "created",
+  "speed_diagnostic_phase": "PHASE_K129",
+  "speed_diagnostic_report": "reports/PHASE_K129_SHOT03_V005_SPEED_DIAGNOSTIC_READY.md",
+  "speed_diagnostic_source_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/runs/live/SHOT-03-V005_20260626_204413/SHOT-03-V005_uploadsafe_terrain_rebound_attack.mp4",
+  "speed_diagnostic_method": "Python/cv2 preserved all frames and wrote each output at original_fps * speed_factor",
+  "speed_diagnostic_review_artifacts_status": "contact_sheets_created",
+  "speed_diagnostic_review_artifacts_dir": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V005/speed_diagnostics",
+  "speed_diagnostic_variants": [
+    {
+      "factor": 1.12,
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/speed_diagnostics/SHOT-03-V005/SHOT-03-V005_speed_1p12x.mp4",
+      "sha256": "f245db5267cf854989a3c73af361952434b04744a3cfcaad634d7bb82a16da2f",
+      "size_bytes": 4613706,
+      "duration_seconds": 4.479158954616125,
+      "expected_duration_seconds": 4.479166666666666,
+      "width": 1280,
+      "height": 720,
+      "fps": 27.014,
+      "frame_count": 121,
+      "format": "mp4",
+      "validation_result": "passed",
+      "contact_sheet_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V005/speed_diagnostics/SHOT-03-V005_speed_1p12x_contact_sheet.jpg",
+      "contact_sheet_size_bytes": 346519
+    },
+    {
+      "factor": 1.18,
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/speed_diagnostics/SHOT-03-V005/SHOT-03-V005_speed_1p18x.mp4",
+      "sha256": "914d8e8779d8e41195296e580f9cd739f9f91a46ad01644721a1562fc1645a70",
+      "size_bytes": 4613724,
+      "duration_seconds": 4.251431783844559,
+      "expected_duration_seconds": 4.251412429378531,
+      "width": 1280,
+      "height": 720,
+      "fps": 28.461,
+      "frame_count": 121,
+      "format": "mp4",
+      "validation_result": "passed",
+      "contact_sheet_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V005/speed_diagnostics/SHOT-03-V005_speed_1p18x_contact_sheet.jpg",
+      "contact_sheet_size_bytes": 346625
+    },
+    {
+      "factor": 1.25,
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/edits/speed_diagnostics/SHOT-03-V005/SHOT-03-V005_speed_1p25x.mp4",
+      "sha256": "57b1286d3049eb82b30a9f5e2cb6a5fd2cd6bdf0e4f8de1afdde3dccdfd75140",
+      "size_bytes": 4613648,
+      "duration_seconds": 4.013266998341625,
+      "expected_duration_seconds": 4.013333333333334,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.15,
+      "frame_count": 121,
+      "format": "mp4",
+      "validation_result": "passed",
+      "contact_sheet_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V005/speed_diagnostics/SHOT-03-V005_speed_1p25x_contact_sheet.jpg",
+      "contact_sheet_size_bytes": 346830
+    }
+  ],
   "v006_prompt_redesign_direction": {
     "terrain_contact_role": "very short trigger, not full parkour action",
     "foot_plant": "extremely short foot plant on column base",
@@ -148,7 +205,7 @@
   ],
   "query_allowed_next": false,
   "download_allowed_next": false,
-  "next_required_phase": "K129 local V005 speed diagnostic, then V006 prompt redesign if needed",
+  "next_required_phase": "human review of speed diagnostics and V006 decision",
   "submit_result": {
     "submit_attempted": true,
     "submit_attempts_count": 1,
@@ -363,8 +420,8 @@
     "no readable ending",
     "no idle tail"
   ],
-  "next_phase_recommendation": "Run K129 local speed diagnostic only at 1.12x, 1.18x, and 1.25x. If speed diagnostic is insufficient, redesign V006 prompt around compact terrain-triggered force generation.",
+  "next_phase_recommendation": "Human review of K129 speed diagnostics. If no speed variant solves the soft-force issue, proceed to V006 prompt redesign around compact terrain-triggered force generation.",
   "result_note": "K126 ran exactly one status-only query for the existing submit_id, observed gen_status=success, then ran exactly one download command to the timestamped run directory. The downloaded MP4 was renamed to the canonical SHOT-03-V005 filename and validated locally. No submit, retry, resubmit, query of another submit_id, contact sheet, or review-frame extraction was performed in K126.",
   "created_at": "2026-06-26T18:45:00+08:00",
-  "updated_at": "2026-06-26T21:35:00+08:00"
+  "updated_at": "2026-06-26T21:50:00+08:00"
 }
