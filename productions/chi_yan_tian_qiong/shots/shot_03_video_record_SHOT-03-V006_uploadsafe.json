@@ -89,7 +89,7 @@
     "locked":  false,
     "human_review_required_before_submit":  true,
     "human_review_required_before_final":  true,
-    "next_required_phase":  "K134 package review / K135 human submit authorization",
+    "next_required_phase":  "K135 human submit authorization",
     "source_governance":  {
                               "source_read_allowed":  true,
                               "source_recommendation_allowed":  true,
@@ -108,5 +108,9 @@
     "queue_status":  null,
     "local_output_path":  null,
     "created_at":  "2026-06-26T14:20:36.376Z",
-    "updated_at":  "2026-06-26T14:20:36.376Z"
+    "updated_at":  "2026-06-26T14:20:36.376Z",
+    "package_review_status":  "passed",
+    "package_review_phase":  "PHASE_K134",
+    "package_review_report_path":  "reports/PHASE_K134_SHOT03_V006_PACKAGE_REVIEW_READY_FOR_SUBMIT_AUTH.md",
+    "ready_for_human_submit_authorization":  true
 }
