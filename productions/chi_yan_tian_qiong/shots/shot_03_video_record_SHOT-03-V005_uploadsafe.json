@@ -70,9 +70,29 @@
   "local_output_frame_count": 121,
   "local_output_format": "mp4",
   "local_validation_tool_used": "python cv2 + hashlib",
+  "contact_sheet_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V005/SHOT-03-V005_contact_sheet.jpg",
+  "review_frames_dir": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V005/frames",
+  "review_artifacts_status": "created",
+  "review_artifacts_phase": "PHASE_K127",
+  "review_artifacts_report": "reports/PHASE_K127_SHOT03_V005_REVIEW_ARTIFACTS_READY.md",
+  "review_frame_count": 12,
+  "review_frame_timestamps_seconds": [
+    0.0,
+    0.45,
+    0.9,
+    1.35,
+    1.8,
+    2.25,
+    2.7,
+    3.15,
+    3.6,
+    4.05,
+    4.5,
+    4.95
+  ],
   "query_allowed_next": false,
   "download_allowed_next": false,
-  "next_required_phase": "K127 local review artifacts and human visual review",
+  "next_required_phase": "human visual review of SHOT-03 V005",
   "submit_result": {
     "submit_attempted": true,
     "submit_attempts_count": 1,
@@ -123,6 +143,101 @@
     "query_other_submit_id_performed": false,
     "contact_sheet_created": false,
     "review_frames_created": false
+  },
+  "review_artifacts_result": {
+    "phase": "PHASE_K127",
+    "method": "Python/cv2 frame extraction and contact sheet generation",
+    "input_mp4": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/runs/live/SHOT-03-V005_20260626_204413/SHOT-03-V005_uploadsafe_terrain_rebound_attack.mp4",
+    "input_sha256": "12e439952e12760eec27854c38a90307df9cdfa342d12c50d67d3dfe2d98f2ec",
+    "input_size_bytes": 8673829,
+    "input_duration_seconds": 5.016666666666667,
+    "input_width": 1280,
+    "input_height": 720,
+    "input_fps": 24.119601328903656,
+    "input_frame_count": 121,
+    "review_frames_dir": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V005/frames",
+    "contact_sheet_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V005/SHOT-03-V005_contact_sheet.jpg",
+    "frame_outputs": [
+      {
+        "file": "frame_01_t0p00.jpg",
+        "requested_timestamp": 0.0,
+        "actual_frame": 0,
+        "actual_timestamp": 0.0
+      },
+      {
+        "file": "frame_02_t0p45.jpg",
+        "requested_timestamp": 0.45,
+        "actual_frame": 11,
+        "actual_timestamp": 0.456061
+      },
+      {
+        "file": "frame_03_t0p90.jpg",
+        "requested_timestamp": 0.9,
+        "actual_frame": 22,
+        "actual_timestamp": 0.912121
+      },
+      {
+        "file": "frame_04_t1p35.jpg",
+        "requested_timestamp": 1.35,
+        "actual_frame": 33,
+        "actual_timestamp": 1.368182
+      },
+      {
+        "file": "frame_05_t1p80.jpg",
+        "requested_timestamp": 1.8,
+        "actual_frame": 43,
+        "actual_timestamp": 1.782782
+      },
+      {
+        "file": "frame_06_t2p25.jpg",
+        "requested_timestamp": 2.25,
+        "actual_frame": 54,
+        "actual_timestamp": 2.238843
+      },
+      {
+        "file": "frame_07_t2p70.jpg",
+        "requested_timestamp": 2.7,
+        "actual_frame": 65,
+        "actual_timestamp": 2.694904
+      },
+      {
+        "file": "frame_08_t3p15.jpg",
+        "requested_timestamp": 3.15,
+        "actual_frame": 76,
+        "actual_timestamp": 3.150964
+      },
+      {
+        "file": "frame_09_t3p60.jpg",
+        "requested_timestamp": 3.6,
+        "actual_frame": 87,
+        "actual_timestamp": 3.607025
+      },
+      {
+        "file": "frame_10_t4p05.jpg",
+        "requested_timestamp": 4.05,
+        "actual_frame": 98,
+        "actual_timestamp": 4.063085
+      },
+      {
+        "file": "frame_11_t4p50.jpg",
+        "requested_timestamp": 4.5,
+        "actual_frame": 109,
+        "actual_timestamp": 4.519146
+      },
+      {
+        "file": "frame_12_t4p95.jpg",
+        "requested_timestamp": 4.95,
+        "actual_frame": 119,
+        "actual_timestamp": 4.933747
+      }
+    ],
+    "dreamina_ran": false,
+    "submit_ran": false,
+    "query_result_ran": false,
+    "download_ran": false,
+    "retry_ran": false,
+    "resubmit_ran": false,
+    "media_staged": false
   },
   "chatgpt_prompt_content_audit_phase": "PHASE_K123",
   "chatgpt_prompt_content_audit_result": "pass_with_minor_patch_required",
@@ -192,8 +307,8 @@
     "no readable ending",
     "no idle tail"
   ],
-  "next_phase_recommendation": "K127 local review artifacts and human visual review required. Do not mark final or locked.",
+  "next_phase_recommendation": "Human visual review of SHOT-03 V005 contact sheet and review frames required. Do not mark final or locked.",
   "result_note": "K126 ran exactly one status-only query for the existing submit_id, observed gen_status=success, then ran exactly one download command to the timestamped run directory. The downloaded MP4 was renamed to the canonical SHOT-03-V005 filename and validated locally. No submit, retry, resubmit, query of another submit_id, contact sheet, or review-frame extraction was performed in K126.",
   "created_at": "2026-06-26T18:45:00+08:00",
-  "updated_at": "2026-06-26T21:00:00+08:00"
+  "updated_at": "2026-06-26T21:20:00+08:00"
 }
