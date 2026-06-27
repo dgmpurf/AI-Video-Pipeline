@@ -1,0 +1,19 @@
+SPLIT02_POSE_KF_01_column_edge_guard_compression. No visible text, numbers, labels, captions, logo, watermark, or UI marks in the image.
+
+This is a single static keyframe, not a video.
+
+Use the same rainy exterior temple corridor style as SHOT-03 V004: wet stone floor, wooden corridor columns, railing line, cold blue-gray rain light, and medium-wide action framing. The camera should feel V004-like, with readable bodies and no face close-up.
+
+The wooden column sits near the center-left or center of the action area. The column works only as a narrow obstacle and partial occluder. It is not a stepping point, not a force trigger, not a parkour prop, and not a breakable object.
+
+Fenshou remains the black-red armored male fighter. Shuangji remains the blue-white and silver female fighter. They are still in close combat beside the wooden column.
+
+Fenshou presses into Shuangji's raised guard from the left side. Shuangji's forearms and shoulders are compressed toward the column edge. The column partially hides a small part of their overlapping arms or torsos, creating a tight corridor squeeze.
+
+Both fighters remain physically engaged and close together. Neither fighter is separated, posing, resetting, or looking away. The image should feel like one middle keyframe between CUT_B_START_03 and CUT_C_RETURN_01: incoming corridor-combat pressure, one compressed column-edge beat, then ready to return to close corridor combat.
+
+Both fighters' feet stay on the flat wet stone floor. No one steps on the column base. No one steps on a random stone. No jump, no hangtime, no parkour, no wall-run, no roof, no stairs, no eaves route.
+
+No railing, door, lattice, wall, or column breakage. No cracks, debris, wood splinters, broken boards, shockwave, water shield, smoke explosion, or architecture destruction.
+
+No extra characters, no duplicated fighters, no body fusion, no extra limbs, no random weapons, no text, no watermark.
