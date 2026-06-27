@@ -1,0 +1,91 @@
+{
+  "project_name": "chi_yan_tian_qiong",
+  "shot_id": "SHOT-03-SPLIT02",
+  "keyframe_id": "SPLIT02_POSE_KF_01_R02_identity_repair",
+  "asset_id": "SPLIT02_POSE_KF_01_R02_identity_repair",
+  "task_type": "image2image",
+  "provider": "dreamina_cli",
+  "model_version": "4.7",
+  "ratio": "16:9",
+  "resolution_type": "2k",
+  "package_status": "package_ready_no_submit_pending_K170_review",
+  "prompt_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/prompts/manual/SPLIT02_POSE_KF_01_R02_identity_repair_DRAFT_prompt.txt",
+  "prompt_repo_relative_path": "productions/chi_yan_tian_qiong/prompts/manual/SPLIT02_POSE_KF_01_R02_identity_repair_DRAFT_prompt.txt",
+  "prompt_sha256": "47739cb33850d2d692ee13479dde8c13822acab34bc6ff94f55c4ecec06de853",
+  "prompt_status": "draft_only_not_for_submit",
+  "references": [
+    {
+      "label": "@SHUANGJI_IDENTITY_REF",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+      "repo_relative_path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+      "exists": true,
+      "sha256": "fbc0e674e19d74c9ba4b8488e2c4da79f0a415e1c6811d0613803150bd9bad1d",
+      "duty": "highest-priority Shuangji identity-only anchor; preserve female face, hair, body frame, silhouette, and blue-white/silver costume language; do not dictate corridor geometry or action composition.",
+      "include_in_primary_package": true
+    },
+    {
+      "label": "@FENSHOU_IDENTITY_REF",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+      "repo_relative_path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+      "exists": true,
+      "sha256": "70c01dec0bc3aa0eadd9f554c731be4991320b742cb2f9a2f1195a0d4f08bed3",
+      "duty": "Fenshou identity-only anchor; preserve black-red armored male fighter identity, body mass, hair, and costume language; do not dictate corridor geometry or action composition.",
+      "include_in_primary_package": true
+    },
+    {
+      "label": "@K164_FAILED_IMAGE_COMPOSITION_ONLY",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/runs/live/SPLIT02_POSE_KF_01_20260627_202259/83628bbc-88bc-4c04-9e7c-11697c84fd95_image_1.png",
+      "repo_relative_path": "productions/chi_yan_tian_qiong/runs/live/SPLIT02_POSE_KF_01_20260627_202259/83628bbc-88bc-4c04-9e7c-11697c84fd95_image_1.png",
+      "exists": true,
+      "sha256": "d328bc4fb0e8f630925d9d9508ecb1394b55de023313900ec50ba2e4e4fa9284",
+      "duty": "corridor, column, and close-contact action composition only; explicitly not an identity reference; do not copy failed R01 face, jaw, neck, shoulder shape, body language, or masculine/androgynous cues.",
+      "include_in_primary_package": true
+    },
+    {
+      "label": "@V004_CORRIDOR_SCENE_REF",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "repo_relative_path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "exists": true,
+      "sha256": "f2117d0ac806179dd2ac5f009d3483184b500ba2489512894059379c73bc531b",
+      "duty": "optional fallback scene/world only; preserve rainy ancient temple material language if 3-ref route loses environment; not identity and not action mechanics.",
+      "include_in_primary_package": false
+    }
+  ],
+  "primary_references_count": 3,
+  "references_count": 3,
+  "primary_reference_strategy": "3_ref_identity_priority",
+  "fallback_reference_strategy": "add @V004_CORRIDOR_SCENE_REF only if K170/human judges the 3-ref route likely loses environment",
+  "excluded_refs": [
+    {
+      "label": "@V004_CORRIDOR_SCENE_REF",
+      "reason": "fallback scene/world only; excluded from primary R02 to reduce reference overload"
+    },
+    {
+      "label": "@SPLIT02_START_ANCHOR_CUT_B_START_03",
+      "reason": "review/context only; excluded from primary R02 because it is video-derived and may reintroduce identity ambiguity"
+    },
+    {
+      "label": "@SPLIT02_RETURN_ANCHOR_CUT_C_RETURN_01",
+      "reason": "review/context only; excluded from primary R02 because return continuity is less important than identity repair"
+    }
+  ],
+  "output_dir_planned": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/runs/live/SPLIT02_POSE_KF_01_R02_<timestamp>/",
+  "output_name_planned": "SPLIT02_POSE_KF_01_R02_identity_repair.png",
+  "submit_allowed": false,
+  "query_allowed": false,
+  "download_allowed": false,
+  "final_master": false,
+  "locked": false,
+  "package_review_required": true,
+  "human_submit_authorization_required": true,
+  "k170_package_review_required": true,
+  "notes": [
+    "no Dreamina run in K169",
+    "no submit in K169",
+    "no query_result or download in K169",
+    "no media generated in K169",
+    "K164 failed image is composition-only, not identity",
+    "Shuangji identity ref is highest-priority identity anchor",
+    "package is not submit-ready until K170 independent package review and explicit human authorization"
+  ]
+}
