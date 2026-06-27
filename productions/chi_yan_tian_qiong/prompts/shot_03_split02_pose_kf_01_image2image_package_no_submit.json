@@ -1,0 +1,80 @@
+{
+  "project_name": "chi_yan_tian_qiong",
+  "shot_id": "SHOT-03-SPLIT02",
+  "keyframe_id": "SPLIT02_POSE_KF_01_column_edge_guard_compression",
+  "asset_id": "SPLIT02_POSE_KF_01_column_edge_guard_compression",
+  "task_type": "image2image",
+  "provider": "dreamina_cli",
+  "model_version": "4.7",
+  "ratio": "16:9",
+  "resolution_type": "2k",
+  "package_status": "package_ready_no_submit_pending_K160_review",
+  "prompt_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/prompts/manual/SPLIT02_POSE_KF_01_column_edge_guard_compression_DRAFT_prompt.txt",
+  "prompt_repo_relative_path": "productions/chi_yan_tian_qiong/prompts/manual/SPLIT02_POSE_KF_01_column_edge_guard_compression_DRAFT_prompt.txt",
+  "prompt_sha256": "6b4bb07222a78603dc6bcb587b8e7ecda71605e226b542aff8badb0ec1e73cf8",
+  "prompt_status": "draft_only_not_for_submit",
+  "references": [
+    {
+      "label": "@FENSHOU_IDENTITY_REF",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+      "repo_relative_path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-A-SUBJECT-001_fenshou_uploadsafe_q92.jpg",
+      "exists": true,
+      "duty": "Fenshou identity only; preserve black-red armored male fighter identity, face, hair, costume language, and body type; do not dictate pose, camera, corridor geometry, or action mechanics.",
+      "include_in_primary_package": true
+    },
+    {
+      "label": "@SHUANGJI_IDENTITY_REF",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+      "repo_relative_path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-CH-B-IDENTITY-002_shuangji_identity_uploadsafe_q92.jpg",
+      "exists": true,
+      "duty": "Shuangji highest-priority identity only; preserve blue-white and silver female fighter identity, face, hair, body type, and costume language; do not let video-derived frames override identity.",
+      "include_in_primary_package": true
+    },
+    {
+      "label": "@V004_CORRIDOR_SCENE_REF",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "repo_relative_path": "productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "exists": true,
+      "duty": "Scene/world only; preserve rainy ancient temple world, wet stone, wooden architecture material language, and cold rain mood; do not define character identity or action mechanics.",
+      "include_in_primary_package": true
+    },
+    {
+      "label": "@SPLIT02_START_ANCHOR_CUT_B_START_03",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V004/k151_split02_frame_candidates/CUT_B_START_03_t1p80.jpg",
+      "repo_relative_path": "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V004/k151_split02_frame_candidates/CUT_B_START_03_t1p80.jpg",
+      "exists": true,
+      "duty": "Start continuity and composition anchor only; preserve incoming V004 corridor-combat pressure, spacing, and direction; do not use as identity reference.",
+      "include_in_primary_package": true
+    },
+    {
+      "label": "@SPLIT02_RETURN_ANCHOR_CUT_C_RETURN_01",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V004/k151_split02_frame_candidates/CUT_C_RETURN_01_t0p00.jpg",
+      "repo_relative_path": "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V004/k151_split02_frame_candidates/CUT_C_RETURN_01_t0p00.jpg",
+      "exists": true,
+      "duty": "Return continuity and composition anchor only; preserve exit compatibility back into close corridor combat; do not use as identity reference.",
+      "include_in_primary_package": true
+    }
+  ],
+  "references_count": 5,
+  "fallback_reference_strategy": {
+    "trigger": "If K160 judges the five-reference package overloaded or likely to confuse identity, scene, and continuity duties.",
+    "action": "Remove @SPLIT02_RETURN_ANCHOR_CUT_C_RETURN_01 from generation image refs and keep it as review/planning reference only.",
+    "fallback_refs_count": 4,
+    "fallback_not_created_in_K159": true
+  },
+  "output_dir_planned": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/runs/live/SPLIT02_POSE_KF_01_<timestamp>/",
+  "output_name_planned": "SPLIT02_POSE_KF_01_column_edge_guard_compression.png",
+  "submit_allowed": false,
+  "final_master": false,
+  "locked": false,
+  "package_review_required": true,
+  "human_submit_authorization_required": true,
+  "k160_package_review_required": true,
+  "notes": [
+    "no Dreamina run in K159",
+    "no submit in K159",
+    "no query_result or download in K159",
+    "no media generated in K159",
+    "package is not submit-ready until K160 independent package review and explicit human authorization"
+  ]
+}
