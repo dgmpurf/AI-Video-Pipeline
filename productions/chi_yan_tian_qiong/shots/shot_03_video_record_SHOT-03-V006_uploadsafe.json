@@ -141,13 +141,90 @@
     "final_master":  false,
     "locked":  false,
     "human_review_required":  true,
-    "next_required_phase":  "K137 local review artifacts and human visual review",
+    "next_required_phase":  "K138 human visual review record",
     "query_phase":  "PHASE_K136",
     "query_status":  "success",
     "download_status":  "downloaded",
     "downloaded":  true,
     "human_review_status":  "pending",
-    "review_artifacts_status":  "not_created_in_k136",
+    "review_artifacts_phase":  "PHASE_K137",
+    "review_artifacts_status":  "created",
+    "contact_sheet_path":  "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V006/SHOT-03-V006_contact_sheet.jpg",
+    "review_frames_dir":  "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V006/frames/",
+    "review_frames":  [
+                          {
+                              "frame":  1,
+                              "timestamp":  "0.00s",
+                              "actual_timestamp":  0.0,
+                              "path":  "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V006/frames/frame_01_t0p00.jpg"
+                          },
+                          {
+                              "frame":  2,
+                              "timestamp":  "0.45s",
+                              "actual_timestamp":  0.45606060606060606,
+                              "path":  "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V006/frames/frame_02_t0p45.jpg"
+                          },
+                          {
+                              "frame":  3,
+                              "timestamp":  "0.90s",
+                              "actual_timestamp":  0.9121212121212121,
+                              "path":  "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V006/frames/frame_03_t0p90.jpg"
+                          },
+                          {
+                              "frame":  4,
+                              "timestamp":  "1.35s",
+                              "actual_timestamp":  1.3681818181818182,
+                              "path":  "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V006/frames/frame_04_t1p35.jpg"
+                          },
+                          {
+                              "frame":  5,
+                              "timestamp":  "1.80s",
+                              "actual_timestamp":  1.7827823691460054,
+                              "path":  "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V006/frames/frame_05_t1p80.jpg"
+                          },
+                          {
+                              "frame":  6,
+                              "timestamp":  "2.25s",
+                              "actual_timestamp":  2.2388429752066115,
+                              "path":  "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V006/frames/frame_06_t2p25.jpg"
+                          },
+                          {
+                              "frame":  7,
+                              "timestamp":  "2.70s",
+                              "actual_timestamp":  2.6949035812672175,
+                              "path":  "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V006/frames/frame_07_t2p70.jpg"
+                          },
+                          {
+                              "frame":  8,
+                              "timestamp":  "3.15s",
+                              "actual_timestamp":  3.1509641873278236,
+                              "path":  "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V006/frames/frame_08_t3p15.jpg"
+                          },
+                          {
+                              "frame":  9,
+                              "timestamp":  "3.60s",
+                              "actual_timestamp":  3.6070247933884296,
+                              "path":  "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V006/frames/frame_09_t3p60.jpg"
+                          },
+                          {
+                              "frame":  10,
+                              "timestamp":  "4.05s",
+                              "actual_timestamp":  4.063085399449036,
+                              "path":  "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V006/frames/frame_10_t4p05.jpg"
+                          },
+                          {
+                              "frame":  11,
+                              "timestamp":  "4.50s",
+                              "actual_timestamp":  4.519146005509642,
+                              "path":  "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V006/frames/frame_11_t4p50.jpg"
+                          },
+                          {
+                              "frame":  12,
+                              "timestamp":  "4.95s",
+                              "actual_timestamp":  4.933746556473829,
+                              "path":  "productions/chi_yan_tian_qiong/reviews/video_reviews/SHOT-03-V006/frames/frame_12_t4p95.jpg"
+                          }
+                      ],
     "query_result_ran":  true,
     "query_result_count_k136":  1,
     "download_ran":  true,
@@ -156,5 +233,6 @@
     "resubmit_ran":  false,
     "list_task_ran":  false,
     "submit_report":  "reports/PHASE_K135_SHOT03_V006_SUBMIT_RESULT.md",
-    "query_download_report":  "reports/PHASE_K136_SHOT03_V006_QUERY_DOWNLOAD_RESULT.md"
+    "query_download_report":  "reports/PHASE_K136_SHOT03_V006_QUERY_DOWNLOAD_RESULT.md",
+    "review_artifacts_report":  "reports/PHASE_K137_SHOT03_V006_REVIEW_ARTIFACTS_READY.md"
 }
