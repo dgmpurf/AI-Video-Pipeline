@@ -1,0 +1,21 @@
+SPLIT02_POSE_KF_01_R02_identity_repair. No visible text, numbers, labels, captions, logo, watermark, or UI marks in the image.
+
+This is a single static keyframe, not a video.
+
+Repair goal: preserve the corridor, wooden column, rain, and close-contact composition from the failed R01 image, but replace the right-side fighter identity with the approved Shuangji identity. The failed R01 image is composition reference only. Do not copy the failed R01 face, jaw, neck, shoulder shape, body language, or masculine / androgynous identity cues.
+
+Shuangji must be the right-side blue-white and silver adult female fighter. Preserve a clearly feminine facial structure, softer jawline, slimmer neck, narrower shoulders, lighter body frame, elegant female wuxia / xianxia presence, long pale-blue or silver-blue hair, and blue-white / silver costume language. Do not masculinize Shuangji. Do not turn Shuangji into a male warrior. Do not make Shuangji androgynous. Do not broaden her neck or shoulders. Do not harden her jawline. Do not copy the failed R01 right-side face.
+
+Fenshou remains the left-side black-red armored male fighter. Preserve his black-red armor, darker hair, stronger male body mass, and pressure role. Do not swap the two characters. Do not duplicate either character.
+
+The scene remains the same rainy exterior ancient temple corridor: wet stone floor, wooden corridor columns, railing line, cold blue-gray rain light, and medium-wide readable action framing. The wooden column sits between or near the two fighters and works only as a narrow obstacle and partial occluder. It is not a stepping point, not a force trigger, not a parkour prop, and not a breakable object.
+
+The action remains one narrow beat: Fenshou presses into Shuangji's raised guard from the left side, and Shuangji resists beside the column while staying visibly female and identity-stable. Shuangji's forearms and shoulders are compressed toward the column edge, but her face and body silhouette must remain readable and feminine. The column may partially hide a small part of overlapping arms or torsos, but it must not hide Shuangji's face or erase her identity.
+
+Both fighters remain physically engaged and close together. Neither fighter is separated, posing, resetting, or looking away. The image should feel like one middle keyframe of close corridor combat: incoming pressure, one compressed column-edge beat, then ready to return to close combat.
+
+Both fighters' feet stay on the flat wet stone floor. No one steps on the column base. No one steps on a random stone. No jump, no hangtime, no parkour, no wall-run, no roof, no stairs, no eaves route.
+
+No railing, door, lattice, wall, or column breakage. No cracks, debris, wood splinters, broken boards, shockwave, water shield, smoke explosion, or architecture destruction.
+
+No extra characters, no duplicated fighters, no body fusion, no extra limbs, no random weapons, no text, no watermark.
