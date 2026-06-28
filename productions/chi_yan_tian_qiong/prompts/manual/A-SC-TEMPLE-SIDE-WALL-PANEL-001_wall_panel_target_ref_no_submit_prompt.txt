@@ -1,0 +1,15 @@
+A-SC-TEMPLE-SIDE-WALL-PANEL-001. Image contains no text, no watermark, no labels, no people.
+
+Create an empty rainy ancient temple side corridor architecture reference with a clearly readable wooden wall-panel / wooden lattice wall target on the right midground. This wall target is close enough to become a future body-impact surface, with open wet stone floor space directly in front of it.
+
+Use the input rainy ancient temple scene only as world, material, rain, wet stone, and cold gray-blue lighting reference. Do not copy the exact composition from the input. Create a new side-corridor view that feels like the same rainy temple world.
+
+The wooden wall-panel target is vertical or slightly angled, made of dark wet wood, with visible frame lines and lattice structure. It is not distant background decoration. It is not only a railing, not only a door, not a roof beam, not a freestanding prop, and not hidden behind pillars. It should read as a stable side-wall / wooden panel surface that a character could later be slammed against.
+
+In front of the wall-panel target, keep an open wet stone skid zone with shallow rain puddles and reflective stone texture. The floor area should be wide enough for two fighters to occupy in a later combat composition, but this image itself contains no fighters.
+
+Preserve the rainy ancient temple atmosphere: cold gray-blue low-saturation rain light, wet stone reflections, wooden eaves, corridor depth, Chinese temple architectural material language, cinematic semi-realistic 3D wuxia environment style.
+
+This is a clean architecture target reference before impact. No damage yet. The wooden wall panel remains intact and standing. No cracks, no broken wall, no collapse, no splinters, no combat effects.
+
+No Fenshou. No Shuangji. No people. No human silhouettes. No monks. No guards. No animals. No weapons as focus. No fighting. No wall impact. No body embedded in wall. No text, no watermark, no poster layout, no concept sheet.

@@ -1,0 +1,48 @@
+{
+  "project_name": "chi_yan_tian_qiong",
+  "asset_id": "A-SC-TEMPLE-SIDE-WALL-PANEL-001",
+  "asset_name": "rainy ancient temple side corridor wall-panel target reference",
+  "shot_family": "SHOT-04-R02",
+  "task_type": "image2image",
+  "provider": "dreamina_cli",
+  "model_version": "4.7",
+  "ratio": "16:9",
+  "resolution_type": "2k",
+  "poll": 0,
+  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual/A-SC-TEMPLE-SIDE-WALL-PANEL-001_wall_panel_target_ref_no_submit_prompt.txt",
+  "prompt_text": "A-SC-TEMPLE-SIDE-WALL-PANEL-001. Image contains no text, no watermark, no labels, no people.\n\nCreate an empty rainy ancient temple side corridor architecture reference with a clearly readable wooden wall-panel / wooden lattice wall target on the right midground. This wall target is close enough to become a future body-impact surface, with open wet stone floor space directly in front of it.\n\nUse the input rainy ancient temple scene only as world, material, rain, wet stone, and cold gray-blue lighting reference. Do not copy the exact composition from the input. Create a new side-corridor view that feels like the same rainy temple world.\n\nThe wooden wall-panel target is vertical or slightly angled, made of dark wet wood, with visible frame lines and lattice structure. It is not distant background decoration. It is not only a railing, not only a door, not a roof beam, not a freestanding prop, and not hidden behind pillars. It should read as a stable side-wall / wooden panel surface that a character could later be slammed against.\n\nIn front of the wall-panel target, keep an open wet stone skid zone with shallow rain puddles and reflective stone texture. The floor area should be wide enough for two fighters to occupy in a later combat composition, but this image itself contains no fighters.\n\nPreserve the rainy ancient temple atmosphere: cold gray-blue low-saturation rain light, wet stone reflections, wooden eaves, corridor depth, Chinese temple architectural material language, cinematic semi-realistic 3D wuxia environment style.\n\nThis is a clean architecture target reference before impact. No damage yet. The wooden wall panel remains intact and standing. No cracks, no broken wall, no collapse, no splinters, no combat effects.\n\nNo Fenshou. No Shuangji. No people. No human silhouettes. No monks. No guards. No animals. No weapons as focus. No fighting. No wall impact. No body embedded in wall. No text, no watermark, no poster layout, no concept sheet.",
+  "reference_map": [
+    {
+      "label": "RAINY_TEMPLE_SCENE_REF",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/productions/chi_yan_tian_qiong/working_refs/upload_safe/SHOT-02-V014-R02/A-SC-TEMPLE-COURTYARD-004_scene_uploadsafe_q92.jpg",
+      "expected_sha256": "f2117d0ac806179dd2ac5f009d3483184b500ba2489512894059379c73bc531b",
+      "duty": "world/material/rain/wet-stone/light only; not exact composition; not characters; not combat"
+    }
+  ],
+  "reference_duties": {
+    "RAINY_TEMPLE_SCENE_REF": {
+      "use_for": "rainy ancient temple world, cold gray-blue rain atmosphere, wet stone floor material, Chinese temple material language, wet wood / stone / eaves mood, lighting and atmosphere continuity",
+      "do_not_use_for": "exact composition copy, character identity, combat action, body-wall contact, damaged wall, final SHOT-04 R02 video blocking"
+    },
+    "A-SC-TEMPLE-SIDE-WALL-PANEL-001": {
+      "future_output_duty": "future architecture target reference only; not identity; not combat approval; not final SHOT-04 R02 keyframe"
+    }
+  },
+  "package_status": "package_ready_no_submit",
+  "submit_allowed": false,
+  "query_allowed": false,
+  "download_allowed": false,
+  "retry_allowed": false,
+  "resubmit_allowed": false,
+  "final_master": false,
+  "locked": false,
+  "human_submit_authorization_required": true,
+  "package_review_required": true,
+  "next_required_phase": "K194 package review / human submit decision",
+  "source_governance": {
+    "source_write_allowed": false,
+    "source_stage_allowed": false,
+    "official_source_update_requires_human_manual_action": true
+  },
+  "media_stage_allowed": false
+}
