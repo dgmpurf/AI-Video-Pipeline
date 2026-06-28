@@ -1,0 +1,40 @@
+{
+  "project_name": "chi_yan_tian_qiong",
+  "asset_id": "A-SC-TEMPLE-SIDE-WALL-PANEL-002",
+  "asset_name": "rainy ancient temple side corridor wooden wall-panel target reference",
+  "shot_family": "SHOT-04-R02",
+  "task_type": "text2image",
+  "provider": "dreamina_cli",
+  "model_version": "4.7",
+  "ratio": "16:9",
+  "resolution_type": "2k",
+  "poll": 0,
+  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual/A-SC-TEMPLE-SIDE-WALL-PANEL-002_text2image_wall_panel_target_ref_no_submit_prompt.txt",
+  "prompt_text": "Empty rainy ancient temple side corridor, with a clear dark wet wooden wall-panel / wooden lattice wall target on the right-midground, and an open wet stone skid zone directly in front of it.\n\nThe wall target is a stable vertical side-wall surface made of dark rain-soaked wood, with visible frame lines, rectangular wooden panels, and subtle lattice structure. It is close and readable enough to become a future body-impact reference surface, but this image shows no impact yet. The wall is intact, standing, and undamaged.\n\nThe floor in front of the wall is open wet stone, with shallow rain puddles, reflective stone texture, and enough empty midground space for two fighters to be added later. The corridor has wooden eaves, side pillars kept away from the wall target, cold gray-blue rain light, wet wood, wet stone, low-saturation cinematic wuxia atmosphere, Chinese ancient temple architectural material language, semi-realistic 3D environment art.\n\nArchitecture-only clean reference image. No people, no human silhouettes, no warriors, no monks, no guards, no animals, no weapons as focus, no fighting, no wall impact, no cracks, no splinters, no broken wall, no collapse, no fire, no explosion, no magic effects, no text, no watermark, no labels, no poster layout, no concept sheet.",
+  "reference_map": [],
+  "reference_duties": {
+    "no_image_refs_used": true,
+    "duty_note": "This package creates the missing wall-panel architecture visual target from text. There are no image, video, or audio reference duties in this text2image package.",
+    "future_output_duty": "Architecture target reference only for later SHOT-04 R02 contact keyframe / wall-impact planning; not character identity, not combat approval, not final keyframe."
+  },
+  "package_status": "package_ready_no_submit",
+  "submit_allowed": false,
+  "query_allowed": false,
+  "download_allowed": false,
+  "retry_allowed": false,
+  "resubmit_allowed": false,
+  "final_master": false,
+  "locked": false,
+  "human_submit_authorization_required": true,
+  "package_review_required": true,
+  "source_governance": {
+    "source_write_allowed": false,
+    "source_stage_allowed": false,
+    "official_source_update_requires_human_manual_action": true
+  },
+  "media_stage_allowed": false,
+  "prompt_only_high_risk": true,
+  "missing_visual_target_ref": true,
+  "route_source": "K196F_SWITCH_TO_TEXT2IMAGE_WALL_PANEL_ARCH_REF_PACKAGE_K197T",
+  "next_required_phase": "K198 independent no-submit package review"
+}
