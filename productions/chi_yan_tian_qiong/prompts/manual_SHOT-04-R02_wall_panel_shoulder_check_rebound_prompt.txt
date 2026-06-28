@@ -1,0 +1,38 @@
+[DRAFT NO-SUBMIT PROMPT - HUMAN REVIEW REQUIRED]
+
+Use the provided references with strict duty separation.
+
+Reference duties:
+- WALL_PANEL_ARCHITECTURE_REF controls only the rainy temple side-wall architecture: wet wooden wall panels, pillars, eaves, wet stone floor, cold blue rain atmosphere, and wall-plane geometry.
+- FENSHOU_IDENTITY_REF controls only Fenshou identity: face, armor, costume silhouette, and body language.
+- SHUANGJI_IDENTITY_ANCHOR_REF is the highest-priority Shuangji identity anchor: female-coded face, hair, expression, and upper-body costume language.
+- SHUANGJI_FULL_BODY_REF supports Shuangji full-body costume, silhouette, stance proportion, and lower-body continuity.
+
+Create a 5-second semi-realistic 3D wuxia film shot in the rainy temple side-wall corridor. Keep the cold blue rain light, wet wooden wall panels, pillars, eaves, and reflective wet stone floor consistent with the architecture reference. Keep Fenshou and Shuangji identities stable and readable. Do not swap roles.
+
+Result-first action target:
+Fenshou drives an explosive shoulder-check into Shuangji's crossed guard. Shuangji absorbs the hit, slides backward, and her right shoulder / upper back is driven into a mid-height wet wooden wall panel. The wall reacts only at the contact area with localized flex, short cracks, small splinters, and rain spray. Shuangji immediately rebounds from the wall and re-enters guard. This is a compact wall-impact combat beat, not a building-destruction shot.
+
+0.00-0.70s:
+The shot begins already in motion. Fenshou is advancing from the corridor side with compressed knees, rear-foot drive, hip-to-shoulder force, and forward shoulder pressure. Shuangji is close in front of the wall, crossed forearms raised, female-coded face and hairstyle stable. No waiting pose.
+
+0.70-1.60s:
+Fenshou's shoulder and forearm collide with Shuangji's crossed guard. The hit has a clear body result: Shuangji's guard compresses, shoulders jolt, torso shifts backward, and shoes skid on the wet stone floor. Rain sprays from the point of contact and the floor.
+
+1.60-2.70s:
+Shuangji is driven backward into the wall panel. Her right shoulder / upper back hits the wet wooden panel at mid-height. The wall flexes only at the impact center, with short cracks, tiny splinters, and rainwater shaken loose. Keep the wooden wall intact overall. Do not collapse the wall.
+
+2.70-3.80s:
+The hit-stop lasts only at the contact moment, about 0.10-0.15 seconds. Shuangji immediately rebounds from the wall, drops her weight, and re-enters guard. Fenshou follows with pressure but does not launch a new giant effect. Both fighters remain grounded and physically connected to the wet floor.
+
+3.80-5.00s:
+The camera holds the side-wall corridor geography clearly: wall panel behind Shuangji, Fenshou in front/side pressure, pillars and wet stone floor visible. The action ends in continued close-range combat readiness, not a static poster. The wall damage remains localized and causally tied to Shuangji's shoulder / upper-back impact.
+
+Face and identity stability:
+Keep Fenshou's face, armor, and body language consistent with FENSHOU_IDENTITY_REF. Keep Shuangji female-coded and consistent with SHUANGJI_IDENTITY_ANCHOR_REF and SHUANGJI_FULL_BODY_REF. Preserve Shuangji's hair, face structure, costume language, and silhouette. Do not masculinize Shuangji. Do not merge the two characters.
+
+Environment and damage constraints:
+The wall may show only localized flex, short cracks, small splinters, and rain spray at the exact shoulder / upper-back impact point. No full wall collapse, no large hole, no roof destruction, no unrelated broken pillars, no spontaneous debris, no unexplained structural damage, and no location drift away from the rainy temple side-wall corridor.
+
+Negative constraints:
+No giant spherical shockwave, no second explosion, no magic shield, no circular water wall, no flying, no big jump, no wall-run showcase, no weapons, no modern city, no third person, no duplicate characters, no extra limbs, no body fusion, no gender drift, no role swap, no long slow-motion posing, no static poster ending, no text, no watermark.
