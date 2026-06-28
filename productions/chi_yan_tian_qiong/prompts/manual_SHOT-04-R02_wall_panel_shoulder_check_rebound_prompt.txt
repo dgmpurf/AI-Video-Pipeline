@@ -1,5 +1,7 @@
 [DRAFT NO-SUBMIT PROMPT - HUMAN REVIEW REQUIRED]
 
+This draft is not final and not locked. Do not use final-frame language or locked-frame language. Human review is required after any future generation before any final or lock decision.
+
 Use the provided references with strict duty separation.
 
 Reference duties:
@@ -11,7 +13,7 @@ Reference duties:
 Create a 5-second semi-realistic 3D wuxia film shot in the rainy temple side-wall corridor. Keep the cold blue rain light, wet wooden wall panels, pillars, eaves, and reflective wet stone floor consistent with the architecture reference. Keep Fenshou and Shuangji identities stable and readable. Do not swap roles.
 
 Result-first action target:
-Fenshou drives an explosive shoulder-check into Shuangji's crossed guard. Shuangji absorbs the hit, slides backward, and her right shoulder / upper back is driven into a mid-height wet wooden wall panel. The wall reacts only at the contact area with localized flex, short cracks, small splinters, and rain spray. Shuangji immediately rebounds from the wall and re-enters guard. This is a compact wall-impact combat beat, not a building-destruction shot.
+Fenshou drives an explosive shoulder-check into Shuangji's crossed guard. Shuangji absorbs the hit, slides backward, and her right shoulder / upper back is driven into a mid-height wet wooden wall panel. The impact center is between pillars and must remain visible; the fighters' bodies must not hide the wall impact center. The wall reacts only after Shuangji's shoulder / upper-back contact, with localized flex, short cracks, small splinters, and rain spray. Shuangji immediately rebounds from the wall and re-enters guard. This is a compact wall-impact combat beat, not a building-destruction shot.
 
 0.00-0.70s:
 The shot begins already in motion. Fenshou is advancing from the corridor side with compressed knees, rear-foot drive, hip-to-shoulder force, and forward shoulder pressure. Shuangji is close in front of the wall, crossed forearms raised, female-coded face and hairstyle stable. No waiting pose.
@@ -20,7 +22,7 @@ The shot begins already in motion. Fenshou is advancing from the corridor side w
 Fenshou's shoulder and forearm collide with Shuangji's crossed guard. The hit has a clear body result: Shuangji's guard compresses, shoulders jolt, torso shifts backward, and shoes skid on the wet stone floor. Rain sprays from the point of contact and the floor.
 
 1.60-2.70s:
-Shuangji is driven backward into the wall panel. Her right shoulder / upper back hits the wet wooden panel at mid-height. The wall flexes only at the impact center, with short cracks, tiny splinters, and rainwater shaken loose. Keep the wooden wall intact overall. Do not collapse the wall.
+Shuangji is driven backward into the wall panel between pillars. Her right shoulder / upper back hits the wet wooden panel at mid-height. The wall flexes only at the impact center, with short cracks, tiny splinters, and rainwater shaken loose after contact. Keep the wooden wall intact overall. Do not collapse the wall.
 
 2.70-3.80s:
 The hit-stop lasts only at the contact moment, about 0.10-0.15 seconds. Shuangji immediately rebounds from the wall, drops her weight, and re-enters guard. Fenshou follows with pressure but does not launch a new giant effect. Both fighters remain grounded and physically connected to the wet floor.
@@ -32,7 +34,16 @@ Face and identity stability:
 Keep Fenshou's face, armor, and body language consistent with FENSHOU_IDENTITY_REF. Keep Shuangji female-coded and consistent with SHUANGJI_IDENTITY_ANCHOR_REF and SHUANGJI_FULL_BODY_REF. Preserve Shuangji's hair, face structure, costume language, and silhouette. Do not masculinize Shuangji. Do not merge the two characters.
 
 Environment and damage constraints:
-The wall may show only localized flex, short cracks, small splinters, and rain spray at the exact shoulder / upper-back impact point. No full wall collapse, no large hole, no roof destruction, no unrelated broken pillars, no spontaneous debris, no unexplained structural damage, and no location drift away from the rainy temple side-wall corridor.
+The wall may show only localized flex, short cracks, small splinters, and rain spray at the exact shoulder / upper-back impact point. Wall cracks, splinters, and spray appear only after Shuangji's shoulder / upper-back contact. No full wall collapse, no large hole, no random holes, no roof destruction, no unrelated broken pillars, no spontaneous debris before contact, no non-causal damage, no unexplained structural damage, and no location drift away from the rainy temple side-wall corridor.
+
+Action anti-drift constraints:
+No sustained pushing, no wrestling hold, no slow static pressure, no body pin with no rebound. The shoulder-check must be a compact explosive hit with immediate wall contact and immediate rebound. Body contact and wall reaction must be the main event. No magic blast replacing body contact. No energy shockwave as main event.
+
+Location and object constraints:
+No railing/lattice confusion. Do not replace the wall-panel impact with a railing hit, lattice hit, generic courtyard event, interior hall event, roof route, or empty architecture-only scene. Keep the rainy ancient temple side-wall corridor, wet wooden wall panels, pillars, eaves, wet stone floor, and cold blue rain light.
+
+Body and safety constraints:
+No body embedded inside wall, no body-wall fusion, no gore. The body rebounds from the wall surface; it does not pass through the wall, melt into the wall, or become trapped inside the wall.
 
 Negative constraints:
-No giant spherical shockwave, no second explosion, no magic shield, no circular water wall, no flying, no big jump, no wall-run showcase, no weapons, no modern city, no third person, no duplicate characters, no extra limbs, no body fusion, no gender drift, no role swap, no long slow-motion posing, no static poster ending, no text, no watermark.
+No giant spherical shockwave, no second explosion, no magic shield, no circular water wall, no flying, no big jump, no wall-run showcase, no weapons, no modern city, no third person, no duplicate characters, no extra fighters, no extra limbs, no body fusion, no gender drift, no role swap, no long slow-motion posing, no static poster ending, no final-frame language, no locked-frame language, no text, no watermark.

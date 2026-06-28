@@ -11,8 +11,40 @@
   "video_resolution": "720p",
   "poll": 0,
   "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual_SHOT-04-R02_wall_panel_shoulder_check_rebound_prompt.txt",
+  "manual_prompt_sha256": "609447d1cc36a908d70410e0d0c2806e0aa717d853b24c47ea4ae23ac7c17d22",
   "prompt_text_source": "manual_prompt_path",
   "prompt_text_included": false,
+  "prompt_revision": {
+    "revision_phase": "K211",
+    "revision_reason": "K210 submit-readiness review found prompt negative constraints not explicit enough for L3 submit-readiness.",
+    "constraints_added": [
+      "impact center between pillars",
+      "bodies must not hide the wall impact center",
+      "no sustained pushing",
+      "no wrestling hold",
+      "no slow static pressure",
+      "no body pin with no rebound",
+      "no railing/lattice confusion",
+      "no generic courtyard drift",
+      "no interior hall drift",
+      "no empty architecture-only scene",
+      "no random holes",
+      "no non-causal damage",
+      "no spontaneous debris before contact",
+      "no magic blast replacing body contact",
+      "no energy shockwave as main event",
+      "body contact and wall reaction must be the main event",
+      "no body embedded inside wall",
+      "no body-wall fusion",
+      "no gore",
+      "not final",
+      "not locked",
+      "no final-frame language",
+      "no locked-frame language",
+      "human review required after generation"
+    ],
+    "reference_strategy_changed": false
+  },
   "reference_strategy": "preferred_4_reference_strategy",
   "fallback_reference_strategy": "3_reference_strategy_only_if_command_or_reference_budget_constraints_are_found",
   "reference_map": [
@@ -76,8 +108,10 @@
     "reports/PHASE_K205_SHOT04_R02_CONTACT_CHARACTER_REFERENCE_SELECTION_PLANNING.md",
     "reports/PHASE_K206_SHOT04_R02_ACTION_COMPOSITION_PLANNING.md",
     "reports/PHASE_K207_SHOT04_R02_REFERENCE_SET_FREEZE_PLANNING.md",
-    "reports/PHASE_K208_SHOT04_R02_TEXT_ONLY_ACTION_PACKAGE_DRAFT_PLANNING.md"
+    "reports/PHASE_K208_SHOT04_R02_TEXT_ONLY_ACTION_PACKAGE_DRAFT_PLANNING.md",
+    "reports/PHASE_K210_SHOT04_R02_PACKAGE_FILE_HUMAN_REVIEW_SUBMIT_READINESS_NO_SUBMIT.md",
+    "reports/PHASE_K211_SHOT04_R02_PACKAGE_PROMPT_FIX_NO_SUBMIT.md"
   ],
-  "package_status": "package_file_draft_no_submit",
-  "recommended_next_phase": "K210 SHOT-04 R02 package review and submit readiness review, no submit unless separately authorized"
+  "package_status": "package_prompt_fixed_no_submit",
+  "recommended_next_phase": "K212 SHOT-04 R02 package file submit-readiness re-review, no submit"
 }
