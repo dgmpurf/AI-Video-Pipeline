@@ -1,0 +1,39 @@
+@FENSHOU_IDENTITY_REF:
+Use only for Fenshou identity: black-red male fighter face, hair, armor, silhouette, and costume language. Do not use this reference for scene layout or blocking.
+
+@SHUANGJI_IDENTITY_REF:
+Use only for Shuangji identity. This is the highest priority identity anchor. Preserve her female-coded blue-white / silver fighter identity, face, hair, body frame, costume language, and elegant wuxia/xianxia presence. Do not masculinize her. Do not use this reference for scene layout or blocking.
+
+@RAINY_TEMPLE_SCENE_REF:
+Use only for the rainy ancient temple world, exterior corridor architecture, wet stone floor, railings / wooden lattice atmosphere, cool gray-blue light, rain, and temple depth. Do not copy any character from this reference. Do not use it to change either character identity.
+
+Create a 5-second cinematic semi-realistic 3D wuxia combat video in a rainy exterior side corridor of the ancient temple. Keep the scene in one stable corridor / railing-lattice zone. Fenshou is the black-red male fighter on the left-center side. Shuangji is the blue-white / silver female fighter on the right-center side near the corridor railing or wooden lattice. The camera is a medium-wide rainy corridor combat shot at a slight front three-quarter angle along the railing line. Both fighters' upper bodies, feet, the railing/lattice contact point, wet stone skid marks, and rain splash remain readable. Faces remain visible enough for identity. No extreme close-up. No overhead. No flat side-scroller game view. No beauty portrait framing.
+
+This is one clear architecture-as-combat interaction: Fenshou drives Shuangji's guard and shoulder-back into the right-side railing / wooden lattice, the local structure reacts only at the exact contact point, Shuangji rebounds quickly and counters, and Fenshou recoils and re-enters instead of holding her pinned.
+
+The compression is a short, hard impact beat, not a sustained shove and not a wrestling hold. Do not make the characters freeze in a static pushing pose.
+
+The railing / wooden lattice remains standing for the entire shot. Prefer localized flex, a rain / water burst, and two tiny splinters. An optional very short hairline mark may appear only at the exact contact point. Avoid large cracks, railing collapse, wall collapse, roof damage, whole corridor damage, or whole building damage. No crack, splinter, flex, or damage appears before body / guard contact.
+
+Do not hide Shuangji's face too long behind lattice, railing, rain, splinters, arms, or hair. Keep her readable in mid-shot three-quarter profile or partial side view.
+
+0.00s-0.25s:
+First contact. Fenshou's shoulder and forearm crash into Shuangji's guard near the right-side railing / lattice. Shuangji's torso turns from the impact and her rear foot skids on the wet stone.
+
+0.25s-0.90s:
+Shuangji redirects the first pressure line. Fenshou recoils half a beat and immediately re-enters with a short, hard shoulder-line pressure. No slow display. No sustained shove.
+
+0.90s-1.80s:
+Fenshou compresses Shuangji's guard toward the railing / lattice. The railing / lattice is still intact and standing. No crack or splinter appears before body / guard contact.
+
+1.80s-2.80s:
+Architecture contact beat. Shuangji's shoulder-back and guard touch the railing / lattice. Only the exact contact point flexes locally; a rain / water burst and two tiny splinters move outward in the same force direction. Optional very short hairline mark at the contact point only. No railing collapse.
+
+2.80s-3.80s:
+Rebound beat. Shuangji rebounds off the railing / lattice and counters into Fenshou's guard or shoulder line. Fenshou recoils, turns off-line, and re-guards while staying engaged.
+
+3.80s-5.00s:
+Re-entry and cut. Both fighters continue attack / defense / rebound motion. Final frame cuts mid-exchange. No pose-out, no idle tail, no stare-down.
+
+Core negative constraints:
+No third person. No duplicate Fenshou. No duplicate Shuangji. No role swap. No body fusion. No extra limbs. No weapons. No flying. No giant jump. No roof route. No wall run. No whole temple destruction. No railing collapse. No wall collapse. No unrelated column breakage. No random background damage. No crack before contact. No sustained wrestling hold. No static pushing pose. No beauty pose. No Shuangji masculinization. No text. No watermark.
