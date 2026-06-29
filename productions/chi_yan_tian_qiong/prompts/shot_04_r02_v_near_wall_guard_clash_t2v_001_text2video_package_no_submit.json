@@ -1,0 +1,100 @@
+{
+  "project_name": "chi_yan_tian_qiong",
+  "asset_id": "SHOT-04-R02-V-NEAR-WALL-GUARD-CLASH-T2V-001",
+  "variant_id": "near_wall_guard_clash_text2video_motion_probe",
+  "asset_name": "SHOT-04 R02 near-wall guard-clash text2video motion probe",
+  "shot_id": "SHOT-04-R02",
+  "task_type": "text2video",
+  "provider": "dreamina_cli",
+  "model_version": "seedance2.0_vip",
+  "ratio": "16:9",
+  "video_resolution": "720p",
+  "duration": 5,
+  "poll": 0,
+  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual/SHOT-04-R02-V-NEAR-WALL-GUARD-CLASH-T2V-001_text2video_no_submit_prompt.txt",
+  "prompt_text": "A 5-second cinematic semi-realistic 3D wuxia action video in a rainy ancient temple side corridor: from the first frame, Fenshou, a black-red armored male warrior, is already close in center-left, driving forward with compact shoulder-and-forearm pressure into Shuangji's crossed guard. Shuangji, a silver-blue armored female warrior, braces center-right near a dark wooden corridor wall, close to the wall but not touching it.\n\nThe action starts immediately with no long approach. Fenshou's body line drives left to right. Shuangji's crossed guard compresses under the pressure; her rear foot skids across the wet stone floor; rain sprays from the floor and guard contact; her cloak, hair, and armor edges snap from the force. Keep both fighters in a readable medium or medium-wide three-quarter view.\n\n0.00s-0.10s: already close, pressure entering from center-left. 0.10s-0.35s: shoulder-and-forearm pressure meets crossed guard. 0.35s-0.65s: Shuangji skids backward near the wall without touching it, rain spray and guard compression visible. 0.65s-1.00s: brief pressure lock, knees bend, armor and cloak react. 1.00s-1.35s: Shuangji twists out of the pressure and coils for a counter. 1.35s-1.50s: cut-worthy mid-exchange action moment.\n\nAfter the main contact, keep motion alive with guard separation, footwork adjustment, rain occlusion, camera vibration, and Shuangji counter-initiation. The wall remains intact behind her as background danger only.\n\nNo body-wall contact, no wall hit, no wall damage, no wall mark, no long approach, no static pose-out, no poster pose, no magic blast, no shockwave, no extra characters, no duplicate bodies, no extra limbs, no text, no watermark.",
+  "package_status": "package_ready_no_submit",
+  "route_reason": "video-first route after repeated SHOT-04 R02 still-keyframe/text2image remote final-generation failures",
+  "submit_allowed": false,
+  "query_allowed": false,
+  "download_allowed": false,
+  "retry_allowed": false,
+  "resubmit_allowed": false,
+  "final_master": false,
+  "locked": false,
+  "human_submit_authorization_required": true,
+  "package_review_required": true,
+  "media_stage_allowed": false,
+  "source_write_allowed": false,
+  "source_stage_allowed": false,
+  "official_source_update_requires_human_manual_action": true,
+  "prompt_only_video_motion_probe": true,
+  "text2video_identity_continuity_high_risk": true,
+  "near_wall_guard_clash_route": true,
+  "post_text2image_failure_route": true,
+  "body_wall_contact_removed": true,
+  "wall_damage_removed": true,
+  "dual_character_guard_contact_high_risk": true,
+  "front_loaded_action_required": true,
+  "visual_review_required_before_use": true,
+  "human_review_required_before_submit": true,
+  "active_refs_count": 0,
+  "reference_map": {},
+  "image_inputs": [],
+  "video_inputs": [],
+  "audio_inputs": [],
+  "removed_constraints": [
+    "exact body-wall contact",
+    "wall hit",
+    "wall damage",
+    "wall crack",
+    "splinter",
+    "wall dent",
+    "wall mark",
+    "body-to-wall collision",
+    "embedding",
+    "body-wall fusion",
+    "static pose-out",
+    "long approach"
+  ],
+  "lineage_refs": {
+    "WALL_PANEL_ARCHITECTURE_REF": {
+      "lineage_only": true,
+      "active_ref": false,
+      "note": "prior wall architecture reference, not passed as text2video input"
+    },
+    "FENSHOU_IDENTITY_REF": {
+      "lineage_only": true,
+      "active_ref": false,
+      "note": "prior Fenshou identity reference, not passed as text2video input"
+    },
+    "SHUANGJI_IDENTITY_ANCHOR_REF": {
+      "lineage_only": true,
+      "active_ref": false,
+      "note": "prior Shuangji identity anchor, not passed as text2video input"
+    },
+    "SHUANGJI_FULL_BODY_REF": {
+      "lineage_only": true,
+      "active_ref": false,
+      "note": "prior Shuangji full-body support, not passed as text2video input"
+    },
+    "K219_FAILED_VIDEO_ROUTE_EVIDENCE": {
+      "lineage_only": true,
+      "active_ref": false,
+      "note": "prior video route produced media but failed visual action review; not passed as text2video input"
+    },
+    "K241_FAILED_TEXT2IMAGE_ROUTE_EVIDENCE": {
+      "lineage_only": true,
+      "active_ref": false,
+      "note": "near-wall guard-clash text2image failed remotely; not passed as text2video input"
+    }
+  },
+  "forbidden_positive_refs": [
+    "K219 failed video",
+    "K220A frames",
+    "K220A contact sheet",
+    "failed image2image outputs",
+    "failed text2image outputs"
+  ],
+  "future_submit_command_shape": "dreamina text2video --prompt \"<PROMPT_TEXT_FROM_FILE>\" --duration 5 --ratio \"16:9\" --video_resolution 720p --model_version seedance2.0_vip --poll 0"
+}
