@@ -1,0 +1,13 @@
+Fenshou lands one compact explosive shoulder-check into Shuangji's crossed guard, driving her shoulder-back against the wet wooden wall panel at the hit-stop moment. The panel flexes with a shallow contact dent and a short hairline crack exactly behind her upper back; rainwater flicks outward and two tiny splinters fly along the force line. Shuangji stays separate from the wall; the wall remains standing.
+
+Create one cinematic still keyframe, frozen at the decisive impact. Fenshou is in the left-midground, lunging rightward, shoulder line forward, forearm pressing into Shuangji's crossed guard. Shuangji is in the right-midground, knees bent, crossed guard compressed inward, right shoulder and upper back visibly touching the wall panel. Her rear foot skids on the wet stone floor.
+
+Keep the exact wall contact point readable between the two bodies. The dent, hairline crack, rain splash, and tiny splinters must originate only from that contact point, not elsewhere on the wall.
+
+Use the wall reference only for the rainy temple side corridor, wet wooden panel, pillars, wet stone floor, and cold blue rain light. Use the Fenshou reference only for black-red armor, male-coded identity, and silhouette. Use the Shuangji identity reference as the main face and upper-body identity anchor; describe her silver-blue costume continuity through the prompt, without an extra full-body reference.
+
+Camera: 16:9 medium or medium-wide shot, three-quarter front-left angle, eye-level or slightly low. Both characters are in the same physical plane. Faces may remain readable, but the impact result has priority over portrait beauty.
+
+Rainy ancient temple corridor, wet dark wooden panels, cold gray-blue low-saturation lighting, cinematic semi-realistic 3D wuxia action keyframe.
+
+No body-wall fusion, no embedding, no wall collapse, no large hole, no magic shockwave, no energy blast, no gore, no severe injury, no wrestling hold, no static slow push, no pose-out, no extra characters, no duplicate bodies, no extra limbs, no text, no watermark.
