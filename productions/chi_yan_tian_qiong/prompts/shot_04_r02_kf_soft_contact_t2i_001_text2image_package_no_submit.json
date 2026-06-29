@@ -1,0 +1,72 @@
+{
+  "project_name": "chi_yan_tian_qiong",
+  "asset_id": "SHOT-04-R02-KF-SOFT-CONTACT-T2I-001",
+  "asset_name": "SHOT-04 R02 softened prompt-only wall-contact keyframe geometry probe",
+  "shot_id": "SHOT-04-R02",
+  "task_type": "text2image",
+  "provider": "dreamina_cli",
+  "model_version": "5.0",
+  "ratio": "16:9",
+  "resolution_type": "2k",
+  "poll": 0,
+  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual/SHOT-04-R02-KF-SOFT-CONTACT-T2I-001_text2image_no_submit_prompt.txt",
+  "prompt_text": "One cinematic still keyframe in a rainy ancient temple side corridor: Fenshou, a black-red armored male warrior, drives from the left-midground into Shuangji's crossed guard with compact shoulder-and-forearm pressure. Shuangji, a silver-blue armored female warrior, is in the right-midground with knees bent, crossed guard compressed inward, her upper back and right shoulder pressed against a rain-soaked wooden wall panel. The wall remains intact.\n\nThe action geometry must be clear: Fenshou's forward shoulder line, his forearm pressure, Shuangji's crossed guard absorbing the force, her rear foot skidding on the wet stone floor, and the exact wall contact zone visible behind her shoulder-back. At the contact zone, show rain splash, a shallow wet pressure mark on the wood, and droplets moving along the force direction.\n\nEnvironment: wet dark wooden side-wall panels, temple pillars, cold gray-blue rain light, reflective stone floor, semi-realistic 3D wuxia film style. Camera: 16:9 medium-wide, three-quarter front-left angle, eye-level or slightly low.\n\nThis is an action keyframe, not a poster layout or character sheet. No wall collapse, no open wall gap, no magic blast, no shockwave, no body-wall fusion, no embedding, no gore, no severe injury, no extra characters, no duplicate bodies, no extra limbs, no text, no watermark.",
+  "package_status": "package_ready_no_submit",
+  "route_reset_reason": "repeated image2image remote final-generation failure after valid submits",
+  "submit_allowed": false,
+  "query_allowed": false,
+  "download_allowed": false,
+  "retry_allowed": false,
+  "resubmit_allowed": false,
+  "final_master": false,
+  "locked": false,
+  "human_submit_authorization_required": true,
+  "package_review_required": true,
+  "media_stage_allowed": false,
+  "source_write_allowed": false,
+  "source_stage_allowed": false,
+  "official_source_update_requires_human_manual_action": true,
+  "prompt_only_geometry_probe": true,
+  "text2image_identity_continuity_high_risk": true,
+  "softened_contact_language": true,
+  "post_repeated_image2image_failure_route_reset": true,
+  "body_wall_contact_high_risk": true,
+  "dual_character_close_contact_high_risk": true,
+  "human_review_required_before_submit": true,
+  "active_refs_count": 0,
+  "reference_map": {},
+  "image_inputs": [],
+  "video_inputs": [],
+  "audio_inputs": [],
+  "lineage_refs": {
+    "WALL_PANEL_ARCHITECTURE_REF": {
+      "lineage_only": true,
+      "active_ref": false,
+      "note": "prior wall target reference, not passed as text2image input"
+    },
+    "FENSHOU_IDENTITY_REF": {
+      "lineage_only": true,
+      "active_ref": false,
+      "note": "prior Fenshou identity reference, not passed as text2image input"
+    },
+    "SHUANGJI_IDENTITY_ANCHOR_REF": {
+      "lineage_only": true,
+      "active_ref": false,
+      "note": "prior Shuangji identity anchor, not passed as text2image input"
+    },
+    "SHUANGJI_FULL_BODY_REF": {
+      "lineage_only": true,
+      "active_ref": false,
+      "note": "prior Shuangji full-body support, not passed as text2image input"
+    }
+  },
+  "forbidden_positive_refs": [
+    "K219 failed video",
+    "K220A frames",
+    "K220A contact sheet",
+    "K225/K226 failed image2image output",
+    "K229/K230 failed image2image output"
+  ],
+  "planned_output_name": "SHOT-04-R02-KF-SOFT-CONTACT-T2I-001.png",
+  "recommended_next_phase": "K233 independent package review, no Dreamina"
+}
