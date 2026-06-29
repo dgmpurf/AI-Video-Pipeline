@@ -1,0 +1,83 @@
+{
+  "project_name": "chi_yan_tian_qiong",
+  "asset_id": "SHOT-04-R02-KF-MICRO-IMPACT-001",
+  "asset_name": "SHOT-04 R02 micro-impact wall contact keyframe",
+  "shot_id": "SHOT-04-R02",
+  "task_type": "image2image",
+  "provider": "dreamina_cli",
+  "model_version": "4.7",
+  "ratio": "16:9",
+  "resolution_type": "2k",
+  "poll": 0,
+  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual/SHOT-04-R02-KF-MICRO-IMPACT-001_contact_keyframe_no_submit_prompt.txt",
+  "prompt_text": "Fenshou lands one short explosive shoulder-check into Shuangji's crossed guard and drives her shoulder-back into the wet wooden wall panel at the hit-stop moment. Her upper back hits the panel hard; the wall panel makes only a shallow local dent and short crack at the exact contact point; rainwater bursts outward and two or three tiny splinters fly in the force direction; Shuangji is not embedded in the wall; the wall does not collapse.\n\nCreate a single cinematic still keyframe, not a video sequence. The image is frozen at the decisive impact moment. Fenshou is on the left-midground, lunging rightward with his shoulder line and forearm driving into Shuangji's crossed guard. Shuangji is on the right-midground, knees bent, rear foot skidding on the wet stone floor, crossed guard compressed inward, right shoulder and upper back visibly contacting the wet wooden wall panel.\n\nThe wall contact point must be readable. The local dent and short crack appear exactly behind Shuangji's right shoulder / upper back, not elsewhere on the wall. The wet wooden wall panel remains standing and intact except for the small local contact mark. Rain droplets and tiny splinters move from right to left / outward from the impact point following the force direction.\n\nUse the wall-panel architecture reference only for the rainy temple side corridor, wet wooden panel, wet stone floor, pillars, and cold blue rainy lighting. Use the Fenshou reference only for black-red armor, male-coded Fenshou identity, and silhouette. Use the Shuangji identity anchor as the highest-priority Shuangji face and upper-body identity reference. Use the Shuangji full-body reference only for silver-blue costume silhouette, lower-body armor, and body proportions.\n\nCamera: 16:9 medium or medium-wide shot, three-quarter front-left angle, eye-level or slightly low. Both characters are in the midground, in the same physical plane. Keep the exact wall contact point visible between bodies. Both faces may remain readable, but the physical impact result is higher priority than perfect portrait beauty.\n\nRainy ancient temple side corridor, wet dark wooden panels, wet stone floor, cold gray-blue low-saturation rain light, cinematic semi-realistic 3D wuxia action keyframe.\n\nNo body-wall fusion. No embedding into the wall. No wall collapse. No large hole. No full wall breakage. No magical shockwave replacing physical contact. No energy blast. No gore. No severe injury. No wrestling hold. No static slow push. No pose-out. No extra characters. No duplicate bodies. No extra limbs. No text, watermark, labels, poster layout, or concept sheet.",
+  "package_status": "package_ready_no_submit",
+  "submit_allowed": false,
+  "query_allowed": false,
+  "download_allowed": false,
+  "retry_allowed": false,
+  "resubmit_allowed": false,
+  "final_master": false,
+  "locked": false,
+  "human_submit_authorization_required": true,
+  "package_review_required": true,
+  "media_stage_allowed": false,
+  "source_write_allowed": false,
+  "source_stage_allowed": false,
+  "official_source_update_requires_human_manual_action": true,
+  "image2image_with_4_refs_high_risk": true,
+  "dual_character_close_contact_high_risk": true,
+  "body_wall_contact_high_risk": true,
+  "prompt_only_action_interpretation_high_risk": true,
+  "human_review_required_before_submit": true,
+  "reference_map": {
+    "WALL_PANEL_ARCHITECTURE_REF": {
+      "path": "productions/chi_yan_tian_qiong/packages/SHOT-04-R02-wall-impact/upload_refs/shot04_r02_wall_panel_arch_ref_upload_safe.jpg",
+      "sha256": "1fb81bb7dadf476b82dd675b7942ff22acf0f520433a838826b06a3307c836cc",
+      "width": 1920,
+      "height": 1080,
+      "format": "jpg",
+      "duty": "wall target / wet corridor only",
+      "forbidden": "character identity, combat pose, body placement",
+      "safe_to_use": true
+    },
+    "FENSHOU_IDENTITY_REF": {
+      "path": "productions/chi_yan_tian_qiong/packages/SHOT-04-R02-wall-impact/upload_refs/shot04_r02_fenshou_identity_upload_safe.jpg",
+      "sha256": "5858915575eb0fef7dea1448aa149ee3543ec0af3581acbeab07d9bd0bb06743",
+      "width": 1080,
+      "height": 1920,
+      "format": "jpg",
+      "duty": "Fenshou identity only",
+      "forbidden": "wall geometry, Shuangji identity, exact final pose",
+      "safe_to_use": true
+    },
+    "SHUANGJI_IDENTITY_ANCHOR_REF": {
+      "path": "productions/chi_yan_tian_qiong/packages/SHOT-04-R02-wall-impact/upload_refs/shot04_r02_shuangji_identity_anchor_upload_safe.jpg",
+      "sha256": "036760c0d8fd48a5d010328396c29d95392ec380a38039dd0a2ad4963aaf52b9",
+      "width": 1080,
+      "height": 1920,
+      "format": "jpg",
+      "duty": "highest-priority Shuangji face / upper-body identity",
+      "forbidden": "Fenshou identity, wall geometry, damage pattern",
+      "safe_to_use": true
+    },
+    "SHUANGJI_FULL_BODY_REF": {
+      "path": "productions/chi_yan_tian_qiong/packages/SHOT-04-R02-wall-impact/upload_refs/shot04_r02_shuangji_full_body_upload_safe.jpg",
+      "sha256": "db80fd001611f19762593cacbb8ba225a09a9d2db59a53ce355aa28cb8794086",
+      "width": 1080,
+      "height": 1920,
+      "format": "jpg",
+      "duty": "costume silhouette / lower-body armor / proportions support",
+      "forbidden": "replacing identity anchor, wall geometry, combat result",
+      "safe_to_use": true
+    }
+  },
+  "references_count": 4,
+  "forbidden_refs": [
+    "K219 failed video",
+    "K220A frames",
+    "K220A contact sheet"
+  ],
+  "planned_output_name": "SHOT-04-R02-KF-MICRO-IMPACT-001_contact_keyframe.png",
+  "recommended_next_phase": "K224 independent package review, no Dreamina"
+}
