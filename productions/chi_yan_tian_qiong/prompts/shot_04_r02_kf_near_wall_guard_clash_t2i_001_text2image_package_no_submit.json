@@ -1,0 +1,85 @@
+{
+  "project_name": "chi_yan_tian_qiong",
+  "asset_id": "SHOT-04-R02-KF-NEAR-WALL-GUARD-CLASH-T2I-001",
+  "asset_name": "SHOT-04 R02 near-wall guard-clash text2image keyframe geometry probe",
+  "shot_id": "SHOT-04-R02",
+  "task_type": "text2image",
+  "provider": "dreamina_cli",
+  "model_version": "5.0",
+  "ratio": "16:9",
+  "resolution_type": "2k",
+  "poll": 0,
+  "manual_prompt_path": "productions/chi_yan_tian_qiong/prompts/manual/SHOT-04-R02-KF-NEAR-WALL-GUARD-CLASH-T2I-001_text2image_no_submit_prompt.txt",
+  "prompt_text": "One cinematic action keyframe in a rainy ancient temple side corridor: Fenshou, a black-red armored male warrior, drives from center-left toward Shuangji with compact shoulder-and-forearm pressure into her crossed guard. Shuangji, a silver-blue armored female warrior, braces in center-right near a dark wooden corridor wall, close to the wall but not touching it.\n\nThe crossed guard is compressed at the center of the frame. Shuangji's rear foot skids across the wet stone floor; rain sprays from the floor and guard pressure; her cloak, hair, and armor edges react to the force. Fenshou's body line pushes forward from left to right, while Shuangji bends her knees and twists into counter-readiness.\n\nThe wall stays intact behind Shuangji as background danger only, with no contact between her body and the wall. The main physical proof is guard compression, wet-floor skid, rain spray, and Shuangji's counter-ready twist.\n\nCamera: 16:9 medium-wide, three-quarter front-left angle, eye-level or slightly low. Wet dark wooden side panels, temple pillars, reflective stone floor, cold gray-blue rain light, cinematic semi-realistic 3D wuxia action style.\n\nThis is an action keyframe, not a poster layout or character sheet. No body-wall contact, no wall hit, no wall mark, no wall breakage, no magic blast, no shockwave, no static pose, no extra characters, no duplicate bodies, no extra limbs, no text, no watermark.",
+  "package_status": "package_ready_no_submit",
+  "route_reason": "alternate near-wall guard-clash after triple remote failure of exact wall-contact route",
+  "submit_allowed": false,
+  "query_allowed": false,
+  "download_allowed": false,
+  "retry_allowed": false,
+  "resubmit_allowed": false,
+  "final_master": false,
+  "locked": false,
+  "human_submit_authorization_required": true,
+  "package_review_required": true,
+  "media_stage_allowed": false,
+  "source_write_allowed": false,
+  "source_stage_allowed": false,
+  "official_source_update_requires_human_manual_action": true,
+  "prompt_only_geometry_probe": true,
+  "text2image_identity_continuity_high_risk": true,
+  "near_wall_guard_clash_route": true,
+  "post_wall_contact_route_reset": true,
+  "body_wall_contact_removed": true,
+  "wall_damage_removed": true,
+  "dual_character_guard_contact_high_risk": true,
+  "human_review_required_before_submit": true,
+  "active_refs_count": 0,
+  "reference_map": {},
+  "image_inputs": [],
+  "video_inputs": [],
+  "audio_inputs": [],
+  "removed_constraints": [
+    "exact body-wall contact",
+    "wall hit",
+    "wall damage",
+    "wall crack",
+    "splinter",
+    "wall dent",
+    "body-to-wall collision",
+    "embedding",
+    "body-wall fusion",
+    "wall contact mark"
+  ],
+  "lineage_refs": {
+    "WALL_PANEL_ARCHITECTURE_REF": {
+      "lineage_only": true,
+      "active_ref": false,
+      "note": "prior wall target reference, not passed as text2image input"
+    },
+    "FENSHOU_IDENTITY_REF": {
+      "lineage_only": true,
+      "active_ref": false,
+      "note": "prior Fenshou identity reference, not passed as text2image input"
+    },
+    "SHUANGJI_IDENTITY_ANCHOR_REF": {
+      "lineage_only": true,
+      "active_ref": false,
+      "note": "prior Shuangji identity anchor, not passed as text2image input"
+    },
+    "SHUANGJI_FULL_BODY_REF": {
+      "lineage_only": true,
+      "active_ref": false,
+      "note": "prior Shuangji full-body support, not passed as text2image input"
+    }
+  },
+  "forbidden_positive_refs": [
+    "K219 failed video",
+    "K220A frames",
+    "K220A contact sheet",
+    "failed image2image outputs",
+    "failed text2image output"
+  ],
+  "planned_output_name": "SHOT-04-R02-KF-NEAR-WALL-GUARD-CLASH-T2I-001.png",
+  "recommended_next_phase": "K239 independent package review, no Dreamina"
+}
