@@ -1,0 +1,157 @@
+{
+  "asset_id": "SHOT-04-R02A-V-CONTACT-HIT-STOP-M2V-001",
+  "shot_id": "SHOT-04-R02a",
+  "phase": "K263",
+  "task_type": "multimodal2video",
+  "model_version": "seedance2.0_vip",
+  "duration": 5,
+  "ratio": "16:9",
+  "video_resolution": "720p",
+  "poll": 0,
+  "prompt_path": "productions/chi_yan_tian_qiong/prompts/manual/SHOT-04-R02A-V-CONTACT-HIT-STOP-M2V-001_multimodal2video_no_submit_prompt.txt",
+  "prompt_sha256": "5dbc5943cf5d6964cdf1f3c7762fbd1775ae61c327a3fd4baa267fd4dcfc493b",
+  "prompt_word_count": 299,
+  "manifest_path": "productions/chi_yan_tian_qiong/packages/SHOT-04-R02A-contact-hit-stop/K263/SHOT-04-R02A-V-CONTACT-HIT-STOP-M2V-001_manifest.csv",
+  "active_refs_count": 2,
+  "active_refs": [
+    {
+      "alias": "@FENSHOU_LOCKED_REF",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+      "sha256": "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f",
+      "duty": "Fenshou identity only: black-red armored male warrior, attacker silhouette, compact forward strike identity anchor.",
+      "negative_duty": "Do not copy original pose, source camera, source background, portrait framing, or use the ref to solve action timing.",
+      "do_not_copy": [
+        "original pose",
+        "source camera",
+        "source background",
+        "portrait framing",
+        "action timing"
+      ]
+    },
+    {
+      "alias": "@SHUANGJI_LOCKED_REF",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+      "sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11",
+      "duty": "Shuangji identity only: silver-blue armored female warrior, defender silhouette, face/upper-body identity anchor.",
+      "negative_duty": "Do not copy portrait composition, pose, source camera, static expression, source scene, or use the ref to solve action timing.",
+      "do_not_copy": [
+        "portrait composition",
+        "pose",
+        "source camera",
+        "static expression",
+        "source scene",
+        "action timing"
+      ]
+    }
+  ],
+  "excluded_refs": [
+    {
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png",
+      "reason": "Excluded by default because a third character ref may split Shuangji attention and weaken the brief hit-stop action."
+    },
+    {
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+      "reason": "Excluded because a broad scene ref may overload action timing and identity anchoring."
+    },
+    {
+      "path": "productions/chi_yan_tian_qiong/runs/live/SHOT-04-R02_identity_anchored_near_wall_guard_clash_m2v_K255_20260630_193845/87226743-d3c0-4a0a-afd5-6ded908766cf_video_1.mp4",
+      "reason": "Excluded because K257/K259/K261 media is motion/failure evidence only and would risk copying the sustained-push timing."
+    },
+    {
+      "path": "productions/chi_yan_tian_qiong/runs/live/SHOT-04-R02_identity_anchored_near_wall_guard_clash_m2v_K255_20260630_193845/review_artifacts/K258/contact_sheet_K258_SHOT04_R02_identity_anchored_m2v.jpg",
+      "reason": "Excluded because contact sheets are review evidence only, not active generation input."
+    },
+    {
+      "path": "productions/chi_yan_tian_qiong/edits/shot04_r02_identity_anchored_m2v_cut_candidates/K260/SHOT-04-R02-K260_CUT_A_0p35_1p50_identity_anchored_primary_diagnostic.mp4",
+      "reason": "Excluded because K260 CUT_A was rejected as primary/edit candidate and risks sustained pressure timing."
+    },
+    {
+      "path": "productions/chi_yan_tian_qiong/edits/shot04_r02_identity_anchored_m2v_cut_candidates/K260/SHOT-04-R02-K260_CUT_B_0p65_2p00_stronger_pressure_wall_risk_diagnostic.mp4",
+      "reason": "Excluded because K260 CUT_B was rejected as primary/edit candidate and still reads as sustained push."
+    },
+    {
+      "path": "productions/chi_yan_tian_qiong/packages/SHOT-04-R02-wall-impact/upload_refs/shot04_r02_wall_panel_arch_ref_upload_safe.jpg",
+      "reason": "Excluded because K263 is R02a contact/hit-stop only; wall-impact aftermath belongs to R02b."
+    },
+    {
+      "path": "action_reference_videos",
+      "reason": "Excluded because action reference video is action grammar evidence, not active generation input by default."
+    }
+  ],
+  "evidence_only_assets": [
+    {
+      "phase": "K257",
+      "path": "productions/chi_yan_tian_qiong/runs/live/SHOT-04-R02_identity_anchored_near_wall_guard_clash_m2v_K255_20260630_193845/87226743-d3c0-4a0a-afd5-6ded908766cf_video_1.mp4",
+      "sha256": "95d8a4951d87a3cdb5254f3c5b18baefd4bbf43b000c41c28a78fa1b24675c69",
+      "role": "identity-improved M2V video evidence only; not active input"
+    },
+    {
+      "phase": "K258",
+      "path": "productions/chi_yan_tian_qiong/runs/live/SHOT-04-R02_identity_anchored_near_wall_guard_clash_m2v_K255_20260630_193845/review_artifacts/K258/contact_sheet_K258_SHOT04_R02_identity_anchored_m2v.jpg",
+      "sha256": "9898ee94c6501959d38cf9e1f7694500a858327dcf947710a3a61a1d41352267",
+      "role": "visual review artifact only; not active input"
+    },
+    {
+      "phase": "K260",
+      "path": "productions/chi_yan_tian_qiong/edits/shot04_r02_identity_anchored_m2v_cut_candidates/K260/SHOT-04-R02-K260_CUT_A_0p35_1p50_identity_anchored_primary_diagnostic.mp4",
+      "sha256": "1a2aa1aa0a29f967f018b46637a168cb22ae64635ca249cf37ee0811987373fa",
+      "role": "rejected diagnostic cut; sustained pressure evidence only"
+    },
+    {
+      "phase": "K260",
+      "path": "productions/chi_yan_tian_qiong/edits/shot04_r02_identity_anchored_m2v_cut_candidates/K260/SHOT-04-R02-K260_CUT_B_0p65_2p00_stronger_pressure_wall_risk_diagnostic.mp4",
+      "sha256": "397154ef543d3fa9ea0e90a485e05290b41f46611be0da61840c8175cf92a0f4",
+      "role": "rejected diagnostic cut; stronger but sustained push evidence only"
+    }
+  ],
+  "command_draft_no_submit": [
+    "dreamina multimodal2video \\",
+    "  --prompt \"$(cat productions/chi_yan_tian_qiong/prompts/manual/SHOT-04-R02A-V-CONTACT-HIT-STOP-M2V-001_multimodal2video_no_submit_prompt.txt)\" \\",
+    "  --image productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png \\",
+    "  --image productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png \\",
+    "  --duration 5 \\",
+    "  --ratio 16:9 \\",
+    "  --video_resolution 720p \\",
+    "  --model_version seedance2.0_vip \\",
+    "  --poll 0"
+  ],
+  "no_submit": true,
+  "submit_authorized": false,
+  "query_authorized": false,
+  "download_authorized": false,
+  "retry_authorized": false,
+  "resubmit_authorized": false,
+  "batch_authorized": false,
+  "final_master": false,
+  "locked": false,
+  "visual_success_claimed": false,
+  "r02b_packaged": false,
+  "source_files_consulted": [
+    "sources/AI视频制作_Source索引与使用优先级_V1.8.md",
+    "sources/AI视频制作_自动化治理与Source权限规则_V0.1.md",
+    "sources/AI视频制作_自动化宏流程与授权等级_V0.2.md",
+    "sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md",
+    "sources/AI视频制作_实测规则库_V1.12_失败台账与路线重置规则增补稿.md",
+    "sources/AI视频制作_实测规则库_V1.11_连续战斗动作密度与环境破坏因果增补稿.md",
+    "sources/AI视频制作_动作参考视频库与审片标准_V0.1.md",
+    "sources/AI视频制作_实测规则库_V1.8_多模态提示词专家与IP资料安全增补稿.md",
+    "sources/dreamina_cli_help_latest.md"
+  ],
+  "lineage_reports_consulted": [
+    "reports/PHASE_K262_SHOT04_R02_ROUTE_RESET_HIT_STOP_EXPLOSIVE_KNOCKBACK_WALL_IMPACT_PLANNING.md",
+    "reports/PHASE_K261_SHOT04_R02_IDENTITY_ANCHORED_M2V_CUT_VISUAL_REVIEW.md",
+    "reports/PHASE_K260_SHOT04_R02_IDENTITY_ANCHORED_M2V_LOCAL_CUT_WINDOW_DIAGNOSTIC.md",
+    "reports/PHASE_K259_SHOT04_R02_IDENTITY_ANCHORED_MULTIMODAL2VIDEO_VISUAL_REVIEW.md",
+    "reports/PHASE_K257_SHOT04_R02_IDENTITY_ANCHORED_MULTIMODAL2VIDEO_DOWNLOAD_RESULT.md",
+    "reports/PHASE_PROJECT_TOTAL_STATE_CONTEXT_RECOVERY_REPORT.md"
+  ],
+  "risk_register": [
+    "Identity anchors may still pull attention away from action timing.",
+    "Two-character close contact can still degrade into sustained pressure or merged bodies.",
+    "The split-second hit-stop may be overinterpreted as long slow motion.",
+    "Received-force onset may be too weak unless the model preserves center-of-mass displacement.",
+    "R02a intentionally excludes wall destruction; a reviewer must confirm this does not undercut continuity into R02b.",
+    "K260 evidence shows identity improvement but motion timing failure; do not use K260 cuts as active input.",
+    "Future submit, query, download, retry, and resubmit require separate human authorization."
+  ]
+}
