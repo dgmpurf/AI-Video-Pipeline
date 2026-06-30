@@ -1,0 +1,7 @@
+Fenshou and Shuangji are already in close-range combat in the first frame: Fenshou drives compact shoulder-and-forearm body-line pressure from center-left into Shuangji's crossed guard at center-right, forcing her guard to compress, her weight to shift, and her boots to skid slightly across the wet stone floor while rain spray reacts around them.
+
+Use @FENSHOU_LOCKED_REF only to preserve Fenshou's identity: a red-black armored male warrior with a strong dark body silhouette. Do not copy the reference pose, camera, background, or standalone portrait framing. Use @SHUANGJI_LOCKED_REF only to preserve Shuangji's identity: a silver-blue armored female warrior with her established face and upper-body styling. Do not copy the reference portrait composition, pose, camera, static expression, or scene.
+
+The scene is a rainy ancient temple side corridor, medium-wide side view, cinematic 16:9. A dark wet wooden corridor wall is close behind Shuangji on the right, creating pressure, but she must not touch the wall. No body-wall contact, no wall hit, no wall mark, no wall damage, no wall crack, no wall collapse, and no wall fusion.
+
+The main usable motion must happen within the first 1.0 to 1.5 seconds: crossed guard compression, Fenshou's body weight pushing through shoulder and forearm alignment, Shuangji's defensive recoil or skid, rain and wet-floor feedback tied to the clash. No long approach, no distant setup, no weak hand-push, no magic blast, no shockwave, no static poster pose-out, no identity swapping, no character merging.

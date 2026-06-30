@@ -1,0 +1,149 @@
+{
+  "asset_id": "SHOT-04-R02-V-IDENTITY-ANCHORED-NEAR-WALL-GUARD-CLASH-M2V-001",
+  "shot_id": "SHOT-04-R02",
+  "phase": "K253",
+  "task_type": "multimodal2video",
+  "model_version": "seedance2.0_vip",
+  "duration": 5,
+  "ratio": "16:9",
+  "video_resolution": "720p",
+  "poll": 0,
+  "prompt_path": "productions/chi_yan_tian_qiong/prompts/manual/SHOT-04-R02-V-IDENTITY-ANCHORED-NEAR-WALL-GUARD-CLASH-M2V-001_multimodal2video_no_submit_prompt.txt",
+  "prompt_sha256": "07ca71a2defb0c75dca234e3a1a7dfde99532a16f4998c472e8e08bec98b60be",
+  "active_refs_count": 2,
+  "active_refs": [
+    {
+      "alias": "@FENSHOU_LOCKED_REF",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+      "sha256": "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f",
+      "duty": "Fenshou identity, red-black armor/costume, body silhouette, male warrior identity only",
+      "negative_duty": "Do not copy original pose, source camera, source background, or standalone portrait framing.",
+      "do_not_copy": [
+        "original pose",
+        "source camera",
+        "source background",
+        "standalone portrait framing"
+      ]
+    },
+    {
+      "alias": "@SHUANGJI_LOCKED_REF",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+      "sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11",
+      "duty": "Shuangji identity, silver-blue styling, face/upper-body identity anchor, female warrior identity only",
+      "negative_duty": "Do not copy portrait composition, pose, source camera, static expression, or source scene.",
+      "do_not_copy": [
+        "portrait composition",
+        "pose",
+        "source camera",
+        "static expression",
+        "source scene"
+      ]
+    }
+  ],
+  "excluded_refs": [
+    {
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png",
+      "reason": "Excluded by K252 default because a third character ref may split Shuangji attention or weaken action."
+    },
+    {
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+      "reason": "Excluded because broad scene refs may overpower identity/action and are not side-wall specific."
+    },
+    {
+      "path": "productions/chi_yan_tian_qiong/runs/live/A-SC-TEMPLE-SIDE-WALL-PANEL-002_text2image_20260628_205403/a3e497d9-f914-4c09-a6b3-b296797b7fb4_image_1.png",
+      "reason": "Excluded because the side-wall candidate is not locked and should be reviewed before active use."
+    },
+    {
+      "path": "productions/chi_yan_tian_qiong/packages/SHOT-04-R02-wall-impact/upload_refs/shot04_r02_wall_panel_arch_ref_upload_safe.jpg",
+      "reason": "Excluded because older wall-impact architecture refs may reintroduce forbidden wall-contact or wall-hit attention."
+    },
+    {
+      "path": "productions/chi_yan_tian_qiong/runs/live/SHOT-04-R02_near_wall_guard_clash_text2video_K245_20260630_141437/37d02a39-7ca3-4141-b5ce-3e578622843e_video_1.mp4",
+      "reason": "Excluded because K247/K250 motion evidence has failed identity and must remain evidence-only by default."
+    },
+    {
+      "path": "productions/chi_yan_tian_qiong/edits/shot04_r02_near_wall_guard_clash_cut_candidates/K250/SHOT-04-R02-K250_CUT_A_0p10_0p65_near_wall_pressure_insert.mp4",
+      "reason": "Excluded because K250 CUT_A is diagnostic motion evidence only and not an active input."
+    },
+    {
+      "path": "productions/chi_yan_tian_qiong/edits/shot04_r02_near_wall_guard_clash_cut_candidates/K250/SHOT-04-R02-K250_CUT_B_4p25_5p00_tail_motion_diagnostic.mp4",
+      "reason": "Excluded because K250 CUT_B is diagnostic motion evidence only and not an active input."
+    },
+    {
+      "path": "productions/chi_yan_tian_qiong/runs/live/SHOT-04-R02_near_wall_guard_clash_text2video_K245_20260630_141437/review_artifacts/K248/contact_sheet_K248_SHOT04_R02_near_wall_guard_clash.jpg",
+      "reason": "Excluded because the contact sheet is review evidence only, not generation input."
+    }
+  ],
+  "evidence_only_assets": [
+    {
+      "phase": "K247",
+      "path": "productions/chi_yan_tian_qiong/runs/live/SHOT-04-R02_near_wall_guard_clash_text2video_K245_20260630_141437/37d02a39-7ca3-4141-b5ce-3e578622843e_video_1.mp4",
+      "sha256": "04d89796348c9915f583318ef189c13ed1aee3b73b7c242e686497ce61c32418",
+      "role": "motion/failure evidence only"
+    },
+    {
+      "phase": "K248",
+      "path": "productions/chi_yan_tian_qiong/runs/live/SHOT-04-R02_near_wall_guard_clash_text2video_K245_20260630_141437/review_artifacts/K248/contact_sheet_K248_SHOT04_R02_near_wall_guard_clash.jpg",
+      "sha256": "95e76d85878d0f06b073a872a02d092de5a2648dc6f59f73724eebdf1f1925d8",
+      "role": "visual review/contact-sheet evidence only"
+    },
+    {
+      "phase": "K250",
+      "path": "productions/chi_yan_tian_qiong/edits/shot04_r02_near_wall_guard_clash_cut_candidates/K250/SHOT-04-R02-K250_CUT_A_0p10_0p65_near_wall_pressure_insert.mp4",
+      "sha256": "583f5a667097b381bb97ff12a4abba106df6f80ab934fcb81d56697c65df50bf",
+      "role": "diagnostic near-wall pressure micro-window only"
+    },
+    {
+      "phase": "K250",
+      "path": "productions/chi_yan_tian_qiong/edits/shot04_r02_near_wall_guard_clash_cut_candidates/K250/SHOT-04-R02-K250_CUT_B_4p25_5p00_tail_motion_diagnostic.mp4",
+      "sha256": "072cc3028dc74fecf6e96f6368031bbed001560940af39feba2dece365487369",
+      "role": "secondary tail-motion diagnostic evidence only"
+    }
+  ],
+  "command_draft_no_submit": [
+    "dreamina multimodal2video \\",
+    "  --prompt \"$(cat productions/chi_yan_tian_qiong/prompts/manual/SHOT-04-R02-V-IDENTITY-ANCHORED-NEAR-WALL-GUARD-CLASH-M2V-001_multimodal2video_no_submit_prompt.txt)\" \\",
+    "  --image productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png \\",
+    "  --image productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png \\",
+    "  --duration 5 \\",
+    "  --ratio 16:9 \\",
+    "  --video_resolution 720p \\",
+    "  --model_version seedance2.0_vip \\",
+    "  --poll 0"
+  ],
+  "no_submit": true,
+  "submit_authorized": false,
+  "query_authorized": false,
+  "download_authorized": false,
+  "retry_authorized": false,
+  "resubmit_authorized": false,
+  "final_master": false,
+  "locked": false,
+  "visual_success_claimed": false,
+  "source_files_consulted": [
+    "sources/AI视频制作_Source索引与使用优先级_V1.8.md",
+    "sources/AI视频制作_自动化宏流程与授权等级_V0.2.md",
+    "sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md",
+    "sources/AI视频制作_实测规则库_V1.12_失败台账与路线重置规则增补稿.md",
+    "sources/AI视频制作_动作参考视频库与审片标准_V0.1.md",
+    "sources/AI视频制作_实测规则库_V1.8_多模态提示词专家与IP资料安全增补稿.md",
+    "sources/dreamina_cli_help_latest.md",
+    "sources/Dreamina_CLI执行契约_V1.3_Agent环境登录态日志与Canary补丁.md"
+  ],
+  "lineage_reports_consulted": [
+    "reports/PHASE_K251R_SHOT04_R02_IDENTITY_LOCK_CORRECTION_AND_ROUTE_DECISION.md",
+    "reports/PHASE_K252_SHOT04_R02_IDENTITY_ANCHORED_ROUTE_PLANNING_NO_SUBMIT.md",
+    "reports/PHASE_K249_SHOT04_R02_NEAR_WALL_GUARD_CLASH_TEXT2VIDEO_VISUAL_REVIEW.md",
+    "reports/PHASE_K250_SHOT04_R02_NEAR_WALL_GUARD_CLASH_LOCAL_CUT_WINDOW_DIAGNOSTIC.md",
+    "reports/PHASE_K244_SHOT04_R02_NEAR_WALL_GUARD_CLASH_TEXT2VIDEO_PACKAGE_REVIEW.md",
+    "reports/PHASE_K243V_SHOT04_R02_NEAR_WALL_GUARD_CLASH_TEXT2VIDEO_PACKAGE_READY.md"
+  ],
+  "risk_register": [
+    "Identity refs may weaken action intensity even with result-first prompt wording.",
+    "Two identity refs may under-specify Shuangji full-body silhouette.",
+    "Scene is text-described only, so near-wall geometry may drift.",
+    "Adding scene or motion refs later could create reference attention conflict.",
+    "K247/K250 evidence shows useful timing but failed identity; it must remain excluded from active input by default.",
+    "Dual-character close combat remains brittle and requires K254 independent package review before any live submit authorization."
+  ]
+}
