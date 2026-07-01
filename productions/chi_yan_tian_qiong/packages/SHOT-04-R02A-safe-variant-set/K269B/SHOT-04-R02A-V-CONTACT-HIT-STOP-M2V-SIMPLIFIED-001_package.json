@@ -1,0 +1,65 @@
+{
+  "asset_id": "SHOT-04-R02A-V-CONTACT-HIT-STOP-M2V-SIMPLIFIED-001",
+  "shot_id": "SHOT-04-R02a",
+  "phase": "K269B",
+  "variant_id": "VARIANT_A_SIMPLIFIED_TWO_REF_M2V",
+  "source_package": "K263",
+  "source_asset_id": "SHOT-04-R02A-V-CONTACT-HIT-STOP-M2V-001",
+  "task_type": "multimodal2video",
+  "model_version": "seedance2.0_vip",
+  "duration": 5,
+  "ratio": "16:9",
+  "video_resolution": "720p",
+  "poll": 0,
+  "prompt_path": "productions/chi_yan_tian_qiong/prompts/manual/SHOT-04-R02A-V-CONTACT-HIT-STOP-M2V-SIMPLIFIED-001_multimodal2video_no_submit_prompt.txt",
+  "prompt_sha256": "dbb2e0881d8ba8d18d8b88b092e24e88824841e8f10392649e2b4cfb7510c9b8",
+  "prompt_length_chars": 655,
+  "prompt_word_count": 112,
+  "active_refs_count": 2,
+  "refs_used": [
+    {
+      "alias": "@FENSHOU_LOCKED_REF",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+      "sha256": "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f",
+      "duty": "Fenshou identity only: black red armor and body shape."
+    },
+    {
+      "alias": "@SHUANGJI_LOCKED_REF",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+      "sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11",
+      "duty": "Shuangji identity only: blue white silver armor and upper body design."
+    }
+  ],
+  "no_submit": true,
+  "submit_authorized": false,
+  "query_authorized": false,
+  "download_authorized": false,
+  "retry_authorized": false,
+  "resubmit_authorized": false,
+  "batch_authorized": false,
+  "final_master": false,
+  "locked": false,
+  "visual_success_claimed": false,
+  "route_purpose": "identity-preserving simplified two-ref M2V route",
+  "diagnostic_purpose": "Reduce prompt length and punctuation risk while keeping the same two identity refs to test whether simplified prompt content changes the M2V submit behavior.",
+  "expected_tradeoff": "Preserves identity better than prompt-only routes but retains same M2V upload/provider boundary risk.",
+  "risk_labels": [
+    "identity_preserving",
+    "simplified_prompt",
+    "same_m2v_boundary_risk",
+    "two_ref_upload_boundary_risk",
+    "no_submit"
+  ],
+  "recommended_next_gate": "K269C_SHOT04_R02A_SAFE_VARIANT_PACKAGE_SET_REVIEW",
+  "command_draft_no_submit": [
+    "dreamina multimodal2video",
+    "  --prompt <contents of prompt_path>",
+    "  --image productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+    "  --image productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+    "  --duration 5",
+    "  --ratio 16:9",
+    "  --video_resolution 720p",
+    "  --model_version seedance2.0_vip",
+    "  --poll 0"
+  ]
+}
