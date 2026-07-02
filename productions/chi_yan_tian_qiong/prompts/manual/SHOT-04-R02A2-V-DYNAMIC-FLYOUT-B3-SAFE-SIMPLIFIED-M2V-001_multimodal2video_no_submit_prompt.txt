@@ -1,0 +1,9 @@
+SHOT-04 R02A2 dynamic fly-out Beat B, safe simplified result-only movement after the previous contact beat. This clip begins after the existing Beat A contact / hit-stop insert; do not restage the guard clash.
+
+Use @FENSHOU_LOCKED_REF as Fenshou identity only: black-red armored attacker, brief edge or foreground follow-through presence only. Use @SHUANGJI_LOCKED_REF as Shuangji identity only: blue-white-silver armored defender already moving backward across the rain-slick dark temple stone floor.
+
+First visible moment: Shuangji is already traveling quickly away from Fenshou. Keep her identity readable while showing clear body travel over visible floor distance. Hair, sash, cloth, armor ribbons, and limbs trail with the motion. Rain spray, wet-floor splash, droplets, and floor mist follow the path of movement.
+
+Frame wide enough to read distance and speed. Fenshou may appear only briefly near the edge or foreground as a follow-through presence, not locked together with Shuangji. The action should read as fast backward travel with momentum, clear distance, and rainy temple continuity.
+
+Essential negatives: no prolonged contact, no slow shove, no gentle backstep, no delayed reaction, no tiny displacement, no grappling, no floating in place, no tight camera that hides travel distance, no identity swap.

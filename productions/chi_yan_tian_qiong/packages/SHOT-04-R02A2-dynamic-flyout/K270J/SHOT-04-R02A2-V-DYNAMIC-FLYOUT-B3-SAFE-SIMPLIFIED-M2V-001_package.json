@@ -1,0 +1,102 @@
+{
+  "asset_id": "SHOT-04-R02A2-V-DYNAMIC-FLYOUT-B3-SAFE-SIMPLIFIED-M2V-001",
+  "shot_id": "SHOT-04-R02a",
+  "phase_id": "K270J_SHOT04_R02A2_DYNAMIC_FLYOUT_B3_SAFE_REVISION_NO_SUBMIT_PACKAGE_CREATION",
+  "phase": "K270J",
+  "variant_id": "B3_SAFE_SIMPLIFIED_RESULT_ONLY_FLYOUT_AFTER_HIT",
+  "semantic_label": "R02A2_SAFE_SIMPLIFIED_RESULT_ONLY_FLYOUT_AFTER_HIT",
+  "priority": "primary",
+  "task_type": "multimodal2video",
+  "model_version": "seedance2.0_vip",
+  "duration": 5,
+  "ratio": "16:9",
+  "video_resolution": "720p",
+  "poll": 0,
+  "prompt_path": "productions/chi_yan_tian_qiong/prompts/manual/SHOT-04-R02A2-V-DYNAMIC-FLYOUT-B3-SAFE-SIMPLIFIED-M2V-001_multimodal2video_no_submit_prompt.txt",
+  "prompt_sha256": "69b2ee28c4430e7c99c68925c8ed3388c4927777073405463adeed8a4c06f602",
+  "prompt_length_chars": 1320,
+  "prompt_word_count": 191,
+  "active_refs_count": 2,
+  "refs_count": 2,
+  "refs_used": [
+    {
+      "alias": "@FENSHOU_LOCKED_REF",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+      "sha256": "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f",
+      "file_size_bytes": 1959523,
+      "duty": "Fenshou identity only: black-red armored attacker, brief edge or foreground follow-through presence only."
+    },
+    {
+      "alias": "@SHUANGJI_LOCKED_REF",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+      "sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11",
+      "file_size_bytes": 3874061,
+      "duty": "Shuangji identity only: blue-white-silver armored defender already moving backward over visible floor distance."
+    }
+  ],
+  "continuity_source": {
+    "beat_a_primary_cut": "CONTACT_HITSTOP_SHORT",
+    "beat_a_primary_time_window": "0.50s-1.00s",
+    "beat_a_primary_sha256": "ace57b50c6e3b28aecff8c495ced690aa560b4c3744f95812487f1fcd48d8ab8",
+    "beat_a_alternate_cut": "CONTACT_HITSTOP_PADDED",
+    "beat_a_alternate_time_window": "0.50s-1.25s",
+    "beat_a_alternate_sha256": "ce00c6fba08406ce04220bb2a41d0ee97a6aacbc0bc6fb25ade782458e7c168f",
+    "continuity_rule": "Beat A ends on static contact / hit-stop; this Beat B begins after that contact moment with immediate backward travel."
+  },
+  "revision_source": {
+    "original_variant_id": "B3_RESULT_ONLY_FLYOUT_AFTER_HIT",
+    "original_asset_id": "SHOT-04-R02A2-V-DYNAMIC-FLYOUT-B3-RESULT-ONLY-M2V-001",
+    "original_prompt_sha256": "b730505bf810fcb4e66e008aafd723412ff22ffd1cc404fd3401241250ee53f0",
+    "original_package_sha256": "34b23610029f4d40da22d3c4595e0de1c185bff382f6fd30f915dfb8cddcb3d8",
+    "revision_reason": "K270G original B3 submit failed before task creation; K270H recommended a safe/simplified no-submit revision before any retry or B1 submit."
+  },
+  "dynamic_direction": "B3_SAFE_SIMPLIFIED_RESULT_ONLY_FLYOUT_AFTER_HIT",
+  "route_purpose": "Create a no-submit M2V package for the R02A2 dynamic fly-out Beat B after existing Variant A contact/hit-stop material.",
+  "diagnostic_purpose": "Focus on clear backward travel, readable distance, wet-floor response, and identity continuity while reducing provider-sensitive wording.",
+  "safe_revision_notes": [
+    "Simplified sentence structure from original B3.",
+    "Reduced intense collision and harm language.",
+    "Preserved result-only movement after the prior contact beat.",
+    "Preserved wide enough framing, rainy temple continuity, clear distance, and wet-floor feedback.",
+    "Kept only essential negatives to avoid over-stacking."
+  ],
+  "strict_negatives": [
+    "no prolonged contact",
+    "no slow shove",
+    "no gentle backstep",
+    "no delayed reaction",
+    "no tiny displacement",
+    "no grappling",
+    "no floating in place",
+    "no tight camera that hides travel distance",
+    "no identity swap"
+  ],
+  "route_notes": [
+    "B3 safe/simplified remains primary because it begins after hit-stop and avoids requiring the model to solve precise contact again.",
+    "Show Shuangji already moving backward over readable distance.",
+    "Fenshou may appear only as a brief follow-through presence, not prolonged contact.",
+    "B1 remains backup only and is not submitted by this package."
+  ],
+  "no_submit": true,
+  "submit_authorized": false,
+  "query_authorized": false,
+  "download_authorized": false,
+  "retry_authorized": false,
+  "resubmit_authorized": false,
+  "batch_authorized": false,
+  "final_master": false,
+  "locked": false,
+  "visual_success_claimed": false,
+  "recommended_next_gate": "K270K_SHOT04_R02A2_DYNAMIC_FLYOUT_B3_SAFE_REVISION_PACKAGE_REVIEW",
+  "command_draft_no_submit": [
+    "dreamina multimodal2video",
+    "  --prompt <contents of prompt_path>",
+    "  --image productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+    "  --image productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+    "  --duration 5",
+    "  --ratio 16:9",
+    "  --video_resolution 720p",
+    "  --model_version seedance2.0_vip",
+    "  --poll 0"
+  ]
+}
