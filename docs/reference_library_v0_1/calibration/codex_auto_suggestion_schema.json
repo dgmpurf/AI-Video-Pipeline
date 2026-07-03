@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReferenceLibraryCodexAutoSuggestionV0_1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ref_id",
+    "source_file",
+    "source_type_guess",
+    "primary_ref_type_candidates",
+    "suggested_tags",
+    "suggested_risk_tags",
+    "suggested_usage_class",
+    "active_input_allowed_must_remain_false",
+    "confidence",
+    "rationale",
+    "signals_used",
+    "needs_human_review"
+  ],
+  "properties": {
+    "ref_id": {
+      "type": "string",
+      "description": "Stable local reference id."
+    },
+    "source_file": {
+      "type": "string",
+      "description": "Repo-relative or local source path. Do not include signed URLs or secrets."
+    },
+    "source_type_guess": {
+      "type": "string",
+      "description": "Codex's best-effort source type guess from metadata, naming, manifest, or notes."
+    },
+    "primary_ref_type_candidates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Candidate primary reference duties, such as action, camera, edit rhythm, FX, environment feedback, or style lighting."
+    },
+    "suggested_tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "tag",
+          "confidence",
+          "evidence"
+        ],
+        "properties": {
+          "tag": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "evidence": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "suggested_risk_tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "tag",
+          "reason",
+          "severity"
+        ],
+        "properties": {
+          "tag": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              "unknown"
+            ]
+          }
+        }
+      }
+    },
+    "suggested_usage_class": {
+      "type": "string",
+      "enum": [
+        "offline_grammar_only",
+        "review_required",
+        "blocked",
+        "unknown"
+      ]
+    },
+    "active_input_allowed_must_remain_false": {
+      "type": "boolean",
+      "const": true,
+      "description": "Codex must not turn active_input_allowed on. Human review is required."
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "signals_used": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "file_name",
+          "directory",
+          "manifest",
+          "existing_notes",
+          "user_impression",
+          "chatgpt_review",
+          "tag_rules",
+          "alias_rules",
+          "risk_rules",
+          "metadata",
+          "unknown"
+        ]
+      }
+    },
+    "needs_human_review": {
+      "type": "boolean",
+      "description": "True when visual judgment, active input decision, prompt_ready decision, risk adjudication, or rule conflict review is required."
+    }
+  }
+}
