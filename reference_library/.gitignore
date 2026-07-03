@@ -1,0 +1,40 @@
+# Raw and segmented media stay local.
+raw_clips/*
+!raw_clips/.gitkeep
+ref_segments/*
+!ref_segments/.gitkeep
+
+# Derived media and generated review assets stay local.
+derived/posters/*
+!derived/posters/.gitkeep
+derived/contact_sheets/*
+!derived/contact_sheets/.gitkeep
+derived/keyframes/*
+!derived/keyframes/.gitkeep
+derived/waveforms/*
+!derived/waveforms/.gitkeep
+derived/proxies/*
+!derived/proxies/.gitkeep
+
+# Runtime database files stay local.
+db/*.sqlite
+db/*.sqlite-wal
+db/*.sqlite-shm
+
+# Logs and import inbox stay local.
+logs/*
+!logs/.gitkeep
+import_inbox/*
+!import_inbox/.gitkeep
+
+# Exported media stays local.
+exports/*.mp4
+exports/*.mov
+exports/*.mkv
+
+!README.md
+!.gitignore
+!config/
+!config/.gitkeep
+!manifests/
+!manifests/.gitkeep
