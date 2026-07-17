@@ -1,0 +1,62 @@
+{
+  "phase_id": "CAL-001-H1",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "status": "human_fixed_manifest_reviewed_and_accepted",
+  "reviewer": "human_user",
+  "review_date": "2026-07-18",
+  "accepted_repository_commit": "2bf8dd0292066f41b956193d399a0a0cf9d2f47e",
+  "acceptance_language": "English",
+  "acceptance_text_sha256": "617be14a783179c64266ef9afa0ce5b8d0c44d24b16dc389c4c58ed1c91ac738",
+  "acceptance_text_utf8_base64": "SSBoYXZlIHJldmlld2VkIHRoZSBDQUwtMDAxQSBmaXhlZC1tYW5pZmVzdCBodW1hbiBhY2NlcHRhbmNlIGRpZ2VzdCBhbmQgYWNjZXB0IHRoZSBjb21taXR0ZWQgZml4ZWQgZXhwZXJpbWVudCBkZWZpbml0aW9uIGF0IHJlcG9zaXRvcnkgY29tbWl0IDJiZjhkZDAyOTIwNjZmNDFiOTU2MTkzZDM5OWEwYTBjZjlkMmY0N2UuCgpNeSBhY2NlcHRhbmNlIGlzIGJvdW5kIHRvIGV4YWN0bHkgdGhlc2UgY29tbWl0dGVkIGRpZ2VzdHM6CgotIGZpeGVkX21hbmlmZXN0X3NoYTI1Nj1iMmVjZmI4Nzg5OWZlY2E3ODRmYzhlMWYyYjc1MWZjMTgxYWVhYjlhOTExOGEzYTc2MDkwNjdkNGI5MmIyYzZkCi0gZml4dHVyZV9yZWdpc3RyeV9zaGEyNTY9Y2YzNWE3ZWExNWU0YzUxZTRkNjkzNmY5YTc5NmY5MDIxNTQ0NWYwNTk1MDNjZDI5YmQ2ZWNjYjhjNzY1ODE0MgotIHByb21wdF9pbnZlbnRvcnlfc2hhMjU2PTI3Yzk1NzI1ZTgwYzMyNTY5Mzg5NGY4YjA0Y2MzNTg3ZjQwNGY5NzE1NTlmYmYxYzJjYzkyOTJiM2EzNjFkNmQKLSBwYWNrYWdlX2ludmVudG9yeV9zaGEyNTY9YjcxNmNiMDYzOTc3MTcyYThmY2YyODM1OWM0Y2VlZjAwYjlhZDBmOTA1MjRhM2VlNjc1ZDE5NGZiNzljMjUxYwotIGZ1bGxfZXhwZXJpbWVudF9pbnZlbnRvcnlfc2hhMjU2PTQ0OGEyZDQ3M2IwNmJmNGI1Zjg1NDg2NDQ3MzNmZGQ2OGFmN2NiMzc3NDliYzhkODA3YmY2OWU1M2VmOTYxMzgKCkkgYWNjZXB0IHRoZSBmaXhlZCBzY29wZSBvZiA4NCBleHBlcmltZW50czogNyBiZW5jaG1hcmsgZmFtaWxpZXMsIDQgcHJvbXB0IGFyY2hpdGVjdHVyZXMgcGVyIGZhbWlseSwgYW5kIDMgaW5kZXBlbmRlbnQgcmVwbGljYXRlcyBwZXIgYXJjaGl0ZWN0dXJlLgoKSSBhY2NlcHQgdGhlIFAyIG5vbmJsb2NraW5nIG5vdGVzIGFzIGRlc2lnbiBub3RlcyByYXRoZXIgdGhhbiBibG9ja2VyczoKLSBGMDIgdXNlcyBhbiBpbmZlcnJlZCA5OjE2IHJhdGlvIGZyb20gaXRzIHBvcnRyYWl0IGlucHV0LgotIEYwNSB1c2VzIGEgc3VidGxlIHNhbWUtc2VxdWVuY2UgdHJhbnNpdGlvbiBiZXR3ZWVuIHRoZSAxLjE1LXNlY29uZCBhbmQgMS4zMC1zZWNvbmQgZnJhbWVzLgotIENMSSBpbnB1dCBiaW5kaW5nIHJlbWFpbnMgc3ViamVjdCB0byB0aGUgbGF0ZXIgcnVudGltZSBhY3RpdmF0aW9uIGF1ZGl0LgotIEh1bWFuLWFjY2VwdGFuY2UgaGFzaCBmaWVsZHMgcmVtYWluIHRvIGJlIHJlY29yZGVkIGJ5IHRoZSBIMSBwaGFzZS4KClRoaXMgYWNjZXB0YW5jZSBjb25maXJtczoKLSBmaXhlZF9tYW5pZmVzdF9odW1hbl9yZXZpZXdlZD10cnVlCi0gZml4ZWRfbWFuaWZlc3RfaHVtYW5fYWNjZXB0ZWQ9dHJ1ZQoKVGhpcyBhY2NlcHRhbmNlIGRvZXMgbm90IGFjdGl2YXRlIENBTC0wMDFBIGV4ZWN1dGlvbiBhdXRob3JpdHkuIFRoZSBmb2xsb3dpbmcgcmVtYWluIHVuY2hhbmdlZDoKLSBleGVjdXRpb25fYXV0aG9yaXR5X2FjdGl2ZT1mYWxzZQotIERyZWFtaW5hX3J1bj1mYWxzZQotIHN1Ym1pdF9jb3VudD0wCi0gcXVlcnlfY291bnQ9MAotIGRvd25sb2FkX2NvdW50PTAKLSByZXRyeV9jb3VudF9tYXg9MAotIHJlc3VibWl0X2NvdW50X21heD0wCi0gYmF0Y2hfZXhwYW5zaW9uPWZhbHNlCi0gY3JlZGl0X2J1ZGdldF9tYXg9NTg4MAotIGNyZWRpdF9mbG9vcj01NjAKLSBmaW5hbF9tYXN0ZXI9ZmFsc2UKLSBsb2NrZWQ9ZmFsc2UKCkNBTC0wMDFBIG1heSBwcm9jZWVkIG9ubHkgdG8gQ0FMLTAwMS1QMyBhY3RpdmF0aW9uLXByZWNvbmRpdGlvbiBhdWRpdC4gUnVudGltZSBEcmVhbWluYSBjb21tYW5kIGNvbXBhdGliaWxpdHksIGxpdmUgbG9naW4gYW5kIGNyZWRpdCBzdGF0ZSwgYWN0dWFsIHBlci10YXNrIGNvc3QsIFNvdXJjZSBjbGVhbmxpbmVzcywgaGFzaCBpbnRlZ3JpdHksIGFuZCBhbGwgcmVtYWluaW5nIGFjdGl2YXRpb24gY29uZGl0aW9ucyBtdXN0IHBhc3MgYmVmb3JlIGV4ZWN1dGlvbiBhdXRob3JpdHkgY2FuIGJlY29tZSBhY3RpdmUuCgpUaGlzIGFjY2VwdGFuY2UgZG9lcyBub3QgYXV0aG9yaXplIENBTC0wMDFCLCBhZGFwdGl2ZSB0YXNrIHNlbGVjdGlvbiwgdGFzayByZXBsYWNlbWVudCwgcHJvbXB0IHJld3JpdGluZywgcmV0cnksIHJlc3VibWl0LCBtYW5pZmVzdCBleHBhbnNpb24sIFNvdXJjZSBtb2RpZmljYXRpb24sIG1lZGlhIGZpbmFsaXphdGlvbiwgb3IgbG9jay4=",
+  "accepted_scope": {
+    "scope_type": "fixed_non_adaptive_experiment_definition",
+    "experiment_count": 84,
+    "benchmark_family_count": 7,
+    "prompt_architectures_per_family": 4,
+    "independent_replicates_per_architecture": 3
+  },
+  "accepted_counts": {
+    "manifest_rows": 84,
+    "families": 7,
+    "prompt_architectures": 4,
+    "replicate_values": 3,
+    "matrix_cells": 28,
+    "unique_prompts": 28,
+    "packages": 84
+  },
+  "accepted_digests": {
+    "fixed_manifest_sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+    "fixture_registry_sha256": "cf35a7ea15e4c51e4d6936f9a796f90215445f059503cd29bd6eccb8c7658142",
+    "prompt_inventory_sha256": "27c95725e80c325693894f8b04cc3587f404f971559fbf1c2cc9292b3a361d6d",
+    "package_inventory_sha256": "b716cb063977172a8fcf28359c4ceef00b9ad0f90524a3ee675d194fb79c251c",
+    "full_experiment_inventory_sha256": "448a2d473b06bf4b5f8548644733fdd68af7cb37749bc8d807bf69e53ef96138"
+  },
+  "accepted_P2_nonblocking_notes": [
+    "F02 uses an inferred 9:16 ratio from its portrait input.",
+    "F05 uses a subtle same-sequence transition between the 1.15-second and 1.30-second frames.",
+    "CLI input binding remains subject to the later runtime activation audit.",
+    "Human-acceptance hash fields remain to be recorded by the H1 phase."
+  ],
+  "fixed_manifest_human_reviewed": true,
+  "fixed_manifest_human_accepted": true,
+  "execution_authority_active": false,
+  "Dreamina_run": false,
+  "submit_count": 0,
+  "query_count": 0,
+  "download_count": 0,
+  "retry_count_max": 0,
+  "resubmit_count_max": 0,
+  "batch_expansion": false,
+  "credit_budget_max": 5880,
+  "credit_floor": 560,
+  "final_master": false,
+  "locked": false,
+  "CAL001B_authorized": false,
+  "adaptive_tasks_authorized": false,
+  "prompt_rewrite_authorized": false,
+  "manifest_expansion_authorized": false,
+  "Source_modification_authorized": false,
+  "next_phase": "CAL-001-P3_ACTIVATION_PRECONDITION_AUDIT",
+  "notes": "Acceptance records the human decision only. It grants no live execution authority and does not perform the P3 audit."
+}
