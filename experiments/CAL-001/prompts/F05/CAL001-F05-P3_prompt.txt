@@ -1,0 +1,16 @@
+<<<BEGIN_PROVIDER_PROMPT>>>
+The same rainy combat scene transitions smoothly from the energetic aftershock first frame to the more settled recovery last frame without replacing the scene or identities. First-frame duty: lock the exact starting identities, composition, and residual aftershock energy. Last-frame duty: lock the exact ending identities, composition, and settled recovery state. Neither frame supplies a new attack or scene. No identity swap, scene replacement, reversal, camera cut, or second shockwave.
+<<<END_PROVIDER_PROMPT>>>
+
+[CAL001_METADATA]
+family_id=F05
+family_name=FRAMES2VIDEO_CONTROLLED_STATE_TRANSITION
+prompt_architecture=P3_RESULT_FIRST_WITH_DUTIES
+dominant_visible_result=The same rainy combat scene transitions smoothly from the energetic aftershock first frame to the more settled recovery last frame without replacing the scene or identities.
+prompt_payload_sha256=3bdc868bd3fe654c21d404a424e6bbe56095576debac42aa456e8e6ff4a81dd3
+prompt_payload_hash_scope=UTF-8 bytes between provider-prompt markers, LF normalized, one final LF included
+prompt_file_sha256_scope=recorded externally in package, manifest, inventories, and report to avoid self-hash circularity
+compact_negative_constraints_json=["no identity swap","no new attack","no scene replacement","no frame reversal","no camera cut","no second shockwave"]
+applicable_source_rule_mapping_json=["sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md","sources/dreamina_cli_help_latest.md","sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md","Prompt Compiler sections 1 and 5 result-first plus reference duties"]
+visual_review_dimensions_json=["start_frame_fidelity","end_frame_fidelity","subject_structure_stability","temporal_coherence","editability"]
+provider_prompt_extract_rule=use only text between BEGIN_PROVIDER_PROMPT and END_PROVIDER_PROMPT markers

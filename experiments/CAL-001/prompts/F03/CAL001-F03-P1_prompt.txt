@@ -1,0 +1,16 @@
+<<<BEGIN_PROVIDER_PROMPT>>>
+Preserve the empty rainy ancient-temple main-hall image, its true frontal center axis, wet-stone geometry, roof lines, pillars, and depth. Over one continuous five-second shot, the camera moves only in a slow controlled push-in toward the main doorway, ending closer while the architecture remains rigid and spatially coherent. Rain may move naturally. No pan, pull-out, orbit, cut, geometry warp, or newly appearing subject.
+<<<END_PROVIDER_PROMPT>>>
+
+[CAL001_METADATA]
+family_id=F03
+family_name=IMAGE2VIDEO_CAMERA_CONTROL
+prompt_architecture=P1_LEGACY_DESCRIPTIVE
+dominant_visible_result=The camera performs one continuous slow push-in along the rainy temple's frontal center axis while all architecture and spatial relationships remain stable.
+prompt_payload_sha256=271a7756746412bcd69e8a9af805d46426a40cc584f608f4a27030f47520f8ef
+prompt_payload_hash_scope=UTF-8 bytes between provider-prompt markers, LF normalized, one final LF included
+prompt_file_sha256_scope=recorded externally in package, manifest, inventories, and report to avoid self-hash circularity
+compact_negative_constraints_json=["no pan","no pull-out","no orbit","no camera cut","no geometry warp","no new subject"]
+applicable_source_rule_mapping_json=["sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md","sources/dreamina_cli_help_latest.md","sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md","Prompt Compiler conventional descriptive baseline; not intentionally defective"]
+visual_review_dimensions_json=["camera_compliance","subject_structure_stability","spatial_compliance","temporal_coherence","editability"]
+provider_prompt_extract_rule=use only text between BEGIN_PROVIDER_PROMPT and END_PROVIDER_PROMPT markers

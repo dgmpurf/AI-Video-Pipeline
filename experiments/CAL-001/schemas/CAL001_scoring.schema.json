@@ -1,0 +1,312 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "CAL001_scoring.schema.json",
+  "title": "CAL-001 Visual Scoring",
+  "description": "P1-R2 defines scoring only. It assigns no visual scores or review outcomes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "family_id",
+    "scores"
+  ],
+  "properties": {
+    "family_id": {
+      "type": "string",
+      "enum": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07"
+      ]
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prompt_goal_match",
+        "identity_stability",
+        "subject_structure_stability",
+        "action_readability",
+        "causal_clarity",
+        "reaction_readability",
+        "spatial_compliance",
+        "camera_compliance",
+        "environment_response",
+        "start_frame_fidelity",
+        "end_frame_fidelity",
+        "temporal_coherence",
+        "style_coherence",
+        "editability"
+      ],
+      "properties": {
+        "prompt_goal_match": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "identity_stability": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "subject_structure_stability": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "action_readability": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "causal_clarity": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "reaction_readability": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "spatial_compliance": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "camera_compliance": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "environment_response": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "start_frame_fidelity": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "end_frame_fidelity": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "temporal_coherence": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "style_coherence": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "editability": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        }
+      }
+    }
+  },
+  "score_definitions": {
+    "0": "absent or catastrophic failure",
+    "1": "weak",
+    "2": "partial",
+    "3": "acceptable",
+    "4": "strong",
+    "5": "clear and reusable",
+    "null": "not applicable or not yet reviewed"
+  },
+  "range_validation": "Every applicable score is an integer from 0 through 5; non-applicable and unreviewed scores are null, never zero.",
+  "family_applicability": {
+    "F01": {
+      "required_dimensions": [
+        "prompt_goal_match",
+        "action_readability",
+        "temporal_coherence",
+        "style_coherence",
+        "editability"
+      ],
+      "null_dimensions": [
+        "identity_stability",
+        "subject_structure_stability",
+        "causal_clarity",
+        "reaction_readability",
+        "spatial_compliance",
+        "camera_compliance",
+        "environment_response",
+        "start_frame_fidelity",
+        "end_frame_fidelity"
+      ]
+    },
+    "F02": {
+      "required_dimensions": [
+        "identity_stability",
+        "subject_structure_stability",
+        "action_readability",
+        "temporal_coherence",
+        "editability"
+      ],
+      "null_dimensions": [
+        "prompt_goal_match",
+        "causal_clarity",
+        "reaction_readability",
+        "spatial_compliance",
+        "camera_compliance",
+        "environment_response",
+        "start_frame_fidelity",
+        "end_frame_fidelity",
+        "style_coherence"
+      ]
+    },
+    "F03": {
+      "required_dimensions": [
+        "camera_compliance",
+        "subject_structure_stability",
+        "spatial_compliance",
+        "temporal_coherence",
+        "editability"
+      ],
+      "null_dimensions": [
+        "prompt_goal_match",
+        "identity_stability",
+        "action_readability",
+        "causal_clarity",
+        "reaction_readability",
+        "environment_response",
+        "start_frame_fidelity",
+        "end_frame_fidelity",
+        "style_coherence"
+      ]
+    },
+    "F04": {
+      "required_dimensions": [
+        "environment_response",
+        "causal_clarity",
+        "action_readability",
+        "subject_structure_stability",
+        "temporal_coherence"
+      ],
+      "null_dimensions": [
+        "prompt_goal_match",
+        "identity_stability",
+        "reaction_readability",
+        "spatial_compliance",
+        "camera_compliance",
+        "start_frame_fidelity",
+        "end_frame_fidelity",
+        "style_coherence",
+        "editability"
+      ]
+    },
+    "F05": {
+      "required_dimensions": [
+        "start_frame_fidelity",
+        "end_frame_fidelity",
+        "subject_structure_stability",
+        "temporal_coherence",
+        "editability"
+      ],
+      "null_dimensions": [
+        "prompt_goal_match",
+        "identity_stability",
+        "action_readability",
+        "causal_clarity",
+        "reaction_readability",
+        "spatial_compliance",
+        "camera_compliance",
+        "environment_response",
+        "style_coherence"
+      ]
+    },
+    "F06": {
+      "required_dimensions": [
+        "identity_stability",
+        "subject_structure_stability",
+        "spatial_compliance",
+        "prompt_goal_match",
+        "temporal_coherence"
+      ],
+      "null_dimensions": [
+        "action_readability",
+        "causal_clarity",
+        "reaction_readability",
+        "camera_compliance",
+        "environment_response",
+        "start_frame_fidelity",
+        "end_frame_fidelity",
+        "style_coherence",
+        "editability"
+      ]
+    },
+    "F07": {
+      "required_dimensions": [
+        "identity_stability",
+        "causal_clarity",
+        "action_readability",
+        "reaction_readability",
+        "environment_response",
+        "temporal_coherence",
+        "editability"
+      ],
+      "null_dimensions": [
+        "prompt_goal_match",
+        "subject_structure_stability",
+        "spatial_compliance",
+        "camera_compliance",
+        "start_frame_fidelity",
+        "end_frame_fidelity",
+        "style_coherence"
+      ]
+    }
+  }
+}

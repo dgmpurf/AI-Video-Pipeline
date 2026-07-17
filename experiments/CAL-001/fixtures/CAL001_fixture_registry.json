@@ -1,0 +1,250 @@
+{
+  "program_id": "CAL-001",
+  "phase_id": "CAL-001-P1-R2",
+  "registry_status": "validated_no_run_fixture_registry",
+  "registry_entry_count": 11,
+  "unique_physical_file_count": 6,
+  "families_without_media_inputs": [
+    "F01"
+  ],
+  "active_generation_input_allowed_scope": "Internal CAL-001 eligibility only; this does not activate Dreamina execution authority.",
+  "fixtures": [
+    {
+      "fixture_id": "CAL001-F02-IDENTITY-01",
+      "family_id": "F02",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+      "sha256": "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f",
+      "file_size_bytes": 1959523,
+      "media_type": "image/png",
+      "width": 1440,
+      "height": 2560,
+      "duration_if_applicable": null,
+      "fixture_role": "sole_identity_and_silhouette_anchor",
+      "rights_status": "project_generated_human_approved_locked_production_asset",
+      "active_generation_input_allowed": true,
+      "selection_reason": "Human-approved full-body project character lock supports identity, silhouette, costume, and one simple motion.",
+      "excluded_alternatives": [
+        "Unreviewed frames",
+        "External character references",
+        "Multi-character action frames"
+      ],
+      "validation_status": "pass_existing_readable_hash_size_dimensions_rights_and_role",
+      "provenance_evidence": "productions/chi_yan_tian_qiong/assets/asset_registry.json"
+    },
+    {
+      "fixture_id": "CAL001-F03-SCENE-01",
+      "family_id": "F03",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+      "sha256": "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452",
+      "file_size_bytes": 4147285,
+      "media_type": "image/png",
+      "width": 2560,
+      "height": 1440,
+      "duration_if_applicable": null,
+      "fixture_role": "sole_scene_and_camera_axis_anchor",
+      "rights_status": "project_generated_human_approved_locked_scene_asset",
+      "active_generation_input_allowed": true,
+      "selection_reason": "Human-approved 16:9 frontal-axis scene gives a stable geometry baseline for one slow push-in.",
+      "excluded_alternatives": [
+        "Scenes with unstable perspective",
+        "Action-reference video",
+        "Transformed or cropped copies"
+      ],
+      "validation_status": "pass_existing_readable_hash_size_dimensions_rights_and_role",
+      "provenance_evidence": "productions/chi_yan_tian_qiong/assets/asset_registry.json"
+    },
+    {
+      "fixture_id": "CAL001-F04-ENVIRONMENT-01",
+      "family_id": "F04",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/SHOT-02-KF-002_locked_main_hall_first_clash.png",
+      "sha256": "6a573b598ab813e8ac7997a387303326a9f4836c52cc1ae91ca33ed207db60c7",
+      "file_size_bytes": 4160657,
+      "media_type": "image/png",
+      "width": 2560,
+      "height": 1440,
+      "duration_if_applicable": null,
+      "fixture_role": "sole_wet_environment_and_subject_structure_anchor",
+      "rights_status": "project_generated_human_approved_locked_official_keyframe",
+      "active_generation_input_allowed": true,
+      "selection_reason": "Official 16:9 rainy keyframe already contains wet stone, rain, clothing, and stable project subjects for a bounded feedback test.",
+      "excluded_alternatives": [
+        "Structural destruction frames",
+        "Body-wall interaction",
+        "K270Q ground-slide result"
+      ],
+      "validation_status": "pass_existing_readable_hash_size_dimensions_rights_and_role",
+      "provenance_evidence": "productions/chi_yan_tian_qiong/manifests/production_image2image_SHOT-02-KF-002-R02_safe.csv"
+    },
+    {
+      "fixture_id": "CAL001-F05-FIRST-01",
+      "family_id": "F05",
+      "path": "productions/chi_yan_tian_qiong/derived_refs/SHOT-02-V008_start_frame_candidates/SHOT-02-V008_start_candidate_1p15s.png",
+      "sha256": "82deaa75293ae75be3bd2b4d1b2da82ce3e4f263a5380ed2ed01a4ec5b3030df",
+      "file_size_bytes": 752739,
+      "media_type": "image/png",
+      "width": 1280,
+      "height": 720,
+      "duration_if_applicable": null,
+      "fixture_role": "first_frame_aftershock_energy_state",
+      "rights_status": "project_generated_local_derived_frame_human_reviewed",
+      "active_generation_input_allowed": true,
+      "selection_reason": "Human-ranked 1.15s project-derived frame is the preferred readable aftershock-to-recovery start state.",
+      "excluded_alternatives": [
+        "0.95s and 1.05s frames judged too early",
+        "External first frames",
+        "Newly extracted frames"
+      ],
+      "validation_status": "pass_existing_readable_hash_size_dimensions_rights_and_role",
+      "provenance_evidence": "reports/PHASE_K12_SHOT02_V008_AFTERSHOCK_RAIN_RECOVERY_PACKAGE_REPORT.md"
+    },
+    {
+      "fixture_id": "CAL001-F05-LAST-01",
+      "family_id": "F05",
+      "path": "productions/chi_yan_tian_qiong/derived_refs/SHOT-02-V008_start_frame_candidates/SHOT-02-V008_start_candidate_1p30s.png",
+      "sha256": "56244830c24cb08c3d0e694af9e146a75ca342da680ccfd5c26a59b9168a5c09",
+      "file_size_bytes": 828011,
+      "media_type": "image/png",
+      "width": 1280,
+      "height": 720,
+      "duration_if_applicable": null,
+      "fixture_role": "last_frame_settled_recovery_state",
+      "rights_status": "project_generated_local_derived_frame_human_reviewed_usable",
+      "active_generation_input_allowed": true,
+      "selection_reason": "The same human review records 1.30s as usable and more settled, making a limited same-scene transition endpoint.",
+      "excluded_alternatives": [
+        "Scene replacement",
+        "Different identity set",
+        "Newly extracted last frame"
+      ],
+      "validation_status": "pass_existing_readable_hash_size_dimensions_rights_and_role",
+      "provenance_evidence": "reports/PHASE_K12_SHOT02_V008_AFTERSHOCK_RAIN_RECOVERY_PACKAGE_REPORT.md"
+    },
+    {
+      "fixture_id": "CAL001-F06-IDENTITY-A",
+      "family_id": "F06",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+      "sha256": "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f",
+      "file_size_bytes": 1959523,
+      "media_type": "image/png",
+      "width": 1440,
+      "height": 2560,
+      "duration_if_applicable": null,
+      "fixture_role": "identity_A_only",
+      "rights_status": "project_generated_human_approved_locked_production_asset",
+      "active_generation_input_allowed": true,
+      "selection_reason": "Locked Fenshou identity and silhouette anchor for the frame-left subject.",
+      "excluded_alternatives": [
+        "Contaminated prior video frames",
+        "External identity media"
+      ],
+      "validation_status": "pass_existing_readable_hash_size_dimensions_rights_and_role",
+      "provenance_evidence": "productions/chi_yan_tian_qiong/assets/asset_registry.json"
+    },
+    {
+      "fixture_id": "CAL001-F06-IDENTITY-B",
+      "family_id": "F06",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+      "sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11",
+      "file_size_bytes": 3874061,
+      "media_type": "image/png",
+      "width": 1440,
+      "height": 2560,
+      "duration_if_applicable": null,
+      "fixture_role": "identity_B_highest_priority_only",
+      "rights_status": "project_generated_human_approved_locked_identity_anchor",
+      "active_generation_input_allowed": true,
+      "selection_reason": "Human-approved Shuangji face and upper-body identity anchor explicitly supports identity stability.",
+      "excluded_alternatives": [
+        "Prior drifted outputs",
+        "Action-pose duty for this identity-only reference"
+      ],
+      "validation_status": "pass_existing_readable_hash_size_dimensions_rights_and_role",
+      "provenance_evidence": "productions/chi_yan_tian_qiong/assets/A-CH-B-IDENTITY-002_planning_record.json"
+    },
+    {
+      "fixture_id": "CAL001-F06-SCENE-01",
+      "family_id": "F06",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+      "sha256": "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452",
+      "file_size_bytes": 4147285,
+      "media_type": "image/png",
+      "width": 2560,
+      "height": 1440,
+      "duration_if_applicable": null,
+      "fixture_role": "scene_layout_only",
+      "rights_status": "project_generated_human_approved_locked_scene_asset",
+      "active_generation_input_allowed": true,
+      "selection_reason": "Locked 16:9 frontal scene supplies left/right depth and stable world geometry without action duty.",
+      "excluded_alternatives": [
+        "Wall-contact layouts",
+        "Unreviewed action references"
+      ],
+      "validation_status": "pass_existing_readable_hash_size_dimensions_rights_and_role",
+      "provenance_evidence": "productions/chi_yan_tian_qiong/assets/asset_registry.json"
+    },
+    {
+      "fixture_id": "CAL001-F07-IDENTITY-A",
+      "family_id": "F07",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+      "sha256": "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f",
+      "file_size_bytes": 1959523,
+      "media_type": "image/png",
+      "width": 1440,
+      "height": 2560,
+      "duration_if_applicable": null,
+      "fixture_role": "acting_subject_identity_only",
+      "rights_status": "project_generated_human_approved_locked_production_asset",
+      "active_generation_input_allowed": true,
+      "selection_reason": "Locked Fenshou project identity anchors the acting subject without supplying the force-reaction motion.",
+      "excluded_alternatives": [
+        "Airborne-flyout material",
+        "External action clips"
+      ],
+      "validation_status": "pass_existing_readable_hash_size_dimensions_rights_and_role",
+      "provenance_evidence": "productions/chi_yan_tian_qiong/assets/asset_registry.json"
+    },
+    {
+      "fixture_id": "CAL001-F07-IDENTITY-B",
+      "family_id": "F07",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+      "sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11",
+      "file_size_bytes": 3874061,
+      "media_type": "image/png",
+      "width": 1440,
+      "height": 2560,
+      "duration_if_applicable": null,
+      "fixture_role": "receiving_subject_identity_only",
+      "rights_status": "project_generated_human_approved_locked_identity_anchor",
+      "active_generation_input_allowed": true,
+      "selection_reason": "Locked Shuangji identity anchor protects the receiving subject during a safe grounded reaction.",
+      "excluded_alternatives": [
+        "Drifted prior frames",
+        "Injury or impact-reference media"
+      ],
+      "validation_status": "pass_existing_readable_hash_size_dimensions_rights_and_role",
+      "provenance_evidence": "productions/chi_yan_tian_qiong/assets/A-CH-B-IDENTITY-002_planning_record.json"
+    },
+    {
+      "fixture_id": "CAL001-F07-SCENE-01",
+      "family_id": "F07",
+      "path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+      "sha256": "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452",
+      "file_size_bytes": 4147285,
+      "media_type": "image/png",
+      "width": 2560,
+      "height": 1440,
+      "duration_if_applicable": null,
+      "fixture_role": "environment_feedback_and_layout_only",
+      "rights_status": "project_generated_human_approved_locked_scene_asset",
+      "active_generation_input_allowed": true,
+      "selection_reason": "Locked rainy 16:9 scene supports grounded rain and wet-floor feedback while excluding wall contact.",
+      "excluded_alternatives": [
+        "K270Q ground-slide result",
+        "Body-wall routes",
+        "Unfinished K271A action references"
+      ],
+      "validation_status": "pass_existing_readable_hash_size_dimensions_rights_and_role",
+      "provenance_evidence": "productions/chi_yan_tian_qiong/assets/asset_registry.json"
+    }
+  ]
+}

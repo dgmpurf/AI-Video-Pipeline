@@ -1,0 +1,82 @@
+{
+  "phase_id": "CAL-001-P1-R2",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F03-P1-R3",
+  "family_id": "F03",
+  "family_name": "IMAGE2VIDEO_CAMERA_CONTROL",
+  "prompt_architecture": "P1_LEGACY_DESCRIPTIVE",
+  "replicate_index": 3,
+  "task_type": "image2video",
+  "model_version": "seedance2.0_vip",
+  "duration": 5,
+  "ratio": null,
+  "ratio_rule": "inferred_from_input_image",
+  "video_resolution": "720p",
+  "poll": 0,
+  "prompt_path": "experiments/CAL-001/prompts/F03/CAL001-F03-P1_prompt.txt",
+  "prompt_sha256": "e906c4065c374eec221cb3392167acb29e63efcfc0a8c2690bbf6f957026f25a",
+  "prompt_payload_sha256": "271a7756746412bcd69e8a9af805d46426a40cc584f608f4a27030f47520f8ef",
+  "prompt_extract_rule": "text_between_provider_prompt_markers",
+  "fixture_ids": [
+    "CAL001-F03-SCENE-01"
+  ],
+  "fixture_paths": [
+    "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png"
+  ],
+  "fixture_sha256s": [
+    "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452"
+  ],
+  "fixture_order": [
+    "CAL001-F03-SCENE-01"
+  ],
+  "reference_duties": [
+    {
+      "fixture_id": "CAL001-F03-SCENE-01",
+      "duty": "scene geometry, frontal axis, wet-stone layout",
+      "forbidden_duty": "subject identity or action"
+    }
+  ],
+  "expected_result_images_count": 0,
+  "expected_result_videos_count": 1,
+  "expected_output_count": 1,
+  "planned_credit_cost": 70,
+  "output_dir": "experiments/CAL-001/runs/CAL001-F03-P1-R3",
+  "output_name": "CAL001-F03-P1-R3_result.mp4",
+  "review_artifact_plan": {
+    "applies_after_future_successful_download": true,
+    "metadata_for_every_successful_video": true,
+    "frame_times_seconds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "final_readable_frame": true,
+    "contact_sheet": "3x2",
+    "record_input_and_output_sha256": true,
+    "cut_by_default": false,
+    "final_master": false,
+    "locked": false,
+    "current_phase_action": "plan_only_no_artifact_creation"
+  },
+  "applicable_scoring_dimensions": [
+    "camera_compliance",
+    "subject_structure_stability",
+    "spatial_compliance",
+    "temporal_coherence",
+    "editability"
+  ],
+  "no_submit": true,
+  "submit_authorized": false,
+  "query_authorized": false,
+  "download_authorized": false,
+  "retry_authorized": false,
+  "resubmit_authorized": false,
+  "batch_authorized": false,
+  "final_master": false,
+  "locked": false,
+  "status": "planned_no_run",
+  "notes": "Fixed CAL-001A no-run definition. Replicates share prompt bytes, fixture order, settings, expected count, and planned cost; only experiment/package/output identity differs. Live cost and runtime command contract remain unverified until P3."
+}

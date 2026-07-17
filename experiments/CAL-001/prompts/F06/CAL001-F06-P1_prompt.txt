@@ -1,0 +1,16 @@
+<<<BEGIN_PROVIDER_PROMPT>>>
+In the locked frontal rainy temple layout, preserve Fenshou as the black-red armored male identity at frame-left foreground and Shuangji as the silver-blue female identity at frame-right midground. Both take one measured forward step while keeping their left/right and near/far relationship, separate silhouettes, and stable identities. Use a steady single shot. No combat contact, crossing, identity swap, duplicate subject, fused bodies, wall collision, or airborne motion.
+<<<END_PROVIDER_PROMPT>>>
+
+[CAL001_METADATA]
+family_id=F06
+family_name=MULTIMODAL_DUAL_IDENTITY_SPATIAL_BLOCKING
+prompt_architecture=P1_LEGACY_DESCRIPTIVE
+dominant_visible_result=Fenshou remains frame-left foreground and Shuangji frame-right midground while both take one measured forward step without crossing, swapping, duplicating, or blending.
+prompt_payload_sha256=dfe401cdc9c47e5d46664fb9ffcfbd61b9cf81bb28361c4acea33c7ede944d94
+prompt_payload_hash_scope=UTF-8 bytes between provider-prompt markers, LF normalized, one final LF included
+prompt_file_sha256_scope=recorded externally in package, manifest, inventories, and report to avoid self-hash circularity
+compact_negative_constraints_json=["no combat contact","no crossing","no identity swap","no duplicate subject","no fused bodies","no wall collision","no airborne motion"]
+applicable_source_rule_mapping_json=["sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md","sources/dreamina_cli_help_latest.md","sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md","Prompt Compiler conventional descriptive baseline; not intentionally defective"]
+visual_review_dimensions_json=["identity_stability","subject_structure_stability","spatial_compliance","prompt_goal_match","temporal_coherence"]
+provider_prompt_extract_rule=use only text between BEGIN_PROVIDER_PROMPT and END_PROVIDER_PROMPT markers

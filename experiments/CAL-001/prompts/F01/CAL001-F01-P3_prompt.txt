@@ -1,0 +1,16 @@
+<<<BEGIN_PROVIDER_PROMPT>>>
+A lone adult courier in a red rain cape pushes one loose bronze observatory shutter fully closed against strong wind in one clear continuous action. Subject anchor duty: preserve one adult courier, red rain cape, planted body, and readable effort; do not introduce another character or identity. Environment anchor duty: preserve one high-altitude bronze observatory, cold rain, blue-hour teal-and-copper light, and a single loose shutter; do not supply a second action or a scene change. Keep cinematic semi-realistic 3D style and one continuous shot. No existing IP, extra subject, multi-shot cut, text, logo, or static pose-out.
+<<<END_PROVIDER_PROMPT>>>
+
+[CAL001_METADATA]
+family_id=F01
+family_name=TEXT2VIDEO_WORLD_STYLE_ACTION
+prompt_architecture=P3_RESULT_FIRST_WITH_DUTIES
+dominant_visible_result=A lone adult courier in a red rain cape pushes one loose bronze observatory shutter fully closed against strong wind in one continuous action.
+prompt_payload_sha256=e666a67448fbe7cafe48c1e8d08f65cea586872bae804523bfd22775fa56769e
+prompt_payload_hash_scope=UTF-8 bytes between provider-prompt markers, LF normalized, one final LF included
+prompt_file_sha256_scope=recorded externally in package, manifest, inventories, and report to avoid self-hash circularity
+compact_negative_constraints_json=["no existing IP","no extra subject","no second action","no multi-shot cuts","no text or logo","no static pose-out"]
+applicable_source_rule_mapping_json=["sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md","sources/dreamina_cli_help_latest.md","sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md","Prompt Compiler sections 1 and 5 result-first plus reference duties"]
+visual_review_dimensions_json=["prompt_goal_match","action_readability","temporal_coherence","style_coherence","editability"]
+provider_prompt_extract_rule=use only text between BEGIN_PROVIDER_PROMPT and END_PROVIDER_PROMPT markers

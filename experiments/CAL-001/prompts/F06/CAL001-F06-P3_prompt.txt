@@ -1,0 +1,16 @@
+<<<BEGIN_PROVIDER_PROMPT>>>
+Fenshou remains frame-left foreground and Shuangji frame-right midground while both take one measured forward step without crossing, swapping, duplicating, or blending. Fenshou reference duty: black-red male identity and silhouette only. Shuangji reference duty: female face, silver-blue high ponytail, and blue-silver identity only. Scene reference duty: frontal rainy temple geometry only. No reference supplies action. Keep one steady shot; no combat contact, fused bodies, wall collision, or airborne motion.
+<<<END_PROVIDER_PROMPT>>>
+
+[CAL001_METADATA]
+family_id=F06
+family_name=MULTIMODAL_DUAL_IDENTITY_SPATIAL_BLOCKING
+prompt_architecture=P3_RESULT_FIRST_WITH_DUTIES
+dominant_visible_result=Fenshou remains frame-left foreground and Shuangji frame-right midground while both take one measured forward step without crossing, swapping, duplicating, or blending.
+prompt_payload_sha256=930290530bcb9c4ea24780f367e5582e77ca97bcc50c0dd9065f78e7b334ace7
+prompt_payload_hash_scope=UTF-8 bytes between provider-prompt markers, LF normalized, one final LF included
+prompt_file_sha256_scope=recorded externally in package, manifest, inventories, and report to avoid self-hash circularity
+compact_negative_constraints_json=["no combat contact","no crossing","no identity swap","no duplicate subject","no fused bodies","no wall collision","no airborne motion"]
+applicable_source_rule_mapping_json=["sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md","sources/dreamina_cli_help_latest.md","sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md","Prompt Compiler sections 1 and 5 result-first plus reference duties"]
+visual_review_dimensions_json=["identity_stability","subject_structure_stability","spatial_compliance","prompt_goal_match","temporal_coherence"]
+provider_prompt_extract_rule=use only text between BEGIN_PROVIDER_PROMPT and END_PROVIDER_PROMPT markers

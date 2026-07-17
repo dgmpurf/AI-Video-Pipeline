@@ -1,0 +1,16 @@
+<<<BEGIN_PROVIDER_PROMPT>>>
+Fenshou applies one short forearm pressure to Shuangji's raised guard; Shuangji yields one grounded half-step, rain and sleeves react, and both recover in place. Contact pressure is readable by 0.8s; the grounded half-step and wet-floor response complete by 1.8s; both regain stable readiness by 3.2s and keep breathing, rain, and sleeve motion alive through 5.0s. No injury, airborne flyout, wall contact, damage, magic blast, identity swap, extra subject, or pose-out.
+<<<END_PROVIDER_PROMPT>>>
+
+[CAL001_METADATA]
+family_id=F07
+family_name=MULTIMODAL_FORCE_REACTION_CAUSALITY
+prompt_architecture=P4_RESULT_FIRST_TIMED_COMPACT
+dominant_visible_result=Fenshou applies one short forearm pressure to Shuangji's raised guard; Shuangji yields one grounded half-step, rain and sleeves react, and both recover in place.
+prompt_payload_sha256=28fa7d61438df6186fd88391571eecbb1524c7d7baff2105bfe9614433960194
+prompt_payload_hash_scope=UTF-8 bytes between provider-prompt markers, LF normalized, one final LF included
+prompt_file_sha256_scope=recorded externally in package, manifest, inventories, and report to avoid self-hash circularity
+compact_negative_constraints_json=["no injury","no gore","no airborne flyout","no body-wall contact","no wall damage","no magic blast","no identity swap","no extra subject","no pose-out"]
+applicable_source_rule_mapping_json=["sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md","sources/dreamina_cli_help_latest.md","sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md","Prompt Compiler sections 1 and 3 result-first timed compact"]
+visual_review_dimensions_json=["identity_stability","causal_clarity","action_readability","reaction_readability","environment_response","temporal_coherence","editability"]
+provider_prompt_extract_rule=use only text between BEGIN_PROVIDER_PROMPT and END_PROVIDER_PROMPT markers

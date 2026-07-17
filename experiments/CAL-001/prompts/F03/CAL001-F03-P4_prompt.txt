@@ -1,0 +1,16 @@
+<<<BEGIN_PROVIDER_PROMPT>>>
+The camera performs one continuous slow push-in along the rainy temple's frontal center axis while all architecture and spatial relationships remain stable. Begin motion immediately, cover about half the distance by 2.5s, and arrive at a calm closer endpoint by 4.7s while rain continues through 5.0s. One push-in only. No pan, pull-out, orbit, cut, geometry warp, or new subject.
+<<<END_PROVIDER_PROMPT>>>
+
+[CAL001_METADATA]
+family_id=F03
+family_name=IMAGE2VIDEO_CAMERA_CONTROL
+prompt_architecture=P4_RESULT_FIRST_TIMED_COMPACT
+dominant_visible_result=The camera performs one continuous slow push-in along the rainy temple's frontal center axis while all architecture and spatial relationships remain stable.
+prompt_payload_sha256=f14e351b004ff6e23e648fe0b3a0696bf29f28602dbd224102f862dfba26b4a5
+prompt_payload_hash_scope=UTF-8 bytes between provider-prompt markers, LF normalized, one final LF included
+prompt_file_sha256_scope=recorded externally in package, manifest, inventories, and report to avoid self-hash circularity
+compact_negative_constraints_json=["no pan","no pull-out","no orbit","no camera cut","no geometry warp","no new subject"]
+applicable_source_rule_mapping_json=["sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md","sources/dreamina_cli_help_latest.md","sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md","Prompt Compiler sections 1 and 3 result-first timed compact"]
+visual_review_dimensions_json=["camera_compliance","subject_structure_stability","spatial_compliance","temporal_coherence","editability"]
+provider_prompt_extract_rule=use only text between BEGIN_PROVIDER_PROMPT and END_PROVIDER_PROMPT markers

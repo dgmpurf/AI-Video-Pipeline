@@ -1,0 +1,16 @@
+<<<BEGIN_PROVIDER_PROMPT>>>
+Preserve the locked rainy main-hall composition, both project characters, their structure, the wet stone floor, and the frontal scene axis. Fenshou makes one short planted weight shift, and that single motion causes one small readable splash at his boot while rain droplets, robe hems, and loose water respond naturally. Shuangji remains structurally stable and ready. No new strike, explosion, wall interaction, structural destruction, extra subject, or large camera move.
+<<<END_PROVIDER_PROMPT>>>
+
+[CAL001_METADATA]
+family_id=F04
+family_name=IMAGE2VIDEO_ENVIRONMENT_INTERACTION
+prompt_architecture=P1_LEGACY_DESCRIPTIVE
+dominant_visible_result=Fenshou makes one short planted weight shift, causing one small wet-floor splash while rain, robe hems, and loose droplets respond causally.
+prompt_payload_sha256=e3fd9a15e2b2f3822af9da24f9da4eb7a93f5df402f965f7b13904e4c24d3a91
+prompt_payload_hash_scope=UTF-8 bytes between provider-prompt markers, LF normalized, one final LF included
+prompt_file_sha256_scope=recorded externally in package, manifest, inventories, and report to avoid self-hash circularity
+compact_negative_constraints_json=["no new strike","no explosion","no wall interaction","no structural destruction","no extra subject","no large camera move"]
+applicable_source_rule_mapping_json=["sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md","sources/dreamina_cli_help_latest.md","sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md","Prompt Compiler conventional descriptive baseline; not intentionally defective"]
+visual_review_dimensions_json=["environment_response","causal_clarity","action_readability","subject_structure_stability","temporal_coherence"]
+provider_prompt_extract_rule=use only text between BEGIN_PROVIDER_PROMPT and END_PROVIDER_PROMPT markers

@@ -1,0 +1,16 @@
+<<<BEGIN_PROVIDER_PROMPT>>>
+Fenshou makes one short planted weight shift, causing one small wet-floor splash while rain, robe hems, and loose droplets respond causally. From 0.0s to 0.6s the weight shift begins; by 1.4s the boot plants and splash appears; from 1.4s to 3.0s droplets, rain, and hems settle; keep subtle rain and stance motion alive through 5.0s. No new strike, explosion, wall interaction, destruction, extra subject, or large camera move.
+<<<END_PROVIDER_PROMPT>>>
+
+[CAL001_METADATA]
+family_id=F04
+family_name=IMAGE2VIDEO_ENVIRONMENT_INTERACTION
+prompt_architecture=P4_RESULT_FIRST_TIMED_COMPACT
+dominant_visible_result=Fenshou makes one short planted weight shift, causing one small wet-floor splash while rain, robe hems, and loose droplets respond causally.
+prompt_payload_sha256=6f1bf877a491cbaad1559b662f71a0203d9a3975cac63dafe16fe99f767ef826
+prompt_payload_hash_scope=UTF-8 bytes between provider-prompt markers, LF normalized, one final LF included
+prompt_file_sha256_scope=recorded externally in package, manifest, inventories, and report to avoid self-hash circularity
+compact_negative_constraints_json=["no new strike","no explosion","no wall interaction","no structural destruction","no extra subject","no large camera move"]
+applicable_source_rule_mapping_json=["sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md","sources/dreamina_cli_help_latest.md","sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md","Prompt Compiler sections 1 and 3 result-first timed compact"]
+visual_review_dimensions_json=["environment_response","causal_clarity","action_readability","subject_structure_stability","temporal_coherence"]
+provider_prompt_extract_rule=use only text between BEGIN_PROVIDER_PROMPT and END_PROVIDER_PROMPT markers

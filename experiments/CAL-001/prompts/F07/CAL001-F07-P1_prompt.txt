@@ -1,0 +1,16 @@
+<<<BEGIN_PROVIDER_PROMPT>>>
+In the rainy frontal temple, preserve Fenshou's black-red male identity and Shuangji's silver-blue female identity as two separate grounded subjects. Fenshou applies one short controlled forearm pressure to Shuangji's raised guard; the pressure causes Shuangji to yield one grounded half-step, with a small wet-floor response and natural sleeve and rain motion, then both recover in place. No injury, gore, airborne flyout, body-wall contact, wall damage, magic blast, identity swap, extra subject, or static pose-out.
+<<<END_PROVIDER_PROMPT>>>
+
+[CAL001_METADATA]
+family_id=F07
+family_name=MULTIMODAL_FORCE_REACTION_CAUSALITY
+prompt_architecture=P1_LEGACY_DESCRIPTIVE
+dominant_visible_result=Fenshou applies one short forearm pressure to Shuangji's raised guard; Shuangji yields one grounded half-step, rain and sleeves react, and both recover in place.
+prompt_payload_sha256=ca90c5b50b7d244b6264b8ed3f23d4043bf490d25d672e2d05cfad49b487594a
+prompt_payload_hash_scope=UTF-8 bytes between provider-prompt markers, LF normalized, one final LF included
+prompt_file_sha256_scope=recorded externally in package, manifest, inventories, and report to avoid self-hash circularity
+compact_negative_constraints_json=["no injury","no gore","no airborne flyout","no body-wall contact","no wall damage","no magic blast","no identity swap","no extra subject","no pose-out"]
+applicable_source_rule_mapping_json=["sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md","sources/dreamina_cli_help_latest.md","sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md","Prompt Compiler conventional descriptive baseline; not intentionally defective"]
+visual_review_dimensions_json=["identity_stability","causal_clarity","action_readability","reaction_readability","environment_response","temporal_coherence","editability"]
+provider_prompt_extract_rule=use only text between BEGIN_PROVIDER_PROMPT and END_PROVIDER_PROMPT markers

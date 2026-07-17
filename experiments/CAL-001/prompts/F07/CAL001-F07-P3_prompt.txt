@@ -1,0 +1,16 @@
+<<<BEGIN_PROVIDER_PROMPT>>>
+Fenshou applies one short forearm pressure to Shuangji's raised guard; Shuangji yields one grounded half-step, rain and sleeves react, and both recover in place. Fenshou reference duty: acting-subject identity only. Shuangji reference duty: receiving-subject identity only. Scene reference duty: grounded rainy layout and wet-floor feedback only. References do not supply choreography. No injury, gore, airborne motion, body-wall contact, wall damage, magic blast, identity swap, extra subject, or pose-out.
+<<<END_PROVIDER_PROMPT>>>
+
+[CAL001_METADATA]
+family_id=F07
+family_name=MULTIMODAL_FORCE_REACTION_CAUSALITY
+prompt_architecture=P3_RESULT_FIRST_WITH_DUTIES
+dominant_visible_result=Fenshou applies one short forearm pressure to Shuangji's raised guard; Shuangji yields one grounded half-step, rain and sleeves react, and both recover in place.
+prompt_payload_sha256=b15eac40fb6ed43cdfd3f24be82e2328b81956c6e922d31e295d3988f0af99f0
+prompt_payload_hash_scope=UTF-8 bytes between provider-prompt markers, LF normalized, one final LF included
+prompt_file_sha256_scope=recorded externally in package, manifest, inventories, and report to avoid self-hash circularity
+compact_negative_constraints_json=["no injury","no gore","no airborne flyout","no body-wall contact","no wall damage","no magic blast","no identity swap","no extra subject","no pose-out"]
+applicable_source_rule_mapping_json=["sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md","sources/dreamina_cli_help_latest.md","sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md","Prompt Compiler sections 1 and 5 result-first plus reference duties"]
+visual_review_dimensions_json=["identity_stability","causal_clarity","action_readability","reaction_readability","environment_response","temporal_coherence","editability"]
+provider_prompt_extract_rule=use only text between BEGIN_PROVIDER_PROMPT and END_PROVIDER_PROMPT markers

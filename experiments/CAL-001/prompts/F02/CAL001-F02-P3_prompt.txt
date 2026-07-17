@@ -1,0 +1,16 @@
+<<<BEGIN_PROVIDER_PROMPT>>>
+The black-red armored male warrior takes one deliberate grounded step forward while preserving his face, silhouette, armor, and body proportions. Input-image duty: identity, face, hair, black-red armor, full-body silhouette, and proportions only; forbidden duty: do not copy a new camera move or invent a second action. Lock one subject and one step, with natural cloth and breathing follow-through. No identity drift, extra person, costume redesign, jump, large camera move, or pose-out.
+<<<END_PROVIDER_PROMPT>>>
+
+[CAL001_METADATA]
+family_id=F02
+family_name=IMAGE2VIDEO_SINGLE_IDENTITY_MOTION
+prompt_architecture=P3_RESULT_FIRST_WITH_DUTIES
+dominant_visible_result=The black-red armored male warrior takes one deliberate grounded step forward while preserving face, silhouette, armor, and body proportions.
+prompt_payload_sha256=33bc4f2fa5707ed1363ddf173860cdee5cf6d491c9642479d573814541f61eab
+prompt_payload_hash_scope=UTF-8 bytes between provider-prompt markers, LF normalized, one final LF included
+prompt_file_sha256_scope=recorded externally in package, manifest, inventories, and report to avoid self-hash circularity
+compact_negative_constraints_json=["no identity drift","no costume redesign","no extra person","no large camera move","no jump","no pose-out"]
+applicable_source_rule_mapping_json=["sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md","sources/dreamina_cli_help_latest.md","sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md","Prompt Compiler sections 1 and 5 result-first plus reference duties"]
+visual_review_dimensions_json=["identity_stability","subject_structure_stability","action_readability","temporal_coherence","editability"]
+provider_prompt_extract_rule=use only text between BEGIN_PROVIDER_PROMPT and END_PROVIDER_PROMPT markers

@@ -1,0 +1,91 @@
+{
+  "phase_id": "CAL-001-P1-R2",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F05-P4-R1",
+  "family_id": "F05",
+  "family_name": "FRAMES2VIDEO_CONTROLLED_STATE_TRANSITION",
+  "prompt_architecture": "P4_RESULT_FIRST_TIMED_COMPACT",
+  "replicate_index": 1,
+  "task_type": "frames2video",
+  "model_version": "seedance2.0_vip",
+  "duration": 5,
+  "ratio": null,
+  "ratio_rule": "inferred_from_first_frame",
+  "video_resolution": "720p",
+  "poll": 0,
+  "prompt_path": "experiments/CAL-001/prompts/F05/CAL001-F05-P4_prompt.txt",
+  "prompt_sha256": "2000d4e703d3235fece5db90fc21f778ccf35b463d01134f528254a581c2dadb",
+  "prompt_payload_sha256": "e3d947c901fb5ad5251e5195e583f8d96bc305520aeee137f6e8cadc0615011c",
+  "prompt_extract_rule": "text_between_provider_prompt_markers",
+  "fixture_ids": [
+    "CAL001-F05-FIRST-01",
+    "CAL001-F05-LAST-01"
+  ],
+  "fixture_paths": [
+    "productions/chi_yan_tian_qiong/derived_refs/SHOT-02-V008_start_frame_candidates/SHOT-02-V008_start_candidate_1p15s.png",
+    "productions/chi_yan_tian_qiong/derived_refs/SHOT-02-V008_start_frame_candidates/SHOT-02-V008_start_candidate_1p30s.png"
+  ],
+  "fixture_sha256s": [
+    "82deaa75293ae75be3bd2b4d1b2da82ce3e4f263a5380ed2ed01a4ec5b3030df",
+    "56244830c24cb08c3d0e694af9e146a75ca342da680ccfd5c26a59b9168a5c09"
+  ],
+  "fixture_order": [
+    "CAL001-F05-FIRST-01",
+    "CAL001-F05-LAST-01"
+  ],
+  "reference_duties": [
+    {
+      "fixture_id": "CAL001-F05-FIRST-01",
+      "duty": "exact start identity, composition, and energetic aftershock state",
+      "forbidden_duty": "final settled state"
+    },
+    {
+      "fixture_id": "CAL001-F05-LAST-01",
+      "duty": "exact end identity, composition, and settled recovery state",
+      "forbidden_duty": "new scene or new action"
+    }
+  ],
+  "expected_result_images_count": 0,
+  "expected_result_videos_count": 1,
+  "expected_output_count": 1,
+  "planned_credit_cost": 70,
+  "output_dir": "experiments/CAL-001/runs/CAL001-F05-P4-R1",
+  "output_name": "CAL001-F05-P4-R1_result.mp4",
+  "review_artifact_plan": {
+    "applies_after_future_successful_download": true,
+    "metadata_for_every_successful_video": true,
+    "frame_times_seconds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "final_readable_frame": true,
+    "contact_sheet": "3x2",
+    "record_input_and_output_sha256": true,
+    "cut_by_default": false,
+    "final_master": false,
+    "locked": false,
+    "current_phase_action": "plan_only_no_artifact_creation"
+  },
+  "applicable_scoring_dimensions": [
+    "start_frame_fidelity",
+    "end_frame_fidelity",
+    "subject_structure_stability",
+    "temporal_coherence",
+    "editability"
+  ],
+  "no_submit": true,
+  "submit_authorized": false,
+  "query_authorized": false,
+  "download_authorized": false,
+  "retry_authorized": false,
+  "resubmit_authorized": false,
+  "batch_authorized": false,
+  "final_master": false,
+  "locked": false,
+  "status": "planned_no_run",
+  "notes": "Fixed CAL-001A no-run definition. Replicates share prompt bytes, fixture order, settings, expected count, and planned cost; only experiment/package/output identity differs. Live cost and runtime command contract remain unverified until P3."
+}

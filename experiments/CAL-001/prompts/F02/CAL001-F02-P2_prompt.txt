@@ -1,0 +1,16 @@
+<<<BEGIN_PROVIDER_PROMPT>>>
+The black-red armored male warrior takes one deliberate grounded step forward while preserving his face, silhouette, armor, and body proportions. Keep the input identity stable in one restrained shot with natural cloth and breathing motion. No extra person, costume redesign, jump, large camera move, or pose-out.
+<<<END_PROVIDER_PROMPT>>>
+
+[CAL001_METADATA]
+family_id=F02
+family_name=IMAGE2VIDEO_SINGLE_IDENTITY_MOTION
+prompt_architecture=P2_RESULT_FIRST_CONCISE
+dominant_visible_result=The black-red armored male warrior takes one deliberate grounded step forward while preserving face, silhouette, armor, and body proportions.
+prompt_payload_sha256=bb57321493c78b4e81bc4042fe409cfebe841725108f8cebdfd404274fa69a39
+prompt_payload_hash_scope=UTF-8 bytes between provider-prompt markers, LF normalized, one final LF included
+prompt_file_sha256_scope=recorded externally in package, manifest, inventories, and report to avoid self-hash circularity
+compact_negative_constraints_json=["no identity drift","no costume redesign","no extra person","no large camera move","no jump","no pose-out"]
+applicable_source_rule_mapping_json=["sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md","sources/dreamina_cli_help_latest.md","sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md","Prompt Compiler section 1 result-first concise"]
+visual_review_dimensions_json=["identity_stability","subject_structure_stability","action_readability","temporal_coherence","editability"]
+provider_prompt_extract_rule=use only text between BEGIN_PROVIDER_PROMPT and END_PROVIDER_PROMPT markers

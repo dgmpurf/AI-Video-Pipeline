@@ -1,0 +1,302 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "CAL001_experiment_record.schema.json",
+  "title": "CAL-001 Experiment Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "experiment_id",
+    "submit_attempted",
+    "submit_created_task",
+    "submit_id",
+    "submit_status",
+    "query_count",
+    "final_gen_status",
+    "result_count_match",
+    "download_status",
+    "local_media_path",
+    "local_media_sha256",
+    "actual_credit_cost",
+    "stop_condition_triggered",
+    "prompt_goal_match",
+    "identity_stability",
+    "subject_structure_stability",
+    "action_readability",
+    "causal_clarity",
+    "reaction_readability",
+    "spatial_compliance",
+    "camera_compliance",
+    "environment_response",
+    "start_frame_fidelity",
+    "end_frame_fidelity",
+    "temporal_coherence",
+    "style_coherence",
+    "editability",
+    "primary_failure_label",
+    "secondary_failure_labels",
+    "unexpected_success_labels",
+    "dominant_visible_result",
+    "best_usable_window",
+    "reviewer_notes",
+    "human_review_status",
+    "candidate_status"
+  ],
+  "properties": {
+    "experiment_id": {
+      "type": "string",
+      "pattern": "^CAL001-F0[1-7]-P[1-4]-R[1-3]$"
+    },
+    "submit_attempted": {
+      "type": "boolean",
+      "default": false
+    },
+    "submit_created_task": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "default": false
+    },
+    "submit_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "submit_status": {
+      "type": "string",
+      "enum": [
+        "not_attempted",
+        "task_created",
+        "failed_no_task",
+        "unknown"
+      ]
+    },
+    "query_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    },
+    "final_gen_status": {
+      "type": "string",
+      "enum": [
+        "not_queried",
+        "querying",
+        "success",
+        "fail",
+        "unknown"
+      ]
+    },
+    "result_count_match": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "download_status": {
+      "type": "string",
+      "enum": [
+        "not_attempted",
+        "not_authorized",
+        "success",
+        "failure",
+        "not_applicable"
+      ]
+    },
+    "local_media_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "local_media_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "actual_credit_cost": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "stop_condition_triggered": {
+      "type": "boolean",
+      "default": false
+    },
+    "prompt_goal_match": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "identity_stability": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "subject_structure_stability": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "action_readability": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "causal_clarity": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "reaction_readability": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "spatial_compliance": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "camera_compliance": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "environment_response": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "start_frame_fidelity": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "end_frame_fidelity": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "temporal_coherence": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "style_coherence": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "editability": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "primary_failure_label": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "secondary_failure_labels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "unexpected_success_labels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "dominant_visible_result": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "best_usable_window": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reviewer_notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "human_review_status": {
+      "type": "string",
+      "enum": [
+        "not_started",
+        "in_review",
+        "completed"
+      ]
+    },
+    "candidate_status": {
+      "type": "string",
+      "enum": [
+        "unreviewed",
+        "technical_failure",
+        "visual_fail",
+        "mixed",
+        "usable_with_caveats",
+        "family_winner_candidate",
+        "global_template_candidate",
+        "evidence_only"
+      ]
+    }
+  }
+}
