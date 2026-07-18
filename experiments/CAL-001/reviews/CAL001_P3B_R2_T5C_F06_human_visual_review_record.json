@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3B-R2-T5C",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F06-P2-R1",
+  "submit_id": "9331ef8d-6f1f-4531-913a-dc844293d509",
+  "reviewer": "human_user_with_ChatGPT_Pro_assisted_visual_analysis_and_Think_post_review_audit",
+  "review_date": "2026-07-18",
+  "review_status": "reviewed",
+  "human_review_status": "reviewed",
+  "dataset_human_review_status": "completed",
+  "dataset_status_mapping": "completed is the existing schema-equivalent value for the human review state reviewed",
+  "experiment_validity_class": "A_VALID_SUCCESS",
+  "candidate_status": "usable",
+  "dominant_visible_result": "Fenshou and Shuangji advance while preserving separate identities, left-right blocking, and the intended foreground-midground relationship.",
+  "scores": {
+    "prompt_goal_match": 4,
+    "action_readability": 4,
+    "temporal_coherence": 5,
+    "style_coherence": 5,
+    "editability": 5
+  },
+  "visual_scores_assigned": true,
+  "family_specific_findings": {
+    "identity_stability_Fenshou": 5,
+    "identity_stability_Shuangji": 5,
+    "subject_structure_stability": 5,
+    "Fenshou_frame_left": true,
+    "Fenshou_foreground": true,
+    "Shuangji_frame_right": true,
+    "Shuangji_midground": true,
+    "left_right_preserved": true,
+    "near_far_preserved": true,
+    "both_complete_one_measured_step": "mostly_true",
+    "crossing": false,
+    "identity_swap": false,
+    "duplication": false,
+    "body_blending": false,
+    "combat_contact": false,
+    "camera_motion_substitution": false
+  },
+  "best_usable_window": {
+    "start_seconds": 1.0,
+    "end_seconds": 4.6
+  },
+  "weak_or_invalid_windows": [],
+  "primary_failure_label": null,
+  "secondary_notes": [
+    "single_step_endpoint_slightly_soft",
+    "mild_late_motion_continuation"
+  ],
+  "systemic_issue_found": false,
+  "safe_for_dataset_scoring": true,
+  "safe_to_continue_post_canary_decision": true,
+  "source_media_path": "experiments/CAL-001/runs/CAL001-F06-P2-R1/9331ef8d-6f1f-4531-913a-dc844293d509_video_1.mp4",
+  "source_media_sha256": "3bfd237ed2da9911ad6829335bb267471afa46dfa68e4ddccd0c0fa49119fb14",
+  "technical_validation_reference": {
+    "path": "experiments/CAL-001/execution_records/P3B_R2_T4/CAL001-F06-P2-R1_technical_execution_record.json",
+    "sha256": "52dd3a1c69c440b1fac7bf2b5568e9c25a7e617e38ad02d123cc7658815644e5",
+    "validation_pass": true
+  },
+  "family_winner": false,
+  "global_template_candidate": false,
+  "execution_authority_active": false,
+  "remaining_noncanary_tasks_authorized": false,
+  "CAL001B_authorized": false,
+  "final_master": false,
+  "locked": false
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3B-R2-T5C",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F02-P2-R1",
+  "submit_id": "bc30902f-2636-4ac9-867b-549eea6319d0",
+  "reviewer": "human_user_with_ChatGPT_Pro_assisted_visual_analysis_and_Think_post_review_audit",
+  "review_date": "2026-07-18",
+  "review_status": "reviewed",
+  "human_review_status": "reviewed",
+  "dataset_human_review_status": "completed",
+  "dataset_status_mapping": "completed is the existing schema-equivalent value for the human review state reviewed",
+  "experiment_validity_class": "B_VALID_FAILURE_USABLE_FOR_PROMPT_ARCHITECTURE_COMPARISON",
+  "candidate_status": "usable_with_caveats",
+  "dominant_visible_result": "A single black-red armored warrior preserves his identity and gradually shifts forward with subtle body and leg motion, but the intended deliberate grounded step is not clearly completed.",
+  "scores": {
+    "prompt_goal_match": 3,
+    "action_readability": 3,
+    "temporal_coherence": 5,
+    "style_coherence": 5,
+    "editability": 4
+  },
+  "visual_scores_assigned": true,
+  "family_specific_findings": {
+    "identity_stability": "pass",
+    "face_stability": "pass",
+    "hair_stability": "pass",
+    "armor_structure_stability": "pass",
+    "body_proportion_stability": "pass",
+    "grounded_step_started": "partial_pass",
+    "swing_leg_readable": "partial",
+    "planted_foot_readable": "partial_fail",
+    "center_of_mass_transfer_readable": "partial_pass",
+    "one_step_completed": false,
+    "camera_motion_present": "partial",
+    "camera_motion_substitution": "partial",
+    "static_image_tendency": "medium",
+    "extra_person": false,
+    "costume_redesign": false,
+    "jump": false,
+    "pose_out": false
+  },
+  "best_usable_window": {
+    "start_seconds": 1.0,
+    "end_seconds": 3.5
+  },
+  "weak_or_invalid_windows": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.0
+    },
+    {
+      "start_seconds": 3.5,
+      "end_seconds": 5.0
+    }
+  ],
+  "primary_failure_label": "grounded_step_underpowered",
+  "secondary_failure_labels": [
+    "insufficient_leg_motion",
+    "weak_foot_plant",
+    "motion_amplitude_low",
+    "camera_motion_contribution",
+    "pose_transition_bias"
+  ],
+  "systemic_issue_found": false,
+  "safe_for_dataset_scoring": true,
+  "safe_to_continue_post_canary_decision": true,
+  "source_media_path": "experiments/CAL-001/runs/CAL001-F02-P2-R1/bc30902f-2636-4ac9-867b-549eea6319d0_video_1.mp4",
+  "source_media_sha256": "6d1297d1b34e8998c0f83f4c1be6299652d76ba786b403011af049857a257b69",
+  "technical_validation_reference": {
+    "path": "experiments/CAL-001/execution_records/P3B_R2_T4/CAL001-F02-P2-R1_technical_execution_record.json",
+    "sha256": "633e9d13a9d5d442369b1671ce3d4e12c88bce30ca0c40e3f7284938a6f7660f",
+    "validation_pass": true
+  },
+  "family_winner": false,
+  "global_template_candidate": false,
+  "execution_authority_active": false,
+  "remaining_noncanary_tasks_authorized": false,
+  "CAL001B_authorized": false,
+  "final_master": false,
+  "locked": false
+}

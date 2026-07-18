@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3B-R2-T5C",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F03-P2-R1",
+  "submit_id": "72e47447-bcc0-4e21-bd6d-02fcb8fbf22d",
+  "reviewer": "human_user_with_ChatGPT_Pro_assisted_visual_analysis_and_Think_post_review_audit",
+  "review_date": "2026-07-18",
+  "review_status": "reviewed",
+  "human_review_status": "reviewed",
+  "dataset_human_review_status": "completed",
+  "dataset_status_mapping": "completed is the existing schema-equivalent value for the human review state reviewed",
+  "experiment_validity_class": "A_VALID_SUCCESS",
+  "candidate_status": "usable",
+  "dominant_visible_result": "The camera performs a continuous frontal push-in through the rainy temple courtyard toward the central hall while preserving the center axis, architectural symmetry, and spatial continuity.",
+  "scores": {
+    "prompt_goal_match": 5,
+    "action_readability": 5,
+    "temporal_coherence": 5,
+    "style_coherence": 5,
+    "editability": 5
+  },
+  "score_interpretation": {
+    "action_readability": "camera-motion readability"
+  },
+  "visual_scores_assigned": true,
+  "family_specific_findings": {
+    "camera_compliance": "pass",
+    "push_in_present": true,
+    "push_in_continuous": true,
+    "movement_begins_early": true,
+    "closer_endpoint_readable": true,
+    "frontal_center_axis_preserved": true,
+    "vanishing_point_stable": true,
+    "spatial_compliance": "pass",
+    "architecture_stability": "pass",
+    "roofline_stability": "pass",
+    "pillar_stability": "pass",
+    "doorway_geometry_stability": "pass",
+    "wet_floor_geometry_stability": "pass",
+    "digital_zoom_tendency": "low",
+    "pan": false,
+    "pull_out": false,
+    "orbit": false,
+    "camera_cut": false,
+    "geometry_warp": false,
+    "new_subject": false
+  },
+  "best_usable_window": {
+    "start_seconds": 0.5,
+    "end_seconds": 5.0
+  },
+  "weak_or_invalid_windows": [],
+  "primary_failure_label": null,
+  "secondary_notes": [
+    "push_in_speed_conservative",
+    "cinematic_motion_strength_moderate"
+  ],
+  "systemic_issue_found": false,
+  "safe_for_dataset_scoring": true,
+  "safe_to_continue_post_canary_decision": true,
+  "source_media_path": "experiments/CAL-001/runs/CAL001-F03-P2-R1/72e47447-bcc0-4e21-bd6d-02fcb8fbf22d_video_1.mp4",
+  "source_media_sha256": "3eae1d0d07490d884c1fd5a3473ce95edfee8347cff086e0d5650375a4e67327",
+  "technical_validation_reference": {
+    "path": "experiments/CAL-001/execution_records/P3B_R2_T4/CAL001-F03-P2-R1_technical_execution_record.json",
+    "sha256": "79b32a9558796ac3b96c2af564d4f4a928458da6e5a8a69ea31443b944adb9e5",
+    "validation_pass": true
+  },
+  "family_winner": false,
+  "global_template_candidate": false,
+  "execution_authority_active": false,
+  "remaining_noncanary_tasks_authorized": false,
+  "CAL001B_authorized": false,
+  "final_master": false,
+  "locked": false
+}

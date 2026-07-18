@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3B-R2-T5C",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F04-P2-R1",
+  "submit_id": "2ea258b6-33b3-4b48-a01e-01302891de35",
+  "reviewer": "human_user_with_ChatGPT_Pro_assisted_visual_analysis_and_Think_post_review_audit",
+  "review_date": "2026-07-18",
+  "review_status": "reviewed",
+  "human_review_status": "reviewed",
+  "dataset_human_review_status": "completed",
+  "dataset_status_mapping": "completed is the existing schema-equivalent value for the human review state reviewed",
+  "experiment_validity_class": "B_VALID_FAILURE_USABLE_FOR_PROMPT_ARCHITECTURE_COMPARISON",
+  "candidate_status": "usable_with_caveats",
+  "dominant_visible_result": "Fenshou performs a controlled movement in a rainy courtyard with visible wet-floor and ambient environmental motion, but the causal connection between his planted weight shift and the water response remains weak.",
+  "scores": {
+    "prompt_goal_match": 3,
+    "action_readability": 3,
+    "temporal_coherence": 5,
+    "style_coherence": 5,
+    "editability": 4
+  },
+  "visual_scores_assigned": true,
+  "family_specific_findings": {
+    "Fenshou_identity_stability": "pass",
+    "Shuangji_identity_stability": "pass",
+    "Fenshou_weight_shift_present": "pass",
+    "planted_weight_shift_readable": "partial",
+    "foot_plant_readable": "partial_fail",
+    "splash_present": "partial_pass",
+    "splash_location_correct": "partial",
+    "splash_timing_correct": "partial",
+    "splash_caused_by_weight_shift": "false_or_unproven",
+    "robe_hem_response": "partial",
+    "droplet_response": "partial",
+    "rain_response": "ambient_stable",
+    "wet_floor_response": "partial",
+    "causal_clarity": "low",
+    "Shuangji_structurally_stable": true,
+    "new_strike": false,
+    "explosion": false,
+    "wall_interaction": false,
+    "structural_destruction": false,
+    "extra_subject": false,
+    "large_camera_move": false,
+    "camera_motion_substitution": "low",
+    "sustained_contact_lock": false
+  },
+  "best_usable_window": {
+    "start_seconds": 1.0,
+    "end_seconds": 3.5
+  },
+  "weak_or_invalid_windows": [
+    {
+      "start_seconds": 3.5,
+      "end_seconds": 5.0
+    }
+  ],
+  "primary_failure_label": "environment_feedback_causality_underpowered",
+  "secondary_failure_labels": [
+    "foot_contact_underreadable",
+    "splash_timing_weak",
+    "ambient_rain_dominates",
+    "causal_feedback_ambiguous",
+    "motion_result_low_amplitude"
+  ],
+  "systemic_issue_found": false,
+  "safe_for_dataset_scoring": true,
+  "safe_to_continue_post_canary_decision": true,
+  "source_media_path": "experiments/CAL-001/runs/CAL001-F04-P2-R1/2ea258b6-33b3-4b48-a01e-01302891de35_video_1.mp4",
+  "source_media_sha256": "5fc8e692bbb85a54d909119d907f098dc4f6fcfaa2fb3d58febaff757aa3e32c",
+  "technical_validation_reference": {
+    "path": "experiments/CAL-001/execution_records/P3B_R2_T4/CAL001-F04-P2-R1_technical_execution_record.json",
+    "sha256": "963e96287627378da5d00c82c58465e729bf4f92b3339c0e9890b58bc7305b69",
+    "validation_pass": true
+  },
+  "family_winner": false,
+  "global_template_candidate": false,
+  "execution_authority_active": false,
+  "remaining_noncanary_tasks_authorized": false,
+  "CAL001B_authorized": false,
+  "final_master": false,
+  "locked": false
+}

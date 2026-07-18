@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3B-R2-T5C",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F07-P2-R1",
+  "submit_id": "5a3da27e-3a70-4410-9824-1116678464fc",
+  "reviewer": "human_user_with_ChatGPT_Pro_assisted_visual_analysis_and_Think_post_review_audit",
+  "review_date": "2026-07-18",
+  "review_status": "reviewed",
+  "human_review_status": "reviewed",
+  "dataset_human_review_status": "completed",
+  "dataset_status_mapping": "completed is the existing schema-equivalent value for the human review state reviewed",
+  "experiment_validity_class": "B_VALID_FAILURE_USABLE_FOR_PROMPT_ARCHITECTURE_COMPARISON",
+  "candidate_status": "usable_with_caveats",
+  "dominant_visible_result": "Fenshou advances into Shuangji's raised guard and both sustain a controlled close-range pressure exchange before recovering, but the receiving half-step and force transfer remain underpowered.",
+  "scores": {
+    "prompt_goal_match": 3,
+    "action_readability": 3,
+    "temporal_coherence": 5,
+    "style_coherence": 5,
+    "editability": 4
+  },
+  "visual_scores_assigned": true,
+  "family_specific_findings": {
+    "identity_stability": 5,
+    "Fenshou_forearm_pressure_readable": "partial_pass",
+    "Shuangji_guard_readable": true,
+    "contact_timing": true,
+    "force_direction_readable": "true_but_weak",
+    "Shuangji_grounded_half_step_readable": "partial_fail",
+    "reaction_follows_force": "partial",
+    "both_recover_in_place": true,
+    "sleeve_response": "visible_but_weakly_causal",
+    "rain_or_wet_floor_response": "ambiguous_ambient_vs_causal",
+    "false_mutual_pose": "moderate",
+    "fused_contact": false,
+    "injury": false,
+    "airborne_motion": false,
+    "wall_contact": false,
+    "magic_effect": false,
+    "camera_motion_substitution": false
+  },
+  "best_usable_window": {
+    "start_seconds": 0.6,
+    "end_seconds": 3.2
+  },
+  "weak_or_invalid_windows": [
+    {
+      "start_seconds": 3.3,
+      "end_seconds": 5.0
+    }
+  ],
+  "primary_failure_label": "force_reaction_causality_underpowered",
+  "secondary_failure_labels": [
+    "grounded_half_step_underreadable",
+    "reaction_amplitude_low",
+    "contact_hold_too_long",
+    "environmental_feedback_ambiguous",
+    "pose_hold_tendency"
+  ],
+  "systemic_issue_found": false,
+  "safe_for_dataset_scoring": true,
+  "safe_to_continue_post_canary_decision": true,
+  "source_media_path": "experiments/CAL-001/runs/CAL001-F07-P2-R1/5a3da27e-3a70-4410-9824-1116678464fc_video_1.mp4",
+  "source_media_sha256": "e2912cca0acfcec913371b9dd62436c321632eff93e3e805b6b23a1665343412",
+  "technical_validation_reference": {
+    "path": "experiments/CAL-001/execution_records/P3B_R2_T4/CAL001-F07-P2-R1_technical_execution_record.json",
+    "sha256": "a5bd525cc8a2f825c25a623144408453f40b287cb7ea509cc3e77ba16f6559da",
+    "validation_pass": true
+  },
+  "family_winner": false,
+  "global_template_candidate": false,
+  "execution_authority_active": false,
+  "remaining_noncanary_tasks_authorized": false,
+  "CAL001B_authorized": false,
+  "final_master": false,
+  "locked": false
+}

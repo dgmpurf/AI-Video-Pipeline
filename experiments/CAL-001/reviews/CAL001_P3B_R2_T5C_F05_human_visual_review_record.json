@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3B-R2-T5C",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F05-P2-R1",
+  "submit_id": "c1ce88e5-3849-4279-973a-dc7eaa09aa0d",
+  "reviewer": "human_user_with_ChatGPT_Pro_assisted_visual_analysis_and_Think_post_review_audit",
+  "review_date": "2026-07-18",
+  "review_status": "reviewed",
+  "human_review_status": "reviewed",
+  "dataset_human_review_status": "completed",
+  "dataset_status_mapping": "completed is the existing schema-equivalent value for the human review state reviewed",
+  "experiment_validity_class": "A_VALID_SUCCESS",
+  "candidate_status": "usable",
+  "dominant_visible_result": "The supplied rainy combat state is smoothly interpolated from the slightly more energetic first frame into the slightly more settled final frame without replacing the scene or identities.",
+  "scores": {
+    "prompt_goal_match": 4,
+    "action_readability": 3,
+    "temporal_coherence": 5,
+    "style_coherence": 5,
+    "editability": 4
+  },
+  "visual_scores_assigned": true,
+  "family_specific_findings": {
+    "start_frame_fidelity": 4,
+    "end_frame_fidelity": 4,
+    "transition_direction_correct": true,
+    "transition_smoothness": 5,
+    "identity_and_scene_preservation": 5,
+    "residual_aftershock_visible_at_start": "true_but_subtle",
+    "settled_recovery_visible_at_end": "true_but_subtle",
+    "forbidden_new_attack": false,
+    "forbidden_second_shockwave": false,
+    "cut_or_dissolve_failure": false,
+    "frame_reversal": false
+  },
+  "best_usable_window": {
+    "start_seconds": 0.0,
+    "end_seconds": 5.0
+  },
+  "weak_or_invalid_windows": [],
+  "primary_failure_label": null,
+  "secondary_notes": [
+    "narrow_reference_state_gap",
+    "transition_requires_endpoint_comparison"
+  ],
+  "systemic_issue_found": false,
+  "safe_for_dataset_scoring": true,
+  "safe_to_continue_post_canary_decision": true,
+  "source_media_path": "experiments/CAL-001/runs/CAL001-F05-P2-R1/c1ce88e5-3849-4279-973a-dc7eaa09aa0d_video_1.mp4",
+  "source_media_sha256": "06e771faa635fccc08f64b34fd01d279b12301b8bb3fbc5aebd3494c0ef5946c",
+  "technical_validation_reference": {
+    "path": "experiments/CAL-001/execution_records/P3B_R2_T4/CAL001-F05-P2-R1_technical_execution_record.json",
+    "sha256": "9dee836fe2e6f5cef1a4da7fc6923d7f58eca7e348cb665fdc6d93916a3b8962",
+    "validation_pass": true
+  },
+  "family_winner": false,
+  "global_template_candidate": false,
+  "execution_authority_active": false,
+  "remaining_noncanary_tasks_authorized": false,
+  "CAL001B_authorized": false,
+  "final_master": false,
+  "locked": false
+}
