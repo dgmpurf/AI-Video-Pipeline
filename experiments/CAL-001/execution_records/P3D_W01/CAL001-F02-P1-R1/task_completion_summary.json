@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3D-W01",
+  "wave_id": "W01",
+  "experiment_id": "CAL001-F02-P1-R1",
+  "task_state": "technically_completed",
+  "submit_id": "b17148c2-952d-435b-bf37-b6cf6c05121d",
+  "logid": "2026071902375216925404700871857AC",
+  "credit_count": 70,
+  "credit_delta": 70,
+  "query_count": 2,
+  "download_count": 1,
+  "media_path": "experiments/CAL-001/runs/CAL001-F02-P1-R1/b17148c2-952d-435b-bf37-b6cf6c05121d_video_1.mp4",
+  "media_sha256": "e09eb8e1bf92ad7b4d71dea4ad9b0674ff53fb9e89b6e1ea56f6f63889480efb",
+  "review_metadata_path": "experiments/CAL-001/runs/CAL001-F02-P1-R1/review_artifacts/CAL001-F02-P1-R1_review_metadata.json",
+  "technical_record_path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F02-P1-R1_technical_execution_record.json",
+  "dataset_rows_updated": 1,
+  "visual_scores_assigned": false,
+  "final_master": false,
+  "locked": false,
+  "completed_at": "2026-07-18T18:42:46.838176Z"
+}

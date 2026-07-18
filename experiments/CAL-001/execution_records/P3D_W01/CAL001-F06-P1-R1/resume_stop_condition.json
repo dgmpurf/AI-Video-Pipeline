@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3D-W01",
+  "wave_id": "W01",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "stop_condition": "submit credit_count is absent or nonnumeric",
+  "task_terminal_state": "stopped_anomaly",
+  "macro_state": "STOPPED_AUTHORITY_CLOSED",
+  "historical_false_positive_stop_preserved": true,
+  "execution_authority_active": false,
+  "remaining_noncanary_tasks_authorized": false,
+  "retry_count": 0,
+  "resubmit_count": 0,
+  "final_master": false,
+  "locked": false,
+  "recorded_at": "2026-07-18T18:59:35.602145Z"
+}

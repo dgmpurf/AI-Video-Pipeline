@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3D-W01",
+  "wave_id": "W01",
+  "operation_id": "resume-post-submit-user-credit-001",
+  "operation_kind": "preflight",
+  "operation_count": 1,
+  "experiment_id": "CAL001-F02-P1-R1",
+  "dreamina_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "argv_sha256": "0c7b24c4b10f6d0c671e7a6f889a72446fe533913eebf421f03f17d35bacc72a",
+  "command_structure_without_prompt_or_secrets": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "user_credit"
+  ],
+  "subprocess_exit_code": 0,
+  "sanitized_evidence_envelope_path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F02-P1-R1/evidence/resume-post-submit-user-credit-001.subprocess_envelope.json",
+  "envelope_sha256": "2d927870adef907d42105ecbdec1dc84bd95fb0a0bb104fb1825813fe8cc9a33",
+  "total_credit": 5905,
+  "parsed_at": "2026-07-18T18:38:06.653626Z"
+}

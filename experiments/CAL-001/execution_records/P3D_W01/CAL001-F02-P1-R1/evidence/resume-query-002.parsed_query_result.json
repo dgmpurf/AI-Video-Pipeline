@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3D-W01",
+  "wave_id": "W01",
+  "operation_id": "resume-query-002",
+  "operation_kind": "query",
+  "operation_count": 2,
+  "experiment_id": "CAL001-F02-P1-R1",
+  "dreamina_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "argv_sha256": "f89cc1079f387ff66d4068972c97ac6469f86db8f94c0f8e43e2af2a81fefc5d",
+  "command_structure_without_prompt_or_secrets": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "query_result",
+    "--submit_id",
+    "b17148c2-952d-435b-bf37-b6cf6c05121d"
+  ],
+  "subprocess_exit_code": 0,
+  "sanitized_evidence_envelope_path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F02-P1-R1/evidence/resume-query-002.subprocess_envelope.json",
+  "envelope_sha256": "bd8fd40a9d7756e59a9baa53af0fcd3054113e505e6dab5fd17fd8bc8268f827",
+  "query_index": 2,
+  "existing_submit_id": "b17148c2-952d-435b-bf37-b6cf6c05121d",
+  "returned_submit_id": "b17148c2-952d-435b-bf37-b6cf6c05121d",
+  "gen_status": "success",
+  "queue_status": "Finish",
+  "queue_index": 0,
+  "queue_length": 0,
+  "fail_reason": null,
+  "credit_count": 70,
+  "result_image_count": 0,
+  "result_video_count": 1,
+  "result_output_count": 1,
+  "download_url_present": true,
+  "video_metadata_without_urls": [
+    {
+      "fps": 24,
+      "width": 720,
+      "height": 1280,
+      "format": "mp4",
+      "duration": 5.042
+    }
+  ],
+  "parsed_at": "2026-07-18T18:42:42.347308Z"
+}

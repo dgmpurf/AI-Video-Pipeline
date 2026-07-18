@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "phase": "CAL-001-P3D-W01",
+  "resume_after_false_positive_correction": true,
+  "dreamina_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "version": "2a20fff-dirty",
+  "commit": "2a20fff",
+  "build_time": "2026-06-26T06:36:39Z",
+  "prior_durable_non_submit_credit": 6045,
+  "initial_credit": 6045,
+  "required_initial_credit_minimum": 5950,
+  "credit_drift_amount": 0,
+  "credit_drift_direction": "none",
+  "credit_drift_classification": "no_pre_submit_credit_drift",
+  "scope_or_budget_enlarged": false,
+  "version_ok": true,
+  "credit_ok": true,
+  "help_contracts": [
+    {
+      "command": "text2video",
+      "exit_code": 0,
+      "required_flags": [
+        "--model_version",
+        "--ratio",
+        "--prompt",
+        "--duration",
+        "--video_resolution",
+        "--poll"
+      ],
+      "missing_flags": [],
+      "contract_ok": true,
+      "argv_sha256": "238c594c76b2ffbefdc2076b027ba33f428a3d1117854570d9fb2912aa5d6c6c",
+      "operation_id": "wave-resume-preflight-text2video-help-001",
+      "operation_kind": "preflight",
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/evidence/wave-resume-preflight-text2video-help-001.subprocess_envelope.json",
+      "envelope_sha256": "e2851a3f100f90f03f2fa2b20363635d285addf8be7665b49d214fd654137d02",
+      "parsed_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/parsed/wave-resume-preflight-text2video-help-001.parsed_help_contract.json",
+      "parsed_sha256": "7f4d3c4419f2964cd865feec376a1114bc7022b283d76ea259e4dd3c37e96721"
+    },
+    {
+      "command": "image2video",
+      "exit_code": 0,
+      "required_flags": [
+        "--model_version",
+        "--prompt",
+        "--duration",
+        "--video_resolution",
+        "--image",
+        "--poll"
+      ],
+      "missing_flags": [],
+      "contract_ok": true,
+      "argv_sha256": "2b094f70a4fe85e0da968971ec8e67953a0f6a8a715e93338693f2e65eac8b12",
+      "operation_id": "wave-resume-preflight-image2video-help-001",
+      "operation_kind": "preflight",
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/evidence/wave-resume-preflight-image2video-help-001.subprocess_envelope.json",
+      "envelope_sha256": "091a76a64032b4f7f08e9dca13e9c4bfc9a7460a8e6f14641e8e0c0349e7225b",
+      "parsed_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/parsed/wave-resume-preflight-image2video-help-001.parsed_help_contract.json",
+      "parsed_sha256": "cc8fbe71e75dde96ac9143236ed16f4a9b3f9d20183951847c12e99876026ffb"
+    },
+    {
+      "command": "frames2video",
+      "exit_code": 0,
+      "required_flags": [
+        "--model_version",
+        "--prompt",
+        "--duration",
+        "--video_resolution",
+        "--first",
+        "--last",
+        "--poll"
+      ],
+      "missing_flags": [],
+      "contract_ok": true,
+      "argv_sha256": "577bb87783e03bf39660bab8ce55d483473afa9b4c7b6a78a9ada46899f3eb2f",
+      "operation_id": "wave-resume-preflight-frames2video-help-001",
+      "operation_kind": "preflight",
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/evidence/wave-resume-preflight-frames2video-help-001.subprocess_envelope.json",
+      "envelope_sha256": "9cb846fb752925a89aa29f7d8492f585cc7b355690c630a1eaa03deaeb0dff7c",
+      "parsed_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/parsed/wave-resume-preflight-frames2video-help-001.parsed_help_contract.json",
+      "parsed_sha256": "a3aa99167128e00edf8cb1b7fb699623c06710753bb25b4ab3e754a53df8cfd8"
+    },
+    {
+      "command": "multimodal2video",
+      "exit_code": 0,
+      "required_flags": [
+        "--model_version",
+        "--ratio",
+        "--prompt",
+        "--duration",
+        "--video_resolution",
+        "--image",
+        "--poll"
+      ],
+      "missing_flags": [],
+      "contract_ok": true,
+      "argv_sha256": "b75fe260d80faeb7f74cbb107da97006105bdd9dd95ec848f1ea4d59f863c9cf",
+      "operation_id": "wave-resume-preflight-multimodal2video-help-001",
+      "operation_kind": "preflight",
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/evidence/wave-resume-preflight-multimodal2video-help-001.subprocess_envelope.json",
+      "envelope_sha256": "be72707492945117ae9d5717bafc0f9a9b3b02d4dc110795f64a2454f4821427",
+      "parsed_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/parsed/wave-resume-preflight-multimodal2video-help-001.parsed_help_contract.json",
+      "parsed_sha256": "76d597aa038236beb1b04b0eaecee8d59cf8cd72659cc4dcfc162d334a825e2a"
+    },
+    {
+      "command": "query_result",
+      "exit_code": 0,
+      "required_flags": [
+        "--submit_id",
+        "--download_dir"
+      ],
+      "missing_flags": [],
+      "contract_ok": true,
+      "argv_sha256": "2a073fb0abc03807168225bfb520258b573ff801643791a486c0e96c33aa8755",
+      "operation_id": "wave-resume-preflight-query_result-help-001",
+      "operation_kind": "preflight",
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/evidence/wave-resume-preflight-query_result-help-001.subprocess_envelope.json",
+      "envelope_sha256": "17423bbe0198e12a50a3dd7ae0760c06bffede6ea4c2661edaa515dcff326bff",
+      "parsed_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/parsed/wave-resume-preflight-query_result-help-001.parsed_help_contract.json",
+      "parsed_sha256": "be3c9f80a467af2715251fd575250c969aaf13b9ffed1ca94969fbf69e68adf8"
+    }
+  ],
+  "all_exit_codes_ok": true,
+  "anomalies": [],
+  "canary_passed": true,
+  "command_binding_audit_passed": true,
+  "operations": [
+    {
+      "operation_id": "wave-resume-preflight-version-001",
+      "operation_kind": "preflight",
+      "exit_code": 0,
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/evidence/wave-resume-preflight-version-001.subprocess_envelope.json",
+      "envelope_sha256": "eb7cb9837a3d057c0a1354e8663c5ffc7090c9fd3eb54af13486cba34d1eadeb",
+      "parsed_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/parsed/wave-resume-preflight-version-001.parsed_version.json",
+      "parsed_sha256": "70057354a3ac53cf4deb6b919ecd0a839f9d7d424a8d77a31fd54c57b2e0cfc7"
+    },
+    {
+      "operation_id": "wave-resume-preflight-user-credit-001",
+      "operation_kind": "preflight",
+      "exit_code": 0,
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/evidence/wave-resume-preflight-user-credit-001.subprocess_envelope.json",
+      "envelope_sha256": "759b43386058624944de62be2485b748cd9b9a43487828f7578eedb789979299",
+      "parsed_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/parsed/wave-resume-preflight-user-credit-001.parsed_credit.json",
+      "parsed_sha256": "3fd69870100bd2212a16a4d3df18360e35c5fd5b2a3eeb20fd86653a5f43b002"
+    },
+    {
+      "operation_id": "wave-resume-preflight-text2video-help-001",
+      "operation_kind": "preflight",
+      "exit_code": 0,
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/evidence/wave-resume-preflight-text2video-help-001.subprocess_envelope.json",
+      "envelope_sha256": "e2851a3f100f90f03f2fa2b20363635d285addf8be7665b49d214fd654137d02",
+      "parsed_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/parsed/wave-resume-preflight-text2video-help-001.parsed_help_contract.json",
+      "parsed_sha256": "7f4d3c4419f2964cd865feec376a1114bc7022b283d76ea259e4dd3c37e96721"
+    },
+    {
+      "operation_id": "wave-resume-preflight-image2video-help-001",
+      "operation_kind": "preflight",
+      "exit_code": 0,
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/evidence/wave-resume-preflight-image2video-help-001.subprocess_envelope.json",
+      "envelope_sha256": "091a76a64032b4f7f08e9dca13e9c4bfc9a7460a8e6f14641e8e0c0349e7225b",
+      "parsed_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/parsed/wave-resume-preflight-image2video-help-001.parsed_help_contract.json",
+      "parsed_sha256": "cc8fbe71e75dde96ac9143236ed16f4a9b3f9d20183951847c12e99876026ffb"
+    },
+    {
+      "operation_id": "wave-resume-preflight-frames2video-help-001",
+      "operation_kind": "preflight",
+      "exit_code": 0,
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/evidence/wave-resume-preflight-frames2video-help-001.subprocess_envelope.json",
+      "envelope_sha256": "9cb846fb752925a89aa29f7d8492f585cc7b355690c630a1eaa03deaeb0dff7c",
+      "parsed_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/parsed/wave-resume-preflight-frames2video-help-001.parsed_help_contract.json",
+      "parsed_sha256": "a3aa99167128e00edf8cb1b7fb699623c06710753bb25b4ab3e754a53df8cfd8"
+    },
+    {
+      "operation_id": "wave-resume-preflight-multimodal2video-help-001",
+      "operation_kind": "preflight",
+      "exit_code": 0,
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/evidence/wave-resume-preflight-multimodal2video-help-001.subprocess_envelope.json",
+      "envelope_sha256": "be72707492945117ae9d5717bafc0f9a9b3b02d4dc110795f64a2454f4821427",
+      "parsed_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/parsed/wave-resume-preflight-multimodal2video-help-001.parsed_help_contract.json",
+      "parsed_sha256": "76d597aa038236beb1b04b0eaecee8d59cf8cd72659cc4dcfc162d334a825e2a"
+    },
+    {
+      "operation_id": "wave-resume-preflight-query_result-help-001",
+      "operation_kind": "preflight",
+      "exit_code": 0,
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/evidence/wave-resume-preflight-query_result-help-001.subprocess_envelope.json",
+      "envelope_sha256": "17423bbe0198e12a50a3dd7ae0760c06bffede6ea4c2661edaa515dcff326bff",
+      "parsed_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/parsed/wave-resume-preflight-query_result-help-001.parsed_help_contract.json",
+      "parsed_sha256": "be3c9f80a467af2715251fd575250c969aaf13b9ffed1ca94969fbf69e68adf8"
+    }
+  ],
+  "correction_reauthorization_verified": true,
+  "historical_false_positive_preserved": true,
+  "wider_failure_gate_passed": true,
+  "wider_failure_classification": "PRE_EXISTING_UNRELATED_NONBLOCKING_BASELINE_FAILURES",
+  "wrapper_tests_passed": true,
+  "wrapper_test_count": 13,
+  "focused_credit_tests_passed": true,
+  "focused_credit_test_count": 11,
+  "bounded_regression_passed": true,
+  "bounded_regression_pass_count": 456,
+  "generated_at": "2026-07-18T18:32:26.226232Z"
+}

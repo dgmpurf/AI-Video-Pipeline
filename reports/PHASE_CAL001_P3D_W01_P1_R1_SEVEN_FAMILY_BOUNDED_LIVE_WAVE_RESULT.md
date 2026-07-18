@@ -224,3 +224,88 @@ The next human decision should explicitly determine whether to reopen W01 from F
 ## 24. Final verdict
 
 `CAL001_P3D_W01_STOPPED_AUTHORITY_CLOSED_REQUIRES_HUMAN_DECISION`
+
+---
+
+## Resumed Run After False-Positive Correction
+
+This section records the separately authorized resumed run. The historical stop section above is retained as provenance and was not rewritten.
+
+- historical_report_pre_resume_sha256: 456a2b2ecbe46b0ec3de0fe3688ccb4622c2c852b98dc363ebb8e215011679d0
+- historical_wave_summary_preserved: f1d3e26de3440a0d190dce6644640dc76a74aa028970af352d54dda52023ec4d
+- executed: true
+- status: "W01_stopped_authority_closed"
+- starting_head: "bc98270a64d32ab43aef94cb9964b0181226054a"
+- correction_reauthorization_verified: true
+- correction_authorization_text_sha256: "482b86f6be0feadbd245916474c14058ec4b3685b8eff17446085ab04e6fef44"
+- prior_P3C_authorization_text_sha256: "73ae380b9af11656660d47755da1690b8ab234afcaf99795cf1743365bdd1392"
+- authorization_record_file_sha256: "983ea0c8f95ef018b3171e41bc97a93235f8199796225335190f0156047e7141"
+- historical_false_positive_preserved: true
+- wider_failure_gate_passed: true
+- wider_failure_classification: "PRE_EXISTING_UNRELATED_NONBLOCKING_BASELINE_FAILURES"
+- activation_verified: true
+- wave_id: "W01"
+- prompt_variant: "P1"
+- run_id: "R1"
+- planned_task_count: 7
+- technically_completed_task_count: 5
+- task_statuses: {"CAL001-F01-P1-R1": "technically_completed", "CAL001-F02-P1-R1": "technically_completed", "CAL001-F03-P1-R1": "technically_completed", "CAL001-F04-P1-R1": "technically_completed", "CAL001-F05-P1-R1": "technically_completed", "CAL001-F06-P1-R1": "terminal_failure", "CAL001-F07-P1-R1": "pending_preflight"}
+- task_submit_ids: {"CAL001-F01-P1-R1": "b1f101bb-cd4d-4fea-a12f-3437a09ab443", "CAL001-F02-P1-R1": "b17148c2-952d-435b-bf37-b6cf6c05121d", "CAL001-F03-P1-R1": "3c816474-3635-40a3-963c-f620994538ab", "CAL001-F04-P1-R1": "0a2f0dc1-730b-4079-acf1-6012b8e10639", "CAL001-F05-P1-R1": "53574aa3-4123-49f5-9ea2-692f3cec63c6", "CAL001-F06-P1-R1": "cabfa6ab-cc61-4d29-8630-da01dfdeef65", "CAL001-F07-P1-R1": null}
+- task_logids: {"CAL001-F01-P1-R1": "202607190233031692540470081946861", "CAL001-F02-P1-R1": "2026071902375216925404700871857AC", "CAL001-F03-P1-R1": "2026071902425016925404700800563A8", "CAL001-F04-P1-R1": "202607190247571692540470086105CF2", "CAL001-F05-P1-R1": "20260719025305169254047008188821D", "CAL001-F06-P1-R1": null, "CAL001-F07-P1-R1": null}
+- per_task_credit_count: {"CAL001-F01-P1-R1": 70, "CAL001-F02-P1-R1": 70, "CAL001-F03-P1-R1": 70, "CAL001-F04-P1-R1": 70, "CAL001-F05-P1-R1": 70, "CAL001-F06-P1-R1": null, "CAL001-F07-P1-R1": null}
+- per_task_credit_delta: {"CAL001-F01-P1-R1": 70, "CAL001-F02-P1-R1": 70, "CAL001-F03-P1-R1": 70, "CAL001-F04-P1-R1": 70, "CAL001-F05-P1-R1": 70, "CAL001-F06-P1-R1": null, "CAL001-F07-P1-R1": null}
+- per_task_credit_drift_classification: {"CAL001-F01-P1-R1": "no_pre_submit_credit_drift", "CAL001-F02-P1-R1": "no_pre_submit_credit_drift", "CAL001-F03-P1-R1": "no_pre_submit_credit_drift", "CAL001-F04-P1-R1": "no_pre_submit_credit_drift", "CAL001-F05-P1-R1": "no_pre_submit_credit_drift", "CAL001-F06-P1-R1": "no_pre_submit_credit_drift", "CAL001-F07-P1-R1": null}
+- submit_count: 6
+- query_count: 10
+- per_task_query_counts: {"CAL001-F01-P1-R1": 2, "CAL001-F02-P1-R1": 2, "CAL001-F03-P1-R1": 2, "CAL001-F04-P1-R1": 2, "CAL001-F05-P1-R1": 2, "CAL001-F06-P1-R1": 0, "CAL001-F07-P1-R1": 0}
+- download_count: 5
+- credit_cost: 350
+- confirmed_credit_cost: 350
+- F06_credit_consumption: "unknown_due_immediate_terminal_submit_failure"
+- initial_live_credit: 6045
+- final_live_credit: 5695
+- credit_reconciliation_pass: false
+- runtime_version: "2a20fff-dirty"
+- runtime_help_verified: true
+- command_binding_verified: true
+- wrapper_tests_passed: true
+- focused_credit_tests_passed: true
+- durable_evidence_pass: true
+- result_count_gate_pass: false
+- media_validation_pass_count: 5
+- review_metadata_count: 5
+- frame_set_count: 5
+- contact_sheet_count: 5
+- dataset_rows_updated: 6
+- technically_completed_dataset_rows_updated: 5
+- terminal_failure_dataset_rows_updated: 1
+- provider_task_created_count: 6
+- F06_failure_classification: "upload_transport_failure"
+- F06_immediate_gen_status: "fail"
+- F06_fail_reason: "upload resource productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png: upload image: upload phase, no file upload, please check log for more details"
+- F06_submit_failure_record_path: "experiments/CAL-001/execution_records/P3D_W01/CAL001-F06-P1-R1/resume_submit_failure_classification.json"
+- F06_submit_failure_record_sha256: "aeb9b04d68016b2159fd73b9b4980b19f193a9dfebf145177cd34d3a0c3d22e2"
+- F06_query_count: 0
+- F06_download_count: 0
+- F07_submit_count: 0
+- macro_state: "STOPPED_AUTHORITY_CLOSED"
+- wave_state: "stopped"
+- execution_authority_active: false
+- remaining_noncanary_tasks_authorized: false
+- next_wave_id: "W01"
+- next_experiment_id: "CAL001-F06-P1-R1"
+- CAL001B_authorized: false
+- automatic_visual_scoring: false
+- family_winner_selected: false
+- global_prompt_winner_selected: false
+- final_master: false
+- locked: false
+- sources_clean: true
+- accepted_artifacts_unchanged: true
+- media_staged: false
+- stop_condition: "F06 immediate submit terminal failure: upload_transport_failure; provider task created with submit_id cabfa6ab-cc61-4d29-8630-da01dfdeef65; gen_status=fail; logid absent; credit_count absent; no query, download, retry, resubmit, replacement, skip, or F07 submit authorized."
+- recommended_next_phase: "NEW_HUMAN_DECISION_REQUIRED"
+- final_verdict: "CAL001_P3D_W01_STOPPED_AUTHORITY_CLOSED_REQUIRES_HUMAN_DECISION"
+- technical_record_paths: ["experiments/CAL-001/execution_records/P3D_W01/CAL001-F01-P1-R1_technical_execution_record.json", "experiments/CAL-001/execution_records/P3D_W01/CAL001-F02-P1-R1_technical_execution_record.json", "experiments/CAL-001/execution_records/P3D_W01/CAL001-F03-P1-R1_technical_execution_record.json", "experiments/CAL-001/execution_records/P3D_W01/CAL001-F04-P1-R1_technical_execution_record.json", "experiments/CAL-001/execution_records/P3D_W01/CAL001-F05-P1-R1_technical_execution_record.json"]
+
+No automatic visual score, family winner, global Prompt winner, final master, or lock is asserted by this run.

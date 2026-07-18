@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3D-W01",
+  "wave_id": "W01",
+  "operation_id": "resume-download-001",
+  "operation_kind": "download",
+  "operation_count": 1,
+  "experiment_id": "CAL001-F02-P1-R1",
+  "dreamina_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "argv_sha256": "9ee8d6d9f5e05faf4dd1d8eb4226c3144f50b38748b49650f7aa4d032e58c104",
+  "command_structure_without_prompt_or_secrets": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "query_result",
+    "--submit_id",
+    "b17148c2-952d-435b-bf37-b6cf6c05121d",
+    "--download_dir",
+    "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\experiments\\CAL-001\\runs\\CAL001-F02-P1-R1"
+  ],
+  "subprocess_exit_code": 0,
+  "sanitized_evidence_envelope_path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F02-P1-R1/evidence/resume-download-001.subprocess_envelope.json",
+  "envelope_sha256": "a5dd88ad0670271fda1fbee9cdd97473b583ded059baa9977b8e417c24b424ce",
+  "download_index": 1,
+  "existing_submit_id": "b17148c2-952d-435b-bf37-b6cf6c05121d",
+  "returned_submit_id": "b17148c2-952d-435b-bf37-b6cf6c05121d",
+  "gen_status": "success",
+  "queue_status": "Finish",
+  "fail_reason": null,
+  "download_directory": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\experiments\\CAL-001\\runs\\CAL001-F02-P1-R1",
+  "downloaded_file_count": 1,
+  "downloaded_files": [
+    {
+      "path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\experiments\\CAL-001\\runs\\CAL001-F02-P1-R1\\b17148c2-952d-435b-bf37-b6cf6c05121d_video_1.mp4",
+      "size_bytes": 9240960
+    }
+  ],
+  "parsed_at": "2026-07-18T18:42:46.326543Z"
+}

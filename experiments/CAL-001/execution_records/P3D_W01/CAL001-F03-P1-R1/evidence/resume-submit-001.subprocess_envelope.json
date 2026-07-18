@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "operation_id": "resume-submit-001",
+  "experiment_id": "CAL001-F03-P1-R1",
+  "command_type": "dreamina_image2video",
+  "operation_kind": "submit",
+  "started_at": "2026-07-18T18:42:49.901897Z",
+  "completed_at": "2026-07-18T18:43:11.099397Z",
+  "subprocess_exit_code": 0,
+  "sanitized_stdout": "{\n  \"submit_id\": \"3c816474-3635-40a3-963c-f620994538ab\",\n  \"prompt\": \"<redacted_prompt>\",\n  \"logid\": \"2026071902425016925404700800563A8\",\n  \"gen_status\": \"querying\",\n  \"credit_count\": 70\n}\n",
+  "sanitized_stderr": "",
+  "stdout_sha256": "c22dbfa8a38423d8db840ab12e6df833d2e3b542134878295f189e441c397f97",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "hash_scope": "sanitized_utf8",
+  "command_structure_without_prompt_or_secrets": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "image2video",
+    "--model_version",
+    "seedance2.0_vip",
+    "--prompt",
+    "<redacted_prompt sha256=271a7756746412bcd69e8a9af805d46426a40cc584f608f4a27030f47520f8ef chars=426>",
+    "--duration",
+    "5",
+    "--video_resolution",
+    "720p",
+    "--image",
+    "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+    "--poll",
+    "0"
+  ],
+  "evidence_persisted_at": "2026-07-18T18:43:11.099397Z"
+}

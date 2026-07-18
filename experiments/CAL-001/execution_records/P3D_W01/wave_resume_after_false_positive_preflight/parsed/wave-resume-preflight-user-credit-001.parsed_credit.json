@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3D-W01",
+  "wave_id": "W01",
+  "operation_id": "wave-resume-preflight-user-credit-001",
+  "operation_kind": "preflight",
+  "operation_count": 1,
+  "experiment_id": "CAL-001-P3D-W01-RESUME",
+  "dreamina_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "argv_sha256": "0c7b24c4b10f6d0c671e7a6f889a72446fe533913eebf421f03f17d35bacc72a",
+  "command_structure_without_prompt_or_secrets": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "user_credit"
+  ],
+  "subprocess_exit_code": 0,
+  "sanitized_evidence_envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_resume_after_false_positive_preflight/evidence/wave-resume-preflight-user-credit-001.subprocess_envelope.json",
+  "envelope_sha256": "759b43386058624944de62be2485b748cd9b9a43487828f7578eedb789979299",
+  "prior_observed_balance": 6045,
+  "total_credit": 6045,
+  "required_dynamic_threshold": 5950,
+  "threshold_passed": true,
+  "drift_amount": 0,
+  "drift_direction": "none",
+  "classification": "no_pre_submit_credit_drift",
+  "scope_or_budget_enlarged": false,
+  "parsed_at": "2026-07-18T18:32:14.157998Z"
+}

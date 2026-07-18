@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3D-W01",
+  "wave_id": "W01",
+  "experiment_id": "CAL001-F04-P1-R1",
+  "submit_id": "0a2f0dc1-730b-4079-acf1-6012b8e10639",
+  "source_media_path": "experiments/CAL-001/runs/CAL001-F04-P1-R1/0a2f0dc1-730b-4079-acf1-6012b8e10639_video_1.mp4",
+  "source_media_sha256": "68e31460f8476c218b63321dfa2a50d91e9e0929b0c84213b49c33533de8d554",
+  "source_media_size_bytes": 7903702,
+  "technical_validation": {
+    "filename": "0a2f0dc1-730b-4079-acf1-6012b8e10639_video_1.mp4",
+    "file_size_bytes": 7903702,
+    "container": "mp4",
+    "major_brand": "isom",
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "aspect_ratio": "1280:720",
+    "fps": 24.119601328903656,
+    "frame_count": 121,
+    "decoded_frame_count": 121,
+    "duration_seconds_from_frames": 5.016666666666667,
+    "decode_backend": "FFMPEG",
+    "decode_readable": true,
+    "dimensions_consistent": true,
+    "zero_byte": false,
+    "truncation_check_pass": true,
+    "expected_input_or_explicit_ratio": 1.7777777777777777,
+    "ratio_matches_input_or_explicit": true,
+    "resolution_720p_pass": true,
+    "duration_approximately_five_seconds": true,
+    "technical_validation_pass": true,
+    "visual_success_claimed": false
+  },
+  "frames": [
+    {
+      "label": "0p00s",
+      "requested_timestamp_seconds": 0.0,
+      "actual_timestamp_seconds": 0.0,
+      "frame_index": 0,
+      "path": "experiments/CAL-001/runs/CAL001-F04-P1-R1/review_artifacts/CAL001-F04-P1-R1_0p00s.png",
+      "sha256": "930e6925c290c7c7443aa7755ae9969be93b7ce940e5777770dc5d9db4afcdbe"
+    },
+    {
+      "label": "1p00s",
+      "requested_timestamp_seconds": 1.0,
+      "actual_timestamp_seconds": 0.9950413223140495,
+      "frame_index": 24,
+      "path": "experiments/CAL-001/runs/CAL001-F04-P1-R1/review_artifacts/CAL001-F04-P1-R1_1p00s.png",
+      "sha256": "382e29bff2debf94adcb89b21c5ba227fac7e230a9f34a6a308a7b7cdc1db417"
+    },
+    {
+      "label": "2p00s",
+      "requested_timestamp_seconds": 2.0,
+      "actual_timestamp_seconds": 1.990082644628099,
+      "frame_index": 48,
+      "path": "experiments/CAL-001/runs/CAL001-F04-P1-R1/review_artifacts/CAL001-F04-P1-R1_2p00s.png",
+      "sha256": "22f11a04cf53781bc2c4f557ac17ba524f6475e05270824d71c060fbc74a52fb"
+    },
+    {
+      "label": "3p00s",
+      "requested_timestamp_seconds": 3.0,
+      "actual_timestamp_seconds": 2.9851239669421488,
+      "frame_index": 72,
+      "path": "experiments/CAL-001/runs/CAL001-F04-P1-R1/review_artifacts/CAL001-F04-P1-R1_3p00s.png",
+      "sha256": "de12e7a942bf57a9deddcab67f0c5cf2fb1b8c2cb6117de8da60d827b5bf463e"
+    },
+    {
+      "label": "4p00s",
+      "requested_timestamp_seconds": 4.0,
+      "actual_timestamp_seconds": 3.980165289256198,
+      "frame_index": 96,
+      "path": "experiments/CAL-001/runs/CAL001-F04-P1-R1/review_artifacts/CAL001-F04-P1-R1_4p00s.png",
+      "sha256": "49401e667278133c626b7c3f27cb8bf7d40a7ca99c2932700ddab94c047326b8"
+    },
+    {
+      "label": "final_readable",
+      "requested_timestamp_seconds": null,
+      "actual_timestamp_seconds": 4.975206611570248,
+      "frame_index": 120,
+      "path": "experiments/CAL-001/runs/CAL001-F04-P1-R1/review_artifacts/CAL001-F04-P1-R1_final_readable.png",
+      "sha256": "952e6a0a402f895707e8b50a8c25678eb9dc5dbaecb8513f3b8d460df5891121"
+    }
+  ],
+  "contact_sheet": {
+    "layout": "3x2",
+    "path": "experiments/CAL-001/runs/CAL001-F04-P1-R1/review_artifacts/CAL001-F04-P1-R1_contact_sheet_3x2.png",
+    "sha256": "c5f6c3f6ad5c8430c296f7ba9fcf943172f72dee6e3668183dff6fa2ef2e3e1f",
+    "width": 1920,
+    "height": 720
+  },
+  "cuts_created": false,
+  "visual_scores_assigned": false,
+  "winner_selected": false,
+  "final_master": false,
+  "locked": false,
+  "created_at": "2026-07-18T18:53:01.891735Z"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "operation_id": "resume-query-001",
+  "experiment_id": "CAL001-F03-P1-R1",
+  "command_type": "dreamina_query_result",
+  "operation_kind": "query",
+  "started_at": "2026-07-18T18:44:43.770328Z",
+  "completed_at": "2026-07-18T18:44:46.540970Z",
+  "subprocess_exit_code": 0,
+  "sanitized_stdout": "{\n  \"submit_id\": \"3c816474-3635-40a3-963c-f620994538ab\",\n  \"prompt\": \"<redacted_prompt>\",\n  \"logid\": \"2026071902425016925404700800563A8\",\n  \"gen_status\": \"querying\",\n  \"credit_count\": 70,\n  \"queue_info\": {\n    \"queue_idx\": 0,\n    \"priority\": 1,\n    \"queue_status\": \"Generating\",\n    \"queue_length\": 0,\n    \"debug_info\": \"{\\\"have_no_dreamina_queue_name\\\":false,\\\"dreamina_matrix_queue_name\\\":\\\"dreamina_fusion_video40_pro_vision\\\",\\\"dreamina_matrix_req_key\\\":\\\"DreaminaFusion:Video40_Pro_Vision_i2v_720p\\\",\\\"dreamina_matrix_second_req_key\\\":\\\"\\\",\\\"have_no_queue_name\\\":true,\\\"queue_name\\\":\\\"\\\",\\\"matrix_req_key\\\":\\\"\\\",\\\"matrix_second_req_key\\\":\\\"\\\"}\"\n  }\n}\n",
+  "sanitized_stderr": "",
+  "stdout_sha256": "534b2f11b1fc133109fdcc1806e87afca4622fc10fc84ee9b48259d0b279e8f4",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "hash_scope": "sanitized_utf8",
+  "command_structure_without_prompt_or_secrets": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "query_result",
+    "--submit_id",
+    "3c816474-3635-40a3-963c-f620994538ab"
+  ],
+  "evidence_persisted_at": "2026-07-18T18:44:46.541969Z"
+}
