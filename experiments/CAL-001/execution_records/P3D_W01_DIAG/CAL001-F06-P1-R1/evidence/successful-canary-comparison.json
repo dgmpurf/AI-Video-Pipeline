@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3D-W01-F06-DIAG",
+  "failed_experiment_id": "CAL001-F06-P1-R1",
+  "successful_canary_experiment_id": "CAL001-F06-P2-R1",
+  "generated_at": "2026-07-18T20:28:56.4125479Z",
+  "failed_package": {
+    "path": "experiments/CAL-001/packages/F06/CAL001-F06-P1-R1_package.json",
+    "sha256": "4f0f8356b2d0c04f03f1eb6d3f403259795e24b413031c883491856d25366710",
+    "prompt_path": "experiments/CAL-001/prompts/F06/CAL001-F06-P1_prompt.txt",
+    "prompt_sha256": "1672ee6ba29d82c844af6e4700607582410a323c24409697916b28e56a8b76f0"
+  },
+  "successful_canary_package": {
+    "path": "experiments/CAL-001/packages/F06/CAL001-F06-P2-R1_package.json",
+    "sha256": "d6e89fbb02fc86096e43f8caecb934c3f7e0eb7912cc676d07c116f8bcd8d9dd",
+    "prompt_path": "experiments/CAL-001/prompts/F06/CAL001-F06-P2_prompt.txt",
+    "prompt_sha256": "4d0d3d5ff85da699f60434cf0eb431c76b0c45836bb87700eebfb4406c58b20b"
+  },
+  "same_fixture_paths": true,
+  "same_fixture_sha256s": true,
+  "same_shuangji_path_and_sha256": true,
+  "same_fixture_order": true,
+  "same_task_type": true,
+  "same_model_version": true,
+  "same_ratio": true,
+  "same_duration": true,
+  "same_video_resolution": true,
+  "same_rendered_image_order": true,
+  "full_argv_option_order_byte_identical": false,
+  "effective_command_binding_same": true,
+  "expected_differences": [
+    "P1 and P2 use different accepted Prompt bytes by design.",
+    "The wrappers rendered non-image options in a different order; CLI flag values and all three --image bindings remained equivalent."
+  ],
+  "failed_submit_evidence": {
+    "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F06-P1-R1/evidence/resume-submit-001.subprocess_envelope.json",
+    "sha256": "5c6d24116d756b60eb706f7fdc9dddc382604e1e923bab95a588c87b3940a73c",
+    "started_at": "2026-07-18T18:58:02.674844Z",
+    "completed_at": "2026-07-18T18:59:35.574145Z",
+    "historical_immediate_gen_status": "fail"
+  },
+  "successful_canary_evidence": {
+    "technical_record_path": "experiments/CAL-001/execution_records/P3B_R2_T4/CAL001-F06-P2-R1_technical_execution_record.json",
+    "technical_record_sha256": "52dd3a1c69c440b1fac7bf2b5568e9c25a7e617e38ad02d123cc7658815644e5",
+    "submit_envelope_path": "experiments/CAL-001/execution_records/P3B_R2_T4/evidence/CAL001-F06-P2-R1/submit-001.subprocess_envelope.json",
+    "submit_id": "9331ef8d-6f1f-4531-913a-dc844293d509",
+    "logid": "2026071820030116925404700828337C4",
+    "submit_credit_count": 70,
+    "final_gen_status": "success",
+    "result_image_count": 0,
+    "result_video_count": 1,
+    "result_output_count": 1,
+    "shuangji_upload_completed": true
+  },
+  "prior_success_proves_fixture_uploadable_at_least_once": true,
+  "prompt_wording_treated_as_upload_cause": false,
+  "path_or_command_binding_failure_found": false,
+  "deterministic_cli_upload_transport_defect_established": false
+}

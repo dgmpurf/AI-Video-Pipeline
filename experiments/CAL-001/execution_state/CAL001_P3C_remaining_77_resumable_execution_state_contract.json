@@ -68,14 +68,19 @@
     "completed_canary_credit_cost": 490,
     "remaining_completed_task_count": 5,
     "remaining_submit_count": 5,
-    "remaining_query_count": 10,
+    "remaining_query_count": 11,
     "remaining_download_count": 5,
     "remaining_credit_cost": 350,
     "total_submit_count": 12,
     "total_credit_cost": 840,
     "next_wave_id": "W01",
     "next_experiment_id": "CAL001-F06-P1-R1",
-    "initial_required_live_balance": 5950
+    "initial_required_live_balance": 5950,
+    "F06_diagnostic_user_credit_count": 1,
+    "F06_diagnostic_query_count": 1,
+    "F06_current_live_credit": 5695,
+    "F06_confirmed_credit_cost": null,
+    "F06_credit_consumption_classification": "credit_consumption_unresolved"
   },
   "hard_limits": {
     "remaining_fixed_task_count": 77,
@@ -801,13 +806,13 @@
               "sha256": "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452"
             }
           ],
-          "task_state": "terminal_failure",
+          "task_state": "stopped_anomaly",
           "submit_attempt_count": 1,
           "submit_id": "cabfa6ab-cc61-4d29-8630-da01dfdeef65",
           "logid": null,
           "submit_credit_count": null,
-          "query_count": 0,
-          "last_query_status": null,
+          "query_count": 1,
+          "last_query_status": "querying",
           "download_count": 0,
           "media_result_count": 0,
           "media_path": null,
@@ -817,9 +822,9 @@
           "contact_sheet_path": null,
           "technical_execution_record_path": null,
           "technical_dataset_update_status": "not_started",
-          "last_durable_action": "Immediate terminal upload-transport failure and created provider task evidence persisted; remaining authority closed.",
-          "exact_next_allowed_action": "No further live action without a new human decision.",
-          "stop_condition": "F06 immediate submit terminal failure: upload_transport_failure; provider task created with submit_id cabfa6ab-cc61-4d29-8630-da01dfdeef65; gen_status=fail; logid absent; credit_count absent; no query, download, retry, resubmit, replacement, skip, or F07 submit authorized.",
+          "last_durable_action": "One authorized diagnostic user_credit and one authorized query-only call were durably persisted; the existing F06 submit_id returned gen_status=querying, so the task remains non-executable and authority remains closed.",
+          "exact_next_allowed_action": "Require a new human decision; no additional query, download, retry, resubmit, submit, replacement, skip, or F07 submit is authorized.",
+          "stop_condition": "F06 diagnostic query returned gen_status=querying for existing submit_id cabfa6ab-cc61-4d29-8630-da01dfdeef65 after the historical immediate upload failure; credit consumption remains unresolved; authority is closed and no additional query, download, retry, resubmit, replacement, skip, or F07 submit is authorized.",
           "retry_authorized": false,
           "resubmit_authorized": false,
           "final_master": false,
@@ -845,7 +850,7 @@
           "immediate_submit_fail_reason": "upload resource productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png: upload image: upload phase, no file upload, please check log for more details",
           "failure_classification": "upload_transport_failure",
           "credit_reconciliation_pass": false,
-          "credit_reconciliation_status": "not_run_due_immediate_terminal_submit_failure",
+          "credit_reconciliation_status": "credit_consumption_unresolved_after_diagnostic_balance_and_query",
           "credit_consumption_for_this_submit": "unknown",
           "submit_evidence": {
             "operation_id": "resume-submit-001",
@@ -857,7 +862,33 @@
             "parsed_sha256": "ebd2896d3d2951292ad9eaa452004cf046af665542ddfbea5df06c489d2cf3b9"
           },
           "submit_failure_record_path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F06-P1-R1/resume_submit_failure_classification.json",
-          "submit_failure_record_sha256": "aeb9b04d68016b2159fd73b9b4980b19f193a9dfebf145177cd34d3a0c3d22e2"
+          "submit_failure_record_sha256": "aeb9b04d68016b2159fd73b9b4980b19f193a9dfebf145177cd34d3a0c3d22e2",
+          "diagnostic_primary_classification": "existing_task_not_terminal",
+          "diagnostic_secondary_credit_classification": "credit_consumption_unresolved",
+          "diagnostic_confidence": "high_for_current_remote_nonterminal_state_low_for_original_transport_cause",
+          "diagnostic_current_live_credit": 5695,
+          "diagnostic_prior_pre_F06_credit": 5695,
+          "diagnostic_raw_credit_delta": 0,
+          "diagnostic_confirmed_F06_credit_cost": null,
+          "diagnostic_record_path": "experiments/CAL-001/execution_records/P3D_W01_DIAG/CAL001-F06-P1-R1_upload_transport_failure_diagnostic_record.json",
+          "diagnostic_query_evidence": {
+            "operation_id": "diagnostic-query-001",
+            "operation_kind": "query",
+            "exit_code": 0,
+            "returned_submit_id": "cabfa6ab-cc61-4d29-8630-da01dfdeef65",
+            "gen_status": "querying",
+            "queue_status": null,
+            "fail_reason": null,
+            "credit_count": null,
+            "result_image_count": 0,
+            "result_video_count": 0,
+            "result_output_count": 0,
+            "download_url_present": false,
+            "envelope_path": "experiments/CAL-001/execution_records/P3D_W01_DIAG/CAL001-F06-P1-R1/evidence/diagnostic-query-001.subprocess_envelope.json",
+            "envelope_sha256": "0a9779e660b57f99e4618ae6ec2ebf4157e570b3f511f9861bc854fc60bbea2e",
+            "parsed_path": "experiments/CAL-001/execution_records/P3D_W01_DIAG/CAL001-F06-P1-R1/evidence/diagnostic-query-001.parsed_query_result.json",
+            "parsed_sha256": "fda1ac8d857bae7d85c23ab5b2af45ed925b69f25a3a7c28cc5feb0f8e1b472b"
+          }
         },
         {
           "experiment_id": "CAL001-F07-P1-R1",
@@ -4416,8 +4447,8 @@
       ]
     }
   ],
-  "exact_next_action": "Require a new human decision; no submit, query, download, retry, resubmit, replacement, or skip is authorized.",
-  "stop_condition": "F06 immediate submit terminal failure: upload_transport_failure; provider task created with submit_id cabfa6ab-cc61-4d29-8630-da01dfdeef65; gen_status=fail; logid absent; credit_count absent; no query, download, retry, resubmit, replacement, skip, or F07 submit authorized.",
+  "exact_next_action": "Require a new human decision for the existing F06 task now observed as querying; no additional query, download, retry, resubmit, submit, replacement, skip, or F07 submit is authorized.",
+  "stop_condition": "F06 diagnostic query returned gen_status=querying for existing submit_id cabfa6ab-cc61-4d29-8630-da01dfdeef65 after the historical immediate upload failure; credit consumption remains unresolved; authority is closed and no additional live action is authorized.",
   "P3C_performed_exact_next_action": true,
   "one_wave_per_Goal_boundary": {
     "enabled": true,

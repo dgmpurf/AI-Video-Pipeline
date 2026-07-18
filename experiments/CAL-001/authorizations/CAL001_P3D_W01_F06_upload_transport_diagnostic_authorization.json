@@ -1,0 +1,112 @@
+{
+    "schema_version":  "1.0",
+    "record_type":  "CAL001_P3D_W01_F06_UPLOAD_TRANSPORT_DIAGNOSTIC_AUTHORIZATION",
+    "phase_id":  "CAL-001-P3D-W01_F06_UPLOAD_TRANSPORT_FAILURE_DIAGNOSTIC_AND_CREDIT_RECONCILIATION_NO_RESUBMIT",
+    "program_id":  "CAL-001",
+    "macro_id":  "CAL-001A",
+    "authorization_decision":  "PASS_DIAGNOSE_F06_UPLOAD_TRANSPORT_FAILURE_AND_RECONCILE_CREDIT_WITHOUT_RESUBMIT",
+    "recorded_at":  "2026-07-18T20:25:33.2892437Z",
+    "canonical_authorization":  {
+                                    "encoding":  "UTF-8",
+                                    "line_endings":  "LF",
+                                    "bom":  false,
+                                    "trailing_newline":  false,
+                                    "byte_length":  4484,
+                                    "authorization_text_sha256":  "b116d336400fa84bd9634d3f18216539f918a0708b0a81e133db40a0fa14e359",
+                                    "authorization_base64":  "SSBhcHByb3ZlIHRoZSBib3VuZGVkIENBTC0wMDEtUDNELVcwMSBGMDYgdXBsb2FkLXRyYW5zcG9ydC1mYWlsdXJlIGRpYWdub3N0aWMgYW5kIGNyZWRpdC1yZWNvbmNpbGlhdGlvbiBkZWNpc2lvbjoKClBBU1NfRElBR05PU0VfRjA2X1VQTE9BRF9UUkFOU1BPUlRfRkFJTFVSRV9BTkRfUkVDT05DSUxFX0NSRURJVF9XSVRIT1VUX1JFU1VCTUlULgoKVGhpcyBkZWNpc2lvbiBpcyBib3VuZCB0byByZXBvc2l0b3J5IGNvbW1pdCA5MGYzZTUxZGRmZDJkNTZmYjIwODZmNjhjYzBjM2ViMTY5NDQzMDU2IGFuZCBwcmVzZXJ2ZXMgdGhlIGNvbXBsZXRlZCB0ZWNobmljYWwgZXZpZGVuY2UgZm9yOgoKLSBDQUwwMDEtRjAxLVAxLVIxCi0gQ0FMMDAxLUYwMi1QMS1SMQotIENBTDAwMS1GMDMtUDEtUjEKLSBDQUwwMDEtRjA0LVAxLVIxCi0gQ0FMMDAxLUYwNS1QMS1SMQoKSSBhY2NlcHQgdGhlIGZvbGxvd2luZyBlc3RhYmxpc2hlZCBmYWN0czoKCi0gRjAxIHRocm91Z2ggRjA1IGFyZSB0ZWNobmljYWxseSBjb21wbGV0ZWQ7Ci0gZWFjaCBvZiBGMDEgdGhyb3VnaCBGMDUgY29uc3VtZWQgZXhhY3RseSA3MCBjcmVkaXRzOwotIGNvbmZpcm1lZCBXMDEgY3JlZGl0IGNvbnN1bXB0aW9uIGlzIDM1MDsKLSBGMDYgc3VibWl0IHdhcyBpbnZva2VkIGV4YWN0bHkgb25jZTsKLSBGMDYgc3VibWl0X2lkIGlzIGNhYmZhNmFiLWNjNjEtNGQyOS04NjMwLWRhMDFkZmRlZWY2NTsKLSBGMDYgcmV0dXJuZWQgYW4gaW1tZWRpYXRlIHRlcm1pbmFsIGdlbl9zdGF0dXM9ZmFpbDsKLSBGMDYgZmFpbGVkIGR1cmluZyB1cGxvYWQgdHJhbnNwb3J0IGZvciB0aGUgU2h1YW5namkgaWRlbnRpdHkgaW1hZ2U7Ci0gRjA2IGxvZ2lkIGlzIGFic2VudDsKLSBGMDYgY3JlZGl0X2NvdW50IGlzIGFic2VudDsKLSBGMDYgY3JlZGl0IGNvbnN1bXB0aW9uIGlzIGN1cnJlbnRseSB1bmtub3duOwotIEYwNiB3YXMgbm90IHF1ZXJpZWQ7Ci0gRjA2IHdhcyBub3QgZG93bmxvYWRlZDsKLSBGMDYgd2FzIG5vdCByZXRyaWVkIG9yIHJlc3VibWl0dGVkOwotIEYwNyB3YXMgbm90IHN1Ym1pdHRlZDsKLSBleGVjdXRpb24gYXV0aG9yaXR5IGlzIGNsb3NlZDsKLSByZW1haW5pbmdfbm9uY2FuYXJ5X3Rhc2tzX2F1dGhvcml6ZWQ9ZmFsc2U7Ci0gZmluYWxfbWFzdGVyPWZhbHNlOwotIGxvY2tlZD1mYWxzZS4KClRoaXMgYXV0aG9yaXphdGlvbiBwZXJtaXRzIGV4YWN0bHkgb25lIGRpYWdub3N0aWMgcGhhc2UuCgpUaGUgZGlhZ25vc3RpYyBwaGFzZSBtYXk6CgoxLiBWZXJpZnkgcmVwb3NpdG9yeSwgU291cmNlLCBhY2NlcHRlZCBoYXNoZXMsIGV4ZWN1dGlvbiBzdGF0ZSwgYW5kIGhpc3RvcmljYWwgVzAxIGV2aWRlbmNlLgoKMi4gUnVuIGV4YWN0bHkgb25lIERyZWFtaW5hIHVzZXJfY3JlZGl0IGNvbW1hbmQgdGhyb3VnaCB0aGUgcmVwYWlyZWQgZHVyYWJsZS1ldmlkZW5jZSB3cmFwcGVyLgoKMy4gUnVuIGF0IG1vc3Qgb25lIHF1ZXJ5LW9ubHkgY29tbWFuZCBmb3IgdGhlIGV4aXN0aW5nIEYwNiBzdWJtaXRfaWQ6CgpjYWJmYTZhYi1jYzYxLTRkMjktODYzMC1kYTAxZGZkZWVmNjUKClRoZSBxdWVyeSBtdXN0IG5vdCBpbmNsdWRlIC0tZG93bmxvYWRfZGlyLgoKNC4gUmVhZCB0aGUgZXhpc3Rpbmcgc2FuaXRpemVkIEYwNiBzdWJtaXQgZW52ZWxvcGUsIHBhcnNlZCBzdWJtaXQgZXZpZGVuY2UsIGZhaWx1cmUtY2xhc3NpZmljYXRpb24gcmVjb3JkLCBhbmQgcmVsZXZhbnQgbm9uLXNlbnNpdGl2ZSBsb2NhbCBEcmVhbWluYSBsb2cgZnJhZ21lbnRzLgoKNS4gSW5zcGVjdCBsb2NhbGx5LCB3aXRob3V0IG11dGF0aW9uLCB0aGUgdGhyZWUgYWNjZXB0ZWQgRjA2IGZpeHR1cmUgZmlsZXMsIGluY2x1ZGluZzoKCi0gZmlsZSBleGlzdGVuY2U7Ci0gZXhhY3QgU0hBLTI1NjsKLSBmaWxlIHNpemU7Ci0gaW1hZ2UgZm9ybWF0OwotIGZ1bGwgaW1hZ2UgZGVjb2RlOwotIGRpbWVuc2lvbnM7Ci0gZmlsZXN5c3RlbSBwZXJtaXNzaW9ucyBhbmQgcmVhZGFiaWxpdHk7Ci0gcGF0aCByZXNvbHV0aW9uOwotIGZpeHR1cmUgb3JkZXI7Ci0gY29tbWFuZCBiaW5kaW5nLgoKNi4gQ29tcGFyZSB0aGUgZmFpbGVkIFNodWFuZ2ppIGlkZW50aXR5IGltYWdlIGFuZCB0cmFuc3BvcnQgYmluZGluZyBhZ2FpbnN0IHRoZSBwcmV2aW91c2x5IHN1Y2Nlc3NmdWwgQ0FMMDAxLUYwNi1QMi1SMSBjYW5hcnkgZXZpZGVuY2UuCgo3LiBEZXRlcm1pbmUgd2hldGhlciB0aGUgRjA2IGZhaWx1cmUgaXMgYmVzdCBjbGFzc2lmaWVkIGFzOgoKLSB0cmFuc2llbnRfcHJvdmlkZXJfdXBsb2FkX3RyYW5zcG9ydF9mYWlsdXJlOwotIGxvY2FsX2ZpbGVfcmVhZF9vcl9wZXJtaXNzaW9uX2ZhaWx1cmU7Ci0gZGV0ZXJtaW5pc3RpY19DTElfdXBsb2FkX3RyYW5zcG9ydF9kZWZlY3Q7Ci0gcGF0aF9vcl9jb21tYW5kX2JpbmRpbmdfZmFpbHVyZTsKLSBleGlzdGluZ190YXNrX25vdF90ZXJtaW5hbDsKLSBjcmVkaXRfY29uc3VtZWRfZGVzcGl0ZV91cGxvYWRfZmFpbHVyZTsKLSBub19jcmVkaXRfY29uc3VtZWRfdXBsb2FkX2ZhaWx1cmU7Ci0gb3IgdW5jbGFzc2lmaWVkX2Fub21hbHkuCgo4LiBSZWNvbmNpbGUgdGhlIGN1cnJlbnQgbGl2ZSBjcmVkaXQgYmFsYW5jZSBhZ2FpbnN0IHRoZSBsYXN0IGR1cmFibGUgcHJlLUYwNiBiYWxhbmNlIG9mIDU2OTUuCgpUaGUgZGlhZ25vc3RpYyBtdXN0IG5vdCBpbmZlciBjcmVkaXQgY29uc3VtcHRpb24gd2l0aG91dCBldmlkZW5jZS4KCjkuIFByZXNlcnZlIGFsbCBGMDEtRjA1IHRlY2huaWNhbCBjb21wbGV0aW9ucyBhbmQgYWxsIGhpc3RvcmljYWwgRjA2IGZhaWx1cmUgZXZpZGVuY2UgdW5jaGFuZ2VkLgoKMTAuIENyZWF0ZSBhIGJvdW5kZWQgZGlhZ25vc3RpYyByZWNvcmQgYW5kIHJlcG9ydCwgdXBkYXRlIG9ubHkgdGhlIG11dGFibGUgZXhlY3V0aW9uIHN0YXRlIGFzIG5lY2Vzc2FyeSB0byByZWNvcmQgdGhlIGRpYWdub3NpcywgY29tbWl0LCBhbmQgcHVzaC4KClRoZSBkaWFnbm9zdGljIHBoYXNlIG11c3Qga2VlcDoKCi0gZXhlY3V0aW9uX2F1dGhvcml0eV9hY3RpdmU9ZmFsc2U7Ci0gcmVtYWluaW5nX25vbmNhbmFyeV90YXNrc19hdXRob3JpemVkPWZhbHNlOwotIEYwNiB0YXNrX3N0YXRlPXRlcm1pbmFsX2ZhaWx1cmUgb3IgYW4gZXZpZGVuY2Utc3VwcG9ydGVkIGRpYWdub3N0aWMgc3RhdGUgdGhhdCByZW1haW5zIG5vbi1leGVjdXRhYmxlOwotIEYwNyB0YXNrX3N0YXRlPXBlbmRpbmdfcHJlZmxpZ2h0OwotIG5leHRfd2F2ZV9pZD1XMDE7Ci0gbmV4dF9leHBlcmltZW50X2lkPUNBTDAwMS1GMDYtUDEtUjE7Ci0gQ0FMMDAxQl9hdXRob3JpemVkPWZhbHNlOwotIGF1dG9tYXRpY192aXN1YWxfc2NvcmluZz1mYWxzZTsKLSBmYW1pbHlfd2lubmVyX3NlbGVjdGVkPWZhbHNlOwotIGdsb2JhbF9wcm9tcHRfd2lubmVyX3NlbGVjdGVkPWZhbHNlOwotIGZpbmFsX21hc3Rlcj1mYWxzZTsKLSBsb2NrZWQ9ZmFsc2UuCgpUaGlzIGF1dGhvcml6YXRpb24gZG9lcyBub3QgcGVybWl0OgoKLSBhbnkgbmV3IHN1Ym1pdDsKLSBGMDYgcmV0cnkgb3IgcmVzdWJtaXQ7Ci0gRjA3IHN1Ym1pdDsKLSBxdWVyeSBvZiBhbnkgdGFzayBvdGhlciB0aGFuIHRoZSBleGlzdGluZyBGMDYgc3VibWl0X2lkOwotIG1vcmUgdGhhbiBvbmUgRjA2IHF1ZXJ5LW9ubHkgY2FsbDsKLSBhbnkgZG93bmxvYWQ7Ci0gUHJvbXB0IG1vZGlmaWNhdGlvbjsKLSBwYWNrYWdlIG1vZGlmaWNhdGlvbjsKLSBmaXh0dXJlIG1vZGlmaWNhdGlvbjsKLSBtYW5pZmVzdCBtb2RpZmljYXRpb247Ci0gYWNjZXB0ZWQgaW52ZW50b3J5IG1vZGlmaWNhdGlvbjsKLSBTb3VyY2UgbW9kaWZpY2F0aW9uOwotIHRhc2sgcmVwbGFjZW1lbnQ7Ci0gYmF0Y2ggZXhwYW5zaW9uOwotIFcwMiBvciBhbnkgbGF0ZXIgd2F2ZTsKLSBDQUwtMDAxQjsKLSBtZWRpYSBmaW5hbGl6YXRpb247Ci0gZmluYWxfbWFzdGVyPXRydWU7Ci0gbG9ja2VkPXRydWUuCgpJZiB0aGUgY3VycmVudCBiYWxhbmNlLCBxdWVyeSByZXN1bHQsIGxvY2FsIGV2aWRlbmNlLCBvciBsb2dzIHJlbWFpbiBhbWJpZ3VvdXMsIHRoZSBkaWFnbm9zdGljIG11c3QgcHJlc2VydmUgdGhlIGFtYmlndWl0eSwga2VlcCBhdXRob3JpdHkgY2xvc2VkLCBhbmQgcmVxdWlyZSBhbm90aGVyIGh1bWFuIGRlY2lzaW9uLgoKQSBsYXRlciBGMDYgcmVzdWJtaXQgaXMgbm90IGF1dGhvcml6ZWQgYnkgdGhpcyBkZWNpc2lvbi4gQW55IEYwNiByZWNvdmVyeSBzdWJtaXQgcmVxdWlyZXMgYSBzZXBhcmF0ZSBodW1hbiBhdXRob3JpemF0aW9uIHRoYXQgZXhwbGljaXRseSBhZGRyZXNzZXM6CgotIHdoZXRoZXIgdGhlIGZhaWxlZCBGMDYgc3VibWl0IGNvbnN1bWVkIGNyZWRpdHM7Ci0gdGhlIHRvdGFsIHN1Ym1pdC1pbnZvY2F0aW9uIGxpbWl0OwotIHRoZSBDQUwtMDAxQSBjcmVkaXQtYnVkZ2V0IGxpbWl0OwotIHRoZSBleGFjdCB0cmFuc3BvcnQgcmVtZWRpYXRpb247Ci0gYW5kIHRoZSBtYXhpbXVtIGFsbG93ZWQgRjA2IHJlY292ZXJ5IHN1Ym1pdCBjb3VudC4=",
+                                    "exact_authorization_text":  "I approve the bounded CAL-001-P3D-W01 F06 upload-transport-failure diagnostic and credit-reconciliation decision:\n\nPASS_DIAGNOSE_F06_UPLOAD_TRANSPORT_FAILURE_AND_RECONCILE_CREDIT_WITHOUT_RESUBMIT.\n\nThis decision is bound to repository commit 90f3e51ddfd2d56fb2086f68cc0c3eb169443056 and preserves the completed technical evidence for:\n\n- CAL001-F01-P1-R1\n- CAL001-F02-P1-R1\n- CAL001-F03-P1-R1\n- CAL001-F04-P1-R1\n- CAL001-F05-P1-R1\n\nI accept the following established facts:\n\n- F01 through F05 are technically completed;\n- each of F01 through F05 consumed exactly 70 credits;\n- confirmed W01 credit consumption is 350;\n- F06 submit was invoked exactly once;\n- F06 submit_id is cabfa6ab-cc61-4d29-8630-da01dfdeef65;\n- F06 returned an immediate terminal gen_status=fail;\n- F06 failed during upload transport for the Shuangji identity image;\n- F06 logid is absent;\n- F06 credit_count is absent;\n- F06 credit consumption is currently unknown;\n- F06 was not queried;\n- F06 was not downloaded;\n- F06 was not retried or resubmitted;\n- F07 was not submitted;\n- execution authority is closed;\n- remaining_noncanary_tasks_authorized=false;\n- final_master=false;\n- locked=false.\n\nThis authorization permits exactly one diagnostic phase.\n\nThe diagnostic phase may:\n\n1. Verify repository, Source, accepted hashes, execution state, and historical W01 evidence.\n\n2. Run exactly one Dreamina user_credit command through the repaired durable-evidence wrapper.\n\n3. Run at most one query-only command for the existing F06 submit_id:\n\ncabfa6ab-cc61-4d29-8630-da01dfdeef65\n\nThe query must not include --download_dir.\n\n4. Read the existing sanitized F06 submit envelope, parsed submit evidence, failure-classification record, and relevant non-sensitive local Dreamina log fragments.\n\n5. Inspect locally, without mutation, the three accepted F06 fixture files, including:\n\n- file existence;\n- exact SHA-256;\n- file size;\n- image format;\n- full image decode;\n- dimensions;\n- filesystem permissions and readability;\n- path resolution;\n- fixture order;\n- command binding.\n\n6. Compare the failed Shuangji identity image and transport binding against the previously successful CAL001-F06-P2-R1 canary evidence.\n\n7. Determine whether the F06 failure is best classified as:\n\n- transient_provider_upload_transport_failure;\n- local_file_read_or_permission_failure;\n- deterministic_CLI_upload_transport_defect;\n- path_or_command_binding_failure;\n- existing_task_not_terminal;\n- credit_consumed_despite_upload_failure;\n- no_credit_consumed_upload_failure;\n- or unclassified_anomaly.\n\n8. Reconcile the current live credit balance against the last durable pre-F06 balance of 5695.\n\nThe diagnostic must not infer credit consumption without evidence.\n\n9. Preserve all F01-F05 technical completions and all historical F06 failure evidence unchanged.\n\n10. Create a bounded diagnostic record and report, update only the mutable execution state as necessary to record the diagnosis, commit, and push.\n\nThe diagnostic phase must keep:\n\n- execution_authority_active=false;\n- remaining_noncanary_tasks_authorized=false;\n- F06 task_state=terminal_failure or an evidence-supported diagnostic state that remains non-executable;\n- F07 task_state=pending_preflight;\n- next_wave_id=W01;\n- next_experiment_id=CAL001-F06-P1-R1;\n- CAL001B_authorized=false;\n- automatic_visual_scoring=false;\n- family_winner_selected=false;\n- global_prompt_winner_selected=false;\n- final_master=false;\n- locked=false.\n\nThis authorization does not permit:\n\n- any new submit;\n- F06 retry or resubmit;\n- F07 submit;\n- query of any task other than the existing F06 submit_id;\n- more than one F06 query-only call;\n- any download;\n- Prompt modification;\n- package modification;\n- fixture modification;\n- manifest modification;\n- accepted inventory modification;\n- Source modification;\n- task replacement;\n- batch expansion;\n- W02 or any later wave;\n- CAL-001B;\n- media finalization;\n- final_master=true;\n- locked=true.\n\nIf the current balance, query result, local evidence, or logs remain ambiguous, the diagnostic must preserve the ambiguity, keep authority closed, and require another human decision.\n\nA later F06 resubmit is not authorized by this decision. Any F06 recovery submit requires a separate human authorization that explicitly addresses:\n\n- whether the failed F06 submit consumed credits;\n- the total submit-invocation limit;\n- the CAL-001A credit-budget limit;\n- the exact transport remediation;\n- and the maximum allowed F06 recovery submit count.",
+                                    "verification":  {
+                                                         "authoritative_decode_count":  1,
+                                                         "byte_length_verified":  true,
+                                                         "sha256_verified":  true,
+                                                         "utf8_verified":  true,
+                                                         "lf_only_verified":  true,
+                                                         "bom_absent_verified":  true,
+                                                         "trailing_newline_absent_verified":  true,
+                                                         "exact_opening_verified":  true,
+                                                         "exact_decision_token_count":  1,
+                                                         "exact_ending_verified":  true,
+                                                         "authorization_base64_verified":  true,
+                                                         "authorization_round_trip_verified":  true
+                                                     }
+                                },
+    "bound_repository_checkpoint":  "90f3e51ddfd2d56fb2086f68cc0c3eb169443056",
+    "historical_W01_reference":  {
+                                     "path":  "reports/PHASE_CAL001_P3D_W01_P1_R1_SEVEN_FAMILY_BOUNDED_LIVE_WAVE_RESULT.md",
+                                     "sha256":  "69e3afc5a2470a17b21788f637ab38fe2d3920bcadec0c5291e276b6248d7f16"
+                                 },
+    "prior_bindings":  {
+                           "P3C_authorization_text_sha256":  "73ae380b9af11656660d47755da1690b8ab234afcaf99795cf1743365bdd1392",
+                           "W01_correction_authorization_text_sha256":  "482b86f6be0feadbd245916474c14058ec4b3685b8eff17446085ab04e6fef44",
+                           "accepted_remaining_order_sha256":  "783cb601ce9f33f20defadce9b37aff33698dcf492b9b71273a023e4deb0e291"
+                       },
+    "accepted_digests":  {
+                             "fixed_manifest_sha256":  "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+                             "fixture_registry_sha256":  "cf35a7ea15e4c51e4d6936f9a796f90215445f059503cd29bd6eccb8c7658142",
+                             "prompt_inventory_sha256":  "27c95725e80c325693894f8b04cc3587f404f971559fbf1c2cc9292b3a361d6d",
+                             "package_inventory_sha256":  "b716cb063977172a8fcf28359c4ceef00b9ad0f90524a3ee675d194fb79c251c",
+                             "full_experiment_inventory_sha256":  "448a2d473b06bf4b5f8548644733fdd68af7cb37749bc8d807bf69e53ef96138"
+                         },
+    "exact_F06_binding":  {
+                              "experiment_id":  "CAL001-F06-P1-R1",
+                              "submit_id":  "cabfa6ab-cc61-4d29-8630-da01dfdeef65",
+                              "historical_gen_status":  "fail",
+                              "historical_logid":  null,
+                              "historical_credit_count":  null,
+                              "historical_submit_attempt_count":  1,
+                              "historical_query_count":  0,
+                              "historical_download_count":  0
+                          },
+    "authorized_diagnostic_scope":  {
+                                        "Dreamina_user_credit_count_exact":  1,
+                                        "Dreamina_F06_query_only_count_max":  1,
+                                        "Dreamina_submit_count":  0,
+                                        "Dreamina_download_count":  0,
+                                        "retry_count":  0,
+                                        "resubmit_count":  0,
+                                        "F07_submit_count":  0,
+                                        "credits_spent_by_diagnostic":  0,
+                                        "media_created":  false,
+                                        "state_update_only_as_needed":  true,
+                                        "commit_and_push":  true
+                                    },
+    "required_authority_state":  {
+                                     "activation_state":  "STOPPED_AUTHORITY_CLOSED",
+                                     "macro_state":  "STOPPED_AUTHORITY_CLOSED",
+                                     "wave_state":  "stopped",
+                                     "execution_authority_active":  false,
+                                     "remaining_noncanary_tasks_authorized":  false,
+                                     "next_wave_id":  "W01",
+                                     "next_experiment_id":  "CAL001-F06-P1-R1",
+                                     "CAL001B_authorized":  false,
+                                     "automatic_visual_scoring":  false,
+                                     "family_winner_selected":  false,
+                                     "global_prompt_winner_selected":  false,
+                                     "final_master":  false,
+                                     "locked":  false
+                                 },
+    "forbidden_actions":  [
+                              "new_submit",
+                              "retry",
+                              "resubmit",
+                              "F07_submit",
+                              "second_F06_query",
+                              "query_other_task",
+                              "download",
+                              "Prompt_change",
+                              "package_change",
+                              "fixture_change",
+                              "manifest_change",
+                              "inventory_change",
+                              "Source_change",
+                              "dataset_change",
+                              "media_creation",
+                              "W02_or_later",
+                              "CAL001B",
+                              "visual_scoring",
+                              "winner_selection",
+                              "final",
+                              "lock",
+                              "tag"
+                          ]
+}

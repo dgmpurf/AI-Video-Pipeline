@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3D-W01-F06-DIAG",
+  "operation_id": "diagnostic-user-credit-001",
+  "operation_kind": "diagnostic_credit_reconciliation",
+  "operation_count": 1,
+  "experiment_id": "CAL001-F06-P1-R1",
+  "dreamina_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "command_structure_without_prompt_or_secrets": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "user_credit"
+  ],
+  "subprocess_exit_code": 0,
+  "sanitized_evidence_envelope_path": "experiments/CAL-001/execution_records/P3D_W01_DIAG/CAL001-F06-P1-R1/evidence/diagnostic-user-credit-001.subprocess_envelope.json",
+  "envelope_sha256": "967b33254280ed62392a7329410facb44db1a29e7115bd79f0491adb27c73e88",
+  "prior_pre_F06_credit": 5695,
+  "current_live_credit": 5695,
+  "raw_credit_delta": 0,
+  "parsed_at": "2026-07-18T20:27:17.613346Z"
+}

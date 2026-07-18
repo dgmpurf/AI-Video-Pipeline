@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3D-W01-F06-DIAG",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "generated_at": "2026-07-18T20:28:56.4125479Z",
+  "log_source_read_only": "C:/Users/msjpurf/.dreamina_cli/logs/dreamina.log.2026-07-19_02",
+  "log_source_staged": false,
+  "sensitive_values_persisted": false,
+  "signed_urls_persisted": false,
+  "observations": [
+    {
+      "timestamp": "2026-07-19 02:58:22.288",
+      "summary": "F06 File_0 direct upload completed for the Fenshou fixture after about 19.0 seconds.",
+      "resource_uri_redacted": true
+    },
+    {
+      "timestamp": "2026-07-19 02:58:22.428",
+      "summary": "The Fenshou fixture was recorded as upload completed for submit_id cabfa6ab-cc61-4d29-8630-da01dfdeef65.",
+      "resource_uri_redacted": true
+    },
+    {
+      "timestamp": "2026-07-19 02:58:22 onward",
+      "summary": "The local log contains no later low-level line for the Shuangji fixture or submit completion; the durable submit envelope alone records the immediate no-file-upload error.",
+      "local_log_detail_gap": true
+    },
+    {
+      "timestamp": "2026-07-18 20:03:55.891",
+      "summary": "The successful CAL001-F06-P2-R1 canary log records upload completed for the identical Shuangji path and SHA-256.",
+      "resource_uri_redacted": true
+    }
+  ],
+  "historical_wrapper_fail_reason": "upload resource productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png: upload image: upload phase, no file upload, please check log for more details",
+  "local_logger_access_denied_found": false,
+  "local_auth_failure_found": false,
+  "local_file_read_failure_found": false,
+  "deterministic_cli_defect_found": false,
+  "log_supports_specific_transport_root_cause": false,
+  "ambiguity_preserved": true,
+  "log_files_modified": false
+}
