@@ -2,7 +2,7 @@
 "CAL001-F01-P1-R1","false","false","","not_attempted","0","not_queried","","not_attempted","","","","false","","","","","","","","","","","","","","","","","","","","","not_started","unreviewed"
 "CAL001-F01-P1-R2","false","false","","not_attempted","0","not_queried","","not_attempted","","","","false","","","","","","","","","","","","","","","","","","","","","not_started","unreviewed"
 "CAL001-F01-P1-R3","false","false","","not_attempted","0","not_queried","","not_attempted","","","","false","","","","","","","","","","","","","","","","","","","","","not_started","unreviewed"
-"CAL001-F01-P2-R1","false","false","","not_attempted","0","not_queried","","not_attempted","","","","false","","","","","","","","","","","","","","","","","","","","","not_started","unreviewed"
+"CAL001-F01-P2-R1","true","true","4e4588dd-a0e1-4539-8390-692cb9bf80f8","task_created","0","querying","","not_attempted","","","70","true","","","","","","","","","","","","","","","","","","","","","not_started","unreviewed"
 "CAL001-F01-P2-R2","false","false","","not_attempted","0","not_queried","","not_attempted","","","","false","","","","","","","","","","","","","","","","","","","","","not_started","unreviewed"
 "CAL001-F01-P2-R3","false","false","","not_attempted","0","not_queried","","not_attempted","","","","false","","","","","","","","","","","","","","","","","","","","","not_started","unreviewed"
 "CAL001-F01-P3-R1","false","false","","not_attempted","0","not_queried","","not_attempted","","","","false","","","","","","","","","","","","","","","","","","","","","not_started","unreviewed"
