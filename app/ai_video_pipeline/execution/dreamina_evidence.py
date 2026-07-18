@@ -138,6 +138,231 @@ class DurableCommandExecution:
             raise
 
 
+@dataclass(frozen=True)
+class CreditContinuityResult:
+    passed: bool
+    classification: str
+    current_balance_numeric: int | None
+    threshold_passed: bool
+    drift_amount: int | None
+    drift_direction: str
+    scope_or_budget_enlarged: bool
+    stop_condition: str | None
+
+
+@dataclass(frozen=True)
+class PostSubmitCreditResult:
+    passed: bool
+    classification: str
+    immediate_pre_submit_balance: int | None
+    immediate_post_submit_balance: int | None
+    observed_credit_delta: int | None
+    provider_credit_count_numeric: int | None
+    stop_condition: str | None
+
+
+def _credit_integer(value: Any) -> int | None:
+    if isinstance(value, bool):
+        return None
+    if isinstance(value, int):
+        return value
+    if isinstance(value, float):
+        return int(value) if value.is_integer() else None
+    if isinstance(value, str) and re.fullmatch(r"[+-]?\d+", value.strip()):
+        return int(value.strip())
+    return None
+
+
+def validate_pre_submit_credit_continuity(
+    *,
+    prior_observed_balance: Any,
+    current_observed_balance: Any,
+    required_dynamic_threshold: Any,
+    intervening_authorized_CAL001_submit_count: Any,
+) -> CreditContinuityResult:
+    current = _credit_integer(current_observed_balance)
+    threshold = _credit_integer(required_dynamic_threshold)
+    prior = _credit_integer(prior_observed_balance)
+    submit_count = _credit_integer(intervening_authorized_CAL001_submit_count)
+
+    if current is None:
+        return CreditContinuityResult(
+            False,
+            "current_balance_nonnumeric",
+            None,
+            False,
+            None,
+            "unknown",
+            False,
+            "Current pre-submit balance is absent or nonnumeric.",
+        )
+    if threshold is None:
+        return CreditContinuityResult(
+            False,
+            "dynamic_threshold_nonnumeric",
+            current,
+            False,
+            None,
+            "unknown",
+            False,
+            "Required dynamic credit threshold is absent or nonnumeric.",
+        )
+    if prior is None:
+        return CreditContinuityResult(
+            False,
+            "prior_balance_nonnumeric",
+            current,
+            current >= threshold,
+            None,
+            "unknown",
+            False,
+            "Prior credit observation is absent or nonnumeric.",
+        )
+    if submit_count is None or submit_count < 0:
+        return CreditContinuityResult(
+            False,
+            "intervening_submit_count_invalid",
+            current,
+            current >= threshold,
+            current - prior,
+            "unknown",
+            False,
+            "Intervening authorized CAL-001 submit count is invalid.",
+        )
+
+    drift = current - prior
+    direction = "positive" if drift > 0 else "negative" if drift < 0 else "none"
+    threshold_passed = current >= threshold
+    if not threshold_passed:
+        return CreditContinuityResult(
+            False,
+            "below_dynamic_credit_threshold",
+            current,
+            False,
+            drift,
+            direction,
+            False,
+            f"Current balance {current} is below required threshold {threshold}.",
+        )
+
+    if submit_count == 0:
+        if drift > 0:
+            classification = "positive_nonspend_credit_drift"
+            stop_condition = None
+            passed = True
+        elif drift == 0:
+            classification = "no_pre_submit_credit_drift"
+            stop_condition = None
+            passed = True
+        else:
+            classification = "unexplained_negative_credit_drift"
+            stop_condition = (
+                "Current balance decreased without an intervening authorized "
+                "CAL-001 submit."
+            )
+            passed = False
+    else:
+        expected_drift = -70 * submit_count
+        if drift == expected_drift:
+            classification = "authorized_submit_credit_drift"
+            stop_condition = None
+            passed = True
+        else:
+            classification = "authorized_submit_credit_drift_unreconciled"
+            stop_condition = (
+                f"Observed drift {drift} does not equal the expected "
+                f"{-70 * submit_count} credits for {submit_count} authorized submit(s)."
+            )
+            passed = False
+
+    return CreditContinuityResult(
+        passed,
+        classification,
+        current,
+        True,
+        drift,
+        direction,
+        False,
+        stop_condition,
+    )
+
+
+def validate_post_submit_credit_reconciliation(
+    *,
+    immediate_pre_submit_balance: Any,
+    immediate_post_submit_balance: Any,
+    provider_credit_count: Any,
+) -> PostSubmitCreditResult:
+    pre_balance = _credit_integer(immediate_pre_submit_balance)
+    post_balance = _credit_integer(immediate_post_submit_balance)
+    provider_count = _credit_integer(provider_credit_count)
+    delta = (
+        pre_balance - post_balance
+        if pre_balance is not None and post_balance is not None
+        else None
+    )
+
+    if pre_balance is None or post_balance is None:
+        return PostSubmitCreditResult(
+            False,
+            "post_submit_balance_nonnumeric",
+            pre_balance,
+            post_balance,
+            delta,
+            provider_count,
+            "Immediate pre/post-submit balances are absent or nonnumeric.",
+        )
+    if provider_credit_count is None:
+        return PostSubmitCreditResult(
+            False,
+            "provider_credit_count_absent",
+            pre_balance,
+            post_balance,
+            delta,
+            None,
+            "Provider credit_count is absent.",
+        )
+    if provider_count is None:
+        return PostSubmitCreditResult(
+            False,
+            "provider_credit_count_nonnumeric",
+            pre_balance,
+            post_balance,
+            delta,
+            None,
+            "Provider credit_count is nonnumeric or ambiguous.",
+        )
+    if provider_count != 70:
+        return PostSubmitCreditResult(
+            False,
+            "provider_credit_count_not_70",
+            pre_balance,
+            post_balance,
+            delta,
+            provider_count,
+            f"Provider credit_count is {provider_count}, not 70.",
+        )
+    if delta != 70:
+        return PostSubmitCreditResult(
+            False,
+            "post_submit_credit_delta_not_70",
+            pre_balance,
+            post_balance,
+            delta,
+            provider_count,
+            f"Observed immediate post-submit credit delta is {delta}, not 70.",
+        )
+    return PostSubmitCreditResult(
+        True,
+        "exact_70_credit_reconciliation",
+        pre_balance,
+        post_balance,
+        delta,
+        provider_count,
+        None,
+    )
+
+
 def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 

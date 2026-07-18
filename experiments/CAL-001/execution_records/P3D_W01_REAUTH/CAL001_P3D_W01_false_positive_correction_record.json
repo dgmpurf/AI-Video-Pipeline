@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_P3D_W01_FALSE_POSITIVE_CORRECTION_RECORD",
+  "phase_id": "CAL-001-P3D-W01_PREFLIGHT_FALSE_POSITIVE_REVIEW_FIX_AND_REAUTHORIZATION_RECORD_ONLY",
+  "status": "W01_false_positive_corrected_reauthorized_ready_resume_F01",
+  "recorded_at": "2026-07-18T16:57:51.834941Z",
+  "starting_checkpoint": {
+    "branch": "main",
+    "local_HEAD": "7c86367a3d7ca17bb63e8ad148144b3075f4dab7",
+    "origin_main": "7c86367a3d7ca17bb63e8ad148144b3075f4dab7",
+    "sources_clean": true,
+    "staged_files": [],
+    "tracked_diff_before_correction": []
+  },
+  "authorization_verification": {
+    "decision": "PASS_REVIEW_CORRECT_AND_REAUTHORIZE_W01_AFTER_LOCAL_CREDIT_CONTINUITY_FALSE_POSITIVE",
+    "byte_length": 5685,
+    "authorization_text_sha256": "482b86f6be0feadbd245916474c14058ec4b3685b8eff17446085ab04e6fef44",
+    "authorization_base64_verified": true,
+    "authorization_round_trip_verified": true,
+    "authoritative_decode_count": 1,
+    "record_path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_false_positive_correction_reauthorization.json",
+    "record_file_sha256": "91f7fcf50c5aaf26ef24baf0a925abe94ea4d73aa93c00e57f7c32c9f7ff22e7"
+  },
+  "prior_P3C_bindings": {
+    "authorization_text_sha256": "73ae380b9af11656660d47755da1690b8ab234afcaf99795cf1743365bdd1392",
+    "authorization_record_file_sha256": "983ea0c8f95ef018b3171e41bc97a93235f8199796225335190f0156047e7141",
+    "accepted_remaining_order_sha256": "783cb601ce9f33f20defadce9b37aff33698dcf492b9b71273a023e4deb0e291"
+  },
+  "historical_stop_verification": {
+    "report_path": "reports/PHASE_CAL001_P3D_W01_P1_R1_SEVEN_FAMILY_BOUNDED_LIVE_WAVE_RESULT.md",
+    "report_sha256": "456a2b2ecbe46b0ec3de0fe3688ccb4622c2c852b98dc363ebb8e215011679d0",
+    "required_report_sha256_match": true,
+    "final_verdict": "CAL001_P3D_W01_STOPPED_AUTHORITY_CLOSED_REQUIRES_HUMAN_DECISION",
+    "macro_state": "STOPPED_AUTHORITY_CLOSED",
+    "wave_state": "stopped",
+    "F01_task_state": "stopped_anomaly",
+    "submit_count": 0,
+    "query_count": 0,
+    "download_count": 0,
+    "credit_cost": 0,
+    "F01_submit_attempt_count": 0,
+    "F01_submit_id": null,
+    "F01_logid": null,
+    "provider_task_created": false,
+    "provider_media_created": false,
+    "W01_dataset_update": false,
+    "W01_technical_execution_record_created": false,
+    "historical_evidence_sha256": {
+      "reports/PHASE_CAL001_P3D_W01_P1_R1_SEVEN_FAMILY_BOUNDED_LIVE_WAVE_RESULT.md": "456a2b2ecbe46b0ec3de0fe3688ccb4622c2c852b98dc363ebb8e215011679d0",
+      "experiments/CAL-001/execution_records/P3D_W01/wave_execution_summary.json": "f1d3e26de3440a0d190dce6644640dc76a74aa028970af352d54dda52023ec4d",
+      "experiments/CAL-001/execution_records/P3D_W01/CAL001-F01-P1-R1/stop_condition.json": "57c5bc575bb5c293b6f369f5ae06e8c9c5b11ae509498ed174fe7fe83c6b3993",
+      "experiments/CAL-001/execution_records/P3D_W01/CAL001-F01-P1-R1/evidence/pre-submit-user-credit-001.subprocess_envelope.json": "86e6e43b6982b0d8b50e78ec106b2369964fa866078af06e4e6b15fe31846ed6",
+      "experiments/CAL-001/execution_records/P3D_W01/CAL001-F01-P1-R1/evidence/pre-submit-user-credit-001.parsed_credit.json": "d9fcf0a25d6b06a8d6f6ab3d5f4c63d35fd1522e6a8218b24c79c1c203278281"
+    }
+  },
+  "canonical_digest_recomputation": {
+    "fixed_manifest_sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+    "fixture_registry_sha256": "cf35a7ea15e4c51e4d6936f9a796f90215445f059503cd29bd6eccb8c7658142",
+    "prompt_inventory_sha256": "27c95725e80c325693894f8b04cc3587f404f971559fbf1c2cc9292b3a361d6d",
+    "package_inventory_sha256": "b716cb063977172a8fcf28359c4ceef00b9ad0f90524a3ee675d194fb79c251c",
+    "full_experiment_inventory_sha256": "448a2d473b06bf4b5f8548644733fdd68af7cb37749bc8d807bf69e53ef96138",
+    "manifest_row_count": 84,
+    "unique_experiment_id_count": 84,
+    "prompt_mismatch_count": 0,
+    "package_mismatch_count": 0,
+    "fixture_mismatch_count": 0,
+    "accepted_bytes_unchanged": true
+  },
+  "historical_inventory_hash_diagnosis": {
+    "historical_package_inventory_value": "b71642dba3e22a286c832d61e175bf6adb3432a82793c89a6175fe1f57a06839",
+    "canonical_package_inventory_value": "b716cb063977172a8fcf28359c4ceef00b9ad0f90524a3ee675d194fb79c251c",
+    "historical_full_inventory_value": "44825f76c8d5518d96722628bb94b6e6524d1ad202fe9907c7459b7756f60315",
+    "canonical_full_inventory_value": "448a2d473b06bf4b5f8548644733fdd68af7cb37749bc8d807bf69e53ef96138",
+    "package_classification": "CANONICAL_BYTES_UNCHANGED_REPORT_OR_ALGORITHM_DEFECT",
+    "full_classification": "CANONICAL_BYTES_UNCHANGED_REPORT_OR_ALGORITHM_DEFECT",
+    "wrong_value_input_file_set": [],
+    "wrong_value_aggregation": null,
+    "finding": "The two historical values were literal Markdown report constants. They were not produced by hashing raw files or a derived inventory object, and the temporary driver contained no package/full inventory aggregation implementation.",
+    "historical_report_modified": false
+  },
+  "local_defect": {
+    "historical_temporary_file": "experiments/CAL-001/execution_records/P3D_W01/_cal001_p3d_w01_runtime_driver.py",
+    "historical_file_was_untracked_and_deleted_after_stop": true,
+    "historical_function": "execute_task",
+    "prior_condition": "initial_credit = int(read_json(PREFLIGHT_SUMMARY_PATH)[\"initial_credit\"]); expected_pre_credit = initial_credit - (order_index - 1) * 70; if pre_credit != expected_pre_credit: raise StopCondition(\"live credit continuity anomaly ...\")",
+    "call_path": [
+      "main",
+      "execute_task(CAL001-F01-P1-R1, order_index=1)",
+      "execute_dreamina(user_credit) through execute_with_durable_evidence",
+      "parse_credit -> 6045",
+      "authorized threshold check 6045 >= 5950",
+      "unauthorized exact-equality check 6045 != 5957",
+      "StopCondition",
+      "main exception handler",
+      "close_authority"
+    ],
+    "durable_evidence_written_before_stop": [
+      "experiments/CAL-001/execution_records/P3D_W01/CAL001-F01-P1-R1/evidence/pre-submit-user-credit-001.subprocess_envelope.json",
+      "experiments/CAL-001/execution_records/P3D_W01/CAL001-F01-P1-R1/evidence/pre-submit-user-credit-001.parsed_credit.json"
+    ],
+    "duplicate_prevention_transition_not_entered": true,
+    "update_state_preflight_not_entered": true,
+    "update_state_submit_started_not_entered": true,
+    "F01_submit_attempt_count_remained_zero": true
+  },
+  "implementation_correction": {
+    "file_path": "app/ai_video_pipeline/execution/dreamina_evidence.py",
+    "file_sha256": "7e153d7718d532b97bc5b4f18418b1ba39e43469602941ff6cb9b581a8386ae7",
+    "pre_submit_function": "validate_pre_submit_credit_continuity",
+    "post_submit_function": "validate_post_submit_credit_reconciliation",
+    "positive_drift_case": {
+      "prior": 5957,
+      "current": 6045,
+      "threshold": 5950,
+      "passed": true,
+      "classification": "positive_nonspend_credit_drift",
+      "drift_amount": 88,
+      "scope_or_budget_enlarged": false
+    },
+    "below_threshold_blocks": true,
+    "unexplained_negative_drift_without_authorized_submit_blocks": true,
+    "exact_post_submit_delta_required": 70,
+    "exact_provider_credit_count_required": 70,
+    "absent_nonnumeric_ambiguous_or_non_70_provider_charge_blocks": true,
+    "budget_invariant": "live_total_credit >= (84 - c) * 70 + 560",
+    "durable_evidence_wrapper_semantics_modified": false
+  },
+  "future_evidence_field_names": {
+    "authorization_text_sha256": "73ae380b9af11656660d47755da1690b8ab234afcaf99795cf1743365bdd1392",
+    "authorization_record_file_sha256": "983ea0c8f95ef018b3171e41bc97a93235f8199796225335190f0156047e7141",
+    "ambiguous_authorization_sha256_field_allowed_in_new_W01_evidence": false
+  },
+  "test_results": {
+    "focused_test_path": "tests/test_cal001_credit_continuity.py",
+    "focused_test_file_sha256": "18acbfaa81579a8931474029da74745d241f9aecfa24d11156dd10978b4ec4dd",
+    "focused_tests_passed": true,
+    "focused_test_count": 11,
+    "wrapper_tests_passed": true,
+    "wrapper_test_count": 13,
+    "bounded_non_slow_regression_passed": true,
+    "wider_all_tests_observation": {
+      "executed": true,
+      "passed": false,
+      "unrelated_existing_failure_count": 10,
+      "reason": "Missing legacy review_records files/templates and one unrelated stale production-status assertion.",
+      "correction_scope_changed_to_fix_unrelated_failures": false
+    },
+    "Dreamina_invoked_by_tests": false
+  },
+  "state_reopening": {
+    "state_contract_path": "experiments/CAL-001/execution_state/CAL001_P3C_remaining_77_resumable_execution_state_contract.json",
+    "state_contract_sha256": "069fe8d1d5f51c7e46dd6a64c321ed128b774aba6ad9ca829bc311a497dcc3bb",
+    "activation_state": "ACTIVATED_READY",
+    "macro_state": "ACTIVATED_READY",
+    "wave_id": "W01",
+    "wave_state": "pending",
+    "F01_task_state": "pending_preflight",
+    "F01_submit_attempt_count": 0,
+    "execution_authority_active": true,
+    "remaining_noncanary_tasks_authorized": true,
+    "next_wave_id": "W01",
+    "next_experiment_id": "CAL001-F01-P1-R1",
+    "stop_condition": null,
+    "F02_through_F07_remain_pending_preflight_with_zero_live_counters": true
+  },
+  "reauthorized_scope": {
+    "W01_only": true,
+    "prompt_variant": "P1",
+    "run_id": "R1",
+    "strict_family_order": [
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05",
+      "F06",
+      "F07"
+    ],
+    "first_experiment_id": "CAL001-F01-P1-R1",
+    "W02_or_later_authorized": false,
+    "separately_executed_bounded_live_wave_goal_required": true
+  },
+  "boundary_confirmation": {
+    "Dreamina_run": false,
+    "Dreamina_command_count": 0,
+    "submit_count": 0,
+    "query_count": 0,
+    "download_count": 0,
+    "credits_consumed": 0,
+    "media_created": false,
+    "datasets_modified": false,
+    "sources_modified": false,
+    "historical_evidence_modified": false,
+    "prompt_package_fixture_manifest_inventory_modified": false,
+    "CAL001B_authorized": false,
+    "automatic_visual_scoring": false,
+    "family_winner_selected": false,
+    "global_prompt_winner_selected": false,
+    "final_master": false,
+    "locked": false
+  },
+  "authority_effective_condition": {
+    "commit_and_push_required": true,
+    "final_HEAD_must_equal_origin_main": true,
+    "no_active_stop_condition_required": true
+  },
+  "recommended_next_phase": "CAL-001-P3D-W01_P1_R1_SEVEN_FAMILY_BOUNDED_LIVE_WAVE_RESUME_AFTER_FALSE_POSITIVE_CORRECTION",
+  "final_verdict": "CAL001_P3D_W01_FALSE_POSITIVE_CORRECTED_REAUTHORIZED_READY_RESUME_F01"
+}
