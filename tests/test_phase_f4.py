@@ -113,10 +113,12 @@ def test_06_submit_id_persistence_happens_before_query(tmp_path: Path) -> None:
         run_dirs = sorted((workspace / "productions" / "chi_yan_tian_qiong" / "runs" / "live").iterdir())
         current = run_dirs[-1]
         evidence["submitted_before_query"] = "SUB123" in (current / "job_store.json").read_text(encoding="utf-8")
+        evidence["envelope_before_query"] = (current / "raw_responses" / "execution_envelopes" / "submit-001.subprocess_envelope.json").exists()
         return CommandResult(list(argv), 0, '{"status":"querying"}', "")
 
     execute_f4_live_run(workspace, runner=runner)
     assert evidence["submitted_before_query"] is True
+    assert evidence["envelope_before_query"] is True
 
 
 def test_07_querying_state_resumes_query_only(tmp_path: Path) -> None:

@@ -12,6 +12,7 @@ from ..core.manifest import MANIFEST_FIELDS, parse_manifest_csv
 from ..core.models import ProviderName, ProviderRequest, RunMode, TaskSpec, TaskType
 from ..path_policy import PathPolicy
 from ..providers.dreamina_cli import DreaminaCLIProvider
+from .dreamina_evidence import execute_with_durable_evidence
 from .job_store import add_or_update_job, create_job_store, save_job_store
 from .recorder import write_csv, write_json, write_jsonl
 from .run_context import RunContext, create_run_dir
@@ -266,31 +267,67 @@ def execute_f4_live_run(
     )
     _write_initial_artifacts(run_context, task, argv, auth, policy)
 
-    submit_result = runner(argv)
-    submit_raw_path = run_context.raw_responses_dir / "submit_response.json"
-    write_json(submit_raw_path, _command_result_payload(submit_result), policy)
-    submit_id = extract_submit_id(submit_result.stdout + "\n" + submit_result.stderr)
-    auth.consume()
-    _write_authorization(run_context, auth, policy)
+    evidence_dir = run_context.raw_responses_dir / "execution_envelopes"
+    submit_execution = execute_with_durable_evidence(
+        runner=runner,
+        argv=argv,
+        evidence_dir=evidence_dir,
+        operation_id="submit-001",
+        experiment_id=task.task_id,
+        command_type=task.task_type.value,
+        operation_kind="submit",
+    )
+    submit_result = submit_execution.result
+    with submit_execution.postprocessing_guard(stage="submit_postprocessing"):
+        submit_raw_path = run_context.raw_responses_dir / "submit_response.json"
+        write_json(submit_raw_path, _command_result_payload(submit_result), policy)
+        submit_id = extract_submit_id(submit_result.stdout + "\n" + submit_result.stderr)
+        auth.consume()
+        _write_authorization(run_context, auth, policy)
 
-    if submit_result.returncode != 0 or not submit_id:
-        _persist_failed_submit(run_context, task, submit_result, policy)
-        return F4LiveResult("PHASE_F4_FAILED", run_context, submit_id, submit_result, None, None, "submit_failed", None, {}, pre_checks)
+        if submit_result.returncode != 0 or not submit_id:
+            _persist_failed_submit(run_context, task, submit_result, policy)
+            return F4LiveResult("PHASE_F4_FAILED", run_context, submit_id, submit_result, None, None, "submit_failed", None, {}, pre_checks)
 
-    _persist_submitted(run_context, task, submit_result, submit_id, argv, policy)
+        _persist_submitted(run_context, task, submit_result, submit_id, argv, policy)
 
     query_argv = [executable, "query_result", "--submit_id", submit_id]
-    query_result = runner(query_argv)
-    query_raw_path = run_context.raw_responses_dir / "query_response.json"
-    write_json(query_raw_path, _command_result_payload(query_result), policy)
-    query_status = extract_query_status(query_result.stdout + "\n" + query_result.stderr, query_result.returncode)
+    query_execution = execute_with_durable_evidence(
+        runner=runner,
+        argv=query_argv,
+        evidence_dir=evidence_dir,
+        operation_id="query-001",
+        experiment_id=task.task_id,
+        command_type="query_result",
+        operation_kind="query",
+        known_submit_id=submit_id,
+    )
+    query_result = query_execution.result
+    with query_execution.postprocessing_guard(stage="query_postprocessing"):
+        query_raw_path = run_context.raw_responses_dir / "query_response.json"
+        write_json(query_raw_path, _command_result_payload(query_result), policy)
+        query_status = extract_query_status(query_result.stdout + "\n" + query_result.stderr, query_result.returncode)
 
-    if query_status == "querying":
-        _persist_querying(run_context, task, submit_id, query_result, policy)
-        return F4LiveResult("PHASE_F4_SUBMITTED_QUERYING", run_context, submit_id, submit_result, query_result, None, query_status, None, {}, pre_checks)
-    if query_status == "success":
-        download_argv = [executable, "query_result", "--submit_id", submit_id, "--download_dir", str(run_context.downloads_dir)]
-        download_result = runner(download_argv)
+        if query_status == "querying":
+            _persist_querying(run_context, task, submit_id, query_result, policy)
+            return F4LiveResult("PHASE_F4_SUBMITTED_QUERYING", run_context, submit_id, submit_result, query_result, None, query_status, None, {}, pre_checks)
+        if query_status != "success":
+            _persist_failed_query(run_context, task, submit_id, query_result, query_status, policy)
+            return F4LiveResult("PHASE_F4_FAILED", run_context, submit_id, submit_result, query_result, None, query_status, None, {}, pre_checks)
+
+    download_argv = [executable, "query_result", "--submit_id", submit_id, "--download_dir", str(run_context.downloads_dir)]
+    download_execution = execute_with_durable_evidence(
+        runner=runner,
+        argv=download_argv,
+        evidence_dir=evidence_dir,
+        operation_id="download-001",
+        experiment_id=task.task_id,
+        command_type="query_result",
+        operation_kind="download",
+        known_submit_id=submit_id,
+    )
+    download_result = download_execution.result
+    with download_execution.postprocessing_guard(stage="download_postprocessing"):
         download_raw_path = run_context.raw_responses_dir / "download_response.json"
         write_json(download_raw_path, _command_result_payload(download_result), policy)
         if download_result.returncode != 0:
@@ -301,9 +338,6 @@ def execute_f4_live_run(
         integrity = check_image_integrity(output_path)
         _persist_success(run_context, task, submit_id, query_result, download_result, raw_download, output_path, integrity, policy)
         return F4LiveResult("PHASE_F4_SUCCESS_DOWNLOADED", run_context, submit_id, submit_result, query_result, download_result, query_status, output_path, integrity, pre_checks)
-
-    _persist_failed_query(run_context, task, submit_id, query_result, query_status, policy)
-    return F4LiveResult("PHASE_F4_FAILED", run_context, submit_id, submit_result, query_result, None, query_status, None, {}, pre_checks)
 
 
 def extract_submit_id(text: str) -> str:
