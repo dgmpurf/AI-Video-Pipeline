@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3B-R2-T3A",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F01-P2-R1",
+  "submit_id": "4e4588dd-a0e1-4539-8390-692cb9bf80f8",
+  "reviewer": "human_user_with_ChatGPT_Pro_assisted_visual_analysis",
+  "review_date": "2026-07-18",
+  "review_status": "reviewed",
+  "human_review_status": "reviewed",
+  "dataset_human_review_status": "completed",
+  "dataset_status_mapping": "completed is the existing schema-equivalent value for the human review state reviewed",
+  "experiment_validity_class": "B_VALID_FAILURE_USABLE_FOR_PROMPT_ARCHITECTURE_COMPARISON",
+  "candidate_status": "usable_with_caveats",
+  "dominant_visible_result": "A hooded figure in a dark rainy fortress environment slowly pushes open a massive gate.",
+  "chinese_review_summary": "雨夜要塞环境中，一名红色斗篷人物持续推动一扇巨大的城门。主体、场景和电影化风格稳定，推门动作确实发生，但动作推进缓慢，最终状态揭示和戏剧结果不足。",
+  "technical_evidence": {
+    "t2_report_path": "reports/PHASE_CAL001_P3B_R2_T2_EXISTING_F01_QUERY_DOWNLOAD_RECOVERY_RESULT.md",
+    "t2_final_verdict": "CAL001_P3B_R2_F01_EXISTING_TASK_RECOVERED_READY_VISUAL_REVIEW_AND_REMAINING_CANARY_DECISION",
+    "logid": "20260718154849169254047008489C358",
+    "final_gen_status": "success",
+    "result_image_count": 0,
+    "result_video_count": 1,
+    "download_count": 1,
+    "media_validation_pass": true,
+    "actual_credit_cost": 70
+  },
+  "source_media": {
+    "repository_relative_path": "experiments/CAL-001/runs/CAL001-F01-P2-R1/4e4588dd-a0e1-4539-8390-692cb9bf80f8_video_1.mp4",
+    "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-001/runs/CAL001-F01-P2-R1/4e4588dd-a0e1-4539-8390-692cb9bf80f8_video_1.mp4",
+    "sha256": "df0199aaee019b1b39e64419248a6247a8fec742751f83ab3764b10ce6a915a8",
+    "binary_copied_into_review_record": false
+  },
+  "source_media_path": "experiments/CAL-001/runs/CAL001-F01-P2-R1/4e4588dd-a0e1-4539-8390-692cb9bf80f8_video_1.mp4",
+  "source_media_sha256": "df0199aaee019b1b39e64419248a6247a8fec742751f83ab3764b10ce6a915a8",
+  "scores": {
+    "prompt_goal_match": 3,
+    "action_readability": 2,
+    "temporal_coherence": 5,
+    "style_coherence": 5,
+    "editability": 4
+  },
+  "visual_scores_assigned": true,
+  "subject_clear": true,
+  "subject_stable": true,
+  "world_coherent": true,
+  "style_coherent": true,
+  "action_exists": true,
+  "action_intensity": "low",
+  "long_static_tail": true,
+  "subject_evaluation": {
+    "subject_clear": true,
+    "subject_stable": true,
+    "unrelated_subject_present": false,
+    "identity_or_structure_drift": false
+  },
+  "world_style_evaluation": {
+    "world_coherent": true,
+    "style_coherent": true,
+    "lighting_coherent": true,
+    "environment_continuity": true
+  },
+  "action_evaluation": {
+    "action_exists": true,
+    "action_readable": true,
+    "action_intensity": "low",
+    "action_result_strength": "underpowered",
+    "static_image_only": false
+  },
+  "artifact_evaluation": {
+    "unrelated_subject": false,
+    "major_jump": false,
+    "dissolve_failure": false,
+    "major_structure_drift": false,
+    "long_static_tail": true
+  },
+  "best_usable_window": {
+    "start_seconds": 0.0,
+    "end_seconds": 1.5
+  },
+  "weak_window": {
+    "start_seconds": 2.5,
+    "end_seconds": 5.0
+  },
+  "primary_failure_label": "action_result_underpowered",
+  "secondary_failure_labels": [
+    "slow_action_progression",
+    "insufficient_final_state_reveal",
+    "low_motion_variation",
+    "weak_dramatic_endpoint",
+    "long_static_tail"
+  ],
+  "systemic_issue_found": false,
+  "safe_to_continue_remaining_technical_canary": true,
+  "remaining_six_family_canary_ready_for_human_authorization": true,
+  "remaining_canary_requires_separate_authorization": true,
+  "remaining_six_family_canary": {
+    "ready_for_human_authorization": true,
+    "experiment_ids": [
+      "CAL001-F02-P2-R1",
+      "CAL001-F03-P2-R1",
+      "CAL001-F04-P2-R1",
+      "CAL001-F05-P2-R1",
+      "CAL001-F06-P2-R1",
+      "CAL001-F07-P2-R1"
+    ],
+    "authorized": false,
+    "executed_in_this_phase": false,
+    "earlier_F01_submit_count": 1,
+    "earlier_F01_actual_cost": 70,
+    "remaining_submit_maximum": 6,
+    "remaining_credit_maximum": 420,
+    "total_CAL001A_submit_maximum": 84,
+    "total_CAL001A_credit_budget": 5880,
+    "credit_floor": 560,
+    "retry_maximum": 0,
+    "resubmit_maximum": 0
+  },
+  "family_winner": false,
+  "global_template_candidate": false,
+  "execution_authority_active": false,
+  "remaining_fixed_tasks_authorized": false,
+  "CAL001B_authorized": false,
+  "final_master": false,
+  "locked": false
+}
