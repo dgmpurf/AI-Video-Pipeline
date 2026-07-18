@@ -14,7 +14,7 @@
     "path": "experiments/CAL-001/execution_plans/CAL001_P3C_remaining_77_wave_plan.json",
     "sha256": "b67b83f62cc6b146d6aee8a770031f7365dcc66afe08a8ae6ab7a7f9996e3748"
   },
-  "activation_state": "ACTIVATED_READY",
+  "activation_state": "STOPPED_AUTHORITY_CLOSED",
   "activation_effective_condition": {
     "effective_only_when": [
       "All four required P3C files are committed",
@@ -123,7 +123,7 @@
         "F06",
         "F07"
       ],
-      "wave_state": "pending",
+      "wave_state": "stopped",
       "technically_completed_task_count": 0,
       "submit_count": 0,
       "query_count": 0,
@@ -144,7 +144,7 @@
           "accepted_package_path": "experiments/CAL-001/packages/F01/CAL001-F01-P1-R1_package.json",
           "accepted_package_sha256": "c654fd1d6114e57e209c9b006486d0a45f917a8e16bb972aaae243efa90dd0d5",
           "accepted_fixture_bindings": [],
-          "task_state": "pending_preflight",
+          "task_state": "stopped_anomaly",
           "submit_attempt_count": 0,
           "submit_id": null,
           "logid": null,
@@ -160,9 +160,9 @@
           "contact_sheet_path": null,
           "technical_execution_record_path": null,
           "technical_dataset_update_status": "not_started",
-          "last_durable_action": "P3C activation record created; no task preflight or live operation performed.",
-          "exact_next_allowed_action": "Start a separately authorized and separately executed Wave W01 Goal at CAL001-F01-P1-R1, beginning with repository/Source/hash/package/Prompt/fixture/runtime/login/credit/help/command-binding/duplicate-submit preflight.",
-          "stop_condition": null,
+          "last_durable_action": "Stop condition recorded; remaining authority closed.",
+          "exact_next_allowed_action": "No further live action without a new human decision.",
+          "stop_condition": "live credit continuity anomaly: expected 5957, observed 6045",
           "retry_authorized": false,
           "resubmit_authorized": false,
           "final_master": false,
@@ -3960,7 +3960,7 @@
       ]
     }
   ],
-  "exact_next_action": "Start a separately authorized and separately executed Wave W01 Goal at CAL001-F01-P1-R1, beginning with repository/Source/hash/package/Prompt/fixture/runtime/login/credit/help/command-binding/duplicate-submit preflight.",
+  "exact_next_action": "Require a new human decision; no submit, query, download, retry, resubmit, replacement, or skip is authorized.",
   "P3C_performed_exact_next_action": false,
   "one_wave_per_Goal_boundary": {
     "enabled": true,
@@ -4033,8 +4033,8 @@
     "Automatic closure after 77 completions does not select a family winner, select a global Prompt winner, authorize CAL001B, modify Source, finalize media, or lock.",
     "A separate human-governed visual-review and final calibration decision is required after technical completion."
   ],
-  "execution_authority_active": true,
-  "remaining_noncanary_tasks_authorized": true,
+  "execution_authority_active": false,
+  "remaining_noncanary_tasks_authorized": false,
   "CAL001B_authorized": false,
   "automatic_visual_scoring": false,
   "family_winner_selected": false,

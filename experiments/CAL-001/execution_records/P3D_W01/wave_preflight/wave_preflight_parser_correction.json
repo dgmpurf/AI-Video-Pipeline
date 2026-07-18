@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "phase": "CAL-001-P3D-W01",
+  "correction_type": "local_canary_parser_correction",
+  "dreamina_commands_rerun": false,
+  "initial_false_negative": true,
+  "corrected_total_credit": 5957,
+  "corrected_flag_names": [
+    "--model_version",
+    "--video_resolution"
+  ],
+  "canary_passed_after_existing_evidence_reparse": true,
+  "source_summary": "experiments/CAL-001/execution_records/P3D_W01/wave_preflight/wave_preflight_summary.json"
+}

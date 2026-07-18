@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "operation_id": "wave-preflight-image2video-help-001",
+  "experiment_id": "CAL-001-P3D-W01",
+  "command_type": "dreamina_image2video_help",
+  "operation_kind": "preflight",
+  "started_at": "2026-07-18T15:58:05.782462Z",
+  "completed_at": "2026-07-18T15:58:08.599108Z",
+  "subprocess_exit_code": 0,
+  "sanitized_stdout": "Usage:\n  dreamina image2video [flags]\n\nUpload one local image, then submit a Dreamina image-to-video task. For multi-image storytelling, use multiframe2video; for full-reference mixed-media generation, use multimodal2video. The task is asynchronous, but --poll can wait briefly before falling back to query_result.\n\nSupported combinations:\n- basic usage: --image + --prompt\n- advanced controls: set any of --duration, --video_resolution, or --model_version\n- advanced model_version values: seedance1.0fast, seedance1.0, seedance1.5pro, seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip, seedance2.0mini\n- seedance2.0_vip -> video_resolution 720p, 1080p, or 4k\n- all other models -> video_resolution 720p\n- ratio is inferred from the input image and is not set on this command\n\nNotes:\n- omit advanced controls to use the default image-to-video path\n- duration, model_version, and video_resolution must be provided in a supported combination\n- \u90e8\u5206\u9ad8\u5185\u5bb9\u5b89\u5168\u98ce\u9669\u6a21\u578b\u5728\u9996\u6b21\u4f7f\u7528\u524d\uff0c\u53ef\u80fd\u9700\u8981\u5148\u5728 Dreamina Web \u7aef\u5b8c\u6210\u6388\u6743\u786e\u8ba4\u3002\u82e5\u8fd4\u56de AigcComplianceConfirmationRequired\uff0c\u8bf7\u5148\u5b8c\u6210\u6388\u6743\u540e\u91cd\u8bd5\u3002\n\n\nFlags:\n      --image string              local first-frame image path\n      --prompt string             generation prompt\n      --duration int              advanced controls only; supported duration ranges by model: seedance1.0fast/seedance1.0 -> 3-10, seedance1.5pro -> 4-12, seedance2.0 family/seedance2.0mini -> 4-15 (default 5)\n      --video_resolution string   advanced controls only; supported values by model: seedance2.0_vip -> 720p, 1080p, or 4k; all other models -> 720p\n      --model_version string      advanced controls only; supported values: seedance1.0fast, seedance1.0, seedance1.5pro, seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip, seedance2.0mini\n      --session int               session id (default 0 \"\u9ed8\u8ba4\u5bf9\u8bdd\") \n      --poll int                  submit then poll query_result for up to N seconds at 1s intervals (0 disables polling)\n  -h, --help                      help for image2video\n\nGlobal Flags:\n      --version   print build version information\n\nExamples:\n  dreamina image2video --image=./first.png --prompt=\"<redacted_prompt>\"\n",
+  "sanitized_stderr": "",
+  "stdout_sha256": "7e8ecc30c5f06be2b598a10ee7695860f43ef1339588cc4ae9fa2ecefd681c90",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "hash_scope": "sanitized_utf8",
+  "command_structure_without_prompt_or_secrets": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "image2video",
+    "-h"
+  ],
+  "evidence_persisted_at": "2026-07-18T15:58:08.600108Z"
+}

@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "phase": "CAL-001-P3D-W01",
+  "dreamina_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "version": "2a20fff-dirty",
+  "commit": "2a20fff",
+  "build_time": "2026-06-26T06:36:39Z",
+  "initial_credit": 5957,
+  "required_initial_credit_minimum": 5950,
+  "version_ok": true,
+  "credit_ok": true,
+  "help_contracts": [
+    {
+      "command": "text2video",
+      "exit_code": 0,
+      "required_flags": [
+        "--model_version",
+        "--ratio",
+        "--prompt",
+        "--duration",
+        "--video_resolution",
+        "--poll"
+      ],
+      "missing_flags": [],
+      "contract_ok": true,
+      "argv_sha256": "238c594c76b2ffbefdc2076b027ba33f428a3d1117854570d9fb2912aa5d6c6c",
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_preflight/evidence/wave-preflight-text2video-help-001.subprocess_envelope.json"
+    },
+    {
+      "command": "image2video",
+      "exit_code": 0,
+      "required_flags": [
+        "--model_version",
+        "--prompt",
+        "--duration",
+        "--video_resolution",
+        "--image",
+        "--poll"
+      ],
+      "missing_flags": [],
+      "contract_ok": true,
+      "argv_sha256": "2b094f70a4fe85e0da968971ec8e67953a0f6a8a715e93338693f2e65eac8b12",
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_preflight/evidence/wave-preflight-image2video-help-001.subprocess_envelope.json"
+    },
+    {
+      "command": "frames2video",
+      "exit_code": 0,
+      "required_flags": [
+        "--model_version",
+        "--prompt",
+        "--duration",
+        "--video_resolution",
+        "--first",
+        "--last",
+        "--poll"
+      ],
+      "missing_flags": [],
+      "contract_ok": true,
+      "argv_sha256": "577bb87783e03bf39660bab8ce55d483473afa9b4c7b6a78a9ada46899f3eb2f",
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_preflight/evidence/wave-preflight-frames2video-help-001.subprocess_envelope.json"
+    },
+    {
+      "command": "multimodal2video",
+      "exit_code": 0,
+      "required_flags": [
+        "--model_version",
+        "--ratio",
+        "--prompt",
+        "--duration",
+        "--video_resolution",
+        "--image",
+        "--poll"
+      ],
+      "missing_flags": [],
+      "contract_ok": true,
+      "argv_sha256": "b75fe260d80faeb7f74cbb107da97006105bdd9dd95ec848f1ea4d59f863c9cf",
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_preflight/evidence/wave-preflight-multimodal2video-help-001.subprocess_envelope.json"
+    },
+    {
+      "command": "query_result",
+      "exit_code": 0,
+      "required_flags": [
+        "--submit_id",
+        "--download_dir"
+      ],
+      "missing_flags": [],
+      "contract_ok": true,
+      "argv_sha256": "2a073fb0abc03807168225bfb520258b573ff801643791a486c0e96c33aa8755",
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_preflight/evidence/wave-preflight-query_result-help-001.subprocess_envelope.json"
+    }
+  ],
+  "all_exit_codes_ok": true,
+  "anomalies": [],
+  "canary_passed": true,
+  "operations": [
+    {
+      "operation_id": "wave-preflight-version-001",
+      "argv_sha256": "d9fc1eeff49ee4def5badc6e6587706346d3c50588105a5e4c193027e44fc170",
+      "command_structure_without_prompt_or_secrets": [
+        "C:/Users/msjpurf/bin/dreamina.exe",
+        "version"
+      ],
+      "exit_code": 0,
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_preflight/evidence/wave-preflight-version-001.subprocess_envelope.json"
+    },
+    {
+      "operation_id": "wave-preflight-user-credit-001",
+      "argv_sha256": "0c7b24c4b10f6d0c671e7a6f889a72446fe533913eebf421f03f17d35bacc72a",
+      "command_structure_without_prompt_or_secrets": [
+        "C:/Users/msjpurf/bin/dreamina.exe",
+        "user_credit"
+      ],
+      "exit_code": 0,
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_preflight/evidence/wave-preflight-user-credit-001.subprocess_envelope.json"
+    },
+    {
+      "operation_id": "wave-preflight-text2video-help-001",
+      "argv_sha256": "238c594c76b2ffbefdc2076b027ba33f428a3d1117854570d9fb2912aa5d6c6c",
+      "command_structure_without_prompt_or_secrets": [
+        "C:/Users/msjpurf/bin/dreamina.exe",
+        "text2video",
+        "-h"
+      ],
+      "exit_code": 0,
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_preflight/evidence/wave-preflight-text2video-help-001.subprocess_envelope.json"
+    },
+    {
+      "operation_id": "wave-preflight-image2video-help-001",
+      "argv_sha256": "2b094f70a4fe85e0da968971ec8e67953a0f6a8a715e93338693f2e65eac8b12",
+      "command_structure_without_prompt_or_secrets": [
+        "C:/Users/msjpurf/bin/dreamina.exe",
+        "image2video",
+        "-h"
+      ],
+      "exit_code": 0,
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_preflight/evidence/wave-preflight-image2video-help-001.subprocess_envelope.json"
+    },
+    {
+      "operation_id": "wave-preflight-frames2video-help-001",
+      "argv_sha256": "577bb87783e03bf39660bab8ce55d483473afa9b4c7b6a78a9ada46899f3eb2f",
+      "command_structure_without_prompt_or_secrets": [
+        "C:/Users/msjpurf/bin/dreamina.exe",
+        "frames2video",
+        "-h"
+      ],
+      "exit_code": 0,
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_preflight/evidence/wave-preflight-frames2video-help-001.subprocess_envelope.json"
+    },
+    {
+      "operation_id": "wave-preflight-multimodal2video-help-001",
+      "argv_sha256": "b75fe260d80faeb7f74cbb107da97006105bdd9dd95ec848f1ea4d59f863c9cf",
+      "command_structure_without_prompt_or_secrets": [
+        "C:/Users/msjpurf/bin/dreamina.exe",
+        "multimodal2video",
+        "-h"
+      ],
+      "exit_code": 0,
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_preflight/evidence/wave-preflight-multimodal2video-help-001.subprocess_envelope.json"
+    },
+    {
+      "operation_id": "wave-preflight-query_result-help-001",
+      "argv_sha256": "2a073fb0abc03807168225bfb520258b573ff801643791a486c0e96c33aa8755",
+      "command_structure_without_prompt_or_secrets": [
+        "C:/Users/msjpurf/bin/dreamina.exe",
+        "query_result",
+        "-h"
+      ],
+      "exit_code": 0,
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01/wave_preflight/evidence/wave-preflight-query_result-help-001.subprocess_envelope.json"
+    }
+  ],
+  "local_validation_correction": {
+    "applied": true,
+    "dreamina_commands_rerun": false,
+    "reason": "Initial local parser expected credit_count/credit and legacy --resolution/--model flag names; persisted runtime evidence uses total_credit, --video_resolution, and --model_version.",
+    "authoritative_inputs": "existing sanitized subprocess envelopes"
+  }
+}
