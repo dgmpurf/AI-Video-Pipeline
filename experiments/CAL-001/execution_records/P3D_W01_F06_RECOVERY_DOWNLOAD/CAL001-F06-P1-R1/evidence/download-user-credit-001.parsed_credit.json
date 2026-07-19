@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "operation_id": "download-user-credit-001",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "subprocess_exit_code": 0,
+  "authenticated_account_confirmed": true,
+  "private_account_identifiers_redacted": true,
+  "informational_credit_balance": 5625,
+  "vip_level": "maestro",
+  "generation_submit_balance_gate_applied": false,
+  "logger_access_denied": false,
+  "authentication_failure": false,
+  "sanitized_evidence_envelope_path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/evidence/download-user-credit-001.subprocess_envelope.json",
+  "parsed_at": "2026-07-19T15:59:51.1935090Z"
+}

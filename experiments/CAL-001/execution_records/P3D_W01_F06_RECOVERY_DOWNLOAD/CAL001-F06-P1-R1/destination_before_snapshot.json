@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F06_RECOVERY_DOWNLOAD_DESTINATION_BEFORE_SNAPSHOT",
+  "phase_id": "CAL-001-P3D-W01_F06_RECOVERY_ONE_DOWNLOAD_ONLY",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "captured_at": "2026-07-19T15:55:22.6229947Z",
+  "authorized_download_dir": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-001/runs/CAL001-F06-P1-R1",
+  "directory_existed_before_phase": false,
+  "directory_exists_after_safe_creation": true,
+  "preexisting_file_count": 0,
+  "preexisting_media_count": 0,
+  "files": [],
+  "all_preexisting_file_hashes_recorded": true,
+  "planned_output_name": "CAL001-F06-P1-R1_result.mp4",
+  "planned_output_collision": false,
+  "prior_downloaded_F06_video_present": false,
+  "destination_state_unambiguous": true
+}

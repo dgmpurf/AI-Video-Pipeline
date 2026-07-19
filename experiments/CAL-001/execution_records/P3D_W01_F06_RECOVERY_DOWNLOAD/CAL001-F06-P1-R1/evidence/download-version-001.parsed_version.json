@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "operation_id": "download-version-001",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "subprocess_exit_code": 0,
+  "version": "2a20fff-dirty",
+  "commit": "2a20fff",
+  "build_time": "2026-06-26T06:36:39Z",
+  "logger_access_denied": false,
+  "sanitized_evidence_envelope_path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/evidence/download-version-001.subprocess_envelope.json",
+  "parsed_at": "2026-07-19T15:59:51.1935090Z"
+}

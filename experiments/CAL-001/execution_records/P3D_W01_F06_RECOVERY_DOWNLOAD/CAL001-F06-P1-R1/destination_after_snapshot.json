@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F06_RECOVERY_DOWNLOAD_DESTINATION_AFTER_SNAPSHOT",
+  "phase_id": "CAL-001-P3D-W01_F06_RECOVERY_ONE_DOWNLOAD_ONLY",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "captured_at": "2026-07-19T16:02:28.7227401Z",
+  "authorized_download_dir": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-001/runs/CAL001-F06-P1-R1",
+  "before_file_count": 0,
+  "after_file_count": 1,
+  "new_file_count": 1,
+  "new_image_file_count": 0,
+  "new_video_file_count": 1,
+  "removed_file_count": 0,
+  "modified_preexisting_file_count": 0,
+  "new_files": [
+    {
+      "repo_relative_path": "experiments/CAL-001/runs/CAL001-F06-P1-R1/f40d2e79-ba98-4873-b92d-539ccc35d2ee_video_1.mp4",
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-001/runs/CAL001-F06-P1-R1/f40d2e79-ba98-4873-b92d-539ccc35d2ee_video_1.mp4",
+      "filename": "f40d2e79-ba98-4873-b92d-539ccc35d2ee_video_1.mp4",
+      "extension": ".mp4",
+      "regular_file": true,
+      "nonempty": true,
+      "size_bytes": 8152176,
+      "sha256": "02cec9d4966ef9a6b1cb70a902b423b060bb3e68cfefa267dd7ca3d8047d5079"
+    }
+  ],
+  "planned_output_name": "CAL001-F06-P1-R1_result.mp4",
+  "planned_output_collision": false,
+  "provider_filename_preserved_without_rename": true,
+  "download_result_shape_matched": true
+}

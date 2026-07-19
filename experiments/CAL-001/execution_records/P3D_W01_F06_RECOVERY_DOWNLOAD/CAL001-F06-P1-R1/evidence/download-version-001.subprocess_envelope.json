@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "operation_id": "download-version-001",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "command_type": "dreamina_version",
+  "operation_kind": "preflight",
+  "started_at": "2026-07-19T15:59:27.881772Z",
+  "completed_at": "2026-07-19T15:59:30.361346Z",
+  "subprocess_exit_code": 0,
+  "sanitized_stdout": "{\n  \"version\": \"2a20fff-dirty\",\n  \"commit\": \"2a20fff\",\n  \"build_time\": \"2026-06-26T06:36:39Z\"\n}\n",
+  "sanitized_stderr": "",
+  "stdout_sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "hash_scope": "sanitized_utf8",
+  "command_structure_without_prompt_or_secrets": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "version"
+  ],
+  "evidence_persisted_at": "2026-07-19T15:59:30.361346Z"
+}

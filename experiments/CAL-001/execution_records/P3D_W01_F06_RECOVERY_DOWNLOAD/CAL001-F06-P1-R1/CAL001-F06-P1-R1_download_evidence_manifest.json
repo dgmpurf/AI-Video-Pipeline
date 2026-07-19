@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F06_RECOVERY_DOWNLOAD_EVIDENCE_MANIFEST",
+  "phase_id": "CAL-001-P3D-W01_F06_RECOVERY_ONE_DOWNLOAD_ONLY",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "recorded_at": "2026-07-19T16:07:46.4056307Z",
+  "hash_algorithm": "SHA-256",
+  "text_evidence_file_count": 18,
+  "text_evidence": [
+    {
+      "path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_F06_recovery_one_download_only_authorization.json",
+      "sha256": "27e64043d93a80677887f8be157e6d94806872e57f8337d1db26c0ab7802ef19",
+      "size_bytes": 3684
+    },
+    {
+      "path": "experiments/CAL-001/execution_state/CAL001_P3C_remaining_77_resumable_execution_state_contract.json",
+      "sha256": "10365c73deec1484f2e1ae420df059be77fe477a51fa52d232da270dfbbc5007",
+      "size_bytes": 271309
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/CAL001-F06-P1-R1_download_authority_closure_record.json",
+      "sha256": "17d5d66bba427255b2235a8aba5e0d42084e9e81e837abced7bdf1b31f73e1f0",
+      "size_bytes": 1446
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/CAL001-F06-P1-R1_one_download_only_execution_record.json",
+      "sha256": "4197d241d50e839b32cedd950d09e6dc1593b7933a2f96492cd7ebaa38fd02c9",
+      "size_bytes": 3530
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/destination_after_snapshot.json",
+      "sha256": "5508559b5e3543e97624db8f08b85a2dd478e2c5900729c1400b7f7dee5b7be1",
+      "size_bytes": 1331
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/destination_before_snapshot.json",
+      "sha256": "fc369ca26db02987ed8f49af963380eefaf045ed1ac387fb8659ef8335e6cbe7",
+      "size_bytes": 770
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/download_invocation_reservation.json",
+      "sha256": "29ea877fa48c76f8be9c7e336071ef6443d4e816e53665004f154ff74d25abb6",
+      "size_bytes": 1688
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/download_preflight.json",
+      "sha256": "12c008c0322f3973be1cdb5aa9842bb698490f7841d006427a17d82f82775d43",
+      "size_bytes": 4236
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/dreamina_download_preflight_summary.json",
+      "sha256": "b1323e733590eb563bb3b9b10ab2bf5799117484f061199c3da3db5ecb30b141",
+      "size_bytes": 2001
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/evidence/download-001.parsed_download_result.json",
+      "sha256": "aa2ee81ab55b78a805661bcd90635360fed1af965d274e2c19c9ec69f2e155e6",
+      "size_bytes": 1929
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/evidence/download-001.subprocess_envelope.json",
+      "sha256": "e71a25a18b081bcbd99520378c454490058641e02da7f33599b9cae487347491",
+      "size_bytes": 2043
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/evidence/download-query-result-help-001.parsed_help_contract.json",
+      "sha256": "83f1999b9dd2eecc2360161bc9f33ad4b9d0317ff946c50ab761c3a17c3062fa",
+      "size_bytes": 1177
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/evidence/download-query-result-help-001.subprocess_envelope.json",
+      "sha256": "b8f72b79863b89c7d58c292b7a84008cf5ada7bd87a8e3ddf9f7f208a3bfb8eb",
+      "size_bytes": 1175
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/evidence/download-user-credit-001.parsed_credit.json",
+      "sha256": "54ce378c2d7ec431f418abce9a8f8e370f7e03792d05b3a4589f9aee9bc68263",
+      "size_bytes": 652
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/evidence/download-user-credit-001.subprocess_envelope.json",
+      "sha256": "c81e97992aa36c47ac6dfe3fbae8f5fb9af4a0e2440e7097a47aca85ee5273f5",
+      "size_bytes": 901
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/evidence/download-version-001.parsed_version.json",
+      "sha256": "0d182ef689a71ec97c7a4ee8b9178cca84fbd6d70a49f148de8fedae17f31f85",
+      "size_bytes": 494
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/evidence/download-version-001.subprocess_envelope.json",
+      "sha256": "27cc08fff2a3302f13244183f5d937e0c5dd5be395ebffcb143d551f70b9a5ab",
+      "size_bytes": 849
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/local_media_sha256_and_metadata.json",
+      "sha256": "c2897680e924590c096174a813106f02070def67ea4956a42ac935f7ef64de1c",
+      "size_bytes": 2242
+    }
+  ],
+  "local_media": {
+    "path": "experiments/CAL-001/runs/CAL001-F06-P1-R1/f40d2e79-ba98-4873-b92d-539ccc35d2ee_video_1.mp4",
+    "sha256": "02cec9d4966ef9a6b1cb70a902b423b060bb3e68cfefa267dd7ca3d8047d5079",
+    "size_bytes": 8152176,
+    "tracked": false,
+    "staged": false,
+    "committed": false,
+    "pushed": false
+  },
+  "provider_download_envelope_count": 1,
+  "query_only_invocation_count": 0,
+  "second_download_invocation_count": 0,
+  "signed_url_value_persisted": false,
+  "manifest_complete": true
+}
