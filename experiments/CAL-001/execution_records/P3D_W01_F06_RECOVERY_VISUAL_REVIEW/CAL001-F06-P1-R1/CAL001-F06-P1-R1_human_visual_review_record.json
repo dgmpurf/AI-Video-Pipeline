@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3D-W01_F06_RECOVERY_VISUAL_REVIEW_RECORD_AND_TECHNICAL_COMPLETION",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "submit_id": "f40d2e79-ba98-4873-b92d-539ccc35d2ee",
+  "reviewer": "ChatGPT Pro visual review based on uploaded source video and 3x2 contact sheet",
+  "review_date": "2026-07-20",
+  "review_status": "reviewed",
+  "human_review_status": "reviewed",
+  "dataset_human_review_status": "recorded_outside_numeric_visual_dataset",
+  "dataset_status_mapping": "The authorized categorical review is persisted here; the existing numeric visual-review JSONL remains unchanged because no numeric score is authorized.",
+  "experiment_validity_class": "BASELINE_SUCCESS_CASE",
+  "candidate_status": "usable_for_calibration_not_final",
+  "dominant_visible_result": "F06 demonstrated dual-identity separation and stable spatial composition; Fenshou and Shuangji remained distinct; the rainy frontal temple environment remained stable; temporal continuity was technically acceptable; motion and cinematic action value were limited.",
+  "scores": {
+    "prompt_goal_match": null,
+    "action_readability": null,
+    "temporal_coherence": null,
+    "style_coherence": null,
+    "editability": null
+  },
+  "visual_scores_assigned": false,
+  "family_specific_findings": {
+    "technical_result": "PASS",
+    "visual_result": "PASS_WITH_LIMITATIONS",
+    "calibration_classification": "BASELINE_SUCCESS_CASE",
+    "identity_stability": "PASS",
+    "dual_identity_separation": "PASS",
+    "spatial_compliance": "PASS",
+    "scene_stability": "PASS",
+    "temporal_coherence": "PASS",
+    "motion_design": "PARTIAL",
+    "cinematic_action_value": "LIMITED",
+    "usable_for_calibration": true,
+    "usable_as_final": false,
+    "human_final_acceptance": "NOT_ASSERTED",
+    "winner_selected": false,
+    "family_winner_selected": false,
+    "global_winner_selected": false
+  },
+  "best_usable_window": {
+    "start_seconds": null,
+    "end_seconds": null
+  },
+  "weak_or_invalid_windows": [],
+  "primary_failure_label": null,
+  "secondary_notes": [
+    "motion_design_partial",
+    "cinematic_action_value_limited"
+  ],
+  "systemic_issue_found": null,
+  "safe_for_dataset_scoring": false,
+  "safe_to_continue_post_canary_decision": false,
+  "source_media_path": "experiments/CAL-001/runs/CAL001-F06-P1-R1/f40d2e79-ba98-4873-b92d-539ccc35d2ee_video_1.mp4",
+  "source_media_sha256": "02cec9d4966ef9a6b1cb70a902b423b060bb3e68cfefa267dd7ca3d8047d5079",
+  "technical_validation_reference": {
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_DOWNLOAD/CAL001-F06-P1-R1/local_media_sha256_and_metadata.json",
+    "sha256": "c2897680e924590c096174a813106f02070def67ea4956a42ac935f7ef64de1c",
+    "validation_pass": true
+  },
+  "family_winner": false,
+  "global_template_candidate": false,
+  "execution_authority_active": false,
+  "remaining_noncanary_tasks_authorized": false,
+  "CAL001B_authorized": false,
+  "final_master": false,
+  "locked": false
+}

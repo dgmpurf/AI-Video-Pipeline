@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F06_RECOVERY_VISUAL_EVIDENCE_BINDING",
+  "phase_id": "CAL-001-P3D-W01_F06_RECOVERY_VISUAL_REVIEW_RECORD_AND_TECHNICAL_COMPLETION",
+  "wave_id": "W01",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "recorded_at": "2026-07-19T17:41:45Z",
+  "source_media": {
+    "path": "experiments/CAL-001/runs/CAL001-F06-P1-R1/f40d2e79-ba98-4873-b92d-539ccc35d2ee_video_1.mp4",
+    "size_bytes": 8152176,
+    "sha256": "02cec9d4966ef9a6b1cb70a902b423b060bb3e68cfefa267dd7ca3d8047d5079",
+    "exists": true,
+    "nonempty": true,
+    "hash_matches_authorization": true,
+    "modified_in_this_phase": false,
+    "staged": false
+  },
+  "contact_sheet": {
+    "path": "experiments/CAL-001/runs/CAL001-F06-P1-R1/review_artifacts/CAL001-F06-P1-R1_contact_sheet_3x2.png",
+    "size_bytes": 1808790,
+    "sha256": "1cdbf0c82ae248940c117d58fda05bc1b03c6494d4d93dde8bbc2eced78a56eb",
+    "exists": true,
+    "hash_matches_authorization": true,
+    "modified_in_this_phase": false,
+    "staged": false
+  },
+  "review_frames": [
+    {
+      "path": "experiments/CAL-001/runs/CAL001-F06-P1-R1/review_artifacts/CAL001-F06-P1-R1_0p00s.png",
+      "sha256": "09c4565467d3272f5a93c5e2b135430319a5b058a747de8e2c78b0eae9eb7ea4"
+    },
+    {
+      "path": "experiments/CAL-001/runs/CAL001-F06-P1-R1/review_artifacts/CAL001-F06-P1-R1_1p00s.png",
+      "sha256": "3fecadb5c2bef41e34eed012f9e9ad9e53c2711156ec78e6efd3c7a7be119a75"
+    },
+    {
+      "path": "experiments/CAL-001/runs/CAL001-F06-P1-R1/review_artifacts/CAL001-F06-P1-R1_2p00s.png",
+      "sha256": "85e9150e0c9a1a1072d0070b820b812e1eb8138023e7a13b54a87f4b981e4dad"
+    },
+    {
+      "path": "experiments/CAL-001/runs/CAL001-F06-P1-R1/review_artifacts/CAL001-F06-P1-R1_3p00s.png",
+      "sha256": "78387118b27cde31cf3d4cfe555a3baaecf5d27a161175976a69b42c400ac911"
+    },
+    {
+      "path": "experiments/CAL-001/runs/CAL001-F06-P1-R1/review_artifacts/CAL001-F06-P1-R1_4p00s.png",
+      "sha256": "19dbd62fbcd4b7d29285006265577bc21308dbbd3fc3b423fc79b532a92d1352"
+    },
+    {
+      "path": "experiments/CAL-001/runs/CAL001-F06-P1-R1/review_artifacts/CAL001-F06-P1-R1_final_readable.png",
+      "sha256": "c336ef52f8c51a14d851b8061f8099bb6e66b3fec8ca258de53a4672e2f0941e"
+    }
+  ],
+  "review_frame_count": 6,
+  "all_review_frames_present": true,
+  "review_metadata_path": "experiments/CAL-001/runs/CAL001-F06-P1-R1/review_artifacts/CAL001-F06-P1-R1_review_metadata.json",
+  "review_metadata_sha256": "613f7c70cafdaa6aa99008b3fdfff1fac9e14c376141b9cfb2b471b7d41c301d",
+  "review_metadata_pre_phase_outcome": "success_review_artifacts_created_visual_review_not_performed",
+  "visual_reinspection_performed": false,
+  "new_artifacts_created": false,
+  "media_or_review_artifacts_modified": false,
+  "media_or_review_artifacts_staged": false,
+  "binding_verified": true,
+  "final_master": false,
+  "locked": false
+}

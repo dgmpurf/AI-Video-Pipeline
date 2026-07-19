@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3D-W01",
+  "wave_id": "W01",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "csv_path": "experiments/CAL-001/datasets/CAL001_experiment_results_template.csv",
+  "csv_rows": 84,
+  "csv_unique_ids": 84,
+  "jsonl_path": "experiments/CAL-001/datasets/CAL001_visual_review_template.jsonl",
+  "jsonl_rows": 84,
+  "jsonl_unique_ids": 84,
+  "ids_align": true,
+  "current_csv_row_updated": true,
+  "jsonl_unchanged_by_technical_update": true,
+  "csv_pre_update_sha256": "e2469648a931dd38767491bda2eb073a7420c04e3cf3b4621fdf8a1022105711",
+  "csv_post_update_sha256": "f1d183267b24997bb848ff83abd9231b53d84ae82e715d9e4d9b5c2b3de3ff3b",
+  "visual_fields_preserved": true,
+  "human_review_status_preserved": true
+}
