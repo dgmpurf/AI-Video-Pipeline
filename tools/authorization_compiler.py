@@ -85,6 +85,7 @@ def _run_command(args: argparse.Namespace) -> tuple[dict[str, Any], bool]:
     raw_bytes = _read_exact_input(args)
     if args.command == "compile":
         result = compile_authorization_bytes(raw_bytes)
+        passed = result.serialization_profile_valid
     elif args.command == "verify":
         expected: dict[str, Any] = {
             "byte_length": args.expected_byte_length,
@@ -93,18 +94,20 @@ def _run_command(args: argparse.Namespace) -> tuple[dict[str, Any], bool]:
         if args.expected_base64 is not None:
             expected["base64"] = args.expected_base64
         result = verify_authorization_bytes(raw_bytes, expected)
+        passed = result.authorization_evidence_verified
     elif args.command == "verify-record":
         record_bytes = args.record.read_bytes()
         record = json.loads(record_bytes.decode("utf-8", errors="strict"))
         if not isinstance(record, Mapping):
             raise ValueError("authorization record must contain a JSON object")
         result = verify_authorization_record(raw_bytes, record)
+        passed = result.authorization_evidence_verified
     else:
         raise ValueError("unsupported command")
 
     payload = result.to_dict()
     payload["command"] = args.command
-    return payload, result.authorization_verified
+    return payload, passed
 
 
 def _add_exact_input(parser: argparse.ArgumentParser) -> None:

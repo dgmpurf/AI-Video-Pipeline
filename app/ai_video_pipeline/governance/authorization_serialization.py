@@ -12,6 +12,57 @@ from typing import Any, Mapping
 _SHA256_RE = re.compile(r"[0-9a-fA-F]{64}\Z")
 _CHECKPOINT_RE = re.compile(r"[0-9a-fA-F]{40}\Z")
 _MISSING = object()
+_RECORD_REPRESENTATION_GROUPS: tuple[tuple[str, tuple[str, ...]], ...] = (
+    ("byte_length", ("byte_length", "authorization_byte_length")),
+    ("sha256", ("sha256", "authorization_text_sha256")),
+    (
+        "base64",
+        (
+            "base64",
+            "authorization_base64",
+            "locally_derived_base64",
+            "locally_generated_base64",
+        ),
+    ),
+    (
+        "base64_character_count",
+        ("base64_character_count", "derived_base64_character_count"),
+    ),
+    (
+        "canonical_text",
+        ("canonical_authorization_text", "exact_authorization_text"),
+    ),
+    ("authority_source", ("authority_source",)),
+    ("encoding", ("encoding",)),
+    ("utf8_decode_valid", ("utf8_decode_valid",)),
+    ("bom_present", ("bom", "bom_present")),
+    ("cr_present", ("cr_present",)),
+    ("lf_present", ("lf_present",)),
+    ("trailing_carriage_return", ("trailing_carriage_return",)),
+    ("trailing_newline", ("trailing_newline",)),
+    ("trailing_space", ("trailing_space",)),
+    ("markdown_fence_present", ("markdown_fence_present",)),
+    ("last_character", ("last_character",)),
+    ("last_byte_hex", ("last_byte_hex",)),
+    (
+        "base64_decode_count",
+        ("base64_decode_count", "locally_generated_base64_decode_count"),
+    ),
+    ("decoded_bytes_equal_original", ("decoded_bytes_equal_original",)),
+    ("base64_round_trip_verified", ("base64_round_trip_verified",)),
+    (
+        "decoded_sha256_equal_original",
+        ("decoded_sha256_equal_original",),
+    ),
+    ("byte_profile_valid", ("byte_profile_valid",)),
+    (
+        "serialization_round_trip_verified",
+        ("serialization_round_trip_verified",),
+    ),
+    ("decoded_sha256", ("decoded_sha256",)),
+    ("authorization_verified", ("authorization_verified",)),
+)
+_CASE_INSENSITIVE_HEX_GROUPS = frozenset({"sha256", "decoded_sha256"})
 
 
 @dataclass(frozen=True)
@@ -37,6 +88,8 @@ class AuthorizationSerializationResult:
     last_byte_hex: str | None
     byte_profile_valid: bool
     serialization_round_trip_verified: bool
+    serialization_profile_valid: bool
+    authorization_evidence_verified: bool
     authorization_verified: bool
     validation_errors: tuple[str, ...]
     eligible_for_authority_activation: bool
@@ -68,7 +121,10 @@ class AuthorizationVerificationResult:
     record_canonical_text_matches: bool | None
     record_serialization_facts_match: bool
     record_fact_mismatches: tuple[str, ...]
+    record_representations_consistent: bool
+    record_representation_conflicts: tuple[str, ...]
     expected_values_match: bool
+    authorization_evidence_verified: bool
     authorization_verified: bool
     validation_errors: tuple[str, ...]
     eligible_for_authority_activation: bool
@@ -104,7 +160,16 @@ class AuthorizationVerificationResult:
                     self.record_serialization_facts_match
                 ),
                 "record_fact_mismatches": list(self.record_fact_mismatches),
+                "record_representations_consistent": (
+                    self.record_representations_consistent
+                ),
+                "record_representation_conflicts": list(
+                    self.record_representation_conflicts
+                ),
                 "expected_values_match": self.expected_values_match,
+                "authorization_evidence_verified": (
+                    self.authorization_evidence_verified
+                ),
                 "authorization_verified": self.authorization_verified,
                 "validation_errors": list(self.validation_errors),
                 "eligible_for_authority_activation": (
@@ -152,6 +217,8 @@ class CheckpointBindingResult:
 @dataclass(frozen=True)
 class ActivationEligibilityResult:
     serialization_verified: bool
+    serialization_profile_valid: bool
+    authorization_evidence_verified: bool
     checkpoint_binding_required: bool
     checkpoint_binding_verified: bool | None
     eligible_for_authority_activation: bool
@@ -236,7 +303,9 @@ def compile_authorization_bytes(raw_bytes: bytes) -> AuthorizationSerializationR
     serialization_round_trip_verified = (
         decoded_bytes_equal_original and decoded_sha256_equal_original
     )
-    authorization_verified = byte_profile_valid and serialization_round_trip_verified
+    serialization_profile_valid = (
+        byte_profile_valid and serialization_round_trip_verified
+    )
 
     return AuthorizationSerializationResult(
         authority_source="exact_canonical_text",
@@ -260,9 +329,11 @@ def compile_authorization_bytes(raw_bytes: bytes) -> AuthorizationSerializationR
         last_byte_hex=last_byte_hex,
         byte_profile_valid=byte_profile_valid,
         serialization_round_trip_verified=serialization_round_trip_verified,
-        authorization_verified=authorization_verified,
+        serialization_profile_valid=serialization_profile_valid,
+        authorization_evidence_verified=False,
+        authorization_verified=False,
         validation_errors=tuple(errors),
-        eligible_for_authority_activation=authorization_verified,
+        eligible_for_authority_activation=False,
     )
 
 
@@ -284,6 +355,12 @@ def verify_authorization_bytes(
     serialization = compile_authorization_bytes(raw_bytes)
     containers = _record_containers(expected_record)
     errors = list(serialization.validation_errors)
+    representation_conflicts = _record_representation_conflicts(containers)
+    errors.extend(
+        f"record_representation_conflict:{name}"
+        for name in representation_conflicts
+    )
+    record_representations_consistent = not representation_conflicts
 
     expected_length_raw = _first_value(
         containers, "byte_length", "authorization_byte_length"
@@ -389,11 +466,13 @@ def verify_authorization_bytes(
             expected_decoded_sha_equal is not False,
             record_canonical_text_matches is not False,
             record_serialization_facts_match,
+            record_representations_consistent,
         )
     )
-    authorization_verified = (
-        serialization.authorization_verified and expected_values_match
+    authorization_evidence_verified = (
+        serialization.serialization_profile_valid and expected_values_match
     )
+    authorization_verified = authorization_evidence_verified
 
     return AuthorizationVerificationResult(
         serialization=serialization,
@@ -411,10 +490,13 @@ def verify_authorization_bytes(
         record_canonical_text_matches=record_canonical_text_matches,
         record_serialization_facts_match=record_serialization_facts_match,
         record_fact_mismatches=tuple(fact_mismatches),
+        record_representations_consistent=record_representations_consistent,
+        record_representation_conflicts=tuple(representation_conflicts),
         expected_values_match=expected_values_match,
+        authorization_evidence_verified=authorization_evidence_verified,
         authorization_verified=authorization_verified,
         validation_errors=tuple(errors),
-        eligible_for_authority_activation=authorization_verified,
+        eligible_for_authority_activation=False,
     )
 
 
@@ -485,31 +567,60 @@ def verify_checkpoint_binding(
         checkpoint_binding_verified=verified,
         checkpoint_change_requires_reauthorization=not verified,
         validation_errors=tuple(errors),
-        eligible_for_authority_activation=verified,
+        eligible_for_authority_activation=False,
     )
 
 
 def evaluate_activation_eligibility(
-    serialization_result: AuthorizationSerializationResult
+    authorization_result: AuthorizationSerializationResult
     | AuthorizationVerificationResult,
     checkpoint_result: CheckpointBindingResult | None = None,
 ) -> ActivationEligibilityResult:
-    """Evaluate eligibility only; authority remains inactive in every result."""
-    serialization_verified = serialization_result.authorization_verified
-    checkpoint_required = checkpoint_result is not None
+    """Require verified evidence and checkpoint binding without activating authority."""
+    if isinstance(authorization_result, AuthorizationVerificationResult):
+        serialization_profile_valid = (
+            authorization_result.serialization.serialization_profile_valid
+        )
+        authorization_evidence_verified = (
+            authorization_result.authorization_evidence_verified
+            and authorization_result.record_representations_consistent
+        )
+    elif isinstance(authorization_result, AuthorizationSerializationResult):
+        serialization_profile_valid = authorization_result.serialization_profile_valid
+        authorization_evidence_verified = False
+    else:
+        raise TypeError(
+            "authorization_result must be a serialization or verification result"
+        )
+
+    serialization_verified = serialization_profile_valid
+    checkpoint_required = True
     checkpoint_verified = (
         checkpoint_result.checkpoint_binding_verified if checkpoint_result else None
     )
     errors: list[str] = []
-    if not serialization_verified:
-        errors.append("authorization_verification_failed")
-    if checkpoint_required and not checkpoint_verified:
+    if not serialization_profile_valid:
+        errors.append("serialization_profile_validation_failed")
+    if not authorization_evidence_verified:
+        if isinstance(authorization_result, AuthorizationSerializationResult):
+            errors.append("authorization_evidence_verification_required")
+        else:
+            errors.append("authorization_evidence_verification_failed")
+    if checkpoint_result is None:
+        errors.append("checkpoint_binding_required")
+    elif not checkpoint_verified:
         errors.append("checkpoint_binding_failed")
-    eligible = serialization_verified and (
-        checkpoint_verified if checkpoint_required else True
+    eligible = all(
+        (
+            serialization_profile_valid,
+            authorization_evidence_verified,
+            checkpoint_verified is True,
+        )
     )
     return ActivationEligibilityResult(
         serialization_verified=serialization_verified,
+        serialization_profile_valid=serialization_profile_valid,
+        authorization_evidence_verified=authorization_evidence_verified,
         checkpoint_binding_required=checkpoint_required,
         checkpoint_binding_verified=checkpoint_verified,
         eligible_for_authority_activation=eligible,
@@ -542,6 +653,43 @@ def _record_containers(record: Mapping[str, Any]) -> tuple[Mapping[str, Any], ..
             if isinstance(verification, Mapping):
                 containers.append(verification)
     return tuple(containers)
+
+
+def _record_representation_conflicts(
+    containers: tuple[Mapping[str, Any], ...],
+) -> list[str]:
+    conflicts: list[str] = []
+    for label, aliases in _RECORD_REPRESENTATION_GROUPS:
+        values = _all_values(containers, *aliases)
+        if len(values) < 2:
+            continue
+        first = values[0]
+        if any(
+            not _record_values_equal(label, first, candidate)
+            for candidate in values[1:]
+        ):
+            conflicts.append(label)
+    return conflicts
+
+
+def _all_values(
+    containers: tuple[Mapping[str, Any], ...],
+    *names: str,
+) -> tuple[Any, ...]:
+    return tuple(
+        container[name]
+        for container in containers
+        for name in names
+        if name in container
+    )
+
+
+def _record_values_equal(label: str, left: Any, right: Any) -> bool:
+    if type(left) is not type(right):
+        return False
+    if label in _CASE_INSENSITIVE_HEX_GROUPS and isinstance(left, str):
+        return left.lower() == right.lower()
+    return left == right
 
 
 def _first_value(

@@ -49,7 +49,10 @@ def test_compile_file_and_stdin_exact_are_deterministic(tmp_path: Path) -> None:
     assert payload["byte_length"] == len(raw)
     assert payload["sha256"] == hashlib.sha256(raw).hexdigest()
     assert payload["base64"] == base64.b64encode(raw).decode("ascii")
-    assert payload["authorization_verified"] is True
+    assert payload["serialization_profile_valid"] is True
+    assert payload["authorization_evidence_verified"] is False
+    assert payload["authorization_verified"] is False
+    assert payload["eligible_for_authority_activation"] is False
     assert payload["execution_authority_active"] is False
 
 
@@ -86,7 +89,9 @@ def test_verify_mode_checks_expected_values(tmp_path: Path) -> None:
     payload = json.loads(result.stdout.decode("utf-8", errors="strict"))
     assert payload["command"] == "verify"
     assert payload["expected_values_match"] is True
+    assert payload["authorization_evidence_verified"] is True
     assert payload["authorization_verified"] is True
+    assert payload["eligible_for_authority_activation"] is False
     assert payload["execution_authority_active"] is False
 
 
@@ -111,6 +116,8 @@ def test_verify_record_mode_reproduces_committed_visual_fixture(
     assert payload["command"] == "verify-record"
     assert payload["expected_base64_matches"] is True
     assert payload["record_canonical_text_matches"] is True
+    assert payload["record_representations_consistent"] is True
+    assert payload["authorization_evidence_verified"] is True
     assert payload["authorization_verified"] is True
 
 
@@ -128,6 +135,7 @@ def test_verify_checkpoint_uses_only_explicit_values() -> None:
     assert result.returncode == 0
     payload = json.loads(result.stdout.decode("utf-8", errors="strict"))
     assert payload["checkpoint_binding_verified"] is True
+    assert payload["eligible_for_authority_activation"] is False
     assert payload["execution_authority_active"] is False
     assert payload["provider_command_allowed"] is False
 
@@ -186,4 +194,42 @@ def test_atomic_output_requires_explicit_overwrite(tmp_path: Path) -> None:
     assert overwritten.returncode == 0
     assert output.read_bytes() == before
     payload = json.loads(before.decode("utf-8", errors="strict"))
-    assert payload["authorization_verified"] is True
+    assert payload["serialization_profile_valid"] is True
+    assert payload["authorization_verified"] is False
+
+
+def test_verify_record_rejects_conflicting_aliases(tmp_path: Path) -> None:
+    raw = b"APPROVE_CLI_CONFLICT."
+    source = tmp_path / "authorization.txt"
+    record_path = tmp_path / "conflicting-record.json"
+    source.write_bytes(raw)
+    record_path.write_text(
+        json.dumps(
+            {
+                "byte_length": len(raw),
+                "sha256": hashlib.sha256(raw).hexdigest(),
+                "base64": base64.b64encode(raw).decode("ascii"),
+                "authorization_base64": base64.b64encode(
+                    b"APPROVE_CLI_DIFFERENT."
+                ).decode("ascii"),
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    result = _run(
+        "verify-record",
+        "--text-file",
+        str(source),
+        "--record",
+        str(record_path),
+    )
+
+    assert result.returncode == 1
+    assert result.stderr == b""
+    payload = json.loads(result.stdout.decode("utf-8", errors="strict"))
+    assert payload["record_representations_consistent"] is False
+    assert payload["record_representation_conflicts"] == ["base64"]
+    assert payload["authorization_evidence_verified"] is False
+    assert payload["authorization_verified"] is False
+    assert payload["eligible_for_authority_activation"] is False

@@ -89,8 +89,10 @@ def test_valid_exact_utf8_round_trip_and_stable_json() -> None:
     assert result.decoded_bytes_equal_original is True
     assert result.decoded_sha256_equal_original is True
     assert result.serialization_round_trip_verified is True
-    assert result.authorization_verified is True
-    assert result.eligible_for_authority_activation is True
+    assert result.serialization_profile_valid is True
+    assert result.authorization_evidence_verified is False
+    assert result.authorization_verified is False
+    assert result.eligible_for_authority_activation is False
     assert result.execution_authority_active is False
     assert result.provider_command_allowed is False
     assert result.provider_command_invocation_count == 0
@@ -193,6 +195,116 @@ def test_existing_authorization_base64_alias_is_verified() -> None:
     assert result.authorization_verified is True
 
 
+def test_conflicting_recognized_record_representations_are_rejected() -> None:
+    canonical = b"APPROVE_CONFLICT_AUDIT."
+    sha256 = hashlib.sha256(canonical).hexdigest()
+    encoded = base64.b64encode(canonical).decode("ascii")
+    different = base64.b64encode(b"APPROVE_CONFLICT_OTHER.").decode("ascii")
+    cases = (
+        (
+            "base64",
+            {
+                "byte_length": len(canonical),
+                "sha256": sha256,
+                "base64": encoded,
+                "authorization_base64": different,
+            },
+        ),
+        (
+            "base64",
+            {
+                "byte_length": len(canonical),
+                "sha256": sha256,
+                "locally_derived_base64": encoded,
+                "locally_generated_base64": different,
+            },
+        ),
+        (
+            "byte_length",
+            {
+                "byte_length": len(canonical) + 1,
+                "canonical_serialization": {
+                    "authorization_byte_length": len(canonical),
+                    "authorization_text_sha256": sha256,
+                    "locally_derived_base64": encoded,
+                },
+            },
+        ),
+        (
+            "sha256",
+            {
+                "sha256": "0" * 64,
+                "canonical_serialization": {
+                    "authorization_byte_length": len(canonical),
+                    "authorization_text_sha256": sha256,
+                    "locally_derived_base64": encoded,
+                },
+            },
+        ),
+        (
+            "canonical_text",
+            {
+                "byte_length": len(canonical),
+                "sha256": sha256,
+                "base64": encoded,
+                "canonical_authorization_text": canonical.decode("ascii"),
+                "exact_authorization_text": "APPROVE_CONFLICT_OTHER.",
+            },
+        ),
+    )
+
+    for conflict_name, record in cases:
+        result = verify_authorization_bytes(canonical, record)
+
+        assert result.record_representations_consistent is False
+        assert conflict_name in result.record_representation_conflicts
+        assert (
+            f"record_representation_conflict:{conflict_name}"
+            in result.validation_errors
+        )
+        assert result.authorization_evidence_verified is False
+        assert result.authorization_verified is False
+        assert result.eligible_for_authority_activation is False
+
+
+def test_conflicting_nested_verification_fact_is_rejected() -> None:
+    canonical = b"APPROVE_NESTED_FACT."
+    record = _expected_for(canonical)
+    record["decoded_bytes_equal_original"] = False
+    record["canonical_serialization"] = {
+        "decoded_bytes_equal_original": True,
+    }
+
+    result = verify_authorization_bytes(canonical, record)
+
+    assert result.record_representations_consistent is False
+    assert "decoded_bytes_equal_original" in result.record_representation_conflicts
+    assert result.authorization_evidence_verified is False
+
+
+def test_matching_duplicate_representations_remain_compatible() -> None:
+    canonical = b"APPROVE_MATCHING_ALIASES."
+    sha256 = hashlib.sha256(canonical).hexdigest()
+    encoded = base64.b64encode(canonical).decode("ascii")
+    record = {
+        "byte_length": len(canonical),
+        "authorization_byte_length": len(canonical),
+        "sha256": sha256,
+        "authorization_text_sha256": sha256.upper(),
+        "base64": encoded,
+        "authorization_base64": encoded,
+        "canonical_authorization_text": canonical.decode("ascii"),
+        "exact_authorization_text": canonical.decode("ascii"),
+    }
+
+    result = verify_authorization_bytes(canonical, record)
+
+    assert result.record_representations_consistent is True
+    assert result.record_representation_conflicts == ()
+    assert result.authorization_evidence_verified is True
+    assert result.authorization_verified is True
+
+
 def test_invalid_utf8_is_a_deterministic_failure() -> None:
     result = compile_authorization_bytes(b"APPROVE_\xff.")
 
@@ -215,7 +327,7 @@ def test_checkpoint_binding_success_is_eligibility_only() -> None:
     checkpoint = verify_checkpoint_binding(CHECKPOINT, CHECKPOINT, CHECKPOINT)
 
     assert checkpoint.checkpoint_binding_verified is True
-    assert checkpoint.eligible_for_authority_activation is True
+    assert checkpoint.eligible_for_authority_activation is False
     assert checkpoint.execution_authority_active is False
     assert checkpoint.provider_command_allowed is False
     assert checkpoint.provider_command_invocation_count == 0
@@ -265,6 +377,10 @@ def test_failed_verification_consumes_no_authority_or_operation_count() -> None:
 
     assert eligibility.eligible_for_authority_activation is False
     assert eligibility.decision == "safe_block"
+    assert eligibility.authorization_evidence_verified is False
+    assert eligibility.checkpoint_binding_required is True
+    assert eligibility.checkpoint_binding_verified is None
+    assert "checkpoint_binding_required" in eligibility.validation_errors
     assert eligibility.execution_authority_active is False
     assert eligibility.provider_command_allowed is False
     assert eligibility.provider_command_invocation_count == 0
@@ -278,6 +394,8 @@ def test_successful_verification_only_marks_eligibility() -> None:
     eligibility = evaluate_activation_eligibility(verified, checkpoint)
 
     assert verified.authorization_verified is True
+    assert verified.authorization_evidence_verified is True
+    assert verified.eligible_for_authority_activation is False
     assert eligibility.eligible_for_authority_activation is True
     assert eligibility.decision == "ready"
     assert eligibility.execution_authority_active is False
@@ -286,12 +404,65 @@ def test_successful_verification_only_marks_eligibility() -> None:
     assert eligibility.authorized_operation_count_consumed == 0
 
 
+def test_compile_only_cannot_be_activation_eligible() -> None:
+    raw = b"APPROVE_COMPILE_ONLY."
+    compiled = compile_authorization_bytes(raw)
+    checkpoint = verify_checkpoint_binding(CHECKPOINT, CHECKPOINT, CHECKPOINT)
+
+    eligibility = evaluate_activation_eligibility(compiled, checkpoint)
+
+    assert compiled.serialization_profile_valid is True
+    assert compiled.authorization_evidence_verified is False
+    assert compiled.authorization_verified is False
+    assert compiled.eligible_for_authority_activation is False
+    assert eligibility.authorization_evidence_verified is False
+    assert eligibility.eligible_for_authority_activation is False
+    assert eligibility.decision == "safe_block"
+    assert (
+        "authorization_evidence_verification_required"
+        in eligibility.validation_errors
+    )
+
+
+def test_verified_evidence_without_checkpoint_cannot_be_activation_eligible() -> None:
+    raw = b"APPROVE_RECORD_WITHOUT_CHECKPOINT."
+    verified = verify_authorization_bytes(raw, _expected_for(raw))
+
+    eligibility = evaluate_activation_eligibility(verified)
+
+    assert verified.authorization_evidence_verified is True
+    assert verified.eligible_for_authority_activation is False
+    assert eligibility.checkpoint_binding_required is True
+    assert eligibility.checkpoint_binding_verified is None
+    assert eligibility.eligible_for_authority_activation is False
+    assert eligibility.decision == "safe_block"
+    assert "checkpoint_binding_required" in eligibility.validation_errors
+
+
+def test_verified_evidence_with_mismatched_checkpoint_is_not_eligible() -> None:
+    raw = b"APPROVE_RECORD_WITH_WRONG_CHECKPOINT."
+    verified = verify_authorization_bytes(raw, _expected_for(raw))
+    mismatched = verify_checkpoint_binding(CHECKPOINT, "f" * 40, CHECKPOINT)
+
+    eligibility = evaluate_activation_eligibility(verified, mismatched)
+
+    assert verified.authorization_evidence_verified is True
+    assert mismatched.checkpoint_binding_verified is False
+    assert eligibility.authorization_evidence_verified is True
+    assert eligibility.checkpoint_binding_verified is False
+    assert eligibility.eligible_for_authority_activation is False
+    assert eligibility.decision == "safe_block"
+    assert "checkpoint_binding_failed" in eligibility.validation_errors
+
+
 def test_exact_text_is_not_unicode_normalized() -> None:
     composed = compile_authorization_text("APPROVE_\u00e9.")
     decomposed = compile_authorization_text("APPROVE_e\u0301.")
 
-    assert composed.authorization_verified is True
-    assert decomposed.authorization_verified is True
+    assert composed.serialization_profile_valid is True
+    assert decomposed.serialization_profile_valid is True
+    assert composed.authorization_verified is False
+    assert decomposed.authorization_verified is False
     assert composed.sha256 != decomposed.sha256
     assert composed.base64 != decomposed.base64
     assert composed.byte_length != decomposed.byte_length
