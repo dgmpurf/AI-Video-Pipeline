@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_P3D_W01_F06_RECOVERY_READINESS_BUDGET_REVIEW_AUTHORIZATION",
+  "phase_id": "CAL-001-P3D-W01_F06_RECOVERY_READINESS_AND_BUDGET_REVIEW_RECORD_ONLY",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "authorization_decision": "APPROVE_CAL001_F06_RECOVERY_READINESS_AND_BUDGET_REVIEW_RECORD_ONLY_VERIFY_UNCHANGED_BINDINGS_DESIGN_85_TOTAL_SUBMIT_INVOCATION_CAP_70_CREDIT_CONTINGENCY_AND_5670_PRE_SUBMIT_BALANCE_GATE_COMMIT_PUSH_NO_DREAMINA_NO_RECOVERY_SUBMIT.",
+  "authorization_date": "2026-07-19",
+  "recorded_at": "2026-07-19T13:32:07.8998763Z",
+  "bound_repository_checkpoint": "0273eea8895548ad46f1e23ce8ef3f0304646e94",
+  "canonical_authorization": {
+    "encoding": "UTF-8",
+    "bom": false,
+    "trailing_newline": false,
+    "byte_length": 230,
+    "authorization_text_sha256": "699986e09949ef45dc290010b6fd21c6f24287d252eb41c97ee7d5728472e43f",
+    "authorization_base64": "QVBQUk9WRV9DQUwwMDFfRjA2X1JFQ09WRVJZX1JFQURJTkVTU19BTkRfQlVER0VUX1JFVklFV19SRUNPUkRfT05MWV9WRVJJRllfVU5DSEFOR0VEX0JJTkRJTkdTX0RFU0lHTl84NV9UT1RBTF9TVUJNSVRfSU5WT0NBVElPTl9DQVBfNzBfQ1JFRElUX0NPTlRJTkdFTkNZX0FORF81NjcwX1BSRV9TVUJNSVRfQkFMQU5DRV9HQVRFX0NPTU1JVF9QVVNIX05PX0RSRUFNSU5BX05PX1JFQ09WRVJZX1NVQk1JVC4=",
+    "exact_authorization_text": "APPROVE_CAL001_F06_RECOVERY_READINESS_AND_BUDGET_REVIEW_RECORD_ONLY_VERIFY_UNCHANGED_BINDINGS_DESIGN_85_TOTAL_SUBMIT_INVOCATION_CAP_70_CREDIT_CONTINGENCY_AND_5670_PRE_SUBMIT_BALANCE_GATE_COMMIT_PUSH_NO_DREAMINA_NO_RECOVERY_SUBMIT.",
+    "verification": {
+      "authoritative_decode_count": 1,
+      "byte_length_verified": true,
+      "sha256_verified": true,
+      "utf8_verified": true,
+      "bom_absent_verified": true,
+      "trailing_newline_absent_verified": true,
+      "exact_token_equality_verified": true,
+      "exact_token_count": 1,
+      "authorization_base64_verified": true,
+      "authorization_round_trip_verified": true
+    }
+  },
+  "allowed_scope": {
+    "record_only_recovery_readiness_review": true,
+    "accepted_binding_verification": true,
+    "accounting_and_budget_design": true,
+    "non_active_state_review_block": true,
+    "commit_and_push": true
+  },
+  "boundaries": {
+    "Dreamina_run": false,
+    "Dreamina_command_count": 0,
+    "provider_call_authorized": false,
+    "recovery_submit_authorized": false,
+    "query_authorized": false,
+    "download_authorized": false,
+    "retry_authorized": false,
+    "resubmit_authorized": false,
+    "F07_authorized": false,
+    "W02_plus_authorized": false,
+    "active_cap_or_budget_change_authorized": false,
+    "Source_modification_authorized": false,
+    "accepted_artifact_modification_authorized": false,
+    "dataset_modification_authorized": false,
+    "media_creation_authorized": false,
+    "parser_or_test_modification_authorized": false,
+    "final_master": false,
+    "locked": false
+  }
+}

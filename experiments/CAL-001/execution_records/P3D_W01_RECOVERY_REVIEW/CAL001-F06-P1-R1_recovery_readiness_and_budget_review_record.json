@@ -1,0 +1,286 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F06_RECOVERY_READINESS_AND_BUDGET_REVIEW",
+  "phase_id": "CAL-001-P3D-W01_F06_RECOVERY_READINESS_AND_BUDGET_REVIEW_RECORD_ONLY",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "generated_at": "2026-07-19T13:32:07.8998763Z",
+  "status": "F06_recovery_readiness_and_budget_review_completed_proposal_inactive",
+  "authorization": {
+    "decision": "APPROVE_CAL001_F06_RECOVERY_READINESS_AND_BUDGET_REVIEW_RECORD_ONLY_VERIFY_UNCHANGED_BINDINGS_DESIGN_85_TOTAL_SUBMIT_INVOCATION_CAP_70_CREDIT_CONTINGENCY_AND_5670_PRE_SUBMIT_BALANCE_GATE_COMMIT_PUSH_NO_DREAMINA_NO_RECOVERY_SUBMIT.",
+    "record_path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_F06_recovery_readiness_budget_review_authorization.json",
+    "authorization_byte_length": 230,
+    "authorization_text_sha256": "699986e09949ef45dc290010b6fd21c6f24287d252eb41c97ee7d5728472e43f",
+    "authorization_base64_verified": true,
+    "authorization_round_trip_verified": true,
+    "bound_repository_checkpoint": "0273eea8895548ad46f1e23ce8ef3f0304646e94"
+  },
+  "preflight": {
+    "branch": "main",
+    "starting_head": "0273eea8895548ad46f1e23ce8ef3f0304646e94",
+    "origin_main": "0273eea8895548ad46f1e23ce8ef3f0304646e94",
+    "head_origin_aligned": true,
+    "staged_files_at_start": 0,
+    "unrelated_tracked_changes": false,
+    "sources_clean": true,
+    "parser_correction_commit_present": true,
+    "media_staged": false,
+    "bounded_workspace_scope_verified": true
+  },
+  "checkpoint_artifact_hashes": {
+    "parser_correction_report": {
+      "path": "reports/PHASE_CAL001_P3D_W01_F06_ORPHANED_HANDLE_PARSER_AND_STATE_CORRECTION_RESULT.md",
+      "sha256": "4c2609d60611a7e5436ad35fff828e1fd94a302f109878e53f394ec90f7b149e"
+    },
+    "state_contract_before_review": {
+      "path": "experiments/CAL-001/execution_state/CAL001_P3C_remaining_77_resumable_execution_state_contract.json",
+      "sha256": "ab0e9dbedea450ffff2b63997bf3d3874890e6cb70ed34ca33f49fe42901c885"
+    },
+    "fourth_query_superseding_addendum": {
+      "path": "reports/PHASE_CAL001_P3D_W01_F06_FOURTH_QUERY_SUPERSEDING_CLASSIFICATION_ADDENDUM.md",
+      "sha256": "2be26d85729076cb1a2597def72432c128387a70c15af8ecd0a9c3816dd4f6cf"
+    },
+    "human_web_ui_observation": {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_CORRECTION/CAL001-F06-P1-R1_human_web_ui_observation.json",
+      "sha256": "e7aaa1f9717ee4cf396d8c6efc2ea2823d1f1744bcebcc3e371ca97c72535c4b"
+    },
+    "orphaned_handle_correction_record": {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_CORRECTION/CAL001-F06-P1-R1_orphaned_handle_parser_state_correction_record.json",
+      "sha256": "b1a3dadb146768c727d907bb6858be1426f9661a8c9a2bdb835bdcd32fb2e59b"
+    },
+    "parser_correction_authorization": {
+      "path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_F06_orphaned_handle_parser_state_correction_authorization.json",
+      "sha256": "e77306a0f306e658d8c9d3577afe802188ce174ca5fbcc6685448ae4627867e1"
+    },
+    "all_match": true
+  },
+  "parser_correction_readiness": {
+    "correction_report_path": "reports/PHASE_CAL001_P3D_W01_F06_ORPHANED_HANDLE_PARSER_AND_STATE_CORRECTION_RESULT.md",
+    "correction_report_sha256": "4c2609d60611a7e5436ad35fff828e1fd94a302f109878e53f394ec90f7b149e",
+    "centralized_creation_classifier_exists": true,
+    "fail_reason_parsing_exists": true,
+    "submit_id_alone_does_not_prove_task_creation": true,
+    "prequeue_upload_failure_classifies_as_orphaned": true,
+    "old_handle_query_recovery_eligible": false,
+    "old_handle_created_task_count": 0,
+    "duplicate_guard_remains_conservative": true,
+    "ordinary_duplicate_submit_blocked": true,
+    "future_recovery_requires_explicit_human_override": true,
+    "no_live_tests_passed": true,
+    "no_live_test_count": 36
+  },
+  "accepted_integrity": {
+    "fixed_manifest_sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+    "fixture_registry_sha256": "cf35a7ea15e4c51e4d6936f9a796f90215445f059503cd29bd6eccb8c7658142",
+    "prompt_inventory_sha256": "27c95725e80c325693894f8b04cc3587f404f971559fbf1c2cc9292b3a361d6d",
+    "package_inventory_sha256": "b716cb063977172a8fcf28359c4ceef00b9ad0f90524a3ee675d194fb79c251c",
+    "full_experiment_inventory_sha256": "448a2d473b06bf4b5f8548644733fdd68af7cb37749bc8d807bf69e53ef96138",
+    "remaining_order_sha256": "783cb601ce9f33f20defadce9b37aff33698dcf492b9b71273a023e4deb0e291",
+    "fixed_task_count": 84,
+    "manifest_rows": 84,
+    "unique_experiment_ids": 84,
+    "prompt_mismatch_count": 0,
+    "package_mismatch_count": 0,
+    "fixture_mismatch_count": 0,
+    "task_replacement": false,
+    "manifest_expansion": false,
+    "accepted_hashes_verified": true
+  },
+  "accepted_F06_binding": {
+    "binding_unchanged": true,
+    "task_type": "multimodal2video",
+    "model_version": "seedance2.0_vip",
+    "duration": 5,
+    "ratio": "16:9",
+    "video_resolution": "720p",
+    "expected_result_images_count": 0,
+    "expected_result_videos_count": 1,
+    "expected_output_count": 1,
+    "normal_task_cost": 70,
+    "prompt_path": "experiments/CAL-001/prompts/F06/CAL001-F06-P1_prompt.txt",
+    "prompt_sha256": "1672ee6ba29d82c844af6e4700607582410a323c24409697916b28e56a8b76f0",
+    "package_path": "experiments/CAL-001/packages/F06/CAL001-F06-P1-R1_package.json",
+    "package_sha256": "4f0f8356b2d0c04f03f1eb6d3f403259795e24b413031c883491856d25366710",
+    "fixture_order": [
+      {
+        "fixture_id": "CAL001-F06-IDENTITY-A",
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+        "sha256": "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f"
+      },
+      {
+        "fixture_id": "CAL001-F06-IDENTITY-B",
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+        "sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11"
+      },
+      {
+        "fixture_id": "CAL001-F06-SCENE-01",
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+        "sha256": "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452"
+      }
+    ],
+    "package_fixture_order_match": true,
+    "effective_rendered_image_order_match": true,
+    "modified_recovery_package_created": false,
+    "replacement_asset_created": false
+  },
+  "current_state": {
+    "activation_state": "STOPPED_AUTHORITY_CLOSED",
+    "macro_state": "STOPPED_AUTHORITY_CLOSED",
+    "wave_state": "stopped",
+    "execution_authority_active": false,
+    "remaining_noncanary_tasks_authorized": false,
+    "next_wave_id": "W01",
+    "next_experiment_id": "CAL001-F06-P1-R1",
+    "CAL001B_authorized": false,
+    "final_master": false,
+    "locked": false,
+    "old_F06": {
+      "historical_submit_invocation_count": 1,
+      "historical_submit_id": "cabfa6ab-cc61-4d29-8630-da01dfdeef65",
+      "historical_query_count": 4,
+      "provider_task_created": false,
+      "created_task_count": 0,
+      "submit_handle_state": "orphaned_after_upload_transport_failure",
+      "orphaned_handle_quarantined": true,
+      "query_recovery_eligible": false,
+      "download_eligible": false,
+      "duplicate_submit_forbidden": true,
+      "retry_authorized": false,
+      "resubmit_authorized": false,
+      "recovery_submit_authorized": false,
+      "credit_consumption_classification": "credit_consumption_unresolved",
+      "confirmed_F06_credit_cost": null
+    }
+  },
+  "accounting_semantics": {
+    "fixed_task_count": 84,
+    "technically_completed_fixed_task_count": 12,
+    "completed_canaries": 7,
+    "completed_W01_F01_F05_tasks": 5,
+    "confirmed_canary_cost": 490,
+    "confirmed_W01_cost": 350,
+    "confirmed_CAL001A_cost": 840,
+    "remaining_fixed_task_count": 72,
+    "active_total_submit_invocation_cap": 84,
+    "active_total_credit_budget_max": 5880,
+    "credit_floor": 560,
+    "retry_count_max": 0,
+    "resubmit_count_max": 0,
+    "confirmed_created_or_completed_submit_count": 12,
+    "historical_submit_invocation_count_including_orphan": 13,
+    "orphan_counted_as_created_provider_task": false,
+    "orphan_included_in_historical_invocation_accounting": true
+  },
+  "budget_arithmetic": {
+    "remaining_fixed_task_count_formula": "84 - 12",
+    "remaining_fixed_task_count": 72,
+    "normal_remaining_task_credit_formula": "72 * 70",
+    "normal_remaining_task_credit": 5040,
+    "base_required_live_balance_formula": "5040 + 560",
+    "base_required_live_balance": 5600,
+    "proposed_unresolved_transport_loss_reserve": 70,
+    "proposed_recovery_pre_submit_minimum_live_balance_formula": "5600 + 70",
+    "proposed_recovery_pre_submit_minimum_live_balance": 5670,
+    "base_CAL001A_budget_formula": "84 * 70",
+    "base_CAL001A_budget": 5880,
+    "proposed_absolute_credit_ceiling_formula": "5880 + 70",
+    "proposed_absolute_credit_ceiling": 5950,
+    "historical_5695_is_stale": true,
+    "historical_5695_accepted_as_live_preflight": false,
+    "fresh_live_credit_required_later": true,
+    "old_loss_reserve_until_conclusive_reconciliation": 70,
+    "positive_drift_refund_or_grant_enlarges_scope": false
+  },
+  "proposed_recovery_envelope": {
+    "proposal_status": "reviewed_not_activated",
+    "proposal_active": false,
+    "recovery_submit_authorized": false,
+    "current_active_total_submit_invocation_cap": 84,
+    "proposed_total_submit_invocation_cap": 85,
+    "current_active_credit_budget_max": 5880,
+    "proposed_transport_loss_contingency_credit_max": 70,
+    "proposed_absolute_credit_ceiling": 5950,
+    "proposed_recovery_pre_submit_minimum_live_balance": 5670,
+    "proposed_recovery_submit_count_max": 1,
+    "proposed_submit_only_query_count_max": 0,
+    "proposed_submit_only_download_count_max": 0,
+    "proposed_retry_count_max": 0,
+    "proposed_resubmit_count_max": 0,
+    "proposed_F07_authorized": false,
+    "proposed_W02_plus_authorized": false,
+    "proposed_old_handle_quarantine_override": false,
+    "proposed_new_submit_id_must_differ_from_old": true,
+    "adds_task_or_manifest_row": false,
+    "authorizes_second_recovery": false,
+    "active_hard_limits_modified": false
+  },
+  "future_submit_only_design": {
+    "phase_id": "CAL-001-P3D-W01_F06_SINGLE_RECOVERY_SUBMIT_ONLY",
+    "design_only": true,
+    "activated": false,
+    "future_exact_authorization_required": true,
+    "may_later_permit": [
+      "repository, Source, hash, parser-correction, quarantine, and binding preflight",
+      "current Dreamina canary and multimodal2video help",
+      "exactly one fresh user_credit",
+      "exactly one new F06 submit invocation",
+      "exactly one immediate post-submit user_credit"
+    ],
+    "query_count": 0,
+    "download_count": 0,
+    "F07_submit_count": 0,
+    "retry_count": 0,
+    "additional_recovery_submit_count": 0,
+    "mandatory_stop_conditions": [
+      "balance below 5670",
+      "Source, hash, or binding mismatch",
+      "old handle becomes active or visible",
+      "duplicate-provider-task evidence",
+      "CLI help, canary, authentication, or logger failure",
+      "upload transport failure",
+      "new submit_id absent",
+      "new submit_id equals old quarantined submit_id",
+      "corrected classifier does not prove provider_task_created=true",
+      "gen_status=fail",
+      "logid absent",
+      "credit_count absent, nonnumeric, or not 70",
+      "immediate balance delta not exactly 70",
+      "any unclassified anomaly"
+    ],
+    "stop_response": "No query, download, retry, further submit, or F07 action; close authority, preserve evidence, and require human decision."
+  },
+  "preservation": {
+    "F01_F05_preserved": true,
+    "F07_preserved": true,
+    "old_F06_historical_evidence_preserved": true,
+    "old_F06_historical_evidence_hashes_verified": true,
+    "old_F06_historical_query_count_verified": 4,
+    "accepted_artifacts_modified": false,
+    "parser_code_or_tests_modified": false,
+    "sources_modified": false,
+    "datasets_modified": false,
+    "media_modified_or_created": false
+  },
+  "no_live_proof": {
+    "Dreamina_run": false,
+    "Dreamina_command_count": 0,
+    "provider_calls": 0,
+    "credits_consumed": 0,
+    "media_created": false,
+    "datasets_modified": false,
+    "proposal_active": false,
+    "recovery_submit_authorized": false,
+    "active_hard_limits_modified": false
+  },
+  "state_update": {
+    "state_contract_path": "experiments/CAL-001/execution_state/CAL001_P3C_remaining_77_resumable_execution_state_contract.json",
+    "review_status": "completed_ready_for_human_reauthorization_design",
+    "review_block_active": false,
+    "active_state_unchanged": true,
+    "active_hard_limits_unchanged": true,
+    "exact_next_allowed_action": "A separate exact human authorization may activate one F06 recovery submit-only phase. No Dreamina action is currently authorized."
+  },
+  "recommended_next_phase": "CAL-001-P3D-W01_F06_SINGLE_RECOVERY_SUBMIT_ONLY_REAUTHORIZATION_RECORD_ONLY",
+  "final_verdict": "CAL001_P3D_W01_F06_RECOVERY_READINESS_REVIEW_PASSED_PROPOSAL_INACTIVE_REQUIRES_HUMAN_REAUTHORIZATION"
+}
