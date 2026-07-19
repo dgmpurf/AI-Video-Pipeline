@@ -67,14 +67,32 @@
       "query_authorized": false,
       "download_authorized": false,
       "later_tasks_authorized": false
+    },
+    {
+      "phase_id": "CAL-001-P3D-W01_F06_SINGLE_RECOVERY_SUBMIT_ONLY_REAUTHORIZATION_RECORD_ONLY",
+      "authorization_decision": "APPROVE_CAL001_F06_SINGLE_RECOVERY_SUBMIT_ONLY_REAUTHORIZATION_RECORD_ONLY_ACTIVATE_85_TOTAL_SUBMIT_INVOCATION_CAP_70_CREDIT_TRANSPORT_LOSS_CONTINGENCY_5950_ABSOLUTE_CREDIT_CEILING_5670_FRESH_PRE_SUBMIT_BALANCE_GATE_AUTHORIZE_EXACTLY_ONE_FUTURE_F06_RECOVERY_SUBMIT_ONLY_KEEP_OLD_HANDLE_QUARANTINED_NO_QUERY_NO_DOWNLOAD_NO_RETRY_NO_SECOND_RECOVERY_NO_F07_COMMIT_PUSH_NO_DREAMINA_IN_THIS_RECORD_ONLY_PHASE.",
+      "authorization_text_sha256": "35af5a5ed0dbabf7bf03ab0967a3eb2cf9c13a191c5eebe9ab2f1a4125b1fa33",
+      "authorization_record_path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_F06_single_recovery_submit_only_reauthorization.json",
+      "activation_record_path": "experiments/CAL-001/execution_records/P3D_W01_RECOVERY_AUTH/CAL001-F06-P1-R1_single_recovery_submit_only_activation_record.json",
+      "bound_repository_checkpoint": "fc1b025548cf982711d3790a7f2ac883b3d1d479",
+      "scope": "Exactly one future CAL001-F06-P1-R1 recovery submit-only Goal; old handle remains quarantined; no query, download, retry, second recovery, F07, W02+, or CAL001B.",
+      "Dreamina_command_count_in_record_only_phase": 0,
+      "recovery_submit_authorized": true,
+      "recovery_submit_count_max": 1,
+      "query_authorized": false,
+      "download_authorized": false,
+      "retry_authorized": false,
+      "second_recovery_submit_authorized": false,
+      "F07_authorized": false,
+      "effective_only_after_commit_push_and_HEAD_origin_main_alignment": true
     }
   ],
   "wave_plan_reference": {
     "path": "experiments/CAL-001/execution_plans/CAL001_P3C_remaining_77_wave_plan.json",
     "sha256": "b67b83f62cc6b146d6aee8a770031f7365dcc66afe08a8ae6ab7a7f9996e3748"
   },
-  "activation_state": "STOPPED_AUTHORITY_CLOSED",
-  "macro_state": "STOPPED_AUTHORITY_CLOSED",
+  "activation_state": "ACTIVATED_READY_FOR_F06_RECOVERY_SUBMIT_ONLY",
+  "macro_state": "ACTIVATED_READY_FOR_F06_RECOVERY_SUBMIT_ONLY",
   "activation_effective_condition": {
     "effective_only_when": [
       "All four required P3C files are committed",
@@ -86,15 +104,16 @@
     "operational_note": "This contract records the activated state; live use remains conditional on all effective conditions and a separately executed wave Goal."
   },
   "latest_reauthorization_effective_condition": {
-    "record_path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_false_positive_correction_reauthorization.json",
+    "record_path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_F06_single_recovery_submit_only_reauthorization.json",
     "effective_only_when": [
-      "The correction implementation, tests, reauthorization record, correction record, mutable state, and decision report are committed",
+      "All required F06 recovery reauthorization files parse",
+      "Only the exact authorized record and state files are committed",
       "Push to origin/main succeeds",
       "Local HEAD equals origin/main",
-      "The CAL-001-P3D-W01 correction report verdict passes",
+      "The F06 recovery reauthorization report verdict passes",
       "No stop condition is active"
     ],
-    "live_execution_requires_separately_executed_bounded_W01_goal": true
+    "live_execution_requires_separately_executed_F06_recovery_submit_only_goal": true
   },
   "accounting_counters": {
     "completed_fixed_task_count": 12,
@@ -107,6 +126,10 @@
     "remaining_credit_cost": 350,
     "total_submit_count": 12,
     "total_credit_cost": 840,
+    "confirmed_created_or_completed_submit_count": 12,
+    "historical_submit_invocation_count_including_orphan": 13,
+    "recovery_submit_invocation_count": 0,
+    "historical_submit_invocation_count_including_orphan_and_recovery": 13,
     "next_wave_id": "W01",
     "next_experiment_id": "CAL001-F06-P1-R1",
     "initial_required_live_balance": 5950,
@@ -124,8 +147,15 @@
     "remaining_query_count_max_total": 231,
     "remaining_download_count_max": 77,
     "remaining_credit_budget_max": 5390,
-    "total_CAL001A_submit_count_max": 84,
+    "total_CAL001A_submit_count_max": 85,
+    "accepted_fixed_task_submit_invocation_count_max": 84,
     "total_CAL001A_credit_budget_max": 5880,
+    "active_base_CAL001A_credit_budget_max": 5880,
+    "active_transport_loss_contingency_credit_max": 70,
+    "active_absolute_CAL001A_credit_ceiling": 5950,
+    "active_recovery_pre_submit_minimum_live_balance": 5670,
+    "old_F06_unresolved_loss_reserve": 70,
+    "recovery_submit_count_max": 1,
     "credit_floor": 560,
     "retry_count_max": 0,
     "resubmit_count_max": 0,
@@ -143,9 +173,20 @@
     "observed_balance_delta_must_reconcile_exactly": true,
     "P3C_live_credit_check_performed": false
   },
+  "F06_recovery_budget_invariant": {
+    "base_CAL001A_credit_budget_max": 5880,
+    "transport_loss_contingency_credit_max": 70,
+    "absolute_CAL001A_credit_ceiling": 5950,
+    "fresh_pre_submit_live_balance_required": 5670,
+    "historical_5695_accepted_as_future_live_preflight": false,
+    "provider_credit_count_required": 70,
+    "observed_balance_delta_required": 70,
+    "positive_drift_refund_or_grant_enlarges_scope": false
+  },
   "state_machine": {
     "macro_states": [
       "ACTIVATED_READY",
+      "ACTIVATED_READY_FOR_F06_RECOVERY_SUBMIT_ONLY",
       "WAVE_IN_PROGRESS",
       "PAUSED_BENIGN_TASK_BOUNDARY",
       "STOPPED_AUTHORITY_CLOSED",
@@ -167,7 +208,9 @@
       "downloaded_validation_pending",
       "technically_completed",
       "terminal_failure",
-      "stopped_anomaly"
+      "stopped_anomaly",
+      "pending_recovery_preflight",
+      "recovery_submitted_query_not_authorized"
     ],
     "normal_task_transition_order": [
       "pending_preflight",
@@ -4651,8 +4694,49 @@
     "active_hard_limits_modified": false,
     "exact_next_allowed_action": "A separate exact human authorization may activate one F06 recovery submit-only phase. No Dreamina action is currently authorized."
   },
-  "exact_next_action": "A separate exact human authorization may activate one F06 recovery submit-only phase. No Dreamina action is currently authorized.",
-  "stop_condition": "CAL001-F06-P1-R1 is stopped with an orphaned submit handle quarantined after prequeue upload transport failure; provider task creation is not proven, duplicate submit remains blocked, and all execution authority remains closed.",
+  "F06_single_recovery_submit_only_authority": {
+    "recovery_authorization_state": "ACTIVATED_READY_FOR_F06_RECOVERY_SUBMIT_ONLY",
+    "future_live_goal": "CAL-001-P3D-W01_F06_SINGLE_RECOVERY_SUBMIT_ONLY",
+    "next_action": "separately_executed_F06_recovery_submit_only_goal",
+    "recovery_submit_authorized": true,
+    "recovery_submit_count_max": 1,
+    "recovery_submit_count": 0,
+    "recovery_submit_id": null,
+    "recovery_submit_task_state": "pending_recovery_preflight",
+    "recovery_query_authorized": false,
+    "recovery_query_count": 0,
+    "recovery_query_count_max_in_submit_only_phase": 0,
+    "recovery_download_authorized": false,
+    "recovery_download_count": 0,
+    "recovery_download_count_max_in_submit_only_phase": 0,
+    "recovery_retry_authorized": false,
+    "recovery_second_submit_authorized": false,
+    "recovery_required_fresh_live_balance": 5670,
+    "recovery_old_loss_reserve": 70,
+    "recovery_total_submit_invocation_cap": 85,
+    "recovery_base_credit_budget_max": 5880,
+    "recovery_absolute_credit_ceiling": 5950,
+    "old_submit_id": "cabfa6ab-cc61-4d29-8630-da01dfdeef65",
+    "old_handle_state": "orphaned_after_upload_transport_failure",
+    "old_handle_quarantined": true,
+    "old_handle_reuse_authorized": false,
+    "old_handle_further_query_authorized": false,
+    "old_handle_download_authorized": false,
+    "new_submit_id_must_differ_from_old": true,
+    "F07_authorized": false,
+    "W02_plus_authorized": false,
+    "CAL001B_authorized": false,
+    "recovery_authorization_record_path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_F06_single_recovery_submit_only_reauthorization.json",
+    "recovery_activation_record_path": "experiments/CAL-001/execution_records/P3D_W01_RECOVERY_AUTH/CAL001-F06-P1-R1_single_recovery_submit_only_activation_record.json",
+    "recovery_result_report_path": "reports/PHASE_CAL001_P3D_W01_F06_SINGLE_RECOVERY_SUBMIT_ONLY_REAUTHORIZATION_RESULT.md",
+    "effective_only_after_commit_push_and_HEAD_origin_main_alignment": true,
+    "authority_closes_after_one_submit_attempt_and_post_submit_credit_reconciliation": true,
+    "new_recovery_submit_query_requires_separate_human_authorization": true,
+    "exact_next_allowed_action": "Execute the separately bounded CAL-001-P3D-W01_F06_SINGLE_RECOVERY_SUBMIT_ONLY Goal. No query, download, retry, second recovery submit, F07, or other task is authorized."
+  },
+  "next_action": "separately_executed_F06_recovery_submit_only_goal",
+  "exact_next_action": "Execute the separately bounded CAL-001-P3D-W01_F06_SINGLE_RECOVERY_SUBMIT_ONLY Goal. No query, download, retry, second recovery submit, F07, or other task is authorized.",
+  "stop_condition": null,
   "P3C_performed_exact_next_action": true,
   "one_wave_per_Goal_boundary": {
     "enabled": true,
@@ -4679,7 +4763,9 @@
     "Download is allowed only once after success with exactly zero images and one video.",
     "No operation may repeat when its durable count or evidence path already records completion.",
     "No new task submit is allowed while any earlier task is unresolved or evidence is ambiguous.",
-    "Every resume must revalidate repository, Source, accepted hashes, package, Prompt, fixture, command binding, and duplicate-operation state."
+    "Every resume must revalidate repository, Source, accepted hashes, package, Prompt, fixture, command binding, and duplicate-operation state.",
+    "The one authorized F06 recovery submit must create a new submit_id different from cabfa6ab-cc61-4d29-8630-da01dfdeef65; the old handle remains quarantined and may not be reused, queried, or downloaded.",
+    "After one F06 recovery submit invocation, close execution authority regardless of success or failure; no retry or second recovery submit is authorized."
   ],
   "benign_pause_rules": [
     "A benign Goal boundary is allowed only at a durable task boundary with no ambiguous or in-flight operation.",
@@ -4725,7 +4811,7 @@
     "Automatic closure after 77 completions does not select a family winner, select a global Prompt winner, authorize CAL001B, modify Source, finalize media, or lock.",
     "A separate human-governed visual-review and final calibration decision is required after technical completion."
   ],
-  "execution_authority_active": false,
+  "execution_authority_active": true,
   "remaining_noncanary_tasks_authorized": false,
   "CAL001B_authorized": false,
   "automatic_visual_scoring": false,

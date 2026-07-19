@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_P3D_W01_F06_SINGLE_RECOVERY_SUBMIT_ONLY_REAUTHORIZATION",
+  "phase_id": "CAL-001-P3D-W01_F06_SINGLE_RECOVERY_SUBMIT_ONLY_REAUTHORIZATION_RECORD_ONLY",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "recorded_at": "2026-07-19T13:48:27.1206720Z",
+  "bound_repository_checkpoint": "fc1b025548cf982711d3790a7f2ac883b3d1d479",
+  "authorization_decision": "APPROVE_CAL001_F06_SINGLE_RECOVERY_SUBMIT_ONLY_REAUTHORIZATION_RECORD_ONLY_ACTIVATE_85_TOTAL_SUBMIT_INVOCATION_CAP_70_CREDIT_TRANSPORT_LOSS_CONTINGENCY_5950_ABSOLUTE_CREDIT_CEILING_5670_FRESH_PRE_SUBMIT_BALANCE_GATE_AUTHORIZE_EXACTLY_ONE_FUTURE_F06_RECOVERY_SUBMIT_ONLY_KEEP_OLD_HANDLE_QUARANTINED_NO_QUERY_NO_DOWNLOAD_NO_RETRY_NO_SECOND_RECOVERY_NO_F07_COMMIT_PUSH_NO_DREAMINA_IN_THIS_RECORD_ONLY_PHASE.",
+  "canonical_authorization": {
+    "encoding": "UTF-8",
+    "bom": false,
+    "trailing_newline": false,
+    "byte_length": 404,
+    "authorization_text_sha256": "35af5a5ed0dbabf7bf03ab0967a3eb2cf9c13a191c5eebe9ab2f1a4125b1fa33",
+    "authorization_base64": "QVBQUk9WRV9DQUwwMDFfRjA2X1NJTkdMRV9SRUNPVkVSWV9TVUJNSVRfT05MWV9SRUFVVEhPUklaQVRJT05fUkVDT1JEX09OTFlfQUNUSVZBVEVfODVfVE9UQUxfU1VCTUlUX0lOVk9DQVRJT05fQ0FQXzcwX0NSRURJVF9UUkFOU1BPUlRfTE9TU19DT05USU5HRU5DWV81OTUwX0FCU09MVVRFX0NSRURJVF9DRUlMSU5HXzU2NzBfRlJFU0hfUFJFX1NVQk1JVF9CQUxBTkNFX0dBVEVfQVVUSE9SSVpFX0VYQUNUTFlfT05FX0ZVVFVSRV9GMDZfUkVDT1ZFUllfU1VCTUlUX09OTFlfS0VFUF9PTERfSEFORExFX1FVQVJBTlRJTkVEX05PX1FVRVJZX05PX0RPV05MT0FEX05PX1JFVFJZX05PX1NFQ09ORF9SRUNPVkVSWV9OT19GMDdfQ09NTUlUX1BVU0hfTk9fRFJFQU1JTkFfSU5fVEhJU19SRUNPUkRfT05MWV9QSEFTRS4=",
+    "exact_authorization_text": "APPROVE_CAL001_F06_SINGLE_RECOVERY_SUBMIT_ONLY_REAUTHORIZATION_RECORD_ONLY_ACTIVATE_85_TOTAL_SUBMIT_INVOCATION_CAP_70_CREDIT_TRANSPORT_LOSS_CONTINGENCY_5950_ABSOLUTE_CREDIT_CEILING_5670_FRESH_PRE_SUBMIT_BALANCE_GATE_AUTHORIZE_EXACTLY_ONE_FUTURE_F06_RECOVERY_SUBMIT_ONLY_KEEP_OLD_HANDLE_QUARANTINED_NO_QUERY_NO_DOWNLOAD_NO_RETRY_NO_SECOND_RECOVERY_NO_F07_COMMIT_PUSH_NO_DREAMINA_IN_THIS_RECORD_ONLY_PHASE.",
+    "verification": {
+      "authoritative_decode_count": 1,
+      "byte_length_verified": true,
+      "sha256_verified": true,
+      "exact_token_equality_verified": true,
+      "exact_token_count": 1,
+      "base64_equality_verified": true,
+      "authorization_base64_verified": true,
+      "authorization_round_trip_verified": true,
+      "bom_absent_verified": true,
+      "trailing_newline_absent_verified": true
+    }
+  },
+  "prior_readiness_review": {
+    "phase_id": "CAL-001-P3D-W01_F06_RECOVERY_READINESS_AND_BUDGET_REVIEW_RECORD_ONLY",
+    "status": "F06_recovery_readiness_and_budget_review_completed_proposal_inactive",
+    "verdict": "CAL001_P3D_W01_F06_RECOVERY_READINESS_REVIEW_PASSED_PROPOSAL_INACTIVE_REQUIRES_HUMAN_REAUTHORIZATION",
+    "authorization_record": {
+      "path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_F06_recovery_readiness_budget_review_authorization.json",
+      "sha256": "f823f0dc7c4e729f72f69cdbf4de092bce0e267ac642530c109a0b3715726618"
+    },
+    "review_record": {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_RECOVERY_REVIEW/CAL001-F06-P1-R1_recovery_readiness_and_budget_review_record.json",
+      "sha256": "05a67087823f8e97ce79b0322548645ac8e8af4dbc2cc5b860614177597c5ec1"
+    },
+    "report": {
+      "path": "reports/PHASE_CAL001_P3D_W01_F06_RECOVERY_READINESS_AND_BUDGET_REVIEW_RESULT.md",
+      "sha256": "0f859415a186cbfce8c759189662a1f7b862dbad282956f0b308ee7efea9dcb4"
+    },
+    "state_contract_before_reauthorization_sha256": "bd57036a67676ae8b18f263c7cf7a325b7ddcb92470bc937132ceabc620b3712",
+    "proposal_active_before": false,
+    "recovery_submit_authorized_before": false
+  },
+  "old_handle_quarantine_binding": {
+    "old_submit_id": "cabfa6ab-cc61-4d29-8630-da01dfdeef65",
+    "historical_submit_invocation_count": 1,
+    "historical_query_count": 4,
+    "historical_download_count": 0,
+    "provider_task_created": false,
+    "provider_task_creation_proven": false,
+    "created_task_count": 0,
+    "submit_handle_state": "orphaned_after_upload_transport_failure",
+    "orphaned_handle_quarantined": true,
+    "query_recovery_eligible": false,
+    "download_eligible": false,
+    "duplicate_submit_forbidden": true,
+    "old_handle_reuse_authorized": false,
+    "old_handle_further_query_authorized": false,
+    "old_handle_download_authorized": false,
+    "credit_consumption_classification": "credit_consumption_unresolved",
+    "confirmed_cost": null,
+    "quarantine_must_not_be_weakened": true
+  },
+  "accepted_F06_binding": {
+    "experiment_id": "CAL001-F06-P1-R1",
+    "is_new_fixed_task": false,
+    "is_replacement_manifest_row": false,
+    "task_type": "multimodal2video",
+    "model_version": "seedance2.0_vip",
+    "duration": 5,
+    "ratio": "16:9",
+    "video_resolution": "720p",
+    "expected_result_images_count": 0,
+    "expected_result_videos_count": 1,
+    "expected_output_count": 1,
+    "provider_credit_count_required": 70,
+    "prompt_path": "experiments/CAL-001/prompts/F06/CAL001-F06-P1_prompt.txt",
+    "prompt_sha256": "1672ee6ba29d82c844af6e4700607582410a323c24409697916b28e56a8b76f0",
+    "package_path": "experiments/CAL-001/packages/F06/CAL001-F06-P1-R1_package.json",
+    "package_sha256": "4f0f8356b2d0c04f03f1eb6d3f403259795e24b413031c883491856d25366710",
+    "fixture_paths": [
+      "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+      "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+      "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png"
+    ],
+    "fixture_sha256s": [
+      "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f",
+      "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11",
+      "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452"
+    ],
+    "binding_unchanged": true
+  },
+  "active_governance": {
+    "active_total_CAL001A_submit_invocation_cap": 85,
+    "accepted_fixed_task_submit_invocation_count": 84,
+    "active_base_CAL001A_credit_budget_max": 5880,
+    "active_transport_loss_contingency_credit_max": 70,
+    "active_absolute_CAL001A_credit_ceiling": 5950,
+    "active_recovery_pre_submit_minimum_live_balance": 5670,
+    "old_F06_unresolved_loss_reserve": 70,
+    "F06_recovery_submit_authorized": true,
+    "F06_recovery_submit_count_max": 1,
+    "F06_recovery_submit_count": 0,
+    "F06_recovery_query_authorized": false,
+    "F06_recovery_query_count_max_in_submit_only_phase": 0,
+    "F06_recovery_download_authorized": false,
+    "F06_recovery_download_count_max_in_submit_only_phase": 0,
+    "F06_recovery_retry_authorized": false,
+    "F06_second_recovery_submit_authorized": false,
+    "F07_authorized": false,
+    "W02_plus_authorized": false,
+    "CAL001B_authorized": false
+  },
+  "future_authority": {
+    "future_live_goal": "CAL-001-P3D-W01_F06_SINGLE_RECOVERY_SUBMIT_ONLY",
+    "exactly_one_future_recovery_submit_only_authorized": true,
+    "query_authorized": false,
+    "download_authorized": false,
+    "retry_authorized": false,
+    "second_recovery_submit_authorized": false,
+    "F07_authorized": false,
+    "authority_closes_after_submit_and_post_submit_credit_reconciliation": true,
+    "separate_human_authorization_required_for_new_submit_id_query": true
+  },
+  "effective_conditions": [
+    "All required record-only files parse",
+    "Only the exact authorized files are committed",
+    "Push to origin/main succeeds",
+    "Local HEAD equals origin/main",
+    "The final record-only verdict passes",
+    "No stop condition is active"
+  ],
+  "record_only_boundaries": {
+    "Dreamina_run": false,
+    "Dreamina_command_count": 0,
+    "credits_consumed": 0,
+    "media_created": false,
+    "datasets_modified": false,
+    "sources_modified": false,
+    "final_master": false,
+    "locked": false
+  }
+}
