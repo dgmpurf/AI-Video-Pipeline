@@ -46,15 +46,30 @@ _SENSITIVE_ARG_FLAGS = {
     "--token",
 }
 _PROMPT_ARG_FLAGS = {"--negative_prompt", "--prompt"}
+_CREATED_NONTERMINAL_STATUSES = {"created", "pending", "querying", "submitted"}
+_FAILED_STATUSES = {"fail", "failed", "failure"}
+_PREQUEUE_UPLOAD_FAILURE_MARKERS = {
+    "upload phase, no file upload",
+    "upload phase: no file upload",
+}
 
 
 class DuplicateSubmitForbidden(RuntimeError):
-    def __init__(self, experiment_id: str, submit_id: str) -> None:
+    def __init__(
+        self,
+        experiment_id: str,
+        submit_id: str,
+        *,
+        creation_classification: str = "unknown",
+        provider_task_created: bool | None = None,
+    ) -> None:
         super().__init__(
             f"duplicate submit forbidden for {experiment_id}: existing submit_id={submit_id}"
         )
         self.experiment_id = experiment_id
         self.submit_id = submit_id
+        self.creation_classification = creation_classification
+        self.provider_task_created = provider_task_created
         self.stage = "pre_subprocess_guard"
 
 
@@ -89,19 +104,46 @@ class DurableCommandExecution:
     ) -> Path:
         parsed = self.parsed_evidence or {}
         submit_id = str(parsed.get("submit_id") or self.known_submit_id or "")
-        if submit_id:
-            remote_state = "created_or_possible_created"
-        elif self.operation_kind == "submit" and self.result.returncode == 0:
-            remote_state = "created_or_possible_created"
-        else:
-            remote_state = "not_proven_created"
+        classification_input = dict(parsed)
+        if submit_id and not classification_input.get("submit_id"):
+            classification_input["submit_id"] = submit_id
+        classification = classify_submit_creation_evidence(
+            classification_input,
+            submit_invocation_occurred=bool(
+                parsed.get("submit_invocation_occurred")
+                or self.operation_kind == "submit"
+            ),
+            subprocess_exit_code=int(self.result.returncode),
+        )
         payload = {
             "schema_version": "1.0",
             "operation_id": self.operation_id,
             "experiment_id": self.experiment_id,
             "command_type": self.command_type,
             "operation_kind": self.operation_kind,
-            "remote_task_creation_state": remote_state,
+            "creation_classification": classification["creation_classification"],
+            "remote_task_creation_state": classification[
+                "remote_task_creation_state"
+            ],
+            "submit_invocation_occurred": classification[
+                "submit_invocation_occurred"
+            ],
+            "submit_handle_present": classification["submit_handle_present"],
+            "provider_task_created": classification["provider_task_created"],
+            "provider_task_creation_proven": classification[
+                "provider_task_creation_proven"
+            ],
+            "submit_handle_state": classification["submit_handle_state"],
+            "query_recovery_eligible": classification[
+                "query_recovery_eligible"
+            ],
+            "download_eligible": classification["download_eligible"],
+            "duplicate_submit_forbidden": classification[
+                "duplicate_submit_forbidden"
+            ],
+            "requires_separate_human_recovery_authorization": classification[
+                "requires_separate_human_recovery_authorization"
+            ],
             "local_postprocessing_status": "failed",
             "failure_stage": stage,
             "exception_class": type(error).__name__,
@@ -118,7 +160,7 @@ class DurableCommandExecution:
             "queue_status": parsed.get("queue_status"),
             "credit_count": parsed.get("credit_count"),
             "submit_attempt_count": 1 if self.operation_kind == "submit" else 0,
-            "created_task_count": 1 if submit_id else 0,
+            "created_task_count": classification["created_task_count"],
             "query_count": 1 if self.operation_kind == "query" else 0,
             "download_count": 1 if self.operation_kind == "download" else 0,
             "retry_count": 0,
@@ -159,6 +201,158 @@ class PostSubmitCreditResult:
     observed_credit_delta: int | None
     provider_credit_count_numeric: int | None
     stop_condition: str | None
+
+
+def classify_submit_creation_evidence(
+    evidence: Mapping[str, Any] | None = None,
+    *,
+    submit_invocation_occurred: bool = True,
+    subprocess_exit_code: int | None = None,
+) -> dict[str, Any]:
+    """Classify submit creation without treating a handle as task proof."""
+    values = dict(evidence or {})
+    submit_id = _first_present(
+        values, "submit_id", "historical_submit_id", "existing_submit_id"
+    )
+    gen_status_value = _first_present(
+        values, "gen_status", "historical_raw_gen_status"
+    )
+    fail_reason_value = _first_present(
+        values, "fail_reason", "historical_raw_fail_reason"
+    )
+    logid = _first_present(values, "logid", "historical_logid")
+    queue_status = _first_present(
+        values, "queue_status", "historical_queue_status"
+    )
+    credit_count = _first_present(
+        values,
+        "credit_count",
+        "submit_response_credit_count",
+        "historical_credit_count",
+    )
+    submit_handle_present = submit_id not in (None, "")
+    gen_status = str(gen_status_value or "").strip().lower()
+    fail_reason = str(fail_reason_value or "").strip()
+    fail_reason_lower = fail_reason.lower()
+    successful_output_evidence = _has_successful_output_evidence(values)
+    provider_task_evidence_present = any(
+        item not in (None, "") for item in (logid, queue_status, credit_count)
+    ) or successful_output_evidence
+    prequeue_upload_failure = (
+        gen_status in _FAILED_STATUSES
+        and any(
+            marker in fail_reason_lower
+            for marker in _PREQUEUE_UPLOAD_FAILURE_MARKERS
+        )
+    )
+
+    if (
+        submit_handle_present
+        and gen_status in _CREATED_NONTERMINAL_STATUSES
+        and not prequeue_upload_failure
+    ):
+        classification = "confirmed_created_nonterminal"
+        provider_task_created: bool | None = True
+        remote_state = "confirmed_created_nonterminal"
+        handle_state = "active_provider_task_handle"
+        query_recovery_eligible = True
+        download_eligible = False
+    elif gen_status == "success" or (
+        gen_status in _FAILED_STATUSES and provider_task_evidence_present
+    ):
+        classification = "confirmed_created_success_or_terminal_provider_task"
+        provider_task_created = True
+        remote_state = "confirmed_created_success_or_terminal_provider_task"
+        handle_state = (
+            "provider_task_handle"
+            if submit_handle_present
+            else "provider_task_without_submit_handle"
+        )
+        query_recovery_eligible = False
+        download_eligible = gen_status == "success"
+    elif (
+        submit_invocation_occurred
+        and submit_handle_present
+        and gen_status in _FAILED_STATUSES
+        and prequeue_upload_failure
+        and not provider_task_evidence_present
+        and not successful_output_evidence
+    ):
+        classification = "orphaned_handle_after_prequeue_upload_failure"
+        provider_task_created = False
+        remote_state = "not_created_prequeue_upload_failure"
+        handle_state = "orphaned_after_upload_transport_failure"
+        query_recovery_eligible = False
+        download_eligible = False
+    else:
+        classification = "creation_unresolved_terminal_or_ambiguous"
+        provider_task_created = None
+        remote_state = "creation_unresolved_terminal_or_ambiguous"
+        handle_state = (
+            "present_creation_unresolved"
+            if submit_handle_present
+            else "absent_creation_unresolved"
+        )
+        query_recovery_eligible = False
+        download_eligible = False
+
+    duplicate_submit_forbidden = bool(
+        submit_invocation_occurred or submit_handle_present
+    )
+    requires_human_decision = provider_task_created is not True
+    return {
+        "creation_classification": classification,
+        "submit_invocation_occurred": bool(submit_invocation_occurred),
+        "submit_invocation_count": 1 if submit_invocation_occurred else 0,
+        "submit_handle_present": submit_handle_present,
+        "provider_task_created": provider_task_created,
+        "provider_task_creation_proven": provider_task_created is True,
+        "remote_task_creation_state": remote_state,
+        "submit_handle_state": handle_state,
+        "created_task_count": 1 if provider_task_created is True else 0,
+        "query_recovery_eligible": query_recovery_eligible,
+        "download_eligible": download_eligible,
+        "duplicate_submit_forbidden": duplicate_submit_forbidden,
+        "retry_allowed": False,
+        "resubmit_allowed": False,
+        "requires_separate_human_recovery_authorization": requires_human_decision,
+        "requires_human_decision": requires_human_decision,
+        "prequeue_upload_failure_detected": prequeue_upload_failure,
+        "provider_task_evidence_present": provider_task_evidence_present,
+        "successful_output_evidence": successful_output_evidence,
+        "subprocess_exit_code": subprocess_exit_code,
+    }
+
+
+def _first_present(values: Mapping[str, Any], *keys: str) -> Any:
+    for key in keys:
+        if key in values and values[key] not in (None, ""):
+            return values[key]
+    return None
+
+
+def _has_successful_output_evidence(values: Mapping[str, Any]) -> bool:
+    for key in (
+        "result_image_count",
+        "result_images_count",
+        "result_video_count",
+        "result_videos_count",
+        "result_output_count",
+        "result_outputs_count",
+        "output_count",
+    ):
+        count = _credit_integer(values.get(key))
+        if count is not None and count > 0:
+            return True
+    if values.get("successful_output_evidence") is True:
+        return True
+    result_json = values.get("result_json")
+    if isinstance(result_json, dict):
+        for key in ("images", "videos", "outputs"):
+            items = result_json.get(key)
+            if isinstance(items, list) and items:
+                return True
+    return False
 
 
 def _credit_integer(value: Any) -> int | None:
@@ -563,6 +757,11 @@ def execute_with_durable_evidence(
         parsed = parse_task_creation_evidence(
             sanitized_stdout + "\n" + sanitized_stderr
         )
+        creation = classify_submit_creation_evidence(
+            parsed,
+            submit_invocation_occurred=True,
+            subprocess_exit_code=int(raw_result.returncode),
+        )
         parsed.update(
             {
                 "schema_version": "1.0",
@@ -570,15 +769,7 @@ def execute_with_durable_evidence(
                 "experiment_id": experiment_id,
                 "command_type": command_type,
                 "subprocess_exit_code": int(raw_result.returncode),
-                "remote_task_creation_state": (
-                    "created"
-                    if parsed.get("submit_id")
-                    else "possible_created"
-                    if int(raw_result.returncode) == 0
-                    else "not_confirmed"
-                ),
                 "submit_attempt_count": 1,
-                "created_task_count": 1 if parsed.get("submit_id") else 0,
                 "query_count": 0,
                 "download_count": 0,
                 "retry_count": 0,
@@ -587,6 +778,7 @@ def execute_with_durable_evidence(
                 "subprocess_envelope_path": str(envelope_path),
             }
         )
+        parsed.update(creation)
         parsed_path = atomic_writer(
             evidence_root / f"{safe_name(operation_id)}.parsed_task_creation.json",
             parsed,
@@ -636,6 +828,9 @@ def parse_task_creation_evidence(text: str) -> dict[str, Any]:
     credit_value = _first_value(payloads, {"credit_count"}) or _regex_value(
         text, "credit_count"
     )
+    fail_reason = _first_value(payloads, {"fail_reason"}) or _regex_text_value(
+        text, "fail_reason"
+    )
     return {
         "submit_id": str(submit_id) if submit_id not in (None, "") else None,
         "logid": str(logid) if logid not in (None, "") else None,
@@ -645,7 +840,11 @@ def parse_task_creation_evidence(text: str) -> dict[str, Any]:
         "queue_status": (
             str(queue_status) if queue_status not in (None, "") else None
         ),
+        "fail_reason": (
+            str(fail_reason) if fail_reason not in (None, "") else None
+        ),
         "credit_count": _coerce_int(credit_value),
+        "successful_output_evidence": _payloads_have_successful_output(payloads),
     }
 
 
@@ -699,6 +898,28 @@ def _regex_value(text: str, field: str) -> str | None:
     return match.group(1) if match else None
 
 
+def _regex_text_value(text: str, field: str) -> str | None:
+    match = re.search(
+        rf"(?im){re.escape(field)}[\"':= ]+([^\r\n]+)",
+        text,
+    )
+    if not match:
+        return None
+    return match.group(1).strip().strip("\"', }") or None
+
+
+def _payloads_have_successful_output(payloads: Sequence[Any]) -> bool:
+    for payload in payloads:
+        result_json = _find_value(payload, {"result_json"})
+        if not isinstance(result_json, dict):
+            continue
+        for key in ("images", "videos", "outputs"):
+            items = result_json.get(key)
+            if isinstance(items, list) and items:
+                return True
+    return False
+
+
 def _coerce_int(value: Any) -> int | None:
     if value in (None, "") or isinstance(value, bool):
         return None
@@ -716,6 +937,12 @@ def load_existing_submit_evidence(record_path: Path) -> dict[str, Any]:
     submit = payload.get("submit_evidence")
     if not isinstance(submit, dict):
         submit = payload
+    classification_evidence = payload.get("classification_evidence")
+    if not isinstance(classification_evidence, dict):
+        classification_evidence = submit
+    superseding = payload.get("superseding_classification")
+    if not isinstance(superseding, dict):
+        superseding = {}
     credit = payload.get("credit_evidence")
     if not isinstance(credit, dict):
         credit = {}
@@ -726,15 +953,33 @@ def load_existing_submit_evidence(record_path: Path) -> dict[str, Any]:
     experiment_id = str(
         payload.get("experiment_id") or submit.get("experiment_id") or ""
     )
-    submit_id = str(submit.get("submit_id") or payload.get("submit_id") or "")
-    logid = str(submit.get("logid") or payload.get("logid") or "")
+    submit_id = str(
+        classification_evidence.get("submit_id")
+        or classification_evidence.get("historical_submit_id")
+        or submit.get("submit_id")
+        or payload.get("submit_id")
+        or payload.get("historical_submit_id")
+        or ""
+    )
+    logid = str(
+        classification_evidence.get("logid")
+        or classification_evidence.get("historical_logid")
+        or submit.get("logid")
+        or payload.get("logid")
+        or ""
+    )
     last_known_state = str(
-        submit.get("gen_status")
+        classification_evidence.get("gen_status")
+        or classification_evidence.get("historical_raw_gen_status")
+        or submit.get("gen_status")
         or payload.get("gen_status")
+        or payload.get("historical_raw_gen_status")
         or payload.get("terminal_state")
         or "unknown"
     )
     query_count = _coerce_int(payload.get("query_count"))
+    if query_count is None:
+        query_count = _coerce_int(superseding.get("historical_query_count"))
     if query_count is None:
         history = payload.get("query_history")
         query_count = len(history) if isinstance(history, list) else 0
@@ -747,17 +992,58 @@ def load_existing_submit_evidence(record_path: Path) -> dict[str, Any]:
     if recorded_cost is None:
         recorded_cost = _coerce_int(credit.get("observed_credit_delta"))
 
-    created = bool(submit_id)
-    query_eligible = (
-        created
-        and last_known_state.lower() in {"created", "pending", "querying", "submitted"}
-        and download_count == 0
+    submit_attempt_count = _coerce_int(payload.get("submit_attempt_count"))
+    if submit_attempt_count is None:
+        submit_attempt_count = _coerce_int(
+            superseding.get("submit_invocation_count")
+        )
+    if submit_attempt_count is None:
+        cumulative = payload.get("cumulative_counters")
+        if isinstance(cumulative, dict):
+            submit_attempt_count = _coerce_int(
+                cumulative.get("submit_attempt_count")
+            )
+    if submit_attempt_count is None:
+        submit_attempt_count = _coerce_int(submit.get("submit_attempt_count"))
+    submit_invocation_occurred = bool(
+        (submit_attempt_count or 0) > 0
+        or submit.get("invoked_once") is True
+        or submit_id
+    )
+    merged_evidence = dict(classification_evidence)
+    merged_evidence.setdefault("submit_id", submit_id or None)
+    merged_evidence.setdefault("logid", logid or None)
+    merged_evidence.setdefault("gen_status", last_known_state)
+    subprocess_exit_code = _first_present(
+        submit,
+        "subprocess_exit_code",
+        "dreamina_subprocess_exit_code",
+    )
+    if subprocess_exit_code is None:
+        subprocess_exit_code = payload.get("subprocess_exit_code")
+    creation = classify_submit_creation_evidence(
+        merged_evidence,
+        submit_invocation_occurred=submit_invocation_occurred,
+        subprocess_exit_code=_coerce_int(subprocess_exit_code),
+    )
+    query_eligible = bool(
+        creation["query_recovery_eligible"] and download_count == 0
     )
     return {
         "record_path": str(path),
         "experiment_id": experiment_id,
-        "existing_submit_created": created,
-        "submit_id_available": bool(submit_id),
+        "existing_submit_created": creation["provider_task_created"] is True,
+        "submit_invocation_occurred": creation["submit_invocation_occurred"],
+        "submit_invocation_count": creation["submit_invocation_count"],
+        "submit_handle_present": creation["submit_handle_present"],
+        "provider_task_created": creation["provider_task_created"],
+        "provider_task_creation_proven": creation[
+            "provider_task_creation_proven"
+        ],
+        "remote_task_creation_state": creation["remote_task_creation_state"],
+        "submit_handle_state": creation["submit_handle_state"],
+        "created_task_count": creation["created_task_count"],
+        "submit_id_available": creation["submit_handle_present"],
         "submit_id": submit_id or None,
         "logid_available": bool(logid),
         "logid": logid or None,
@@ -765,11 +1051,20 @@ def load_existing_submit_evidence(record_path: Path) -> dict[str, Any]:
         "recorded_cost": recorded_cost,
         "query_count_already_used": query_count,
         "download_count_already_used": download_count,
-        "duplicate_submit_forbidden": created,
+        "download_eligible": bool(
+            creation["download_eligible"] and download_count == 0
+        ),
+        "duplicate_submit_forbidden": creation[
+            "duplicate_submit_forbidden"
+        ],
         "query_recovery_eligible": query_eligible,
         "requires_separate_human_authorization": True,
-        "retry_allowed": False,
-        "resubmit_allowed": False,
+        "requires_separate_human_recovery_authorization": creation[
+            "requires_separate_human_recovery_authorization"
+        ],
+        "retry_allowed": creation["retry_allowed"],
+        "resubmit_allowed": creation["resubmit_allowed"],
+        "creation_classification": creation["creation_classification"],
     }
 
 
@@ -782,5 +1077,10 @@ def assert_no_existing_submit(record_path: Path, experiment_id: str) -> None:
         )
     if recovery["duplicate_submit_forbidden"]:
         raise DuplicateSubmitForbidden(
-            experiment_id, str(recovery["submit_id"] or "")
+            experiment_id,
+            str(recovery["submit_id"] or ""),
+            creation_classification=str(
+                recovery.get("creation_classification") or "unknown"
+            ),
+            provider_task_created=recovery.get("provider_task_created"),
         )

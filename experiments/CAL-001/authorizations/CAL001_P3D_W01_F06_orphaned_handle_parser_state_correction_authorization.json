@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_P3D_W01_F06_ORPHANED_HANDLE_PARSER_STATE_CORRECTION_AUTHORIZATION",
+  "phase_id": "CAL-001-P3D-W01_F06_ORPHANED_HANDLE_PARSER_AND_STATE_CORRECTION_RECORD_ONLY",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "authorization_decision": "APPROVE_F06_ORPHANED_HANDLE_PARSER_AND_STATE_CORRECTION_RECORD_ONLY_PRESERVE_RAW_HISTORY_ADD_REGRESSION_TESTS_COMMIT_PUSH_NO_DREAMINA_NO_RECOVERY_SUBMIT.",
+  "authorization_date": "2026-07-19",
+  "recorded_at": "2026-07-19T09:33:48.6172682Z",
+  "bound_repository_checkpoint": "0d3a9258cc71dc7ec37b3c95c850087ada6543e0",
+  "canonical_authorization": {
+    "encoding": "UTF-8",
+    "bom": false,
+    "trailing_newline": false,
+    "byte_length": 153,
+    "authorization_text_sha256": "2d02d54c289dfc0f31b652f4261593704718b4e2ff0347b2594b1bafc4f7d0c2",
+    "authorization_base64": "QVBQUk9WRV9GMDZfT1JQSEFORURfSEFORExFX1BBUlNFUl9BTkRfU1RBVEVfQ09SUkVDVElPTl9SRUNPUkRfT05MWV9QUkVTRVJWRV9SQVdfSElTVE9SWV9BRERfUkVHUkVTU0lPTl9URVNUU19DT01NSVRfUFVTSF9OT19EUkVBTUlOQV9OT19SRUNPVkVSWV9TVUJNSVQu",
+    "exact_authorization_text": "APPROVE_F06_ORPHANED_HANDLE_PARSER_AND_STATE_CORRECTION_RECORD_ONLY_PRESERVE_RAW_HISTORY_ADD_REGRESSION_TESTS_COMMIT_PUSH_NO_DREAMINA_NO_RECOVERY_SUBMIT.",
+    "verification": {
+      "authoritative_decode_count": 1,
+      "byte_length_verified": true,
+      "sha256_verified": true,
+      "utf8_verified": true,
+      "bom_absent_verified": true,
+      "trailing_newline_absent_verified": true,
+      "exact_token_equality_verified": true,
+      "exact_token_count": 1,
+      "authorization_base64_verified": true,
+      "authorization_round_trip_verified": true
+    }
+  },
+  "allowed_scope": {
+    "parser_and_state_correction": true,
+    "focused_no_live_tests": true,
+    "historical_fourth_query_commit": true,
+    "commit_and_push": true,
+    "Dreamina_command_count": 0
+  },
+  "boundaries": {
+    "raw_history_mutation_authorized": false,
+    "recovery_submit_authorized": false,
+    "query_authorized": false,
+    "download_authorized": false,
+    "F07_authorized": false,
+    "W02_plus_authorized": false,
+    "budget_or_cap_override_authorized": false,
+    "Source_modification_authorized": false,
+    "dataset_modification_authorized": false,
+    "media_creation_authorized": false,
+    "final_master": false,
+    "locked": false
+  }
+}

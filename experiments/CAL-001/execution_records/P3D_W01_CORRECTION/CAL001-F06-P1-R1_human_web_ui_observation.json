@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F06_HUMAN_DREAMINA_WEB_UI_OBSERVATION",
+  "phase_id": "CAL-001-P3D-W01_F06_ORPHANED_HANDLE_PARSER_AND_STATE_CORRECTION_RECORD_ONLY",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "historical_submit_id": "cabfa6ab-cc61-4d29-8630-da01dfdeef65",
+  "recorded_at": "2026-07-19T09:33:48.6172682Z",
+  "evidence_source": "human_manual_web_ui_observation",
+  "human_observation_text": "我在即梦网页版看了。没有正在生成的视频。也就是说这个视频没有推上去。",
+  "observation_summary": "After the fourth query, the user manually opened the Dreamina Web UI and found no corresponding F06 video or active generation task. The user concluded that the video had not successfully entered the visible generation queue.",
+  "machine_verified": false,
+  "provider_api_proof": false,
+  "no_visible_provider_generation_task": true,
+  "observation_supports_orphan_classification": true,
+  "epistemic_limit": "This human observation supports the orphaned-handle interpretation but is not independent API proof that no provider-side object ever existed.",
+  "Dreamina_command_run_for_observation_record": false,
+  "media_created": false,
+  "recovery_submit_authorized": false
+}

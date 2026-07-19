@@ -12,8 +12,10 @@ from app.ai_video_pipeline.execution.dreamina_evidence import (
     DuplicateSubmitForbidden,
     assert_no_existing_submit,
     atomic_write_json,
+    classify_submit_creation_evidence,
     execute_with_durable_evidence,
     load_existing_submit_evidence,
+    parse_task_creation_evidence,
 )
 
 
@@ -81,7 +83,9 @@ def test_01_success_persists_envelope_before_parsed_task_evidence(tmp_path: Path
     assert parsed["gen_status"] == "querying"
     assert parsed["credit_count"] == 70
     assert parsed["submit_attempt_count"] == 1
+    assert parsed["provider_task_created"] is True
     assert parsed["created_task_count"] == 1
+    assert parsed["query_recovery_eligible"] is True
 
 
 def test_02_postprocessing_failure_preserves_created_task_evidence(tmp_path: Path) -> None:
@@ -96,7 +100,7 @@ def test_02_postprocessing_failure_preserves_created_task_evidence(tmp_path: Pat
     failure = json.loads(failure_path.read_text(encoding="utf-8"))
 
     assert envelope["subprocess_exit_code"] == 0
-    assert failure["remote_task_creation_state"] == "created_or_possible_created"
+    assert failure["remote_task_creation_state"] == "confirmed_created_nonterminal"
     assert failure["local_postprocessing_status"] == "failed"
     assert failure["submit_id"] == "SUB-001"
     assert failure["logid"] == "LOG-001"
@@ -315,7 +319,12 @@ def test_11_returned_recovery_operations_count_before_postprocessing(
             / f"{operation_kind}-001.postprocessing_failure.json"
         ).read_text(encoding="utf-8")
     )
-    assert failure["remote_task_creation_state"] == "created_or_possible_created"
+    assert (
+        failure["remote_task_creation_state"]
+        == "creation_unresolved_terminal_or_ambiguous"
+    )
+    assert failure["provider_task_created"] is None
+    assert failure["created_task_count"] == 0
     assert failure["query_count"] == expected_query_count
     assert failure["download_count"] == expected_download_count
 
@@ -343,3 +352,280 @@ def test_12_caller_supplied_secret_is_redacted_from_failure_record(
     ).read_text(encoding="utf-8")
     assert "UNLABELED-SECRET-VALUE" not in failure_text
     assert "<redacted_secret>" in failure_text
+
+
+def test_13_querying_submit_handle_is_confirmed_created_nonterminal() -> None:
+    result = classify_submit_creation_evidence(
+        {"submit_id": "SUB-QUERYING", "gen_status": "querying"}
+    )
+
+    assert result["creation_classification"] == "confirmed_created_nonterminal"
+    assert result["provider_task_created"] is True
+    assert result["created_task_count"] == 1
+    assert result["query_recovery_eligible"] is True
+    assert result["duplicate_submit_forbidden"] is True
+
+
+def test_14_success_submit_handle_is_confirmed_created() -> None:
+    result = classify_submit_creation_evidence(
+        {"submit_id": "SUB-SUCCESS", "gen_status": "success"}
+    )
+
+    assert (
+        result["creation_classification"]
+        == "confirmed_created_success_or_terminal_provider_task"
+    )
+    assert result["provider_task_created"] is True
+    assert result["created_task_count"] == 1
+    assert result["query_recovery_eligible"] is False
+    assert result["download_eligible"] is True
+
+
+def test_15_prequeue_upload_failure_creates_orphaned_handle_not_task() -> None:
+    result = classify_submit_creation_evidence(
+        {
+            "submit_id": "SUB-ORPHAN",
+            "gen_status": "fail",
+            "fail_reason": "upload image: upload phase, no file upload",
+            "logid": None,
+            "queue_status": None,
+            "credit_count": None,
+        },
+        subprocess_exit_code=0,
+    )
+
+    assert (
+        result["creation_classification"]
+        == "orphaned_handle_after_prequeue_upload_failure"
+    )
+    assert result["submit_invocation_occurred"] is True
+    assert result["submit_handle_present"] is True
+    assert result["provider_task_created"] is False
+    assert result["provider_task_creation_proven"] is False
+    assert result["remote_task_creation_state"] == "not_created_prequeue_upload_failure"
+    assert result["submit_handle_state"] == "orphaned_after_upload_transport_failure"
+    assert result["created_task_count"] == 0
+    assert result["query_recovery_eligible"] is False
+    assert result["download_eligible"] is False
+    assert result["duplicate_submit_forbidden"] is True
+    assert result["retry_allowed"] is False
+    assert result["resubmit_allowed"] is False
+
+
+def test_16_exit_zero_does_not_upgrade_orphaned_handle_to_created(
+    tmp_path: Path,
+) -> None:
+    def runner(argv: list[str]) -> FakeResult:
+        return FakeResult(
+            list(argv),
+            0,
+            json.dumps(
+                {
+                    "submit_id": "SUB-ORPHAN",
+                    "gen_status": "fail",
+                    "fail_reason": "upload resource fixture.png: upload phase, no file upload",
+                }
+            ),
+            "",
+        )
+
+    execution = _execute(tmp_path, runner=runner)
+    parsed = json.loads(execution.parsed_evidence_path.read_text(encoding="utf-8"))
+
+    assert parsed["subprocess_exit_code"] == 0
+    assert parsed["fail_reason"].endswith("upload phase, no file upload")
+    assert parsed["provider_task_created"] is False
+    assert parsed["created_task_count"] == 0
+    assert parsed["query_recovery_eligible"] is False
+
+
+def test_17_failed_submit_with_provider_task_evidence_is_created_terminal() -> None:
+    result = classify_submit_creation_evidence(
+        {
+            "submit_id": "SUB-FAILED-CREATED",
+            "gen_status": "fail",
+            "fail_reason": "provider generation failed",
+            "logid": "LOG-PROVIDER",
+        }
+    )
+
+    assert (
+        result["creation_classification"]
+        == "confirmed_created_success_or_terminal_provider_task"
+    )
+    assert result["provider_task_created"] is True
+    assert result["created_task_count"] == 1
+    assert result["query_recovery_eligible"] is False
+
+
+def test_18_failed_submit_without_creation_evidence_is_unresolved() -> None:
+    result = classify_submit_creation_evidence(
+        {
+            "submit_id": "SUB-AMBIGUOUS",
+            "gen_status": "fail",
+            "fail_reason": "unknown failure",
+        }
+    )
+
+    assert (
+        result["creation_classification"]
+        == "creation_unresolved_terminal_or_ambiguous"
+    )
+    assert result["provider_task_created"] is None
+    assert result["created_task_count"] == 0
+    assert result["query_recovery_eligible"] is False
+    assert result["duplicate_submit_forbidden"] is True
+
+
+def test_19_loader_does_not_trust_historical_created_flag_on_failed_handle(
+    tmp_path: Path,
+) -> None:
+    record = tmp_path / "historical-f06.json"
+    record.write_text(
+        json.dumps(
+            {
+                "experiment_id": "CAL001-F06-P1-R1",
+                "submit_id": "SUB-HISTORICAL-ORPHAN",
+                "gen_status": "fail",
+                "remote_task_creation_state": "created",
+                "created_task_count": 1,
+                "submit_attempt_count": 1,
+                "query_count": 4,
+                "download_count": 0,
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    recovery = load_existing_submit_evidence(record)
+
+    assert (
+        recovery["creation_classification"]
+        == "creation_unresolved_terminal_or_ambiguous"
+    )
+    assert recovery["provider_task_created"] is None
+    assert recovery["created_task_count"] == 0
+    assert recovery["query_recovery_eligible"] is False
+    assert recovery["duplicate_submit_forbidden"] is True
+
+
+def test_19b_loader_preserves_superseding_overlay_counts(tmp_path: Path) -> None:
+    record = tmp_path / "corrected-f06.json"
+    record.write_text(
+        json.dumps(
+            {
+                "experiment_id": "CAL001-F06-P1-R1",
+                "classification_evidence": {
+                    "submit_id": "SUB-HISTORICAL-ORPHAN",
+                    "gen_status": "fail",
+                    "fail_reason": "upload phase, no file upload",
+                },
+                "superseding_classification": {
+                    "submit_invocation_count": 1,
+                    "historical_query_count": 4,
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    recovery = load_existing_submit_evidence(record)
+
+    assert recovery["submit_invocation_count"] == 1
+    assert recovery["query_count_already_used"] == 4
+    assert recovery["provider_task_created"] is False
+    assert recovery["query_recovery_eligible"] is False
+
+
+def test_20_orphaned_prior_invocation_still_blocks_duplicate_submit(
+    tmp_path: Path,
+) -> None:
+    record = tmp_path / "orphaned-submit.json"
+    record.write_text(
+        json.dumps(
+            {
+                "experiment_id": "EXP-ORPHAN",
+                "submit_id": "SUB-ORPHAN",
+                "gen_status": "fail",
+                "fail_reason": "upload image: upload phase, no file upload",
+                "submit_attempt_count": 1,
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(DuplicateSubmitForbidden) as error:
+        assert_no_existing_submit(record, "EXP-ORPHAN")
+
+    assert error.value.submit_id == "SUB-ORPHAN"
+    assert (
+        error.value.creation_classification
+        == "orphaned_handle_after_prequeue_upload_failure"
+    )
+    assert error.value.provider_task_created is False
+
+
+def test_21_postprocessing_failure_preserves_orphan_without_overstatement(
+    tmp_path: Path,
+) -> None:
+    def runner(argv: list[str]) -> FakeResult:
+        return FakeResult(
+            list(argv),
+            0,
+            json.dumps(
+                {
+                    "submit_id": "SUB-ORPHAN",
+                    "gen_status": "fail",
+                    "fail_reason": "upload phase, no file upload",
+                }
+            ),
+            "",
+        )
+
+    execution = _execute(tmp_path, runner=runner)
+    with pytest.raises(RuntimeError, match="later record failed"):
+        with execution.postprocessing_guard(stage="later_record"):
+            raise RuntimeError("later record failed")
+
+    failure = json.loads(
+        (tmp_path / "evidence" / "submit-001.postprocessing_failure.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert failure["remote_task_creation_state"] == "not_created_prequeue_upload_failure"
+    assert failure["provider_task_created"] is False
+    assert failure["created_task_count"] == 0
+    assert failure["query_recovery_eligible"] is False
+    assert failure["duplicate_submit_forbidden"] is True
+
+
+def test_22_parse_task_creation_evidence_preserves_fail_reason() -> None:
+    parsed = parse_task_creation_evidence(
+        json.dumps(
+            {
+                "submit_id": "SUB-ORPHAN",
+                "gen_status": "fail",
+                "fail_reason": "upload resource fixture.png: upload phase, no file upload",
+            }
+        )
+    )
+
+    assert parsed["submit_id"] == "SUB-ORPHAN"
+    assert parsed["gen_status"] == "fail"
+    assert (
+        parsed["fail_reason"]
+        == "upload resource fixture.png: upload phase, no file upload"
+    )
+
+
+def test_23_normal_querying_creation_remains_backward_compatible(
+    tmp_path: Path,
+) -> None:
+    execution = _execute(tmp_path)
+    parsed = json.loads(execution.parsed_evidence_path.read_text(encoding="utf-8"))
+
+    assert parsed["creation_classification"] == "confirmed_created_nonterminal"
+    assert parsed["provider_task_created"] is True
+    assert parsed["created_task_count"] == 1
+    assert parsed["query_recovery_eligible"] is True
+    assert parsed["duplicate_submit_forbidden"] is True

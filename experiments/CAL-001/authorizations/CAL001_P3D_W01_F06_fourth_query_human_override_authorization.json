@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_P3D_W01_F06_FOURTH_QUERY_HUMAN_OVERRIDE_AUTHORIZATION",
+  "phase_id": "CAL-001-P3D-W01_F06_EXISTING_TASK_FOURTH_QUERY_HUMAN_OVERRIDE_NO_DOWNLOAD_NO_RESUBMIT",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "authorization_decision": "PASS_RUN_EXACTLY_ONE_FOURTH_QUERY_FOR_EXISTING_F06_TASK_AS_HUMAN_OVERRIDE",
+  "authorization_date": "2026-07-19",
+  "recorded_at": "2026-07-19T08:57:17.7976363Z",
+  "bound_repository_checkpoint": "0d3a9258cc71dc7ec37b3c95c850087ada6543e0",
+  "exact_human_authorization": {
+    "encoding": "UTF-8",
+    "utf8_byte_length": 284,
+    "sha256": "afb2976865361451da3713980d0e45429959a8295baceb56ba5863f470454b59",
+    "text": "我明确授权对现有 F06 submit_id cabfa6ab-cc61-4d29-8630-da01dfdeef65 执行第 4 次且仅一次 query_result，覆盖此前三次查询额度上限。只允许查询，不允许 submit、download、retry、resubmit 或 list_task；若仍为 querying，立即停止并记录。"
+  },
+  "exact_F06_binding": {
+    "experiment_id": "CAL001-F06-P1-R1",
+    "submit_id": "cabfa6ab-cc61-4d29-8630-da01dfdeef65",
+    "prior_query_count": 3,
+    "permitted_resulting_query_count": 4,
+    "submit_attempt_count": 1,
+    "download_count": 0,
+    "retry_count": 0,
+    "resubmit_count": 0
+  },
+  "override_scope": {
+    "previous_query_allowance_exhausted": true,
+    "fourth_query_exception_authorized": true,
+    "continuing_query_authority_after_this_call": false,
+    "Dreamina_query_result_count": 1,
+    "Dreamina_other_command_count": 0
+  },
+  "boundaries": {
+    "query_must_not_include_download_dir": true,
+    "query_other_submit_id_authorized": false,
+    "submit_authorized": false,
+    "download_authorized": false,
+    "retry_authorized": false,
+    "resubmit_authorized": false,
+    "list_task_authorized": false,
+    "user_credit_authorized": false,
+    "version_or_help_authorized": false,
+    "media_creation_authorized": false,
+    "Source_modification_authorized": false,
+    "accepted_artifact_mutation_authorized": false,
+    "dataset_modification_authorized": false,
+    "final_master": false,
+    "locked": false
+  },
+  "required_stop_behavior": {
+    "if_querying": "stop_immediately_and_record",
+    "if_success": "record_only_no_download",
+    "if_fail": "record_only_no_retry_or_resubmit",
+    "after_any_result": "authority_closed_requires_new_human_decision"
+  }
+}
