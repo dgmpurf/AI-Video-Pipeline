@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F06_RECOVERY_QUERY_R2_SINGLE_INVOCATION_RESERVATION",
+  "phase_id": "CAL-001-P3D-W01_F06_RECOVERY_ONE_QUERY_ONLY_REAUTHORIZED_EXECUTION_R2",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "reserved_at": "2026-07-19T15:32:37.800675Z",
+  "authorized_submit_id": "f40d2e79-ba98-4873-b92d-539ccc35d2ee",
+  "query_count_before": 0,
+  "query_count_reserved": 1,
+  "query_count_max": 1,
+  "exact_query_command_structure": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "query_result",
+    "--submit_id",
+    "f40d2e79-ba98-4873-b92d-539ccc35d2ee"
+  ],
+  "download_dir_present": false,
+  "query_loop_allowed": false,
+  "polling_allowed": false,
+  "second_query_allowed": false,
+  "download_authorized": false,
+  "retry_authorized": false,
+  "resubmit_authorized": false,
+  "F07_authorized": false,
+  "duplicate_query_guard": "reservation_file_must_prevent_any_rerun"
+}

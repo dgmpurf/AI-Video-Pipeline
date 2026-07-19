@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F06_RECOVERY_QUERY_R2_DREAMINA_PREFLIGHT_SUMMARY",
+  "phase_id": "CAL-001-P3D-W01_F06_RECOVERY_ONE_QUERY_ONLY_REAUTHORIZED_EXECUTION_R2",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "checked_at": "2026-07-19T15:29:40.521298Z",
+  "preflight_pass": true,
+  "canary_status": "passed",
+  "version": {
+    "schema_version": "1.0",
+    "operation_id": "R2-version-001",
+    "experiment_id": "CAL001-F06-P1-R1",
+    "version": "2a20fff-dirty",
+    "commit": "2a20fff",
+    "build_time": "2026-06-26T06:36:39Z",
+    "subprocess_exit_code": 0,
+    "logger_access_denied": false,
+    "authentication_failure": false,
+    "sanitized_evidence_envelope_path": "experiments\\CAL-001\\execution_records\\P3D_W01_F06_RECOVERY_QUERY_R2\\CAL001-F06-P1-R1\\evidence\\R2-version-001.subprocess_envelope.json",
+    "parsed_at": "2026-07-19T15:29:34.837019Z"
+  },
+  "credit": {
+    "schema_version": "1.0",
+    "operation_id": "R2-user-credit-001",
+    "experiment_id": "CAL001-F06-P1-R1",
+    "subprocess_exit_code": 0,
+    "informational_credit_balance": 5625,
+    "balance_numeric": true,
+    "authentication_present": true,
+    "account_identifiers_redacted_before_evidence_persistence": true,
+    "logger_access_denied": false,
+    "authentication_failure": false,
+    "generation_balance_gate_applied": false,
+    "sanitized_evidence_envelope_path": "experiments\\CAL-001\\execution_records\\P3D_W01_F06_RECOVERY_QUERY_R2\\CAL001-F06-P1-R1\\evidence\\R2-user-credit-001.subprocess_envelope.json",
+    "parsed_at": "2026-07-19T15:29:37.687901Z"
+  },
+  "query_help": {
+    "schema_version": "1.0",
+    "operation_id": "R2-query-result-help-001",
+    "experiment_id": "CAL001-F06-P1-R1",
+    "command_type": "query_result",
+    "subprocess_exit_code": 0,
+    "required_contract": {
+      "exit_code_zero": true,
+      "logger_access_denied_absent": true,
+      "authentication_failure_absent": true,
+      "query_result_usage_present": true,
+      "submit_id_flag_present": true,
+      "download_dir_is_optional_flag": true,
+      "query_without_download_dir_supported": true,
+      "poll_flag_absent": true,
+      "all_required_contract_checks_passed": true
+    },
+    "exact_authorized_query_command_structure": [
+      "C:/Users/msjpurf/bin/dreamina.exe",
+      "query_result",
+      "--submit_id",
+      "f40d2e79-ba98-4873-b92d-539ccc35d2ee"
+    ],
+    "download_dir_present_in_authorized_command": false,
+    "sanitized_evidence_envelope_path": "experiments\\CAL-001\\execution_records\\P3D_W01_F06_RECOVERY_QUERY_R2\\CAL001-F06-P1-R1\\evidence\\R2-query-result-help-001.subprocess_envelope.json",
+    "parsed_at": "2026-07-19T15:29:40.519299Z"
+  },
+  "dreamina_command_counts": {
+    "version": 1,
+    "user_credit": 1,
+    "query_result_help": 1,
+    "query_result": 0
+  },
+  "local_orchestration_parse_failures_before_dreamina": 1,
+  "authentication_status": "valid",
+  "logger_status": "no_access_denied",
+  "query_command_contract_valid": true,
+  "query_invocation_occurred": false,
+  "query_count_before": 0,
+  "download_called": false,
+  "retry_called": false,
+  "resubmit_called": false,
+  "second_query_called": false,
+  "F07_called": false
+}

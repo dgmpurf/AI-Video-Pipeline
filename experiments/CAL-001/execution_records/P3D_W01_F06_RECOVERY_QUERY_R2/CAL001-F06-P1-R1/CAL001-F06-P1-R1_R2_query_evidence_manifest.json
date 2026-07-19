@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F06_RECOVERY_QUERY_R2_EVIDENCE_MANIFEST",
+  "phase_id": "CAL-001-P3D-W01_F06_RECOVERY_ONE_QUERY_ONLY_REAUTHORIZED_EXECUTION_R2",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "created_at": "2026-07-19T15:37:11.071948Z",
+  "records": {
+    "authorization_record": {
+      "path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_F06_recovery_one_query_only_reauthorization_R2.json",
+      "sha256": "de5c0c957db571b56ce0266efa0eb4c2ba57b2ef36f6ab4ada6d5a397c885712"
+    },
+    "local_preflight_record": {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_QUERY_R2/CAL001-F06-P1-R1/R2_query_preflight.json",
+      "sha256": "21d3e6c9ef250e3fcdec1c10d06f63fba8edc9443f3f8f3f9761056053ca96a9"
+    },
+    "dreamina_preflight_summary": {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_QUERY_R2/CAL001-F06-P1-R1/R2_dreamina_query_preflight_summary.json",
+      "sha256": "4f1878e3f803d0ba7065718a721c8ca5cccafa70349ad6369fdde3fdf1b9cf80"
+    },
+    "query_invocation_reservation": {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_QUERY_R2/CAL001-F06-P1-R1/R2_query_invocation_reservation.json",
+      "sha256": "8774e92a85418282e70d9da130a047a918ecfd59f5e4795abd8a615fe68b529c"
+    },
+    "query_execution_record": {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_QUERY_R2/CAL001-F06-P1-R1/CAL001-F06-P1-R1_R2_one_query_only_execution_record.json",
+      "sha256": "9d059cc915c862d3bf4d5f94dc855e422c335c74fed46cfb5f8ba5a1e5cdebd3"
+    },
+    "query_authority_closure_record": {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_QUERY_R2/CAL001-F06-P1-R1/CAL001-F06-P1-R1_R2_query_authority_closure_record.json",
+      "sha256": "c1f5d2b1da3554273c66643d7ccde99b9ad9026bf0c2719b70622bc5164361d0"
+    }
+  },
+  "evidence_file_count": 8,
+  "evidence_files": [
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_QUERY_R2/CAL001-F06-P1-R1/evidence/R2-query-001.parsed_query_result.json",
+      "sha256": "f57302cff9a028d9d5bcdca29d6fcfa451f24867320b9699920014913abdfb40"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_QUERY_R2/CAL001-F06-P1-R1/evidence/R2-query-001.subprocess_envelope.json",
+      "sha256": "1777d6fdf620c70d1fd519fb2bec7c30b3790762c5ba867a2247baf54a707741"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_QUERY_R2/CAL001-F06-P1-R1/evidence/R2-query-result-help-001.parsed_help_contract.json",
+      "sha256": "6e02dd4c4cdb8585e5051e642103094117cc92be747fc327282a03d6163b718e"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_QUERY_R2/CAL001-F06-P1-R1/evidence/R2-query-result-help-001.subprocess_envelope.json",
+      "sha256": "3cc17d3173e27f355fc58b4b9684ed372899e24ffa8165441e42c3e98a517841"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_QUERY_R2/CAL001-F06-P1-R1/evidence/R2-user-credit-001.parsed_credit.json",
+      "sha256": "7c4b99ae3cc0137ece1dbb9a923798ae72f3480cf04f55fa7f0822da9a5b1d48"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_QUERY_R2/CAL001-F06-P1-R1/evidence/R2-user-credit-001.subprocess_envelope.json",
+      "sha256": "0d0faf2c5aaf8254341a24d3ec76e98b5b78f7e47886a52e4a6e8038ae8104cf"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_QUERY_R2/CAL001-F06-P1-R1/evidence/R2-version-001.parsed_version.json",
+      "sha256": "12290e66f3aeb109bfd2823b88033bf11a2a3334a9cc5f5c2590e347f2692435"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_QUERY_R2/CAL001-F06-P1-R1/evidence/R2-version-001.subprocess_envelope.json",
+      "sha256": "e62fc7eec837e7280cce40d5ba7d6371c0af64a4a30dd7ecda8e993b80ee1102"
+    }
+  ],
+  "subprocess_envelope_count": 4,
+  "version_invocation_count": 1,
+  "user_credit_invocation_count": 1,
+  "query_result_help_invocation_count": 1,
+  "query_result_invocation_count": 1,
+  "query_loop_count": 0,
+  "second_query_invocation_count": 0,
+  "download_invocation_count": 0,
+  "retry_invocation_count": 0,
+  "resubmit_invocation_count": 0,
+  "second_recovery_submit_invocation_count": 0,
+  "F07_invocation_count": 0,
+  "raw_outputs_sanitized": true,
+  "raw_http_urls_persisted": false,
+  "download_url_present": true,
+  "signed_url_count": 1,
+  "signed_url_values_redacted": true,
+  "private_account_identifiers_redacted": true,
+  "media_created": false,
+  "media_downloaded": false,
+  "media_staged": false,
+  "datasets_modified": false
+}
