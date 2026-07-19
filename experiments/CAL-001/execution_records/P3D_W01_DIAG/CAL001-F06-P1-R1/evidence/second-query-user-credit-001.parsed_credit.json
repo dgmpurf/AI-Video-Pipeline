@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "phase_id": "CAL-001-P3D-W01_F06_EXISTING_TASK_SECOND_QUERY_AND_CREDIT_RECONCILIATION_NO_DOWNLOAD_NO_RESUBMIT",
+  "operation_id": "second-query-user-credit-001",
+  "operation_kind": "second_query_credit_reconciliation",
+  "operation_count": 1,
+  "experiment_id": "CAL001-F06-P1-R1",
+  "dreamina_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "command_structure_without_prompt_or_secrets": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "user_credit"
+  ],
+  "sanitized_argv_sha256": "388bbc175df0b6dd5d777c5e88ec4ba6154db875b7864fa8535bf95e403b667a",
+  "subprocess_exit_code": 0,
+  "sanitized_evidence_envelope_path": "experiments/CAL-001/execution_records/P3D_W01_DIAG/CAL001-F06-P1-R1/evidence/second-query-user-credit-001.subprocess_envelope.json",
+  "envelope_sha256": "0aa439597ac9ad09bde3008032e872a7ada3e607241bdeedbdea2417c178a55c",
+  "prior_durable_balance": 5695,
+  "current_live_credit": 5695,
+  "raw_credit_delta": 0,
+  "credit_parse_status": "parsed_numeric",
+  "parsed_at": "2026-07-19T07:51:57.975118Z"
+}
