@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F06_RECOVERY_ARTIFACT_SHA256_AND_METADATA",
+  "phase_id": "CAL-001-P3D-W01_F06_RECOVERY_REVIEW_ARTIFACT_CREATION",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "recorded_at": "2026-07-19T16:49:21.5910797Z",
+  "source_media": {
+    "path": "experiments/CAL-001/runs/CAL001-F06-P1-R1/f40d2e79-ba98-4873-b92d-539ccc35d2ee_video_1.mp4",
+    "file_size_bytes": 8152176,
+    "sha256_before": "02cec9d4966ef9a6b1cb70a902b423b060bb3e68cfefa267dd7ca3d8047d5079",
+    "sha256_after": "02cec9d4966ef9a6b1cb70a902b423b060bb3e68cfefa267dd7ca3d8047d5079",
+    "unchanged": true
+  },
+  "frame_manifest_path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_REVIEW_ARTIFACTS/CAL001-F06-P1-R1/frame_extraction_manifest.json",
+  "contact_sheet_manifest_path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_REVIEW_ARTIFACTS/CAL001-F06-P1-R1/contact_sheet_manifest.json",
+  "review_metadata_path": "experiments/CAL-001/runs/CAL001-F06-P1-R1/review_artifacts/CAL001-F06-P1-R1_review_metadata.json",
+  "frame_artifact_count": 6,
+  "contact_sheet_count": 1,
+  "unexpected_media_artifact_count": 0,
+  "all_artifact_hashes_recalculated_after_creation": true,
+  "all_artifacts_regular_nonempty_readable_png": true,
+  "all_artifact_paths_within_authorized_root": true,
+  "source_media_staged": false,
+  "frame_artifacts_staged": false,
+  "contact_sheet_staged": false,
+  "media_or_review_image_artifacts_committed": false,
+  "media_or_review_image_artifacts_pushed": false,
+  "visual_scoring_performed": false,
+  "review_artifact_outcome": "success_review_artifacts_created_visual_review_not_performed"
+}

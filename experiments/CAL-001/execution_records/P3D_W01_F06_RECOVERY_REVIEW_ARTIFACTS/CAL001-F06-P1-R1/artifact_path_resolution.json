@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F06_RECOVERY_REVIEW_ARTIFACT_PATH_RESOLUTION",
+  "phase_id": "CAL-001-P3D-W01_F06_RECOVERY_REVIEW_ARTIFACT_CREATION",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "recorded_at": "2026-07-19T16:43:38.3894678Z",
+  "convention_source_experiments": [
+    "CAL001-F01-P1-R1",
+    "CAL001-F02-P1-R1",
+    "CAL001-F03-P1-R1",
+    "CAL001-F04-P1-R1",
+    "CAL001-F05-P1-R1"
+  ],
+  "convention_source_root_pattern": "experiments/CAL-001/runs/<experiment_id>/review_artifacts",
+  "all_five_siblings_match": true,
+  "sibling_files_per_root": 8,
+  "sibling_media_artifacts_per_root": 7,
+  "sibling_tracked_metadata_files_per_root": 1,
+  "convention_unambiguous": true,
+  "artifact_root": "experiments/CAL-001/runs/CAL001-F06-P1-R1/review_artifacts",
+  "artifact_root_existed_before_phase": false,
+  "artifact_root_created_for_phase": true,
+  "preexisting_artifact_count": 0,
+  "preexisting_files": [],
+  "filename_mapping": {
+    "frame_0": "CAL001-F06-P1-R1_0p00s.png",
+    "frame_1": "CAL001-F06-P1-R1_1p00s.png",
+    "frame_2": "CAL001-F06-P1-R1_2p00s.png",
+    "frame_3": "CAL001-F06-P1-R1_3p00s.png",
+    "frame_4": "CAL001-F06-P1-R1_4p00s.png",
+    "final_frame": "CAL001-F06-P1-R1_final_readable.png",
+    "contact_sheet": "CAL001-F06-P1-R1_contact_sheet_3x2.png",
+    "review_metadata": "CAL001-F06-P1-R1_review_metadata.json"
+  },
+  "frame_dimensions": "1280x720",
+  "contact_sheet_dimensions": "1920x720",
+  "contact_sheet_cell_dimensions": "640x360",
+  "contact_sheet_order": ["0.000s", "1.000s", "2.000s", "3.000s", "4.000s", "final"],
+  "collision_count": 0,
+  "artifact_collision_absent": true,
+  "all_paths_within_authorized_root": true
+}
