@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_P3D_W01_F06_THIRD_FINAL_QUERY_AUTHORIZATION",
+  "phase_id": "CAL-001-P3D-W01_F06_EXISTING_TASK_THIRD_AND_FINAL_QUERY_AND_CREDIT_RECONCILIATION_NO_DOWNLOAD_NO_RESUBMIT",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "authorization_decision": "PASS_RUN_THIRD_AND_FINAL_QUERY_FOR_EXISTING_F06_TASK_WITHOUT_DOWNLOAD_OR_RESUBMIT",
+  "authorization_date": "2026-07-19",
+  "recorded_at": "2026-07-19T08:38:40.873084Z",
+  "canonical_authorization": {
+    "encoding": "UTF-8",
+    "line_endings": "LF",
+    "bom": false,
+    "trailing_newline": false,
+    "byte_length": 5879,
+    "authorization_text_sha256": "be19c779a981dc032dd84ca74a8482e28d311546b49560814cb8ac5518fa9eab",
+    "authorization_base64": "SSBhcHByb3ZlIHRoZSBib3VuZGVkIENBTC0wMDEtUDNELVcwMSBGMDYgZXhpc3RpbmctdGFzayB0aGlyZC1hbmQtZmluYWwtcXVlcnkgYW5kIGNyZWRpdC1yZWNvbmNpbGlhdGlvbiBkZWNpc2lvbjoKClBBU1NfUlVOX1RISVJEX0FORF9GSU5BTF9RVUVSWV9GT1JfRVhJU1RJTkdfRjA2X1RBU0tfV0lUSE9VVF9ET1dOTE9BRF9PUl9SRVNVQk1JVC4KClRoaXMgZGVjaXNpb24gaXMgYm91bmQgdG8gcmVwb3NpdG9yeSBjb21taXQgOWZhNmU1MzUyZGUwN2E3MDA0YWNkZDc3ZGM2ODRiZmFlMDRlNzkzYSBhbmQgdG8gdGhlIGV4aXN0aW5nIEYwNiBzdWJtaXRfaWQ6CgpjYWJmYTZhYi1jYzYxLTRkMjktODYzMC1kYTAxZGZkZWVmNjUKCkkgYWNjZXB0IHRoZSBmb2xsb3dpbmcgZXN0YWJsaXNoZWQgZmFjdHM6CgotIENBTDAwMS1GMDEtUDEtUjEgdGhyb3VnaCBDQUwwMDEtRjA1LVAxLVIxIGFyZSB0ZWNobmljYWxseSBjb21wbGV0ZWQ7Ci0gdGhlaXIgdGVjaG5pY2FsIGV2aWRlbmNlLCBkYXRhc2V0cywgbWVkaWEsIGFuZCByZXZpZXcgYXJ0aWZhY3RzIG11c3QgcmVtYWluIHVuY2hhbmdlZDsKLSBjb25maXJtZWQgVzAxIGNyZWRpdCBjb25zdW1wdGlvbiByZW1haW5zIDM1MCBjcmVkaXRzOwotIEYwNiBzdWJtaXQgd2FzIGludm9rZWQgZXhhY3RseSBvbmNlOwotIEYwNiBzdWJtaXRfYXR0ZW1wdF9jb3VudD0xOwotIEYwNiBoYXMgbm90IGJlZW4gcmV0cmllZCBvciByZXN1Ym1pdHRlZDsKLSBGMDYgcXVlcnlfY291bnQgY3VycmVudGx5IGVxdWFscyAyOwotIGJvdGggYXV0aG9yaXplZCBGMDYgcXVlcnktb25seSBjYWxscyByZXR1cm5lZCBnZW5fc3RhdHVzPXF1ZXJ5aW5nOwotIHRoZSBjdXJyZW50IEYwNiByZXN1bHQgY291bnRzIGFyZSB6ZXJvIGltYWdlcywgemVybyB2aWRlb3MsIGFuZCB6ZXJvIG91dHB1dHM7Ci0gRjA2IGZhaWxfcmVhc29uLCBsb2dpZCwgYW5kIGNyZWRpdF9jb3VudCByZW1haW4gYWJzZW50OwotIEYwNiBkb3dubG9hZF9jb3VudD0wOwotIEYwNyBoYXMgbm90IGJlZW4gc3VibWl0dGVkOwotIHRoZSBsYXN0IGR1cmFibGUgcHJlLUYwNiBiYWxhbmNlIHdhcyA1Njk1OwotIGJvdGggZGlhZ25vc3RpYyBjcmVkaXQgb2JzZXJ2YXRpb25zIGFsc28gcmV0dXJuZWQgNTY5NTsKLSBGMDYgY3JlZGl0IGNvbnN1bXB0aW9uIHJlbWFpbnMgdW5yZXNvbHZlZDsKLSBsb2NhbCBmaXh0dXJlIGluc3BlY3Rpb24gcGFzc2VkOwotIHRoZSBmYWlsZWQgU2h1YW5namkgZml4dHVyZSBpcyBpZGVudGljYWwgdG8gdGhlIGZpeHR1cmUgdXNlZCBieSB0aGUgc3VjY2Vzc2Z1bCBDQUwwMDEtRjA2LVAyLVIxIGNhbmFyeTsKLSBubyBsb2NhbCBmaWxlLXJlYWQsIHBlcm1pc3Npb24sIHBhdGgsIGZpeHR1cmUtb3JkZXIsIG9yIGNvbW1hbmQtYmluZGluZyBmYWlsdXJlIHdhcyBmb3VuZDsKLSBleGVjdXRpb24gYXV0aG9yaXR5IHJlbWFpbnMgY2xvc2VkOwotIHJlbWFpbmluZ19ub25jYW5hcnlfdGFza3NfYXV0aG9yaXplZD1mYWxzZTsKLSBmaW5hbF9tYXN0ZXI9ZmFsc2U7Ci0gbG9ja2VkPWZhbHNlLgoKVGhpcyBhdXRob3JpemF0aW9uIHBlcm1pdHMgZXhhY3RseSBvbmUgYm91bmRlZCBmaW5hbC1xdWVyeSBwaGFzZS4KClRoZSBwaGFzZSBtYXk6CgoxLiBWZXJpZnkgcmVwb3NpdG9yeSBpZGVudGl0eSwgU291cmNlIGNsZWFubGluZXNzLCBhY2NlcHRlZCBpbW11dGFibGUgaGFzaGVzLCB0aGUgbXV0YWJsZSBleGVjdXRpb24gc3RhdGUsIHRoZSB0d28gcHJpb3IgRjA2IHF1ZXJ5IHJlY29yZHMsIGFuZCB0aGUgcHJlc2VydmVkIEYwMS1GMDUgdGVjaG5pY2FsIGV2aWRlbmNlLgoKMi4gUnVuIGV4YWN0bHkgb25lIERyZWFtaW5hIHVzZXJfY3JlZGl0IGNvbW1hbmQgdGhyb3VnaCB0aGUgcmVwYWlyZWQgZHVyYWJsZS1ldmlkZW5jZSB3cmFwcGVyLgoKMy4gUnVuIGV4YWN0bHkgb25lIGFkZGl0aW9uYWwgcXVlcnktb25seSBjb21tYW5kIGZvciB0aGUgZXhpc3Rpbmcgc3VibWl0X2lkOgoKY2FiZmE2YWItY2M2MS00ZDI5LTg2MzAtZGEwMWRmZGVlZjY1CgpUaGUgY29tbWFuZCBtdXN0IG5vdCBjb250YWluIC0tZG93bmxvYWRfZGlyLgoKVGhpcyBpcyB0aGUgdGhpcmQgYW5kIGZpbmFsIHF1ZXJ5IHBlcm1pdHRlZCBmb3IgdGhpcyBGMDYgc3VibWl0X2lkIHVuZGVyIHRoZSBhY2NlcHRlZCBDQUwtMDAxQSBtYWNyby4KCjQuIFBlcnNpc3QgdGhlIHNhbml0aXplZCBzdWJwcm9jZXNzIGVudmVsb3BlIGJlZm9yZSBwYXJzaW5nIGFuZCBwZXJzaXN0IHBhcnNlZCBldmlkZW5jZSBzZXBhcmF0ZWx5LgoKNS4gUmVjb3JkIHRoZSByZXR1cm5lZCBzdWJtaXRfaWQsIGdlbl9zdGF0dXMsIHF1ZXVlX3N0YXR1cywgcmVzdWx0IGNvdW50cywgZmFpbF9yZWFzb24sIGxvZ2lkLCBjcmVkaXRfY291bnQsIGFuZCBvdGhlciBub24tc2Vuc2l0aXZlIGZpZWxkcy4KCjYuIFJlY29uY2lsZSB0aGUgbmV3IGxpdmUtY3JlZGl0IG9ic2VydmF0aW9uIGFnYWluc3QgdGhlIHByaW9yIGR1cmFibGUgcmVmZXJlbmNlIGJhbGFuY2Ugb2YgNTY5NSB3aXRob3V0IGluZmVycmluZyBjcmVkaXQgY29uc3VtcHRpb24gZnJvbSBiYWxhbmNlIGFsb25lIHdoZW4gcHJvdmlkZXIgZXZpZGVuY2UgcmVtYWlucyBhYnNlbnQgb3IgYW1iaWd1b3VzLgoKNy4gVXBkYXRlIG9ubHkgdGhlIG11dGFibGUgZXhlY3V0aW9uIHN0YXRlIGFuZCBib3VuZGVkIEYwNiBmaW5hbC1xdWVyeSBldmlkZW5jZSwgdGhlbiBjb21taXQgYW5kIHB1c2ggdGhlIHJlc3VsdGluZyB0ZXh0IGFuZCBKU09OIHJlY29yZHMuCgpUaGUgcGhhc2UgbXVzdCBjbGFzc2lmeSB0aGUgb3V0Y29tZSBhcyBmb2xsb3dzOgoKQS4gSWYgZ2VuX3N0YXR1cz1zdWNjZXNzOgoKLSByZXF1aXJlIHRoZSByZXR1cm5lZCBzdWJtaXRfaWQgdG8gbWF0Y2g7Ci0gcmVjb3JkIGV4YWN0IHNhbml0aXplZCByZXN1bHQgY291bnRzOwotIGRvIG5vdCBkb3dubG9hZDsKLSBkbyBub3QgcmV0cnkgb3IgcmVzdWJtaXQ7Ci0gZG8gbm90IHN1Ym1pdCBGMDc7Ci0ga2VlcCBleGVjdXRpb24gYXV0aG9yaXR5IGNsb3NlZDsKLSByZXF1aXJlIGEgc2VwYXJhdGUgaHVtYW4gYXV0aG9yaXphdGlvbiBmb3IgYW55IGRvd25sb2FkIGFuZCB0ZWNobmljYWwgY29tcGxldGlvbi4KCkIuIElmIGdlbl9zdGF0dXM9ZmFpbDoKCi0gcmVjb3JkIHRoZSBleGFjdCBmYWlsIHJlYXNvbjsKLSByZWNvcmQgYW55IG5ld2x5IGV4cG9zZWQgbG9naWQgb3IgY3JlZGl0X2NvdW50OwotIGRvIG5vdCByZXRyeSBvciByZXN1Ym1pdDsKLSBkbyBub3Qgc3VibWl0IEYwNzsKLSBrZWVwIGV4ZWN1dGlvbiBhdXRob3JpdHkgY2xvc2VkOwotIHJlcXVpcmUgYSBzZXBhcmF0ZSBodW1hbiByZWNvdmVyeSBkZWNpc2lvbi4KCkMuIElmIGdlbl9zdGF0dXMgcmVtYWlucyBxdWVyeWluZyBvciBvdGhlcndpc2Ugbm9udGVybWluYWw6CgotIHJlY29yZCBGMDYgcXVlcnlfY291bnQ9MzsKLSBjbGFzc2lmeSB0aGUgdGFzayBhcyB1bnJlc29sdmVkX2FmdGVyX3RocmVlX3F1ZXJ5X29ubHlfY2hlY2tzOwotIGRvIG5vdCBwZXJmb3JtIGFueSBmb3VydGggcXVlcnk7Ci0gZG8gbm90IGRvd25sb2FkLCByZXRyeSwgb3IgcmVzdWJtaXQ7Ci0gZG8gbm90IHN1Ym1pdCBGMDc7Ci0ga2VlcCBleGVjdXRpb24gYXV0aG9yaXR5IGNsb3NlZDsKLSByZXF1aXJlIGEgbmV3IGh1bWFuIGRlY2lzaW9uIG91dHNpZGUgdGhlIGV4aXN0aW5nIHRocmVlLXF1ZXJ5IG1hY3JvIGxpbWl0LgoKRC4gSWYgdGhlIHRhc2sgaXMgbWlzc2luZywgbWlzbWF0Y2hlZCwgbWFsZm9ybWVkLCBvciBhbWJpZ3VvdXM6CgotIHByZXNlcnZlIHRoZSBhbWJpZ3VpdHk7Ci0gY2xhc3NpZnkgaXQgYXMgYW4gdW5jbGFzc2lmaWVkIGV4aXN0aW5nLXRhc2sgYW5vbWFseTsKLSBrZWVwIGV4ZWN1dGlvbiBhdXRob3JpdHkgY2xvc2VkOwotIHJlcXVpcmUgYW5vdGhlciBodW1hbiBkZWNpc2lvbi4KCkNyZWRpdCBydWxlczoKCi0gZG8gbm90IGRlY2xhcmUgRjA2IGNyZWRpdCBjb25zdW1wdGlvbiBzb2xlbHkgZnJvbSBhIGJhbGFuY2UgZGVjcmVhc2UgdW5sZXNzIGNvbXBsZXRlIGR1cmFibGUgZXZpZGVuY2UgZXN0YWJsaXNoZXMgdGhlIGNhdXNlOwotIGRvIG5vdCBkZWNsYXJlIG5vIGNyZWRpdCBjb25zdW1wdGlvbiBzb2xlbHkgZnJvbSBhbiB1bmNoYW5nZWQgYmFsYW5jZSB3aGVuIHRoZSB0YXNrIHJlbWFpbnMgdW5yZXNvbHZlZDsKLSBpZiB0aGUgcHJvdmlkZXIgZXhwb3NlcyBudW1lcmljIGNyZWRpdF9jb3VudCBhbmQgYmFsYW5jZSBldmlkZW5jZSByZWNvbmNpbGVzIGNvbnNpc3RlbnRseSwgcmVjb3JkIHRoZSBjb25maXJtZWQgRjA2IGNvc3Q7Ci0gb3RoZXJ3aXNlIHJldGFpbiBjcmVkaXRfY29uc3VtcHRpb25fY2xhc3NpZmljYXRpb249Y3JlZGl0X2NvbnN1bXB0aW9uX3VucmVzb2x2ZWQ7Ci0gbm8gYWNjb3VudCBpbmNyZWFzZSwgcmVmdW5kLCBvciBkYWlseSBjcmVkaXQgbWF5IGVubGFyZ2UgdGhlIGFjY2VwdGVkIG1hbmlmZXN0LCB3YXZlIHNjb3BlLCBzdWJtaXQgbGltaXQsIG9yIENBTC0wMDFBIGJ1ZGdldC4KClRoZSBwaGFzZSBtdXN0IHByZXNlcnZlOgoKLSBGMDEtRjA1IHRhc2tfc3RhdGU9dGVjaG5pY2FsbHlfY29tcGxldGVkOwotIEYwNyB0YXNrX3N0YXRlPXBlbmRpbmdfcHJlZmxpZ2h0OwotIEYwNyBzdWJtaXRfYXR0ZW1wdF9jb3VudD0wOwotIEYwNyBzdWJtaXRfaWQ9bnVsbDsKLSBuZXh0X3dhdmVfaWQ9VzAxOwotIG5leHRfZXhwZXJpbWVudF9pZD1DQUwwMDEtRjA2LVAxLVIxOwotIGV4ZWN1dGlvbl9hdXRob3JpdHlfYWN0aXZlPWZhbHNlOwotIHJlbWFpbmluZ19ub25jYW5hcnlfdGFza3NfYXV0aG9yaXplZD1mYWxzZTsKLSBDQUwwMDFCX2F1dGhvcml6ZWQ9ZmFsc2U7Ci0gYXV0b21hdGljX3Zpc3VhbF9zY29yaW5nPWZhbHNlOwotIGZhbWlseV93aW5uZXJfc2VsZWN0ZWQ9ZmFsc2U7Ci0gZ2xvYmFsX3Byb21wdF93aW5uZXJfc2VsZWN0ZWQ9ZmFsc2U7Ci0gZmluYWxfbWFzdGVyPWZhbHNlOwotIGxvY2tlZD1mYWxzZS4KClRoaXMgYXV0aG9yaXphdGlvbiBkb2VzIG5vdCBwZXJtaXQ6CgotIGFueSBzdWJtaXQ7Ci0gRjA2IHJldHJ5IG9yIHJlc3VibWl0OwotIEYwNyBzdWJtaXQ7Ci0gYSBmb3VydGggRjA2IHF1ZXJ5OwotIHF1ZXJ5aW5nIGFueSBvdGhlciBzdWJtaXRfaWQ7Ci0gYW55IGRvd25sb2FkOwotIFByb21wdCwgcGFja2FnZSwgZml4dHVyZSwgbWFuaWZlc3QsIG9yIGFjY2VwdGVkLWludmVudG9yeSBtb2RpZmljYXRpb247Ci0gU291cmNlIG1vZGlmaWNhdGlvbjsKLSB0YXNrIHJlcGxhY2VtZW50IG9yIGV4cGFuc2lvbjsKLSBXMDIgb3IgYW55IGxhdGVyIHdhdmU7Ci0gQ0FMLTAwMUI7Ci0gYXV0b21hdGljIHZpc3VhbCByZXZpZXcgb3Igc2NvcmluZzsKLSBmYW1pbHktd2lubmVyIG9yIGdsb2JhbCBQcm9tcHQtd2lubmVyIHNlbGVjdGlvbjsKLSBtZWRpYSBmaW5hbGl6YXRpb247Ci0gZmluYWxfbWFzdGVyPXRydWU7Ci0gbG9ja2VkPXRydWUuCgpUaGUgYWxsb3dlZCBEcmVhbWluYSBjb21tYW5kIGNvdW50cyBhcmU6CgotIHVzZXJfY3JlZGl0X2NvdW50PTE7Ci0gRjA2X3F1ZXJ5X29ubHlfY291bnQ9MTsKLSBzdWJtaXRfY291bnQ9MDsKLSBkb3dubG9hZF9jb3VudD0wLgoKQWZ0ZXIgdGhpcyBwaGFzZSwgRjA2IHRvdGFsIHF1ZXJ5X2NvdW50IG11c3QgZXF1YWwgZXhhY3RseSAzLgoKSWYgdGhlIHRoaXJkIHF1ZXJ5IHJlbWFpbnMgbm9udGVybWluYWwsIHRoZSBleGlzdGluZyBDQUwtMDAxQSB0aHJlZS1xdWVyeSBhbGxvd2FuY2UgaXMgZXhoYXVzdGVkLiBObyBmb3VydGggcXVlcnkgb3Igb3RoZXIgbGl2ZSBhY3Rpb24gbWF5IG9jY3VyIHdpdGhvdXQgYSBuZXcgaHVtYW4gZGVjaXNpb24gZXhwbGljaXRseSBvdmVycmlkaW5nIG9yIHJlcGxhY2luZyB0aGF0IGV4aGF1c3RlZC1xdWVyeSBib3VuZGFyeS4=",
+    "exact_authorization_text": "I approve the bounded CAL-001-P3D-W01 F06 existing-task third-and-final-query and credit-reconciliation decision:\n\nPASS_RUN_THIRD_AND_FINAL_QUERY_FOR_EXISTING_F06_TASK_WITHOUT_DOWNLOAD_OR_RESUBMIT.\n\nThis decision is bound to repository commit 9fa6e5352de07a7004acdd77dc684bfae04e793a and to the existing F06 submit_id:\n\ncabfa6ab-cc61-4d29-8630-da01dfdeef65\n\nI accept the following established facts:\n\n- CAL001-F01-P1-R1 through CAL001-F05-P1-R1 are technically completed;\n- their technical evidence, datasets, media, and review artifacts must remain unchanged;\n- confirmed W01 credit consumption remains 350 credits;\n- F06 submit was invoked exactly once;\n- F06 submit_attempt_count=1;\n- F06 has not been retried or resubmitted;\n- F06 query_count currently equals 2;\n- both authorized F06 query-only calls returned gen_status=querying;\n- the current F06 result counts are zero images, zero videos, and zero outputs;\n- F06 fail_reason, logid, and credit_count remain absent;\n- F06 download_count=0;\n- F07 has not been submitted;\n- the last durable pre-F06 balance was 5695;\n- both diagnostic credit observations also returned 5695;\n- F06 credit consumption remains unresolved;\n- local fixture inspection passed;\n- the failed Shuangji fixture is identical to the fixture used by the successful CAL001-F06-P2-R1 canary;\n- no local file-read, permission, path, fixture-order, or command-binding failure was found;\n- execution authority remains closed;\n- remaining_noncanary_tasks_authorized=false;\n- final_master=false;\n- locked=false.\n\nThis authorization permits exactly one bounded final-query phase.\n\nThe phase may:\n\n1. Verify repository identity, Source cleanliness, accepted immutable hashes, the mutable execution state, the two prior F06 query records, and the preserved F01-F05 technical evidence.\n\n2. Run exactly one Dreamina user_credit command through the repaired durable-evidence wrapper.\n\n3. Run exactly one additional query-only command for the existing submit_id:\n\ncabfa6ab-cc61-4d29-8630-da01dfdeef65\n\nThe command must not contain --download_dir.\n\nThis is the third and final query permitted for this F06 submit_id under the accepted CAL-001A macro.\n\n4. Persist the sanitized subprocess envelope before parsing and persist parsed evidence separately.\n\n5. Record the returned submit_id, gen_status, queue_status, result counts, fail_reason, logid, credit_count, and other non-sensitive fields.\n\n6. Reconcile the new live-credit observation against the prior durable reference balance of 5695 without inferring credit consumption from balance alone when provider evidence remains absent or ambiguous.\n\n7. Update only the mutable execution state and bounded F06 final-query evidence, then commit and push the resulting text and JSON records.\n\nThe phase must classify the outcome as follows:\n\nA. If gen_status=success:\n\n- require the returned submit_id to match;\n- record exact sanitized result counts;\n- do not download;\n- do not retry or resubmit;\n- do not submit F07;\n- keep execution authority closed;\n- require a separate human authorization for any download and technical completion.\n\nB. If gen_status=fail:\n\n- record the exact fail reason;\n- record any newly exposed logid or credit_count;\n- do not retry or resubmit;\n- do not submit F07;\n- keep execution authority closed;\n- require a separate human recovery decision.\n\nC. If gen_status remains querying or otherwise nonterminal:\n\n- record F06 query_count=3;\n- classify the task as unresolved_after_three_query_only_checks;\n- do not perform any fourth query;\n- do not download, retry, or resubmit;\n- do not submit F07;\n- keep execution authority closed;\n- require a new human decision outside the existing three-query macro limit.\n\nD. If the task is missing, mismatched, malformed, or ambiguous:\n\n- preserve the ambiguity;\n- classify it as an unclassified existing-task anomaly;\n- keep execution authority closed;\n- require another human decision.\n\nCredit rules:\n\n- do not declare F06 credit consumption solely from a balance decrease unless complete durable evidence establishes the cause;\n- do not declare no credit consumption solely from an unchanged balance when the task remains unresolved;\n- if the provider exposes numeric credit_count and balance evidence reconciles consistently, record the confirmed F06 cost;\n- otherwise retain credit_consumption_classification=credit_consumption_unresolved;\n- no account increase, refund, or daily credit may enlarge the accepted manifest, wave scope, submit limit, or CAL-001A budget.\n\nThe phase must preserve:\n\n- F01-F05 task_state=technically_completed;\n- F07 task_state=pending_preflight;\n- F07 submit_attempt_count=0;\n- F07 submit_id=null;\n- next_wave_id=W01;\n- next_experiment_id=CAL001-F06-P1-R1;\n- execution_authority_active=false;\n- remaining_noncanary_tasks_authorized=false;\n- CAL001B_authorized=false;\n- automatic_visual_scoring=false;\n- family_winner_selected=false;\n- global_prompt_winner_selected=false;\n- final_master=false;\n- locked=false.\n\nThis authorization does not permit:\n\n- any submit;\n- F06 retry or resubmit;\n- F07 submit;\n- a fourth F06 query;\n- querying any other submit_id;\n- any download;\n- Prompt, package, fixture, manifest, or accepted-inventory modification;\n- Source modification;\n- task replacement or expansion;\n- W02 or any later wave;\n- CAL-001B;\n- automatic visual review or scoring;\n- family-winner or global Prompt-winner selection;\n- media finalization;\n- final_master=true;\n- locked=true.\n\nThe allowed Dreamina command counts are:\n\n- user_credit_count=1;\n- F06_query_only_count=1;\n- submit_count=0;\n- download_count=0.\n\nAfter this phase, F06 total query_count must equal exactly 3.\n\nIf the third query remains nonterminal, the existing CAL-001A three-query allowance is exhausted. No fourth query or other live action may occur without a new human decision explicitly overriding or replacing that exhausted-query boundary.",
+    "verification": {
+      "authoritative_decode_count": 1,
+      "byte_length_verified": true,
+      "sha256_verified": true,
+      "utf8_verified": true,
+      "lf_only_verified": true,
+      "bom_absent_verified": true,
+      "trailing_newline_absent_verified": true,
+      "exact_opening_verified": true,
+      "exact_decision_token_count": 1,
+      "exact_ending_verified": true,
+      "authorization_base64_verified": true,
+      "authorization_round_trip_verified": true
+    }
+  },
+  "bound_repository_checkpoint": "9fa6e5352de07a7004acdd77dc684bfae04e793a",
+  "exact_F06_binding": {
+    "experiment_id": "CAL001-F06-P1-R1",
+    "submit_id": "cabfa6ab-cc61-4d29-8630-da01dfdeef65",
+    "expected_prior_query_count": 2,
+    "permitted_resulting_query_count": 3,
+    "submit_attempt_count": 1,
+    "download_count": 0,
+    "retry_count": 0,
+    "resubmit_count": 0
+  },
+  "prior_query_evidence": {
+    "first_query": {
+      "parsed_path": "experiments/CAL-001/execution_records/P3D_W01_DIAG/CAL001-F06-P1-R1/evidence/diagnostic-query-001.parsed_query_result.json",
+      "parsed_sha256": "fda1ac8d857bae7d85c23ab5b2af45ed925b69f25a3a7c28cc5feb0f8e1b472b",
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01_DIAG/CAL001-F06-P1-R1/evidence/diagnostic-query-001.subprocess_envelope.json",
+      "envelope_sha256": "0a9779e660b57f99e4618ae6ec2ebf4157e570b3f511f9861bc854fc60bbea2e",
+      "gen_status": "querying"
+    },
+    "second_query": {
+      "authorization_record_path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_F06_second_query_authorization.json",
+      "authorization_record_sha256": "52fd1bb5104750051c648ac7815716f6fbd6b570dd9f73c232ee6df258eee5dd",
+      "result_record_path": "experiments/CAL-001/execution_records/P3D_W01_DIAG/CAL001-F06-P1-R1_second_query_credit_reconciliation_record.json",
+      "result_record_sha256": "4c2ba5aa88ae5d0aaf6e222c51b8369c5300560231a45fb39fa981f60c46d9e2",
+      "report_path": "reports/PHASE_CAL001_P3D_W01_F06_EXISTING_TASK_SECOND_QUERY_AND_CREDIT_RECONCILIATION_RESULT.md",
+      "report_sha256": "fd646714955d26aa3c1a13ba319f81f927dc79ed1a7677db6ebc91f7b547b454",
+      "parsed_path": "experiments/CAL-001/execution_records/P3D_W01_DIAG/CAL001-F06-P1-R1/evidence/second-query-002.parsed_query_result.json",
+      "parsed_sha256": "dd954187ffd6916930e00fcd0acb3768b814871e426b363703746e511cff5d4a",
+      "envelope_path": "experiments/CAL-001/execution_records/P3D_W01_DIAG/CAL001-F06-P1-R1/evidence/second-query-002.subprocess_envelope.json",
+      "envelope_sha256": "3a39d875f99462b9393b3b38b0789e03bca5b09de3f2316025c4f16f9c53010c",
+      "gen_status": "querying"
+    },
+    "prior_two_queries_verified": true,
+    "prior_reference_credit": 5695,
+    "credit_consumption_classification": "credit_consumption_unresolved"
+  },
+  "accepted_digests": {
+    "fixed_manifest_sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+    "fixture_registry_sha256": "cf35a7ea15e4c51e4d6936f9a796f90215445f059503cd29bd6eccb8c7658142",
+    "prompt_inventory_sha256": "27c95725e80c325693894f8b04cc3587f404f971559fbf1c2cc9292b3a361d6d",
+    "package_inventory_sha256": "b716cb063977172a8fcf28359c4ceef00b9ad0f90524a3ee675d194fb79c251c",
+    "full_experiment_inventory_sha256": "448a2d473b06bf4b5f8548644733fdd68af7cb37749bc8d807bf69e53ef96138",
+    "manifest_rows": 84,
+    "unique_experiment_ids": 84,
+    "prompt_mismatch_count": 0,
+    "package_mismatch_count": 0,
+    "fixture_mismatch_count": 0
+  },
+  "permitted_Dreamina_counts": {
+    "Dreamina_user_credit_count": 1,
+    "Dreamina_F06_query_only_count": 1,
+    "Dreamina_submit_count": 0,
+    "Dreamina_download_count": 0,
+    "F06_total_query_count_after": 3,
+    "F07_submit_count": 0,
+    "retry_count": 0,
+    "resubmit_count": 0
+  },
+  "boundaries": {
+    "query_must_not_include_download_dir": true,
+    "fourth_F06_query_authorized": false,
+    "query_other_submit_id_authorized": false,
+    "download_authorized": false,
+    "submit_authorized": false,
+    "retry_authorized": false,
+    "resubmit_authorized": false,
+    "F07_submit_authorized": false,
+    "accepted_artifact_mutation_authorized": false,
+    "dataset_modification_authorized": false,
+    "media_creation_authorized": false,
+    "Source_modification_authorized": false,
+    "authority_reopening_authorized": false
+  },
+  "required_authority_state": {
+    "activation_state": "STOPPED_AUTHORITY_CLOSED",
+    "macro_state": "STOPPED_AUTHORITY_CLOSED",
+    "wave_state": "stopped",
+    "execution_authority_active": false,
+    "remaining_noncanary_tasks_authorized": false,
+    "next_wave_id": "W01",
+    "next_experiment_id": "CAL001-F06-P1-R1",
+    "CAL001B_authorized": false,
+    "automatic_visual_scoring": false,
+    "family_winner_selected": false,
+    "global_prompt_winner_selected": false,
+    "final_master": false,
+    "locked": false
+  }
+}
