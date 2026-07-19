@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "operation_id": "recovery-multimodal2video-help-001",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "command_type": "multimodal2video",
+  "subprocess_exit_code": 0,
+  "required_contract": {
+    "exit_code_zero": true,
+    "stderr_empty": true,
+    "logger_access_denied_absent": true,
+    "repeatable_image_flag_present": true,
+    "three_images_within_limit": true,
+    "model_seedance2_0_vip_supported": true,
+    "duration_5_supported": true,
+    "ratio_16_9_supported": true,
+    "video_resolution_720p_supported_for_vip": true,
+    "poll_zero_disables_polling": true,
+    "all_required_contract_checks_passed": true
+  },
+  "accepted_binding": {
+    "model_version": "seedance2.0_vip",
+    "duration": 5,
+    "ratio": "16:9",
+    "video_resolution": "720p",
+    "ordered_image_input_count": 3,
+    "poll": 0
+  },
+  "sanitized_evidence_envelope_path": "experiments\\CAL-001\\execution_records\\P3D_W01_F06_RECOVERY_SUBMIT\\CAL001-F06-P1-R1\\evidence\\recovery-multimodal2video-help-001.subprocess_envelope.json",
+  "parsed_at": "2026-07-19T14:27:42.492809Z"
+}

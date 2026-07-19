@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "operation_id": "recovery-pre-submit-user-credit-001",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "subprocess_exit_code": 0,
+  "current_live_balance": 5695,
+  "balance_numeric": true,
+  "required_minimum_live_balance": 5670,
+  "balance_gate_passed": true,
+  "positive_drift_enlarges_scope": false,
+  "authentication_present": true,
+  "logger_access_denied": false,
+  "sanitized_evidence_envelope_path": "experiments\\CAL-001\\execution_records\\P3D_W01_F06_RECOVERY_SUBMIT\\CAL001-F06-P1-R1\\evidence\\recovery-pre-submit-user-credit-001.subprocess_envelope.json",
+  "parsed_at": "2026-07-19T14:28:23.345181Z"
+}

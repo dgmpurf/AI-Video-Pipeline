@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "operation_id": "recovery-post-submit-user-credit-001",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "subprocess_exit_code": 0,
+  "immediate_pre_submit_balance": 5695,
+  "immediate_post_submit_balance": 5625,
+  "provider_credit_count_numeric": 70,
+  "observed_credit_delta": 70,
+  "credit_reconciliation_passed": true,
+  "classification": "exact_70_credit_reconciliation",
+  "stop_condition": null,
+  "logger_access_denied": false,
+  "sanitized_evidence_envelope_path": "experiments\\CAL-001\\execution_records\\P3D_W01_F06_RECOVERY_SUBMIT\\CAL001-F06-P1-R1\\evidence\\recovery-post-submit-user-credit-001.subprocess_envelope.json",
+  "parsed_at": "2026-07-19T14:31:29.119966Z"
+}

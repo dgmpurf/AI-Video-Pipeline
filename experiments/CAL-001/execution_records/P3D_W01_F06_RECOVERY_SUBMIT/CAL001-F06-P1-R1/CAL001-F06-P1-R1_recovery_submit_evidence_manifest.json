@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F06_RECOVERY_SUBMIT_EVIDENCE_MANIFEST",
+  "phase_id": "CAL-001-P3D-W01_F06_SINGLE_RECOVERY_SUBMIT_ONLY",
+  "experiment_id": "CAL001-F06-P1-R1",
+  "created_at": "2026-07-19T14:32:19.869309Z",
+  "preflight_record_path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_SUBMIT/CAL001-F06-P1-R1/recovery_preflight.json",
+  "preflight_record_sha256": "68db07f5aff250b1d1d4c42efb35ebd51ad399059e7894020184b35358440a29",
+  "evidence_file_count": 10,
+  "evidence_files": [
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_SUBMIT/CAL001-F06-P1-R1/evidence/recovery-version-001.subprocess_envelope.json",
+      "sha256": "e703503da6772d7926d3d2ae4bcde4a8bc9dce0ccf98196b3d10c908f8a91536"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_SUBMIT/CAL001-F06-P1-R1/evidence/recovery-version-001.parsed_version.json",
+      "sha256": "ff7a280ad58b3afbce49e13923f7aa84a2fbc69587f8feb008bcb81ec7f41023"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_SUBMIT/CAL001-F06-P1-R1/evidence/recovery-multimodal2video-help-001.subprocess_envelope.json",
+      "sha256": "255279da65e63ffa4801afa9c22ca049ea3c8ec52b079ca32c551d213c46f2d5"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_SUBMIT/CAL001-F06-P1-R1/evidence/recovery-multimodal2video-help-001.parsed_help_contract.json",
+      "sha256": "8f8b55e83a5d6bef2356603cee7dedb8a90b544d7ed2c94b25f33397776d5754"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_SUBMIT/CAL001-F06-P1-R1/evidence/recovery-pre-submit-user-credit-001.subprocess_envelope.json",
+      "sha256": "12017d0d88ba7187c51d98670a7a586da45896e469d43e7ad81ae2aa6f3468ba"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_SUBMIT/CAL001-F06-P1-R1/evidence/recovery-pre-submit-user-credit-001.parsed_credit.json",
+      "sha256": "524759086439530827e1f249bba439f17560a381c0b079b3239167409c818ea6"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_SUBMIT/CAL001-F06-P1-R1/evidence/recovery-submit-001.subprocess_envelope.json",
+      "sha256": "8eae763eed93da7251c4a177b400c3113fb3bbe3ddc8540b9feafe10bb398cb6"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_SUBMIT/CAL001-F06-P1-R1/evidence/recovery-submit-001.parsed_task_creation.json",
+      "sha256": "2c4a9ee4201721d209d3145ab39bfb194a61454efacb49a352b88f6e1dccb694"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_SUBMIT/CAL001-F06-P1-R1/evidence/recovery-post-submit-user-credit-001.subprocess_envelope.json",
+      "sha256": "63f2f9e6824cbee0a21757494a8e495dd92c5e55abe17dec0155a19b50efc0e9"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F06_RECOVERY_SUBMIT/CAL001-F06-P1-R1/evidence/recovery-post-submit-user-credit-001.parsed_credit_reconciliation.json",
+      "sha256": "0285b7350a5f065fede4afc30083a645c6c68ef2bb8f6468df17ae5db4904767"
+    }
+  ],
+  "raw_outputs_sanitized": true,
+  "signed_urls_present": false,
+  "query_evidence_count": 0,
+  "download_evidence_count": 0,
+  "retry_evidence_count": 0,
+  "media_evidence_count": 0
+}
