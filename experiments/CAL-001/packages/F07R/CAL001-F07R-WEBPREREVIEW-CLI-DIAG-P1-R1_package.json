@@ -1,0 +1,245 @@
+{
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_NO_LIVE_PACKAGE_CREATION",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "route_family_id": "F07R",
+  "route_name": "WEBPREREVIEW_CLI_DIAG",
+  "linked_unresolved_experiment_id": "CAL001-F07-P1-R1",
+  "route_relationship": "new_route_reset_diagnostic_not_third_original_submit",
+  "replicate_index": 1,
+  "source_family_id": "F07",
+  "family_id": "F07",
+  "family_name": "MULTIMODAL_FORCE_REACTION_CAUSALITY",
+  "prompt_architecture": "P1_LEGACY_DESCRIPTIVE",
+  "task_type": "multimodal2video",
+  "model_version": "seedance2.0_vip",
+  "duration": 5,
+  "ratio": "16:9",
+  "ratio_rule": "explicit",
+  "video_resolution": "720p",
+  "poll": 0,
+  "prompt_path": "experiments/CAL-001/prompts/F07/CAL001-F07-P1_prompt.txt",
+  "prompt_sha256": "094a01dee03f49b65badf1864873f2b85a74a9b801f6a26621a84fb0c409f681",
+  "prompt_payload_sha256": "ca90c5b50b7d244b6264b8ed3f23d4043bf490d25d672e2d05cfad49b487594a",
+  "prompt_extract_rule": "text_between_provider_prompt_markers",
+  "fixture_ids": [
+    "CAL001-F07-IDENTITY-A",
+    "CAL001-F07-IDENTITY-B",
+    "CAL001-F07-SCENE-01"
+  ],
+  "fixture_paths": [
+    "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+    "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+    "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png"
+  ],
+  "fixture_sha256s": [
+    "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f",
+    "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11",
+    "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452"
+  ],
+  "fixture_order": [
+    "CAL001-F07-IDENTITY-A",
+    "CAL001-F07-IDENTITY-B",
+    "CAL001-F07-SCENE-01"
+  ],
+  "reference_duties": [
+    {
+      "fixture_id": "CAL001-F07-IDENTITY-A",
+      "duty": "acting-subject identity only",
+      "forbidden_duty": "force choreography or scene"
+    },
+    {
+      "fixture_id": "CAL001-F07-IDENTITY-B",
+      "duty": "receiving-subject identity only",
+      "forbidden_duty": "reaction choreography or scene"
+    },
+    {
+      "fixture_id": "CAL001-F07-SCENE-01",
+      "duty": "rainy environment and grounded layout only",
+      "forbidden_duty": "identity or wall interaction"
+    }
+  ],
+  "expected_result_images_count": 0,
+  "expected_result_videos_count": 1,
+  "expected_output_count": 1,
+  "planned_credit_cost": 70,
+  "output_dir": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "output_name": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_result.mp4",
+  "review_artifact_plan": {
+    "applies_after_future_successful_download": true,
+    "metadata_for_every_successful_video": true,
+    "frame_times_seconds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "final_readable_frame": true,
+    "contact_sheet": "3x2",
+    "record_input_and_output_sha256": true,
+    "cut_by_default": false,
+    "final_master": false,
+    "locked": false,
+    "current_phase_action": "plan_only_no_artifact_creation"
+  },
+  "applicable_scoring_dimensions": [
+    "identity_stability",
+    "causal_clarity",
+    "action_readability",
+    "reaction_readability",
+    "environment_response",
+    "temporal_coherence",
+    "editability"
+  ],
+  "route_reset_context": {
+    "route_selection_report": "reports/PHASE_CAL001_P3D_W01_F07R_MANUAL_WEB_OBSERVATION_RETROSPECTIVE_AND_CLI_ROUTE_SELECTION_NO_LIVE_RESULT.md",
+    "route_selection_decision": "SUPPORT_WEBPREREVIEW_PLUS_NEW_CLI_DIAGNOSTIC_ROUTE",
+    "retrospective_web_observation": {
+      "evidence_type": "retrospective_human_testimony",
+      "machine_verified": false,
+      "controlled_experiment": false,
+      "prior_single_session_authorization_covers_observations": false,
+      "session_A_selection_mode": "sequential_individual_selection",
+      "session_A_first_review_observed": true,
+      "session_A_total_elapsed": "approx_over_60_seconds",
+      "session_A_scene_elapsed": "approx_over_50_seconds",
+      "session_B_selection_mode": "three_file_batch_selection",
+      "session_B_total_elapsed": "approx_10_seconds",
+      "browser_CLI_cache_sharing_proven": false,
+      "browser_parallel_upload_proven": false,
+      "server_side_review_or_cache_reuse_proven": false,
+      "provider_task_creation_from_web_observations": "unknown",
+      "credit_consumption_from_web_observations": "unknown"
+    },
+    "original_route": {
+      "experiment_id": "CAL001-F07-P1-R1",
+      "submit_attempt_count": 2,
+      "recovery_submit_attempt_count": 1,
+      "CLI_submit_route_stopped": true,
+      "route_reset_required": true,
+      "third_submit_permitted": false,
+      "history_rewrite_permitted": false,
+      "quarantined_handles": [
+        {
+          "handle_role": "initial_orphaned_submit_id",
+          "submit_id": "5a69007b-ac19-4cef-86bc-41d19792149f",
+          "provider_task_created": false,
+          "query_eligible": false,
+          "download_eligible": false,
+          "reuse_authorized": false
+        },
+        {
+          "handle_role": "recovery_orphaned_submit_id",
+          "submit_id": "d5fa2ba3-f4b4-4a8f-9591-5b22b1fac463",
+          "provider_task_created": false,
+          "query_eligible": false,
+          "download_eligible": false,
+          "reuse_authorized": false
+        }
+      ],
+      "quarantined_handle_prohibited_uses": [
+        "input",
+        "continuation",
+        "provider_task",
+        "duplicate_prevention_exception",
+        "query_target"
+      ]
+    },
+    "future_execution_limits": {
+      "future_provider_submit_max": 1,
+      "future_query_max": 0,
+      "future_download_max": 0,
+      "future_retry_max": 0,
+      "future_resubmit_max": 0,
+      "future_batch_max": 0,
+      "expected_maximum_credit_cost": 70
+    },
+    "future_activation_requirements": [
+      "repository_checkpoint_verified",
+      "exact_package_sha256_verified",
+      "prompt_file_and_payload_sha256_verified",
+      "fixture_paths_bytes_sha256_duties_and_order_verified",
+      "executable_path_and_sha256_verified",
+      "current_dreamina_version_verified",
+      "current_multimodal2video_help_verified",
+      "login_and_account_viability_verified_by_explicitly_authorized_canary",
+      "fresh_available_credit_and_then_current_state_derived_floor_verified",
+      "duplicate_operation_state_verified",
+      "fresh_exact_checkpoint_bound_human_authorization_verified",
+      "authorization_serialization_and_activation_eligibility_verified",
+      "separate_query_authorization_required_after_successful_submit",
+      "separate_download_authorization_required_after_successful_query"
+    ],
+    "current_executable_binding_baseline": {
+      "path": "C:/Users/msjpurf/bin/dreamina.exe",
+      "bytes": 31879680,
+      "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10",
+      "requires_fresh_future_verification": true
+    },
+    "task_creation_acceptance_criteria": {
+      "provider_submit_invocation_count": 1,
+      "submit_id_nonempty": true,
+      "submit_id_must_differ_from_quarantined_handles": true,
+      "logid_nonempty": true,
+      "accepted_gen_status": [
+        "querying",
+        "explicitly_equivalent_queryable_nonfail_state"
+      ],
+      "provider_credit_count": 70,
+      "fresh_pre_post_credit_delta": 70,
+      "created_task_count": 1,
+      "upload_failure_marker_present": false,
+      "contradictory_task_identifiers_present": false,
+      "provider_task_created": true,
+      "provider_task_creation_proven": true,
+      "evidence_persisted_before_later_action": true
+    },
+    "successful_submit_state": "submitted_pending_separate_query_authorization",
+    "review_artifact_activation": {
+      "applies_only_after_separately_authorized_future_successful_download": true,
+      "current_phase_action": "plan_only_no_artifact_creation",
+      "final_master": false,
+      "locked": false
+    },
+    "route_stop_contract": {
+      "first_provider_invocation_consumes_allowance_regardless_of_result": true,
+      "preflight_mismatch_action": "stop_before_provider",
+      "permanent_closure_conditions": [
+        "submit_failure",
+        "ambiguous_submit_result",
+        "prequeue_upload_failure",
+        "task_creation_proof_failure",
+        "credit_reconciliation_failure"
+      ],
+      "second_submit_under_new_experiment_permitted": false,
+      "automatic_retry_authorized": false,
+      "automatic_resubmit_authorized": false,
+      "route_failure_closes_identity": true
+    },
+    "fallback_route": {
+      "experiment_id": "CAL001-F07R-MEDIAOPT-P1-R1",
+      "created_by_this_package": false,
+      "authorized_by_this_package": false
+    }
+  },
+  "no_submit": true,
+  "submit_authorized": false,
+  "query_authorized": false,
+  "download_authorized": false,
+  "retry_authorized": false,
+  "resubmit_authorized": false,
+  "batch_authorized": false,
+  "execution_authority_active": false,
+  "provider_command_allowed": false,
+  "provider_command_invocation_count": 0,
+  "authorized_operation_count_consumed": 0,
+  "package_authorized": false,
+  "package_active": false,
+  "human_package_acceptance": false,
+  "final_master": false,
+  "locked": false,
+  "status": "planned_no_run_not_authorized",
+  "notes": "No-live F07R route-reset package definition. It preserves the accepted F07 Prompt, generation parameters, ordered original media bindings, reference duties, scoring dimensions, and inactive review plan. It authorizes no provider or web operation."
+}
