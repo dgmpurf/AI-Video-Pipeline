@@ -233,3 +233,94 @@ def test_verify_record_rejects_conflicting_aliases(tmp_path: Path) -> None:
     assert payload["authorization_evidence_verified"] is False
     assert payload["authorization_verified"] is False
     assert payload["eligible_for_authority_activation"] is False
+
+
+def test_verify_record_blocking_validation_errors_exit_nonzero(
+    tmp_path: Path,
+) -> None:
+    raw = b"APPROVE_CLI_STRICT_VALIDATION."
+    source = tmp_path / "authorization.txt"
+    source.write_bytes(raw)
+    digest = hashlib.sha256(raw).hexdigest()
+    base_record = {"byte_length": len(raw), "sha256": digest}
+    cases = {
+        "bool-int": (
+            {**base_record, "utf8_decode_valid": 1},
+            "record_fact_invalid_type:utf8_decode_valid",
+        ),
+        "canonical-serialization-shape": (
+            {**base_record, "canonical_serialization": "not-an-object"},
+            "recognized_container_not_object:canonical_serialization",
+        ),
+        "canonical-authorization-shape": (
+            {**base_record, "canonical_authorization": None},
+            "recognized_container_not_object:canonical_authorization",
+        ),
+        "nested-verification-shape": (
+            {
+                **base_record,
+                "canonical_serialization": {"verification": []},
+            },
+            "recognized_container_not_object:canonical_serialization.verification",
+        ),
+        "base64-count-without-base64": (
+            {
+                **base_record,
+                "base64_character_count": len(base64.b64encode(raw)),
+            },
+            "expected_base64_missing",
+        ),
+        "invalid-hex": (
+            {**base_record, "last_byte_hex": "0x2E"},
+            "record_fact_invalid_value:last_byte_hex",
+        ),
+    }
+
+    for name, (record, expected_error) in cases.items():
+        record_path = tmp_path / f"{name}.json"
+        record_path.write_text(json.dumps(record), encoding="utf-8")
+
+        result = _run(
+            "verify-record",
+            "--text-file",
+            str(source),
+            "--record",
+            str(record_path),
+        )
+
+        assert result.returncode == 1, name
+        assert result.stderr == b"", name
+        payload = json.loads(result.stdout.decode("utf-8", errors="strict"))
+        assert expected_error in payload["validation_errors"], name
+        assert payload["authorization_evidence_verified"] is False, name
+        assert payload["authorization_verified"] is False, name
+        assert payload["eligible_for_authority_activation"] is False, name
+        assert payload["execution_authority_active"] is False, name
+        assert payload["provider_command_allowed"] is False, name
+        assert payload["provider_command_invocation_count"] == 0, name
+        assert payload["authorized_operation_count_consumed"] == 0, name
+
+
+def test_verify_record_rejects_nonobject_root(tmp_path: Path) -> None:
+    raw = b"APPROVE_CLI_OBJECT_ROOT."
+    source = tmp_path / "authorization.txt"
+    record_path = tmp_path / "array-record.json"
+    source.write_bytes(raw)
+    record_path.write_text("[]", encoding="utf-8")
+
+    result = _run(
+        "verify-record",
+        "--text-file",
+        str(source),
+        "--record",
+        str(record_path),
+    )
+
+    assert result.returncode == 2
+    assert result.stdout == b""
+    payload = json.loads(result.stderr.decode("utf-8", errors="strict"))
+    assert payload["error"] == "input_or_output_error"
+    assert payload["execution_authority_active"] is False
+    assert payload["provider_command_allowed"] is False
+    assert payload["provider_command_invocation_count"] == 0
+    assert payload["authorized_operation_count_consumed"] == 0

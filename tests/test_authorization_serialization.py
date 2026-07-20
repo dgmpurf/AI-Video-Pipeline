@@ -8,6 +8,7 @@ from pathlib import Path
 
 import pytest
 
+from app.ai_video_pipeline.governance import authorization_serialization
 from app.ai_video_pipeline.governance.authorization_serialization import (
     compile_authorization_bytes,
     compile_authorization_text,
@@ -53,6 +54,97 @@ HISTORICAL_RECORDS = (
     ),
 )
 CHECKPOINT = "a838723b8824a1003b6abab220257d0e20fa31ad"
+BOOLEAN_GROUPS = frozenset(
+    {
+        "utf8_decode_valid",
+        "bom_present",
+        "cr_present",
+        "lf_present",
+        "trailing_carriage_return",
+        "trailing_newline",
+        "trailing_space",
+        "markdown_fence_present",
+        "decoded_bytes_equal_original",
+        "base64_round_trip_verified",
+        "decoded_sha256_equal_original",
+        "byte_profile_valid",
+        "serialization_round_trip_verified",
+        "authorization_verified",
+    }
+)
+INTEGER_GROUPS = frozenset(
+    {"byte_length", "base64_character_count", "base64_decode_count"}
+)
+STRING_GROUPS = frozenset(
+    {
+        "sha256",
+        "base64",
+        "canonical_text",
+        "authority_source",
+        "encoding",
+        "last_character",
+        "last_byte_hex",
+        "decoded_sha256",
+    }
+)
+BOOLEAN_ALIAS_CASES = (
+    ("utf8_decode_valid", "utf8_decode_valid", True),
+    ("bom", "bom_present", False),
+    ("bom_present", "bom_present", False),
+    ("cr_present", "cr_present", False),
+    ("lf_present", "lf_present", False),
+    ("trailing_carriage_return", "trailing_carriage_return", False),
+    ("trailing_newline", "trailing_newline", False),
+    ("trailing_space", "trailing_space", False),
+    ("markdown_fence_present", "markdown_fence_present", False),
+    ("decoded_bytes_equal_original", "decoded_bytes_equal_original", True),
+    ("base64_round_trip_verified", "base64_round_trip_verified", True),
+    (
+        "decoded_sha256_equal_original",
+        "decoded_sha256_equal_original",
+        True,
+    ),
+    ("byte_profile_valid", "byte_profile_valid", True),
+    (
+        "serialization_round_trip_verified",
+        "serialization_round_trip_verified",
+        True,
+    ),
+    ("authorization_verified", "authorization_verified", True),
+)
+INTEGER_ALIAS_CASES = (
+    ("byte_length", "byte_length"),
+    ("authorization_byte_length", "byte_length"),
+    ("base64_character_count", "base64_character_count"),
+    ("derived_base64_character_count", "base64_character_count"),
+    ("base64_decode_count", "base64_decode_count"),
+    ("locally_generated_base64_decode_count", "base64_decode_count"),
+)
+STRING_ALIAS_CASES = tuple(
+    (alias, group)
+    for group, aliases in (
+        ("sha256", ("sha256", "authorization_text_sha256")),
+        (
+            "base64",
+            (
+                "base64",
+                "authorization_base64",
+                "locally_derived_base64",
+                "locally_generated_base64",
+            ),
+        ),
+        (
+            "canonical_text",
+            ("canonical_authorization_text", "exact_authorization_text"),
+        ),
+        ("authority_source", ("authority_source",)),
+        ("encoding", ("encoding",)),
+        ("last_character", ("last_character",)),
+        ("last_byte_hex", ("last_byte_hex",)),
+        ("decoded_sha256", ("decoded_sha256",)),
+    )
+    for alias in aliases
+)
 
 
 def _expected_for(raw: bytes) -> dict[str, object]:
@@ -66,6 +158,54 @@ def _expected_for(raw: bytes) -> dict[str, object]:
         "decoded_bytes_equal_original": True,
         "authorization_verified": True,
     }
+
+
+def _required_record(raw: bytes) -> dict[str, object]:
+    return {
+        "byte_length": len(raw),
+        "sha256": hashlib.sha256(raw).hexdigest(),
+    }
+
+
+def _full_strict_record(raw: bytes) -> dict[str, object]:
+    compiled = compile_authorization_bytes(raw)
+    return {
+        "authority_source": "exact_canonical_text",
+        "encoding": "UTF-8",
+        "utf8_decode_valid": True,
+        "bom": False,
+        "cr_present": False,
+        "lf_present": False,
+        "trailing_carriage_return": False,
+        "trailing_newline": False,
+        "trailing_space": False,
+        "markdown_fence_present": False,
+        "byte_length": compiled.byte_length,
+        "sha256": compiled.sha256,
+        "base64": compiled.base64,
+        "base64_character_count": compiled.base64_character_count,
+        "base64_decode_count": 1,
+        "decoded_bytes_equal_original": True,
+        "base64_round_trip_verified": True,
+        "decoded_sha256_equal_original": True,
+        "last_character": ".",
+        "last_byte_hex": "2E",
+        "byte_profile_valid": True,
+        "serialization_round_trip_verified": True,
+        "decoded_sha256": compiled.sha256,
+        "canonical_authorization_text": raw.decode("ascii"),
+        "authorization_verified": True,
+    }
+
+
+def _assert_failed_without_authority(result: object) -> None:
+    assert result.authorization_evidence_verified is False
+    assert result.authorization_verified is False
+    assert result.eligible_for_authority_activation is False
+    assert result.execution_authority_active is False
+    assert result.provider_command_allowed is False
+    assert result.provider_command_invocation_count == 0
+    assert result.authorized_operation_count_consumed == 0
 
 
 def _canonical_bytes(record: dict[str, object]) -> bytes:
@@ -303,6 +443,276 @@ def test_matching_duplicate_representations_remain_compatible() -> None:
     assert result.record_representation_conflicts == ()
     assert result.authorization_evidence_verified is True
     assert result.authorization_verified is True
+
+
+def test_type_contract_covers_every_recognized_group_and_alias() -> None:
+    expected_types = {
+        **{name: bool for name in BOOLEAN_GROUPS},
+        **{name: int for name in INTEGER_GROUPS},
+        **{name: str for name in STRING_GROUPS},
+    }
+    expected_alias_groups = {
+        alias: group for alias, group, _actual in BOOLEAN_ALIAS_CASES
+    }
+    expected_alias_groups.update(dict(INTEGER_ALIAS_CASES))
+    expected_alias_groups.update(dict(STRING_ALIAS_CASES))
+    declared_alias_groups = {
+        alias: group
+        for group, aliases in authorization_serialization._RECORD_REPRESENTATION_GROUPS
+        for alias in aliases
+    }
+
+    assert authorization_serialization._RECORD_FACT_TYPES == expected_types
+    assert declared_alias_groups == expected_alias_groups
+
+
+@pytest.mark.parametrize(
+    ("alias", "group", "actual"),
+    BOOLEAN_ALIAS_CASES,
+)
+def test_boolean_fact_occurrences_reject_integer_values(
+    alias: str,
+    group: str,
+    actual: bool,
+) -> None:
+    raw = b"APPROVE_STRICT_BOOLEAN_TYPES."
+    record = _required_record(raw)
+    record[alias] = int(actual)
+
+    result = verify_authorization_bytes(raw, record)
+
+    assert f"record_fact_invalid_type:{group}" in result.validation_errors
+    _assert_failed_without_authority(result)
+
+
+@pytest.mark.parametrize(("alias", "group"), INTEGER_ALIAS_CASES)
+@pytest.mark.parametrize("wrong_boolean", (False, True))
+def test_integer_fact_occurrences_reject_boolean_values(
+    alias: str,
+    group: str,
+    wrong_boolean: bool,
+) -> None:
+    raw = b"APPROVE_STRICT_INTEGER_TYPES."
+    record = _required_record(raw)
+    record["base64"] = base64.b64encode(raw).decode("ascii")
+    record[alias] = wrong_boolean
+
+    result = verify_authorization_bytes(raw, record)
+
+    assert f"record_fact_invalid_type:{group}" in result.validation_errors
+    _assert_failed_without_authority(result)
+
+
+@pytest.mark.parametrize(("alias", "group"), STRING_ALIAS_CASES)
+def test_string_fact_occurrences_reject_non_string_values(
+    alias: str,
+    group: str,
+) -> None:
+    raw = b"APPROVE_STRICT_STRING_TYPES."
+    record = _required_record(raw)
+    record[alias] = 7
+
+    result = verify_authorization_bytes(raw, record)
+
+    assert f"record_fact_invalid_type:{group}" in result.validation_errors
+    _assert_failed_without_authority(result)
+
+
+def test_identical_malformed_bool_int_duplicates_are_rejected() -> None:
+    raw = b"APPROVE_IDENTICAL_MALFORMED_TYPES."
+    record = _required_record(raw)
+    record["utf8_decode_valid"] = 1
+    record["canonical_serialization"] = {"utf8_decode_valid": 1}
+
+    result = verify_authorization_bytes(raw, record)
+
+    assert result.record_representations_consistent is True
+    assert "record_fact_invalid_type:utf8_decode_valid" in result.validation_errors
+    _assert_failed_without_authority(result)
+
+
+def test_valid_fact_cannot_hide_malformed_secondary_occurrence() -> None:
+    raw = b"APPROVE_MALFORMED_SECONDARY_TYPE."
+    record = _required_record(raw)
+    record["utf8_decode_valid"] = True
+    record["canonical_authorization"] = {"utf8_decode_valid": 1}
+
+    result = verify_authorization_bytes(raw, record)
+
+    assert result.record_representations_consistent is False
+    assert "utf8_decode_valid" in result.record_representation_conflicts
+    assert "record_fact_invalid_type:utf8_decode_valid" in result.validation_errors
+    _assert_failed_without_authority(result)
+
+
+def test_full_record_with_exact_json_types_remains_valid() -> None:
+    raw = b"APPROVE_FULL_STRICT_RECORD."
+
+    result = verify_authorization_bytes(raw, _full_strict_record(raw))
+
+    assert result.validation_errors == ()
+    assert result.record_representations_consistent is True
+    assert result.authorization_evidence_verified is True
+    assert result.authorization_verified is True
+
+
+@pytest.mark.parametrize(
+    "invalid_container",
+    ("not-an-object", [], 7, True, None),
+    ids=("string", "array", "number", "boolean", "null"),
+)
+@pytest.mark.parametrize(
+    "container_name",
+    ("canonical_serialization", "canonical_authorization"),
+)
+def test_present_nonobject_recognized_container_is_rejected(
+    container_name: str,
+    invalid_container: object,
+) -> None:
+    raw = b"APPROVE_CONTAINER_SHAPE."
+    record = _required_record(raw)
+    record[container_name] = invalid_container
+
+    result = verify_authorization_bytes(raw, record)
+
+    assert (
+        f"recognized_container_not_object:{container_name}"
+        in result.validation_errors
+    )
+    _assert_failed_without_authority(result)
+
+
+@pytest.mark.parametrize(
+    "invalid_container",
+    ("not-an-object", [], 7, True, None),
+    ids=("string", "array", "number", "boolean", "null"),
+)
+@pytest.mark.parametrize(
+    "parent_name",
+    ("canonical_serialization", "canonical_authorization"),
+)
+def test_present_nonobject_nested_verification_container_is_rejected(
+    parent_name: str,
+    invalid_container: object,
+) -> None:
+    raw = b"APPROVE_NESTED_CONTAINER_SHAPE."
+    record = _required_record(raw)
+    record[parent_name] = {"verification": invalid_container}
+
+    result = verify_authorization_bytes(raw, record)
+
+    assert (
+        f"recognized_container_not_object:{parent_name}.verification"
+        in result.validation_errors
+    )
+    _assert_failed_without_authority(result)
+
+
+def test_absent_and_valid_object_optional_containers_remain_compatible() -> None:
+    raw = b"APPROVE_OPTIONAL_CONTAINERS."
+    absent = verify_authorization_bytes(raw, _required_record(raw))
+    record = _required_record(raw)
+    record["canonical_serialization"] = {"verification": {}}
+    record["canonical_authorization"] = {"verification": {}}
+    present = verify_authorization_bytes(raw, record)
+
+    assert absent.authorization_evidence_verified is True
+    assert present.authorization_evidence_verified is True
+    assert absent.validation_errors == ()
+    assert present.validation_errors == ()
+
+
+def test_base64_count_without_base64_is_a_blocking_error() -> None:
+    raw = b"APPROVE_BASE64_COUNT_REQUIRES_BASE64."
+    record = _required_record(raw)
+    record["base64_character_count"] = len(base64.b64encode(raw))
+
+    result = verify_authorization_bytes(raw, record)
+
+    assert "expected_base64_missing" in result.validation_errors
+    _assert_failed_without_authority(result)
+
+
+@pytest.mark.parametrize(
+    ("field", "value", "group"),
+    (
+        ("authority_source", "human_text", "authority_source"),
+        ("encoding", "utf-8", "encoding"),
+        ("base64_character_count", -1, "base64_character_count"),
+        ("base64_decode_count", 0, "base64_decode_count"),
+    ),
+)
+def test_fact_specific_invalid_values_are_blocking(
+    field: str,
+    value: object,
+    group: str,
+) -> None:
+    raw = b"APPROVE_FACT_VALUE_VALIDATION."
+    record = _required_record(raw)
+    record["base64"] = base64.b64encode(raw).decode("ascii")
+    record[field] = value
+
+    result = verify_authorization_bytes(raw, record)
+
+    assert f"record_fact_invalid_value:{group}" in result.validation_errors
+    _assert_failed_without_authority(result)
+
+
+def test_valid_hexadecimal_facts_compare_case_insensitively() -> None:
+    raw = b"APPROVE_HEXADECIMAL_CASE."
+    digest = hashlib.sha256(raw).hexdigest()
+    record = {
+        "byte_length": len(raw),
+        "sha256": digest.upper(),
+        "decoded_sha256": digest.upper(),
+        "last_byte_hex": "2e",
+    }
+
+    result = verify_authorization_bytes(raw, record)
+
+    assert result.validation_errors == ()
+    assert result.authorization_evidence_verified is True
+
+
+@pytest.mark.parametrize(
+    ("field", "value", "group"),
+    (
+        ("sha256", "g" * 64, "sha256"),
+        ("sha256", "a" * 63, "sha256"),
+        ("sha256", "a" * 65, "sha256"),
+        ("decoded_sha256", "g" * 64, "decoded_sha256"),
+        ("decoded_sha256", "a" * 63, "decoded_sha256"),
+        ("decoded_sha256", "a" * 65, "decoded_sha256"),
+    ),
+)
+def test_invalid_sha256_syntax_is_rejected(
+    field: str,
+    value: str,
+    group: str,
+) -> None:
+    raw = b"APPROVE_INVALID_SHA_SYNTAX."
+    record = _required_record(raw)
+    record[field] = value
+
+    result = verify_authorization_bytes(raw, record)
+
+    assert f"record_fact_invalid_value:{group}" in result.validation_errors
+    _assert_failed_without_authority(result)
+
+
+@pytest.mark.parametrize(
+    "invalid_value",
+    ("GG", "E", "02E", "0x2E", " 2E", "2E "),
+)
+def test_invalid_last_byte_hex_syntax_is_rejected(invalid_value: str) -> None:
+    raw = b"APPROVE_INVALID_LAST_BYTE_HEX."
+    record = _required_record(raw)
+    record["last_byte_hex"] = invalid_value
+
+    result = verify_authorization_bytes(raw, record)
+
+    assert "record_fact_invalid_value:last_byte_hex" in result.validation_errors
+    _assert_failed_without_authority(result)
 
 
 def test_invalid_utf8_is_a_deterministic_failure() -> None:

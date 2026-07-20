@@ -10,6 +10,7 @@ from typing import Any, Mapping
 
 
 _SHA256_RE = re.compile(r"[0-9a-fA-F]{64}\Z")
+_LAST_BYTE_HEX_RE = re.compile(r"[0-9a-fA-F]{2}\Z")
 _CHECKPOINT_RE = re.compile(r"[0-9a-fA-F]{40}\Z")
 _MISSING = object()
 _RECORD_REPRESENTATION_GROUPS: tuple[tuple[str, tuple[str, ...]], ...] = (
@@ -62,7 +63,53 @@ _RECORD_REPRESENTATION_GROUPS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("decoded_sha256", ("decoded_sha256",)),
     ("authorization_verified", ("authorization_verified",)),
 )
-_CASE_INSENSITIVE_HEX_GROUPS = frozenset({"sha256", "decoded_sha256"})
+_BOOLEAN_FACT_GROUPS = frozenset(
+    {
+        "utf8_decode_valid",
+        "bom_present",
+        "cr_present",
+        "lf_present",
+        "trailing_carriage_return",
+        "trailing_newline",
+        "trailing_space",
+        "markdown_fence_present",
+        "decoded_bytes_equal_original",
+        "base64_round_trip_verified",
+        "decoded_sha256_equal_original",
+        "byte_profile_valid",
+        "serialization_round_trip_verified",
+        "authorization_verified",
+    }
+)
+_INTEGER_FACT_GROUPS = frozenset(
+    {"byte_length", "base64_character_count", "base64_decode_count"}
+)
+_STRING_FACT_GROUPS = frozenset(
+    {
+        "sha256",
+        "base64",
+        "canonical_text",
+        "authority_source",
+        "encoding",
+        "last_character",
+        "last_byte_hex",
+        "decoded_sha256",
+    }
+)
+_RECORD_FACT_TYPES: dict[str, type[Any]] = {
+    **{name: bool for name in _BOOLEAN_FACT_GROUPS},
+    **{name: int for name in _INTEGER_FACT_GROUPS},
+    **{name: str for name in _STRING_FACT_GROUPS},
+}
+_RECOGNIZED_FACT_GROUPS = frozenset(
+    label for label, _aliases in _RECORD_REPRESENTATION_GROUPS
+)
+if frozenset(_RECORD_FACT_TYPES) != _RECOGNIZED_FACT_GROUPS:
+    raise RuntimeError("every recognized authorization fact requires an exact type")
+
+_CASE_INSENSITIVE_HEX_GROUPS = frozenset(
+    {"sha256", "decoded_sha256", "last_byte_hex"}
+)
 
 
 @dataclass(frozen=True)
@@ -353,8 +400,11 @@ def verify_authorization_bytes(
         raise TypeError("expected_record must be a mapping")
 
     serialization = compile_authorization_bytes(raw_bytes)
-    containers = _record_containers(expected_record)
+    containers, container_errors = _record_containers(expected_record)
     errors = list(serialization.validation_errors)
+    errors.extend(container_errors)
+    fact_validation_errors = _record_fact_validation_errors(containers)
+    errors.extend(fact_validation_errors)
     representation_conflicts = _record_representation_conflicts(containers)
     errors.extend(
         f"record_representation_conflict:{name}"
@@ -444,9 +494,15 @@ def verify_authorization_bytes(
     record_canonical_text_matches: bool | None = None
     if record_canonical_text_present:
         if isinstance(record_text_raw, str):
-            record_canonical_text_matches = (
-                record_text_raw.encode("utf-8", errors="strict") == raw_bytes
-            )
+            try:
+                record_text_bytes = record_text_raw.encode(
+                    "utf-8", errors="strict"
+                )
+            except UnicodeEncodeError:
+                record_canonical_text_matches = False
+                errors.append("record_canonical_text_invalid")
+            else:
+                record_canonical_text_matches = record_text_bytes == raw_bytes
             if not record_canonical_text_matches:
                 errors.append("record_canonical_text_mismatch")
         else:
@@ -470,7 +526,9 @@ def verify_authorization_bytes(
         )
     )
     authorization_evidence_verified = (
-        serialization.serialization_profile_valid and expected_values_match
+        serialization.serialization_profile_valid
+        and expected_values_match
+        and not errors
     )
     authorization_verified = authorization_evidence_verified
 
@@ -643,16 +701,65 @@ def stable_json_bytes(payload: Mapping[str, Any]) -> bytes:
     return stable_json_text(payload).encode("utf-8")
 
 
-def _record_containers(record: Mapping[str, Any]) -> tuple[Mapping[str, Any], ...]:
+def _record_containers(
+    record: Mapping[str, Any],
+) -> tuple[tuple[Mapping[str, Any], ...], tuple[str, ...]]:
     containers: list[Mapping[str, Any]] = [record]
+    errors: list[str] = []
     for key in ("canonical_serialization", "canonical_authorization"):
-        value = record.get(key)
-        if isinstance(value, Mapping):
-            containers.insert(0, value)
-            verification = value.get("verification")
-            if isinstance(verification, Mapping):
-                containers.append(verification)
-    return tuple(containers)
+        if key not in record:
+            continue
+        value = record[key]
+        if not isinstance(value, Mapping):
+            errors.append(f"recognized_container_not_object:{key}")
+            continue
+        containers.insert(0, value)
+        if "verification" not in value:
+            continue
+        verification = value["verification"]
+        if not isinstance(verification, Mapping):
+            errors.append(f"recognized_container_not_object:{key}.verification")
+            continue
+        containers.append(verification)
+    return tuple(containers), tuple(errors)
+
+
+def _record_fact_validation_errors(
+    containers: tuple[Mapping[str, Any], ...],
+) -> tuple[str, ...]:
+    errors: list[str] = []
+    for label, aliases in _RECORD_REPRESENTATION_GROUPS:
+        values = _all_values(containers, *aliases)
+        if not values:
+            continue
+        expected_type = _RECORD_FACT_TYPES[label]
+        correctly_typed = tuple(
+            value for value in values if type(value) is expected_type
+        )
+        if len(correctly_typed) != len(values):
+            errors.append(f"record_fact_invalid_type:{label}")
+        if any(
+            not _record_fact_value_valid(label, value)
+            for value in correctly_typed
+        ):
+            errors.append(f"record_fact_invalid_value:{label}")
+    return tuple(errors)
+
+
+def _record_fact_value_valid(label: str, value: Any) -> bool:
+    if label in _INTEGER_FACT_GROUPS and value < 0:
+        return False
+    if label == "base64_decode_count":
+        return value == 1
+    if label in {"sha256", "decoded_sha256"}:
+        return bool(_SHA256_RE.fullmatch(value))
+    if label == "last_byte_hex":
+        return bool(_LAST_BYTE_HEX_RE.fullmatch(value))
+    if label == "authority_source":
+        return value == "exact_canonical_text"
+    if label == "encoding":
+        return value == "UTF-8"
+    return True
 
 
 def _record_representation_conflicts(
@@ -688,7 +795,9 @@ def _record_values_equal(label: str, left: Any, right: Any) -> bool:
     if type(left) is not type(right):
         return False
     if label in _CASE_INSENSITIVE_HEX_GROUPS and isinstance(left, str):
-        return left.lower() == right.lower()
+        pattern = _LAST_BYTE_HEX_RE if label == "last_byte_hex" else _SHA256_RE
+        if pattern.fullmatch(left) and pattern.fullmatch(right):
+            return left.lower() == right.lower()
     return left == right
 
 
@@ -771,16 +880,24 @@ def _record_fact_mismatches(
     mismatches: list[str] = []
     for aliases, actual, label in checks:
         expected = _first_value(containers, *aliases)
-        if expected is not _MISSING and expected != actual:
+        if (
+            expected is not _MISSING
+            and not _record_values_equal(label, expected, actual)
+        ):
             mismatches.append(label)
 
     decoded_sha = _first_value(containers, "decoded_sha256")
-    if decoded_sha is not _MISSING and decoded_sha != result.sha256:
+    if (
+        decoded_sha is not _MISSING
+        and not _record_values_equal("decoded_sha256", decoded_sha, result.sha256)
+    ):
         mismatches.append("decoded_sha256")
     authorization_verified = _first_value(containers, "authorization_verified")
     if (
         authorization_verified is not _MISSING
-        and authorization_verified is not True
+        and not _record_values_equal(
+            "authorization_verified", authorization_verified, True
+        )
     ):
         mismatches.append("record_authorization_verified")
     return mismatches
