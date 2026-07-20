@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F07_ONE_SUBMIT_BOUNDED_ACTIVATION",
+  "phase_id": "CAL-001-P3D-W01_F07_ONE_MULTIMODAL2VIDEO_SUBMIT_ONLY",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "wave_id": "W01",
+  "task_id": "CAL001-F07-P1-R1",
+  "experiment_id": "CAL001-F07-P1-R1",
+  "activated_at": "2026-07-20T09:53:34.023264Z",
+  "authorization_record_path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_F07_one_multimodal2video_submit_only_authorization.json",
+  "authorization_sha256": "662d6ddfa1f4c2b58ec8862b77055e747e1523b72e1919960a3c4616402d7379",
+  "required_checkpoint": "e3240d7b47c83bf29b7e547a6211e09c62774e49",
+  "local_head": "e3240d7b47c83bf29b7e547a6211e09c62774e49",
+  "origin_main": "e3240d7b47c83bf29b7e547a6211e09c62774e49",
+  "checkpoint_binding_verified": true,
+  "authorization_evidence_verified": true,
+  "activation_eligible": true,
+  "exact_binding": {
+    "operation": "multimodal2video",
+    "model_version": "seedance2.0_vip",
+    "duration": 5,
+    "ratio": "16:9",
+    "video_resolution": "720p",
+    "poll": 0,
+    "prompt_sha256": "ca90c5b50b7d244b6264b8ed3f23d4043bf490d25d672e2d05cfad49b487594a",
+    "ordered_input_sha256s": [
+      "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f",
+      "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11",
+      "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452"
+    ],
+    "argv_binding_sha256": "e79a1d40c9b1e31e019fceb138fe42c455e7235325f1a7b5bc9ebb58e2e956f5"
+  },
+  "allowances": {
+    "provider_multimodal2video_submit_max": 1,
+    "query_max": 0,
+    "download_max": 0,
+    "retry_max": 0,
+    "resubmit_max": 0,
+    "batch_max": 0,
+    "F08_max": 0
+  },
+  "counters_at_activation": {
+    "provider_command_invocation_count": 0,
+    "authorized_operation_count_consumed": 0,
+    "query_count": 0,
+    "download_count": 0,
+    "retry_count": 0,
+    "resubmit_count": 0,
+    "batch_count": 0,
+    "F08_count": 0
+  },
+  "execution_authority_active": true,
+  "provider_command_allowed": true,
+  "F07_authorized": true,
+  "authority_reusable": false,
+  "final_master": false,
+  "locked": false
+}

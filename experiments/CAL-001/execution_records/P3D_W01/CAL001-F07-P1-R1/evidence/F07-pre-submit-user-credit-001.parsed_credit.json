@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "operation_id": "F07-pre-submit-user-credit-001",
+  "experiment_id": "CAL001-F07-P1-R1",
+  "subprocess_exit_code": 0,
+  "pre_submit_credit_total": 5685,
+  "balance_numeric": true,
+  "required_minimum_live_balance": 5530,
+  "balance_gate_passed": true,
+  "login_viability_verified": true,
+  "failure_markers": [],
+  "logger_access_denied": false,
+  "pre_submit_credit_preflight_passed": true,
+  "account_identifiers_persisted": false,
+  "sanitized_evidence_envelope_path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-pre-submit-user-credit-001.subprocess_envelope.json",
+  "parsed_at": "2026-07-20T09:51:34.852217Z"
+}

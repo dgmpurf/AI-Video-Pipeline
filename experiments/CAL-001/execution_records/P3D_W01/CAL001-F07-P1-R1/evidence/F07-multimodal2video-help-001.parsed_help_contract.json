@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "operation_id": "F07-multimodal2video-help-001",
+  "experiment_id": "CAL001-F07-P1-R1",
+  "command_type": "multimodal2video",
+  "subprocess_exit_code": 0,
+  "required_flags": {
+    "--model_version": true,
+    "--ratio": true,
+    "--prompt": true,
+    "--duration": true,
+    "--video_resolution": true,
+    "--image": true,
+    "--poll": true
+  },
+  "required_contract": {
+    "exit_code_zero": true,
+    "stderr_empty": true,
+    "logger_auth_login_permission_failure_absent": true,
+    "all_required_flags_present": true,
+    "repeatable_image_flag_present": true,
+    "three_images_within_limit": true,
+    "model_seedance2_0_vip_supported": true,
+    "duration_5_supported": true,
+    "ratio_16_9_supported": true,
+    "video_resolution_720p_supported_for_vip": true,
+    "poll_zero_disables_polling": true,
+    "all_required_contract_checks_passed": true
+  },
+  "accepted_binding": {
+    "model_version": "seedance2.0_vip",
+    "duration": 5,
+    "ratio": "16:9",
+    "video_resolution": "720p",
+    "ordered_image_input_count": 3,
+    "poll": 0
+  },
+  "sanitized_evidence_envelope_path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-multimodal2video-help-001.subprocess_envelope.json",
+  "parsed_at": "2026-07-20T09:52:06.714344Z"
+}

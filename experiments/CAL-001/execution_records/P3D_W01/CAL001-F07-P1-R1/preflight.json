@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F07_ONE_SUBMIT_LOCAL_PREFLIGHT",
+  "phase_id": "CAL-001-P3D-W01_F07_ONE_MULTIMODAL2VIDEO_SUBMIT_ONLY",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "wave_id": "W01",
+  "task_id": "CAL001-F07-P1-R1",
+  "experiment_id": "CAL001-F07-P1-R1",
+  "recorded_at": "2026-07-20T09:50:17.399808Z",
+  "repository": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+  "branch": "main",
+  "starting_head": "e3240d7b47c83bf29b7e547a6211e09c62774e49",
+  "origin_main": "e3240d7b47c83bf29b7e547a6211e09c62774e49",
+  "head_origin_aligned": true,
+  "staged_file_count": 0,
+  "tracked_dirty_file_count": 0,
+  "sources_clean": true,
+  "temporary_worktree_count": 0,
+  "authorization_text_verified": true,
+  "authorization_sha256": "662d6ddfa1f4c2b58ec8862b77055e747e1523b72e1919960a3c4616402d7379",
+  "authorization_evidence_verified": true,
+  "checkpoint_binding_verified": true,
+  "activation_eligible": true,
+  "execution_authority_active": false,
+  "protected_hashes": {
+    "sources/AI\u89c6\u9891\u5236\u4f5c_Source\u7d22\u5f15\u4e0e\u4f7f\u7528\u4f18\u5148\u7ea7_V1.12.md": {
+      "expected_sha256": "e13a98c4a12fab8ba3267b3074acf103e1458798fb865b6363ee3e732d275022",
+      "actual_sha256": "e13a98c4a12fab8ba3267b3074acf103e1458798fb865b6363ee3e732d275022",
+      "verified": true
+    },
+    "sources/AI\u89c6\u9891\u5236\u4f5c_\u6b63\u5f0f\u6388\u6743\u5e8f\u5217\u5316\u4e0e\u5b8c\u6574\u6027\u6821\u9a8c\u89c4\u5219_V0.1.md": {
+      "expected_sha256": "f5471b851c6966e6de73ea552b42f4cd00d06af6aec5164ccf47beb373368572",
+      "actual_sha256": "f5471b851c6966e6de73ea552b42f4cd00d06af6aec5164ccf47beb373368572",
+      "verified": true
+    },
+    "experiments/CAL-001/execution_state/CAL001_P3C_remaining_77_resumable_execution_state_contract.json": {
+      "expected_sha256": "e42e92700d63e9f78a9ac9fb564f3d7410d94f4160dd6e047ab02eeaa02c205b",
+      "actual_sha256": "e42e92700d63e9f78a9ac9fb564f3d7410d94f4160dd6e047ab02eeaa02c205b",
+      "verified": true
+    },
+    "experiments/CAL-001/datasets/CAL001_experiment_results_template.csv": {
+      "expected_sha256": "f1d183267b24997bb848ff83abd9231b53d84ae82e715d9e4d9b5c2b3de3ff3b",
+      "actual_sha256": "f1d183267b24997bb848ff83abd9231b53d84ae82e715d9e4d9b5c2b3de3ff3b",
+      "verified": true
+    },
+    "experiments/CAL-001/datasets/CAL001_visual_review_template.jsonl": {
+      "expected_sha256": "6f86873a445021f88503625008550c99e7a2ef323acde500d38ccd6a5e5c693a",
+      "actual_sha256": "6f86873a445021f88503625008550c99e7a2ef323acde500d38ccd6a5e5c693a",
+      "verified": true
+    },
+    "experiments/CAL-001/manifests/CAL001A_fixed_84_task_manifest.csv": {
+      "expected_sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+      "actual_sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+      "verified": true
+    }
+  },
+  "state_preflight": {
+    "historical_bound_repository_checkpoint": "9d61276165379b47965b39231e360cac0a25b831",
+    "protected_state_hash_verified": true,
+    "activation_state": "STOPPED_AUTHORITY_CLOSED",
+    "macro_state": "STOPPED_AUTHORITY_CLOSED",
+    "completed_fixed_task_count": 13,
+    "remaining_fixed_task_count": 71,
+    "next_experiment_id": "CAL001-F07-P1-R1",
+    "F07_task_state": "pending_preflight",
+    "total_submit_count": 13,
+    "F07_submit_attempt_count": 0,
+    "F07_submit_id": null,
+    "F07_logid": null,
+    "F07_query_count": 0,
+    "F07_download_count": 0,
+    "F07_authorized": false,
+    "final_master": false,
+    "locked": false
+  },
+  "fixed_definition": {
+    "operation": "multimodal2video",
+    "model_version": "seedance2.0_vip",
+    "duration": 5,
+    "ratio": "16:9",
+    "video_resolution": "720p",
+    "poll": 0,
+    "expected_result_images_count": 0,
+    "expected_result_videos_count": 1,
+    "expected_credit_cost": 70,
+    "pre_submit_credit_floor": 5530,
+    "prompt_path": "experiments/CAL-001/prompts/F07/CAL001-F07-P1_prompt.txt",
+    "prompt_file_sha256": "094a01dee03f49b65badf1864873f2b85a74a9b801f6a26621a84fb0c409f681",
+    "provider_prompt_sha256": "ca90c5b50b7d244b6264b8ed3f23d4043bf490d25d672e2d05cfad49b487594a",
+    "provider_prompt_chars": 519,
+    "provider_prompt_final_lf_included": true,
+    "package_path": "experiments/CAL-001/packages/F07/CAL001-F07-P1-R1_package.json",
+    "package_sha256": "daf6ff398ffbc960c06e7d577f9de9e2dfdd9719863074c089a03158dc8adc64",
+    "manifest_path": "experiments/CAL-001/manifests/CAL001A_fixed_84_task_manifest.csv",
+    "manifest_sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+    "manifest_row_sha256": "84461634b31d8bfa7007376cbbe0c017be4a282abc3048872445e4a1fa9efab6",
+    "ordered_inputs": [
+      {
+        "order": 1,
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+        "bytes": 1959523,
+        "sha256": "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f",
+        "readable": true
+      },
+      {
+        "order": 2,
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+        "bytes": 3874061,
+        "sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11",
+        "readable": true
+      },
+      {
+        "order": 3,
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+        "bytes": 4147285,
+        "sha256": "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452",
+        "readable": true
+      }
+    ],
+    "argv_binding_sha256": "e79a1d40c9b1e31e019fceb138fe42c455e7235325f1a7b5bc9ebb58e2e956f5"
+  },
+  "dreamina_executable": {
+    "path": "C:/Users/msjpurf/bin/dreamina.exe",
+    "bytes": 31879680,
+    "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10",
+    "verified": true
+  },
+  "command_binding_path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/command_binding.json",
+  "argv_binding_sha256": "e79a1d40c9b1e31e019fceb138fe42c455e7235325f1a7b5bc9ebb58e2e956f5",
+  "focused_compiler_tests": {
+    "passed": 124,
+    "failed": 0
+  },
+  "offline_preflight_passed": true,
+  "dreamina_command_count_before_live_preflight": 0,
+  "provider_submit_invocation_occurred": false,
+  "query_called": false,
+  "download_called": false,
+  "retry_called": false,
+  "resubmit_called": false,
+  "batch_called": false,
+  "F08_called": false,
+  "final_master": false,
+  "locked": false
+}

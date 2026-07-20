@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F07_EVIDENCE_MANIFEST",
+  "phase_id": "CAL-001-P3D-W01_F07_ONE_MULTIMODAL2VIDEO_SUBMIT_ONLY",
+  "experiment_id": "CAL001-F07-P1-R1",
+  "generated_at": "2026-07-20T10:00:29.436233Z",
+  "entry_count": 23,
+  "entries": [
+    {
+      "path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_F07_one_multimodal2video_submit_only_authorization.json",
+      "bytes": 9314,
+      "sha256": "36a32d88285524358c8aeac8038efac27dcf6e50d22e1083d5efb0ab288a5342"
+    },
+    {
+      "path": "experiments/CAL-001/execution_state/CAL001_P3C_remaining_77_resumable_execution_state_contract.json",
+      "bytes": 286669,
+      "sha256": "642027f9ff3f3adfa3ce04fdcba2405536c19e9949916dbe08649e11be72b16e"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1_technical_execution_record.json",
+      "bytes": 9635,
+      "sha256": "29d7222f8f274535d4ed0727c24d20f636c07defb69f1f9afb77bd48ebad3d95"
+    },
+    {
+      "path": "reports/PHASE_CAL001_P3D_W01_F07_ONE_MULTIMODAL2VIDEO_SUBMIT_ONLY_RESULT.md",
+      "bytes": 7646,
+      "sha256": "a63e33287d368cd6934140f824b8df63e0c88f3de9c185c78ed35e4412852efd"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/authority_closure_record.json",
+      "bytes": 1076,
+      "sha256": "dc20b26e09541446401103305bb739488d16b4d8d6cc8804f604d67ad84e5c69"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/authorization_compiler_result.json",
+      "bytes": 10734,
+      "sha256": "42e3baae599bc918c938d2851c862b35d4b38fc7b7b15a1083bc7283a38b7679"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/bounded_activation_record.json",
+      "bytes": 2152,
+      "sha256": "626f031c5b92f4c7a702b6848fc3759c0239d40292d7a99686c7291314149924"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/checkpoint_binding_and_activation_eligibility.json",
+      "bytes": 1585,
+      "sha256": "9067654146d9887094e0027783744dc5fd9905d88edeff130e490a63a831c362"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/command_binding.json",
+      "bytes": 2819,
+      "sha256": "65ce72b3ece0b04ee3a8bb2c124dcca720fb07241f715630533d0d51ca394d2a"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-multimodal2video-help-001.parsed_help_contract.json",
+      "bytes": 1304,
+      "sha256": "d55d08cd65b7d3d39cc720c2fca13ab60c168804105ade74b621a39734dbdc3c"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-multimodal2video-help-001.subprocess_envelope.json",
+      "bytes": 3712,
+      "sha256": "0f65b458172a497aaf633b600972656999a4bfa40a15ac62744b57dea34a97db"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-post-submit-user-credit-001.parsed_credit_reconciliation.json",
+      "bytes": 1091,
+      "sha256": "304549f9cce8f8737276c8455678a32f45ec1bbbbc1e3ddfa862645a5d61bc8e"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-post-submit-user-credit-001.subprocess_envelope.json",
+      "bytes": 940,
+      "sha256": "8cadcff3b97238dedee2e5d7189d90a3e4d072863f20807577f22dc48fa02201"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-pre-submit-user-credit-001.parsed_credit.json",
+      "bytes": 681,
+      "sha256": "addcc8bd9cef98c3c11de8bb9ac9f853c00c4b3733a27ee50fd7403a8d4f66b6"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-pre-submit-user-credit-001.subprocess_envelope.json",
+      "bytes": 915,
+      "sha256": "8826490a6e143abe6a6c291cbed7ef337f2dbc03e92c57aaec61d9b5c08726a7"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-submit-001.parsed_task_creation.json",
+      "bytes": 2160,
+      "sha256": "2d5c9917538cfca2dcc4a097e07fa9be606b1251fb6a6d3a6710367e6b82ddde"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-submit-001.subprocess_envelope.json",
+      "bytes": 1808,
+      "sha256": "78b27dd29a44f251fd3e57f0ca5e75b29ee4ca6ba4c72af90334dc1cceb4b460"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-version-001.parsed_version.json",
+      "bytes": 522,
+      "sha256": "16c842dd01574ad058e7072c2babf41a5cd25ec4cd6ad0fb326c0abb4aa388af"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-version-001.subprocess_envelope.json",
+      "bytes": 844,
+      "sha256": "21e5b0ef43d48c7ba8848aaee724dc77f367bd440b48eb79d4b1593085e57f57"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/live_preflight_summary.json",
+      "bytes": 1267,
+      "sha256": "08bb28adf59ccd434f3f9585bcd7aec32ceb5f910ee913e1cab3cc80aaead71d"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/phase_validation.json",
+      "bytes": 5274,
+      "sha256": "70cebcb0086d93ca9d4a10d09fd55d24283f9f3550aea57dcd108a4833526fbb"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/preflight.json",
+      "bytes": 6546,
+      "sha256": "1ca463edf23eba01a6876c5bfbeb65b87a9813c1208e5245f54a6ab1fc08beec"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/submit_failure_classification.json",
+      "bytes": 1915,
+      "sha256": "754f38969031463c855f06d7718a28a785b1385861e347cf9585a5d063d57aeb"
+    }
+  ],
+  "sanitized_evidence_only": true,
+  "sources_included": false,
+  "media_included": false,
+  "query_evidence_included": false,
+  "download_evidence_included": false,
+  "final_master": false,
+  "locked": false
+}

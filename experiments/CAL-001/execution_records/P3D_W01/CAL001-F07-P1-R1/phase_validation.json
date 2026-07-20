@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F07_PHASE_SCOPED_VALIDATION",
+  "phase_id": "CAL-001-P3D-W01_F07_ONE_MULTIMODAL2VIDEO_SUBMIT_ONLY",
+  "experiment_id": "CAL001-F07-P1-R1",
+  "validated_at": "2026-07-20T09:59:46.856560Z",
+  "authorization_serialization_verified": true,
+  "checkpoint_binding_verified": true,
+  "compiler_tests_passed": 124,
+  "command_counts": {
+    "version": 1,
+    "user_credit": 2,
+    "multimodal2video_help": 1,
+    "multimodal2video_submit": 1,
+    "query_result": 0,
+    "login": 0,
+    "other": 0
+  },
+  "one_submit_maximum_respected": true,
+  "pre_submit_credit_total": 5685,
+  "post_submit_credit_total": 5685,
+  "credit_delta": 0,
+  "credit_reconciliation_passed": false,
+  "credit_reconciliation_expected_failure_reason": "provider_credit_count_absent_after_definitive_prequeue_upload_failure",
+  "authority_activated": true,
+  "authority_closed": true,
+  "execution_authority_active": false,
+  "provider_command_allowed": false,
+  "F07_authorized": false,
+  "state_consistency_verified": true,
+  "F07_submit_attempt_count": 1,
+  "total_submit_count": 14,
+  "completed_fixed_task_count": 13,
+  "remaining_fixed_task_count": 71,
+  "query_count": 0,
+  "download_count": 0,
+  "retry_count": 0,
+  "resubmit_count": 0,
+  "batch_count": 0,
+  "F08_count": 0,
+  "protected_hashes": {
+    "sources/AI\u89c6\u9891\u5236\u4f5c_Source\u7d22\u5f15\u4e0e\u4f7f\u7528\u4f18\u5148\u7ea7_V1.12.md": {
+      "expected_sha256": "e13a98c4a12fab8ba3267b3074acf103e1458798fb865b6363ee3e732d275022",
+      "actual_sha256": "e13a98c4a12fab8ba3267b3074acf103e1458798fb865b6363ee3e732d275022",
+      "verified": true
+    },
+    "sources/AI\u89c6\u9891\u5236\u4f5c_\u6b63\u5f0f\u6388\u6743\u5e8f\u5217\u5316\u4e0e\u5b8c\u6574\u6027\u6821\u9a8c\u89c4\u5219_V0.1.md": {
+      "expected_sha256": "f5471b851c6966e6de73ea552b42f4cd00d06af6aec5164ccf47beb373368572",
+      "actual_sha256": "f5471b851c6966e6de73ea552b42f4cd00d06af6aec5164ccf47beb373368572",
+      "verified": true
+    },
+    "experiments/CAL-001/datasets/CAL001_experiment_results_template.csv": {
+      "expected_sha256": "f1d183267b24997bb848ff83abd9231b53d84ae82e715d9e4d9b5c2b3de3ff3b",
+      "actual_sha256": "f1d183267b24997bb848ff83abd9231b53d84ae82e715d9e4d9b5c2b3de3ff3b",
+      "verified": true
+    },
+    "experiments/CAL-001/datasets/CAL001_visual_review_template.jsonl": {
+      "expected_sha256": "6f86873a445021f88503625008550c99e7a2ef323acde500d38ccd6a5e5c693a",
+      "actual_sha256": "6f86873a445021f88503625008550c99e7a2ef323acde500d38ccd6a5e5c693a",
+      "verified": true
+    },
+    "experiments/CAL-001/manifests/CAL001A_fixed_84_task_manifest.csv": {
+      "expected_sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+      "actual_sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+      "verified": true
+    },
+    "experiments/CAL-001/prompts/F07/CAL001-F07-P1_prompt.txt": {
+      "expected_sha256": "094a01dee03f49b65badf1864873f2b85a74a9b801f6a26621a84fb0c409f681",
+      "actual_sha256": "094a01dee03f49b65badf1864873f2b85a74a9b801f6a26621a84fb0c409f681",
+      "verified": true
+    },
+    "experiments/CAL-001/packages/F07/CAL001-F07-P1-R1_package.json": {
+      "expected_sha256": "daf6ff398ffbc960c06e7d577f9de9e2dfdd9719863074c089a03158dc8adc64",
+      "actual_sha256": "daf6ff398ffbc960c06e7d577f9de9e2dfdd9719863074c089a03158dc8adc64",
+      "verified": true
+    },
+    "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png": {
+      "expected_sha256": "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f",
+      "actual_sha256": "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f",
+      "verified": true
+    },
+    "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png": {
+      "expected_sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11",
+      "actual_sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11",
+      "verified": true
+    },
+    "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png": {
+      "expected_sha256": "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452",
+      "actual_sha256": "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452",
+      "verified": true
+    }
+  },
+  "sources_clean": true,
+  "datasets_modified": false,
+  "Prompt_package_manifest_modified": false,
+  "local_media_modified": false,
+  "output_run_directory_created": false,
+  "sensitive_pattern_hits": {
+    "http_url": false,
+    "access_token": false,
+    "refresh_token": false,
+    "bearer_header": false,
+    "cookie_field": false,
+    "raw_provider_prompt": false
+  },
+  "unredacted_sensitive_content_detected": false,
+  "temporary_files_present": false,
+  "tracked_diff_paths": [
+    "experiments/CAL-001/execution_state/CAL001_P3C_remaining_77_resumable_execution_state_contract.json"
+  ],
+  "final_master": false,
+  "locked": false,
+  "validation_passed_for_failed_submit_receipt": true,
+  "state_sha256": "642027f9ff3f3adfa3ce04fdcba2405536c19e9949916dbe08649e11be72b16e",
+  "revalidated_at": "2026-07-20T10:00:29.419234Z"
+}

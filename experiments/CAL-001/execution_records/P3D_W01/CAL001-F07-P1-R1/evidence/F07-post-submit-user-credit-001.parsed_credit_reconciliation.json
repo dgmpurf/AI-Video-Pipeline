@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "operation_id": "F07-post-submit-user-credit-001",
+  "experiment_id": "CAL001-F07-P1-R1",
+  "subprocess_exit_code": 0,
+  "pre_submit_credit_total": 5685,
+  "post_submit_credit_total": 5685,
+  "post_balance_numeric": true,
+  "observed_credit_delta": 0,
+  "provider_credit_count": null,
+  "credit_reconciliation": {
+    "passed": false,
+    "classification": "provider_credit_count_absent",
+    "immediate_pre_submit_balance": 5685,
+    "immediate_post_submit_balance": 5685,
+    "observed_credit_delta": 0,
+    "provider_credit_count_numeric": null,
+    "stop_condition": "Provider credit_count is absent."
+  },
+  "credit_reconciliation_passed": false,
+  "failure_markers": [],
+  "account_identifiers_persisted": false,
+  "sanitized_evidence_envelope_path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-post-submit-user-credit-001.subprocess_envelope.json",
+  "user_credit_total_phase_count": 2,
+  "query_count": 0,
+  "download_count": 0,
+  "retry_count": 0,
+  "resubmit_count": 0,
+  "parsed_at": "2026-07-20T09:55:31.477220Z"
+}

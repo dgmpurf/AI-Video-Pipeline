@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "operation_id": "F07-post-submit-user-credit-001",
+  "experiment_id": "CAL001-F07-P1-R1",
+  "command_type": "dreamina_user_credit",
+  "operation_kind": "post_submit_credit_reconciliation",
+  "started_at": "2026-07-20T09:55:28.367277Z",
+  "completed_at": "2026-07-20T09:55:31.474220Z",
+  "subprocess_exit_code": 0,
+  "sanitized_stdout": "{\n  \"total_credit\": 5685,\n  \"user_id\": \"<redacted_account_identifier>\",\n  \"user_name\": \"<redacted_account_name>\",\n  \"vip_level\": \"maestro\"\n}\n",
+  "sanitized_stderr": "",
+  "stdout_sha256": "1d53fe2396f8265cd2098c0c04fbe63d323e22b3a8398dfecd947738689a7235",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "hash_scope": "sanitized_utf8",
+  "command_structure_without_prompt_or_secrets": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "user_credit"
+  ],
+  "evidence_persisted_at": "2026-07-20T09:55:31.474220Z"
+}
