@@ -1,0 +1,15 @@
+{
+  "credit_delta": 0,
+  "exact_70_credit_reconciliation_passed": false,
+  "exception_class": null,
+  "experiment_id": "CAL001-F07-P1-R1",
+  "failure_markers": [],
+  "operation_id": "F07-recovery-post-submit-user-credit-001",
+  "parsed_at": "2026-07-20T13:03:15.042303Z",
+  "post_submit_credit_total": 5685,
+  "post_submit_user_credit_call_count": 1,
+  "pre_submit_credit_total": 5685,
+  "provider_credit_count": null,
+  "schema_version": "1.0",
+  "subprocess_exit_code": 0
+}

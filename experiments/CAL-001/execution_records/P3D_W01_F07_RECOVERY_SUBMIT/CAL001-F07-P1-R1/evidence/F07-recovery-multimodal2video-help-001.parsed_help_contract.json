@@ -1,0 +1,28 @@
+{
+  "command_type": "multimodal2video",
+  "experiment_id": "CAL001-F07-P1-R1",
+  "failure_markers": [],
+  "operation_id": "F07-recovery-multimodal2video-help-001",
+  "parsed_at": "2026-07-20T12:59:15.979590Z",
+  "required_flags": {
+    "--duration": true,
+    "--image": true,
+    "--model_version": true,
+    "--poll": true,
+    "--prompt": true,
+    "--ratio": true,
+    "--video_resolution": true
+  },
+  "required_semantics": {
+    "duration_5_supported": true,
+    "poll_zero_disables_polling": true,
+    "ratio_16_9_supported": true,
+    "repeated_image_supported": true,
+    "seedance2_0_vip_supported": true,
+    "three_images_within_limit": true,
+    "video_resolution_720p_supported": true
+  },
+  "runtime_help_contract_passed": true,
+  "schema_version": "1.0",
+  "subprocess_exit_code": 0
+}

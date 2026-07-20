@@ -1,0 +1,13 @@
+{
+  "build_time": "2026-06-26T06:36:39Z",
+  "commit": "2a20fff",
+  "experiment_id": "CAL001-F07-P1-R1",
+  "failure_markers": [],
+  "logger_access_denied": false,
+  "operation_id": "F07-recovery-version-001",
+  "parsed_at": "2026-07-20T12:59:10.540033Z",
+  "schema_version": "1.0",
+  "subprocess_exit_code": 0,
+  "version": "2a20fff-dirty",
+  "version_preflight_passed": true
+}

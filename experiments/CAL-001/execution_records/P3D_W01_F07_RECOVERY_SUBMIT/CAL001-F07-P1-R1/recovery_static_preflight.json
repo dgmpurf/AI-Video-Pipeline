@@ -1,0 +1,169 @@
+{
+  "F08_called": false,
+  "activation_eligible": true,
+  "authorization_evidence_verified": true,
+  "authorization_sha256": "b88d2da23e15ffe353d2d7ab76c12862ac6be3cff7f305ac9aee1e55544c2958",
+  "authorization_text_verified": true,
+  "batch_called": false,
+  "branch": "main",
+  "checkpoint_binding_verified": true,
+  "diagnostic_binding": {
+    "one_recovery_submit_supportable": true,
+    "primary_classification": "MIXED_OR_UNKNOWN_UPLOAD_TRANSPORT_FAILURE",
+    "recommended_route": "ROUTE_A_ONE_HUMAN_AUTHORIZED_RECOVERY_SUBMIT",
+    "report_path": "reports/PHASE_CAL001_P3D_W01_F07_PREQUEUE_UPLOAD_FAILURE_NARROW_LOCAL_LOG_DIAGNOSTIC_NO_LIVE_RESULT.md",
+    "report_sha256": "30346e2d7f357626b8b7ccaa078b656b329b8b65ee791c60c6e57a10671b2bfb",
+    "third_F07_submit_recommended": false
+  },
+  "download_called": false,
+  "dreamina_command_count_before_live_preflight": 0,
+  "dreamina_executable": {
+    "bytes": 31879680,
+    "path": "C:/Users/msjpurf/bin/dreamina.exe",
+    "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10",
+    "verified": true
+  },
+  "experiment_id": "CAL001-F07-P1-R1",
+  "final_master": false,
+  "fixed_definition": {
+    "argv_binding_sha256": "e79a1d40c9b1e31e019fceb138fe42c455e7235325f1a7b5bc9ebb58e2e956f5",
+    "duration": 5,
+    "expected_credit_cost": 70,
+    "expected_result_images_count": 0,
+    "expected_result_videos_count": 1,
+    "manifest_path": "experiments/CAL-001/manifests/CAL001A_fixed_84_task_manifest.csv",
+    "manifest_row_sha256": "84461634b31d8bfa7007376cbbe0c017be4a282abc3048872445e4a1fa9efab6",
+    "manifest_sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+    "model_version": "seedance2.0_vip",
+    "operation": "multimodal2video",
+    "ordered_inputs": [
+      {
+        "bytes": 1959523,
+        "duty": "IDENTITY_A",
+        "order": 1,
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+        "readable": true,
+        "sha256": "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f"
+      },
+      {
+        "bytes": 3874061,
+        "duty": "IDENTITY_B",
+        "order": 2,
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+        "readable": true,
+        "sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11"
+      },
+      {
+        "bytes": 4147285,
+        "duty": "SCENE",
+        "order": 3,
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+        "readable": true,
+        "sha256": "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452"
+      }
+    ],
+    "package_path": "experiments/CAL-001/packages/F07/CAL001-F07-P1-R1_package.json",
+    "package_sha256": "daf6ff398ffbc960c06e7d577f9de9e2dfdd9719863074c089a03158dc8adc64",
+    "poll": 0,
+    "pre_submit_credit_floor": 5530,
+    "prompt_file_sha256": "094a01dee03f49b65badf1864873f2b85a74a9b801f6a26621a84fb0c409f681",
+    "prompt_path": "experiments/CAL-001/prompts/F07/CAL001-F07-P1_prompt.txt",
+    "provider_prompt_chars": 519,
+    "provider_prompt_final_lf_included": true,
+    "provider_prompt_sha256": "ca90c5b50b7d244b6264b8ed3f23d4043bf490d25d672e2d05cfad49b487594a",
+    "ratio": "16:9",
+    "video_resolution": "720p"
+  },
+  "focused_compiler_tests": {
+    "failed": 0,
+    "passed": 124
+  },
+  "head_origin_aligned": true,
+  "locked": false,
+  "offline_preflight_passed": true,
+  "old_handle_quarantine": {
+    "credit_consumed": 0,
+    "download_eligible": false,
+    "old_submit_id": "5a69007b-ac19-4cef-86bc-41d19792149f",
+    "provider_task_created": false,
+    "quarantined": true,
+    "query_eligible": false,
+    "reuse_authorized": false
+  },
+  "origin_main": "e4527c4c2cccae250ec65a4945bc2e802eb14fb7",
+  "phase_id": "CAL-001-P3D-W01_F07_ONE_HUMAN_AUTHORIZED_RECOVERY_MULTIMODAL2VIDEO_SUBMIT_ONLY",
+  "protected_hashes": {
+    "experiments/CAL-001/datasets/CAL001_experiment_results_template.csv": {
+      "actual_sha256": "f1d183267b24997bb848ff83abd9231b53d84ae82e715d9e4d9b5c2b3de3ff3b",
+      "expected_sha256": "f1d183267b24997bb848ff83abd9231b53d84ae82e715d9e4d9b5c2b3de3ff3b",
+      "verified": true
+    },
+    "experiments/CAL-001/datasets/CAL001_visual_review_template.jsonl": {
+      "actual_sha256": "6f86873a445021f88503625008550c99e7a2ef323acde500d38ccd6a5e5c693a",
+      "expected_sha256": "6f86873a445021f88503625008550c99e7a2ef323acde500d38ccd6a5e5c693a",
+      "verified": true
+    },
+    "experiments/CAL-001/execution_state/CAL001_P3C_remaining_77_resumable_execution_state_contract.json": {
+      "actual_sha256": "642027f9ff3f3adfa3ce04fdcba2405536c19e9949916dbe08649e11be72b16e",
+      "expected_sha256": "642027f9ff3f3adfa3ce04fdcba2405536c19e9949916dbe08649e11be72b16e",
+      "verified": true
+    },
+    "experiments/CAL-001/manifests/CAL001A_fixed_84_task_manifest.csv": {
+      "actual_sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+      "expected_sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+      "verified": true
+    },
+    "experiments/CAL-001/packages/F07/CAL001-F07-P1-R1_package.json": {
+      "actual_sha256": "daf6ff398ffbc960c06e7d577f9de9e2dfdd9719863074c089a03158dc8adc64",
+      "expected_sha256": "daf6ff398ffbc960c06e7d577f9de9e2dfdd9719863074c089a03158dc8adc64",
+      "verified": true
+    },
+    "experiments/CAL-001/prompts/F07/CAL001-F07-P1_prompt.txt": {
+      "actual_sha256": "094a01dee03f49b65badf1864873f2b85a74a9b801f6a26621a84fb0c409f681",
+      "expected_sha256": "094a01dee03f49b65badf1864873f2b85a74a9b801f6a26621a84fb0c409f681",
+      "verified": true
+    }
+  },
+  "provider_submit_invocation_occurred": false,
+  "query_called": false,
+  "record_type": "CAL001_F07_RECOVERY_STATIC_PREFLIGHT",
+  "recorded_at": "2026-07-20T12:58:10.679226Z",
+  "repository": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+  "resubmit_called": false,
+  "retry_called": false,
+  "schema_version": "1.0",
+  "source_hashes": {
+    "e13a98c4a12fab8ba3267b3074acf103e1458798fb865b6363ee3e732d275022": {
+      "label": "Source Index V1.12",
+      "relative_path": "sources/AI\u89c6\u9891\u5236\u4f5c_Source\u7d22\u5f15\u4e0e\u4f7f\u7528\u4f18\u5148\u7ea7_V1.12.md",
+      "verified": true
+    },
+    "f5471b851c6966e6de73ea552b42f4cd00d06af6aec5164ccf47beb373368572": {
+      "label": "Authorization Source V0.1",
+      "relative_path": "sources/AI\u89c6\u9891\u5236\u4f5c_\u6b63\u5f0f\u6388\u6743\u5e8f\u5217\u5316\u4e0e\u5b8c\u6574\u6027\u6821\u9a8c\u89c4\u5219_V0.1.md",
+      "verified": true
+    }
+  },
+  "sources_clean": true,
+  "staged_file_count": 0,
+  "starting_head": "e4527c4c2cccae250ec65a4945bc2e802eb14fb7",
+  "state_preflight": {
+    "F07_authorized": false,
+    "F07_download_count": 0,
+    "F07_query_count": 0,
+    "F07_submit_attempt_count": 1,
+    "activation_state": "STOPPED_AUTHORITY_CLOSED",
+    "completed_fixed_task_count": 13,
+    "execution_authority_active": false,
+    "final_master": false,
+    "locked": false,
+    "macro_state": "STOPPED_AUTHORITY_CLOSED",
+    "remaining_fixed_task_count": 71,
+    "resubmit_count": 0,
+    "retry_count": 0,
+    "state_sha256": "642027f9ff3f3adfa3ce04fdcba2405536c19e9949916dbe08649e11be72b16e",
+    "total_submit_count": 14
+  },
+  "temporary_worktree_count": 0,
+  "tracked_dirty_file_count": 0
+}

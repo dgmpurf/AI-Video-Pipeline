@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F07_RECOVERY_SUBMIT_EVIDENCE_MANIFEST",
+  "phase_id": "CAL-001-P3D-W01_F07_ONE_HUMAN_AUTHORIZED_RECOVERY_MULTIMODAL2VIDEO_SUBMIT_ONLY",
+  "experiment_id": "CAL001-F07-P1-R1",
+  "operation_id": "F07-recovery-submit-001",
+  "generated_at": "2026-07-20T13:15:27.202218Z",
+  "entry_count": 21,
+  "entries": [
+    {
+      "path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_F07_one_human_authorized_recovery_multimodal2video_submit_only_authorization.json",
+      "bytes": 11056,
+      "sha256": "1802ff0089f06c5968a3373ee1772a11b06ec8639d5dbfe1d8090e87fd3f27f5"
+    },
+    {
+      "path": "experiments/CAL-001/execution_state/CAL001_P3C_remaining_77_resumable_execution_state_contract.json",
+      "bytes": 291570,
+      "sha256": "54ff10de1d68cd82f4522c1984eb6f19fa30f8a6beececa618968d6ba30bee92"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1_recovery_submit_technical_execution_record.json",
+      "bytes": 13406,
+      "sha256": "8a8a5a94ad60a2be0c2dad510622cb8e38e7430a16127d4671db622d1e1ec1fe"
+    },
+    {
+      "path": "reports/PHASE_CAL001_P3D_W01_F07_ONE_HUMAN_AUTHORIZED_RECOVERY_MULTIMODAL2VIDEO_SUBMIT_ONLY_RESULT.md",
+      "bytes": 9484,
+      "sha256": "3d04270df7b20b56ccdf36ac04fb60b6a0a0bf489d94037cbea7234a55fc4e16"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-multimodal2video-help-001.parsed_help_contract.json",
+      "bytes": 801,
+      "sha256": "644714e094c7639a0796a518479d2726846c3284135c5ea5aaba32ee62e5f135"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-multimodal2video-help-001.subprocess_envelope.json",
+      "bytes": 1386,
+      "sha256": "7d00bb4c53fc3ce9deaa14dba4ea63a1b6d1ffffc77e1f0ef8212d72d6cab1bd"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-post-submit-user-credit-001.parsed_credit_reconciliation.json",
+      "bytes": 476,
+      "sha256": "f6c6b04d3771e5171a049aba9cef862cbf76bba68b39482caef7f4fdea6b0064"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-post-submit-user-credit-001.subprocess_envelope.json",
+      "bytes": 976,
+      "sha256": "85d9713d7b9ab82fd0d02856b9a04838dfe4cba1ae3e93ceb5daedba79095fcb"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-pre-submit-user-credit-001.parsed_credit.json",
+      "bytes": 488,
+      "sha256": "3c137bc83af2c605c6c4b8fc4c7e027afadba5d1791bd808c5f9a266f37f8225"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-pre-submit-user-credit-001.subprocess_envelope.json",
+      "bytes": 924,
+      "sha256": "b44b56e8f7e1351c9282acef315d20c84a1104ee952f90f2d3ef613bfc6fb983"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-submit-001.parsed_task_creation.json",
+      "bytes": 1254,
+      "sha256": "0f1f152e1dec29ac3cfc4b6ed1771f341da8f54269ebb4a3aebf72b5bea97ba1"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-submit-001.subprocess_envelope.json",
+      "bytes": 1854,
+      "sha256": "5aabd054448a37ad407d5d73728ddcceeb040af3cd4738b297f4a63278c220f0"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-version-001.parsed_version.json",
+      "bytes": 377,
+      "sha256": "b98c1095caed6eed392873210694332a67daa633a2e8ed448192bd3cd7b7f152"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-version-001.subprocess_envelope.json",
+      "bytes": 853,
+      "sha256": "fa185b90ed953c945e66273674ed29ac115c2543820e7fcbfb66369a0b32a9cd"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_authority_closure_record.json",
+      "bytes": 877,
+      "sha256": "08a55dc7bf6522923d106f6af459173447f8797c9a58766a1b58acdb63a5df53"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_bounded_activation_record.json",
+      "bytes": 1230,
+      "sha256": "5f40d8cc4bb9d5bf5b327bcbf6192328efd8968f869a568d13fa13510868028f"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_command_binding.json",
+      "bytes": 2442,
+      "sha256": "c5b81a5b6eaf2c27647fe048ff33b3d583030a51ec2a9ccb2ea4a1318b176d95"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_invocation_record.json",
+      "bytes": 969,
+      "sha256": "ecc503c389c92a1071e4d3c376f9338b60a76e1108c00160e6b3536eca0f5154"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_live_preflight_summary.json",
+      "bytes": 1024,
+      "sha256": "06c03c18cadca46719c92e4c325601b976103417aa607ee5bfd64eaa221c000d"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_static_preflight.json",
+      "bytes": 7448,
+      "sha256": "e94232e4d32de4ce9db4cfe8b7fda5da3f45ac814184e27881f990c5f4fc75d5"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_submit_result_summary.json",
+      "bytes": 1898,
+      "sha256": "72c4b6d84a99d8ec5bef54552ed4deb1bffc62c469a2be7c31c203832df48b53"
+    }
+  ],
+  "sanitized_evidence_only": true,
+  "sources_included": false,
+  "datasets_included": false,
+  "Prompt_package_manifest_included": false,
+  "media_included": false,
+  "historical_attempt_evidence_included": false,
+  "query_evidence_included": false,
+  "download_evidence_included": false,
+  "retry_evidence_included": false,
+  "resubmit_evidence_included": false,
+  "authority_closed": true,
+  "F07_CLI_submit_route_stopped": true,
+  "route_reset_required": true,
+  "third_F07_submit_permitted": false,
+  "final_master": false,
+  "locked": false
+}

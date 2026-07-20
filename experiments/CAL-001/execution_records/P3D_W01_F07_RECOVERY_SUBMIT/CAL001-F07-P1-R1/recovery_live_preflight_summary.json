@@ -1,0 +1,33 @@
+{
+  "F08_called": false,
+  "batch_called": false,
+  "block_reason": null,
+  "checklogin_called": false,
+  "command_counts": {
+    "help": 1,
+    "provider_submit": 0,
+    "user_credit": 1,
+    "version": 1
+  },
+  "credit_floor_passed": true,
+  "download_called": false,
+  "dreamina_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "dreamina_version_result": "2a20fff-dirty",
+  "experiment_id": "CAL001-F07-P1-R1",
+  "final_master": false,
+  "live_preflight_passed": true,
+  "locked": false,
+  "login_called": false,
+  "login_viability_verified": true,
+  "phase_id": "CAL-001-P3D-W01_F07_ONE_HUMAN_AUTHORIZED_RECOVERY_MULTIMODAL2VIDEO_SUBMIT_ONLY",
+  "pre_submit_credit_total": 5685,
+  "provider_submit_invocation_occurred": false,
+  "query_called": false,
+  "record_type": "CAL001_F07_RECOVERY_LIVE_PREFLIGHT_SUMMARY",
+  "recorded_at": "2026-07-20T12:59:15.982588Z",
+  "required_credit_floor": 5530,
+  "resubmit_called": false,
+  "retry_called": false,
+  "runtime_help_contract_passed": true,
+  "schema_version": "1.0"
+}

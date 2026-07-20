@@ -1,0 +1,23 @@
+{
+  "F07_authorized": false,
+  "authorized_operation_count_consumed": 1,
+  "closed_at": "2026-07-20T13:03:12.482534Z",
+  "closure_reason": "one_recovery_submit_invocation_consumed_regardless_of_result",
+  "download_authorized": false,
+  "execution_authority_active": false,
+  "experiment_id": "CAL001-F07-P1-R1",
+  "final_master": false,
+  "locked": false,
+  "operation_id": "F07-recovery-submit-001",
+  "phase_id": "CAL-001-P3D-W01_F07_ONE_HUMAN_AUTHORIZED_RECOVERY_MULTIMODAL2VIDEO_SUBMIT_ONLY",
+  "provider_command_allowed": false,
+  "provider_command_invocation_count": 1,
+  "query_authorized": false,
+  "record_type": "CAL001_F07_RECOVERY_AUTHORITY_CLOSURE",
+  "recovery_submit_authorized": false,
+  "resubmit_authorized": false,
+  "retry_authorized": false,
+  "schema_version": "1.0",
+  "second_recovery_submit_authorized": false,
+  "third_F07_submit_permitted": false
+}

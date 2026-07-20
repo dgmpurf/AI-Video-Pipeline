@@ -1,0 +1,21 @@
+{
+  "command_structure_without_prompt_or_secrets": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "multimodal2video",
+    "-h"
+  ],
+  "command_type": "dreamina_multimodal2video_help",
+  "completed_at": "2026-07-20T12:59:15.977076Z",
+  "evidence_persisted_at": "2026-07-20T12:59:15.977076Z",
+  "experiment_id": "CAL001-F07-P1-R1",
+  "hash_scope": "sanitized_utf8",
+  "operation_id": "F07-recovery-multimodal2video-help-001",
+  "operation_kind": "preflight",
+  "sanitized_stderr": "",
+  "sanitized_stdout": "{\n  \"required_flags\": {\n    \"--model_version\": true,\n    \"--ratio\": true,\n    \"--prompt\": true,\n    \"--duration\": true,\n    \"--video_resolution\": true,\n    \"--image\": true,\n    \"--poll\": true\n  },\n  \"required_semantics\": {\n    \"seedance2_0_vip_supported\": true,\n    \"duration_5_supported\": true,\n    \"ratio_16_9_supported\": true,\n    \"video_resolution_720p_supported\": true,\n    \"repeated_image_supported\": true,\n    \"three_images_within_limit\": true,\n    \"poll_zero_disables_polling\": true\n  },\n  \"all_required_contract_checks_passed\": true\n}\n",
+  "schema_version": "1.0",
+  "started_at": "2026-07-20T12:59:13.306346Z",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "c39401f71cd7f3f5183d1c4e20ca3469625064e87b40682f6ff41e3dd93744ba",
+  "subprocess_exit_code": 0
+}

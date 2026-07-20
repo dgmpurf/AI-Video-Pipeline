@@ -1,0 +1,296 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CAL001_F07_ONE_HUMAN_AUTHORIZED_RECOVERY_MULTIMODAL2VIDEO_SUBMIT_ONLY_TECHNICAL_EXECUTION_RECORD",
+  "phase_id": "CAL-001-P3D-W01_F07_ONE_HUMAN_AUTHORIZED_RECOVERY_MULTIMODAL2VIDEO_SUBMIT_ONLY",
+  "program_id": "CAL-001",
+  "macro_id": "CAL-001A",
+  "wave_id": "W01",
+  "task_id": "CAL001-F07-P1-R1",
+  "experiment_id": "CAL001-F07-P1-R1",
+  "operation_id": "F07-recovery-submit-001",
+  "recorded_at": "2026-07-20T13:15:27.151217Z",
+  "starting_head": "e4527c4c2cccae250ec65a4945bc2e802eb14fb7",
+  "decision": "FAILED",
+  "authorization": {
+    "record_path": "experiments/CAL-001/authorizations/CAL001_P3D_W01_F07_one_human_authorized_recovery_multimodal2video_submit_only_authorization.json",
+    "record_sha256": "1802ff0089f06c5968a3373ee1772a11b06ec8639d5dbfe1d8090e87fd3f27f5",
+    "authorization_text_sha256": "b88d2da23e15ffe353d2d7ab76c12862ac6be3cff7f305ac9aee1e55544c2958",
+    "authorization_byte_length": 1749,
+    "authorization_base64_length": 2332,
+    "authorization_base64_decode_count": 1,
+    "authorization_round_trip_verified": true,
+    "serialization_profile_valid": true,
+    "authorization_evidence_verified": true,
+    "record_representations_consistent": true,
+    "checkpoint_binding_verified": true,
+    "activation_eligible": true,
+    "compiler_tests_passed": 124,
+    "compiler_tests_failed": 0
+  },
+  "repository_preflight": {
+    "repository": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+    "branch": "main",
+    "local_head": "e4527c4c2cccae250ec65a4945bc2e802eb14fb7",
+    "origin_main": "e4527c4c2cccae250ec65a4945bc2e802eb14fb7",
+    "head_origin_aligned": true,
+    "sources_clean": true,
+    "protected_hashes_verified": true,
+    "historical_attempt_evidence_verified": true,
+    "old_F07_one_submit_only_state_preserved": true
+  },
+  "old_handle_quarantine": {
+    "submit_id": "5a69007b-ac19-4cef-86bc-41d19792149f",
+    "quarantined": true,
+    "provider_task_created": false,
+    "query_eligible": false,
+    "download_eligible": false,
+    "reuse_authorized": false
+  },
+  "diagnostic_route": {
+    "report_path": "reports/PHASE_CAL001_P3D_W01_F07_PREQUEUE_UPLOAD_FAILURE_NARROW_LOCAL_LOG_DIAGNOSTIC_NO_LIVE_RESULT.md",
+    "report_sha256": "30346e2d7f357626b8b7ccaa078b656b329b8b65ee791c60c6e57a10671b2bfb",
+    "primary_classification": "MIXED_OR_UNKNOWN_UPLOAD_TRANSPORT_FAILURE",
+    "recommended_route": "ROUTE_A_ONE_HUMAN_AUTHORIZED_RECOVERY_SUBMIT",
+    "one_recovery_submit_supportable_verified": true,
+    "maximum_recovery_submit_count": 1,
+    "third_F07_submit_recommended": false
+  },
+  "dreamina_environment": {
+    "executable": "C:/Users/msjpurf/bin/dreamina.exe",
+    "executable_bytes": 31879680,
+    "executable_sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10",
+    "version": "2a20fff-dirty",
+    "version_preflight_passed": true,
+    "login_viability_verified": true,
+    "runtime_help_contract_passed": true
+  },
+  "exact_task_binding": {
+    "operation_type": "multimodal2video",
+    "model": "seedance2.0_vip",
+    "duration": 5,
+    "ratio": "16:9",
+    "video_resolution": "720p",
+    "poll": 0,
+    "input_count": 3,
+    "input_order_verified": true,
+    "ordered_input_duties": [
+      "IDENTITY_A",
+      "IDENTITY_B",
+      "SCENE"
+    ],
+    "prompt_file_sha256": "094a01dee03f49b65badf1864873f2b85a74a9b801f6a26621a84fb0c409f681",
+    "provider_prompt_sha256": "ca90c5b50b7d244b6264b8ed3f23d4043bf490d25d672e2d05cfad49b487594a",
+    "package_sha256": "daf6ff398ffbc960c06e7d577f9de9e2dfdd9719863074c089a03158dc8adc64",
+    "manifest_sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+    "manifest_row_sha256": "84461634b31d8bfa7007376cbbe0c017be4a282abc3048872445e4a1fa9efab6",
+    "redacted_argv_sha256": "e79a1d40c9b1e31e019fceb138fe42c455e7235325f1a7b5bc9ebb58e2e956f5",
+    "argument_vector_used": true,
+    "shell_interpolation_used": false
+  },
+  "live_preflight": {
+    "dreamina_version_called": true,
+    "dreamina_version_count": 1,
+    "dreamina_version_result": "2a20fff-dirty",
+    "pre_submit_user_credit_called": true,
+    "pre_submit_credit_count": 1,
+    "pre_submit_credit_total": 5685,
+    "required_credit_floor": 5530,
+    "pre_submit_credit_floor_passed": true,
+    "login_viability_verified": true,
+    "multimodal2video_help_called": true,
+    "multimodal2video_help_count": 1,
+    "runtime_help_contract_passed": true
+  },
+  "submit": {
+    "provider_submit_called": true,
+    "provider_submit_invocation_count": 1,
+    "authorized_operation_count_consumed": 1,
+    "subprocess_exit_code": 0,
+    "old_submit_id": "5a69007b-ac19-4cef-86bc-41d19792149f",
+    "new_submit_id": "d5fa2ba3-f4b4-4a8f-9591-5b22b1fac463",
+    "new_submit_id_differs_from_old": true,
+    "new_submit_id_quarantined": true,
+    "logid": null,
+    "gen_status": "fail",
+    "queue_status": null,
+    "fail_reason": "upload resource \"productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png\": upload image: upload phase, no file upload, please check log for more details",
+    "failure_classification": "second_prequeue_upload_failure",
+    "failure_stage": "second_ordered_image_upload_prequeue",
+    "failed_input_index": 2,
+    "failed_input_role": "IDENTITY_B",
+    "upload_failure_detected": true,
+    "provider_credit_count": null,
+    "created_task_count": 0,
+    "provider_task_created": false,
+    "provider_task_creation_proven": false,
+    "strict_task_creation_acceptance_passed": false,
+    "new_gen_status_queryable_nonfail": false,
+    "query_eligible": false,
+    "download_eligible": false,
+    "recovery_submit_result_classification": "second_prequeue_upload_failure_route_reset_required"
+  },
+  "credit_reconciliation": {
+    "post_submit_user_credit_called": true,
+    "post_submit_credit_count": 1,
+    "post_submit_credit_total": 5685,
+    "credit_delta": 0,
+    "provider_credit_count": null,
+    "exact_70_credit_reconciliation_passed": false,
+    "total_user_credit_calls": 2
+  },
+  "authority_after": {
+    "authority_activated": true,
+    "authority_closed": true,
+    "execution_authority_active": false,
+    "provider_command_allowed": false,
+    "F07_authorized": false,
+    "query_authorized": false,
+    "download_authorized": false,
+    "retry_authorized": false,
+    "resubmit_authorized": false,
+    "batch_authorized": false,
+    "F08_authorized": false,
+    "second_recovery_submit_authorized": false,
+    "third_F07_submit_permitted": false
+  },
+  "state_update": {
+    "state_path": "experiments/CAL-001/execution_state/CAL001_P3C_remaining_77_resumable_execution_state_contract.json",
+    "state_pre_sha256": "642027f9ff3f3adfa3ce04fdcba2405536c19e9949916dbe08649e11be72b16e",
+    "state_post_sha256": "54ff10de1d68cd82f4522c1984eb6f19fa30f8a6beececa618968d6ba30bee92",
+    "F07_task_state": "recovery_submit_failed_route_reset_required",
+    "F07_submit_attempt_count": 2,
+    "F07_recovery_submit_attempt_count": 1,
+    "total_submit_count": 15,
+    "global_recovery_submit_invocation_count": 2,
+    "historical_submit_invocation_count_including_orphan_and_recovery": 16,
+    "completed_fixed_task_count": 13,
+    "remaining_fixed_task_count": 71,
+    "F07_query_count": 0,
+    "F07_download_count": 0,
+    "retry_count": 0,
+    "resubmit_count": 0,
+    "F07_CLI_submit_route_stopped": true,
+    "route_reset_required": true,
+    "third_F07_submit_permitted": false,
+    "old_F07_one_submit_only_state_preserved": true,
+    "state_consistency_verified": true
+  },
+  "command_counts": {
+    "F08": 0,
+    "batch": 0,
+    "checklogin": 0,
+    "download": 0,
+    "dreamina_multimodal2video_help": 1,
+    "dreamina_user_credit": 2,
+    "dreamina_version": 1,
+    "login": 0,
+    "provider_multimodal2video_recovery_submit": 1,
+    "query": 0,
+    "resubmit": 0,
+    "retry": 0
+  },
+  "protection": {
+    "sources_touched": false,
+    "datasets_modified": false,
+    "Prompt_package_manifest_modified": false,
+    "local_media_modified": false,
+    "output_run_directory_created": false,
+    "review_artifacts_created": false,
+    "historical_attempt_evidence_modified": false,
+    "raw_private_logs_read": false,
+    "sensitive_values_persisted": false
+  },
+  "evidence_index": [
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-multimodal2video-help-001.parsed_help_contract.json",
+      "bytes": 801,
+      "sha256": "644714e094c7639a0796a518479d2726846c3284135c5ea5aaba32ee62e5f135"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-multimodal2video-help-001.subprocess_envelope.json",
+      "bytes": 1386,
+      "sha256": "7d00bb4c53fc3ce9deaa14dba4ea63a1b6d1ffffc77e1f0ef8212d72d6cab1bd"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-post-submit-user-credit-001.parsed_credit_reconciliation.json",
+      "bytes": 476,
+      "sha256": "f6c6b04d3771e5171a049aba9cef862cbf76bba68b39482caef7f4fdea6b0064"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-post-submit-user-credit-001.subprocess_envelope.json",
+      "bytes": 976,
+      "sha256": "85d9713d7b9ab82fd0d02856b9a04838dfe4cba1ae3e93ceb5daedba79095fcb"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-pre-submit-user-credit-001.parsed_credit.json",
+      "bytes": 488,
+      "sha256": "3c137bc83af2c605c6c4b8fc4c7e027afadba5d1791bd808c5f9a266f37f8225"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-pre-submit-user-credit-001.subprocess_envelope.json",
+      "bytes": 924,
+      "sha256": "b44b56e8f7e1351c9282acef315d20c84a1104ee952f90f2d3ef613bfc6fb983"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-submit-001.parsed_task_creation.json",
+      "bytes": 1254,
+      "sha256": "0f1f152e1dec29ac3cfc4b6ed1771f341da8f54269ebb4a3aebf72b5bea97ba1"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-submit-001.subprocess_envelope.json",
+      "bytes": 1854,
+      "sha256": "5aabd054448a37ad407d5d73728ddcceeb040af3cd4738b297f4a63278c220f0"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-version-001.parsed_version.json",
+      "bytes": 377,
+      "sha256": "b98c1095caed6eed392873210694332a67daa633a2e8ed448192bd3cd7b7f152"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-version-001.subprocess_envelope.json",
+      "bytes": 853,
+      "sha256": "fa185b90ed953c945e66273674ed29ac115c2543820e7fcbfb66369a0b32a9cd"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_authority_closure_record.json",
+      "bytes": 877,
+      "sha256": "08a55dc7bf6522923d106f6af459173447f8797c9a58766a1b58acdb63a5df53"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_bounded_activation_record.json",
+      "bytes": 1230,
+      "sha256": "5f40d8cc4bb9d5bf5b327bcbf6192328efd8968f869a568d13fa13510868028f"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_command_binding.json",
+      "bytes": 2442,
+      "sha256": "c5b81a5b6eaf2c27647fe048ff33b3d583030a51ec2a9ccb2ea4a1318b176d95"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_invocation_record.json",
+      "bytes": 969,
+      "sha256": "ecc503c389c92a1071e4d3c376f9338b60a76e1108c00160e6b3536eca0f5154"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_live_preflight_summary.json",
+      "bytes": 1024,
+      "sha256": "06c03c18cadca46719c92e4c325601b976103417aa607ee5bfd64eaa221c000d"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_static_preflight.json",
+      "bytes": 7448,
+      "sha256": "e94232e4d32de4ce9db4cfe8b7fda5da3f45ac814184e27881f990c5f4fc75d5"
+    },
+    {
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_submit_result_summary.json",
+      "bytes": 1898,
+      "sha256": "72c4b6d84a99d8ec5bef54552ed4deb1bffc62c469a2be7c31c203832df48b53"
+    }
+  ],
+  "evidence_manifest_path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/recovery_evidence_manifest.json",
+  "report_path": "reports/PHASE_CAL001_P3D_W01_F07_ONE_HUMAN_AUTHORIZED_RECOVERY_MULTIMODAL2VIDEO_SUBMIT_ONLY_RESULT.md",
+  "recommended_next_phase": "CAL-001-P3D-W01_F07_CLI_SUBMIT_ROUTE_RESET_HUMAN_DECISION",
+  "final_verdict": "CAL001_P3D_W01_F07_RECOVERY_SECOND_PREQUEUE_UPLOAD_FAILURE_CLI_SUBMIT_ROUTE_STOPPED_ROUTE_RESET_REQUIRED_NO_THIRD_SUBMIT",
+  "final_master": false,
+  "locked": false
+}

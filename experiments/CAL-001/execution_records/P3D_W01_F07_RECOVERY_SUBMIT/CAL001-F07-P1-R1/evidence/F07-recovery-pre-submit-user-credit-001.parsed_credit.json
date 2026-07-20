@@ -1,0 +1,15 @@
+{
+  "account_identifiers_persisted": false,
+  "balance_gate_passed": true,
+  "balance_numeric": true,
+  "experiment_id": "CAL001-F07-P1-R1",
+  "failure_markers": [],
+  "login_viability_verified": true,
+  "operation_id": "F07-recovery-pre-submit-user-credit-001",
+  "parsed_at": "2026-07-20T12:59:13.302346Z",
+  "pre_submit_credit_preflight_passed": true,
+  "pre_submit_credit_total": 5685,
+  "required_minimum_live_balance": 5530,
+  "schema_version": "1.0",
+  "subprocess_exit_code": 0
+}

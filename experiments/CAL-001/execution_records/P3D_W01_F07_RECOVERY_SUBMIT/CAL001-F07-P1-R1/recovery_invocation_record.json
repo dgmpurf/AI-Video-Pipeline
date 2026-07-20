@@ -1,0 +1,22 @@
+{
+  "F08_count": 0,
+  "argument_vector_used": true,
+  "argv_binding_sha256": "e79a1d40c9b1e31e019fceb138fe42c455e7235325f1a7b5bc9ebb58e2e956f5",
+  "authority_closed_before_response_interpretation": true,
+  "authorized_operation_count_consumed": 1,
+  "batch_count": 0,
+  "completed_at": "2026-07-20T13:03:12.478830Z",
+  "download_count": 0,
+  "experiment_id": "CAL001-F07-P1-R1",
+  "operation_id": "F07-recovery-submit-001",
+  "phase_id": "CAL-001-P3D-W01_F07_ONE_HUMAN_AUTHORIZED_RECOVERY_MULTIMODAL2VIDEO_SUBMIT_ONLY",
+  "provider_command_invocation_count": 1,
+  "query_count": 0,
+  "record_type": "CAL001_F07_RECOVERY_INVOCATION_RECORD",
+  "resubmit_count": 0,
+  "retry_count": 0,
+  "schema_version": "1.0",
+  "shell_interpolation_used": false,
+  "started_at": "2026-07-20T13:01:39.354529Z",
+  "subprocess_envelope_path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-submit-001.subprocess_envelope.json"
+}
