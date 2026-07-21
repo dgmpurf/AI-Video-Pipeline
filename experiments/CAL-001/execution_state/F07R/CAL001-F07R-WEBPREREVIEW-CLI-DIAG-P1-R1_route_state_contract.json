@@ -1,0 +1,192 @@
+{
+  "authority_flags": {
+    "batch_authorized": false,
+    "binding_active": false,
+    "binding_authorized": false,
+    "download_authorized": false,
+    "execution_authority_active": false,
+    "final_master": false,
+    "locked": false,
+    "package_active": false,
+    "package_authorized": false,
+    "provider_command_allowed": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "batch_authorized": false,
+  "binding_active": false,
+  "binding_audit_accepted": false,
+  "binding_audit_complete": false,
+  "binding_authorized": false,
+  "binding_byte_length": 20808,
+  "binding_exists": true,
+  "binding_object_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1::EXECUTION_BINDING::V1",
+  "binding_path": "experiments/CAL-001/execution_bindings/F07R/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_execution_binding.json",
+  "binding_record_type": "CAL001_F07R_IMMUTABLE_EXECUTION_BINDING",
+  "binding_reference": {
+    "byte_length": 20808,
+    "object_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1::EXECUTION_BINDING::V1",
+    "path": "experiments/CAL-001/execution_bindings/F07R/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_execution_binding.json",
+    "record_type": "CAL001_F07R_IMMUTABLE_EXECUTION_BINDING",
+    "schema_version": "CAL001_F07R_EXECUTION_BINDING_V1",
+    "sha256": "52ac7c5aefb1f89993b511796b7fe58a40c030b475188750584b1b53a30e618d"
+  },
+  "binding_schema_version": "CAL001_F07R_EXECUTION_BINDING_V1",
+  "binding_sha256": "52ac7c5aefb1f89993b511796b7fe58a40c030b475188750584b1b53a30e618d",
+  "creation_authorization_reference": {
+    "authority_activation": false,
+    "byte_length": 3930,
+    "required_checkpoint": "13cc1e0dadd83ab6857d3ff34f4b3c6b56650ae4",
+    "sha256": "e94c80f87d4e91769c7a1df1f71cd745c93121f1de9e75f6a0b9746d63bb184f"
+  },
+  "creation_phase": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_EXECUTION_BINDING_AND_ROUTE_STATE_NO_LIVE_CREATION",
+  "download_authorized": false,
+  "execution_authority_active": false,
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "final_master": false,
+  "fixed_accounting_references": {
+    "CAL001_completed_fixed_task_count": 13,
+    "CAL001_global_state_source": {
+      "byte_length": 291570,
+      "git_blob": "e1589144e8d9feb3f12cdd3a77ccc7b6367f7aba",
+      "git_commit": "cb413bc53ff7f05585d556377a9ba813ab3495ff",
+      "path": "experiments/CAL-001/execution_state/CAL001_P3C_remaining_77_resumable_execution_state_contract.json",
+      "sha256": "54ff10de1d68cd82f4522c1984eb6f19fa30f8a6beececa618968d6ba30bee92"
+    },
+    "fixed_manifest_completed_task_count": 13,
+    "fixed_manifest_source": {
+      "byte_length": 106215,
+      "git_blob": "b7978e244f8b7c9666f9150b9be60784b9357952",
+      "git_commit": "aeea1614fa1e5fe9d2a6669d8e3d0b3832ee8176",
+      "path": "experiments/CAL-001/manifests/CAL001A_fixed_84_task_manifest.csv",
+      "sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d"
+    },
+    "fixed_manifest_task_count": 84,
+    "observed_at_source_checkpoint": "13cc1e0dadd83ab6857d3ff34f4b3c6b56650ae4",
+    "original_F07_recovery_submit_count": 1,
+    "original_F07_submit_count": 2,
+    "reference_mode": "read_only",
+    "write_back_path": null
+  },
+  "immutability_contract": {
+    "C1_commit_sha_stored": false,
+    "canonical_serializer": "app.ai_video_pipeline.execution.f07r_support_contract.canonical_json_bytes",
+    "in_place_mutation_allowed": false,
+    "replacement_requires_new_version_object_id_path_audit_and_authorization": true,
+    "self_hash_stored": false
+  },
+  "immutable": true,
+  "locked": false,
+  "object_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1::ROUTE_STATE::V1",
+  "operation_counters": {
+    "route_batch_invocation_count": 0,
+    "route_credit_charged_total": 0,
+    "route_download_invocation_count": 0,
+    "route_provider_submit_invocation_count": 0,
+    "route_provider_task_created_count": 0,
+    "route_query_invocation_count": 0,
+    "route_resubmit_invocation_count": 0,
+    "route_retry_invocation_count": 0
+  },
+  "original_F07_preservation": {
+    "experiment_id": "CAL001-F07-P1-R1",
+    "original_recovery_submit_count": 1,
+    "original_route_closed": true,
+    "original_submit_count": 2,
+    "quarantined_handles": [
+      {
+        "created_task_count": 0,
+        "download_eligible": false,
+        "evidence_source": {
+          "byte_length": 2160,
+          "git_blob": "61b55c002c8de89970a3b8de122af9e549b755d0",
+          "git_commit": "fa8e3e5e8fc696b343680b380b52481d816a5f21",
+          "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-submit-001.parsed_task_creation.json",
+          "sha256": "2d5c9917538cfca2dcc4a097e07fa9be606b1251fb6a6d3a6710367e6b82ddde"
+        },
+        "handle_role": "initial_orphaned_submit_id",
+        "provider_task_created": false,
+        "query_eligible": false,
+        "reuse_authorized": false,
+        "submit_id": "5a69007b-ac19-4cef-86bc-41d19792149f"
+      },
+      {
+        "created_task_count": 0,
+        "download_eligible": false,
+        "evidence_source": {
+          "byte_length": 1254,
+          "git_blob": "d77596b15e0bb87e5ca865b4f7947b685fa53730",
+          "git_commit": "cb413bc53ff7f05585d556377a9ba813ab3495ff",
+          "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-submit-001.parsed_task_creation.json",
+          "sha256": "0f1f152e1dec29ac3cfc4b6ed1771f341da8f54269ebb4a3aebf72b5bea97ba1"
+        },
+        "handle_role": "recovery_orphaned_submit_id",
+        "provider_task_created": false,
+        "query_eligible": false,
+        "reuse_authorized": false,
+        "submit_id": "d5fa2ba3-f4b4-4a8f-9591-5b22b1fac463"
+      }
+    ],
+    "route_reset_required": true,
+    "third_original_F07_submit_permitted": false
+  },
+  "package_active": false,
+  "package_authorized": false,
+  "preflight_executed": false,
+  "provider_command_allowed": false,
+  "provider_eligibility": false,
+  "query_authorized": false,
+  "record_type": "CAL001_F07R_IMMUTABLE_INITIAL_ROUTE_STATE",
+  "resubmit_authorized": false,
+  "retry_authorized": false,
+  "route_batch_invocation_count": 0,
+  "route_closed": false,
+  "route_credit_charged_total": 0,
+  "route_download_invocation_count": 0,
+  "route_experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "route_maxima": {
+    "expected_maximum_provider_credit_cost": 70,
+    "route_batch_invocation_max": 0,
+    "route_download_invocation_max": 0,
+    "route_provider_submit_allowance_max": 1,
+    "route_provider_submit_invocation_max": 1,
+    "route_provider_task_created_max": 1,
+    "route_query_invocation_max": 0,
+    "route_resubmit_invocation_max": 0,
+    "route_retry_invocation_max": 0
+  },
+  "route_provider_submit_allowance_consumed": false,
+  "route_provider_submit_allowance_max": 1,
+  "route_provider_submit_invocation_count": 0,
+  "route_provider_task_created_count": 0,
+  "route_query_invocation_count": 0,
+  "route_resubmit_invocation_count": 0,
+  "route_retry_invocation_count": 0,
+  "route_state_exists": true,
+  "route_status": "binding_created_not_audited",
+  "route_status_code": "BINDING_CREATED_NOT_AUDITED",
+  "route_terminal_reason": null,
+  "schema_version": "CAL001_F07R_ROUTE_STATE_V1",
+  "source_checkpoint_commit": "13cc1e0dadd83ab6857d3ff34f4b3c6b56650ae4",
+  "source_checkpoint_tree_sha": "5a1425b99cb4374773de25b7ea3212b34dcfed6d",
+  "submit_authorized": false,
+  "support_contract_reference": {
+    "byte_length": 65609,
+    "final_audit_commit": "13cc1e0dadd83ab6857d3ff34f4b3c6b56650ae4",
+    "final_audit_decision": "SUPPORT_CONTRACT_MATERIAL_GAP_CORRECTION_R2_AUDIT_ACCEPTED_WITH_NONBLOCKING_NOTES",
+    "final_audit_report": {
+      "byte_length": 25979,
+      "git_blob": "529a9358c530cde4064c6df0f5101171b1f4e891",
+      "git_commit": "13cc1e0dadd83ab6857d3ff34f4b3c6b56650ae4",
+      "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_EXECUTION_SUPPORT_CONTRACT_MATERIAL_GAP_CORRECTION_R2_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+      "sha256": "5e84743943605cb32dc1c24ff32ad33823cde243e288666bd271aa4a048ad12d"
+    },
+    "git_blob": "a99078026bd19779c441b29d2139c2a629bd10a4",
+    "git_commit": "8894ffe93c0e97d050ebf6bc0e66aaf442a18393",
+    "path": "app/ai_video_pipeline/execution/f07r_support_contract.py",
+    "runtime_integration_created": false,
+    "sha256": "ceaca7e52864865a91864a7b3053c67b4aa16fdf6b12d9705fe1083b8e9bcda4"
+  }
+}

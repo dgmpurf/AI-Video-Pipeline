@@ -1,0 +1,459 @@
+{
+  "accepted_package": {
+    "authority_flags": {
+      "authorized_operation_count_consumed": 0,
+      "batch_authorized": false,
+      "download_authorized": false,
+      "execution_authority_active": false,
+      "final_master": false,
+      "human_package_acceptance": false,
+      "locked": false,
+      "no_submit": true,
+      "package_active": false,
+      "package_authorized": false,
+      "provider_command_allowed": false,
+      "provider_command_invocation_count": 0,
+      "query_authorized": false,
+      "resubmit_authorized": false,
+      "retry_authorized": false,
+      "submit_authorized": false
+    },
+    "byte_length": 9622,
+    "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+    "git_blob": "844435a89321014046d0f059f450ca7ff11a675f",
+    "git_commit": "5dd6a8413e2f2c8656001fec076996b61dade415",
+    "path": "experiments/CAL-001/packages/F07R/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_package.json",
+    "sha256": "17c65280b7dad670954e7a4e3531f6c8362ad270ac1bc95ed3eff87db9f1edac"
+  },
+  "accepted_support_contract": {
+    "R2_implementation_report": {
+      "bounded_regression": {
+        "failed": 0,
+        "passed": 360,
+        "skipped": 1
+      },
+      "byte_length": 17750,
+      "decision": "SUPPORT_CONTRACT_MATERIAL_GAP_CORRECTION_R2_READY_INDEPENDENT_NO_LIVE_AUDIT",
+      "dedicated_tests": {
+        "failed": 0,
+        "passed": 200,
+        "skipped": 1
+      },
+      "git_blob": "ffd156eb778f22a6840696fd43faa2d5698bbc77",
+      "git_commit": "8894ffe93c0e97d050ebf6bc0e66aaf442a18393",
+      "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_EXECUTION_SUPPORT_CONTRACT_MATERIAL_GAP_CORRECTION_R2_NO_LIVE_IMPLEMENTATION_RESULT.md",
+      "sha256": "de116e0aacf56aa2c253159d3cbf2fd52f83def3d5a1e8f7b1b461abf427ad55"
+    },
+    "final_R2_independent_audit": {
+      "authoritative_probe_result": {
+        "failed": 0,
+        "passed": 355,
+        "total": 355
+      },
+      "blocking_defect_count": 0,
+      "byte_length": 25979,
+      "decision": "SUPPORT_CONTRACT_MATERIAL_GAP_CORRECTION_R2_AUDIT_ACCEPTED_WITH_NONBLOCKING_NOTES",
+      "git_blob": "529a9358c530cde4064c6df0f5101171b1f4e891",
+      "git_commit": "13cc1e0dadd83ab6857d3ff34f4b3c6b56650ae4",
+      "material_defect_count": 0,
+      "nonblocking_note_count": 1,
+      "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_EXECUTION_SUPPORT_CONTRACT_MATERIAL_GAP_CORRECTION_R2_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+      "platform_note": {
+        "classification": "NONBLOCKING_R2_CORRECTION_NOTE",
+        "id": "N-03",
+        "text": "POSIX permission-bit assertion remains skipped on Windows."
+      },
+      "sha256": "5e84743943605cb32dc1c24ff32ad33823cde243e288666bd271aa4a048ad12d"
+    },
+    "runtime_integration_created": false,
+    "support_module": {
+      "byte_length": 65609,
+      "git_blob": "a99078026bd19779c441b29d2139c2a629bd10a4",
+      "git_commit": "8894ffe93c0e97d050ebf6bc0e66aaf442a18393",
+      "path": "app/ai_video_pipeline/execution/f07r_support_contract.py",
+      "sha256": "ceaca7e52864865a91864a7b3053c67b4aa16fdf6b12d9705fe1083b8e9bcda4"
+    },
+    "test_file": {
+      "byte_length": 67079,
+      "git_blob": "dc0fef06092c3112a12719debfba6d595b47bfe4",
+      "git_commit": "8894ffe93c0e97d050ebf6bc0e66aaf442a18393",
+      "path": "tests/test_f07r_support_contract.py",
+      "sha256": "f3a25bbc478b5b2f124b98bece581a32cfa8db061d7a4b506eb62601c60f299e"
+    }
+  },
+  "authority_flags": {
+    "batch_authorized": false,
+    "binding_active": false,
+    "binding_authorized": false,
+    "download_authorized": false,
+    "execution_authority_active": false,
+    "final_master": false,
+    "locked": false,
+    "package_active": false,
+    "package_authorized": false,
+    "provider_command_allowed": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "batch_authorized": false,
+  "binding_active": false,
+  "binding_authorized": false,
+  "binding_version": 1,
+  "canonical_argv_binding": {
+    "argument_count": 20,
+    "established_command_binding_reference": {
+      "byte_length": 2819,
+      "git_blob": "a968741d190d9df883cef97398b482b189a4f16e",
+      "git_commit": "fa8e3e5e8fc696b343680b380b52481d816a5f21",
+      "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/command_binding.json",
+      "sha256": "65ce72b3ece0b04ee3a8bb2c124dcca720fb07241f715630533d0d51ca394d2a"
+    },
+    "full_argv_hash_scope": "SHA-256 of NUL-joined UTF-8 exact argv values",
+    "full_argv_sha256": "e79a1d40c9b1e31e019fceb138fe42c455e7235325f1a7b5bc9ebb58e2e956f5",
+    "prompt_placeholder": "<redacted_prompt sha256=ca90c5b50b7d244b6264b8ed3f23d4043bf490d25d672e2d05cfad49b487594a chars=519>",
+    "redacted_argv_hash_scope": "SHA-256 of NUL-joined UTF-8 sanitized argv values",
+    "redacted_argv_sha256": "22b8de54f2de0f8f5d4543ccb649d6bf2bc291126ab5f6de1b4d798b89f11e14",
+    "shell_interpolation": false
+  },
+  "corrected_design_contract": {
+    "accepted_correction_overlay_audit": {
+      "blocking_defect_count": 0,
+      "byte_length": 32251,
+      "decision": "CORRECTION_OVERLAY_AUDIT_ACCEPTED_WITH_NONBLOCKING_NOTES",
+      "git_blob": "e8c0046e7fc03a03b31d23d7957378b20932411c",
+      "git_commit": "204432f0a561a1d942c8095d77cea52fd1bd9193",
+      "material_defect_count": 0,
+      "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_EXECUTION_BINDING_AND_PREFLIGHT_DESIGN_CORRECTION_OVERLAY_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+      "sha256": "7c11b59ba68a6cb40d23cdb9aa491d9e1533814526376383f0bc5e9d429ddfe2"
+    },
+    "correction_overlay": {
+      "byte_length": 32001,
+      "decision": "CORRECTION_OVERLAY_READY_INDEPENDENT_NO_LIVE_AUDIT",
+      "git_blob": "46ae3614372b271de473d0127559a7b1855305ba",
+      "git_commit": "47916de18d11e6b501972e9be94f8d6649deb5e9",
+      "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_EXECUTION_BINDING_AND_PREFLIGHT_DESIGN_CORRECTION_DECISION_RESULT.md",
+      "sha256": "eecc4276200b5d414cdc13111dd2ad1bd5e4dcde91c4a2b1aa37d387e4486e91",
+      "unresolved_material_gap_count": 0
+    },
+    "original_design": {
+      "byte_length": 44930,
+      "decision": "EXECUTION_BINDING_AND_PREFLIGHT_DESIGN_READY_WITH_NONBLOCKING_NOTES",
+      "git_blob": "7bf40154105d94a8704b0858d417cb1de52faa83",
+      "git_commit": "fbfc979e9f0b44ef1737955df6007b686921ab4e",
+      "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_EXECUTION_BINDING_AND_PREFLIGHT_NO_LIVE_DESIGN_RESULT.md",
+      "sha256": "eaf375858fdc67305eab6df847e54f5832ba965939f2f79e061b44a567403cb5"
+    },
+    "original_design_audit": {
+      "blocking_defect_count": 0,
+      "byte_length": 31814,
+      "decision": "DESIGN_NEEDS_FIX_MATERIAL_GAP",
+      "git_blob": "ce25b680293c856bf727f8935d8b1320bbd1419d",
+      "git_commit": "000b27e3bc23b25a0118b45cc7fdef6458cf0cd4",
+      "material_defect_count": 1,
+      "nonblocking_note_count": 6,
+      "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_EXECUTION_BINDING_AND_PREFLIGHT_DESIGN_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+      "sha256": "86f9eae26e41c36dcb2ec91aee9ddd4d72598fdd08b936228b66698070098f83"
+    },
+    "precedence": "original_design_plus_correction_overlay_with_overlay_controlling_explicit_conflicts"
+  },
+  "creation_authorization_profile": {
+    "authority_activation": false,
+    "authorization_verified": true,
+    "base64_decode_count": 1,
+    "base64_value_persisted": false,
+    "bom_present": false,
+    "byte_length": 3930,
+    "carriage_return_present": false,
+    "checkpoint_binding_verified": true,
+    "derived_base64_character_count": 5240,
+    "encoding": "UTF-8",
+    "last_byte_hex": "2E",
+    "line_feed_present": false,
+    "markdown_fence_present": false,
+    "raw_authorization_persisted": false,
+    "required_checkpoint": "13cc1e0dadd83ab6857d3ff34f4b3c6b56650ae4",
+    "round_trip_verified": true,
+    "serialization_profile_valid": true,
+    "sha256": "e94c80f87d4e91769c7a1df1f71cd745c93121f1de9e75f6a0b9746d63bb184f",
+    "trailing_space_present": false
+  },
+  "creation_phase": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_EXECUTION_BINDING_AND_ROUTE_STATE_NO_LIVE_CREATION",
+  "download_authorized": false,
+  "execution_authority_active": false,
+  "expected_route_state": {
+    "object_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1::ROUTE_STATE::V1",
+    "path": "experiments/CAL-001/execution_state/F07R/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_route_state_contract.json",
+    "record_type": "CAL001_F07R_IMMUTABLE_INITIAL_ROUTE_STATE",
+    "schema_version": "CAL001_F07R_ROUTE_STATE_V1"
+  },
+  "expected_route_state_object_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1::ROUTE_STATE::V1",
+  "expected_route_state_path": "experiments/CAL-001/execution_state/F07R/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_route_state_contract.json",
+  "expected_route_state_record_type": "CAL001_F07R_IMMUTABLE_INITIAL_ROUTE_STATE",
+  "expected_route_state_schema_version": "CAL001_F07R_ROUTE_STATE_V1",
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "external_human_acceptance": {
+    "byte_length": 13480,
+    "decision": "ACCEPTED_FOR_FUTURE_EXECUTION_BINDING_DESIGN_ONLY",
+    "external_human_acceptance_recorded": true,
+    "git_blob": "0c9e752c842c169eef7edcff28aea34656987b78",
+    "git_commit": "df7594d202b92a34828125e987632a86c74970ec",
+    "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_HUMAN_PACKAGE_ACCEPTANCE_DECISION_RESULT.md",
+    "sha256": "e1d6eb7aa3525617d33f1ea01f8dd642c6ba0e631ee0999069e34d9bb5029bb1"
+  },
+  "final_master": false,
+  "fixed_accounting_references": {
+    "CAL001_completed_fixed_task_count": 13,
+    "CAL001_global_state_source": {
+      "byte_length": 291570,
+      "git_blob": "e1589144e8d9feb3f12cdd3a77ccc7b6367f7aba",
+      "git_commit": "cb413bc53ff7f05585d556377a9ba813ab3495ff",
+      "path": "experiments/CAL-001/execution_state/CAL001_P3C_remaining_77_resumable_execution_state_contract.json",
+      "sha256": "54ff10de1d68cd82f4522c1984eb6f19fa30f8a6beececa618968d6ba30bee92"
+    },
+    "fixed_manifest_completed_task_count": 13,
+    "fixed_manifest_source": {
+      "byte_length": 106215,
+      "git_blob": "b7978e244f8b7c9666f9150b9be60784b9357952",
+      "git_commit": "aeea1614fa1e5fe9d2a6669d8e3d0b3832ee8176",
+      "path": "experiments/CAL-001/manifests/CAL001A_fixed_84_task_manifest.csv",
+      "sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d"
+    },
+    "fixed_manifest_task_count": 84,
+    "observed_at_source_checkpoint": "13cc1e0dadd83ab6857d3ff34f4b3c6b56650ae4",
+    "original_F07_recovery_submit_count": 1,
+    "original_F07_submit_count": 2,
+    "reference_mode": "read_only",
+    "write_back_path": null
+  },
+  "generation_contract": {
+    "duration": 5,
+    "expected_image_count": 0,
+    "expected_maximum_provider_credit_cost": 70,
+    "expected_output_count": 1,
+    "expected_video_count": 1,
+    "model": "seedance2.0_vip",
+    "output_directory": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+    "output_name": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_result.mp4",
+    "poll": 0,
+    "ratio": "16:9",
+    "ratio_rule": "explicit",
+    "resolution": "720p",
+    "task_type": "multimodal2video"
+  },
+  "immutability_contract": {
+    "C1_commit_sha_stored": false,
+    "canonical_serializer": "app.ai_video_pipeline.execution.f07r_support_contract.canonical_json_bytes",
+    "in_place_mutation_allowed": false,
+    "replacement_requires_new_version_object_id_path_audit_and_authorization": true,
+    "route_state_content_hash_stored": false,
+    "self_hash_stored": false
+  },
+  "immutable": true,
+  "locked": false,
+  "no_live_creation_boundaries": {
+    "Dreamina_called": false,
+    "F08_called": false,
+    "batch_called": false,
+    "checklogin_called": false,
+    "download_called": false,
+    "login_called": false,
+    "provider_called": false,
+    "query_called": false,
+    "resubmit_called": false,
+    "retry_called": false,
+    "runtime_integration_created": false,
+    "submit_called": false,
+    "user_credit_called": false,
+    "web_UI_operated": false
+  },
+  "object_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1::EXECUTION_BINDING::V1",
+  "ordered_fixtures": {
+    "fixture_list_canonical_json_byte_length": 1071,
+    "fixture_list_canonicalization": "compact UTF-8 JSON; ensure_ascii=true; sort_keys=true; separators=(',', ':'); no final LF",
+    "fixture_list_sha256": "58f207c059a4bab71e7e2839e029e8528773d7ece7e49102f7294941023c4f9b",
+    "fixtures": [
+      {
+        "byte_length": 1959523,
+        "duty": "acting-subject identity only",
+        "fixture_id": "CAL001-F07-IDENTITY-A",
+        "forbidden_duty": "force choreography or scene",
+        "order": 1,
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+        "sha256": "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f"
+      },
+      {
+        "byte_length": 3874061,
+        "duty": "receiving-subject identity only",
+        "fixture_id": "CAL001-F07-IDENTITY-B",
+        "forbidden_duty": "reaction choreography or scene",
+        "order": 2,
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+        "sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11"
+      },
+      {
+        "byte_length": 4147285,
+        "duty": "rainy environment and grounded layout only",
+        "fixture_id": "CAL001-F07-SCENE-01",
+        "forbidden_duty": "identity or wall interaction",
+        "order": 3,
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+        "sha256": "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452"
+      }
+    ]
+  },
+  "original_F07_preservation": {
+    "experiment_id": "CAL001-F07-P1-R1",
+    "original_recovery_submit_count": 1,
+    "original_route_closed": true,
+    "original_submit_count": 2,
+    "quarantined_handles": [
+      {
+        "created_task_count": 0,
+        "download_eligible": false,
+        "evidence_source": {
+          "byte_length": 2160,
+          "git_blob": "61b55c002c8de89970a3b8de122af9e549b755d0",
+          "git_commit": "fa8e3e5e8fc696b343680b380b52481d816a5f21",
+          "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-submit-001.parsed_task_creation.json",
+          "sha256": "2d5c9917538cfca2dcc4a097e07fa9be606b1251fb6a6d3a6710367e6b82ddde"
+        },
+        "handle_role": "initial_orphaned_submit_id",
+        "provider_task_created": false,
+        "query_eligible": false,
+        "reuse_authorized": false,
+        "submit_id": "5a69007b-ac19-4cef-86bc-41d19792149f"
+      },
+      {
+        "created_task_count": 0,
+        "download_eligible": false,
+        "evidence_source": {
+          "byte_length": 1254,
+          "git_blob": "d77596b15e0bb87e5ca865b4f7947b685fa53730",
+          "git_commit": "cb413bc53ff7f05585d556377a9ba813ab3495ff",
+          "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-submit-001.parsed_task_creation.json",
+          "sha256": "0f1f152e1dec29ac3cfc4b6ed1771f341da8f54269ebb4a3aebf72b5bea97ba1"
+        },
+        "handle_role": "recovery_orphaned_submit_id",
+        "provider_task_created": false,
+        "query_eligible": false,
+        "reuse_authorized": false,
+        "submit_id": "d5fa2ba3-f4b4-4a8f-9591-5b22b1fac463"
+      }
+    ],
+    "route_reset_required": true,
+    "third_original_F07_submit_permitted": false
+  },
+  "package_active": false,
+  "package_audit": {
+    "blocking_defect_count": 0,
+    "byte_length": 25906,
+    "confidence": "HIGH",
+    "decision": "PACKAGE_AND_BINDING_ACCEPTED_WITH_NONBLOCKING_NOTES",
+    "git_blob": "b68aa5f91d78788fb4634f545ba949d3f80aa7f3",
+    "git_commit": "fa859dc0e06fa757532961bd4e944ffaa115910d",
+    "material_defect_count": 0,
+    "nonblocking_note_count": 2,
+    "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_PACKAGE_AND_BINDING_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+    "sha256": "fcc7d86717ce2b4c71114d30f37154f60e0bf26f6bc573755d8d86c4b4838fde"
+  },
+  "package_authorized": false,
+  "prompt_and_provider_payload": {
+    "byte_length": 1976,
+    "path": "experiments/CAL-001/prompts/F07/CAL001-F07-P1_prompt.txt",
+    "provider_payload": "In the rainy frontal temple, preserve Fenshou's black-red male identity and Shuangji's silver-blue female identity as two separate grounded subjects. Fenshou applies one short controlled forearm pressure to Shuangji's raised guard; the pressure causes Shuangji to yield one grounded half-step, with a small wet-floor response and natural sleeve and rain motion, then both recover in place. No injury, gore, airborne flyout, body-wall contact, wall damage, magic blast, identity swap, extra subject, or static pose-out.\n",
+    "provider_payload_byte_length": 519,
+    "provider_payload_extraction_rule": "text between provider markers, LF-normalized, exactly one final LF",
+    "provider_payload_sha256": "ca90c5b50b7d244b6264b8ed3f23d4043bf490d25d672e2d05cfad49b487594a",
+    "sha256": "094a01dee03f49b65badf1864873f2b85a74a9b801f6a26621a84fb0c409f681"
+  },
+  "provider_command_allowed": false,
+  "query_authorized": false,
+  "record_type": "CAL001_F07R_IMMUTABLE_EXECUTION_BINDING",
+  "resubmit_authorized": false,
+  "retry_authorized": false,
+  "route_maxima": {
+    "expected_maximum_provider_credit_cost": 70,
+    "route_batch_invocation_max": 0,
+    "route_download_invocation_max": 0,
+    "route_provider_submit_allowance_max": 1,
+    "route_provider_submit_invocation_max": 1,
+    "route_provider_task_created_max": 1,
+    "route_query_invocation_max": 0,
+    "route_resubmit_invocation_max": 0,
+    "route_retry_invocation_max": 0
+  },
+  "runtime_baseline": {
+    "executable": {
+      "byte_length": 31879680,
+      "path": "C:/Users/msjpurf/bin/dreamina.exe",
+      "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10",
+      "verified_without_execution_in_creation_phase": true
+    },
+    "help_refresh_audit": {
+      "byte_length": 17774,
+      "decision": "HELP_UNCHANGED_NO_UPLOAD_CONTROL_FOUND",
+      "git_blob": "d0bad75f202c771380b89dd94d8863aedb25aae7",
+      "git_commit": "f3e55379958fd8bada03d4324820a4af45d518ad",
+      "path": "reports/PHASE_CAL001_P3D_W01_F07R_DREAMINA_HELP_REFRESH_NO_PROVIDER_AUDIT_RESULT.md",
+      "sha256": "8f45d5afb83442dd670a77044609e3b7a00830b00738b2c491b2aa8dc6829a27"
+    },
+    "multimodal2video_help_evidence": {
+      "output_byte_length": 2739,
+      "output_sha256": "fb3aa97d2d33b1d745a52519eac529c4a21a2d90aef9f1f6a452442fcf884277"
+    },
+    "root_help_evidence": {
+      "output_byte_length": 2673,
+      "output_sha256": "a7730ec92f51b4c992605d008e5533ea984c0c799b25a8490048a8b372883c81"
+    },
+    "runtime_integration_created": false,
+    "version_evidence": {
+      "build_commit": "2a20fff",
+      "build_time": "2026-06-26T06:36:39Z",
+      "output_byte_length": 96,
+      "output_sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0",
+      "version": "2a20fff-dirty"
+    }
+  },
+  "schema_version": "CAL001_F07R_EXECUTION_BINDING_V1",
+  "source_checkpoint_commit": "13cc1e0dadd83ab6857d3ff34f4b3c6b56650ae4",
+  "source_checkpoint_tree_sha": "5a1425b99cb4374773de25b7ea3212b34dcfed6d",
+  "submit_authorized": false,
+  "task_creation_parser_contract": {
+    "byte_length": 38190,
+    "classifications": {
+      "confirmed_created_nonterminal": "provider_task_created_true_proven",
+      "confirmed_created_success_or_terminal_provider_task": "provider_task_created_true_terminal_safe_block",
+      "creation_unresolved_terminal_or_ambiguous": "provider_task_created_unknown_close",
+      "orphaned_handle_after_prequeue_upload_failure": "provider_task_created_false_close_and_quarantine"
+    },
+    "created_nonterminal_statuses": [
+      "created",
+      "pending",
+      "querying",
+      "submitted"
+    ],
+    "failed_statuses": [
+      "fail",
+      "failed",
+      "failure"
+    ],
+    "functions": [
+      "parse_task_creation_evidence",
+      "classify_submit_creation_evidence"
+    ],
+    "git_blob": "6eb369d40bc4080fe5525faafeb68b964d3b113d",
+    "git_commit": "0273eea8895548ad46f1e23ce8ef3f0304646e94",
+    "path": "app/ai_video_pipeline/execution/dreamina_evidence.py",
+    "prequeue_upload_markers": [
+      "upload phase, no file upload",
+      "upload phase: no file upload"
+    ],
+    "semantic_placeholder_accepted_as_literal_status": false,
+    "sha256": "0da551983fce49f59fa0f880b93d1a80b07a192d94631acded2e9654ac7b15d4",
+    "success_statuses": [
+      "success"
+    ]
+  }
+}
