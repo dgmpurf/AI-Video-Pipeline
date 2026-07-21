@@ -937,7 +937,9 @@ def validate_zero_charge_prequeue_noncreation(
     provider_credit_count: Any,
     immediate_pre_credit: Any,
     immediate_post_credit: Any,
-    identifier_result: Any,
+    sanitized_stdout: str,
+    sanitized_stderr: str,
+    identifier_result: Mapping[str, Any] | None = None,
     evidence_durable: Any,
     evidence_reread_verified: Any,
     query_authorized: Any,
@@ -980,12 +982,25 @@ def validate_zero_charge_prequeue_noncreation(
         and len(set(historical_values)) == 2
     )
     historical = tuple(historical_values) if historical_valid else tuple()
-    try:
-        identifiers = _validate_identifier_result(identifier_result)
-        identifier_result_valid = True
-    except IdentifierConsistencyError:
-        identifiers = {}
-        identifier_result_valid = False
+    stream_pair_valid = isinstance(sanitized_stdout, str) and isinstance(
+        sanitized_stderr, str
+    )
+    identifiers = (
+        validate_all_identifier_occurrences(sanitized_stdout, sanitized_stderr)
+        if stream_pair_valid
+        else {}
+    )
+    external_result_matches = True
+    if identifier_result is not None:
+        external_result_matches = False
+        if stream_pair_valid:
+            try:
+                validated_external = _validate_identifier_result(identifier_result)
+                external_result_matches = canonical_json_bytes(
+                    validated_external
+                ) == canonical_json_bytes(identifiers)
+            except (IdentifierConsistencyError, StrictJSONError):
+                pass
     require("provider_invocation_started", _is_exact_true(provider_invocation_started))
     require("submit_allowance_consumed", _is_exact_true(submit_allowance_consumed))
     require(
@@ -1032,7 +1047,8 @@ def validate_zero_charge_prequeue_noncreation(
         except (TypeError, ValueError, ArithmeticError):
             credit_delta_zero = False
     require("immediate_credit_delta_zero", credit_delta_zero)
-    require("identifier_result_strict_schema", identifier_result_valid)
+    require("identifier_evidence_stream_pair", stream_pair_valid)
+    require("identifier_evidence_rederivation_match", external_result_matches)
     require(
         "identifier_no_contradiction",
         identifiers.get("contradictory_identifiers_present") is False,

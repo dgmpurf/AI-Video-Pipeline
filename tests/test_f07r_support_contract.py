@@ -136,6 +136,8 @@ def _write_transition_record(
 
 def _valid_noncreation_kwargs() -> dict[str, object]:
     handle = "NEW-HANDLE-001"
+    sanitized_stdout = f"submit_id={handle}"
+    sanitized_stderr = ""
     return {
         "provider_invocation_started": True,
         "submit_allowance_consumed": True,
@@ -153,8 +155,10 @@ def _valid_noncreation_kwargs() -> dict[str, object]:
         "provider_credit_count": None,
         "immediate_pre_credit": 1000,
         "immediate_post_credit": 1000,
+        "sanitized_stdout": sanitized_stdout,
+        "sanitized_stderr": sanitized_stderr,
         "identifier_result": validate_all_identifier_occurrences(
-            f"submit_id={handle}", ""
+            sanitized_stdout, sanitized_stderr
         ),
         "evidence_durable": True,
         "evidence_reread_verified": True,
@@ -631,6 +635,7 @@ def test_noncreation_each_scalar_prerequisite_fails_closed(
 def test_noncreation_historical_handle_collision_fails() -> None:
     values = _valid_noncreation_kwargs()
     values["new_submit_handle"] = "OLD-HANDLE-001"
+    values["sanitized_stdout"] = "submit_id=OLD-HANDLE-001"
     values["identifier_result"] = validate_all_identifier_occurrences(
         "submit_id=OLD-HANDLE-001", ""
     )
@@ -642,9 +647,11 @@ def test_noncreation_historical_handle_collision_fails() -> None:
 
 def test_noncreation_logid_or_identifier_conflict_fails() -> None:
     values = _valid_noncreation_kwargs()
+    values["sanitized_stdout"] = "submit_id=NEW-HANDLE-001 logid=L-1"
+    values["sanitized_stderr"] = "submit_id=OTHER-HANDLE"
     values["identifier_result"] = validate_all_identifier_occurrences(
-        "submit_id=NEW-HANDLE-001 logid=L-1",
-        "submit_id=OTHER-HANDLE",
+        values["sanitized_stdout"],
+        values["sanitized_stderr"],
     )
 
     result = validate_zero_charge_prequeue_noncreation(**values)
@@ -657,6 +664,7 @@ def test_noncreation_logid_or_identifier_conflict_fails() -> None:
 
 def test_noncreation_selected_submit_mismatch_fails() -> None:
     values = _valid_noncreation_kwargs()
+    values["sanitized_stdout"] = "submit_id=OTHER-HANDLE"
     values["identifier_result"] = validate_all_identifier_occurrences(
         "submit_id=OTHER-HANDLE", ""
     )
@@ -682,15 +690,48 @@ def test_noncreation_malformed_historical_handles_return_failed_result(
     assert "historical_quarantined_handles_exact" in result["failed_prerequisites"]
 
 
-def test_noncreation_malformed_identifier_result_returns_failed_result() -> None:
+def test_noncreation_internal_derivation_passes_without_external_result() -> None:
     values = _valid_noncreation_kwargs()
-    values["identifier_result"] = None
+    del values["identifier_result"]
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is True
+    assert result["failed_prerequisites"] == []
+
+
+def test_noncreation_exact_external_deep_copy_passes() -> None:
+    values = _valid_noncreation_kwargs()
+    values["identifier_result"] = json.loads(json.dumps(values["identifier_result"]))
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is True
+    assert result["failed_prerequisites"] == []
+
+
+def test_noncreation_exact_external_canonical_round_trip_passes() -> None:
+    values = _valid_noncreation_kwargs()
+    values["identifier_result"] = strict_json_loads(
+        canonical_json_bytes(values["identifier_result"])
+    )
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is True
+    assert result["failed_prerequisites"] == []
+
+
+def test_noncreation_malformed_external_identifier_result_fails_comparison() -> None:
+    values = _valid_noncreation_kwargs()
+    values["identifier_result"] = []
 
     result = validate_zero_charge_prequeue_noncreation(**values)
 
     assert result["provider_task_noncreation_proven"] is False
-    assert "identifier_no_contradiction" in result["failed_prerequisites"]
-    assert "selected_submit_matches" in result["failed_prerequisites"]
+    assert result["failed_prerequisites"] == [
+        "identifier_evidence_rederivation_match"
+    ]
 
 
 @pytest.mark.parametrize("field_action", ["missing", "unexpected"])
@@ -708,7 +749,9 @@ def test_noncreation_rejects_identifier_result_field_set_changes(
     result = validate_zero_charge_prequeue_noncreation(**values)
 
     assert result["provider_task_noncreation_proven"] is False
-    assert "identifier_result_strict_schema" in result["failed_prerequisites"]
+    assert result["failed_prerequisites"] == [
+        "identifier_evidence_rederivation_match"
+    ]
 
 
 def test_noncreation_rejects_identifier_classification_mismatch() -> None:
@@ -720,7 +763,9 @@ def test_noncreation_rejects_identifier_classification_mismatch() -> None:
     result = validate_zero_charge_prequeue_noncreation(**values)
 
     assert result["provider_task_noncreation_proven"] is False
-    assert "identifier_result_strict_schema" in result["failed_prerequisites"]
+    assert result["failed_prerequisites"] == [
+        "identifier_evidence_rederivation_match"
+    ]
 
 
 def test_noncreation_rejects_missing_candidates_with_selected_identifier() -> None:
@@ -732,7 +777,9 @@ def test_noncreation_rejects_missing_candidates_with_selected_identifier() -> No
     result = validate_zero_charge_prequeue_noncreation(**values)
 
     assert result["provider_task_noncreation_proven"] is False
-    assert "identifier_result_strict_schema" in result["failed_prerequisites"]
+    assert result["failed_prerequisites"] == [
+        "identifier_evidence_rederivation_match"
+    ]
 
 
 def test_noncreation_rejects_frame_error_hidden_by_false_contradiction() -> None:
@@ -749,7 +796,9 @@ def test_noncreation_rejects_frame_error_hidden_by_false_contradiction() -> None
     result = validate_zero_charge_prequeue_noncreation(**values)
 
     assert result["provider_task_noncreation_proven"] is False
-    assert "identifier_result_strict_schema" in result["failed_prerequisites"]
+    assert result["failed_prerequisites"] == [
+        "identifier_evidence_rederivation_match"
+    ]
 
 
 @pytest.mark.parametrize(
@@ -778,7 +827,9 @@ def test_noncreation_rejects_malformed_identifier_occurrence(
     result = validate_zero_charge_prequeue_noncreation(**values)
 
     assert result["provider_task_noncreation_proven"] is False
-    assert "identifier_result_strict_schema" in result["failed_prerequisites"]
+    assert result["failed_prerequisites"] == [
+        "identifier_evidence_rederivation_match"
+    ]
 
 
 def test_noncreation_rejects_duplicate_global_discovery_order() -> None:
@@ -793,7 +844,164 @@ def test_noncreation_rejects_duplicate_global_discovery_order() -> None:
     result = validate_zero_charge_prequeue_noncreation(**values)
 
     assert result["provider_task_noncreation_proven"] is False
-    assert "identifier_result_strict_schema" in result["failed_prerequisites"]
+    assert result["failed_prerequisites"] == [
+        "identifier_evidence_rederivation_match"
+    ]
+
+
+@pytest.mark.parametrize(
+    ("field", "bad_value"),
+    [
+        ("sanitized_stdout", None),
+        ("sanitized_stdout", b"submit_id=NEW-HANDLE-001"),
+        ("sanitized_stderr", None),
+        ("sanitized_stderr", b""),
+    ],
+)
+def test_noncreation_invalid_sanitized_stream_pair_fails_closed(
+    field: str,
+    bad_value: object,
+) -> None:
+    values = _valid_noncreation_kwargs()
+    values[field] = bad_value
+    values["identifier_result"] = None
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is False
+    assert "identifier_evidence_stream_pair" in result["failed_prerequisites"]
+
+
+def test_noncreation_rejects_cross_type_global_order_swap() -> None:
+    values = _valid_noncreation_kwargs()
+    stdout = "submit_id=NEW-HANDLE-001"
+    stderr = "logid=L-1"
+    external = validate_all_identifier_occurrences(stdout, stderr)
+    assert external["all_submit_id_candidates"][0]["discovery_order"] == 1
+    assert external["all_logid_candidates"][0]["discovery_order"] == 2
+    external["all_submit_id_candidates"][0]["discovery_order"] = 2
+    external["all_logid_candidates"][0]["discovery_order"] = 1
+    values["sanitized_stdout"] = stdout
+    values["sanitized_stderr"] = stderr
+    values["identifier_result"] = external
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is False
+    assert "identifier_evidence_rederivation_match" in result["failed_prerequisites"]
+
+
+def test_noncreation_rejects_impossible_stderr_before_stdout_order() -> None:
+    values = _valid_noncreation_kwargs()
+    stdout = "submit_id=NEW-HANDLE-001"
+    stderr = "submit_id=NEW-HANDLE-001"
+    external = validate_all_identifier_occurrences(stdout, stderr)
+    candidates = external["all_submit_id_candidates"]
+    assert [(item["channel"], item["discovery_order"]) for item in candidates] == [
+        ("stdout", 1),
+        ("stderr", 2),
+    ]
+    candidates[0]["channel"] = "stderr"
+    candidates[1]["channel"] = "stdout"
+    values["sanitized_stdout"] = stdout
+    values["sanitized_stderr"] = stderr
+    values["identifier_result"] = external
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is False
+    assert result["failed_prerequisites"] == [
+        "identifier_evidence_rederivation_match"
+    ]
+
+
+@pytest.mark.parametrize(
+    "mutation",
+    [
+        "candidate_reordered",
+        "channel",
+        "source_kind",
+        "frame_index",
+        "line_number",
+        "character_offset",
+        "json_path",
+        "identifier_value",
+        "classification",
+        "selected_value",
+        "strict_frame_errors",
+        "contradiction_flag",
+        "discovery_order",
+        "candidate_removed",
+        "candidate_added",
+    ],
+)
+def test_noncreation_rejects_any_external_identifier_evidence_tampering(
+    mutation: str,
+) -> None:
+    values = _valid_noncreation_kwargs()
+    stdout = "submit_id=NEW-HANDLE-001"
+    stderr = ""
+    if mutation == "candidate_reordered":
+        stderr = "submit_id=NEW-HANDLE-001"
+    elif mutation == "json_path":
+        stdout = 'noise\n{"submit_id":"NEW-HANDLE-001"}\n'
+    external = validate_all_identifier_occurrences(stdout, stderr)
+    candidates = external["all_submit_id_candidates"]
+
+    if mutation == "candidate_reordered":
+        candidates.reverse()
+    elif mutation == "channel":
+        candidates[0]["channel"] = "stderr"
+    elif mutation == "source_kind":
+        candidates[0].update(
+            source_kind="line_json",
+            frame_index=1,
+            line_number=1,
+            json_path='$["submit_id"]',
+        )
+    elif mutation == "frame_index":
+        candidates[0]["frame_index"] = 1
+    elif mutation == "line_number":
+        candidates[0]["line_number"] = 2
+    elif mutation == "character_offset":
+        candidates[0]["character_offset"] += 1
+    elif mutation == "json_path":
+        candidates[0]["json_path"] = '$["other"]'
+    elif mutation == "identifier_value":
+        candidates[0]["value"] = "OTHER-HANDLE"
+        external["selected_submit_id"] = "OTHER-HANDLE"
+    elif mutation == "classification":
+        external["submit_id_consistency_classification"] = "MISSING"
+    elif mutation == "selected_value":
+        external["selected_submit_id"] = "OTHER-HANDLE"
+    elif mutation == "strict_frame_errors":
+        unsafe = validate_all_identifier_occurrences('{"submit_id":[]}', "")
+        external["strict_frame_errors"] = [unsafe["strict_frame_errors"][0]]
+        external["submit_id_consistency_classification"] = "CONFLICTING"
+        external["selected_submit_id"] = None
+        external["contradictory_identifiers_present"] = True
+    elif mutation == "contradiction_flag":
+        external["contradictory_identifiers_present"] = True
+    elif mutation == "discovery_order":
+        candidates[0]["discovery_order"] = 2
+    elif mutation == "candidate_removed":
+        candidates.clear()
+    elif mutation == "candidate_added":
+        duplicate = json.loads(json.dumps(candidates[0]))
+        duplicate["discovery_order"] = 2
+        candidates.append(duplicate)
+        external["submit_id_consistency_classification"] = "DUPLICATE_EQUAL"
+    else:  # pragma: no cover - the parametrization is exhaustive
+        raise AssertionError(mutation)
+
+    values["sanitized_stdout"] = stdout
+    values["sanitized_stderr"] = stderr
+    values["identifier_result"] = external
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is False
+    assert "identifier_evidence_rederivation_match" in result["failed_prerequisites"]
 
 
 @pytest.mark.parametrize(
