@@ -1,0 +1,56 @@
+{
+  "authentication_repair": false,
+  "batch": false,
+  "checkpoint_authorization_binding": {
+    "authorization_byte_length": 3373,
+    "authorization_sha256": "f1af8cc334d5da10120cb6cddcd8e1785979435d1e7f424896688a00074e2343",
+    "checkpoint": "8b64aef7ac8eadb32e474c9e1ce682c0be348b93"
+  },
+  "command_kind": "dreamina_multimodal2video_help",
+  "download": false,
+  "environment": "inherited_without_mutation",
+  "executable_identity": {
+    "byte_length": 31879680,
+    "path": "C:/Users/msjpurf/bin/dreamina.exe",
+    "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10"
+  },
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "finished_at": "2026-07-21T20:15:50.567201Z",
+  "invocation_count": 1,
+  "login": false,
+  "operation_id": "F07R-multimodal2video-help-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_NO_PROVIDER_CANARY_AND_PREFLIGHT_ONLY",
+  "process_classification": "completed",
+  "provider_submit": false,
+  "query": false,
+  "record_type": "CAL001_F07R_SANITIZED_READ_ONLY_CLI_SUBPROCESS_ENVELOPE",
+  "redacted_argument_vector": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "multimodal2video",
+    "-h"
+  ],
+  "resubmit": false,
+  "retry": false,
+  "schema_version": "CAL001_F07R_SANITIZED_SUBPROCESS_ENVELOPE_V1",
+  "shell_interpolation": false,
+  "started_at": "2026-07-21T20:15:48.144843Z",
+  "stdin": "closed",
+  "stream_metadata": {
+    "raw_content_persisted": false,
+    "raw_stderr_byte_count": 0,
+    "raw_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_stdout_byte_count": 2739,
+    "raw_stdout_sha256": "fb3aa97d2d33b1d745a52519eac529c4a21a2d90aef9f1f6a452442fcf884277",
+    "sanitized_stderr": "",
+    "sanitized_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_stdout": "Usage:\n  dreamina multimodal2video [flags]\n\nUpload local images, videos, and audio, then submit Dreamina's flagship multimodal video generation mode. This corresponds to the \"\u5168\u80fd\u53c2\u8003\" (All-around reference) feature on the web interface (formerly known as ref2video). This is the strongest video generation mode currently exposed in the CLI, supports all-around references, and supports the Seedance 2.0 family plus seedance2.0mini (flag values: seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip, seedance2.0mini). The task is asynchronous, but --poll can wait briefly before falling back to query_result.\n\nSupported combinations:\n- inputs: any mix of --image, --video, --audio\n- at least one --image or --video is required\n- audio inputs must be 2-15 seconds\n- model_version: seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip, seedance2.0mini\n- ratio: 1:1, 3:4, 16:9, 4:3, 9:16, 21:9\n- seedance2.0_vip -> video_resolution 720p, 1080p, or 4k\n- all other models -> video_resolution 720p\n- duration: 4-15s\n\nNotes:\n- local files are uploaded automatically before submit\n- input limits: image<=9, video<=3, audio<=3\n- \u90e8\u5206\u9ad8\u5185\u5bb9\u5b89\u5168\u98ce\u9669\u6a21\u578b\u5728\u9996\u6b21\u4f7f\u7528\u524d\uff0c\u53ef\u80fd\u9700\u8981\u5148\u5728 Dreamina Web \u7aef\u5b8c\u6210\u6388\u6743\u786e\u8ba4\u3002\u82e5\u8fd4\u56de AigcComplianceConfirmationRequired\uff0c\u8bf7\u5148\u5b8c\u6210\u6388\u6743\u540e\u91cd\u8bd5\u3002\n\n\nFlags:\n      --image stringArray         repeat for each local input image path\n      --video stringArray         repeat for each local input video path\n      --audio stringArray         repeat for each local input audio path\n      --prompt <redacted>\n      --duration int              video duration in seconds; supported range: 4-15 (default 5)\n      --ratio string              supported values: 1:1, 3:4, 16:9, 4:3, 9:16, 21:9\n      --video_resolution string   supported values by model: seedance2.0_vip -> 720p, 1080p, or 4k; all other models -> 720p\n      --model_version string      supported values: seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip, seedance2.0mini\n      --session <redacted>\n      --poll int                  submit then poll query_result for up to N seconds at 1s intervals (0 disables polling)\n  -h, --help                      help for multimodal2video\n\nGlobal Flags:\n      --version   print build version information\n\nExamples:\n  dreamina multimodal2video --image ./input.png --prompt=<redacted>\n  dreamina multimodal2video --image ./input.png --audio ./music.mp3 --model_version=seedance2.0fast --duration=5\n  dreamina multimodal2video --image ./input.png --video ./ref.mp4 --audio ./music.mp3 --model_version=seedance2.0fast --duration=5\n",
+    "sanitized_stdout_sha256": "2a9fb743129346257a84beb27ae8221e1c0b60a863c6e1dbeec0ad1c3911cb02",
+    "stderr_decoding": "utf-8/errors-replace",
+    "stderr_utf8_replacement_count": 0,
+    "stdout_decoding": "utf-8/errors-replace",
+    "stdout_utf8_replacement_count": 0
+  },
+  "subprocess_exit_code": 0,
+  "timeout_seconds": 30,
+  "unsanitized_raw_output_persisted": false
+}

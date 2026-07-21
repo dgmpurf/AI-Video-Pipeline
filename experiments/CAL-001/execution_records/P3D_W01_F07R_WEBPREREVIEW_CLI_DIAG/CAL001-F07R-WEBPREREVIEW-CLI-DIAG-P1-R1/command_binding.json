@@ -1,0 +1,200 @@
+{
+  "D1_decision_binding": {
+    "commit": "8b64aef7ac8eadb32e474c9e1ce682c0be348b93",
+    "decision": "NO_PROVIDER_CANARY_AND_PREFLIGHT_AUTHORIZATION_DECISION_READY_EXECUTION",
+    "report_byte_length": 16116,
+    "report_git_blob": "23b72ec1fbba6d4da4990998e34b5aeee4dda445",
+    "report_path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_NO_PROVIDER_CANARY_AND_PREFLIGHT_AUTHORIZATION_DECISION_RESULT.md",
+    "report_sha256": "330135492c3ab7bd802176a288e6e1ccb0d3f9fae0200372e80de3089a0400fd"
+  },
+  "authority_flags": {
+    "batch_authorized": false,
+    "binding_active": false,
+    "binding_authorized": false,
+    "download_authorized": false,
+    "execution_authority_active": false,
+    "final_master": false,
+    "locked": false,
+    "package_active": false,
+    "package_authorized": false,
+    "provider_command_allowed": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "authorization_binding": {
+    "base64_character_count": 4500,
+    "base64_persisted": false,
+    "byte_length": 3373,
+    "encoding": "UTF-8",
+    "raw_authorization_persisted": false,
+    "round_trip_verified": true,
+    "sha256": "f1af8cc334d5da10120cb6cddcd8e1785979435d1e7f424896688a00074e2343"
+  },
+  "checkpoint_binding": {
+    "local_head": "8b64aef7ac8eadb32e474c9e1ce682c0be348b93",
+    "origin_main": "8b64aef7ac8eadb32e474c9e1ce682c0be348b93",
+    "required_checkpoint": "8b64aef7ac8eadb32e474c9e1ce682c0be348b93",
+    "verified": true
+  },
+  "executable_binding": {
+    "byte_length": 31879680,
+    "modification_authorized": false,
+    "path": "C:/Users/msjpurf/bin/dreamina.exe",
+    "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10"
+  },
+  "execution_contract": {
+    "allowed_cli_total_max": 4,
+    "commands": [
+      {
+        "argv": [
+          "C:/Users/msjpurf/bin/dreamina.exe",
+          "version"
+        ],
+        "command_kind": "dreamina_version",
+        "envelope_path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-version-001.subprocess_envelope.json",
+        "max_invocations": 1,
+        "operation_id": "F07R-version-001",
+        "order": 1,
+        "parsed_path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-version-001.parsed_version.json",
+        "timeout_seconds": 30
+      },
+      {
+        "argv": [
+          "C:/Users/msjpurf/bin/dreamina.exe",
+          "-h"
+        ],
+        "command_kind": "dreamina_root_help",
+        "envelope_path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-root-help-001.subprocess_envelope.json",
+        "max_invocations": 1,
+        "operation_id": "F07R-root-help-001",
+        "order": 2,
+        "parsed_path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-root-help-001.parsed_help.json",
+        "timeout_seconds": 30
+      },
+      {
+        "argv": [
+          "C:/Users/msjpurf/bin/dreamina.exe",
+          "multimodal2video",
+          "-h"
+        ],
+        "command_kind": "dreamina_multimodal2video_help",
+        "envelope_path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-multimodal2video-help-001.subprocess_envelope.json",
+        "max_invocations": 1,
+        "operation_id": "F07R-multimodal2video-help-001",
+        "order": 3,
+        "parsed_path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-multimodal2video-help-001.parsed_help.json",
+        "timeout_seconds": 30
+      },
+      {
+        "argv": [
+          "C:/Users/msjpurf/bin/dreamina.exe",
+          "user_credit"
+        ],
+        "command_kind": "dreamina_user_credit",
+        "envelope_path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-account-viability-001.subprocess_envelope.json",
+        "max_invocations": 1,
+        "operation_id": "F07R-account-viability-001",
+        "order": 4,
+        "parsed_path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-account-viability-001.parsed_account_viability.json",
+        "timeout_seconds": 90
+      }
+    ],
+    "cwd": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+    "environment": "inherited_without_mutation",
+    "execution_order": "strict_ascending_order",
+    "fail_fast": true,
+    "no_automatic_remediation": true,
+    "no_retry": true,
+    "persist_each_command_evidence_before_next": true,
+    "shell": false,
+    "stdin": "closed"
+  },
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_NO_PROVIDER_CANARY_AND_PREFLIGHT_ONLY",
+  "provider_argv_binding": {
+    "argument_count": 20,
+    "full_argv_sha256": "e79a1d40c9b1e31e019fceb138fe42c455e7235325f1a7b5bc9ebb58e2e956f5",
+    "full_prompt_or_argv_persisted": false,
+    "redacted_argv_sha256": "22b8de54f2de0f8f5d4543ccb649d6bf2bc291126ab5f6de1b4d798b89f11e14",
+    "shell_interpolation": false
+  },
+  "provider_operation_maxima": {
+    "F08": 0,
+    "batch": 0,
+    "checklogin": 0,
+    "download": 0,
+    "login": 0,
+    "logout": 0,
+    "provider_submit": 0,
+    "query_result": 0,
+    "relogin": 0,
+    "resubmit": 0,
+    "retry": 0
+  },
+  "provider_route_operation_counters": {
+    "route_batch_invocation_count": 0,
+    "route_credit_charged_total": 0,
+    "route_download_invocation_count": 0,
+    "route_provider_submit_invocation_count": 0,
+    "route_provider_task_created_count": 0,
+    "route_query_invocation_count": 0,
+    "route_resubmit_invocation_count": 0,
+    "route_retry_invocation_count": 0
+  },
+  "raw_capture_policy": {
+    "available_credit_allowed_only_in_parsed_account_viability": true,
+    "decode_policy": "utf-8/errors-replace",
+    "hash_before_decode": true,
+    "sanitized_envelope_required_before_parse": true,
+    "stdout_stderr_captured_separately": true,
+    "unsanitized_raw_output_persisted": false,
+    "user_credit_balance_redacted_from_envelope": true
+  },
+  "record_type": "CAL001_F07R_IMMUTABLE_NO_PROVIDER_PREFLIGHT_COMMAND_BINDING",
+  "recorded_at": "2026-07-21T20:08:00.731741Z",
+  "required_credit_derivation": {
+    "completed_fixed_task_count": 13,
+    "current_post_submit_reserve_floor": 560,
+    "fixed_macro_threshold": 5530,
+    "fixed_manifest_task_count": 84,
+    "one_operation_reserve_threshold": 630,
+    "required_pre_submit_credit": 5530,
+    "stricter_current_threshold": 5530
+  },
+  "route_binding": {
+    "allowance_consumed": false,
+    "operation_counters": {
+      "route_batch_invocation_count": 0,
+      "route_credit_charged_total": 0,
+      "route_download_invocation_count": 0,
+      "route_provider_submit_invocation_count": 0,
+      "route_provider_task_created_count": 0,
+      "route_query_invocation_count": 0,
+      "route_resubmit_invocation_count": 0,
+      "route_retry_invocation_count": 0
+    },
+    "sequence_2_git_blob": "bec5ad3f0240f01b95170bf457ff9da94d315df1",
+    "sequence_2_path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-preflight-designed-002_transition.json",
+    "sequence_2_sha256": "fb09592ba1503ea090158bee4e22e9a9f2c8b1cd32e6d7f6363e2be7130e1037",
+    "starting_state": "PREFLIGHT_DESIGNED_NOT_RUN",
+    "submit_invocation_count": 0
+  },
+  "route_provider_submit_allowance_consumed": false,
+  "route_provider_submit_invocation_count": 0,
+  "schema_version": "CAL001_F07R_NO_PROVIDER_PREFLIGHT_COMMAND_BINDING_V1",
+  "static_gate_results": {
+    "accounting": "PASS",
+    "authorization": "PASS",
+    "binding_deep_references": "PASS",
+    "checkpoint": "PASS",
+    "duplicate_prevention_precheck": "PASS",
+    "executable_identity": "PASS",
+    "fixtures": "PASS",
+    "package": "PASS",
+    "parser_and_support_contract": "PASS",
+    "prompt_and_payload": "PASS",
+    "route_chain": "PASS"
+  }
+}

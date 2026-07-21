@@ -1,0 +1,123 @@
+{
+  "authority_flags": {
+    "batch_authorized": false,
+    "binding_active": false,
+    "binding_authorized": false,
+    "download_authorized": false,
+    "execution_authority_active": false,
+    "final_master": false,
+    "locked": false,
+    "package_active": false,
+    "package_authorized": false,
+    "provider_command_allowed": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "binding_reference": {
+    "byte_length": 20808,
+    "git_blob": "ffc52ae728bdaa7b05cc34afaabab0bcfb79a2b4",
+    "path": "experiments/CAL-001/execution_bindings/F07R/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_execution_binding.json",
+    "sha256": "52ac7c5aefb1f89993b511796b7fe58a40c030b475188750584b1b53a30e618d"
+  },
+  "bound_output": {
+    "exists": false,
+    "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_result.mp4"
+  },
+  "checked_absent_paths": {
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-account-viability-001.parsed_account_viability.json": false,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-account-viability-001.subprocess_envelope.json": false,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-multimodal2video-help-001.parsed_help.json": false,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-multimodal2video-help-001.subprocess_envelope.json": false,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-root-help-001.parsed_help.json": false,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-root-help-001.subprocess_envelope.json": false,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-version-001.parsed_version.json": false,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-version-001.subprocess_envelope.json": false,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/preflight/no_provider_preflight_evidence_manifest.json": false,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/preflight/no_provider_preflight_summary.json": false,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-preflight-result-003_transition.json": false,
+    "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_result.mp4": false,
+    "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_NO_PROVIDER_CANARY_AND_PREFLIGHT_ONLY_RESULT.md": false
+  },
+  "checkpoint": "8b64aef7ac8eadb32e474c9e1ce682c0be348b93",
+  "command_binding_reference": {
+    "byte_length": 8326,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/command_binding.json",
+    "sha256": "c2272fb6fe58d153bb98663603de689d9b5beebc687cbc9fc08bb39fa75530d7"
+  },
+  "decision": "DUPLICATE_PREVENTION_CLEAR",
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "fixed_manifest": {
+    "F07R_row_count": 0,
+    "path": "experiments/CAL-001/manifests/CAL001A_fixed_84_task_manifest.csv",
+    "task_count": 84
+  },
+  "original_F07_preservation": {
+    "original_recovery_submit_count": 1,
+    "original_route_closed": true,
+    "original_submit_count": 2,
+    "quarantined_handles": [
+      {
+        "download_eligible": false,
+        "handle_role": "initial_orphaned_submit_id",
+        "provider_task_created": false,
+        "query_eligible": false,
+        "reuse_authorized": false,
+        "submit_id_sha256": "128ac94c52de137197afdf60f3742a6c17fe289c9e2a049559f47032e0ba2810"
+      },
+      {
+        "download_eligible": false,
+        "handle_role": "recovery_orphaned_submit_id",
+        "provider_task_created": false,
+        "query_eligible": false,
+        "reuse_authorized": false,
+        "submit_id_sha256": "c3ffedb6109769506a050776d7fea2606e35917dc568e0060ee2029836a045c5"
+      }
+    ],
+    "third_original_F07_submit_permitted": false
+  },
+  "package_reference": {
+    "byte_length": 9622,
+    "git_blob": "844435a89321014046d0f059f450ca7ff11a675f",
+    "path": "experiments/CAL-001/packages/F07R/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_package.json",
+    "sha256": "17c65280b7dad670954e7a4e3531f6c8362ad270ac1bc95ed3eff87db9f1edac"
+  },
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_NO_PROVIDER_CANARY_AND_PREFLIGHT_ONLY",
+  "prior_f07r_provider_evidence_paths": [],
+  "prior_submit_claim_paths": [],
+  "prior_submit_result_or_closure_transition_paths": [],
+  "provider_route_state": {
+    "allowance_consumed": false,
+    "no_bound_output": true,
+    "no_completed_or_terminal_provider_route": true,
+    "no_f07r_provider_invocation": true,
+    "no_submit_claim": true,
+    "no_submit_envelope_or_task_creation_artifact": true,
+    "no_submit_result_or_closure_transition": true,
+    "operation_counters": {
+      "route_batch_invocation_count": 0,
+      "route_credit_charged_total": 0,
+      "route_download_invocation_count": 0,
+      "route_provider_submit_invocation_count": 0,
+      "route_provider_task_created_count": 0,
+      "route_query_invocation_count": 0,
+      "route_resubmit_invocation_count": 0,
+      "route_retry_invocation_count": 0
+    },
+    "submit_invocation_count": 0
+  },
+  "record_type": "CAL001_F07R_IMMUTABLE_DUPLICATE_PREVENTION_SNAPSHOT",
+  "route_chain": {
+    "finding_details": [],
+    "ordered_paths": [
+      "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\experiments\\CAL-001\\execution_records\\P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG\\CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1\\route_transitions\\F07R-binding-audit-accepted-001_transition.json",
+      "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\experiments\\CAL-001\\execution_records\\P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG\\CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1\\route_transitions\\F07R-preflight-designed-002_transition.json"
+    ],
+    "terminal_hash": "fb09592ba1503ea090158bee4e22e9a9f2c8b1cd32e6d7f6363e2be7130e1037",
+    "terminal_state": "PREFLIGHT_DESIGNED_NOT_RUN",
+    "valid": true
+  },
+  "schema_version": "CAL001_F07R_DUPLICATE_PREVENTION_SNAPSHOT_V1",
+  "snapshot_at": "2026-07-21T20:08:00.745742Z"
+}

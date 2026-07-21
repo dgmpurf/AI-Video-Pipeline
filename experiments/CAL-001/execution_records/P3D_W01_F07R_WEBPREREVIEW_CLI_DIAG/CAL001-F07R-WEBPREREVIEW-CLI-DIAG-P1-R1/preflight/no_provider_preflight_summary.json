@@ -1,0 +1,166 @@
+{
+  "D1_decision": {
+    "commit": "8b64aef7ac8eadb32e474c9e1ce682c0be348b93",
+    "decision": "NO_PROVIDER_CANARY_AND_PREFLIGHT_AUTHORIZATION_DECISION_READY_EXECUTION",
+    "report_byte_length": 16116,
+    "report_git_blob": "23b72ec1fbba6d4da4990998e34b5aeee4dda445",
+    "report_path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_NO_PROVIDER_CANARY_AND_PREFLIGHT_AUTHORIZATION_DECISION_RESULT.md",
+    "report_sha256": "330135492c3ab7bd802176a288e6e1ccb0d3f9fae0200372e80de3089a0400fd"
+  },
+  "authority_flags": {
+    "batch_authorized": false,
+    "binding_active": false,
+    "binding_audit_accepted": true,
+    "binding_audit_complete": true,
+    "binding_authorized": false,
+    "download_authorized": false,
+    "execution_authority_active": false,
+    "final_master": false,
+    "locked": false,
+    "package_active": false,
+    "package_authorized": false,
+    "preflight_executed": true,
+    "preflight_passed": true,
+    "preflight_safe_blocked": false,
+    "provider_command_allowed": false,
+    "provider_eligibility": true,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "checkpoint_authorization_binding": {
+    "authorization_base64_length": 4500,
+    "authorization_byte_length": 3373,
+    "authorization_checkpoint_binding_verified": true,
+    "authorization_round_trip_verified": true,
+    "authorization_sha256": "f1af8cc334d5da10120cb6cddcd8e1785979435d1e7f424896688a00074e2343",
+    "authorization_verified": true,
+    "local_head": "8b64aef7ac8eadb32e474c9e1ce682c0be348b93",
+    "origin_main": "8b64aef7ac8eadb32e474c9e1ce682c0be348b93",
+    "required_checkpoint": "8b64aef7ac8eadb32e474c9e1ce682c0be348b93"
+  },
+  "command_invocations": {
+    "F08_invocation_count": 0,
+    "batch_invocation_count": 0,
+    "checklogin_invocation_count": 0,
+    "download_invocation_count": 0,
+    "dreamina_cli_invocation_count": 4,
+    "login_invocation_count": 0,
+    "logout_invocation_count": 0,
+    "multimodal2video_help_invocation_count": 1,
+    "provider_submit_invocation_count": 0,
+    "query_invocation_count": 0,
+    "relogin_invocation_count": 0,
+    "resubmit_invocation_count": 0,
+    "retry_invocation_count": 0,
+    "root_help_invocation_count": 1,
+    "user_credit_invocation_count": 1,
+    "version_invocation_count": 1
+  },
+  "command_results": {
+    "account_viability": {
+      "available_credit_in_summary": false,
+      "existing_session_viable": true,
+      "exit_classification": "completed_exit_zero",
+      "gate": "PASS",
+      "no_login_invoked": true,
+      "no_repair_invoked": true,
+      "numeric_credit_present": true
+    },
+    "multimodal2video_help": {
+      "exit_classification": "completed_exit_zero",
+      "gate": "PASS",
+      "raw_output_hash_matched": true,
+      "semantic_contract_matched": true,
+      "unexpected_upload_controls_present": false
+    },
+    "root_help": {
+      "checklogin_top_level_command_documented": false,
+      "exit_classification": "completed_exit_zero",
+      "gate": "PASS",
+      "nested_login_checklogin_example_documented": true,
+      "raw_output_hash_matched": true,
+      "semantic_contract_matched": true
+    },
+    "version": {
+      "exit_classification": "completed_exit_zero",
+      "gate": "PASS",
+      "raw_output_hash_matched": true,
+      "semantic_contract_matched": true
+    }
+  },
+  "credit_gate": {
+    "available_credit_disclosed": false,
+    "credit_gate_passed": true,
+    "current_completed_fixed_count": 13,
+    "current_post_submit_reserve_floor": 560,
+    "fixed_macro_threshold": 5530,
+    "fixed_manifest_task_count": 84,
+    "one_operation_reserve_threshold": 630,
+    "required_pre_submit_credit": 5530,
+    "stricter_current_threshold": 5530
+  },
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "failure_reasons": [],
+  "final_preflight_decision": "NO_PROVIDER_PREFLIGHT_PASSED_AWAITING_SUBMIT_AUTHORIZATION",
+  "interpretation_notes": [
+    "Root-help exact bytes matched the accepted baseline. The nested 'dreamina login checklogin' example is not a top-level root command; this scope was verified without reinvoking Dreamina."
+  ],
+  "next_required_phase": "RETURN_TO_CHATGPT_FOR_ONE_SUBMIT_AUTHORIZATION_DECISION",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_NO_PROVIDER_CANARY_AND_PREFLIGHT_ONLY",
+  "provider_route": {
+    "operation_counters": {
+      "route_batch_invocation_count": 0,
+      "route_credit_charged_total": 0,
+      "route_download_invocation_count": 0,
+      "route_provider_submit_invocation_count": 0,
+      "route_provider_task_created_count": 0,
+      "route_query_invocation_count": 0,
+      "route_resubmit_invocation_count": 0,
+      "route_retry_invocation_count": 0
+    },
+    "provider_called": false,
+    "provider_task_created": false,
+    "route_provider_submit_allowance_consumed": false,
+    "route_provider_submit_invocation_count": 0
+  },
+  "raw_capture_and_sensitive_data": {
+    "available_credit_exposed_in_summary": false,
+    "available_credit_recorded_only_in_parsed_account_viability": true,
+    "decode_policy": "utf-8/errors-replace",
+    "raw_authorization_or_base64_persisted": false,
+    "raw_stdout_stderr_hashed_before_decode": true,
+    "stdout_stderr_captured_separately": true,
+    "unsanitized_raw_output_persisted": false
+  },
+  "record_type": "CAL001_F07R_NO_PROVIDER_CANARY_AND_PREFLIGHT_SUMMARY",
+  "recorded_at": "2026-07-21T20:19:41.078430Z",
+  "schema_version": "CAL001_F07R_NO_PROVIDER_PREFLIGHT_SUMMARY_V1",
+  "starting_route_chain": {
+    "finding_details": [],
+    "ordered_paths": [
+      "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\experiments\\CAL-001\\execution_records\\P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG\\CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1\\route_transitions\\F07R-binding-audit-accepted-001_transition.json",
+      "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\experiments\\CAL-001\\execution_records\\P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG\\CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1\\route_transitions\\F07R-preflight-designed-002_transition.json"
+    ],
+    "terminal_state": "PREFLIGHT_DESIGNED_NOT_RUN",
+    "valid": true
+  },
+  "static_gate_results": {
+    "complete_route_chain_gate": "PASS",
+    "duplicate_prevention_gate": "PASS",
+    "executable_identity_gate": "PASS",
+    "package_prompt_payload_fixture_gate": "PASS",
+    "parser_support_argv_accounting_gate": "PASS",
+    "static_binding_gate": "PASS"
+  },
+  "support_tests": {
+    "collected": 201,
+    "command": "python -m pytest -q tests/test_f07r_support_contract.py",
+    "failed": 0,
+    "gate": "PASS",
+    "passed": 200,
+    "skip_reason": "POSIX permission bits are not stable on Windows",
+    "skipped": 1
+  }
+}

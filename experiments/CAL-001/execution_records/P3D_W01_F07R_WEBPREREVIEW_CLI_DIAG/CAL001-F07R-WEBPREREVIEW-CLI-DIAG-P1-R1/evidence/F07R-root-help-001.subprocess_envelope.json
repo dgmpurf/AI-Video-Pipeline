@@ -1,0 +1,55 @@
+{
+  "authentication_repair": false,
+  "batch": false,
+  "checkpoint_authorization_binding": {
+    "authorization_byte_length": 3373,
+    "authorization_sha256": "f1af8cc334d5da10120cb6cddcd8e1785979435d1e7f424896688a00074e2343",
+    "checkpoint": "8b64aef7ac8eadb32e474c9e1ce682c0be348b93"
+  },
+  "command_kind": "dreamina_root_help",
+  "download": false,
+  "environment": "inherited_without_mutation",
+  "executable_identity": {
+    "byte_length": 31879680,
+    "path": "C:/Users/msjpurf/bin/dreamina.exe",
+    "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10"
+  },
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "finished_at": "2026-07-21T20:13:26.857438Z",
+  "invocation_count": 1,
+  "login": false,
+  "operation_id": "F07R-root-help-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_NO_PROVIDER_CANARY_AND_PREFLIGHT_ONLY",
+  "process_classification": "completed",
+  "provider_submit": false,
+  "query": false,
+  "record_type": "CAL001_F07R_SANITIZED_READ_ONLY_CLI_SUBPROCESS_ENVELOPE",
+  "redacted_argument_vector": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "-h"
+  ],
+  "resubmit": false,
+  "retry": false,
+  "schema_version": "CAL001_F07R_SANITIZED_SUBPROCESS_ENVELOPE_V1",
+  "shell_interpolation": false,
+  "started_at": "2026-07-21T20:13:24.433860Z",
+  "stdin": "closed",
+  "stream_metadata": {
+    "raw_content_persisted": false,
+    "raw_stderr_byte_count": 0,
+    "raw_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_stdout_byte_count": 2673,
+    "raw_stdout_sha256": "a7730ec92f51b4c992605d008e5533ea984c0c799b25a8490048a8b372883c81",
+    "sanitized_stderr": "",
+    "sanitized_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_stdout": "Usage:\n  dreamina [flags]\n\n\u5373\u68a6 official AIGC CLI tool for login, account, and generation workflows\n\nAbout:\n  dreamina is the \u5373\u68a6 official AIGC CLI tool.\n\nQuick start:\n  1. Run \"dreamina login\" to complete OAuth device login.\n  2. For headless login, run \"dreamina login --headless\", then \"dreamina login checklogin --device_code=<redacted>\n  3. Run a generator command such as \"dreamina text2image --prompt=<redacted>\n  4. Use \"dreamina query_result --submit_id=<id>\" for async tasks, or \"dreamina list_task\" to review saved tasks.\n  5. Use \"dreamina user_credit\" to check the current account credit balance.\n\nTips:\n  Run \"dreamina <subcommand> -h\" to view detailed help for any subcommand.\n  Login now uses OAuth Device Flow and prints verification_uri, user_code, and device_code <redacted>\n  All generation operations consume credits.\n  Seedance 2.0 family is a flagship video generation model family and is a strong choice when output quality matters most.\n\nBuilt-in Commands:\n  help                 Help about any command\n  list_task            List saved tasks with status and result summary\n  login                Log in locally with OAuth Device Flow before using task and account commands\n  logout               Clear the local OAuth login state\n  query_result         Query the current result of an async generation task\n  relogin              Clear the local OAuth login state and force a fresh OAuth login\n  session              <redacted>\n  user_credit          Show the current user's remaining credit balance\n  version              Print build version and commit information\n\n\nGenerator Commands:\n  frames2video         Submit a Dreamina first-last-frames video task\n  image2image          Submit a Dreamina image-to-image task\n  image2video          Animate one image into video; use multiframe2video for multi-image stories\n  image_upscale        Submit a Dreamina image upscale task\n  multiframe2video     Create a coherent video story from multiple images\n  multimodal2video     Dreamina flagship video mode (\u5168\u80fd\u53c2\u8003 / formerly ref2video) with all-around references and Seedance 2.0\n  text2image           Submit a Dreamina text-to-image task\n  text2video           Submit a Dreamina text-to-video task\n\n\nExamples:\n  dreamina login\n  dreamina login --headless\n  dreamina login checklogin --device_code=<redacted>\n  dreamina logout\n  dreamina relogin\n  dreamina user_credit\n  dreamina list_task --gen_status=success\n  dreamina query_result --submit_id=550e8400-e29b-41d4-a716-446655440000\n  dreamina text2image --prompt=<redacted> --ratio=1:1 --resolution_type=2k\n",
+    "sanitized_stdout_sha256": "3dd4fdd0bcba663d6d1462df6c21b36630df427c34053e0170534f0961c5abda",
+    "stderr_decoding": "utf-8/errors-replace",
+    "stderr_utf8_replacement_count": 0,
+    "stdout_decoding": "utf-8/errors-replace",
+    "stdout_utf8_replacement_count": 0
+  },
+  "subprocess_exit_code": 0,
+  "timeout_seconds": 30,
+  "unsanitized_raw_output_persisted": false
+}

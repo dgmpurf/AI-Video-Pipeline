@@ -1,0 +1,71 @@
+{
+  "all_listed_json_canonical_and_reread": true,
+  "evidence_files": [
+    {
+      "byte_length": 8326,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/command_binding.json",
+      "sha256": "c2272fb6fe58d153bb98663603de689d9b5beebc687cbc9fc08bb39fa75530d7"
+    },
+    {
+      "byte_length": 6882,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/duplicate_prevention_snapshot.json",
+      "sha256": "38e3d2bc0d4d4c8fd2e95dfc8ebace54ea9bd7a9b20582c3bf762b31f5fbd599"
+    },
+    {
+      "byte_length": 2298,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-version-001.subprocess_envelope.json",
+      "sha256": "3a2767e74fd0415b5968a964702a91438442d6b70c6a25984e0af38124218464"
+    },
+    {
+      "byte_length": 1606,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-version-001.parsed_version.json",
+      "sha256": "5b4890e33d3fb7eba5d52df18a9a5daccddf7348daa959e384f1eaa959c373f1"
+    },
+    {
+      "byte_length": 4871,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-root-help-001.subprocess_envelope.json",
+      "sha256": "78d113d8d9b479a68b472e54f335b2a7deeb49cc438e1353e6b9e34c4d05f308"
+    },
+    {
+      "byte_length": 2516,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-root-help-001.parsed_help.json",
+      "sha256": "2c5a8681547f289cfa75439f95be7334f703f9f43833d670866ca4978c654b73"
+    },
+    {
+      "byte_length": 5057,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-multimodal2video-help-001.subprocess_envelope.json",
+      "sha256": "20f42327f92a8a7fd81cd47b7a5487d13333765cf1bcb67dae527e2a6a3ad7ca"
+    },
+    {
+      "byte_length": 3233,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-multimodal2video-help-001.parsed_help.json",
+      "sha256": "d4ac585511a563468257b8fe775f3e9a7539aa88b7df6f377868dcf4e5082966"
+    },
+    {
+      "byte_length": 2568,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-account-viability-001.subprocess_envelope.json",
+      "sha256": "1213961ab20940dafbe36f09fa81dac6527a4466ca13887ed09555bb3f1d24e3"
+    },
+    {
+      "byte_length": 1809,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-account-viability-001.parsed_account_viability.json",
+      "sha256": "5ea9a019fef5755865b76631893af0e55c12c9e51c39e3b41c227b5a9b573a88"
+    },
+    {
+      "byte_length": 6709,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/preflight/no_provider_preflight_summary.json",
+      "sha256": "0d49c7e15627889827d2d053f8e5cd9ae904bf47c861933fd015cd3cb60f63e4"
+    }
+  ],
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "future_artifact_paths_without_hash_facts": {
+    "report_path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_NO_PROVIDER_CANARY_AND_PREFLIGHT_ONLY_RESULT.md",
+    "sequence_3_transition_path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-preflight-result-003_transition.json"
+  },
+  "manifest_self_hash_present": false,
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_NO_PROVIDER_CANARY_AND_PREFLIGHT_ONLY",
+  "record_type": "CAL001_F07R_NO_PROVIDER_PREFLIGHT_EVIDENCE_MANIFEST",
+  "recorded_at": "2026-07-21T20:19:41.087643Z",
+  "schema_version": "CAL001_F07R_NO_PROVIDER_PREFLIGHT_EVIDENCE_MANIFEST_V1",
+  "unsanitized_raw_content_listed_or_persisted": false
+}
