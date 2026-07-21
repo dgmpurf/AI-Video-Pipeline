@@ -29,13 +29,16 @@ from app.ai_video_pipeline.execution.f07r_support_contract import (
 
 
 EMPTY_SHA256 = hashlib.sha256(b"").hexdigest()
+BOUND_SUBMIT_COUNTER_KEY = support.ROUTE_PROVIDER_SUBMIT_INVOCATION_COUNTER_KEY
+TRANSITION_SCHEMA_VERSION = "CAL001_F07R_TRANSITION_V1"
+EXPERIMENT_ID = "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1"
 
 
 def _claim_kwargs(operation_id: str = "submit-001") -> dict[str, object]:
     return {
         "schema_version": "CAL001_F07R_EXCLUSIVE_CLAIM_V1",
         "record_type": "CAL001_F07R_EXCLUSIVE_SUBMIT_CLAIM",
-        "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+        "experiment_id": EXPERIMENT_ID,
         "operation_id": operation_id,
         "submit_authorized": True,
         "created_at": "2026-07-21T00:00:00Z",
@@ -49,14 +52,17 @@ def _anchor_record(
     invocation_count: int = 0,
     counters: dict[str, int] | None = None,
 ) -> Path:
+    resolved_counters = dict(counters) if counters is not None else {"submit": invocation_count}
+    resolved_counters.setdefault(BOUND_SUBMIT_COUNTER_KEY, invocation_count)
     payload = {
-        "schema_version": "ANCHOR_V1",
+        "schema_version": TRANSITION_SCHEMA_VERSION,
         "record_type": "ANCHOR",
+        "experiment_id": EXPERIMENT_ID,
         "route_status_code": "BINDING_CREATED_NOT_AUDITED",
         "route_provider_submit_allowance_consumed": allowance_consumed,
         "route_provider_submit_invocation_count": invocation_count,
         "authority_flags": {"submit_authorized": False},
-        "operation_counters": counters or {"submit": invocation_count},
+        "operation_counters": resolved_counters,
     }
     path.write_bytes(canonical_json_bytes(payload))
     return path
@@ -75,10 +81,16 @@ def _transition_kwargs(
     allowance_consumed: bool = True,
     invocation_count: int = 1,
 ) -> dict[str, object]:
+    resolved_counters = (
+        dict(counters)
+        if counters is not None
+        else {"submit": invocation_count, "query": 0}
+    )
+    resolved_counters.setdefault(BOUND_SUBMIT_COUNTER_KEY, invocation_count)
     return {
-        "schema_version": "CAL001_F07R_TRANSITION_V1",
+        "schema_version": TRANSITION_SCHEMA_VERSION,
         "record_type": "CAL001_F07R_ROUTE_TRANSITION",
-        "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+        "experiment_id": EXPERIMENT_ID,
         "transition_id": f"transition-{sequence}",
         "sequence_number": sequence,
         "previous_record_path": str(previous.resolve()),
@@ -90,7 +102,7 @@ def _transition_kwargs(
             "query_authorized": False,
             "download_authorized": False,
         },
-        "operation_counters": counters or {"submit": invocation_count, "query": 0},
+        "operation_counters": resolved_counters,
         "route_provider_submit_allowance_consumed": allowance_consumed,
         "route_provider_submit_invocation_count": invocation_count,
         "created_at": f"2026-07-21T00:00:0{sequence}Z",
@@ -681,6 +693,190 @@ def test_noncreation_malformed_identifier_result_returns_failed_result() -> None
     assert "selected_submit_matches" in result["failed_prerequisites"]
 
 
+@pytest.mark.parametrize("field_action", ["missing", "unexpected"])
+def test_noncreation_rejects_identifier_result_field_set_changes(
+    field_action: str,
+) -> None:
+    values = _valid_noncreation_kwargs()
+    identifier_result = dict(values["identifier_result"])
+    if field_action == "missing":
+        del identifier_result["all_logid_candidates"]
+    else:
+        identifier_result["unexpected"] = False
+    values["identifier_result"] = identifier_result
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is False
+    assert "identifier_result_strict_schema" in result["failed_prerequisites"]
+
+
+def test_noncreation_rejects_identifier_classification_mismatch() -> None:
+    values = _valid_noncreation_kwargs()
+    identifier_result = dict(values["identifier_result"])
+    identifier_result["submit_id_consistency_classification"] = "MISSING"
+    values["identifier_result"] = identifier_result
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is False
+    assert "identifier_result_strict_schema" in result["failed_prerequisites"]
+
+
+def test_noncreation_rejects_missing_candidates_with_selected_identifier() -> None:
+    values = _valid_noncreation_kwargs()
+    identifier_result = dict(values["identifier_result"])
+    identifier_result["all_submit_id_candidates"] = []
+    values["identifier_result"] = identifier_result
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is False
+    assert "identifier_result_strict_schema" in result["failed_prerequisites"]
+
+
+def test_noncreation_rejects_frame_error_hidden_by_false_contradiction() -> None:
+    values = _valid_noncreation_kwargs()
+    identifier_result = dict(values["identifier_result"])
+    unsafe = validate_all_identifier_occurrences(
+        '{"submit_id":"A","submit_id":"B"}',
+        "",
+    )
+    identifier_result["strict_frame_errors"] = [unsafe["strict_frame_errors"][0]]
+    identifier_result["contradictory_identifiers_present"] = False
+    values["identifier_result"] = identifier_result
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is False
+    assert "identifier_result_strict_schema" in result["failed_prerequisites"]
+
+
+@pytest.mark.parametrize(
+    ("field", "bad_value"),
+    [
+        ("identifier_type", "logid"),
+        ("value", " BAD-HANDLE "),
+        ("channel", "combined"),
+        ("source_kind", "unknown"),
+        ("frame_index", -1),
+        ("line_number", -1),
+        ("character_offset", -1),
+        ("json_path", "$"),
+        ("discovery_order", 0),
+    ],
+)
+def test_noncreation_rejects_malformed_identifier_occurrence(
+    field: str,
+    bad_value: object,
+) -> None:
+    values = _valid_noncreation_kwargs()
+    identifier_result = json.loads(json.dumps(values["identifier_result"]))
+    identifier_result["all_submit_id_candidates"][0][field] = bad_value
+    values["identifier_result"] = identifier_result
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is False
+    assert "identifier_result_strict_schema" in result["failed_prerequisites"]
+
+
+def test_noncreation_rejects_duplicate_global_discovery_order() -> None:
+    values = _valid_noncreation_kwargs()
+    identifier_result = validate_all_identifier_occurrences(
+        "submit_id=NEW-HANDLE-001 submit_id=NEW-HANDLE-001",
+        "",
+    )
+    identifier_result["all_submit_id_candidates"][1]["discovery_order"] = 1
+    values["identifier_result"] = identifier_result
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is False
+    assert "identifier_result_strict_schema" in result["failed_prerequisites"]
+
+
+@pytest.mark.parametrize(
+    ("stdout", "stderr", "submit_classification", "logid_classification"),
+    [
+        ("", "", "MISSING", "MISSING"),
+        ("submit_id=S-1", "", "UNIQUE", "MISSING"),
+        ("submit_id=S-1 submit_id=S-1", "", "DUPLICATE_EQUAL", "MISSING"),
+        ("submit_id=S-1", "submit_id=S-2", "CONFLICTING", "MISSING"),
+    ],
+)
+def test_identifier_result_strict_revalidation_accepts_exact_classifications(
+    stdout: str,
+    stderr: str,
+    submit_classification: str,
+    logid_classification: str,
+) -> None:
+    identifier_result = validate_all_identifier_occurrences(stdout, stderr)
+
+    validated = support._validate_identifier_result(identifier_result)
+
+    assert validated == identifier_result
+    assert validated["submit_id_consistency_classification"] == submit_classification
+    assert validated["logid_consistency_classification"] == logid_classification
+
+
+def test_identifier_result_strict_revalidation_accepts_recognized_frame_errors() -> None:
+    identifier_result = validate_all_identifier_occurrences(
+        '{"submit_id":[]}',
+        "",
+    )
+
+    validated = support._validate_identifier_result(identifier_result)
+
+    assert validated == identifier_result
+    assert validated["strict_frame_errors"]
+    assert validated["contradictory_identifiers_present"] is True
+
+
+def test_identifier_result_strict_revalidation_rejects_malformed_frame_error() -> None:
+    identifier_result = validate_all_identifier_occurrences(
+        '{"submit_id":"A","submit_id":"B"}',
+        "",
+    )
+    identifier_result["strict_frame_errors"][0]["identifier_type"] = "submit_id"
+
+    with pytest.raises(support.IdentifierConsistencyError):
+        support._validate_identifier_result(identifier_result)
+
+
+@pytest.mark.parametrize(
+    "historical_handles",
+    [
+        (" NEW-HANDLE-001 ", "OLD-HANDLE-002"),
+        ("OLD-HANDLE-001", " OLD-HANDLE-001 "),
+    ],
+)
+def test_noncreation_rejects_whitespace_wrapped_historical_handles(
+    historical_handles: tuple[str, str],
+) -> None:
+    values = _valid_noncreation_kwargs()
+    values["historical_quarantined_handles"] = historical_handles
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is False
+    assert "historical_quarantined_handles_exact" in result["failed_prerequisites"]
+
+
+@pytest.mark.parametrize(
+    "new_handle",
+    [" NEW-HANDLE-001 ", "NEW HANDLE", "NEW/HANDLE", "NEW-HANDLE\t"],
+)
+def test_noncreation_rejects_noncanonical_new_handle(new_handle: str) -> None:
+    values = _valid_noncreation_kwargs()
+    values["new_submit_handle"] = new_handle
+
+    result = validate_zero_charge_prequeue_noncreation(**values)
+
+    assert result["provider_task_noncreation_proven"] is False
+    assert "new_submit_handle_canonical" in result["failed_prerequisites"]
+
+
 def test_noncreation_unhashable_marker_returns_failed_result() -> None:
     values = _valid_noncreation_kwargs()
     values["prequeue_upload_marker"] = ["upload phase, no file upload"]
@@ -860,6 +1056,30 @@ def test_exclusive_claim_requires_existing_parent(tmp_path: Path) -> None:
         create_exclusive_submit_claim(tmp_path / "missing" / "claim.json", **_claim_kwargs())
 
 
+@pytest.mark.parametrize("submit_authorized", [False, None, 0, 1, "true"])
+def test_exclusive_claim_rejects_unauthorized_before_open(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    submit_authorized: object,
+) -> None:
+    path = tmp_path / "claim.json"
+    values = _claim_kwargs()
+    values["submit_authorized"] = submit_authorized
+
+    with monkeypatch.context() as scoped:
+        scoped.setattr(
+            support.os,
+            "open",
+            lambda *args, **kwargs: (_ for _ in ()).throw(
+                AssertionError("os.open must not be called")
+            ),
+        )
+        with pytest.raises(ValueError, match="exactly true"):
+            create_exclusive_submit_claim(path, **values)
+
+    assert not path.exists()
+
+
 def test_transition_valid_chain_returns_terminal_evidence(tmp_path: Path) -> None:
     anchor = _anchor_record(tmp_path / "anchor.json")
     first = tmp_path / "transition-1.json"
@@ -885,6 +1105,266 @@ def test_transition_valid_chain_returns_terminal_evidence(tmp_path: Path) -> Non
     assert result["terminal_state"] == "CLOSED"
     assert result["terminal_hash"] == _sha(second)
     assert result["finding_details"] == []
+
+
+@pytest.mark.parametrize(
+    ("field", "bad_value", "message"),
+    [
+        ("experiment_id", "EXPERIMENT-B", "experiment_id mismatch"),
+        ("schema_version", "SCHEMA_V2", "schema_version mismatch"),
+    ],
+)
+def test_transition_creation_rejects_cross_identity_before_open(
+    tmp_path: Path,
+    field: str,
+    bad_value: str,
+    message: str,
+) -> None:
+    anchor = _anchor_record(tmp_path / "anchor.json")
+    target = tmp_path / "transition.json"
+    values = _transition_kwargs(anchor, sequence=1, state="STATE_1")
+    values[field] = bad_value
+
+    with pytest.raises(TransitionChainError, match=message):
+        create_append_only_transition(target, **values)
+
+    assert not target.exists()
+
+
+@pytest.mark.parametrize(
+    ("field", "bad_value", "finding_code"),
+    [
+        ("experiment_id", "EXPERIMENT-B", "experiment_id_mismatch:"),
+        ("schema_version", "SCHEMA_V2", "schema_version_mismatch:"),
+    ],
+)
+def test_transition_chain_rejects_cross_identity_splicing(
+    tmp_path: Path,
+    field: str,
+    bad_value: str,
+    finding_code: str,
+) -> None:
+    anchor = _anchor_record(tmp_path / "anchor.json")
+    transition = _write_transition_record(
+        tmp_path / "transition.json",
+        anchor,
+        sequence=1,
+    )
+    payload = strict_json_load_file(transition)
+    payload[field] = bad_value
+    transition.write_bytes(canonical_json_bytes(payload))
+
+    result = validate_transition_chain(anchor, [transition])
+
+    assert result["valid"] is False
+    assert any(
+        finding.startswith(finding_code) for finding in result["finding_details"]
+    )
+
+
+@pytest.mark.parametrize(
+    ("allowance_consumed", "invocation_count"),
+    [(False, 1), (True, 0)],
+)
+def test_transition_creation_rejects_invalid_allowance_invocation_pair(
+    tmp_path: Path,
+    allowance_consumed: bool,
+    invocation_count: int,
+) -> None:
+    anchor = _anchor_record(tmp_path / "anchor.json")
+    target = tmp_path / "transition.json"
+
+    with pytest.raises(TransitionChainError, match="pair is invalid"):
+        create_append_only_transition(
+            target,
+            **_transition_kwargs(
+                anchor,
+                sequence=1,
+                state="STATE_1",
+                allowance_consumed=allowance_consumed,
+                invocation_count=invocation_count,
+            ),
+        )
+
+    assert not target.exists()
+
+
+@pytest.mark.parametrize(
+    ("allowance_consumed", "invocation_count"),
+    [(False, 1), (True, 0)],
+)
+def test_transition_chain_rejects_invalid_allowance_invocation_pair(
+    tmp_path: Path,
+    allowance_consumed: bool,
+    invocation_count: int,
+) -> None:
+    anchor = _anchor_record(tmp_path / "anchor.json")
+    transition = _write_transition_record(
+        tmp_path / "transition.json",
+        anchor,
+        sequence=1,
+        allowance_consumed=allowance_consumed,
+        invocation_count=invocation_count,
+    )
+
+    result = validate_transition_chain(anchor, [transition])
+
+    assert result["valid"] is False
+    assert any(
+        finding.startswith("invalid_allowance_invocation_pair:")
+        for finding in result["finding_details"]
+    )
+
+
+@pytest.mark.parametrize(
+    ("allowance_consumed", "invocation_count"),
+    [(False, 1), (True, 0)],
+)
+def test_transition_chain_rejects_invalid_anchor_allowance_invocation_pair(
+    tmp_path: Path,
+    allowance_consumed: bool,
+    invocation_count: int,
+) -> None:
+    anchor = _anchor_record(
+        tmp_path / "anchor.json",
+        allowance_consumed=allowance_consumed,
+        invocation_count=invocation_count,
+    )
+
+    result = validate_transition_chain(anchor, [])
+
+    assert result["valid"] is False
+    assert any(
+        finding.startswith("invalid_allowance_invocation_pair:")
+        for finding in result["finding_details"]
+    )
+
+
+@pytest.mark.parametrize(
+    ("allowance_consumed", "invocation_count"),
+    [(False, 1), (True, 0)],
+)
+def test_transition_creation_rejects_invalid_predecessor_allowance_invocation_pair(
+    tmp_path: Path,
+    allowance_consumed: bool,
+    invocation_count: int,
+) -> None:
+    anchor = _anchor_record(
+        tmp_path / "anchor.json",
+        allowance_consumed=allowance_consumed,
+        invocation_count=invocation_count,
+    )
+    target = tmp_path / "transition.json"
+
+    with pytest.raises(TransitionChainError, match="invalid state shape"):
+        create_append_only_transition(
+            target,
+            **_transition_kwargs(anchor, sequence=1, state="STATE_1"),
+        )
+
+    assert not target.exists()
+
+
+def test_transition_creation_rejects_missing_bound_submit_counter(
+    tmp_path: Path,
+) -> None:
+    anchor = _anchor_record(tmp_path / "anchor.json")
+    target = tmp_path / "transition.json"
+    values = _transition_kwargs(anchor, sequence=1, state="STATE_1")
+    del values["operation_counters"][BOUND_SUBMIT_COUNTER_KEY]
+
+    with pytest.raises(TransitionChainError, match="must include"):
+        create_append_only_transition(target, **values)
+
+    assert not target.exists()
+
+
+def test_transition_creation_rejects_bound_submit_counter_mismatch(
+    tmp_path: Path,
+) -> None:
+    anchor = _anchor_record(tmp_path / "anchor.json")
+    target = tmp_path / "transition.json"
+    values = _transition_kwargs(anchor, sequence=1, state="STATE_1")
+    values["operation_counters"][BOUND_SUBMIT_COUNTER_KEY] = 0
+
+    with pytest.raises(TransitionChainError, match="counter mismatch"):
+        create_append_only_transition(target, **values)
+
+    assert not target.exists()
+
+
+@pytest.mark.parametrize("counter_change", ["missing", "mismatch"])
+def test_transition_creation_rejects_invalid_predecessor_bound_submit_counter(
+    tmp_path: Path,
+    counter_change: str,
+) -> None:
+    anchor = _anchor_record(tmp_path / "anchor.json")
+    payload = strict_json_load_file(anchor)
+    if counter_change == "missing":
+        del payload["operation_counters"][BOUND_SUBMIT_COUNTER_KEY]
+    else:
+        payload["operation_counters"][BOUND_SUBMIT_COUNTER_KEY] = 1
+    anchor.write_bytes(canonical_json_bytes(payload))
+    target = tmp_path / "transition.json"
+
+    with pytest.raises(TransitionChainError, match="invalid state shape"):
+        create_append_only_transition(
+            target,
+            **_transition_kwargs(anchor, sequence=1, state="STATE_1"),
+        )
+
+    assert not target.exists()
+
+
+@pytest.mark.parametrize("counter_change", ["missing", "mismatch"])
+def test_transition_chain_rejects_invalid_bound_submit_counter(
+    tmp_path: Path,
+    counter_change: str,
+) -> None:
+    anchor = _anchor_record(tmp_path / "anchor.json")
+    transition = _write_transition_record(
+        tmp_path / "transition.json",
+        anchor,
+        sequence=1,
+    )
+    payload = strict_json_load_file(transition)
+    if counter_change == "missing":
+        del payload["operation_counters"][BOUND_SUBMIT_COUNTER_KEY]
+        expected = "missing_bound_submit_invocation_counter:"
+    else:
+        payload["operation_counters"][BOUND_SUBMIT_COUNTER_KEY] = 0
+        expected = "bound_submit_invocation_counter_mismatch:"
+    transition.write_bytes(canonical_json_bytes(payload))
+
+    result = validate_transition_chain(anchor, [transition])
+
+    assert result["valid"] is False
+    assert any(
+        finding.startswith(expected) for finding in result["finding_details"]
+    )
+
+
+@pytest.mark.parametrize(
+    "authority_flags",
+    [{}, {"": False}, {"submit_authorized": "no"}, []],
+)
+def test_transition_creation_rejects_invalid_predecessor_authority_flags(
+    tmp_path: Path,
+    authority_flags: object,
+) -> None:
+    anchor = _anchor_record(tmp_path / "anchor.json")
+    payload = strict_json_load_file(anchor)
+    payload["authority_flags"] = authority_flags
+    anchor.write_bytes(canonical_json_bytes(payload))
+    target = tmp_path / "transition.json"
+
+    with pytest.raises(TransitionChainError, match="invalid state shape"):
+        create_append_only_transition(
+            target,
+            **_transition_kwargs(anchor, sequence=1, state="STATE_1"),
+        )
+
+    assert not target.exists()
 
 
 def test_transition_sequence_gap_safe_blocks(tmp_path: Path) -> None:
@@ -1124,6 +1604,7 @@ def test_transition_creation_rejects_allowance_restoration(tmp_path: Path) -> No
                 sequence=1,
                 state="STATE_1",
                 allowance_consumed=False,
+                invocation_count=0,
             ),
         )
 

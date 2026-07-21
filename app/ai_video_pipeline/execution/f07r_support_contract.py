@@ -35,6 +35,67 @@ __all__ = [
 ASCII_WHITESPACE = " \t\r\n\f\v"
 IDENTIFIER_VALUE_RE = re.compile(r"[A-Za-z0-9._:-]+\Z", flags=re.ASCII)
 SHA256_RE = re.compile(r"[0-9a-f]{64}\Z", flags=re.ASCII)
+ROUTE_PROVIDER_SUBMIT_INVOCATION_COUNTER_KEY = (
+    "route_provider_submit_invocation_count"
+)
+_IDENTIFIER_RESULT_FIELDS = frozenset(
+    {
+        "all_submit_id_candidates",
+        "all_logid_candidates",
+        "submit_id_consistency_classification",
+        "logid_consistency_classification",
+        "selected_submit_id",
+        "selected_logid",
+        "strict_frame_errors",
+        "contradictory_identifiers_present",
+    }
+)
+_IDENTIFIER_OCCURRENCE_FIELDS = frozenset(
+    {
+        "identifier_type",
+        "value",
+        "channel",
+        "source_kind",
+        "frame_index",
+        "line_number",
+        "character_offset",
+        "json_path",
+        "discovery_order",
+    }
+)
+_STRICT_FRAME_ERROR_FIELDS = frozenset(
+    {
+        "channel",
+        "source_kind",
+        "frame_index",
+        "line_number",
+        "character_offset",
+        "error_code",
+        "identifier_type",
+        "message",
+    }
+)
+_IDENTIFIER_TYPES = frozenset({"submit_id", "logid"})
+_IDENTIFIER_CHANNELS = frozenset({"stdout", "stderr"})
+_IDENTIFIER_SOURCE_KINDS = frozenset(
+    {"full_stream_json", "line_json", "text_token"}
+)
+_STRICT_FRAME_ERROR_CODES = frozenset(
+    {
+        "duplicate_json_key",
+        "nonfinite_json_value",
+        "strict_json_error",
+        "invalid_structured_identifier_value",
+    }
+)
+_TRANSITION_MARKER_FIELDS = frozenset(
+    {
+        "transition_id",
+        "sequence_number",
+        "previous_record_path",
+        "previous_record_sha256",
+    }
+)
 PREQUEUE_UPLOAD_FAILURE_MARKERS = frozenset(
     {
         "upload phase, no file upload",
@@ -647,6 +708,217 @@ def _is_numeric(value: Any) -> bool:
         return False
 
 
+def _is_nonnegative_integer(value: Any) -> bool:
+    return isinstance(value, int) and not isinstance(value, bool) and value >= 0
+
+
+def _canonical_identifier_token(name: str, value: Any) -> str:
+    if not isinstance(value, str) or not value:
+        raise IdentifierConsistencyError(f"{name} must be a nonempty string")
+    if value != value.strip(ASCII_WHITESPACE):
+        raise IdentifierConsistencyError(
+            f"{name} must not contain outer ASCII whitespace"
+        )
+    if IDENTIFIER_VALUE_RE.fullmatch(value) is None:
+        raise IdentifierConsistencyError(f"{name} has invalid identifier characters")
+    return value
+
+
+def _validate_occurrence(
+    value: Any,
+    *,
+    expected_identifier_type: str,
+) -> dict[str, Any]:
+    if (
+        not isinstance(value, Mapping)
+        or set(value) != _IDENTIFIER_OCCURRENCE_FIELDS
+    ):
+        raise IdentifierConsistencyError("identifier occurrence has an invalid field set")
+    if value.get("identifier_type") != expected_identifier_type:
+        raise IdentifierConsistencyError("identifier occurrence has the wrong identifier type")
+    _canonical_identifier_token("identifier occurrence value", value.get("value"))
+    channel = value.get("channel")
+    source_kind = value.get("source_kind")
+    frame_index = value.get("frame_index")
+    line_number = value.get("line_number")
+    character_offset = value.get("character_offset")
+    json_path = value.get("json_path")
+    discovery_order = value.get("discovery_order")
+    if channel not in _IDENTIFIER_CHANNELS:
+        raise IdentifierConsistencyError("identifier occurrence has an invalid channel")
+    if source_kind not in _IDENTIFIER_SOURCE_KINDS:
+        raise IdentifierConsistencyError("identifier occurrence has an invalid source kind")
+    if not _is_nonnegative_integer(frame_index):
+        raise IdentifierConsistencyError("identifier occurrence has an invalid frame index")
+    if line_number is not None and not _is_nonnegative_integer(line_number):
+        raise IdentifierConsistencyError("identifier occurrence has an invalid line number")
+    if not _is_nonnegative_integer(character_offset):
+        raise IdentifierConsistencyError("identifier occurrence has an invalid character offset")
+    if (
+        not isinstance(discovery_order, int)
+        or isinstance(discovery_order, bool)
+        or discovery_order < 1
+    ):
+        raise IdentifierConsistencyError("identifier occurrence has an invalid discovery order")
+    if source_kind == "full_stream_json":
+        if frame_index != 0 or line_number is not None:
+            raise IdentifierConsistencyError("full-stream occurrence has invalid frame metadata")
+        if not isinstance(json_path, str) or not json_path.startswith("$["):
+            raise IdentifierConsistencyError("full-stream occurrence has an invalid JSON path")
+    elif source_kind == "line_json":
+        if line_number is None or line_number < 1 or frame_index != line_number:
+            raise IdentifierConsistencyError("line occurrence has invalid frame metadata")
+        if not isinstance(json_path, str) or not json_path.startswith("$["):
+            raise IdentifierConsistencyError("line occurrence has an invalid JSON path")
+    else:
+        if line_number is None or line_number < 1 or json_path is not None:
+            raise IdentifierConsistencyError("text occurrence has invalid frame metadata")
+    return dict(value)
+
+
+def _validate_strict_frame_error(value: Any) -> dict[str, Any]:
+    if not isinstance(value, Mapping) or set(value) != _STRICT_FRAME_ERROR_FIELDS:
+        raise IdentifierConsistencyError("strict frame error has an invalid field set")
+    channel = value.get("channel")
+    source_kind = value.get("source_kind")
+    frame_index = value.get("frame_index")
+    line_number = value.get("line_number")
+    character_offset = value.get("character_offset")
+    error_code = value.get("error_code")
+    identifier_type = value.get("identifier_type")
+    message = value.get("message")
+    if channel not in _IDENTIFIER_CHANNELS:
+        raise IdentifierConsistencyError("strict frame error has an invalid channel")
+    if source_kind not in {"full_stream_json", "line_json"}:
+        raise IdentifierConsistencyError("strict frame error has an invalid source kind")
+    if not _is_nonnegative_integer(frame_index):
+        raise IdentifierConsistencyError("strict frame error has an invalid frame index")
+    if line_number is not None and not _is_nonnegative_integer(line_number):
+        raise IdentifierConsistencyError("strict frame error has an invalid line number")
+    if not _is_nonnegative_integer(character_offset):
+        raise IdentifierConsistencyError("strict frame error has an invalid character offset")
+    if error_code not in _STRICT_FRAME_ERROR_CODES:
+        raise IdentifierConsistencyError("strict frame error has an invalid error code")
+    if identifier_type is not None and identifier_type not in _IDENTIFIER_TYPES:
+        raise IdentifierConsistencyError("strict frame error has an invalid identifier type")
+    if not isinstance(message, str) or not message:
+        raise IdentifierConsistencyError("strict frame error has an invalid message")
+    if source_kind == "full_stream_json" and (
+        frame_index != 0 or line_number is not None
+    ):
+        raise IdentifierConsistencyError("full-stream error has invalid frame metadata")
+    if source_kind == "line_json" and (
+        line_number is None or line_number < 1 or frame_index != line_number
+    ):
+        raise IdentifierConsistencyError("line error has invalid frame metadata")
+    if error_code == "invalid_structured_identifier_value":
+        if identifier_type is None:
+            raise IdentifierConsistencyError(
+                "structured identifier error must name its identifier type"
+            )
+    elif identifier_type is not None:
+        raise IdentifierConsistencyError(
+            "strict JSON frame error must not name an identifier type"
+        )
+    return dict(value)
+
+
+def _expected_identifier_classification(
+    identifier_type: str,
+    candidates: Sequence[Mapping[str, Any]],
+    strict_frame_errors: Sequence[Mapping[str, Any]],
+) -> tuple[str, str | None]:
+    unsafe = any(
+        error["identifier_type"] is None
+        or error["identifier_type"] == identifier_type
+        for error in strict_frame_errors
+    )
+    values = [candidate["value"] for candidate in candidates]
+    if unsafe or len(set(values)) > 1:
+        return "CONFLICTING", None
+    if not values:
+        return "MISSING", None
+    if len(values) == 1:
+        return "UNIQUE", values[0]
+    return "DUPLICATE_EQUAL", values[0]
+
+
+def _validate_identifier_result(value: Any) -> dict[str, Any]:
+    if not isinstance(value, Mapping) or set(value) != _IDENTIFIER_RESULT_FIELDS:
+        raise IdentifierConsistencyError("identifier result has an invalid field set")
+    submit_candidates_raw = value.get("all_submit_id_candidates")
+    logid_candidates_raw = value.get("all_logid_candidates")
+    strict_errors_raw = value.get("strict_frame_errors")
+    if not isinstance(submit_candidates_raw, list) or not isinstance(
+        logid_candidates_raw, list
+    ):
+        raise IdentifierConsistencyError("identifier candidates must be lists")
+    if not isinstance(strict_errors_raw, list):
+        raise IdentifierConsistencyError("strict frame errors must be a list")
+
+    submit_candidates = [
+        _validate_occurrence(item, expected_identifier_type="submit_id")
+        for item in submit_candidates_raw
+    ]
+    logid_candidates = [
+        _validate_occurrence(item, expected_identifier_type="logid")
+        for item in logid_candidates_raw
+    ]
+    strict_errors = [_validate_strict_frame_error(item) for item in strict_errors_raw]
+
+    for candidates in (submit_candidates, logid_candidates):
+        orders = [candidate["discovery_order"] for candidate in candidates]
+        if orders != sorted(orders) or len(orders) != len(set(orders)):
+            raise IdentifierConsistencyError(
+                "candidate discovery order is not strictly increasing"
+            )
+    all_orders = [
+        candidate["discovery_order"]
+        for candidate in [*submit_candidates, *logid_candidates]
+    ]
+    if len(all_orders) != len(set(all_orders)) or sorted(all_orders) != list(
+        range(1, len(all_orders) + 1)
+    ):
+        raise IdentifierConsistencyError("global candidate discovery order is invalid")
+
+    expected_submit = _expected_identifier_classification(
+        "submit_id", submit_candidates, strict_errors
+    )
+    expected_logid = _expected_identifier_classification(
+        "logid", logid_candidates, strict_errors
+    )
+    actual_submit = (
+        value.get("submit_id_consistency_classification"),
+        value.get("selected_submit_id"),
+    )
+    actual_logid = (
+        value.get("logid_consistency_classification"),
+        value.get("selected_logid"),
+    )
+    for name, selected in (
+        ("selected_submit_id", actual_submit[1]),
+        ("selected_logid", actual_logid[1]),
+    ):
+        if selected is not None:
+            _canonical_identifier_token(name, selected)
+    if actual_submit != expected_submit:
+        raise IdentifierConsistencyError("submit identifier classification is inconsistent")
+    if actual_logid != expected_logid:
+        raise IdentifierConsistencyError("logid classification is inconsistent")
+
+    contradiction = value.get("contradictory_identifiers_present")
+    if not isinstance(contradiction, bool):
+        raise IdentifierConsistencyError("contradiction flag must be boolean")
+    expected_contradiction = (
+        expected_submit[0] == "CONFLICTING"
+        or expected_logid[0] == "CONFLICTING"
+        or bool(strict_errors)
+    )
+    if contradiction is not expected_contradiction:
+        raise IdentifierConsistencyError("contradiction flag is inconsistent")
+    return dict(value)
+
+
 def validate_zero_charge_prequeue_noncreation(
     *,
     provider_invocation_started: Any,
@@ -682,25 +954,38 @@ def validate_zero_charge_prequeue_noncreation(
         if not condition:
             failed.append(name)
 
-    handle = (
-        new_submit_handle.strip(ASCII_WHITESPACE)
-        if isinstance(new_submit_handle, str)
-        else ""
-    )
-    historical_valid = (
+    try:
+        handle = _canonical_identifier_token("new_submit_handle", new_submit_handle)
+        handle_valid = True
+    except IdentifierConsistencyError:
+        handle = ""
+        handle_valid = False
+    historical_sequence_valid = (
         isinstance(historical_quarantined_handles, Sequence)
         and not isinstance(historical_quarantined_handles, (str, bytes, bytearray))
         and len(historical_quarantined_handles) == 2
-        and all(
-            isinstance(item, str) and bool(item.strip(ASCII_WHITESPACE))
-            for item in historical_quarantined_handles
-        )
-        and len(set(historical_quarantined_handles)) == 2
     )
-    historical = (
-        tuple(historical_quarantined_handles) if historical_valid else tuple()
+    historical_values: list[str] = []
+    if historical_sequence_valid:
+        try:
+            historical_values = [
+                _canonical_identifier_token("historical_quarantined_handle", item)
+                for item in historical_quarantined_handles
+            ]
+        except IdentifierConsistencyError:
+            historical_values = []
+    historical_valid = (
+        historical_sequence_valid
+        and len(historical_values) == 2
+        and len(set(historical_values)) == 2
     )
-    identifiers = identifier_result if isinstance(identifier_result, Mapping) else {}
+    historical = tuple(historical_values) if historical_valid else tuple()
+    try:
+        identifiers = _validate_identifier_result(identifier_result)
+        identifier_result_valid = True
+    except IdentifierConsistencyError:
+        identifiers = {}
+        identifier_result_valid = False
     require("provider_invocation_started", _is_exact_true(provider_invocation_started))
     require("submit_allowance_consumed", _is_exact_true(submit_allowance_consumed))
     require(
@@ -713,11 +998,15 @@ def validate_zero_charge_prequeue_noncreation(
         and prequeue_upload_marker in PREQUEUE_UPLOAD_FAILURE_MARKERS,
     )
     require("new_submit_handle_nonempty", bool(handle))
+    require("new_submit_handle_canonical", handle_valid)
     require(
         "historical_quarantined_handles_exact",
         historical_valid,
     )
-    require("new_handle_distinct", bool(handle) and handle not in historical)
+    require(
+        "new_handle_distinct",
+        handle_valid and historical_valid and handle not in historical,
+    )
     require("new_handle_quarantined", _is_exact_true(new_handle_quarantined))
     require("logid_absent", _is_exact_true(logid_absent))
     require("queue_status_evidence_absent", _is_exact_true(queue_status_evidence_absent))
@@ -743,6 +1032,7 @@ def validate_zero_charge_prequeue_noncreation(
         except (TypeError, ValueError, ArithmeticError):
             credit_delta_zero = False
     require("immediate_credit_delta_zero", credit_delta_zero)
+    require("identifier_result_strict_schema", identifier_result_valid)
     require(
         "identifier_no_contradiction",
         identifiers.get("contradictory_identifiers_present") is False,
@@ -806,6 +1096,8 @@ def _fsync_file(descriptor: int) -> None:
 
 
 def _fsync_parent_directory(parent: Path) -> None:
+    """Fsync the parent where supported; Windows has no portable directory fsync."""
+
     directory_flag = getattr(os, "O_DIRECTORY", None)
     if directory_flag is None:
         return
@@ -866,10 +1158,11 @@ def create_exclusive_submit_claim(
     """Create one durable allowance-consumption claim without replacement."""
 
     target = Path(path)
+    if submit_authorized is not True:
+        raise ValueError("submit_authorized must be exactly true")
+    _validate_allowance_invocation_pair(True, 1)
     if not target.parent.is_dir():
         raise FileNotFoundError(f"claim parent does not exist: {target.parent}")
-    if not isinstance(submit_authorized, bool):
-        raise ValueError("submit_authorized must be boolean")
     record = {
         "schema_version": _require_nonempty_string("schema_version", schema_version),
         "record_type": _require_nonempty_string("record_type", record_type),
@@ -897,7 +1190,7 @@ def create_exclusive_submit_claim(
 
 
 def _validate_authority_flags(authority_flags: Mapping[str, Any]) -> dict[str, bool]:
-    if not authority_flags:
+    if not isinstance(authority_flags, Mapping) or not authority_flags:
         raise TransitionChainError("authority_flags must not be empty")
     result: dict[str, bool] = {}
     for key, value in authority_flags.items():
@@ -909,8 +1202,12 @@ def _validate_authority_flags(authority_flags: Mapping[str, Any]) -> dict[str, b
     return result
 
 
-def _validate_operation_counters(operation_counters: Mapping[str, Any]) -> dict[str, int]:
-    if not operation_counters:
+def _validate_operation_counters(
+    operation_counters: Mapping[str, Any],
+    *,
+    expected_submit_invocation_count: int,
+) -> dict[str, int]:
+    if not isinstance(operation_counters, Mapping) or not operation_counters:
         raise TransitionChainError("operation_counters must not be empty")
     result: dict[str, int] = {}
     for key, value in operation_counters.items():
@@ -919,7 +1216,118 @@ def _validate_operation_counters(operation_counters: Mapping[str, Any]) -> dict[
         if isinstance(value, bool) or not isinstance(value, int) or value < 0:
             raise TransitionChainError(f"counter {key} must be a nonnegative integer")
         result[key] = value
+    if ROUTE_PROVIDER_SUBMIT_INVOCATION_COUNTER_KEY not in result:
+        raise TransitionChainError(
+            f"operation_counters must include {ROUTE_PROVIDER_SUBMIT_INVOCATION_COUNTER_KEY}"
+        )
+    if (
+        result[ROUTE_PROVIDER_SUBMIT_INVOCATION_COUNTER_KEY]
+        != expected_submit_invocation_count
+    ):
+        raise TransitionChainError("bound submit invocation counter mismatch")
     return result
+
+
+def _validate_allowance_invocation_pair(
+    allowance_consumed: Any,
+    invocation_count: Any,
+) -> tuple[bool, int]:
+    if not isinstance(allowance_consumed, bool):
+        raise TransitionChainError("allowance-consumed state must be boolean")
+    if (
+        isinstance(invocation_count, bool)
+        or not isinstance(invocation_count, int)
+        or invocation_count < 0
+        or invocation_count > 1
+    ):
+        raise TransitionChainError("submit invocation count must be zero or one")
+    if (allowance_consumed, invocation_count) not in {(False, 0), (True, 1)}:
+        raise TransitionChainError(
+            "allowance-consumed and invocation-count pair is invalid"
+        )
+    return allowance_consumed, invocation_count
+
+
+def _state_shape_findings(
+    record: Mapping[str, Any],
+    *,
+    anchor: bool,
+) -> list[str]:
+    findings: list[str] = []
+    for field in ("schema_version", "record_type", "experiment_id"):
+        if not isinstance(record.get(field), str) or not record.get(field):
+            findings.append(f"missing_or_invalid_field:{field}")
+
+    allowance = record.get("route_provider_submit_allowance_consumed")
+    invocations = record.get("route_provider_submit_invocation_count")
+    if not isinstance(allowance, bool):
+        findings.append("invalid_allowance_state")
+    if (
+        isinstance(invocations, bool)
+        or not isinstance(invocations, int)
+        or invocations < 0
+        or invocations > 1
+    ):
+        findings.append("invalid_submit_invocation_count")
+    elif isinstance(allowance, bool) and (allowance, invocations) not in {
+        (False, 0),
+        (True, 1),
+    }:
+        findings.append("invalid_allowance_invocation_pair")
+
+    flags = record.get("authority_flags")
+    if not isinstance(flags, Mapping) or not flags:
+        findings.append("invalid_authority_flags")
+    else:
+        for key, value in flags.items():
+            if not isinstance(key, str) or not key or not isinstance(value, bool):
+                findings.append(f"invalid_authority_flag:{key}")
+
+    counters = record.get("operation_counters")
+    if not isinstance(counters, Mapping) or not counters:
+        findings.append("invalid_operation_counters")
+    else:
+        for key, value in counters.items():
+            if (
+                not isinstance(key, str)
+                or not key
+                or isinstance(value, bool)
+                or not isinstance(value, int)
+                or value < 0
+            ):
+                findings.append(f"invalid_operation_counter:{key}")
+        if ROUTE_PROVIDER_SUBMIT_INVOCATION_COUNTER_KEY not in counters:
+            findings.append("missing_bound_submit_invocation_counter")
+        elif _is_nonnegative_integer(invocations) and (
+            counters.get(ROUTE_PROVIDER_SUBMIT_INVOCATION_COUNTER_KEY) != invocations
+        ):
+            findings.append("bound_submit_invocation_counter_mismatch")
+
+    if anchor:
+        if not isinstance(record.get("route_status_code"), str) or not record.get(
+            "route_status_code"
+        ):
+            findings.append("missing_or_invalid_field:route_status_code")
+        for field in sorted(_TRANSITION_MARKER_FIELDS.intersection(record)):
+            findings.append(f"anchor_transition_field_present:{field}")
+    else:
+        for field in (
+            "transition_id",
+            "previous_record_path",
+            "previous_record_sha256",
+            "current_state_code",
+            "transition_reason",
+            "created_at",
+        ):
+            if not isinstance(record.get(field), str) or not record.get(field):
+                findings.append(f"missing_or_invalid_field:{field}")
+        sequence = record.get("sequence_number")
+        if isinstance(sequence, bool) or not isinstance(sequence, int) or sequence < 1:
+            findings.append("invalid_sequence_number")
+        previous_hash = record.get("previous_record_sha256")
+        if not isinstance(previous_hash, str) or SHA256_RE.fullmatch(previous_hash) is None:
+            findings.append("invalid_previous_record_sha256")
+    return list(dict.fromkeys(findings))
 
 
 def create_append_only_transition(
@@ -944,9 +1352,15 @@ def create_append_only_transition(
 
     target = Path(path)
     previous = Path(previous_record_path).resolve()
+    validated_schema_version = _require_nonempty_string("schema_version", schema_version)
+    validated_experiment_id = _require_nonempty_string("experiment_id", experiment_id)
     if not target.parent.is_dir():
         raise FileNotFoundError(f"transition parent does not exist: {target.parent}")
-    if isinstance(sequence_number, bool) or not isinstance(sequence_number, int) or sequence_number < 1:
+    if (
+        isinstance(sequence_number, bool)
+        or not isinstance(sequence_number, int)
+        or sequence_number < 1
+    ):
         raise TransitionChainError("sequence_number must be a positive integer")
     if not SHA256_RE.fullmatch(str(previous_record_sha256)):
         raise TransitionChainError("previous_record_sha256 must be lowercase SHA-256")
@@ -957,24 +1371,37 @@ def create_append_only_transition(
     actual_previous_sha = hashlib.sha256(previous_bytes).hexdigest()
     if actual_previous_sha != previous_record_sha256:
         raise TransitionChainError("previous record SHA-256 mismatch")
-    if not isinstance(route_provider_submit_allowance_consumed, bool):
-        raise TransitionChainError("allowance-consumed state must be boolean")
-    if (
-        isinstance(route_provider_submit_invocation_count, bool)
-        or not isinstance(route_provider_submit_invocation_count, int)
-        or route_provider_submit_invocation_count < 0
-        or route_provider_submit_invocation_count > 1
-    ):
-        raise TransitionChainError("submit invocation count must be zero or one")
+
+    previous_is_anchor = not any(
+        field in previous_record for field in _TRANSITION_MARKER_FIELDS
+    )
+    previous_findings = _state_shape_findings(
+        previous_record,
+        anchor=previous_is_anchor,
+    )
+    if previous_findings:
+        raise TransitionChainError(
+            "previous record has invalid state shape: " + ", ".join(previous_findings)
+        )
+    if previous_record["experiment_id"] != validated_experiment_id:
+        raise TransitionChainError("predecessor experiment_id mismatch")
+    if previous_record["schema_version"] != validated_schema_version:
+        raise TransitionChainError("predecessor schema_version mismatch")
+
+    _validate_allowance_invocation_pair(
+        route_provider_submit_allowance_consumed,
+        route_provider_submit_invocation_count,
+    )
+    validated_flags = _validate_authority_flags(authority_flags)
+    validated_counters = _validate_operation_counters(
+        operation_counters,
+        expected_submit_invocation_count=route_provider_submit_invocation_count,
+    )
 
     expected_sequence = 1
-    if "sequence_number" in previous_record:
+    if not previous_is_anchor:
         previous_sequence = previous_record.get("sequence_number")
-        if (
-            isinstance(previous_sequence, bool)
-            or not isinstance(previous_sequence, int)
-            or previous_sequence < 1
-        ):
+        if isinstance(previous_sequence, bool) or not isinstance(previous_sequence, int):
             raise TransitionChainError("previous record has invalid sequence_number")
         expected_sequence = previous_sequence + 1
     if sequence_number != expected_sequence:
@@ -982,43 +1409,22 @@ def create_append_only_transition(
             f"sequence_number must be exactly {expected_sequence} for this predecessor"
         )
 
-    validated_flags = _validate_authority_flags(authority_flags)
-    validated_counters = _validate_operation_counters(operation_counters)
-    previous_allowance = previous_record.get("route_provider_submit_allowance_consumed")
-    previous_invocations = previous_record.get("route_provider_submit_invocation_count")
-    previous_counters = previous_record.get("operation_counters")
-    if not isinstance(previous_allowance, bool):
-        raise TransitionChainError("previous record has invalid allowance-consumed state")
-    if (
-        isinstance(previous_invocations, bool)
-        or not isinstance(previous_invocations, int)
-        or previous_invocations < 0
-        or previous_invocations > 1
-    ):
-        raise TransitionChainError("previous record has invalid submit invocation count")
-    if not isinstance(previous_counters, dict) or not previous_counters:
-        raise TransitionChainError("previous record has invalid operation counters")
+    previous_allowance = previous_record["route_provider_submit_allowance_consumed"]
+    previous_invocations = previous_record["route_provider_submit_invocation_count"]
+    previous_counters = previous_record["operation_counters"]
     if previous_allowance and not route_provider_submit_allowance_consumed:
         raise TransitionChainError("submit allowance cannot be restored")
     if route_provider_submit_invocation_count < previous_invocations:
         raise TransitionChainError("submit invocation count cannot decrease")
     for key, previous_value in previous_counters.items():
-        if (
-            not isinstance(key, str)
-            or not key
-            or isinstance(previous_value, bool)
-            or not isinstance(previous_value, int)
-            or previous_value < 0
-        ):
-            raise TransitionChainError("previous record has invalid operation counters")
         current_value = validated_counters.get(key)
         if current_value is None or current_value < previous_value:
             raise TransitionChainError(f"operation counter cannot decrease: {key}")
 
     record = {
-        "schema_version": _require_nonempty_string("schema_version", schema_version),
+        "schema_version": validated_schema_version,
         "record_type": _require_nonempty_string("record_type", record_type),
-        "experiment_id": _require_nonempty_string("experiment_id", experiment_id),
+        "experiment_id": validated_experiment_id,
         "transition_id": _require_nonempty_string("transition_id", transition_id),
         "sequence_number": sequence_number,
         "previous_record_path": str(previous),
@@ -1031,6 +1437,11 @@ def create_append_only_transition(
         "route_provider_submit_invocation_count": route_provider_submit_invocation_count,
         "created_at": _require_nonempty_string("created_at", created_at),
     }
+    current_findings = _state_shape_findings(record, anchor=False)
+    if current_findings:
+        raise TransitionChainError(
+            "new transition has invalid state shape: " + ", ".join(current_findings)
+        )
     payload = canonical_json_bytes(record)
     try:
         _exclusive_create_bytes(target, payload)
@@ -1084,58 +1495,33 @@ def validate_transition_chain(
         path: records[path] for path in dict.fromkeys(normalized_paths) if path in records
     }
 
-    def validate_state_shape(path: str, record: Mapping[str, Any], *, anchor: bool) -> None:
-        allowance = record.get("route_provider_submit_allowance_consumed")
-        if not isinstance(allowance, bool):
-            findings.append(f"invalid_allowance_state:{path}")
-        invocations = record.get("route_provider_submit_invocation_count")
-        if (
-            isinstance(invocations, bool)
-            or not isinstance(invocations, int)
-            or invocations < 0
-            or invocations > 1
-        ):
-            findings.append(f"invalid_submit_invocation_count:{path}")
-        counters = record.get("operation_counters")
-        if not isinstance(counters, dict) or not counters:
-            findings.append(f"invalid_operation_counters:{path}")
-        else:
-            for key, value in counters.items():
-                if (
-                    not isinstance(key, str)
-                    or not key
-                    or isinstance(value, bool)
-                    or not isinstance(value, int)
-                    or value < 0
-                ):
-                    findings.append(f"invalid_operation_counter:{path}:{key}")
-        flags = record.get("authority_flags")
-        if not isinstance(flags, dict) or not flags:
-            findings.append(f"invalid_authority_flags:{path}")
-        else:
-            for key, value in flags.items():
-                if not isinstance(key, str) or not key or not isinstance(value, bool):
-                    findings.append(f"invalid_authority_flag:{path}:{key}")
-        if not anchor:
-            required_strings = (
-                "schema_version",
-                "record_type",
-                "experiment_id",
-                "transition_id",
-                "previous_record_path",
-                "previous_record_sha256",
-                "current_state_code",
-                "transition_reason",
-                "created_at",
-            )
-            for field in required_strings:
-                if not isinstance(record.get(field), str) or not record.get(field):
-                    findings.append(f"missing_or_invalid_field:{path}:{field}")
-
+    anchor_experiment_id: str | None = None
+    anchor_schema_version: str | None = None
     if anchor_path in records:
-        validate_state_shape(anchor_path, records[anchor_path], anchor=True)
+        anchor_record = records[anchor_path]
+        for finding in _state_shape_findings(anchor_record, anchor=True):
+            findings.append(f"{finding}:{anchor_path}")
+        if isinstance(anchor_record.get("experiment_id"), str) and anchor_record.get(
+            "experiment_id"
+        ):
+            anchor_experiment_id = anchor_record["experiment_id"]
+        if isinstance(anchor_record.get("schema_version"), str) and anchor_record.get(
+            "schema_version"
+        ):
+            anchor_schema_version = anchor_record["schema_version"]
     for path, record in transition_records.items():
-        validate_state_shape(path, record, anchor=False)
+        for finding in _state_shape_findings(record, anchor=False):
+            findings.append(f"{finding}:{path}")
+        if (
+            anchor_experiment_id is not None
+            and record.get("experiment_id") != anchor_experiment_id
+        ):
+            findings.append(f"experiment_id_mismatch:{path}")
+        if (
+            anchor_schema_version is not None
+            and record.get("schema_version") != anchor_schema_version
+        ):
+            findings.append(f"schema_version_mismatch:{path}")
 
     sequence_to_paths: dict[int, list[str]] = {}
     for path, record in transition_records.items():
