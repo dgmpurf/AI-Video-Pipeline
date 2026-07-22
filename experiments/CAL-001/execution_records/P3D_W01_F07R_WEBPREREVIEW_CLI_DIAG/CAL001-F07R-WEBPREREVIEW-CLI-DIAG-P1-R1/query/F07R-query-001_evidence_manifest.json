@@ -1,0 +1,65 @@
+{
+  "artifact_count_excluding_manifest": 9,
+  "artifacts": [
+    {
+      "byte_length": 4717,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/query/F07R-query-001_command_binding.json",
+      "sha256": "872b406daaa8590ada65645c5684a55e72a93734a886a7e3fc7d76b7e5642785"
+    },
+    {
+      "byte_length": 598,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/query_claims/F07R-query-001_invocation_claim.json",
+      "sha256": "f0bfed5ad617e5afadbbc7babc83a08761e2b1b5b145732d7657b5e4937e5881"
+    },
+    {
+      "byte_length": 2203,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-query-invocation-started-008_transition.json",
+      "sha256": "40f5f1450acbe893bf1a5c6cc5d3d2a98a60e1bafb51f0ac69290714bd776701"
+    },
+    {
+      "byte_length": 3944,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-query-001.subprocess_envelope.json",
+      "sha256": "866e2cf94523ac5340321c0b134b1c2880848b3ef431916dfae9d6ac39f1b9e0"
+    },
+    {
+      "byte_length": 2139,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-query-001.parsed_query_result.json",
+      "sha256": "2471b6f18be09342c889ebbb69ad50a09626689fe34ca6015486a5dd27bec5a5"
+    },
+    {
+      "byte_length": 4238,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/query/F07R-query-001_execution_summary.json",
+      "sha256": "92265c4ea1ff5b49f4c6c10ca4958b0da9a14e16ae583f4c0e297a83abb99202"
+    },
+    {
+      "byte_length": 2119,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/query/F07R-query-001_authority_closure_record.json",
+      "sha256": "0049304ff1cfe2850ed3b1a81783239d7c6b673f169b93be94d438d2097970a3"
+    },
+    {
+      "byte_length": 2345,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-query-result-009_transition.json",
+      "sha256": "05fb924a672cd5a36df5dbfa47b603ed9c7df2fcf4746f46d4f5af5842a8af2d"
+    },
+    {
+      "byte_length": 6977,
+      "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_QUERY_ONLY_RESULT.md",
+      "sha256": "0d060c13a76ca1e545b6fd554c2e4aeaa450f4f203dd9e4d8eba659bc0de61e1"
+    }
+  ],
+  "created_at": "2026-07-22T10:42:26.509316Z",
+  "existing_tracked_files_modified": false,
+  "expected_G2_created_file_count_including_manifest": 10,
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "final_route_state": "QUERY_SUCCEEDED_AWAITING_DOWNLOAD_AUTHORIZATION",
+  "media_downloaded": false,
+  "operation_id": "F07R-query-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_QUERY_ONLY",
+  "query_outcome_classification": "provider_success_download_not_authorized",
+  "record_type": "CAL001_F07R_QUERY_EVIDENCE_MANIFEST",
+  "schema_version": "CAL001_F07R_QUERY_EVIDENCE_MANIFEST_V1",
+  "self_hash_included": false,
+  "signed_url_values_persisted": false,
+  "starting_checkpoint": "e6179c683a7c04afdabc0a29ef6a886b63098037",
+  "unsanitized_raw_output_persisted": false
+}

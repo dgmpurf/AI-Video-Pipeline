@@ -1,0 +1,97 @@
+{
+  "artifact_bindings": {
+    "exclusive_query_claim": {
+      "byte_length": 598,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/query_claims/F07R-query-001_invocation_claim.json",
+      "sha256": "f0bfed5ad617e5afadbbc7babc83a08761e2b1b5b145732d7657b5e4937e5881"
+    },
+    "parsed_query_result": {
+      "byte_length": 2139,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-query-001.parsed_query_result.json",
+      "sha256": "2471b6f18be09342c889ebbb69ad50a09626689fe34ca6015486a5dd27bec5a5"
+    },
+    "query_command_binding": {
+      "byte_length": 4717,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/query/F07R-query-001_command_binding.json",
+      "sha256": "872b406daaa8590ada65645c5684a55e72a93734a886a7e3fc7d76b7e5642785"
+    },
+    "sequence_8": {
+      "byte_length": 2203,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-query-invocation-started-008_transition.json",
+      "sha256": "40f5f1450acbe893bf1a5c6cc5d3d2a98a60e1bafb51f0ac69290714bd776701"
+    },
+    "sequence_9": {
+      "byte_length": 2345,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-query-result-009_transition.json",
+      "sha256": "05fb924a672cd5a36df5dbfa47b603ed9c7df2fcf4746f46d4f5af5842a8af2d"
+    },
+    "subprocess_envelope": {
+      "byte_length": 3944,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-query-001.subprocess_envelope.json",
+      "sha256": "866e2cf94523ac5340321c0b134b1c2880848b3ef431916dfae9d6ac39f1b9e0"
+    }
+  },
+  "bound_logid": "202607221746551692540470082892BEA",
+  "bound_submit_id": "8736259f-3e91-442e-9625-ed39145fff33",
+  "created_at": "2026-07-22T10:40:55.456089Z",
+  "download_url_present": true,
+  "exact_query_command_count": 1,
+  "expected_result_shape_matched": true,
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "fail_reason_present": false,
+  "final_route_state": "QUERY_SUCCEEDED_AWAITING_DOWNLOAD_AUTHORIZATION",
+  "gen_status": "success",
+  "images_count": 0,
+  "media_created": false,
+  "media_downloaded": false,
+  "next_required_phase": "RETURN_TO_CHATGPT_FOR_DOWNLOAD_AUTHORIZATION_DECISION",
+  "operation_counts": {
+    "batch": 0,
+    "credit_charged_total": 70,
+    "download": 0,
+    "query": 1,
+    "resubmit": 0,
+    "retry": 0,
+    "submit": 1,
+    "task_created": 1,
+    "user_credit_during_G2": 0
+  },
+  "operation_id": "F07R-query-001",
+  "outputs_count": 1,
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_QUERY_ONLY",
+  "query_outcome_classification": "provider_success_download_not_authorized",
+  "query_process_exit_classification": "zero_exit",
+  "query_process_exit_code": 0,
+  "query_process_started": true,
+  "query_timed_out": false,
+  "queue_status": "Finish",
+  "raw_stdout_stderr_hashed_before_decode": true,
+  "record_type": "CAL001_F07R_QUERY_EXECUTION_SUMMARY",
+  "report_path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_QUERY_ONLY_RESULT.md",
+  "result_structure_present": true,
+  "returned_submit_id_matches": true,
+  "returned_submit_id_present": true,
+  "route_closed": false,
+  "schema_version": "CAL001_F07R_QUERY_EXECUTION_SUMMARY_V1",
+  "second_query_permitted": false,
+  "signed_url_count": 1,
+  "signed_url_values_persisted": false,
+  "starting_checkpoint": "e6179c683a7c04afdabc0a29ef6a886b63098037",
+  "transition_chain": {
+    "finding_details": [],
+    "terminal_hash": "05fb924a672cd5a36df5dbfa47b603ed9c7df2fcf4746f46d4f5af5842a8af2d",
+    "terminal_state": "QUERY_SUCCEEDED_AWAITING_DOWNLOAD_AUTHORIZATION",
+    "valid": true
+  },
+  "unsanitized_raw_output_persisted": false,
+  "video_metadata_without_urls": [
+    {
+      "duration": 5.042,
+      "format": "mp4",
+      "fps": 24,
+      "height": 720,
+      "width": 1280
+    }
+  ],
+  "videos_count": 1
+}

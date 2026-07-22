@@ -1,0 +1,16 @@
+{
+  "batch_authorized": false,
+  "created_at": "2026-07-22T10:34:21.345679Z",
+  "download_authorized": false,
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "operation_id": "F07R-query-001",
+  "query_authorized": true,
+  "query_invocation_authority_consumed": true,
+  "record_type": "CAL001_F07R_EXCLUSIVE_QUERY_INVOCATION_CLAIM",
+  "resubmit_authorized": false,
+  "retry_authorized": false,
+  "route_query_invocation_count": 1,
+  "schema_version": "CAL001_F07R_QUERY_INVOCATION_CLAIM_V1",
+  "second_query_permitted": false,
+  "submit_id": "8736259f-3e91-442e-9625-ed39145fff33"
+}

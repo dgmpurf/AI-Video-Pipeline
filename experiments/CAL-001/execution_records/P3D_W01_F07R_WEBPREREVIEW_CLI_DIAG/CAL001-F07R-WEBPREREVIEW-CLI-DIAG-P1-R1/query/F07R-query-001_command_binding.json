@@ -1,0 +1,121 @@
+{
+  "G1_binding": {
+    "commit": "e6179c683a7c04afdabc0a29ef6a886b63098037",
+    "decision": "QUERY_AUTHORIZATION_DECISION_READY_EXECUTION",
+    "parent": "6a576837a36d9b879f001c6083216055a812e74f",
+    "report_byte_length": 6874,
+    "report_git_blob": "dc1247e2ca73ca949ad77e8df9aed58cfcc6ec62",
+    "report_path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_QUERY_AUTHORIZATION_DECISION_RESULT.md",
+    "report_sha256": "b1f825ea207695753b5534ce52ebbce85ef460961382e37165fe67d85cc5fce4"
+  },
+  "authorization_binding": {
+    "base64_decode_count": 1,
+    "base64_value_persisted": false,
+    "byte_length": 2260,
+    "checkpoint_binding_verified": true,
+    "derived_base64_character_count": 3016,
+    "encoding": "UTF-8",
+    "raw_authorization_persisted": false,
+    "repository_authorization_verified": true,
+    "round_trip_verified": true,
+    "sha256": "043c89b0e2c872da16b8dd2438531ae68dd8a8a2df4aaec439136331e3e76606"
+  },
+  "checkpoint_binding": {
+    "branch": "main",
+    "local_head": "e6179c683a7c04afdabc0a29ef6a886b63098037",
+    "origin_main": "e6179c683a7c04afdabc0a29ef6a886b63098037",
+    "required_checkpoint": "e6179c683a7c04afdabc0a29ef6a886b63098037",
+    "verified": true
+  },
+  "created_at": "2026-07-22T10:33:26.355464Z",
+  "executable_binding": {
+    "byte_length": 31879680,
+    "modification_authorized": false,
+    "path": "C:/Users/msjpurf/bin/dreamina.exe",
+    "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10"
+  },
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "operation_id": "F07R-query-001",
+  "operation_maxima": {
+    "F08": 0,
+    "batch": 0,
+    "browser_web_UI": 0,
+    "checklogin": 0,
+    "download": 0,
+    "login": 0,
+    "logout": 0,
+    "provider_submit": 0,
+    "query": 1,
+    "relogin": 0,
+    "resubmit": 0,
+    "retry": 0,
+    "user_credit": 0
+  },
+  "output_artifacts": [
+    "query/F07R-query-001_command_binding.json",
+    "query_claims/F07R-query-001_invocation_claim.json",
+    "route_transitions/F07R-query-invocation-started-008_transition.json",
+    "evidence/F07R-query-001.subprocess_envelope.json",
+    "evidence/F07R-query-001.parsed_query_result.json",
+    "query/F07R-query-001_execution_summary.json",
+    "query/F07R-query-001_authority_closure_record.json",
+    "route_transitions/F07R-query-result-009_transition.json",
+    "query/F07R-query-001_evidence_manifest.json",
+    "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_QUERY_ONLY_RESULT.md"
+  ],
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_QUERY_ONLY",
+  "query_command": {
+    "argument_count": 4,
+    "argv": [
+      "C:/Users/msjpurf/bin/dreamina.exe",
+      "query_result",
+      "--submit_id",
+      "8736259f-3e91-442e-9625-ed39145fff33"
+    ],
+    "automatic_retry": false,
+    "cwd": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE",
+    "download_directory_argument_present": false,
+    "download_output_save_or_poll_option_present": false,
+    "maximum_invocation_count": 1,
+    "nul_joined_argv_sha256": "91d6a81b4b46e7e23efdb769773e58b4ec745cfb22e1b1bf67d2de6d334da3f9",
+    "second_query_permitted": false,
+    "shell": false,
+    "stdin": "closed",
+    "timeout_seconds": 120
+  },
+  "record_type": "CAL001_F07R_IMMUTABLE_QUERY_COMMAND_BINDING",
+  "sanitization_policy": {
+    "URL_query_parameters_persisted": false,
+    "UTF8_decode_policy": "errors=replace with replacement-event counts",
+    "access_tokens_signatures_cookies_persisted": false,
+    "full_HTTP_HTTPS_result_URL_replacement": "<redacted_url>",
+    "raw_stdout_stderr_hashed_separately_before_decode": true,
+    "unsanitized_raw_output_persisted": false
+  },
+  "schema_version": "CAL001_F07R_QUERY_COMMAND_BINDING_V1",
+  "sequence_7_binding": {
+    "byte_length": 2100,
+    "git_blob": "b6e8899739f33bec4172a19d628c6aa7c0b5593a",
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-query-authorized-007_transition.json",
+    "query_authorized": true,
+    "query_invocation_count": 0,
+    "sha256": "9dd83ba21a54277188e67b1cbd2e72ae6b3d9cf8194b873f428555baa7b87592",
+    "starting_state": "QUERY_AUTHORIZED_NOT_CONSUMED"
+  },
+  "support_tests_gate": {
+    "collected": 201,
+    "command": "python -m pytest -q tests/test_f07r_support_contract.py",
+    "failed": 0,
+    "passed": 200,
+    "passed_gate": true,
+    "skip_reason": "POSIX permission bits are not stable on Windows",
+    "skipped": 1
+  },
+  "task_binding": {
+    "created_task_count": 1,
+    "credit_charged_total": 70,
+    "logid": "202607221746551692540470082892BEA",
+    "strict_task_creation_proven": true,
+    "submit_id": "8736259f-3e91-442e-9625-ed39145fff33"
+  }
+}

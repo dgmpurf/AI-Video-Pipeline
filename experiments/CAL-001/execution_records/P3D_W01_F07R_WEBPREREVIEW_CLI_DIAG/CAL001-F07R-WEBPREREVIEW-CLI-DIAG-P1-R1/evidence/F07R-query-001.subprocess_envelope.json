@@ -1,0 +1,79 @@
+{
+  "argument_count": 4,
+  "command_structure_without_prompt_or_secrets": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "query_result",
+    "--submit_id",
+    "8736259f-3e91-442e-9625-ed39145fff33"
+  ],
+  "command_type": "query_result",
+  "completed_at": "2026-07-22T10:38:31.780583Z",
+  "cwd": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE",
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "operation_id": "F07R-query-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_QUERY_ONLY",
+  "query_process_exit_classification": "zero_exit",
+  "query_process_exit_code": 0,
+  "query_process_started": true,
+  "query_timed_out": false,
+  "raw_stdout_stderr_hashed_before_decode": true,
+  "raw_stream_metadata": {
+    "raw_content_persisted": false,
+    "raw_stderr_byte_count": 0,
+    "raw_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_stdout_byte_count": 1821,
+    "raw_stdout_sha256": "aee70fc1fd624692829fee4880d9b930343bdc5bbfc0ae987d96bf1c701e8921",
+    "sanitized_stderr": "",
+    "sanitized_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_stdout": "{\n  \"submit_id\": \"8736259f-3e91-442e-9625-ed39145fff33\",\n  \"prompt\": <redacted>,\n  \"gen_status\": \"success\",\n  \"result_json\": {\n    \"images\": [],\n    \"videos\": [\n      {\n        \"video_url\": \"<redacted_url>\",\n        \"fps\": 24,\n        \"width\": 1280,\n        \"height\": 720,\n        \"format\": \"mp4\",\n        \"duration\": 5.042\n      }\n    ]\n  },\n  \"credit_count\": 70,\n  \"queue_info\": {\n    \"queue_idx\": 0,\n    \"priority\": 1,\n    \"queue_status\": \"Finish\",\n    \"queue_length\": 0,\n    \"debug_info\": \"{\\\"have_no_dreamina_queue_name\\\":false,\\\"dreamina_matrix_queue_name\\\":\\\"dreamina_fusion_video40_pro_vision\\\",\\\"dreamina_matrix_req_key\\\":\\\"DreaminaFusion:Video40_Pro_Vision_unified_edit_720p\\\",\\\"dreamina_matrix_second_req_key\\\":\\\"\\\",\\\"have_no_queue_name\\\":true,\\\"queue_name\\\":\\\"\\\",\\\"matrix_req_key\\\":\\\"\\\",\\\"matrix_second_req_key\\\":\\\"\\\"}\"\n  }\n}\n",
+    "sanitized_stdout_sha256": "7092d57886867aa6029c5568bef243486afa650c307f5729d49967371a77b7e4",
+    "stderr_decoding": "utf-8/errors-replace",
+    "stderr_utf8_replacement_count": 0,
+    "stdout_decoding": "utf-8/errors-replace",
+    "stdout_utf8_replacement_count": 0
+  },
+  "record_type": "CAL001_F07R_SANITIZED_QUERY_SUBPROCESS_ENVELOPE",
+  "runner_error_type": null,
+  "safe_query_observation": {
+    "download_url_present": true,
+    "expected_result_shape_matched": true,
+    "fail_reason_present": false,
+    "final_route_state": "QUERY_SUCCEEDED_AWAITING_DOWNLOAD_AUTHORIZATION",
+    "gen_status": "success",
+    "images_count": 0,
+    "next_required_phase": "RETURN_TO_CHATGPT_FOR_DOWNLOAD_AUTHORIZATION_DECISION",
+    "outputs_count": 1,
+    "query_outcome_classification": "provider_success_download_not_authorized",
+    "queue_status": "Finish",
+    "result_structure_present": true,
+    "returned_submit_id_matches": true,
+    "returned_submit_id_present": true,
+    "route_closed": false,
+    "signed_url_count": 1,
+    "signed_url_values_persisted": false,
+    "video_metadata_without_urls": [
+      {
+        "duration": 5.042,
+        "format": "mp4",
+        "fps": 24,
+        "height": 720,
+        "width": 1280
+      }
+    ],
+    "videos_count": 1
+  },
+  "sanitization": {
+    "URL_query_parameters_persisted": false,
+    "access_tokens_signatures_cookies_persisted": false,
+    "full_http_https_urls_replaced": true,
+    "replacement_token": "<redacted_url>",
+    "signed_url_count_before_redaction": 1,
+    "signed_url_values_persisted": false
+  },
+  "schema_version": "CAL001_F07R_QUERY_SUBPROCESS_ENVELOPE_V1",
+  "shell": false,
+  "started_at": "2026-07-22T10:38:28.493965Z",
+  "stdin": "closed",
+  "timeout_seconds": 120,
+  "unsanitized_raw_output_persisted": false
+}

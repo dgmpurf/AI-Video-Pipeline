@@ -1,0 +1,45 @@
+{
+  "authority_flags_after_query": {
+    "batch_authorized": false,
+    "download_authorized": false,
+    "execution_authority_active": false,
+    "final_master": false,
+    "locked": false,
+    "provider_command_allowed": false,
+    "provider_eligibility": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "bound_submit_id": "8736259f-3e91-442e-9625-ed39145fff33",
+  "closed_at": "2026-07-22T10:40:55.465086Z",
+  "download_requires_separate_human_authorization": true,
+  "execution_summary_binding": {
+    "byte_length": 4238,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/query/F07R-query-001_execution_summary.json",
+    "sha256": "92265c4ea1ff5b49f4c6c10ca4958b0da9a14e16ae583f4c0e297a83abb99202"
+  },
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "final_route_state": "QUERY_SUCCEEDED_AWAITING_DOWNLOAD_AUTHORIZATION",
+  "later_query_requires_fresh_human_authorization": true,
+  "next_required_phase": "RETURN_TO_CHATGPT_FOR_DOWNLOAD_AUTHORIZATION_DECISION",
+  "no_download_confirmation": true,
+  "no_retry_resubmit_batch_confirmation": true,
+  "no_submit_or_user_credit_during_G2_confirmation": true,
+  "operation_id": "F07R-query-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_QUERY_ONLY",
+  "query_invocation_authority_consumed": true,
+  "query_invocation_count": 1,
+  "query_outcome_classification": "provider_success_download_not_authorized",
+  "record_type": "CAL001_F07R_QUERY_AUTHORITY_CLOSURE_RECORD",
+  "route_closed": false,
+  "route_provider_submit_allowance_consumed": true,
+  "schema_version": "CAL001_F07R_QUERY_AUTHORITY_CLOSURE_V1",
+  "second_query_permitted": false,
+  "sequence_9_binding": {
+    "byte_length": 2345,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-query-result-009_transition.json",
+    "sha256": "05fb924a672cd5a36df5dbfa47b603ed9c7df2fcf4746f46d4f5af5842a8af2d"
+  }
+}
