@@ -1,0 +1,91 @@
+{
+  "action_type": "impact_step_back",
+  "audit_binding": {
+    "audit_commit": "bbfa394abe7daea4f0139eeabd967ce1196ab895",
+    "audit_decision": "DESIGN_READY",
+    "audit_report_path": "reports/CAL002_BATCH03_ACTION_CAUSALITY_DESIGN_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+    "audit_report_sha256": "28cac5e99b8ac0769fc6b0bdc4da375c2025c4e082af25b27010400c07b5380b",
+    "audit_verdict": "CAL002_BATCH03_ACTION_CAUSALITY_DESIGN_INDEPENDENT_AUDIT_COMPLETE_READY_NO_LIVE"
+  },
+  "authorization": {
+    "download_authorized": false,
+    "dreamina_command_generated": false,
+    "execution_claim_created": false,
+    "execution_permission_created": false,
+    "provider_called": false,
+    "provider_ready_live_authority": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "batch_id": "CAL002-ACTION-CALIBRATION-BATCH03-ACTION-CAUSALITY-V1",
+  "duplicate_prevention_key": "CAL002-ACTION-CALIBRATION-BATCH03-ACTION-CAUSALITY-V1::CAL002-B03-A04_IMPACT_CAUSALITY_CONTROL::8260c14bcb66c21dac9cdd48b795345e22e2a102b7592b4e5da5f69dfd55d18a",
+  "execution_package_id": "CAL002-B03-A04_IMPACT_CAUSALITY_CONTROL",
+  "expected_success_criteria": [
+    "Action initiation is visibly readable.",
+    "Contact timing is visibly readable.",
+    "The receiver's visible consequence occurs after contact.",
+    "Recovery and final stabilization are visibly readable.",
+    "Characters, scene, camera, provider parameters, and reference strategy remain fixed."
+  ],
+  "experiment_id": "CAL002-B03-A04_IMPACT_CAUSALITY_CONTROL",
+  "failure_categories": [
+    "ACTION_INITIATION_UNCLEAR",
+    "CONTACT_TIMING_UNCLEAR",
+    "CONSEQUENCE_NOT_AFTER_CONTACT",
+    "RECOVERY_OR_STABILIZATION_UNCLEAR",
+    "NO_CAUSAL_PROGRESSION_GAIN",
+    "FIXED_VARIABLE_DRIFT"
+  ],
+  "fixed_variables": {
+    "camera": {
+      "angle": "eye level",
+      "framing": "medium shot",
+      "movement": "static camera"
+    },
+    "characters": [
+      "black armored warrior",
+      "white haired warrior"
+    ],
+    "scene": [
+      "rainy ancient temple courtyard",
+      "wet stone floor",
+      "cinematic fantasy style"
+    ]
+  },
+  "prompt_sha256": "8260c14bcb66c21dac9cdd48b795345e22e2a102b7592b4e5da5f69dfd55d18a",
+  "prompt_structure": "four_block_state_organization",
+  "prompt_text": "Initial State: Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The black armored warrior and the white haired warrior begin balanced. Physical Event: The black armored warrior delivers one brief controlled forearm impact. Visible upper-torso contact occurs before the white haired warrior's torso yields. Body Response: The resulting weight shift causes exactly one short recovery step backward, then the receiver stabilizes. The support foot remains stable while the opposite foot makes the single short recovery placement. Final State: Preserve camera composition, character identity, and readable screen direction. No reaction before contact, repeated hits, multiple steps, prolonged slide, flight, fall, wall collision, extra subject, magic, injury, gore, camera movement, or scene change.",
+  "provider_parameters": {
+    "duration": 5,
+    "model": "seedance2.0_vip",
+    "ratio": "16:9",
+    "resolution": "720p"
+  },
+  "reference_strategy": {
+    "active_reference_count": 0,
+    "active_reference_inputs": [],
+    "mode": "text_only_no_active_generation_reference",
+    "offline_design_bindings_only": true
+  },
+  "schema_version": "CAL002_BATCH03_NO_LIVE_EXECUTION_PACKAGE_V1",
+  "source_design": {
+    "design_experiment_id": "CAL002-B03-A04_IMPACT_CAUSALITY_V1",
+    "file_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH03_DESIGN/CAL002-B03-A04_IMPACT_CAUSALITY_V1.json",
+    "file_sha256": "da3281279a616af085598cf9bdaff40264c8d471e100cd75fe0e23170272b316",
+    "manifest_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH03_DESIGN/batch03_design_manifest.json",
+    "manifest_sha256": "27106147169e5a5b292ec7289280a8623ab4cab6227c7b3c7622d238f06e3f48",
+    "treatment_prompt_sha256": "8260c14bcb66c21dac9cdd48b795345e22e2a102b7592b4e5da5f69dfd55d18a"
+  },
+  "status": "NO_LIVE_EXECUTION_PACKAGE_ONLY",
+  "treatment": "control",
+  "treatment_binding": {
+    "action_causality_layer_present": false,
+    "exact_suffix": null,
+    "isolated_variable": "action_causality_layer",
+    "mechanics_semantics_added": false,
+    "normalization_rule": "Control is the unchanged Batch02 structured candidate prompt.",
+    "suffix_sha256": null
+  }
+}
