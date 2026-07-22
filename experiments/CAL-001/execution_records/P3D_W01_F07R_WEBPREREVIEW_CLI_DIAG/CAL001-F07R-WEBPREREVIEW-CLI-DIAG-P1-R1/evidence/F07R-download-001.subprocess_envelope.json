@@ -1,0 +1,72 @@
+{
+  "argument_count": 6,
+  "automatic_retry": false,
+  "command_structure_without_prompt_or_secrets": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "query_result",
+    "--submit_id",
+    "8736259f-3e91-442e-9625-ed39145fff33",
+    "--download_dir",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1"
+  ],
+  "completed_at": "2026-07-22T11:24:25.899932Z",
+  "created_file_observations": [
+    {
+      "basename": "8736259f-3e91-442e-9625-ed39145fff33_video_1.mp4",
+      "byte_length": 7215952,
+      "extension": ".mp4",
+      "regular_file": true
+    }
+  ],
+  "created_regular_file_count": 1,
+  "cwd": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE",
+  "download_invocation_count": 1,
+  "download_operation": true,
+  "download_process_exit_classification": "zero_exit",
+  "download_process_exit_code": 0,
+  "download_process_started": true,
+  "download_timed_out": false,
+  "downloaded_mp4_count": 1,
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "operation_classification": "download",
+  "operation_id": "F07R-download-001",
+  "output_directory_created_for_exact_invocation": true,
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_DOWNLOAD_ONLY",
+  "query_only_invocation_count": 0,
+  "query_only_operation": false,
+  "raw_stdout_stderr_hashed_before_decode": true,
+  "raw_stream_metadata": {
+    "raw_content_persisted": false,
+    "raw_stderr_byte_count": 0,
+    "raw_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_stdout_byte_count": 1489,
+    "raw_stdout_sha256": "639007af63128e66427341e350e1289d13e3115f06c8275a1e5298b1e896fb6c",
+    "sanitized_stderr": "",
+    "sanitized_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_stdout": "{\n  \"submit_id\": \"8736259f-3e91-442e-9625-ed39145fff33\",\n  \"prompt\": <redacted>,\n  \"gen_status\": \"success\",\n  \"result_json\": {\n    \"images\": [],\n    \"videos\": [\n      {\n        \"path\": \"G:\\\\AICODING\\\\AI_VIDEO\\\\AI_VIDEO_PIPELINE\\\\experiments\\\\CAL-001\\\\runs\\\\CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1\\\\8736259f-3e91-442e-9625-ed39145fff33_video_1.mp4\",\n        \"fps\": 24,\n        \"width\": 1280,\n        \"height\": 720,\n        \"format\": \"mp4\",\n        \"duration\": 5.042\n      }\n    ]\n  },\n  \"credit_count\": 70,\n  \"queue_info\": {\n    \"queue_idx\": 0,\n    \"priority\": 1,\n    \"queue_status\": \"Finish\",\n    \"queue_length\": 0,\n    \"debug_info\": \"{\\\"have_no_dreamina_queue_name\\\":false,\\\"dreamina_matrix_queue_name\\\":\\\"dreamina_fusion_video40_pro_vision\\\",\\\"dreamina_matrix_req_key\\\":\\\"DreaminaFusion:Video40_Pro_Vision_unified_edit_720p\\\",\\\"dreamina_matrix_second_req_key\\\":\\\"\\\",\\\"have_no_queue_name\\\":true,\\\"queue_name\\\":\\\"\\\",\\\"matrix_req_key\\\":\\\"\\\",\\\"matrix_second_req_key\\\":\\\"\\\"}\"\n  }\n}\n",
+    "sanitized_stdout_sha256": "9d2d4b8564214001ee1b1f41d38b8909805a26de9a0c647c687da3b8b1416b75",
+    "stderr_decoding": "utf-8/errors-replace",
+    "stderr_utf8_replacement_count": 0,
+    "stdout_decoding": "utf-8/errors-replace",
+    "stdout_utf8_replacement_count": 0
+  },
+  "record_type": "CAL001_F07R_SANITIZED_DOWNLOAD_SUBPROCESS_ENVELOPE",
+  "retry_resubmit_batch_invocation_count": 0,
+  "runner_error_type": null,
+  "sanitization": {
+    "URL_query_parameters_persisted": false,
+    "full_http_https_urls_replaced": true,
+    "signed_or_result_url_count_before_redaction": 0,
+    "signed_url_values_persisted": false,
+    "tokens_cookies_sessions_credentials_account_fields_persisted": false
+  },
+  "schema_version": "CAL001_F07R_DOWNLOAD_SUBPROCESS_ENVELOPE_V1",
+  "second_download_permitted": false,
+  "shell": false,
+  "started_at": "2026-07-22T11:24:20.659716Z",
+  "stdin": "closed",
+  "submit_invocation_count_during_H2": 0,
+  "timeout_seconds": 300,
+  "unsanitized_raw_output_persisted": false,
+  "user_credit_invocation_count_during_H2": 0
+}

@@ -1,0 +1,120 @@
+{
+  "contact_sheet": {
+    "byte_length": 148223,
+    "decodable": true,
+    "height": 360,
+    "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/F07R-download-001_contact_sheet.jpg",
+    "sha256": "53c0effb64ed97dcd575f531b8d38552e94509568dce519b6a545d115b573fb7",
+    "width": 960
+  },
+  "created_at": "2026-07-22T11:29:48.954670Z",
+  "decode_validation": {
+    "exit_code": 0,
+    "no_fatal_decode_error": true,
+    "passed": true
+  },
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "final_media": {
+    "byte_length": 7215952,
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "duration_seconds": 5.016667,
+    "fps": 24.119601328903656,
+    "height": 720,
+    "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_result.mp4",
+    "sha256": "915c7633dd477f2e55dcd5dd463e066f3cad2056a4c0d9afbbf3a8bc45af3aa7",
+    "tracked_in_git": false,
+    "width": 1280
+  },
+  "keyframe_count": 6,
+  "keyframes": [
+    {
+      "byte_length": 1354221,
+      "decodable": true,
+      "height": 720,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-0000ms.png",
+      "sha256": "8f9cc6aa52368663bbb8dad7c230e3d79f6b4ede31e7a30398c5b832c18057a5",
+      "timestamp_seconds": 0.0,
+      "width": 1280
+    },
+    {
+      "byte_length": 1432698,
+      "decodable": true,
+      "height": 720,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-0840ms.png",
+      "sha256": "47fe82f88d1fc13824be3d5f892ac35c90a56289d1d3e9f8f5f15ecc627ed0de",
+      "timestamp_seconds": 0.84,
+      "width": 1280
+    },
+    {
+      "byte_length": 1344755,
+      "decodable": true,
+      "height": 720,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-1680ms.png",
+      "sha256": "7a2c9ed2b038f8a310f76d7f18c2cb261a32fe1345acc0b172ba0442191dd18c",
+      "timestamp_seconds": 1.68,
+      "width": 1280
+    },
+    {
+      "byte_length": 1487653,
+      "decodable": true,
+      "height": 720,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-2520ms.png",
+      "sha256": "79ca5901ff3c4d06bad25965bf4e81b05e4e4bb0b3abce355d30ccb7d33671d6",
+      "timestamp_seconds": 2.52,
+      "width": 1280
+    },
+    {
+      "byte_length": 1420401,
+      "decodable": true,
+      "height": 720,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-3360ms.png",
+      "sha256": "dee9dac201992223fe0b638ee595a512f4bdeff6af2fd91d5b4673b015ae1a8f",
+      "timestamp_seconds": 3.36,
+      "width": 1280
+    },
+    {
+      "byte_length": 1397276,
+      "decodable": true,
+      "height": 720,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-4200ms.png",
+      "sha256": "1a84dfbd182ff4df9687dc9a03fcde46f1324e1c8464572b0ba6f4ea622b16f7",
+      "timestamp_seconds": 4.2,
+      "width": 1280
+    }
+  ],
+  "operation_counts": {
+    "batch": 0,
+    "credit_charged_total": 70,
+    "download": 1,
+    "query": 1,
+    "resubmit": 0,
+    "retry": 0,
+    "submit": 1,
+    "task_created": 1
+  },
+  "operation_id": "F07R-download-001",
+  "original_submit_id": "8736259f-3e91-442e-9625-ed39145fff33",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_DOWNLOAD_ONLY",
+  "record_type": "CAL001_F07R_TECHNICAL_MEDIA_MANIFEST",
+  "review_artifacts_tracked_in_git": false,
+  "review_artifacts_valid": true,
+  "schema_version": "CAL001_F07R_TECHNICAL_MEDIA_MANIFEST_V1",
+  "subjective_visual_quality_judgment_performed": false,
+  "technical_media_validation": "passed",
+  "technical_media_validation_binding": {
+    "byte_length": 4144,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-download-001.media_validation.json",
+    "sha256": "20e9b8a55cd5e8b32c9f3b47368cd4f62ceda5cca1174cc1034be68c0af7efb5"
+  },
+  "video_metadata": {
+    "codec_name": "h264",
+    "duration_seconds": 5.016667,
+    "fps": 24.119601328903656,
+    "fps_source_value": "7260/301",
+    "frame_count": 121,
+    "height": 720,
+    "pixel_format": "yuv420p",
+    "profile": "High",
+    "width": 1280
+  }
+}

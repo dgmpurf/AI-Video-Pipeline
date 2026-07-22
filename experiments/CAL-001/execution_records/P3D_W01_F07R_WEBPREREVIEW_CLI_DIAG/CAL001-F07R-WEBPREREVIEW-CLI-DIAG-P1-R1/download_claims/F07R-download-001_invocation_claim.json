@@ -1,0 +1,16 @@
+{
+  "batch_authorized": false,
+  "bound_final_media_path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_result.mp4",
+  "created_at": "2026-07-22T11:23:16.413193Z",
+  "download_authorized": true,
+  "download_invocation_authority_consumed": true,
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "operation_id": "F07R-download-001",
+  "record_type": "CAL001_F07R_EXCLUSIVE_DOWNLOAD_INVOCATION_CLAIM",
+  "resubmit_authorized": false,
+  "retry_authorized": false,
+  "route_download_invocation_count": 1,
+  "schema_version": "CAL001_F07R_DOWNLOAD_INVOCATION_CLAIM_V1",
+  "second_download_permitted": false,
+  "submit_id": "8736259f-3e91-442e-9625-ed39145fff33"
+}

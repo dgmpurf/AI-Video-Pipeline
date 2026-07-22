@@ -1,0 +1,209 @@
+{
+  "H1_binding": {
+    "commit": "f6eb6cadb322ca40f1234183228bec265139963b",
+    "decision": "DOWNLOAD_AUTHORIZATION_DECISION_READY_EXECUTION",
+    "parent": "821140f93bdd37302b685c0c6186e090de1f8bf9",
+    "report_byte_length": 8085,
+    "report_git_blob": "adb9fd45a315368961a1919f368d179441a3586f",
+    "report_path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_DOWNLOAD_AUTHORIZATION_DECISION_RESULT.md",
+    "report_sha256": "31629e21d385499f4ac2963d82a0793430ed6f8afc22f61294823a0d47458a8d"
+  },
+  "authorization_binding": {
+    "base64_decode_count": 1,
+    "base64_value_persisted": false,
+    "byte_length": 2303,
+    "checkpoint_binding_verified": true,
+    "derived_base64_character_count": 3072,
+    "encoding": "UTF-8",
+    "raw_authorization_persisted": false,
+    "repository_authorization_verified": true,
+    "round_trip_verified": true,
+    "sha256": "5a69884e9f07fc92e7faa728bd5c82dffd074b35c7c484df62f4b52d1a0e4581"
+  },
+  "checkpoint_binding": {
+    "branch": "main",
+    "local_head": "f6eb6cadb322ca40f1234183228bec265139963b",
+    "origin_main": "f6eb6cadb322ca40f1234183228bec265139963b",
+    "required_checkpoint": "f6eb6cadb322ca40f1234183228bec265139963b",
+    "verified": true
+  },
+  "command": {
+    "argument_count": 6,
+    "argv": [
+      "C:/Users/msjpurf/bin/dreamina.exe",
+      "query_result",
+      "--submit_id",
+      "8736259f-3e91-442e-9625-ed39145fff33",
+      "--download_dir",
+      "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1"
+    ],
+    "automatic_retry": false,
+    "cwd": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE",
+    "download_operation": true,
+    "maximum_invocation_count": 1,
+    "nul_joined_argv_sha256": "ce31862d84272feb5c1cef791423244c4291fd34a1c1ad408e0d0b5d872b0585",
+    "operation_classification": "download",
+    "overwrite": false,
+    "polling_loop": false,
+    "query_only_operation": false,
+    "second_download_permitted": false,
+    "shell": false,
+    "stdin": "closed",
+    "timeout_seconds": 300
+  },
+  "created_at": "2026-07-22T11:23:16.403421Z",
+  "executable_binding": {
+    "byte_length": 31879680,
+    "modification_authorized": false,
+    "path": "C:/Users/msjpurf/bin/dreamina.exe",
+    "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10"
+  },
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "local_review_contract": {
+    "ChatGPT_review_mode": "Pro",
+    "contact_sheet_count": 1,
+    "human_review_required": true,
+    "keyframe_count": 6,
+    "keyframe_timestamps_seconds": [
+      0.0,
+      0.84,
+      1.68,
+      2.52,
+      3.36,
+      4.2
+    ],
+    "media_committed": false
+  },
+  "local_untracked_output_paths": [
+    "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_result.mp4",
+    "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-0000ms.png",
+    "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-0840ms.png",
+    "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-1680ms.png",
+    "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-2520ms.png",
+    "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-3360ms.png",
+    "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-4200ms.png",
+    "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/F07R-download-001_contact_sheet.jpg"
+  ],
+  "media_validation_contract": {
+    "container": "MP4-compatible",
+    "duration_absolute_tolerance_seconds": 0.25,
+    "duration_reference_seconds": 5.042,
+    "fps_approx": 24.0,
+    "full_decode_required": true,
+    "height": 720,
+    "subjective_visual_judgment": false,
+    "video_stream_count": 1,
+    "width": 1280
+  },
+  "operation_id": "F07R-download-001",
+  "operation_maxima": {
+    "F08": 0,
+    "batch": 0,
+    "browser_web_UI": 0,
+    "checklogin": 0,
+    "download": 1,
+    "login": 0,
+    "logout": 0,
+    "provider_submit": 0,
+    "query_only": 0,
+    "relogin": 0,
+    "resubmit": 0,
+    "retry": 0,
+    "user_credit": 0
+  },
+  "path_binding": {
+    "bound_final_media_path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_result.mp4",
+    "contact_sheet_path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/F07R-download-001_contact_sheet.jpg",
+    "final_media_absent_before_claim": true,
+    "keyframe_paths": [
+      "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-0000ms.png",
+      "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-0840ms.png",
+      "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-1680ms.png",
+      "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-2520ms.png",
+      "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-3360ms.png",
+      "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-4200ms.png"
+    ],
+    "local_media_ignored": true,
+    "no_overwrite": true,
+    "output_directory": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+    "output_directory_absent_before_claim": true,
+    "review_artifact_root": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts"
+  },
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_DOWNLOAD_ONLY",
+  "preclaim_gate": {
+    "H1_download_authorization_transition_excluded_from_prior_H2_artifact_scan": true,
+    "all_H2_output_paths_absent": true,
+    "final_media_absent": true,
+    "output_directory_absent": true,
+    "passed": true,
+    "prior_H2_download_claim_or_artifact": false,
+    "query_manifest_artifacts_verified": 9,
+    "route_chain_through_sequence_10_valid": true,
+    "sources_clean": true,
+    "submit_manifest_artifacts_verified": 16,
+    "support_tests": {
+      "collected": 201,
+      "failed": 0,
+      "passed": 200,
+      "skip_reason": "POSIX permission bits are not stable on Windows",
+      "skipped": 1
+    }
+  },
+  "record_type": "CAL001_F07R_IMMUTABLE_DOWNLOAD_COMMAND_BINDING",
+  "sanitization_policy": {
+    "URL_query_parameters_persisted": false,
+    "UTF8_decode_policy": "errors=replace with replacement-event counts",
+    "access_tokens_signatures_cookies_sessions_credentials_account_fields_persisted": false,
+    "full_HTTP_HTTPS_URL_replacement": "<redacted_url>",
+    "raw_stdout_stderr_hashed_separately_before_decode": true,
+    "unsanitized_raw_output_persisted": false
+  },
+  "schema_version": "CAL001_F07R_DOWNLOAD_COMMAND_BINDING_V1",
+  "sequence_10_binding": {
+    "byte_length": 2164,
+    "download_authorized": true,
+    "download_invocation_count": 0,
+    "git_blob": "4ca9e341dff82f83891640de409a743ed4ec7be3",
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-download-authorized-010_transition.json",
+    "sha256": "cc0920546fec92fc9e4a3c834a1f15d21f4e661ab049335c5c4fcf592d169f32",
+    "state": "DOWNLOAD_AUTHORIZED_NOT_CONSUMED"
+  },
+  "task_binding": {
+    "download_reference_present": true,
+    "gen_status": "success",
+    "images_count": 0,
+    "outputs_count": 1,
+    "queue_status": "Finish",
+    "signed_url_values_persisted": false,
+    "submit_id": "8736259f-3e91-442e-9625-ed39145fff33",
+    "videos_count": 1
+  },
+  "tracked_output_paths": [
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/download/F07R-download-001_command_binding.json",
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/download_claims/F07R-download-001_invocation_claim.json",
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-download-invocation-started-011_transition.json",
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-download-001.subprocess_envelope.json",
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-download-001.media_validation.json",
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/download/F07R-download-001_technical_media_manifest.json",
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/download/F07R-download-001_execution_summary.json",
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/download/F07R-download-001_authority_closure_record.json",
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review/F07R-download-001_human_review_handoff.md",
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-download-result-012_transition.json",
+    "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_DOWNLOAD_ONLY_RESULT.md",
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/download/F07R-download-001_evidence_manifest.json"
+  ],
+  "validation_tools": {
+    "ffmpeg": {
+      "available": true,
+      "byte_length": 131534336,
+      "path": "C:/ffmpeg/bin/ffmpeg.exe",
+      "sha256": "9f5c85e070cc2cfdc960c67395a8a47967732e59ddd8850bc56cf5842e7049d4"
+    },
+    "ffprobe": {
+      "available": true,
+      "byte_length": 131407872,
+      "path": "C:/ffmpeg/bin/ffprobe.exe",
+      "sha256": "ba37098df2d55a7464ca344ab806c174be9735c22bf8a487d26fe0c624598695"
+    }
+  }
+}

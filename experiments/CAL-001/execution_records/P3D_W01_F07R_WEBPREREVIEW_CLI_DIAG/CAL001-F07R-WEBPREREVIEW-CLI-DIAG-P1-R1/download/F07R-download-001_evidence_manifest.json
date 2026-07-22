@@ -1,0 +1,133 @@
+{
+  "created_at": "2026-07-22T11:33:38.619972Z",
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "local_untracked_artifact_count": 8,
+  "local_untracked_artifacts": [
+    {
+      "byte_length": 7215952,
+      "ignored_by_git": true,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_result.mp4",
+      "sha256": "915c7633dd477f2e55dcd5dd463e066f3cad2056a4c0d9afbbf3a8bc45af3aa7",
+      "tracked_in_git": false
+    },
+    {
+      "byte_length": 1354221,
+      "ignored_by_git": true,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-0000ms.png",
+      "sha256": "8f9cc6aa52368663bbb8dad7c230e3d79f6b4ede31e7a30398c5b832c18057a5",
+      "tracked_in_git": false
+    },
+    {
+      "byte_length": 1432698,
+      "ignored_by_git": true,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-0840ms.png",
+      "sha256": "47fe82f88d1fc13824be3d5f892ac35c90a56289d1d3e9f8f5f15ecc627ed0de",
+      "tracked_in_git": false
+    },
+    {
+      "byte_length": 1344755,
+      "ignored_by_git": true,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-1680ms.png",
+      "sha256": "7a2c9ed2b038f8a310f76d7f18c2cb261a32fe1345acc0b172ba0442191dd18c",
+      "tracked_in_git": false
+    },
+    {
+      "byte_length": 1487653,
+      "ignored_by_git": true,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-2520ms.png",
+      "sha256": "79ca5901ff3c4d06bad25965bf4e81b05e4e4bb0b3abce355d30ccb7d33671d6",
+      "tracked_in_git": false
+    },
+    {
+      "byte_length": 1420401,
+      "ignored_by_git": true,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-3360ms.png",
+      "sha256": "dee9dac201992223fe0b638ee595a512f4bdeff6af2fd91d5b4673b015ae1a8f",
+      "tracked_in_git": false
+    },
+    {
+      "byte_length": 1397276,
+      "ignored_by_git": true,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/keyframes/F07R-kf-4200ms.png",
+      "sha256": "1a84dfbd182ff4df9687dc9a03fcde46f1324e1c8464572b0ba6f4ea622b16f7",
+      "tracked_in_git": false
+    },
+    {
+      "byte_length": 148223,
+      "ignored_by_git": true,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review_artifacts/F07R-download-001_contact_sheet.jpg",
+      "sha256": "53c0effb64ed97dcd575f531b8d38552e94509568dce519b6a545d115b573fb7",
+      "tracked_in_git": false
+    }
+  ],
+  "operation_id": "F07R-download-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_DOWNLOAD_ONLY",
+  "record_type": "CAL001_F07R_DOWNLOAD_EVIDENCE_MANIFEST",
+  "result_classification": "download_succeeded_awaiting_human_review",
+  "result_report": {
+    "byte_length": 14665,
+    "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_DOWNLOAD_ONLY_RESULT.md",
+    "sha256": "2353371eea08e9d24a84a86b192d4568dc495dd134e8d5361ed39a490aa00334"
+  },
+  "schema_version": "CAL001_F07R_DOWNLOAD_EVIDENCE_MANIFEST_V1",
+  "self_hash_included": false,
+  "tracked_artifact_count_excluding_manifest": 11,
+  "tracked_artifacts": [
+    {
+      "byte_length": 10291,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/download/F07R-download-001_command_binding.json",
+      "sha256": "8cf071a2daa336f55bf60ea67ace89db34a8ff31452a92c6a5e1921f3ad3d446"
+    },
+    {
+      "byte_length": 734,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/download_claims/F07R-download-001_invocation_claim.json",
+      "sha256": "f4f7d04747817e881421c48650f7d3422d06669bc7319185cae4b18bab99c13e"
+    },
+    {
+      "byte_length": 2274,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-download-invocation-started-011_transition.json",
+      "sha256": "6ebb72c9552754cf28ba8ff00ced102502129072261c768a50e39cdc7f0b188a"
+    },
+    {
+      "byte_length": 4006,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-download-001.subprocess_envelope.json",
+      "sha256": "d1300a7894aa3c18198cdd93ddfeced2ec36f4092044e5028cfa25dead2cdf57"
+    },
+    {
+      "byte_length": 4144,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-download-001.media_validation.json",
+      "sha256": "20e9b8a55cd5e8b32c9f3b47368cd4f62ceda5cca1174cc1034be68c0af7efb5"
+    },
+    {
+      "byte_length": 4408,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/download/F07R-download-001_technical_media_manifest.json",
+      "sha256": "233a0937b5172f5c2da6aa5450f8014af112e8f2b835c0085580e013e3e73d43"
+    },
+    {
+      "byte_length": 6976,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/download/F07R-download-001_execution_summary.json",
+      "sha256": "7c24260951488c5235e9232f01aa56fa802f2f117067a8dc5cd4ecd71c69b7b1"
+    },
+    {
+      "byte_length": 2352,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/download/F07R-download-001_authority_closure_record.json",
+      "sha256": "80ea895c8995b36ca0c7160ed105596ef342b5e9d43536ebadfdfcfd4eba96f9"
+    },
+    {
+      "byte_length": 1859,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/review/F07R-download-001_human_review_handoff.md",
+      "sha256": "0508a90563f8533e4740cda4581fd80d256ea15bcb32506d501f0820759115b4"
+    },
+    {
+      "byte_length": 2609,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-download-result-012_transition.json",
+      "sha256": "6c12401709770ca50e4e1d143bf784da3cfa6dbaee16f21812970f0b91fed5a5"
+    },
+    {
+      "byte_length": 14665,
+      "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_DOWNLOAD_ONLY_RESULT.md",
+      "sha256": "2353371eea08e9d24a84a86b192d4568dc495dd134e8d5361ed39a490aa00334"
+    }
+  ],
+  "tracked_h2_artifact_count_including_manifest": 12
+}

@@ -1,0 +1,49 @@
+{
+  "authority_flags_after_download": {
+    "batch_authorized": false,
+    "download_authorized": false,
+    "execution_authority_active": false,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "locked": false,
+    "provider_command_allowed": false,
+    "provider_eligibility": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "closed_at": "2026-07-22T11:31:09.203790Z",
+  "download_authority_consumed": true,
+  "download_invocation_count": 1,
+  "execution_summary_binding": {
+    "byte_length": 6976,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/download/F07R-download-001_execution_summary.json",
+    "sha256": "7c24260951488c5235e9232f01aa56fa802f2f117067a8dc5cd4ecd71c69b7b1"
+  },
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "final_route_state": "DOWNLOAD_SUCCEEDED_AWAITING_HUMAN_REVIEW",
+  "fixed_task_completion": false,
+  "human_review_required": true,
+  "later_provider_authority_created_automatically": false,
+  "media_and_review_artifacts_local_untracked": true,
+  "next_required_phase": "RETURN_TO_CHATGPT_PRO_FOR_HUMAN_VISUAL_REVIEW",
+  "operation_id": "F07R-download-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_DOWNLOAD_ONLY",
+  "record_type": "CAL001_F07R_DOWNLOAD_AUTHORITY_CLOSURE_RECORD",
+  "result_classification": "download_succeeded_awaiting_human_review",
+  "route_closed": false,
+  "route_provider_submit_allowance_consumed": true,
+  "schema_version": "CAL001_F07R_DOWNLOAD_AUTHORITY_CLOSURE_V1",
+  "second_download_permitted": false,
+  "sequence_12_binding": {
+    "byte_length": 2609,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-download-result-012_transition.json",
+    "sha256": "6c12401709770ca50e4e1d143bf784da3cfa6dbaee16f21812970f0b91fed5a5"
+  },
+  "technical_media_manifest_binding": {
+    "byte_length": 4408,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/download/F07R-download-001_technical_media_manifest.json",
+    "sha256": "233a0937b5172f5c2da6aa5450f8014af112e8f2b835c0085580e013e3e73d43"
+  }
+}

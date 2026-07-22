@@ -1,0 +1,110 @@
+{
+  "atomic_rename_without_overwrite": true,
+  "expected_contract": {
+    "container": "MP4-compatible",
+    "duration_absolute_tolerance_seconds": 0.25,
+    "duration_reference_seconds": 5.042,
+    "fps": 24.0,
+    "fps_absolute_tolerance": 0.5,
+    "fps_relative_tolerance": 0.02,
+    "height": 720,
+    "video_stream_count": 1,
+    "width": 1280
+  },
+  "expected_versus_actual_checks": {
+    "container_mp4_compatible": true,
+    "duration_matches": true,
+    "exactly_one_video_stream": true,
+    "ffprobe_exit_zero": true,
+    "ffprobe_json_parsed": true,
+    "ffprobe_no_fatal_error": true,
+    "fps_matches": true,
+    "full_decode_exit_zero": true,
+    "full_decode_no_fatal_error": true,
+    "height_matches": true,
+    "positive_frame_count_or_duration": true,
+    "width_matches": true
+  },
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "ffmpeg_tool": {
+    "byte_length": 131534336,
+    "path": "C:/ffmpeg/bin/ffmpeg.exe",
+    "sha256": "9f5c85e070cc2cfdc960c67395a8a47967732e59ddd8850bc56cf5842e7049d4"
+  },
+  "ffprobe": {
+    "exit_code": 0,
+    "json_parse_error": null,
+    "raw_output_persisted": false,
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_byte_length": 4819,
+    "stdout_sha256": "6554e9f10feecc295c7e0070f5deec222bf3c6ae5058dee0d7708723814daf3c",
+    "timed_out": false
+  },
+  "ffprobe_tool": {
+    "byte_length": 131407872,
+    "path": "C:/ffmpeg/bin/ffprobe.exe",
+    "sha256": "ba37098df2d55a7464ca344ab806c174be9735c22bf8a487d26fe0c624598695"
+  },
+  "final_file_flush_and_reread_verified": true,
+  "final_media_byte_length": 7215952,
+  "final_media_path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_result.mp4",
+  "final_media_sha256": "915c7633dd477f2e55dcd5dd463e066f3cad2056a4c0d9afbbf3a8bc45af3aa7",
+  "format_metadata": {
+    "bit_rate": 11352505,
+    "duration_seconds": 5.085011,
+    "format_long_name": "QuickTime / MOV",
+    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+    "size_bytes": 7215952
+  },
+  "fps_validation_policy": {
+    "absolute_deviation_fps": 0.11960132890365571,
+    "absolute_tolerance_fps": 0.5,
+    "contract_language": "approximately 24 fps",
+    "decision": "passed",
+    "observed_average_fps": 24.119601328903656,
+    "r_frame_rate_diagnostic": "60/1 (not used as average frame rate)",
+    "relative_deviation": 0.004983388704318988,
+    "relative_tolerance": 0.02,
+    "rule": "absolute_deviation_fps <= 0.5 and relative_deviation <= 0.02",
+    "source": "avg_frame_rate"
+  },
+  "full_decode": {
+    "exit_code": 0,
+    "raw_output_persisted": false,
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_byte_length": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false,
+    "validation_passed": true
+  },
+  "initial_validation_attempt": {
+    "decision": "failed",
+    "observed_average_fps": 24.119601328903656,
+    "reason": "validator_threshold_was_stricter_than_the_authorized_approximately_24_fps_contract",
+    "record_sha256_before_correction": "da9800f9c01a0b79810ea3f66088991f2d9f46fbf55ac88d7efae85513f0cb55",
+    "threshold_absolute_fps": 0.05,
+    "triggered_additional_provider_call": false
+  },
+  "operation_id": "F07R-download-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_DOWNLOAD_ONLY",
+  "provider_downloaded_basename": "8736259f-3e91-442e-9625-ed39145fff33_video_1.mp4",
+  "record_type": "CAL001_F07R_TECHNICAL_MEDIA_VALIDATION",
+  "schema_version": "CAL001_F07R_MEDIA_VALIDATION_V1",
+  "subjective_visual_quality_judgment_performed": false,
+  "submit_id": "8736259f-3e91-442e-9625-ed39145fff33",
+  "technical_media_validation": "passed",
+  "video_metadata": {
+    "codec_name": "h264",
+    "duration_seconds": 5.016667,
+    "fps": 24.119601328903656,
+    "fps_source_value": "7260/301",
+    "frame_count": 121,
+    "height": 720,
+    "pixel_format": "yuv420p",
+    "profile": "High",
+    "width": 1280
+  },
+  "video_stream_count": 1
+}
