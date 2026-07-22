@@ -1,0 +1,94 @@
+{
+  "action_type": "grab_pull",
+  "authorization": {
+    "download_authorized": false,
+    "dreamina_command_generated": false,
+    "execution_permission_created": false,
+    "provider_called": false,
+    "provider_ready_live_authority": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "experiment_id": "CAL002-A03_GRAB_PULL",
+  "failure_categories": [
+    {
+      "category": "GRIP_NOT_ESTABLISHED",
+      "definition": "The pulling motion begins without a readable wrist grip."
+    },
+    {
+      "category": "GRIP_DISCONTINUITY",
+      "definition": "The hand detaches, jumps position, or changes wrists during the pull."
+    },
+    {
+      "category": "RECEIVER_MOVES_BEFORE_TENSION",
+      "definition": "The receiver steps or translates before the arm becomes taut."
+    },
+    {
+      "category": "PULL_WITHOUT_BODY_RESPONSE",
+      "definition": "The wrist moves but the connected shoulder, torso, and weight do not follow."
+    },
+    {
+      "category": "OVERPULL_OR_TELEPORT",
+      "definition": "The receiver flies, slides unnaturally, or jumps position."
+    },
+    {
+      "category": "IDENTITY_OR_LIMB_MERGE",
+      "definition": "Character identities swap or hands and wrists merge."
+    },
+    {
+      "category": "FIXED_VARIABLE_DRIFT",
+      "definition": "Camera, framing, scene, weather, floor, or style departs from the manifest."
+    }
+  ],
+  "fixed_references": {
+    "camera": "medium shot",
+    "character_A": "black armored warrior",
+    "character_B": "white haired warrior",
+    "scene": "rainy ancient temple courtyard"
+  },
+  "hypothesis": "Explicit grip continuity and tension language will improve the model's ability to connect a puller's hand motion to the receiver's delayed whole-body response.",
+  "package_id": "CAL002-ACTION-CALIBRATION-PILOT-R1::CAL002-A03_GRAB_PULL",
+  "prompt_adjustment": "none",
+  "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The black armored warrior visibly secures the white haired warrior's right wrist and maintains the same grip. The pulling hand moves inward; the captured arm straightens and becomes taut before the shoulder turns, the torso follows, and exactly one grounded balancing step moves toward the puller. Keep identities and limb ownership stable. No detached grip, wrist switch, premature step, teleportation, dragging, flight, fall, extra subject, magic, injury, gore, camera movement, or scene change.",
+  "prompt_version": "V3_causal_motion_with_constraints",
+  "provider_parameters": {
+    "duration": 5,
+    "model": "seedance2.0_vip",
+    "ratio": "16:9",
+    "resolution": "720p"
+  },
+  "schema_version": "CAL002_ACTION_CALIBRATION_PILOT_PACKAGE_V1",
+  "source_design": {
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/CAL002-A03_GRAB_PULL.json",
+    "sha256": "76929ba0c01dc774e433ad13aff8e0d7c0dcdb643e18d55718db0a928025ae86",
+    "v3_prompt_sha256": "f05d061a57f2244ce4f47b43acf4061af0d70d0276aa45bf9007fa8447e36f45"
+  },
+  "success_criteria": [
+    {
+      "criterion_id": "A03-S01",
+      "description": "The black armored warrior establishes a visible grip on the white haired warrior's right wrist."
+    },
+    {
+      "criterion_id": "A03-S02",
+      "description": "The grip remains continuous while the pulling hand moves toward the black armored warrior."
+    },
+    {
+      "criterion_id": "A03-S03",
+      "description": "The white haired warrior's arm becomes taut before the torso and weight follow the pull."
+    },
+    {
+      "criterion_id": "A03-S04",
+      "description": "The receiver takes one grounded balancing step toward the puller."
+    },
+    {
+      "criterion_id": "A03-S05",
+      "description": "The pull remains controlled, without teleportation, dragging, flight, or a fall."
+    },
+    {
+      "criterion_id": "A03-S06",
+      "description": "The static medium eye-level composition and fixed environment are preserved."
+    }
+  ]
+}

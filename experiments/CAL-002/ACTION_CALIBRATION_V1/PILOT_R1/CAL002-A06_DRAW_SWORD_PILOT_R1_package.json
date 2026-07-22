@@ -1,0 +1,94 @@
+{
+  "action_type": "draw_sword",
+  "authorization": {
+    "download_authorized": false,
+    "dreamina_command_generated": false,
+    "execution_permission_created": false,
+    "provider_called": false,
+    "provider_ready_live_authority": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "experiment_id": "CAL002-A06_DRAW_SWORD",
+  "failure_categories": [
+    {
+      "category": "SWORD_APPEARS_WITHOUT_DRAW",
+      "definition": "A sword materializes in the hand without progressive emergence from the sheath."
+    },
+    {
+      "category": "BLADE_MOVES_BEFORE_GRIP",
+      "definition": "The sword begins moving before the hand establishes a hilt grip."
+    },
+    {
+      "category": "DUPLICATE_SWORD_OR_SHEATH",
+      "definition": "Additional swords, blades, hilts, or sheaths appear."
+    },
+    {
+      "category": "OBJECT_DISCONTINUITY",
+      "definition": "The hand, hilt, blade, or sheath changes identity, disconnects, or jumps position."
+    },
+    {
+      "category": "INCOMPLETE_OR_REVERSED_DRAW",
+      "definition": "The sword does not clear the sheath or moves back into it without instruction."
+    },
+    {
+      "category": "SECOND_CHARACTER_INTERFERENCE",
+      "definition": "The black armored warrior moves into or alters the draw action."
+    },
+    {
+      "category": "FIXED_VARIABLE_DRIFT",
+      "definition": "Camera, framing, scene, weather, floor, or style departs from the manifest."
+    }
+  ],
+  "fixed_references": {
+    "camera": "medium shot",
+    "character_A": "black armored warrior",
+    "character_B": "white haired warrior",
+    "scene": "rainy ancient temple courtyard"
+  },
+  "hypothesis": "Explicit hand-to-hilt contact and progressive blade emergence will improve causal continuity for an object state transition from sheathed to drawn.",
+  "package_id": "CAL002-ACTION-CALIBRATION-PILOT-R1::CAL002-A06_DRAW_SWORD",
+  "prompt_adjustment": "none",
+  "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. Begin with exactly one sword fully seated in exactly one sheath. The white haired warrior's drawing hand visibly grips the hilt before movement; the hilt then pulls outward and the same blade emerges progressively from the same sheath until the draw completes. End with one intact sword held clearly and the empty sheath still in place. The black armored warrior remains separate and still. No materialization, duplicate blade, duplicate sheath, hand-object disconnect, reversed draw, attack, extra subject, magic effect, injury, gore, camera movement, or scene change.",
+  "prompt_version": "V3_causal_motion_with_constraints",
+  "provider_parameters": {
+    "duration": 5,
+    "model": "seedance2.0_vip",
+    "ratio": "16:9",
+    "resolution": "720p"
+  },
+  "schema_version": "CAL002_ACTION_CALIBRATION_PILOT_PACKAGE_V1",
+  "source_design": {
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/CAL002-A06_DRAW_SWORD.json",
+    "sha256": "5f68e126d18cb6c05e681cb87564cb97b1ebca7cc141ce487f830a5ff8994eac",
+    "v3_prompt_sha256": "1a14caeeb9c343a5962f4d60e0c51603da703aca9285ef64bccf1fa8ff9b5a7b"
+  },
+  "success_criteria": [
+    {
+      "criterion_id": "A06-S01",
+      "description": "The white haired warrior begins with one sword visibly seated in one sheath."
+    },
+    {
+      "criterion_id": "A06-S02",
+      "description": "The drawing hand visibly grips the hilt before the blade moves."
+    },
+    {
+      "criterion_id": "A06-S03",
+      "description": "The blade emerges progressively from the same sheath while hand, hilt, blade, and sheath remain connected."
+    },
+    {
+      "criterion_id": "A06-S04",
+      "description": "The draw completes with one intact sword held clearly and the sheath remaining in place."
+    },
+    {
+      "criterion_id": "A06-S05",
+      "description": "The black armored warrior remains separate, identity-stable, and stationary."
+    },
+    {
+      "criterion_id": "A06-S06",
+      "description": "The static medium eye-level composition and fixed environment are preserved."
+    }
+  ]
+}

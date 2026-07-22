@@ -1,0 +1,90 @@
+{
+  "action_type": "push_reaction",
+  "authorization": {
+    "download_authorized": false,
+    "dreamina_command_generated": false,
+    "execution_permission_created": false,
+    "provider_called": false,
+    "provider_ready_live_authority": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "experiment_id": "CAL002-A01_PUSH_REACTION",
+  "failure_categories": [
+    {
+      "category": "NO_VISIBLE_CONTACT",
+      "definition": "The receiver moves without a readable push contact."
+    },
+    {
+      "category": "PREMATURE_REACTION",
+      "definition": "The receiver reacts before the pusher's hands make contact."
+    },
+    {
+      "category": "PUSH_BECOMES_STRIKE",
+      "definition": "The intended sustained push is rendered as a punch, slap, or explosive hit."
+    },
+    {
+      "category": "OVERREACTION_OR_FLIGHT",
+      "definition": "The receiver flies, falls, or travels farther than a grounded push supports."
+    },
+    {
+      "category": "IDENTITY_OR_BODY_MERGE",
+      "definition": "Character identities swap or bodies and limbs merge during contact."
+    },
+    {
+      "category": "FIXED_VARIABLE_DRIFT",
+      "definition": "Camera, framing, scene, weather, floor, or style departs from the manifest."
+    }
+  ],
+  "fixed_references": {
+    "camera": "medium shot",
+    "character_A": "black armored warrior",
+    "character_B": "white haired warrior",
+    "scene": "rainy ancient temple courtyard"
+  },
+  "hypothesis": "Explicit contact-before-reaction language will improve the model's ability to show a push as the physical cause of a grounded receiver response.",
+  "package_id": "CAL002-ACTION-CALIBRATION-PILOT-R1::CAL002-A01_PUSH_REACTION",
+  "prompt_adjustment": "none",
+  "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The black armored warrior plants both feet, extends both hands, and establishes visible upper-torso contact before applying forward pressure. Only after contact, the white haired warrior's torso yields, weight transfers to the rear foot, and exactly one grounded recovery step follows. Keep both identities separate and stable. No punch, premature reaction, flight, fall, wall collision, extra subject, magic, injury, gore, camera movement, or scene change.",
+  "prompt_version": "V3_causal_motion_with_constraints",
+  "provider_parameters": {
+    "duration": 5,
+    "model": "seedance2.0_vip",
+    "ratio": "16:9",
+    "resolution": "720p"
+  },
+  "schema_version": "CAL002_ACTION_CALIBRATION_PILOT_PACKAGE_V1",
+  "source_design": {
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/CAL002-A01_PUSH_REACTION.json",
+    "sha256": "cbbcd40fc4aaaec40b673c8b9ec2a652f921cb31aff75015cc6b90f9cf782b35",
+    "v3_prompt_sha256": "4e823cde0ac9a17c16eefb6c865058cb223b18df1fc77986f824242c7ea0fb49"
+  },
+  "success_criteria": [
+    {
+      "criterion_id": "A01-S01",
+      "description": "Both warriors remain separate and identity-stable throughout the action."
+    },
+    {
+      "criterion_id": "A01-S02",
+      "description": "The black armored warrior visibly initiates the push."
+    },
+    {
+      "criterion_id": "A01-S03",
+      "description": "Hand contact with the white haired warrior's upper torso occurs before the receiver reacts."
+    },
+    {
+      "criterion_id": "A01-S04",
+      "description": "The white haired warrior shifts weight backward and takes one grounded recovery step because of the push."
+    },
+    {
+      "criterion_id": "A01-S05",
+      "description": "The reaction remains proportional, with no flight, fall, wall collision, or injury."
+    },
+    {
+      "criterion_id": "A01-S06",
+      "description": "The static medium eye-level composition and fixed environment are preserved."
+    }
+  ]
+}
