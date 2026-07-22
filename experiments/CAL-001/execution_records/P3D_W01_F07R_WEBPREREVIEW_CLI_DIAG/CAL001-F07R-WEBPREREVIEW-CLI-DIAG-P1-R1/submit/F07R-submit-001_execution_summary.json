@@ -1,0 +1,147 @@
+{
+  "Dreamina_called": true,
+  "allowance_consumed": true,
+  "authority_flags": {
+    "batch_authorized": false,
+    "download_authorized": false,
+    "execution_authority_active": false,
+    "final_master": false,
+    "locked": false,
+    "provider_command_allowed": false,
+    "provider_eligibility": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "authorization": {
+    "base64_length": 3556,
+    "byte_length": 2666,
+    "checkpoint_binding_verified": true,
+    "round_trip_verified": true,
+    "sha256": "c065e764c708709c59edbcc720437f437a60ad673e6bad4b5c46f01409f66ff8",
+    "verified": true
+  },
+  "claim": {
+    "byte_length": 625,
+    "git_blob": "e62ad2f35a11f76b1f9a34a2f786a4beb0284e48",
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit_claims/F07R-submit-001_allowance_claim.json",
+    "sha256": "22abede2e901d52ae66d583f43abedc52c709deef0b60571dd709c4745036c0a"
+  },
+  "command_counts": {
+    "F08": 0,
+    "batch": 0,
+    "checklogin": 0,
+    "download": 0,
+    "login": 0,
+    "logout": 0,
+    "post_submit_user_credit": 1,
+    "pre_submit_user_credit": 1,
+    "provider_submit": 1,
+    "query": 0,
+    "relogin": 0,
+    "resubmit": 0,
+    "retry": 0
+  },
+  "created_at": "2026-07-22T09:58:06.961446Z",
+  "credit_reconciliation": {
+    "available_credit_values_exposed": false,
+    "branch": "EXACT_70_CREDIT_RECONCILED",
+    "pre_post_credit_delta": 70,
+    "record": {
+      "byte_length": 3098,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-submit-001.credit_reconciliation.json",
+      "sha256": "7afb44984ba243d6594884dd6f6b265e75bef57e7ddc342398378578ea2e1ec2"
+    }
+  },
+  "current_execution_authority_closed": true,
+  "download_called": false,
+  "evidence_serialization_note": {
+    "authoritative_append_only_correction": {
+      "byte_length": 5146,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-submit-001.parsed_task_creation_authoritative_correction.json",
+      "sha256": "7d535e203615d91e091b3f8eb47d8cbc3038bc14a3d11fd132a13ef190c6a545"
+    },
+    "historical_evidence_modified": false,
+    "initial_parse": {
+      "byte_length": 2491,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-submit-001.parsed_task_creation.json",
+      "sha256": "579d1ad1e9ad4333c77d3cea70864627e0457dd2a9d4d017d4b055774804383e"
+    },
+    "reason": "prompt redaction token was initially unquoted; deterministic correction used only persisted sanitized text and preserved all raw hashes"
+  },
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "final_route_state": "SUBMITTED_PENDING_SEPARATE_QUERY_AUTHORIZATION",
+  "gates": {
+    "credit_reconciliation": "passed_exact_70",
+    "exclusive_claim": "created",
+    "fresh_duplicate_prevention": "passed",
+    "fresh_pre_submit_credit": "passed",
+    "sequence_5_chain": "passed",
+    "sequence_6_chain": "passed",
+    "static_revalidation": "passed",
+    "strict_task_creation": "passed",
+    "support_tests": "passed_200_skipped_1_failed_0"
+  },
+  "media_created": false,
+  "next_required_phase": "RETURN_TO_CHATGPT_FOR_QUERY_AUTHORIZATION_DECISION",
+  "operation_id": "F07R-submit-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_ONE_SUBMIT_ONLY",
+  "protected_state": {
+    "CAL001_global_state_changed": false,
+    "Prompt_modified": false,
+    "authorization_history_modified": false,
+    "binding_modified": false,
+    "executable_modified": false,
+    "historical_evidence_modified": false,
+    "manifest_modified": false,
+    "media_modified": false,
+    "package_modified": false,
+    "route_state_anchor_modified": false,
+    "sources_touched": false
+  },
+  "provider_called": true,
+  "query_called": false,
+  "record_type": "CAL001_F07R_ONE_SUBMIT_EXECUTION_SUMMARY",
+  "route_closed": false,
+  "schema_version": "CAL001_F07R_SUBMIT_EXECUTION_SUMMARY_V1",
+  "second_submit_permitted": false,
+  "sequence_5": {
+    "byte_length": 2206,
+    "git_blob": "cbc8b4bcc7e068493732126580ccc0614d724992",
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-submit-invocation-started-005_transition.json",
+    "sha256": "91c6441ad2f1cac0a90d68d142ec0d120301570e87815fa11e9e69d6518f7a99"
+  },
+  "sequence_6": {
+    "byte_length": 2319,
+    "git_blob": "1037c7c0acd655ce4cd49b9364ab3cc1650f4b88",
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-submit-result-006_transition.json",
+    "sha256": "e05150d74f1e4d5550d58458e9bc137ead086e9609f20287e4f0581550f1f24b"
+  },
+  "starting_checkpoint": "5a8b98412b4d69019f4dc279eff49bf5f8a7b9d3",
+  "starting_route_state": "SUBMIT_AUTHORIZED_NOT_CONSUMED",
+  "submit_called": true,
+  "submit_invocation_count": 1,
+  "submit_process": {
+    "exit_classification": "completed_exit_zero",
+    "exit_code": 0,
+    "raw_stdout_stderr_hashed_before_decode": true,
+    "started": true,
+    "timed_out": false,
+    "unsanitized_raw_output_persisted": false
+  },
+  "task_creation": {
+    "created_task_count": 1,
+    "creation_classification": "confirmed_created_nonterminal",
+    "fail_reason": null,
+    "gen_status": "querying",
+    "identifier_consistency": true,
+    "logid": "202607221746551692540470082892BEA",
+    "provider_credit_count_evidence": 70,
+    "provider_task_created": true,
+    "provider_task_creation_proven": true,
+    "queue_status": null,
+    "returned_submit_id_differs_from_quarantined_handles": true,
+    "submit_id": "8736259f-3e91-442e-9625-ed39145fff33"
+  }
+}

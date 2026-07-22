@@ -1,0 +1,134 @@
+{
+  "checked_absent_paths": {
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-post-submit-user-credit-001.parsed_credit_snapshot.json": true,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-post-submit-user-credit-001.subprocess_envelope.json": true,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-submit-001.credit_reconciliation.json": true,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-submit-001.parsed_task_creation.json": true,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-submit-001.subprocess_envelope.json": true,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-submit-invocation-started-005_transition.json": true,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-submit-preclaim-safe-blocked-005_transition.json": true,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-submit-result-006_transition.json": true,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit/F07R-submit-001_authority_closure_record.json": true,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit/F07R-submit-001_evidence_manifest.json": true,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit/F07R-submit-001_execution_summary.json": true,
+    "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit_claims/F07R-submit-001_allowance_claim.json": true,
+    "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_result.mp4": true,
+    "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_ONE_SUBMIT_ONLY_RESULT.md": true
+  },
+  "checkpoint": {
+    "aligned": true,
+    "local_head": "5a8b98412b4d69019f4dc279eff49bf5f8a7b9d3",
+    "origin_main": "5a8b98412b4d69019f4dc279eff49bf5f8a7b9d3",
+    "required": "5a8b98412b4d69019f4dc279eff49bf5f8a7b9d3",
+    "sources_status": [],
+    "staged_files": [],
+    "tracked_modifications": []
+  },
+  "command_binding_reference": {
+    "byte_length": 8257,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit/F07R-submit-001_command_binding.json",
+    "sha256": "a88cbdbf27e825b1886f7087d68ff30480a720617dd7d4b284e002edd5a4827a"
+  },
+  "decision": "DUPLICATE_PREVENTION_CLEAR",
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "fixed_manifest": {
+    "F07R_row_count": 0,
+    "byte_length": 106215,
+    "path": "experiments/CAL-001/manifests/CAL001A_fixed_84_task_manifest.csv",
+    "sha256": "b2ecfb87899feca784fc8e1f2b751fc181aeab9a9118a3a7609067d4b92b2c6d",
+    "task_count": 84
+  },
+  "fresh_duplicate_prevention_gate_passed": true,
+  "fresh_pre_submit_credit_reference": {
+    "available_credit_not_copied_into_this_record": true,
+    "credit_gate_passed": true,
+    "envelope_byte_length": 2609,
+    "envelope_path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-pre-submit-user-credit-001.subprocess_envelope.json",
+    "envelope_sha256": "e0d4778d18e3aad951c4c7e51cce4a35b2cae7c0bbdb1edd1480579e18ac3935",
+    "required_pre_submit_credit": 5530,
+    "snapshot_byte_length": 1748,
+    "snapshot_path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-pre-submit-user-credit-001.parsed_credit_snapshot.json",
+    "snapshot_sha256": "eb4eca52774f3e2c656d35452d58149fe76a4347fbfb2e06a09c088c27f644af"
+  },
+  "operation_id": "F07R-submit-001",
+  "original_F07_preservation": {
+    "historical_handles": [
+      {
+        "byte_length": 2160,
+        "created_task_count": 0,
+        "creation_classification": "orphaned_handle_after_prequeue_upload_failure",
+        "expected_submit_id": "5a69007b-ac19-4cef-86bc-41d19792149f",
+        "path": "experiments/CAL-001/execution_records/P3D_W01/CAL001-F07-P1-R1/evidence/F07-submit-001.parsed_task_creation.json",
+        "provider_task_created": false,
+        "provider_task_creation_proven": false,
+        "quarantined": true,
+        "sha256": "2d5c9917538cfca2dcc4a097e07fa9be606b1251fb6a6d3a6710367e6b82ddde",
+        "submit_id": "5a69007b-ac19-4cef-86bc-41d19792149f"
+      },
+      {
+        "byte_length": 1254,
+        "created_task_count": 0,
+        "creation_classification": null,
+        "expected_submit_id": "d5fa2ba3-f4b4-4a8f-9591-5b22b1fac463",
+        "path": "experiments/CAL-001/execution_records/P3D_W01_F07_RECOVERY_SUBMIT/CAL001-F07-P1-R1/evidence/F07-recovery-submit-001.parsed_task_creation.json",
+        "provider_task_created": false,
+        "provider_task_creation_proven": false,
+        "quarantined": true,
+        "sha256": "0f1f152e1dec29ac3cfc4b6ed1771f341da8f54269ebb4a3aebf72b5bea97ba1",
+        "submit_id": "d5fa2ba3-f4b4-4a8f-9591-5b22b1fac463"
+      }
+    ],
+    "original_recovery_submit_count": 1,
+    "original_route_closed": true,
+    "original_submit_count": 2,
+    "third_original_F07_submit_permitted": false
+  },
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_ONE_SUBMIT_ONLY",
+  "preclaim_authority": {
+    "batch_authorized": false,
+    "download_authorized": false,
+    "execution_authority_active": false,
+    "final_master": false,
+    "locked": false,
+    "provider_command_allowed": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": true
+  },
+  "provider_route_state": {
+    "allowance_consumed": false,
+    "no_claim": true,
+    "no_output": true,
+    "no_prior_provider_invocation": true,
+    "no_submit_evidence": true,
+    "no_task": true,
+    "no_terminal_F07R_result": true,
+    "operation_counters": {
+      "route_batch_invocation_count": 0,
+      "route_credit_charged_total": 0,
+      "route_download_invocation_count": 0,
+      "route_provider_submit_invocation_count": 0,
+      "route_provider_task_created_count": 0,
+      "route_query_invocation_count": 0,
+      "route_resubmit_invocation_count": 0,
+      "route_retry_invocation_count": 0
+    },
+    "submit_invocation_count": 0
+  },
+  "record_type": "CAL001_F07R_IMMUTABLE_PRECLAIM_DUPLICATE_PREVENTION_SNAPSHOT",
+  "route_chain": {
+    "finding_details": [],
+    "ordered_paths": [
+      "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\experiments\\CAL-001\\execution_records\\P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG\\CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1\\route_transitions\\F07R-binding-audit-accepted-001_transition.json",
+      "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\experiments\\CAL-001\\execution_records\\P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG\\CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1\\route_transitions\\F07R-preflight-designed-002_transition.json",
+      "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\experiments\\CAL-001\\execution_records\\P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG\\CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1\\route_transitions\\F07R-preflight-result-003_transition.json",
+      "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\experiments\\CAL-001\\execution_records\\P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG\\CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1\\route_transitions\\F07R-submit-authorized-004_transition.json"
+    ],
+    "terminal_hash": "ae7936624a0589dc49d229e07be2fa9683ea84bb0c62a68d1d35f83127dab102",
+    "terminal_state": "SUBMIT_AUTHORIZED_NOT_CONSUMED",
+    "valid": true
+  },
+  "schema_version": "CAL001_F07R_PRECLAIM_DUPLICATE_PREVENTION_SNAPSHOT_V1",
+  "snapshot_at": "2026-07-22T09:41:34.550593Z"
+}

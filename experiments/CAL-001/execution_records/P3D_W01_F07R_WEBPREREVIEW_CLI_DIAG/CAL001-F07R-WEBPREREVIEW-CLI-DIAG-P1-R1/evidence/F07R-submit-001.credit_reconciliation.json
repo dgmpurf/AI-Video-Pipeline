@@ -1,0 +1,63 @@
+{
+  "available_credit_values_copied_into_this_record": false,
+  "batch_authorized": false,
+  "created_task_count": 1,
+  "credit_reconciliation_branch": "EXACT_70_CREDIT_RECONCILED",
+  "download_authorized": false,
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "fail_reason": null,
+  "final_route_state": "SUBMITTED_PENDING_SEPARATE_QUERY_AUTHORIZATION",
+  "gen_status": "querying",
+  "initial_parse_evidence": {
+    "byte_length": 2491,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-submit-001.parsed_task_creation.json",
+    "sha256": "579d1ad1e9ad4333c77d3cea70864627e0457dd2a9d4d017d4b055774804383e"
+  },
+  "logid": "202607221746551692540470082892BEA",
+  "operation_id": "F07R-submit-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_ONE_SUBMIT_ONLY",
+  "post_submit_credit_evidence": {
+    "byte_length": 1485,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-post-submit-user-credit-001.parsed_credit_snapshot.json",
+    "sha256": "bc6fec14d1e0b3800921beb02f4fdc755d759d5ba6335076694d8555ccbf1360"
+  },
+  "pre_post_credit_delta": 70,
+  "pre_submit_credit_evidence": {
+    "byte_length": 1748,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-pre-submit-user-credit-001.parsed_credit_snapshot.json",
+    "sha256": "eb4eca52774f3e2c656d35452d58149fe76a4347fbfb2e06a09c088c27f644af"
+  },
+  "provider_credit_count_evidence": 70,
+  "provider_task_created": true,
+  "provider_task_creation_proven": true,
+  "query_authorized": false,
+  "queue_status": null,
+  "reconciled_at": "2026-07-22T09:56:12.924831Z",
+  "record_type": "CAL001_F07R_PROVIDER_SUBMIT_CREDIT_RECONCILIATION",
+  "resubmit_authorized": false,
+  "retry_authorized": false,
+  "schema_version": "CAL001_F07R_CREDIT_RECONCILIATION_V1",
+  "strict_task_creation_conditions": {
+    "accepted_nonterminal_status": true,
+    "all_identifier_occurrences_consistent": true,
+    "created_task_count_is_one": true,
+    "creation_classification_confirmed_created_nonterminal": true,
+    "no_upload_failure_marker": true,
+    "one_nonempty_logid": true,
+    "one_nonempty_new_submit_id": true,
+    "post_credit_snapshot_valid": true,
+    "pre_credit_snapshot_valid": true,
+    "pre_post_credit_delta_is_70": true,
+    "provider_credit_count_is_70": true,
+    "provider_task_created": true,
+    "provider_task_creation_proven": true,
+    "submit_id_differs_from_both_quarantined_handles": true
+  },
+  "strict_task_creation_success": true,
+  "submit_id": "8736259f-3e91-442e-9625-ed39145fff33",
+  "task_creation_evidence": {
+    "byte_length": 5146,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-submit-001.parsed_task_creation_authoritative_correction.json",
+    "sha256": "7d535e203615d91e091b3f8eb47d8cbc3038bc14a3d11fd132a13ef190c6a545"
+  }
+}

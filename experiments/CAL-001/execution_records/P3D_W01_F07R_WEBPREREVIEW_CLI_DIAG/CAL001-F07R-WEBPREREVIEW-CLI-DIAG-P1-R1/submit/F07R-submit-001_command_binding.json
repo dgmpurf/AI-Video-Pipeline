@@ -1,0 +1,214 @@
+{
+  "E_decision_binding": {
+    "commit": "5a8b98412b4d69019f4dc279eff49bf5f8a7b9d3",
+    "decision": "ONE_SUBMIT_AUTHORIZATION_DECISION_READY_EXECUTION",
+    "report_byte_length": 10419,
+    "report_git_blob": "ef3c08667573588d63a4bd289044fc01beb79725",
+    "report_path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_ONE_SUBMIT_AUTHORIZATION_DECISION_RESULT.md",
+    "report_sha256": "8526cab6787b8a4f8a094cc769efac0dfebdf349d1d0aadc98e6f5e1e56472ee"
+  },
+  "authority_before_claim": {
+    "batch_authorized": false,
+    "download_authorized": false,
+    "execution_authority_active": false,
+    "final_master": false,
+    "locked": false,
+    "provider_command_allowed": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": true
+  },
+  "authorization_binding": {
+    "base64_decode_count": 1,
+    "base64_value_persisted": false,
+    "bom_present": false,
+    "byte_length": 2666,
+    "carriage_return_present": false,
+    "checkpoint_binding_verified": true,
+    "derived_base64_character_count": 3556,
+    "encoding": "UTF-8",
+    "last_byte_hex": "2E",
+    "line_feed_present": false,
+    "markdown_fence_present": false,
+    "raw_authorization_persisted": false,
+    "repository_authorization_verified": true,
+    "round_trip_verified": true,
+    "sha256": "c065e764c708709c59edbcc720437f437a60ad673e6bad4b5c46f01409f66ff8",
+    "trailing_space_present": false
+  },
+  "checkpoint_binding": {
+    "branch": "main",
+    "local_head": "5a8b98412b4d69019f4dc279eff49bf5f8a7b9d3",
+    "origin_main": "5a8b98412b4d69019f4dc279eff49bf5f8a7b9d3",
+    "required_checkpoint": "5a8b98412b4d69019f4dc279eff49bf5f8a7b9d3",
+    "verified": true
+  },
+  "claim_contract": {
+    "allowance_restoration_allowed": false,
+    "exclusive_O_EXCL_required": true,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit_claims/F07R-submit-001_allowance_claim.json",
+    "second_submit_permitted": false
+  },
+  "command_maxima": {
+    "F08": 0,
+    "batch": 0,
+    "browser_web_UI": 0,
+    "checklogin": 0,
+    "download": 0,
+    "login": 0,
+    "logout": 0,
+    "post_submit_user_credit": 1,
+    "pre_submit_user_credit": 1,
+    "provider_submit": 1,
+    "query_result": 0,
+    "relogin": 0,
+    "resubmit": 0,
+    "retry": 0
+  },
+  "created_at": "2026-07-22T09:34:28.244859Z",
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "fresh_credit_gate_contract": {
+    "available_credit_may_exist_only_in_parsed_credit_record": true,
+    "command": [
+      "C:/Users/msjpurf/bin/dreamina.exe",
+      "user_credit"
+    ],
+    "completed_fixed_task_count": 13,
+    "current_post_submit_reserve_floor": 560,
+    "fixed_macro_threshold": 5530,
+    "fixed_manifest_task_count": 84,
+    "maximum_invocations": 1,
+    "one_operation_reserve_threshold": 630,
+    "required_pre_submit_credit": 5530,
+    "shell": false,
+    "stricter_current_threshold": 5530,
+    "timeout_seconds": 90
+  },
+  "operation_id": "F07R-submit-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_ONE_SUBMIT_ONLY",
+  "production_bindings": {
+    "bound_output": {
+      "download_authorized": false,
+      "exists_before_submit": false,
+      "path": "experiments/CAL-001/runs/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1_result.mp4"
+    },
+    "executable": {
+      "byte_length": 31879680,
+      "path": "C:/Users/msjpurf/bin/dreamina.exe",
+      "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10"
+    },
+    "execution": {
+      "automatic_retry": false,
+      "cwd": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE",
+      "poll": 0,
+      "shell": false,
+      "stdin": "closed",
+      "timeout_seconds": 300
+    },
+    "fixtures": [
+      {
+        "byte_length": 1959523,
+        "order": 1,
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+        "sha256": "83e21fe549d737a4ac7fdbc23d9b883526f5aebc668bdb1e107a149244a13d2f"
+      },
+      {
+        "byte_length": 3874061,
+        "order": 2,
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+        "sha256": "15339627a18d20c00ffbf1321696c175c451f00cff621e3e20d1162ec5890e11"
+      },
+      {
+        "byte_length": 4147285,
+        "order": 3,
+        "path": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+        "sha256": "831c8743c019d37334b64a5843c7e595b909f75090de15ba55ff4730891af452"
+      }
+    ],
+    "prompt_source": {
+      "byte_length": 1976,
+      "modification_authorized": false,
+      "path": "experiments/CAL-001/prompts/F07/CAL001-F07-P1_prompt.txt",
+      "sha256": "094a01dee03f49b65badf1864873f2b85a74a9b801f6a26621a84fb0c409f681"
+    },
+    "provider_argv": {
+      "argument_count": 20,
+      "full_nul_joined_sha256": "e79a1d40c9b1e31e019fceb138fe42c455e7235325f1a7b5bc9ebb58e2e956f5",
+      "full_prompt_or_full_argv_persisted": false,
+      "redacted_argv": [
+        "C:/Users/msjpurf/bin/dreamina.exe",
+        "multimodal2video",
+        "--model_version",
+        "seedance2.0_vip",
+        "--ratio",
+        "16:9",
+        "--prompt",
+        "<redacted_prompt sha256=ca90c5b50b7d244b6264b8ed3f23d4043bf490d25d672e2d05cfad49b487594a chars=519>",
+        "--duration",
+        "5",
+        "--video_resolution",
+        "720p",
+        "--image",
+        "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+        "--image",
+        "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+        "--image",
+        "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+        "--poll",
+        "0"
+      ],
+      "redacted_nul_joined_sha256": "22b8de54f2de0f8f5d4543ccb649d6bf2bc291126ab5f6de1b4d798b89f11e14"
+    },
+    "provider_payload": {
+      "byte_length": 519,
+      "extraction_rule": "text between provider markers, LF-normalized, exactly one final LF",
+      "full_payload_persisted": false,
+      "sha256": "ca90c5b50b7d244b6264b8ed3f23d4043bf490d25d672e2d05cfad49b487594a"
+    }
+  },
+  "raw_evidence_policy": {
+    "credentials_tokens_cookies_sessions_signed_URLs_private_logs_redacted": true,
+    "decode_policy": "UTF-8 errors=replace with replacement-event counts",
+    "full_prompt_redacted": true,
+    "raw_streams_hashed_before_decode": true,
+    "stdout_stderr_captured_separately": true,
+    "unsanitized_raw_output_persisted": false
+  },
+  "record_type": "CAL001_F07R_IMMUTABLE_SUBMIT_COMMAND_BINDING",
+  "schema_version": "CAL001_F07R_SUBMIT_COMMAND_BINDING_V1",
+  "starting_route_binding": {
+    "allowance_consumed": false,
+    "chain_valid": true,
+    "finding_details": [],
+    "operation_counters": {
+      "route_batch_invocation_count": 0,
+      "route_credit_charged_total": 0,
+      "route_download_invocation_count": 0,
+      "route_provider_submit_invocation_count": 0,
+      "route_provider_task_created_count": 0,
+      "route_query_invocation_count": 0,
+      "route_resubmit_invocation_count": 0,
+      "route_retry_invocation_count": 0
+    },
+    "preflight_passed": true,
+    "provider_eligibility": true,
+    "sequence_4_byte_length": 2058,
+    "sequence_4_git_blob": "67e7c69adbaf295c496321c9bda055f832f2340c",
+    "sequence_4_path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-submit-authorized-004_transition.json",
+    "sequence_4_sha256": "ae7936624a0589dc49d229e07be2fa9683ea84bb0c62a68d1d35f83127dab102",
+    "submit_authorized": true,
+    "submit_invocation_count": 0,
+    "terminal_state": "SUBMIT_AUTHORIZED_NOT_CONSUMED"
+  },
+  "support_tests_gate": {
+    "collected": 201,
+    "command": "python -m pytest -q tests/test_f07r_support_contract.py",
+    "exit_code": 0,
+    "failed": 0,
+    "passed": 200,
+    "passed_gate": true,
+    "skip_reason": "POSIX permission bits are not stable on Windows",
+    "skipped": 1
+  }
+}

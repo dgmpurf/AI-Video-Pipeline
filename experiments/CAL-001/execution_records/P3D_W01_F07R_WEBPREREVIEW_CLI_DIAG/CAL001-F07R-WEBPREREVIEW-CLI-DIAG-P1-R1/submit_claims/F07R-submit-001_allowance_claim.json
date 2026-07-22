@@ -1,0 +1,16 @@
+{
+  "batch_authorized": false,
+  "created_at": "2026-07-22T09:43:16.071715Z",
+  "download_authorized": false,
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "operation_id": "F07R-submit-001",
+  "query_authorized": false,
+  "record_type": "CAL001_F07R_EXCLUSIVE_SUBMIT_ALLOWANCE_CLAIM",
+  "resubmit_authorized": false,
+  "retry_authorized": false,
+  "route_provider_submit_allowance_consumed": true,
+  "route_provider_submit_invocation_count": 1,
+  "route_status_code": "SUBMIT_INVOCATION_STARTED_ALLOWANCE_CONSUMED",
+  "schema_version": "CAL001_F07R_SUBMIT_ALLOWANCE_CLAIM_V1",
+  "submit_authorized": true
+}

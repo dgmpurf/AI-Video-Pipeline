@@ -1,0 +1,59 @@
+{
+  "account_identity_in_envelope": false,
+  "authentication_repair": false,
+  "batch": false,
+  "command_kind": "post_submit_user_credit",
+  "download": false,
+  "environment": "local",
+  "executable_identity": {
+    "byte_length": 31879680,
+    "path": "C:/Users/msjpurf/bin/dreamina.exe",
+    "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10"
+  },
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "finished_at": "2026-07-22T09:51:45.391329Z",
+  "invocation_count": 1,
+  "login": false,
+  "numeric_available_credit_in_envelope": false,
+  "operation_id": "F07R-post-submit-user-credit-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_ONE_SUBMIT_ONLY",
+  "process_classification": "completed",
+  "provider_submit": false,
+  "query": false,
+  "record_type": "CAL001_F07R_SANITIZED_USER_CREDIT_SUBPROCESS_ENVELOPE",
+  "redacted_argument_vector": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "user_credit"
+  ],
+  "resubmit": false,
+  "retry": false,
+  "runner_exception_class": null,
+  "schema_version": "CAL001_F07R_USER_CREDIT_SUBPROCESS_ENVELOPE_V1",
+  "shell_interpolation": false,
+  "started_at": "2026-07-22T09:51:42.752606Z",
+  "stdin": "closed",
+  "stream_metadata": {
+    "raw_content_persisted": false,
+    "raw_stderr_byte_count": 0,
+    "raw_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_stdout_byte_count": 103,
+    "raw_stdout_sha256": "6bf02bb4a49dcb1a62704360524a4c4d7474d138617ab9169fd9620d2b55d41e",
+    "sanitized_stderr": "",
+    "sanitized_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_stdout": "{\"total_credit\":\"<redacted_available_credit>\",\"user_id\":\"<redacted_account_or_session_field>\",\"user_name\":\"<redacted_account_or_session_field>\",\"vip_level\":\"<redacted_account_tier>\"}\n",
+    "sanitized_stdout_representation": "field-specific redacted JSON when parseable; otherwise support-contract sanitized text",
+    "sanitized_stdout_sha256": "737eac341a604ef9ab4669cd04773168f02564da9652f4edceb43092d1641bd8",
+    "stderr_decoding": "utf-8/errors-replace",
+    "stderr_utf8_replacement_count": 0,
+    "stdout_decoding": "utf-8/errors-replace",
+    "stdout_utf8_replacement_count": 0
+  },
+  "submit_evidence_binding": {
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-submit-001.subprocess_envelope.json",
+    "sha256": "266c4e546305737b37207b5389f149eb84f9d5447b9bfe1f7fe67f3debc032f7"
+  },
+  "subprocess_exit_code": 0,
+  "timed_out": false,
+  "timeout_seconds": 90,
+  "unsanitized_raw_output_persisted": false
+}

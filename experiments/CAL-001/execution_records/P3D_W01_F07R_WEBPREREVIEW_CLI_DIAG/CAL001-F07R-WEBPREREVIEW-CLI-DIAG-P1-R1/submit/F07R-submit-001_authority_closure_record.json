@@ -1,0 +1,66 @@
+{
+  "allowance_restoration_allowed": false,
+  "authority_flags": {
+    "batch_authorized": false,
+    "download_authorized": false,
+    "execution_authority_active": false,
+    "final_master": false,
+    "locked": false,
+    "provider_command_allowed": false,
+    "provider_eligibility": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "claim": {
+    "byte_length": 625,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit_claims/F07R-submit-001_allowance_claim.json",
+    "sha256": "22abede2e901d52ae66d583f43abedc52c709deef0b60571dd709c4745036c0a"
+  },
+  "closed_at": "2026-07-22T09:58:07.021445Z",
+  "current_execution_authority_closed": true,
+  "execution_summary": {
+    "byte_length": 5968,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit/F07R-submit-001_execution_summary.json",
+    "sha256": "33147c6f1b87f19dac2b4d42cba7b0d61c2a5a50efdbf562e6526c9740432a27"
+  },
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "final_route_state": "SUBMITTED_PENDING_SEPARATE_QUERY_AUTHORIZATION",
+  "next_required_phase": "RETURN_TO_CHATGPT_FOR_QUERY_AUTHORIZATION_DECISION",
+  "no_download_confirmation": true,
+  "no_query_confirmation": true,
+  "no_retry_resubmit_batch_confirmation": true,
+  "operation_counters": {
+    "route_batch_invocation_count": 0,
+    "route_credit_charged_total": 70,
+    "route_download_invocation_count": 0,
+    "route_provider_submit_invocation_count": 1,
+    "route_provider_task_created_count": 1,
+    "route_query_invocation_count": 0,
+    "route_resubmit_invocation_count": 0,
+    "route_retry_invocation_count": 0
+  },
+  "operation_id": "F07R-submit-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_ONE_SUBMIT_ONLY",
+  "query_requires_separate_human_authorization": true,
+  "record_type": "CAL001_F07R_ONE_SUBMIT_AUTHORITY_CLOSURE_RECORD",
+  "route_closed": false,
+  "route_credit_charged_total": 70,
+  "route_provider_submit_allowance_consumed": true,
+  "route_provider_submit_invocation_count": 1,
+  "route_provider_task_created_count": 1,
+  "schema_version": "CAL001_F07R_AUTHORITY_CLOSURE_RECORD_V1",
+  "second_submit_permitted": false,
+  "sequence_5": {
+    "byte_length": 2206,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-submit-invocation-started-005_transition.json",
+    "sha256": "91c6441ad2f1cac0a90d68d142ec0d120301570e87815fa11e9e69d6518f7a99"
+  },
+  "sequence_6": {
+    "byte_length": 2319,
+    "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-submit-result-006_transition.json",
+    "sha256": "e05150d74f1e4d5550d58458e9bc137ead086e9609f20287e4f0581550f1f24b"
+  },
+  "strict_task_creation_proven": true
+}

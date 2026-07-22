@@ -1,0 +1,59 @@
+{
+  "account_identity_in_envelope": false,
+  "authentication_repair": false,
+  "batch": false,
+  "checkpoint_authorization_binding": {
+    "authorization_byte_length": 2666,
+    "authorization_sha256": "c065e764c708709c59edbcc720437f437a60ad673e6bad4b5c46f01409f66ff8",
+    "checkpoint": "5a8b98412b4d69019f4dc279eff49bf5f8a7b9d3"
+  },
+  "command_kind": "pre_submit_user_credit",
+  "download": false,
+  "environment": "local",
+  "executable_identity": {
+    "byte_length": 31879680,
+    "path": "C:/Users/msjpurf/bin/dreamina.exe",
+    "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10"
+  },
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "finished_at": "2026-07-22T09:37:42.393651Z",
+  "invocation_count": 1,
+  "login": false,
+  "numeric_available_credit_in_envelope": false,
+  "operation_id": "F07R-pre-submit-user-credit-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_ONE_SUBMIT_ONLY",
+  "process_classification": "completed",
+  "provider_submit": false,
+  "query": false,
+  "record_type": "CAL001_F07R_SANITIZED_USER_CREDIT_SUBPROCESS_ENVELOPE",
+  "redacted_argument_vector": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "user_credit"
+  ],
+  "resubmit": false,
+  "retry": false,
+  "schema_version": "CAL001_F07R_USER_CREDIT_SUBPROCESS_ENVELOPE_V1",
+  "shell_interpolation": false,
+  "started_at": "2026-07-22T09:37:39.101285Z",
+  "stdin": "closed",
+  "stream_metadata": {
+    "raw_content_persisted": false,
+    "raw_stderr_byte_count": 0,
+    "raw_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_stdout_byte_count": 103,
+    "raw_stdout_sha256": "02bfdac65710ffbf01803aacded7e4e85d9c6c9a10a945a5fbf3af9b1e2e6aa7",
+    "sanitized_stderr": "",
+    "sanitized_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_stdout": "{\"total_credit\":\"<redacted_available_credit>\",\"user_id\":\"<redacted_account_or_session_field>\",\"user_name\":\"<redacted_account_or_session_field>\",\"vip_level\":\"<redacted_account_tier>\"}\n",
+    "sanitized_stdout_representation": "field-specific redacted JSON when parseable; otherwise support-contract sanitized text",
+    "sanitized_stdout_sha256": "737eac341a604ef9ab4669cd04773168f02564da9652f4edceb43092d1641bd8",
+    "stderr_decoding": "utf-8/errors-replace",
+    "stderr_utf8_replacement_count": 0,
+    "stdout_decoding": "utf-8/errors-replace",
+    "stdout_utf8_replacement_count": 0
+  },
+  "subprocess_exit_code": 0,
+  "timed_out": false,
+  "timeout_seconds": 90,
+  "unsanitized_raw_output_persisted": false
+}

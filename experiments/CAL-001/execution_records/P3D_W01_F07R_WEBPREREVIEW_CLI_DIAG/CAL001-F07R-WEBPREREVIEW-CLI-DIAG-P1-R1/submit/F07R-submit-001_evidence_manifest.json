@@ -1,0 +1,179 @@
+{
+  "artifact_count": 16,
+  "artifacts": [
+    {
+      "byte_length": 8257,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit/F07R-submit-001_command_binding.json",
+      "record_type": "CAL001_F07R_IMMUTABLE_SUBMIT_COMMAND_BINDING",
+      "schema_version": "CAL001_F07R_SUBMIT_COMMAND_BINDING_V1",
+      "sha256": "a88cbdbf27e825b1886f7087d68ff30480a720617dd7d4b284e002edd5a4827a"
+    },
+    {
+      "byte_length": 2609,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-pre-submit-user-credit-001.subprocess_envelope.json",
+      "record_type": "CAL001_F07R_SANITIZED_USER_CREDIT_SUBPROCESS_ENVELOPE",
+      "schema_version": "CAL001_F07R_USER_CREDIT_SUBPROCESS_ENVELOPE_V1",
+      "sha256": "e0d4778d18e3aad951c4c7e51cce4a35b2cae7c0bbdb1edd1480579e18ac3935"
+    },
+    {
+      "byte_length": 1748,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-pre-submit-user-credit-001.parsed_credit_snapshot.json",
+      "record_type": "CAL001_F07R_PARSED_PRE_SUBMIT_CREDIT_SNAPSHOT",
+      "schema_version": "CAL001_F07R_PRE_SUBMIT_CREDIT_SNAPSHOT_V1",
+      "sha256": "eb4eca52774f3e2c656d35452d58149fe76a4347fbfb2e06a09c088c27f644af"
+    },
+    {
+      "byte_length": 8307,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit/F07R-submit-001_duplicate_prevention_snapshot.json",
+      "record_type": "CAL001_F07R_IMMUTABLE_PRECLAIM_DUPLICATE_PREVENTION_SNAPSHOT",
+      "schema_version": "CAL001_F07R_PRECLAIM_DUPLICATE_PREVENTION_SNAPSHOT_V1",
+      "sha256": "714ef4eee318fefdc0856e78cb4c4118be2c5d83bf986ee2f57f9daf946c0bd9"
+    },
+    {
+      "byte_length": 625,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit_claims/F07R-submit-001_allowance_claim.json",
+      "record_type": "CAL001_F07R_EXCLUSIVE_SUBMIT_ALLOWANCE_CLAIM",
+      "schema_version": "CAL001_F07R_SUBMIT_ALLOWANCE_CLAIM_V1",
+      "sha256": "22abede2e901d52ae66d583f43abedc52c709deef0b60571dd709c4745036c0a"
+    },
+    {
+      "byte_length": 2206,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-submit-invocation-started-005_transition.json",
+      "record_type": "CAL001_F07R_IMMUTABLE_ROUTE_TRANSITION",
+      "schema_version": "CAL001_F07R_ROUTE_STATE_V1",
+      "sha256": "91c6441ad2f1cac0a90d68d142ec0d120301570e87815fa11e9e69d6518f7a99"
+    },
+    {
+      "byte_length": 4207,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-submit-001.subprocess_envelope.json",
+      "record_type": "CAL001_F07R_SANITIZED_PROVIDER_SUBMIT_SUBPROCESS_ENVELOPE",
+      "schema_version": "CAL001_F07R_PROVIDER_SUBMIT_SUBPROCESS_ENVELOPE_V1",
+      "sha256": "266c4e546305737b37207b5389f149eb84f9d5447b9bfe1f7fe67f3debc032f7"
+    },
+    {
+      "byte_length": 2491,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-submit-001.parsed_task_creation.json",
+      "record_type": "CAL001_F07R_PARSED_PROVIDER_TASK_CREATION_EVIDENCE",
+      "schema_version": "CAL001_F07R_PARSED_TASK_CREATION_V1",
+      "sha256": "579d1ad1e9ad4333c77d3cea70864627e0457dd2a9d4d017d4b055774804383e"
+    },
+    {
+      "byte_length": 2699,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-post-submit-user-credit-001.subprocess_envelope.json",
+      "record_type": "CAL001_F07R_SANITIZED_USER_CREDIT_SUBPROCESS_ENVELOPE",
+      "schema_version": "CAL001_F07R_USER_CREDIT_SUBPROCESS_ENVELOPE_V1",
+      "sha256": "05bf568800045ef0ced4bcaf4755527ab9c30372e78e74066c26e30efafce323"
+    },
+    {
+      "byte_length": 1485,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-post-submit-user-credit-001.parsed_credit_snapshot.json",
+      "record_type": "CAL001_F07R_PARSED_POST_SUBMIT_CREDIT_SNAPSHOT",
+      "schema_version": "CAL001_F07R_POST_SUBMIT_CREDIT_SNAPSHOT_V1",
+      "sha256": "bc6fec14d1e0b3800921beb02f4fdc755d759d5ba6335076694d8555ccbf1360"
+    },
+    {
+      "byte_length": 5146,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-submit-001.parsed_task_creation_authoritative_correction.json",
+      "record_type": "CAL001_F07R_APPEND_ONLY_PARSED_TASK_CREATION_AUTHORITATIVE_CORRECTION",
+      "schema_version": "CAL001_F07R_PARSED_TASK_CREATION_AUTHORITATIVE_CORRECTION_V1",
+      "sha256": "7d535e203615d91e091b3f8eb47d8cbc3038bc14a3d11fd132a13ef190c6a545"
+    },
+    {
+      "byte_length": 3098,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-submit-001.credit_reconciliation.json",
+      "record_type": "CAL001_F07R_PROVIDER_SUBMIT_CREDIT_RECONCILIATION",
+      "schema_version": "CAL001_F07R_CREDIT_RECONCILIATION_V1",
+      "sha256": "7afb44984ba243d6594884dd6f6b265e75bef57e7ddc342398378578ea2e1ec2"
+    },
+    {
+      "byte_length": 2319,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/route_transitions/F07R-submit-result-006_transition.json",
+      "record_type": "CAL001_F07R_IMMUTABLE_ROUTE_TRANSITION",
+      "schema_version": "CAL001_F07R_ROUTE_STATE_V1",
+      "sha256": "e05150d74f1e4d5550d58458e9bc137ead086e9609f20287e4f0581550f1f24b"
+    },
+    {
+      "byte_length": 5968,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit/F07R-submit-001_execution_summary.json",
+      "record_type": "CAL001_F07R_ONE_SUBMIT_EXECUTION_SUMMARY",
+      "schema_version": "CAL001_F07R_SUBMIT_EXECUTION_SUMMARY_V1",
+      "sha256": "33147c6f1b87f19dac2b4d42cba7b0d61c2a5a50efdbf562e6526c9740432a27"
+    },
+    {
+      "byte_length": 3041,
+      "canonical_json": true,
+      "media": false,
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit/F07R-submit-001_authority_closure_record.json",
+      "record_type": "CAL001_F07R_ONE_SUBMIT_AUTHORITY_CLOSURE_RECORD",
+      "schema_version": "CAL001_F07R_AUTHORITY_CLOSURE_RECORD_V1",
+      "sha256": "66666e6777a287be02a5864ef04e24ea4d076a54f1d3a7101d145107cba93527"
+    },
+    {
+      "artifact_type": "markdown_report",
+      "byte_length": 14238,
+      "canonical_json": false,
+      "media": false,
+      "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_ONE_SUBMIT_ONLY_RESULT.md",
+      "sha256": "a52764978dfc4c19017d47bec27ff9f42954daf2302dc05283cfce97b9b9c77b"
+    }
+  ],
+  "available_credit_exposed_in_report": false,
+  "available_credit_values_present_only_in_parsed_credit_snapshots": true,
+  "command_counts": {
+    "F08": 0,
+    "batch": 0,
+    "checklogin": 0,
+    "download": 0,
+    "login": 0,
+    "logout": 0,
+    "post_submit_user_credit": 1,
+    "pre_submit_user_credit": 1,
+    "provider_submit": 1,
+    "query": 0,
+    "relogin": 0,
+    "resubmit": 0,
+    "retry": 0
+  },
+  "created_at": "2026-07-22T10:01:23.991264Z",
+  "experiment_id": "CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1",
+  "final_route_state": "SUBMITTED_PENDING_SEPARATE_QUERY_AUTHORIZATION",
+  "manifest_scope": "every F artifact created by this phase except this manifest own hash",
+  "manifest_self_hash_stored": false,
+  "manifest_self_path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/submit/F07R-submit-001_evidence_manifest.json",
+  "media_created": false,
+  "operation_id": "F07R-submit-001",
+  "phase_id": "CAL-001-P3D-W01_F07R_WEBPREREVIEW_CLI_DIAG_ONE_SUBMIT_ONLY",
+  "record_type": "CAL001_F07R_ONE_SUBMIT_EVIDENCE_MANIFEST",
+  "schema_version": "CAL001_F07R_EVIDENCE_MANIFEST_V1",
+  "transition_chain_findings": [],
+  "transition_chain_valid": true,
+  "unsanitized_raw_output_persisted": false
+}
