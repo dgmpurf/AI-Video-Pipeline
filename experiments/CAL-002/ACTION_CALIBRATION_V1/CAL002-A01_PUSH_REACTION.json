@@ -1,0 +1,76 @@
+{
+  "schema_version": "CAL002_ACTION_EXPERIMENT_DESIGN_V1",
+  "experiment_id": "CAL002-A01_PUSH_REACTION",
+  "action_type": "push_reaction",
+  "hypothesis": "Explicit contact-before-reaction language will improve the model's ability to show a push as the physical cause of a grounded receiver response.",
+  "fixed_variables_reference": "manifest.json#fixed_variables",
+  "success_criteria": [
+    {
+      "criterion_id": "A01-S01",
+      "description": "Both warriors remain separate and identity-stable throughout the action."
+    },
+    {
+      "criterion_id": "A01-S02",
+      "description": "The black armored warrior visibly initiates the push."
+    },
+    {
+      "criterion_id": "A01-S03",
+      "description": "Hand contact with the white haired warrior's upper torso occurs before the receiver reacts."
+    },
+    {
+      "criterion_id": "A01-S04",
+      "description": "The white haired warrior shifts weight backward and takes one grounded recovery step because of the push."
+    },
+    {
+      "criterion_id": "A01-S05",
+      "description": "The reaction remains proportional, with no flight, fall, wall collision, or injury."
+    },
+    {
+      "criterion_id": "A01-S06",
+      "description": "The static medium eye-level composition and fixed environment are preserved."
+    }
+  ],
+  "failure_categories": [
+    {
+      "category": "NO_VISIBLE_CONTACT",
+      "definition": "The receiver moves without a readable push contact."
+    },
+    {
+      "category": "PREMATURE_REACTION",
+      "definition": "The receiver reacts before the pusher's hands make contact."
+    },
+    {
+      "category": "PUSH_BECOMES_STRIKE",
+      "definition": "The intended sustained push is rendered as a punch, slap, or explosive hit."
+    },
+    {
+      "category": "OVERREACTION_OR_FLIGHT",
+      "definition": "The receiver flies, falls, or travels farther than a grounded push supports."
+    },
+    {
+      "category": "IDENTITY_OR_BODY_MERGE",
+      "definition": "Character identities swap or bodies and limbs merge during contact."
+    },
+    {
+      "category": "FIXED_VARIABLE_DRIFT",
+      "definition": "Camera, framing, scene, weather, floor, or style departs from the manifest."
+    }
+  ],
+  "prompt_versions": {
+    "V1_basic_result": {
+      "design_intent": "State the action and visible result without explicit causal timing.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard on a wet stone floor. Medium shot, eye level, static camera. A black armored warrior pushes a white haired warrior in the upper torso, and the white haired warrior steps backward. Both remain standing and separate.",
+      "provider_ready": false
+    },
+    "V2_causal_motion": {
+      "design_intent": "Make contact, force transfer, and reaction order explicit.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard on a wet stone floor. Medium shot, eye level, static camera. The black armored warrior extends both hands toward the white haired warrior. The hands first make firm contact with the upper torso; that forward pressure then shifts the white haired warrior's weight backward and causes one grounded recovery step. The reaction begins only after contact.",
+      "provider_ready": false
+    },
+    "V3_causal_motion_with_constraints": {
+      "design_intent": "Add observable timing and physical limits while holding all fixed variables constant.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The black armored warrior plants both feet, extends both hands, and establishes visible upper-torso contact before applying forward pressure. Only after contact, the white haired warrior's torso yields, weight transfers to the rear foot, and exactly one grounded recovery step follows. Keep both identities separate and stable. No punch, premature reaction, flight, fall, wall collision, extra subject, magic, injury, gore, camera movement, or scene change.",
+      "provider_ready": false
+    }
+  }
+}

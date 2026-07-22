@@ -1,0 +1,76 @@
+{
+  "schema_version": "CAL002_ACTION_EXPERIMENT_DESIGN_V1",
+  "experiment_id": "CAL002-A02_BLOCK_IMPACT",
+  "action_type": "block_impact",
+  "hypothesis": "Explicit interception and force-transfer language will improve the model's ability to render a block as the cause of an attack stopping at contact.",
+  "fixed_variables_reference": "manifest.json#fixed_variables",
+  "success_criteria": [
+    {
+      "criterion_id": "A02-S01",
+      "description": "The white haired warrior clearly initiates one forearm strike toward the black armored warrior."
+    },
+    {
+      "criterion_id": "A02-S02",
+      "description": "The black armored warrior raises one forearm into the strike path before impact."
+    },
+    {
+      "criterion_id": "A02-S03",
+      "description": "The two forearms visibly meet at one readable contact point."
+    },
+    {
+      "criterion_id": "A02-S04",
+      "description": "The incoming strike stops at the block and both arms show a small proportional recoil."
+    },
+    {
+      "criterion_id": "A02-S05",
+      "description": "Neither warrior crosses through, swaps position, falls, or leaves the ground."
+    },
+    {
+      "criterion_id": "A02-S06",
+      "description": "The static medium eye-level composition and fixed environment are preserved."
+    }
+  ],
+  "failure_categories": [
+    {
+      "category": "BLOCK_MISSES_STRIKE",
+      "definition": "The guard does not intercept the attack path."
+    },
+    {
+      "category": "STRIKE_PASSES_THROUGH_BLOCK",
+      "definition": "The attack continues through the blocking limb without a stop."
+    },
+    {
+      "category": "IMPACT_WITHOUT_APPROACH",
+      "definition": "Contact or recoil appears before the attacking limb approaches."
+    },
+    {
+      "category": "NO_FORCE_RESPONSE",
+      "definition": "The limbs meet but show no visible deceleration or recoil."
+    },
+    {
+      "category": "IDENTITY_OR_LIMB_MERGE",
+      "definition": "Character identities swap or arms merge at the block."
+    },
+    {
+      "category": "FIXED_VARIABLE_DRIFT",
+      "definition": "Camera, framing, scene, weather, floor, or style departs from the manifest."
+    }
+  ],
+  "prompt_versions": {
+    "V1_basic_result": {
+      "design_intent": "State the attack, block, and stopped result without explicit causal timing.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard on a wet stone floor. Medium shot, eye level, static camera. A white haired warrior strikes toward a black armored warrior, who blocks the strike with a raised forearm. The attack stops at the guard.",
+      "provider_ready": false
+    },
+    "V2_causal_motion": {
+      "design_intent": "Describe approach, interception, collision, and recoil as an ordered chain.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard on a wet stone floor. Medium shot, eye level, static camera. The white haired warrior swings one forearm toward the black armored warrior's upper body. The black armored warrior raises one forearm into the path. Their forearms meet; the collision stops the incoming strike and causes a brief, small recoil in both arms.",
+      "provider_ready": false
+    },
+    "V3_causal_motion_with_constraints": {
+      "design_intent": "Constrain the interception geometry and prevent pass-through or exaggerated outcomes.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The white haired warrior initiates one controlled forearm strike. Before it reaches the black armored warrior's torso, the black armored warrior raises one forearm into the exact path. Show one clear forearm-to-forearm contact point; at contact the strike decelerates to a stop and both arms recoil only slightly. Keep both feet grounded and identities stable. No missed block, pass-through, second strike, position swap, fall, flight, extra subject, magic, injury, gore, camera movement, or scene change.",
+      "provider_ready": false
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "CAL002_ACTION_EXPERIMENT_DESIGN_V1",
+  "experiment_id": "CAL002-A05_RUN_STOP",
+  "action_type": "run_stop",
+  "hypothesis": "Explicit braking mechanics will improve the model's ability to connect a planted foot and backward center-of-mass shift to a stable stop on a wet surface.",
+  "fixed_variables_reference": "manifest.json#fixed_variables",
+  "success_criteria": [
+    {
+      "criterion_id": "A05-S01",
+      "description": "The black armored warrior accelerates into three readable forward running steps."
+    },
+    {
+      "criterion_id": "A05-S02",
+      "description": "A final lead-foot plant visibly begins the braking action."
+    },
+    {
+      "criterion_id": "A05-S03",
+      "description": "The hips and torso decelerate after the foot plant rather than stopping instantaneously."
+    },
+    {
+      "criterion_id": "A05-S04",
+      "description": "A small wet-floor skid may occur, but traction returns and the warrior finishes upright and stationary."
+    },
+    {
+      "criterion_id": "A05-S05",
+      "description": "The white haired warrior remains separate, identity-stable, and stationary."
+    },
+    {
+      "criterion_id": "A05-S06",
+      "description": "The static medium eye-level composition and fixed environment are preserved."
+    }
+  ],
+  "failure_categories": [
+    {
+      "category": "INSTANT_STOP_WITHOUT_BRAKING",
+      "definition": "Forward motion freezes without a planted foot or body deceleration."
+    },
+    {
+      "category": "STOP_BEFORE_FOOT_PLANT",
+      "definition": "The body stops before the braking foot establishes contact."
+    },
+    {
+      "category": "ENDLESS_SLIDE",
+      "definition": "The warrior keeps sliding without regaining traction."
+    },
+    {
+      "category": "FALL_OR_SPIN",
+      "definition": "The controlled stop becomes a fall, uncontrolled turn, or airborne motion."
+    },
+    {
+      "category": "STEP_COUNT_OR_DIRECTION_DRIFT",
+      "definition": "The run has the wrong number of readable steps or changes travel direction."
+    },
+    {
+      "category": "SECOND_CHARACTER_INTERFERENCE",
+      "definition": "The white haired warrior moves into or affects the run-stop action."
+    },
+    {
+      "category": "FIXED_VARIABLE_DRIFT",
+      "definition": "Camera, framing, scene, weather, floor, or style departs from the manifest."
+    }
+  ],
+  "prompt_versions": {
+    "V1_basic_result": {
+      "design_intent": "State the short run and stopped result without explicit braking mechanics.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard on a wet stone floor. Medium shot, eye level, static camera. A black armored warrior runs forward for three short steps and stops. A white haired warrior remains standing separately and does not move.",
+      "provider_ready": false
+    },
+    "V2_causal_motion": {
+      "design_intent": "Describe foot plant, center-of-mass deceleration, and traction recovery in order.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard on a wet stone floor. Medium shot, eye level, static camera. The black armored warrior takes three forward running steps. On the third step, the lead foot plants and the hips shift backward to brake; the torso decelerates after the foot plant, the boot skids slightly on wet stone, then regains traction and stops. The white haired warrior remains still.",
+      "provider_ready": false
+    },
+    "V3_causal_motion_with_constraints": {
+      "design_intent": "Require readable braking mechanics and prevent instant stopping or uncontrolled slipping.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The black armored warrior makes exactly three short forward running steps. The third lead-foot plant begins the stop; only after that plant, the hips shift backward, the torso decelerates, and the boot makes one small wet-floor skid before traction returns. End upright and fully stationary. The white haired warrior remains separate and still. No instant freeze, extra step, direction change, endless slide, spin, fall, flight, collision, extra subject, magic, injury, gore, camera movement, or scene change.",
+      "provider_ready": false
+    }
+  }
+}

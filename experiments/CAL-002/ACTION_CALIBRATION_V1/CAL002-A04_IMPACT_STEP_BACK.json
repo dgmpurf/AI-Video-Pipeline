@@ -1,0 +1,80 @@
+{
+  "schema_version": "CAL002_ACTION_EXPERIMENT_DESIGN_V1",
+  "experiment_id": "CAL002-A04_IMPACT_STEP_BACK",
+  "action_type": "impact_step_back",
+  "hypothesis": "A brief impulse described with exact contact timing and a bounded one-step response will improve grounded impact-to-footwork causality.",
+  "fixed_variables_reference": "manifest.json#fixed_variables",
+  "success_criteria": [
+    {
+      "criterion_id": "A04-S01",
+      "description": "The black armored warrior delivers one brief controlled forearm impact to the white haired warrior's upper torso."
+    },
+    {
+      "criterion_id": "A04-S02",
+      "description": "Visible contact precedes compression or backward body response."
+    },
+    {
+      "criterion_id": "A04-S03",
+      "description": "The white haired warrior's torso yields backward from the impact."
+    },
+    {
+      "criterion_id": "A04-S04",
+      "description": "The receiver takes exactly one grounded half-step backward to regain balance."
+    },
+    {
+      "criterion_id": "A04-S05",
+      "description": "The response stops after the half-step, without continued sliding, flight, fall, or wall impact."
+    },
+    {
+      "criterion_id": "A04-S06",
+      "description": "The static medium eye-level composition and fixed environment are preserved."
+    }
+  ],
+  "failure_categories": [
+    {
+      "category": "IMPACT_WITHOUT_CONTACT",
+      "definition": "The receiver recoils without a readable contact event."
+    },
+    {
+      "category": "REACTION_BEFORE_IMPACT",
+      "definition": "Torso or foot response starts before contact."
+    },
+    {
+      "category": "NO_STEP_RESPONSE",
+      "definition": "Impact occurs but the receiver's base does not adjust."
+    },
+    {
+      "category": "MULTI_STEP_OR_SLIDE",
+      "definition": "The receiver takes multiple steps or continues sliding across the wet floor."
+    },
+    {
+      "category": "EXPLOSIVE_KNOCKBACK",
+      "definition": "The controlled impact becomes flight, a fall, or wall collision."
+    },
+    {
+      "category": "IDENTITY_OR_BODY_MERGE",
+      "definition": "Character identities swap or bodies merge at impact."
+    },
+    {
+      "category": "FIXED_VARIABLE_DRIFT",
+      "definition": "Camera, framing, scene, weather, floor, or style departs from the manifest."
+    }
+  ],
+  "prompt_versions": {
+    "V1_basic_result": {
+      "design_intent": "State the impact and step-back result without detailed impulse timing.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard on a wet stone floor. Medium shot, eye level, static camera. A black armored warrior gives a controlled forearm impact to a white haired warrior's upper torso, and the white haired warrior takes one short step backward while remaining upright.",
+      "provider_ready": false
+    },
+    "V2_causal_motion": {
+      "design_intent": "Describe the impulse moving from contact through torso balance into foot placement.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard on a wet stone floor. Medium shot, eye level, static camera. The black armored warrior makes one brief forearm contact with the white haired warrior's upper torso. The contact compresses first, then the torso yields backward and weight transfers to the rear foot, causing one grounded half-step backward to recover balance.",
+      "provider_ready": false
+    },
+    "V3_causal_motion_with_constraints": {
+      "design_intent": "Bind one brief impact to one bounded step and forbid knockback escalation.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The black armored warrior delivers one brief controlled forearm impact. Show visible upper-torso contact before the white haired warrior's torso yields. The resulting weight shift causes exactly one grounded half-step backward, then the receiver stabilizes. Preserve both identities and natural foot contact. No reaction before contact, repeated hits, multiple steps, prolonged slide, flight, fall, wall collision, extra subject, magic, injury, gore, camera movement, or scene change.",
+      "provider_ready": false
+    }
+  }
+}

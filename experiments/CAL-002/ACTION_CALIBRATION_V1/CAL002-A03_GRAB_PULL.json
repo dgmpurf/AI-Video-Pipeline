@@ -1,0 +1,80 @@
+{
+  "schema_version": "CAL002_ACTION_EXPERIMENT_DESIGN_V1",
+  "experiment_id": "CAL002-A03_GRAB_PULL",
+  "action_type": "grab_pull",
+  "hypothesis": "Explicit grip continuity and tension language will improve the model's ability to connect a puller's hand motion to the receiver's delayed whole-body response.",
+  "fixed_variables_reference": "manifest.json#fixed_variables",
+  "success_criteria": [
+    {
+      "criterion_id": "A03-S01",
+      "description": "The black armored warrior establishes a visible grip on the white haired warrior's right wrist."
+    },
+    {
+      "criterion_id": "A03-S02",
+      "description": "The grip remains continuous while the pulling hand moves toward the black armored warrior."
+    },
+    {
+      "criterion_id": "A03-S03",
+      "description": "The white haired warrior's arm becomes taut before the torso and weight follow the pull."
+    },
+    {
+      "criterion_id": "A03-S04",
+      "description": "The receiver takes one grounded balancing step toward the puller."
+    },
+    {
+      "criterion_id": "A03-S05",
+      "description": "The pull remains controlled, without teleportation, dragging, flight, or a fall."
+    },
+    {
+      "criterion_id": "A03-S06",
+      "description": "The static medium eye-level composition and fixed environment are preserved."
+    }
+  ],
+  "failure_categories": [
+    {
+      "category": "GRIP_NOT_ESTABLISHED",
+      "definition": "The pulling motion begins without a readable wrist grip."
+    },
+    {
+      "category": "GRIP_DISCONTINUITY",
+      "definition": "The hand detaches, jumps position, or changes wrists during the pull."
+    },
+    {
+      "category": "RECEIVER_MOVES_BEFORE_TENSION",
+      "definition": "The receiver steps or translates before the arm becomes taut."
+    },
+    {
+      "category": "PULL_WITHOUT_BODY_RESPONSE",
+      "definition": "The wrist moves but the connected shoulder, torso, and weight do not follow."
+    },
+    {
+      "category": "OVERPULL_OR_TELEPORT",
+      "definition": "The receiver flies, slides unnaturally, or jumps position."
+    },
+    {
+      "category": "IDENTITY_OR_LIMB_MERGE",
+      "definition": "Character identities swap or hands and wrists merge."
+    },
+    {
+      "category": "FIXED_VARIABLE_DRIFT",
+      "definition": "Camera, framing, scene, weather, floor, or style departs from the manifest."
+    }
+  ],
+  "prompt_versions": {
+    "V1_basic_result": {
+      "design_intent": "State the grab, pull, and resulting step without detailed force propagation.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard on a wet stone floor. Medium shot, eye level, static camera. A black armored warrior grabs the right wrist of a white haired warrior and pulls, making the white haired warrior step toward him. Both remain upright.",
+      "provider_ready": false
+    },
+    "V2_causal_motion": {
+      "design_intent": "Describe grip, tension, torso response, and foot response in causal order.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard on a wet stone floor. Medium shot, eye level, static camera. The black armored warrior closes one hand around the white haired warrior's right wrist, keeps the grip, and pulls the captured wrist inward. The arm first becomes taut; that tension then turns the shoulder and torso and causes one grounded balancing step toward the puller.",
+      "provider_ready": false
+    },
+    "V3_causal_motion_with_constraints": {
+      "design_intent": "Require continuous connection and limit displacement to a physically readable response.",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The black armored warrior visibly secures the white haired warrior's right wrist and maintains the same grip. The pulling hand moves inward; the captured arm straightens and becomes taut before the shoulder turns, the torso follows, and exactly one grounded balancing step moves toward the puller. Keep identities and limb ownership stable. No detached grip, wrist switch, premature step, teleportation, dragging, flight, fall, extra subject, magic, injury, gore, camera movement, or scene change.",
+      "provider_ready": false
+    }
+  }
+}

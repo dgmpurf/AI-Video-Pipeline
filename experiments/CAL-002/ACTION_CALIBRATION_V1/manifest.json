@@ -1,0 +1,75 @@
+{
+  "schema_version": "CAL002_ACTION_CALIBRATION_MANIFEST_V1",
+  "experiment_id": "CAL-002-ACTION-CALIBRATION-V1",
+  "goal": "Evaluate Seedance 2.0 physical action causality understanding.",
+  "status": "NO_LIVE_DESIGN_ONLY",
+  "fixed_variables": {
+    "characters": [
+      "black armored warrior",
+      "white haired warrior"
+    ],
+    "scene": [
+      "rainy ancient temple courtyard",
+      "wet stone floor",
+      "cinematic fantasy style"
+    ],
+    "camera": [
+      "medium shot",
+      "eye level",
+      "static camera"
+    ]
+  },
+  "prompt_version_order": [
+    "V1_basic_result",
+    "V2_causal_motion",
+    "V3_causal_motion_with_constraints"
+  ],
+  "experiment_packages": [
+    {
+      "experiment_id": "CAL002-A01_PUSH_REACTION",
+      "action_type": "push_reaction",
+      "design_file": "CAL002-A01_PUSH_REACTION.json"
+    },
+    {
+      "experiment_id": "CAL002-A02_BLOCK_IMPACT",
+      "action_type": "block_impact",
+      "design_file": "CAL002-A02_BLOCK_IMPACT.json"
+    },
+    {
+      "experiment_id": "CAL002-A03_GRAB_PULL",
+      "action_type": "grab_pull",
+      "design_file": "CAL002-A03_GRAB_PULL.json"
+    },
+    {
+      "experiment_id": "CAL002-A04_IMPACT_STEP_BACK",
+      "action_type": "impact_step_back",
+      "design_file": "CAL002-A04_IMPACT_STEP_BACK.json"
+    },
+    {
+      "experiment_id": "CAL002-A05_RUN_STOP",
+      "action_type": "run_stop",
+      "design_file": "CAL002-A05_RUN_STOP.json"
+    },
+    {
+      "experiment_id": "CAL002-A06_DRAW_SWORD",
+      "action_type": "draw_sword",
+      "design_file": "CAL002-A06_DRAW_SWORD.json"
+    }
+  ],
+  "matrix_summary": {
+    "action_experiment_count": 6,
+    "prompt_versions_per_experiment": 3,
+    "future_generation_units": 18
+  },
+  "execution_boundary": {
+    "dreamina_allowed": false,
+    "provider_operations_allowed": false,
+    "submit_allowed": false,
+    "query_allowed": false,
+    "download_allowed": false,
+    "media_generation_allowed": false,
+    "provider_package_created": false,
+    "dreamina_manifest_created": false,
+    "human_review_required_before_execution_authorization": true
+  }
+}
