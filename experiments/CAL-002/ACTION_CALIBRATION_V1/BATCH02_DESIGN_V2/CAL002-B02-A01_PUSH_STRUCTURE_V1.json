@@ -1,0 +1,112 @@
+{
+  "action_type": "push_reaction",
+  "comparison": {
+    "candidate": {
+      "prompt_sha256": "1fa97dd97ee7bda68fb8d6240091f4cd3be03ce202c1d619310e80a4551d93f8",
+      "prompt_structure": "four_block_state_organization",
+      "prompt_text": "Initial State: Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The black armored warrior plants both feet. Physical Event: The black armored warrior extends both hands and establishes visible upper-torso contact before applying forward pressure. Body Response: Only after contact, the white haired warrior's torso yields, weight transfers to the rear foot, and exactly one short recovery step follows while balance is maintained. The support foot remains stable while the opposite foot makes the single short recovery placement. Final State: Preserve camera composition, character identity, and readable screen direction. No punch, premature reaction, flight, fall, wall collision, extra subject, magic, injury, gore, camera movement, or scene change.",
+      "section_labels": [
+        "Initial State",
+        "Physical Event",
+        "Body Response",
+        "Final State"
+      ]
+    },
+    "control": {
+      "prompt_sha256": "8634cb031d29662f689f5374bb84b8d0c544bfb42a1aa899696e210aafaec854",
+      "prompt_structure": "flat_causal_sequence",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The black armored warrior plants both feet. The black armored warrior extends both hands and establishes visible upper-torso contact before applying forward pressure. Only after contact, the white haired warrior's torso yields, weight transfers to the rear foot, and exactly one short recovery step follows while balance is maintained. The support foot remains stable while the opposite foot makes the single short recovery placement. Preserve camera composition, character identity, and readable screen direction. No punch, premature reaction, flight, fall, wall collision, extra subject, magic, injury, gore, camera movement, or scene change."
+    },
+    "isolation": {
+      "candidate_normalization": {
+        "remove_exact_labels": [
+          "Initial State: ",
+          "Physical Event: ",
+          "Body Response: ",
+          "Final State: "
+        ],
+        "result_equals_control_prompt": true
+      },
+      "isolated_variable": "prompt_organization_structure_only",
+      "semantic_content_sha256": "8634cb031d29662f689f5374bb84b8d0c544bfb42a1aa899696e210aafaec854",
+      "semantic_units_identical": true
+    }
+  },
+  "controlled_variables": {
+    "action_identity": "push_reaction",
+    "camera": {
+      "angle": "eye level",
+      "framing": "medium shot",
+      "movement": "static camera"
+    },
+    "characters": [
+      "black armored warrior",
+      "white haired warrior"
+    ],
+    "future_generation_settings": {
+      "duration_seconds": 5,
+      "informational_only": true,
+      "model": "seedance2.0_vip",
+      "ratio": "16:9",
+      "resolution": "720p"
+    },
+    "reference_strategy": {
+      "active_reference_count": 0,
+      "mode": "text_only_no_active_generation_reference"
+    },
+    "scene": [
+      "rainy ancient temple courtyard",
+      "wet stone floor",
+      "cinematic fantasy style"
+    ]
+  },
+  "execution_boundary": {
+    "download_authorized": false,
+    "dreamina_command_generated": false,
+    "execution_authority_created": false,
+    "live_provider_package_created": false,
+    "media_creation_authorized": false,
+    "provider_called": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "experiment_id": "CAL002-B02-A01_PUSH_STRUCTURE_V1",
+  "failure_categories": [
+    "NO_VISIBLE_CONTACT",
+    "PREMATURE_REACTION",
+    "PUSH_BECOMES_STRIKE",
+    "OVERREACTION_OR_FLIGHT",
+    "IDENTITY_OR_BODY_MERGE",
+    "FIXED_VARIABLE_DRIFT"
+  ],
+  "hypothesis": "When semantic content is identical, four-block organization alone may improve the readability of the requested push sequence relative to the flat control prompt.",
+  "normalization_adjustments": {
+    "applied_symmetrically_to_both_treatments": true,
+    "foot_wording": "Maintain balance with support-foot stability and one opposite-foot recovery placement.",
+    "removed_unchanged_spacing_requirement": true,
+    "replacement_preservation": [
+      "camera composition",
+      "character identity",
+      "readable screen direction"
+    ]
+  },
+  "schema_version": "CAL002_BATCH02_STRUCTURE_ONLY_DESIGN_V1",
+  "source_bindings": {
+    "batch01_source_experiment_id": "CAL002-A01_PUSH_REACTION",
+    "batch01_v3_prompt_sha256": "4e823cde0ac9a17c16eefb6c865058cb223b18df1fc77986f824242c7ea0fb49",
+    "prior_design_experiment_id": "CAL002-B02-A01_PUSH_V4",
+    "prior_design_file_sha256": "3fef3fa136a4dd4c663b35e1052bbcd9c3701d43681414d5afacc79f77ee8a3c",
+    "review_report_path": "reports/CAL002_BATCH02_DESIGN_REVIEW_RESULT.md",
+    "review_report_sha256": "5764511b33e97f768562bc7a1086d45332ae133a0959d3a53eece1e0a7200a53"
+  },
+  "status": "NO_LIVE_STRUCTURE_ONLY_DESIGN",
+  "success_criteria": [
+    "The black armored warrior visibly initiates the push.",
+    "Upper-torso contact occurs before the receiver reacts.",
+    "The receiver yields and takes exactly one short recovery step while maintaining balance.",
+    "The action remains a push rather than a strike or flight event.",
+    "Camera composition, character identity, and readable screen direction are preserved."
+  ]
+}

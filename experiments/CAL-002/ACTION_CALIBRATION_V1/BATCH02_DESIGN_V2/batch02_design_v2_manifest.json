@@ -1,0 +1,121 @@
+{
+  "comparison_design_id": "CAL002-ACTION-CALIBRATION-BATCH02-DESIGN-V2",
+  "design_files": [
+    {
+      "action_type": "push_reaction",
+      "design_file": "CAL002-B02-A01_PUSH_STRUCTURE_V1.json",
+      "experiment_id": "CAL002-B02-A01_PUSH_STRUCTURE_V1"
+    },
+    {
+      "action_type": "impact_step_back",
+      "design_file": "CAL002-B02-A04_IMPACT_STRUCTURE_V1.json",
+      "experiment_id": "CAL002-B02-A04_IMPACT_STRUCTURE_V1"
+    }
+  ],
+  "deterministic_serialization": {
+    "encoding": "UTF-8",
+    "indent_spaces": 2,
+    "json_key_order": "lexicographic",
+    "newline": "LF",
+    "trailing_newline": true
+  },
+  "execution_boundary": {
+    "download_authorized": false,
+    "dreamina_command_generated": false,
+    "execution_authority_created": false,
+    "live_provider_package_created": false,
+    "media_creation_authorized": false,
+    "provider_called": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "experiment_objective": "Test whether prompt organization alone improves action generation.",
+  "fixed_variables": {
+    "camera": [
+      "medium shot",
+      "eye level",
+      "static camera"
+    ],
+    "characters": [
+      "black armored warrior",
+      "white haired warrior"
+    ],
+    "future_generation_settings": {
+      "duration_seconds": 5,
+      "informational_only": true,
+      "model": "seedance2.0_vip",
+      "ratio": "16:9",
+      "resolution": "720p"
+    },
+    "reference_strategy": "text_only_no_active_generation_reference",
+    "scene": [
+      "rainy ancient temple courtyard",
+      "wet stone floor",
+      "cinematic fantasy style"
+    ]
+  },
+  "future_comparison_shape": {
+    "action_count": 2,
+    "authority_created": false,
+    "generation_units_for_one_paired_sample_per_action": 4,
+    "informational_only": true,
+    "treatments_per_action": 2
+  },
+  "isolation_contract": {
+    "candidate_section_labels": [
+      "Initial State",
+      "Physical Event",
+      "Body Response",
+      "Final State"
+    ],
+    "forbidden_candidate_only_additions": [
+      "additional physical semantics",
+      "additional mechanics knowledge",
+      "additional constraints",
+      "center of mass",
+      "impulse",
+      "force vectors",
+      "muscle mechanics",
+      "torque",
+      "acceleration descriptions"
+    ],
+    "normalization_rule": "Remove the four exact section labels from the candidate prompt; the result must equal the flat control prompt byte-for-byte.",
+    "only_changed_variable": "prompt_organization_structure",
+    "semantic_content_identical_within_each_pair": true
+  },
+  "revision_source": {
+    "path": "reports/CAL002_BATCH02_DESIGN_REVIEW_RESULT.md",
+    "sha256": "5764511b33e97f768562bc7a1086d45332ae133a0959d3a53eece1e0a7200a53"
+  },
+  "schema_version": "CAL002_BATCH02_STRUCTURE_ONLY_MANIFEST_V1",
+  "source_batch01": {
+    "batch_id": "CAL002-ACTION-CALIBRATION-PILOT-R1-BATCH-01",
+    "batch_manifest": {
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/PILOT_R1/BATCH_01/batch_manifest.json",
+      "sha256": "a119fd7cf28f6e0b7c7818b3139ba1547ac5998eb7789e175ea1a9d8160be36c"
+    },
+    "execution_packages": [
+      {
+        "experiment_id": "CAL002-A01_PUSH_REACTION",
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/PILOT_R1/BATCH_01/CAL002-A01_PUSH_REACTION_BATCH01_execution_package.json",
+        "prompt_sha256": "4e823cde0ac9a17c16eefb6c865058cb223b18df1fc77986f824242c7ea0fb49",
+        "sha256": "b9a5a7395362337719ca357bb9af9a8a36d441c7191f8bd1a7f07035b05f3526"
+      },
+      {
+        "experiment_id": "CAL002-A04_IMPACT_STEP_BACK",
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/PILOT_R1/BATCH_01/CAL002-A04_IMPACT_STEP_BACK_BATCH01_execution_package.json",
+        "prompt_sha256": "af539d756b434acc3b25ff867b1edcefa5965d9b78c678600d54370c288cb7b5",
+        "sha256": "53c5b08fd1309844b93ce4fcd1c28800049a1bce553db1cceeaa57403249b98c"
+      },
+      {
+        "experiment_id": "CAL002-A03_GRAB_PULL",
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/PILOT_R1/BATCH_01/CAL002-A03_GRAB_PULL_BATCH01_execution_package.json",
+        "prompt_sha256": "f05d061a57f2244ce4f47b43acf4061af0d70d0276aa45bf9007fa8447e36f45",
+        "sha256": "cd10612ddff3feea5f3edb963a3dfb970a69b402ba716f91388b524b528e2313"
+      }
+    ]
+  },
+  "status": "NO_LIVE_STRUCTURE_ONLY_DESIGN"
+}
