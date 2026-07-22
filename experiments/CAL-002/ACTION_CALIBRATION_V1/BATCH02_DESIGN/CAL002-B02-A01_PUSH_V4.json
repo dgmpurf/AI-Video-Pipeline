@@ -1,0 +1,96 @@
+{
+  "action_type": "push_reaction",
+  "comparison": {
+    "baseline": {
+      "prompt_sha256": "4e823cde0ac9a17c16eefb6c865058cb223b18df1fc77986f824242c7ea0fb49",
+      "prompt_structure": "V3_causal_motion_with_constraints",
+      "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The black armored warrior plants both feet, extends both hands, and establishes visible upper-torso contact before applying forward pressure. Only after contact, the white haired warrior's torso yields, weight transfers to the rear foot, and exactly one grounded recovery step follows. Keep both identities separate and stable. No punch, premature reaction, flight, fall, wall collision, extra subject, magic, injury, gore, camera movement, or scene change.",
+      "source_execution_package_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/PILOT_R1/BATCH_01/CAL002-A01_PUSH_REACTION_BATCH01_execution_package.json",
+      "source_execution_package_sha256": "b9a5a7395362337719ca357bb9af9a8a36d441c7191f8bd1a7f07035b05f3526"
+    },
+    "candidate": {
+      "prompt_sha256": "c86bdd0547e2a830d96ee7abe0e4e7fdf83ae1f299e2b277b81682e5ade47f76",
+      "prompt_structure": "V4_state_transition",
+      "prompt_text": "Initial State: Cinematic fantasy in a rainy ancient temple courtyard on a wet stone floor. In one continuous medium shot at eye level with a static camera, the black armored warrior stands close to the white haired warrior with both feet planted; the receiver is balanced with both feet grounded. Physical Event: The black armored warrior extends both hands, establishes visible contact on the receiver's upper torso, then applies sustained forward pressure; the receiver does not move before contact. Body Mechanics: Pressure travels from the contact point through the receiver's torso and center of mass; the torso yields first, weight shifts onto the rear foot, and exactly one grounded recovery step follows without sliding. Final State: The receiver finishes one step backward in a stable two-foot stance while both identities, limb ownership, spacing, scene, and camera remain unchanged. No punch, impact strike, premature reaction, extra step, flight, fall, wall collision, body merge, extra subject, magic, injury, gore, camera movement, or scene change.",
+      "state_blocks": [
+        "Initial State",
+        "Physical Event",
+        "Body Mechanics",
+        "Final State"
+      ]
+    },
+    "isolated_variable": "Prompt organization and explicit state-transition wording only."
+  },
+  "controlled_variables": {
+    "camera": {
+      "angle": "eye level",
+      "framing": "medium shot",
+      "movement": "static camera"
+    },
+    "characters": [
+      "black armored warrior",
+      "white haired warrior"
+    ],
+    "environment": [
+      "rainy ancient temple courtyard",
+      "wet stone floor",
+      "cinematic fantasy style"
+    ],
+    "future_generation_settings": {
+      "duration_seconds": 5,
+      "informational_only": true,
+      "model": "seedance2.0_vip",
+      "ratio": "16:9",
+      "resolution": "720p"
+    },
+    "reference_strategy": {
+      "active_reference_count": 0,
+      "mode": "text_only_no_active_generation_reference"
+    }
+  },
+  "evaluation_dimensions": [
+    "action_intent",
+    "contact_before_reaction",
+    "force_transfer",
+    "weight_shift",
+    "grounded_recovery",
+    "final_state_stability",
+    "identity_and_fixed_variable_preservation"
+  ],
+  "execution_boundary": {
+    "download_authorized": false,
+    "dreamina_command_generated": false,
+    "execution_authority_created": false,
+    "media_creation_authorized": false,
+    "provider_package_created": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "experiment_id": "CAL002-B02-A01_PUSH_V4",
+  "failure_categories": [
+    "REACTION_BEFORE_CONTACT",
+    "PUSH_BECOMES_IMPACT",
+    "FORCE_TRANSFER_MISSING",
+    "WEIGHT_SHIFT_MISSING",
+    "EXTRA_STEP_OR_SLIDE",
+    "UNGROUNDED_RECOVERY",
+    "UNSTABLE_FINAL_STATE",
+    "IDENTITY_OR_FIXED_VARIABLE_DRIFT"
+  ],
+  "hypothesis": "A four-block state-transition prompt will preserve readable push intent while improving force propagation, weight shift, and a stable one-step grounded recovery relative to the V3 causal prompt.",
+  "purpose": "Compare the existing V3 causal-motion treatment with a V4 state-transition treatment for push reaction.",
+  "schema_version": "CAL002_BATCH02_STATE_TRANSITION_DESIGN_V1",
+  "source_experiment_id": "CAL002-A01_PUSH_REACTION",
+  "status": "NO_LIVE_DESIGN_ONLY",
+  "success_criteria": [
+    "The initial balanced and grounded state is readable before action begins.",
+    "Visible two-hand upper-torso contact precedes all receiver motion.",
+    "Sustained pressure remains distinct from a strike or brief impact.",
+    "The receiver's torso yields before weight transfers to the rear foot.",
+    "Exactly one grounded recovery step follows without sliding or flight.",
+    "The receiver reaches a stable two-foot final state after the force ends.",
+    "Identity, limb ownership, scene, framing, and camera remain fixed."
+  ]
+}
