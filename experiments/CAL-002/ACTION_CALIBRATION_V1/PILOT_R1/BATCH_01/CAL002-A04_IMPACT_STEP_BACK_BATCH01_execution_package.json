@@ -1,0 +1,96 @@
+{
+  "action_type": "impact_step_back",
+  "authorization": {
+    "download_authorized": false,
+    "dreamina_command_generated": false,
+    "execution_permission_created": false,
+    "provider_called": false,
+    "provider_ready_live_authority": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "batch_id": "CAL002-ACTION-CALIBRATION-PILOT-R1-BATCH-01",
+  "duplicate_prevention_key": "CAL002-ACTION-CALIBRATION-PILOT-R1::BATCH_01::CAL002-BATCH01-A04-IMPACT-STEP-BACK-V3::af539d756b434acc3b25ff867b1edcefa5965d9b78c678600d54370c288cb7b5",
+  "execution_package_id": "CAL002-BATCH01-A04-IMPACT-STEP-BACK-V3",
+  "expected_success_criteria": [
+    {
+      "criterion_id": "A04-S01",
+      "description": "The black armored warrior delivers one brief controlled forearm impact to the white haired warrior's upper torso."
+    },
+    {
+      "criterion_id": "A04-S02",
+      "description": "Visible contact precedes compression or backward body response."
+    },
+    {
+      "criterion_id": "A04-S03",
+      "description": "The white haired warrior's torso yields backward from the impact."
+    },
+    {
+      "criterion_id": "A04-S04",
+      "description": "The receiver takes exactly one grounded half-step backward to regain balance."
+    },
+    {
+      "criterion_id": "A04-S05",
+      "description": "The response stops after the half-step, without continued sliding, flight, fall, or wall impact."
+    },
+    {
+      "criterion_id": "A04-S06",
+      "description": "The static medium eye-level composition and fixed environment are preserved."
+    }
+  ],
+  "experiment_id": "CAL002-A04_IMPACT_STEP_BACK",
+  "failure_categories": [
+    {
+      "category": "IMPACT_WITHOUT_CONTACT",
+      "definition": "The receiver recoils without a readable contact event."
+    },
+    {
+      "category": "REACTION_BEFORE_IMPACT",
+      "definition": "Torso or foot response starts before contact."
+    },
+    {
+      "category": "NO_STEP_RESPONSE",
+      "definition": "Impact occurs but the receiver's base does not adjust."
+    },
+    {
+      "category": "MULTI_STEP_OR_SLIDE",
+      "definition": "The receiver takes multiple steps or continues sliding across the wet floor."
+    },
+    {
+      "category": "EXPLOSIVE_KNOCKBACK",
+      "definition": "The controlled impact becomes flight, a fall, or wall collision."
+    },
+    {
+      "category": "IDENTITY_OR_BODY_MERGE",
+      "definition": "Character identities swap or bodies merge at impact."
+    },
+    {
+      "category": "FIXED_VARIABLE_DRIFT",
+      "definition": "Camera, framing, scene, weather, floor, or style departs from the manifest."
+    }
+  ],
+  "prompt_sha256": "af539d756b434acc3b25ff867b1edcefa5965d9b78c678600d54370c288cb7b5",
+  "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The black armored warrior delivers one brief controlled forearm impact. Show visible upper-torso contact before the white haired warrior's torso yields. The resulting weight shift causes exactly one grounded half-step backward, then the receiver stabilizes. Preserve both identities and natural foot contact. No reaction before contact, repeated hits, multiple steps, prolonged slide, flight, fall, wall collision, extra subject, magic, injury, gore, camera movement, or scene change.",
+  "prompt_version": "V3_causal_motion_with_constraints",
+  "provider_parameters": {
+    "duration": 5,
+    "model": "seedance2.0_vip",
+    "ratio": "16:9",
+    "resolution": "720p"
+  },
+  "reference_strategy": {
+    "active_reference_count": 0,
+    "active_reference_inputs": [],
+    "mode": "text_only_no_active_generation_reference",
+    "offline_design_bindings_only": true
+  },
+  "schema_version": "CAL002_ACTION_CALIBRATION_BATCH_EXECUTION_PACKAGE_V1",
+  "source_package": {
+    "package_id": "CAL002-ACTION-CALIBRATION-PILOT-R1::CAL002-A04_IMPACT_STEP_BACK",
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/PILOT_R1/CAL002-A04_IMPACT_STEP_BACK_PILOT_R1_package.json",
+    "sha256": "2301053b40f514be35cf553ef5be6bcbd42335bde177bf6e9ebde7b646e75e07"
+  },
+  "status": "NO_LIVE_EXECUTION_PACKAGE_ONLY"
+}

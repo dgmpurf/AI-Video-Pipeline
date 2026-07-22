@@ -1,0 +1,103 @@
+{
+  "batch_id": "CAL002-ACTION-CALIBRATION-PILOT-R1-BATCH-01",
+  "budget": {
+    "download": 0,
+    "expected_credit_cost": 210,
+    "generation_count": 3,
+    "query": 0,
+    "resubmit": 0,
+    "retry": 0
+  },
+  "deterministic_serialization": {
+    "encoding": "UTF-8",
+    "indent_spaces": 2,
+    "json_key_order": "lexicographic",
+    "newline": "LF",
+    "trailing_newline": true
+  },
+  "duplicate_prevention": {
+    "batch_execution_started": false,
+    "batch_identity_key": "CAL002-ACTION-CALIBRATION-PILOT-R1::BATCH_01",
+    "duplicate_check_status": "NO_LIVE_BASELINE_ONLY",
+    "existing_provider_submit_ids": [],
+    "future_exclusive_claim_required_before_any_live_invocation": true,
+    "identity_components": [
+      "batch_id",
+      "execution_package_id",
+      "source_package_id",
+      "source_package_sha256",
+      "prompt_sha256"
+    ],
+    "maximum_future_invocations_per_execution_package": 1,
+    "package_identity_uniqueness_required": true,
+    "provider_submit_claims_created": false
+  },
+  "execution_authority": {
+    "download_authorized": false,
+    "dreamina_command_generated": false,
+    "execution_permission_created": false,
+    "provider_called": false,
+    "provider_ready_live_authority": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "execution_packages": [
+    {
+      "execution_package_id": "CAL002-BATCH01-A01-PUSH-REACTION-V3",
+      "experiment_id": "CAL002-A01_PUSH_REACTION",
+      "package_file": "CAL002-A01_PUSH_REACTION_BATCH01_execution_package.json",
+      "prompt_sha256": "4e823cde0ac9a17c16eefb6c865058cb223b18df1fc77986f824242c7ea0fb49",
+      "source_package_id": "CAL002-ACTION-CALIBRATION-PILOT-R1::CAL002-A01_PUSH_REACTION",
+      "source_package_sha256": "7c9a0fed1fed1f01cd48c05fa33eed70594e9743cda7a68a20a264d30294a856"
+    },
+    {
+      "execution_package_id": "CAL002-BATCH01-A04-IMPACT-STEP-BACK-V3",
+      "experiment_id": "CAL002-A04_IMPACT_STEP_BACK",
+      "package_file": "CAL002-A04_IMPACT_STEP_BACK_BATCH01_execution_package.json",
+      "prompt_sha256": "af539d756b434acc3b25ff867b1edcefa5965d9b78c678600d54370c288cb7b5",
+      "source_package_id": "CAL002-ACTION-CALIBRATION-PILOT-R1::CAL002-A04_IMPACT_STEP_BACK",
+      "source_package_sha256": "2301053b40f514be35cf553ef5be6bcbd42335bde177bf6e9ebde7b646e75e07"
+    },
+    {
+      "execution_package_id": "CAL002-BATCH01-A03-GRAB-PULL-V3",
+      "experiment_id": "CAL002-A03_GRAB_PULL",
+      "package_file": "CAL002-A03_GRAB_PULL_BATCH01_execution_package.json",
+      "prompt_sha256": "f05d061a57f2244ce4f47b43acf4061af0d70d0276aa45bf9007fa8447e36f45",
+      "source_package_id": "CAL002-ACTION-CALIBRATION-PILOT-R1::CAL002-A03_GRAB_PULL",
+      "source_package_sha256": "9c8277d99a8e4401239f894eb2aed9c1ad529feb6e5415f6a2caa8fd2ddc59bd"
+    }
+  ],
+  "experiment_id": "CAL002-ACTION-CALIBRATION-PILOT-R1",
+  "goal": "Prepare the reviewed first-three V3 action-causality batch without creating live execution authority.",
+  "provider_parameters": {
+    "duration": 5,
+    "model": "seedance2.0_vip",
+    "ratio": "16:9",
+    "resolution": "720p"
+  },
+  "reference_strategy": {
+    "active_reference_count": 0,
+    "active_reference_inputs": [],
+    "mode": "text_only_no_active_generation_reference",
+    "offline_design_bindings_only": true
+  },
+  "schema_version": "CAL002_ACTION_CALIBRATION_BATCH_MANIFEST_V1",
+  "scope": {
+    "generation_count": 3,
+    "prompt_version": "V3_causal_motion_with_constraints",
+    "selected_experiments": [
+      "CAL002-A01_PUSH_REACTION",
+      "CAL002-A04_IMPACT_STEP_BACK",
+      "CAL002-A03_GRAB_PULL"
+    ]
+  },
+  "source_pilot": {
+    "manifest_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/PILOT_R1/pilot_manifest.json",
+    "manifest_sha256": "2cc23a7fec48030ee003b0cd5be774984a4ff095a3d875539a14e9e1b9e29beb",
+    "review_decision": "RECOMMEND_OPTION_B_FIRST_3_GENERATIONS_210_CREDITS_THEN_HUMAN_REVIEW_GATE",
+    "review_report_path": "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_PACKAGE_REVIEW_RESULT.md"
+  },
+  "status": "NO_LIVE_EXECUTION_PACKAGE_PREPARATION_ONLY"
+}
