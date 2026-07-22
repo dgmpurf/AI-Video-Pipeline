@@ -1,0 +1,67 @@
+{
+  "action_type": "push_reaction",
+  "audit_binding": {
+    "audit_commit": "917c6f786de83bca6c7aec15eef51fa4d803a713",
+    "audit_decision": "DESIGN_READY",
+    "audit_report_path": "reports/CAL002_BATCH02_DESIGN_V2_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+    "audit_report_sha256": "57db4d9050ef53cdb129f3e5d17da5caf96a4b7534f1fe0b3a5a10720ab07447",
+    "audit_verdict": "CAL002_BATCH02_DESIGN_V2_INDEPENDENT_AUDIT_COMPLETE_READY_NO_LIVE"
+  },
+  "authorization": {
+    "download_authorized": false,
+    "dreamina_command_generated": false,
+    "execution_claim_created": false,
+    "execution_permission_created": false,
+    "provider_called": false,
+    "provider_ready_live_authority": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "batch_id": "CAL002-ACTION-CALIBRATION-BATCH02-STRUCTURE-ONLY",
+  "duplicate_prevention_key": "CAL002-ACTION-CALIBRATION-BATCH02-STRUCTURE-ONLY::CAL002-B02-A01_PUSH_STRUCTURE_CONTROL::8634cb031d29662f689f5374bb84b8d0c544bfb42a1aa899696e210aafaec854",
+  "execution_package_id": "CAL002-B02-A01_PUSH_STRUCTURE_CONTROL",
+  "expected_success_criteria": [
+    "The black armored warrior visibly initiates the push.",
+    "Upper-torso contact occurs before the receiver reacts.",
+    "The receiver yields and takes exactly one short recovery step while maintaining balance.",
+    "The action remains a push rather than a strike or flight event.",
+    "Camera composition, character identity, and readable screen direction are preserved."
+  ],
+  "experiment_id": "CAL002-B02-A01_PUSH_STRUCTURE_CONTROL",
+  "failure_categories": [
+    "NO_VISIBLE_CONTACT",
+    "PREMATURE_REACTION",
+    "PUSH_BECOMES_STRIKE",
+    "OVERREACTION_OR_FLIGHT",
+    "IDENTITY_OR_BODY_MERGE",
+    "FIXED_VARIABLE_DRIFT"
+  ],
+  "prompt_sha256": "8634cb031d29662f689f5374bb84b8d0c544bfb42a1aa899696e210aafaec854",
+  "prompt_structure": "flat_causal_sequence",
+  "prompt_text": "Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The black armored warrior plants both feet. The black armored warrior extends both hands and establishes visible upper-torso contact before applying forward pressure. Only after contact, the white haired warrior's torso yields, weight transfers to the rear foot, and exactly one short recovery step follows while balance is maintained. The support foot remains stable while the opposite foot makes the single short recovery placement. Preserve camera composition, character identity, and readable screen direction. No punch, premature reaction, flight, fall, wall collision, extra subject, magic, injury, gore, camera movement, or scene change.",
+  "provider_parameters": {
+    "duration": 5,
+    "model": "seedance2.0_vip",
+    "ratio": "16:9",
+    "resolution": "720p"
+  },
+  "reference_strategy": {
+    "active_reference_count": 0,
+    "active_reference_inputs": [],
+    "mode": "text_only_no_active_generation_reference",
+    "offline_design_bindings_only": true
+  },
+  "schema_version": "CAL002_BATCH02_NO_LIVE_EXECUTION_PACKAGE_V1",
+  "source_design": {
+    "design_experiment_id": "CAL002-B02-A01_PUSH_STRUCTURE_V1",
+    "file_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH02_DESIGN_V2/CAL002-B02-A01_PUSH_STRUCTURE_V1.json",
+    "file_sha256": "31cea6e8d81d88dba346ee0f32685d7744d0572572152bf46dfdc9e311d2f8c8",
+    "manifest_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH02_DESIGN_V2/batch02_design_v2_manifest.json",
+    "manifest_sha256": "bff4351128fe2abc2a10df3038713a9bfc0b10a36495bc5b23787f449d896bee",
+    "treatment_prompt_sha256": "8634cb031d29662f689f5374bb84b8d0c544bfb42a1aa899696e210aafaec854"
+  },
+  "status": "NO_LIVE_EXECUTION_PACKAGE_ONLY",
+  "treatment": "control"
+}

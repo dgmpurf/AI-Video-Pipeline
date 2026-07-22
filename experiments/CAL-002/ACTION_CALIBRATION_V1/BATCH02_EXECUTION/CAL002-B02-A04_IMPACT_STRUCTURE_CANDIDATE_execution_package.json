@@ -1,0 +1,68 @@
+{
+  "action_type": "impact_step_back",
+  "audit_binding": {
+    "audit_commit": "917c6f786de83bca6c7aec15eef51fa4d803a713",
+    "audit_decision": "DESIGN_READY",
+    "audit_report_path": "reports/CAL002_BATCH02_DESIGN_V2_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+    "audit_report_sha256": "57db4d9050ef53cdb129f3e5d17da5caf96a4b7534f1fe0b3a5a10720ab07447",
+    "audit_verdict": "CAL002_BATCH02_DESIGN_V2_INDEPENDENT_AUDIT_COMPLETE_READY_NO_LIVE"
+  },
+  "authorization": {
+    "download_authorized": false,
+    "dreamina_command_generated": false,
+    "execution_claim_created": false,
+    "execution_permission_created": false,
+    "provider_called": false,
+    "provider_ready_live_authority": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "batch_id": "CAL002-ACTION-CALIBRATION-BATCH02-STRUCTURE-ONLY",
+  "duplicate_prevention_key": "CAL002-ACTION-CALIBRATION-BATCH02-STRUCTURE-ONLY::CAL002-B02-A04_IMPACT_STRUCTURE_CANDIDATE::8260c14bcb66c21dac9cdd48b795345e22e2a102b7592b4e5da5f69dfd55d18a",
+  "execution_package_id": "CAL002-B02-A04_IMPACT_STRUCTURE_CANDIDATE",
+  "expected_success_criteria": [
+    "The black armored warrior delivers one brief controlled forearm impact.",
+    "Upper-torso contact occurs before the receiver reacts.",
+    "The receiver takes exactly one short recovery step backward and stabilizes.",
+    "The action remains bounded without repeated hits, sliding, flight, or a fall.",
+    "Camera composition, character identity, and readable screen direction are preserved."
+  ],
+  "experiment_id": "CAL002-B02-A04_IMPACT_STRUCTURE_CANDIDATE",
+  "failure_categories": [
+    "IMPACT_WITHOUT_CONTACT",
+    "REACTION_BEFORE_IMPACT",
+    "NO_STEP_RESPONSE",
+    "MULTI_STEP_OR_SLIDE",
+    "EXPLOSIVE_KNOCKBACK",
+    "IDENTITY_OR_BODY_MERGE",
+    "FIXED_VARIABLE_DRIFT"
+  ],
+  "prompt_sha256": "8260c14bcb66c21dac9cdd48b795345e22e2a102b7592b4e5da5f69dfd55d18a",
+  "prompt_structure": "four_block_state_organization",
+  "prompt_text": "Initial State: Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The black armored warrior and the white haired warrior begin balanced. Physical Event: The black armored warrior delivers one brief controlled forearm impact. Visible upper-torso contact occurs before the white haired warrior's torso yields. Body Response: The resulting weight shift causes exactly one short recovery step backward, then the receiver stabilizes. The support foot remains stable while the opposite foot makes the single short recovery placement. Final State: Preserve camera composition, character identity, and readable screen direction. No reaction before contact, repeated hits, multiple steps, prolonged slide, flight, fall, wall collision, extra subject, magic, injury, gore, camera movement, or scene change.",
+  "provider_parameters": {
+    "duration": 5,
+    "model": "seedance2.0_vip",
+    "ratio": "16:9",
+    "resolution": "720p"
+  },
+  "reference_strategy": {
+    "active_reference_count": 0,
+    "active_reference_inputs": [],
+    "mode": "text_only_no_active_generation_reference",
+    "offline_design_bindings_only": true
+  },
+  "schema_version": "CAL002_BATCH02_NO_LIVE_EXECUTION_PACKAGE_V1",
+  "source_design": {
+    "design_experiment_id": "CAL002-B02-A04_IMPACT_STRUCTURE_V1",
+    "file_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH02_DESIGN_V2/CAL002-B02-A04_IMPACT_STRUCTURE_V1.json",
+    "file_sha256": "9f648d42e3384f5e178c754df5f584fc6745b1df617abef5187e213f357e8c36",
+    "manifest_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH02_DESIGN_V2/batch02_design_v2_manifest.json",
+    "manifest_sha256": "bff4351128fe2abc2a10df3038713a9bfc0b10a36495bc5b23787f449d896bee",
+    "treatment_prompt_sha256": "8260c14bcb66c21dac9cdd48b795345e22e2a102b7592b4e5da5f69dfd55d18a"
+  },
+  "status": "NO_LIVE_EXECUTION_PACKAGE_ONLY",
+  "treatment": "candidate"
+}
