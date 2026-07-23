@@ -1,0 +1,253 @@
+{
+  "audit_binding": {
+    "audit_commit": "f1d60f3f57d7241dba57ec27fd3c706033d1ad77",
+    "audit_decision": "DESIGN_READY",
+    "audit_report_byte_length": 12595,
+    "audit_report_path": "reports/CAL002_BATCH04_RESULT_FIRST_ACTION_CAUSALITY_DESIGN_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+    "audit_report_sha256": "5c065ad1aeddd17b94874cf246fefeddaa602bece676598d5f6d42502a8f98ea",
+    "audit_verdict": "CAL002_BATCH04_RESULT_FIRST_ACTION_CAUSALITY_DESIGN_INDEPENDENT_AUDIT_COMPLETE_READY_NO_LIVE"
+  },
+  "batch_id": "CAL002-ACTION-CALIBRATION-BATCH04-RESULT-FIRST-ACTION-CAUSALITY-V1",
+  "budget": {
+    "credits_reserved": false,
+    "download": 0,
+    "expected_credit_cost": 280,
+    "expected_unit_credit_cost": 70,
+    "generation_count": 4,
+    "query": 0,
+    "resubmit": 0,
+    "retry": 0
+  },
+  "comparison_pairs": [
+    {
+      "action_type": "push_reaction",
+      "candidate_execution_package_id": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CANDIDATE",
+      "candidate_package_byte_length": 8448,
+      "candidate_package_file": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CANDIDATE_execution_package.json",
+      "candidate_package_sha256": "8ac3fc50dc0c91af1644fb439b96479d9049ba208251c7587905f13bac69eec2",
+      "candidate_prompt_sha256": "9bb836d3620cec43af37272d46ff6b101d3186cadb8fc9e291039d22440d0e99",
+      "control_execution_package_id": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CONTROL",
+      "control_package_byte_length": 6611,
+      "control_package_file": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CONTROL_execution_package.json",
+      "control_package_sha256": "c152ca61bde2899b65acf7834c023c463785d2ae0f9cf7580f9b468fe830d182",
+      "control_prompt_sha256": "1fa97dd97ee7bda68fb8d6240091f4cd3be03ce202c1d619310e80a4551d93f8",
+      "source_design_experiment_id": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_V1",
+      "source_design_file_sha256": "6de80771c163e77e74c1499ca47cd908784f416dcd2e7a4f81ae233eb67f2416",
+      "treatment_bundle_screening": true
+    },
+    {
+      "action_type": "impact_step_back",
+      "candidate_execution_package_id": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CANDIDATE",
+      "candidate_package_byte_length": 8634,
+      "candidate_package_file": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CANDIDATE_execution_package.json",
+      "candidate_package_sha256": "42c36de9728813961a9767edde66cf8dcb9e7bd41dd4a982eb85a0a09891e98a",
+      "candidate_prompt_sha256": "578ee3199db139d2155020993a2fd4f2d4876637b0fa47f060a36a4551b37b8d",
+      "control_execution_package_id": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CONTROL",
+      "control_package_byte_length": 6705,
+      "control_package_file": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CONTROL_execution_package.json",
+      "control_package_sha256": "ce3fb5ddfdcf57977d222ad68d67f555230055d3cbf2cbcd49f992798465561e",
+      "control_prompt_sha256": "8260c14bcb66c21dac9cdd48b795345e22e2a102b7592b4e5da5f69dfd55d18a",
+      "source_design_experiment_id": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_V1",
+      "source_design_file_sha256": "20609e4b9ab0eaa891b07ddf832e8ccef2ee2e66aa57003610b21f7eebf97218",
+      "treatment_bundle_screening": true
+    }
+  ],
+  "compound_treatment": {
+    "classification": "result_first_action_specific_causal_compilation_bundle",
+    "component_level_causal_attribution_permitted": false,
+    "compound_treatment_limitation": "A positive result supports the complete result-first action-specific causal compilation bundle only. It does not independently establish whether result-first order, force-line wording, contact point, timing, body response, foot result, ending state, or negative-constraint placement caused the gain.",
+    "generic_appended_meta_instruction_test": false,
+    "single_component_causality_test": false,
+    "single_variable_mechanics_test": false,
+    "structure_only": false,
+    "treatment_bundle_screening": true
+  },
+  "design_creation_report_binding": {
+    "byte_length": 8529,
+    "path": "reports/CAL002_BATCH04_RESULT_FIRST_ACTION_CAUSALITY_DESIGN_RESULT.md",
+    "sha256": "3dce27cedf88d47abd8776ab3af67696fb17aa75f5940f200cb94dc485d10d1e"
+  },
+  "deterministic_serialization": {
+    "encoding": "UTF-8",
+    "indent_spaces": 2,
+    "json_key_order": "lexicographic",
+    "newline": "LF",
+    "trailing_newline": true
+  },
+  "duplicate_prevention": {
+    "batch_execution_started": false,
+    "duplicate_prevention_keys": [
+      "CAL002-ACTION-CALIBRATION-BATCH04-RESULT-FIRST-ACTION-CAUSALITY-V1::CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CONTROL::6de80771c163e77e74c1499ca47cd908784f416dcd2e7a4f81ae233eb67f2416::1fa97dd97ee7bda68fb8d6240091f4cd3be03ce202c1d619310e80a4551d93f8::control",
+      "CAL002-ACTION-CALIBRATION-BATCH04-RESULT-FIRST-ACTION-CAUSALITY-V1::CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CANDIDATE::6de80771c163e77e74c1499ca47cd908784f416dcd2e7a4f81ae233eb67f2416::9bb836d3620cec43af37272d46ff6b101d3186cadb8fc9e291039d22440d0e99::candidate",
+      "CAL002-ACTION-CALIBRATION-BATCH04-RESULT-FIRST-ACTION-CAUSALITY-V1::CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CONTROL::20609e4b9ab0eaa891b07ddf832e8ccef2ee2e66aa57003610b21f7eebf97218::8260c14bcb66c21dac9cdd48b795345e22e2a102b7592b4e5da5f69dfd55d18a::control",
+      "CAL002-ACTION-CALIBRATION-BATCH04-RESULT-FIRST-ACTION-CAUSALITY-V1::CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CANDIDATE::20609e4b9ab0eaa891b07ddf832e8ccef2ee2e66aa57003610b21f7eebf97218::578ee3199db139d2155020993a2fd4f2d4876637b0fa47f060a36a4551b37b8d::candidate"
+    ],
+    "existing_provider_submit_ids": [],
+    "experiment_id_uniqueness_verified": true,
+    "future_exclusive_execution_claim_required_before_any_live_invocation": true,
+    "identity_components": [
+      "batch_id",
+      "execution_package_id",
+      "source_design_file_sha256",
+      "prompt_sha256",
+      "treatment"
+    ],
+    "maximum_future_invocations_per_execution_package": 1,
+    "package_id_uniqueness_verified": true,
+    "provider_submit_claims_created": false
+  },
+  "execution_authority": {
+    "download_authorized": false,
+    "dreamina_command_generated": false,
+    "execution_claim_created": false,
+    "execution_permission_created": false,
+    "provider_called": false,
+    "provider_ready_live_authority": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "execution_packages": [
+    {
+      "execution_package_id": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CONTROL",
+      "experiment_id": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CONTROL",
+      "package_byte_length": 6611,
+      "package_file": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CONTROL_execution_package.json",
+      "package_sha256": "c152ca61bde2899b65acf7834c023c463785d2ae0f9cf7580f9b468fe830d182",
+      "prompt_sha256": "1fa97dd97ee7bda68fb8d6240091f4cd3be03ce202c1d619310e80a4551d93f8",
+      "source_design_experiment_id": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_V1",
+      "source_design_file_sha256": "6de80771c163e77e74c1499ca47cd908784f416dcd2e7a4f81ae233eb67f2416",
+      "treatment": "control"
+    },
+    {
+      "execution_package_id": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CANDIDATE",
+      "experiment_id": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CANDIDATE",
+      "package_byte_length": 8448,
+      "package_file": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CANDIDATE_execution_package.json",
+      "package_sha256": "8ac3fc50dc0c91af1644fb439b96479d9049ba208251c7587905f13bac69eec2",
+      "prompt_sha256": "9bb836d3620cec43af37272d46ff6b101d3186cadb8fc9e291039d22440d0e99",
+      "source_design_experiment_id": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_V1",
+      "source_design_file_sha256": "6de80771c163e77e74c1499ca47cd908784f416dcd2e7a4f81ae233eb67f2416",
+      "treatment": "candidate"
+    },
+    {
+      "execution_package_id": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CONTROL",
+      "experiment_id": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CONTROL",
+      "package_byte_length": 6705,
+      "package_file": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CONTROL_execution_package.json",
+      "package_sha256": "ce3fb5ddfdcf57977d222ad68d67f555230055d3cbf2cbcd49f992798465561e",
+      "prompt_sha256": "8260c14bcb66c21dac9cdd48b795345e22e2a102b7592b4e5da5f69dfd55d18a",
+      "source_design_experiment_id": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_V1",
+      "source_design_file_sha256": "20609e4b9ab0eaa891b07ddf832e8ccef2ee2e66aa57003610b21f7eebf97218",
+      "treatment": "control"
+    },
+    {
+      "execution_package_id": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CANDIDATE",
+      "experiment_id": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CANDIDATE",
+      "package_byte_length": 8634,
+      "package_file": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CANDIDATE_execution_package.json",
+      "package_sha256": "42c36de9728813961a9767edde66cf8dcb9e7bd41dd4a982eb85a0a09891e98a",
+      "prompt_sha256": "578ee3199db139d2155020993a2fd4f2d4876637b0fa47f060a36a4551b37b8d",
+      "source_design_experiment_id": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_V1",
+      "source_design_file_sha256": "20609e4b9ab0eaa891b07ddf832e8ccef2ee2e66aa57003610b21f7eebf97218",
+      "treatment": "candidate"
+    }
+  ],
+  "experiment_purpose": "Compare the validated structured controls with result-first action-specific causal-compilation candidate bundles for A01 Push Reaction and A04 Impact Step Back.",
+  "failure_categories": [
+    "RESULT_NOT_FRONT_LOADED",
+    "INITIATION_UNCLEAR",
+    "CONTACT_ALREADY_PRESENT_AT_FIRST_FRAME",
+    "CONTACT_TIMING_UNCLEAR",
+    "REACTION_BEFORE_CONTACT",
+    "POST_CONTACT_CONSEQUENCE_MISSING",
+    "BODY_RESPONSE_MISSING",
+    "FOOT_RESULT_MISSING",
+    "MULTIPLE_STEP_OR_SLIDE",
+    "STATIC_CONTACT_OR_POSE_OUT",
+    "A01_PUSH_BECOMES_STRIKE",
+    "A04_IMPACT_BECOMES_PROLONGED_PUSH",
+    "IDENTITY_OR_LIMB_MERGE",
+    "CAMERA_OR_SCENE_DRIFT",
+    "TREATMENT_BUNDLE_INTERPRETATION_OVERCLAIM"
+  ],
+  "fixed_variables": {
+    "camera": {
+      "angle": "eye level",
+      "framing": "medium shot",
+      "movement": "static camera"
+    },
+    "characters": [
+      "black armored warrior",
+      "white haired warrior"
+    ],
+    "scene": [
+      "rainy ancient temple courtyard",
+      "wet stone floor",
+      "cinematic fantasy style"
+    ]
+  },
+  "official_source_binding": {
+    "byte_length": 4611,
+    "modified": false,
+    "path": "sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md",
+    "read_only": true,
+    "sha256": "f7eb4655dc2d5ab3164bf1c515d85b6362f3e076c0833b6170a3b3a144e8aa52",
+    "source_update_authorized": false
+  },
+  "provider_parameters": {
+    "duration": 5,
+    "model": "seedance2.0_vip",
+    "ratio": "16:9",
+    "resolution": "720p"
+  },
+  "reference_strategy": {
+    "active_reference_count": 0,
+    "active_reference_inputs": [],
+    "mode": "text_only_no_active_generation_reference",
+    "offline_design_bindings_only": true
+  },
+  "review_dimensions": [
+    "initiation",
+    "contact timing",
+    "post-contact consequence",
+    "body response",
+    "foot result",
+    "recovery or stabilization",
+    "identity, camera, and fixed-variable drift"
+  ],
+  "schema_version": "CAL002_BATCH04_NO_LIVE_EXECUTION_MANIFEST_V1",
+  "scope": {
+    "generation_count": 4,
+    "package_count": 4,
+    "selected_execution_package_ids": [
+      "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CONTROL",
+      "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CANDIDATE",
+      "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CONTROL",
+      "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CANDIDATE"
+    ],
+    "source_action_count": 2,
+    "treatment_count": 4
+  },
+  "source_design": {
+    "action_designs": [
+      {
+        "experiment_id": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_V1",
+        "file_byte_length": 10257,
+        "file_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_DESIGN/CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_V1.json",
+        "file_sha256": "6de80771c163e77e74c1499ca47cd908784f416dcd2e7a4f81ae233eb67f2416"
+      },
+      {
+        "experiment_id": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_V1",
+        "file_byte_length": 10457,
+        "file_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_DESIGN/CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_V1.json",
+        "file_sha256": "20609e4b9ab0eaa891b07ddf832e8ccef2ee2e66aa57003610b21f7eebf97218"
+      }
+    ],
+    "manifest_byte_length": 5212,
+    "manifest_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_DESIGN/batch04_design_manifest.json",
+    "manifest_sha256": "f2b12c4109b609c45c4659587be2814872e4b3751573bda09ec9629f5ec2f7ed"
+  },
+  "status": "NO_LIVE_EXECUTION_PACKAGE_ONLY"
+}
