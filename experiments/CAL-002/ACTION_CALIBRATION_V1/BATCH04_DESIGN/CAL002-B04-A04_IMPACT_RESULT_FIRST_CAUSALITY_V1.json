@@ -1,0 +1,212 @@
+{
+  "action_chain": {
+    "attacker": "black-armored warrior",
+    "body_reaction": "chest and shoulders recoil only after contact",
+    "contact_or_pressure_point": "forearm to upper torso",
+    "defender": "white-haired warrior",
+    "ending_state": "attacker retracts; receiver stabilizes; no continued pressure or static pose-out",
+    "foot_result": "rear foot makes exactly one short backward recovery placement while front foot supports",
+    "force_line": "compact forward transfer from legs and shoulder through the forearm",
+    "timing_window": {
+      "body_response": "immediately after contact",
+      "contact": "by 0.50 seconds",
+      "recovery_step_complete": "by 1.20 seconds",
+      "stable_readable_state": "by 1.50 seconds"
+    }
+  },
+  "action_identity": {
+    "action_code": "A04",
+    "action_type": "impact_step_back",
+    "display_name": "A04 Impact Step Back"
+  },
+  "batch_id": "CAL002-ACTION-CALIBRATION-BATCH04-RESULT-FIRST-ACTION-CAUSALITY-V1",
+  "comparison": {
+    "candidate": {
+      "first_sentence_contains_primary_visible_result": true,
+      "prompt_byte_length": 1312,
+      "prompt_sha256": "578ee3199db139d2155020993a2fd4f2d4876637b0fa47f060a36a4551b37b8d",
+      "prompt_text": "Within the first 1.20 seconds, one brief forearm impact makes the white-haired warrior's upper body recoil and the rear foot make exactly one short backward recovery placement, then the receiver stabilizes. The black-armored warrior starts already close but not touching, shifts forward from the legs and shoulder along a chest-height force line, and strikes the white-haired warrior's upper torso with one compact forearm contact. Only after contact do the receiver's chest and shoulders move backward; the front foot supports while the rear foot makes the single short backward recovery placement. Contact is readable by 0.50 seconds, the recoil follows immediately after contact, the step completes by 1.20 seconds, and the stable result is readable by 1.50 seconds. The impact ends immediately after contact and the attacker retracts instead of maintaining pressure. After stabilization, preserve subtle living motion rather than a frozen pose. Cinematic fantasy in a rainy ancient temple courtyard with a wet stone floor, one continuous medium eye-level static shot, preserving both identities and readable screen direction. No reaction before contact, prolonged push, repeated hit, multiple steps, sliding, flight, fall, wall collision, extra subject, magic, injury, gore, camera movement, or scene change.",
+      "treatment_classification": "result_first_action_specific_causal_compilation_bundle"
+    },
+    "control": {
+      "failed_generic_action_causality_layer_present": false,
+      "prompt_byte_length": 875,
+      "prompt_sha256": "8260c14bcb66c21dac9cdd48b795345e22e2a102b7592b4e5da5f69dfd55d18a",
+      "prompt_text": "Initial State: Cinematic fantasy, rainy ancient temple courtyard, wet stone floor. One continuous medium shot at eye level with a static camera. The black armored warrior and the white haired warrior begin balanced. Physical Event: The black armored warrior delivers one brief controlled forearm impact. Visible upper-torso contact occurs before the white haired warrior's torso yields. Body Response: The resulting weight shift causes exactly one short recovery step backward, then the receiver stabilizes. The support foot remains stable while the opposite foot makes the single short recovery placement. Final State: Preserve camera composition, character identity, and readable screen direction. No reaction before contact, repeated hits, multiple steps, prolonged slide, flight, fall, wall collision, extra subject, magic, injury, gore, camera movement, or scene change.",
+      "source_execution_package": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH03_EXECUTION/CAL002-B03-A04_IMPACT_CAUSALITY_CONTROL_execution_package.json",
+      "treatment_classification": "validated_structured_prompt_baseline",
+      "unchanged_byte_identity_verified": true
+    }
+  },
+  "compound_treatment": {
+    "candidate_changes": [
+      "primary visible result moved to the first sentence",
+      "explicit attacker and defender",
+      "action-specific force line",
+      "exact contact point",
+      "body reaction after contact",
+      "one bounded foot result",
+      "action-specific timing window",
+      "ending state",
+      "primary action content before scene, style, and continuity context",
+      "compact negative constraints placed last"
+    ],
+    "classification": "result_first_action_specific_causal_compilation_bundle",
+    "component_level_causal_attribution_permitted": false,
+    "compound_treatment_limitation": "A positive result supports the complete result-first action-specific causal compilation bundle only. It does not independently prove which component caused the gain.",
+    "treatment_bundle_screening": true
+  },
+  "contradiction_checks": {
+    "action_chain_fields_complete": true,
+    "both_feet_continuously_grounded_requirement_absent": true,
+    "first_sentence_contains_primary_visible_result": true,
+    "generic_causality_phrase_substitution_absent": true,
+    "literal_priority_tokens_absent_from_provider_prompt": true,
+    "maintained_pressure_absent": true,
+    "multiple_step_slide_flight_or_fall_route_absent": true,
+    "positive_reaction_before_contact_instruction_absent": true,
+    "provider_prompt_metadata_absent": true,
+    "reaction_only_after_contact": true,
+    "unchanged_spacing_requirement_absent": true
+  },
+  "evidence_bindings": {
+    "action_rule_v0_3": {
+      "byte_length": 7533,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.3.md",
+      "sha256": "0fdda04117d076fcb8e05f2a9a094d4302112c5539b3d1ddf878ed5c03c93464"
+    },
+    "batch03_control_package": {
+      "byte_length": 4589,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH03_EXECUTION/CAL002-B03-A04_IMPACT_CAUSALITY_CONTROL_execution_package.json",
+      "prompt_sha256": "8260c14bcb66c21dac9cdd48b795345e22e2a102b7592b4e5da5f69dfd55d18a",
+      "sha256": "d7250ca32ece33fdbe0029e4445b3844cbe842529e1e1bde714e1df110208da4"
+    },
+    "batch03_human_review": {
+      "byte_length": 6965,
+      "decision": "GENERIC_APPENDED_ACTION_CAUSALITY_LAYER_NOT_SUPPORTED",
+      "path": "reports/CAL002_BATCH03_HUMAN_VISUAL_REVIEW_RESULT.md",
+      "sha256": "d6ae8e0828e6be76679a69224481d92529b4d1435fc536f960e8be8b24c7affd"
+    }
+  },
+  "execution_boundary": {
+    "commands_created": false,
+    "design_only": true,
+    "download_authorized": false,
+    "dreamina_called": false,
+    "execution_authority_created": false,
+    "execution_claim_created": false,
+    "execution_permission_created": false,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "locked": false,
+    "media_created": false,
+    "production_approved": false,
+    "provider_called": false,
+    "provider_ready_execution_package_created": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "experiment_id": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_V1",
+  "failure_categories": [
+    "RESULT_NOT_FRONT_LOADED",
+    "INITIATION_UNCLEAR",
+    "CONTACT_ALREADY_PRESENT_AT_FIRST_FRAME",
+    "CONTACT_TIMING_UNCLEAR",
+    "REACTION_BEFORE_CONTACT",
+    "POST_CONTACT_CONSEQUENCE_MISSING",
+    "BODY_RESPONSE_MISSING",
+    "FOOT_RESULT_MISSING",
+    "MULTIPLE_STEP_OR_SLIDE",
+    "STATIC_CONTACT_OR_POSE_OUT",
+    "A01_PUSH_BECOMES_STRIKE",
+    "A04_IMPACT_BECOMES_PROLONGED_PUSH",
+    "IDENTITY_OR_LIMB_MERGE",
+    "CAMERA_OR_SCENE_DRIFT",
+    "TREATMENT_BUNDLE_INTERPRETATION_OVERCLAIM"
+  ],
+  "fixed_variables": {
+    "camera": {
+      "angle": "eye level",
+      "framing": "medium shot",
+      "movement": "static camera"
+    },
+    "characters": [
+      "black armored warrior",
+      "white haired warrior"
+    ],
+    "fixed_variables_equal_across_treatments": true,
+    "provider_parameters": {
+      "duration": 5,
+      "model": "seedance2.0_vip",
+      "ratio": "16:9",
+      "resolution": "720p"
+    },
+    "reference_strategy": {
+      "active_reference_count": 0,
+      "active_reference_inputs": [],
+      "mode": "text_only_no_active_generation_reference"
+    },
+    "scene": [
+      "rainy ancient temple courtyard",
+      "wet stone floor",
+      "cinematic fantasy style"
+    ]
+  },
+  "future_informational_provider_settings": {
+    "budget_is_design_metadata_only": true,
+    "duration": 5,
+    "expected_credit_cost": 280,
+    "future_generation_count": 4,
+    "model": "seedance2.0_vip",
+    "ratio": "16:9",
+    "resolution": "720p"
+  },
+  "interpretation_limitation": "A positive result supports the complete result-first action-specific causal compilation bundle only. It does not independently prove which component caused the gain.",
+  "review_scoring_dimensions": [
+    "initiation",
+    "contact timing",
+    "post-contact consequence",
+    "body response",
+    "foot result",
+    "recovery",
+    "identity/camera/fixed-variable drift"
+  ],
+  "schema_version": "CAL002_BATCH04_RESULT_FIRST_ACTION_CAUSALITY_DESIGN_V1",
+  "source_rule_binding": {
+    "prompt_compiler_source": {
+      "byte_length": 4611,
+      "path": "sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md",
+      "read_only": true,
+      "sha256": "f7eb4655dc2d5ab3164bf1c515d85b6362f3e076c0833b6170a3b3a144e8aa52"
+    },
+    "required_action_chain_fields": [
+      "attacker",
+      "defender",
+      "force line",
+      "contact or pressure point",
+      "body reaction",
+      "foot result",
+      "timing window",
+      "ending state"
+    ],
+    "source_principles": {
+      "P0": "primary visible result, action causality, contact or pressure relation, timing",
+      "P1": "minimum character identity, scene, camera, style, continuity context",
+      "P2": "compact negative constraints serving P0"
+    },
+    "source_update_authorized": false
+  },
+  "status": "NO_LIVE_COMPOUND_TREATMENT_DESIGN_ONLY",
+  "success_criteria": [
+    "Visible initiation occurs before contact.",
+    "One brief forearm contact is readable.",
+    "Receiver response begins only after contact.",
+    "The receiver's upper torso recoils.",
+    "The rear foot makes exactly one recovery placement.",
+    "The attacker retracts without sustained pressure.",
+    "The stable result is readable by the target time.",
+    "Identity and camera remain stable."
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "actions": {
+    "A01": {
+      "action_design_byte_length": 10257,
+      "action_design_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_DESIGN/CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_V1.json",
+      "action_design_sha256": "6de80771c163e77e74c1499ca47cd908784f416dcd2e7a4f81ae233eb67f2416",
+      "action_identity": "A01 Push Reaction",
+      "candidate_prompt_sha256": "9bb836d3620cec43af37272d46ff6b101d3186cadb8fc9e291039d22440d0e99",
+      "control_prompt_sha256": "1fa97dd97ee7bda68fb8d6240091f4cd3be03ce202c1d619310e80a4551d93f8",
+      "experiment_id": "CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_V1",
+      "treatments": [
+        "validated_structured_prompt_baseline",
+        "result_first_action_specific_causal_compilation_bundle"
+      ]
+    },
+    "A04": {
+      "action_design_byte_length": 10457,
+      "action_design_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_DESIGN/CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_V1.json",
+      "action_design_sha256": "20609e4b9ab0eaa891b07ddf832e8ccef2ee2e66aa57003610b21f7eebf97218",
+      "action_identity": "A04 Impact Step Back",
+      "candidate_prompt_sha256": "578ee3199db139d2155020993a2fd4f2d4876637b0fa47f060a36a4551b37b8d",
+      "control_prompt_sha256": "8260c14bcb66c21dac9cdd48b795345e22e2a102b7592b4e5da5f69dfd55d18a",
+      "experiment_id": "CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_V1",
+      "treatments": [
+        "validated_structured_prompt_baseline",
+        "result_first_action_specific_causal_compilation_bundle"
+      ]
+    }
+  },
+  "batch_id": "CAL002-ACTION-CALIBRATION-BATCH04-RESULT-FIRST-ACTION-CAUSALITY-V1",
+  "budget_metadata": {
+    "budget_is_design_metadata_only": true,
+    "expected_credit_cost": 280,
+    "generation_count": 4
+  },
+  "compound_treatment": {
+    "classification": "result_first_action_specific_causal_compilation_bundle",
+    "component_level_causal_attribution_permitted": false,
+    "compound_treatment_limitation": "A positive result supports the complete result-first action-specific causal compilation bundle only. It does not independently prove which component caused the gain.",
+    "single_component_causal_attribution_experiment": false,
+    "structure_only_experiment": false,
+    "treatment_bundle_screening": true
+  },
+  "design_artifact_count": 3,
+  "evidence_bindings": {
+    "action_rule_v0_3": {
+      "byte_length": 7533,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.3.md",
+      "sha256": "0fdda04117d076fcb8e05f2a9a094d4302112c5539b3d1ddf878ed5c03c93464"
+    },
+    "batch03_design_manifest": {
+      "byte_length": 5197,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH03_DESIGN/batch03_design_manifest.json",
+      "sha256": "27106147169e5a5b292ec7289280a8623ab4cab6227c7b3c7622d238f06e3f48"
+    },
+    "batch03_human_review": {
+      "byte_length": 6965,
+      "confidence": "MEDIUM",
+      "decision": "GENERIC_APPENDED_ACTION_CAUSALITY_LAYER_NOT_SUPPORTED",
+      "path": "reports/CAL002_BATCH03_HUMAN_VISUAL_REVIEW_RESULT.md",
+      "sha256": "d6ae8e0828e6be76679a69224481d92529b4d1435fc536f960e8be8b24c7affd"
+    }
+  },
+  "execution_boundary": {
+    "commands_created": false,
+    "design_only": true,
+    "download_authorized": false,
+    "dreamina_called": false,
+    "execution_authority_created": false,
+    "execution_claim_created": false,
+    "execution_permission_created": false,
+    "final_master": false,
+    "locked": false,
+    "media_created": false,
+    "production_approved": false,
+    "provider_called": false,
+    "provider_ready_execution_package_created": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_authorized": false
+  },
+  "experiment_count": 2,
+  "experiment_purpose": "Screen whether a result-first, action-specific causal-compilation treatment produces more readable and physically consequential action than the validated structured baseline.",
+  "fixed_variables": {
+    "camera": {
+      "angle": "eye level",
+      "framing": "medium shot",
+      "movement": "static camera"
+    },
+    "characters": [
+      "black armored warrior",
+      "white haired warrior"
+    ],
+    "provider_parameters": {
+      "duration": 5,
+      "model": "seedance2.0_vip",
+      "ratio": "16:9",
+      "resolution": "720p"
+    },
+    "reference_strategy": {
+      "active_reference_count": 0,
+      "active_reference_inputs": [],
+      "mode": "text_only_no_active_generation_reference"
+    },
+    "scene": [
+      "rainy ancient temple courtyard",
+      "wet stone floor",
+      "cinematic fantasy style"
+    ]
+  },
+  "future_paired_sample_shape": {
+    "action_count": 2,
+    "generation_units": 4,
+    "informational_expected_credit_cost": 280,
+    "treatments_per_action": 2
+  },
+  "schema_version": "CAL002_BATCH04_RESULT_FIRST_ACTION_CAUSALITY_DESIGN_MANIFEST_V1",
+  "source_binding": {
+    "byte_length": 4611,
+    "path": "sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md",
+    "read_only": true,
+    "sha256": "f7eb4655dc2d5ab3164bf1c515d85b6362f3e076c0833b6170a3b3a144e8aa52",
+    "source_update_authorized": false
+  },
+  "status": "NO_LIVE_COMPOUND_TREATMENT_DESIGN_ONLY"
+}
