@@ -1,0 +1,11 @@
+Two adult professional stunt performers conduct a controlled non-injury action rehearsal on a neutral indoor rehearsal stage with a plain matte gray floor and a simple neutral rear wall. The attacker wears a dark charcoal padded training jacket, dark trousers, and dark shoes. The receiver wears a light gray padded training jacket, light trousers, and light shoes. Semi-realistic cinematic action previs. No props, crowd, environmental destruction, supernatural effects, text, or logos.
+
+Locked camera, medium-wide full-body framing, three-quarter side view. Both performers and both feet remain visible at all times, with moderate physical distance and clear lateral and depth separation. One continuous shot with no cuts, zoom, pan, orbit, or handheld shake. Soft neutral studio lighting, with no dramatic light beam, strong motion blur, particles, or smoke. The action is controlled and non-injurious.
+
+Action Family: push_reaction
+Initial State: Begin visibly separated, balanced, and not touching.
+Physical Event: The attacker initiates one compact two-hand push at 0.00-0.20s and makes readable contact at 0.20-0.60s.
+Body Response: Only after contact, the receiver's torso and shoulders shift backward at 0.50-1.00s and the receiver makes exactly one rear-foot recovery placement at 0.80-1.30s.
+Final State: The receiver stabilizes at 1.20-1.60s. The attacker reduces pressure, and both retain small recovery or guard motion. No prolonged unchanged contact and no long static tail.
+
+No injury, gore, weapon, prop, crowd, text, logo, camera movement, cut, zoom, pan, orbit, handheld shake, dramatic light beam, strong motion blur, particles, smoke, environmental destruction, supernatural effect, extra performer, identity swap, limb merge, or hidden feet.

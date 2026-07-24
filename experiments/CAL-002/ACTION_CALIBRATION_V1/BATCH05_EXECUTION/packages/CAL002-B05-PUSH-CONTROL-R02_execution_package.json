@@ -1,0 +1,100 @@
+{
+  "action_family": "push_reaction",
+  "active_generation_reference_count": 0,
+  "batch_authorized": false,
+  "blind_alias": "PUSH_PAIR_02_B",
+  "command_argument_plan": {
+    "arguments": [
+      {
+        "flag": "--model_version",
+        "value": "seedance2.0_vip",
+        "value_source": "fixed_package_field"
+      },
+      {
+        "flag": "--ratio",
+        "value": "16:9",
+        "value_source": "fixed_package_field"
+      },
+      {
+        "flag": "--duration",
+        "value": 5,
+        "value_source": "fixed_package_field"
+      },
+      {
+        "flag": "--video_resolution",
+        "value": "720p",
+        "value_source": "fixed_package_field"
+      },
+      {
+        "bound_prompt_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/PUSH_CONTROL_prompt.txt",
+        "flag": "--prompt",
+        "value_source": "load exact UTF-8 Prompt text from the bound Prompt file"
+      }
+    ],
+    "executable_invocation_authorized": false,
+    "shell_script": false
+  },
+  "command_name": "text2video",
+  "design_baseline_checkpoint": "2575d1a7a7ed7215d06d715c6603495c809d8005",
+  "design_manifest_binding": {
+    "byte_length": 17561,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_design_manifest.json",
+    "sha256": "c3a5265a5e21b90ca993f62892ba0dececf6b34fc8545e5a01e49835f7945574"
+  },
+  "download_authorized": false,
+  "duration": 5,
+  "estimated_credit": 70,
+  "estimated_credit_basis": "Batch05 committed budget plan estimate for one Seedance 2.0 VIP 5-second 720p generation; no current balance checked",
+  "final_master": false,
+  "fixed_task_completion": false,
+  "fresh_credit_checked": false,
+  "implementation_audit_binding": {
+    "byte_length": 20684,
+    "decision": "CAL002_BATCH05_IMPLEMENTATION_PROVENANCE_FIX_READY_FOR_EXECUTION_PACKAGE_BUILD_NO_LIVE",
+    "relative_path": "reports/CAL002_BATCH05_REVIEW_DERIVATION_IMPLEMENTATION_PROVENANCE_FIX_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+    "sha256": "b262c6ac1db837b2276632b909add688695aef408783312a274bfc1f7b98e95b",
+    "specific_verdict": "READY"
+  },
+  "locked": false,
+  "model_version": "seedance2.0_vip",
+  "no_submit": true,
+  "output_directory_is_submit_argument": false,
+  "output_name_is_submit_argument": false,
+  "package_id": "CAL002-B05-PUSH-CONTROL-R02-EXECUTION-PACKAGE-V0_1",
+  "phase1_order": 2,
+  "planned_local_output_root": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/planned_local_outputs",
+  "planned_output_name": "CAL002-B05-PUSH-CONTROL-R02_result.mp4",
+  "production_approved": false,
+  "prompt_byte_length": 1349,
+  "prompt_injection_source": {
+    "byte_length": 1349,
+    "mode": "load exact UTF-8 Prompt text from the bound Prompt file",
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/PUSH_CONTROL_prompt.txt",
+    "sha256": "ace62979b13a2f7994b36673c51ae6bb3f6a6398a71725d2434333445719a604"
+  },
+  "prompt_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/PUSH_CONTROL_prompt.txt",
+  "prompt_sha256": "ace62979b13a2f7994b36673c51ae6bb3f6a6398a71725d2434333445719a604",
+  "query_authorized": false,
+  "ratio": "16:9",
+  "ratio_rule": "pass exact bound ratio value 16:9",
+  "reference_strategy": "text_only_no_active_generation_reference",
+  "replicate": "R02",
+  "resubmit_authorized": false,
+  "retry_authorized": false,
+  "runtime_preflight_binding": {
+    "byte_length": 6658,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/runtime_command_contract_preflight.json",
+    "sha256": "fedecf44d5b3da7f0d971cd178a4f960f469eef4be006bb8c0a01e0b9f83284b"
+  },
+  "schema_version": "CAL002_BATCH05_NO_LIVE_EXECUTION_PACKAGE_V0_1",
+  "submit_authorized": false,
+  "task_id": "CAL002-B05-PUSH-CONTROL-R02",
+  "task_matrix_binding": {
+    "byte_length": 3571,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_task_matrix.csv",
+    "sha256": "141f0c131a28c0cf7a9cda797e0525956cb34d99a4bb8c43fe4f211648d1fc32"
+  },
+  "task_type": "text2video",
+  "treatment": "control",
+  "video_resolution": "720p"
+}

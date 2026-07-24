@@ -1,0 +1,66 @@
+{
+  "authorized_introspection": {
+    "dreamina_text2video_help_called": true,
+    "dreamina_version_called": true,
+    "only_authorized_commands_called": true
+  },
+  "command_contract_checks": {
+    "command_text2video_present": true,
+    "duration_5_supported": true,
+    "model_seedance2_0_vip_supported": true,
+    "prompt_argument_supported": true,
+    "ratio_16_9_supported": true,
+    "video_resolution_720p_supported": true
+  },
+  "command_contract_valid": true,
+  "dreamina_generation_command_count": 0,
+  "executable_path": "C:/Users/msjpurf/bin/dreamina.exe",
+  "executable_resolved_path": "C:/Users/msjpurf/bin/dreamina.exe",
+  "forbidden_commands_called": [],
+  "help_checked_at_date_only": "2026-07-24",
+  "provider_command_count": 0,
+  "schema_version": "CAL002_BATCH05_RUNTIME_COMMAND_CONTRACT_PREFLIGHT_V0_1",
+  "text2video_help_command": {
+    "argv": [
+      "C:/Users/msjpurf/bin/dreamina.exe",
+      "text2video",
+      "-h"
+    ],
+    "exit_code": 0,
+    "stderr_base64": "",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_utf8": "",
+    "stdout_base64": "VXNhZ2U6CiAgZHJlYW1pbmEgdGV4dDJ2aWRlbyBbZmxhZ3NdCgpTdWJtaXQgYSBEcmVhbWluYSB0ZXh0LXRvLXZpZGVvIHRhc2suIFRoZSB0YXNrIGlzIGFzeW5jaHJvbm91cywgYnV0IC0tcG9sbCBjYW4gd2FpdCBicmllZmx5IGJlZm9yZSBmYWxsaW5nIGJhY2sgdG8gcXVlcnlfcmVzdWx0LgoKU3VwcG9ydGVkIGNvbWJpbmF0aW9uczoKLSBtb2RlbF92ZXJzaW9uOiBzZWVkYW5jZTIuMCwgc2VlZGFuY2UyLjBmYXN0LCBzZWVkYW5jZTIuMF92aXAsIHNlZWRhbmNlMi4wZmFzdF92aXAsIHNlZWRhbmNlMi4wbWluaQotIHJhdGlvOiAxOjEsIDM6NCwgMTY6OSwgNDozLCA5OjE2LCAyMTo5Ci0gc2VlZGFuY2UyLjBfdmlwIC0+IHZpZGVvX3Jlc29sdXRpb24gNzIwcCwgMTA4MHAsIG9yIDRrOyBkdXJhdGlvbiA0LTE1cwotIGFsbCBvdGhlciBtb2RlbHMgLT4gdmlkZW9fcmVzb2x1dGlvbiA3MjBwOyBkdXJhdGlvbiA0LTE1cwoKTm90ZXM6Ci0gZGVmYXVsdCBtb2RlbF92ZXJzaW9uOiBzZWVkYW5jZTIuMGZhc3QKLSBvbWl0IC0tdmlkZW9fcmVzb2x1dGlvbiB0byB1c2UgdGhlIG1vZGVsIGRlZmF1bHQKLSBvbWl0IC0tcmF0aW8gdG8gdXNlIHRoZSBkZWZhdWx0IHJhdGlvCi0g6YOo5YiG6auY5YaF5a655a6J5YWo6aOO6Zmp5qih5Z6L5Zyo6aaW5qyh5L2/55So5YmN77yM5Y+v6IO96ZyA6KaB5YWI5ZyoIERyZWFtaW5hIFdlYiDnq6/lrozmiJDmjojmnYPnoa7orqTjgILoi6Xov5Tlm54gQWlnY0NvbXBsaWFuY2VDb25maXJtYXRpb25SZXF1aXJlZO+8jOivt+WFiOWujOaIkOaOiOadg+WQjumHjeivleOAggoKCkZsYWdzOgogICAgICAtLXByb21wdCBzdHJpbmcgICAgICAgICAgICAgZ2VuZXJhdGlvbiBwcm9tcHQKICAgICAgLS1zZXNzaW9uIGludCAgICAgICAgICAgICAgIHNlc3Npb24gaWQgKGRlZmF1bHQgMCAi6buY6K6k5a+56K+dIikgCiAgICAgIC0tZHVyYXRpb24gaW50ICAgICAgICAgICAgICB2aWRlbyBkdXJhdGlvbiBpbiBzZWNvbmRzOyBzdXBwb3J0ZWQgcmFuZ2U6IDQtMTUgKGRlZmF1bHQgNSkKICAgICAgLS1yYXRpbyBzdHJpbmcgICAgICAgICAgICAgIHN1cHBvcnRlZCB2YWx1ZXM6IDE6MSwgMzo0LCAxNjo5LCA0OjMsIDk6MTYsIDIxOjkKICAgICAgLS12aWRlb19yZXNvbHV0aW9uIHN0cmluZyAgIHN1cHBvcnRlZCB2YWx1ZXMgYnkgbW9kZWw6IHNlZWRhbmNlMi4wX3ZpcCAtPiA3MjBwLCAxMDgwcCwgb3IgNGs7IGFsbCBvdGhlciBtb2RlbHMgLT4gNzIwcAogICAgICAtLW1vZGVsX3ZlcnNpb24gc3RyaW5nICAgICAgc3VwcG9ydGVkIHZhbHVlczogc2VlZGFuY2UyLjAsIHNlZWRhbmNlMi4wZmFzdCwgc2VlZGFuY2UyLjBfdmlwLCBzZWVkYW5jZTIuMGZhc3RfdmlwLCBzZWVkYW5jZTIuMG1pbmk7IGRlZmF1bHQ6IHNlZWRhbmNlMi4wZmFzdAogICAgICAtLXBvbGwgaW50ICAgICAgICAgICAgICAgICAgc3VibWl0IHRoZW4gcG9sbCBxdWVyeV9yZXN1bHQgZm9yIHVwIHRvIE4gc2Vjb25kcyBhdCAxcyBpbnRlcnZhbHMgKDAgZGlzYWJsZXMgcG9sbGluZykKICAtaCwgLS1oZWxwICAgICAgICAgICAgICAgICAgICAgIGhlbHAgZm9yIHRleHQydmlkZW8KCkdsb2JhbCBGbGFnczoKICAgICAgLS12ZXJzaW9uICAgcHJpbnQgYnVpbGQgdmVyc2lvbiBpbmZvcm1hdGlvbgoKRXhhbXBsZXM6CiAgZHJlYW1pbmEgdGV4dDJ2aWRlbyAtLXByb21wdD0iYSBjYXQgcnVubmluZyIgLS1kdXJhdGlvbj01Cg==",
+    "stdout_byte_length": 1708,
+    "stdout_sha256": "17e92789fc0633fa2563a3f3260865a955c08813d55deb681f4c7936ba2ecde4",
+    "stdout_utf8": "Usage:\n  dreamina text2video [flags]\n\nSubmit a Dreamina text-to-video task. The task is asynchronous, but --poll can wait briefly before falling back to query_result.\n\nSupported combinations:\n- model_version: seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip, seedance2.0mini\n- ratio: 1:1, 3:4, 16:9, 4:3, 9:16, 21:9\n- seedance2.0_vip -> video_resolution 720p, 1080p, or 4k; duration 4-15s\n- all other models -> video_resolution 720p; duration 4-15s\n\nNotes:\n- default model_version: seedance2.0fast\n- omit --video_resolution to use the model default\n- omit --ratio to use the default ratio\n- 部分高内容安全风险模型在首次使用前，可能需要先在 Dreamina Web 端完成授权确认。若返回 AigcComplianceConfirmationRequired，请先完成授权后重试。\n\n\nFlags:\n      --prompt string             generation prompt\n      --session int               session id (default 0 \"默认对话\") \n      --duration int              video duration in seconds; supported range: 4-15 (default 5)\n      --ratio string              supported values: 1:1, 3:4, 16:9, 4:3, 9:16, 21:9\n      --video_resolution string   supported values by model: seedance2.0_vip -> 720p, 1080p, or 4k; all other models -> 720p\n      --model_version string      supported values: seedance2.0, seedance2.0fast, seedance2.0_vip, seedance2.0fast_vip, seedance2.0mini; default: seedance2.0fast\n      --poll int                  submit then poll query_result for up to N seconds at 1s intervals (0 disables polling)\n  -h, --help                      help for text2video\n\nGlobal Flags:\n      --version   print build version information\n\nExamples:\n  dreamina text2video --prompt=\"a cat running\" --duration=5\n"
+  },
+  "text2video_help_exit_code": 0,
+  "text2video_help_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "text2video_help_stdout_sha256": "17e92789fc0633fa2563a3f3260865a955c08813d55deb681f4c7936ba2ecde4",
+  "user_credit_called": false,
+  "version_command": {
+    "argv": [
+      "C:/Users/msjpurf/bin/dreamina.exe",
+      "version"
+    ],
+    "exit_code": 0,
+    "stderr_base64": "",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_utf8": "",
+    "stdout_base64": "ewogICJ2ZXJzaW9uIjogIjJhMjBmZmYtZGlydHkiLAogICJjb21taXQiOiAiMmEyMGZmZiIsCiAgImJ1aWxkX3RpbWUiOiAiMjAyNi0wNi0yNlQwNjozNjozOVoiCn0K",
+    "stdout_byte_length": 96,
+    "stdout_sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0",
+    "stdout_utf8": "{\n  \"version\": \"2a20fff-dirty\",\n  \"commit\": \"2a20fff\",\n  \"build_time\": \"2026-06-26T06:36:39Z\"\n}\n"
+  },
+  "version_exit_code": 0,
+  "version_parsed_fields": {
+    "build_time": "2026-06-26T06:36:39Z",
+    "commit": "2a20fff",
+    "version": "2a20fff-dirty"
+  },
+  "version_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "version_stdout_sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0"
+}

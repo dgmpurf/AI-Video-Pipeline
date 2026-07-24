@@ -1,0 +1,11 @@
+Two adult professional stunt performers conduct a controlled non-injury action rehearsal on a neutral indoor rehearsal stage with a plain matte gray floor and a simple neutral rear wall. The attacker wears a dark charcoal padded training jacket, dark trousers, and dark shoes. The receiver wears a light gray padded training jacket, light trousers, and light shoes. Semi-realistic cinematic action previs. No props, crowd, environmental destruction, supernatural effects, text, or logos.
+
+Locked camera, medium-wide full-body framing, three-quarter side view. Both performers and both feet remain visible at all times, with moderate physical distance and clear lateral and depth separation. One continuous shot with no cuts, zoom, pan, orbit, or handheld shake. Soft neutral studio lighting, with no dramatic light beam, strong motion blur, particles, or smoke. The action is controlled and non-injurious.
+
+Action Family: brief_impact_recoil
+Initial State: Begin visibly separated, balanced, and not touching.
+Physical Event: The attacker makes one compact forearm initiation. Contact onset remains visible at 0.20-0.55s and contact is brief, never a sustained push.
+Body Response: Only after contact, the receiver shows immediate upper-body recoil at 0.30-0.80s and makes exactly one rear-foot step at 0.50-1.10s. The attacker promptly retracts at 0.50-1.00s.
+Final State: At 1.00-1.50s, both stabilize briefly with breathing and guard motion. No prolonged push and no long idle or static tail.
+
+No injury, gore, weapon, prop, crowd, text, logo, camera movement, cut, zoom, pan, orbit, handheld shake, dramatic light beam, strong motion blur, particles, smoke, environmental destruction, supernatural effect, extra performer, identity swap, limb merge, or hidden feet.
