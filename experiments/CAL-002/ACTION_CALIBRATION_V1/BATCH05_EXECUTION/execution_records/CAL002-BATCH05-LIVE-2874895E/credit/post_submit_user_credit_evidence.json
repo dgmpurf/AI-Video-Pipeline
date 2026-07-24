@@ -1,0 +1,50 @@
+{
+  "accounting_match": true,
+  "accounting_result": "PASS",
+  "argv": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "user_credit"
+  ],
+  "authentication_secret_persisted": false,
+  "authorization_id": "CAL002-BATCH05-LIVE-AUTH-2874895E",
+  "credit_field": "total_credit",
+  "credit_field_occurrence_count": 1,
+  "download_call_count": 0,
+  "ended_at": "2026-07-24T14:31:37.814Z",
+  "execution_id": "CAL002-BATCH05-LIVE-2874895E",
+  "exit_code": 0,
+  "expected_accounting_delta": 560,
+  "expected_unit_credit_cost": 70,
+  "login_call_count": 0,
+  "observed_accounting_delta": 560,
+  "post_submit_available_credit": 4085,
+  "pre_submit_available_credit": 4645,
+  "query_call_count": 0,
+  "resubmit_call_count": 0,
+  "retry_call_count": 0,
+  "runner_error": null,
+  "schema_version": "CAL002_BATCH05_POST_SUBMIT_USER_CREDIT_EVIDENCE_V0_1",
+  "secret_pattern_matches": [],
+  "session_operation_count": 0,
+  "shell": false,
+  "signal": null,
+  "started_at": "2026-07-24T14:31:35.158Z",
+  "stderr": {
+    "byte_length": 0,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/credit/post_submit_user_credit_stderr.bin",
+    "persisted": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "byte_length": 103,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/credit/post_submit_user_credit_stdout.bin",
+    "persisted": true,
+    "sha256": "b3ccfa798338e51f01c007e50f49ee287b381c9a68ffd8c472c96084fe55dea4"
+  },
+  "stop_reason": null,
+  "submit_call_count": 8,
+  "successful_submit_count": 8,
+  "total_user_credit_calls_in_goal": 2,
+  "user_credit_call_count": 1,
+  "utf8_decode_error": null
+}

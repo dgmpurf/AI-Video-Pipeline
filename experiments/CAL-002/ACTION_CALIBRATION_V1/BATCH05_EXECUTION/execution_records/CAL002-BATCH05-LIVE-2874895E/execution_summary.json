@@ -1,0 +1,487 @@
+{
+  "attempted_task_count": 8,
+  "authorization_id": "CAL002-BATCH05-LIVE-AUTH-2874895E",
+  "authorization_lifecycle": {
+    "approval_activated": true,
+    "approval_consumed": true,
+    "approval_received": true,
+    "approval_reusable": false,
+    "authority_state": "EXHAUSTED_AFTER_AUTHORIZED_GOAL",
+    "automatic_resume_authorized": false,
+    "submit_authorized": false
+  },
+  "batch_authorized": false,
+  "bindings": {
+    "design_tree": "493b6ed2c55d52c97607f00b72607f6098bcb2a2",
+    "execution_manifest": {
+      "byte_length": 4804,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/batch05_execution_manifest.csv",
+      "sha256": "0aa486cdac6d96a48c2077919e0a17ab26798527d1c4b68f554a2ec51efe581d",
+      "worktree_equals_head": true
+    },
+    "package_evidence_manifest": {
+      "byte_length": 6483,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/batch05_package_evidence_manifest.json",
+      "sha256": "73be6ac9fc40753295ee7e1a1003f8bf81042b27343a9232128d96bf3bfbb3d9",
+      "worktree_equals_head": true
+    },
+    "package_index": {
+      "byte_length": 10803,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/batch05_package_index.json",
+      "sha256": "9ebf8f5ffb926ac2327d93925f31e09e9fae40367e7202c74264892d9b55e894",
+      "worktree_equals_head": true
+    },
+    "post_fix_audit_report": {
+      "byte_length": 14176,
+      "relative_path": "reports/CAL002_BATCH05_EXECUTION_PACKAGE_TARGETED_FIX_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+      "sha256": "fb282034cab6728e100db62a46d039fe1d5639c37e5b83c70bac20f469b0d7ce",
+      "worktree_equals_head": true
+    },
+    "runtime_preflight": {
+      "byte_length": 6658,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/runtime_command_contract_preflight.json",
+      "sha256": "fedecf44d5b3da7f0d971cd178a4f960f469eef4be006bb8c0a01e0b9f83284b",
+      "worktree_equals_head": true
+    },
+    "sources_tree": "60eedf926ed525a84c1737fbf8d6dd4b39e46077"
+  },
+  "command_counts": {
+    "batch": 0,
+    "checklogin": 0,
+    "download": 0,
+    "dreamina_text2video_help": 1,
+    "dreamina_text2video_submit": 8,
+    "dreamina_user_credit_post": 1,
+    "dreamina_user_credit_pre": 1,
+    "dreamina_version": 1,
+    "list_task": 0,
+    "login": 0,
+    "provider_submit": 8,
+    "query_result": 0,
+    "resubmit": 0,
+    "retry": 0,
+    "session_operation": 0
+  },
+  "completed_at": "2026-07-24T14:34:46.584Z",
+  "credit_accounting": {
+    "accounting_result": "PASS",
+    "expected_delta": 560,
+    "observed_delta": 560,
+    "post_record": {
+      "byte_length": 1785,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/credit/post_submit_user_credit_evidence.json",
+      "sha256": "dea1848b4df249d2cd44c979d814f2211752328d3727dc2e44cfa05c3fc8335a"
+    },
+    "post_submit_available_credit": 4085,
+    "post_submit_user_credit_calls": 1,
+    "pre_record": {
+      "byte_length": 1557,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/credit/pre_submit_user_credit_evidence.json",
+      "sha256": "eba4f989a2048fbc72451d8cdcfc4fe4d7aa607d6d53661e721e88dcf977d23c"
+    },
+    "pre_submit_available_credit": 4645,
+    "pre_submit_user_credit_calls": 1
+  },
+  "download_authorized": false,
+  "execution_id": "CAL002-BATCH05-LIVE-2874895E",
+  "failed_submit_count": 0,
+  "final_decision": "CAL002_BATCH05_PHASE1_EIGHT_FIXED_SUBMITS_COMPLETE",
+  "final_master": false,
+  "fixed_task_completion": false,
+  "generation_completion_claimed": false,
+  "goal_identity": "CAL002_BATCH05_PHASE1_EIGHT_FIXED_LIVE_TEXT2VIDEO_SUBMITS_V0_1",
+  "locked": false,
+  "login_authorized": false,
+  "media_created": false,
+  "next_phase": "CAL002_BATCH05_PHASE1_QUERY_AUTHORIZATION_DECISION",
+  "observed_submit_credit_total": 560,
+  "observed_unit_costs": [
+    70,
+    70,
+    70,
+    70,
+    70,
+    70,
+    70,
+    70
+  ],
+  "planned_task_count": 8,
+  "production_approved": false,
+  "query_authorized": false,
+  "remote_generation_status": "querying_for_all_eight_submitted_tasks",
+  "repository": {
+    "branch": "main",
+    "corrected_package_fix_checkpoint": "1a231ef27855aae4e144833c4b633643e5e8fea5",
+    "origin_main_at_execution": "1316436ec2ebec3b4c45172f94b6b85bfb9ac241",
+    "post_fix_independent_audit_checkpoint": "1316436ec2ebec3b4c45172f94b6b85bfb9ac241",
+    "starting_head": "1316436ec2ebec3b4c45172f94b6b85bfb9ac241"
+  },
+  "resubmit_authorized": false,
+  "retry_authorized": false,
+  "review_artifacts_created": false,
+  "runtime_canaries": {
+    "passed": true,
+    "record": {
+      "byte_length": 2624,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/runtime/runtime_canary.json",
+      "sha256": "cab7ff761fcc66f9c2b6def4babb50c3941ebe0b19a272d7ec7f88296a2015ad"
+    },
+    "text2video_help_calls": 1,
+    "version_calls": 1
+  },
+  "schema_version": "CAL002_BATCH05_PHASE1_EXECUTION_SUMMARY_V0_1",
+  "session_mutation_authorized": false,
+  "sources_changed": false,
+  "static_preflight": {
+    "passed": true,
+    "pre_existing_untracked_baseline_count": 27,
+    "record": {
+      "byte_length": 23421,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/static_preflight.json",
+      "sha256": "15a5d42675f5dad25e334ad2fd1984a75b86af1dec6c4097760f69058c94cd70"
+    }
+  },
+  "stop_reason": null,
+  "submit_ids_in_task_order": [
+    "f3663d7f-33dc-4937-b6e1-20c6be10a0d8",
+    "03a03b27-1e3d-48e7-9122-7fdaea7df0d1",
+    "866311e6-be9b-4850-a798-9e74d4a3bce9",
+    "b506bd61-3b16-4f5c-9209-4dfc49356284",
+    "01193507-cb12-4116-aec4-9084063a61d9",
+    "924b3f58-d0bb-43b4-80e7-a45be940ce06",
+    "7453c063-e5d8-49aa-83f7-d4f8e8136697",
+    "dc64226b-d9dd-4d79-bba4-6bd16f5fa465"
+  ],
+  "successful_submit_count": 8,
+  "tasks": [
+    {
+      "action_family": "push_reaction",
+      "argv_element_count": 14,
+      "argv_sha256": "762442b3a416eaff1b32ccbdfac67c4a868b82c24c83831fad530bb8eaf13f65",
+      "blind_alias": "PUSH_PAIR_01_A",
+      "gen_status": "querying",
+      "observed_credit_cost": 70,
+      "package": {
+        "byte_length": 4314,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-PUSH-CONTROL-R01_execution_package.json",
+        "sha256": "f3a02edf66842f5ab8307964138add30c732e7aa6356fe5693f882bfb9bd1c32",
+        "worktree_equals_head": true
+      },
+      "prompt": {
+        "byte_length": 1349,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/PUSH_CONTROL_prompt.txt",
+        "sha256": "ace62979b13a2f7994b36673c51ae6bb3f6a6398a71725d2434333445719a604",
+        "worktree_equals_head": true
+      },
+      "receipt": {
+        "byte_length": 2732,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CONTROL-R01/submit_receipt.json",
+        "sha256": "f912edf525ffd407eae7c8914113b02eec32bac76e26d4f66c9becc0d6d6b4d7"
+      },
+      "replicate": "R01",
+      "sequence": 1,
+      "status": "SUBMIT_ACCEPTED_PROVIDER_TASK_CREATED_QUERYING",
+      "stderr": {
+        "byte_length": 0,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CONTROL-R01/submit_stderr.bin",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "byte_length": 156,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CONTROL-R01/submit_stdout.bin",
+        "sha256": "94c572c754cff0fb57a2df9916cf5d60ffca8306235005b48a6165369d55f0d8"
+      },
+      "submit_id": "f3663d7f-33dc-4937-b6e1-20c6be10a0d8",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R01",
+      "treatment": "control"
+    },
+    {
+      "action_family": "push_reaction",
+      "argv_element_count": 14,
+      "argv_sha256": "762442b3a416eaff1b32ccbdfac67c4a868b82c24c83831fad530bb8eaf13f65",
+      "blind_alias": "PUSH_PAIR_02_B",
+      "gen_status": "querying",
+      "observed_credit_cost": 70,
+      "package": {
+        "byte_length": 4314,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-PUSH-CONTROL-R02_execution_package.json",
+        "sha256": "36c41f17c77ab500594050d091c115ffd66430209f33724d42211037c070af4b",
+        "worktree_equals_head": true
+      },
+      "prompt": {
+        "byte_length": 1349,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/PUSH_CONTROL_prompt.txt",
+        "sha256": "ace62979b13a2f7994b36673c51ae6bb3f6a6398a71725d2434333445719a604",
+        "worktree_equals_head": true
+      },
+      "receipt": {
+        "byte_length": 2732,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CONTROL-R02/submit_receipt.json",
+        "sha256": "069cf739cf19f85ffc1c4399f303419afcfdda8d57ba52a053ac26e99aece82f"
+      },
+      "replicate": "R02",
+      "sequence": 2,
+      "status": "SUBMIT_ACCEPTED_PROVIDER_TASK_CREATED_QUERYING",
+      "stderr": {
+        "byte_length": 0,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CONTROL-R02/submit_stderr.bin",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "byte_length": 156,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CONTROL-R02/submit_stdout.bin",
+        "sha256": "b187624ca4e9520b48bd17402f1a0917e6923761382be3ae711961b6ee178a96"
+      },
+      "submit_id": "03a03b27-1e3d-48e7-9122-7fdaea7df0d1",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R02",
+      "treatment": "control"
+    },
+    {
+      "action_family": "push_reaction",
+      "argv_element_count": 14,
+      "argv_sha256": "090b5d766be3ed7a18662a814f24d91d583fa8b8e1b7215ff65328f47ecb23b0",
+      "blind_alias": "PUSH_PAIR_01_B",
+      "gen_status": "querying",
+      "observed_credit_cost": 70,
+      "package": {
+        "byte_length": 4328,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-PUSH-CANDIDATE-R01_execution_package.json",
+        "sha256": "03dedc925b44a06e2fd1dff49a6891b49edf56419cc5b9e5a6895bae90494c09",
+        "worktree_equals_head": true
+      },
+      "prompt": {
+        "byte_length": 1764,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/PUSH_CANDIDATE_prompt.txt",
+        "sha256": "e44db0e244923fd3abe701f4118e23687e47fb064cba7aadd6396cfafe963c86",
+        "worktree_equals_head": true
+      },
+      "receipt": {
+        "byte_length": 2744,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R01/submit_receipt.json",
+        "sha256": "30893583b0d32491a95d9ae760fa1a10c8adaa5a7a7ec1b86c34112b18c3221c"
+      },
+      "replicate": "R01",
+      "sequence": 3,
+      "status": "SUBMIT_ACCEPTED_PROVIDER_TASK_CREATED_QUERYING",
+      "stderr": {
+        "byte_length": 0,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R01/submit_stderr.bin",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "byte_length": 156,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R01/submit_stdout.bin",
+        "sha256": "d59b346c01e2f69685ddaa336fad7d4baa0d063fa721ba75e4f40c0c77e418d4"
+      },
+      "submit_id": "866311e6-be9b-4850-a798-9e74d4a3bce9",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R01",
+      "treatment": "candidate"
+    },
+    {
+      "action_family": "push_reaction",
+      "argv_element_count": 14,
+      "argv_sha256": "090b5d766be3ed7a18662a814f24d91d583fa8b8e1b7215ff65328f47ecb23b0",
+      "blind_alias": "PUSH_PAIR_02_A",
+      "gen_status": "querying",
+      "observed_credit_cost": 70,
+      "package": {
+        "byte_length": 4328,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-PUSH-CANDIDATE-R02_execution_package.json",
+        "sha256": "d0c8d0db7479654737e01035620636a0efb9d6ecc7213b4a8a12cbfb51e078e8",
+        "worktree_equals_head": true
+      },
+      "prompt": {
+        "byte_length": 1764,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/PUSH_CANDIDATE_prompt.txt",
+        "sha256": "e44db0e244923fd3abe701f4118e23687e47fb064cba7aadd6396cfafe963c86",
+        "worktree_equals_head": true
+      },
+      "receipt": {
+        "byte_length": 2744,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R02/submit_receipt.json",
+        "sha256": "3ea0464dd76a585f12fc30f3ce0b8e0e473beb2e46a01dc0b7c8ea36a88d7168"
+      },
+      "replicate": "R02",
+      "sequence": 4,
+      "status": "SUBMIT_ACCEPTED_PROVIDER_TASK_CREATED_QUERYING",
+      "stderr": {
+        "byte_length": 0,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R02/submit_stderr.bin",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "byte_length": 156,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R02/submit_stdout.bin",
+        "sha256": "522c259d0cecbbf672c135654cc0235753735b29e32a39f3f7fec04f5c905023"
+      },
+      "submit_id": "b506bd61-3b16-4f5c-9209-4dfc49356284",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R02",
+      "treatment": "candidate"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "argv_element_count": 14,
+      "argv_sha256": "3326c8fa8a22f37c13529d2b758b7b0068b3cfc7cb8544efa0cabf47e4aff101",
+      "blind_alias": "IMPACT_PAIR_01_B",
+      "gen_status": "querying",
+      "observed_credit_cost": 70,
+      "package": {
+        "byte_length": 4334,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-IMPACT-CONTROL-R01_execution_package.json",
+        "sha256": "41c792e13b5de31304010b0898763a94ab752b17d968b595614beb9625c28a6b",
+        "worktree_equals_head": true
+      },
+      "prompt": {
+        "byte_length": 1382,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/IMPACT_CONTROL_prompt.txt",
+        "sha256": "dfff87157e2071794c0e2150ded60c68f8787d06117986238f39be41fd76a14b",
+        "worktree_equals_head": true
+      },
+      "receipt": {
+        "byte_length": 2750,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CONTROL-R01/submit_receipt.json",
+        "sha256": "7631ca5a95cfc6900d649f38fba884a8ed01ea05d8ac8474f5ca43e02cbc5b07"
+      },
+      "replicate": "R01",
+      "sequence": 5,
+      "status": "SUBMIT_ACCEPTED_PROVIDER_TASK_CREATED_QUERYING",
+      "stderr": {
+        "byte_length": 0,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CONTROL-R01/submit_stderr.bin",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "byte_length": 156,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CONTROL-R01/submit_stdout.bin",
+        "sha256": "3b5faafff6f9dbbe9c295dcb0e44cab46391b5e538eda584e3ca07af0f6e77e9"
+      },
+      "submit_id": "01193507-cb12-4116-aec4-9084063a61d9",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R01",
+      "treatment": "control"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "argv_element_count": 14,
+      "argv_sha256": "3326c8fa8a22f37c13529d2b758b7b0068b3cfc7cb8544efa0cabf47e4aff101",
+      "blind_alias": "IMPACT_PAIR_02_A",
+      "gen_status": "querying",
+      "observed_credit_cost": 70,
+      "package": {
+        "byte_length": 4334,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-IMPACT-CONTROL-R02_execution_package.json",
+        "sha256": "fe997ae11cd057d924ac6aff138159b81a91e5d6055f984ce333d5db68203c24",
+        "worktree_equals_head": true
+      },
+      "prompt": {
+        "byte_length": 1382,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/IMPACT_CONTROL_prompt.txt",
+        "sha256": "dfff87157e2071794c0e2150ded60c68f8787d06117986238f39be41fd76a14b",
+        "worktree_equals_head": true
+      },
+      "receipt": {
+        "byte_length": 2750,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CONTROL-R02/submit_receipt.json",
+        "sha256": "80b779f10e5e4f589655f463d3be432047fab53e2f43000935da6861f9c7b9bf"
+      },
+      "replicate": "R02",
+      "sequence": 6,
+      "status": "SUBMIT_ACCEPTED_PROVIDER_TASK_CREATED_QUERYING",
+      "stderr": {
+        "byte_length": 0,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CONTROL-R02/submit_stderr.bin",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "byte_length": 156,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CONTROL-R02/submit_stdout.bin",
+        "sha256": "573c0effa64e21bd783b92de2d9b430595421fd8ca1cd847130a9de6a03309f1"
+      },
+      "submit_id": "924b3f58-d0bb-43b4-80e7-a45be940ce06",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R02",
+      "treatment": "control"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "argv_element_count": 14,
+      "argv_sha256": "3522e9c93ba34c5f94d9a607d1a5eea9b8763f68f2e80eb8a116466766ad08c1",
+      "blind_alias": "IMPACT_PAIR_01_A",
+      "gen_status": "querying",
+      "observed_credit_cost": 70,
+      "package": {
+        "byte_length": 4348,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-IMPACT-CANDIDATE-R01_execution_package.json",
+        "sha256": "08de66d7406ae30698540db36aa0a5cc244716a910f60618cbc697d234054fc3",
+        "worktree_equals_head": true
+      },
+      "prompt": {
+        "byte_length": 1770,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/IMPACT_CANDIDATE_prompt.txt",
+        "sha256": "e14e063895dad06f1c067cc699f93fb04cd3368fbcc8c96a3000bc3473418198",
+        "worktree_equals_head": true
+      },
+      "receipt": {
+        "byte_length": 2762,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R01/submit_receipt.json",
+        "sha256": "a4539be84ef6fd2a846ba570f9c3f644829336c96d8aa91f192c9954e3208972"
+      },
+      "replicate": "R01",
+      "sequence": 7,
+      "status": "SUBMIT_ACCEPTED_PROVIDER_TASK_CREATED_QUERYING",
+      "stderr": {
+        "byte_length": 0,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R01/submit_stderr.bin",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "byte_length": 156,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R01/submit_stdout.bin",
+        "sha256": "ccf571e0c2f524ead6aba33d2da3538081d12243a8f94ae3ead99285ba5dbbdc"
+      },
+      "submit_id": "7453c063-e5d8-49aa-83f7-d4f8e8136697",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R01",
+      "treatment": "candidate"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "argv_element_count": 14,
+      "argv_sha256": "3522e9c93ba34c5f94d9a607d1a5eea9b8763f68f2e80eb8a116466766ad08c1",
+      "blind_alias": "IMPACT_PAIR_02_B",
+      "gen_status": "querying",
+      "observed_credit_cost": 70,
+      "package": {
+        "byte_length": 4348,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-IMPACT-CANDIDATE-R02_execution_package.json",
+        "sha256": "44e50329046c58b0593b0f0872ecd619e71d81ac732f38195a94d61d87afca2e",
+        "worktree_equals_head": true
+      },
+      "prompt": {
+        "byte_length": 1770,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/IMPACT_CANDIDATE_prompt.txt",
+        "sha256": "e14e063895dad06f1c067cc699f93fb04cd3368fbcc8c96a3000bc3473418198",
+        "worktree_equals_head": true
+      },
+      "receipt": {
+        "byte_length": 2762,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R02/submit_receipt.json",
+        "sha256": "eb2c4ad3d5d8e1c31b89dd28964f83b3372af3a3faef24dc03821f5a2b3f307b"
+      },
+      "replicate": "R02",
+      "sequence": 8,
+      "status": "SUBMIT_ACCEPTED_PROVIDER_TASK_CREATED_QUERYING",
+      "stderr": {
+        "byte_length": 0,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R02/submit_stderr.bin",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "byte_length": 156,
+        "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R02/submit_stdout.bin",
+        "sha256": "732a64f26e641b8bbc8d03a3cee608eae99b56b62b8b9805e0a2239c438df30a"
+      },
+      "submit_id": "dc64226b-d9dd-4d79-bba4-6bd16f5fa465",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R02",
+      "treatment": "candidate"
+    }
+  ],
+  "unsubmitted_task_ids": []
+}

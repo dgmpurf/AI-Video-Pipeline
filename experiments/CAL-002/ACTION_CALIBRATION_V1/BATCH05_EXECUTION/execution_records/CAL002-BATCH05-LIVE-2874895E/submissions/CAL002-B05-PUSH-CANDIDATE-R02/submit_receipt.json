@@ -1,0 +1,70 @@
+{
+  "action_family": "push_reaction",
+  "argv_element_count": 14,
+  "argv_sha256": "090b5d766be3ed7a18662a814f24d91d583fa8b8e1b7215ff65328f47ecb23b0",
+  "authorization_id": "CAL002-BATCH05-LIVE-AUTH-2874895E",
+  "batch_called": false,
+  "blind_alias": "PUSH_PAIR_02_A",
+  "command": {
+    "completed": true,
+    "ended_at": "2026-07-24T14:27:27.705Z",
+    "exit_code": 0,
+    "runner_error": null,
+    "signal": null,
+    "started": true,
+    "started_at": "2026-07-24T14:27:24.247Z"
+  },
+  "download_called": false,
+  "execution_id": "CAL002-BATCH05-LIVE-2874895E",
+  "final_master": false,
+  "fixed_task_completion": false,
+  "full_prompt_persisted_in_receipt": false,
+  "gen_status": "querying",
+  "locked": false,
+  "logid": "20260724222724169254047008374C2B0",
+  "media_created": false,
+  "observed_credit_cost": 70,
+  "package": {
+    "byte_length": 4328,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-PUSH-CANDIDATE-R02_execution_package.json",
+    "sha256": "d0c8d0db7479654737e01035620636a0efb9d6ecc7213b4a8a12cbfb51e078e8",
+    "worktree_equals_head": true
+  },
+  "poll_seconds": 0,
+  "production_approved": false,
+  "prompt": {
+    "byte_length": 1764,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/PUSH_CANDIDATE_prompt.txt",
+    "sha256": "e44db0e244923fd3abe701f4118e23687e47fb064cba7aadd6396cfafe963c86",
+    "worktree_equals_head": true
+  },
+  "prompt_is_one_argv_element": true,
+  "provider_task_created": true,
+  "query_called": false,
+  "replicate": "R02",
+  "response_parse_error": null,
+  "response_validation_result": "PASS",
+  "resubmit_called": false,
+  "retry_called": false,
+  "schema_version": "CAL002_BATCH05_SUBMIT_RECEIPT_V0_1",
+  "secret_pattern_detected": false,
+  "shell": false,
+  "stderr": {
+    "byte_length": 0,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R02/submit_stderr.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "byte_length": 156,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R02/submit_stdout.bin",
+    "sha256": "522c259d0cecbbf672c135654cc0235753735b29e32a39f3f7fec04f5c905023"
+  },
+  "stdout_utf8_decode_error": null,
+  "submit_id": "b506bd61-3b16-4f5c-9209-4dfc49356284",
+  "submit_id_occurrence_count": 1,
+  "submit_state_classification": "provider_task_created_querying",
+  "task_id": "CAL002-B05-PUSH-CANDIDATE-R02",
+  "task_sequence_number": 4,
+  "treatment": "candidate",
+  "url_present": false
+}

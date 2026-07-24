@@ -1,0 +1,70 @@
+{
+  "action_family": "brief_impact_recoil",
+  "argv_element_count": 14,
+  "argv_sha256": "3326c8fa8a22f37c13529d2b758b7b0068b3cfc7cb8544efa0cabf47e4aff101",
+  "authorization_id": "CAL002-BATCH05-LIVE-AUTH-2874895E",
+  "batch_called": false,
+  "blind_alias": "IMPACT_PAIR_02_A",
+  "command": {
+    "completed": true,
+    "ended_at": "2026-07-24T14:27:36.085Z",
+    "exit_code": 0,
+    "runner_error": null,
+    "signal": null,
+    "started": true,
+    "started_at": "2026-07-24T14:27:32.067Z"
+  },
+  "download_called": false,
+  "execution_id": "CAL002-BATCH05-LIVE-2874895E",
+  "final_master": false,
+  "fixed_task_completion": false,
+  "full_prompt_persisted_in_receipt": false,
+  "gen_status": "querying",
+  "locked": false,
+  "logid": "2026072422273216925404700819478A5",
+  "media_created": false,
+  "observed_credit_cost": 70,
+  "package": {
+    "byte_length": 4334,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-IMPACT-CONTROL-R02_execution_package.json",
+    "sha256": "fe997ae11cd057d924ac6aff138159b81a91e5d6055f984ce333d5db68203c24",
+    "worktree_equals_head": true
+  },
+  "poll_seconds": 0,
+  "production_approved": false,
+  "prompt": {
+    "byte_length": 1382,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/IMPACT_CONTROL_prompt.txt",
+    "sha256": "dfff87157e2071794c0e2150ded60c68f8787d06117986238f39be41fd76a14b",
+    "worktree_equals_head": true
+  },
+  "prompt_is_one_argv_element": true,
+  "provider_task_created": true,
+  "query_called": false,
+  "replicate": "R02",
+  "response_parse_error": null,
+  "response_validation_result": "PASS",
+  "resubmit_called": false,
+  "retry_called": false,
+  "schema_version": "CAL002_BATCH05_SUBMIT_RECEIPT_V0_1",
+  "secret_pattern_detected": false,
+  "shell": false,
+  "stderr": {
+    "byte_length": 0,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CONTROL-R02/submit_stderr.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "byte_length": 156,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CONTROL-R02/submit_stdout.bin",
+    "sha256": "573c0effa64e21bd783b92de2d9b430595421fd8ca1cd847130a9de6a03309f1"
+  },
+  "stdout_utf8_decode_error": null,
+  "submit_id": "924b3f58-d0bb-43b4-80e7-a45be940ce06",
+  "submit_id_occurrence_count": 1,
+  "submit_state_classification": "provider_task_created_querying",
+  "task_id": "CAL002-B05-IMPACT-CONTROL-R02",
+  "task_sequence_number": 6,
+  "treatment": "control",
+  "url_present": false
+}

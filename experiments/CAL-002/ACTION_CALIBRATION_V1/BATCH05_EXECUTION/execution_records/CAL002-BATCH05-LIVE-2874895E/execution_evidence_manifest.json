@@ -1,0 +1,330 @@
+{
+  "artifact_count": 39,
+  "artifacts": [
+    {
+      "artifact_class": "authorization_activation_record",
+      "byte_length": 3879,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/authorization_activation_record.json",
+      "sha256": "fa692878de3ad20a062f36542a047c7bf1480b91a65a357f1557c35960b4f6ec",
+      "task_id": null
+    },
+    {
+      "artifact_class": "credit_evidence",
+      "byte_length": 1785,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/credit/post_submit_user_credit_evidence.json",
+      "sha256": "dea1848b4df249d2cd44c979d814f2211752328d3727dc2e44cfa05c3fc8335a",
+      "task_id": null
+    },
+    {
+      "artifact_class": "credit_raw_stream",
+      "byte_length": 0,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/credit/post_submit_user_credit_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_id": null
+    },
+    {
+      "artifact_class": "credit_raw_stream",
+      "byte_length": 103,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/credit/post_submit_user_credit_stdout.bin",
+      "sha256": "b3ccfa798338e51f01c007e50f49ee287b381c9a68ffd8c472c96084fe55dea4",
+      "task_id": null
+    },
+    {
+      "artifact_class": "credit_evidence",
+      "byte_length": 1557,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/credit/pre_submit_user_credit_evidence.json",
+      "sha256": "eba4f989a2048fbc72451d8cdcfc4fe4d7aa607d6d53661e721e88dcf977d23c",
+      "task_id": null
+    },
+    {
+      "artifact_class": "credit_raw_stream",
+      "byte_length": 0,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/credit/pre_submit_user_credit_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_id": null
+    },
+    {
+      "artifact_class": "credit_raw_stream",
+      "byte_length": 103,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/credit/pre_submit_user_credit_stdout.bin",
+      "sha256": "e2a892a2bdb443ae24578f0498e72230827cd78d12018e2dd22e9d814fb60849",
+      "task_id": null
+    },
+    {
+      "artifact_class": "execution_summary",
+      "byte_length": 23336,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/execution_summary.json",
+      "sha256": "635433376d570804e15e1e19a2bf161c9a9525c231a2904a240b8049c90a2cd0",
+      "task_id": null
+    },
+    {
+      "artifact_class": "runtime_canary",
+      "byte_length": 2624,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/runtime/runtime_canary.json",
+      "sha256": "cab7ff761fcc66f9c2b6def4babb50c3941ebe0b19a272d7ec7f88296a2015ad",
+      "task_id": null
+    },
+    {
+      "artifact_class": "runtime_raw_stream",
+      "byte_length": 0,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/runtime/text2video_help_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_id": null
+    },
+    {
+      "artifact_class": "runtime_raw_stream",
+      "byte_length": 1708,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/runtime/text2video_help_stdout.bin",
+      "sha256": "17e92789fc0633fa2563a3f3260865a955c08813d55deb681f4c7936ba2ecde4",
+      "task_id": null
+    },
+    {
+      "artifact_class": "runtime_raw_stream",
+      "byte_length": 0,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/runtime/version_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_id": null
+    },
+    {
+      "artifact_class": "runtime_raw_stream",
+      "byte_length": 96,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/runtime/version_stdout.bin",
+      "sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0",
+      "task_id": null
+    },
+    {
+      "artifact_class": "static_preflight",
+      "byte_length": 23421,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/static_preflight.json",
+      "sha256": "15a5d42675f5dad25e334ad2fd1984a75b86af1dec6c4097760f69058c94cd70",
+      "task_id": null
+    },
+    {
+      "artifact_class": "submit_receipt",
+      "byte_length": 2762,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R01/submit_receipt.json",
+      "sha256": "a4539be84ef6fd2a846ba570f9c3f644829336c96d8aa91f192c9954e3208972",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R01"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 0,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R01/submit_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R01"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 156,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R01/submit_stdout.bin",
+      "sha256": "ccf571e0c2f524ead6aba33d2da3538081d12243a8f94ae3ead99285ba5dbbdc",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R01"
+    },
+    {
+      "artifact_class": "submit_receipt",
+      "byte_length": 2762,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R02/submit_receipt.json",
+      "sha256": "eb2c4ad3d5d8e1c31b89dd28964f83b3372af3a3faef24dc03821f5a2b3f307b",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R02"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 0,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R02/submit_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R02"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 156,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R02/submit_stdout.bin",
+      "sha256": "732a64f26e641b8bbc8d03a3cee608eae99b56b62b8b9805e0a2239c438df30a",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R02"
+    },
+    {
+      "artifact_class": "submit_receipt",
+      "byte_length": 2750,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CONTROL-R01/submit_receipt.json",
+      "sha256": "7631ca5a95cfc6900d649f38fba884a8ed01ea05d8ac8474f5ca43e02cbc5b07",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R01"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 0,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CONTROL-R01/submit_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R01"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 156,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CONTROL-R01/submit_stdout.bin",
+      "sha256": "3b5faafff6f9dbbe9c295dcb0e44cab46391b5e538eda584e3ca07af0f6e77e9",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R01"
+    },
+    {
+      "artifact_class": "submit_receipt",
+      "byte_length": 2750,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CONTROL-R02/submit_receipt.json",
+      "sha256": "80b779f10e5e4f589655f463d3be432047fab53e2f43000935da6861f9c7b9bf",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R02"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 0,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CONTROL-R02/submit_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R02"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 156,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CONTROL-R02/submit_stdout.bin",
+      "sha256": "573c0effa64e21bd783b92de2d9b430595421fd8ca1cd847130a9de6a03309f1",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R02"
+    },
+    {
+      "artifact_class": "submit_receipt",
+      "byte_length": 2744,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R01/submit_receipt.json",
+      "sha256": "30893583b0d32491a95d9ae760fa1a10c8adaa5a7a7ec1b86c34112b18c3221c",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R01"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 0,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R01/submit_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R01"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 156,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R01/submit_stdout.bin",
+      "sha256": "d59b346c01e2f69685ddaa336fad7d4baa0d063fa721ba75e4f40c0c77e418d4",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R01"
+    },
+    {
+      "artifact_class": "submit_receipt",
+      "byte_length": 2744,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R02/submit_receipt.json",
+      "sha256": "3ea0464dd76a585f12fc30f3ce0b8e0e473beb2e46a01dc0b7c8ea36a88d7168",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R02"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 0,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R02/submit_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R02"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 156,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R02/submit_stdout.bin",
+      "sha256": "522c259d0cecbbf672c135654cc0235753735b29e32a39f3f7fec04f5c905023",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R02"
+    },
+    {
+      "artifact_class": "submit_receipt",
+      "byte_length": 2732,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CONTROL-R01/submit_receipt.json",
+      "sha256": "f912edf525ffd407eae7c8914113b02eec32bac76e26d4f66c9becc0d6d6b4d7",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R01"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 0,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CONTROL-R01/submit_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R01"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 156,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CONTROL-R01/submit_stdout.bin",
+      "sha256": "94c572c754cff0fb57a2df9916cf5d60ffca8306235005b48a6165369d55f0d8",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R01"
+    },
+    {
+      "artifact_class": "submit_receipt",
+      "byte_length": 2732,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CONTROL-R02/submit_receipt.json",
+      "sha256": "069cf739cf19f85ffc1c4399f303419afcfdda8d57ba52a053ac26e99aece82f",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R02"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 0,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CONTROL-R02/submit_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R02"
+    },
+    {
+      "artifact_class": "submit_raw_stream",
+      "byte_length": 156,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CONTROL-R02/submit_stdout.bin",
+      "sha256": "b187624ca4e9520b48bd17402f1a0917e6923761382be3ae711961b6ee178a96",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R02"
+    },
+    {
+      "artifact_class": "execution_report",
+      "byte_length": 6424,
+      "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+      "relative_path": "reports/CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION_RESULT.md",
+      "sha256": "7cc03c19e446f16b8b645755426aa52d1c53fdb580384456da604588f617b9b2",
+      "task_id": null
+    }
+  ],
+  "authorization_id": "CAL002-BATCH05-LIVE-AUTH-2874895E",
+  "creation_phase": "CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION",
+  "download_artifacts_included": 0,
+  "execution_id": "CAL002-BATCH05-LIVE-2874895E",
+  "manifest_scope": {
+    "included_artifact_count": 39,
+    "self_excluded": true,
+    "self_exclusion_reason": "The evidence manifest excludes itself to avoid recursive self-hashing and binds every other execution-root file plus the final execution report.",
+    "unique_bound_paths": 39
+  },
+  "media_artifacts_included": 0,
+  "query_artifacts_included": 0,
+  "schema_version": "CAL002_BATCH05_PHASE1_EXECUTION_EVIDENCE_MANIFEST_V0_1"
+}

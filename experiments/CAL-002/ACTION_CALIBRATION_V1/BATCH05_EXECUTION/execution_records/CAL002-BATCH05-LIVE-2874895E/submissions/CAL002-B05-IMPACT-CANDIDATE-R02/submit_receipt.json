@@ -1,0 +1,70 @@
+{
+  "action_family": "brief_impact_recoil",
+  "argv_element_count": 14,
+  "argv_sha256": "3522e9c93ba34c5f94d9a607d1a5eea9b8763f68f2e80eb8a116466766ad08c1",
+  "authorization_id": "CAL002-BATCH05-LIVE-AUTH-2874895E",
+  "batch_called": false,
+  "blind_alias": "IMPACT_PAIR_02_B",
+  "command": {
+    "completed": true,
+    "ended_at": "2026-07-24T14:27:44.085Z",
+    "exit_code": 0,
+    "runner_error": null,
+    "signal": null,
+    "started": true,
+    "started_at": "2026-07-24T14:27:40.477Z"
+  },
+  "download_called": false,
+  "execution_id": "CAL002-BATCH05-LIVE-2874895E",
+  "final_master": false,
+  "fixed_task_completion": false,
+  "full_prompt_persisted_in_receipt": false,
+  "gen_status": "querying",
+  "locked": false,
+  "logid": "202607242227401692540470085943AE2",
+  "media_created": false,
+  "observed_credit_cost": 70,
+  "package": {
+    "byte_length": 4348,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-IMPACT-CANDIDATE-R02_execution_package.json",
+    "sha256": "44e50329046c58b0593b0f0872ecd619e71d81ac732f38195a94d61d87afca2e",
+    "worktree_equals_head": true
+  },
+  "poll_seconds": 0,
+  "production_approved": false,
+  "prompt": {
+    "byte_length": 1770,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/IMPACT_CANDIDATE_prompt.txt",
+    "sha256": "e14e063895dad06f1c067cc699f93fb04cd3368fbcc8c96a3000bc3473418198",
+    "worktree_equals_head": true
+  },
+  "prompt_is_one_argv_element": true,
+  "provider_task_created": true,
+  "query_called": false,
+  "replicate": "R02",
+  "response_parse_error": null,
+  "response_validation_result": "PASS",
+  "resubmit_called": false,
+  "retry_called": false,
+  "schema_version": "CAL002_BATCH05_SUBMIT_RECEIPT_V0_1",
+  "secret_pattern_detected": false,
+  "shell": false,
+  "stderr": {
+    "byte_length": 0,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R02/submit_stderr.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "byte_length": 156,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R02/submit_stdout.bin",
+    "sha256": "732a64f26e641b8bbc8d03a3cee608eae99b56b62b8b9805e0a2239c438df30a"
+  },
+  "stdout_utf8_decode_error": null,
+  "submit_id": "dc64226b-d9dd-4d79-bba4-6bd16f5fa465",
+  "submit_id_occurrence_count": 1,
+  "submit_state_classification": "provider_task_created_querying",
+  "task_id": "CAL002-B05-IMPACT-CANDIDATE-R02",
+  "task_sequence_number": 8,
+  "treatment": "candidate",
+  "url_present": false
+}

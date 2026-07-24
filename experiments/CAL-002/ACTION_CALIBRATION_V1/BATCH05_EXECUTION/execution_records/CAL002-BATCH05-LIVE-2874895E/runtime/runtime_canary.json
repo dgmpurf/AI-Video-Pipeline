@@ -1,0 +1,75 @@
+{
+  "authorization_id": "CAL002-BATCH05-LIVE-AUTH-2874895E",
+  "dreamina_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "execution_id": "CAL002-BATCH05-LIVE-2874895E",
+  "generation_command_count": 0,
+  "passed": true,
+  "provider_command_count": 0,
+  "schema_version": "CAL002_BATCH05_RUNTIME_CANARY_V0_1",
+  "shell": false,
+  "stop_reason": null,
+  "text2video_help": {
+    "argv": [
+      "C:/Users/msjpurf/bin/dreamina.exe",
+      "text2video",
+      "-h"
+    ],
+    "ended_at": "2026-07-24T14:24:48.786Z",
+    "error": null,
+    "exit_code": 0,
+    "passed": true,
+    "required_contract": {
+      "command": "text2video",
+      "duration": 5,
+      "model_version": "seedance2.0_vip",
+      "poll_zero_disables_polling": true,
+      "ratio": "16:9",
+      "session_default": 0,
+      "video_resolution": "720p"
+    },
+    "signal": null,
+    "started_at": "2026-07-24T14:24:46.309Z",
+    "stderr": {
+      "byte_length": 0,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/runtime/text2video_help_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout": {
+      "byte_length": 1708,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/runtime/text2video_help_stdout.bin",
+      "sha256": "17e92789fc0633fa2563a3f3260865a955c08813d55deb681f4c7936ba2ecde4"
+    },
+    "utf8_decode_error": null
+  },
+  "text2video_help_call_count": 1,
+  "user_credit_call_count": 0,
+  "version": {
+    "argv": [
+      "C:/Users/msjpurf/bin/dreamina.exe",
+      "version"
+    ],
+    "ended_at": "2026-07-24T14:24:46.302Z",
+    "error": null,
+    "exit_code": 0,
+    "parse_error": null,
+    "parsed": {
+      "build_time": "2026-06-26T06:36:39Z",
+      "commit": "2a20fff",
+      "version": "2a20fff-dirty"
+    },
+    "passed": true,
+    "signal": null,
+    "started_at": "2026-07-24T14:24:43.812Z",
+    "stderr": {
+      "byte_length": 0,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/runtime/version_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout": {
+      "byte_length": 96,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/runtime/version_stdout.bin",
+      "sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0"
+    }
+  },
+  "version_call_count": 1
+}

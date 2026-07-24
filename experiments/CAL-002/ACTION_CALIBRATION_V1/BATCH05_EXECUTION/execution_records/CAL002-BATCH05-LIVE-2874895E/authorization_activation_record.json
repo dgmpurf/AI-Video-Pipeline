@@ -1,0 +1,68 @@
+{
+  "activation_checkpoint": "1316436ec2ebec3b4c45172f94b6b85bfb9ac241",
+  "activation_status": "ACTIVATED_IMMEDIATELY_BEFORE_FIRST_AUTHORIZED_DREAMINA_CANARY",
+  "activation_timestamp": "2026-07-24T14:24:01.316Z",
+  "approval_activated": true,
+  "approval_consumed": true,
+  "approval_received": true,
+  "approval_reusable": false,
+  "approval_sha256": "2874895e3bdf55d4e21bf72e9473343683b08078604c4ff083f09690e12097fc",
+  "authority_lifecycle": "ONE_TIME_NON_REUSABLE",
+  "authorization_id": "CAL002-BATCH05-LIVE-AUTH-2874895E",
+  "corrected_package_fix_checkpoint": "1a231ef27855aae4e144833c4b633643e5e8fea5",
+  "credentials_persisted": false,
+  "exact_allowed_command_counts": {
+    "post_submit_user_credit": "1_if_any_submit_succeeds",
+    "pre_submit_user_credit": 1,
+    "text2video_help": 1,
+    "text2video_submit_maximum": 8,
+    "version": 1
+  },
+  "exact_approval_text": "APPROVE_CAL002_BATCH05_PHASE1_EIGHT_FIXED_LIVE_TEXT2VIDEO_SUBMITS_V0_1__BIND_CORRECTED_PACKAGE_FIX_CHECKPOINT_1A231EF27855AAE4E144833C4B633643E5E8FEA5__BIND_POST_FIX_INDEPENDENT_AUDIT_CHECKPOINT_1316436EC2EBEC3B4C45172F94B6B85BFB9AC241__BIND_POST_FIX_AUDIT_REPORT_SHA256_FB282034CAB6728E100DB62A46D039FE1D5639C37E5B83C70BAC20F469B0D7CE__BIND_PACKAGE_INDEX_SHA256_9EBF8F5FFB926AC2327D93925F31E09E9FAE40367E7202C74264892D9B55E894__BIND_PACKAGE_EVIDENCE_MANIFEST_SHA256_73BE6AC9FC40753295EE7E1A1003F8BF81042B27343A9232128D96BF3BFBB3D9__AUTHORIZE_FIXED_WINDOWS_CLI_C_USERS_MSJPURF_BIN_DREAMINA_EXE__AUTHORIZE_ONE_VERSION_ONE_TEXT2VIDEO_HELP_AND_ONE_PRE_SUBMIT_USER_CREDIT_CANARY__REQUIRE_VALID_RUNTIME_CONTRACT_AND_TOTAL_CREDIT_AT_LEAST_560__AUTHORIZE_EXACTLY_UP_TO_8_SEQUENTIAL_SUBMITS_IN_CENTRAL_PHASE1_ORDER_WITH_EXPLICIT_POLL_0__EXPECTED_70_CREDITS_PER_SUBMIT_AND_560_TOTAL__AUTHORIZE_ONE_POST_SUBMIT_USER_CREDIT_ACCOUNTING_CHECK_IF_ANY_SUBMIT_SUCCEEDS__STOP_IMMEDIATELY_ON_RUNTIME_DRIFT_DIRTY_STATE_PACKAGE_OR_HASH_MISMATCH_INSUFFICIENT_CREDIT_SUBMIT_FAILURE_ABNORMAL_RESPONSE_OR_UNIT_COST_DEVIATION__ANY_UNSUBMITTED_REMAINDER_REQUIRES_FRESH_AUTHORIZATION__NO_QUERY_NO_DOWNLOAD_NO_RETRY_NO_RESUBMIT_NO_BATCH_NO_LOGIN_NO_SESSION_MUTATION_NO_MEDIA_NO_REVIEW_NO_SOURCE_CHANGE_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__ONE_TIME_NON_REUSABLE",
+  "exact_forbidden_operations": [
+    "query_result",
+    "download",
+    "retry",
+    "resubmit",
+    "batch",
+    "list_task",
+    "login",
+    "checklogin",
+    "logout",
+    "relogin",
+    "session_creation",
+    "session_mutation",
+    "media_processing",
+    "visual_review",
+    "source_change",
+    "production_approval",
+    "fixed_task_completion",
+    "final_master",
+    "lock"
+  ],
+  "execution_id": "CAL002-BATCH05-LIVE-2874895E",
+  "final_master": false,
+  "first_authorized_canary_argv": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "version"
+  ],
+  "goal_identity": "CAL002_BATCH05_PHASE1_EIGHT_FIXED_LIVE_TEXT2VIDEO_SUBMITS_V0_1",
+  "locked": false,
+  "package_evidence_manifest_binding": {
+    "byte_length": 6483,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/batch05_package_evidence_manifest.json",
+    "sha256": "73be6ac9fc40753295ee7e1a1003f8bf81042b27343a9232128d96bf3bfbb3d9"
+  },
+  "package_index_binding": {
+    "byte_length": 10803,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/batch05_package_index.json",
+    "sha256": "9ebf8f5ffb926ac2327d93925f31e09e9fae40367e7202c74264892d9b55e894"
+  },
+  "post_fix_audit_report_binding": {
+    "byte_length": 14176,
+    "relative_path": "reports/CAL002_BATCH05_EXECUTION_PACKAGE_TARGETED_FIX_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+    "sha256": "fb282034cab6728e100db62a46d039fe1d5639c37e5b83c70bac20f469b0d7ce"
+  },
+  "post_fix_independent_audit_checkpoint": "1316436ec2ebec3b4c45172f94b6b85bfb9ac241",
+  "schema_version": "CAL002_BATCH05_AUTHORIZATION_ACTIVATION_RECORD_V0_1"
+}
