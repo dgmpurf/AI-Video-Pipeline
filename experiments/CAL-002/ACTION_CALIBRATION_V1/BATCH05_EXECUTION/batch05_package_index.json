@@ -28,6 +28,8 @@
       "sha256": "e14e063895dad06f1c067cc699f93fb04cd3368fbcc8c96a3000bc3473418198"
     }
   ],
+  "corrected_package_commit_requires_external_post_commit_binding": true,
+  "corrected_package_commit_self_bound_in_index": false,
   "design_baseline_checkpoint": "2575d1a7a7ed7215d06d715c6603495c809d8005",
   "design_manifest_binding": {
     "byte_length": 17561,
@@ -42,6 +44,8 @@
   },
   "fixed_task_count": 8,
   "fresh_credit_checked": false,
+  "future_live_authorization_must_bind_corrected_package_fix_checkpoint": true,
+  "future_live_authorization_must_bind_post_fix_independent_audit_checkpoint": true,
   "future_live_authorization_must_bind_the_committed_package_checkpoint": true,
   "implementation_audit_binding": {
     "byte_length": 20684,
@@ -50,6 +54,24 @@
     "sha256": "b262c6ac1db837b2276632b909add688695aef408783312a274bfc1f7b98e95b",
     "specific_verdict": "READY"
   },
+  "original_package_build_checkpoint": {
+    "commit": "3de46cb5c12bba925b274dfcdc818f6b7f6bacdf"
+  },
+  "original_package_build_report_binding": {
+    "byte_length": 8009,
+    "decision": "CAL002_BATCH05_EXECUTION_PACKAGE_BUILT_READY_FOR_INDEPENDENT_NO_LIVE_AUDIT",
+    "relative_path": "reports/CAL002_BATCH05_EXECUTION_PACKAGE_BUILD_RESULT.md",
+    "sha256": "7977185b9350ae621125e8af5cffae4942bb575c090dc5d952de01a1a040f692"
+  },
+  "package_audit_checkpoint": {
+    "commit": "348284c98461debdf559686df92dbfd5fce9a983"
+  },
+  "package_audit_report_binding": {
+    "byte_length": 17534,
+    "decision": "CAL002_BATCH05_EXECUTION_PACKAGE_NEEDS_FIX",
+    "relative_path": "reports/CAL002_BATCH05_EXECUTION_PACKAGE_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+    "sha256": "4cd1d3522b50b22cfe962d7296e80a3d6998567a56727bb35f7473f4fb772d92"
+  },
   "package_build_checkpoint_is_not_live_authority": true,
   "package_count": 8,
   "package_set_id": "CAL002-BATCH05-NO-LIVE-EXECUTION-PACKAGE-SET-V0_1",
@@ -57,92 +79,108 @@
     {
       "action_family": "push_reaction",
       "blind_alias": "PUSH_PAIR_01_A",
-      "byte_length": 4125,
+      "byte_length": 4314,
       "package_id": "CAL002-B05-PUSH-CONTROL-R01-EXECUTION-PACKAGE-V0_1",
       "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-PUSH-CONTROL-R01_execution_package.json",
       "replicate": "R01",
-      "sha256": "82e0e9523df09cee10259ab0009a2e05d6733a43d3fde230722ec2c7662bc459",
+      "sha256": "f3a02edf66842f5ab8307964138add30c732e7aa6356fe5693f882bfb9bd1c32",
       "task_id": "CAL002-B05-PUSH-CONTROL-R01",
       "treatment": "control"
     },
     {
       "action_family": "push_reaction",
       "blind_alias": "PUSH_PAIR_02_B",
-      "byte_length": 4125,
+      "byte_length": 4314,
       "package_id": "CAL002-B05-PUSH-CONTROL-R02-EXECUTION-PACKAGE-V0_1",
       "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-PUSH-CONTROL-R02_execution_package.json",
       "replicate": "R02",
-      "sha256": "f39741a0defec81ed278b45f6fa9ef280af87739855b7e15b465f51db7cb157c",
+      "sha256": "36c41f17c77ab500594050d091c115ffd66430209f33724d42211037c070af4b",
       "task_id": "CAL002-B05-PUSH-CONTROL-R02",
       "treatment": "control"
     },
     {
       "action_family": "push_reaction",
       "blind_alias": "PUSH_PAIR_01_B",
-      "byte_length": 4139,
+      "byte_length": 4328,
       "package_id": "CAL002-B05-PUSH-CANDIDATE-R01-EXECUTION-PACKAGE-V0_1",
       "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-PUSH-CANDIDATE-R01_execution_package.json",
       "replicate": "R01",
-      "sha256": "c1ab2d76ee5ef59863cb13431c41882996fc3737b996aaea99375add1dba9948",
+      "sha256": "03dedc925b44a06e2fd1dff49a6891b49edf56419cc5b9e5a6895bae90494c09",
       "task_id": "CAL002-B05-PUSH-CANDIDATE-R01",
       "treatment": "candidate"
     },
     {
       "action_family": "push_reaction",
       "blind_alias": "PUSH_PAIR_02_A",
-      "byte_length": 4139,
+      "byte_length": 4328,
       "package_id": "CAL002-B05-PUSH-CANDIDATE-R02-EXECUTION-PACKAGE-V0_1",
       "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-PUSH-CANDIDATE-R02_execution_package.json",
       "replicate": "R02",
-      "sha256": "2fe27c715348d5fe11eaec10d995e2cefae2f7a6caf8e52b027e890b96255789",
+      "sha256": "d0c8d0db7479654737e01035620636a0efb9d6ecc7213b4a8a12cbfb51e078e8",
       "task_id": "CAL002-B05-PUSH-CANDIDATE-R02",
       "treatment": "candidate"
     },
     {
       "action_family": "brief_impact_recoil",
       "blind_alias": "IMPACT_PAIR_01_B",
-      "byte_length": 4145,
+      "byte_length": 4334,
       "package_id": "CAL002-B05-IMPACT-CONTROL-R01-EXECUTION-PACKAGE-V0_1",
       "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-IMPACT-CONTROL-R01_execution_package.json",
       "replicate": "R01",
-      "sha256": "9d08a8be7b25b28aaccede1032d60b207ad097a8668031e4bbbdf9f7cb968ab2",
+      "sha256": "41c792e13b5de31304010b0898763a94ab752b17d968b595614beb9625c28a6b",
       "task_id": "CAL002-B05-IMPACT-CONTROL-R01",
       "treatment": "control"
     },
     {
       "action_family": "brief_impact_recoil",
       "blind_alias": "IMPACT_PAIR_02_A",
-      "byte_length": 4145,
+      "byte_length": 4334,
       "package_id": "CAL002-B05-IMPACT-CONTROL-R02-EXECUTION-PACKAGE-V0_1",
       "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-IMPACT-CONTROL-R02_execution_package.json",
       "replicate": "R02",
-      "sha256": "5886c9a35c352cee51c77c65da4eb91b3ea5ecec264f943e9ddbea140bd83163",
+      "sha256": "fe997ae11cd057d924ac6aff138159b81a91e5d6055f984ce333d5db68203c24",
       "task_id": "CAL002-B05-IMPACT-CONTROL-R02",
       "treatment": "control"
     },
     {
       "action_family": "brief_impact_recoil",
       "blind_alias": "IMPACT_PAIR_01_A",
-      "byte_length": 4159,
+      "byte_length": 4348,
       "package_id": "CAL002-B05-IMPACT-CANDIDATE-R01-EXECUTION-PACKAGE-V0_1",
       "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-IMPACT-CANDIDATE-R01_execution_package.json",
       "replicate": "R01",
-      "sha256": "6fea8b1ae96437a238cf1e856255cc568fe42c91b3cbb3a3f5bbc0c05350cba6",
+      "sha256": "08de66d7406ae30698540db36aa0a5cc244716a910f60618cbc697d234054fc3",
       "task_id": "CAL002-B05-IMPACT-CANDIDATE-R01",
       "treatment": "candidate"
     },
     {
       "action_family": "brief_impact_recoil",
       "blind_alias": "IMPACT_PAIR_02_B",
-      "byte_length": 4159,
+      "byte_length": 4348,
       "package_id": "CAL002-B05-IMPACT-CANDIDATE-R02-EXECUTION-PACKAGE-V0_1",
       "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/packages/CAL002-B05-IMPACT-CANDIDATE-R02_execution_package.json",
       "replicate": "R02",
-      "sha256": "2641d6b264be62862749b7d1abe70fb0ed43d88a2293553d563fd0eeb425efc8",
+      "sha256": "44e50329046c58b0593b0f0872ecd619e71d81ac732f38195a94d61d87afca2e",
       "task_id": "CAL002-B05-IMPACT-CANDIDATE-R02",
       "treatment": "candidate"
     }
   ],
+  "phase1_task_order": [
+    "CAL002-B05-PUSH-CONTROL-R01",
+    "CAL002-B05-PUSH-CONTROL-R02",
+    "CAL002-B05-PUSH-CANDIDATE-R01",
+    "CAL002-B05-PUSH-CANDIDATE-R02",
+    "CAL002-B05-IMPACT-CONTROL-R01",
+    "CAL002-B05-IMPACT-CONTROL-R02",
+    "CAL002-B05-IMPACT-CANDIDATE-R01",
+    "CAL002-B05-IMPACT-CANDIDATE-R02"
+  ],
+  "poll_contract": {
+    "explicit_in_all_packages": true,
+    "implicit_query_or_wait": false,
+    "package_count_verified": 8,
+    "poll_seconds": 0
+  },
   "prompt_identity_by_cell": [
     {
       "cell_id": "PUSH_CONTROL",

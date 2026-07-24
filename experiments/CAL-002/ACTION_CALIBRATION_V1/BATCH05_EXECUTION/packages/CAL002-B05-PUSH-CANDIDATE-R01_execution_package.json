@@ -26,6 +26,11 @@
         "value_source": "fixed_package_field"
       },
       {
+        "flag": "--poll",
+        "value": 0,
+        "value_source": "fixed_package_field"
+      },
+      {
         "bound_prompt_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/prompts/PUSH_CANDIDATE_prompt.txt",
         "flag": "--prompt",
         "value_source": "load exact UTF-8 Prompt text from the bound Prompt file"
@@ -61,9 +66,11 @@
   "output_directory_is_submit_argument": false,
   "output_name_is_submit_argument": false,
   "package_id": "CAL002-B05-PUSH-CANDIDATE-R01-EXECUTION-PACKAGE-V0_1",
-  "phase1_order": 3,
   "planned_local_output_root": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/planned_local_outputs",
   "planned_output_name": "CAL002-B05-PUSH-CANDIDATE-R01_result.mp4",
+  "poll_behavior": "SUBMIT_ONLY_NO_IMPLICIT_QUERY",
+  "poll_is_explicit": true,
+  "poll_seconds": 0,
   "production_approved": false,
   "prompt_byte_length": 1764,
   "prompt_injection_source": {
