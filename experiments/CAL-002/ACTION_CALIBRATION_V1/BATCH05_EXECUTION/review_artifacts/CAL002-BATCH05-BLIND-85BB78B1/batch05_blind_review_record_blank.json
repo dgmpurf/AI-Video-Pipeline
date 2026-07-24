@@ -1,0 +1,51 @@
+{
+  "pair_reviews": [
+    {
+      "pair_id": "PUSH_PAIR_01"
+    },
+    {
+      "pair_id": "PUSH_PAIR_02"
+    },
+    {
+      "pair_id": "IMPACT_PAIR_01"
+    },
+    {
+      "pair_id": "IMPACT_PAIR_02"
+    }
+  ],
+  "schema_version": "CAL002_BATCH05_BLIND_VISUAL_REVIEW_RECORD_V0_3",
+  "video_reviews": [
+    {
+      "action_family": "push_reaction",
+      "review_alias": "PUSH_PAIR_01_A"
+    },
+    {
+      "action_family": "push_reaction",
+      "review_alias": "PUSH_PAIR_01_B"
+    },
+    {
+      "action_family": "push_reaction",
+      "review_alias": "PUSH_PAIR_02_A"
+    },
+    {
+      "action_family": "push_reaction",
+      "review_alias": "PUSH_PAIR_02_B"
+    },
+    {
+      "action_family": "impact_step_back",
+      "review_alias": "IMPACT_PAIR_01_A"
+    },
+    {
+      "action_family": "impact_step_back",
+      "review_alias": "IMPACT_PAIR_01_B"
+    },
+    {
+      "action_family": "impact_step_back",
+      "review_alias": "IMPACT_PAIR_02_A"
+    },
+    {
+      "action_family": "impact_step_back",
+      "review_alias": "IMPACT_PAIR_02_B"
+    }
+  ]
+}
