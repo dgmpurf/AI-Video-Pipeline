@@ -1,12 +1,12 @@
 {
-  "artifact_count": 9,
+  "artifact_count": 11,
   "artifacts": [
     {
       "artifact_class": "design_spec",
-      "byte_length": 17227,
-      "creation_phase": "CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_NO_LIVE",
+      "byte_length": 20213,
+      "creation_phase": "CAL002_BATCH05_REVIEW_DERIVATION_INTEGRITY_TARGETED_FIX_NO_LIVE",
       "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/CAL002_BATCH05_DESIGN_SPEC.md",
-      "sha256": "a8604c73cd41ab45ee8abffd398b5b882da2acb6db2bad127e0ca76819b72ab7"
+      "sha256": "0565436792da6e2f9fbd5c6bbb5231162fc947abcd5bde0dae5b58b6178b1866"
     },
     {
       "artifact_class": "budget_and_authority_plan",
@@ -17,10 +17,10 @@
     },
     {
       "artifact_class": "design_manifest",
-      "byte_length": 15801,
-      "creation_phase": "CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_NO_LIVE",
+      "byte_length": 16860,
+      "creation_phase": "CAL002_BATCH05_REVIEW_DERIVATION_INTEGRITY_TARGETED_FIX_NO_LIVE",
       "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_design_manifest.json",
-      "sha256": "0f226189d89bcc67341e39f668ebd74f5d85eedd8818095c4343619766559c9a"
+      "sha256": "079c2a32e7eec7f48192ec985f819fc61c7df73421b4d45d2fae05b935052696"
     },
     {
       "artifact_class": "task_matrix",
@@ -45,31 +45,45 @@
     },
     {
       "artifact_class": "visual_review_schema",
-      "byte_length": 9174,
-      "creation_phase": "CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_NO_LIVE",
+      "byte_length": 18138,
+      "creation_phase": "CAL002_BATCH05_REVIEW_DERIVATION_INTEGRITY_TARGETED_FIX_NO_LIVE",
       "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_visual_review_schema.json",
-      "sha256": "3e3f816527334ebd0e57078fd1aa9cfc61022698de27209ccd8a2d0dbfb2854c"
+      "sha256": "9e98bc7f50c218ef75f19f211c0d0eefd5b93f0d41a4780e280f412804b9ebc5"
     },
     {
       "artifact_class": "post_unblinding_analysis_schema",
-      "byte_length": 8741,
-      "creation_phase": "CAL002_BATCH05_DESIGN_TARGETED_FIX_NO_LIVE",
+      "byte_length": 16213,
+      "creation_phase": "CAL002_BATCH05_REVIEW_DERIVATION_INTEGRITY_TARGETED_FIX_NO_LIVE",
       "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_post_unblinding_analysis_schema.json",
-      "sha256": "bd3c21b07e44ebe8b40a7d4d92e74d443967b88a15a350e83b5e94665a0442da"
+      "sha256": "7df7e1dca6cc702eb15c60c8178d9ebca5c77f47c3db2429bb5479ab3f4e4802"
+    },
+    {
+      "artifact_class": "review_derivation_tool",
+      "byte_length": 31983,
+      "creation_phase": "CAL002_BATCH05_REVIEW_DERIVATION_INTEGRITY_TARGETED_FIX_NO_LIVE",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/tools/batch05_review_derivation.py",
+      "sha256": "02902f29301da671ea9707c56b8a84ed6348cccf7f9e5390b4c7b161a2e09ef9"
+    },
+    {
+      "artifact_class": "review_derivation_tests",
+      "byte_length": 21717,
+      "creation_phase": "CAL002_BATCH05_REVIEW_DERIVATION_INTEGRITY_TARGETED_FIX_NO_LIVE",
+      "relative_path": "tests/test_cal002_batch05_review_derivation.py",
+      "sha256": "92149ec42f5cf907c31e38f399be74e580062d05f139556bf4076bacf35aefb0"
     },
     {
       "artifact_class": "design_result_report",
-      "byte_length": 11646,
-      "creation_phase": "CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_NO_LIVE",
+      "byte_length": 13195,
+      "creation_phase": "CAL002_BATCH05_REVIEW_DERIVATION_INTEGRITY_TARGETED_FIX_NO_LIVE",
       "relative_path": "reports/CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_RESULT.md",
-      "sha256": "5ce71940f0ff77628a8be2607d6b9b4b1d1ecab9992b0318a9c87c1134e33940"
+      "sha256": "07b176abd0dec3ef3287f08e0941004dde8e62bea7a53333521a390167618ca4"
     }
   ],
-  "creation_phase": "CAL002_BATCH05_DESIGN_TARGETED_FIX_NO_LIVE",
+  "creation_phase": "CAL002_BATCH05_REVIEW_DERIVATION_INTEGRITY_TARGETED_FIX_NO_LIVE",
   "manifest_scope": {
-    "included_artifact_count": 9,
+    "included_artifact_count": 11,
     "self_excluded": true,
     "self_exclusion_reason": "This evidence manifest is excluded from its own artifact bindings to avoid recursive self-hashing; the repository has no documented deterministic self-manifest convention for this phase."
   },
-  "schema_version": "CAL002_BATCH05_DESIGN_EVIDENCE_MANIFEST_V0_2"
+  "schema_version": "CAL002_BATCH05_DESIGN_EVIDENCE_MANIFEST_V0_3"
 }

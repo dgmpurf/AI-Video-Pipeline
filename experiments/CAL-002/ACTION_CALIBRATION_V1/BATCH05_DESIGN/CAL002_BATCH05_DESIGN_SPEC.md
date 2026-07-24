@@ -365,27 +365,40 @@ pair judgment.
 Complete MP4 review is mandatory. Contact sheets and synchronized comparisons
 may assist but cannot replace complete-video review.
 
-Reviewer-facing aliases:
-
-- `PUSH_PAIR_01_A`, `PUSH_PAIR_01_B`
-- `PUSH_PAIR_02_A`, `PUSH_PAIR_02_B`
-- `IMPACT_PAIR_01_A`, `IMPACT_PAIR_01_B`
-- `IMPACT_PAIR_02_A`, `IMPACT_PAIR_02_B`
-
 Review uses two strictly separated stages.
 
 ### 15.1 Blind reviewer stage
 
-The reviewer receives aliases and records only:
+Blind schema V0.3 fixes video records to this exact order:
 
-- `pair_id`;
-- `comparison_validity`;
-- A/B `preference`;
-- a non-empty `reviewer_rationale`.
+1. `PUSH_PAIR_01_A` with `action_family=push_reaction`
+2. `PUSH_PAIR_01_B` with `action_family=push_reaction`
+3. `PUSH_PAIR_02_A` with `action_family=push_reaction`
+4. `PUSH_PAIR_02_B` with `action_family=push_reaction`
+5. `IMPACT_PAIR_01_A` with `action_family=brief_impact_recoil`
+6. `IMPACT_PAIR_01_B` with `action_family=brief_impact_recoil`
+7. `IMPACT_PAIR_02_A` with `action_family=brief_impact_recoil`
+8. `IMPACT_PAIR_02_B` with `action_family=brief_impact_recoil`
+
+Pair records are fixed to `PUSH_PAIR_01`, `PUSH_PAIR_02`,
+`IMPACT_PAIR_01`, and `IMPACT_PAIR_02`, in that order. Both arrays use fixed
+`prefixItems`, exact lengths, and `items=false`; duplicate, missing,
+out-of-order, and alias/family-mismatched records fail.
+
+The reviewer records `comparison_validity`, A/B `preference`, and a non-empty
+`reviewer_rationale`. Allowed validity/preference combinations are:
+
+| Comparison validity | Allowed preference |
+| --- | --- |
+| `VALID` | `A_CLEARLY_BETTER`, `B_CLEARLY_BETTER`, or `NO_CLEAR_DIFFERENCE` |
+| `INVALID_UNCONTROLLED_VARIATION` | `NOT_COMPARABLE` |
+| `INVALID_TECHNICAL` | `NOT_COMPARABLE` |
+| `INCONCLUSIVE` | `NO_CLEAR_DIFFERENCE` or `NOT_COMPARABLE` |
 
 The blind reviewer does not record `candidate_clear_advantage` and must not
-know Candidate/Control identity. The blind record is finalized and hashed
-before treatment mapping is revealed.
+know Candidate/Control identity. The blind record must use deterministic UTF-8
+JSON with no BOM, sorted keys, two-space indentation, and exactly one terminal
+LF. Its exact finalized bytes are hashed before treatment mapping is revealed.
 
 The reviewer-facing package may contain only alias-labeled complete MP4 files,
 alias-labeled technical metadata, alias-labeled review aids,
@@ -401,6 +414,7 @@ The reviewer package must exclude:
 - `batch05_budget_and_authority_plan.json`;
 - `batch05_post_unblinding_analysis_schema.json`;
 - `batch05_design_evidence_manifest.json`;
+- `tools/batch05_review_derivation.py`;
 - all design, audit, and fix reports;
 - all package files containing treatment labels;
 - every filename containing `CONTROL` or `CANDIDATE`.
@@ -409,27 +423,69 @@ This design rule does not create or authorize a review package.
 
 ### 15.2 Post-unblinding derived-analysis stage
 
-Only after the blind record is finalized and its SHA-256 is recorded may the
-sealed mapping in the design manifest and task matrix be revealed.
-`batch05_post_unblinding_analysis_schema.json` then records:
+Post-unblinding schema V0.2 describes deterministic tool output. Manual
+derived-record authoring is not permitted. The required tool is:
 
-- mapping-source path, byte-length, and SHA-256 bindings;
-- Candidate and Control side derivation for each pair;
-- derived `candidate_clear_advantage`;
-- family-level decisions and non-empty rationales.
+```text
+experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/tools/batch05_review_derivation.py
+```
 
-Candidate advantage is therefore derived after unblinding, never asserted by
-the blind reviewer.
+```text
+python batch05_review_derivation.py derive --repo-root <repo> --blind-record <blind.json> --output <derived.json>
+python batch05_review_derivation.py verify --repo-root <repo> --blind-record <blind.json> --derived-record <derived.json>
+```
+
+Before derivation, the tool reads the finalized blind bytes and validates
+strict deterministic JSON against blind schema V0.3. It reads the design
+manifest and task matrix from both the worktree and `HEAD`, requires byte
+identity, calculates byte lengths and SHA-256 values itself, cross-validates
+the exact eight-task counterbalanced mapping, and rejects any duplicate,
+missing, or disagreeing mapping.
+
+For every pair, the tool derives Candidate and Control sides from the verified
+mapping and applies this truth table:
+
+| Validity and blind preference | Derived class | Candidate advantage |
+| --- | --- | --- |
+| `VALID`, Candidate side clearly better | `CANDIDATE_CLEAR_ADVANTAGE` | `true` |
+| `VALID`, Control side clearly better | `CONTROL_CLEAR_ADVANTAGE` | `false` |
+| `VALID`, `NO_CLEAR_DIFFERENCE` | `NO_CLEAR_ADVANTAGE` | `false` |
+| Invalid, `NOT_COMPARABLE` | `INVALID_COMPARISON` | `false` |
+| `INCONCLUSIVE`, no difference/not comparable | `INCONCLUSIVE_COMPARISON` | `false` |
+
+The tool computes, per action family, Candidate and Control primary passes;
+valid, Candidate-advantage, Control-advantage, no-advantage, invalid, and
+inconclusive pair counts; action-family mismatch counts; technical-invalid
+counts; and these exact flags:
+
+```text
+both_treatments_frequently_fail
+uncontrolled_variation_prevents_comparison
+candidate_repeated_wrong_family
+candidate_worse_than_control
+```
 
 ## 16. Phase-1 Decision Rules
 
-| Condition | Family-level result |
-| --- | --- |
-| Candidate passes 2/2 and clearly outperforms Control in both replicate comparisons | `FAMILY_SPECIFIC_REPLICATED_POSITIVE_SIGNAL` |
-| Control passes 2/2 and Candidate passes 2/2 without clear Candidate advantage | `BOTH_TREATMENTS_SUCCESSFUL_NO_CLEAR_CANDIDATE_ADVANTAGE` |
-| Candidate passes 1/2 or replicate pair findings conflict | `INCONCLUSIVE_REPLICATION` |
-| Candidate is worse than Control or repeatedly routes to the wrong family | `CANDIDATE_FAMILY_COMPILER_REGRESSION` |
-| Both treatments frequently fail or uncontrolled variation prevents comparison | `ROUTE_RESET_REQUIRED` |
+The tool applies this fixed precedence:
+
+1. `ROUTE_RESET_REQUIRED` when both treatments frequently fail or both family
+   pairs are invalid because uncontrolled variation prevents comparison.
+2. `CANDIDATE_FAMILY_COMPILER_REGRESSION` when Candidate repeatedly routes to
+   the wrong family or is worse than Control.
+3. `FAMILY_SPECIFIC_REPLICATED_POSITIVE_SIGNAL` when Candidate passes `2/2`,
+   both pair comparisons are valid, and Candidate has clear advantage `2/2`.
+4. `BOTH_TREATMENTS_SUCCESSFUL_NO_CLEAR_CANDIDATE_ADVANTAGE` when both
+   treatments pass `2/2`, both comparisons are valid, neither treatment has a
+   clear advantage, and both pairs record no clear advantage.
+5. `INCONCLUSIVE_REPLICATION` otherwise.
+
+`verify` re-reads the blind record and committed mapping, re-derives the entire
+record, and requires byte-for-byte equality with the supplied derived record.
+It rejects blind substitution, retained old hashes, mapping drift, arbitrary
+mapping hashes, pair contradictions, family-decision contradictions, and any
+non-canonical output. A schema-valid derived record is not authoritative
+without successful verification.
 
 No extra task follows automatically. A tie-breaker requires a separate
 no-live design and human decision.
@@ -497,7 +553,7 @@ locked: false
 
 ## 20. Next Phase
 
-`CAL002_BATCH05_DESIGN_TARGETED_FIX_INDEPENDENT_NO_LIVE_AUDIT`
+`CAL002_BATCH05_REVIEW_DERIVATION_INTEGRITY_FIX_INDEPENDENT_NO_LIVE_AUDIT`
 
-The next phase may independently re-audit only the bounded blind-review schema
-fix. It creates no live authority.
+The next phase may independently re-audit only this bounded review-derivation
+integrity fix. It creates no live authority.

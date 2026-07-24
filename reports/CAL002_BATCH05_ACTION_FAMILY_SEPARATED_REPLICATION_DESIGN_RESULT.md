@@ -2,9 +2,10 @@
 
 ## 1. Executive Decision
 
-- Decision: `TARGETED_FIX_APPLIED_PENDING_INDEPENDENT_REAUDIT`
+- Decision: `REVIEW_DERIVATION_INTEGRITY_FIX_APPLIED_PENDING_INDEPENDENT_AUDIT`
 - Original design decision: `CAL002_BATCH05_DESIGN_READY_FOR_INDEPENDENT_NO_LIVE_AUDIT`
 - Independent audit finding: `CAL002_BATCH05_DESIGN_NEEDS_FIX_BLIND_REVIEW_SCHEMA`
+- Re-audit finding: `CAL002_BATCH05_TARGETED_FIX_NEEDS_SECOND_BOUNDED_SCHEMA_FIX`
 - Goal identity: `CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_V0_1`
 - Task type: complete no-live experimental design
 - Fixed Phase-1 tasks: `8`
@@ -201,14 +202,24 @@ mapping is held in the design manifest and task matrix, separate from the
 review-facing schema. Complete MP4 review is mandatory; contact sheets and
 comparisons cannot replace it.
 
-The targeted no-live fix separates review into two stages:
+The second bounded no-live fix preserves the two-stage review boundary and
+closes the remaining derivation-integrity gaps:
 
-1. The blind reviewer records A/B preference, comparison validity, and a
-   required non-empty rationale. `candidate_clear_advantage` is absent and
-   forbidden by the blind schema.
-2. The blind record is finalized and hashed before mapping is revealed.
-   `batch05_post_unblinding_analysis_schema.json` then derives Candidate
-   advantage and family decisions from the sealed blind record and mapping.
+1. Blind schema V0.3 fixes all eight aliases and four pair IDs in exact order,
+   binds each alias to its action family, and rejects inconsistent
+   validity/preference combinations.
+2. The finalized blind record uses strict deterministic UTF-8 JSON and is
+   hashed from exact file bytes before unblinding.
+3. `batch05_review_derivation.py` reads the committed manifest and task matrix
+   from both the worktree and `HEAD`, rejects drift or mapping disagreement,
+   and calculates mapping bindings itself.
+4. Pair derivations are generated from the sealed blind values and verified
+   Candidate/Control mapping. They are not manually authored.
+5. Family counts, flags, decisions, and rationales are generated through one
+   fixed precedence.
+6. Verify mode re-derives the complete output and requires exact byte equality,
+   blocking blind-record substitution, mapping substitution, contradictory
+   pair outcomes, and contradictory family decisions.
 
 The reviewer-facing package must contain only alias-labeled media, metadata,
 review aids, the blind schema, and a blank blind record. It must exclude the
@@ -224,16 +235,22 @@ Targeted-fix invariants:
 - Provider targets unchanged: `true`
 - Budget unchanged: `true`
 - Authority unchanged: `true`
+- Exact blind identities enforced: `true`
+- Blind validity/preference consistency enforced: `true`
+- Deterministic committed-mapping verification added: `true`
+- Manual post-unblinding authoring permitted: `false`
+- Blind-record substitution blocked by verify mode: `true`
+- Mapping substitution blocked by verify mode: `true`
 
 ## 18. Family-Level Decision Matrix
 
-| Condition | Decision |
-| --- | --- |
-| Candidate 2/2 pass and wins both replicate comparisons | `FAMILY_SPECIFIC_REPLICATED_POSITIVE_SIGNAL` |
-| Both treatments 2/2 pass without clear Candidate advantage | `BOTH_TREATMENTS_SUCCESSFUL_NO_CLEAR_CANDIDATE_ADVANTAGE` |
-| Candidate 1/2 pass or replicate comparisons conflict | `INCONCLUSIVE_REPLICATION` |
-| Candidate is worse or repeatedly routes to the wrong action family | `CANDIDATE_FAMILY_COMPILER_REGRESSION` |
-| Both treatments frequently fail or variation prevents comparison | `ROUTE_RESET_REQUIRED` |
+| Precedence | Condition | Decision |
+| ---: | --- | --- |
+| 1 | Both treatments pass `0/2`, or both pairs are invalid for uncontrolled variation | `ROUTE_RESET_REQUIRED` |
+| 2 | Candidate repeatedly routes to the wrong family, or Candidate is worse than Control | `CANDIDATE_FAMILY_COMPILER_REGRESSION` |
+| 3 | Candidate passes `2/2`, both pairs are valid, and Candidate wins `2/2` | `FAMILY_SPECIFIC_REPLICATED_POSITIVE_SIGNAL` |
+| 4 | Both treatments pass `2/2`, both pairs are valid, and both show no clear advantage | `BOTH_TREATMENTS_SUCCESSFUL_NO_CLEAR_CANDIDATE_ADVANTAGE` |
+| 5 | No higher-precedence rule applies | `INCONCLUSIVE_REPLICATION` |
 
 No statistical-significance, single-component, or cross-action-generalization
 claim is permitted.
@@ -315,21 +332,29 @@ Any tie-breaker requires a separate future no-live design and human decision.
 - Replicate planned Prompt-byte identity: `PASS`
 - Control/Candidate variable isolation: `PASS`
 - Protected pre-existing snapshot: `PASS_UNCHANGED`
-- Evidence manifest non-self artifact count: `9`
-- Blind schema corrected: `true`
+- Evidence manifest non-self artifact count: `11`
+- Blind schema V0.3 exact identities: `PASS`
+- Blind validity/preference combinations: `PASS`
 - `candidate_clear_advantage` removed from blind record: `true`
 - Pair rationale universally required: `true`
-- Post-unblinding derived-analysis schema added: `true`
+- Post-unblinding derived-analysis schema V0.2: `PASS`
+- Deterministic derivation tool added: `true`
+- Derive and verify modes tested: `PASS`
+- Pair truth-table regression probes: `PASS`
+- Blind-substitution regression probes: `PASS`
+- Mapping-substitution regression probes: `PASS`
+- Family-decision regression probes: `PASS`
+- Deterministic byte-output regression probes: `PASS`
 - Reviewer-package exclusions defined: `true`
 - Prompt blueprints/tasks/budget/authority unchanged: `true`
 
 Next phase:
 
-`CAL002_BATCH05_DESIGN_TARGETED_FIX_INDEPENDENT_NO_LIVE_AUDIT`
+`CAL002_BATCH05_REVIEW_DERIVATION_INTEGRITY_FIX_INDEPENDENT_NO_LIVE_AUDIT`
 
 Final verdict:
 
-`TARGETED_FIX_APPLIED_PENDING_INDEPENDENT_REAUDIT`
+`REVIEW_DERIVATION_INTEGRITY_FIX_APPLIED_PENDING_INDEPENDENT_AUDIT`
 
 Safety state:
 

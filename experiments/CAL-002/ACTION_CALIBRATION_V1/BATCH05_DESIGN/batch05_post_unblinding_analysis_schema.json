@@ -10,6 +10,14 @@
           ],
           "type": "string"
         },
+        "both_treatments_frequently_fail": {
+          "type": "boolean"
+        },
+        "candidate_action_family_mismatch_count": {
+          "maximum": 2,
+          "minimum": 0,
+          "type": "integer"
+        },
         "candidate_clear_advantage_count": {
           "maximum": 2,
           "minimum": 0,
@@ -20,7 +28,33 @@
           "minimum": 0,
           "type": "integer"
         },
+        "candidate_repeated_wrong_family": {
+          "type": "boolean"
+        },
+        "candidate_technical_invalid_count": {
+          "maximum": 2,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "candidate_worse_than_control": {
+          "type": "boolean"
+        },
+        "control_action_family_mismatch_count": {
+          "maximum": 2,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "control_clear_advantage_count": {
+          "maximum": 2,
+          "minimum": 0,
+          "type": "integer"
+        },
         "control_primary_pass_count": {
+          "maximum": 2,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "control_technical_invalid_count": {
           "maximum": 2,
           "minimum": 0,
           "type": "integer"
@@ -39,6 +73,24 @@
           ],
           "type": "string"
         },
+        "inconclusive_pair_count": {
+          "maximum": 2,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "invalid_pair_count": {
+          "maximum": 2,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "no_clear_advantage_count": {
+          "maximum": 2,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "uncontrolled_variation_prevents_comparison": {
+          "type": "boolean"
+        },
         "valid_pair_comparison_count": {
           "maximum": 2,
           "minimum": 0,
@@ -51,6 +103,18 @@
         "control_primary_pass_count",
         "valid_pair_comparison_count",
         "candidate_clear_advantage_count",
+        "control_clear_advantage_count",
+        "no_clear_advantage_count",
+        "invalid_pair_count",
+        "inconclusive_pair_count",
+        "candidate_action_family_mismatch_count",
+        "control_action_family_mismatch_count",
+        "candidate_technical_invalid_count",
+        "control_technical_invalid_count",
+        "both_treatments_frequently_fail",
+        "uncontrolled_variation_prevents_comparison",
+        "candidate_repeated_wrong_family",
+        "candidate_worse_than_control",
         "family_level_result",
         "decision_rationale"
       ],
@@ -106,30 +170,176 @@
           ]
         },
         {
-          "else": {
-            "properties": {
-              "candidate_clear_advantage": {
-                "const": false
-              }
-            }
-          },
-          "if": {
-            "properties": {
-              "derivation_class": {
-                "const": "CANDIDATE_CLEAR_ADVANTAGE"
+          "oneOf": [
+            {
+              "properties": {
+                "blind_comparison_validity": {
+                  "const": "VALID"
+                },
+                "blind_preference": {
+                  "const": "A_CLEARLY_BETTER"
+                },
+                "candidate_clear_advantage": {
+                  "const": true
+                },
+                "candidate_side": {
+                  "const": "A"
+                },
+                "control_side": {
+                  "const": "B"
+                },
+                "derivation_class": {
+                  "const": "CANDIDATE_CLEAR_ADVANTAGE"
+                }
               }
             },
-            "required": [
-              "derivation_class"
-            ]
-          },
-          "then": {
-            "properties": {
-              "candidate_clear_advantage": {
-                "const": true
+            {
+              "properties": {
+                "blind_comparison_validity": {
+                  "const": "VALID"
+                },
+                "blind_preference": {
+                  "const": "B_CLEARLY_BETTER"
+                },
+                "candidate_clear_advantage": {
+                  "const": true
+                },
+                "candidate_side": {
+                  "const": "B"
+                },
+                "control_side": {
+                  "const": "A"
+                },
+                "derivation_class": {
+                  "const": "CANDIDATE_CLEAR_ADVANTAGE"
+                }
+              }
+            },
+            {
+              "properties": {
+                "blind_comparison_validity": {
+                  "const": "VALID"
+                },
+                "blind_preference": {
+                  "const": "A_CLEARLY_BETTER"
+                },
+                "candidate_clear_advantage": {
+                  "const": false
+                },
+                "candidate_side": {
+                  "const": "B"
+                },
+                "control_side": {
+                  "const": "A"
+                },
+                "derivation_class": {
+                  "const": "CONTROL_CLEAR_ADVANTAGE"
+                }
+              }
+            },
+            {
+              "properties": {
+                "blind_comparison_validity": {
+                  "const": "VALID"
+                },
+                "blind_preference": {
+                  "const": "B_CLEARLY_BETTER"
+                },
+                "candidate_clear_advantage": {
+                  "const": false
+                },
+                "candidate_side": {
+                  "const": "A"
+                },
+                "control_side": {
+                  "const": "B"
+                },
+                "derivation_class": {
+                  "const": "CONTROL_CLEAR_ADVANTAGE"
+                }
+              }
+            },
+            {
+              "properties": {
+                "blind_comparison_validity": {
+                  "const": "VALID"
+                },
+                "blind_preference": {
+                  "const": "NO_CLEAR_DIFFERENCE"
+                },
+                "candidate_clear_advantage": {
+                  "const": false
+                },
+                "derivation_class": {
+                  "const": "NO_CLEAR_ADVANTAGE"
+                }
+              }
+            },
+            {
+              "properties": {
+                "blind_comparison_validity": {
+                  "const": "INVALID_UNCONTROLLED_VARIATION"
+                },
+                "blind_preference": {
+                  "const": "NOT_COMPARABLE"
+                },
+                "candidate_clear_advantage": {
+                  "const": false
+                },
+                "derivation_class": {
+                  "const": "INVALID_COMPARISON"
+                }
+              }
+            },
+            {
+              "properties": {
+                "blind_comparison_validity": {
+                  "const": "INVALID_TECHNICAL"
+                },
+                "blind_preference": {
+                  "const": "NOT_COMPARABLE"
+                },
+                "candidate_clear_advantage": {
+                  "const": false
+                },
+                "derivation_class": {
+                  "const": "INVALID_COMPARISON"
+                }
+              }
+            },
+            {
+              "properties": {
+                "blind_comparison_validity": {
+                  "const": "INCONCLUSIVE"
+                },
+                "blind_preference": {
+                  "const": "NO_CLEAR_DIFFERENCE"
+                },
+                "candidate_clear_advantage": {
+                  "const": false
+                },
+                "derivation_class": {
+                  "const": "INCONCLUSIVE_COMPARISON"
+                }
+              }
+            },
+            {
+              "properties": {
+                "blind_comparison_validity": {
+                  "const": "INCONCLUSIVE"
+                },
+                "blind_preference": {
+                  "const": "NOT_COMPARABLE"
+                },
+                "candidate_clear_advantage": {
+                  "const": false
+                },
+                "derivation_class": {
+                  "const": "INCONCLUSIVE_COMPARISON"
+                }
               }
             }
-          }
+          ]
         }
       ],
       "properties": {
@@ -203,19 +413,56 @@
         "derivation_rationale"
       ],
       "type": "object"
+    },
+    "tool_binding": {
+      "additionalProperties": false,
+      "properties": {
+        "byte_length": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "relative_path": {
+          "const": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/tools/batch05_review_derivation.py"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "tool_version": {
+          "const": "CAL002_BATCH05_REVIEW_DERIVATION_TOOL_V0_1"
+        }
+      },
+      "required": [
+        "relative_path",
+        "byte_length",
+        "sha256",
+        "tool_version"
+      ],
+      "type": "object"
     }
   },
-  "$id": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_SCHEMA_V0_1",
+  "$id": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_SCHEMA_V0_2",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "additionalProperties": false,
   "properties": {
+    "blind_review_record_byte_length": {
+      "minimum": 1,
+      "type": "integer"
+    },
     "blind_review_record_finalized_before_unblinding": {
       "const": true,
       "type": "boolean"
     },
+    "blind_review_record_path": {
+      "minLength": 1,
+      "type": "string"
+    },
     "blind_review_record_sha256": {
       "pattern": "^[0-9a-f]{64}$",
       "type": "string"
+    },
+    "derivation_tool_binding": {
+      "$ref": "#/$defs/tool_binding"
     },
     "family_decisions": {
       "items": false,
@@ -354,11 +601,14 @@
       "type": "array"
     },
     "schema_version": {
-      "const": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_RECORD_V0_1"
+      "const": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_RECORD_V0_2"
     }
   },
   "required": [
     "schema_version",
+    "derivation_tool_binding",
+    "blind_review_record_path",
+    "blind_review_record_byte_length",
     "blind_review_record_finalized_before_unblinding",
     "blind_review_record_sha256",
     "mapping_source_bindings",
