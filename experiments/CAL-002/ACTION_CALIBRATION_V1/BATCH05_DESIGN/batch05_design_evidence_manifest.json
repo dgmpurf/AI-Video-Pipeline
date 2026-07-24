@@ -1,12 +1,12 @@
 {
-  "artifact_count": 8,
+  "artifact_count": 9,
   "artifacts": [
     {
       "artifact_class": "design_spec",
-      "byte_length": 15452,
+      "byte_length": 17227,
       "creation_phase": "CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_NO_LIVE",
       "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/CAL002_BATCH05_DESIGN_SPEC.md",
-      "sha256": "cdf63b0dce697dc80c0d9f4f2ecd2674f00cbc24b93827cc9138a20b400661a4"
+      "sha256": "a8604c73cd41ab45ee8abffd398b5b882da2acb6db2bad127e0ca76819b72ab7"
     },
     {
       "artifact_class": "budget_and_authority_plan",
@@ -17,10 +17,10 @@
     },
     {
       "artifact_class": "design_manifest",
-      "byte_length": 13638,
+      "byte_length": 15801,
       "creation_phase": "CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_NO_LIVE",
       "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_design_manifest.json",
-      "sha256": "7e464052018aca35ed4f8a708928f60f71fbcb9010fa2376626f490eff70e9dc"
+      "sha256": "0f226189d89bcc67341e39f668ebd74f5d85eedd8818095c4343619766559c9a"
     },
     {
       "artifact_class": "task_matrix",
@@ -45,24 +45,31 @@
     },
     {
       "artifact_class": "visual_review_schema",
-      "byte_length": 9225,
+      "byte_length": 9174,
       "creation_phase": "CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_NO_LIVE",
       "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_visual_review_schema.json",
-      "sha256": "cadb71d24879c0a60d0658a7a399725b87eccbce15ca208adfd63b1fd476e8b6"
+      "sha256": "3e3f816527334ebd0e57078fd1aa9cfc61022698de27209ccd8a2d0dbfb2854c"
+    },
+    {
+      "artifact_class": "post_unblinding_analysis_schema",
+      "byte_length": 8741,
+      "creation_phase": "CAL002_BATCH05_DESIGN_TARGETED_FIX_NO_LIVE",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_post_unblinding_analysis_schema.json",
+      "sha256": "bd3c21b07e44ebe8b40a7d4d92e74d443967b88a15a350e83b5e94665a0442da"
     },
     {
       "artifact_class": "design_result_report",
-      "byte_length": 10109,
+      "byte_length": 11646,
       "creation_phase": "CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_NO_LIVE",
       "relative_path": "reports/CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_RESULT.md",
-      "sha256": "ebfc90b20d60e277bc21668434739703aab05beff47eb581a90c39a361d26940"
+      "sha256": "5ce71940f0ff77628a8be2607d6b9b4b1d1ecab9992b0318a9c87c1134e33940"
     }
   ],
-  "creation_phase": "CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_NO_LIVE",
+  "creation_phase": "CAL002_BATCH05_DESIGN_TARGETED_FIX_NO_LIVE",
   "manifest_scope": {
-    "included_artifact_count": 8,
+    "included_artifact_count": 9,
     "self_excluded": true,
     "self_exclusion_reason": "This evidence manifest is excluded from its own artifact bindings to avoid recursive self-hashing; the repository has no documented deterministic self-manifest convention for this phase."
   },
-  "schema_version": "CAL002_BATCH05_DESIGN_EVIDENCE_MANIFEST_V0_1"
+  "schema_version": "CAL002_BATCH05_DESIGN_EVIDENCE_MANIFEST_V0_2"
 }

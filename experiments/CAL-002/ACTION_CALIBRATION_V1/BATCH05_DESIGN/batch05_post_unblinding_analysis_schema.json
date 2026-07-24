@@ -1,0 +1,370 @@
+{
+  "$defs": {
+    "family_decision": {
+      "additionalProperties": false,
+      "properties": {
+        "action_family": {
+          "enum": [
+            "push_reaction",
+            "brief_impact_recoil"
+          ],
+          "type": "string"
+        },
+        "candidate_clear_advantage_count": {
+          "maximum": 2,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "candidate_primary_pass_count": {
+          "maximum": 2,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "control_primary_pass_count": {
+          "maximum": 2,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "decision_rationale": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "family_level_result": {
+          "enum": [
+            "FAMILY_SPECIFIC_REPLICATED_POSITIVE_SIGNAL",
+            "BOTH_TREATMENTS_SUCCESSFUL_NO_CLEAR_CANDIDATE_ADVANTAGE",
+            "INCONCLUSIVE_REPLICATION",
+            "CANDIDATE_FAMILY_COMPILER_REGRESSION",
+            "ROUTE_RESET_REQUIRED"
+          ],
+          "type": "string"
+        },
+        "valid_pair_comparison_count": {
+          "maximum": 2,
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "action_family",
+        "candidate_primary_pass_count",
+        "control_primary_pass_count",
+        "valid_pair_comparison_count",
+        "candidate_clear_advantage_count",
+        "family_level_result",
+        "decision_rationale"
+      ],
+      "type": "object"
+    },
+    "mapping_binding": {
+      "additionalProperties": false,
+      "properties": {
+        "byte_length": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "relative_path": {
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "relative_path",
+        "byte_length",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "pair_derivation": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "oneOf": [
+            {
+              "properties": {
+                "candidate_side": {
+                  "const": "A"
+                },
+                "control_side": {
+                  "const": "B"
+                }
+              }
+            },
+            {
+              "properties": {
+                "candidate_side": {
+                  "const": "B"
+                },
+                "control_side": {
+                  "const": "A"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "else": {
+            "properties": {
+              "candidate_clear_advantage": {
+                "const": false
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "derivation_class": {
+                "const": "CANDIDATE_CLEAR_ADVANTAGE"
+              }
+            },
+            "required": [
+              "derivation_class"
+            ]
+          },
+          "then": {
+            "properties": {
+              "candidate_clear_advantage": {
+                "const": true
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "blind_comparison_validity": {
+          "enum": [
+            "VALID",
+            "INVALID_UNCONTROLLED_VARIATION",
+            "INVALID_TECHNICAL",
+            "INCONCLUSIVE"
+          ],
+          "type": "string"
+        },
+        "blind_preference": {
+          "enum": [
+            "A_CLEARLY_BETTER",
+            "B_CLEARLY_BETTER",
+            "NO_CLEAR_DIFFERENCE",
+            "NOT_COMPARABLE"
+          ],
+          "type": "string"
+        },
+        "candidate_clear_advantage": {
+          "type": "boolean"
+        },
+        "candidate_side": {
+          "enum": [
+            "A",
+            "B"
+          ],
+          "type": "string"
+        },
+        "control_side": {
+          "enum": [
+            "A",
+            "B"
+          ],
+          "type": "string"
+        },
+        "derivation_class": {
+          "enum": [
+            "CANDIDATE_CLEAR_ADVANTAGE",
+            "CONTROL_CLEAR_ADVANTAGE",
+            "NO_CLEAR_ADVANTAGE",
+            "INVALID_COMPARISON",
+            "INCONCLUSIVE_COMPARISON"
+          ],
+          "type": "string"
+        },
+        "derivation_rationale": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "pair_id": {
+          "enum": [
+            "PUSH_PAIR_01",
+            "PUSH_PAIR_02",
+            "IMPACT_PAIR_01",
+            "IMPACT_PAIR_02"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "pair_id",
+        "candidate_side",
+        "control_side",
+        "blind_comparison_validity",
+        "blind_preference",
+        "candidate_clear_advantage",
+        "derivation_class",
+        "derivation_rationale"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_SCHEMA_V0_1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "blind_review_record_finalized_before_unblinding": {
+      "const": true,
+      "type": "boolean"
+    },
+    "blind_review_record_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "family_decisions": {
+      "items": false,
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/family_decision"
+            },
+            {
+              "properties": {
+                "action_family": {
+                  "const": "push_reaction"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/family_decision"
+            },
+            {
+              "properties": {
+                "action_family": {
+                  "const": "brief_impact_recoil"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "type": "array"
+    },
+    "mapping_source_bindings": {
+      "items": false,
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/mapping_binding"
+            },
+            {
+              "properties": {
+                "relative_path": {
+                  "const": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_design_manifest.json"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/mapping_binding"
+            },
+            {
+              "properties": {
+                "relative_path": {
+                  "const": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_task_matrix.csv"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "type": "array"
+    },
+    "pair_derivations": {
+      "items": false,
+      "maxItems": 4,
+      "minItems": 4,
+      "prefixItems": [
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/pair_derivation"
+            },
+            {
+              "properties": {
+                "pair_id": {
+                  "const": "PUSH_PAIR_01"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/pair_derivation"
+            },
+            {
+              "properties": {
+                "pair_id": {
+                  "const": "PUSH_PAIR_02"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/pair_derivation"
+            },
+            {
+              "properties": {
+                "pair_id": {
+                  "const": "IMPACT_PAIR_01"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/pair_derivation"
+            },
+            {
+              "properties": {
+                "pair_id": {
+                  "const": "IMPACT_PAIR_02"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_RECORD_V0_1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "blind_review_record_finalized_before_unblinding",
+    "blind_review_record_sha256",
+    "mapping_source_bindings",
+    "pair_derivations",
+    "family_decisions"
+  ],
+  "title": "CAL-002 Batch05 Post-Unblinding Derived Analysis Record",
+  "type": "object"
+}

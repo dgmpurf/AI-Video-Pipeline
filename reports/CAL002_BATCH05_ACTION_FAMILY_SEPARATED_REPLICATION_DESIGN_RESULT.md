@@ -2,7 +2,9 @@
 
 ## 1. Executive Decision
 
-- Decision: `CAL002_BATCH05_DESIGN_READY_FOR_INDEPENDENT_NO_LIVE_AUDIT`
+- Decision: `TARGETED_FIX_APPLIED_PENDING_INDEPENDENT_REAUDIT`
+- Original design decision: `CAL002_BATCH05_DESIGN_READY_FOR_INDEPENDENT_NO_LIVE_AUDIT`
+- Independent audit finding: `CAL002_BATCH05_DESIGN_NEEDS_FIX_BLIND_REVIEW_SCHEMA`
 - Goal identity: `CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_V0_1`
 - Task type: complete no-live experimental design
 - Fixed Phase-1 tasks: `8`
@@ -199,6 +201,30 @@ mapping is held in the design manifest and task matrix, separate from the
 review-facing schema. Complete MP4 review is mandatory; contact sheets and
 comparisons cannot replace it.
 
+The targeted no-live fix separates review into two stages:
+
+1. The blind reviewer records A/B preference, comparison validity, and a
+   required non-empty rationale. `candidate_clear_advantage` is absent and
+   forbidden by the blind schema.
+2. The blind record is finalized and hashed before mapping is revealed.
+   `batch05_post_unblinding_analysis_schema.json` then derives Candidate
+   advantage and family decisions from the sealed blind record and mapping.
+
+The reviewer-facing package must contain only alias-labeled media, metadata,
+review aids, the blind schema, and a blank blind record. It must exclude the
+design manifest, task matrix, treatment diff, design specification, budget
+plan, post-unblinding schema, evidence manifest, all design/audit/fix reports,
+treatment-labeled package files, and filenames containing `CONTROL` or
+`CANDIDATE`.
+
+Targeted-fix invariants:
+
+- Prompt blueprints unchanged: `true`
+- Tasks unchanged: `true`
+- Provider targets unchanged: `true`
+- Budget unchanged: `true`
+- Authority unchanged: `true`
+
 ## 18. Family-Level Decision Matrix
 
 | Condition | Decision |
@@ -289,15 +315,21 @@ Any tie-breaker requires a separate future no-live design and human decision.
 - Replicate planned Prompt-byte identity: `PASS`
 - Control/Candidate variable isolation: `PASS`
 - Protected pre-existing snapshot: `PASS_UNCHANGED`
-- New artifact count: `9`
+- Evidence manifest non-self artifact count: `9`
+- Blind schema corrected: `true`
+- `candidate_clear_advantage` removed from blind record: `true`
+- Pair rationale universally required: `true`
+- Post-unblinding derived-analysis schema added: `true`
+- Reviewer-package exclusions defined: `true`
+- Prompt blueprints/tasks/budget/authority unchanged: `true`
 
 Next phase:
 
-`CAL002_BATCH05_DESIGN_INDEPENDENT_NO_LIVE_AUDIT`
+`CAL002_BATCH05_DESIGN_TARGETED_FIX_INDEPENDENT_NO_LIVE_AUDIT`
 
 Final verdict:
 
-`CAL002_BATCH05_DESIGN_READY_FOR_INDEPENDENT_NO_LIVE_AUDIT`
+`TARGETED_FIX_APPLIED_PENDING_INDEPENDENT_REAUDIT`
 
 Safety state:
 

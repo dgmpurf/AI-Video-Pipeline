@@ -82,6 +82,7 @@
     "budget_and_authority_plan": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_budget_and_authority_plan.json",
     "design_evidence_manifest": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_design_evidence_manifest.json",
     "design_spec": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/CAL002_BATCH05_DESIGN_SPEC.md",
+    "post_unblinding_analysis_schema": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_post_unblinding_analysis_schema.json",
     "task_matrix": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_task_matrix.csv",
     "treatment_diff_matrix": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_treatment_diff_matrix.json",
     "variable_lock_table": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_variable_lock_table.csv",
@@ -235,8 +236,48 @@
     "single_component_claim_permitted": false,
     "statistical_significance_claim_permitted": false
   },
-  "schema_version": "CAL002_BATCH05_DESIGN_MANIFEST_V0_1",
-  "status": "NO_LIVE_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_ONLY",
+  "review_process": {
+    "blind_stage": {
+      "blind_record_must_be_finalized_before_unblinding": true,
+      "candidate_specific_field_present": false,
+      "rationale_required_for_every_pair": true,
+      "schema_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_visual_review_schema.json",
+      "treatment_mapping_visible_to_reviewer": false
+    },
+    "post_unblinding_stage": {
+      "candidate_clear_advantage_is_derived": true,
+      "family_decision_is_derived": true,
+      "mapping_revealed_after_blind_record_lock": true,
+      "schema_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_post_unblinding_analysis_schema.json"
+    },
+    "reviewer_package": {
+      "allowed_content_classes": [
+        "alias-labeled complete MP4 files",
+        "alias-labeled technical metadata",
+        "alias-labeled review aids",
+        "batch05_visual_review_schema.json",
+        "blank blind review record"
+      ],
+      "excluded_path_classes": [
+        "all design, audit, and fix reports",
+        "all package files containing treatment labels",
+        "all filenames containing CONTROL or CANDIDATE"
+      ],
+      "excluded_paths": [
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_design_manifest.json",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_task_matrix.csv",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_treatment_diff_matrix.json",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/CAL002_BATCH05_DESIGN_SPEC.md",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_budget_and_authority_plan.json",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_post_unblinding_analysis_schema.json",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_design_evidence_manifest.json"
+      ],
+      "filenames_must_use_blind_aliases": true,
+      "treatment_mapping_files_excluded": true
+    }
+  },
+  "schema_version": "CAL002_BATCH05_DESIGN_MANIFEST_V0_2",
+  "status": "TARGETED_FIX_APPLIED_PENDING_INDEPENDENT_REAUDIT",
   "task_ids": [
     "CAL002-B05-PUSH-CONTROL-R01",
     "CAL002-B05-PUSH-CONTROL-R02",

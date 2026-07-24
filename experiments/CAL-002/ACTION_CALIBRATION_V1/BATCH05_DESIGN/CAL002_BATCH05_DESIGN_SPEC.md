@@ -356,7 +356,9 @@ The structured schema records explicit enums for:
 `identity_consistency`, `full_body_visibility`, `camera_compliance`,
 `technical_validity`, and `overall_visual_usability`.
 
-Free text is optional supporting evidence and never the sole result field.
+Per-video free-text notes are optional supporting evidence and never the sole
+result field. A non-empty `reviewer_rationale` is required for every blind
+pair judgment.
 
 ## 15. Blind Review
 
@@ -370,8 +372,54 @@ Reviewer-facing aliases:
 - `IMPACT_PAIR_01_A`, `IMPACT_PAIR_01_B`
 - `IMPACT_PAIR_02_A`, `IMPACT_PAIR_02_B`
 
-Treatment mapping is stored in the design manifest and task matrix, separate
-from `batch05_visual_review_schema.json`.
+Review uses two strictly separated stages.
+
+### 15.1 Blind reviewer stage
+
+The reviewer receives aliases and records only:
+
+- `pair_id`;
+- `comparison_validity`;
+- A/B `preference`;
+- a non-empty `reviewer_rationale`.
+
+The blind reviewer does not record `candidate_clear_advantage` and must not
+know Candidate/Control identity. The blind record is finalized and hashed
+before treatment mapping is revealed.
+
+The reviewer-facing package may contain only alias-labeled complete MP4 files,
+alias-labeled technical metadata, alias-labeled review aids,
+`batch05_visual_review_schema.json`, and a blank blind review record.
+Review-facing media filenames must use blind aliases.
+
+The reviewer package must exclude:
+
+- `batch05_design_manifest.json`;
+- `batch05_task_matrix.csv`;
+- `batch05_treatment_diff_matrix.json`;
+- `CAL002_BATCH05_DESIGN_SPEC.md`;
+- `batch05_budget_and_authority_plan.json`;
+- `batch05_post_unblinding_analysis_schema.json`;
+- `batch05_design_evidence_manifest.json`;
+- all design, audit, and fix reports;
+- all package files containing treatment labels;
+- every filename containing `CONTROL` or `CANDIDATE`.
+
+This design rule does not create or authorize a review package.
+
+### 15.2 Post-unblinding derived-analysis stage
+
+Only after the blind record is finalized and its SHA-256 is recorded may the
+sealed mapping in the design manifest and task matrix be revealed.
+`batch05_post_unblinding_analysis_schema.json` then records:
+
+- mapping-source path, byte-length, and SHA-256 bindings;
+- Candidate and Control side derivation for each pair;
+- derived `candidate_clear_advantage`;
+- family-level decisions and non-empty rationales.
+
+Candidate advantage is therefore derived after unblinding, never asserted by
+the blind reviewer.
 
 ## 16. Phase-1 Decision Rules
 
@@ -449,6 +497,7 @@ locked: false
 
 ## 20. Next Phase
 
-`CAL002_BATCH05_DESIGN_INDEPENDENT_NO_LIVE_AUDIT`
+`CAL002_BATCH05_DESIGN_TARGETED_FIX_INDEPENDENT_NO_LIVE_AUDIT`
 
-The next phase may audit this design only. It creates no live authority.
+The next phase may independently re-audit only the bounded blind-review schema
+fix. It creates no live authority.

@@ -1,5 +1,5 @@
 {
-  "$id": "CAL002_BATCH05_VISUAL_REVIEW_SCHEMA_V0_1",
+  "$id": "CAL002_BATCH05_BLIND_VISUAL_REVIEW_SCHEMA_V0_2",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "additionalProperties": false,
   "properties": {
@@ -7,9 +7,6 @@
       "items": {
         "additionalProperties": false,
         "properties": {
-          "candidate_clear_advantage": {
-            "type": "boolean"
-          },
           "comparison_validity": {
             "enum": [
               "VALID",
@@ -38,6 +35,7 @@
             "type": "string"
           },
           "reviewer_rationale": {
+            "minLength": 1,
             "type": "string"
           }
         },
@@ -45,7 +43,7 @@
           "pair_id",
           "comparison_validity",
           "preference",
-          "candidate_clear_advantage"
+          "reviewer_rationale"
         ],
         "type": "object"
       },
@@ -54,7 +52,7 @@
       "type": "array"
     },
     "schema_version": {
-      "const": "CAL002_BATCH05_VISUAL_REVIEW_RECORD_V0_1"
+      "const": "CAL002_BATCH05_BLIND_VISUAL_REVIEW_RECORD_V0_2"
     },
     "video_reviews": {
       "items": {
