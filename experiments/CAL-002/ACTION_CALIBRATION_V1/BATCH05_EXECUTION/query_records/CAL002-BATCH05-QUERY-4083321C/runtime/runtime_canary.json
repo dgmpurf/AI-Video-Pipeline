@@ -1,0 +1,64 @@
+{
+  "authorization_activated": true,
+  "authorization_consumed": true,
+  "command_counts": {
+    "download": 0,
+    "query_result": 0,
+    "query_result_help": 1,
+    "submit": 0,
+    "user_credit": 0,
+    "version": 1
+  },
+  "completed_at": "2026-07-24T14:54:43.946Z",
+  "dreamina_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "passed": true,
+  "query_result_help": {
+    "argv": [
+      "C:/Users/msjpurf/bin/dreamina.exe",
+      "query_result",
+      "-h"
+    ],
+    "attempted": true,
+    "download_dir_optional": true,
+    "download_dir_supported": true,
+    "exit_code": 0,
+    "no_implicit_retry": true,
+    "no_implicit_submit": true,
+    "no_mandatory_download_path": true,
+    "passed": true,
+    "query_without_download_dir_is_query_only": true,
+    "shell": false,
+    "stderr": {
+      "byte_length": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout": {
+      "byte_length": 388,
+      "sha256": "74f728cc4d3ae36fb3dcf773e85ed003637c28d048d1cad77a29b59b9bd4b171"
+    },
+    "submit_id_supported": true
+  },
+  "schema_version": "CAL002_BATCH05_PHASE1_QUERY_RUNTIME_CANARY_V0_1",
+  "started_at": "2026-07-24T14:54:39.015Z",
+  "stop_reason": null,
+  "version": {
+    "argv": [
+      "C:/Users/msjpurf/bin/dreamina.exe",
+      "version"
+    ],
+    "exit_code": 0,
+    "expected_build_time": "2026-06-26T06:36:39Z",
+    "expected_commit": "2a20fff",
+    "expected_version": "2a20fff-dirty",
+    "passed": true,
+    "shell": false,
+    "stderr": {
+      "byte_length": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout": {
+      "byte_length": 96,
+      "sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0"
+    }
+  }
+}

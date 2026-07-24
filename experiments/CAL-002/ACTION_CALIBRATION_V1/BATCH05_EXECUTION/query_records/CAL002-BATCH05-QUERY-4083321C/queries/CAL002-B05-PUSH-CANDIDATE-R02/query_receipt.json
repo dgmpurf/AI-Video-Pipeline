@@ -1,0 +1,84 @@
+{
+  "action_family": "push_reaction",
+  "authorization_id": "CAL002-BATCH05-QUERY-AUTH-4083321C",
+  "blind_alias": "PUSH_PAIR_02_A",
+  "counters_and_boundaries": {
+    "batch_called": false,
+    "download_called": false,
+    "final_master": false,
+    "locked": false,
+    "login_or_checklogin_called": false,
+    "media_created": false,
+    "new_submit_called": false,
+    "query_call_count_for_submit_id": 1,
+    "resubmit_called": false,
+    "retry_called": false,
+    "review_artifacts_created": false,
+    "session_operation_called": false,
+    "user_credit_called": false
+  },
+  "parsed_result": {
+    "audio_count": 0,
+    "credentials_detected": false,
+    "fail_reason": null,
+    "field_name_mapping": {
+      "gen_status": [
+        "gen_status"
+      ],
+      "log_id": [],
+      "queue_status": [
+        "queue_status"
+      ],
+      "submit_id": [
+        "submit_id"
+      ]
+    },
+    "gen_status": "success",
+    "has_downloadable_result": true,
+    "image_count": 0,
+    "log_id": null,
+    "parse_error": null,
+    "parse_succeeded": true,
+    "queue_status": "Finish",
+    "remote_failure_code": null,
+    "remote_status_classification": "terminal_success",
+    "result_count": 1,
+    "sanitized_result_structure_sha256": "24ebbefd5e7583afc770cb75aabd93964fdbabeb77f50974d33ee592bb6a89eb",
+    "signed_url_count_detected": 1,
+    "signed_urls_persisted": false,
+    "video_count": 1
+  },
+  "prior_submit_receipt": {
+    "byte_length": 2744,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-PUSH-CANDIDATE-R02/submit_receipt.json",
+    "sha256": "3ea0464dd76a585f12fc30f3ce0b8e0e473beb2e46a01dc0b7c8ea36a88d7168",
+    "worktree_equals_head": true
+  },
+  "query": {
+    "argv_element_count": 4,
+    "argv_hash_encoding": "UTF-8 JSON.stringify(argv) without terminal LF",
+    "argv_sha256": "bb726584f95fb81b2c9cea8175e8ae7cfc5895c2e1514f6163eb05884458867e",
+    "command_attempted": true,
+    "download_dir_present": false,
+    "ended_at": "2026-07-24T14:58:34.331Z",
+    "exit_code": 0,
+    "runner_error": null,
+    "shell": false,
+    "started_at": "2026-07-24T14:58:31.360Z"
+  },
+  "query_execution_id": "CAL002-BATCH05-QUERY-4083321C",
+  "query_sequence_number": 4,
+  "raw_streams": {
+    "stderr_byte_length": 0,
+    "stderr_persisted": false,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_byte_length": 1277,
+    "stdout_persisted": false,
+    "stdout_sha256": "93d26a9b91f8219fdbd76e4d7c0e6c280960fdb6909e6aa039137acefee58a69"
+  },
+  "replicate": "R02",
+  "schema_version": "CAL002_BATCH05_PHASE1_QUERY_RECEIPT_V0_1",
+  "submit_id": "b506bd61-3b16-4f5c-9209-4dfc49356284",
+  "task_id": "CAL002-B05-PUSH-CANDIDATE-R02",
+  "treatment": "candidate"
+}

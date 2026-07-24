@@ -1,0 +1,172 @@
+{
+  "approval": {
+    "approval_sha256": "4083321c8cc1e712c021dab774a7edc26bb159b405c992df01b2c94ee5bcd7f9",
+    "exact_approval_verified": true
+  },
+  "audit_note": "A preliminary read-only Windows path-normalization check produced a local false positive; the corrected check found exactly the 18 expected prior submit-ID occurrence files and no prior query evidence. No repository mutation or Dreamina call occurred during that diagnostic.",
+  "checked_at": "2026-07-24T14:54:15.330Z",
+  "dreamina": {
+    "executable_input": "C:/Users/msjpurf/bin/dreamina.exe",
+    "executable_resolved": "C:/Users/msjpurf/bin/dreamina.exe",
+    "path_match": true
+  },
+  "duplicate_prevention": {
+    "no_prior_query_result_recorded_for_bound_submit_ids": true,
+    "prior_query_execution_id_present": false,
+    "query_execution_id": "CAL002-BATCH05-QUERY-4083321C",
+    "query_report_absent": true,
+    "query_root_absent_before_creation": true
+  },
+  "passed": true,
+  "pre_existing_untracked_baseline": {
+    "canonical_sha256": "c653a0c2ee0df98d7627370401dfa7ce0c0957fac3cafb261e368a1be61621c9",
+    "entries": [
+      ".vs/",
+      "experiments/CAL-001/execution_records/P3B_R2_T2/evidence/",
+      "experiments/CAL-001/execution_records/P3B_R2_T4/evidence/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH02_EXECUTION/execution_records/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH03_EXECUTION/execution_records/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_EXECUTION/execution_records/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/PILOT_R1/BATCH_01/execution_records/",
+      "productions/chi_yan_tian_qiong/edits/",
+      "productions/chi_yan_tian_qiong/review_artifacts/",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_INDEPENDENT_PACKAGE_REVIEW_RESULT.md",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_QUERY_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH02_DESIGN_REVIEW_RESULT.md",
+      "reports/CAL002_BATCH02_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH02_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH02_QUERY_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH03_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH03_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH03_QUERY_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH04_DOWNLOAD_AUTHORIZATION_EXECUTION_RECONCILIATION_RESULT.md",
+      "reports/CAL002_BATCH04_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH04_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH04_POST_VISUAL_REVIEW_SOURCE_UPDATE_EVIDENCE_PACK.md",
+      "reports/CAL002_BATCH04_QUERY_EXECUTION_RESULT.md",
+      "reports/context_recovery/",
+      "reports/investor/"
+    ],
+    "entry_count": 27
+  },
+  "repository": {
+    "branch": "main",
+    "commit_subject": "execute(cal002): submit Batch05 Phase1 fixed tasks",
+    "head": "3abf7128057749fc1976234d6ac15ecbd713e37f",
+    "head_origin_aligned": true,
+    "origin_main": "3abf7128057749fc1976234d6ac15ecbd713e37f",
+    "parent": "1316436ec2ebec3b4c45172f94b6b85bfb9ac241",
+    "root": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+    "staged_file_count": 0,
+    "tracked_modification_count": 0
+  },
+  "schema_version": "CAL002_BATCH05_PHASE1_QUERY_STATIC_PREFLIGHT_V0_1",
+  "sources": {
+    "clean": true,
+    "staged_modification_count": 0,
+    "tracked_modification_count": 0
+  },
+  "submit_execution": {
+    "accepted_submits": 8,
+    "accounting_delta": 560,
+    "all_files_equal_head": true,
+    "attempted_submits": 8,
+    "checkpoint": "3abf7128057749fc1976234d6ac15ecbd713e37f",
+    "evidence_manifest_artifact_count": 39,
+    "evidence_manifest_mismatch_count": 0,
+    "execution_id": "CAL002-BATCH05-LIVE-2874895E",
+    "failed_submits": 0,
+    "planned_submits": 8,
+    "post_credit": 4085,
+    "pre_credit": 4645,
+    "prior_download_calls": 0,
+    "prior_query_calls": 0,
+    "prior_root": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E",
+    "receipt_binding_mismatch_count": 0,
+    "report": {
+      "byte_length": 6424,
+      "relative_path": "reports/CAL002_BATCH05_PHASE1_LIVE_SUBMIT_EXECUTION_RESULT.md",
+      "sha256": "7cc03c19e446f16b8b645755426aa52d1c53fdb580384456da604588f617b9b2",
+      "worktree_equals_head": true
+    },
+    "total_cost": 560,
+    "tracked_file_count": 39,
+    "unit_cost": 70
+  },
+  "task_bindings": [
+    {
+      "action_family": "push_reaction",
+      "blind_alias": "PUSH_PAIR_01_A",
+      "replicate": "R01",
+      "sequence": 1,
+      "submit_id": "f3663d7f-33dc-4937-b6e1-20c6be10a0d8",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R01",
+      "treatment": "control"
+    },
+    {
+      "action_family": "push_reaction",
+      "blind_alias": "PUSH_PAIR_02_B",
+      "replicate": "R02",
+      "sequence": 2,
+      "submit_id": "03a03b27-1e3d-48e7-9122-7fdaea7df0d1",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R02",
+      "treatment": "control"
+    },
+    {
+      "action_family": "push_reaction",
+      "blind_alias": "PUSH_PAIR_01_B",
+      "replicate": "R01",
+      "sequence": 3,
+      "submit_id": "866311e6-be9b-4850-a798-9e74d4a3bce9",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R01",
+      "treatment": "candidate"
+    },
+    {
+      "action_family": "push_reaction",
+      "blind_alias": "PUSH_PAIR_02_A",
+      "replicate": "R02",
+      "sequence": 4,
+      "submit_id": "b506bd61-3b16-4f5c-9209-4dfc49356284",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R02",
+      "treatment": "candidate"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "blind_alias": "IMPACT_PAIR_01_B",
+      "replicate": "R01",
+      "sequence": 5,
+      "submit_id": "01193507-cb12-4116-aec4-9084063a61d9",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R01",
+      "treatment": "control"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "blind_alias": "IMPACT_PAIR_02_A",
+      "replicate": "R02",
+      "sequence": 6,
+      "submit_id": "924b3f58-d0bb-43b4-80e7-a45be940ce06",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R02",
+      "treatment": "control"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "blind_alias": "IMPACT_PAIR_01_A",
+      "replicate": "R01",
+      "sequence": 7,
+      "submit_id": "7453c063-e5d8-49aa-83f7-d4f8e8136697",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R01",
+      "treatment": "candidate"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "blind_alias": "IMPACT_PAIR_02_B",
+      "replicate": "R02",
+      "sequence": 8,
+      "submit_id": "dc64226b-d9dd-4d79-bba4-6bd16f5fa465",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R02",
+      "treatment": "candidate"
+    }
+  ]
+}

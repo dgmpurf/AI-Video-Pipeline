@@ -1,0 +1,84 @@
+{
+  "action_family": "brief_impact_recoil",
+  "authorization_id": "CAL002-BATCH05-QUERY-AUTH-4083321C",
+  "blind_alias": "IMPACT_PAIR_01_A",
+  "counters_and_boundaries": {
+    "batch_called": false,
+    "download_called": false,
+    "final_master": false,
+    "locked": false,
+    "login_or_checklogin_called": false,
+    "media_created": false,
+    "new_submit_called": false,
+    "query_call_count_for_submit_id": 1,
+    "resubmit_called": false,
+    "retry_called": false,
+    "review_artifacts_created": false,
+    "session_operation_called": false,
+    "user_credit_called": false
+  },
+  "parsed_result": {
+    "audio_count": 0,
+    "credentials_detected": false,
+    "fail_reason": null,
+    "field_name_mapping": {
+      "gen_status": [
+        "gen_status"
+      ],
+      "log_id": [],
+      "queue_status": [
+        "queue_status"
+      ],
+      "submit_id": [
+        "submit_id"
+      ]
+    },
+    "gen_status": "success",
+    "has_downloadable_result": true,
+    "image_count": 0,
+    "log_id": null,
+    "parse_error": null,
+    "parse_succeeded": true,
+    "queue_status": "Finish",
+    "remote_failure_code": null,
+    "remote_status_classification": "terminal_success",
+    "result_count": 1,
+    "sanitized_result_structure_sha256": "c2118b21bf8b62e914451ce726bd516fc3961a7a749c0752ff65c9613f7642e8",
+    "signed_url_count_detected": 1,
+    "signed_urls_persisted": false,
+    "video_count": 1
+  },
+  "prior_submit_receipt": {
+    "byte_length": 2762,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/execution_records/CAL002-BATCH05-LIVE-2874895E/submissions/CAL002-B05-IMPACT-CANDIDATE-R01/submit_receipt.json",
+    "sha256": "a4539be84ef6fd2a846ba570f9c3f644829336c96d8aa91f192c9954e3208972",
+    "worktree_equals_head": true
+  },
+  "query": {
+    "argv_element_count": 4,
+    "argv_hash_encoding": "UTF-8 JSON.stringify(argv) without terminal LF",
+    "argv_sha256": "58cac0dcc804471e276040b636bb129995e0b18094fe57cbbc71bcc1ac6227b2",
+    "command_attempted": true,
+    "download_dir_present": false,
+    "ended_at": "2026-07-24T14:58:43.717Z",
+    "exit_code": 0,
+    "runner_error": null,
+    "shell": false,
+    "started_at": "2026-07-24T14:58:40.743Z"
+  },
+  "query_execution_id": "CAL002-BATCH05-QUERY-4083321C",
+  "query_sequence_number": 7,
+  "raw_streams": {
+    "stderr_byte_length": 0,
+    "stderr_persisted": false,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_byte_length": 1276,
+    "stdout_persisted": false,
+    "stdout_sha256": "f346a84337e800cc409f7f61c0f6c9e9bec47c69a79643f3c5a0452917da9197"
+  },
+  "replicate": "R01",
+  "schema_version": "CAL002_BATCH05_PHASE1_QUERY_RECEIPT_V0_1",
+  "submit_id": "7453c063-e5d8-49aa-83f7-d4f8e8136697",
+  "task_id": "CAL002-B05-IMPACT-CANDIDATE-R01",
+  "treatment": "candidate"
+}
