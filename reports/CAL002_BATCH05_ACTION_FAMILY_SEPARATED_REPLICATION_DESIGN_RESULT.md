@@ -2,10 +2,11 @@
 
 ## 1. Executive Decision
 
-- Decision: `REVIEW_DERIVATION_INTEGRITY_FIX_APPLIED_PENDING_INDEPENDENT_AUDIT`
+- Decision: `IMPLEMENTATION_PROVENANCE_FIX_APPLIED_PENDING_INDEPENDENT_AUDIT`
 - Original design decision: `CAL002_BATCH05_DESIGN_READY_FOR_INDEPENDENT_NO_LIVE_AUDIT`
 - Independent audit finding: `CAL002_BATCH05_DESIGN_NEEDS_FIX_BLIND_REVIEW_SCHEMA`
 - Re-audit finding: `CAL002_BATCH05_TARGETED_FIX_NEEDS_SECOND_BOUNDED_SCHEMA_FIX`
+- Implementation-integrity audit finding: `CAL002_BATCH05_REVIEW_DERIVATION_INTEGRITY_FIX_NEEDS_FIX`
 - Goal identity: `CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_V0_1`
 - Task type: complete no-live experimental design
 - Fixed Phase-1 tasks: `8`
@@ -202,8 +203,9 @@ mapping is held in the design manifest and task matrix, separate from the
 review-facing schema. Complete MP4 review is mandatory; contact sheets and
 comparisons cannot replace it.
 
-The second bounded no-live fix preserves the two-stage review boundary and
-closes the remaining derivation-integrity gaps:
+The implementation-provenance fix preserves the two-stage review boundary,
+retains all earlier deterministic protections, and closes the two
+READY-blocking provenance gaps:
 
 1. Blind schema V0.3 fixes all eight aliases and four pair IDs in exact order,
    binds each alias to its action family, and rejects inconsistent
@@ -220,6 +222,15 @@ closes the remaining derivation-integrity gaps:
 6. Verify mode re-derives the complete output and requires exact byte equality,
    blocking blind-record substitution, mapping substitution, contradictory
    pair outcomes, and contradictory family decisions.
+7. The actual executing script must resolve to the expected committed
+   repository path. Its bytes, expected-path worktree bytes, and `HEAD` blob
+   bytes must all be identical before derive or verify proceeds.
+8. Blind and post-unblinding schema worktree bytes must equal their `HEAD`
+   blobs before parsing. Both fixed-order schema bindings are recorded in the
+   derived output with path, byte length, SHA-256, schema ID, record version,
+   and `worktree_equals_HEAD=true`.
+9. External runners, dirty tools, dirty schemas, substituted provenance
+   bindings, and earlier post-unblinding record versions safely block.
 
 The reviewer-facing package must contain only alias-labeled media, metadata,
 review aids, the blind schema, and a blank blind record. It must exclude the
@@ -241,6 +252,14 @@ Targeted-fix invariants:
 - Manual post-unblinding authoring permitted: `false`
 - Blind-record substitution blocked by verify mode: `true`
 - Mapping substitution blocked by verify mode: `true`
+- Executing script bound to expected committed path: `true`
+- Executing script bytes bound to `HEAD`: `true`
+- Blind schema bound to worktree/`HEAD` equality: `true`
+- Post-unblinding schema bound to worktree/`HEAD` equality: `true`
+- Both schema bindings recorded in derived output: `true`
+- External runners rejected: `true`
+- Dirty schemas rejected: `true`
+- Verify rechecks all provenance: `true`
 
 ## 18. Family-Level Decision Matrix
 
@@ -337,24 +356,28 @@ Any tie-breaker requires a separate future no-live design and human decision.
 - Blind validity/preference combinations: `PASS`
 - `candidate_clear_advantage` removed from blind record: `true`
 - Pair rationale universally required: `true`
-- Post-unblinding derived-analysis schema V0.2: `PASS`
+- Post-unblinding derived-analysis schema V0.3: `PASS`
 - Deterministic derivation tool added: `true`
+- Deterministic derivation tool V0.2 provenance binding: `PASS`
 - Derive and verify modes tested: `PASS`
 - Pair truth-table regression probes: `PASS`
 - Blind-substitution regression probes: `PASS`
 - Mapping-substitution regression probes: `PASS`
 - Family-decision regression probes: `PASS`
 - Deterministic byte-output regression probes: `PASS`
+- External-runner negative probes: `PASS`
+- Dirty-tool and dirty-schema negative probes: `PASS`
+- Schema-binding substitution probes: `PASS`
 - Reviewer-package exclusions defined: `true`
 - Prompt blueprints/tasks/budget/authority unchanged: `true`
 
 Next phase:
 
-`CAL002_BATCH05_REVIEW_DERIVATION_INTEGRITY_FIX_INDEPENDENT_NO_LIVE_AUDIT`
+`CAL002_BATCH05_REVIEW_DERIVATION_IMPLEMENTATION_PROVENANCE_FIX_INDEPENDENT_NO_LIVE_AUDIT`
 
 Final verdict:
 
-`REVIEW_DERIVATION_INTEGRITY_FIX_APPLIED_PENDING_INDEPENDENT_AUDIT`
+`IMPLEMENTATION_PROVENANCE_FIX_APPLIED_PENDING_INDEPENDENT_AUDIT`
 
 Safety state:
 

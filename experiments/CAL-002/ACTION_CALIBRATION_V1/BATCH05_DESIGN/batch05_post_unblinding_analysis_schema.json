@@ -414,6 +414,41 @@
       ],
       "type": "object"
     },
+    "schema_binding": {
+      "additionalProperties": false,
+      "properties": {
+        "byte_length": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "record_version": {
+          "type": "string"
+        },
+        "relative_path": {
+          "type": "string"
+        },
+        "schema_id": {
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "worktree_equals_HEAD": {
+          "const": true,
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "relative_path",
+        "byte_length",
+        "sha256",
+        "schema_id",
+        "record_version",
+        "worktree_equals_HEAD"
+      ],
+      "type": "object"
+    },
     "tool_binding": {
       "additionalProperties": false,
       "properties": {
@@ -421,27 +456,41 @@
           "minimum": 1,
           "type": "integer"
         },
+        "executing_file_equals_HEAD": {
+          "const": true,
+          "type": "boolean"
+        },
         "relative_path": {
           "const": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/tools/batch05_review_derivation.py"
+        },
+        "resolved_path_policy": {
+          "const": "ACTUAL_EXECUTING_PATH_MUST_EQUAL_EXPECTED_REPOSITORY_TOOL_RESOLVED_PATH"
         },
         "sha256": {
           "pattern": "^[0-9a-f]{64}$",
           "type": "string"
         },
         "tool_version": {
-          "const": "CAL002_BATCH05_REVIEW_DERIVATION_TOOL_V0_1"
+          "const": "CAL002_BATCH05_REVIEW_DERIVATION_TOOL_V0_2"
+        },
+        "worktree_equals_HEAD": {
+          "const": true,
+          "type": "boolean"
         }
       },
       "required": [
         "relative_path",
+        "resolved_path_policy",
         "byte_length",
         "sha256",
-        "tool_version"
+        "tool_version",
+        "worktree_equals_HEAD",
+        "executing_file_equals_HEAD"
       ],
       "type": "object"
     }
   },
-  "$id": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_SCHEMA_V0_2",
+  "$id": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_SCHEMA_V0_3",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "additionalProperties": false,
   "properties": {
@@ -600,8 +649,56 @@
       ],
       "type": "array"
     },
+    "schema_source_bindings": {
+      "items": false,
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/schema_binding"
+            },
+            {
+              "properties": {
+                "record_version": {
+                  "const": "CAL002_BATCH05_BLIND_VISUAL_REVIEW_RECORD_V0_3"
+                },
+                "relative_path": {
+                  "const": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_visual_review_schema.json"
+                },
+                "schema_id": {
+                  "const": "CAL002_BATCH05_BLIND_VISUAL_REVIEW_SCHEMA_V0_3"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/schema_binding"
+            },
+            {
+              "properties": {
+                "record_version": {
+                  "const": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_RECORD_V0_3"
+                },
+                "relative_path": {
+                  "const": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_post_unblinding_analysis_schema.json"
+                },
+                "schema_id": {
+                  "const": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_SCHEMA_V0_3"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "type": "array"
+    },
     "schema_version": {
-      "const": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_RECORD_V0_2"
+      "const": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_RECORD_V0_3"
     }
   },
   "required": [
@@ -612,6 +709,7 @@
     "blind_review_record_finalized_before_unblinding",
     "blind_review_record_sha256",
     "mapping_source_bindings",
+    "schema_source_bindings",
     "pair_derivations",
     "family_decisions"
   ],

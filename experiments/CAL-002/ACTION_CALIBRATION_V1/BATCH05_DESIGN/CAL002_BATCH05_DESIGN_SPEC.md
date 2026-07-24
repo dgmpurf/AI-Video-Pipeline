@@ -423,7 +423,7 @@ This design rule does not create or authorize a review package.
 
 ### 15.2 Post-unblinding derived-analysis stage
 
-Post-unblinding schema V0.2 describes deterministic tool output. Manual
+Post-unblinding schema V0.3 describes deterministic tool output. Manual
 derived-record authoring is not permitted. The required tool is:
 
 ```text
@@ -435,7 +435,27 @@ python batch05_review_derivation.py derive --repo-root <repo> --blind-record <bl
 python batch05_review_derivation.py verify --repo-root <repo> --blind-record <blind.json> --derived-record <derived.json>
 ```
 
-Before derivation, the tool reads the finalized blind bytes and validates
+Before either derivation or verification processes a record, the tool resolves
+`--repo-root`, the required tool path below that root, and its actual executing
+`Path(__file__)`. The actual resolved path must equal the required repository
+path. The actual executing bytes, required-path worktree bytes, and
+`HEAD:<tool path>` bytes must then be identical. The derived tool binding is
+calculated from the verified executing bytes and records the fixed resolved
+path policy, byte length, SHA-256, tool version, worktree-to-HEAD equality, and
+executing-file-to-HEAD equality. An external copy, different path, symlink to a
+different resolved path, dirty expected tool, or missing `HEAD` blob safely
+blocks before output creation.
+
+The blind and post-unblinding schemas are also committed inputs. The tool reads
+each schema from the worktree and `HEAD`, requires exact byte identity, then
+performs strict canonical JSON parsing and Draft 2020-12 schema validation.
+The derived record contains exactly two fixed-order schema bindings, one for
+the blind schema and one for the post-unblinding schema. Each binding records
+the fixed relative path, byte length, SHA-256, schema ID, record version, and
+`worktree_equals_HEAD=true`. Dirty schemas and manually substituted schema
+bindings safely block.
+
+After provenance passes, the tool reads the finalized blind bytes and validates
 strict deterministic JSON against blind schema V0.3. It reads the design
 manifest and task matrix from both the worktree and `HEAD`, requires byte
 identity, calculates byte lengths and SHA-256 values itself, cross-validates
@@ -480,9 +500,12 @@ The tool applies this fixed precedence:
    clear advantage, and both pairs record no clear advantage.
 5. `INCONCLUSIVE_REPLICATION` otherwise.
 
-`verify` re-reads the blind record and committed mapping, re-derives the entire
-record, and requires byte-for-byte equality with the supplied derived record.
-It rejects blind substitution, retained old hashes, mapping drift, arbitrary
+`verify` independently rechecks the actual executing tool path and bytes, both
+schema worktree/`HEAD` pairs, the blind record, and both committed mapping
+sources. It re-derives the entire record and requires byte-for-byte equality
+with the supplied derived record. It rejects tool or schema binding
+substitution, external runners, dirty tool or schema bytes, earlier record
+versions, blind substitution, retained old hashes, mapping drift, arbitrary
 mapping hashes, pair contradictions, family-decision contradictions, and any
 non-canonical output. A schema-valid derived record is not authoritative
 without successful verification.
@@ -553,7 +576,7 @@ locked: false
 
 ## 20. Next Phase
 
-`CAL002_BATCH05_REVIEW_DERIVATION_INTEGRITY_FIX_INDEPENDENT_NO_LIVE_AUDIT`
+`CAL002_BATCH05_REVIEW_DERIVATION_IMPLEMENTATION_PROVENANCE_FIX_INDEPENDENT_NO_LIVE_AUDIT`
 
-The next phase may independently re-audit only this bounded review-derivation
-integrity fix. It creates no live authority.
+The next phase may independently re-audit only the bounded executing-tool and
+schema-provenance fix. It creates no live authority.

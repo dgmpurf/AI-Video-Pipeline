@@ -15,10 +15,13 @@ from typing import Any
 from jsonschema import Draft202012Validator
 
 
-TOOL_VERSION = "CAL002_BATCH05_REVIEW_DERIVATION_TOOL_V0_1"
+TOOL_VERSION = "CAL002_BATCH05_REVIEW_DERIVATION_TOOL_V0_2"
 TOOL_RELATIVE_PATH = (
     "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/"
     "tools/batch05_review_derivation.py"
+)
+TOOL_RESOLVED_PATH_POLICY = (
+    "ACTUAL_EXECUTING_PATH_MUST_EQUAL_EXPECTED_REPOSITORY_TOOL_RESOLVED_PATH"
 )
 BLIND_SCHEMA_RELATIVE_PATH = (
     "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/"
@@ -36,6 +39,10 @@ TASK_MATRIX_RELATIVE_PATH = (
     "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/"
     "batch05_task_matrix.csv"
 )
+BLIND_SCHEMA_ID = "CAL002_BATCH05_BLIND_VISUAL_REVIEW_SCHEMA_V0_3"
+BLIND_RECORD_VERSION = "CAL002_BATCH05_BLIND_VISUAL_REVIEW_RECORD_V0_3"
+POST_SCHEMA_ID = "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_SCHEMA_V0_3"
+POST_RECORD_VERSION = "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_RECORD_V0_3"
 
 VIDEO_ALIASES = (
     "PUSH_PAIR_01_A",
@@ -205,15 +212,43 @@ def _validate_schema_instance(
         raise DerivationError(f"{label}: schema validation failed: {details}")
 
 
-def _load_schema(repo_root: Path, relative_path: str) -> dict[str, Any]:
-    value, _ = strict_json_load_path(repo_root / relative_path, label=relative_path)
+def _load_committed_schema(
+    repo_root: Path,
+    relative_path: str,
+    *,
+    expected_schema_id: str,
+    expected_record_version: str,
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    raw = _require_committed_worktree_bytes(repo_root, relative_path)
+    value = strict_json_load_bytes(raw, label=relative_path)
     if not isinstance(value, dict):
         raise DerivationError(f"{relative_path}: schema root must be an object")
     try:
         Draft202012Validator.check_schema(value)
     except Exception as exc:
         raise DerivationError(f"{relative_path}: invalid JSON Schema: {exc}") from exc
-    return value
+    schema_id = value.get("$id")
+    record_version = (
+        value.get("properties", {}).get("schema_version", {}).get("const")
+    )
+    if schema_id != expected_schema_id:
+        raise DerivationError(
+            f"{relative_path}: schema ID mismatch: "
+            f"{schema_id!r} != {expected_schema_id!r}"
+        )
+    if record_version != expected_record_version:
+        raise DerivationError(
+            f"{relative_path}: record version mismatch: "
+            f"{record_version!r} != {expected_record_version!r}"
+        )
+    return value, {
+        "relative_path": relative_path,
+        "byte_length": len(raw),
+        "sha256": sha256_bytes(raw),
+        "schema_id": schema_id,
+        "record_version": record_version,
+        "worktree_equals_HEAD": True,
+    }
 
 
 def _repo_relative_path(repo_root: Path, path: Path) -> str:
@@ -248,11 +283,13 @@ def _require_committed_worktree_bytes(
     try:
         worktree = (repo_root / relative_path).read_bytes()
     except OSError as exc:
-        raise DerivationError(f"cannot read mapping source {relative_path}: {exc}") from exc
+        raise DerivationError(
+            f"cannot read committed input {relative_path}: {exc}"
+        ) from exc
     committed = _git_head_bytes(repo_root, relative_path)
     if worktree != committed:
         raise DerivationError(
-            f"mapping source differs from committed HEAD bytes: {relative_path}"
+            f"committed input differs from committed HEAD bytes: {relative_path}"
         )
     return worktree
 
@@ -395,15 +432,14 @@ def validate_blind_record(
 
 
 def load_blind_record(
-    repo_root: Path,
     blind_record_path: Path,
+    blind_schema: dict[str, Any],
 ) -> tuple[dict[str, Any], bytes]:
     record, raw = strict_json_load_path(
         blind_record_path,
         label="blind review record",
     )
-    schema = _load_schema(repo_root, BLIND_SCHEMA_RELATIVE_PATH)
-    return validate_blind_record(record, schema), raw
+    return validate_blind_record(record, blind_schema), raw
 
 
 def derive_pair(
@@ -711,23 +747,81 @@ def derive_family_records(
 
 
 def _tool_binding(repo_root: Path) -> dict[str, Any]:
-    raw = _require_committed_worktree_bytes(repo_root, TOOL_RELATIVE_PATH)
+    try:
+        actual_path = Path(__file__).resolve(strict=True)
+        expected_path = (repo_root / TOOL_RELATIVE_PATH).resolve(strict=True)
+    except OSError as exc:
+        raise DerivationError(f"cannot resolve executing tool path: {exc}") from exc
+    if actual_path != expected_path:
+        raise DerivationError(
+            "actual executing tool path differs from the required repository path: "
+            f"{actual_path} != {expected_path}"
+        )
+    try:
+        actual_raw = actual_path.read_bytes()
+        worktree_raw = expected_path.read_bytes()
+    except OSError as exc:
+        raise DerivationError(f"cannot read executing tool bytes: {exc}") from exc
+    committed_raw = _git_head_bytes(repo_root, TOOL_RELATIVE_PATH)
+    if worktree_raw != committed_raw:
+        raise DerivationError(
+            f"committed input differs from committed HEAD bytes: {TOOL_RELATIVE_PATH}"
+        )
+    if actual_raw != worktree_raw or actual_raw != committed_raw:
+        raise DerivationError(
+            "actual executing tool bytes do not equal repository worktree and HEAD"
+        )
     return {
         "relative_path": TOOL_RELATIVE_PATH,
-        "byte_length": len(raw),
-        "sha256": sha256_bytes(raw),
+        "resolved_path_policy": TOOL_RESOLVED_PATH_POLICY,
+        "byte_length": len(actual_raw),
+        "sha256": sha256_bytes(actual_raw),
         "tool_version": TOOL_VERSION,
+        "worktree_equals_HEAD": True,
+        "executing_file_equals_HEAD": True,
     }
 
 
-def derive_record(
-    repo_root: Path,
+def _resolve_repo_root(repo_root: Path) -> Path:
+    try:
+        resolved_root = repo_root.resolve(strict=True)
+    except OSError as exc:
+        raise DerivationError(f"cannot resolve repository root: {exc}") from exc
+    if not resolved_root.is_dir():
+        raise DerivationError(f"repository root is not a directory: {resolved_root}")
+    return resolved_root
+
+
+def _load_provenance_context(repo_root: Path) -> dict[str, Any]:
+    tool_binding = _tool_binding(repo_root)
+    blind_schema, blind_binding = _load_committed_schema(
+        repo_root,
+        BLIND_SCHEMA_RELATIVE_PATH,
+        expected_schema_id=BLIND_SCHEMA_ID,
+        expected_record_version=BLIND_RECORD_VERSION,
+    )
+    post_schema, post_binding = _load_committed_schema(
+        repo_root,
+        POST_SCHEMA_RELATIVE_PATH,
+        expected_schema_id=POST_SCHEMA_ID,
+        expected_record_version=POST_RECORD_VERSION,
+    )
+    return {
+        "tool_binding": tool_binding,
+        "blind_schema": blind_schema,
+        "post_schema": post_schema,
+        "schema_source_bindings": [blind_binding, post_binding],
+    }
+
+
+def _derive_record_with_provenance(
+    resolved_root: Path,
     blind_record_path: Path,
+    provenance: dict[str, Any],
 ) -> dict[str, Any]:
-    resolved_root = repo_root.resolve()
     blind_record, blind_raw = load_blind_record(
-        resolved_root,
         blind_record_path.resolve(),
+        provenance["blind_schema"],
     )
     mapping, mapping_bindings = load_verified_mapping(resolved_root)
     pair_derivations = derive_pair_records(blind_record, mapping)
@@ -737,8 +831,9 @@ def derive_record(
         pair_derivations,
     )
     record = {
-        "schema_version": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_RECORD_V0_2",
-        "derivation_tool_binding": _tool_binding(resolved_root),
+        "schema_version": POST_RECORD_VERSION,
+        "derivation_tool_binding": provenance["tool_binding"],
+        "schema_source_bindings": provenance["schema_source_bindings"],
         "blind_review_record_path": _repo_relative_path(
             resolved_root,
             blind_record_path,
@@ -750,13 +845,25 @@ def derive_record(
         "pair_derivations": pair_derivations,
         "family_decisions": family_decisions,
     }
-    post_schema = _load_schema(resolved_root, POST_SCHEMA_RELATIVE_PATH)
     _validate_schema_instance(
         record,
-        post_schema,
+        provenance["post_schema"],
         label="post-unblinding derived record",
     )
     return record
+
+
+def derive_record(
+    repo_root: Path,
+    blind_record_path: Path,
+) -> dict[str, Any]:
+    resolved_root = _resolve_repo_root(repo_root)
+    provenance = _load_provenance_context(resolved_root)
+    return _derive_record_with_provenance(
+        resolved_root,
+        blind_record_path,
+        provenance,
+    )
 
 
 def derive_record_bytes(repo_root: Path, blind_record_path: Path) -> bytes:
@@ -768,19 +875,24 @@ def verify_derived_record(
     blind_record_path: Path,
     derived_record_path: Path,
 ) -> dict[str, Any]:
+    resolved_root = _resolve_repo_root(repo_root)
+    provenance = _load_provenance_context(resolved_root)
     supplied, supplied_raw = strict_json_load_path(
         derived_record_path,
         label="post-unblinding derived record",
     )
     if not isinstance(supplied, dict):
         raise DerivationError("post-unblinding derived record must be an object")
-    post_schema = _load_schema(repo_root.resolve(), POST_SCHEMA_RELATIVE_PATH)
     _validate_schema_instance(
         supplied,
-        post_schema,
+        provenance["post_schema"],
         label="post-unblinding derived record",
     )
-    expected = derive_record(repo_root.resolve(), blind_record_path.resolve())
+    expected = _derive_record_with_provenance(
+        resolved_root,
+        blind_record_path.resolve(),
+        provenance,
+    )
     expected_raw = canonical_json_bytes(expected)
     if supplied_raw != expected_raw:
         raise DerivationError(

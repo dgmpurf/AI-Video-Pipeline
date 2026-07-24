@@ -4,8 +4,10 @@ import copy
 import hashlib
 import importlib.util
 import json
+import os
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 from types import ModuleType
 
@@ -25,8 +27,12 @@ TOOL_PATH = (
 )
 
 
-def _load_tool() -> ModuleType:
-    spec = importlib.util.spec_from_file_location("batch05_review_derivation", TOOL_PATH)
+def _load_tool(path: Path = TOOL_PATH) -> ModuleType:
+    module_name = (
+        "batch05_review_derivation_"
+        + hashlib.sha256(str(path).encode("utf-8")).hexdigest()[:12]
+    )
+    spec = importlib.util.spec_from_file_location(module_name, path)
     assert spec is not None and spec.loader is not None
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -34,6 +40,10 @@ def _load_tool() -> ModuleType:
 
 
 tool = _load_tool()
+
+
+def _load_repo_tool(repo: Path) -> ModuleType:
+    return _load_tool(repo / tool.TOOL_RELATIVE_PATH)
 
 
 def _git(repo: Path, *args: str) -> subprocess.CompletedProcess[bytes]:
@@ -76,6 +86,23 @@ def _make_repo(tmp_path: Path) -> Path:
 def _commit_all(repo: Path, message: str = "fixture update") -> None:
     _git(repo, "add", "--all")
     _git(repo, "commit", "-q", "-m", message)
+
+
+def _run_cli(
+    script: Path,
+    repo: Path,
+    *args: str | Path,
+) -> subprocess.CompletedProcess[bytes]:
+    env = os.environ.copy()
+    env["PYTHONDONTWRITEBYTECODE"] = "1"
+    return subprocess.run(
+        [sys.executable, str(script), *(str(arg) for arg in args)],
+        cwd=repo,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        env=env,
+        check=False,
+    )
 
 
 def _video_review(alias: str) -> dict[str, object]:
@@ -152,7 +179,8 @@ def _assert_blind_rejected(repo: Path, record: dict[str, object]) -> None:
 
 
 def _derive_to_file(repo: Path, blind: Path) -> tuple[dict[str, object], Path]:
-    record = tool.derive_record(repo, blind)
+    repo_tool = _load_repo_tool(repo)
+    record = repo_tool.derive_record(repo, blind)
     path = _write_json(repo / "review" / "derived.json", record)
     return record, path
 
@@ -417,7 +445,7 @@ def test_post_schema_rejects_audit_pair_contradictions(
 ) -> None:
     repo = _make_repo(tmp_path)
     blind = _blind_path(repo)
-    record = tool.derive_record(repo, blind)
+    record = _load_repo_tool(repo).derive_record(repo, blind)
     record["pair_derivations"][0].update(changes)
     validator = Draft202012Validator(_schema(repo, tool.POST_SCHEMA_RELATIVE_PATH))
     assert not validator.is_valid(record)
@@ -440,8 +468,9 @@ def test_old_derived_record_fails_after_blind_substitution(tmp_path: Path) -> No
     changed = _blind_record()
     changed["pair_reviews"][0]["preference"] = "A_CLEARLY_BETTER"
     _write_json(blind, changed)
-    with pytest.raises(tool.DerivationError):
-        tool.verify_derived_record(repo, blind, derived)
+    repo_tool = _load_repo_tool(repo)
+    with pytest.raises(repo_tool.DerivationError):
+        repo_tool.verify_derived_record(repo, blind, derived)
 
 
 def test_manual_copied_blind_value_change_fails_verify(tmp_path: Path) -> None:
@@ -453,8 +482,9 @@ def test_manual_copied_blind_value_change_fails_verify(tmp_path: Path) -> None:
     pair["candidate_clear_advantage"] = True
     pair["derivation_class"] = "CANDIDATE_CLEAR_ADVANTAGE"
     _write_json(derived, record)
-    with pytest.raises(tool.DerivationError):
-        tool.verify_derived_record(repo, blind, derived)
+    repo_tool = _load_repo_tool(repo)
+    with pytest.raises(repo_tool.DerivationError):
+        repo_tool.verify_derived_record(repo, blind, derived)
 
 
 def test_arbitrary_mapping_hash_fails_verify(tmp_path: Path) -> None:
@@ -463,8 +493,9 @@ def test_arbitrary_mapping_hash_fails_verify(tmp_path: Path) -> None:
     record, derived = _derive_to_file(repo, blind)
     record["mapping_source_bindings"][0]["sha256"] = "0" * 64
     _write_json(derived, record)
-    with pytest.raises(tool.DerivationError):
-        tool.verify_derived_record(repo, blind, derived)
+    repo_tool = _load_repo_tool(repo)
+    with pytest.raises(repo_tool.DerivationError):
+        repo_tool.verify_derived_record(repo, blind, derived)
 
 
 def test_dirty_worktree_mapping_bytes_fail(tmp_path: Path) -> None:
@@ -472,8 +503,9 @@ def test_dirty_worktree_mapping_bytes_fail(tmp_path: Path) -> None:
     blind = _blind_path(repo)
     manifest = repo / tool.DESIGN_MANIFEST_RELATIVE_PATH
     manifest.write_bytes(manifest.read_bytes() + b" ")
-    with pytest.raises(tool.DerivationError, match="differs from committed HEAD"):
-        tool.derive_record(repo, blind)
+    repo_tool = _load_repo_tool(repo)
+    with pytest.raises(repo_tool.DerivationError, match="differs from committed HEAD"):
+        repo_tool.derive_record(repo, blind)
 
 
 def test_manifest_task_matrix_mapping_disagreement_fails(tmp_path: Path) -> None:
@@ -486,8 +518,9 @@ def test_manifest_task_matrix_mapping_disagreement_fails(tmp_path: Path) -> None
     )
     _write_json(manifest_path, manifest)
     _commit_all(repo)
-    with pytest.raises(tool.DerivationError, match="disagreement"):
-        tool.derive_record(repo, blind)
+    repo_tool = _load_repo_tool(repo)
+    with pytest.raises(repo_tool.DerivationError, match="disagreement"):
+        repo_tool.derive_record(repo, blind)
 
 
 @pytest.mark.parametrize("duplicate_field", ["review_alias", "task_id"])
@@ -504,8 +537,9 @@ def test_duplicate_alias_or_task_mapping_fails(
     )
     _write_json(manifest_path, manifest)
     _commit_all(repo)
-    with pytest.raises(tool.DerivationError, match="duplicate"):
-        tool.derive_record(repo, blind)
+    repo_tool = _load_repo_tool(repo)
+    with pytest.raises(repo_tool.DerivationError, match="duplicate"):
+        repo_tool.derive_record(repo, blind)
 
 
 def _family_review(
@@ -637,8 +671,9 @@ def test_verify_rejects_audit_family_contradictions(
         _schema(repo, tool.POST_SCHEMA_RELATIVE_PATH)
     ).is_valid(record)
     _write_json(derived, record)
-    with pytest.raises(tool.DerivationError):
-        tool.verify_derived_record(repo, blind, derived)
+    repo_tool = _load_repo_tool(repo)
+    with pytest.raises(repo_tool.DerivationError):
+        repo_tool.verify_derived_record(repo, blind, derived)
 
 
 @pytest.mark.parametrize(
@@ -660,14 +695,15 @@ def test_same_inputs_produce_byte_identical_output_and_verify(
 ) -> None:
     repo = _make_repo(tmp_path)
     blind = _blind_path(repo)
-    first = tool.derive_record_bytes(repo, blind)
-    second = tool.derive_record_bytes(repo, blind)
+    repo_tool = _load_repo_tool(repo)
+    first = repo_tool.derive_record_bytes(repo, blind)
+    second = repo_tool.derive_record_bytes(repo, blind)
     assert first == second
     assert first == tool.canonical_json_bytes(json.loads(first))
     derived = repo / "review" / "derived.json"
-    tool.atomic_write(derived, first, overwrite=False)
+    repo_tool.atomic_write(derived, first, overwrite=False)
     assert tool.canonical_json_bytes(
-        tool.verify_derived_record(repo, blind, derived)
+        repo_tool.verify_derived_record(repo, blind, derived)
     ) == first
 
 
@@ -677,15 +713,17 @@ def test_verify_rejects_one_byte_semantic_mutation(tmp_path: Path) -> None:
     record, derived = _derive_to_file(repo, blind)
     record["family_decisions"][0]["decision_rationale"] += "x"
     _write_json(derived, record)
-    with pytest.raises(tool.DerivationError):
-        tool.verify_derived_record(repo, blind, derived)
+    repo_tool = _load_repo_tool(repo)
+    with pytest.raises(repo_tool.DerivationError):
+        repo_tool.verify_derived_record(repo, blind, derived)
 
 
 def test_cli_derive_verify_and_no_overwrite(tmp_path: Path) -> None:
     repo = _make_repo(tmp_path)
     blind = _blind_path(repo)
     derived = repo / "review" / "cli-derived.json"
-    assert tool.main(
+    repo_tool = _load_repo_tool(repo)
+    assert repo_tool.main(
         [
             "derive",
             "--repo-root",
@@ -696,7 +734,7 @@ def test_cli_derive_verify_and_no_overwrite(tmp_path: Path) -> None:
             str(derived),
         ]
     ) == 0
-    assert tool.main(
+    assert repo_tool.main(
         [
             "verify",
             "--repo-root",
@@ -707,7 +745,7 @@ def test_cli_derive_verify_and_no_overwrite(tmp_path: Path) -> None:
             str(derived),
         ]
     ) == 0
-    assert tool.main(
+    assert repo_tool.main(
         [
             "derive",
             "--repo-root",
@@ -718,3 +756,271 @@ def test_cli_derive_verify_and_no_overwrite(tmp_path: Path) -> None:
             str(derived),
         ]
     ) == 1
+
+
+def test_clean_committed_provenance_bindings_pass(tmp_path: Path) -> None:
+    repo = _make_repo(tmp_path)
+    blind = _blind_path(repo)
+    repo_tool = _load_repo_tool(repo)
+    record = repo_tool.derive_record(repo, blind)
+    actual_tool = repo / tool.TOOL_RELATIVE_PATH
+    actual_raw = actual_tool.read_bytes()
+
+    binding = record["derivation_tool_binding"]
+    assert binding == {
+        "relative_path": tool.TOOL_RELATIVE_PATH,
+        "resolved_path_policy": tool.TOOL_RESOLVED_PATH_POLICY,
+        "byte_length": len(actual_raw),
+        "sha256": hashlib.sha256(actual_raw).hexdigest(),
+        "tool_version": "CAL002_BATCH05_REVIEW_DERIVATION_TOOL_V0_2",
+        "worktree_equals_HEAD": True,
+        "executing_file_equals_HEAD": True,
+    }
+    assert [item["relative_path"] for item in record["schema_source_bindings"]] == [
+        tool.BLIND_SCHEMA_RELATIVE_PATH,
+        tool.POST_SCHEMA_RELATIVE_PATH,
+    ]
+    for item in record["schema_source_bindings"]:
+        raw = (repo / item["relative_path"]).read_bytes()
+        assert item["byte_length"] == len(raw)
+        assert item["sha256"] == hashlib.sha256(raw).hexdigest()
+        assert item["worktree_equals_HEAD"] is True
+
+
+@pytest.mark.parametrize("modify_one_byte", [False, True])
+def test_external_runner_cannot_derive(
+    tmp_path: Path,
+    modify_one_byte: bool,
+) -> None:
+    repo = _make_repo(tmp_path)
+    blind = _blind_path(repo)
+    expected_tool = repo / tool.TOOL_RELATIVE_PATH
+    external = tmp_path / ("external-modified.py" if modify_one_byte else "external.py")
+    raw = expected_tool.read_bytes()
+    if modify_one_byte:
+        modified = raw.replace(b"Derive and verify", b"Xerive and verify", 1)
+        assert len(modified) == len(raw)
+        assert sum(left != right for left, right in zip(raw, modified)) == 1
+        raw = modified
+    external.write_bytes(raw)
+    output = repo / "review" / "external-derived.json"
+
+    result = _run_cli(
+        external,
+        repo,
+        "derive",
+        "--repo-root",
+        repo,
+        "--blind-record",
+        blind,
+        "--output",
+        output,
+    )
+
+    assert result.returncode == 1
+    assert b"actual executing tool path differs" in result.stderr
+    assert not output.exists()
+
+
+def test_external_runner_cannot_verify_record_with_repository_hash(
+    tmp_path: Path,
+) -> None:
+    repo = _make_repo(tmp_path)
+    blind = _blind_path(repo)
+    _, derived = _derive_to_file(repo, blind)
+    external = tmp_path / "external-verifier.py"
+    shutil.copyfile(repo / tool.TOOL_RELATIVE_PATH, external)
+    before = derived.read_bytes()
+
+    result = _run_cli(
+        external,
+        repo,
+        "verify",
+        "--repo-root",
+        repo,
+        "--blind-record",
+        blind,
+        "--derived-record",
+        derived,
+    )
+
+    assert result.returncode == 1
+    assert b"actual executing tool path differs" in result.stderr
+    assert derived.read_bytes() == before
+
+
+def test_dirty_expected_tool_fails_before_output(tmp_path: Path) -> None:
+    repo = _make_repo(tmp_path)
+    blind = _blind_path(repo)
+    expected_tool = repo / tool.TOOL_RELATIVE_PATH
+    expected_tool.write_bytes(expected_tool.read_bytes() + b" ")
+    output = repo / "review" / "dirty-tool-derived.json"
+
+    result = _run_cli(
+        expected_tool,
+        repo,
+        "derive",
+        "--repo-root",
+        repo,
+        "--blind-record",
+        blind,
+        "--output",
+        output,
+    )
+
+    assert result.returncode == 1
+    assert b"differs from committed HEAD" in result.stderr
+    assert not output.exists()
+
+
+@pytest.mark.parametrize(
+    ("field", "value"),
+    [
+        ("relative_path", "copied/batch05_review_derivation.py"),
+        ("tool_version", "CAL002_BATCH05_REVIEW_DERIVATION_TOOL_V0_1"),
+    ],
+)
+def test_substituted_tool_identity_fails_verify(
+    tmp_path: Path,
+    field: str,
+    value: str,
+) -> None:
+    repo = _make_repo(tmp_path)
+    blind = _blind_path(repo)
+    record, derived = _derive_to_file(repo, blind)
+    record["derivation_tool_binding"][field] = value
+    _write_json(derived, record)
+    repo_tool = _load_repo_tool(repo)
+
+    with pytest.raises(repo_tool.DerivationError):
+        repo_tool.verify_derived_record(repo, blind, derived)
+
+
+@pytest.mark.parametrize(
+    "schema_relative_path",
+    [tool.BLIND_SCHEMA_RELATIVE_PATH, tool.POST_SCHEMA_RELATIVE_PATH],
+)
+def test_dirty_schema_fails_derive_before_output(
+    tmp_path: Path,
+    schema_relative_path: str,
+) -> None:
+    repo = _make_repo(tmp_path)
+    blind = _blind_path(repo)
+    schema_path = repo / schema_relative_path
+    schema_path.write_bytes(schema_path.read_bytes() + b" ")
+    output = repo / "review" / "dirty-schema-derived.json"
+
+    result = _run_cli(
+        repo / tool.TOOL_RELATIVE_PATH,
+        repo,
+        "derive",
+        "--repo-root",
+        repo,
+        "--blind-record",
+        blind,
+        "--output",
+        output,
+    )
+
+    assert result.returncode == 1
+    assert b"differs from committed HEAD" in result.stderr
+    assert not output.exists()
+
+
+@pytest.mark.parametrize(
+    "schema_relative_path",
+    [tool.BLIND_SCHEMA_RELATIVE_PATH, tool.POST_SCHEMA_RELATIVE_PATH],
+)
+def test_dirty_schema_fails_verify(
+    tmp_path: Path,
+    schema_relative_path: str,
+) -> None:
+    repo = _make_repo(tmp_path)
+    blind = _blind_path(repo)
+    _, derived = _derive_to_file(repo, blind)
+    before = derived.read_bytes()
+    schema_path = repo / schema_relative_path
+    schema_path.write_bytes(schema_path.read_bytes() + b" ")
+
+    result = _run_cli(
+        repo / tool.TOOL_RELATIVE_PATH,
+        repo,
+        "verify",
+        "--repo-root",
+        repo,
+        "--blind-record",
+        blind,
+        "--derived-record",
+        derived,
+    )
+
+    assert result.returncode == 1
+    assert b"differs from committed HEAD" in result.stderr
+    assert derived.read_bytes() == before
+
+
+@pytest.mark.parametrize(
+    ("binding_index", "field", "value"),
+    [
+        (0, "sha256", "0" * 64),
+        (1, "sha256", "f" * 64),
+        (0, "byte_length", 1),
+        (1, "byte_length", 1),
+        (0, "schema_id", "CAL002_BATCH05_BLIND_VISUAL_REVIEW_SCHEMA_V0_2"),
+        (
+            1,
+            "schema_id",
+            "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_SCHEMA_V0_2",
+        ),
+        (
+            0,
+            "record_version",
+            "CAL002_BATCH05_BLIND_VISUAL_REVIEW_RECORD_V0_2",
+        ),
+        (
+            1,
+            "record_version",
+            "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_RECORD_V0_2",
+        ),
+    ],
+)
+def test_substituted_schema_binding_fails_verify(
+    tmp_path: Path,
+    binding_index: int,
+    field: str,
+    value: object,
+) -> None:
+    repo = _make_repo(tmp_path)
+    blind = _blind_path(repo)
+    record, derived = _derive_to_file(repo, blind)
+    record["schema_source_bindings"][binding_index][field] = value
+    _write_json(derived, record)
+    repo_tool = _load_repo_tool(repo)
+
+    with pytest.raises(repo_tool.DerivationError):
+        repo_tool.verify_derived_record(repo, blind, derived)
+
+
+def test_earlier_post_record_version_fails_verify(tmp_path: Path) -> None:
+    repo = _make_repo(tmp_path)
+    blind = _blind_path(repo)
+    record, derived = _derive_to_file(repo, blind)
+    record["schema_version"] = "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_RECORD_V0_2"
+    _write_json(derived, record)
+    repo_tool = _load_repo_tool(repo)
+
+    with pytest.raises(repo_tool.DerivationError):
+        repo_tool.verify_derived_record(repo, blind, derived)
+
+
+def test_repeated_derivation_has_identical_schema_bindings(tmp_path: Path) -> None:
+    repo = _make_repo(tmp_path)
+    blind = _blind_path(repo)
+    repo_tool = _load_repo_tool(repo)
+    first = repo_tool.derive_record(repo, blind)
+    second = repo_tool.derive_record(repo, blind)
+
+    assert first["schema_source_bindings"] == second["schema_source_bindings"]
+    assert repo_tool.canonical_json_bytes(first) == repo_tool.canonical_json_bytes(
+        second
+    )

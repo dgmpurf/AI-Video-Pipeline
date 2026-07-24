@@ -251,21 +251,34 @@
     },
     "post_unblinding_stage": {
       "blind_record_exact_bytes_hashed": true,
+      "blind_schema_byte_length": 18138,
+      "blind_schema_sha256": "9e98bc7f50c218ef75f19f211c0d0eefd5b93f0d41a4780e280f412804b9ebc5",
+      "blind_schema_worktree_must_equal_HEAD": true,
       "candidate_clear_advantage_is_derived": true,
       "committed_mapping_verified": true,
       "deterministic_tool_required": true,
+      "dirty_schema_permitted": false,
+      "executing_bytes_must_equal_HEAD": true,
+      "executing_path_must_equal_committed_path": true,
+      "external_runner_permitted": false,
       "family_decision_is_derived": true,
       "family_decision_precedence_derived": true,
       "manual_authoring_permitted": false,
       "mapping_revealed_after_blind_record_lock": true,
       "pair_truth_table_derived": true,
+      "post_schema_byte_length": 18899,
+      "post_schema_sha256": "366a8dac88504626ec400317c116e20c319c70c693a29927fa1753fcb46f396a",
+      "post_schema_worktree_must_equal_HEAD": true,
+      "schema_bindings_in_derived_record": true,
       "schema_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_post_unblinding_analysis_schema.json",
-      "schema_version": "V0.2",
-      "tool_byte_length": 31983,
+      "schema_version": "V0.3",
+      "tool_byte_length": 35997,
       "tool_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/tools/batch05_review_derivation.py",
-      "tool_sha256": "02902f29301da671ea9707c56b8a84ed6348cccf7f9e5390b4c7b161a2e09ef9",
-      "tool_version": "CAL002_BATCH05_REVIEW_DERIVATION_TOOL_V0_1",
-      "verify_mode_required": true
+      "tool_sha256": "1bff976a6e14c96184936e81db1baf8df4a2154526c1f8770ac4b45c63388321",
+      "tool_version": "CAL002_BATCH05_REVIEW_DERIVATION_TOOL_V0_2",
+      "tool_worktree_must_equal_HEAD": true,
+      "verify_mode_required": true,
+      "verify_rechecks_all_provenance": true
     },
     "reviewer_package": {
       "allowed_content_classes": [
@@ -295,7 +308,7 @@
     }
   },
   "schema_version": "CAL002_BATCH05_DESIGN_MANIFEST_V0_3",
-  "status": "REVIEW_DERIVATION_INTEGRITY_FIX_APPLIED_PENDING_INDEPENDENT_AUDIT",
+  "status": "IMPLEMENTATION_PROVENANCE_FIX_APPLIED_PENDING_INDEPENDENT_AUDIT",
   "task_ids": [
     "CAL002-B05-PUSH-CONTROL-R01",
     "CAL002-B05-PUSH-CONTROL-R02",
