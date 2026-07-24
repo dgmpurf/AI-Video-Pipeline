@@ -1,0 +1,60 @@
+{
+  "bindings": {
+    "blind_evidence_manifest": {
+      "byte_length": 19967,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/review_artifacts/CAL002-BATCH05-BLIND-85BB78B1/blind_review_evidence_manifest.json",
+      "sha256": "5954d6c4bbbc4943f21ca72f0741f9a874150cfefadfaf34cb43f5d6edec1b3b"
+    },
+    "blind_handoff": {
+      "byte_length": 2829,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/review_artifacts/CAL002-BATCH05-BLIND-85BB78B1/BLIND_REVIEW_HANDOFF.md",
+      "sha256": "acb14f33a6383ab166f502fd9dedd1bf58b7820ba422a58c46a0a59a9c607d20"
+    },
+    "blind_schema": {
+      "byte_length": 18138,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_visual_review_schema.json",
+      "record_version": "CAL002_BATCH05_BLIND_VISUAL_REVIEW_RECORD_V0_3",
+      "schema_id": "CAL002_BATCH05_BLIND_VISUAL_REVIEW_SCHEMA_V0_3",
+      "sha256": "9e98bc7f50c218ef75f19f211c0d0eefd5b93f0d41a4780e280f412804b9ebc5"
+    },
+    "final_record": {
+      "byte_length": 13492,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/review_records/CAL002-BATCH05-BLIND-85BB78B1/blind_review_record_final.json",
+      "sha256": "923b054f575743f80f7d3b222fd52ee9d2f95c510dfda61459c06f0abf36a8b8"
+    },
+    "final_report": {
+      "byte_length": 9494,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/review_records/CAL002-BATCH05-BLIND-85BB78B1/blind_visual_review_report.md",
+      "sha256": "db08aea351393e7308dbd468292eab6acda5d92fad3d40048463035c102f63aa"
+    },
+    "input_archive": {
+      "byte_length": 5541,
+      "filename": "CAL002_BATCH05_BLIND_REVIEW_FINAL_INPUTS.zip",
+      "sha256": "444c0eb365f04a31f54b746312c60f6e8369eb65f3e95daf1dc238681588006b"
+    }
+  },
+  "blind_record_finalized_before_unblinding": true,
+  "blind_record_locked": true,
+  "candidate_advantage_derived": false,
+  "comparison_sheet_cross_check_count": 4,
+  "complete_mp4_review_count": 8,
+  "contact_sheets_required_for_finalization": false,
+  "family_result_derived": false,
+  "final_master": false,
+  "fixed_task_completion": false,
+  "handoff_id": "CAL002-BATCH05-BLIND-85BB78B1",
+  "lock_id": "CAL002-BATCH05-BLIND-LOCK-923B054F",
+  "locked": false,
+  "next_phase": "CAL002_BATCH05_POST_UNBLINDING_DERIVATION_NO_LIVE",
+  "post_unblinding_performed": false,
+  "production_approved": false,
+  "record_must_not_change_after_commit": true,
+  "record_schema_validation": "PASS",
+  "report_record_consistency": "PASS",
+  "review_source": "ChatGPT Pro complete-MP4 treatment-blind visual review",
+  "reviewer_facing_treatment_leakage": false,
+  "schema_version": "CAL002_BATCH05_BLIND_REVIEW_LOCK_MANIFEST_V0_1",
+  "starting_repository_checkpoint": "d737316deab6da847dcae65fa229e2e58712b3ae",
+  "treatment_mapping_accessed_in_lock_phase": false,
+  "treatment_mapping_known_to_reviewer": false
+}
