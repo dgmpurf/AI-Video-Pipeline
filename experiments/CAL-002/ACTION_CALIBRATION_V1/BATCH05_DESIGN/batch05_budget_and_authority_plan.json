@@ -1,0 +1,75 @@
+{
+  "authority_plan": {
+    "automatic_task_expansion": false,
+    "batch_authorized_now": false,
+    "batch_retry_max": 0,
+    "canonical_authorization_text_created": false,
+    "download_authorized_now": false,
+    "download_max": "requires_separate_future_authorization",
+    "final_master": false,
+    "future_live_phase_requires_fresh_checkpoint": true,
+    "future_live_phase_requires_fresh_human_authorization": true,
+    "future_live_phase_requires_fresh_user_credit_canary": true,
+    "locked": false,
+    "phase1_fixed_submit_max": 8,
+    "provider_authority_created": false,
+    "query_authorized_now": false,
+    "query_max": "requires_separate_future_authorization",
+    "resubmit_max": 0,
+    "retry_max": 0,
+    "submit_authorized_now": false,
+    "tie_breaker_authorized": false
+  },
+  "budget_basis": {
+    "current_credit_balance_claimed": false,
+    "fresh_current_credit_checked": false,
+    "historical_balance_reused_as_current": false,
+    "observed_batch04_mean_unit_cost": 70,
+    "observed_batch04_minimum_unit_cost": 70,
+    "observed_batch04_total": 280,
+    "observed_batch04_unit_costs": [
+      70,
+      70,
+      70,
+      70
+    ],
+    "observed_batch04_unit_costs_maximum": 70,
+    "observed_batch04_unit_costs_reliable": true,
+    "observed_batch04_unit_costs_source": "provider submit response credit evidence",
+    "planned_phase1_task_count": 8,
+    "provisional_phase1_base_estimate": 560,
+    "provisional_phase1_conservative_ceiling": 560
+  },
+  "credit_evidence_bindings": [
+    {
+      "byte_length": 570,
+      "observed_credit": 70,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_EXECUTION/execution_records/CAL002-BATCH04-LIVE-AE03FC5/CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CONTROL/evidence/CAL002-BATCH04-A01-CONTROL-submit-001_credit_evidence.json",
+      "sha256": "12976ed6497c04ebb08122f71e4c146f3270e6a8daaf9569e0515f3c2746cc70"
+    },
+    {
+      "byte_length": 574,
+      "observed_credit": 70,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_EXECUTION/execution_records/CAL002-BATCH04-LIVE-AE03FC5/CAL002-B04-A01_PUSH_RESULT_FIRST_CAUSALITY_CANDIDATE/evidence/CAL002-BATCH04-A01-CANDIDATE-submit-001_credit_evidence.json",
+      "sha256": "89c8cf31d81dbd4a6bceebd03908c2d35954be9971a0e7c3b6d915ebe714807c"
+    },
+    {
+      "byte_length": 572,
+      "observed_credit": 70,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_EXECUTION/execution_records/CAL002-BATCH04-LIVE-AE03FC5/CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CONTROL/evidence/CAL002-BATCH04-A04-CONTROL-submit-001_credit_evidence.json",
+      "sha256": "8a07a5ba458fea3ff02835e655bf838cae01e3ea3c12351c54d0ea3888409429"
+    },
+    {
+      "byte_length": 576,
+      "observed_credit": 70,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_EXECUTION/execution_records/CAL002-BATCH04-LIVE-AE03FC5/CAL002-B04-A04_IMPACT_RESULT_FIRST_CAUSALITY_CANDIDATE/evidence/CAL002-BATCH04-A04-CANDIDATE-submit-001_credit_evidence.json",
+      "sha256": "15228334b648e3c5e8fea51765bd48f3b994973cc1c20ffea87536c86be00f25"
+    }
+  ],
+  "estimation_formulae": {
+    "base": "8 * observed mean unit cost",
+    "conservative_ceiling": "8 * observed maximum unit cost"
+  },
+  "schema_version": "CAL002_BATCH05_BUDGET_AND_AUTHORITY_PLAN_V0_1",
+  "status": "PROVISIONAL_NO_LIVE_DESIGN_ONLY"
+}

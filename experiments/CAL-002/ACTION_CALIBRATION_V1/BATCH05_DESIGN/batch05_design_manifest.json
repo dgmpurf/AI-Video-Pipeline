@@ -1,0 +1,256 @@
+{
+  "action_families": {
+    "brief_impact_recoil": {
+      "candidate_block_id": "IMPACT_CANDIDATE_BLOCK_V0_3",
+      "candidate_bundle_id": "brief_impact_recoil_family_compiler_bundle_v0_3",
+      "candidate_prompt_blueprint_sha256": "e14e063895dad06f1c067cc699f93fb04cd3368fbcc8c96a3000bc3473418198",
+      "control_block_id": "IMPACT_CONTROL_BLOCK",
+      "control_prompt_blueprint_sha256": "dfff87157e2071794c0e2150ded60c68f8787d06117986238f39be41fd76a14b",
+      "research_question": "Does the V0.3 brief_impact_recoil family compiler bundle repeatably improve the visible impact/recoil chain compared with a matched baseline action Prompt under the same calibration conditions?"
+    },
+    "push_reaction": {
+      "candidate_block_id": "PUSH_CANDIDATE_BLOCK_V0_3",
+      "candidate_bundle_id": "push_reaction_family_compiler_bundle_v0_3",
+      "candidate_prompt_blueprint_sha256": "e44db0e244923fd3abe701f4118e23687e47fb064cba7aadd6396cfafe963c86",
+      "control_block_id": "PUSH_CONTROL_BLOCK",
+      "control_prompt_blueprint_sha256": "ace62979b13a2f7994b36673c51ae6bb3f6a6398a71725d2434333445719a604",
+      "research_question": "Does the V0.3 push_reaction family compiler bundle repeatably improve the visible causal sequence compared with a matched baseline action Prompt under the same calibration conditions?"
+    }
+  },
+  "action_rule_v0_4_state": {
+    "not_general_default": true,
+    "official_source_status": false,
+    "stable_general_rule": false
+  },
+  "active_project_source_state": {
+    "active_by_current_human_instruction": true,
+    "active_project_source_index": "V1.13",
+    "active_project_source_index_name": "AI视频制作_Source索引与使用优先级_V1.13.md",
+    "active_prompt_compiler": "V0.3",
+    "active_prompt_compiler_name": "AI视频制作_Prompt编译器与结果优先动作语法_V0.3.md",
+    "active_rolling_state": "V0.1",
+    "active_rolling_state_name": "AI视频制作_当前项目状态与双轨切换_V0.1.md",
+    "embedded_candidate_status_text_stale": true,
+    "local_source_sync_authorized": false
+  },
+  "batch04_interpretation": {
+    "A01_candidate_superiority": true,
+    "A04_candidate_superiority": false,
+    "Batch04_visual_outcome": "MIXED",
+    "CAL002_formally_closed": false,
+    "bundle_has_action_specific_signal": true,
+    "bundle_supported_as_general_default": false,
+    "component_level_causal_attribution_permitted": false,
+    "treatment_bundle_screening": true
+  },
+  "batch_id": "CAL002-BATCH05-ACTION-FAMILY-SEPARATED-REPLICATION-V0-1",
+  "blind_review_mapping": [
+    {
+      "review_alias": "PUSH_PAIR_01_A",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R01"
+    },
+    {
+      "review_alias": "PUSH_PAIR_01_B",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R01"
+    },
+    {
+      "review_alias": "PUSH_PAIR_02_A",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R02"
+    },
+    {
+      "review_alias": "PUSH_PAIR_02_B",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R02"
+    },
+    {
+      "review_alias": "IMPACT_PAIR_01_A",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R01"
+    },
+    {
+      "review_alias": "IMPACT_PAIR_01_B",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R01"
+    },
+    {
+      "review_alias": "IMPACT_PAIR_02_A",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R02"
+    },
+    {
+      "review_alias": "IMPACT_PAIR_02_B",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R02"
+    }
+  ],
+  "design_files": {
+    "budget_and_authority_plan": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_budget_and_authority_plan.json",
+    "design_evidence_manifest": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_design_evidence_manifest.json",
+    "design_spec": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/CAL002_BATCH05_DESIGN_SPEC.md",
+    "task_matrix": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_task_matrix.csv",
+    "treatment_diff_matrix": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_treatment_diff_matrix.json",
+    "variable_lock_table": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_variable_lock_table.csv",
+    "visual_review_schema": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_visual_review_schema.json"
+  },
+  "evidence_bindings": {
+    "action_rule_v0_1": {
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.1.md",
+      "sha256": "a10d28af271155b0fb32c3c8feb204ca487a82c9a60822884ffc576e19126337"
+    },
+    "action_rule_v0_2": {
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.2.md",
+      "sha256": "a91d654b9cf961300f5ad9a6f7d06485bc51032da4c78ef9931664d356ef7cb6"
+    },
+    "action_rule_v0_3": {
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.3.md",
+      "sha256": "0fdda04117d076fcb8e05f2a9a094d4302112c5539b3d1ddf878ed5c03c93464"
+    },
+    "batch04_design_manifest": {
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_DESIGN/batch04_design_manifest.json",
+      "sha256": "f2b12c4109b609c45c4659587be2814872e4b3751573bda09ec9629f5ec2f7ed"
+    },
+    "batch04_download_result": {
+      "path": "reports/CAL002_BATCH04_DOWNLOAD_EXECUTION_RESULT.md",
+      "sha256": "10659a82920bca49111f74a2a1543cfefe3dcff6e068519c200d94850789def7"
+    },
+    "batch04_execution_manifest": {
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_EXECUTION/batch_manifest.json",
+      "sha256": "29fa8519d86b453bd4f6d9938f80b7b0fc89dcec533b4b18cad5f2cf1b394254"
+    },
+    "batch04_post_visual_evidence_pack": {
+      "path": "reports/CAL002_BATCH04_POST_VISUAL_REVIEW_SOURCE_UPDATE_EVIDENCE_PACK.md",
+      "sha256": "ccba5ed2d0c4c98ca3135ec8e4cb2bf995ca552ee20bb854bd1e3472797519e0"
+    },
+    "batch04_query_result": {
+      "path": "reports/CAL002_BATCH04_QUERY_EXECUTION_RESULT.md",
+      "sha256": "3385cb0b0b8afa33882e7cb59605234d50920acf0d4d951b64b6ef6386498e46"
+    },
+    "batch04_reconciliation": {
+      "path": "reports/CAL002_BATCH04_DOWNLOAD_AUTHORIZATION_EXECUTION_RECONCILIATION_RESULT.md",
+      "sha256": "3b8b5c555cf7cb7621430660779e474bd70354d7e7ddd4680f23220377c130b3"
+    },
+    "local_prompt_compiler_context": {
+      "active_project_source_override": "V0.3 active by current human instruction",
+      "path": "sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md",
+      "read_only": true,
+      "sha256": "f7eb4655dc2d5ab3164bf1c515d85b6362f3e076c0833b6170a3b3a144e8aa52"
+    }
+  },
+  "execution_boundary": {
+    "authorization_text_created": false,
+    "batch_authorized": false,
+    "commands_created": false,
+    "download_authorized": false,
+    "dreamina_called": false,
+    "execution_packages_created": false,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "live_manifests_created": false,
+    "locked": false,
+    "media_created": false,
+    "production_approved": false,
+    "prompt_package_created": false,
+    "provider_called": false,
+    "provider_command_count": 0,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "review_artifacts_created": false,
+    "sources_changed": false,
+    "submit_authorized": false
+  },
+  "factorial_design": {
+    "action_families": 2,
+    "automatic_task_expansion": false,
+    "phase1_task_count": 8,
+    "replicates_per_cell": 2,
+    "tie_breaker_authorized": false,
+    "treatments_per_family": 2
+  },
+  "goal_identity": "CAL002_BATCH05_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_V0_1",
+  "prompt_blueprint": {
+    "assembly": {
+      "block_order": [
+        "SHARED_VISUAL_CONSTANT_BLOCK",
+        "SHARED_SAFETY_AND_CAMERA_BLOCK",
+        "SELECTED_ACTION_FAMILY_TREATMENT_BLOCK",
+        "SHARED_COMPACT_NEGATIVE_BLOCK"
+      ],
+      "block_separator": "two LF bytes",
+      "encoding": "UTF-8",
+      "final_line_feed_count": 1,
+      "replicate_or_task_identity_in_prompt": false,
+      "review_contract_in_provider_prompt": false,
+      "utf8_bom": false
+    },
+    "blocks": {
+      "IMPACT_CANDIDATE_BLOCK_V0_3": {
+        "artifact_role": "action_family_candidate_block",
+        "text": "Action Family: brief_impact_recoil\nInitial State: Begin visibly separated, balanced, and not touching.\nPhysical Event: The attacker makes one compact forearm initiation. Contact onset remains visible at 0.20-0.55s and contact is brief, never a sustained push.\nBody Response: Only after contact, the receiver shows immediate upper-body recoil at 0.30-0.80s and makes exactly one rear-foot step at 0.50-1.10s. The attacker promptly retracts at 0.50-1.00s.\nFinal State: At 1.00-1.50s, both stabilize briefly with breathing and guard motion. No prolonged push and no long idle or static tail."
+      },
+      "IMPACT_CONTROL_BLOCK": {
+        "artifact_role": "action_family_control_block",
+        "text": "Action Family: brief_impact_recoil\nThe attacker performs one controlled forearm impact. The receiver reacts and steps backward. The attacker finishes the action safely and the action remains readable."
+      },
+      "PUSH_CANDIDATE_BLOCK_V0_3": {
+        "artifact_role": "action_family_candidate_block",
+        "text": "Action Family: push_reaction\nInitial State: Begin visibly separated, balanced, and not touching.\nPhysical Event: The attacker initiates one compact two-hand push at 0.00-0.20s and makes readable contact at 0.20-0.60s.\nBody Response: Only after contact, the receiver's torso and shoulders shift backward at 0.50-1.00s and the receiver makes exactly one rear-foot recovery placement at 0.80-1.30s.\nFinal State: The receiver stabilizes at 1.20-1.60s. The attacker reduces pressure, and both retain small recovery or guard motion. No prolonged unchanged contact and no long static tail."
+      },
+      "PUSH_CONTROL_BLOCK": {
+        "artifact_role": "action_family_control_block",
+        "text": "Action Family: push_reaction\nThe attacker performs one controlled two-hand push. The receiver moves backward and regains balance. The action remains safe and readable."
+      },
+      "REVIEW_CONTRACT_BLOCK": {
+        "artifact_role": "review_only_not_provider_prompt",
+        "text": "Review the complete five-second MP4. First-frame contact makes onset evaluation invalid. Contact sheets and synchronized comparisons may assist but cannot replace complete-video review. Record every required enum before any pair or family decision."
+      },
+      "SHARED_COMPACT_NEGATIVE_BLOCK": {
+        "artifact_role": "shared_provider_prompt_block",
+        "sha256": "5e675cf7e987e4a9acc31471650ad27666b6e215433c3e7ba4cf95089697945e",
+        "text": "No injury, gore, weapon, prop, crowd, text, logo, camera movement, cut, zoom, pan, orbit, handheld shake, dramatic light beam, strong motion blur, particles, smoke, environmental destruction, supernatural effect, extra performer, identity swap, limb merge, or hidden feet."
+      },
+      "SHARED_SAFETY_AND_CAMERA_BLOCK": {
+        "artifact_role": "shared_provider_prompt_block",
+        "sha256": "c51ad0c1788a1e923a9d7fa300b3e9b37fe282eee39cbc3c120c50e3febddbdc",
+        "text": "Locked camera, medium-wide full-body framing, three-quarter side view. Both performers and both feet remain visible at all times, with moderate physical distance and clear lateral and depth separation. One continuous shot with no cuts, zoom, pan, orbit, or handheld shake. Soft neutral studio lighting, with no dramatic light beam, strong motion blur, particles, or smoke. The action is controlled and non-injurious."
+      },
+      "SHARED_VISUAL_CONSTANT_BLOCK": {
+        "artifact_role": "shared_provider_prompt_block",
+        "sha256": "0dfde4b0f6c8ee1bed94cda3d8e727d5352498524b03bbb0f4d9e15f6304acd9",
+        "text": "Two adult professional stunt performers conduct a controlled non-injury action rehearsal on a neutral indoor rehearsal stage with a plain matte gray floor and a simple neutral rear wall. The attacker wears a dark charcoal padded training jacket, dark trousers, and dark shoes. The receiver wears a light gray padded training jacket, light trousers, and light shoes. Semi-realistic cinematic action previs. No props, crowd, environmental destruction, supernatural effects, text, or logos."
+      }
+    }
+  },
+  "provider_design_target": {
+    "active_generation_reference_count": 0,
+    "duration": 5,
+    "model_version": "seedance2.0_vip",
+    "prompt_language": "English",
+    "ratio": "16:9",
+    "reference_strategy": "text_only_no_active_generation_reference",
+    "runtime_support_claimed": false,
+    "task_type": "text2video",
+    "video_resolution": "720p"
+  },
+  "replicate_policy": {
+    "cross_action_generalization_claim_permitted": false,
+    "independent_provider_generations_planned": true,
+    "prompt_bytes_identical_within_cell": true,
+    "provider_seed_invented": false,
+    "single_component_claim_permitted": false,
+    "statistical_significance_claim_permitted": false
+  },
+  "schema_version": "CAL002_BATCH05_DESIGN_MANIFEST_V0_1",
+  "status": "NO_LIVE_ACTION_FAMILY_SEPARATED_REPLICATION_DESIGN_ONLY",
+  "task_ids": [
+    "CAL002-B05-PUSH-CONTROL-R01",
+    "CAL002-B05-PUSH-CONTROL-R02",
+    "CAL002-B05-PUSH-CANDIDATE-R01",
+    "CAL002-B05-PUSH-CANDIDATE-R02",
+    "CAL002-B05-IMPACT-CONTROL-R01",
+    "CAL002-B05-IMPACT-CONTROL-R02",
+    "CAL002-B05-IMPACT-CANDIDATE-R01",
+    "CAL002-B05-IMPACT-CANDIDATE-R02"
+  ],
+  "treatment_policy": {
+    "allowed_systematic_difference": "action_family_causal_compiler_treatment_only",
+    "component_level_causal_attribution_permitted": false,
+    "control_is_intentionally_defective": false,
+    "treatment_unit": "complete_action_family_compiler_bundle"
+  }
+}

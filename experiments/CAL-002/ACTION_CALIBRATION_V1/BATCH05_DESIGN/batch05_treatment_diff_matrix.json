@@ -1,0 +1,217 @@
+{
+  "action_families": {
+    "brief_impact_recoil": {
+      "clauses": [
+        {
+          "candidate": "SHARED_VISUAL_CONSTANT_BLOCK",
+          "classification": "shared_constant",
+          "clause_id": "shared_visual_identity_scene_style",
+          "control": "SHARED_VISUAL_CONSTANT_BLOCK"
+        },
+        {
+          "candidate": "SHARED_SAFETY_AND_CAMERA_BLOCK",
+          "classification": "shared_constant",
+          "clause_id": "shared_safety_camera_lighting",
+          "control": "SHARED_SAFETY_AND_CAMERA_BLOCK"
+        },
+        {
+          "candidate": "SHARED_COMPACT_NEGATIVE_BLOCK",
+          "classification": "shared_constant",
+          "clause_id": "shared_general_negatives",
+          "control": "SHARED_COMPACT_NEGATIVE_BLOCK"
+        },
+        {
+          "candidate": "one controlled compact forearm impact",
+          "classification": "semantic_equivalent",
+          "clause_id": "action_identity",
+          "control": "one controlled forearm impact"
+        },
+        {
+          "candidate": null,
+          "classification": "control_only",
+          "clause_id": "matched_baseline_receiver_result",
+          "control": "the receiver reacts and steps backward"
+        },
+        {
+          "candidate": null,
+          "classification": "control_only",
+          "clause_id": "matched_baseline_safe_finish",
+          "control": "the attacker finishes the action safely and the action remains readable"
+        },
+        {
+          "candidate": "begin visibly separated, balanced, and not touching",
+          "classification": "candidate_only",
+          "clause_id": "separated_start_contract",
+          "control": null
+        },
+        {
+          "candidate": "contact onset remains visible at 0.20-0.55s and contact is brief",
+          "classification": "candidate_only",
+          "clause_id": "brief_contact_contract",
+          "control": null
+        },
+        {
+          "candidate": "only after contact, immediate upper-body recoil occurs at 0.30-0.80s",
+          "classification": "candidate_only",
+          "clause_id": "post_contact_recoil_contract",
+          "control": null
+        },
+        {
+          "candidate": "exactly one rear-foot step occurs at 0.50-1.10s",
+          "classification": "candidate_only",
+          "clause_id": "one_foot_result_contract",
+          "control": null
+        },
+        {
+          "candidate": "the attacker promptly retracts at 0.50-1.00s",
+          "classification": "candidate_only",
+          "clause_id": "prompt_retract_contract",
+          "control": null
+        },
+        {
+          "candidate": "short stabilization at 1.00-1.50s with breathing and guard motion",
+          "classification": "candidate_only",
+          "clause_id": "ending_duration_contract",
+          "control": null
+        },
+        {
+          "candidate": "no prolonged push and no long idle or static tail",
+          "classification": "candidate_only",
+          "clause_id": "prolonged_push_and_tail_contract",
+          "control": null
+        }
+      ],
+      "control_is_matched_baseline": true,
+      "treatment_unit": "brief_impact_recoil_family_compiler_bundle_v0_3"
+    },
+    "push_reaction": {
+      "clauses": [
+        {
+          "candidate": "SHARED_VISUAL_CONSTANT_BLOCK",
+          "classification": "shared_constant",
+          "clause_id": "shared_visual_identity_scene_style",
+          "control": "SHARED_VISUAL_CONSTANT_BLOCK"
+        },
+        {
+          "candidate": "SHARED_SAFETY_AND_CAMERA_BLOCK",
+          "classification": "shared_constant",
+          "clause_id": "shared_safety_camera_lighting",
+          "control": "SHARED_SAFETY_AND_CAMERA_BLOCK"
+        },
+        {
+          "candidate": "SHARED_COMPACT_NEGATIVE_BLOCK",
+          "classification": "shared_constant",
+          "clause_id": "shared_general_negatives",
+          "control": "SHARED_COMPACT_NEGATIVE_BLOCK"
+        },
+        {
+          "candidate": "one compact two-hand push",
+          "classification": "semantic_equivalent",
+          "clause_id": "action_identity",
+          "control": "one controlled two-hand push"
+        },
+        {
+          "candidate": null,
+          "classification": "control_only",
+          "clause_id": "matched_baseline_receiver_result",
+          "control": "the receiver moves backward and regains balance"
+        },
+        {
+          "candidate": null,
+          "classification": "control_only",
+          "clause_id": "matched_baseline_safe_finish",
+          "control": "the action remains safe and readable"
+        },
+        {
+          "candidate": "begin visibly separated, balanced, and not touching",
+          "classification": "candidate_only",
+          "clause_id": "separated_start_contract",
+          "control": null
+        },
+        {
+          "candidate": "attacker initiation at 0.00-0.20s and readable contact at 0.20-0.60s",
+          "classification": "candidate_only",
+          "clause_id": "visible_initiation_and_contact_contract",
+          "control": null
+        },
+        {
+          "candidate": "only after contact, torso and shoulders shift backward at 0.50-1.00s",
+          "classification": "candidate_only",
+          "clause_id": "post_contact_torso_contract",
+          "control": null
+        },
+        {
+          "candidate": "exactly one rear-foot recovery placement occurs at 0.80-1.30s",
+          "classification": "candidate_only",
+          "clause_id": "one_foot_result_contract",
+          "control": null
+        },
+        {
+          "candidate": "receiver stabilizes at 1.20-1.60s",
+          "classification": "candidate_only",
+          "clause_id": "early_stabilization_contract",
+          "control": null
+        },
+        {
+          "candidate": "attacker reduces pressure after stabilization",
+          "classification": "candidate_only",
+          "clause_id": "pressure_release_contract",
+          "control": null
+        },
+        {
+          "candidate": "both retain small recovery or guard motion; no prolonged unchanged contact or long static tail",
+          "classification": "candidate_only",
+          "clause_id": "continued_motion_and_tail_contract",
+          "control": null
+        }
+      ],
+      "control_is_matched_baseline": true,
+      "treatment_unit": "push_reaction_family_compiler_bundle_v0_3"
+    }
+  },
+  "allowed_classifications": [
+    "shared_constant",
+    "control_only",
+    "candidate_only",
+    "semantic_equivalent",
+    "forbidden_difference"
+  ],
+  "component_level_causal_attribution_permitted": false,
+  "forbidden_differences": [
+    {
+      "classification": "forbidden_difference",
+      "variable": "performer descriptions and costumes"
+    },
+    {
+      "classification": "forbidden_difference",
+      "variable": "scene and lighting"
+    },
+    {
+      "classification": "forbidden_difference",
+      "variable": "camera, framing, and style"
+    },
+    {
+      "classification": "forbidden_difference",
+      "variable": "duration and provider target"
+    },
+    {
+      "classification": "forbidden_difference",
+      "variable": "safety framing and performer count"
+    },
+    {
+      "classification": "forbidden_difference",
+      "variable": "reference strategy and active reference count"
+    },
+    {
+      "classification": "forbidden_difference",
+      "variable": "shared compact general negative constraints"
+    },
+    {
+      "classification": "forbidden_difference",
+      "variable": "task ID, replicate ID, or blind alias inside provider Prompt text"
+    }
+  ],
+  "only_allowed_systematic_difference": "action_family_causal_compiler_treatment",
+  "schema_version": "CAL002_BATCH05_TREATMENT_DIFF_MATRIX_V0_1",
+  "treatment_unit": "complete_action_family_compiler_bundle"
+}

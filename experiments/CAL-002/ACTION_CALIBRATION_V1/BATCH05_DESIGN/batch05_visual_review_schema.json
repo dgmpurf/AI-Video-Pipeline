@@ -1,0 +1,355 @@
+{
+  "$id": "CAL002_BATCH05_VISUAL_REVIEW_SCHEMA_V0_1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "pair_reviews": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "candidate_clear_advantage": {
+            "type": "boolean"
+          },
+          "comparison_validity": {
+            "enum": [
+              "VALID",
+              "INVALID_UNCONTROLLED_VARIATION",
+              "INVALID_TECHNICAL",
+              "INCONCLUSIVE"
+            ],
+            "type": "string"
+          },
+          "pair_id": {
+            "enum": [
+              "PUSH_PAIR_01",
+              "PUSH_PAIR_02",
+              "IMPACT_PAIR_01",
+              "IMPACT_PAIR_02"
+            ],
+            "type": "string"
+          },
+          "preference": {
+            "enum": [
+              "A_CLEARLY_BETTER",
+              "B_CLEARLY_BETTER",
+              "NO_CLEAR_DIFFERENCE",
+              "NOT_COMPARABLE"
+            ],
+            "type": "string"
+          },
+          "reviewer_rationale": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "pair_id",
+          "comparison_validity",
+          "preference",
+          "candidate_clear_advantage"
+        ],
+        "type": "object"
+      },
+      "maxItems": 4,
+      "minItems": 4,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "CAL002_BATCH05_VISUAL_REVIEW_RECORD_V0_1"
+    },
+    "video_reviews": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "action_family": {
+            "enum": [
+              "push_reaction",
+              "brief_impact_recoil"
+            ],
+            "type": "string"
+          },
+          "action_family_match": {
+            "enum": [
+              "MATCH",
+              "PARTIAL",
+              "MISMATCH",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "action_onset_visible": {
+            "enum": [
+              "YES",
+              "NO",
+              "INVALID_FIRST_FRAME_CONTACT",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "attacker_release_or_retract": {
+            "enum": [
+              "CLEAR",
+              "PARTIAL",
+              "ABSENT",
+              "NOT_APPLICABLE",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "camera_compliance": {
+            "enum": [
+              "PASS",
+              "MINOR_DRIFT",
+              "FAIL",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "complete_mp4_review_confirmed": {
+            "const": true,
+            "type": "boolean"
+          },
+          "contact_duration_class": {
+            "enum": [
+              "NO_CONTACT",
+              "BRIEF",
+              "READABLE",
+              "PROLONGED",
+              "STATIC_HELD",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "contact_onset_visible": {
+            "enum": [
+              "YES",
+              "NO",
+              "INVALID_FIRST_FRAME_CONTACT",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "ending_contract_satisfied": {
+            "enum": [
+              "YES",
+              "PARTIAL",
+              "NO",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "first_frame_state": {
+            "enum": [
+              "VISIBLY_SEPARATED",
+              "ALREADY_TOUCHING",
+              "ALREADY_IN_CONTACT",
+              "OCCLUDED_OR_UNCLEAR"
+            ],
+            "type": "string"
+          },
+          "foot_result_after_contact": {
+            "enum": [
+              "YES",
+              "NO",
+              "NOT_OBSERVABLE",
+              "NOT_APPLICABLE",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "foot_result_count": {
+            "maximum": 4,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "foot_result_type": {
+            "enum": [
+              "NONE",
+              "REAR_FOOT_RECOVERY_PLACEMENT",
+              "REAR_FOOT_STEP",
+              "MULTI_STEP_RETREAT",
+              "SLIDE",
+              "OTHER",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "full_body_visibility": {
+            "enum": [
+              "PASS_ALL_TIMES",
+              "PARTIAL_OCCLUSION",
+              "FEET_CROPPED",
+              "FAIL",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "identity_consistency": {
+            "enum": [
+              "STABLE",
+              "MINOR_DRIFT",
+              "MAJOR_DRIFT",
+              "IDENTITY_SWAP",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "overall_visual_usability": {
+            "enum": [
+              "CALIBRATION_USABLE",
+              "CALIBRATION_USABLE_WITH_CAVEATS",
+              "DIAGNOSTIC_ONLY",
+              "UNUSABLE",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "post_contact_reaction_visible": {
+            "enum": [
+              "YES",
+              "PARTIAL",
+              "NO",
+              "INVALID_ONSET",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "primary_endpoint_result": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "INVALID_FIRST_FRAME_CONTACT",
+              "INVALID_TECHNICAL",
+              "NOT_REVIEWED"
+            ],
+            "type": "string"
+          },
+          "prolonged_contact": {
+            "enum": [
+              "ABSENT",
+              "PRESENT",
+              "UNCLEAR"
+            ],
+            "type": "string"
+          },
+          "review_alias": {
+            "enum": [
+              "PUSH_PAIR_01_A",
+              "PUSH_PAIR_01_B",
+              "PUSH_PAIR_02_A",
+              "PUSH_PAIR_02_B",
+              "IMPACT_PAIR_01_A",
+              "IMPACT_PAIR_01_B",
+              "IMPACT_PAIR_02_A",
+              "IMPACT_PAIR_02_B"
+            ],
+            "type": "string"
+          },
+          "review_notes": {
+            "type": "string"
+          },
+          "static_tail_duration_seconds": {
+            "anyOf": [
+              {
+                "maximum": 5,
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "static_tail_start_time_seconds": {
+            "anyOf": [
+              {
+                "maximum": 5,
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "technical_validity": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "NOT_CHECKED"
+            ],
+            "type": "string"
+          },
+          "torso_displacement_strength": {
+            "enum": [
+              "NONE",
+              "WEAK",
+              "READABLE",
+              "STRONG",
+              "EXCESSIVE",
+              "NOT_APPLICABLE",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "upper_body_recoil_strength": {
+            "enum": [
+              "NONE",
+              "WEAK",
+              "READABLE",
+              "STRONG",
+              "EXCESSIVE",
+              "NOT_APPLICABLE",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "review_alias",
+          "action_family",
+          "complete_mp4_review_confirmed",
+          "first_frame_state",
+          "action_onset_visible",
+          "contact_onset_visible",
+          "contact_duration_class",
+          "post_contact_reaction_visible",
+          "torso_displacement_strength",
+          "upper_body_recoil_strength",
+          "foot_result_count",
+          "foot_result_type",
+          "foot_result_after_contact",
+          "attacker_release_or_retract",
+          "prolonged_contact",
+          "static_tail_start_time_seconds",
+          "static_tail_duration_seconds",
+          "ending_contract_satisfied",
+          "action_family_match",
+          "identity_consistency",
+          "full_body_visibility",
+          "camera_compliance",
+          "technical_validity",
+          "overall_visual_usability",
+          "primary_endpoint_result"
+        ],
+        "type": "object"
+      },
+      "maxItems": 8,
+      "minItems": 8,
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "video_reviews",
+    "pair_reviews"
+  ],
+  "review_policy": {
+    "blind_treatment_mapping_stored_elsewhere": true,
+    "complete_mp4_required": true,
+    "contact_sheet_can_replace_complete_mp4": false,
+    "free_form_only_scoring_permitted": false,
+    "synchronized_comparison_can_replace_complete_mp4": false
+  },
+  "title": "CAL-002 Batch05 Blind Complete-MP4 Visual Review Record",
+  "type": "object"
+}
