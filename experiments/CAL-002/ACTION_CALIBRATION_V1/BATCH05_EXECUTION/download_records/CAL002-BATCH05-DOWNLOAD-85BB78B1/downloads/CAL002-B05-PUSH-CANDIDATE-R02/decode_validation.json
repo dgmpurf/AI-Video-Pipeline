@@ -1,0 +1,19 @@
+{
+  "argv_element_count": 10,
+  "argv_sha256": "46920cafbf784e757edfb15aad792f35272d247edf1f91f7fd448101017eeb84",
+  "blind_alias": "PUSH_PAIR_02_A",
+  "download_execution_id": "CAL002-BATCH05-DOWNLOAD-85BB78B1",
+  "exit_code": 0,
+  "full_video_stream_decode": true,
+  "no_output_file": true,
+  "passed": true,
+  "runner_error": null,
+  "schema_version": "CAL002_BATCH05_DECODE_VALIDATION_V0_1",
+  "stderr_byte_length": 0,
+  "stderr_persisted": false,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_byte_length": 0,
+  "stdout_persisted": false,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "task_id": "CAL002-B05-PUSH-CANDIDATE-R02"
+}

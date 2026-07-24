@@ -1,0 +1,19 @@
+{
+  "argv_element_count": 10,
+  "argv_sha256": "d8096b1d84727a16a7149d2c11dc393c50667e786a8ba3711b1fd313e7dbd851",
+  "blind_alias": "IMPACT_PAIR_02_A",
+  "download_execution_id": "CAL002-BATCH05-DOWNLOAD-85BB78B1",
+  "exit_code": 0,
+  "full_video_stream_decode": true,
+  "no_output_file": true,
+  "passed": true,
+  "runner_error": null,
+  "schema_version": "CAL002_BATCH05_DECODE_VALIDATION_V0_1",
+  "stderr_byte_length": 0,
+  "stderr_persisted": false,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_byte_length": 0,
+  "stdout_persisted": false,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "task_id": "CAL002-B05-IMPACT-CONTROL-R02"
+}

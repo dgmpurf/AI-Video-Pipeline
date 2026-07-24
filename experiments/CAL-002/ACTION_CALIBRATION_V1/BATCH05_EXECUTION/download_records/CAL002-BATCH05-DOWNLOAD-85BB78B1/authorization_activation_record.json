@@ -1,0 +1,159 @@
+{
+  "activation_checkpoint": "234abb2f34a4ae30bcd7694886cdf336c65849ea",
+  "approval": {
+    "activated": true,
+    "activation_point": "immediately_before_first_authorized_Dreamina_canary",
+    "consumed": true,
+    "exact_text": "APPROVE_CAL002_BATCH05_PHASE1_EIGHT_EXCLUSIVE_DOWNLOADS_AND_BLIND_REVIEW_HANDOFF_V0_1__BIND_QUERY_EXECUTION_CHECKPOINT_234ABB2F34A4AE30BCD7694886CDF336C65849EA__BIND_QUERY_EXECUTION_REPORT_SHA256_2FAD086E64B77082D6AAA59B2B4C1586C39B543C156B101E289ABEC550234946__BIND_QUERY_EXECUTION_ID_CAL002_BATCH05_QUERY_4083321C__BIND_SUBMIT_01_F3663D7F_33DC_4937_B6E1_20C6BE10A0D8__BIND_SUBMIT_02_03A03B27_1E3D_48E7_9122_7FDAEA7DF0D1__BIND_SUBMIT_03_866311E6_BE9B_4850_A798_9E74D4A3BCE9__BIND_SUBMIT_04_B506BD61_3B16_4F5C_9209_4DFC49356284__BIND_SUBMIT_05_01193507_CB12_4116_AEC4_9084063A61D9__BIND_SUBMIT_06_924B3F58_D0BB_43B4_80E7_A45BE940CE06__BIND_SUBMIT_07_7453C063_E5D8_49AA_83F7_D4F8E8136697__BIND_SUBMIT_08_DC64226B_D9DD_4D79_BBA4_6BD16F5FA465__AUTHORIZE_FIXED_WINDOWS_CLI_C_USERS_MSJPURF_BIN_DREAMINA_EXE__AUTHORIZE_ONE_VERSION_AND_ONE_QUERY_RESULT_HELP_CANARY__AUTHORIZE_EXACTLY_ONE_QUERY_RESULT_DOWNLOAD_CALL_FOR_EACH_OF_8_BOUND_SUBMIT_IDS_IN_CENTRAL_PHASE1_ORDER_WITH_ONE_UNIQUE_NONEXISTENT_DOWNLOAD_DIRECTORY_PER_TASK__AUTHORIZE_LOCAL_FFPROBE_AND_FFMPEG_TECHNICAL_VALIDATION__AUTHORIZE_ALIAS_ONLY_BLIND_REVIEW_MEDIA_COPIES_EIGHT_COMPLETE_MP4S_EIGHT_CONTACT_SHEETS_FOUR_SYNCHRONIZED_AB_COMPARISON_SHEETS_AND_FORTY_EIGHT_KEYFRAMES_AT_0_10_1_00_2_00_3_00_4_00_4_90_SECONDS__AUTHORIZE_ONE_BLIND_REVIEW_HANDOFF_AND_ONE_BLANK_BLIND_REVIEW_RECORD__REQUIRE_EXACTLY_ONE_NEW_NONZERO_MP4_PER_DOWNLOAD_STABLE_SHA256_VALID_CONTAINER_ONE_VIDEO_STREAM_TARGET_1280X720_APPROXIMATELY_5_SECONDS_FULL_DECODE_PASS_NO_OVERWRITE_NO_FILENAME_COLLISION_AND_NO_CROSS_MEDIA_SHA256_COLLISION__STOP_IMMEDIATELY_ON_RUNTIME_DRIFT_DIRTY_STATE_BINDING_MISMATCH_EXISTING_OUTPUT_PATH_DOWNLOAD_FAILURE_AMBIGUOUS_FILE_COUNT_MEDIA_COLLISION_FFPROBE_FAILURE_FFMPEG_DECODE_FAILURE_OR_SENSITIVE_DATA_EXPOSURE__ANY_UNDOWNLOADED_REMAINDER_REQUIRES_FRESH_AUTHORIZATION__NO_QUERY_ONLY_NO_SECOND_DOWNLOAD_NO_RETRY_NO_RESUBMIT_NO_NEW_SUBMIT_NO_BATCH_NO_USER_CREDIT_NO_LOGIN_NO_SESSION_OPERATION_NO_PROMPT_OR_PACKAGE_CHANGE_NO_SOURCE_CHANGE_NO_VISUAL_SUCCESS_CLAIM_NO_TREATMENT_WINNER_SELECTION_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__ONE_TIME_NON_REUSABLE",
+    "one_time_non_reusable": true,
+    "received": true,
+    "reusable": false,
+    "sha256": "85bb78b11a8d28f0600d23de35f4dcd73e49688a8c9d30ab2e0f9a1ae99c3cff"
+  },
+  "authorization_id": "CAL002-BATCH05-DOWNLOAD-AUTH-85BB78B1",
+  "bindings": {
+    "blind_review_schema": {
+      "byte_length": 18138,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_visual_review_schema.json",
+      "sha256": "9e98bc7f50c218ef75f19f211c0d0eefd5b93f0d41a4780e280f412804b9ebc5"
+    },
+    "query_execution_checkpoint": "234abb2f34a4ae30bcd7694886cdf336c65849ea",
+    "query_execution_id": "CAL002-BATCH05-QUERY-4083321C",
+    "query_execution_report": {
+      "byte_length": 8339,
+      "relative_path": "reports/CAL002_BATCH05_PHASE1_QUERY_EXECUTION_RESULT.md",
+      "sha256": "2fad086e64b77082d6aaa59b2b4c1586c39b543c156b101e289abec550234946"
+    },
+    "task_alias_submit_triples": [
+      {
+        "action_family": "push_reaction",
+        "blind_alias": "PUSH_PAIR_01_A",
+        "replicate": "R01",
+        "sequence": 1,
+        "submit_id": "f3663d7f-33dc-4937-b6e1-20c6be10a0d8",
+        "task_id": "CAL002-B05-PUSH-CONTROL-R01",
+        "treatment": "control"
+      },
+      {
+        "action_family": "push_reaction",
+        "blind_alias": "PUSH_PAIR_02_B",
+        "replicate": "R02",
+        "sequence": 2,
+        "submit_id": "03a03b27-1e3d-48e7-9122-7fdaea7df0d1",
+        "task_id": "CAL002-B05-PUSH-CONTROL-R02",
+        "treatment": "control"
+      },
+      {
+        "action_family": "push_reaction",
+        "blind_alias": "PUSH_PAIR_01_B",
+        "replicate": "R01",
+        "sequence": 3,
+        "submit_id": "866311e6-be9b-4850-a798-9e74d4a3bce9",
+        "task_id": "CAL002-B05-PUSH-CANDIDATE-R01",
+        "treatment": "candidate"
+      },
+      {
+        "action_family": "push_reaction",
+        "blind_alias": "PUSH_PAIR_02_A",
+        "replicate": "R02",
+        "sequence": 4,
+        "submit_id": "b506bd61-3b16-4f5c-9209-4dfc49356284",
+        "task_id": "CAL002-B05-PUSH-CANDIDATE-R02",
+        "treatment": "candidate"
+      },
+      {
+        "action_family": "brief_impact_recoil",
+        "blind_alias": "IMPACT_PAIR_01_B",
+        "replicate": "R01",
+        "sequence": 5,
+        "submit_id": "01193507-cb12-4116-aec4-9084063a61d9",
+        "task_id": "CAL002-B05-IMPACT-CONTROL-R01",
+        "treatment": "control"
+      },
+      {
+        "action_family": "brief_impact_recoil",
+        "blind_alias": "IMPACT_PAIR_02_A",
+        "replicate": "R02",
+        "sequence": 6,
+        "submit_id": "924b3f58-d0bb-43b4-80e7-a45be940ce06",
+        "task_id": "CAL002-B05-IMPACT-CONTROL-R02",
+        "treatment": "control"
+      },
+      {
+        "action_family": "brief_impact_recoil",
+        "blind_alias": "IMPACT_PAIR_01_A",
+        "replicate": "R01",
+        "sequence": 7,
+        "submit_id": "7453c063-e5d8-49aa-83f7-d4f8e8136697",
+        "task_id": "CAL002-B05-IMPACT-CANDIDATE-R01",
+        "treatment": "candidate"
+      },
+      {
+        "action_family": "brief_impact_recoil",
+        "blind_alias": "IMPACT_PAIR_02_B",
+        "replicate": "R02",
+        "sequence": 8,
+        "submit_id": "dc64226b-d9dd-4d79-bba4-6bd16f5fa465",
+        "task_id": "CAL002-B05-IMPACT-CANDIDATE-R02",
+        "treatment": "candidate"
+      }
+    ]
+  },
+  "blind_handoff_id": "CAL002-BATCH05-BLIND-85BB78B1",
+  "command_budget": {
+    "batch_max": 0,
+    "checklogin_max": 0,
+    "dreamina_version_max": 1,
+    "list_task_max": 0,
+    "login_max": 0,
+    "query_only_max": 0,
+    "query_result_download_max": 8,
+    "query_result_help_max": 1,
+    "resubmit_max": 0,
+    "retry_max": 0,
+    "second_download_max": 0,
+    "session_operation_max": 0,
+    "text2video_max": 0,
+    "user_credit_max": 0
+  },
+  "download_execution_id": "CAL002-BATCH05-DOWNLOAD-85BB78B1",
+  "forbidden_operations": [
+    "query_only",
+    "second_download",
+    "retry",
+    "resubmit",
+    "new_submit",
+    "batch",
+    "user_credit",
+    "login",
+    "checklogin",
+    "session_operation",
+    "prompt_or_package_change",
+    "Source_change",
+    "visual_success_claim",
+    "treatment_winner_selection",
+    "production_approval",
+    "fixed_task_completion",
+    "final_master",
+    "locking"
+  ],
+  "goal_identity": "CAL002_BATCH05_PHASE1_EIGHT_EXCLUSIVE_DOWNLOADS_AND_BLIND_REVIEW_HANDOFF_V0_1",
+  "recorded_at": "2026-07-24T15:44:39.697Z",
+  "schema_version": "CAL002_BATCH05_PHASE1_DOWNLOAD_AUTHORIZATION_ACTIVATION_V0_1",
+  "terminal_authority": {
+    "automatic_resume_authorized": false,
+    "batch_authorized": false,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "locked": false,
+    "login_authorized": false,
+    "production_approved": false,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "session_operation_authorized": false,
+    "submit_authorized": false,
+    "user_credit_authorized": false,
+    "visual_winner_selected": false
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "approval": {
+    "approval_sha256": "85bb78b11a8d28f0600d23de35f4dcd73e49688a8c9d30ab2e0f9a1ae99c3cff",
+    "exact_approval_verified": true
+  },
+  "audit_note": "A preliminary PATH-only lookup did not find FFmpeg and a report phrase check used a narrower label than the bound report. Existing local evidence identified C:/ffmpeg/bin; direct ffprobe, ffmpeg, Python and Pillow checks then passed. No Dreamina call or repository mutation occurred during those diagnostics.",
+  "blind_review_schema": {
+    "byte_length": 18138,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_visual_review_schema.json",
+    "sha256": "9e98bc7f50c218ef75f19f211c0d0eefd5b93f0d41a4780e280f412804b9ebc5",
+    "worktree_equals_head": true
+  },
+  "checked_at": "2026-07-24T15:44:39.697Z",
+  "duplicate_prevention": {
+    "blind_review_root_absent": true,
+    "download_root_absent_before_creation": true,
+    "final_report_absent": true,
+    "prior_download_receipt_present": false,
+    "prior_downloaded_media_present": false
+  },
+  "passed": true,
+  "pre_existing_untracked_baseline": {
+    "canonical_sha256": "c653a0c2ee0df98d7627370401dfa7ce0c0957fac3cafb261e368a1be61621c9",
+    "entries": [
+      ".vs/",
+      "experiments/CAL-001/execution_records/P3B_R2_T2/evidence/",
+      "experiments/CAL-001/execution_records/P3B_R2_T4/evidence/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH02_EXECUTION/execution_records/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH03_EXECUTION/execution_records/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_EXECUTION/execution_records/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/PILOT_R1/BATCH_01/execution_records/",
+      "productions/chi_yan_tian_qiong/edits/",
+      "productions/chi_yan_tian_qiong/review_artifacts/",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_INDEPENDENT_PACKAGE_REVIEW_RESULT.md",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_QUERY_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH02_DESIGN_REVIEW_RESULT.md",
+      "reports/CAL002_BATCH02_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH02_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH02_QUERY_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH03_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH03_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH03_QUERY_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH04_DOWNLOAD_AUTHORIZATION_EXECUTION_RECONCILIATION_RESULT.md",
+      "reports/CAL002_BATCH04_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH04_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH04_POST_VISUAL_REVIEW_SOURCE_UPDATE_EVIDENCE_PACK.md",
+      "reports/CAL002_BATCH04_QUERY_EXECUTION_RESULT.md",
+      "reports/context_recovery/",
+      "reports/investor/"
+    ],
+    "entry_count": 27
+  },
+  "query_evidence": {
+    "all_files_equal_head": true,
+    "checkpoint": "234abb2f34a4ae30bcd7694886cdf336c65849ea",
+    "download_calls": 0,
+    "downloadable_results": 8,
+    "evidence_manifest_artifact_count": 17,
+    "evidence_manifest_mismatch_count": 0,
+    "execution_id": "CAL002-BATCH05-QUERY-4083321C",
+    "nonterminal": 0,
+    "queries_attempted": 8,
+    "queries_parsed": 8,
+    "queries_planned": 8,
+    "query_failures": 0,
+    "query_receipt_mismatch_count": 0,
+    "report": {
+      "byte_length": 8339,
+      "relative_path": "reports/CAL002_BATCH05_PHASE1_QUERY_EXECUTION_RESULT.md",
+      "sha256": "2fad086e64b77082d6aaa59b2b4c1586c39b543c156b101e289abec550234946",
+      "worktree_equals_head": true
+    },
+    "root": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/query_records/CAL002-BATCH05-QUERY-4083321C",
+    "signed_urls_persisted": false,
+    "terminal_failure": 0,
+    "terminal_success": 8,
+    "tracked_file_count": 17,
+    "video_count_per_task": 1
+  },
+  "repository": {
+    "branch": "main",
+    "commit_subject": "execute(cal002): query Batch05 Phase1 fixed tasks",
+    "head": "234abb2f34a4ae30bcd7694886cdf336c65849ea",
+    "head_origin_aligned": true,
+    "origin_main": "234abb2f34a4ae30bcd7694886cdf336c65849ea",
+    "parent": "3abf7128057749fc1976234d6ac15ecbd713e37f",
+    "root": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+    "staged_file_count": 0,
+    "tracked_modification_count": 0
+  },
+  "schema_version": "CAL002_BATCH05_PHASE1_DOWNLOAD_STATIC_PREFLIGHT_V0_1",
+  "sources": {
+    "clean": true,
+    "staged_modification_count": 0,
+    "tracked_modification_count": 0
+  },
+  "task_bindings": [
+    {
+      "action_family": "push_reaction",
+      "blind_alias": "PUSH_PAIR_01_A",
+      "replicate": "R01",
+      "sequence": 1,
+      "submit_id": "f3663d7f-33dc-4937-b6e1-20c6be10a0d8",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R01",
+      "treatment": "control"
+    },
+    {
+      "action_family": "push_reaction",
+      "blind_alias": "PUSH_PAIR_02_B",
+      "replicate": "R02",
+      "sequence": 2,
+      "submit_id": "03a03b27-1e3d-48e7-9122-7fdaea7df0d1",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R02",
+      "treatment": "control"
+    },
+    {
+      "action_family": "push_reaction",
+      "blind_alias": "PUSH_PAIR_01_B",
+      "replicate": "R01",
+      "sequence": 3,
+      "submit_id": "866311e6-be9b-4850-a798-9e74d4a3bce9",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R01",
+      "treatment": "candidate"
+    },
+    {
+      "action_family": "push_reaction",
+      "blind_alias": "PUSH_PAIR_02_A",
+      "replicate": "R02",
+      "sequence": 4,
+      "submit_id": "b506bd61-3b16-4f5c-9209-4dfc49356284",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R02",
+      "treatment": "candidate"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "blind_alias": "IMPACT_PAIR_01_B",
+      "replicate": "R01",
+      "sequence": 5,
+      "submit_id": "01193507-cb12-4116-aec4-9084063a61d9",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R01",
+      "treatment": "control"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "blind_alias": "IMPACT_PAIR_02_A",
+      "replicate": "R02",
+      "sequence": 6,
+      "submit_id": "924b3f58-d0bb-43b4-80e7-a45be940ce06",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R02",
+      "treatment": "control"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "blind_alias": "IMPACT_PAIR_01_A",
+      "replicate": "R01",
+      "sequence": 7,
+      "submit_id": "7453c063-e5d8-49aa-83f7-d4f8e8136697",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R01",
+      "treatment": "candidate"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "blind_alias": "IMPACT_PAIR_02_B",
+      "replicate": "R02",
+      "sequence": 8,
+      "submit_id": "dc64226b-d9dd-4d79-bba4-6bd16f5fa465",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R02",
+      "treatment": "candidate"
+    }
+  ],
+  "tooling": {
+    "dreamina": {
+      "path": "C:/Users/msjpurf/bin/dreamina.exe",
+      "resolved_path": "C:/Users/msjpurf/bin/dreamina.exe"
+    },
+    "ffmpeg": {
+      "path": "C:/ffmpeg/bin/ffmpeg.exe",
+      "version": "ffmpeg version 2023-03-27-git-f7abe92bd7-full_build-www.gyan.dev Copyright (c) 2000-2023 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "path": "C:/ffmpeg/bin/ffprobe.exe",
+      "version": "ffprobe version 2023-03-27-git-f7abe92bd7-full_build-www.gyan.dev Copyright (c) 2007-2023 the FFmpeg developers"
+    },
+    "pillow": {
+      "available": true,
+      "version": "9.5.0"
+    },
+    "python": {
+      "path": "C:/Users/msjpurf/AppData/Local/Programs/Python/Python310/python.exe",
+      "version": "3.10.11"
+    }
+  }
+}

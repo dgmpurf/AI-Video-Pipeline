@@ -1,0 +1,388 @@
+{
+  "artifact_count": 41,
+  "artifacts": [
+    {
+      "artifact_class": "authorization_activation_record",
+      "blind_alias": null,
+      "byte_length": 7354,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/authorization_activation_record.json",
+      "sha256": "da93f448c9a4f3c73ddbe9c04aca8ebbe7d2d0fe95389ab405e2245b0f7c3561",
+      "task_id": null
+    },
+    {
+      "artifact_class": "download_summary",
+      "blind_alias": null,
+      "byte_length": 19480,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/download_summary.json",
+      "sha256": "8d68f8a0c18d02830b54a4ab0d62fb0a4b25978f8f1073490c283164f6bf295d",
+      "task_id": null
+    },
+    {
+      "artifact_class": "decode_validation",
+      "blind_alias": "IMPACT_PAIR_01_A",
+      "byte_length": 733,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CANDIDATE-R01/decode_validation.json",
+      "sha256": "c932f0c512cec538fe260476c33b7310c945e4e49b22d0a23a7743e83adfeb15",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R01"
+    },
+    {
+      "artifact_class": "download_receipt",
+      "blind_alias": "IMPACT_PAIR_01_A",
+      "byte_length": 3428,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CANDIDATE-R01/download_receipt.json",
+      "sha256": "9988d255064d2cb403a01d4095fe347a223dcec53af3b02571a7f338a3ecf928",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R01"
+    },
+    {
+      "artifact_class": "ffprobe_result",
+      "blind_alias": "IMPACT_PAIR_01_A",
+      "byte_length": 1043,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CANDIDATE-R01/ffprobe_result.json",
+      "sha256": "8c950fc0b806b3f11218d7d20b995ed538258296901303bb3ed3216bad438703",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R01"
+    },
+    {
+      "artifact_class": "provider_download_media",
+      "blind_alias": "IMPACT_PAIR_01_A",
+      "byte_length": 2972815,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CANDIDATE-R01/provider_download/7453c063-e5d8-49aa-83f7-d4f8e8136697_video_1.mp4",
+      "sha256": "494415f73fd45ecb1965ff038ba13879d434c7a34a3cbb87386c19d9d3c13b21",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R01"
+    },
+    {
+      "artifact_class": "decode_validation",
+      "blind_alias": "IMPACT_PAIR_02_B",
+      "byte_length": 733,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CANDIDATE-R02/decode_validation.json",
+      "sha256": "f49c64d4b1925b35ee613ce867a2990f4f60928e27da4d721c9d39b061b053a0",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R02"
+    },
+    {
+      "artifact_class": "download_receipt",
+      "blind_alias": "IMPACT_PAIR_02_B",
+      "byte_length": 3429,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CANDIDATE-R02/download_receipt.json",
+      "sha256": "8222ee1b2162399347b99569531463ab8893d532375742be5aae49c0a6a199ce",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R02"
+    },
+    {
+      "artifact_class": "ffprobe_result",
+      "blind_alias": "IMPACT_PAIR_02_B",
+      "byte_length": 1044,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CANDIDATE-R02/ffprobe_result.json",
+      "sha256": "6fd86ef839d78c172f3ebaf900fb31d105e1ee68698a67a5ab6bb10e7cffe2ca",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R02"
+    },
+    {
+      "artifact_class": "provider_download_media",
+      "blind_alias": "IMPACT_PAIR_02_B",
+      "byte_length": 3162693,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CANDIDATE-R02/provider_download/dc64226b-d9dd-4d79-bba4-6bd16f5fa465_video_1.mp4",
+      "sha256": "58834668282832e21b48be4767371ecb047076366fef17b02ebc48cd77dc3496",
+      "task_id": "CAL002-B05-IMPACT-CANDIDATE-R02"
+    },
+    {
+      "artifact_class": "decode_validation",
+      "blind_alias": "IMPACT_PAIR_01_B",
+      "byte_length": 731,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CONTROL-R01/decode_validation.json",
+      "sha256": "6f90190520583472b4ec2c1d60699ff32afdd67d0103a404583f0851242d93e4",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R01"
+    },
+    {
+      "artifact_class": "download_receipt",
+      "blind_alias": "IMPACT_PAIR_01_B",
+      "byte_length": 3418,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CONTROL-R01/download_receipt.json",
+      "sha256": "2b4a4b31076b32a65101d90cc6a5951e4c94add72e6b980b79ef58cde86233b6",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R01"
+    },
+    {
+      "artifact_class": "ffprobe_result",
+      "blind_alias": "IMPACT_PAIR_01_B",
+      "byte_length": 1041,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CONTROL-R01/ffprobe_result.json",
+      "sha256": "fd9125af6af0470616d2a9a0012715406295033a5a81155d9fed981b8e3ba6da",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R01"
+    },
+    {
+      "artifact_class": "provider_download_media",
+      "blind_alias": "IMPACT_PAIR_01_B",
+      "byte_length": 3088754,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CONTROL-R01/provider_download/01193507-cb12-4116-aec4-9084063a61d9_video_1.mp4",
+      "sha256": "de54a174c080edd5aedbf2a05113b1617534158d74fe1e17789bb8e834164e97",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R01"
+    },
+    {
+      "artifact_class": "decode_validation",
+      "blind_alias": "IMPACT_PAIR_02_A",
+      "byte_length": 731,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CONTROL-R02/decode_validation.json",
+      "sha256": "24fe50b439ded877fa699b2d675869519bb86694de4759279bb5c5023bb68342",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R02"
+    },
+    {
+      "artifact_class": "download_receipt",
+      "blind_alias": "IMPACT_PAIR_02_A",
+      "byte_length": 3419,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CONTROL-R02/download_receipt.json",
+      "sha256": "6ca762eeb87f689ef91462493edb401d0422ce90d637c2b69250c99a907d1980",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R02"
+    },
+    {
+      "artifact_class": "ffprobe_result",
+      "blind_alias": "IMPACT_PAIR_02_A",
+      "byte_length": 1042,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CONTROL-R02/ffprobe_result.json",
+      "sha256": "3e1005f89eb11f38a1bf8262a20543bad8db7f518aa7e6cc98c3988534550503",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R02"
+    },
+    {
+      "artifact_class": "provider_download_media",
+      "blind_alias": "IMPACT_PAIR_02_A",
+      "byte_length": 2239605,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-IMPACT-CONTROL-R02/provider_download/924b3f58-d0bb-43b4-80e7-a45be940ce06_video_1.mp4",
+      "sha256": "60ab4bb1bd80ae02130ed897320e1124f992cfd130a8aa7ddfca9119319605ae",
+      "task_id": "CAL002-B05-IMPACT-CONTROL-R02"
+    },
+    {
+      "artifact_class": "decode_validation",
+      "blind_alias": "PUSH_PAIR_01_B",
+      "byte_length": 729,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CANDIDATE-R01/decode_validation.json",
+      "sha256": "5cfecb5a02a11c75a00ae34012b12d2b1253b03f0efe4033fa0ec53a655c3fe5",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R01"
+    },
+    {
+      "artifact_class": "download_receipt",
+      "blind_alias": "PUSH_PAIR_01_B",
+      "byte_length": 3412,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CANDIDATE-R01/download_receipt.json",
+      "sha256": "302373182b595123ab44f5b1bef4242fb44528fe1d0d4476e4e8ad57588dd71e",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R01"
+    },
+    {
+      "artifact_class": "ffprobe_result",
+      "blind_alias": "PUSH_PAIR_01_B",
+      "byte_length": 1039,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CANDIDATE-R01/ffprobe_result.json",
+      "sha256": "cf4d8d05db65e4ff2d4465992d2fb314b19edfd6f6680ad0f34852eaaa6bcffa",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R01"
+    },
+    {
+      "artifact_class": "provider_download_media",
+      "blind_alias": "PUSH_PAIR_01_B",
+      "byte_length": 2957019,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CANDIDATE-R01/provider_download/866311e6-be9b-4850-a798-9e74d4a3bce9_video_1.mp4",
+      "sha256": "df1f3d5435f8423079cdefa6369016d716c9fe0b7924d7b92d130b54d8fd359a",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R01"
+    },
+    {
+      "artifact_class": "decode_validation",
+      "blind_alias": "PUSH_PAIR_02_A",
+      "byte_length": 729,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CANDIDATE-R02/decode_validation.json",
+      "sha256": "1f703beb1d22c194a455e51e45dc75965c3abae4e32bdaf3586b0fc12ecc1306",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R02"
+    },
+    {
+      "artifact_class": "download_receipt",
+      "blind_alias": "PUSH_PAIR_02_A",
+      "byte_length": 3412,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CANDIDATE-R02/download_receipt.json",
+      "sha256": "814f9c03acaf155d7bafc97c7cdc678ffc985e60853000e67cce0b3762a54c11",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R02"
+    },
+    {
+      "artifact_class": "ffprobe_result",
+      "blind_alias": "PUSH_PAIR_02_A",
+      "byte_length": 1039,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CANDIDATE-R02/ffprobe_result.json",
+      "sha256": "700943755565d0c17b2895ac4d6894c2242611ce99e4460ef3c2e65475b24cff",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R02"
+    },
+    {
+      "artifact_class": "provider_download_media",
+      "blind_alias": "PUSH_PAIR_02_A",
+      "byte_length": 3721924,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CANDIDATE-R02/provider_download/b506bd61-3b16-4f5c-9209-4dfc49356284_video_1.mp4",
+      "sha256": "a4c3e2da2ff3b0d474d4d0191a36c4c553d9b9fcf7bc045fd40f9883bfa98832",
+      "task_id": "CAL002-B05-PUSH-CANDIDATE-R02"
+    },
+    {
+      "artifact_class": "decode_validation",
+      "blind_alias": "PUSH_PAIR_01_A",
+      "byte_length": 727,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CONTROL-R01/decode_validation.json",
+      "sha256": "f77ca18026edba5922d5b0307726e4be8dd0bca10887037ecbb5d52f3d6c591d",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R01"
+    },
+    {
+      "artifact_class": "download_receipt",
+      "blind_alias": "PUSH_PAIR_01_A",
+      "byte_length": 3402,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CONTROL-R01/download_receipt.json",
+      "sha256": "01d3b9836a2d68f49b2068b0d64971a9ebc2b40329f86542860846b1c393e596",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R01"
+    },
+    {
+      "artifact_class": "ffprobe_result",
+      "blind_alias": "PUSH_PAIR_01_A",
+      "byte_length": 1037,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CONTROL-R01/ffprobe_result.json",
+      "sha256": "481ef5bdb6af8bd48ed343b7603ee63ca3c748daa6fc468eacfb0b7ae9545fba",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R01"
+    },
+    {
+      "artifact_class": "provider_download_media",
+      "blind_alias": "PUSH_PAIR_01_A",
+      "byte_length": 2976752,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CONTROL-R01/provider_download/f3663d7f-33dc-4937-b6e1-20c6be10a0d8_video_1.mp4",
+      "sha256": "2fec33ed778c0176f1959a2809a6dd051b1a34bd4016c2c52b4562c80dbe00ae",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R01"
+    },
+    {
+      "artifact_class": "decode_validation",
+      "blind_alias": "PUSH_PAIR_02_B",
+      "byte_length": 727,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CONTROL-R02/decode_validation.json",
+      "sha256": "f6c1d266bb4945ddf2a7bee81db93f334f6c8131f3e2cc837036ef97a6ee860c",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R02"
+    },
+    {
+      "artifact_class": "download_receipt",
+      "blind_alias": "PUSH_PAIR_02_B",
+      "byte_length": 3402,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CONTROL-R02/download_receipt.json",
+      "sha256": "b9fee47898a4c1dafef3d41da81ea90ff2c60bbed0d9a45f9e76a70d3c6b1e0a",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R02"
+    },
+    {
+      "artifact_class": "ffprobe_result",
+      "blind_alias": "PUSH_PAIR_02_B",
+      "byte_length": 1037,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CONTROL-R02/ffprobe_result.json",
+      "sha256": "9b499162d08af7a917027b3e8ebcc328296c35b9e4e13f785b298587b1a6ccab",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R02"
+    },
+    {
+      "artifact_class": "provider_download_media",
+      "blind_alias": "PUSH_PAIR_02_B",
+      "byte_length": 3163140,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/downloads/CAL002-B05-PUSH-CONTROL-R02/provider_download/03a03b27-1e3d-48e7-9122-7fdaea7df0d1_video_1.mp4",
+      "sha256": "27c67faa01048a5e9a75f7bcc65c3c0203cd13b3cf775040fb6c3386fffeef0e",
+      "task_id": "CAL002-B05-PUSH-CONTROL-R02"
+    },
+    {
+      "artifact_class": "runtime_raw_stream",
+      "blind_alias": null,
+      "byte_length": 0,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/runtime/query_result_help_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_id": null
+    },
+    {
+      "artifact_class": "runtime_raw_stream",
+      "blind_alias": null,
+      "byte_length": 388,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/runtime/query_result_help_stdout.bin",
+      "sha256": "74f728cc4d3ae36fb3dcf773e85ed003637c28d048d1cad77a29b59b9bd4b171",
+      "task_id": null
+    },
+    {
+      "artifact_class": "runtime_canary",
+      "blind_alias": null,
+      "byte_length": 1748,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/runtime/runtime_canary.json",
+      "sha256": "5c4fb0fd71459ad3b74c4f16723b0582f1a4624f9f2a3b62955b4073cbfaa0f0",
+      "task_id": null
+    },
+    {
+      "artifact_class": "runtime_raw_stream",
+      "blind_alias": null,
+      "byte_length": 0,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/runtime/version_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_id": null
+    },
+    {
+      "artifact_class": "runtime_raw_stream",
+      "blind_alias": null,
+      "byte_length": 96,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/runtime/version_stdout.bin",
+      "sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0",
+      "task_id": null
+    },
+    {
+      "artifact_class": "static_preflight",
+      "blind_alias": null,
+      "byte_length": 7708,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/download_records/CAL002-BATCH05-DOWNLOAD-85BB78B1/static_preflight.json",
+      "sha256": "e4e7339b4c1a4ad6b7ab389bf682d7e91fd5c0a826ebf76dc05efcc1328498d2",
+      "task_id": null
+    },
+    {
+      "artifact_class": "download_report",
+      "blind_alias": null,
+      "byte_length": 10923,
+      "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+      "relative_path": "reports/CAL002_BATCH05_PHASE1_DOWNLOAD_AND_BLIND_HANDOFF_RESULT.md",
+      "sha256": "1d074e773ff0fd87be22635a2a79472b8f355e08a8835bebf15c257a79f5b5a2",
+      "task_id": null
+    }
+  ],
+  "authorization_id": "CAL002-BATCH05-DOWNLOAD-AUTH-85BB78B1",
+  "blind_handoff_id": "CAL002-BATCH05-BLIND-85BB78B1",
+  "blind_review_artifacts_included": 0,
+  "creation_phase": "CAL002_BATCH05_PHASE1_DOWNLOAD_TECHNICAL_VALIDATION_AND_BLIND_HANDOFF",
+  "download_execution_id": "CAL002-BATCH05-DOWNLOAD-85BB78B1",
+  "manifest_scope": {
+    "included_artifact_count": 41,
+    "self_excluded": true,
+    "self_exclusion_reason": "The evidence manifest excludes itself to avoid recursive self-hashing and binds every other download-record file plus the final report. No blind-review root exists because handoff construction failed before root creation.",
+    "unique_bound_paths": 41
+  },
+  "provider_download_media_artifacts_included": 8,
+  "raw_provider_stream_artifacts_included": 0,
+  "schema_version": "CAL002_BATCH05_PHASE1_DOWNLOAD_EVIDENCE_MANIFEST_V0_1"
+}
