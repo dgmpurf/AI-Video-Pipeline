@@ -1,0 +1,104 @@
+{
+  "action_families": [
+    "push_reaction",
+    "brief_impact_recoil"
+  ],
+  "automatic_expansion": false,
+  "calibration_id": "CAL002-ROUTE-A-MIN-V0-1",
+  "capability_verified": false,
+  "created_artifact_bindings": [
+    {
+      "bytes": 5435,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/CAL002_ROUTE_A_SELECTION_RECORD.md",
+      "sha256": "4cc596510b35712c7f2f5300ac685526eb3bec18799cecdd4eb7ebee0fad8bc8"
+    },
+    {
+      "bytes": 13524,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/CAL002_ROUTE_A_CAPABILITY_AUDIT_V0_1.md",
+      "sha256": "26543978b2cec3e11755e3a79514ea63cf73b8180b9607a507503c11fba5a89e"
+    },
+    {
+      "bytes": 15195,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/route_a_capability_matrix.json",
+      "sha256": "27134944f35f536c51759c10c90a159f26b32bcaf045c21ce51e836b4dca25c5"
+    },
+    {
+      "bytes": 4693,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/route_a_reference_provenance_requirements.json",
+      "sha256": "0962975633ba40ab2997468f122eeced91a11c1c11007b77b7065624041be2c4"
+    },
+    {
+      "bytes": 6825,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/CAL002_ROUTE_A_MOTION_ONLY_REFERENCE_DUTY_CONTRACT_V0_1.md",
+      "sha256": "ba3ddef3a8561ec6471da392614e1c1410075dde626dff3eeba12e175666afc9"
+    },
+    {
+      "bytes": 11447,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/CAL002_ROUTE_A_MINIMUM_CALIBRATION_DESIGN_V0_1.md",
+      "sha256": "581d65bdc8f5b7e4b3dd18c4d98346df830d49a4fc929a5dbf51e3087ce3058b"
+    },
+    {
+      "bytes": 12092,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/route_a_calibration_review_schema.json",
+      "sha256": "09964858fde9b9d6d41c5f101ef68a8bcfcf9aa5b2557d58dbd765a5e18d080d"
+    }
+  ],
+  "execution_ready": false,
+  "live_authority": false,
+  "media_authority": false,
+  "motion_only_duty_required": true,
+  "next_phase": "CAL002_ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_HUMAN_DECISION",
+  "planned_duration_seconds": 5,
+  "planned_output_count": 4,
+  "planned_outputs": [
+    {
+      "action_family": "push_reaction",
+      "alias": "ROUTEA_PUSH_R01",
+      "reference_role": "ACTION_REF_PUSH_01",
+      "replicate": 1
+    },
+    {
+      "action_family": "push_reaction",
+      "alias": "ROUTEA_PUSH_R02",
+      "reference_role": "ACTION_REF_PUSH_01",
+      "replicate": 2
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "alias": "ROUTEA_IMPACT_R01",
+      "reference_role": "ACTION_REF_IMPACT_01",
+      "replicate": 1
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "alias": "ROUTEA_IMPACT_R02",
+      "reference_role": "ACTION_REF_IMPACT_01",
+      "replicate": 2
+    }
+  ],
+  "planned_reference_count": 2,
+  "planned_references": [
+    {
+      "action_family": "push_reaction",
+      "reference_role": "ACTION_REF_PUSH_01",
+      "status": "NOT_CREATED_NOT_SELECTED_NOT_APPROVED",
+      "useful_action_window_target_seconds": "1.0-2.0"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "reference_role": "ACTION_REF_IMPACT_01",
+      "status": "NOT_CREATED_NOT_SELECTED_NOT_APPROVED",
+      "useful_action_window_target_seconds": "1.0-2.0"
+    }
+  ],
+  "planned_resolution": "1280x720_or_verified_720p_equivalent",
+  "production_authority": false,
+  "reference_upload_authority": false,
+  "replicates_per_family": 2,
+  "rights_safe_provenance_required": true,
+  "route_activated": false,
+  "route_id": "CAL002_ROUTE_A_ACTION_REFERENCE_MOTION_CONTROL",
+  "route_selected": true,
+  "schema_version": "CAL002_ROUTE_A_CALIBRATION_MANIFEST_V0_1",
+  "separate_identity_scene_duties_required": true
+}

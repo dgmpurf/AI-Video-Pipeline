@@ -1,0 +1,296 @@
+{
+  "capabilities": [
+    {
+      "blocking_effect": "No block at command-surface level; semantic and rights gates still block execution.",
+      "capability_id": "CLI_MULTIMODAL_VIDEO_INPUT_SURFACE",
+      "conflicting_evidence": [],
+      "evidence_level": "LEVEL_1",
+      "evidence_paths": [
+        "sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md",
+        "sources/Dreamina_CLI工作流与执行规范_V1.2_20260701_官方Help校正版.md",
+        "sources/dreamina_cli_help_latest.md"
+      ],
+      "exactly_verified_claim": "The committed multimodal2video command surface accepts repeated local video inputs and requires at least one image or video.",
+      "explicitly_not_proven": "No Provider behavior, semantic duty, fidelity, leakage prevention, or production suitability is proven.",
+      "future_verification_required": true,
+      "status": "VERIFIED_COMMAND_SURFACE"
+    },
+    {
+      "blocking_effect": "No model-name surface block; current live availability and behavior remain blocking unknowns.",
+      "capability_id": "SEEDANCE2_VIP_MULTIMODAL_COMMAND_SURFACE",
+      "conflicting_evidence": [],
+      "evidence_level": "LEVEL_1",
+      "evidence_paths": [
+        "sources/Dreamina_CLI工作流与执行规范_V1.2_20260701_官方Help校正版.md",
+        "sources/dreamina_cli_help_latest.md"
+      ],
+      "exactly_verified_claim": "seedance2.0_vip is listed for the committed multimodal2video command surface.",
+      "explicitly_not_proven": "Current account availability, current Provider acceptance, current price, and output quality are not proven.",
+      "future_verification_required": true,
+      "status": "VERIFIED_COMMAND_SURFACE"
+    },
+    {
+      "blocking_effect": "The planned one-video-per-task design fits the committed count surface; accepted file constraints remain unknown.",
+      "capability_id": "VIDEO_REFERENCE_COUNT_LIMIT",
+      "conflicting_evidence": [],
+      "evidence_level": "LEVEL_1",
+      "evidence_paths": [
+        "sources/Dreamina_CLI工作流与执行规范_V1.2_20260701_官方Help校正版.md",
+        "sources/dreamina_cli_help_latest.md"
+      ],
+      "exactly_verified_claim": "The committed multimodal2video input limit is video <= 3.",
+      "explicitly_not_proven": "Accepted formats, file sizes, input-video duration, and actual upload success are not proven.",
+      "future_verification_required": true,
+      "status": "VERIFIED_COMMAND_SURFACE"
+    },
+    {
+      "blocking_effect": "The planned five-second output fits the committed duration surface.",
+      "capability_id": "OUTPUT_DURATION_SURFACE",
+      "conflicting_evidence": [],
+      "evidence_level": "LEVEL_1",
+      "evidence_paths": [
+        "sources/Dreamina_CLI工作流与执行规范_V1.2_20260701_官方Help校正版.md",
+        "sources/dreamina_cli_help_latest.md"
+      ],
+      "exactly_verified_claim": "The committed multimodal2video output-duration surface is 4-15 seconds.",
+      "explicitly_not_proven": "Exact output duration, motion timing compliance, and current runtime behavior are not guaranteed.",
+      "future_verification_required": true,
+      "status": "VERIFIED_COMMAND_SURFACE"
+    },
+    {
+      "blocking_effect": "The planned 720p-equivalent output fits the committed VIP resolution surface.",
+      "capability_id": "OUTPUT_RESOLUTION_SURFACE",
+      "conflicting_evidence": [],
+      "evidence_level": "LEVEL_1",
+      "evidence_paths": [
+        "sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md",
+        "sources/dreamina_cli_help_latest.md"
+      ],
+      "exactly_verified_claim": "The committed seedance2.0_vip multimodal2video surface lists 720p, 1080p, and 4k.",
+      "explicitly_not_proven": "Current runtime acceptance or exact pixel dimensions are not proven.",
+      "future_verification_required": true,
+      "status": "VERIFIED_COMMAND_SURFACE"
+    },
+    {
+      "blocking_effect": "Blocks Route A execution until separately validated.",
+      "capability_id": "MOTION_ONLY_REFERENCE_SEMANTICS",
+      "conflicting_evidence": [],
+      "evidence_level": "LEVEL_2_AND_3_DESIGN_ONLY",
+      "evidence_paths": [
+        "docs/reference_library_v0_1/safety/04_AI视频制作_模仿参考库ReferenceDuty与安全规则_V0.1.md",
+        "sources/AI视频制作_动作参考视频库与审片标准_V0.1.md",
+        "sources/AI视频制作_实测规则库_V1.8_多模态提示词专家与IP资料安全增补稿.md"
+      ],
+      "exactly_verified_claim": "The project defines an intended motion-only duty and prohibited copied duties.",
+      "explicitly_not_proven": "The committed CLI help does not define or guarantee Provider enforcement of motion-only semantics.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Blocks any claim that Route A improves onset or contact timing.",
+      "capability_id": "ACTION_TIMING_TRANSFER_FIDELITY",
+      "conflicting_evidence": [],
+      "evidence_level": "NO_PROVIDER_EVIDENCE",
+      "evidence_paths": [
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_RESET_DECISION_V0_2/CAL002_ROUTE_RESET_DECISION_PACK_V0_2.md"
+      ],
+      "exactly_verified_claim": "Timing transfer is a planned Route A target.",
+      "explicitly_not_proven": "No committed output proves timing transfer fidelity.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Blocks any claim that a reference controls the full pose sequence.",
+      "capability_id": "POSE_PROGRESSION_TRANSFER_FIDELITY",
+      "conflicting_evidence": [],
+      "evidence_level": "NO_PROVIDER_EVIDENCE",
+      "evidence_paths": [
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_RESET_DECISION_V0_2/CAL002_ROUTE_RESET_DECISION_PACK_V0_2.md"
+      ],
+      "exactly_verified_claim": "Pose progression is a planned motion-reference duty.",
+      "explicitly_not_proven": "No committed output proves pose progression transfer.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Blocks a positive action-causality conclusion.",
+      "capability_id": "WEIGHT_TRANSFER_FIDELITY",
+      "conflicting_evidence": [],
+      "evidence_level": "NO_PROVIDER_EVIDENCE",
+      "evidence_paths": [
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_RESET_DECISION_V0_2/CAL002_ROUTE_RESET_DECISION_PACK_V0_2.md"
+      ],
+      "exactly_verified_claim": "Weight transfer is a planned motion-reference duty.",
+      "explicitly_not_proven": "No committed Route A output proves receiving-body consequence or weight transfer.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Blocks a strict primary pass when exact footwork is required.",
+      "capability_id": "FOOTWORK_COUNT_FIDELITY",
+      "conflicting_evidence": [],
+      "evidence_level": "NO_PROVIDER_EVIDENCE",
+      "evidence_paths": [
+        "reports/CAL002_BATCH05_EXPERIMENT_RESULT_ACCEPTANCE_AND_ROUTE_RESET_DECISION_V0_2_RESULT.md"
+      ],
+      "exactly_verified_claim": "Batch05 established foot-count failure as a route-reset target.",
+      "explicitly_not_proven": "No committed Route A output proves exactly one recovery placement.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Blocks a strict pass if contact remains prolonged.",
+      "capability_id": "CONTACT_DURATION_FIDELITY",
+      "conflicting_evidence": [],
+      "evidence_level": "NO_PROVIDER_EVIDENCE",
+      "evidence_paths": [
+        "reports/CAL002_BATCH05_EXPERIMENT_RESULT_ACCEPTANCE_AND_ROUTE_RESET_DECISION_V0_2_RESULT.md"
+      ],
+      "exactly_verified_claim": "Batch05 established sustained contact as a repeated failure.",
+      "explicitly_not_proven": "No committed Route A output proves brief contact-duration transfer.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Blocks the impact-family success screen.",
+      "capability_id": "RECOIL_FIDELITY",
+      "conflicting_evidence": [],
+      "evidence_level": "NO_PROVIDER_EVIDENCE",
+      "evidence_paths": [
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_RESET_DECISION_V0_2/CAL002_ROUTE_RESET_DECISION_PACK_V0_2.md"
+      ],
+      "exactly_verified_claim": "Recoil is a planned motion-reference duty.",
+      "explicitly_not_proven": "No committed Route A output proves immediate upper-body recoil.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Blocks success when an extended-arm freeze or held contact remains.",
+      "capability_id": "RELEASE_RETRACT_FIDELITY",
+      "conflicting_evidence": [],
+      "evidence_level": "NO_PROVIDER_EVIDENCE",
+      "evidence_paths": [
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_RESET_DECISION_V0_2/CAL002_ROUTE_RESET_DECISION_PACK_V0_2.md"
+      ],
+      "exactly_verified_claim": "Release and retraction are planned motion-reference duties.",
+      "explicitly_not_proven": "No committed Route A output proves timely release or retraction.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Material identity leakage blocks production use and repeated leakage closes expansion.",
+      "capability_id": "IDENTITY_SEPARATION",
+      "conflicting_evidence": [],
+      "evidence_level": "LEVEL_2_DESIGN_ONLY",
+      "evidence_paths": [
+        "sources/AI视频制作_实测规则库_V1.8_多模态提示词专家与IP资料安全增补稿.md"
+      ],
+      "exactly_verified_claim": "Project rules require identity to remain a separate duty.",
+      "explicitly_not_proven": "Provider identity separation from a video reference is not proven.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Material costume leakage blocks production use.",
+      "capability_id": "COSTUME_SEPARATION",
+      "conflicting_evidence": [],
+      "evidence_level": "LEVEL_2_DESIGN_ONLY",
+      "evidence_paths": [
+        "sources/AI视频制作_实测规则库_V1.8_多模态提示词专家与IP资料安全增补稿.md"
+      ],
+      "exactly_verified_claim": "Project rules prohibit copying reference costume.",
+      "explicitly_not_proven": "Provider costume separation is not proven.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Material scene leakage blocks production use and repeated leakage closes expansion.",
+      "capability_id": "SCENE_SEPARATION",
+      "conflicting_evidence": [],
+      "evidence_level": "LEVEL_2_DESIGN_ONLY",
+      "evidence_paths": [
+        "sources/AI视频制作_实测规则库_V1.8_多模态提示词专家与IP资料安全增补稿.md"
+      ],
+      "exactly_verified_claim": "Project rules require scene to remain a separate duty.",
+      "explicitly_not_proven": "Provider scene separation from a video reference is not proven.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Camera leakage invalidates the intended fixed-camera calibration.",
+      "capability_id": "CAMERA_SEPARATION",
+      "conflicting_evidence": [],
+      "evidence_level": "LEVEL_2_DESIGN_ONLY",
+      "evidence_paths": [
+        "sources/AI视频制作_实测规则库_V1.8_多模态提示词专家与IP资料安全增补稿.md"
+      ],
+      "exactly_verified_claim": "Project rules distinguish action-reference and camera-reference duties.",
+      "explicitly_not_proven": "Provider camera separation from an action reference is not proven.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Unknown priority behavior can create reference-role conflict and blocks execution readiness.",
+      "capability_id": "REFERENCE_PRIORITY_OR_WEIGHTING",
+      "conflicting_evidence": [],
+      "evidence_level": "NO_COMMAND_EVIDENCE",
+      "evidence_paths": [
+        "sources/dreamina_cli_help_latest.md"
+      ],
+      "exactly_verified_claim": "No reference-weighting or priority control is defined in the committed help.",
+      "explicitly_not_proven": "Relative influence among action, identity, scene, image, video, and audio references is not proven.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Prevents interpreting two replicates as deterministic behavior.",
+      "capability_id": "DETERMINISTIC_REPEATABILITY",
+      "conflicting_evidence": [],
+      "evidence_level": "NO_PROVIDER_EVIDENCE",
+      "evidence_paths": [
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.3.md"
+      ],
+      "exactly_verified_claim": "Project evidence recognizes uncontrolled generation variation.",
+      "explicitly_not_proven": "No deterministic seed or exact repeatability guarantee is committed.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Blocks calibration preparation and all active upload authority.",
+      "capability_id": "RIGHTS_SAFE_REFERENCE_AVAILABILITY",
+      "conflicting_evidence": [],
+      "evidence_level": "LEVEL_2_AND_3_REQUIREMENTS_ONLY",
+      "evidence_paths": [
+        "docs/reference_library_v0_1/safety/04_AI视频制作_模仿参考库ReferenceDuty与安全规则_V0.1.md",
+        "sources/AI视频制作_动作参考视频库与审片标准_V0.1.md"
+      ],
+      "exactly_verified_claim": "Committed project documents define rights and human-review gates.",
+      "explicitly_not_proven": "No real rights-safe Route A reference asset is established.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    },
+    {
+      "blocking_effect": "Blocks execution-package creation, upload, live generation, expansion, and production re-entry.",
+      "capability_id": "ROUTE_A_EXECUTION_READINESS",
+      "conflicting_evidence": [],
+      "evidence_level": "AGGREGATE",
+      "evidence_paths": [
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_RESET_DECISION_V0_2/CAL002_ROUTE_RESET_DECISION_PACK_V0_2.md",
+        "sources/dreamina_cli_help_latest.md"
+      ],
+      "exactly_verified_claim": "Only the command input surface and design prerequisites are established.",
+      "explicitly_not_proven": "Provider behavior, motion-only semantics, leakage control, rights-safe inputs, current terms, cost, and calibration performance are not established.",
+      "future_verification_required": true,
+      "status": "UNVERIFIED"
+    }
+  ],
+  "capability_conclusion": "COMMAND_SURFACE_SUPPORT_VERIFIED_MOTION_ONLY_BEHAVIOR_UNVERIFIED",
+  "motion_only_semantics_verified": false,
+  "provider_capability_verified": false,
+  "route_activated": false,
+  "route_execution_authorized": false,
+  "route_execution_ready": false,
+  "route_id": "CAL002_ROUTE_A_ACTION_REFERENCE_MOTION_CONTROL",
+  "route_selected": true,
+  "schema_version": "CAL002_ROUTE_A_CAPABILITY_MATRIX_V0_1"
+}

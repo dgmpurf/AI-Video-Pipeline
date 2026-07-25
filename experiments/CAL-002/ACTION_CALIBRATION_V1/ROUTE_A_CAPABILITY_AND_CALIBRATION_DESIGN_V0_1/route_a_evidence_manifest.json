@@ -1,0 +1,209 @@
+{
+  "artifact_count": 9,
+  "artifacts": [
+    {
+      "bytes": 5435,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/CAL002_ROUTE_A_SELECTION_RECORD.md",
+      "role": "route_selection_record",
+      "sha256": "4cc596510b35712c7f2f5300ac685526eb3bec18799cecdd4eb7ebee0fad8bc8"
+    },
+    {
+      "bytes": 13524,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/CAL002_ROUTE_A_CAPABILITY_AUDIT_V0_1.md",
+      "role": "capability_audit",
+      "sha256": "26543978b2cec3e11755e3a79514ea63cf73b8180b9607a507503c11fba5a89e"
+    },
+    {
+      "bytes": 15195,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/route_a_capability_matrix.json",
+      "role": "capability_matrix",
+      "sha256": "27134944f35f536c51759c10c90a159f26b32bcaf045c21ce51e836b4dca25c5"
+    },
+    {
+      "bytes": 4693,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/route_a_reference_provenance_requirements.json",
+      "role": "reference_provenance_requirements",
+      "sha256": "0962975633ba40ab2997468f122eeced91a11c1c11007b77b7065624041be2c4"
+    },
+    {
+      "bytes": 6825,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/CAL002_ROUTE_A_MOTION_ONLY_REFERENCE_DUTY_CONTRACT_V0_1.md",
+      "role": "motion_only_reference_duty_contract",
+      "sha256": "ba3ddef3a8561ec6471da392614e1c1410075dde626dff3eeba12e175666afc9"
+    },
+    {
+      "bytes": 11447,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/CAL002_ROUTE_A_MINIMUM_CALIBRATION_DESIGN_V0_1.md",
+      "role": "minimum_calibration_design",
+      "sha256": "581d65bdc8f5b7e4b3dd18c4d98346df830d49a4fc929a5dbf51e3087ce3058b"
+    },
+    {
+      "bytes": 12092,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/route_a_calibration_review_schema.json",
+      "role": "calibration_review_schema",
+      "sha256": "09964858fde9b9d6d41c5f101ef68a8bcfcf9aa5b2557d58dbd765a5e18d080d"
+    },
+    {
+      "bytes": 3954,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/route_a_calibration_manifest.json",
+      "role": "calibration_manifest",
+      "sha256": "2c80bf9574d7ea42670d334e14e6e65c46cfe30fa35e0904a515ea7eefcfc3f3"
+    },
+    {
+      "bytes": 13141,
+      "path": "reports/CAL002_ROUTE_A_CAPABILITY_AUDIT_AND_MINIMUM_CALIBRATION_DESIGN_RESULT.md",
+      "role": "governance_report",
+      "sha256": "dfbfc04ad1f6b6997fc7034363f0ab4fb1f7697c46aa0918a8afcf60253d8b56"
+    }
+  ],
+  "capability_conclusion": "COMMAND_SURFACE_SUPPORT_VERIFIED_MOTION_ONLY_BEHAVIOR_UNVERIFIED",
+  "evidence_file_count": 15,
+  "evidence_files": [
+    {
+      "bytes": 5614,
+      "evidence_level": "LEVEL_1",
+      "evidence_role": "current_committed_help_summary_and_command_limits",
+      "git_blob": "13db416380426b2f71af92a94a4752ee865dacad",
+      "head_equality": true,
+      "path": "sources/dreamina_cli_help_latest.md",
+      "sha256": "f3e7cafc2437c02e0eaceffabe6b247d27b4ec892fa66473f44181dce3a61238"
+    },
+    {
+      "bytes": 4758,
+      "evidence_level": "LEVEL_1",
+      "evidence_role": "official_help_corrected_workflow_facts",
+      "git_blob": "b5b248470dd68064aa50dbfafe7f27f3def7def5",
+      "head_equality": true,
+      "path": "sources/Dreamina_CLI工作流与执行规范_V1.2_20260701_官方Help校正版.md",
+      "sha256": "8b466cff8d14cd7dbd8ee1e5effdb320d6448267532acd7ff642e90fe569dfef"
+    },
+    {
+      "bytes": 3354,
+      "evidence_level": "LEVEL_1",
+      "evidence_role": "current_committed_execution_contract_successor",
+      "git_blob": "77ad2e4bff302ce3561b00010ec21473744a9beb",
+      "head_equality": true,
+      "path": "sources/Dreamina_CLI执行契约_V1.4_20260701_官方Help更新与双环境补丁.md",
+      "sha256": "fcda1654a51888188dfe29b256db71a5338fe3acdf8f9f7803b56d2abac5da52"
+    },
+    {
+      "bytes": 4084,
+      "evidence_level": "LEVEL_1",
+      "evidence_role": "command_field_and_model_surface_schema",
+      "git_blob": "e2454ea0f0e9bf3542f16d75f8f6fe3ab850787c",
+      "head_equality": true,
+      "path": "sources/DreaminaBatcher_manifest_schema_V1.2_20260701_官方Help校正版.md",
+      "sha256": "328c2a738b4b45200dc7ca4547f03c2ad6f9adf193afe35c08f372796548c44b"
+    },
+    {
+      "bytes": 9221,
+      "evidence_level": "LEVEL_1",
+      "evidence_role": "no_live_authority_and_activation_boundary",
+      "git_blob": "094be6b923d2e2d2f78a930be64dd3ad5feb2700",
+      "head_equality": true,
+      "path": "sources/AI视频制作_正式授权序列化与完整性校验规则_V0.1.md",
+      "sha256": "f5471b851c6966e6de73ea552b42f4cd00d06af6aec5164ccf47beb373368572"
+    },
+    {
+      "bytes": 11038,
+      "evidence_level": "LEVEL_1",
+      "evidence_role": "highest_committed_source_index_and_evidence_priority",
+      "git_blob": "c533386576332f0429fb637f890ef9d3c174bbec",
+      "head_equality": true,
+      "path": "sources/AI视频制作_Source索引与使用优先级_V1.12.md",
+      "sha256": "e13a98c4a12fab8ba3267b3074acf103e1458798fb865b6363ee3e732d275022"
+    },
+    {
+      "bytes": 4144,
+      "evidence_level": "LEVEL_2",
+      "evidence_role": "project_action_reference_duty_and_review_rules",
+      "git_blob": "b5c72a49be997d15771a5510112c3393e55682bd",
+      "head_equality": true,
+      "path": "sources/AI视频制作_动作参考视频库与审片标准_V0.1.md",
+      "sha256": "39773c7efc29d35b5a4a8748d4f874dad9985e2b44a7ad1b63cf3bb11800e0d1"
+    },
+    {
+      "bytes": 25091,
+      "evidence_level": "LEVEL_2",
+      "evidence_role": "multimodal_role_separation_and_ip_safety",
+      "git_blob": "a7d552ecfd18adc6aaba95dcce652c65bfcba06a",
+      "head_equality": true,
+      "path": "sources/AI视频制作_实测规则库_V1.8_多模态提示词专家与IP资料安全增补稿.md",
+      "sha256": "5e6cf2fcd4809a5e014513a35e39dafe0b13a827944926617334c7b9d4c2651f"
+    },
+    {
+      "bytes": 7583,
+      "evidence_level": "LEVEL_2",
+      "evidence_role": "route_reset_and_repeated_failure_rules",
+      "git_blob": "26700dcd924bfe2526ae2678506d3291abb5d854",
+      "head_equality": true,
+      "path": "sources/AI视频制作_实测规则库_V1.12_失败台账与路线重置规则增补稿.md",
+      "sha256": "bcf034b496bd0ad35c8fff48fb8de73105e823cd197338a4eea3ae6b10ac09d4"
+    },
+    {
+      "bytes": 20250,
+      "evidence_level": "LEVEL_2",
+      "evidence_role": "route_comparison_unknowns_and_minimum_program_basis",
+      "git_blob": "f4da49fa8df81c8fb2cf8a46466e725d0e95194a",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_RESET_DECISION_V0_2/CAL002_ROUTE_RESET_DECISION_PACK_V0_2.md",
+      "sha256": "5032cc253836de503e3fd39429826c6c791959254149eb82334795c9c1392c8c"
+    },
+    {
+      "bytes": 13556,
+      "evidence_level": "LEVEL_2",
+      "evidence_role": "accepted_batch05_result_and_route_closure",
+      "git_blob": "b56a4ec8ce82cc64e4ee0c9271ffb9815e25d6fe",
+      "head_equality": true,
+      "path": "reports/CAL002_BATCH05_EXPERIMENT_RESULT_ACCEPTANCE_AND_ROUTE_RESET_DECISION_V0_2_RESULT.md",
+      "sha256": "ddd7887c1afe60ec0a5afc44b2bf61fe7b67f66f39fd040668a197ed49b0b404"
+    },
+    {
+      "bytes": 7533,
+      "evidence_level": "LEVEL_2",
+      "evidence_role": "action_causality_capability_boundary",
+      "git_blob": "b14e627bf2437493f2333ffed7d42b00f790e40f",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.3.md",
+      "sha256": "0fdda04117d076fcb8e05f2a9a094d4302112c5539b3d1ddf878ed5c03c93464"
+    },
+    {
+      "bytes": 21749,
+      "evidence_level": "LEVEL_2",
+      "evidence_role": "human_confirmed_project_source_state_and_batch05_controls",
+      "git_blob": "0e42b50b64b013a8b559d9828cd9f32ad0faf85e",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/CAL002_BATCH05_DESIGN_SPEC.md",
+      "sha256": "09eb7f17fd6c346e99e6af65fb5a1c407293c4dd783c35d823ed64267ad412b5"
+    },
+    {
+      "bytes": 6412,
+      "evidence_level": "LEVEL_3",
+      "evidence_role": "draft_action_grammar_library_plan",
+      "git_blob": "612c99956883fc625908ebd5c1de6ca0d933a0b1",
+      "head_equality": true,
+      "path": "reports/evidence_consolidation/K244S_SHOT04_R02_AND_MACRO_LESSONS/ACTION_REFERENCE_VIDEO_LIBRARY_PLAN.md",
+      "sha256": "514cf20fd36703ecf78a9d0823aa2edeef6f9c1db50af1e27fdfea30de8749fd"
+    },
+    {
+      "bytes": 24347,
+      "evidence_level": "LEVEL_3",
+      "evidence_role": "draft_active_input_safety_and_reference_duty_framework",
+      "git_blob": "b7aff51e71593d23b57e489e1e91d749c5c53fc5",
+      "head_equality": true,
+      "path": "docs/reference_library_v0_1/safety/04_AI视频制作_模仿参考库ReferenceDuty与安全规则_V0.1.md",
+      "sha256": "51dac29d529831e8721dc49d613e23366ae92510749c8132450b4a68877751a2"
+    }
+  ],
+  "included_artifact_count": 9,
+  "level_counts": {
+    "level_1": 6,
+    "level_2": 7,
+    "level_3": 2
+  },
+  "route_id": "CAL002_ROUTE_A_ACTION_REFERENCE_MOTION_CONTROL",
+  "schema_version": "CAL002_ROUTE_A_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "starting_head": "8803ae7ccaec354c703f67ded79bd01fc33eeaba",
+  "unique_bound_paths": 9
+}

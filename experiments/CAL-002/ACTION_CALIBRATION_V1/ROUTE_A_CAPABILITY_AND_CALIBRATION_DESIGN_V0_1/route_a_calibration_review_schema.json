@@ -1,0 +1,500 @@
+{
+  "$defs": {
+    "family_summary": {
+      "additionalProperties": false,
+      "properties": {
+        "action_family": {
+          "enum": [
+            "push_reaction",
+            "brief_impact_recoil"
+          ],
+          "type": "string"
+        },
+        "expansion_recommended": {
+          "type": "boolean"
+        },
+        "family_result": {
+          "enum": [
+            "ROUTE_A_MINIMUM_POSITIVE_SIGNAL",
+            "FAMILY_SPECIFIC_ROUTE_A_RESULT",
+            "ROUTE_A_RESET_REQUIRED",
+            "SAFETY_OR_RIGHTS_BLOCK",
+            "CAPABILITY_BLOCK_ROUTE_A",
+            "REFERENCE_DUTY_CONFLICT_ROUTE_A",
+            "ROUTE_A_LEAKAGE_FAILURE",
+            "INCONCLUSIVE"
+          ],
+          "type": "string"
+        },
+        "human_rationale": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "strict_pass_count": {
+          "maximum": 2,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "technical_pass_count": {
+          "maximum": 2,
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "action_family",
+        "expansion_recommended",
+        "family_result",
+        "human_rationale",
+        "strict_pass_count",
+        "technical_pass_count"
+      ],
+      "type": "object"
+    },
+    "leakage_review": {
+      "additionalProperties": false,
+      "properties": {
+        "body_appearance_leakage": {
+          "type": "boolean"
+        },
+        "camera_leakage": {
+          "type": "boolean"
+        },
+        "composition_leakage": {
+          "type": "boolean"
+        },
+        "costume_leakage": {
+          "type": "boolean"
+        },
+        "face_leakage": {
+          "type": "boolean"
+        },
+        "identity_leakage": {
+          "type": "boolean"
+        },
+        "leakage_notes": {
+          "type": "string"
+        },
+        "lighting_or_color_leakage": {
+          "type": "boolean"
+        },
+        "material_leakage_detected": {
+          "type": "boolean"
+        },
+        "motion_reference_ignored": {
+          "type": "boolean"
+        },
+        "motion_reference_overdominant": {
+          "type": "boolean"
+        },
+        "prop_leakage": {
+          "type": "boolean"
+        },
+        "reference_role_conflict": {
+          "type": "boolean"
+        },
+        "rights_or_provenance_defect_detected": {
+          "type": "boolean"
+        },
+        "scene_leakage": {
+          "type": "boolean"
+        },
+        "story_or_ip_leakage": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "body_appearance_leakage",
+        "camera_leakage",
+        "composition_leakage",
+        "costume_leakage",
+        "face_leakage",
+        "identity_leakage",
+        "leakage_notes",
+        "lighting_or_color_leakage",
+        "material_leakage_detected",
+        "motion_reference_ignored",
+        "motion_reference_overdominant",
+        "prop_leakage",
+        "reference_role_conflict",
+        "rights_or_provenance_defect_detected",
+        "scene_leakage",
+        "story_or_ip_leakage"
+      ],
+      "type": "object"
+    },
+    "static_tail": {
+      "additionalProperties": false,
+      "properties": {
+        "duration_seconds": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "observed": {
+          "type": "boolean"
+        },
+        "start_seconds": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "duration_seconds",
+        "observed",
+        "start_seconds"
+      ],
+      "type": "object"
+    },
+    "status_dimension": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "INCONCLUSIVE",
+        "NOT_APPLICABLE"
+      ],
+      "type": "string"
+    },
+    "video_review": {
+      "additionalProperties": false,
+      "properties": {
+        "action_family": {
+          "enum": [
+            "push_reaction",
+            "brief_impact_recoil"
+          ],
+          "type": "string"
+        },
+        "action_family_match": {
+          "$ref": "#/$defs/status_dimension"
+        },
+        "action_onset": {
+          "$ref": "#/$defs/status_dimension"
+        },
+        "alias": {
+          "enum": [
+            "ROUTEA_PUSH_R01",
+            "ROUTEA_PUSH_R02",
+            "ROUTEA_IMPACT_R01",
+            "ROUTEA_IMPACT_R02"
+          ],
+          "type": "string"
+        },
+        "camera_compliance": {
+          "$ref": "#/$defs/status_dimension"
+        },
+        "complete_mp4_reviewed": {
+          "const": true,
+          "type": "boolean"
+        },
+        "contact_duration": {
+          "additionalProperties": false,
+          "properties": {
+            "classification": {
+              "enum": [
+                "BRIEF",
+                "PROLONGED",
+                "NOT_VISIBLE",
+                "UNKNOWN"
+              ],
+              "type": "string"
+            },
+            "estimated_seconds": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "classification",
+            "estimated_seconds"
+          ],
+          "type": "object"
+        },
+        "contact_onset": {
+          "$ref": "#/$defs/status_dimension"
+        },
+        "ending_motion_compliance": {
+          "$ref": "#/$defs/status_dimension"
+        },
+        "first_frame_separation": {
+          "$ref": "#/$defs/status_dimension"
+        },
+        "foot_result_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "foot_result_presence": {
+          "$ref": "#/$defs/status_dimension"
+        },
+        "foot_result_type": {
+          "enum": [
+            "EXACTLY_ONE_REAR_FOOT_PLACEMENT",
+            "MULTI_STEP_RETREAT",
+            "NO_FOOT_RESULT",
+            "AMBIGUOUS",
+            "OTHER"
+          ],
+          "type": "string"
+        },
+        "full_body_visibility": {
+          "$ref": "#/$defs/status_dimension"
+        },
+        "identity_consistency": {
+          "$ref": "#/$defs/status_dimension"
+        },
+        "leakage_review": {
+          "$ref": "#/$defs/leakage_review"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "overall_visual_usability": {
+          "enum": [
+            "USABLE",
+            "PARTIAL",
+            "NOT_USABLE",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "post_contact_causality": {
+          "$ref": "#/$defs/status_dimension"
+        },
+        "prolonged_contact": {
+          "type": "boolean"
+        },
+        "release_retract": {
+          "$ref": "#/$defs/status_dimension"
+        },
+        "static_tail": {
+          "$ref": "#/$defs/static_tail"
+        },
+        "strict_primary_endpoint": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "INCONCLUSIVE"
+          ],
+          "type": "string"
+        },
+        "technical_validity": {
+          "enum": [
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        },
+        "torso_displacement_or_recoil": {
+          "$ref": "#/$defs/status_dimension"
+        }
+      },
+      "required": [
+        "action_family",
+        "action_family_match",
+        "action_onset",
+        "alias",
+        "camera_compliance",
+        "complete_mp4_reviewed",
+        "contact_duration",
+        "contact_onset",
+        "ending_motion_compliance",
+        "first_frame_separation",
+        "foot_result_count",
+        "foot_result_presence",
+        "foot_result_type",
+        "full_body_visibility",
+        "identity_consistency",
+        "leakage_review",
+        "notes",
+        "overall_visual_usability",
+        "post_contact_causality",
+        "prolonged_contact",
+        "release_retract",
+        "static_tail",
+        "strict_primary_endpoint",
+        "technical_validity",
+        "torso_displacement_or_recoil"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "CAL002_ROUTE_A_CALIBRATION_REVIEW_SCHEMA_V0_1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "calibration_id": {
+      "const": "CAL002-ROUTE-A-MIN-V0-1",
+      "type": "string"
+    },
+    "family_summaries": {
+      "additionalProperties": false,
+      "properties": {
+        "brief_impact_recoil": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/family_summary"
+            },
+            {
+              "properties": {
+                "action_family": {
+                  "const": "brief_impact_recoil"
+                }
+              }
+            }
+          ]
+        },
+        "push_reaction": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/family_summary"
+            },
+            {
+              "properties": {
+                "action_family": {
+                  "const": "push_reaction"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "brief_impact_recoil",
+        "push_reaction"
+      ],
+      "type": "object"
+    },
+    "human_final_approval": {
+      "enum": [
+        "PENDING",
+        "APPROVE_EXPANSION",
+        "DO_NOT_EXPAND",
+        "ROUTE_BLOCKED"
+      ],
+      "type": "string"
+    },
+    "production_approved": {
+      "const": false,
+      "type": "boolean"
+    },
+    "record_version": {
+      "const": "CAL002_ROUTE_A_CALIBRATION_REVIEW_RECORD_V0_1",
+      "type": "string"
+    },
+    "review_completed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reviewer": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "route_id": {
+      "const": "CAL002_ROUTE_A_ACTION_REFERENCE_MOTION_CONTROL",
+      "type": "string"
+    },
+    "video_reviews": {
+      "additionalProperties": false,
+      "properties": {
+        "ROUTEA_IMPACT_R01": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/video_review"
+            },
+            {
+              "properties": {
+                "action_family": {
+                  "const": "brief_impact_recoil"
+                },
+                "alias": {
+                  "const": "ROUTEA_IMPACT_R01"
+                }
+              }
+            }
+          ]
+        },
+        "ROUTEA_IMPACT_R02": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/video_review"
+            },
+            {
+              "properties": {
+                "action_family": {
+                  "const": "brief_impact_recoil"
+                },
+                "alias": {
+                  "const": "ROUTEA_IMPACT_R02"
+                }
+              }
+            }
+          ]
+        },
+        "ROUTEA_PUSH_R01": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/video_review"
+            },
+            {
+              "properties": {
+                "action_family": {
+                  "const": "push_reaction"
+                },
+                "alias": {
+                  "const": "ROUTEA_PUSH_R01"
+                }
+              }
+            }
+          ]
+        },
+        "ROUTEA_PUSH_R02": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/video_review"
+            },
+            {
+              "properties": {
+                "action_family": {
+                  "const": "push_reaction"
+                },
+                "alias": {
+                  "const": "ROUTEA_PUSH_R02"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "ROUTEA_IMPACT_R01",
+        "ROUTEA_IMPACT_R02",
+        "ROUTEA_PUSH_R01",
+        "ROUTEA_PUSH_R02"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "calibration_id",
+    "family_summaries",
+    "human_final_approval",
+    "production_approved",
+    "record_version",
+    "review_completed_at",
+    "reviewer",
+    "route_id",
+    "video_reviews"
+  ],
+  "title": "CAL-002 Route A Minimum Calibration Review Record",
+  "type": "object"
+}
