@@ -1,0 +1,183 @@
+{
+  "artifact_count": 14,
+  "created_artifacts": [
+    {
+      "byte_length": 3983,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/authorization_activation_record.json",
+      "role": "authorization_activation_record",
+      "sha256": "bef7eabd0fd5872ceca601f82d0cc2312eaa3c5d5902a3c0dde8006c2243d470"
+    },
+    {
+      "byte_length": 96,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/runtime/version_stdout.bin",
+      "role": "version_stdout",
+      "sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0"
+    },
+    {
+      "byte_length": 0,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/runtime/version_stderr.bin",
+      "role": "version_stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "byte_length": 2739,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/runtime/multimodal2video_help_stdout.bin",
+      "role": "multimodal2video_help_stdout",
+      "sha256": "fb3aa97d2d33b1d745a52519eac529c4a21a2d90aef9f1f6a452442fcf884277"
+    },
+    {
+      "byte_length": 0,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/runtime/multimodal2video_help_stderr.bin",
+      "role": "multimodal2video_help_stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "byte_length": 3988,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/runtime/runtime_capability_and_credit_canary.json",
+      "role": "runtime_and_credit_canary",
+      "sha256": "db379f387613c1a76f112b4251e5180f9dbf6efb6a2df82e1d4534d5fb13cdf8"
+    },
+    {
+      "byte_length": 2186,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/prompts/ROUTEA_PUSH_R01_prompt.txt",
+      "role": "push_prompt",
+      "sha256": "c13d3aee97a4e2462e7673218d1fa6dabba9ded48c9812429709d399fe8f1e28"
+    },
+    {
+      "byte_length": 2189,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/prompts/ROUTEA_IMPACT_R01_prompt.txt",
+      "role": "impact_prompt",
+      "sha256": "25d32e3b1499ec9df9315984f1c5cfb69feb27e2c3ca5caffa841942e3d4cc8a"
+    },
+    {
+      "byte_length": 10504,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/packages/ROUTEA_PUSH_R01_execution_package.json",
+      "role": "push_execution_package",
+      "sha256": "2c5d617a75fd2bdbe7ed5559bd55e05cfb4fc85aff060a0dae9674fb2f21daef"
+    },
+    {
+      "byte_length": 10531,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/packages/ROUTEA_IMPACT_R01_execution_package.json",
+      "role": "impact_execution_package",
+      "sha256": "633ac4da3ed75382c129ecb6e8eadc81fa38c63ba6bc46bdaebcac0a502fe1d3"
+    },
+    {
+      "byte_length": 1595,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/route_a_r01_execution_manifest.csv",
+      "role": "execution_manifest",
+      "sha256": "9c4b4abc513ea7e5e15990128079f6c4da636c5f4ab1f132057d67ca94cac538"
+    },
+    {
+      "byte_length": 5476,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/route_a_r01_package_index.json",
+      "role": "package_index",
+      "sha256": "04d139b58892585514869d23e13b42b4e61d0b37b2c360d77ce954e5036bc588"
+    },
+    {
+      "byte_length": 2378,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/route_a_r01_canary_review_contract.json",
+      "role": "canary_review_contract",
+      "sha256": "75eb9438201b79e510461e1db2bbac1aecfac5fcc8b53a8b40e8fa59fef7e4d0"
+    },
+    {
+      "byte_length": 17333,
+      "path": "reports/CAL002_ROUTE_A_R01_CAPABILITY_CREDIT_AND_TWO_PACKAGE_PREPARATION_RESULT.md",
+      "role": "governance_report",
+      "sha256": "1887b725abf9880d4abd9ef8b845ccf99710e16f28c7367ee1566a255cc54134"
+    }
+  ],
+  "included_artifact_count": 14,
+  "input_bindings": [
+    {
+      "byte_length": 11018,
+      "git_blob": "f4f9fee2888bca93edb1879c0f0e3289364ca55f",
+      "path": "reports/CAL002_ROUTE_A_REFERENCE_FULL_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_RESULT.md",
+      "role": "reference_review_lock_report",
+      "sha256": "d57eb8635a18fd90b0b797d52fe5d3f9fb4eca63caaf057a915e55614bc47c3a",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 8305,
+      "git_blob": "088fbf23411c955777c1fb1ab28405e8dd876d72",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/review_records/CAL002-ROUTE-A-REF-REVIEW-LOCK-6A947BE2/route_a_reference_review_lock_manifest.json",
+      "role": "reference_review_lock_manifest",
+      "sha256": "f2d0ab280b59ef70d197bb0e0383fa595ab31eb15ea7280ebe8f0cfbab0b7c16",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 5222,
+      "git_blob": "a03d5ac0cfe3e5cbb4066e59c65019ce6b400b00",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/review_records/CAL002-ROUTE-A-REF-REVIEW-LOCK-6A947BE2/route_a_reference_human_review_record_final.json",
+      "role": "locked_reference_review_record",
+      "sha256": "6a947be26f8e2d536c9c82a961c5c08508cee5bb22622d4386dffb7149f6d97e",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 4405,
+      "git_blob": "58f4769471f35e360be6d178d7b911c6e0544f64",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/review_records/CAL002-ROUTE-A-REF-REVIEW-LOCK-6A947BE2/route_a_reference_human_review_report.md",
+      "role": "locked_reference_review_report",
+      "sha256": "b2f24cae150adc2a3b0d9db558ef4967d0b2c5d7fdf09ade3c321441bbf8ecee",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 69720,
+      "git_blob": "a048226012c9f1f9b5490dd3e2b24be511cd8013",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_PUSH_01.mp4",
+      "role": "push_reference_mp4",
+      "sha256": "d2b570cdd682c82cfb4559ce2b0df1840c7e459bcbe78df07ff1c735289743e4",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 69385,
+      "git_blob": "f37aedbe277cb34aa9569985a3e13d418d8dad0a",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_IMPACT_01.mp4",
+      "role": "impact_reference_mp4",
+      "sha256": "bf571fad464c0e4adac5ff4db7d85ec135a98bed07c9dd0eef9fd83d0f3f60a4",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2382,
+      "git_blob": "fed2586ce06c1e1a09d7a59f4fbd78d88cb0d064",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/technical/ACTION_REF_PUSH_01_technical_validation.json",
+      "role": "push_technical_validation",
+      "sha256": "8be7ed8389fac58923f4fc6e6d28e3a7bfb7784dd61da81c09ad27ff67e9c4b4",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2386,
+      "git_blob": "51c093bddd8257605b541bed78da60478f2ba7db",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/technical/ACTION_REF_IMPACT_01_technical_validation.json",
+      "role": "impact_technical_validation",
+      "sha256": "d01f78dbd0888f45fa818cb5b4857c5e6e77b364f2bf73608501876f3e9a3447",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 10850,
+      "git_blob": "9a1374e1a248e17f26a26f8097803c9654e0c05d",
+      "path": "reports/CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_RESULT.md",
+      "role": "reference_creation_report",
+      "sha256": "16df77934f3d100cfc6398fa05047eb5dd2cc6e9978005be8095ea064c17f4cc",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 13546,
+      "git_blob": "5dba73f4c7958c1cd7eea9968acdaaefc78c4750",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/route_a_reference_media_evidence_manifest.json",
+      "role": "reference_media_evidence_manifest",
+      "sha256": "8ca17710d9e26cf4c2b9c3e91f42ac0c9263af4f6a0badb3eee9fa7e508d8ac5",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 3233,
+      "git_blob": "035a037f0753c6aa836280c38108ecdcf1347a2c",
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-multimodal2video-help-001.parsed_help.json",
+      "role": "committed_multimodal_cli_evidence_used",
+      "sha256": "d4ac585511a563468257b8fe775f3e9a7539aa88b7df6f377868dcf4e5082966",
+      "worktree_equals_head": true
+    }
+  ],
+  "schema_version": "CAL002_ROUTE_A_R01_PACKAGE_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "unique_bound_paths": 14
+}

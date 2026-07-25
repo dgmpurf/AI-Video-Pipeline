@@ -1,0 +1,237 @@
+{
+  "R02_authorized": false,
+  "action_family": "brief_impact_recoil",
+  "argv_contract": {
+    "absent_flags": [
+      "--audio",
+      "--download_dir",
+      "--image",
+      "--output_dir",
+      "--output_name",
+      "--session"
+    ],
+    "argv_executed": false,
+    "compact_json_byte_length": 2546,
+    "compact_json_sha256": "9b00079d2680fe5e43035729c91913bb9c355cd590f7b588b4470047a76f87a0",
+    "element_count": 16,
+    "flag_occurrences": {
+      "--poll": 1,
+      "--prompt": 1,
+      "--video": 1
+    },
+    "prompt_contents_are_one_argv_element": true,
+    "reference_path_is_one_argv_element": true,
+    "shell": false,
+    "shell_command_string_present": false
+  },
+  "batch_authorized": false,
+  "bindings": {
+    "locked_human_review_record": {
+      "byte_length": 5222,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/review_records/CAL002-ROUTE-A-REF-REVIEW-LOCK-6A947BE2/route_a_reference_human_review_record_final.json",
+      "sha256": "6a947be26f8e2d536c9c82a961c5c08508cee5bb22622d4386dffb7149f6d97e"
+    },
+    "prompt": {
+      "byte_length": 2189,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/prompts/ROUTEA_IMPACT_R01_prompt.txt",
+      "sha256": "25d32e3b1499ec9df9315984f1c5cfb69feb27e2c3ca5caffa841942e3d4cc8a"
+    },
+    "reference": {
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_IMPACT_01.mp4",
+      "byte_length": 69385,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_IMPACT_01.mp4",
+      "reference_id": "ACTION_REF_IMPACT_01",
+      "sha256": "bf571fad464c0e4adac5ff4db7d85ec135a98bed07c9dd0eef9fd83d0f3f60a4"
+    },
+    "reference_review_lock_checkpoint": "3bace13ffc793208a102fe508737e9c3ce3991fd",
+    "reference_review_lock_id": "CAL002-ROUTE-A-REF-REVIEW-LOCK-6A947BE2",
+    "reference_review_lock_manifest": {
+      "byte_length": 8305,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/review_records/CAL002-ROUTE-A-REF-REVIEW-LOCK-6A947BE2/route_a_reference_review_lock_manifest.json",
+      "sha256": "f2d0ab280b59ef70d197bb0e0383fa595ab31eb15ea7280ebe8f0cfbab0b7c16"
+    },
+    "reference_review_lock_report": {
+      "byte_length": 11018,
+      "path": "reports/CAL002_ROUTE_A_REFERENCE_FULL_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_RESULT.md",
+      "sha256": "d57eb8635a18fd90b0b797d52fe5d3f9fb4eca63caaf057a915e55614bc47c3a"
+    },
+    "review_contract": {
+      "byte_length": 2378,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/route_a_r01_canary_review_contract.json",
+      "sha256": "75eb9438201b79e510461e1db2bbac1aecfac5fcc8b53a8b40e8fa59fef7e4d0"
+    },
+    "runtime_canary": {
+      "byte_length": 3988,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/runtime/runtime_capability_and_credit_canary.json",
+      "sha256": "db379f387613c1a76f112b4251e5180f9dbf6efb6a2df82e1d4534d5fb13cdf8"
+    },
+    "starting_checkpoint": {
+      "branch": "main",
+      "head": "3bace13ffc793208a102fe508737e9c3ce3991fd",
+      "origin_main": "3bace13ffc793208a102fe508737e9c3ce3991fd"
+    },
+    "technical_validation_record": {
+      "byte_length": 2386,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/technical/ACTION_REF_IMPACT_01_technical_validation.json",
+      "sha256": "d01f78dbd0888f45fa818cb5b4857c5e6e77b364f2bf73608501876f3e9a3447"
+    }
+  },
+  "canary_alias": "ROUTEA_IMPACT_R01",
+  "download_authorized": false,
+  "final_master": false,
+  "fixed_task_completion": false,
+  "future_argv": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "multimodal2video",
+    "--video",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_IMPACT_01.mp4",
+    "--prompt",
+    "Use the supplied video input only as a motion reference for compact action onset, brief contact timing, force path, pose sequence, weight transfer, immediate recoil, exactly one rear-foot recoil step, prompt retraction, and continued movement. Do not copy any person, face, body appearance, mannequin design, clothing, yellow contact marker, grid background, ground plane, camera angle, framing, lighting, colors, props, text, or story from the reference.\n\nCreate realistic live-action-looking synthetic footage of two fictional, non-identifying adult human martial-arts performers. The attacker wears a deep navy training jacket and black training pants. The receiver wears a muted rust-orange training jacket and charcoal training pants. Use normal human faces and bodies, with no resemblance to the geometric reference mannequins and no branded clothing. Place them in a clean indoor training studio with a warm beige seamless wall and matte wooden floor. No grid, no grey calibration stage, no diagram, no visible text, no yellow contact circle, and no visual marker.\n\nUse a static three-quarter-front medium-wide camera at approximately chest height. Keep both complete bodies and both sets of feet visible with generous margins throughout. Use a stable 16:9 composition, soft natural-looking studio illumination, no zoom, and no camera movement. Do not reproduce the reference side view or reference actor spacing.\n\nAction result: begin with both performers clearly separated. The attacker initiates a compact torso-directed action. Contact is short and visibly readable and must not become sustained pressure. The receiver recoils only after contact, with immediate upper-body displacement and exactly one rear-foot recoil step. Do not create a second step or a multi-step retreat. The attacker promptly retracts. Both performers remain fully in frame and continue small natural guard, balance, and breathing movement through the end. No sustained push, no prolonged straight-arm contact, no falling, no frame escape, and no frozen guard tail.\n\nThe video reference controls motion only. This text controls identity, clothing, scene, camera, composition, lighting, and visual style.\n",
+    "--model_version",
+    "seedance2.0_vip",
+    "--ratio",
+    "16:9",
+    "--duration",
+    "5",
+    "--video_resolution",
+    "720p",
+    "--poll",
+    "0"
+  ],
+  "locked": false,
+  "motion_only_allowed_duties": [
+    "compact onset",
+    "brief contact timing",
+    "force path",
+    "pose sequence",
+    "weight transfer",
+    "immediate recoil",
+    "exactly one rear-foot recoil step",
+    "prompt retraction",
+    "continued movement"
+  ],
+  "no_submit": true,
+  "package_id": "CAL002-ROUTE-A-IMPACT-R01",
+  "production_approved": false,
+  "production_reentry_authorized": false,
+  "prohibited_copied_duties": [
+    "identity",
+    "face",
+    "body appearance",
+    "mannequin style",
+    "costume",
+    "scene",
+    "grid background",
+    "ground plane",
+    "contact marker",
+    "camera",
+    "framing",
+    "composition",
+    "lighting",
+    "color",
+    "props",
+    "text",
+    "story",
+    "IP design"
+  ],
+  "provider": {
+    "command": "multimodal2video",
+    "duration": 5,
+    "model_version": "seedance2.0_vip",
+    "poll_behavior": "SUBMIT_ONLY_NO_IMPLICIT_QUERY",
+    "poll_is_explicit": true,
+    "poll_seconds": 0,
+    "ratio": "16:9",
+    "video_resolution": "720p"
+  },
+  "query_authorized": false,
+  "reference_rights": {
+    "reference_human_decision": "PASS_FOR_FUTURE_UPLOAD_AUTHORIZATION_REQUEST",
+    "reference_rights_class": "PROJECT_OWNED_3D_OR_ANIMATED_REFERENCE",
+    "reference_upload_authorized_now": false,
+    "reference_upload_leakage_risk": "MEDIUM",
+    "reference_upload_occurs_only_during_future_live_submit": true
+  },
+  "reference_role_separation": {
+    "action_reference_supplies": "MOTION_ONLY",
+    "action_reference_supplies_no": [
+      "identity",
+      "costume",
+      "scene",
+      "camera",
+      "composition",
+      "lighting",
+      "color",
+      "story",
+      "IP design"
+    ],
+    "shared_visual_duty_block_definition": "PROMPT_PARAGRAPHS_2_3_AND_5_JOINED_BY_TWO_LF_WITHOUT_TERMINAL_LF",
+    "shared_visual_duty_block_sha256": "9e2867b7100fc0c9ae9dbf15c226fb085ee17f6a70b913636e9012063c0662f5",
+    "text_supplies": [
+      "identity",
+      "clothing",
+      "scene",
+      "camera",
+      "composition",
+      "lighting",
+      "visual style"
+    ]
+  },
+  "reference_upload_authorized": false,
+  "resubmit_authorized": false,
+  "retry_authorized": false,
+  "schema_version": "CAL002_ROUTE_A_R01_CANARY_EXECUTION_PACKAGE_V0_1",
+  "sentinel_policy": {
+    "R02_blocked": true,
+    "any_material_sentinel_copy_blocks_R02": true,
+    "automatic_expansion": false,
+    "evaluation_performed": false,
+    "fresh_human_decision_required": true,
+    "sentinels": [
+      "CONTACT_MARKER_COPY",
+      "MANNEQUIN_STYLE_COPY",
+      "GRID_SCENE_COPY",
+      "FIXED_CAMERA_COMPOSITION_COPY"
+    ]
+  },
+  "submit_authorized": false,
+  "text_controlled_visual_duties": {
+    "camera_and_composition": [
+      "static three-quarter-front medium-wide camera",
+      "camera at approximately chest height",
+      "both complete bodies and both sets of feet visible",
+      "generous margins around both performers",
+      "no side-view replication",
+      "no zoom",
+      "no camera movement",
+      "stable 16:9 composition"
+    ],
+    "identity": [
+      "two fictional, non-identifying adult human martial-arts performers",
+      "attacker wears a deep navy training jacket and black training pants",
+      "receiver wears a muted rust-orange training jacket and charcoal training pants",
+      "normal human faces and bodies",
+      "do not reproduce the geometric reference mannequins",
+      "no branded clothing",
+      "no known character or real-person identity"
+    ],
+    "lighting_and_style": [
+      "realistic live-action-looking synthetic footage",
+      "soft natural-looking studio illumination",
+      "normal human motion",
+      "no flat diagram style",
+      "no mannequin-render appearance"
+    ],
+    "scene": [
+      "clean indoor training studio",
+      "warm beige seamless wall",
+      "matte wooden floor",
+      "no grid",
+      "no grey calibration stage",
+      "no diagram",
+      "no text",
+      "no yellow contact circle",
+      "no marker or visual annotation"
+    ]
+  }
+}
