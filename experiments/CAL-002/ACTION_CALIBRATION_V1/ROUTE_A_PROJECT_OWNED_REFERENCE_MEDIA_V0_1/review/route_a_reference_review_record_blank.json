@@ -1,0 +1,55 @@
+{
+  "bound_schema": {
+    "byte_length": 9622,
+    "git_blob": "4f2204332c96b1a13f5049efb97401ab2e4feee4",
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/route_a_reference_human_review_schema.json",
+    "schema_id": "CAL002_ROUTE_A_REFERENCE_HUMAN_REVIEW_SCHEMA_V0_1",
+    "sha256": "dbd6b3b5c7918ea63e3c12d5c417d0faa49e6c91ba557e3a5de41a6763f3fbe3"
+  },
+  "record_version": "CAL002_ROUTE_A_REFERENCE_HUMAN_REVIEW_RECORD_V0_1",
+  "reference_records": [
+    {
+      "action_family": "push_reaction",
+      "contact_sheet_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/contact_sheets/ACTION_REF_PUSH_01_contact_sheet.png",
+      "creator_class": "PROCEDURALLY_CREATED_BY_PROJECT_LOCAL_TOOLCHAIN",
+      "keyframe_paths": [
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_PUSH_01/ACTION_REF_PUSH_01_t00_10.png",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_PUSH_01/ACTION_REF_PUSH_01_t00_45.png",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_PUSH_01/ACTION_REF_PUSH_01_t00_65.png",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_PUSH_01/ACTION_REF_PUSH_01_t00_95.png",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_PUSH_01/ACTION_REF_PUSH_01_t01_30.png",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_PUSH_01/ACTION_REF_PUSH_01_t02_25.png"
+      ],
+      "mp4_byte_length": 69720,
+      "mp4_sha256": "d2b570cdd682c82cfb4559ce2b0df1840c7e459bcbe78df07ff1c735289743e4",
+      "real_person_used": false,
+      "reference_id": "ACTION_REF_PUSH_01",
+      "relative_mp4_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_PUSH_01.mp4",
+      "rights_class": "PROJECT_OWNED_3D_OR_ANIMATED_REFERENCE",
+      "technical_validation_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/technical/ACTION_REF_PUSH_01_technical_validation.json",
+      "third_party_IP_used": false
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "contact_sheet_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/contact_sheets/ACTION_REF_IMPACT_01_contact_sheet.png",
+      "creator_class": "PROCEDURALLY_CREATED_BY_PROJECT_LOCAL_TOOLCHAIN",
+      "keyframe_paths": [
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_IMPACT_01/ACTION_REF_IMPACT_01_t00_10.png",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_IMPACT_01/ACTION_REF_IMPACT_01_t00_45.png",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_IMPACT_01/ACTION_REF_IMPACT_01_t00_65.png",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_IMPACT_01/ACTION_REF_IMPACT_01_t00_95.png",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_IMPACT_01/ACTION_REF_IMPACT_01_t01_30.png",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_IMPACT_01/ACTION_REF_IMPACT_01_t02_25.png"
+      ],
+      "mp4_byte_length": 69385,
+      "mp4_sha256": "bf571fad464c0e4adac5ff4db7d85ec135a98bed07c9dd0eef9fd83d0f3f60a4",
+      "real_person_used": false,
+      "reference_id": "ACTION_REF_IMPACT_01",
+      "relative_mp4_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_IMPACT_01.mp4",
+      "rights_class": "PROJECT_OWNED_3D_OR_ANIMATED_REFERENCE",
+      "technical_validation_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/technical/ACTION_REF_IMPACT_01_technical_validation.json",
+      "third_party_IP_used": false
+    }
+  ],
+  "schema_version": "CAL002_ROUTE_A_REFERENCE_HUMAN_REVIEW_SCHEMA_V0_1"
+}

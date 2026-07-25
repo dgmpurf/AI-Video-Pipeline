@@ -1,0 +1,244 @@
+{
+  "artifact_count": 21,
+  "artifacts": [
+    {
+      "artifact_class": "REFERENCE_MP4",
+      "byte_length": 69720,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_PUSH_01.mp4",
+      "reference_id": "ACTION_REF_PUSH_01",
+      "sha256": "d2b570cdd682c82cfb4559ce2b0df1840c7e459bcbe78df07ff1c735289743e4"
+    },
+    {
+      "artifact_class": "REFERENCE_MP4",
+      "byte_length": 69385,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_IMPACT_01.mp4",
+      "reference_id": "ACTION_REF_IMPACT_01",
+      "sha256": "bf571fad464c0e4adac5ff4db7d85ec135a98bed07c9dd0eef9fd83d0f3f60a4"
+    },
+    {
+      "artifact_class": "TECHNICAL_VALIDATION",
+      "byte_length": 2382,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/technical/ACTION_REF_PUSH_01_technical_validation.json",
+      "reference_id": "ACTION_REF_PUSH_01",
+      "sha256": "8be7ed8389fac58923f4fc6e6d28e3a7bfb7784dd61da81c09ad27ff67e9c4b4"
+    },
+    {
+      "artifact_class": "TECHNICAL_VALIDATION",
+      "byte_length": 2386,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/technical/ACTION_REF_IMPACT_01_technical_validation.json",
+      "reference_id": "ACTION_REF_IMPACT_01",
+      "sha256": "d01f78dbd0888f45fa818cb5b4857c5e6e77b364f2bf73608501876f3e9a3447"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 46260,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_PUSH_01/ACTION_REF_PUSH_01_t00_10.png",
+      "reference_id": "ACTION_REF_PUSH_01",
+      "sha256": "3ba91768bf65639c311dc2a90d43613b689587b4d20ddf75934682e3327c2094"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 52452,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_PUSH_01/ACTION_REF_PUSH_01_t00_45.png",
+      "reference_id": "ACTION_REF_PUSH_01",
+      "sha256": "97b78b3c7953c0c239df8c2a5af4e8ea52e94ba92a336168bad4a35e20cbeca7"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 54659,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_PUSH_01/ACTION_REF_PUSH_01_t00_65.png",
+      "reference_id": "ACTION_REF_PUSH_01",
+      "sha256": "a902e00e0f53d0792dae83ca765c33e1630cb8e1d051e83efb23ca6c364f1f0c"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 53733,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_PUSH_01/ACTION_REF_PUSH_01_t00_95.png",
+      "reference_id": "ACTION_REF_PUSH_01",
+      "sha256": "09966d1d7d20f47753605f71484f8af68df6c37a095c52a183ad19c6040187f0"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 45595,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_PUSH_01/ACTION_REF_PUSH_01_t01_30.png",
+      "reference_id": "ACTION_REF_PUSH_01",
+      "sha256": "be334b9f7a85bd4dd8bb8916e2b5e18c6cb43554df58ace8ecb105dc51e8b86e"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 45958,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_PUSH_01/ACTION_REF_PUSH_01_t02_25.png",
+      "reference_id": "ACTION_REF_PUSH_01",
+      "sha256": "008a4121424841e4ab2e7e932ed157e47dc52fa32d9afb8dff54acf62572ee1a"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 46046,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_IMPACT_01/ACTION_REF_IMPACT_01_t00_10.png",
+      "reference_id": "ACTION_REF_IMPACT_01",
+      "sha256": "5a16fb301cc04a577bcc45a7f6a5e9f0e8c86e28a1aa432a9f1f0a2f5e947586"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 50923,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_IMPACT_01/ACTION_REF_IMPACT_01_t00_45.png",
+      "reference_id": "ACTION_REF_IMPACT_01",
+      "sha256": "e72efaf1b08759289de27896185c88772e6b4f3a3ce02ce284f63e7d35f043e0"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 54606,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_IMPACT_01/ACTION_REF_IMPACT_01_t00_65.png",
+      "reference_id": "ACTION_REF_IMPACT_01",
+      "sha256": "b43783bfa30c8769467c87095e4269f1ec73cc04e65bbd2ac50f15a80b2f229f"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 51414,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_IMPACT_01/ACTION_REF_IMPACT_01_t00_95.png",
+      "reference_id": "ACTION_REF_IMPACT_01",
+      "sha256": "234204e13aa00202009812ce1247fbde480101b21d7375f4757980af72d0f980"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 44241,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_IMPACT_01/ACTION_REF_IMPACT_01_t01_30.png",
+      "reference_id": "ACTION_REF_IMPACT_01",
+      "sha256": "cfa9bc81a328f7f8937755e21f9435bdcc7fa21377581923cb10472a4536ca02"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 46926,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/keyframes/ACTION_REF_IMPACT_01/ACTION_REF_IMPACT_01_t02_25.png",
+      "reference_id": "ACTION_REF_IMPACT_01",
+      "sha256": "aa569c797826dc4283d226294e7d00e18d76f4b3b5f42d252414793a568fbbb1"
+    },
+    {
+      "artifact_class": "CONTACT_SHEET",
+      "byte_length": 126212,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/contact_sheets/ACTION_REF_PUSH_01_contact_sheet.png",
+      "reference_id": "ACTION_REF_PUSH_01",
+      "sha256": "43c9b913bc4bc24685a844ea8e07083a5c500098d2b9a3bbcbce347bd9635d02"
+    },
+    {
+      "artifact_class": "CONTACT_SHEET",
+      "byte_length": 124609,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/contact_sheets/ACTION_REF_IMPACT_01_contact_sheet.png",
+      "reference_id": "ACTION_REF_IMPACT_01",
+      "sha256": "1e28b872888aed3762b9a50acc825087dba4a5700e4d97d8928492151c9f2d26"
+    },
+    {
+      "artifact_class": "BLANK_HUMAN_REVIEW_RECORD",
+      "byte_length": 4384,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/review/route_a_reference_review_record_blank.json",
+      "sha256": "3cd1e967eb548143125b570f4f5f8e29099f9b927f4164912f799731f956b36b"
+    },
+    {
+      "artifact_class": "REVIEW_HANDOFF",
+      "byte_length": 4809,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/review/ROUTE_A_REFERENCE_REVIEW_HANDOFF.md",
+      "sha256": "533a06fffaf040038184fc3f49814cfc1b6a9b1fd4e3208fcc06cb724daa09ed"
+    },
+    {
+      "artifact_class": "GOVERNANCE_REPORT",
+      "byte_length": 10850,
+      "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+      "path": "reports/CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_RESULT.md",
+      "sha256": "16df77934f3d100cfc6398fa05047eb5dd2cc6e9978005be8095ea064c17f4cc"
+    }
+  ],
+  "creation_phase": "CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_V0_1",
+  "included_artifact_count": 21,
+  "input_binding_count": 8,
+  "input_bindings": [
+    {
+      "byte_length": 10295,
+      "git_blob": "8b3ee77ed7852979d6146ec3e4dad77d190d88bb",
+      "head_equality": true,
+      "path": "reports/CAL002_ROUTE_A_REFERENCE_SOURCE_AND_STAGED_TWO_CANARY_PREPARATION_RESULT.md",
+      "role": "preparation_governance_report",
+      "sha256": "f62c7955ee0c01370097c324ba5fc0d93aa0426b8f0f882acc854df65fc020cc"
+    },
+    {
+      "byte_length": 7937,
+      "git_blob": "2f58b9cc58bcac0525a7aec6cd586abff09a87ff",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/route_a_preparation_evidence_manifest.json",
+      "role": "preparation_evidence_manifest",
+      "sha256": "1fd15a970375a89e1c9e602557fe43c025529d2a3f5838987320722cf880c806"
+    },
+    {
+      "byte_length": 3100,
+      "git_blob": "cadc4411069c872ab759e6be6752bc46cd31d7a0",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/ACTION_REF_PUSH_01_PRODUCTION_SPEC_V0_1.md",
+      "role": "push_production_specification",
+      "sha256": "df7ba9e2ab2b3f38163200fe9e825b8f69880d01bb9a7037d58aeece39263b3f"
+    },
+    {
+      "byte_length": 3020,
+      "git_blob": "c378850589712e391e678fea81981124600a9ef2",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/ACTION_REF_IMPACT_01_PRODUCTION_SPEC_V0_1.md",
+      "role": "impact_production_specification",
+      "sha256": "6ccc0d51bf5b5eeba39c2c9e1592623e3ee71192bf63e4d36e0637e07c443d50"
+    },
+    {
+      "byte_length": 9622,
+      "git_blob": "4f2204332c96b1a13f5049efb97401ab2e4feee4",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/route_a_reference_human_review_schema.json",
+      "role": "reference_human_review_schema",
+      "sha256": "dbd6b3b5c7918ea63e3c12d5c417d0faa49e6c91ba557e3a5de41a6763f3fbe3"
+    },
+    {
+      "byte_length": 2538,
+      "git_blob": "1da23c5460c6cad49cf8ebb029f9ed7208cd634e",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/route_a_reference_role_matrix.json",
+      "role": "reference_role_matrix",
+      "sha256": "e9a9934ecf0579c34c35ebb27265bd526b2eae04495186e8c63e8c93e21f9a3a"
+    },
+    {
+      "byte_length": 6788,
+      "git_blob": "8eaceabcbac54b2af2b8a7114b3581b5b69e05cc",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/CAL002_ROUTE_A_STAGED_TWO_CANARY_PREPARATION_PACK_V0_1.md",
+      "role": "staged_two_canary_preparation_pack",
+      "sha256": "e087e298c37d2ef9e21381f9eb5af8d5900d6f89f2d528a4a33e972bc2c94838"
+    },
+    {
+      "byte_length": 10271,
+      "git_blob": "6e3eade36267a2980b7d2a5acd20f14969e271f8",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/route_a_future_authorization_requirements.json",
+      "role": "future_authorization_requirements",
+      "sha256": "e08675d6593c1b3c4cbde20a97de658d7e15c8860dfd335f4f3797486792dea9"
+    }
+  ],
+  "reference_build_id": "CAL002-ROUTE-A-REFMEDIA-V0-1",
+  "schema_version": "CAL002_ROUTE_A_REFERENCE_MEDIA_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "starting_head": "370d606210aab55faae87520ae1bfef64f2cb2b4",
+  "unique_bound_paths": 21
+}

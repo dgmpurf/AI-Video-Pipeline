@@ -1,0 +1,66 @@
+{
+  "SHA-256": "bf571fad464c0e4adac5ff4db7d85ec135a98bed07c9dd0eef9fd83d0f3f60a4",
+  "audio_present": false,
+  "audio_stream_count": 0,
+  "byte_length": 69385,
+  "codec": "h264",
+  "container": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duration_seconds": 2.4,
+  "external_assets_used": false,
+  "ffprobe_status": "PASS",
+  "file_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_IMPACT_01.mp4",
+  "filename_collision_occurred": false,
+  "frame_count": 72,
+  "frame_rate": "30/1",
+  "full_decode_status": "PASS",
+  "generator_script_SHA-256": "166658abbc4ed04a046a22dbb0501d856556663739fa8e37a94d5595a0f37919",
+  "generator_type": "PROCEDURAL_GEOMETRIC_ARTICULATED_ANIMATION",
+  "height": 720,
+  "metadata_private_path_scan": "PASS",
+  "no_overwrite": true,
+  "pixel_format": "yuv420p",
+  "real_person_used": false,
+  "reference_id": "ACTION_REF_IMPACT_01",
+  "schema_version": "CAL002_ROUTE_A_REFERENCE_TECHNICAL_VALIDATION_V0_1",
+  "selected_toolchain": "LOCAL_PYTHON_PILLOW_FFMPEG_PROCEDURAL_GEOMETRIC_ARTICULATED_ANIMATION",
+  "source_class": "PROJECT_OWNED_3D_OR_ANIMATED_REFERENCE",
+  "static_camera_by_construction": true,
+  "tail_distinct_frame_sha256_count": 6,
+  "tail_frame_diversity_proxy": "PASS",
+  "tail_frame_samples": [
+    {
+      "decoded_frame_SHA-256": "04721c2ae919823593b7ab856c29d433570387a5dd526940c5bbeda0238392e5",
+      "time_seconds": 1.6
+    },
+    {
+      "decoded_frame_SHA-256": "f149534da4425d0f7a346c9af80c70b6e69e586edd0bf7443631072576848855",
+      "time_seconds": 1.75
+    },
+    {
+      "decoded_frame_SHA-256": "44eb5c35dbdc1427a788bf218d120732c051f1b01411692532c7fc1dddf0cf5c",
+      "time_seconds": 1.9
+    },
+    {
+      "decoded_frame_SHA-256": "d5798641464693946525467fd33f04f7051dcf726886cce11501176a9046a7be",
+      "time_seconds": 2.05
+    },
+    {
+      "decoded_frame_SHA-256": "f1d5e3c520a5b4e9db617332c745c5a245aab723fc27aa7426f6429790bbe408",
+      "time_seconds": 2.2
+    },
+    {
+      "decoded_frame_SHA-256": "763496f2ffdd25886fa70ec376453af63389032240bc787d81782de019ac2485",
+      "time_seconds": 2.35
+    }
+  ],
+  "technical_result": "PASS",
+  "third_party_IP_used": false,
+  "tool_versions": {
+    "Pillow": "9.5.0",
+    "ffmpeg": "2023-03-27-git-f7abe92bd7",
+    "ffprobe": "2023-03-27-git-f7abe92bd7",
+    "python": "3.10.11"
+  },
+  "video_stream_count": 1,
+  "width": 1280
+}
