@@ -1,0 +1,82 @@
+{
+  "canaries": [
+    {
+      "action_family": "push_reaction",
+      "action_reference": "ACTION_REF_PUSH_01",
+      "action_reference_allowed_duties": [
+        "timing",
+        "pose progression",
+        "force direction",
+        "contact rhythm",
+        "weight transfer",
+        "one rear-foot recovery placement",
+        "release and retraction",
+        "continued movement"
+      ],
+      "action_reference_prohibited_duties": [
+        "identity",
+        "face",
+        "body appearance",
+        "costume",
+        "scene",
+        "props",
+        "camera",
+        "framing",
+        "lighting",
+        "color grade",
+        "story",
+        "IP design"
+      ],
+      "canary_alias": "ROUTEA_PUSH_R01",
+      "canary_execution_status_if_duty_separation_unavailable": "BLOCKED_REFERENCE_ROLE_CONFLICT",
+      "conceptual_separate_duties": {
+        "attacker_identity": "SEPARATE_FUTURE_IDENTITY_DUTY",
+        "camera_layout": "SEPARATE_FUTURE_CAMERA_OR_LAYOUT_DUTY",
+        "receiver_identity": "SEPARATE_FUTURE_IDENTITY_DUTY",
+        "scene": "SEPARATE_FUTURE_NEUTRAL_SCENE_DUTY",
+        "text": "ACTION_FAMILY_AND_PROHIBITION_SEMANTICS_ONLY"
+      }
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "action_reference": "ACTION_REF_IMPACT_01",
+      "action_reference_allowed_duties": [
+        "compact onset",
+        "brief contact",
+        "recoil timing",
+        "weight transfer",
+        "one rear-foot step",
+        "retraction",
+        "continued movement"
+      ],
+      "action_reference_prohibited_duties": [
+        "identity",
+        "face",
+        "body appearance",
+        "costume",
+        "scene",
+        "props",
+        "camera",
+        "framing",
+        "lighting",
+        "color grade",
+        "story",
+        "IP design"
+      ],
+      "canary_alias": "ROUTEA_IMPACT_R01",
+      "canary_execution_status_if_duty_separation_unavailable": "BLOCKED_REFERENCE_ROLE_CONFLICT",
+      "conceptual_separate_duties": {
+        "attacker_identity": "SEPARATE_FUTURE_IDENTITY_DUTY",
+        "camera_layout": "SEPARATE_FUTURE_CAMERA_OR_LAYOUT_DUTY",
+        "receiver_identity": "SEPARATE_FUTURE_IDENTITY_DUTY",
+        "scene": "SEPARATE_FUTURE_NEUTRAL_SCENE_DUTY",
+        "text": "ACTION_FAMILY_AND_PROHIBITION_SEMANTICS_ONLY"
+      }
+    }
+  ],
+  "current_execution_authority": false,
+  "first_gate_canary_count": 2,
+  "prohibited_live_fields_present": false,
+  "route_activated": false,
+  "schema_version": "CAL002_ROUTE_A_TWO_CANARY_REFERENCE_ROLE_MATRIX_V0_1"
+}

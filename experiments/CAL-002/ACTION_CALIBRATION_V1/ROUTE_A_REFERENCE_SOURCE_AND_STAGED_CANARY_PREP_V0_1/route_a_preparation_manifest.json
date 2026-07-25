@@ -1,0 +1,173 @@
+{
+  "approval_sha256": "2d7bfa9641c990f2680df4220c2300e9c4f38276f75a31e2bce7c29d5a10b22c",
+  "bindings": {
+    "committed_evidence_inputs": [
+      {
+        "bytes": 5435,
+        "git_blob": "067d72b73808262dfc75475b467684d86a0438b9",
+        "head_equality": true,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/CAL002_ROUTE_A_SELECTION_RECORD.md",
+        "role": "route_selection_record",
+        "sha256": "4cc596510b35712c7f2f5300ac685526eb3bec18799cecdd4eb7ebee0fad8bc8"
+      },
+      {
+        "bytes": 13524,
+        "git_blob": "ca8d92854546c22bd5d94934a51a9162ad7177bd",
+        "head_equality": true,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/CAL002_ROUTE_A_CAPABILITY_AUDIT_V0_1.md",
+        "role": "capability_audit",
+        "sha256": "26543978b2cec3e11755e3a79514ea63cf73b8180b9607a507503c11fba5a89e"
+      },
+      {
+        "bytes": 15195,
+        "git_blob": "9259d9d8487daa67eaeefecf158bc199a220f128",
+        "head_equality": true,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/route_a_capability_matrix.json",
+        "role": "capability_matrix",
+        "sha256": "27134944f35f536c51759c10c90a159f26b32bcaf045c21ce51e836b4dca25c5"
+      },
+      {
+        "bytes": 4693,
+        "git_blob": "739f1d682b8aeaae44df6779ac12f9489f4de95f",
+        "head_equality": true,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/route_a_reference_provenance_requirements.json",
+        "role": "reference_provenance_requirements",
+        "sha256": "0962975633ba40ab2997468f122eeced91a11c1c11007b77b7065624041be2c4"
+      },
+      {
+        "bytes": 6825,
+        "git_blob": "dfda58631bc052857fb66a862d0c99fd0c9c78f8",
+        "head_equality": true,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/CAL002_ROUTE_A_MOTION_ONLY_REFERENCE_DUTY_CONTRACT_V0_1.md",
+        "role": "motion_only_reference_duty_contract",
+        "sha256": "ba3ddef3a8561ec6471da392614e1c1410075dde626dff3eeba12e175666afc9"
+      },
+      {
+        "bytes": 11447,
+        "git_blob": "8c17460ec663b2e0629b5cbdfc4ef26919c59845",
+        "head_equality": true,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/CAL002_ROUTE_A_MINIMUM_CALIBRATION_DESIGN_V0_1.md",
+        "role": "minimum_calibration_design",
+        "sha256": "581d65bdc8f5b7e4b3dd18c4d98346df830d49a4fc929a5dbf51e3087ce3058b"
+      },
+      {
+        "bytes": 12092,
+        "git_blob": "ee093068a4f7df3adcf7e92b2543cecdb4f68c79",
+        "head_equality": true,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/route_a_calibration_review_schema.json",
+        "role": "calibration_review_schema",
+        "sha256": "09964858fde9b9d6d41c5f101ef68a8bcfcf9aa5b2557d58dbd765a5e18d080d"
+      },
+      {
+        "bytes": 3954,
+        "git_blob": "ea2b3a58dab59bd4d8c47cd0dca7fe7e9ce0b8bf",
+        "head_equality": true,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/route_a_calibration_manifest.json",
+        "role": "calibration_manifest",
+        "sha256": "2c80bf9574d7ea42670d334e14e6e65c46cfe30fa35e0904a515ea7eefcfc3f3"
+      },
+      {
+        "bytes": 9473,
+        "git_blob": "513a740592988502befaaff7500549ed1171d769",
+        "head_equality": true,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/route_a_evidence_manifest.json",
+        "role": "accepted_route_a_evidence_manifest",
+        "sha256": "a90a21b490bdf853aa3f3d96e07bf66bd1a11cdd08696911c8be06661a1ccd09"
+      },
+      {
+        "bytes": 13141,
+        "git_blob": "1d53bbaf99da4e63b63e8298c1941cd5470e1c1a",
+        "head_equality": true,
+        "path": "reports/CAL002_ROUTE_A_CAPABILITY_AUDIT_AND_MINIMUM_CALIBRATION_DESIGN_RESULT.md",
+        "role": "accepted_governance_report",
+        "sha256": "dfbfc04ad1f6b6997fc7034363f0ab4fb1f7697c46aa0918a8afcf60253d8b56"
+      }
+    ],
+    "created_artifacts": [
+      {
+        "bytes": 4994,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/CAL002_ROUTE_A_HUMAN_DESIGN_DECISION_RECORD.md",
+        "role": "human_design_decision_record",
+        "sha256": "677abe8ea0e36c56b455d85e85492efd6a0dff9408f6025fbb2dc1cd8ca18bc7"
+      },
+      {
+        "bytes": 7266,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/CAL002_ROUTE_A_PROJECT_OWNED_3D_REFERENCE_SOURCE_PLAN_V0_1.md",
+        "role": "project_owned_reference_source_plan",
+        "sha256": "be04b358de5c82c64b33dc00a98b62f13f91289ad9d3fe2fa59df3f3f5c80792"
+      },
+      {
+        "bytes": 3100,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/ACTION_REF_PUSH_01_PRODUCTION_SPEC_V0_1.md",
+        "role": "push_reference_production_specification",
+        "sha256": "df7ba9e2ab2b3f38163200fe9e825b8f69880d01bb9a7037d58aeece39263b3f"
+      },
+      {
+        "bytes": 3020,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/ACTION_REF_IMPACT_01_PRODUCTION_SPEC_V0_1.md",
+        "role": "impact_reference_production_specification",
+        "sha256": "6ccc0d51bf5b5eeba39c2c9e1592623e3ee71192bf63e4d36e0637e07c443d50"
+      },
+      {
+        "bytes": 4551,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/route_a_reference_asset_record_blank.json",
+        "role": "blank_reference_asset_record",
+        "sha256": "b27754eb72f5ae1d764400aab5f4a4de961025992a6ed7d170b788a1d4d30568"
+      },
+      {
+        "bytes": 9622,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/route_a_reference_human_review_schema.json",
+        "role": "reference_human_review_schema",
+        "sha256": "dbd6b3b5c7918ea63e3c12d5c417d0faa49e6c91ba557e3a5de41a6763f3fbe3"
+      },
+      {
+        "bytes": 2538,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/route_a_reference_role_matrix.json",
+        "role": "two_canary_reference_role_matrix",
+        "sha256": "e9a9934ecf0579c34c35ebb27265bd526b2eae04495186e8c63e8c93e21f9a3a"
+      },
+      {
+        "bytes": 6788,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/CAL002_ROUTE_A_STAGED_TWO_CANARY_PREPARATION_PACK_V0_1.md",
+        "role": "staged_two_canary_preparation_pack",
+        "sha256": "e087e298c37d2ef9e21381f9eb5af8d5900d6f89f2d528a4a33e972bc2c94838"
+      },
+      {
+        "bytes": 10271,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/route_a_future_authorization_requirements.json",
+        "role": "future_authorization_requirements",
+        "sha256": "e08675d6593c1b3c4cbde20a97de658d7e15c8860dfd335f4f3797486792dea9"
+      },
+      {
+        "bytes": 10295,
+        "path": "reports/CAL002_ROUTE_A_REFERENCE_SOURCE_AND_STAGED_TWO_CANARY_PREPARATION_RESULT.md",
+        "role": "governance_report",
+        "sha256": "f62c7955ee0c01370097c324ba5fc0d93aa0426b8f0f882acc854df65fc020cc"
+      }
+    ]
+  },
+  "current_credit_checked": false,
+  "current_price_checked": false,
+  "first_gate_aliases": [
+    "ROUTEA_PUSH_R01",
+    "ROUTEA_IMPACT_R01"
+  ],
+  "first_gate_output_count": 2,
+  "full_minimum_output_count": 4,
+  "media_authority": false,
+  "next_phase": "CAL002_ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREPARATION_HUMAN_DECISION",
+  "planned_references": 2,
+  "preferred_source": "PROJECT_OWNED_3D_OR_ANIMATED_REFERENCE",
+  "preparation_id": "CAL002-ROUTE-A-REFERENCE-CANARY-PREP-V0-1",
+  "production_reentry_authorized": false,
+  "provider_calls_authorized": false,
+  "r02_live_preparation_authorized": false,
+  "reference_creation_authorized": false,
+  "reference_upload_authorized": false,
+  "route_activated": false,
+  "schema_version": "CAL002_ROUTE_A_REFERENCE_AND_CANARY_PREPARATION_MANIFEST_V0_1",
+  "selected_route": "CAL002_ROUTE_A_ACTION_REFERENCE_MOTION_CONTROL",
+  "self_excluded": true,
+  "source_change_authorized": false,
+  "starting_checkpoint": "a605c7993c81ec396767ffcdfbb2f1c95db74a40"
+}

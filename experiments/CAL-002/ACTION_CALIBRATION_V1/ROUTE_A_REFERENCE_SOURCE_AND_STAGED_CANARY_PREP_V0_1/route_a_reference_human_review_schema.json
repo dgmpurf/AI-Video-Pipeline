@@ -1,0 +1,398 @@
+{
+  "$defs": {
+    "review_record": {
+      "additionalProperties": false,
+      "properties": {
+        "action_family": {
+          "enum": [
+            "push_reaction",
+            "brief_impact_recoil"
+          ],
+          "type": "string"
+        },
+        "action_family_match": {
+          "enum": [
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        },
+        "audio_absence_or_justification": {
+          "enum": [
+            "ABSENT",
+            "JUSTIFIED_PRESENT",
+            "UNJUSTIFIED_PRESENT",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "camera_motion": {
+          "type": "boolean"
+        },
+        "consent_status": {
+          "enum": [
+            "NOT_APPLICABLE",
+            "CONFIRMED",
+            "BLOCKED",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "contact_duration_classification": {
+          "enum": [
+            "BRIEF",
+            "PROLONGED",
+            "ABSENT",
+            "AMBIGUOUS"
+          ],
+          "type": "string"
+        },
+        "contact_onset_visibility": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "AMBIGUOUS"
+          ],
+          "type": "string"
+        },
+        "continuous_shot_confirmation": {
+          "type": "boolean"
+        },
+        "cuts": {
+          "type": "boolean"
+        },
+        "ending_motion_validity": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "AMBIGUOUS"
+          ],
+          "type": "string"
+        },
+        "extended_arm_freeze": {
+          "type": "boolean"
+        },
+        "feet_visibility": {
+          "enum": [
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        },
+        "foot_result_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "foot_result_presence": {
+          "type": "boolean"
+        },
+        "foot_result_type": {
+          "enum": [
+            "REAR_FOOT_RECOVERY_PLACEMENT",
+            "REAR_FOOT_RECOIL_STEP",
+            "NONE",
+            "OTHER",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "full_body_visibility": {
+          "enum": [
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        },
+        "full_mp4_review_confirmation": {
+          "type": "boolean"
+        },
+        "human_decision": {
+          "enum": [
+            "PASS_FOR_FUTURE_UPLOAD_AUTHORIZATION_REQUEST",
+            "NEEDS_REFERENCE_FIX",
+            "REJECT_RIGHTS_OR_PROVENANCE",
+            "REJECT_SAFETY_OR_PRIVACY",
+            "REJECT_MOTION_SPEC"
+          ],
+          "type": "string"
+        },
+        "identifiable_person_status": {
+          "enum": [
+            "ABSENT",
+            "PRESENT",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "neutral_background_confirmation": {
+          "type": "boolean"
+        },
+        "neutral_figure_confirmation": {
+          "type": "boolean"
+        },
+        "onset_visibility": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "AMBIGUOUS"
+          ],
+          "type": "string"
+        },
+        "overall_motion_reference_usability": {
+          "enum": [
+            "PASS",
+            "PARTIAL",
+            "FAIL",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "post_contact_causality": {
+          "enum": [
+            "PASS",
+            "PARTIAL",
+            "FAIL",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "private_data_status": {
+          "enum": [
+            "ABSENT",
+            "PRESENT",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "prolonged_contact": {
+          "type": "boolean"
+        },
+        "real_harm_status": {
+          "enum": [
+            "ABSENT",
+            "PRESENT",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "reference_camera_distinctiveness_risk": {
+          "enum": [
+            "NONE",
+            "LOW",
+            "MEDIUM",
+            "HIGH",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "reference_costume_distinctiveness_risk": {
+          "enum": [
+            "NONE",
+            "LOW",
+            "MEDIUM",
+            "HIGH",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "reference_id": {
+          "enum": [
+            "ACTION_REF_PUSH_01",
+            "ACTION_REF_IMPACT_01"
+          ],
+          "type": "string"
+        },
+        "reference_identity_distinctiveness_risk": {
+          "enum": [
+            "NONE",
+            "LOW",
+            "MEDIUM",
+            "HIGH",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "reference_scene_distinctiveness_risk": {
+          "enum": [
+            "NONE",
+            "LOW",
+            "MEDIUM",
+            "HIGH",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "release_retraction": {
+          "enum": [
+            "PASS",
+            "PARTIAL",
+            "FAIL",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "reviewer_notes": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "rights_provenance_status": {
+          "enum": [
+            "PASS",
+            "BLOCKED",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "static_camera_confirmation": {
+          "type": "boolean"
+        },
+        "technical_validity": {
+          "enum": [
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        },
+        "third_party_ip_status": {
+          "enum": [
+            "ABSENT",
+            "PRESENT",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "torso_displacement_or_recoil": {
+          "enum": [
+            "PASS",
+            "PARTIAL",
+            "FAIL",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "upload_leakage_risk": {
+          "enum": [
+            "NONE",
+            "LOW",
+            "MEDIUM",
+            "HIGH",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "useful_action_window_validity": {
+          "enum": [
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "reference_id",
+        "action_family",
+        "full_mp4_review_confirmation",
+        "technical_validity",
+        "rights_provenance_status",
+        "consent_status",
+        "third_party_ip_status",
+        "identifiable_person_status",
+        "private_data_status",
+        "real_harm_status",
+        "audio_absence_or_justification",
+        "continuous_shot_confirmation",
+        "static_camera_confirmation",
+        "full_body_visibility",
+        "feet_visibility",
+        "neutral_background_confirmation",
+        "neutral_figure_confirmation",
+        "action_family_match",
+        "onset_visibility",
+        "contact_onset_visibility",
+        "contact_duration_classification",
+        "post_contact_causality",
+        "torso_displacement_or_recoil",
+        "foot_result_presence",
+        "foot_result_count",
+        "foot_result_type",
+        "release_retraction",
+        "prolonged_contact",
+        "extended_arm_freeze",
+        "camera_motion",
+        "cuts",
+        "useful_action_window_validity",
+        "ending_motion_validity",
+        "reference_identity_distinctiveness_risk",
+        "reference_costume_distinctiveness_risk",
+        "reference_scene_distinctiveness_risk",
+        "reference_camera_distinctiveness_risk",
+        "upload_leakage_risk",
+        "overall_motion_reference_usability",
+        "human_decision",
+        "reviewer_notes"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "CAL002_ROUTE_A_REFERENCE_HUMAN_REVIEW_SCHEMA_V0_1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Schema for two complete-MP4 human reviews of future Route A action references. A contact sheet cannot replace full reference review.",
+  "properties": {
+    "record_version": {
+      "const": "CAL002_ROUTE_A_REFERENCE_HUMAN_REVIEW_RECORD_V0_1"
+    },
+    "reviews": {
+      "items": false,
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/review_record"
+            },
+            {
+              "properties": {
+                "action_family": {
+                  "const": "push_reaction"
+                },
+                "reference_id": {
+                  "const": "ACTION_REF_PUSH_01"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/review_record"
+            },
+            {
+              "properties": {
+                "action_family": {
+                  "const": "brief_impact_recoil"
+                },
+                "reference_id": {
+                  "const": "ACTION_REF_IMPACT_01"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "type": "array"
+    },
+    "schema_id": {
+      "const": "CAL002_ROUTE_A_REFERENCE_HUMAN_REVIEW_SCHEMA_V0_1"
+    }
+  },
+  "required": [
+    "schema_id",
+    "record_version",
+    "reviews"
+  ],
+  "title": "CAL-002 Route A Reference Human Review",
+  "type": "object"
+}

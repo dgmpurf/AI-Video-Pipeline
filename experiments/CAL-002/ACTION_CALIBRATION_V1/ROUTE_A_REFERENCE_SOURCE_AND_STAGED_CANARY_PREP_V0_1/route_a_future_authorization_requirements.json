@@ -1,0 +1,301 @@
+{
+  "authorities": [
+    {
+      "active": false,
+      "allowed_live_calls": [],
+      "allowed_writes": [
+        "exactly two future project-owned reference-media artifacts",
+        "creation evidence for those artifacts"
+      ],
+      "authority_id": "REFERENCE_MEDIA_CREATION_AUTHORITY",
+      "automatic_activation": false,
+      "forbidden_operations": [
+        "reference upload",
+        "Provider call",
+        "canary generation",
+        "R02 preparation",
+        "production re-entry"
+      ],
+      "human_approval_required": true,
+      "maximum_scope": "Create exactly ACTION_REF_PUSH_01 and ACTION_REF_IMPACT_01 under a separately bound creation contract.",
+      "purpose": "Create or render the two planned neutral project-owned action references.",
+      "required_predecessor_evidence": [
+        "accepted source plan",
+        "component-rights plan",
+        "exact creation specification"
+      ],
+      "reusability": "ONE_TIME_SCOPE_BOUND"
+    },
+    {
+      "active": false,
+      "allowed_live_calls": [],
+      "allowed_writes": [
+        "technical validation evidence",
+        "completed asset records"
+      ],
+      "authority_id": "REFERENCE_TECHNICAL_VALIDATION_AUTHORITY",
+      "automatic_activation": false,
+      "forbidden_operations": [
+        "reference upload",
+        "Provider call",
+        "media regeneration",
+        "canary execution"
+      ],
+      "human_approval_required": true,
+      "maximum_scope": "Validate exactly the two created reference files without replacing or altering them.",
+      "purpose": "Establish exact bytes, hashes, container properties, stream properties, and decode validity.",
+      "required_predecessor_evidence": [
+        "two exclusively created reference files",
+        "creation evidence"
+      ],
+      "reusability": "ONE_TIME_SCOPE_BOUND"
+    },
+    {
+      "active": false,
+      "allowed_live_calls": [],
+      "allowed_writes": [
+        "human review records",
+        "exact-file acceptance evidence"
+      ],
+      "authority_id": "REFERENCE_HUMAN_ACCEPTANCE",
+      "automatic_activation": false,
+      "forbidden_operations": [
+        "reference upload",
+        "Provider call",
+        "automatic acceptance",
+        "partial-frame substitution for full review"
+      ],
+      "human_approval_required": true,
+      "maximum_scope": "Review and decide the exact two technically validated references.",
+      "purpose": "Perform full-video rights, provenance, safety, motion, and leakage review.",
+      "required_predecessor_evidence": [
+        "completed technical validation",
+        "completed asset records",
+        "exact reference SHA-256 bindings"
+      ],
+      "reusability": "NON_REUSABLE_HUMAN_DECISION"
+    },
+    {
+      "active": false,
+      "allowed_live_calls": [],
+      "allowed_writes": [
+        "no-live capability revalidation report"
+      ],
+      "authority_id": "PROVIDER_CAPABILITY_REVALIDATION_AUTHORITY",
+      "automatic_activation": false,
+      "forbidden_operations": [
+        "reference upload",
+        "submit",
+        "query",
+        "download",
+        "media generation"
+      ],
+      "human_approval_required": true,
+      "maximum_scope": "Revalidate current official command and Provider-mode evidence for the two accepted references.",
+      "purpose": "Confirm the then-current mode and duty-separation assumptions before package preparation.",
+      "required_predecessor_evidence": [
+        "both references accepted by the human",
+        "current official capability evidence"
+      ],
+      "reusability": "ONE_TIME_SCOPE_BOUND"
+    },
+    {
+      "active": false,
+      "allowed_live_calls": [],
+      "allowed_writes": [
+        "exactly two no-live R01 canary packages",
+        "package review evidence"
+      ],
+      "authority_id": "CANARY_PACKAGE_PREPARATION_AUTHORITY",
+      "automatic_activation": false,
+      "forbidden_operations": [
+        "submit",
+        "query",
+        "download",
+        "R02 package preparation",
+        "package activation"
+      ],
+      "human_approval_required": true,
+      "maximum_scope": "Prepare only ROUTEA_PUSH_R01 and ROUTEA_IMPACT_R01 after exact reference binding.",
+      "purpose": "Create treatment-neutral no-live canary packages after capability revalidation.",
+      "required_predecessor_evidence": [
+        "accepted exact reference bindings",
+        "Provider capability revalidation",
+        "verified duty separation",
+        "independent package review requirement"
+      ],
+      "reusability": "ONE_TIME_SCOPE_BOUND"
+    },
+    {
+      "active": false,
+      "allowed_live_calls": [
+        "at most one submit for ROUTEA_PUSH_R01",
+        "at most one submit for ROUTEA_IMPACT_R01"
+      ],
+      "allowed_writes": [
+        "exclusive execution claims",
+        "per-canary submit evidence"
+      ],
+      "authority_id": "R01_SUBMIT_AUTHORITY",
+      "automatic_activation": false,
+      "forbidden_operations": [
+        "R02 submit",
+        "query",
+        "download",
+        "retry",
+        "resubmit",
+        "batch retry",
+        "automatic expansion"
+      ],
+      "human_approval_required": true,
+      "maximum_scope": "Two submit invocations total, one per approved R01 canary.",
+      "purpose": "Execute the first two capability canaries only.",
+      "required_predecessor_evidence": [
+        "reviewed no-live packages",
+        "fresh checkpoint",
+        "duplicate prevention",
+        "exclusive per-canary claims"
+      ],
+      "reusability": "NON_REUSABLE_PER_INVOCATION"
+    },
+    {
+      "active": false,
+      "allowed_live_calls": [
+        "at most one query per successful R01 submit identifier"
+      ],
+      "allowed_writes": [
+        "exclusive query claims",
+        "sanitized query evidence"
+      ],
+      "authority_id": "R01_QUERY_AUTHORITY",
+      "automatic_activation": false,
+      "forbidden_operations": [
+        "submit",
+        "download",
+        "retry",
+        "resubmit",
+        "R02 operation"
+      ],
+      "human_approval_required": true,
+      "maximum_scope": "One query for each of at most two bound R01 submit identifiers.",
+      "purpose": "Obtain sanitized status evidence for the R01 canaries.",
+      "required_predecessor_evidence": [
+        "bound R01 submit evidence",
+        "fresh checkpoint",
+        "exclusive per-task query claims"
+      ],
+      "reusability": "NON_REUSABLE_PER_INVOCATION"
+    },
+    {
+      "active": false,
+      "allowed_live_calls": [
+        "at most one download per successful R01 submit identifier"
+      ],
+      "allowed_writes": [
+        "exclusive download claims",
+        "download evidence",
+        "technically validated R01 media"
+      ],
+      "authority_id": "R01_DOWNLOAD_AUTHORITY",
+      "automatic_activation": false,
+      "forbidden_operations": [
+        "submit",
+        "query",
+        "retry",
+        "resubmit",
+        "overwrite",
+        "R02 operation"
+      ],
+      "human_approval_required": true,
+      "maximum_scope": "One download for each of at most two successful bound R01 tasks.",
+      "purpose": "Download and technically validate the two R01 outputs.",
+      "required_predecessor_evidence": [
+        "successful R01 query evidence",
+        "fresh checkpoint",
+        "exclusive per-task download claims"
+      ],
+      "reusability": "NON_REUSABLE_PER_INVOCATION"
+    },
+    {
+      "active": false,
+      "allowed_live_calls": [],
+      "allowed_writes": [
+        "complete-MP4 visual review records",
+        "locked R01 review evidence"
+      ],
+      "authority_id": "R01_VISUAL_REVIEW_AND_RECORD_LOCK",
+      "automatic_activation": false,
+      "forbidden_operations": [
+        "submit",
+        "query",
+        "download",
+        "automatic semantic decision",
+        "automatic R02 expansion"
+      ],
+      "human_approval_required": true,
+      "maximum_scope": "Review and lock records for exactly the two R01 outputs.",
+      "purpose": "Evaluate technical validity, action behavior, reference adherence, and leakage.",
+      "required_predecessor_evidence": [
+        "two technically validated complete R01 MP4 outputs",
+        "reference bindings",
+        "review schema"
+      ],
+      "reusability": "NON_REUSABLE_HUMAN_DECISION"
+    },
+    {
+      "active": false,
+      "allowed_live_calls": [],
+      "allowed_writes": [
+        "R02 human decision record"
+      ],
+      "authority_id": "R02_HUMAN_DECISION",
+      "automatic_activation": false,
+      "forbidden_operations": [
+        "R02 submit",
+        "automatic expansion",
+        "retry",
+        "production approval"
+      ],
+      "human_approval_required": true,
+      "maximum_scope": "Choose whether to prepare or block ROUTEA_PUSH_R02 and ROUTEA_IMPACT_R02.",
+      "purpose": "Decide whether the R01 semantic result justifies any R02 replication.",
+      "required_predecessor_evidence": [
+        "locked R01 visual review",
+        "canary semantic decision",
+        "rights and leakage result"
+      ],
+      "reusability": "NON_REUSABLE_HUMAN_DECISION"
+    },
+    {
+      "active": false,
+      "allowed_live_calls": [
+        "only the exact R02 operations separately approved by a future human authorization"
+      ],
+      "allowed_writes": [
+        "separately approved R02 execution evidence"
+      ],
+      "authority_id": "R02_EXECUTION_AUTHORITY",
+      "automatic_activation": false,
+      "forbidden_operations": [
+        "automatic expansion",
+        "unbound R02 package use",
+        "retry",
+        "resubmit",
+        "production re-entry"
+      ],
+      "human_approval_required": true,
+      "maximum_scope": "No scope exists until a future exact R02 authorization binds packages, calls, budget, and checkpoint.",
+      "purpose": "Provide a separately governed execution boundary if the human accepts R01.",
+      "required_predecessor_evidence": [
+        "affirmative R02 human decision",
+        "fresh packages and independent review",
+        "fresh checkpoint",
+        "fresh exact execution authorization"
+      ],
+      "reusability": "NON_REUSABLE_PER_INVOCATION"
+    }
+  ],
+  "current_active_authority_count": 0,
+  "current_live_authority": false,
+  "schema_version": "CAL002_ROUTE_A_FUTURE_AUTHORIZATION_REQUIREMENTS_V0_1"
+}
