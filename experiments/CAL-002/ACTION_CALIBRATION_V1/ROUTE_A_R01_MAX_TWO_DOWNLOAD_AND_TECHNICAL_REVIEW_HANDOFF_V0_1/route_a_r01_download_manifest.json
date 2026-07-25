@@ -1,0 +1,49 @@
+{
+  "actual_download_calls": 1,
+  "complete_mp4_review_required": true,
+  "contact_sheets_assistance_only": true,
+  "entries": [
+    {
+      "alias": "ROUTEA_PUSH_R01",
+      "called": true,
+      "canonical_media_path": null,
+      "contact_sheet_path": null,
+      "download_accepted": false,
+      "download_receipt_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_MAX_TWO_DOWNLOAD_AND_TECHNICAL_REVIEW_HANDOFF_V0_1/downloads/ROUTEA_PUSH_R01_download_receipt.json",
+      "failure_classification": "LOCAL_PARSER_CONTRACT_MISMATCH_AFTER_INVOCATION",
+      "keyframe_count": 0,
+      "media_byte_length": null,
+      "media_sha256": null,
+      "package_id": "CAL002-ROUTE-A-PUSH-R01",
+      "prior_query_receipt_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_QUERY_ONLY_HELP_VALIDATION_RECOVERY_V0_1/queries/ROUTEA_PUSH_R01_query_receipt.json",
+      "reference_id": "ACTION_REF_PUSH_01",
+      "submit_id": "e0b8f28d-f84f-4d4b-a442-ab3ee6e04984",
+      "technical_validation_path": null
+    },
+    {
+      "alias": "ROUTEA_IMPACT_R01",
+      "called": false,
+      "canonical_media_path": null,
+      "contact_sheet_path": null,
+      "download_accepted": false,
+      "download_receipt_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_MAX_TWO_DOWNLOAD_AND_TECHNICAL_REVIEW_HANDOFF_V0_1/downloads/ROUTEA_IMPACT_R01_download_receipt.json",
+      "keyframe_count": 0,
+      "media_byte_length": null,
+      "media_sha256": null,
+      "not_called_reason": "PUSH_LOCAL_PARSER_CONTRACT_MISMATCH_STOP",
+      "package_id": "CAL002-ROUTE-A-IMPACT-R01",
+      "prior_query_receipt_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_QUERY_ONLY_HELP_VALIDATION_RECOVERY_V0_1/queries/ROUTEA_IMPACT_R01_query_receipt.json",
+      "reference_id": "ACTION_REF_IMPACT_01",
+      "submit_id": "ce15036a-203c-48c9-8e85-cd303218e72b",
+      "technical_validation_path": null
+    }
+  ],
+  "maximum_downloads_authorized": 2,
+  "new_query_only_authority": false,
+  "new_submit_authority": false,
+  "provider_invocation_count": 1,
+  "r02_authority": false,
+  "retry_resubmit_authority": false,
+  "schema_version": "CAL002_ROUTE_A_R01_DOWNLOAD_MANIFEST_V0_1",
+  "validated_media_count": 0
+}
