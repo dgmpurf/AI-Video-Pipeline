@@ -1,0 +1,82 @@
+{
+  "approval": {
+    "byte_length": 2222,
+    "sha256": "9a06ee2aff87e2f383026c39a13baf723a97ad89d75305ea7631cdd05b315660",
+    "text": "APPROVE_CAL002_ROUTE_A_R01_QUERY_ONLY_HELP_VALIDATION_RECOVERY_AND_MAX_TWO_QUERY_V0_1__BIND_BLOCKED_QUERY_CHECKPOINT_213FAF1BF638F7FB4B3E588FA771A994F47C7D8B__BIND_BLOCKED_QUERY_REPORT_BYTES_9607__BIND_BLOCKED_QUERY_REPORT_SHA256_9ABFB042DA75DCD35C3BC922AAA225D191ECEA2115B5555AF90AE65DE1C7667E__BIND_BLOCKED_QUERY_EVIDENCE_MANIFEST_BYTES_7961__BIND_BLOCKED_QUERY_EVIDENCE_MANIFEST_SHA256_C1725DE438F592398EF187E0DADD58F4373F76418778C3E401B9C6B79CB6BEF6__BIND_FRESH_VERSION_EVIDENCE_STDOUT_BYTES_96__BIND_FRESH_VERSION_EVIDENCE_STDOUT_SHA256_25BBB1BDC706CB4E6FD486316B89B98A0D29C07FA34C8C51D0F860DA2F29D8F0__BIND_ROUTERA_PUSH_R01_SUBMIT_ID_E0B8F28D-F84F-4D4B-A442-AB3EE6E04984__BIND_ROUTERA_IMPACT_R01_SUBMIT_ID_CE15036A-203C-48C9-8E85-CD303218E72B__AUTHORIZE_FIXED_WINDOWS_CLI_C_USERS_MSJPURF_BIN_DREAMINA_EXE__AUTHORIZE_PRE_ACTIVATION_LITERAL_HELP_PARSER_SELF_TEST_WITH_NO_DREAMINA_CALL__AUTHORIZE_EXACTLY_ONE_FRESH_QUERY_RESULT_HELP_CALL_AND_EXACTLY_ONE_QUERY_RESULT_CALL_FOR_EACH_BOUND_SUBMIT_ID_IN_PUSH_THEN_IMPACT_ORDER_WITHOUT_DOWNLOAD_DIR__REQUIRE_HELP_EXIT_CODE_STDOUT_STDERR_BYTE_LENGTHS_AND_SHA256_TO_BE_CAPTURED_BEFORE_ANY_PARSE__REQUIRE_LITERAL_BYTE_TOKEN_VALIDATION_FOR_QUERY_RESULT_SUBMIT_ID_AND_DOWNLOAD_DIR_AND_FORBID_REGEX_BASED_HELP_PARSING__REQUIRE_QUERY_ONLY_NO_POLL_LOOP_NO_IMPLICIT_REQUERY_NO_LIST_TASK_NO_URL_OPENING_AND_NO_MEDIA_DOWNLOAD__REQUIRE_EXACT_SUBMIT_ID_BINDING_UNAMBIGUOUS_SANITIZED_GEN_STATUS_QUEUE_STATUS_RESULT_COUNTS_AND_DOWNLOAD_READY_BOOLEAN__REQUIRE_RAW_HELP_AND_QUERY_OUTPUT_NOT_PERSISTED_AND_NO_SIGNED_URL_TOKEN_COOKIE_AUTHORIZATION_HEADER_SESSION_SECRET_OR_ACCOUNT_IDENTIFIER_PERSISTED__ALLOW_SECOND_BOUND_QUERY_AFTER_FIRST_VALID_TASK_STATUS_QUERYING_SUCCESS_OR_FAIL__STOP_ON_PARSER_SELF_TEST_FAILURE_HELP_PROCESS_FAILURE_HELP_CONTRACT_FAILURE_SUBMIT_ID_BINDING_MISMATCH_QUERY_PROCESS_FAILURE_AMBIGUOUS_STATUS_OR_UNSANITIZABLE_SENSITIVE_DATA__AUTHORIZE_ONE_RECOVERY_EVIDENCE_SET_GOVERNANCE_REPORT_COMMIT_AND_PUSH_ONLY__NO_VERSION_CALL_NO_DOWNLOAD_NO_RETRY_NO_RESUBMIT_NO_BATCH_NO_USER_CREDIT_NO_LOGIN_NO_SESSION_MUTATION_NO_MEDIA_CHANGE_NO_R02_NO_SOURCE_CHANGE_NO_PRODUCTION_REENTRY_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__ONE_TIME_NON_REUSABLE"
+  },
+  "authorization_activated": true,
+  "authorization_consumed": true,
+  "authorization_reusable": false,
+  "blocked_evidence_manifest_binding": {
+    "byte_length": 7961,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_MAX_TWO_QUERY_ONLY_V0_1/route_a_r01_query_evidence_manifest.json",
+    "sha256": "c1725de438f592398ef187e0dadd58f4373f76418778c3e401b9c6b79cb6bef6"
+  },
+  "blocked_query_checkpoint": "213faf1bf638f7fb4b3e588fa771a994f47c7d8b",
+  "blocked_report_binding": {
+    "byte_length": 9607,
+    "path": "reports/CAL002_ROUTE_A_R01_MAX_TWO_QUERY_ONLY_RESULT.md",
+    "sha256": "9abfb042da75dcd35c3bc922aaa225d191ecea2115b5555af90ae65de1c7667e"
+  },
+  "download_authorized": false,
+  "goal_identity": "CAL002_ROUTE_A_R01_QUERY_ONLY_HELP_VALIDATION_RECOVERY_AND_MAX_TWO_QUERY_V0_1",
+  "literal_parser_self_test": {
+    "all_self_tests_passed": true,
+    "dreamina_calls": 0,
+    "method": "LITERAL_BYTE_TOKEN_CONTAINMENT",
+    "pass_count": 8,
+    "regex_used": false,
+    "repository_writes": 0,
+    "test_count": 8
+  },
+  "maximum_fresh_help_calls": 1,
+  "maximum_query_count_per_submit_id": 1,
+  "maximum_task_query_calls": 2,
+  "new_version_call_authorized": false,
+  "new_version_call_performed": false,
+  "ordered_submit_bindings": [
+    {
+      "alias": "ROUTEA_PUSH_R01",
+      "package_id": "CAL002-ROUTE-A-PUSH-R01",
+      "prevalidated_query_argv_element_count": 4,
+      "prevalidated_query_argv_sha256": "073a6959f7ca55843860a2f37ca7b2502bbeac45b85f4e2ab2d2efe5418ba6bd",
+      "reference_id": "ACTION_REF_PUSH_01",
+      "submit_id": "e0b8f28d-f84f-4d4b-a442-ab3ee6e04984"
+    },
+    {
+      "alias": "ROUTEA_IMPACT_R01",
+      "package_id": "CAL002-ROUTE-A-IMPACT-R01",
+      "prevalidated_query_argv_element_count": 4,
+      "prevalidated_query_argv_sha256": "8cc05813568594babc621a39799e1118ad3bd0aaebafa828300aca8bd3dbaa2a",
+      "reference_id": "ACTION_REF_IMPACT_01",
+      "submit_id": "ce15036a-203c-48c9-8e85-cd303218e72b"
+    }
+  ],
+  "origin_main": "213faf1bf638f7fb4b3e588fa771a994f47c7d8b",
+  "prior_fresh_version_evidence": {
+    "exit_code": 0,
+    "parsed_build_time": "2026-06-26T06:36:39Z",
+    "parsed_commit": "2a20fff",
+    "parsed_version": "2a20fff-dirty",
+    "record_binding": {
+      "byte_length": 2239,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_MAX_TWO_QUERY_ONLY_V0_1/runtime/query_runtime_canary.json",
+      "sha256": "1c87d00e0f42a3f3f5b2dbb91766fe327c95f718fbf3b45be196b04bd49e7175"
+    },
+    "reused": true,
+    "runtime_drift": false,
+    "source": "PRIOR_IMMEDIATELY_PRECEDING_BLOCKED_QUERY_EXECUTION",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_byte_length": 96,
+    "stdout_sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0"
+  },
+  "r02_authorized": false,
+  "recovery_execution_id": "CAL002-ROUTE-A-R01-QUERY-HELP-RECOVERY-V0-1",
+  "requery_loop_authorized": false,
+  "retry_resubmit_authorized": false,
+  "schema_version": "CAL002_ROUTE_A_R01_QUERY_HELP_RECOVERY_AUTHORIZATION_RECORD_V0_1",
+  "starting_branch": "main",
+  "starting_head": "213faf1bf638f7fb4b3e588fa771a994f47c7d8b",
+  "url_opening_authorized": false
+}

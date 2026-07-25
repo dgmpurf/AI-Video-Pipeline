@@ -1,0 +1,64 @@
+{
+  "credits_spent": 0,
+  "dreamina_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "fresh_help": {
+    "argv": [
+      "C:/Users/msjpurf/bin/dreamina.exe",
+      "query_result",
+      "-h"
+    ],
+    "called": true,
+    "capture_before_parse_completed": true,
+    "elapsed_seconds": 2.543603,
+    "end_utc": "2026-07-25T16:44:04.393Z",
+    "exit_code": 0,
+    "help_contract_passed": true,
+    "matched_literal_token_count": 3,
+    "metadata_survived_parsing": true,
+    "raw_output_persisted": false,
+    "required_literal_token_count": 3,
+    "sanitization_result": "PASS",
+    "sensitive_data_detected": false,
+    "start_utc": "2026-07-25T16:44:01.849Z",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_byte_length": 388,
+    "stdout_sha256": "74f728cc4d3ae36fb3dcf773e85ed003637c28d048d1cad77a29b59b9bd4b171",
+    "token_results": {
+      "--download_dir": true,
+      "--submit_id": true,
+      "query_result": true
+    }
+  },
+  "generation_commands_called": 0,
+  "literal_parser": {
+    "all_self_tests_passed": true,
+    "dreamina_calls_during_self_test": 0,
+    "method": "LITERAL_BYTE_TOKEN_CONTAINMENT",
+    "pass_count": 8,
+    "regex_used": false,
+    "required_tokens": [
+      "query_result",
+      "--submit_id",
+      "--download_dir"
+    ],
+    "self_test_count": 8
+  },
+  "new_version_calls": 0,
+  "prior_version_evidence": {
+    "exit_code": 0,
+    "parsed_build_time": "2026-06-26T06:36:39Z",
+    "parsed_commit": "2a20fff",
+    "parsed_version": "2a20fff-dirty",
+    "reused": true,
+    "runtime_drift": false,
+    "source": "PRIOR_IMMEDIATELY_PRECEDING_BLOCKED_QUERY_EXECUTION",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_byte_length": 96,
+    "stdout_sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0"
+  },
+  "regex_help_parser_used": false,
+  "resolved_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "schema_version": "CAL002_ROUTE_A_R01_LITERAL_HELP_RECOVERY_RUNTIME_CANARY_V0_1"
+}

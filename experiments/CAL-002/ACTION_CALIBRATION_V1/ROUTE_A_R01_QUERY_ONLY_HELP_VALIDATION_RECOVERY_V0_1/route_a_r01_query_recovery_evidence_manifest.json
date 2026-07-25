@@ -1,0 +1,189 @@
+{
+  "artifact_count": 7,
+  "created_artifacts": [
+    {
+      "byte_length": 5606,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_QUERY_ONLY_HELP_VALIDATION_RECOVERY_V0_1/authorization_activation_record.json",
+      "role": "authorization_activation_record",
+      "sha256": "d4146cca4921afd218df884ee3fc4dda44d93047a6de5cbb6efbca627dcb08a8"
+    },
+    {
+      "byte_length": 2112,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_QUERY_ONLY_HELP_VALIDATION_RECOVERY_V0_1/runtime/literal_help_parser_and_runtime_canary.json",
+      "role": "literal_parser_and_runtime_canary",
+      "sha256": "a6c89f8e260f5cf6902a1ae62e1d4376f4852c714f19d474e45fe87c29224e81"
+    },
+    {
+      "byte_length": 1952,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_QUERY_ONLY_HELP_VALIDATION_RECOVERY_V0_1/queries/ROUTEA_PUSH_R01_query_receipt.json",
+      "role": "push_recovery_query_receipt",
+      "sha256": "5c0bc0b7a19d370237195ed004d6446aa399f04d6dad6b392241610b2957aaea"
+    },
+    {
+      "byte_length": 1958,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_QUERY_ONLY_HELP_VALIDATION_RECOVERY_V0_1/queries/ROUTEA_IMPACT_R01_query_receipt.json",
+      "role": "impact_recovery_query_receipt",
+      "sha256": "c766a832b6ad50a561d27244cd1fa28809f94d6cc415d436d8db6802e16ffcef"
+    },
+    {
+      "byte_length": 4447,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_QUERY_ONLY_HELP_VALIDATION_RECOVERY_V0_1/route_a_r01_query_recovery_execution_record.json",
+      "role": "query_recovery_execution_record",
+      "sha256": "5d06943966d0aa7fe47c5e3e287536418ec468c09371c6c9412823270d5cba8b"
+    },
+    {
+      "byte_length": 2776,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_QUERY_ONLY_HELP_VALIDATION_RECOVERY_V0_1/route_a_r01_query_recovery_manifest.json",
+      "role": "query_recovery_manifest",
+      "sha256": "8f9ab7b69e2ba61d37a7d63c3d5cfe4309fbdb26c57370c6fb1757b93961a6f6"
+    },
+    {
+      "byte_length": 11923,
+      "path": "reports/CAL002_ROUTE_A_R01_QUERY_ONLY_HELP_VALIDATION_RECOVERY_RESULT.md",
+      "role": "governance_report",
+      "sha256": "e28ccd5ed690b99efe89f2fa2c49831c99b2e96c3aad836a24e0c21b5f06a32c"
+    }
+  ],
+  "included_artifact_count": 7,
+  "input_bindings": [
+    {
+      "byte_length": 9607,
+      "git_blob": "79949b5675625ec098dcd9d459dd5aa8ebfbf4e1",
+      "path": "reports/CAL002_ROUTE_A_R01_MAX_TWO_QUERY_ONLY_RESULT.md",
+      "role": "prior_blocked_query_report",
+      "sha256": "9abfb042da75dcd35c3bc922aaa225d191ecea2115b5555af90ae65de1c7667e",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 7961,
+      "git_blob": "fde693eabe5830c70d510767c12383a97e292477",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_MAX_TWO_QUERY_ONLY_V0_1/route_a_r01_query_evidence_manifest.json",
+      "role": "prior_blocked_query_evidence_manifest",
+      "sha256": "c1725de438f592398ef187e0dadd58f4373f76418778c3e401b9c6b79cb6bef6",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2239,
+      "git_blob": "0c795a9f27e5e46dda254666cfd3cf88847b6a27",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_MAX_TWO_QUERY_ONLY_V0_1/runtime/query_runtime_canary.json",
+      "role": "prior_blocked_runtime_canary",
+      "sha256": "1c87d00e0f42a3f3f5b2dbb91766fe327c95f718fbf3b45be196b04bd49e7175",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 1933,
+      "git_blob": "76f2b495cdf8b924be61916f4d53c10acfa9c9de",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_MAX_TWO_QUERY_ONLY_V0_1/queries/ROUTEA_PUSH_R01_query_receipt.json",
+      "role": "prior_push_blocked_query_receipt",
+      "sha256": "656253f31a61032a90a12b2ca7ba2c394fc8e18e147c1532fa8fccd1b2243039",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 1920,
+      "git_blob": "c02a299b938ea54312fb0ab1624c854907be860f",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_MAX_TWO_QUERY_ONLY_V0_1/queries/ROUTEA_IMPACT_R01_query_receipt.json",
+      "role": "prior_impact_blocked_query_receipt",
+      "sha256": "5afa1de2c12400741f71edfaab34df4f796a9bd1c2491d8744235f69b67f39f2",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 11212,
+      "git_blob": "17dbc068cf9185540f1209f5af4544c2b871d5fe",
+      "path": "reports/CAL002_ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_RESULT.md",
+      "role": "live_submit_governance_report",
+      "sha256": "500950105bd072fce66778c071195fdab5e6ab35a50d8e3332bc710b89fd9aba",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 7390,
+      "git_blob": "13b04d6b633b7ff4414ea6875985b8f6e5a5d0d0",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1/route_a_r01_live_execution_evidence_manifest.json",
+      "role": "live_execution_evidence_manifest",
+      "sha256": "c618bc62d45b8d394aed7199157f9fde284c2c9c39d05262ea78b1fd8bd68e1c",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2532,
+      "git_blob": "299509a5dda0379f93163c0e304ee7c00da2521d",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1/submissions/ROUTEA_PUSH_R01_submit_receipt.json",
+      "role": "push_submit_receipt",
+      "sha256": "1f7c201984eb1e5becb84424f8dce5e9b47905a275dcc8c1b7c9c9a878bea874",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2551,
+      "git_blob": "557734f757ddd4b74778f30918595d9405eaba5a",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1/submissions/ROUTEA_IMPACT_R01_submit_receipt.json",
+      "role": "impact_submit_receipt",
+      "sha256": "6c633b92dc09188759f1eed1f70705f240cbe717641c5c5d6618d72d3e2a7a9a",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 24057,
+      "git_blob": "4b9f2b408e229a628c1b19f3b5a5b38ce0950779",
+      "path": "reports/CAL002_ROUTE_A_R01_TWO_PACKAGE_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+      "role": "independent_package_audit_report",
+      "sha256": "5eec45385cf583299d88e368454c4be70c70df6c9e9ba5782d839be784e437f6",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 10504,
+      "git_blob": "ac7e5f314cdc95527568b1c24f8d1bf2e5a94fde",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/packages/ROUTEA_PUSH_R01_execution_package.json",
+      "role": "push_package",
+      "sha256": "2c5d617a75fd2bdbe7ed5559bd55e05cfb4fc85aff060a0dae9674fb2f21daef",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 10531,
+      "git_blob": "361d0cffc22ad45ab7cc3980b1aae7dc8926595a",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/packages/ROUTEA_IMPACT_R01_execution_package.json",
+      "role": "impact_package",
+      "sha256": "633ac4da3ed75382c129ecb6e8eadc81fa38c63ba6bc46bdaebcac0a502fe1d3",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2186,
+      "git_blob": "7c09ea751ec49d9965a0c3ce98e9d31173b540b4",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/prompts/ROUTEA_PUSH_R01_prompt.txt",
+      "role": "push_prompt",
+      "sha256": "c13d3aee97a4e2462e7673218d1fa6dabba9ded48c9812429709d399fe8f1e28",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2189,
+      "git_blob": "daa158916b69d3f31d9d5085653714a996c717b3",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/prompts/ROUTEA_IMPACT_R01_prompt.txt",
+      "role": "impact_prompt",
+      "sha256": "25d32e3b1499ec9df9315984f1c5cfb69feb27e2c3ca5caffa841942e3d4cc8a",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 69720,
+      "git_blob": "a048226012c9f1f9b5490dd3e2b24be511cd8013",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_PUSH_01.mp4",
+      "role": "push_reference_mp4",
+      "sha256": "d2b570cdd682c82cfb4559ce2b0df1840c7e459bcbe78df07ff1c735289743e4",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 69385,
+      "git_blob": "f37aedbe277cb34aa9569985a3e13d418d8dad0a",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_IMPACT_01.mp4",
+      "role": "impact_reference_mp4",
+      "sha256": "bf571fad464c0e4adac5ff4db7d85ec135a98bed07c9dd0eef9fd83d0f3f60a4",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 8305,
+      "git_blob": "088fbf23411c955777c1fb1ab28405e8dd876d72",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/review_records/CAL002-ROUTE-A-REF-REVIEW-LOCK-6A947BE2/route_a_reference_review_lock_manifest.json",
+      "role": "reference_review_lock_manifest",
+      "sha256": "f2d0ab280b59ef70d197bb0e0383fa595ab31eb15ea7280ebe8f0cfbab0b7c16",
+      "worktree_equals_head": true
+    }
+  ],
+  "schema_version": "CAL002_ROUTE_A_R01_QUERY_HELP_RECOVERY_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "unique_bound_paths": 7
+}
