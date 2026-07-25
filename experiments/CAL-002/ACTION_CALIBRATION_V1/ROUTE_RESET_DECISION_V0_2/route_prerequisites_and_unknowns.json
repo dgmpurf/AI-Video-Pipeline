@@ -1,0 +1,183 @@
+{
+  "decision_pack_id": "CAL002-BATCH05-ROUTE-RESET-V0-2",
+  "routes": [
+    {
+      "automation_dependencies": [
+        "reference metadata and provenance registry",
+        "motion-only reference-duty validator",
+        "identity and scene leakage review artifact builder",
+        "per-output evidence recorder"
+      ],
+      "capability_status": "UNVERIFIED_REQUIRES_FUTURE_READ_ONLY_CAPABILITY_AUDIT",
+      "current_credit_checked": false,
+      "current_price_checked": false,
+      "human_preparation_required": "HIGH",
+      "known_failure_risks": [
+        "action-reference identity leakage",
+        "costume or scene leakage",
+        "camera and composition leakage",
+        "reference motion dominating project identity",
+        "unsupported or differently implemented Provider capability"
+      ],
+      "known_strengths": [
+        "direct motion-timing guidance",
+        "contact-rhythm guidance",
+        "single-step footwork guidance",
+        "recoil and weight-transfer guidance",
+        "release and continued-motion guidance"
+      ],
+      "production_ready": false,
+      "reference_roles": {
+        "action_reference": "motion timing pose progression contact rhythm weight transfer footwork recoil release and temporal continuation only",
+        "camera": "separate controlled input or explicit project control",
+        "identity": "separate controlled character input",
+        "scene": "separate controlled scene input",
+        "style": "separate project style control"
+      },
+      "required_inputs": [
+        "one rights-safe push-reaction motion reference",
+        "one rights-safe brief-impact-recoil motion reference",
+        "separate identity controls",
+        "separate scene controls",
+        "approved leakage review criteria"
+      ],
+      "rights_status": "UNVERIFIED_REQUIRES_HUMAN_RIGHTS_AND_PROVENANCE_REVIEW",
+      "route_activated": false,
+      "route_id": "CAL002_ROUTE_A_ACTION_REFERENCE_MOTION_CONTROL",
+      "route_selected": false,
+      "unknowns": [
+        "native motion-reference support",
+        "accepted input formats and limits",
+        "whether motion-only duty separation is enforceable",
+        "identity scene costume and camera leakage rate",
+        "rights-safe reference availability",
+        "human preparation time",
+        "then-current generation price and credits"
+      ],
+      "verification_required": [
+        "future read-only Provider capability audit",
+        "human rights and provenance review",
+        "motion-only duty-separation design review",
+        "minimum four-output calibration review",
+        "human production re-entry decision after a passing calibration"
+      ]
+    },
+    {
+      "automation_dependencies": [
+        "pose and layout specification checker",
+        "start and result frame technical validator",
+        "identity and scene consistency checker",
+        "full-MP4 intermediate-motion review recorder"
+      ],
+      "capability_status": "UNVERIFIED_REQUIRES_FUTURE_READ_ONLY_CAPABILITY_AUDIT",
+      "current_credit_checked": false,
+      "current_price_checked": false,
+      "human_preparation_required": "HIGH",
+      "known_failure_risks": [
+        "sliding between endpoint states",
+        "body or costume morphing",
+        "prolonged-contact interpolation",
+        "implausible pose transition",
+        "poster-like static keyframes",
+        "identity or scene drift"
+      ],
+      "known_strengths": [
+        "explicit start-state control",
+        "explicit result-state control",
+        "actor-spacing and contact-geometry control",
+        "exact foot-placement design",
+        "strong framing and layout auditability"
+      ],
+      "production_ready": false,
+      "reference_roles": {
+        "control_frames": "start contact reaction release and result-state geometry only",
+        "identity": "separate approved character references",
+        "scene": "separate approved world and composition references"
+      },
+      "required_inputs": [
+        "one controlled push start/result-state pair",
+        "one controlled brief-impact start/result-state pair",
+        "separate identity references",
+        "separate scene reference",
+        "approved pose layout and interpolation failure criteria"
+      ],
+      "rights_status": "PROJECT_INPUT_RIGHTS_AND_DUTIES_REQUIRE_HUMAN_CONFIRMATION",
+      "route_activated": false,
+      "route_id": "CAL002_ROUTE_B_MANUAL_POSE_START_END_FRAME_CONTROL",
+      "route_selected": false,
+      "unknowns": [
+        "compatible image2video start-end or frames2video mode",
+        "endpoint adherence",
+        "intermediate-motion causality",
+        "identity and scene stability",
+        "manual still-preparation burden",
+        "then-current generation price and credits"
+      ],
+      "verification_required": [
+        "future read-only Provider capability audit",
+        "start and result image acceptance",
+        "pose and layout audit",
+        "minimum four-output full-MP4 calibration review",
+        "human production re-entry decision after a passing calibration"
+      ]
+    },
+    {
+      "automation_dependencies": [
+        "clip inventory and hash binding",
+        "cut-window candidate generation",
+        "technical validation of source clips",
+        "continuity and assembly review artifact builder"
+      ],
+      "capability_status": "PARTIALLY_SUPPORTED_BY_EXISTING_LOCAL_EDITORIAL_WORKFLOW_EVIDENCE",
+      "current_credit_checked": false,
+      "current_price_checked": false,
+      "human_preparation_required": "HIGH",
+      "known_failure_risks": [
+        "cross-shot identity drift",
+        "scene lighting and camera discontinuity",
+        "screen-direction break",
+        "edit burden exceeding production value",
+        "narrow shots still failing their assigned action",
+        "increased generated-clip volume"
+      ],
+      "known_strengths": [
+        "lower motion complexity per generated clip",
+        "isolated and observable failure states",
+        "regeneration limited to one failed sub-shot",
+        "static-tail removal through editorial selection",
+        "partial support from prior local split-shot and cut-review evidence"
+      ],
+      "production_ready": false,
+      "reference_roles": {
+        "editorial_assembly": "construct perceived causality from reviewed narrow clips",
+        "source_clips": "one physical action job per clip with continuity metadata"
+      },
+      "required_inputs": [
+        "three narrow push shot definitions",
+        "three narrow brief-impact shot definitions",
+        "identity scene camera and screen-direction continuity criteria",
+        "one local assembly plan per family",
+        "approved edit-burden and cost ceiling"
+      ],
+      "rights_status": "CONDITIONAL_ON_RIGHTS_SAFE_PROJECT_SOURCE_CLIPS",
+      "route_activated": false,
+      "route_id": "CAL002_ROUTE_C_EDITORIAL_ACTION_DECOMPOSITION",
+      "route_selected": false,
+      "unknowns": [
+        "narrow-action success rate",
+        "cross-shot continuity quality",
+        "human editorial workload",
+        "assembled action readability",
+        "then-current per-clip generation price and credits"
+      ],
+      "verification_required": [
+        "narrow-shot design review",
+        "minimum six-output full-MP4 review",
+        "continuity review of two local assemblies",
+        "human assessment of edit burden and production value",
+        "separate production re-entry decision"
+      ]
+    }
+  ],
+  "schema_version": "CAL002_ROUTE_PREREQUISITES_AND_UNKNOWNS_V0_2"
+}

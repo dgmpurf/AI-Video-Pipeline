@@ -1,0 +1,155 @@
+{
+  "decision_pack_id": "CAL002-BATCH05-ROUTE-RESET-V0-2",
+  "routes": [
+    {
+      "expansion_policy": "NO_AUTOMATIC_EXPANSION_REQUIRES_SEPARATE_HUMAN_AUTHORIZATION",
+      "live_authority": false,
+      "media_authority": false,
+      "planned_inputs": [
+        "one rights-safe push-reaction motion reference",
+        "one rights-safe brief-impact-recoil motion reference",
+        "separate identity controls",
+        "separate scene controls"
+      ],
+      "planned_output_count": 4,
+      "prerequisite_gates": [
+        "rights-safe reference source confirmed",
+        "motion-only reference duty approved",
+        "Provider capability independently verified",
+        "identity and scene leakage controls approved",
+        "cost ceiling approved"
+      ],
+      "primary_success_screen": [
+        "at least one strict primary pass for push_reaction",
+        "at least one strict primary pass for brief_impact_recoil",
+        "no repeated action-reference identity leakage",
+        "no repeated scene leakage",
+        "motion fidelity visibly exceeds the closed text-only baseline",
+        "no prolonged contact in both replicates of either family",
+        "no long frozen ending in both replicates of either family"
+      ],
+      "production_authority": false,
+      "program_status": "PROPOSED_NOT_AUTHORIZED",
+      "replicates": {
+        "brief_impact_recoil": 2,
+        "push_reaction": 2,
+        "total": 4
+      },
+      "review_requirements": [
+        "full-MP4 review of every output",
+        "motion fidelity review against action grammar",
+        "identity scene costume and camera leakage review",
+        "strict primary endpoint review",
+        "rights and provenance confirmation"
+      ],
+      "route_id": "CAL002_ROUTE_A_ACTION_REFERENCE_MOTION_CONTROL",
+      "stopping_conditions": [
+        "capability unsupported",
+        "rights-safe reference unavailable",
+        "action reference dominates identity or scene",
+        "both replicates in a family repeat the same critical failure",
+        "cost exceeds the human-approved calibration ceiling",
+        "reference-preparation burden is unacceptable"
+      ]
+    },
+    {
+      "expansion_policy": "NO_AUTOMATIC_EXPANSION_REQUIRES_SEPARATE_HUMAN_AUTHORIZATION",
+      "live_authority": false,
+      "media_authority": false,
+      "planned_inputs": [
+        "one controlled push start/result-state pair",
+        "one controlled brief-impact start/result-state pair",
+        "separate identity references",
+        "separate scene reference"
+      ],
+      "planned_output_count": 4,
+      "prerequisite_gates": [
+        "controlled start and result images accepted",
+        "compatible generation mode independently verified",
+        "intermediate-motion failure criteria approved",
+        "reference-image duties separated",
+        "cost ceiling approved"
+      ],
+      "primary_success_screen": [
+        "start and result states are respected",
+        "at least one strict primary pass for push_reaction",
+        "at least one strict primary pass for brief_impact_recoil",
+        "no repeated sliding",
+        "no repeated morphing",
+        "no repeated prolonged-contact interpolation",
+        "framing and identity remain stable"
+      ],
+      "production_authority": false,
+      "program_status": "PROPOSED_NOT_AUTHORIZED",
+      "replicates": {
+        "brief_impact_recoil": 2,
+        "push_reaction": 2,
+        "total": 4
+      },
+      "review_requirements": [
+        "exact pose and layout audit before any generation",
+        "technical validation of start and result images",
+        "full-MP4 intermediate-motion audit after generation",
+        "framing identity and scene audit",
+        "strict primary endpoint review"
+      ],
+      "route_id": "CAL002_ROUTE_B_MANUAL_POSE_START_END_FRAME_CONTROL",
+      "stopping_conditions": [
+        "compatible generation mode unavailable",
+        "start or result images cannot be held stable",
+        "intermediate motion repeatedly violates causality",
+        "manual still-generation burden is unacceptable",
+        "identity consistency cannot be maintained"
+      ]
+    },
+    {
+      "expansion_policy": "NO_AUTOMATIC_EXPANSION_REQUIRES_SEPARATE_HUMAN_AUTHORIZATION",
+      "live_authority": false,
+      "media_authority": false,
+      "planned_inputs": [
+        "three narrow push shot definitions",
+        "three narrow brief-impact shot definitions",
+        "identity scene camera and screen-direction continuity criteria",
+        "one local editorial assembly plan per family"
+      ],
+      "planned_output_count": 6,
+      "prerequisite_gates": [
+        "six narrow-shot definitions approved",
+        "continuity criteria approved",
+        "local editorial workflow available",
+        "source-clip rights confirmed",
+        "cost and edit-burden ceilings approved"
+      ],
+      "primary_success_screen": [
+        "each source clip performs its one assigned action",
+        "the push assembly reads as one causal action",
+        "the brief-impact assembly reads as one causal action",
+        "identity and scene remain sufficiently continuous",
+        "screen direction remains coherent",
+        "no single generated clip carries the complete difficult chain"
+      ],
+      "production_authority": false,
+      "program_status": "PROPOSED_NOT_AUTHORIZED",
+      "replicates": {
+        "outputs_per_narrow_shot": 1,
+        "shots_per_family": 3,
+        "total": 6
+      },
+      "review_requirements": [
+        "full review of all six source clips",
+        "technical validation of every source clip",
+        "continuity review of each assembled sequence",
+        "identity scene lighting camera and screen-direction review",
+        "strict no-automatic-expansion check"
+      ],
+      "route_id": "CAL002_ROUTE_C_EDITORIAL_ACTION_DECOMPOSITION",
+      "stopping_conditions": [
+        "simplified shots still fail their narrow action",
+        "continuity drift makes assembly unusable",
+        "edit burden exceeds production value",
+        "required generated volume becomes uneconomic"
+      ]
+    }
+  ],
+  "schema_version": "CAL002_ROUTE_MINIMUM_VALIDATION_PROGRAM_V0_2"
+}

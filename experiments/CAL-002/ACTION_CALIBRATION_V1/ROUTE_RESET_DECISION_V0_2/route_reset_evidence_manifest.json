@@ -1,0 +1,261 @@
+{
+  "artifact_count": 7,
+  "artifacts": [
+    {
+      "artifact_class": "experiment_result_acceptance",
+      "byte_length": 8270,
+      "creation_phase": "CAL002_ROUTE_RESET_DECISION_PACK_V0_2",
+      "git_blob": "094cea63887e17a94ebdb7e9b2145d9636bd2289",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_RESET_DECISION_V0_2/CAL002_BATCH05_EXPERIMENT_RESULT_ACCEPTANCE.md",
+      "sha256": "0a7c3d221c642175f9096d6c9c9051cfdaedfe95459f5b49d188a083d093c742"
+    },
+    {
+      "artifact_class": "route_reset_decision_pack",
+      "byte_length": 20250,
+      "creation_phase": "CAL002_ROUTE_RESET_DECISION_PACK_V0_2",
+      "git_blob": "f4da49fa8df81c8fb2cf8a46466e725d0e95194a",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_RESET_DECISION_V0_2/CAL002_ROUTE_RESET_DECISION_PACK_V0_2.md",
+      "sha256": "5032cc253836de503e3fd39429826c6c791959254149eb82334795c9c1392c8c"
+    },
+    {
+      "artifact_class": "route_comparison_matrix",
+      "byte_length": 2716,
+      "creation_phase": "CAL002_ROUTE_RESET_DECISION_PACK_V0_2",
+      "git_blob": "8f12c84658598df7eee5b1898ac48c1c6c00c4e3",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_RESET_DECISION_V0_2/route_comparison_matrix.csv",
+      "sha256": "7f3aff37a9c73635d890f76559954c9d2757a26198c2a01c061a1a4cdb664e2f"
+    },
+    {
+      "artifact_class": "minimum_validation_program",
+      "byte_length": 6209,
+      "creation_phase": "CAL002_ROUTE_RESET_DECISION_PACK_V0_2",
+      "git_blob": "b4ba96f2d43f5ab28cc65144e487d1dabbe04cb7",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_RESET_DECISION_V0_2/route_minimum_validation_program.json",
+      "sha256": "c8d4c0c5cb3741608c634879e85ad19d74553fc90390f81981d2bf54bd60eee9"
+    },
+    {
+      "artifact_class": "prerequisites_and_unknowns",
+      "byte_length": 7586,
+      "creation_phase": "CAL002_ROUTE_RESET_DECISION_PACK_V0_2",
+      "git_blob": "3bc7b66cc06f9d58cd8c109ae5ee43baf0cfbf01",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_RESET_DECISION_V0_2/route_prerequisites_and_unknowns.json",
+      "sha256": "b4c47ccff8cae1f1453abf921d228497debc0e044c7327caae0676650ea377d0"
+    },
+    {
+      "artifact_class": "route_reset_manifest",
+      "byte_length": 12804,
+      "creation_phase": "CAL002_ROUTE_RESET_DECISION_PACK_V0_2",
+      "git_blob": "4596d8a1524f93772cd74dded6a931329ca82c9d",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_RESET_DECISION_V0_2/route_reset_manifest.json",
+      "sha256": "42bc79ecf3ef1b36c1f85fb54185a4971fbe0f9b9bda5ffd21e99f9aed83fc90"
+    },
+    {
+      "artifact_class": "governance_report",
+      "byte_length": 13556,
+      "creation_phase": "CAL002_ROUTE_RESET_DECISION_PACK_V0_2",
+      "git_blob": "b56a4ec8ce82cc64e4ee0c9271ffb9815e25d6fe",
+      "path": "reports/CAL002_BATCH05_EXPERIMENT_RESULT_ACCEPTANCE_AND_ROUTE_RESET_DECISION_V0_2_RESULT.md",
+      "sha256": "ddd7887c1afe60ec0a5afc44b2bf61fe7b67f66f39fd040668a197ed49b0b404"
+    }
+  ],
+  "decision_pack_id": "CAL002-BATCH05-ROUTE-RESET-V0-2",
+  "included_artifact_count": 7,
+  "input_bindings": [
+    {
+      "byte_length": 10379,
+      "evidence_role": "final independent audit authority",
+      "git_blob": "0b25d094f2f61175c4fafdc9ad2b82ed6e8da7a7",
+      "head_equality": true,
+      "path": "reports/CAL002_BATCH05_POST_UNBLINDING_DERIVATION_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+      "sha256": "770596838323dcb8259d9342871d01656987a002523036921a01d061db111267"
+    },
+    {
+      "byte_length": 9237,
+      "evidence_role": "post-unblinding derivation report",
+      "git_blob": "fee2057917da2266636f77513e9a21c5bbf160c2",
+      "head_equality": true,
+      "path": "reports/CAL002_BATCH05_POST_UNBLINDING_DERIVATION_RESULT.md",
+      "sha256": "dab379be9b7bcbcd4339e036074c74d4792064332e58bb52026279f717b46109"
+    },
+    {
+      "byte_length": 5784,
+      "evidence_role": "derived post-unblinding record",
+      "git_blob": "0ff75679f04890fea63e02fc42900bd88ac77078",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/post_unblinding_records/CAL002-BATCH05-POST-923B054F/post_unblinding_analysis.json",
+      "sha256": "1cdc124764aa4e35ea7463cb54b8a039a932d5d00dac18c68fe690550e981c96"
+    },
+    {
+      "byte_length": 13492,
+      "evidence_role": "locked blind visual review record",
+      "git_blob": "9714a926eed57b138c5f489a187280074318a0e6",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/review_records/CAL002-BATCH05-BLIND-85BB78B1/blind_review_record_final.json",
+      "sha256": "923b054f575743f80f7d3b222fd52ee9d2f95c510dfda61459c06f0abf36a8b8"
+    },
+    {
+      "byte_length": 21749,
+      "evidence_role": "Batch05 design and decision rules",
+      "git_blob": "0e42b50b64b013a8b559d9828cd9f32ad0faf85e",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/CAL002_BATCH05_DESIGN_SPEC.md",
+      "sha256": "09eb7f17fd6c346e99e6af65fb5a1c407293c4dd783c35d823ed64267ad412b5"
+    },
+    {
+      "byte_length": 17561,
+      "evidence_role": "Batch05 design bindings",
+      "git_blob": "e8eb255919bebe5d35f06e1289a5d158098ccef2",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_design_manifest.json",
+      "sha256": "c3a5265a5e21b90ca993f62892ba0dececf6b34fc8545e5a01e49835f7945574"
+    },
+    {
+      "byte_length": 3571,
+      "evidence_role": "Batch05 task and treatment matrix",
+      "git_blob": "3a9ebd8828787613050c544d9f665c69d41d7334",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_task_matrix.csv",
+      "sha256": "141f0c131a28c0cf7a9cda797e0525956cb34d99a4bb8c43fe4f211648d1fc32"
+    },
+    {
+      "byte_length": 47950,
+      "evidence_role": "historical Batch04 route evidence",
+      "git_blob": "40eb81ec52b553fe0769ca96057d7b0d2445fbfc",
+      "head_equality": true,
+      "path": "reports/CAL002_BATCH04_POST_VISUAL_REVIEW_SOURCE_UPDATE_EVIDENCE_PACK.md",
+      "sha256": "ccba5ed2d0c4c98ca3135ec8e4cb2bf995ca552ee20bb854bd1e3472797519e0"
+    },
+    {
+      "byte_length": 9842,
+      "evidence_role": "historical evidence intake attestation",
+      "git_blob": "872ad31963aa649b4bc5eb39208b734924b73fa4",
+      "head_equality": true,
+      "path": "reports/CAL002_BATCH04_POST_VISUAL_EVIDENCE_PACK_INTAKE_RESULT.md",
+      "sha256": "eea60d5413bc4535fa5e5374672a9da6671f605ed463280f5367a2684ec44a17"
+    },
+    {
+      "byte_length": 5387,
+      "evidence_role": "prior action-rule baseline",
+      "git_blob": "3d8033ec62d9f268719594cbaa82ffe4215eb7a7",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.1.md",
+      "sha256": "a10d28af271155b0fb32c3c8feb204ca487a82c9a60822884ffc576e19126337"
+    },
+    {
+      "byte_length": 5517,
+      "evidence_role": "prior structure-rule update",
+      "git_blob": "9f6cf6f68f5ef21beecfd668370cfba5b7768ce9",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.2.md",
+      "sha256": "a91d654b9cf961300f5ad9a6f7d06485bc51032da4c78ef9931664d356ef7cb6"
+    },
+    {
+      "byte_length": 7533,
+      "evidence_role": "prior causality-rule update",
+      "git_blob": "b14e627bf2437493f2333ffed7d42b00f790e40f",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.3.md",
+      "sha256": "0fdda04117d076fcb8e05f2a9a094d4302112c5539b3d1ddf878ed5c03c93464"
+    },
+    {
+      "byte_length": 4144,
+      "evidence_role": "action-reference duty and visual-review standard",
+      "git_blob": "b5c72a49be997d15771a5510112c3393e55682bd",
+      "head_equality": true,
+      "path": "sources/AI视频制作_动作参考视频库与审片标准_V0.1.md",
+      "sha256": "39773c7efc29d35b5a4a8748d4f874dad9985e2b44a7ad1b63cf3bb11800e0d1"
+    },
+    {
+      "byte_length": 24347,
+      "evidence_role": "reference rights provenance and active-input safety governance",
+      "git_blob": "b7aff51e71593d23b57e489e1e91d749c5c53fc5",
+      "head_equality": true,
+      "path": "docs/reference_library_v0_1/safety/04_AI视频制作_模仿参考库ReferenceDuty与安全规则_V0.1.md",
+      "sha256": "51dac29d529831e8721dc49d613e23366ae92510749c8132450b4a68877751a2"
+    },
+    {
+      "byte_length": 26978,
+      "evidence_role": "pose layout and spatial-control evidence",
+      "git_blob": "96021411707d7862d97ecfc173d014938f512c2f",
+      "head_equality": true,
+      "path": "sources/AI视频制作_实测规则库_V1.9_空间调度与远近站位控制_完整版_修正版_V1_9_2.md",
+      "sha256": "de7fee9f5e7f9152d37409731b4ffa5dd768b29f9364f948684e0be422d45c09"
+    },
+    {
+      "byte_length": 7607,
+      "evidence_role": "start and end frame workflow evidence",
+      "git_blob": "76aeaf8daed09e0460ef419af6cb8b6ab2cedfc4",
+      "head_equality": true,
+      "path": "reports/PHASE_K151_SHOT03_SPLIT02_START_END_FRAME_CANDIDATES_READY.md",
+      "sha256": "a9b6789deb2058b0c994363a7b0dbadd628ed4e224002d706d14d11cbf48de5a"
+    },
+    {
+      "byte_length": 12107,
+      "evidence_role": "pose keyframe and reference-role planning evidence",
+      "git_blob": "51c82426facd45f43feba17c07509794a72075b7",
+      "head_equality": true,
+      "path": "reports/PHASE_K153_SHOT03_SPLIT02_POSE_KEYFRAME_REFERENCE_PLAN.md",
+      "sha256": "f785bc862575f4a3d7ab73e4bdd388dc3868ae96c4d1a1bda4acee03c4e9f623"
+    },
+    {
+      "byte_length": 14571,
+      "evidence_role": "split-shot editorial decomposition planning evidence",
+      "git_blob": "e390624ab18d4d733cf50b5b70b786f67d9ce4f2",
+      "head_equality": true,
+      "path": "reports/PHASE_K141_SHOT03_SPLIT_SHOT_MICRO_SEQUENCE_PLAN.md",
+      "sha256": "b6f4513ac9049d3d6d2c1bebf204a48f1eb44109901364adffe683077015bca5"
+    },
+    {
+      "byte_length": 15438,
+      "evidence_role": "route-reset hit-stop and impact planning evidence",
+      "git_blob": "35db942392b33ae87c0bde8860bcf9e7c802f3dd",
+      "head_equality": true,
+      "path": "reports/PHASE_K262_SHOT04_R02_ROUTE_RESET_HIT_STOP_EXPLOSIVE_KNOCKBACK_WALL_IMPACT_PLANNING.md",
+      "sha256": "25beeb1483e109280c2375d64dac89f8f9f21546c814b9bc24b11ea8726e2edd"
+    },
+    {
+      "byte_length": 7583,
+      "evidence_role": "failure-ledger retry-stop and route-reset governance",
+      "git_blob": "26700dcd924bfe2526ae2678506d3291abb5d854",
+      "head_equality": true,
+      "path": "sources/AI视频制作_实测规则库_V1.12_失败台账与路线重置规则增补稿.md",
+      "sha256": "bcf034b496bd0ad35c8fff48fb8de73105e823cd197338a4eea3ae6b10ac09d4"
+    },
+    {
+      "byte_length": 6412,
+      "evidence_role": "action-reference library and rights-safe planning evidence",
+      "git_blob": "612c99956883fc625908ebd5c1de6ca0d933a0b1",
+      "head_equality": true,
+      "path": "reports/evidence_consolidation/K244S_SHOT04_R02_AND_MACRO_LESSONS/ACTION_REFERENCE_VIDEO_LIBRARY_PLAN.md",
+      "sha256": "514cf20fd36703ecf78a9d0823aa2edeef6f9c1db50af1e27fdfea30de8749fd"
+    },
+    {
+      "byte_length": 5567,
+      "evidence_role": "authorization separation and human-review governance",
+      "git_blob": "7fe3dc1781c3960cbda078e91330f04b81548ed7",
+      "head_equality": true,
+      "path": "sources/AI视频制作_自动化宏流程与授权等级_V0.2.md",
+      "sha256": "7c8b5d2bdacbfdf42346722a6db38ac854a9e148fa7bc32e504f6283f3410614"
+    },
+    {
+      "byte_length": 3464,
+      "evidence_role": "identity scene architecture and action reference-role separation",
+      "git_blob": "bbfcd71902087d06f9d76119fcd50007055466e9",
+      "head_equality": true,
+      "path": "productions/chi_yan_tian_qiong/packages/SHOT-04-R02-wall-impact/reference_duty_map.md",
+      "sha256": "44ea7f60d12e619470bb703db64b26130ffea2f91f9aa28aeb03bc54b12e0844"
+    },
+    {
+      "byte_length": 14783,
+      "evidence_role": "local split-cut feasibility and continuity-risk evidence",
+      "git_blob": "11770af7ce399b1dfbb087614b039a9187e58370",
+      "head_equality": true,
+      "path": "reports/PHASE_K142_SHOT03_EXISTING_MEDIA_SPLIT_CUT_REVIEW.md",
+      "sha256": "142f8c2d5d97d03f37998bac33645380bb9286702b735fbc28bc5faa37523978"
+    }
+  ],
+  "recursive_self_exclusion_explanation": "This evidence manifest is intentionally excluded from its own artifact list to prevent recursive self-hashing. The seven listed artifacts were finalized before this manifest.",
+  "schema_version": "CAL002_ROUTE_RESET_EVIDENCE_MANIFEST_V0_2",
+  "self_excluded": true,
+  "unique_bound_paths": 7
+}
