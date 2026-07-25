@@ -1,0 +1,132 @@
+{
+  "blind_review_record_byte_length": 13492,
+  "blind_review_record_finalized_before_unblinding": true,
+  "blind_review_record_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/review_records/CAL002-BATCH05-BLIND-85BB78B1/blind_review_record_final.json",
+  "blind_review_record_sha256": "923b054f575743f80f7d3b222fd52ee9d2f95c510dfda61459c06f0abf36a8b8",
+  "derivation_tool_binding": {
+    "byte_length": 35997,
+    "executing_file_equals_HEAD": true,
+    "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/tools/batch05_review_derivation.py",
+    "resolved_path_policy": "ACTUAL_EXECUTING_PATH_MUST_EQUAL_EXPECTED_REPOSITORY_TOOL_RESOLVED_PATH",
+    "sha256": "1bff976a6e14c96184936e81db1baf8df4a2154526c1f8770ac4b45c63388321",
+    "tool_version": "CAL002_BATCH05_REVIEW_DERIVATION_TOOL_V0_2",
+    "worktree_equals_HEAD": true
+  },
+  "family_decisions": [
+    {
+      "action_family": "push_reaction",
+      "both_treatments_frequently_fail": true,
+      "candidate_action_family_mismatch_count": 0,
+      "candidate_clear_advantage_count": 0,
+      "candidate_primary_pass_count": 0,
+      "candidate_repeated_wrong_family": false,
+      "candidate_technical_invalid_count": 0,
+      "candidate_worse_than_control": true,
+      "control_action_family_mismatch_count": 0,
+      "control_clear_advantage_count": 2,
+      "control_primary_pass_count": 0,
+      "control_technical_invalid_count": 0,
+      "decision_rationale": "Rule 1 ROUTE_RESET_REQUIRED: both_treatments_frequently_fail=true; uncontrolled_variation_prevents_comparison=false.",
+      "family_level_result": "ROUTE_RESET_REQUIRED",
+      "inconclusive_pair_count": 0,
+      "invalid_pair_count": 0,
+      "no_clear_advantage_count": 0,
+      "uncontrolled_variation_prevents_comparison": false,
+      "valid_pair_comparison_count": 2
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "both_treatments_frequently_fail": true,
+      "candidate_action_family_mismatch_count": 1,
+      "candidate_clear_advantage_count": 0,
+      "candidate_primary_pass_count": 0,
+      "candidate_repeated_wrong_family": false,
+      "candidate_technical_invalid_count": 0,
+      "candidate_worse_than_control": true,
+      "control_action_family_mismatch_count": 0,
+      "control_clear_advantage_count": 2,
+      "control_primary_pass_count": 0,
+      "control_technical_invalid_count": 0,
+      "decision_rationale": "Rule 1 ROUTE_RESET_REQUIRED: both_treatments_frequently_fail=true; uncontrolled_variation_prevents_comparison=false.",
+      "family_level_result": "ROUTE_RESET_REQUIRED",
+      "inconclusive_pair_count": 0,
+      "invalid_pair_count": 0,
+      "no_clear_advantage_count": 0,
+      "uncontrolled_variation_prevents_comparison": false,
+      "valid_pair_comparison_count": 2
+    }
+  ],
+  "mapping_source_bindings": [
+    {
+      "byte_length": 17561,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_design_manifest.json",
+      "sha256": "c3a5265a5e21b90ca993f62892ba0dececf6b34fc8545e5a01e49835f7945574"
+    },
+    {
+      "byte_length": 3571,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_task_matrix.csv",
+      "sha256": "141f0c131a28c0cf7a9cda797e0525956cb34d99a4bb8c43fe4f211648d1fc32"
+    }
+  ],
+  "pair_derivations": [
+    {
+      "blind_comparison_validity": "VALID",
+      "blind_preference": "A_CLEARLY_BETTER",
+      "candidate_clear_advantage": false,
+      "candidate_side": "B",
+      "control_side": "A",
+      "derivation_class": "CONTROL_CLEAR_ADVANTAGE",
+      "derivation_rationale": "VALID: blind preference selects Control side A.",
+      "pair_id": "PUSH_PAIR_01"
+    },
+    {
+      "blind_comparison_validity": "VALID",
+      "blind_preference": "B_CLEARLY_BETTER",
+      "candidate_clear_advantage": false,
+      "candidate_side": "A",
+      "control_side": "B",
+      "derivation_class": "CONTROL_CLEAR_ADVANTAGE",
+      "derivation_rationale": "VALID: blind preference selects Control side B.",
+      "pair_id": "PUSH_PAIR_02"
+    },
+    {
+      "blind_comparison_validity": "VALID",
+      "blind_preference": "B_CLEARLY_BETTER",
+      "candidate_clear_advantage": false,
+      "candidate_side": "A",
+      "control_side": "B",
+      "derivation_class": "CONTROL_CLEAR_ADVANTAGE",
+      "derivation_rationale": "VALID: blind preference selects Control side B.",
+      "pair_id": "IMPACT_PAIR_01"
+    },
+    {
+      "blind_comparison_validity": "VALID",
+      "blind_preference": "A_CLEARLY_BETTER",
+      "candidate_clear_advantage": false,
+      "candidate_side": "B",
+      "control_side": "A",
+      "derivation_class": "CONTROL_CLEAR_ADVANTAGE",
+      "derivation_rationale": "VALID: blind preference selects Control side A.",
+      "pair_id": "IMPACT_PAIR_02"
+    }
+  ],
+  "schema_source_bindings": [
+    {
+      "byte_length": 18138,
+      "record_version": "CAL002_BATCH05_BLIND_VISUAL_REVIEW_RECORD_V0_3",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_visual_review_schema.json",
+      "schema_id": "CAL002_BATCH05_BLIND_VISUAL_REVIEW_SCHEMA_V0_3",
+      "sha256": "9e98bc7f50c218ef75f19f211c0d0eefd5b93f0d41a4780e280f412804b9ebc5",
+      "worktree_equals_HEAD": true
+    },
+    {
+      "byte_length": 18899,
+      "record_version": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_RECORD_V0_3",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_post_unblinding_analysis_schema.json",
+      "schema_id": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_SCHEMA_V0_3",
+      "sha256": "366a8dac88504626ec400317c116e20c319c70c693a29927fa1753fcb46f396a",
+      "worktree_equals_HEAD": true
+    }
+  ],
+  "schema_version": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_RECORD_V0_3"
+}

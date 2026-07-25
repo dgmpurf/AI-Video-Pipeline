@@ -1,0 +1,137 @@
+{
+  "Dreamina_called": false,
+  "Provider_called": false,
+  "Sources_changed": false,
+  "blind_lock_checkpoint": {
+    "commit": "972164f2dde5f4122dab8b25236fa4756ae84552",
+    "commit_message": "review(cal002): lock Batch05 blind visual record",
+    "lock_id": "CAL002-BATCH05-BLIND-LOCK-923B054F"
+  },
+  "blind_lock_governance_report_binding": {
+    "byte_length": 4210,
+    "path": "reports/CAL002_BATCH05_PHASE1_BLIND_REVIEW_RECORD_LOCK_RESULT.md",
+    "sha256": "5d31d1c651aa5b92f2dcd9b1fda0723ff51f1f99310b1e80996c4f2302f4d0b0"
+  },
+  "blind_lock_manifest_binding": {
+    "byte_length": 2905,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/review_records/CAL002-BATCH05-BLIND-85BB78B1/blind_review_lock_manifest.json",
+    "sha256": "208a8081585adf8797e43354e0e828f4e3b3c92ab3ab9be285d88e27ee6f721d"
+  },
+  "blind_record_binding": {
+    "byte_length": 13492,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/review_records/CAL002-BATCH05-BLIND-85BB78B1/blind_review_record_final.json",
+    "sha256": "923b054f575743f80f7d3b222fd52ee9d2f95c510dfda61459c06f0abf36a8b8"
+  },
+  "blind_record_changed": false,
+  "blind_record_finalized": true,
+  "blind_record_finalized_before_unblinding": true,
+  "blind_record_locked": true,
+  "blind_report_binding": {
+    "byte_length": 9494,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/review_records/CAL002-BATCH05-BLIND-85BB78B1/blind_visual_review_report.md",
+    "sha256": "db08aea351393e7308dbd468292eab6acda5d92fad3d40048463035c102f63aa"
+  },
+  "candidate_advantage_derived": true,
+  "derive": {
+    "argv_element_count": 9,
+    "argv_serialization": "UTF-8 compact JSON array",
+    "argv_sha256": "778a5b569363317bb113b82233c3c6a7b5bca248b990816eba004fec8efb8353",
+    "exit_code": 0,
+    "invocation_count": 1,
+    "output_did_not_previously_exist": true,
+    "overwrite_flag_present": false,
+    "partial_output_on_failure": false,
+    "shell": false,
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_byte_length": 386,
+    "stdout_sha256": "e95c516e7a24642baa83012f1ddc7067a17c2244ec5a1698f5f9fcabfd04e785"
+  },
+  "derived_record": {
+    "byte_length": 5784,
+    "bytes_unchanged_after_verify": true,
+    "canonical_json": "PASS",
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/post_unblinding_records/CAL002-BATCH05-POST-923B054F/post_unblinding_analysis.json",
+    "schema_validation": "PASS",
+    "sha256": "1cdc124764aa4e35ea7463cb54b8a039a932d5d00dac18c68fe690550e981c96",
+    "verify_result": "PASS"
+  },
+  "family_result_derived": true,
+  "final_master": false,
+  "fixed_task_completion": false,
+  "goal_identity": "CAL002_BATCH05_POST_UNBLINDING_DERIVATION_NO_LIVE_V0_1",
+  "lock_id": "CAL002-BATCH05-BLIND-LOCK-923B054F",
+  "locked": false,
+  "mapping_accessed_by": "COMMITTED_DETERMINISTIC_TOOL_ONLY",
+  "mapping_source_bindings": [
+    {
+      "byte_length": 17561,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_design_manifest.json",
+      "sha256": "c3a5265a5e21b90ca993f62892ba0dececf6b34fc8545e5a01e49835f7945574"
+    },
+    {
+      "byte_length": 3571,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_task_matrix.csv",
+      "sha256": "141f0c131a28c0cf7a9cda797e0525956cb34d99a4bb8c43fe4f211648d1fc32"
+    }
+  ],
+  "media_changed": false,
+  "post_unblinding_performed": true,
+  "production_approved": false,
+  "provider_command_count": 0,
+  "schema_bindings": {
+    "blind_schema": {
+      "byte_length": 18138,
+      "head_equal": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_visual_review_schema.json",
+      "record_version": "CAL002_BATCH05_BLIND_VISUAL_REVIEW_RECORD_V0_3",
+      "schema_id": "CAL002_BATCH05_BLIND_VISUAL_REVIEW_SCHEMA_V0_3",
+      "schema_validity": "PASS",
+      "sha256": "9e98bc7f50c218ef75f19f211c0d0eefd5b93f0d41a4780e280f412804b9ebc5"
+    },
+    "post_unblinding_schema": {
+      "byte_length": 18899,
+      "head_equal": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_post_unblinding_analysis_schema.json",
+      "record_version": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_RECORD_V0_3",
+      "schema_id": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_SCHEMA_V0_3",
+      "schema_validity": "PASS",
+      "sha256": "366a8dac88504626ec400317c116e20c319c70c693a29927fa1753fcb46f396a"
+    }
+  },
+  "schema_version": "CAL002_BATCH05_DERIVATION_EXECUTION_RECEIPT_V0_1",
+  "starting_checkpoint": {
+    "branch": "main",
+    "head": "972164f2dde5f4122dab8b25236fa4756ae84552",
+    "origin_main": "972164f2dde5f4122dab8b25236fa4756ae84552"
+  },
+  "tool_binding": {
+    "actual_executing_resolved_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/tools/batch05_review_derivation.py",
+    "byte_length": 35997,
+    "executing_bytes_equal_head": true,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/tools/batch05_review_derivation.py",
+    "sha256": "1bff976a6e14c96184936e81db1baf8df4a2154526c1f8770ac4b45c63388321",
+    "tool_version": "CAL002_BATCH05_REVIEW_DERIVATION_TOOL_V0_2",
+    "worktree_equal_head": true
+  },
+  "treatment_mapping_accessed": true,
+  "verify": {
+    "argv_element_count": 9,
+    "argv_serialization": "UTF-8 compact JSON array",
+    "argv_sha256": "2d2502b00ffddd6724e0e41e43a98b92a48c42b26b9ddcdfdf9c463e9657648b",
+    "derived_bytes_unchanged": true,
+    "derived_record_byte_length_after": 5784,
+    "derived_record_byte_length_before": 5784,
+    "derived_record_sha256_after": "1cdc124764aa4e35ea7463cb54b8a039a932d5d00dac18c68fe690550e981c96",
+    "derived_record_sha256_before": "1cdc124764aa4e35ea7463cb54b8a039a932d5d00dac18c68fe690550e981c96",
+    "deterministic_rederivation": "PASS",
+    "exit_code": 0,
+    "invocation_count": 1,
+    "shell": false,
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_byte_length": 199,
+    "stdout_sha256": "08103071ff3c682297236c5d3646121bd1b342b3d41941ce497e6d49b68ae4ea",
+    "write_performed": false
+  }
+}

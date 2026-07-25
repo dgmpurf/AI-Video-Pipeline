@@ -1,0 +1,92 @@
+{
+  "artifact_count": 3,
+  "artifacts": [
+    {
+      "artifact_class": "DETERMINISTIC_POST_UNBLINDING_ANALYSIS",
+      "byte_length": 5784,
+      "creation_phase": "CAL002_BATCH05_POST_UNBLINDING_DERIVATION_NO_LIVE",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/post_unblinding_records/CAL002-BATCH05-POST-923B054F/post_unblinding_analysis.json",
+      "sha256": "1cdc124764aa4e35ea7463cb54b8a039a932d5d00dac18c68fe690550e981c96"
+    },
+    {
+      "artifact_class": "DERIVATION_EXECUTION_RECEIPT",
+      "byte_length": 6249,
+      "creation_phase": "CAL002_BATCH05_POST_UNBLINDING_DERIVATION_NO_LIVE",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/post_unblinding_records/CAL002-BATCH05-POST-923B054F/derivation_execution_receipt.json",
+      "sha256": "149762df4d4c3d41405a5df5eada93c41595111ed2e6473f19e56a1647def229"
+    },
+    {
+      "artifact_class": "POST_UNBLINDING_GOVERNANCE_REPORT",
+      "byte_length": 9237,
+      "creation_phase": "CAL002_BATCH05_POST_UNBLINDING_DERIVATION_NO_LIVE",
+      "relative_path": "reports/CAL002_BATCH05_POST_UNBLINDING_DERIVATION_RESULT.md",
+      "sha256": "dab379be9b7bcbcd4339e036074c74d4792064332e58bb52026279f717b46109"
+    }
+  ],
+  "included_artifact_count": 3,
+  "input_bindings": {
+    "blind_lock_governance_report": {
+      "byte_length": 4210,
+      "head_verified": true,
+      "relative_path": "reports/CAL002_BATCH05_PHASE1_BLIND_REVIEW_RECORD_LOCK_RESULT.md",
+      "sha256": "5d31d1c651aa5b92f2dcd9b1fda0723ff51f1f99310b1e80996c4f2302f4d0b0"
+    },
+    "blind_lock_manifest": {
+      "byte_length": 2905,
+      "head_verified": true,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/review_records/CAL002-BATCH05-BLIND-85BB78B1/blind_review_lock_manifest.json",
+      "sha256": "208a8081585adf8797e43354e0e828f4e3b3c92ab3ab9be285d88e27ee6f721d"
+    },
+    "blind_record": {
+      "byte_length": 13492,
+      "head_verified": true,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/review_records/CAL002-BATCH05-BLIND-85BB78B1/blind_review_record_final.json",
+      "sha256": "923b054f575743f80f7d3b222fd52ee9d2f95c510dfda61459c06f0abf36a8b8"
+    },
+    "blind_report": {
+      "byte_length": 9494,
+      "head_verified": true,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_EXECUTION/review_records/CAL002-BATCH05-BLIND-85BB78B1/blind_visual_review_report.md",
+      "sha256": "db08aea351393e7308dbd468292eab6acda5d92fad3d40048463035c102f63aa"
+    },
+    "blind_schema": {
+      "byte_length": 18138,
+      "head_verified": true,
+      "record_version": "CAL002_BATCH05_BLIND_VISUAL_REVIEW_RECORD_V0_3",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_visual_review_schema.json",
+      "schema_id": "CAL002_BATCH05_BLIND_VISUAL_REVIEW_SCHEMA_V0_3",
+      "sha256": "9e98bc7f50c218ef75f19f211c0d0eefd5b93f0d41a4780e280f412804b9ebc5"
+    },
+    "derivation_tool": {
+      "byte_length": 35997,
+      "head_verified": true,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/tools/batch05_review_derivation.py",
+      "sha256": "1bff976a6e14c96184936e81db1baf8df4a2154526c1f8770ac4b45c63388321",
+      "tool_version": "CAL002_BATCH05_REVIEW_DERIVATION_TOOL_V0_2"
+    },
+    "design_manifest": {
+      "byte_length": 17561,
+      "head_verified": true,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_design_manifest.json",
+      "sha256": "c3a5265a5e21b90ca993f62892ba0dececf6b34fc8545e5a01e49835f7945574"
+    },
+    "post_unblinding_schema": {
+      "byte_length": 18899,
+      "head_verified": true,
+      "record_version": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_RECORD_V0_3",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_post_unblinding_analysis_schema.json",
+      "schema_id": "CAL002_BATCH05_POST_UNBLINDING_ANALYSIS_SCHEMA_V0_3",
+      "sha256": "366a8dac88504626ec400317c116e20c319c70c693a29927fa1753fcb46f396a"
+    },
+    "task_matrix": {
+      "byte_length": 3571,
+      "head_verified": true,
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH05_DESIGN/batch05_task_matrix.csv",
+      "sha256": "141f0c131a28c0cf7a9cda797e0525956cb34d99a4bb8c43fe4f211648d1fc32"
+    }
+  },
+  "manifest_id": "CAL002-BATCH05-POST-923B054F-EVIDENCE",
+  "schema_version": "CAL002_BATCH05_POST_UNBLINDING_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "unique_bound_paths": 3
+}
