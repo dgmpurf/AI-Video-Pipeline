@@ -1,0 +1,63 @@
+{
+  "credits_spent": 0,
+  "decision": "CAL002_ROUTE_A_R01_QUERY_ONLY_BLOCKED_HELP_VALIDATION_FAILURE_NO_QUERY",
+  "dreamina_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "fresh_query_help_checked": true,
+  "fresh_version_checked": true,
+  "generation_commands_called": 0,
+  "help_drift": null,
+  "help_drift_classification": "not_established_post_call_local_parser_failure_prevented_required_help_validation",
+  "query_help": {
+    "argv": [
+      "C:/Users/msjpurf/bin/dreamina.exe",
+      "query_result",
+      "-h"
+    ],
+    "called": true,
+    "drift": null,
+    "evidence_capture_failure": true,
+    "evidence_capture_failure_classification": "local_regex_parser_compile_error_after_help_subprocess_returned",
+    "exit_code": null,
+    "not_called_reason": null,
+    "parsed_command": null,
+    "parsed_download_dir_optional": null,
+    "parsed_download_dir_supported": null,
+    "parsed_no_other_option_required": null,
+    "parsed_query_without_download_dir_representable": null,
+    "parsed_submit_id_supported": null,
+    "raw_output_persisted": false,
+    "sensitive_data_detected": null,
+    "sensitive_data_scan_result": "not_available_due_to_post_call_parser_failure",
+    "stderr_byte_length": null,
+    "stderr_sha256": null,
+    "stdout_byte_length": null,
+    "stdout_sha256": null,
+    "timed_out": null,
+    "validation_passed": false
+  },
+  "resolved_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+  "runtime_drift": false,
+  "schema_version": "CAL002_ROUTE_A_R01_QUERY_RUNTIME_CANARY_V0_1",
+  "total_dreamina_calls": 2,
+  "version": {
+    "argv": [
+      "C:/Users/msjpurf/bin/dreamina.exe",
+      "version"
+    ],
+    "called": true,
+    "drift": false,
+    "exit_code": 0,
+    "not_called_reason": null,
+    "parsed_build_time": "2026-06-26T06:36:39Z",
+    "parsed_commit": "2a20fff",
+    "parsed_version": "2a20fff-dirty",
+    "raw_output_persisted": false,
+    "sensitive_data_detected": false,
+    "sensitive_data_scan_result": "pass",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_byte_length": 96,
+    "stdout_sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0",
+    "timed_out": false
+  }
+}
