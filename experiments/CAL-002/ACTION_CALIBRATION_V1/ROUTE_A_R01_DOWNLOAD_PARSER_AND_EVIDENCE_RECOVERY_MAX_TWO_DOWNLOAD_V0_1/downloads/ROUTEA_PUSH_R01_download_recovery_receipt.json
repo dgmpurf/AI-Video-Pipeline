@@ -1,0 +1,273 @@
+{
+  "alias": "ROUTEA_PUSH_R01",
+  "argv_element_count": 6,
+  "argv_sha256": "19dd0639b2241c9a9f038338d01118ba790f9b86f48dc9fa0cb4e6f2892662b5",
+  "bound_package_id": "CAL002-ROUTE-A-PUSH-R01",
+  "bound_reference_id": "ACTION_REF_PUSH_01",
+  "bound_submit_id": "e0b8f28d-f84f-4d4b-a442-ab3ee6e04984",
+  "byte_preserving_move": {
+    "candidate_byte_length": 2112498,
+    "candidate_sha256": "bee521eea1f44608cbf15e8bae423caea99f49581b5c37e693e187b9a13f27e4",
+    "canonical_byte_length": 2112498,
+    "canonical_sha256": "bee521eea1f44608cbf15e8bae423caea99f49581b5c37e693e187b9a13f27e4",
+    "result": "PASS"
+  },
+  "candidate_byte_length": 2112498,
+  "candidate_sha256": "bee521eea1f44608cbf15e8bae423caea99f49581b5c37e693e187b9a13f27e4",
+  "candidate_suffix": ".mp4",
+  "candidate_task_relative_location": "e0b8f28d-f84f-4d4b-a442-ab3ee6e04984_video_1.mp4",
+  "canonical_byte_length": 2112498,
+  "canonical_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/media/ROUTEA_PUSH_R01.mp4",
+  "canonical_sha256": "bee521eea1f44608cbf15e8bae423caea99f49581b5c37e693e187b9a13f27e4",
+  "capture_before_parse_completed": true,
+  "contact_sheet": {
+    "byte_length": 874299,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/contact_sheets/ROUTEA_PUSH_R01_contact_sheet.png",
+    "sha256": "dd6a6461230d4ef5e329a51752a449b60cdd9df06696f0d4d958165b3e50aefd"
+  },
+  "download_accepted": true,
+  "download_called": true,
+  "download_directory_classification": "EPHEMERAL_SAME_VOLUME_OUTSIDE_REPOSITORY",
+  "durable_pre_parse_checkpoint_completed": true,
+  "execution_id": "CAL002-ROUTE-A-R01-DOWNLOAD-RECOVERY-V0-1",
+  "explicit_failure_contradictions": [],
+  "filesystem_delta": {
+    "archive_count": 0,
+    "executable_count": 0,
+    "filesystem_delta_result": "PASS",
+    "nonempty_regular_file_count": 1,
+    "outside_task_root_count": 0,
+    "regular_file_count": 1,
+    "reparse_or_symlink_count": 0,
+    "unexpected_sidecar_count": 0,
+    "video_candidate_count": 1
+  },
+  "image_count": null,
+  "keyframes": [
+    {
+      "byte_length": 425220,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/keyframes/ROUTEA_PUSH_R01/ROUTEA_PUSH_R01_kf01.png",
+      "sha256": "853430246ca92a5565b5b8a85bb33631e8b6ae8344483263308adb21d6d91a20",
+      "timestamp_seconds": 0.253
+    },
+    {
+      "byte_length": 477034,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/keyframes/ROUTEA_PUSH_R01/ROUTEA_PUSH_R01_kf02.png",
+      "sha256": "c8122cfae7e9ce7420ca598a720a227441710de3e4b9ee6d867bd6192b0fc3a7",
+      "timestamp_seconds": 0.81
+    },
+    {
+      "byte_length": 505589,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/keyframes/ROUTEA_PUSH_R01/ROUTEA_PUSH_R01_kf03.png",
+      "sha256": "9b315028e91fde45b6b9d1f15ba2b362ed2f6de4c84b72cd8ff90224acf480b6",
+      "timestamp_seconds": 1.417
+    },
+    {
+      "byte_length": 520282,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/keyframes/ROUTEA_PUSH_R01/ROUTEA_PUSH_R01_kf04.png",
+      "sha256": "9eb1b00f13509fb50d6733414820a804e3c9bfbb99ea4724b91ef237610e3dad",
+      "timestamp_seconds": 2.227
+    },
+    {
+      "byte_length": 539941,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/keyframes/ROUTEA_PUSH_R01/ROUTEA_PUSH_R01_kf05.png",
+      "sha256": "fd4aad76fce8a31023c4e881c0cd36168b130b935649aefee5d9ae30efa7a969",
+      "timestamp_seconds": 3.543
+    },
+    {
+      "byte_length": 555096,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/keyframes/ROUTEA_PUSH_R01/ROUTEA_PUSH_R01_kf06.png",
+      "sha256": "a4816cca96afe258ab289242c29f7d039b66cbb338170a6ac5d2e02176642c42",
+      "timestamp_seconds": 4.758
+    }
+  ],
+  "metadata_survived_parser_phase": true,
+  "motion_only_behavior_verified": false,
+  "not_called_reason": null,
+  "output_parse": {
+    "stderr_decode": "PASS",
+    "stderr_mode": "EMPTY",
+    "stderr_unparsed_nonempty_line_count": 0,
+    "stdout_decode": "PASS",
+    "stdout_mode": "FULL_DOCUMENT_JSON",
+    "stdout_unparsed_nonempty_line_count": 0
+  },
+  "post_move_decode": {
+    "decoded_frame_count": 121,
+    "exit_code": 0,
+    "fatal_decode_error": false,
+    "result": "PASS",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "post_move_ffprobe": {
+    "audio_stream_count": 1,
+    "checks": {
+      "audio_stream_count_valid": true,
+      "container_valid": true,
+      "duration_valid": true,
+      "frame_count_positive": true,
+      "frame_rate_positive": true,
+      "metadata_safe": true,
+      "resolution_valid": true,
+      "rotation_valid": true,
+      "video_stream_count_valid": true
+    },
+    "codec": "h264",
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "duration_seconds": 5.06195,
+    "exit_code": 0,
+    "format_long_name": "QuickTime / MOV",
+    "frame_count": 121,
+    "frame_rate": 24.119601,
+    "height": 720,
+    "metadata_safety_issues": [],
+    "pixel_format": "yuv420p",
+    "result": "PASS",
+    "rotation": 0,
+    "stream_tags": [
+      {
+        "handler_name": "SoundHandler",
+        "language": "und",
+        "vendor_id": "[0][0][0][0]"
+      },
+      {
+        "handler_name": "VideoHandler",
+        "language": "und",
+        "vendor_id": "[0][0][0][0]"
+      }
+    ],
+    "video_stream_count": 1,
+    "visible_format_tags": {
+      "LvMetaInfo": "{\"data\":{\"os\":\"\",\"product\":\"dreamina\",\"exportType\":\"generation\",\"videoId\":\"0\"},\"trace_info\":{\"originItemId\":\"7666495829259210022\"}}",
+      "UserComment": "{\"aigc_label_type\":0,\"source_info\":\"dreamina\"}",
+      "comment": "vid:v02870g10004d9idt027dlda6hhquk30",
+      "compatible_brands": "isomiso2avc1mp41",
+      "encoder": "Lavf58.76.100",
+      "major_brand": "isom",
+      "minor_version": "512"
+    },
+    "width": 1280
+  },
+  "pre_move_decode": {
+    "decoded_frame_count": 121,
+    "exit_code": 0,
+    "fatal_decode_error": false,
+    "result": "PASS",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "preliminary_ffprobe": {
+    "audio_stream_count": 1,
+    "checks": {
+      "audio_stream_count_valid": true,
+      "container_valid": true,
+      "duration_valid": true,
+      "frame_count_positive": true,
+      "frame_rate_positive": true,
+      "metadata_safe": true,
+      "resolution_valid": true,
+      "rotation_valid": true,
+      "video_stream_count_valid": true
+    },
+    "codec": "h264",
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "duration_seconds": 5.06195,
+    "exit_code": 0,
+    "format_long_name": "QuickTime / MOV",
+    "frame_count": 121,
+    "frame_rate": 24.119601,
+    "height": 720,
+    "metadata_safety_issues": [],
+    "pixel_format": "yuv420p",
+    "result": "PASS",
+    "rotation": 0,
+    "stream_tags": [
+      {
+        "handler_name": "SoundHandler",
+        "language": "und",
+        "vendor_id": "[0][0][0][0]"
+      },
+      {
+        "handler_name": "VideoHandler",
+        "language": "und",
+        "vendor_id": "[0][0][0][0]"
+      }
+    ],
+    "video_stream_count": 1,
+    "visible_format_tags": {
+      "LvMetaInfo": "{\"data\":{\"os\":\"\",\"product\":\"dreamina\",\"exportType\":\"generation\",\"videoId\":\"0\"},\"trace_info\":{\"originItemId\":\"7666495829259210022\"}}",
+      "UserComment": "{\"aigc_label_type\":0,\"source_info\":\"dreamina\"}",
+      "comment": "vid:v02870g10004d9idt027dlda6hhquk30",
+      "compatible_brands": "isomiso2avc1mp41",
+      "encoder": "Lavf58.76.100",
+      "major_brand": "isom",
+      "minor_version": "512"
+    },
+    "width": 1280
+  },
+  "prior_authoritative_query_receipt": {
+    "byte_length": 1952,
+    "download_ready": true,
+    "normalized_status": "success",
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_QUERY_ONLY_HELP_VALIDATION_RECOVERY_V0_1/queries/ROUTEA_PUSH_R01_query_receipt.json",
+    "queue_status": "Finish",
+    "sha256": "5c0bc0b7a19d370237195ed004d6446aa399f04d6dad6b392241610b2957aaea",
+    "video_count": 1,
+    "worktree_equals_head": true
+  },
+  "prior_authoritative_task_status": {
+    "download_ready": true,
+    "normalized_status": "success",
+    "queue_status": "Finish",
+    "result_count": 1,
+    "video_count": 1
+  },
+  "process": {
+    "argv_element_count": 6,
+    "argv_sha256": "19dd0639b2241c9a9f038338d01118ba790f9b86f48dc9fa0cb4e6f2892662b5",
+    "elapsed_seconds": 8.672,
+    "end_utc": "2026-07-25T18:52:22.364274Z",
+    "exit_code": 0,
+    "raw_stderr_persisted": false,
+    "raw_stdout_persisted": false,
+    "start_utc": "2026-07-25T18:52:13.690366Z",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_byte_length": 3149,
+    "stdout_sha256": "fe2795b06104c922fe155aff42edecb61b308f1805f6e320a9a51128dde2d10c",
+    "timed_out": false
+  },
+  "provider_result_count": null,
+  "r02_authorized": false,
+  "raw_gen_status": {
+    "raw_type": "string",
+    "raw_value": "success",
+    "semantic_mapping": "SUCCESS"
+  },
+  "raw_output_persisted": false,
+  "raw_queue_status": {
+    "raw_type": "string",
+    "raw_value": "Finish",
+    "semantic_mapping": "FINISH"
+  },
+  "receipt_state": "DOWNLOAD_ACCEPTED_TECHNICAL_PASS",
+  "reference_leakage_reviewed": false,
+  "response_submit_ids": [
+    "e0b8f28d-f84f-4d4b-a442-ab3ee6e04984"
+  ],
+  "result_count": null,
+  "schema_version": "CAL002_ROUTE_A_R01_DOWNLOAD_RECOVERY_RECEIPT_V0_1",
+  "signed_url_count": 0,
+  "signed_url_persisted": false,
+  "task_root_absent_before_invocation": true,
+  "technical_record": {
+    "byte_length": 6619,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/technical/ROUTEA_PUSH_R01_technical_validation.json",
+    "sha256": "3eded86e245ea82e98e6bd6733f412fd0ceca2b7c661f944b3924f20f932d9bd"
+  },
+  "temporary_path_persisted": false,
+  "url_opened": false,
+  "video_count": null,
+  "visual_success_known": false
+}

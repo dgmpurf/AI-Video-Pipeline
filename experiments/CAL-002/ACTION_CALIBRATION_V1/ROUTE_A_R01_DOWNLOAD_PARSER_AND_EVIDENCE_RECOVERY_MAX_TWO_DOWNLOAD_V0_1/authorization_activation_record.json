@@ -1,0 +1,31 @@
+{
+  "approval_byte_length": 2895,
+  "approval_sha256": "62741ce6da710b78adfa224512c5da7adf54145fd1d11affb819b53c38f3b27e",
+  "authorization_activated": true,
+  "authorization_consumed": true,
+  "authorization_reusable": false,
+  "execution_id": "CAL002-ROUTE-A-R01-DOWNLOAD-RECOVERY-V0-1",
+  "fixed_call_order": [
+    "ROUTEA_PUSH_R01",
+    "ROUTEA_IMPACT_R01"
+  ],
+  "goal_identity": "CAL002_ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1",
+  "help_calls_authorized": 0,
+  "impact_download_max": 1,
+  "maximum_total_dreamina_calls": 2,
+  "new_submit_max": 0,
+  "origin_main": "64b0e1bd53daa167ae53f08547be3c2294af3aff",
+  "push_recovery_download_max": 1,
+  "query_only_calls_authorized": 0,
+  "resubmit_max": 0,
+  "retry_max": 0,
+  "schema_version": "CAL002_ROUTE_A_R01_DOWNLOAD_RECOVERY_AUTHORIZATION_ACTIVATION_V0_1",
+  "self_test_summary": {
+    "class_count": 7,
+    "individual_case_count": 37,
+    "pass_count": 37,
+    "result": "PASS"
+  },
+  "starting_head": "64b0e1bd53daa167ae53f08547be3c2294af3aff",
+  "version_calls_authorized": 0
+}

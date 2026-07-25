@@ -1,0 +1,82 @@
+{
+  "approval_lifecycle": {
+    "activated": true,
+    "consumed": true,
+    "reusable": false
+  },
+  "decision": "CAL002_ROUTE_A_R01_DOWNLOAD_RECOVERY_TWO_VIDEOS_TECHNICALLY_VALID_READY_FOR_FULL_MP4_HUMAN_REVIEW",
+  "download_call_count": 2,
+  "execution_id": "CAL002-ROUTE-A-R01-DOWNLOAD-RECOVERY-V0-1",
+  "failed_checkpoint": "64b0e1bd53daa167ae53f08547be3c2294af3aff",
+  "failed_evidence_binding": {
+    "evidence_manifest_git_blob": "3428f528fccfba33aaf25fbf7d69689460bfdbfe",
+    "report_sha256": "967ad70079636d0e3f4a8221567762a5c5f7bbdf40d8246b0f1f4945625ba3c3"
+  },
+  "fixed_call_order": [
+    "ROUTEA_PUSH_R01",
+    "ROUTEA_IMPACT_R01"
+  ],
+  "goal_identity": "CAL002_ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1",
+  "next_phase": "CAL002_ROUTE_A_R01_COMPLETE_MP4_HUMAN_VISUAL_AND_SEMANTIC_REVIEW",
+  "query_recovery_checkpoint": "65b1116e3fe4111bffa018f7c48adf65b2158d2e",
+  "r02_authorized": false,
+  "route_a_capability_proven": false,
+  "schema_version": "CAL002_ROUTE_A_R01_DOWNLOAD_RECOVERY_EXECUTION_RECORD_V0_1",
+  "self_test_summary": {
+    "class_count": 7,
+    "individual_case_count": 37,
+    "pass_count": 37,
+    "result": "PASS"
+  },
+  "starting_head": "64b0e1bd53daa167ae53f08547be3c2294af3aff",
+  "tasks": [
+    {
+      "alias": "ROUTEA_PUSH_R01",
+      "canonical_media": {
+        "byte_length": 2112498,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/media/ROUTEA_PUSH_R01.mp4",
+        "sha256": "bee521eea1f44608cbf15e8bae423caea99f49581b5c37e693e187b9a13f27e4"
+      },
+      "download_accepted": true,
+      "download_called": true,
+      "explicit_failure_contradictions": [],
+      "filesystem_result": "PASS",
+      "raw_gen_status": {
+        "raw_type": "string",
+        "raw_value": "success",
+        "semantic_mapping": "SUCCESS"
+      },
+      "raw_queue_status": {
+        "raw_type": "string",
+        "raw_value": "Finish",
+        "semantic_mapping": "FINISH"
+      },
+      "technical_result": "PASS"
+    },
+    {
+      "alias": "ROUTEA_IMPACT_R01",
+      "canonical_media": {
+        "byte_length": 2232992,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/media/ROUTEA_IMPACT_R01.mp4",
+        "sha256": "6f3ff60b3d24ac90a3700b7bda9065e16f6b0ecfb109d4a4f9165d8229ccbea0"
+      },
+      "download_accepted": true,
+      "download_called": true,
+      "explicit_failure_contradictions": [],
+      "filesystem_result": "PASS",
+      "raw_gen_status": {
+        "raw_type": "string",
+        "raw_value": "success",
+        "semantic_mapping": "SUCCESS"
+      },
+      "raw_queue_status": {
+        "raw_type": "string",
+        "raw_value": "Finish",
+        "semantic_mapping": "FINISH"
+      },
+      "technical_result": "PASS"
+    }
+  ],
+  "validated_media_count": 2,
+  "visual_results_known": false
+}

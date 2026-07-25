@@ -1,0 +1,78 @@
+{
+  "actual_call_order": [
+    "ROUTEA_PUSH_R01",
+    "ROUTEA_IMPACT_R01"
+  ],
+  "additional_query_only_call_count": 0,
+  "batch_call_count": 0,
+  "download_call_count": 2,
+  "execution_id": "CAL002-ROUTE-A-R01-DOWNLOAD-RECOVERY-V0-1",
+  "help_call_count": 0,
+  "list_task_call_count": 0,
+  "login_or_session_call_count": 0,
+  "new_submit_call_count": 0,
+  "raw_output_persisted": false,
+  "resubmit_call_count": 0,
+  "retry_call_count": 0,
+  "runtime_entries": [
+    {
+      "alias": "ROUTEA_PUSH_R01",
+      "argv_element_count": 6,
+      "argv_sha256": "19dd0639b2241c9a9f038338d01118ba790f9b86f48dc9fa0cb4e6f2892662b5",
+      "capture_before_parse_completed": true,
+      "download_accepted": true,
+      "download_called": true,
+      "durable_pre_parse_checkpoint_completed": true,
+      "exit_code": 0,
+      "filesystem_delta_result": "PASS",
+      "metadata_survived_parser_phase": true,
+      "raw_gen_status": {
+        "raw_type": "string",
+        "raw_value": "success",
+        "semantic_mapping": "SUCCESS"
+      },
+      "raw_queue_status": {
+        "raw_type": "string",
+        "raw_value": "Finish",
+        "semantic_mapping": "FINISH"
+      },
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_byte_length": 3149,
+      "stdout_sha256": "fe2795b06104c922fe155aff42edecb61b308f1805f6e320a9a51128dde2d10c",
+      "technical_result": "PASS"
+    },
+    {
+      "alias": "ROUTEA_IMPACT_R01",
+      "argv_element_count": 6,
+      "argv_sha256": "5ba0720275444eb5865576c7004a095081dedac53a8f8012f699fc1ed1b8e8b1",
+      "capture_before_parse_completed": true,
+      "download_accepted": true,
+      "download_called": true,
+      "durable_pre_parse_checkpoint_completed": true,
+      "exit_code": 0,
+      "filesystem_delta_result": "PASS",
+      "metadata_survived_parser_phase": true,
+      "raw_gen_status": {
+        "raw_type": "string",
+        "raw_value": "success",
+        "semantic_mapping": "SUCCESS"
+      },
+      "raw_queue_status": {
+        "raw_type": "string",
+        "raw_value": "Finish",
+        "semantic_mapping": "FINISH"
+      },
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_byte_length": 3145,
+      "stdout_sha256": "28661a13346154177c3800745192932a3fbf17b9017cf27619bde0eaaf10951c",
+      "technical_result": "PASS"
+    }
+  ],
+  "schema_version": "CAL002_ROUTE_A_R01_DOWNLOAD_RECOVERY_RUNTIME_V0_1",
+  "signed_url_persisted": false,
+  "temporary_path_persisted": false,
+  "user_credit_call_count": 0,
+  "version_call_count": 0
+}

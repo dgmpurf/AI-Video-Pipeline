@@ -1,0 +1,171 @@
+{
+  "alias": "ROUTEA_IMPACT_R01",
+  "bound_submit_id": "ce15036a-203c-48c9-8e85-cd303218e72b",
+  "byte_preserving_equality": true,
+  "canonical_byte_length": 2232992,
+  "canonical_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/media/ROUTEA_IMPACT_R01.mp4",
+  "canonical_sha256": "6f3ff60b3d24ac90a3700b7bda9065e16f6b0ecfb109d4a4f9165d8229ccbea0",
+  "contact_sheet": {
+    "byte_length": 788829,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/contact_sheets/ROUTEA_IMPACT_R01_contact_sheet.png",
+    "sha256": "4174674c034d1b69b5df362fa2ccf952683f9cbcf69be71e337afd3489be7c11"
+  },
+  "download_result": "PASS",
+  "full_mp4_human_review_performed": false,
+  "keyframes": [
+    {
+      "byte_length": 388485,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/keyframes/ROUTEA_IMPACT_R01/ROUTEA_IMPACT_R01_kf01.png",
+      "sha256": "0ea34ef17ba67771bc0fdc19b0f01631d7020bdf6aedfc23ff407724c1d7f5c5",
+      "timestamp_seconds": 0.254
+    },
+    {
+      "byte_length": 399635,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/keyframes/ROUTEA_IMPACT_R01/ROUTEA_IMPACT_R01_kf02.png",
+      "sha256": "b715992316b24cf925dd06f3cfa9afe1cf6885b314740e6aac7e29a7bd546244",
+      "timestamp_seconds": 0.814
+    },
+    {
+      "byte_length": 436510,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/keyframes/ROUTEA_IMPACT_R01/ROUTEA_IMPACT_R01_kf03.png",
+      "sha256": "09db651abe46e68a46643c32ea591fe70cd5603c71d6e81e4712c0d213ffede4",
+      "timestamp_seconds": 1.424
+    },
+    {
+      "byte_length": 473703,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/keyframes/ROUTEA_IMPACT_R01/ROUTEA_IMPACT_R01_kf04.png",
+      "sha256": "645c99b10eadca10ee884e2aa9b49e893d2a4ba796d75de0262c30d488751766",
+      "timestamp_seconds": 2.237
+    },
+    {
+      "byte_length": 492190,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/keyframes/ROUTEA_IMPACT_R01/ROUTEA_IMPACT_R01_kf05.png",
+      "sha256": "63b316a8c5bbbd0c1cd351221c1e7705d17dcf6adeb5757a6faf950c5a237826",
+      "timestamp_seconds": 3.56
+    },
+    {
+      "byte_length": 498479,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/keyframes/ROUTEA_IMPACT_R01/ROUTEA_IMPACT_R01_kf06.png",
+      "sha256": "244271a087e7e42a48e743485240ce9f65a542bb89b1c3284ee093843e7ef4f8",
+      "timestamp_seconds": 4.78
+    }
+  ],
+  "metadata_safety_result": "PASS",
+  "post_move_decode": {
+    "decoded_frame_count": 121,
+    "exit_code": 0,
+    "fatal_decode_error": false,
+    "result": "PASS",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "post_move_ffprobe": {
+    "audio_stream_count": 1,
+    "checks": {
+      "audio_stream_count_valid": true,
+      "container_valid": true,
+      "duration_valid": true,
+      "frame_count_positive": true,
+      "frame_rate_positive": true,
+      "metadata_safe": true,
+      "resolution_valid": true,
+      "rotation_valid": true,
+      "video_stream_count_valid": true
+    },
+    "codec": "h264",
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "duration_seconds": 5.085011,
+    "exit_code": 0,
+    "format_long_name": "QuickTime / MOV",
+    "frame_count": 121,
+    "frame_rate": 24.119601,
+    "height": 720,
+    "metadata_safety_issues": [],
+    "pixel_format": "yuv420p",
+    "result": "PASS",
+    "rotation": 0,
+    "stream_tags": [
+      {
+        "handler_name": "SoundHandler",
+        "language": "und",
+        "vendor_id": "[0][0][0][0]"
+      },
+      {
+        "handler_name": "VideoHandler",
+        "language": "und",
+        "vendor_id": "[0][0][0][0]"
+      }
+    ],
+    "video_stream_count": 1,
+    "visible_format_tags": {
+      "LvMetaInfo": "{\"data\":{\"os\":\"\",\"product\":\"dreamina\",\"exportType\":\"generation\",\"videoId\":\"0\"},\"trace_info\":{\"originItemId\":\"7666496068623846665\"}}",
+      "UserComment": "{\"aigc_label_type\":0,\"source_info\":\"dreamina\"}",
+      "comment": "vid:v02870g10004d9ie0ji7dld0beo6i060",
+      "compatible_brands": "isomiso2avc1mp41",
+      "encoder": "Lavf58.76.100",
+      "major_brand": "isom",
+      "minor_version": "512"
+    },
+    "width": 1280
+  },
+  "pre_move_decode": {
+    "decoded_frame_count": 121,
+    "exit_code": 0,
+    "fatal_decode_error": false,
+    "result": "PASS",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "pre_move_ffprobe": {
+    "audio_stream_count": 1,
+    "checks": {
+      "audio_stream_count_valid": true,
+      "container_valid": true,
+      "duration_valid": true,
+      "frame_count_positive": true,
+      "frame_rate_positive": true,
+      "metadata_safe": true,
+      "resolution_valid": true,
+      "rotation_valid": true,
+      "video_stream_count_valid": true
+    },
+    "codec": "h264",
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "duration_seconds": 5.085011,
+    "exit_code": 0,
+    "format_long_name": "QuickTime / MOV",
+    "frame_count": 121,
+    "frame_rate": 24.119601,
+    "height": 720,
+    "metadata_safety_issues": [],
+    "pixel_format": "yuv420p",
+    "result": "PASS",
+    "rotation": 0,
+    "stream_tags": [
+      {
+        "handler_name": "SoundHandler",
+        "language": "und",
+        "vendor_id": "[0][0][0][0]"
+      },
+      {
+        "handler_name": "VideoHandler",
+        "language": "und",
+        "vendor_id": "[0][0][0][0]"
+      }
+    ],
+    "video_stream_count": 1,
+    "visible_format_tags": {
+      "LvMetaInfo": "{\"data\":{\"os\":\"\",\"product\":\"dreamina\",\"exportType\":\"generation\",\"videoId\":\"0\"},\"trace_info\":{\"originItemId\":\"7666496068623846665\"}}",
+      "UserComment": "{\"aigc_label_type\":0,\"source_info\":\"dreamina\"}",
+      "comment": "vid:v02870g10004d9ie0ji7dld0beo6i060",
+      "compatible_brands": "isomiso2avc1mp41",
+      "encoder": "Lavf58.76.100",
+      "major_brand": "isom",
+      "minor_version": "512"
+    },
+    "width": 1280
+  },
+  "provider_prior_query_status": "success",
+  "schema_version": "CAL002_ROUTE_A_R01_DOWNLOADED_MEDIA_TECHNICAL_VALIDATION_V0_2",
+  "technical_result": "PASS"
+}
