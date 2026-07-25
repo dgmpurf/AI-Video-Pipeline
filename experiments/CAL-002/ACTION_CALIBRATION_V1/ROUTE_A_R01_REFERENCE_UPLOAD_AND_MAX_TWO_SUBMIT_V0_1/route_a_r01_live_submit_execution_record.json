@@ -1,0 +1,85 @@
+{
+  "R02_authorized": false,
+  "actual_accepted_submit_count": 2,
+  "actual_submit_attempts": 2,
+  "approval_binding": {
+    "byte_length": 2342,
+    "sha256": "38bbad8ae99e526de38c56337ab2c7126e1e99a35333a66491eee4600b34ec4d"
+  },
+  "audit_binding": {
+    "byte_length": 24057,
+    "path": "reports/CAL002_ROUTE_A_R01_TWO_PACKAGE_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+    "sha256": "5eec45385cf583299d88e368454c4be70c70df6c9e9ba5782d839be784e437f6"
+  },
+  "audit_checkpoint": "fcd03d287b19431599f87476a3eb737da30c22f1",
+  "authorization_activated": true,
+  "authorization_consumed": true,
+  "authorization_reusable": false,
+  "automatic_expansion": false,
+  "batch_called": false,
+  "budget_gate_results": {
+    "cost_anomaly_detected": false,
+    "first_delta_at_most_500": true,
+    "first_delta_nonnegative": true,
+    "first_submit_credit_delta": 98,
+    "post_impact_balance": 4021,
+    "post_push_balance": 4053,
+    "post_push_balance_at_least_1000": true,
+    "pre_submit_balance": 4151,
+    "pre_submit_balance_at_least_1000": true,
+    "second_delta_at_most_500": true,
+    "second_delta_nonnegative": true,
+    "second_submit_credit_delta": 32,
+    "total_submit_credit_delta": 130
+  },
+  "current_live_authority_active": false,
+  "decision": "CAL002_ROUTE_A_R01_TWO_SUBMITS_ACCEPTED_READY_FOR_QUERY_AUTHORIZATION_DECISION",
+  "download_called": false,
+  "execution_id": "CAL002-ROUTE-A-R01-LIVE-SUBMIT-V0-1",
+  "final_master": false,
+  "fixed_submit_order": [
+    "ROUTEA_PUSH_R01",
+    "ROUTEA_IMPACT_R01"
+  ],
+  "fixed_task_completion": false,
+  "full_mp4_review_required": true,
+  "future_R02_automatic_authorization": false,
+  "goal_identity": "CAL002_ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1",
+  "impact_receipt_binding": {
+    "byte_length": 2551,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1/submissions/ROUTEA_IMPACT_R01_submit_receipt.json",
+    "sha256": "6c633b92dc09188759f1eed1f70705f240cbe717641c5c5d6618d72d3e2a7a9a"
+  },
+  "locked": false,
+  "maximum_submit_count": 2,
+  "media_changed": false,
+  "media_created_locally": false,
+  "package_build_checkpoint": "56be31e86c1a7844452f01ba2954cade4b73612f",
+  "production_approved": false,
+  "production_reentry_authorized": false,
+  "push_receipt_binding": {
+    "byte_length": 2532,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1/submissions/ROUTEA_PUSH_R01_submit_receipt.json",
+    "sha256": "1f7c201984eb1e5becb84424f8dce5e9b47905a275dcc8c1b7c9c9a878bea874"
+  },
+  "query_called": false,
+  "reference_transmissions_associated_with_accepted_submits": 2,
+  "reference_transmissions_attempted": 2,
+  "resubmit_called": false,
+  "retry_called": false,
+  "route_a_capability_proven": false,
+  "runtime_and_credit_binding": {
+    "byte_length": 5206,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1/runtime/runtime_and_credit_live_canary.json",
+    "sha256": "853541ae05f0c0990d3a1f9d6d7b723747d3f3f71ea098a054f8bbfb1a77d3c6"
+  },
+  "schema_version": "CAL002_ROUTE_A_R01_LIVE_SUBMIT_EXECUTION_RECORD_V0_1",
+  "semantic_behavior_verified": false,
+  "sources_changed": false,
+  "starting_checkpoint": "fcd03d287b19431599f87476a3eb737da30c22f1",
+  "stop_condition": "AUTHORIZED_SEQUENCE_COMPLETE_AFTER_POST_IMPACT_CREDIT_EVIDENCE",
+  "submit_ids": [
+    "e0b8f28d-f84f-4d4b-a442-ab3ee6e04984",
+    "ce15036a-203c-48c9-8e85-cd303218e72b"
+  ]
+}

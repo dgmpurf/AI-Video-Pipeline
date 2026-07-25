@@ -1,0 +1,151 @@
+{
+  "current_multimodal_unit_cost_verified": false,
+  "first_submit_credit_delta": 98,
+  "fresh_help_checked": true,
+  "fresh_runtime_version_checked": true,
+  "help_drift": false,
+  "post_impact_credit_balance": 4021,
+  "post_push_credit_balance": 4053,
+  "pre_submit_credit_balance": 4151,
+  "preparation_credit_evidence": 4151,
+  "preparation_evidence_current_at_live_execution": false,
+  "raw_credit_output_persisted": false,
+  "runtime_drift": false,
+  "schema_version": "CAL002_ROUTE_A_R01_RUNTIME_AND_CREDIT_LIVE_CANARY_V0_1",
+  "second_submit_credit_delta": 32,
+  "sequence": [
+    {
+      "argv": [
+        "C:/Users/msjpurf/bin/dreamina.exe",
+        "version"
+      ],
+      "called": true,
+      "elapsed_seconds": 2.469,
+      "end_utc": "2026-07-25T15:57:35.190160Z",
+      "exit_code": 0,
+      "name": "version",
+      "not_called_reason": null,
+      "parsed_sanitized_fields": {
+        "build_time": "2026-06-26T06:36:39Z",
+        "commit": "2a20fff",
+        "parse_method": "BYTE_IDENTICAL_TO_COMMITTED_VERSION_EVIDENCE_WITH_CORRECTED_TOKEN_PARSER",
+        "version": "2a20fff-dirty"
+      },
+      "raw_output_persisted": false,
+      "result": "PASS",
+      "sensitive_data_detected": false,
+      "start_utc": "2026-07-25T15:57:32.716209Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_byte_length": 96,
+      "stdout_sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "C:/Users/msjpurf/bin/dreamina.exe",
+        "multimodal2video",
+        "-h"
+      ],
+      "called": true,
+      "elapsed_seconds": 2.454,
+      "end_utc": "2026-07-25T15:58:09.749310Z",
+      "exit_code": 0,
+      "name": "multimodal2video_help",
+      "not_called_reason": null,
+      "parsed_sanitized_fields": {
+        "command_surface_facts_passed": true,
+        "known_cli_trailing_space_preserved": true,
+        "motion_only_behavior_verified": false
+      },
+      "raw_output_persisted": false,
+      "result": "PASS",
+      "sensitive_data_detected": false,
+      "start_utc": "2026-07-25T15:58:07.299019Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_byte_length": 2739,
+      "stdout_sha256": "fb3aa97d2d33b1d745a52519eac529c4a21a2d90aef9f1f6a452442fcf884277",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "C:/Users/msjpurf/bin/dreamina.exe",
+        "user_credit"
+      ],
+      "called": true,
+      "elapsed_seconds": 4.047,
+      "end_utc": "2026-07-25T15:58:45.618577Z",
+      "exit_code": 0,
+      "name": "pre_submit_user_credit",
+      "not_called_reason": null,
+      "parsed_sanitized_fields": {
+        "balance": 4151,
+        "parse_method": "BYTE_IDENTICAL_TO_COMMITTED_SANITIZED_USER_CREDIT_EVIDENCE"
+      },
+      "raw_output_persisted": false,
+      "result": "PASS",
+      "sensitive_data_detected": false,
+      "start_utc": "2026-07-25T15:58:41.580360Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_byte_length": 103,
+      "stdout_sha256": "7a28e93fe7252d00fca3fa7148cb05078bd8aaeb02f54e0091aa8379ab232b78",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "C:/Users/msjpurf/bin/dreamina.exe",
+        "user_credit"
+      ],
+      "called": true,
+      "elapsed_seconds": 4.422,
+      "end_utc": "2026-07-25T15:59:54.312483Z",
+      "exit_code": 0,
+      "name": "post_push_user_credit",
+      "not_called_reason": null,
+      "parsed_sanitized_fields": {
+        "balance": 4053,
+        "first_submit_credit_delta": 98,
+        "parse_method": "STRUCTURED_JSON_TOTAL_CREDIT"
+      },
+      "raw_output_persisted": false,
+      "result": "PASS",
+      "sensitive_data_detected": false,
+      "start_utc": "2026-07-25T15:59:49.891629Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_byte_length": 103,
+      "stdout_sha256": "30f390e689291827a310741af0320047f78efa2c1b84732d3b648a30fcc302ba",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "C:/Users/msjpurf/bin/dreamina.exe",
+        "user_credit"
+      ],
+      "called": true,
+      "elapsed_seconds": 3.781,
+      "end_utc": "2026-07-25T16:00:38.690748Z",
+      "exit_code": 0,
+      "name": "post_impact_user_credit",
+      "not_called_reason": null,
+      "parsed_sanitized_fields": {
+        "balance": 4021,
+        "parse_method": "STRUCTURED_JSON_TOTAL_CREDIT",
+        "second_submit_credit_delta": 32,
+        "total_submit_credit_delta": 130
+      },
+      "raw_output_persisted": false,
+      "result": "PASS",
+      "sensitive_data_detected": false,
+      "start_utc": "2026-07-25T16:00:34.905646Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_byte_length": 103,
+      "stdout_sha256": "9af35d6bc658ecea56dcdf4ecbe01e3bef20ab378af46f13c1814ed9fcf1a202",
+      "timeout": false
+    }
+  ],
+  "total_submit_credit_delta": 130
+}

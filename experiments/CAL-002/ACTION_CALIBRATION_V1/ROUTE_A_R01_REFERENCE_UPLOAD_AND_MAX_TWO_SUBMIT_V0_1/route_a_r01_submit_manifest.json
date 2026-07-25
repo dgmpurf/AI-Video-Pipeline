@@ -1,0 +1,87 @@
+{
+  "R02_authorized": false,
+  "actual_submits_accepted": 2,
+  "actual_submits_attempted": 2,
+  "automatic_expansion": false,
+  "download_authorized": false,
+  "entries": [
+    {
+      "accepted": true,
+      "action_family": "push_reaction",
+      "argv_sha256": "f3c289767055471161932fc01de173e49d4214aaa0842634a291411d6d7a388b",
+      "attempted": true,
+      "canary_alias": "ROUTEA_PUSH_R01",
+      "credit_after": 4053,
+      "credit_before": 4151,
+      "observed_credit_delta": 98,
+      "package_binding": {
+        "byte_length": 10504,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/packages/ROUTEA_PUSH_R01_execution_package.json",
+        "sha256": "2c5d617a75fd2bdbe7ed5559bd55e05cfb4fc85aff060a0dae9674fb2f21daef"
+      },
+      "package_id": "CAL002-ROUTE-A-PUSH-R01",
+      "prompt_binding": {
+        "byte_length": 2186,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/prompts/ROUTEA_PUSH_R01_prompt.txt",
+        "sha256": "c13d3aee97a4e2462e7673218d1fa6dabba9ded48c9812429709d399fe8f1e28"
+      },
+      "receipt_binding": {
+        "byte_length": 2532,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1/submissions/ROUTEA_PUSH_R01_submit_receipt.json",
+        "sha256": "1f7c201984eb1e5becb84424f8dce5e9b47905a275dcc8c1b7c9c9a878bea874"
+      },
+      "reference_binding": {
+        "byte_length": 69720,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_PUSH_01.mp4",
+        "reference_id": "ACTION_REF_PUSH_01",
+        "sha256": "d2b570cdd682c82cfb4559ce2b0df1840c7e459bcbe78df07ff1c735289743e4"
+      },
+      "submit_id": "e0b8f28d-f84f-4d4b-a442-ab3ee6e04984"
+    },
+    {
+      "accepted": true,
+      "action_family": "brief_impact_recoil",
+      "argv_sha256": "9b00079d2680fe5e43035729c91913bb9c355cd590f7b588b4470047a76f87a0",
+      "attempted": true,
+      "canary_alias": "ROUTEA_IMPACT_R01",
+      "credit_after": 4021,
+      "credit_before": 4053,
+      "observed_credit_delta": 32,
+      "package_binding": {
+        "byte_length": 10531,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/packages/ROUTEA_IMPACT_R01_execution_package.json",
+        "sha256": "633ac4da3ed75382c129ecb6e8eadc81fa38c63ba6bc46bdaebcac0a502fe1d3"
+      },
+      "package_id": "CAL002-ROUTE-A-IMPACT-R01",
+      "prompt_binding": {
+        "byte_length": 2189,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/prompts/ROUTEA_IMPACT_R01_prompt.txt",
+        "sha256": "25d32e3b1499ec9df9315984f1c5cfb69feb27e2c3ca5caffa841942e3d4cc8a"
+      },
+      "receipt_binding": {
+        "byte_length": 2551,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1/submissions/ROUTEA_IMPACT_R01_submit_receipt.json",
+        "sha256": "6c633b92dc09188759f1eed1f70705f240cbe717641c5c5d6618d72d3e2a7a9a"
+      },
+      "reference_binding": {
+        "byte_length": 69385,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_IMPACT_01.mp4",
+        "reference_id": "ACTION_REF_IMPACT_01",
+        "sha256": "bf571fad464c0e4adac5ff4db7d85ec135a98bed07c9dd0eef9fd83d0f3f60a4"
+      },
+      "submit_id": "ce15036a-203c-48c9-8e85-cd303218e72b"
+    }
+  ],
+  "execution_id": "CAL002-ROUTE-A-R01-LIVE-SUBMIT-V0-1",
+  "explicit_poll_zero": true,
+  "implicit_query": false,
+  "maximum_submits_authorized": 2,
+  "query_authorized": false,
+  "raw_provider_output_included": false,
+  "retry_authorized": false,
+  "schema_version": "CAL002_ROUTE_A_R01_SUBMIT_MANIFEST_V0_1",
+  "submit_order": [
+    "ROUTEA_PUSH_R01",
+    "ROUTEA_IMPACT_R01"
+  ]
+}

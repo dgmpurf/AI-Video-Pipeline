@@ -1,0 +1,149 @@
+{
+  "artifact_count": 7,
+  "created_artifacts": [
+    {
+      "byte_length": 6535,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1/authorization_activation_record.json",
+      "role": "authorization_activation_record",
+      "sha256": "d1193de579eb9077e7cfa68ce81e4bedf0ceb06f13620e4f55a93f14f2b93694"
+    },
+    {
+      "byte_length": 5206,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1/runtime/runtime_and_credit_live_canary.json",
+      "role": "runtime_and_credit_live_canary",
+      "sha256": "853541ae05f0c0990d3a1f9d6d7b723747d3f3f71ea098a054f8bbfb1a77d3c6"
+    },
+    {
+      "byte_length": 2532,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1/submissions/ROUTEA_PUSH_R01_submit_receipt.json",
+      "role": "push_submit_receipt",
+      "sha256": "1f7c201984eb1e5becb84424f8dce5e9b47905a275dcc8c1b7c9c9a878bea874"
+    },
+    {
+      "byte_length": 2551,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1/submissions/ROUTEA_IMPACT_R01_submit_receipt.json",
+      "role": "impact_submit_receipt",
+      "sha256": "6c633b92dc09188759f1eed1f70705f240cbe717641c5c5d6618d72d3e2a7a9a"
+    },
+    {
+      "byte_length": 3509,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1/route_a_r01_live_submit_execution_record.json",
+      "role": "live_submit_execution_record",
+      "sha256": "ef3ab56300288b90e7f4baadb4cba6ac1e5644a7467074b56e2ccb7f46437e43"
+    },
+    {
+      "byte_length": 3973,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_V0_1/route_a_r01_submit_manifest.json",
+      "role": "submit_manifest",
+      "sha256": "1449b7973797c73b71b3aeb77dbe02165dfc2fb94177674b231a0e87d128639e"
+    },
+    {
+      "byte_length": 11212,
+      "path": "reports/CAL002_ROUTE_A_R01_REFERENCE_UPLOAD_AND_MAX_TWO_SUBMIT_RESULT.md",
+      "role": "governance_report",
+      "sha256": "500950105bd072fce66778c071195fdab5e6ab35a50d8e3332bc710b89fd9aba"
+    }
+  ],
+  "included_artifact_count": 7,
+  "input_bindings": [
+    {
+      "byte_length": 24057,
+      "git_blob": "4b9f2b408e229a628c1b19f3b5a5b38ce0950779",
+      "path": "reports/CAL002_ROUTE_A_R01_TWO_PACKAGE_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+      "role": "independent_audit_report",
+      "sha256": "5eec45385cf583299d88e368454c4be70c70df6c9e9ba5782d839be784e437f6",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 17333,
+      "git_blob": "e746f24455991c3baea6ba7ba189021afe081bbf",
+      "path": "reports/CAL002_ROUTE_A_R01_CAPABILITY_CREDIT_AND_TWO_PACKAGE_PREPARATION_RESULT.md",
+      "role": "package_preparation_report",
+      "sha256": "1887b725abf9880d4abd9ef8b845ccf99710e16f28c7367ee1566a255cc54134",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 9291,
+      "git_blob": "d1f37536e3b0460f81fdbae7373be508008d281a",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/route_a_r01_package_evidence_manifest.json",
+      "role": "package_evidence_manifest",
+      "sha256": "dc5a984f8a61c0944ed75823ff60e9552a79ffe075a6c0797d5c1004c22185e3",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 69720,
+      "git_blob": "a048226012c9f1f9b5490dd3e2b24be511cd8013",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_PUSH_01.mp4",
+      "role": "push_reference_mp4",
+      "sha256": "d2b570cdd682c82cfb4559ce2b0df1840c7e459bcbe78df07ff1c735289743e4",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 69385,
+      "git_blob": "f37aedbe277cb34aa9569985a3e13d418d8dad0a",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_IMPACT_01.mp4",
+      "role": "impact_reference_mp4",
+      "sha256": "bf571fad464c0e4adac5ff4db7d85ec135a98bed07c9dd0eef9fd83d0f3f60a4",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2186,
+      "git_blob": "7c09ea751ec49d9965a0c3ce98e9d31173b540b4",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/prompts/ROUTEA_PUSH_R01_prompt.txt",
+      "role": "push_prompt",
+      "sha256": "c13d3aee97a4e2462e7673218d1fa6dabba9ded48c9812429709d399fe8f1e28",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2189,
+      "git_blob": "daa158916b69d3f31d9d5085653714a996c717b3",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/prompts/ROUTEA_IMPACT_R01_prompt.txt",
+      "role": "impact_prompt",
+      "sha256": "25d32e3b1499ec9df9315984f1c5cfb69feb27e2c3ca5caffa841942e3d4cc8a",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 10504,
+      "git_blob": "ac7e5f314cdc95527568b1c24f8d1bf2e5a94fde",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/packages/ROUTEA_PUSH_R01_execution_package.json",
+      "role": "push_package",
+      "sha256": "2c5d617a75fd2bdbe7ed5559bd55e05cfb4fc85aff060a0dae9674fb2f21daef",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 10531,
+      "git_blob": "361d0cffc22ad45ab7cc3980b1aae7dc8926595a",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/packages/ROUTEA_IMPACT_R01_execution_package.json",
+      "role": "impact_package",
+      "sha256": "633ac4da3ed75382c129ecb6e8eadc81fa38c63ba6bc46bdaebcac0a502fe1d3",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 8305,
+      "git_blob": "088fbf23411c955777c1fb1ab28405e8dd876d72",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/review_records/CAL002-ROUTE-A-REF-REVIEW-LOCK-6A947BE2/route_a_reference_review_lock_manifest.json",
+      "role": "reference_review_lock_manifest",
+      "sha256": "f2d0ab280b59ef70d197bb0e0383fa595ab31eb15ea7280ebe8f0cfbab0b7c16",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 5222,
+      "git_blob": "a03d5ac0cfe3e5cbb4066e59c65019ce6b400b00",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/review_records/CAL002-ROUTE-A-REF-REVIEW-LOCK-6A947BE2/route_a_reference_human_review_record_final.json",
+      "role": "locked_human_review_record",
+      "sha256": "6a947be26f8e2d536c9c82a961c5c08508cee5bb22622d4386dffb7149f6d97e",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 3233,
+      "git_blob": "035a037f0753c6aa836280c38108ecdcf1347a2c",
+      "path": "experiments/CAL-001/execution_records/P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG/CAL001-F07R-WEBPREREVIEW-CLI-DIAG-P1-R1/evidence/F07R-multimodal2video-help-001.parsed_help.json",
+      "role": "runtime_help_expected_contract",
+      "sha256": "d4ac585511a563468257b8fe775f3e9a7539aa88b7df6f377868dcf4e5082966",
+      "worktree_equals_head": true
+    }
+  ],
+  "schema_version": "CAL002_ROUTE_A_R01_LIVE_EXECUTION_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "unique_bound_paths": 7
+}
