@@ -1,0 +1,126 @@
+{
+  "R01_canary_generation_authorized": false,
+  "R02_authorized": false,
+  "Route_A_activated": false,
+  "Route_A_capability_proven": false,
+  "Route_A_execution_authorized": false,
+  "any_material_sentinel_copy_blocks_R02": true,
+  "approval": {
+    "activated": true,
+    "byte_length": 1564,
+    "consumed": true,
+    "received": true,
+    "reusable": false,
+    "sha256": "a50fcf22d4ad9fdcb47e2c168f9724cc5ee2c132b9b5d5707bb868713ca4850d",
+    "text": "APPROVE_CAL002_ROUTE_A_REFERENCE_FULL_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_V0_1__BIND_REFERENCE_MEDIA_CHECKPOINT_9B7BDCA8A69940380B0CDF838522597316C86EE1__BIND_REFERENCE_CREATION_REPORT_BYTES_10850__BIND_REFERENCE_CREATION_REPORT_SHA256_16DF77934F3D100CFC6398FA05047EB5DD2CC6E9978005BE8095EA064C17F4CC__BIND_ACTION_REF_PUSH_01_BYTES_69720__BIND_ACTION_REF_PUSH_01_SHA256_D2B570CDD682C82CFB4559CE2B0DF1840C7E459BCBE78DF07FF1C735289743E4__BIND_ACTION_REF_IMPACT_01_BYTES_69385__BIND_ACTION_REF_IMPACT_01_SHA256_BF571FAD464C0E4ADAC5FF4DB7D85EC135A98BED07C9DD0EEF9FD83D0F3F60A4__BIND_HUMAN_REVIEW_RECORD_BYTES_5222__BIND_HUMAN_REVIEW_RECORD_SHA256_6A947BE26F8E2D536C9C82A961C5C08508CEE5BB22622D4386DFFB7149F6D97E__BIND_HUMAN_REVIEW_REPORT_BYTES_4405__BIND_HUMAN_REVIEW_REPORT_SHA256_B2F24CAE150ADC2A3B0D9DB558EF4967D0B2C5D7FDF09ADE3C321441BBF8ECEE__ACCEPT_ACTION_REF_PUSH_01_PASS_FOR_FUTURE_UPLOAD_AUTHORIZATION_REQUEST__ACCEPT_ACTION_REF_IMPACT_01_PASS_FOR_FUTURE_UPLOAD_AUTHORIZATION_REQUEST__ACCEPT_MEDIUM_UPLOAD_LEAKAGE_RISK_AS_NONBLOCKING_R01_CANARY_SENTINEL__REQUIRE_ANY_COPIED_CONTACT_MARKER_MANNEQUIN_STYLE_GRID_SCENE_OR_FIXED_CAMERA_COMPOSITION_TO_BLOCK_R02_AS_REFERENCE_OVERDOMINANCE__AUTHORIZE_BYTE_EXACT_INPUT_INTAKE_COMMITTED_SCHEMA_VALIDATION_REVIEW_RECORD_LOCK_GOVERNANCE_REPORT_COMMIT_AND_PUSH_ONLY__NO_REFERENCE_UPLOAD_NO_DREAMINA_NO_PROVIDER_NO_SUBMIT_NO_QUERY_NO_DOWNLOAD_NO_USER_CREDIT_NO_CANARY_NO_R02_NO_MEDIA_CHANGE_NO_SOURCE_CHANGE_NO_PRODUCTION_REENTRY_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__ONE_TIME_NON_REUSABLE"
+  },
+  "automatic_expansion": false,
+  "committed_review_schema": {
+    "byte_length": 9622,
+    "git_blob": "4f2204332c96b1a13f5049efb97401ab2e4feee4",
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_REFERENCE_SOURCE_AND_STAGED_CANARY_PREP_V0_1/route_a_reference_human_review_schema.json",
+    "record_version": "CAL002_ROUTE_A_REFERENCE_HUMAN_REVIEW_RECORD_V0_1",
+    "schema_id": "CAL002_ROUTE_A_REFERENCE_HUMAN_REVIEW_SCHEMA_V0_1",
+    "sha256": "dbd6b3b5c7918ea63e3c12d5c417d0faa49e6c91ba557e3a5de41a6763f3fbe3"
+  },
+  "complete_mp4_review_count": 2,
+  "contact_sheet_cross_check_count": 2,
+  "contact_sheets_required_for_finalization": false,
+  "final_master": false,
+  "final_review_record": {
+    "byte_length": 5222,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/review_records/CAL002-ROUTE-A-REF-REVIEW-LOCK-6A947BE2/route_a_reference_human_review_record_final.json",
+    "sha256": "6a947be26f8e2d536c9c82a961c5c08508cee5bb22622d4386dffb7149f6d97e"
+  },
+  "final_review_report": {
+    "byte_length": 4405,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/review_records/CAL002-ROUTE-A-REF-REVIEW-LOCK-6A947BE2/route_a_reference_human_review_report.md",
+    "sha256": "b2f24cae150adc2a3b0d9db558ef4967d0b2c5d7fdf09ade3c321441bbf8ecee"
+  },
+  "fixed_task_completion": false,
+  "goal_identity": "CAL002_ROUTE_A_REFERENCE_FULL_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_V0_1",
+  "input_archive": {
+    "byte_length": 3172,
+    "filename": "CAL002_ROUTE_A_REFERENCE_HUMAN_REVIEW_FINAL_INPUTS.zip",
+    "sha256": "07a611b6df44067e9a4f60207eedf30bb20d8b6920a37e4e4ab17632b1164e0d"
+  },
+  "lock_id": "CAL002-ROUTE-A-REF-REVIEW-LOCK-6A947BE2",
+  "locked": false,
+  "medium_upload_leakage_risk_nonblocking_for_R01_request": true,
+  "next_phase": "CAL002_ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_AUTHORIZATION_DECISION",
+  "production_approved": false,
+  "production_reentry_authorized": false,
+  "record_must_not_change_after_commit": true,
+  "record_schema_validation": "PASS",
+  "reference_build_id": "CAL002-ROUTE-A-REFMEDIA-V0-1",
+  "reference_creation_report": {
+    "byte_length": 10850,
+    "path": "reports/CAL002_ROUTE_A_PROJECT_OWNED_ANIMATED_REFERENCE_CREATION_AND_REVIEW_HANDOFF_RESULT.md",
+    "sha256": "16df77934f3d100cfc6398fa05047eb5dd2cc6e9978005be8095ea064c17f4cc"
+  },
+  "reference_media_checkpoint": "9b7bdca8a69940380b0cdf838522597316c86ee1",
+  "reference_media_evidence_manifest": {
+    "byte_length": 13546,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/route_a_reference_media_evidence_manifest.json",
+    "sha256": "8ca17710d9e26cf4c2b9c3e91f42ac0c9263af4f6a0badb3eee9fa7e508d8ac5"
+  },
+  "reference_overdominance_sentinels": [
+    {
+      "observable_condition": "The future canary visibly reproduces the yellow circular contact marker or a materially equivalent marker from either reference.",
+      "sentinel_class": "CONTACT_MARKER_COPY"
+    },
+    {
+      "observable_condition": "The future canary materially reproduces the flat geometric mannequin body design, facial absence, limb-joint styling, or distinctive procedural figure appearance from the action reference rather than following the separate future identity duty.",
+      "sentinel_class": "MANNEQUIN_STYLE_COPY"
+    },
+    {
+      "observable_condition": "The future canary materially reproduces the pale grid background, neutral ground-plane design, or recognizable calibration scene from the action reference rather than following the separate future scene duty.",
+      "sentinel_class": "GRID_SCENE_COPY"
+    },
+    {
+      "observable_condition": "The future canary materially reproduces the same reference side-view camera, framing, actor spacing, composition, or calibration-stage layout when a different future camera/layout duty is bound.",
+      "sentinel_class": "FIXED_CAMERA_COMPOSITION_COPY"
+    }
+  ],
+  "reference_review_handoff": {
+    "byte_length": 4809,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/review/ROUTE_A_REFERENCE_REVIEW_HANDOFF.md",
+    "sha256": "533a06fffaf040038184fc3f49814cfc1b6a9b1fd4e3208fcc06cb724daa09ed"
+  },
+  "reference_review_record_finalized": true,
+  "reference_review_record_locked": true,
+  "reference_upload_authorized": false,
+  "references": [
+    {
+      "action_family": "push_reaction",
+      "byte_length": 69720,
+      "human_decision": "PASS_FOR_FUTURE_UPLOAD_AUTHORIZATION_REQUEST",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_PUSH_01.mp4",
+      "reference_id": "ACTION_REF_PUSH_01",
+      "sha256": "d2b570cdd682c82cfb4559ce2b0df1840c7e459bcbe78df07ff1c735289743e4",
+      "technical_validation_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/technical/ACTION_REF_PUSH_01_technical_validation.json",
+      "upload_leakage_risk": "MEDIUM"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "byte_length": 69385,
+      "human_decision": "PASS_FOR_FUTURE_UPLOAD_AUTHORIZATION_REQUEST",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_IMPACT_01.mp4",
+      "reference_id": "ACTION_REF_IMPACT_01",
+      "sha256": "bf571fad464c0e4adac5ff4db7d85ec135a98bed07c9dd0eef9fd83d0f3f60a4",
+      "technical_validation_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/technical/ACTION_REF_IMPACT_01_technical_validation.json",
+      "upload_leakage_risk": "MEDIUM"
+    }
+  ],
+  "references_human_accepted_for_future_upload_authorization_request": 2,
+  "report_record_consistency": "PASS",
+  "review_source": "ChatGPT Pro and human project-owner complete-MP4 review",
+  "schema_version": "CAL002_ROUTE_A_REFERENCE_REVIEW_LOCK_MANIFEST_V0_1",
+  "starting_repository_checkpoint": {
+    "branch": "main",
+    "commit_message": "media(cal002): create project-owned Route A references",
+    "expected_parent": "370d606210aab55faae87520ae1bfef64f2cb2b4",
+    "head": "9b7bdca8a69940380b0cdf838522597316c86ee1",
+    "origin_main": "9b7bdca8a69940380b0cdf838522597316c86ee1"
+  }
+}
