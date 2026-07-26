@@ -1,0 +1,138 @@
+{
+  "artifact_count": 9,
+  "artifacts": [
+    {
+      "byte_length": 11327,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/authorization.json",
+      "role": "preparation_authorization",
+      "sha256": "c97c555e215e9a5d3be7ebb7c7d004dcc320291db48aa6a77eca2e1976a00cb8"
+    },
+    {
+      "byte_length": 3071,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/push.txt",
+      "role": "push_prompt",
+      "sha256": "c4dc956951ba49c040258e83fcd3d3afa93aa64434f78e27dee80c813bb28ece"
+    },
+    {
+      "byte_length": 3113,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/impact.txt",
+      "role": "impact_prompt",
+      "sha256": "a2f03f13ff3c320563f32eb316f5aed3a876d06a452d00c7fd0a7211b8c9ac63"
+    },
+    {
+      "byte_length": 11727,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/push.json",
+      "role": "push_canary_package",
+      "sha256": "87fb8d3905b1e16396fe1634bf2728fc632852ee87bd00cf5c324e5aeabd0e07"
+    },
+    {
+      "byte_length": 11781,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/impact.json",
+      "role": "impact_canary_package",
+      "sha256": "86c986feef91241f9107b5342dd261efab188c65a4cf43fe8c0a00a660e46bef"
+    },
+    {
+      "byte_length": 7619,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/matched_pair_index.json",
+      "role": "matched_pair_index",
+      "sha256": "ea1150cfcb60e0a2306401560d2574a94550e22209b60cf868eaa09d417414d4"
+    },
+    {
+      "byte_length": 2887,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/review_contract.json",
+      "role": "full_mp4_review_contract",
+      "sha256": "e753809ce39f191cdc1c6f779f9754c9fb3db2e3c582611663844df860c84baa"
+    },
+    {
+      "byte_length": 35113,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/static_audit.json",
+      "role": "independent_static_audit",
+      "sha256": "4343f8988940e4ef190fca2514c7accfee975f48902a7d98105751eb6466b246"
+    },
+    {
+      "byte_length": 11936,
+      "path": "reports/CAL002_RA_V02_C01_PREP_RESULT.md",
+      "role": "governance_report",
+      "sha256": "03c5a80eee2d8f35826f126470f3bdaafcb237f25d4fc9877bb7d9a3aefc6ca0"
+    }
+  ],
+  "committed_input_bindings": [
+    {
+      "byte_length": 14494,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_lock_manifest.json",
+      "role": "updated_review_lock_manifest",
+      "sha256": "ec2d5a6c264b0c3b54932b8ef88373ba20651ad6d45534355cc568581075a8f6",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 18755,
+      "path": "reports/CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_RESULT.md",
+      "role": "updated_review_lock_governance_report",
+      "sha256": "8a6cd332de5ab9b1a16872b84e62ed245e6c80bb088bc8a9151576c3e66eb9de",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 7323,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_record_final.json",
+      "role": "locked_review_json",
+      "sha256": "389ed9cf755133ffef7ff4df75f8a46440d2e3f656c2fa7a5e08d6c6206675cb",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 3108,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_report.md",
+      "role": "locked_review_markdown",
+      "sha256": "fe8fa9da286b478cd1b577654c5f5f12a49207ca1b11cb2b561b33ce5b152c66",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 174235,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "role": "push_reference",
+      "sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 168170,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "role": "impact_reference",
+      "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 3182,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_PUSH_02_technical_validation.json",
+      "role": "push_technical_validation",
+      "sha256": "ff560f1cff89091dc9a27ab31c5635428af7f37bb86ebcbef2327a81d73fc67d",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 3172,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_IMPACT_02_technical_validation.json",
+      "role": "impact_technical_validation",
+      "sha256": "45c9f7c034f2afd0b651cafbe6d8563c7a9d0472baf004877d64858c9818eb63",
+      "worktree_equals_head": true
+    }
+  ],
+  "committed_input_checkpoint": {
+    "branch": "main",
+    "commit_message": "review(cal002): lock Route A V0.2 reference reviews",
+    "head": "99f8dded23044729091f7d7553315254db34b9c9",
+    "origin_main": "99f8dded23044729091f7d7553315254db34b9c9",
+    "parent": "df37cb72d863ab891b5ff95856fb12642a36bca7"
+  },
+  "goal_identity": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_NO_LIVE_DESIGN_AND_STATIC_AUDIT_V0_1",
+  "included_artifact_count": 9,
+  "matched_pair_id": "CAL002-ROUTE-A-V0-2-C01-MATCHED-PAIR",
+  "preparation_id": "CAL002-ROUTE-A-V0-2-MATCHED-PAIR-C01-PREP-V0-1",
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_PREP_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "unique_bound_paths": 9,
+  "validation": {
+    "all_artifact_bindings_match": true,
+    "all_committed_inputs_match_head": true,
+    "independent_static_audit": "PASS",
+    "matched_pair_result": "PASS",
+    "sensitive_data_scan": "PASS"
+  }
+}

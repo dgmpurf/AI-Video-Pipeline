@@ -1,0 +1,189 @@
+{
+  "actual_observed_differences": [
+    {
+      "classification": "alias",
+      "path": "alias"
+    },
+    {
+      "classification": "package ID",
+      "path": "package_id"
+    },
+    {
+      "classification": "action family",
+      "path": "action_family"
+    },
+    {
+      "classification": "reference binding",
+      "path": "reference"
+    },
+    {
+      "classification": "derived action-specific Prompt binding",
+      "path": "prompt.action_block_sha256"
+    },
+    {
+      "classification": "derived action-specific Prompt binding",
+      "path": "prompt.byte_length"
+    },
+    {
+      "classification": "derived action-specific Prompt binding",
+      "path": "prompt.path"
+    },
+    {
+      "classification": "derived action-specific Prompt binding",
+      "path": "prompt.sha256"
+    },
+    {
+      "classification": "reference path",
+      "path": "future_argv[3]"
+    },
+    {
+      "classification": "action-specific Prompt block",
+      "path": "future_argv[5]"
+    },
+    {
+      "classification": "action-specific review labels",
+      "path": "future_review_requirements.action_specific_review_labels"
+    },
+    {
+      "classification": "action-specific foot-result type",
+      "path": "future_review_requirements.foot_result_type"
+    }
+  ],
+  "allowed_difference_allowlist": [
+    "alias",
+    "package ID",
+    "action family",
+    "reference ID",
+    "reference path",
+    "reference bytes and SHA-256",
+    "action-specific Prompt block and its derived Prompt binding metadata",
+    "action-specific foot-result type",
+    "action-specific review labels"
+  ],
+  "matched_pair_id": "CAL002-ROUTE-A-V0-2-C01-MATCHED-PAIR",
+  "matched_pair_result": "PASS",
+  "non_allowlisted_differences": [],
+  "normalization_rules": [
+    "replace the exact action block with <ACTION_BLOCK>",
+    "replace alias, package ID, action family, reference ID, reference path, reference bytes and SHA-256, and action-specific foot-result label with fixed placeholders",
+    "treat Prompt path, Prompt byte length, full Prompt SHA-256, and action-block SHA-256 as derived metadata of the allowed action-specific Prompt block",
+    "compare every remaining value byte-for-byte"
+  ],
+  "normalized_argv_comparison": {
+    "equality": true,
+    "sha256": "c956efb6240ac4c350ef5c22bb9c7a4deb00a06c660c61531ac91e4847377334"
+  },
+  "normalized_prompt_comparison": {
+    "byte_length": 2012,
+    "equality": true,
+    "sha256": "8b6a7ca40c9ea2d105a6d4c63b39af603e05ea616d0234d05c0af23d2fc251c7"
+  },
+  "ordered_aliases": [
+    "ROUTEA_PUSH_V02_C01",
+    "ROUTEA_IMPACT_V02_C01"
+  ],
+  "package_bindings": [
+    {
+      "byte_length": 11727,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/push.json",
+      "sha256": "87fb8d3905b1e16396fe1634bf2728fc632852ee87bd00cf5c324e5aeabd0e07"
+    },
+    {
+      "byte_length": 11781,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/impact.json",
+      "sha256": "86c986feef91241f9107b5342dd261efab188c65a4cf43fe8c0a00a660e46bef"
+    }
+  ],
+  "package_count": 2,
+  "prompt_bindings": [
+    {
+      "byte_length": 3071,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/push.txt",
+      "sha256": "c4dc956951ba49c040258e83fcd3d3afa93aa64434f78e27dee80c813bb28ece"
+    },
+    {
+      "byte_length": 3113,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/impact.txt",
+      "sha256": "a2f03f13ff3c320563f32eb316f5aed3a876d06a452d00c7fd0a7211b8c9ac63"
+    }
+  ],
+  "reference_bindings": [
+    {
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "byte_length": 174235,
+      "locked_human_decision": "PASS_FOR_FUTURE_CANARY_AUTHORIZATION_REQUEST",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "technical_validation": {
+        "byte_length": 3182,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_PUSH_02_technical_validation.json",
+        "sha256": "ff560f1cff89091dc9a27ab31c5635428af7f37bb86ebcbef2327a81d73fc67d"
+      }
+    },
+    {
+      "absolute_path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "byte_length": 168170,
+      "locked_human_decision": "PASS_FOR_FUTURE_CANARY_AUTHORIZATION_REQUEST",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "relative_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "technical_validation": {
+        "byte_length": 3172,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_IMPACT_02_technical_validation.json",
+        "sha256": "45c9f7c034f2afd0b651cafbe6d8563c7a9d0472baf004877d64858c9818eb63"
+      }
+    }
+  ],
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_MATCHED_PAIR_INDEX_V0_1",
+  "shared_control_contract": {
+    "active_ending_requirement": "small natural guard, balance, torso, and breathing movement through the final frame",
+    "argv_flag_order": [
+      "--video",
+      "--prompt",
+      "--model_version",
+      "--ratio",
+      "--duration",
+      "--video_resolution",
+      "--poll"
+    ],
+    "background": "warm beige seamless wall and matte wooden floor",
+    "camera": "static three-quarter-front medium-wide at approximately chest height",
+    "cli_command": "multimodal2video",
+    "cli_executable": "C:/Users/msjpurf/bin/dreamina.exe",
+    "clothing": {
+      "initiator": "deep navy training jacket and black training pants",
+      "receiver": "muted rust-orange training jacket and charcoal training pants"
+    },
+    "composition": "stable 16:9; both complete bodies and both sets of feet visible with generous margins; no pan, zoom, shake, crop change, or pure reference side view",
+    "duration_seconds": 5,
+    "fictional_identities": "two fictional non-identifying adult martial-arts performers with ordinary realistic human faces and bodies",
+    "full_body_visibility": "both complete bodies and both sets of feet visible throughout",
+    "lighting": "soft natural-looking studio illumination",
+    "model_version": "seedance2.0_vip",
+    "negative_visual_constraints": [
+      "no props",
+      "no grid",
+      "no visible text",
+      "no diagram",
+      "no calibration-stage appearance",
+      "no geometric mannequin resemblance",
+      "no branded clothing",
+      "no contact marker copy",
+      "no reference composition copy"
+    ],
+    "performer_roles": {
+      "initiator": "action initiator",
+      "receiver": "post-contact receiver"
+    },
+    "poll_seconds": 0,
+    "ratio": "16:9",
+    "resolution": "720p",
+    "scene": "clean indoor training studio",
+    "visual_style": "realistic live-action-looking synthetic footage"
+  },
+  "shared_footer_equality": true,
+  "shared_footer_sha256": "b10275bb1dd3bb7d4b1a69fe5065bcb556226e45a8af084b0359f86bcd6d824d",
+  "shared_prefix_equality": true,
+  "shared_prefix_sha256": "41e557f8825d3397923675b0cc0cc4b4cea451834a36b30346897afd4beffaea"
+}

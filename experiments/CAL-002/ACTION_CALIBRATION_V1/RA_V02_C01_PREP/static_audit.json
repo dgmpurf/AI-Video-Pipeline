@@ -1,0 +1,1238 @@
+{
+  "argv_result": "PASS",
+  "audited_artifact_paths": [
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/authorization.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/push.txt",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/impact.txt",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/push.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/impact.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/matched_pair_index.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/review_contract.json",
+    "reports/CAL002_RA_V02_C01_PREP_RESULT.md",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/static_audit.json"
+  ],
+  "auditor_invocation_count": 1,
+  "auditor_script_byte_length": 34215,
+  "auditor_script_sha256": "70c5a1c4c8917ebdeb550d47099965ef07f11dc0dd3b53c00dadc108f2c93d9b",
+  "auditor_type": "INDEPENDENT_LOCAL_PYTHON_STANDARD_LIBRARY_STATIC_AUDITOR",
+  "check_count": 240,
+  "checks": [
+    {
+      "category": "checkpoint",
+      "name": "temporary root is outside repository",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "repository root matches",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "branch is main",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "HEAD matches",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "origin/main matches",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "parent matches",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "commit message matches",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "staged paths empty",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "tracked modifications empty",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "Source status empty",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "repository output root absent",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "repository report absent",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "temporary evidence manifest absent before last creation",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "temporary static audit absent before auditor write",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "parent transition has four paths",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "parent transition contains only additions",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "untracked baseline count is 26",
+      "result": "PASS"
+    },
+    {
+      "category": "checkpoint",
+      "name": "untracked baseline hash matches",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_lock_manifest.json byte length",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_lock_manifest.json SHA-256",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_lock_manifest.json worktree equals HEAD",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_lock_manifest.json strict JSON parse",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "reports/CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_RESULT.md byte length",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "reports/CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_RESULT.md SHA-256",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "reports/CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_RESULT.md worktree equals HEAD",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_record_final.json byte length",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_record_final.json SHA-256",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_record_final.json worktree equals HEAD",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_record_final.json strict JSON parse",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_report.md byte length",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_report.md SHA-256",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_report.md worktree equals HEAD",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4 byte length",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4 SHA-256",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4 worktree equals HEAD",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4 byte length",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4 SHA-256",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4 worktree equals HEAD",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_PUSH_02_technical_validation.json byte length",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_PUSH_02_technical_validation.json SHA-256",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_PUSH_02_technical_validation.json worktree equals HEAD",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_PUSH_02_technical_validation.json strict JSON parse",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_IMPACT_02_technical_validation.json byte length",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_IMPACT_02_technical_validation.json SHA-256",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_IMPACT_02_technical_validation.json worktree equals HEAD",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_IMPACT_02_technical_validation.json strict JSON parse",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "review lock ID",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "accepted reference count",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "reference design failure count",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "five-second utilization PASS",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "multi-beat structure PASS",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "PUSH locked decision",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "IMPACT locked decision",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "PUSH active final second PASS",
+      "result": "PASS"
+    },
+    {
+      "category": "bindings",
+      "name": "IMPACT active final second PASS",
+      "result": "PASS"
+    },
+    {
+      "category": "scope",
+      "name": "exact eight pre-audit artifact paths",
+      "result": "PASS"
+    },
+    {
+      "category": "scope",
+      "name": "final artifact path plan count is ten",
+      "result": "PASS"
+    },
+    {
+      "category": "scope",
+      "name": "maximum absolute path length is 120",
+      "result": "PASS"
+    },
+    {
+      "category": "scope",
+      "name": "maximum absolute path length is at most 240",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "PUSH strict UTF-8",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "PUSH no BOM",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "PUSH LF-only",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "PUSH exactly one terminal LF",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "PUSH exact full text",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "IMPACT strict UTF-8",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "IMPACT no BOM",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "IMPACT LF-only",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "IMPACT exactly one terminal LF",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "IMPACT exact full text",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "shared prefix equality",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "shared footer equality",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "PUSH action block occurs exactly once",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "IMPACT action block occurs exactly once",
+      "result": "PASS"
+    },
+    {
+      "category": "prompt",
+      "name": "normalized Prompt equality",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/authorization.json strict JSON parse",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/authorization.json deterministic serialization",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/authorization.json no BOM",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/authorization.json one terminal LF",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/push.json strict JSON parse",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/push.json deterministic serialization",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/push.json no BOM",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/push.json one terminal LF",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/impact.json strict JSON parse",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/impact.json deterministic serialization",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/impact.json no BOM",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/impact.json one terminal LF",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/matched_pair_index.json strict JSON parse",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/matched_pair_index.json deterministic serialization",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/matched_pair_index.json no BOM",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/matched_pair_index.json one terminal LF",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/review_contract.json strict JSON parse",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/review_contract.json deterministic serialization",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/review_contract.json no BOM",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/review_contract.json one terminal LF",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/push.txt strict UTF-8",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/push.txt no BOM",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/push.txt LF-only",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/push.txt one terminal LF",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/impact.txt strict UTF-8",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/impact.txt no BOM",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/impact.txt LF-only",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/impact.txt one terminal LF",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "reports/CAL002_RA_V02_C01_PREP_RESULT.md strict UTF-8",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "reports/CAL002_RA_V02_C01_PREP_RESULT.md no BOM",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "reports/CAL002_RA_V02_C01_PREP_RESULT.md LF-only",
+      "result": "PASS"
+    },
+    {
+      "category": "serialization",
+      "name": "reports/CAL002_RA_V02_C01_PREP_RESULT.md one terminal LF",
+      "result": "PASS"
+    },
+    {
+      "category": "authorization",
+      "name": "authorization schema",
+      "result": "PASS"
+    },
+    {
+      "category": "authorization",
+      "name": "approval received",
+      "result": "PASS"
+    },
+    {
+      "category": "authorization",
+      "name": "approval byte length",
+      "result": "PASS"
+    },
+    {
+      "category": "authorization",
+      "name": "approval SHA-256",
+      "result": "PASS"
+    },
+    {
+      "category": "authorization",
+      "name": "embedded approval bytes",
+      "result": "PASS"
+    },
+    {
+      "category": "authorization",
+      "name": "embedded approval digest",
+      "result": "PASS"
+    },
+    {
+      "category": "authorization",
+      "name": "exact ten-path allowlist",
+      "result": "PASS"
+    },
+    {
+      "category": "authorization",
+      "name": "authorization activated record",
+      "result": "PASS"
+    },
+    {
+      "category": "authorization",
+      "name": "authorization consumed record",
+      "result": "PASS"
+    },
+    {
+      "category": "authorization",
+      "name": "authorization nonreusable record",
+      "result": "PASS"
+    },
+    {
+      "category": "authorization",
+      "name": "all live authorities false",
+      "result": "PASS"
+    },
+    {
+      "category": "authorization",
+      "name": "original R02 blocked",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "PUSH schema",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "PUSH alias",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "PUSH package ID",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "PUSH pair ID",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "PUSH action family",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "PUSH package created",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "PUSH package static audit flag",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "PUSH future argv not executed",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH exact future argv",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH argv element count",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH one --video",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH one --prompt",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH one --model_version",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH one --ratio",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH one --duration",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH one --video_resolution",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH one --poll",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH absent --audio",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH absent --image",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH absent --download_dir",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH absent --output_dir",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH absent --output_name",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH absent --session",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH prompt one element",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH reference one element",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH no shell",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "PUSH no shell command string",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "PUSH live authorities false",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "PUSH original R02 blocked",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "PUSH production not approved",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "PUSH fixed task incomplete",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "PUSH unlocked",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "IMPACT schema",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "IMPACT alias",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "IMPACT package ID",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "IMPACT pair ID",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "IMPACT action family",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "IMPACT package created",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "IMPACT package static audit flag",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "IMPACT future argv not executed",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT exact future argv",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT argv element count",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT one --video",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT one --prompt",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT one --model_version",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT one --ratio",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT one --duration",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT one --video_resolution",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT one --poll",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT absent --audio",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT absent --image",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT absent --download_dir",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT absent --output_dir",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT absent --output_name",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT absent --session",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT prompt one element",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT reference one element",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT no shell",
+      "result": "PASS"
+    },
+    {
+      "category": "argv",
+      "name": "IMPACT no shell command string",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "IMPACT live authorities false",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "IMPACT original R02 blocked",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "IMPACT production not approved",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "IMPACT fixed task incomplete",
+      "result": "PASS"
+    },
+    {
+      "category": "package",
+      "name": "IMPACT unlocked",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "matched controls equal",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "motion-only duties equal",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "prohibited reference duties equal",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "provider parameters equal",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "allowed differences equal",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "normalized package equality",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "index schema",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "index package count",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "index aliases ordered",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "index shared prefix true",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "index shared footer true",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "index normalized Prompt true",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "index normalized argv true",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "index nonallowlisted differences empty",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "index result PASS",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/push.json bound byte length",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/push.json bound SHA-256",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/impact.json bound byte length",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/impact.json bound SHA-256",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/push.txt bound byte length",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/push.txt bound SHA-256",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/impact.txt bound byte length",
+      "result": "PASS"
+    },
+    {
+      "category": "matched_pair",
+      "name": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/impact.txt bound SHA-256",
+      "result": "PASS"
+    },
+    {
+      "category": "review_contract",
+      "name": "review schema",
+      "result": "PASS"
+    },
+    {
+      "category": "review_contract",
+      "name": "full MP4 mandatory",
+      "result": "PASS"
+    },
+    {
+      "category": "review_contract",
+      "name": "contact sheets assistance only",
+      "result": "PASS"
+    },
+    {
+      "category": "review_contract",
+      "name": "automatic expansion false",
+      "result": "PASS"
+    },
+    {
+      "category": "review_contract",
+      "name": "original R02 blocked",
+      "result": "PASS"
+    },
+    {
+      "category": "review_contract",
+      "name": "review outcome not created",
+      "result": "PASS"
+    },
+    {
+      "category": "review_contract",
+      "name": "exact eight decisions",
+      "result": "PASS"
+    },
+    {
+      "category": "review_contract",
+      "name": "exact 33 dimensions",
+      "result": "PASS"
+    },
+    {
+      "category": "review_contract",
+      "name": "exact four sentinels",
+      "result": "PASS"
+    },
+    {
+      "category": "review_contract",
+      "name": "sentinel field contract",
+      "result": "PASS"
+    },
+    {
+      "category": "review_contract",
+      "name": "material sentinel rule",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report has 25 ordered sections",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report decision exact",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report next phase exact",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report records no execution",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report does not guess manifest SHA",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report records reference_upload_authorized=false",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report records canary_execution_authorized=false",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report records R02_authorized=false",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report records provider_motion_only_behavior_verified=false",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report records route_a_capability_proven=false",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report records production_approved=false",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report records fixed_task_completion=false",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report records final_master=false",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report records locked=false",
+      "result": "PASS"
+    },
+    {
+      "category": "governance",
+      "name": "report records original R02 blocked",
+      "result": "PASS"
+    },
+    {
+      "category": "sensitive_data",
+      "name": "forbidden sensitive marker absent: signed_url",
+      "result": "PASS"
+    },
+    {
+      "category": "sensitive_data",
+      "name": "forbidden sensitive marker absent: access_token",
+      "result": "PASS"
+    },
+    {
+      "category": "sensitive_data",
+      "name": "forbidden sensitive marker absent: authorization: bearer",
+      "result": "PASS"
+    },
+    {
+      "category": "sensitive_data",
+      "name": "forbidden sensitive marker absent: set-cookie",
+      "result": "PASS"
+    },
+    {
+      "category": "sensitive_data",
+      "name": "forbidden sensitive marker absent: password=",
+      "result": "PASS"
+    },
+    {
+      "category": "sensitive_data",
+      "name": "forbidden sensitive marker absent: private key-----",
+      "result": "PASS"
+    },
+    {
+      "category": "sensitive_data",
+      "name": "forbidden sensitive marker absent: raw provider output",
+      "result": "PASS"
+    },
+    {
+      "category": "sensitive_data",
+      "name": "temporary absolute path absent",
+      "result": "PASS"
+    },
+    {
+      "category": "sensitive_data",
+      "name": "no media artifacts in temporary design",
+      "result": "PASS"
+    }
+  ],
+  "failure_count": 0,
+  "governance_result": "PASS",
+  "matched_pair_result": "PASS",
+  "non_allowlisted_matched_pair_differences": [],
+  "nonblocking_notes": [
+    "The exact review-dimension list in the authorization contains 33 entries."
+  ],
+  "overall_result": "PASS",
+  "package_result": "PASS",
+  "pass_count": 240,
+  "path_length_result": "PASS",
+  "prompt_result": "PASS",
+  "review_contract_result": "PASS",
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_STATIC_AUDIT_V0_1",
+  "sensitive_data_result": "PASS",
+  "serialization_result": "PASS",
+  "warning_count": 0
+}

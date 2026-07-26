@@ -1,0 +1,100 @@
+{
+  "allowed_decision_count": 8,
+  "allowed_decisions": [
+    "CANARY_SEMANTIC_GATE_PASS_READY_FOR_ROUTE_A_CAPABILITY_HUMAN_DECISION",
+    "CANARY_MIXED_RESULT_REQUIRES_HUMAN_DECISION",
+    "CANARY_REFERENCE_IGNORED_ROUTE_A_BLOCK",
+    "CANARY_REFERENCE_OVERDOMINANT_ROUTE_A_BLOCK",
+    "CANARY_REFERENCE_ROLE_CONFLICT_ROUTE_A_BLOCK",
+    "CANARY_RIGHTS_OR_PROVENANCE_BLOCK",
+    "CANARY_TECHNICAL_FAILURE_NEEDS_SEPARATE_DECISION",
+    "CANARY_ACTION_FAILURE_NEEDS_HUMAN_DECISION"
+  ],
+  "automatic_expansion_authorization": false,
+  "canary_aliases": [
+    "ROUTEA_PUSH_V02_C01",
+    "ROUTEA_IMPACT_V02_C01"
+  ],
+  "contact_sheets_role": "ASSISTANCE_ONLY",
+  "full_mp4_review_mandatory": true,
+  "material_sentinel_rule": {
+    "automatic_expansion": false,
+    "fresh_human_decision_required": true,
+    "reference_overdominance": true,
+    "trigger": "ANY_MATERIAL_SENTINEL_PRESENT"
+  },
+  "original_R02_blocked": true,
+  "required_review_dimension_count": 33,
+  "required_review_dimensions": [
+    "technical_validity",
+    "complete_mp4_reviewed",
+    "action_family_match",
+    "opening_separation",
+    "visible_onset",
+    "contact_onset",
+    "contact_duration",
+    "contact_episode_count",
+    "receiver_reaction_after_contact",
+    "post_contact_causality",
+    "torso_displacement_or_recoil",
+    "foot_result_presence",
+    "foot_result_count",
+    "foot_result_type",
+    "release_or_retraction",
+    "second_contact_presence",
+    "multi_step_retreat_presence",
+    "prolonged_contact",
+    "falling",
+    "extended_arm_freeze",
+    "duration_utilization",
+    "static_tail_timing",
+    "active_final_second",
+    "full_body_and_feet_visibility",
+    "camera_compliance",
+    "identity_consistency",
+    "scene_text_duty",
+    "camera_text_duty",
+    "lighting_style_text_duty",
+    "motion_reference_adherence",
+    "motion_reference_ignored",
+    "motion_reference_overdominant",
+    "reference_role_conflict"
+  ],
+  "review_outcome_created": false,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_CANARY_REVIEW_CONTRACT_V0_1",
+  "sentinel_count": 4,
+  "sentinels": [
+    {
+      "required_fields": {
+        "evidence_rationale": "nonempty_string",
+        "material": "boolean",
+        "present": "boolean"
+      },
+      "sentinel": "CONTACT_MARKER_COPY"
+    },
+    {
+      "required_fields": {
+        "evidence_rationale": "nonempty_string",
+        "material": "boolean",
+        "present": "boolean"
+      },
+      "sentinel": "MANNEQUIN_STYLE_COPY"
+    },
+    {
+      "required_fields": {
+        "evidence_rationale": "nonempty_string",
+        "material": "boolean",
+        "present": "boolean"
+      },
+      "sentinel": "GRID_SCENE_COPY"
+    },
+    {
+      "required_fields": {
+        "evidence_rationale": "nonempty_string",
+        "material": "boolean",
+        "present": "boolean"
+      },
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+    }
+  ]
+}
