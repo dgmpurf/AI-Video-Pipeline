@@ -1,0 +1,191 @@
+{
+  "canaries": [
+    {
+      "action_family": "push_reaction",
+      "alias": "ROUTEA_PUSH_R01",
+      "media": {
+        "byte_length": 2112498,
+        "duration_seconds": 5.06195,
+        "height": 720,
+        "sha256": "bee521eea1f44608cbf15e8bae423caea99f49581b5c37e693e187b9a13f27e4",
+        "width": 1280
+      },
+      "review": {
+        "action_family_match": "FAIL",
+        "camera_compliance": "PARTIAL_MORE_LATERAL_THAN_REQUESTED",
+        "complete_mp4_reviewed": true,
+        "contact_duration": "NO_CONFIRMED_CONTACT",
+        "contact_onset": "ABSENT_OR_UNREADABLE",
+        "ending_motion_compliance": "FAIL_LONG_STATIC_TAIL",
+        "extended_arm_freeze": false,
+        "foot_result_count": 0,
+        "foot_result_presence": false,
+        "foot_result_type": "NONE",
+        "full_body_visibility": "PASS",
+        "identity_consistency": "PASS",
+        "lighting_style_text_duty": "PASS",
+        "motion_reference_adherence": "WEAK_FRAGMENT_ONLY",
+        "motion_reference_ignored": "MOSTLY",
+        "motion_reference_overdominant": false,
+        "onset": "FAIL_STARTS_MID_ACTION",
+        "overall_visual_usability": "FAIL_FOR_ROUTE_A_CANARY",
+        "post_contact_causality": "FAIL",
+        "prolonged_contact": false,
+        "release_or_retraction": "PASS_IN_ISOLATION",
+        "scene_text_duty": "PASS",
+        "static_tail_duration_seconds_approx": 4.86,
+        "static_tail_start_seconds_approx": 0.2,
+        "strict_primary_pass": false,
+        "technical_validity": "PASS",
+        "torso_displacement_or_recoil": "ABSENT"
+      },
+      "sentinels": [
+        {
+          "material": false,
+          "present": false,
+          "rationale": "未看到黄色接触标记复制。",
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "material": false,
+          "present": false,
+          "rationale": "输出为真人风格，不是几何人偶。",
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "material": false,
+          "present": false,
+          "rationale": "没有实质复制参考网格或校准舞台。",
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "material": false,
+          "present": true,
+          "rationale": "构图仍较侧向，但不足以单独触发 material-copy 规则。",
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ]
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "alias": "ROUTEA_IMPACT_R01",
+      "media": {
+        "byte_length": 2232992,
+        "duration_seconds": 5.085011,
+        "height": 720,
+        "sha256": "6f3ff60b3d24ac90a3700b7bda9065e16f6b0ecfb109d4a4f9165d8229ccbea0",
+        "width": 1280
+      },
+      "review": {
+        "action_family_match": "PASS",
+        "camera_compliance": "PARTIAL_MORE_LATERAL_THAN_REQUESTED",
+        "complete_mp4_reviewed": true,
+        "contact_duration": "BRIEF",
+        "contact_onset": "PASS",
+        "ending_motion_compliance": "FAIL_LONG_STATIC_TAIL",
+        "extended_arm_freeze": false,
+        "foot_result_count": 1,
+        "foot_result_presence": true,
+        "foot_result_type": "REAR_FOOT_RECOIL_STEP",
+        "full_body_visibility": "PASS",
+        "identity_consistency": "PASS",
+        "lighting_style_text_duty": "PASS",
+        "motion_reference_adherence": "STRONG_CORE_MOTION_SIGNAL",
+        "motion_reference_ignored": false,
+        "motion_reference_overdominant": true,
+        "onset": "PASS",
+        "overall_visual_usability": "BLOCKED_BY_REFERENCE_OVERDOMINANCE",
+        "post_contact_causality": "PASS",
+        "prolonged_contact": false,
+        "release_or_retraction": "PASS",
+        "scene_text_duty": "PASS",
+        "static_tail_duration_seconds_approx": 3.99,
+        "static_tail_start_seconds_approx": 1.1,
+        "strict_primary_pass": false,
+        "technical_validity": "PASS",
+        "torso_displacement_or_recoil": "PASS_READABLE"
+      },
+      "sentinels": [
+        {
+          "material": true,
+          "present": true,
+          "rationale": "约 0.7 秒接触瞬间，接收者躯干上出现明显黄色圆形标记。",
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "material": false,
+          "present": false,
+          "rationale": "输出为真人风格，不是几何人偶。",
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "material": false,
+          "present": false,
+          "rationale": "墙面竖缝不构成参考网格的实质复制。",
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "material": false,
+          "present": true,
+          "rationale": "侧向构图与参考相近，但当前明确的 material sentinel 是接触标记。",
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ]
+    }
+  ],
+  "duration_utilization": {
+    "finding": "SEVERE_UNDERUTILIZATION",
+    "impact_meaningful_action_seconds_approx": 0.7,
+    "interpretation": "五秒能够容纳多个连续因果节拍，但当前参考与 Prompt 把主要动作压缩在开头，留下很长的低动作密度尾段。",
+    "push_meaningful_action_seconds_approx": 0.18,
+    "recommended_future_pattern": [
+      "0.0-0.6s 准备与接近",
+      "0.6-1.4s 第一次接触",
+      "1.4-2.3s 反应与脚步结果",
+      "2.3-3.2s 释放、反制或第二动作节拍",
+      "3.2-4.2s 重新站位",
+      "4.2-5.0s 动态戒备或退出"
+    ]
+  },
+  "human_project_owner_final_acceptance_required": true,
+  "human_project_owner_observation": "五秒时长实际上能够容纳更多动作或动作节拍；当前输出没有充分利用时长。",
+  "overall": {
+    "R02_blocked": true,
+    "automatic_expansion": false,
+    "decision_basis": [
+      "ROUTEA_PUSH_R01 未完成 push-reaction 因果链，并严重浪费五秒时长。",
+      "ROUTEA_IMPACT_R01 提供了动作参考正信号，但实质复制黄色接触标记。",
+      "锁定哨兵规则规定任一 material sentinel copy 必须阻断 R02。",
+      "两条输出均存在长静态尾段。"
+    ],
+    "final_master": false,
+    "fixed_task_completion": false,
+    "locked": false,
+    "motion_only_behavior_verified": false,
+    "negative_signal": "motion-only 职责隔离未被证明，并被黄色接触标记复制直接反证。",
+    "positive_signal": "视频参考能够影响 IMPACT 的核心动作顺序。",
+    "production_approved": false,
+    "production_reentry_authorized": false,
+    "reference_overdominance": true,
+    "route_a_capability_proven": false,
+    "semantic_gate_decision": "CANARY_REFERENCE_OVERDOMINANT_ROUTE_A_BLOCK"
+  },
+  "recommended_next_decision": {
+    "do_not_execute_R02": true,
+    "next_phase": "CAL002_ROUTE_A_R01_FULL_MP4_REVIEW_INTAKE_LOCK_AND_REFERENCE_V0_2_DESIGN_DECISION",
+    "preferred_next_reference_design": "CLEAN_PROJECT_OWNED_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2",
+    "recommended_action_density": "五秒内设计 2-3 个完整因果动作节拍，或 4-6 个相互连贯的微动作节拍。",
+    "reference_redesign_required": true,
+    "remove_contact_marker": true,
+    "remove_grid_and_distinctive_calibration_scene_cues": true,
+    "use_full_duration_motion_reference": true
+  },
+  "review_contract": {
+    "contact_sheets_role": "ASSISTANCE_ONLY",
+    "full_mp4_review_mandatory": true,
+    "git_blob": "176bc0d2b619bd20e36a33c77c0fe64b37e47d45",
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/route_a_r01_canary_review_contract.json"
+  },
+  "review_mode": "COMPLETE_MP4_TIMELINE_REVIEW",
+  "schema_version": "CAL002_ROUTE_A_R01_FULL_MP4_VISUAL_SEMANTIC_REVIEW_RECORD_V0_1"
+}

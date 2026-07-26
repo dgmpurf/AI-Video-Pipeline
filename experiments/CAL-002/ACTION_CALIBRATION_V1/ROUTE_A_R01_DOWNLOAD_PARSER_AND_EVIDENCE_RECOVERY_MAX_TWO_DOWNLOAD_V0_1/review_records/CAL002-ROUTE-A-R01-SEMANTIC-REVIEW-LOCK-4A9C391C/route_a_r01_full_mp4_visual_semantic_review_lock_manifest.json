@@ -1,0 +1,125 @@
+{
+  "R02_authorized": false,
+  "approval": {
+    "byte_length": 2043,
+    "received": true,
+    "sha256": "43dd9a587d7f2bf1bc0a58f44b4e0adfc0058f3be03a77ae17e5434790cac792",
+    "text": "APPROVE_CAL002_ROUTE_A_R01_FULL_MP4_VISUAL_SEMANTIC_REVIEW_INTAKE_AND_LOCK_V0_1__BIND_DOWNLOAD_RECOVERY_CHECKPOINT_523BDF9A25A1856688FB192BC5879F24D89138B8__BIND_DOWNLOAD_RECOVERY_REPORT_BYTES_6127__BIND_DOWNLOAD_RECOVERY_REPORT_SHA256_9D429CB80DFAE81399ED08769A275D6116C21711A362591206EFFDAB84101BAA__BIND_VISUAL_REVIEW_HANDOFF_BYTES_5548__BIND_VISUAL_REVIEW_HANDOFF_SHA256_C81060F5D6FFC3C437F8306B6C3DF647D1C9F09FE0F446B9F17E1B9BDE68A0FA__BIND_ROUTERA_PUSH_R01_BYTES_2112498__BIND_ROUTERA_PUSH_R01_SHA256_BEE521EEA1F44608CBF15E8BAE423CAEA99F49581B5C37E693E187B9A13F27E4__BIND_ROUTERA_IMPACT_R01_BYTES_2232992__BIND_ROUTERA_IMPACT_R01_SHA256_6F3FF60B3D24AC90A3700B7BDA9065E16F6B0ECFB109D4A4F9165D8229CCBEA0__BIND_REVIEW_INPUT_ARCHIVE_BYTES_5079__BIND_REVIEW_INPUT_ARCHIVE_SHA256_604FF1AB764F069C86867C08B8BF6F9F62F6A242E4AAB2E81B316860B898E515__BIND_COMPLETED_REVIEW_RECORD_BYTES_7725__BIND_COMPLETED_REVIEW_RECORD_SHA256_4A9C391CFF821A64D89DA99589B705FC277C0E52E101C8A149AB057ABE110CD1__BIND_COMPLETED_REVIEW_REPORT_BYTES_3054__BIND_COMPLETED_REVIEW_REPORT_SHA256_28E73D588E0AF88DE7B519E2D6F6DF97743C0A46CC7067D8340E2F036516F0EA__ACCEPT_ROUTERA_PUSH_R01_ACTION_FAMILY_FAIL_REFERENCE_MOSTLY_IGNORED_AND_LONG_STATIC_TAIL__ACCEPT_ROUTERA_IMPACT_R01_CORE_MOTION_POSITIVE_BUT_MATERIAL_CONTACT_MARKER_COPY_AND_LONG_STATIC_TAIL__ACCEPT_OVERALL_DECISION_CANARY_REFERENCE_OVERDOMINANT_ROUTE_A_BLOCK__ACCEPT_FIVE_SECOND_DURATION_SEVERE_UNDERUTILIZATION_AND_FUTURE_MULTI_BEAT_REFERENCE_REQUIREMENT__BLOCK_ORIGINAL_R02_AND_AUTOMATIC_EXPANSION__AUTHORIZE_BYTE_EXACT_INPUT_INTAKE_REVIEW_CONTRACT_VALIDATION_JSON_MARKDOWN_CONSISTENCY_REVIEW_LOCK_MANIFEST_GOVERNANCE_REPORT_COMMIT_AND_PUSH_ONLY__SET_NEXT_PHASE_CAL002_ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2_LOCAL_DESIGN_AND_CREATION_DECISION__NO_DREAMINA_NO_PROVIDER_NO_SUBMIT_NO_QUERY_NO_DOWNLOAD_NO_RETRY_NO_RESUBMIT_NO_BATCH_NO_USER_CREDIT_NO_MEDIA_CHANGE_NO_SOURCE_CHANGE_NO_PRODUCTION_REENTRY_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__ONE_TIME_NON_REUSABLE"
+  },
+  "authorization_lifecycle": {
+    "activated": true,
+    "consumed": true,
+    "reusable": false
+  },
+  "automatic_expansion": false,
+  "canaries": [
+    {
+      "action_family": "push_reaction",
+      "alias": "ROUTEA_PUSH_R01",
+      "material_sentinel_count": 0,
+      "media": {
+        "byte_length": 2112498,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/media/ROUTEA_PUSH_R01.mp4",
+        "sha256": "bee521eea1f44608cbf15e8bae423caea99f49581b5c37e693e187b9a13f27e4"
+      },
+      "review_summary": [
+        "ACTION_FAMILY_FAIL",
+        "REFERENCE_MOSTLY_IGNORED",
+        "LONG_STATIC_TAIL",
+        "SEVERE_DURATION_UNDERUTILIZATION"
+      ],
+      "strict_primary_pass": false,
+      "technical_validation_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/technical/ROUTEA_PUSH_R01_technical_validation.json"
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "alias": "ROUTEA_IMPACT_R01",
+      "material_sentinel": "CONTACT_MARKER_COPY",
+      "material_sentinel_count": 1,
+      "media": {
+        "byte_length": 2232992,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/media/ROUTEA_IMPACT_R01.mp4",
+        "sha256": "6f3ff60b3d24ac90a3700b7bda9065e16f6b0ecfb109d4a4f9165d8229ccbea0"
+      },
+      "review_summary": [
+        "CORE_MOTION_REFERENCE_SIGNAL_POSITIVE",
+        "MATERIAL_CONTACT_MARKER_COPY",
+        "REFERENCE_OVERDOMINANT",
+        "LONG_STATIC_TAIL",
+        "SEVERE_DURATION_UNDERUTILIZATION"
+      ],
+      "strict_primary_pass": false,
+      "technical_validation_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/technical/ROUTEA_IMPACT_R01_technical_validation.json"
+    }
+  ],
+  "complete_mp4_review_count": 2,
+  "contact_sheets_role": "ASSISTANCE_ONLY",
+  "download_recovery_checkpoint": "523bdf9a25a1856688fb192bc5879f24d89138b8",
+  "download_recovery_report": {
+    "byte_length": 6127,
+    "git_blob": "cf45b11588aabd4aae552c00b3819c76a6e31ac4",
+    "path": "reports/CAL002_ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_RESULT.md",
+    "sha256": "9d429cb80dfae81399ed08769a275d6116c21711a362591206effdab84101baa"
+  },
+  "duration_utilization": "SEVERE_UNDERUTILIZATION",
+  "final_master": false,
+  "final_review_record": {
+    "byte_length": 7725,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/review_records/CAL002-ROUTE-A-R01-SEMANTIC-REVIEW-LOCK-4A9C391C/route_a_r01_full_mp4_visual_semantic_review_record_final.json",
+    "sha256": "4a9c391cff821a64d89da99589b705fc277c0e52e101c8a149ab057abe110cd1"
+  },
+  "final_review_report": {
+    "byte_length": 3054,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/review_records/CAL002-ROUTE-A-R01-SEMANTIC-REVIEW-LOCK-4A9C391C/route_a_r01_full_mp4_visual_semantic_review_report.md",
+    "sha256": "28e73d588e0af88de7b519e2d6f6df97743c0a46cc7067d8340e2f036516f0ea"
+  },
+  "fixed_task_completion": false,
+  "fresh_human_decision_required_for_future_route": true,
+  "future_action_density_requirement": "TWO_TO_THREE_CAUSAL_ACTION_BEATS_OR_FOUR_TO_SIX_CONNECTED_MICRO_BEATS",
+  "future_reference_requirement": "CLEAN_PROJECT_OWNED_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2",
+  "goal_identity": "CAL002_ROUTE_A_R01_FULL_MP4_VISUAL_SEMANTIC_REVIEW_INTAKE_AND_LOCK_V0_1",
+  "human_project_owner_acceptance_received": true,
+  "input_archive": {
+    "byte_length": 5079,
+    "filename": "CAL002_ROUTE_A_R01_FULL_MP4_VISUAL_SEMANTIC_REVIEW_INPUTS.zip",
+    "sha256": "604ff1ab764f069c86867c08b8bf6f9f62f6a242e4aab2e81b316860b898e515"
+  },
+  "json_markdown_consistency": "PASS",
+  "lock_id": "CAL002-ROUTE-A-R01-SEMANTIC-REVIEW-LOCK-4A9C391C",
+  "locked": false,
+  "motion_only_role_separation_verified": false,
+  "next_phase": "CAL002_ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2_LOCAL_DESIGN_AND_CREATION_DECISION",
+  "original_R02_blocked": true,
+  "overall_semantic_gate_decision": "CANARY_REFERENCE_OVERDOMINANT_ROUTE_A_BLOCK",
+  "positive_motion_reference_evidence_present": true,
+  "production_approved": false,
+  "production_reentry_authorized": false,
+  "record_must_not_change_after_commit": true,
+  "reference_overdominance_established": true,
+  "review_contract": {
+    "automatic_R02_authorization": false,
+    "contact_sheets_role": "ASSISTANCE_ONLY",
+    "full_mp4_review_mandatory": true,
+    "git_blob": "176bc0d2b619bd20e36a33c77c0fe64b37e47d45",
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/route_a_r01_canary_review_contract.json",
+    "review_contract_validation": "PASS",
+    "schema_version": "CAL002_ROUTE_A_R01_CANARY_REVIEW_CONTRACT_V0_1"
+  },
+  "review_mode": "COMPLETE_MP4_TIMELINE_REVIEW",
+  "review_record_finalized": true,
+  "review_record_locked": true,
+  "route_a_capability_proven": false,
+  "schema_version": "CAL002_ROUTE_A_R01_VISUAL_SEMANTIC_REVIEW_LOCK_MANIFEST_V0_1",
+  "starting_checkpoint": {
+    "branch": "main",
+    "head": "523bdf9a25a1856688fb192bc5879f24d89138b8",
+    "origin_main": "523bdf9a25a1856688fb192bc5879f24d89138b8",
+    "parent": "64b0e1bd53daa167ae53f08547be3c2294af3aff"
+  },
+  "visual_review_handoff": {
+    "byte_length": 5548,
+    "git_blob": "3d3cc322d1181ead966b6065ba6c23e4a17325ca",
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/review/ROUTE_A_R01_VISUAL_REVIEW_HANDOFF.md",
+    "sha256": "c81060f5d6ffc3c437f8306b6c3df647d1c9f09fe0f446b9f17e1b9bde68a0fa"
+  }
+}
