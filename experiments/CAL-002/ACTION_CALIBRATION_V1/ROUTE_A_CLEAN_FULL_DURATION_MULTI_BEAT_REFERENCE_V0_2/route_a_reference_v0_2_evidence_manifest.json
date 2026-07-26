@@ -1,0 +1,309 @@
+{
+  "artifact_count": 29,
+  "artifacts": [
+    {
+      "artifact_class": "AUTHORIZATION_ACTIVATION_RECORD",
+      "byte_length": 5178,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/authorization_activation_record.json",
+      "sha256": "6b2e6e3ced1c484e19b7e4389a8a8c47dd6adbceebbb6727c88d099e29b9b94b"
+    },
+    {
+      "artifact_class": "REFERENCE_MP4",
+      "byte_length": 174235,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6"
+    },
+    {
+      "artifact_class": "REFERENCE_MP4",
+      "byte_length": 168170,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c"
+    },
+    {
+      "artifact_class": "TECHNICAL_VALIDATION",
+      "byte_length": 3182,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_PUSH_02_technical_validation.json",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "sha256": "ff560f1cff89091dc9a27ab31c5635428af7f37bb86ebcbef2327a81d73fc67d"
+    },
+    {
+      "artifact_class": "TECHNICAL_VALIDATION",
+      "byte_length": 3172,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_IMPACT_02_technical_validation.json",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "sha256": "45c9f7c034f2afd0b651cafbe6d8563c7a9d0472baf004877d64858c9818eb63"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 37624,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_IMPACT_02/ACTION_REF_IMPACT_02_kf01.png",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "sha256": "2690c2340bcb63a95f84a25b9d5d5d7717078c4aa8cdb3263342810424e364d1"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 38465,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_IMPACT_02/ACTION_REF_IMPACT_02_kf02.png",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "sha256": "0ef993732d6ac63f4feba6891cd3086d915df8b1bfd03c682ebf8e504789c3bc"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 37660,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_IMPACT_02/ACTION_REF_IMPACT_02_kf03.png",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "sha256": "c506670cfbedf40c95fae2b60a2fe7aa19c942fe88b220f8fe31b2b3cc4f17da"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 37657,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_IMPACT_02/ACTION_REF_IMPACT_02_kf04.png",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "sha256": "2c2f20de483ff04f1e2ffdbc7995b2a27d3fa92d5f26055c2b91959250129905"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 42640,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_IMPACT_02/ACTION_REF_IMPACT_02_kf05.png",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "sha256": "454f6618e1674dd269788203a69e7a0d67931d2363c3b6f2cac3f845868c7e99"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 39049,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_IMPACT_02/ACTION_REF_IMPACT_02_kf06.png",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "sha256": "05d382c16ca31cc1ec182af4e4a45f7143ed80d81e306899221325a4b1f9fa7a"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 39801,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_IMPACT_02/ACTION_REF_IMPACT_02_kf07.png",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "sha256": "1f0ac12998f2dadc7b7cd75dafc083e3027edd3545ea96c632c4f2cbf573385f"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 39288,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_IMPACT_02/ACTION_REF_IMPACT_02_kf08.png",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "sha256": "2028daa3c08edcde3c39802249fcd367b4113a34b0362428d604a8c022cf45e8"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 37662,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_IMPACT_02/ACTION_REF_IMPACT_02_kf09.png",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "sha256": "75e7be9c1a94d27bf80d1a5d3dece0338805d945960f451e5c9a59ffdd9b0c44"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 38745,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_IMPACT_02/ACTION_REF_IMPACT_02_kf10.png",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "sha256": "4c18e396d55e1c4b079653229af5ca8655f812b6f88ecc1371b4fd2e533d34bb"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 37391,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_PUSH_02/ACTION_REF_PUSH_02_kf01.png",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "sha256": "bde8a13dae91e28404a3ebb98f0a1055e144dca71698d6e08de9bccda4faa4cf"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 37856,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_PUSH_02/ACTION_REF_PUSH_02_kf02.png",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "sha256": "b3dc958ef8d1660e4f2c6768ae782ac20977a941200bc63c45c7bae03333a198"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 39292,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_PUSH_02/ACTION_REF_PUSH_02_kf03.png",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "sha256": "b597d9c90f1742a107d026663a59c462e88d27f57f02859a8b7241dd480aea1b"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 38619,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_PUSH_02/ACTION_REF_PUSH_02_kf04.png",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "sha256": "99f4671bf76f98da51726944cd497517da8492e514d808dec224c497d8e3e833"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 43970,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_PUSH_02/ACTION_REF_PUSH_02_kf05.png",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "sha256": "93a34cf4022cc819f2ab3a632f73d21c372213fbda1c8f8d6bc49ca7637ba3dc"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 39182,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_PUSH_02/ACTION_REF_PUSH_02_kf06.png",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "sha256": "6d2735e19e72a2c519594f6be855d7f775d14185f6f7c0a28018c267fb6180eb"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 41000,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_PUSH_02/ACTION_REF_PUSH_02_kf07.png",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "sha256": "08e9ae236d980ce4a4ba963c7747944e33a2ebec5279be8a25c4a240579967a9"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 39259,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_PUSH_02/ACTION_REF_PUSH_02_kf08.png",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "sha256": "0c45f19b477b9aa3c1e51d87fdb503330ea7dc74c899cea02e143a7e4a84d030"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 39132,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_PUSH_02/ACTION_REF_PUSH_02_kf09.png",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "sha256": "c1760c7797aca7065dc6122bd4f6757e14b93aec3b23a4d79be70d6bf348cd13"
+    },
+    {
+      "artifact_class": "KEYFRAME",
+      "byte_length": 38647,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/keyframes/ACTION_REF_PUSH_02/ACTION_REF_PUSH_02_kf10.png",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "sha256": "95b5ff0867e8b5e0514d6988c97b56e9b0c90baaf9f5b9b7df1a96aa9e8ce003"
+    },
+    {
+      "artifact_class": "CONTACT_SHEET",
+      "byte_length": 110059,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/contact_sheets/ACTION_REF_PUSH_02_contact_sheet.png",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "sha256": "7a4de1419cf9b19357019ffec9da31a8942452f55ea715fa19097a9fa5bc748f"
+    },
+    {
+      "artifact_class": "CONTACT_SHEET",
+      "byte_length": 110262,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/contact_sheets/ACTION_REF_IMPACT_02_contact_sheet.png",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "sha256": "c2f94d5e9d1e249d03946ab41d0c0cf8df062b20e48f5c1d0f2498992a7ee0f1"
+    },
+    {
+      "artifact_class": "REVIEW_HANDOFF",
+      "byte_length": 6768,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review/ROUTE_A_REFERENCE_V0_2_VISUAL_REVIEW_HANDOFF.md",
+      "sha256": "d4d3a7e210199ccecd3fa66ed8e768ee51b3597a2138cfe9a4fb09bba013f01f"
+    },
+    {
+      "artifact_class": "GOVERNANCE_REPORT",
+      "byte_length": 10279,
+      "path": "reports/CAL002_ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2_LOCAL_DESIGN_AND_CREATION_RESULT.md",
+      "sha256": "833adf08f45fc05fa2074e691af29edf9d34447db09590deb4897bef9d9277b9"
+    }
+  ],
+  "authorization_lifecycle": {
+    "activated": true,
+    "consumed": true,
+    "reusable": false
+  },
+  "creation_phase": "CAL002_ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2_LOCAL_DESIGN_AND_CREATION_V0_1",
+  "generator": {
+    "byte_length": 29359,
+    "deleted": true,
+    "invocation_count": 1,
+    "sha256": "bacfb6a593283a4baad8d530b5edda2dd4af585203d26acc24922babd8d8ad85",
+    "temporary_artifacts_cleaned": true
+  },
+  "included_artifact_count": 29,
+  "input_binding_count": 9,
+  "input_bindings": [
+    {
+      "byte_length": 8097,
+      "git_blob": "64f39b436195e19714040fd90afbb0b5a61dbd33",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/review_records/CAL002-ROUTE-A-R01-SEMANTIC-REVIEW-LOCK-4A9C391C/route_a_r01_full_mp4_visual_semantic_review_lock_manifest.json",
+      "role": "semantic_review_lock_manifest",
+      "sha256": "403d7d2bf2c84d2ada86c40add7d367c9e4b20842df38c60a487b8138304fa02"
+    },
+    {
+      "byte_length": 7725,
+      "git_blob": "e0cb0511926d5615f55c2c2af1629be0a04b511c",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/review_records/CAL002-ROUTE-A-R01-SEMANTIC-REVIEW-LOCK-4A9C391C/route_a_r01_full_mp4_visual_semantic_review_record_final.json",
+      "role": "final_r01_review_record",
+      "sha256": "4a9c391cff821a64d89da99589b705fc277c0e52e101c8a149ab057abe110cd1"
+    },
+    {
+      "byte_length": 3054,
+      "git_blob": "e73da1f473d92579d2c626e547bc77e0208b4940",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/review_records/CAL002-ROUTE-A-R01-SEMANTIC-REVIEW-LOCK-4A9C391C/route_a_r01_full_mp4_visual_semantic_review_report.md",
+      "role": "final_r01_review_report",
+      "sha256": "28e73d588e0af88de7b519e2d6f6df97743c0a46cc7067d8340e2f036516f0ea"
+    },
+    {
+      "byte_length": 5083,
+      "git_blob": "70a5b83a981934d81cfae079986a5dfff1ec0d8d",
+      "head_equality": true,
+      "path": "reports/CAL002_ROUTE_A_R01_FULL_MP4_VISUAL_SEMANTIC_REVIEW_INTAKE_AND_LOCK_RESULT.md",
+      "role": "semantic_review_lock_governance_report",
+      "sha256": "45f884c5b38bd41fca118af9993767c981941009b94ed959d197cf7ffd68a9be"
+    },
+    {
+      "byte_length": 2378,
+      "git_blob": "176bc0d2b619bd20e36a33c77c0fe64b37e47d45",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_CAPABILITY_CREDIT_AND_PACKAGE_PREPARATION_V0_1/route_a_r01_canary_review_contract.json",
+      "role": "r01_review_contract",
+      "sha256": "75eb9438201b79e510461e1db2bbac1aecfac5fcc8b53a8b40e8fa59fef7e4d0"
+    },
+    {
+      "byte_length": 2112498,
+      "git_blob": "20f530baea5178c53801d30026c4e6a63dc67eb5",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/media/ROUTEA_PUSH_R01.mp4",
+      "role": "r01_push_output",
+      "sha256": "bee521eea1f44608cbf15e8bae423caea99f49581b5c37e693e187b9a13f27e4"
+    },
+    {
+      "byte_length": 2232992,
+      "git_blob": "fcfdc189523ee056767f03630a4972c3891d6181",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_R01_DOWNLOAD_PARSER_AND_EVIDENCE_RECOVERY_MAX_TWO_DOWNLOAD_V0_1/media/ROUTEA_IMPACT_R01.mp4",
+      "role": "r01_impact_output",
+      "sha256": "6f3ff60b3d24ac90a3700b7bda9065e16f6b0ecfb109d4a4f9165d8229ccbea0"
+    },
+    {
+      "byte_length": 69720,
+      "git_blob": "a048226012c9f1f9b5490dd3e2b24be511cd8013",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_PUSH_01.mp4",
+      "role": "original_push_reference",
+      "sha256": "d2b570cdd682c82cfb4559ce2b0df1840c7e459bcbe78df07ff1c735289743e4"
+    },
+    {
+      "byte_length": 69385,
+      "git_blob": "f37aedbe277cb34aa9569985a3e13d418d8dad0a",
+      "head_equality": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_PROJECT_OWNED_REFERENCE_MEDIA_V0_1/media/ACTION_REF_IMPACT_01.mp4",
+      "role": "original_impact_reference",
+      "sha256": "bf571fad464c0e4adac5ff4db7d85ec135a98bed07c9dd0eef9fd83d0f3f60a4"
+    }
+  ],
+  "next_phase": "CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW",
+  "original_R02_blocked": true,
+  "reference_build_id": "CAL002-ROUTE-A-REFERENCE-V0-2-BUILD-V0-1",
+  "reference_ids": [
+    "ACTION_REF_PUSH_02",
+    "ACTION_REF_IMPACT_02"
+  ],
+  "references_human_accepted": 0,
+  "references_human_reviewed": 0,
+  "references_technically_valid": 2,
+  "route_a_capability_proven": false,
+  "schema_version": "CAL002_ROUTE_A_REFERENCE_V0_2_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "starting_checkpoint": "b8f5c83f17cbf351226ceba8f4b54f130915e0f6",
+  "unique_bound_paths": 29
+}
