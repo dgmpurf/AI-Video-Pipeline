@@ -1,0 +1,206 @@
+{
+  "artifact_count": 7,
+  "artifacts": [
+    {
+      "bytes": 12542,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/authorization.json",
+      "sha256": "bb07ed8bbf67eae5bad5194dd09df96f1abd7258a27db0c5a53ba71b32110c05"
+    },
+    {
+      "bytes": 2241,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/diagnostics/process_checkpoint.json",
+      "sha256": "16d75c55140cd76e118e0ba3b4b6d2ca00b49d1472a20bb811652d09b6826d3b"
+    },
+    {
+      "bytes": 6401,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/downloads/impact.json",
+      "sha256": "835d72a61f3ecaa159576cd722e1e724325e7510dd192ed51f1df5655b9ef17d"
+    },
+    {
+      "bytes": 3103,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/technical/impact.json",
+      "sha256": "df3c1b0c1c15247930b1baceeaa35b174aca3a82ecc77a2801161afc72f4fcef"
+    },
+    {
+      "bytes": 2304263,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/media/ROUTEA_IMPACT_V02_C01.mp4",
+      "sha256": "7368cf7f0748b54e928869de7eeb78c47ad71190cb3ff1d27937bdaa349dfb0e"
+    },
+    {
+      "bytes": 7152,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/execution.json",
+      "sha256": "be6f439af59ee130a6235ff2fbfc5b2bf832962d20b787d2284053d18b1ffd92"
+    },
+    {
+      "bytes": 5334,
+      "path": "reports/CAL002_RA_V02_C01_IMPSALVAGE_RESULT.md",
+      "sha256": "3a72352dcf1bd9a0100136024c8bf0b7d4f3a55dc111e01d408cb1cd72849b54"
+    }
+  ],
+  "current_checkpoint": "43136845f0574e8c9c6936bf94bb51364cd26567",
+  "decision": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_SALVAGE_SUCCESS",
+  "evidence_coverage": "7/7",
+  "final_passing_self_test": {
+    "cross_drive_commonpath_call_count": 0,
+    "cross_drive_pass_count": 15,
+    "cross_drive_test_count": 15,
+    "dreamina_calls": 0,
+    "error_count": 0,
+    "error_test_ids": [],
+    "failure_count": 0,
+    "failure_test_ids": [],
+    "handler": {
+      "bytes": 74213,
+      "path": "impact_handler.py",
+      "sha256": "4944eba2886dbe56580a74cc24e0296e51fbac88994eaa79c55254474b1519e6"
+    },
+    "handler_filename": "impact_handler.py",
+    "harness": {
+      "bytes": 41920,
+      "path": "test_impact_handler.py",
+      "sha256": "9c39578a0e72d04842f653f055b04bf524a404723ab0f38a247f93ce4be110ad"
+    },
+    "harness_filename": "test_impact_handler.py",
+    "iteration": 2,
+    "overall_result": "PASS",
+    "pass_count": 174,
+    "provider_calls": 0,
+    "push_media_unchanged": true,
+    "repository_status_unchanged": true,
+    "repository_writes": 0,
+    "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_SELFTEST_RESULT_V0_1",
+    "skip_count": 0,
+    "skipped_test_ids": [],
+    "suite_invocation_count": 2,
+    "test_count": 174
+  },
+  "impact_query_receipt_binding": {
+    "bytes": 2340,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/queries/impact.json",
+    "sha256": "f8407729a21ab68048b5bf3508b1eb047433bcca29e614708d69d8a05de47d45",
+    "worktree_equals_head": true
+  },
+  "included_artifact_count": 7,
+  "next_phase": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_COMPLETE_MP4_HUMAN_REVIEW",
+  "push_salvage_bindings": {
+    "push_canonical_media": {
+      "bytes": 3031614,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/media/ROUTEA_PUSH_V02_C01.mp4",
+      "sha256": "015fbb4dcb1624268314466408fc56a61e73a1efe529da774225a4513aae7d40",
+      "worktree_equals_head": true
+    },
+    "push_execution_record": {
+      "bytes": 4209,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/execution.json",
+      "sha256": "626da903a4d8867a1a824c66bfbe37be48db60e0af71382b5832df5bd28283a3",
+      "worktree_equals_head": true
+    },
+    "push_salvage_manifest": {
+      "bytes": 6518,
+      "git_blob": "0257e67896953b92dd5159d265b110ff860b189b",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/evidence_manifest.json",
+      "sha256": "94edf6fce2cda74edf2dc2c51707a63219b7f91d1828e3a56d30d5edbd17033a",
+      "worktree_equals_head": true
+    },
+    "push_salvage_report": {
+      "bytes": 5118,
+      "path": "reports/CAL002_RA_V02_C01_DLSALVAGE_RESULT.md",
+      "sha256": "3750ccc2acc8c14a316cbca9c573985f8debd57bfc4f3b0e46ad4ac3be3b475a",
+      "worktree_equals_head": true
+    },
+    "push_technical_record": {
+      "bytes": 2966,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/technical/push.json",
+      "sha256": "b1eb91783ec3a33c57d09db6efc09f640ac779d961aee8e3b49ad702a9383b1f",
+      "worktree_equals_head": true
+    }
+  },
+  "raw_process_output_persisted": false,
+  "raw_provider_output_persisted": false,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_SUCCESS_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "self_test_iterations": [
+    {
+      "authorization_activated": false,
+      "cross_drive_commonpath_call_count": 0,
+      "cross_drive_pass_count": 15,
+      "cross_drive_test_count": 15,
+      "dreamina_calls": 0,
+      "error_count": 0,
+      "error_test_ids": [],
+      "failure_count": 0,
+      "failure_test_ids": [],
+      "handler": {
+        "bytes": 72894,
+        "path": "impact_handler.py",
+        "sha256": "7c3ad14b597bf2c59b039b59d1f6d5ba0b3ff46662f2b03541e1d651dd12adc7"
+      },
+      "handler_filename": "impact_handler.py",
+      "harness": {
+        "bytes": 40697,
+        "path": "test_impact_handler.py",
+        "sha256": "2ae099fc1cea7f88363dcb4df36ac63d4bd8224f3d81cb6725e63cc2aea1bfaf"
+      },
+      "harness_filename": "test_impact_handler.py",
+      "integrated_pre_activation_failure": "PUSH_BINDING_ATTESTATION_COMPARISON_FALSE_POSITIVE",
+      "integrated_pre_activation_result": "FAIL",
+      "iteration": 1,
+      "overall_result": "PASS",
+      "pass_count": 171,
+      "process_start_attempted": false,
+      "provider_calls": 0,
+      "push_media_unchanged": true,
+      "repository_status_unchanged": true,
+      "repository_writes": 0,
+      "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_SELFTEST_RESULT_V0_1",
+      "skip_count": 0,
+      "skipped_test_ids": [],
+      "suite_invocation_count": 1,
+      "test_count": 171
+    },
+    {
+      "cross_drive_commonpath_call_count": 0,
+      "cross_drive_pass_count": 15,
+      "cross_drive_test_count": 15,
+      "dreamina_calls": 0,
+      "error_count": 0,
+      "error_test_ids": [],
+      "failure_count": 0,
+      "failure_test_ids": [],
+      "handler": {
+        "bytes": 74213,
+        "path": "impact_handler.py",
+        "sha256": "4944eba2886dbe56580a74cc24e0296e51fbac88994eaa79c55254474b1519e6"
+      },
+      "handler_filename": "impact_handler.py",
+      "harness": {
+        "bytes": 41920,
+        "path": "test_impact_handler.py",
+        "sha256": "9c39578a0e72d04842f653f055b04bf524a404723ab0f38a247f93ce4be110ad"
+      },
+      "harness_filename": "test_impact_handler.py",
+      "iteration": 2,
+      "overall_result": "PASS",
+      "pass_count": 174,
+      "provider_calls": 0,
+      "push_media_unchanged": true,
+      "repository_status_unchanged": true,
+      "repository_writes": 0,
+      "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_SELFTEST_RESULT_V0_1",
+      "skip_count": 0,
+      "skipped_test_ids": [],
+      "suite_invocation_count": 2,
+      "test_count": 174
+    }
+  ],
+  "sensitive_data_result": "PASS",
+  "signed_url_persisted": false,
+  "temporary_cleanup_result": {
+    "checkpoint_root_cleaned": true,
+    "download_root_cleaned": true,
+    "selftest_roots_cleaned": true,
+    "status": "PASS",
+    "temporary_regular_files_remaining": 0
+  },
+  "unique_bound_paths": 7
+}

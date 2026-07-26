@@ -1,0 +1,198 @@
+{
+  "alias": "ROUTEA_IMPACT_V02_C01",
+  "argv": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "query_result",
+    "--submit_id",
+    "4c8b6184-7c0a-4b41-95f5-e215e35f195b",
+    "--download_dir",
+    "G:/AICODING/AI_VIDEO/.tmp/RA_V02_C01_DL_IMPACT_SALVAGE_R1"
+  ],
+  "argv_bytes": 182,
+  "argv_sha256": "9446946d56392f25e90db2fac77a80bbf8e9f0e668a570ecdcf116010b306de2",
+  "authoritative_query_receipt_binding": {
+    "bytes": 2340,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/queries/impact.json",
+    "sha256": "f8407729a21ab68048b5bf3508b1eb047433bcca29e614708d69d8a05de47d45",
+    "worktree_equals_head": true
+  },
+  "bound_submit_id": "4c8b6184-7c0a-4b41-95f5-e215e35f195b",
+  "call_count": 1,
+  "called": true,
+  "candidate_basename": "4c8b6184-7c0a-4b41-95f5-e215e35f195b_video_1.mp4",
+  "candidate_bytes": 2304263,
+  "candidate_count": 1,
+  "candidate_sha256": "7368cf7f0748b54e928869de7eeb78c47ad71190cb3ff1d27937bdaa349dfb0e",
+  "canonical_media_binding": {
+    "bytes": 2304263,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/media/ROUTEA_IMPACT_V02_C01.mp4",
+    "sha256": "7368cf7f0748b54e928869de7eeb78c47ad71190cb3ff1d27937bdaa349dfb0e"
+  },
+  "cli_nonzero_exit_anomaly": false,
+  "download_outcome_classification": "USABLE_MEDIA_WITH_ZERO_EXIT",
+  "elapsed_seconds": 8.93,
+  "end": "2026-07-26T16:24:56.875Z",
+  "execution_id": "CAL002-ROUTE-A-V0-2-C01-IMPACT-MEDIA-FIRST-SALVAGE-R1",
+  "filesystem_delta": {
+    "archive_count": 0,
+    "candidate_entries": [
+      {
+        "bytes": 2304263,
+        "path_escape": false,
+        "relative_path": "4c8b6184-7c0a-4b41-95f5-e215e35f195b_video_1.mp4",
+        "reparse_point": false,
+        "sha256": "7368cf7f0748b54e928869de7eeb78c47ad71190cb3ff1d27937bdaa349dfb0e",
+        "symlink": false,
+        "type": "file"
+      }
+    ],
+    "executable_count": 0,
+    "files_outside_root": 0,
+    "junction_count": 0,
+    "mp4_candidate_count": 1,
+    "new_nonempty_regular_file_count": 1,
+    "overwritten_file_count": 0,
+    "path_escape_count": 0,
+    "post_call_entry_count": 1,
+    "pre_call_entry_count": 0,
+    "pre_call_regular_file_count": 0,
+    "regular_file_count": 1,
+    "removed_file_count": 0,
+    "reparse_point_count": 0,
+    "result": "PASS",
+    "sidecar_count": 0,
+    "symlink_count": 0,
+    "unexpected_file_count": 0
+  },
+  "launch_exception_class": null,
+  "media_first_acceptance_result": "PASS",
+  "motion_only_behavior_verified": false,
+  "package_id": "CAL002-ROUTE-A-IMPACT-V02-C01",
+  "parse": {
+    "explicit_failure_contradiction": false,
+    "explicit_incomplete_transfer": false,
+    "explicit_submit_id_mismatch": false,
+    "failure_code": null,
+    "multiple_represented_task_results": false,
+    "opaque_numeric_fields": [
+      {
+        "field": "fps",
+        "value": 24
+      },
+      {
+        "field": "width",
+        "value": 1280
+      },
+      {
+        "field": "height",
+        "value": 720
+      },
+      {
+        "field": "creditcount",
+        "value": 140
+      },
+      {
+        "field": "queueidx",
+        "value": 0
+      },
+      {
+        "field": "priority",
+        "value": 1
+      },
+      {
+        "field": "queuelength",
+        "value": 0
+      }
+    ],
+    "parse_mode": "complete_json",
+    "parsed_document_count": 1,
+    "raw_provider_output_persisted": false,
+    "raw_stderr_persisted": false,
+    "raw_stdout_persisted": false,
+    "redacted_field_count": 0,
+    "response_submit_id": "4c8b6184-7c0a-4b41-95f5-e215e35f195b",
+    "response_submit_id_matches_bound_id": true,
+    "result_count": null,
+    "sanitization_result": "PASS",
+    "sensitive_field_count": 0,
+    "sensitive_value_persisted": false,
+    "signed_url_count": 0,
+    "signed_url_displayed": false,
+    "signed_url_opened": false,
+    "signed_url_persisted": false,
+    "stderr_utf8": true,
+    "stdout_utf8": true,
+    "textual_statuses": [
+      "success",
+      "Finish"
+    ],
+    "video_count": null
+  },
+  "post_move_technical_result": {
+    "audio_stream_count": 1,
+    "codec": "h264",
+    "container_names": "mov,mp4,m4a,3gp,3g2,mj2",
+    "decode_stderr_bytes": 0,
+    "decode_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "duration_seconds": 5.085011,
+    "failure_reasons": [],
+    "fatal_decode_error": false,
+    "ffprobe_exit_code": 0,
+    "ffprobe_stderr_bytes": 0,
+    "ffprobe_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "frame_count": 121,
+    "frame_rate": 24.119601328903656,
+    "full_decode_exit_code": 0,
+    "height": 720,
+    "metadata_safety": "PASS",
+    "nonfatal_decode_diagnostic_present": false,
+    "pixel_format": "yuv420p",
+    "rotation": 0,
+    "technical_result": "PASS",
+    "video_stream_count": 1,
+    "width": 1280
+  },
+  "pre_move_technical_result": {
+    "audio_stream_count": 1,
+    "codec": "h264",
+    "container_names": "mov,mp4,m4a,3gp,3g2,mj2",
+    "decode_stderr_bytes": 0,
+    "decode_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "duration_seconds": 5.085011,
+    "failure_reasons": [],
+    "fatal_decode_error": false,
+    "ffprobe_exit_code": 0,
+    "ffprobe_stderr_bytes": 0,
+    "ffprobe_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "frame_count": 121,
+    "frame_rate": 24.119601328903656,
+    "full_decode_exit_code": 0,
+    "height": 720,
+    "metadata_safety": "PASS",
+    "nonfatal_decode_diagnostic_present": false,
+    "pixel_format": "yuv420p",
+    "rotation": 0,
+    "technical_result": "PASS",
+    "video_stream_count": 1,
+    "width": 1280
+  },
+  "process_launched": true,
+  "provider_task_failure_inferred": false,
+  "push_call": false,
+  "raw_stderr_persisted": false,
+  "raw_stdout_persisted": false,
+  "reference_id": "ACTION_REF_IMPACT_02",
+  "reference_leakage_reviewed": false,
+  "return_code": 0,
+  "route_a_capability_proven": false,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_DOWNLOAD_RECEIPT_V0_1",
+  "second_impact_call": false,
+  "shell": false,
+  "start": "2026-07-26T16:24:47.945Z",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 4043,
+  "stdout_sha256": "a2787303b28f137c30c490ab4bd06259b2e0ce8b53a39b9eb6c3d2991709369b",
+  "timeout": false,
+  "visual_success_known": false
+}

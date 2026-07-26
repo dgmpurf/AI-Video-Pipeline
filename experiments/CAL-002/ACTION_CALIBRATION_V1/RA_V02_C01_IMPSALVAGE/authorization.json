@@ -1,0 +1,206 @@
+{
+  "allowed_return_codes": [
+    0,
+    1
+  ],
+  "approval_bytes": 4118,
+  "approval_sha256": "8b572765e2077cb04deff3357f11e457d05f8dc113afefd6b5535de25ca29d2e",
+  "approval_text": "APPROVE_CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_IMPACT_MEDIA_FIRST_SINGLE_DOWNLOAD_V0_1__BIND_CURRENT_CHECKPOINT_43136845F0574E8C9C6936BF94BB51364CD26567__BIND_PUSH_SALVAGE_REPORT_BYTES_5118__BIND_PUSH_SALVAGE_REPORT_SHA256_3750CCC2ACC8C14A316CBCA9C573985F8DEBD57BFC4F3B0E46AD4AC3BE3B475A__BIND_PUSH_SALVAGE_EVIDENCE_MANIFEST_GIT_BLOB_0257E67896953B92DD5159D265B110FF860B189B_AND_REQUIRE_WORKTREE_EQUALS_HEAD_AND_FRESH_BYTES_SHA256_RECORDING__BIND_PUSH_SALVAGE_TECHNICAL_RECORD_BYTES_2966__BIND_PUSH_SALVAGE_TECHNICAL_RECORD_SHA256_B1EB91783EC3A33C57D09DB6EFC09F640AC779D961AEE8E3B49AD702A9383B1F__BIND_PUSH_CANONICAL_MEDIA_BYTES_3031614__BIND_PUSH_CANONICAL_MEDIA_SHA256_015FBB4DCB1624268314466408FC56A61E73A1EFE529DA774225A4513AAE7D40__BIND_PUSH_SALVAGE_EXECUTION_RECORD_BYTES_4209__BIND_PUSH_SALVAGE_EXECUTION_RECORD_SHA256_626DA903A4D8867A1A824C66BFBE37BE48DB60E0AF71382B5832DF5BD28283A3__BIND_IMPACT_QUERY_RECEIPT_BYTES_2340__BIND_IMPACT_QUERY_RECEIPT_SHA256_F8407729A21AB68048B5BF3508B1EB047433BCCA29E614708D69D8A05DE47D45__BIND_ROUTERA_PUSH_V02_C01_SUBMIT_ID_5FF0BA35-5A2C-445A-8343-C95F31CAAF4A__BIND_ROUTERA_IMPACT_V02_C01_SUBMIT_ID_4C8B6184-7C0A-4B41-95F5-E215E35F195B__ACCEPT_PUSH_MEDIA_FIRST_SALVAGE_SUCCESS_USABLE_MEDIA_WITH_ZERO_EXIT_BYTE_PRESERVING_MOVE_FFPROBE_FULL_DECODE_AND_METADATA_SAFETY_PASS__ACCEPT_PUSH_COMPLETE_VISUAL_REVIEW_NOT_YET_PERFORMED_VISUAL_SUCCESS_REFERENCE_LEAKAGE_MOTION_ONLY_BEHAVIOR_AND_ROUTE_A_CAPABILITY_REMAIN_UNKNOWN__ACCEPT_IMPACT_REMOTE_TASK_SUCCESS_FINISH_RESULT_ONE_VIDEO_ONE_TERMINAL_PROVIDER_GENERATION_SUCCESS_TRUE_AND_DOWNLOAD_READY_TRUE__AUTHORIZE_FIXED_WINDOWS_CLI_C_USERS_MSJPURF_BIN_DREAMINA_EXE__AUTHORIZE_UP_TO_THREE_PRE_ACTIVATION_OFFLINE_HANDLER_OR_HARNESS_SELF_TEST_ITERATIONS_AND_LOCAL_FIXES_WITH_ZERO_DREAMINA_CALLS_ZERO_REPOSITORY_WRITES_AND_FINAL_ALL_TESTS_PASS_REQUIRED__AUTHORIZE_EXACTLY_ONE_IMPACT_ONLY_QUERY_RESULT_DOWNLOAD_CALL_FOR_BOUND_IMPACT_SUBMIT_ID_USING_NEW_ABSENT_EPHEMERAL_SAME_VOLUME_ROOT_G_AICODING_AI_VIDEO_TMP_RA_V02_C01_DL_IMPACT_SALVAGE_R1__REQUIRE_EXACT_SIX_ELEMENT_ARGV_SHELL_FALSE_ONE_SUBMIT_ID_ONE_DOWNLOAD_DIR_ZERO_PUSH_CALLS_AND_NO_SECOND_IMPACT_CALL__AUTHORIZE_MEDIA_FIRST_ACCEPTANCE_WHEN_PROCESS_LAUNCHED_TIMEOUT_FALSE_NO_LAUNCH_EXCEPTION_RETURN_CODE_ZERO_OR_ONE_AUTHORITATIVE_QUERY_STATUS_REMAINS_SUCCESS_FINISH_EXACTLY_ONE_NEW_NONEMPTY_REGULAR_MP4_NO_UNEXPECTED_FILES_FFPROBE_PASS_FULL_DECODE_PASS_METADATA_SAFETY_PASS_AND_NO_EXPLICIT_SANITIZED_FAILURE_CONTRADICTION__DO_NOT_REQUIRE_PARSEABLE_STDOUT_RESPONSE_SUBMIT_ID_FRESH_TEXTUAL_SUCCESS_OR_RETURN_CODE_ZERO_WHEN_BOUND_ARGV_AUTHORITATIVE_QUERY_RECEIPT_ISOLATED_FILESYSTEM_DELTA_AND_COMPLETE_MEDIA_VALIDATION_PASS__REQUIRE_RETURN_CODE_ONE_CLASSIFICATION_USABLE_MEDIA_WITH_NONZERO_EXIT_CLI_ANOMALY_TRUE_PROVIDER_TASK_FAILURE_INFERRED_FALSE__REQUIRE_DURABLE_PRE_PARSE_PROCESS_CHECKPOINT_WITH_RETURN_CODE_STDOUT_STDERR_LENGTHS_HASHES_TIMESTAMPS_TIMEOUT_EXCEPTION_CLASS_AND_PRE_POST_FILESYSTEM_SNAPSHOTS_BEFORE_ANY_PARSE__AUTHORIZE_AT_MOST_THREE_STRICTLY_SANITIZED_ERROR_EXCERPTS_MAXIMUM_200_CHARACTERS_EACH_WITHOUT_URL_TOKEN_COOKIE_AUTHORIZATION_SESSION_ACCOUNT_PRIVATE_PAYLOAD_OR_RAW_PROVIDER_OBJECT__AUTHORIZE_ON_MEDIA_FIRST_SUCCESS_BYTE_PRESERVING_MOVE_ONLY_TO_RA_V02_C01_IMPSALVAGE_MEDIA_ROUTERA_IMPACT_V02_C01_MP4_POST_MOVE_FFPROBE_FULL_DECODE_AND_EXACTLY_EIGHT_NEW_ARTIFACTS_GOVERNANCE_REPORT_EVIDENCE_MANIFEST_COMMIT_AND_PUSH__AUTHORIZE_ON_FAILURE_EXACTLY_SEVEN_SANITIZED_EVIDENCE_ARTIFACTS_WITH_NO_MEDIA_GOVERNANCE_REPORT_EVIDENCE_MANIFEST_COMMIT_AND_PUSH__STOP_AFTER_SINGLE_IMPACT_CALL_NO_PUSH_NO_SECOND_IMPACT_NO_HELP_NO_VERSION_NO_USER_CREDIT_NO_ADDITIONAL_QUERY_ONLY_NO_RETRY_NO_RESUBMIT_NO_NEW_SUBMIT_NO_BATCH_NO_LOGIN_NO_CHECKLOGIN_NO_SESSION_MUTATION_NO_LIST_TASK_NO_R02__NO_SOURCE_CHANGE_NO_PRIOR_MEDIA_CHANGE_NO_PRODUCTION_REENTRY_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__SET_IMPACT_MEDIA_SUCCESS_NEXT_PHASE_CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_COMPLETE_MP4_HUMAN_REVIEW__SET_IMPACT_MEDIA_FAILURE_NEXT_PHASE_CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_DOWNLOAD_FAILURE_RECOVERY_HUMAN_DECISION__ONE_TIME_NON_REUSABLE",
+  "argv": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "query_result",
+    "--submit_id",
+    "4c8b6184-7c0a-4b41-95f5-e215e35f195b",
+    "--download_dir",
+    "G:/AICODING/AI_VIDEO/.tmp/RA_V02_C01_DL_IMPACT_SALVAGE_R1"
+  ],
+  "argv_bytes": 182,
+  "argv_sha256": "9446946d56392f25e90db2fac77a80bbf8e9f0e668a570ecdcf116010b306de2",
+  "authorization_activated": true,
+  "authorization_consumed": true,
+  "authorization_reusable": false,
+  "bound_impact_submit_id": "4c8b6184-7c0a-4b41-95f5-e215e35f195b",
+  "checkpoint_root_identifier": "RA_V02_C01_DL_IMPACT_SALVAGE_R1_STATE",
+  "continuity_only_push_submit_id": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a",
+  "download_root_identifier": "RA_V02_C01_DL_IMPACT_SALVAGE_R1",
+  "execution_id": "CAL002-ROUTE-A-V0-2-C01-IMPACT-MEDIA-FIRST-SALVAGE-R1",
+  "failure_write_set": [
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/authorization.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/diagnostics/process_checkpoint.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/downloads/impact.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/diagnostics/failure_analysis.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/execution.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/evidence_manifest.json",
+    "reports/CAL002_RA_V02_C01_IMPSALVAGE_RESULT.md"
+  ],
+  "final_passing_iteration": {
+    "cross_drive_commonpath_call_count": 0,
+    "cross_drive_pass_count": 15,
+    "cross_drive_test_count": 15,
+    "dreamina_calls": 0,
+    "error_count": 0,
+    "error_test_ids": [],
+    "failure_count": 0,
+    "failure_test_ids": [],
+    "handler": {
+      "bytes": 74213,
+      "path": "impact_handler.py",
+      "sha256": "4944eba2886dbe56580a74cc24e0296e51fbac88994eaa79c55254474b1519e6"
+    },
+    "handler_filename": "impact_handler.py",
+    "harness": {
+      "bytes": 41920,
+      "path": "test_impact_handler.py",
+      "sha256": "9c39578a0e72d04842f653f055b04bf524a404723ab0f38a247f93ce4be110ad"
+    },
+    "harness_filename": "test_impact_handler.py",
+    "iteration": 2,
+    "overall_result": "PASS",
+    "pass_count": 174,
+    "provider_calls": 0,
+    "push_media_unchanged": true,
+    "repository_status_unchanged": true,
+    "repository_writes": 0,
+    "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_SELFTEST_RESULT_V0_1",
+    "skip_count": 0,
+    "skipped_test_ids": [],
+    "suite_invocation_count": 2,
+    "test_count": 174
+  },
+  "goal_identity": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_IMPACT_MEDIA_FIRST_SINGLE_DOWNLOAD_V0_1",
+  "help_version_user_credit_query_only_calls_authorized": 0,
+  "impact_calls_authorized": 1,
+  "impact_query_receipt_binding": {
+    "bytes": 2340,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/queries/impact.json",
+    "sha256": "f8407729a21ab68048b5bf3508b1eb047433bcca29e614708d69d8a05de47d45",
+    "worktree_equals_head": true
+  },
+  "matched_pair_id": "CAL002-ROUTE-A-V0-2-C01-MATCHED-PAIR",
+  "maximum_dreamina_calls": 1,
+  "push_calls_authorized": 0,
+  "push_salvage_bindings": {
+    "push_canonical_media": {
+      "bytes": 3031614,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/media/ROUTEA_PUSH_V02_C01.mp4",
+      "sha256": "015fbb4dcb1624268314466408fc56a61e73a1efe529da774225a4513aae7d40",
+      "worktree_equals_head": true
+    },
+    "push_execution_record": {
+      "bytes": 4209,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/execution.json",
+      "sha256": "626da903a4d8867a1a824c66bfbe37be48db60e0af71382b5832df5bd28283a3",
+      "worktree_equals_head": true
+    },
+    "push_salvage_manifest": {
+      "bytes": 6518,
+      "git_blob": "0257e67896953b92dd5159d265b110ff860b189b",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/evidence_manifest.json",
+      "sha256": "94edf6fce2cda74edf2dc2c51707a63219b7f91d1828e3a56d30d5edbd17033a",
+      "worktree_equals_head": true
+    },
+    "push_salvage_report": {
+      "bytes": 5118,
+      "path": "reports/CAL002_RA_V02_C01_DLSALVAGE_RESULT.md",
+      "sha256": "3750ccc2acc8c14a316cbca9c573985f8debd57bfc4f3b0e46ad4ac3be3b475a",
+      "worktree_equals_head": true
+    },
+    "push_technical_record": {
+      "bytes": 2966,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/technical/push.json",
+      "sha256": "b1eb91783ec3a33c57d09db6efc09f640ac779d961aee8e3b49ad702a9383b1f",
+      "worktree_equals_head": true
+    }
+  },
+  "r02_authorized": false,
+  "retry_resubmit_new_submit_batch_authorized": false,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_AUTHORIZATION_V0_1",
+  "second_impact_calls_authorized": 0,
+  "self_test_iteration_summaries": [
+    {
+      "authorization_activated": false,
+      "cross_drive_commonpath_call_count": 0,
+      "cross_drive_pass_count": 15,
+      "cross_drive_test_count": 15,
+      "dreamina_calls": 0,
+      "error_count": 0,
+      "error_test_ids": [],
+      "failure_count": 0,
+      "failure_test_ids": [],
+      "handler": {
+        "bytes": 72894,
+        "path": "impact_handler.py",
+        "sha256": "7c3ad14b597bf2c59b039b59d1f6d5ba0b3ff46662f2b03541e1d651dd12adc7"
+      },
+      "handler_filename": "impact_handler.py",
+      "harness": {
+        "bytes": 40697,
+        "path": "test_impact_handler.py",
+        "sha256": "2ae099fc1cea7f88363dcb4df36ac63d4bd8224f3d81cb6725e63cc2aea1bfaf"
+      },
+      "harness_filename": "test_impact_handler.py",
+      "integrated_pre_activation_failure": "PUSH_BINDING_ATTESTATION_COMPARISON_FALSE_POSITIVE",
+      "integrated_pre_activation_result": "FAIL",
+      "iteration": 1,
+      "overall_result": "PASS",
+      "pass_count": 171,
+      "process_start_attempted": false,
+      "provider_calls": 0,
+      "push_media_unchanged": true,
+      "repository_status_unchanged": true,
+      "repository_writes": 0,
+      "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_SELFTEST_RESULT_V0_1",
+      "skip_count": 0,
+      "skipped_test_ids": [],
+      "suite_invocation_count": 1,
+      "test_count": 171
+    },
+    {
+      "cross_drive_commonpath_call_count": 0,
+      "cross_drive_pass_count": 15,
+      "cross_drive_test_count": 15,
+      "dreamina_calls": 0,
+      "error_count": 0,
+      "error_test_ids": [],
+      "failure_count": 0,
+      "failure_test_ids": [],
+      "handler": {
+        "bytes": 74213,
+        "path": "impact_handler.py",
+        "sha256": "4944eba2886dbe56580a74cc24e0296e51fbac88994eaa79c55254474b1519e6"
+      },
+      "handler_filename": "impact_handler.py",
+      "harness": {
+        "bytes": 41920,
+        "path": "test_impact_handler.py",
+        "sha256": "9c39578a0e72d04842f653f055b04bf524a404723ab0f38a247f93ce4be110ad"
+      },
+      "harness_filename": "test_impact_handler.py",
+      "iteration": 2,
+      "overall_result": "PASS",
+      "pass_count": 174,
+      "provider_calls": 0,
+      "push_media_unchanged": true,
+      "repository_status_unchanged": true,
+      "repository_writes": 0,
+      "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_SELFTEST_RESULT_V0_1",
+      "skip_count": 0,
+      "skipped_test_ids": [],
+      "suite_invocation_count": 2,
+      "test_count": 174
+    }
+  ],
+  "self_test_iterations_authorized": 3,
+  "self_test_iterations_performed": 2,
+  "starting_checkpoint": "43136845f0574e8c9c6936bf94bb51364cd26567",
+  "success_write_set": [
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/authorization.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/diagnostics/process_checkpoint.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/downloads/impact.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/technical/impact.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/media/ROUTEA_IMPACT_V02_C01.mp4",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/execution.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/evidence_manifest.json",
+    "reports/CAL002_RA_V02_C01_IMPSALVAGE_RESULT.md"
+  ]
+}

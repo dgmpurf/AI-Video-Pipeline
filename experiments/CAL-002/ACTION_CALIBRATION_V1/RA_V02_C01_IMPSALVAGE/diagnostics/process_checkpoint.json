@@ -1,0 +1,63 @@
+{
+  "checkpoint_reread_validation": "PASS",
+  "checkpoint_written_before_parse": true,
+  "external_checkpoint_bytes": 2664,
+  "external_checkpoint_schema": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_PRE_PARSE_CHECKPOINT_V0_1",
+  "external_checkpoint_sha256": "b5fa3e170b949d97e8ddf1ae5744b0296bd297e08f7f4f7ad86dcad38b508114",
+  "process": {
+    "elapsed_seconds": 8.93,
+    "filesystem_delta": {
+      "added": [
+        {
+          "bytes": 2304263,
+          "path_escape": false,
+          "relative_path": "4c8b6184-7c0a-4b41-95f5-e215e35f195b_video_1.mp4",
+          "reparse_point": false,
+          "sha256": "7368cf7f0748b54e928869de7eeb78c47ad71190cb3ff1d27937bdaa349dfb0e",
+          "symlink": false,
+          "type": "file"
+        }
+      ],
+      "changed": [],
+      "removed": []
+    },
+    "launch_exception_class": null,
+    "post_call_filesystem_snapshot": {
+      "entries": [
+        {
+          "bytes": 2304263,
+          "path_escape": false,
+          "relative_path": "4c8b6184-7c0a-4b41-95f5-e215e35f195b_video_1.mp4",
+          "reparse_point": false,
+          "sha256": "7368cf7f0748b54e928869de7eeb78c47ad71190cb3ff1d27937bdaa349dfb0e",
+          "symlink": false,
+          "type": "file"
+        }
+      ],
+      "entry_count": 1,
+      "regular_file_count": 1,
+      "root_existed": true,
+      "root_identifier": "RA_V02_C01_DL_IMPACT_SALVAGE_R1"
+    },
+    "pre_call_filesystem_snapshot": {
+      "entries": [],
+      "entry_count": 0,
+      "regular_file_count": 0,
+      "root_existed": false,
+      "root_identifier": "RA_V02_C01_DL_IMPACT_SALVAGE_R1"
+    },
+    "process_end_timestamp": "2026-07-26T16:24:56.875Z",
+    "process_launched": true,
+    "process_start_timestamp": "2026-07-26T16:24:47.945Z",
+    "raw_stderr_persisted": false,
+    "raw_stdout_persisted": false,
+    "return_code": 0,
+    "signed_url_persisted": false,
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_byte_length": 4043,
+    "stdout_sha256": "a2787303b28f137c30c490ab4bd06259b2e0ce8b53a39b9eb6c3d2991709369b",
+    "timeout": false
+  },
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_REPOSITORY_PROCESS_CHECKPOINT_V0_1"
+}

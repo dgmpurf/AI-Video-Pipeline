@@ -1,0 +1,85 @@
+{
+  "byte_preserving_move": {
+    "bytes_preserved": true,
+    "canonical_media_nonempty": true,
+    "result": "PASS",
+    "sha256_preserved": true,
+    "temporary_candidate_removed": true
+  },
+  "canonical_media": {
+    "bytes": 2304263,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/media/ROUTEA_IMPACT_V02_C01.mp4",
+    "sha256": "7368cf7f0748b54e928869de7eeb78c47ad71190cb3ff1d27937bdaa349dfb0e"
+  },
+  "cli_nonzero_exit_anomaly": false,
+  "complete_mp4_visual_review": false,
+  "download_outcome_classification": "USABLE_MEDIA_WITH_ZERO_EXIT",
+  "matched_pair_continuity": {
+    "impact_canonical_media": {
+      "bytes": 2304263,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/media/ROUTEA_IMPACT_V02_C01.mp4",
+      "sha256": "7368cf7f0748b54e928869de7eeb78c47ad71190cb3ff1d27937bdaa349dfb0e"
+    },
+    "push_canonical_media": {
+      "bytes": 3031614,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/media/ROUTEA_PUSH_V02_C01.mp4",
+      "sha256": "015fbb4dcb1624268314466408fc56a61e73a1efe529da774225a4513aae7d40"
+    },
+    "push_technical_result": "PASS"
+  },
+  "motion_only_behavior_verified": false,
+  "post_move": {
+    "audio_stream_count": 1,
+    "codec": "h264",
+    "container_names": "mov,mp4,m4a,3gp,3g2,mj2",
+    "decode_stderr_bytes": 0,
+    "decode_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "duration_seconds": 5.085011,
+    "failure_reasons": [],
+    "fatal_decode_error": false,
+    "ffprobe_exit_code": 0,
+    "ffprobe_stderr_bytes": 0,
+    "ffprobe_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "frame_count": 121,
+    "frame_rate": 24.119601328903656,
+    "full_decode_exit_code": 0,
+    "height": 720,
+    "metadata_safety": "PASS",
+    "nonfatal_decode_diagnostic_present": false,
+    "pixel_format": "yuv420p",
+    "rotation": 0,
+    "technical_result": "PASS",
+    "video_stream_count": 1,
+    "width": 1280
+  },
+  "pre_move": {
+    "audio_stream_count": 1,
+    "codec": "h264",
+    "container_names": "mov,mp4,m4a,3gp,3g2,mj2",
+    "decode_stderr_bytes": 0,
+    "decode_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "duration_seconds": 5.085011,
+    "failure_reasons": [],
+    "fatal_decode_error": false,
+    "ffprobe_exit_code": 0,
+    "ffprobe_stderr_bytes": 0,
+    "ffprobe_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "frame_count": 121,
+    "frame_rate": 24.119601328903656,
+    "full_decode_exit_code": 0,
+    "height": 720,
+    "metadata_safety": "PASS",
+    "nonfatal_decode_diagnostic_present": false,
+    "pixel_format": "yuv420p",
+    "rotation": 0,
+    "technical_result": "PASS",
+    "video_stream_count": 1,
+    "width": 1280
+  },
+  "process_return_code": 0,
+  "reference_leakage_reviewed": false,
+  "route_a_capability_proven": false,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_TECHNICAL_RECORD_V0_1",
+  "technical_result": "PASS",
+  "visual_success_known": false
+}

@@ -1,0 +1,203 @@
+{
+  "actual_decision": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_SALVAGE_SUCCESS",
+  "actual_dreamina_calls": 1,
+  "actual_next_phase": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_COMPLETE_MP4_HUMAN_REVIEW",
+  "complete_visual_review": false,
+  "download_outcome_classification": "USABLE_MEDIA_WITH_ZERO_EXIT",
+  "external_checkpoint_result": "PASS",
+  "filesystem_result": {
+    "archive_count": 0,
+    "candidate_entries": [
+      {
+        "bytes": 2304263,
+        "path_escape": false,
+        "relative_path": "4c8b6184-7c0a-4b41-95f5-e215e35f195b_video_1.mp4",
+        "reparse_point": false,
+        "sha256": "7368cf7f0748b54e928869de7eeb78c47ad71190cb3ff1d27937bdaa349dfb0e",
+        "symlink": false,
+        "type": "file"
+      }
+    ],
+    "executable_count": 0,
+    "files_outside_root": 0,
+    "junction_count": 0,
+    "mp4_candidate_count": 1,
+    "new_nonempty_regular_file_count": 1,
+    "overwritten_file_count": 0,
+    "path_escape_count": 0,
+    "post_call_entry_count": 1,
+    "pre_call_entry_count": 0,
+    "pre_call_regular_file_count": 0,
+    "regular_file_count": 1,
+    "removed_file_count": 0,
+    "reparse_point_count": 0,
+    "result": "PASS",
+    "sidecar_count": 0,
+    "symlink_count": 0,
+    "unexpected_file_count": 0
+  },
+  "final_passing_self_test": {
+    "cross_drive_commonpath_call_count": 0,
+    "cross_drive_pass_count": 15,
+    "cross_drive_test_count": 15,
+    "dreamina_calls": 0,
+    "error_count": 0,
+    "error_test_ids": [],
+    "failure_count": 0,
+    "failure_test_ids": [],
+    "handler": {
+      "bytes": 74213,
+      "path": "impact_handler.py",
+      "sha256": "4944eba2886dbe56580a74cc24e0296e51fbac88994eaa79c55254474b1519e6"
+    },
+    "handler_filename": "impact_handler.py",
+    "harness": {
+      "bytes": 41920,
+      "path": "test_impact_handler.py",
+      "sha256": "9c39578a0e72d04842f653f055b04bf524a404723ab0f38a247f93ce4be110ad"
+    },
+    "harness_filename": "test_impact_handler.py",
+    "iteration": 2,
+    "overall_result": "PASS",
+    "pass_count": 174,
+    "provider_calls": 0,
+    "push_media_unchanged": true,
+    "repository_status_unchanged": true,
+    "repository_writes": 0,
+    "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_SELFTEST_RESULT_V0_1",
+    "skip_count": 0,
+    "skipped_test_ids": [],
+    "suite_invocation_count": 2,
+    "test_count": 174
+  },
+  "fresh_push_manifest_binding": {
+    "bytes": 6518,
+    "git_blob": "0257e67896953b92dd5159d265b110ff860b189b",
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/evidence_manifest.json",
+    "sha256": "94edf6fce2cda74edf2dc2c51707a63219b7f91d1828e3a56d30d5edbd17033a",
+    "worktree_equals_head": true
+  },
+  "help_version_user_credit_query_only_calls": 0,
+  "impact_call_count": 1,
+  "maximum_dreamina_calls": 1,
+  "media_artifact_count": 1,
+  "media_first_result": {
+    "accepted": true,
+    "cli_nonzero_exit_anomaly": false,
+    "download_outcome_classification": "USABLE_MEDIA_WITH_ZERO_EXIT",
+    "provider_task_failure_inferred": false,
+    "result": "PASS"
+  },
+  "motion_only_behavior_verified": false,
+  "process_result": {
+    "elapsed_seconds": 8.93,
+    "end": "2026-07-26T16:24:56.875Z",
+    "launch_exception_class": null,
+    "process_launched": true,
+    "return_code": 0,
+    "start": "2026-07-26T16:24:47.945Z",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_bytes": 4043,
+    "stdout_sha256": "a2787303b28f137c30c490ab4bd06259b2e0ce8b53a39b9eb6c3d2991709369b",
+    "timeout": false
+  },
+  "provider_task_failure_inferred": false,
+  "push_call_count": 0,
+  "push_continuity_result": "PASS",
+  "repository_artifact_count": 8,
+  "retry_resubmit_new_submit_batch_calls": 0,
+  "route_a_capability_proven": false,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_EXECUTION_RECORD_V0_1",
+  "second_impact_call_count": 0,
+  "self_test_iteration_summaries": [
+    {
+      "authorization_activated": false,
+      "cross_drive_commonpath_call_count": 0,
+      "cross_drive_pass_count": 15,
+      "cross_drive_test_count": 15,
+      "dreamina_calls": 0,
+      "error_count": 0,
+      "error_test_ids": [],
+      "failure_count": 0,
+      "failure_test_ids": [],
+      "handler": {
+        "bytes": 72894,
+        "path": "impact_handler.py",
+        "sha256": "7c3ad14b597bf2c59b039b59d1f6d5ba0b3ff46662f2b03541e1d651dd12adc7"
+      },
+      "handler_filename": "impact_handler.py",
+      "harness": {
+        "bytes": 40697,
+        "path": "test_impact_handler.py",
+        "sha256": "2ae099fc1cea7f88363dcb4df36ac63d4bd8224f3d81cb6725e63cc2aea1bfaf"
+      },
+      "harness_filename": "test_impact_handler.py",
+      "integrated_pre_activation_failure": "PUSH_BINDING_ATTESTATION_COMPARISON_FALSE_POSITIVE",
+      "integrated_pre_activation_result": "FAIL",
+      "iteration": 1,
+      "overall_result": "PASS",
+      "pass_count": 171,
+      "process_start_attempted": false,
+      "provider_calls": 0,
+      "push_media_unchanged": true,
+      "repository_status_unchanged": true,
+      "repository_writes": 0,
+      "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_SELFTEST_RESULT_V0_1",
+      "skip_count": 0,
+      "skipped_test_ids": [],
+      "suite_invocation_count": 1,
+      "test_count": 171
+    },
+    {
+      "cross_drive_commonpath_call_count": 0,
+      "cross_drive_pass_count": 15,
+      "cross_drive_test_count": 15,
+      "dreamina_calls": 0,
+      "error_count": 0,
+      "error_test_ids": [],
+      "failure_count": 0,
+      "failure_test_ids": [],
+      "handler": {
+        "bytes": 74213,
+        "path": "impact_handler.py",
+        "sha256": "4944eba2886dbe56580a74cc24e0296e51fbac88994eaa79c55254474b1519e6"
+      },
+      "handler_filename": "impact_handler.py",
+      "harness": {
+        "bytes": 41920,
+        "path": "test_impact_handler.py",
+        "sha256": "9c39578a0e72d04842f653f055b04bf524a404723ab0f38a247f93ce4be110ad"
+      },
+      "harness_filename": "test_impact_handler.py",
+      "iteration": 2,
+      "overall_result": "PASS",
+      "pass_count": 174,
+      "provider_calls": 0,
+      "push_media_unchanged": true,
+      "repository_status_unchanged": true,
+      "repository_writes": 0,
+      "schema_version": "CAL002_ROUTE_A_V0_2_C01_IMPACT_MEDIA_FIRST_SELFTEST_RESULT_V0_1",
+      "skip_count": 0,
+      "skipped_test_ids": [],
+      "suite_invocation_count": 2,
+      "test_count": 174
+    }
+  ],
+  "self_test_iterations_authorized": 3,
+  "self_test_iterations_performed": 2,
+  "starting_checkpoint": "43136845f0574e8c9c6936bf94bb51364cd26567",
+  "technical_result": "PASS",
+  "temporary_cleanup_result": {
+    "checkpoint_root_cleaned": true,
+    "download_root_cleaned": true,
+    "selftest_roots_cleaned": true,
+    "status": "PASS",
+    "temporary_regular_files_remaining": 0
+  },
+  "toolchain": {
+    "ffmpeg": "ffmpeg version 2023-03-27-git-f7abe92bd7-full_build-www.gyan.dev Copyright (c) 2000-2023 the FFmpeg developers",
+    "ffprobe": "ffprobe version 2023-03-27-git-f7abe92bd7-full_build-www.gyan.dev Copyright (c) 2007-2023 the FFmpeg developers",
+    "python": "Python 3.10.11"
+  }
+}
