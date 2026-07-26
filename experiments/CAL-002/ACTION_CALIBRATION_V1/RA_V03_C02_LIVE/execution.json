@@ -1,0 +1,52 @@
+{
+  "actual_decision": "CAL002_ROUTE_A_V0_3_C02_MATCHED_PAIR_SUBMIT_SUCCESS",
+  "actual_dreamina_process_count": 5,
+  "actual_next_phase": "CAL002_ROUTE_A_V0_3_MATCHED_PAIR_CANARY_C02_QUERY_AUTHORIZATION_HUMAN_DECISION",
+  "actual_pair_decrement": 280,
+  "actual_process_order": [
+    "dreamina version",
+    "dreamina user_credit",
+    "dreamina multimodal2video -h",
+    "PUSH multimodal2video submit",
+    "IMPACT multimodal2video submit"
+  ],
+  "baseline_total_credit": 3821,
+  "batch_call_count": 0,
+  "both_submit_ids": [
+    "e0d50a2a-d8c8-4d32-9838-a76a8cad4fed",
+    "8f4e9bf1-bdce-4653-a92a-6041dcf779c3"
+  ],
+  "command_contract_validation": "PASS",
+  "complete_mp4_review_performed": false,
+  "credit_guard_before_impact": "PASS",
+  "download_call_count": 0,
+  "evidence_manifest_coverage": "6/6",
+  "goal_identity": "CAL002_ROUTE_A_V0_3_MATCHED_PAIR_CANARY_C02_MAX_TWO_SUBMIT_ONLY_LIVE_CAUSAL_ISOLATION_V0_1",
+  "help_call_count": 1,
+  "impact_acceptance_result": true,
+  "impact_credit_count": 140,
+  "impact_submit_call_count": 1,
+  "maximum_dreamina_process_count": 5,
+  "projected_pair_decrement": 280,
+  "protected_state_result": "PASS",
+  "provider_final_generation_success_known": false,
+  "push_acceptance_result": true,
+  "push_credit_count": 140,
+  "push_submit_call_count": 1,
+  "query_call_count": 0,
+  "repository_write_set_result": "PENDING_FINAL_VALIDATION",
+  "resubmit_call_count": 0,
+  "retry_call_count": 0,
+  "route_a_capability_proven": false,
+  "schema_version": "CAL002_ROUTE_A_V0_3_C02_SUBMIT_EXECUTION_RECORD_V0_1",
+  "sensitive_data_result": "PASS",
+  "starting_checkpoint": {
+    "branch": "main",
+    "head": "f7f065fc3c69820377b59c51a2ca28515cf514a7",
+    "origin_main": "f7f065fc3c69820377b59c51a2ca28515cf514a7",
+    "parent": "7c224daba162f14a3026e2f6dbef72bb26fbfe34"
+  },
+  "submit_ids_unique": true,
+  "user_credit_call_count": 1,
+  "version_call_count": 1
+}
