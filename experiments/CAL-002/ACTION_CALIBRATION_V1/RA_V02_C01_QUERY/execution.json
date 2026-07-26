@@ -1,0 +1,88 @@
+{
+  "actual_call_counts": {
+    "help": 1,
+    "impact_query": 0,
+    "push_query": 0,
+    "task_queries": 0,
+    "total_cli": 1
+  },
+  "actual_decision": "CAL002_ROUTE_A_V0_2_C01_QUERY_STOPPED_HELP_CONTRACT_FAILURE",
+  "actual_next_phase": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_QUERY_FAILURE_HUMAN_DECISION",
+  "authorization_activated": true,
+  "authorization_consumed": true,
+  "authorization_reusable": false,
+  "batch_called": false,
+  "chronological_cli_call_sequence": [
+    "query_result_help"
+  ],
+  "download_called": false,
+  "download_ready_task_count": 0,
+  "failed_task_count": 0,
+  "final_master": false,
+  "fixed_task_completion": false,
+  "goal_identity": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_MAX_TWO_QUERY_ONLY_V0_1",
+  "implicit_requery_used": false,
+  "locked": false,
+  "matched_pair_id": "CAL002-ROUTE-A-V0-2-C01-MATCHED-PAIR",
+  "maximum_call_counts": {
+    "help": 1,
+    "impact_query": 1,
+    "push_query": 1,
+    "task_queries": 2,
+    "total_cli": 3
+  },
+  "media_changed": false,
+  "new_submit_called": false,
+  "nonterminal_task_count": 0,
+  "ordered_submit_bindings": [
+    {
+      "alias": "ROUTEA_PUSH_V02_C01",
+      "query_call_count": 0,
+      "submit_id": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a"
+    },
+    {
+      "alias": "ROUTEA_IMPACT_V02_C01",
+      "query_call_count": 0,
+      "submit_id": "4c8b6184-7c0a-4b41-95f5-e215e35f195b"
+    }
+  ],
+  "original_r02_executed": false,
+  "per_task_results": {
+    "impact": {
+      "download_ready": false,
+      "normalized_status": null,
+      "task_terminal": null,
+      "video_count": null
+    },
+    "push": {
+      "download_ready": false,
+      "normalized_status": null,
+      "task_terminal": null,
+      "video_count": null
+    }
+  },
+  "production_approved": false,
+  "production_reentry_authorized": false,
+  "protected_files_changed": false,
+  "provider_motion_only_behavior_verified": false,
+  "query_execution_id": "CAL002-ROUTE-A-V0-2-C01-QUERY-ONLY-V0-1",
+  "query_loop_used": false,
+  "resubmit_called": false,
+  "retry_called": false,
+  "route_a_capability_proven": false,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_QUERY_EXECUTION_RECORD_V0_1",
+  "sources_changed": false,
+  "starting_checkpoint": {
+    "branch": "main",
+    "commit_message": "live(cal002): submit Route A V0.2 matched-pair canaries",
+    "head": "1efbf521635b61df26bab834ce987be47f0ce6b2",
+    "origin_main": "1efbf521635b61df26bab834ce987be47f0ce6b2",
+    "parent": "962ad751cef9b4a51f1aafe91c3e5ba76c3d13da"
+  },
+  "stop_reason": "The required Help process and all three required literal tokens passed, but the local parser added a non-required exact-one-submit-line condition. Valid Help text mentions --submit_id once in usage and once in flag documentation, so that local overconstraint produced a false failure. Because the one-time authority was already consumed, neither task query was called.",
+  "stop_stage": "query_result_help_contract_validation",
+  "successful_task_count": 0,
+  "url_opened": false,
+  "user_credit_called": false,
+  "version_called": false
+}

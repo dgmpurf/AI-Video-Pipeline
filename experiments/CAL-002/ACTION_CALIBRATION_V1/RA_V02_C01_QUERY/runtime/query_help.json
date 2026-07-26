@@ -1,0 +1,52 @@
+{
+  "decision": "CAL002_ROUTE_A_V0_2_C01_QUERY_STOPPED_HELP_CONTRACT_FAILURE",
+  "help_contract": {
+    "download_dir_marked_required": false,
+    "download_dir_optional_established": true,
+    "download_dir_token_found": true,
+    "download_dir_token_line_count": 1,
+    "help_contract_result": false,
+    "local_parser_false_positive": true,
+    "local_parser_overconstraint": "required exactly one nonempty line containing --submit_id",
+    "omitting_download_dir_requests_download": false,
+    "query_result_found": true,
+    "required_literal_token_validation": "PASS",
+    "submit_id_is_task_selector": true,
+    "submit_id_token_found": true,
+    "submit_id_token_line_count": 2,
+    "usage_flags_form_found": true
+  },
+  "parser": {
+    "byte_length": 14000,
+    "regex_used": false,
+    "sha256": "3a6aefb22da4e704f1ce50f7871f32b11d44667c817f57ad069c3e89daaf94db"
+  },
+  "process_metadata": {
+    "argv_element_count": 3,
+    "argv_sha256": "df236cb901d90a36378c507ece687e0bae2f1e12dc273b3afeeac12aec8c3026",
+    "elapsed_seconds": 2.515,
+    "end_utc": "2026-07-26T11:43:29.925776Z",
+    "exit_code": 0,
+    "name": "query_result_help",
+    "raw_help_output_persisted": false,
+    "sensitive_data_detected": false,
+    "sensitive_data_persisted": false,
+    "start_utc": "2026-07-26T11:43:27.409651Z",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_utf8": true,
+    "stdout_byte_length": 388,
+    "stdout_sha256": "74f728cc4d3ae36fb3dcf773e85ed003637c28d048d1cad77a29b59b9bd4b171",
+    "stdout_utf8": true,
+    "timed_out": false
+  },
+  "query_execution_id": "CAL002-ROUTE-A-V0-2-C01-QUERY-ONLY-V0-1",
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_QUERY_HELP_RECORD_V0_1",
+  "self_test": {
+    "dreamina_calls": 0,
+    "pass_count": 12,
+    "repository_writes": 0,
+    "test_count": 12
+  },
+  "stop_reason": "The required Help process and all three required literal tokens passed, but the local parser added a non-required exact-one-submit-line condition. Valid Help text mentions --submit_id once in usage and once in flag documentation, so that local overconstraint produced a false failure. Because the one-time authority was already consumed, neither task query was called."
+}

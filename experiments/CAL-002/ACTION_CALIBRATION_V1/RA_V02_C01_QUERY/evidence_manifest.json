@@ -1,0 +1,167 @@
+{
+  "artifact_count": 6,
+  "artifacts": [
+    {
+      "byte_length": 6086,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/authorization.json",
+      "role": "query_authorization",
+      "sha256": "09fba55284c3821a9debd35b6bb0a99eb70037e4cd32921ef335debd21799a91"
+    },
+    {
+      "byte_length": 2273,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/runtime/query_help.json",
+      "role": "query_help_record",
+      "sha256": "a3a9aee0fbc8b5f39e795695c5425f111b9a17367f3b9c20ff35660252336b0b"
+    },
+    {
+      "byte_length": 2053,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/queries/push.json",
+      "role": "push_query_receipt",
+      "sha256": "b5909123a943541abd98e6a8d270fb25d5acdb4969cad03c4f8f291002293ac3"
+    },
+    {
+      "byte_length": 2005,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/queries/impact.json",
+      "role": "impact_query_receipt",
+      "sha256": "38e29a798493f5d1972714eb422515b5a6b4425611f3fe30e1a2e34a1b9a5db8"
+    },
+    {
+      "byte_length": 3061,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/execution.json",
+      "role": "query_execution_record",
+      "sha256": "30ef625611abfdf46f12d3034173a24b5812eeebf9e10a07ce9945edde33f1f0"
+    },
+    {
+      "byte_length": 6972,
+      "path": "reports/CAL002_RA_V02_C01_QUERY_RESULT.md",
+      "role": "governance_report",
+      "sha256": "e5e8d53c0750f49256d38b3058c6c3744649c41480335de2b739b82bfae6dbc7"
+    }
+  ],
+  "committed_input_bindings": [
+    {
+      "byte_length": 8320,
+      "path": "reports/CAL002_RA_V02_C01_LIVE_RESULT.md",
+      "role": "live_governance_report",
+      "sha256": "5e1062cf4fb8142467166981138ca5307046ed62a99772fdbb29834300b03d13",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 7193,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/evidence_manifest.json",
+      "role": "live_evidence_manifest",
+      "sha256": "e3a0ef6c8292230ac3b088b4c425f01cf3235a0d8866df8088be00499b652b4a",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2795,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/submissions/push.json",
+      "role": "push_submit_receipt",
+      "sha256": "9ab7cbd4e184c3e02a4e4eb47f1af93c36608e5c72c2ddd9b6a57e5c261f8a81",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2808,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/submissions/impact.json",
+      "role": "impact_submit_receipt",
+      "sha256": "c358190eabd6c7e03e561cda92b13e68adbf29e6c2fd0a9821e119493ff5ebc6",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2518,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/execution.json",
+      "role": "live_execution_record",
+      "sha256": "a620e1975cba3654b39734aaf736ea16c383a72543f069687d04ab4a9e5db99a",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 11936,
+      "path": "reports/CAL002_RA_V02_C01_PREP_RESULT.md",
+      "role": "preparation_report",
+      "sha256": "03c5a80eee2d8f35826f126470f3bdaafcb237f25d4fc9877bb7d9a3aefc6ca0",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 11727,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/push.json",
+      "role": "push_package",
+      "sha256": "87fb8d3905b1e16396fe1634bf2728fc632852ee87bd00cf5c324e5aeabd0e07",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 11781,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/impact.json",
+      "role": "impact_package",
+      "sha256": "86c986feef91241f9107b5342dd261efab188c65a4cf43fe8c0a00a660e46bef",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 7619,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/matched_pair_index.json",
+      "role": "matched_pair_index",
+      "sha256": "ea1150cfcb60e0a2306401560d2574a94550e22209b60cf868eaa09d417414d4",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2887,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/review_contract.json",
+      "role": "review_contract",
+      "sha256": "e753809ce39f191cdc1c6f779f9754c9fb3db2e3c582611663844df860c84baa",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 174235,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "role": "push_reference",
+      "sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 168170,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "role": "impact_reference",
+      "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 14494,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_lock_manifest.json",
+      "role": "review_lock_manifest",
+      "sha256": "ec2d5a6c264b0c3b54932b8ef88373ba20651ad6d45534355cc568581075a8f6",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 18755,
+      "path": "reports/CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_RESULT.md",
+      "role": "review_lock_report",
+      "sha256": "8a6cd332de5ab9b1a16872b84e62ed245e6c80bb088bc8a9151576c3e66eb9de",
+      "worktree_equals_head": true
+    }
+  ],
+  "decision": "CAL002_ROUTE_A_V0_2_C01_QUERY_STOPPED_HELP_CONTRACT_FAILURE",
+  "goal_identity": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_MAX_TWO_QUERY_ONLY_V0_1",
+  "included_artifact_count": 6,
+  "live_submit_checkpoint": {
+    "branch": "main",
+    "commit_message": "live(cal002): submit Route A V0.2 matched-pair canaries",
+    "head": "1efbf521635b61df26bab834ce987be47f0ce6b2",
+    "origin_main": "1efbf521635b61df26bab834ce987be47f0ce6b2",
+    "parent": "962ad751cef9b4a51f1aafe91c3e5ba76c3d13da"
+  },
+  "matched_pair_id": "CAL002-ROUTE-A-V0-2-C01-MATCHED-PAIR",
+  "query_execution_id": "CAL002-ROUTE-A-V0-2-C01-QUERY-ONLY-V0-1",
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_QUERY_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "unique_bound_paths": 6,
+  "validation": {
+    "all_committed_inputs_match": true,
+    "evidence_coverage": "6/6",
+    "existing_file_modification_count": 0,
+    "media_output_path_count": 0,
+    "raw_help_output_persisted": false,
+    "raw_query_output_persisted": false,
+    "sensitive_data_scan": "PASS",
+    "signed_url_persisted": false,
+    "source_path_count": 0
+  }
+}
