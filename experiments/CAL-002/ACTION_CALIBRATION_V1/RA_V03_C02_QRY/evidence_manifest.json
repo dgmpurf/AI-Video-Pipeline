@@ -1,0 +1,98 @@
+{
+  "artifact_count": 6,
+  "committed_input_bindings": {
+    "impact_submit_receipt": {
+      "bytes": 4857,
+      "git_blob": "7bf4a593a1e90a92c5be4eaacbc48407f2859307",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_LIVE/submits/impact.json",
+      "sha256": "de3d9789c09ab103e398fdb8ae3174744c624b9647747a24d0e4d62bb40f7678",
+      "worktree_equals_head": true
+    },
+    "push_submit_receipt": {
+      "bytes": 4841,
+      "git_blob": "56910f4723dde526ca73d1c5c941cc2cb9fecdf0",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_LIVE/submits/push.json",
+      "sha256": "c4af4af40eb07cd46577fabf4c1a9d398be0ce3f1aa1dd97fc44cea85a0bf126",
+      "worktree_equals_head": true
+    },
+    "submit_authorization_record": {
+      "bytes": 11971,
+      "git_blob": "f959d2c31ce15c837bd4530c8ffd5853867dfcf6",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_LIVE/authorization.json",
+      "sha256": "d69fdd001483cd93f88238ebfdf5e01d6fd6db9b70613afc05966804ea1d6c10",
+      "worktree_equals_head": true
+    },
+    "submit_evidence_manifest": {
+      "bytes": 5624,
+      "git_blob": "c057b2f7e1bc9ccd9349c822db220e0b6e8bbd1a",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_LIVE/evidence_manifest.json",
+      "sha256": "4d7a6dac716360cb296fdd237575e8824be712e7527d764422fef6fa09583f0d",
+      "worktree_equals_head": true
+    },
+    "submit_execution_record": {
+      "bytes": 1907,
+      "git_blob": "20c0bc9caac40a3adc8d0739a4f8fc50717989b2",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_LIVE/execution.json",
+      "sha256": "b5f18147b0221aecf30953eec7e9a166091003f1b892f3f123dd64497db2636a",
+      "worktree_equals_head": true
+    },
+    "submit_preflight_record": {
+      "bytes": 16854,
+      "git_blob": "740e0a412fd4a19272fed149a78812bade8b33e7",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_LIVE/preflight.json",
+      "sha256": "9baf00c33d336167c6038c0fb33cb7a27b7c0116d3199a78df45a8659ece0265",
+      "worktree_equals_head": true
+    },
+    "submit_result_report": {
+      "bytes": 5725,
+      "git_blob": "3b286e554e073342f39a3336814e739ac56b879e",
+      "path": "reports/CAL002_RA_V03_C02_SUBMIT_RESULT.md",
+      "sha256": "318b0efe340ccf0d98d099099f6a7fbf14736efaebe55a0419e6f4a5d0024165",
+      "worktree_equals_head": true
+    }
+  },
+  "current_checkpoint": "08a142d1e4bd65460a5a08b49c0e41fb3651e129",
+  "evidence_coverage": "6/6",
+  "included_artifact_count": 6,
+  "output_artifacts": [
+    {
+      "bytes": 5736,
+      "git_blob": "89d436d883f4175cde50b00bc019a2efbaa74378",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/authorization.json",
+      "sha256": "b9d7dda66f6ec090d6a0acd95f5ea6954cf310557bb657ea958ce58707e750aa"
+    },
+    {
+      "bytes": 7329,
+      "git_blob": "5aaba93dcdb141a6c1fd024a65c4f2b090c1d5a8",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/preflight.json",
+      "sha256": "e6f9ee7083519f52f47bf973691c191ab28c454478106394bc2bf121e6bcf97d"
+    },
+    {
+      "bytes": 2108,
+      "git_blob": "21ab2af6b53616f404e06243180f44b43c8ef9de",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/queries/push.json",
+      "sha256": "e20b218fe18a223395721dc0e00a94fe40a23a43fd3668b937e6a5aad8fa47ca"
+    },
+    {
+      "bytes": 2116,
+      "git_blob": "eb64953e033176e025755ace65becd82ebe060e2",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/queries/impact.json",
+      "sha256": "b7eecdc77cc56883cadab84d7d847414d0afb76feede5618a5216f7f83c37e0c"
+    },
+    {
+      "bytes": 1880,
+      "git_blob": "f1cd61d97415dde78d5f75d4c8a56d78d235ce58",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/execution.json",
+      "sha256": "d8548d90e98d3066bd7e7f9e656879534c826dbe15e006ff1c543ae2ddf16659"
+    },
+    {
+      "bytes": 4394,
+      "git_blob": "896cad53f83e9e2dbc91b67d35b1e6e4ceb8e36f",
+      "path": "reports/CAL002_RA_V03_C02_QUERY_RESULT.md",
+      "sha256": "9976f5eaf6db28276c5935d4c5d9e03b699f578115f4c51d45265767231ecf95"
+    }
+  ],
+  "schema_version": "CAL002_ROUTE_A_V0_3_C02_QUERY_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "unique_bound_paths": 6
+}

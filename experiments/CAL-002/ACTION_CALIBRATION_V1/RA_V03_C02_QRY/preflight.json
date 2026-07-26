@@ -1,0 +1,201 @@
+{
+  "actual_call_counts": {
+    "impact_query": 1,
+    "push_query": 1,
+    "query_result_help": 1,
+    "user_credit": 1,
+    "version": 1
+  },
+  "actual_process_count": 5,
+  "actual_process_order": [
+    "dreamina version",
+    "dreamina user_credit",
+    "dreamina query_result -h",
+    "PUSH query_result",
+    "IMPACT query_result"
+  ],
+  "authorization_verification": {
+    "base64_character_count": 5628,
+    "base64_decode_count": 1,
+    "bom": false,
+    "byte_length": 4221,
+    "decoded_bytes_equal_original": true,
+    "decoded_sha256_equal_original": true,
+    "sha256": "31465ed4ab620af5fb122b94b076f8aa76ab3b948069b0d5510e5ed8ca20f5aa",
+    "trailing_carriage_return": false,
+    "trailing_newline": false,
+    "trailing_space": false,
+    "utf8": true
+  },
+  "expected_process_order": [
+    "dreamina version",
+    "dreamina user_credit",
+    "dreamina query_result -h",
+    "PUSH query_result",
+    "IMPACT query_result"
+  ],
+  "maximum_process_count": 5,
+  "maximum_task_query_count": 2,
+  "output_path_absence": true,
+  "query_only_command_contract_validation": "PASS",
+  "query_result_help_canary": {
+    "command_contract_result": "PASS",
+    "extracted_option_facts": {
+      "auth_failure": false,
+      "download_dir_optional": true,
+      "download_dir_supported": true,
+      "generation_credit_consumed_by_query": false,
+      "implicit_query_loop_required": false,
+      "logger_failure": false,
+      "mandatory_output_or_download_directory": false,
+      "query_without_download_dir_is_query_only": true,
+      "stderr_utf8": true,
+      "stdout_utf8": true,
+      "submit_id_required_for_one_task": true,
+      "submit_id_supported": true,
+      "usage_line_present": true
+    },
+    "process": {
+      "elapsed_seconds": 2.625,
+      "end_utc": "2026-07-26T20:22:26.912873Z",
+      "launch_exception_class": null,
+      "name": "dreamina query_result -h",
+      "process_launched": true,
+      "raw_output_persisted": false,
+      "return_code": 0,
+      "start_utc": "2026-07-26T20:22:24.291789Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_byte_length": 388,
+      "stdout_sha256": "74f728cc4d3ae36fb3dcf773e85ed003637c28d048d1cad77a29b59b9bd4b171",
+      "timeout": false
+    },
+    "result": "PASS"
+  },
+  "reference_binding_separation": true,
+  "repository_checkpoint": {
+    "branch": "main",
+    "head": "08a142d1e4bd65460a5a08b49c0e41fb3651e129",
+    "head_origin_aligned": true,
+    "origin_main": "08a142d1e4bd65460a5a08b49c0e41fb3651e129",
+    "repository_root": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+    "source_status_count": 0,
+    "staged_path_count": 0,
+    "tracked_modification_count": 0,
+    "untracked_count": 26,
+    "untracked_set_sha256": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94"
+  },
+  "repository_checkpoint_result": "PASS",
+  "result": "PASS",
+  "schema_version": "CAL002_ROUTE_A_V0_3_C02_QUERY_PREFLIGHT_V0_1",
+  "source_and_protected_state_result": "PASS",
+  "submit_id_uniqueness": true,
+  "submit_stage_binding_results": {
+    "impact_submit_receipt": {
+      "bytes": 4857,
+      "git_blob": "7bf4a593a1e90a92c5be4eaacbc48407f2859307",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_LIVE/submits/impact.json",
+      "sha256": "de3d9789c09ab103e398fdb8ae3174744c624b9647747a24d0e4d62bb40f7678",
+      "worktree_equals_head": true
+    },
+    "push_submit_receipt": {
+      "bytes": 4841,
+      "git_blob": "56910f4723dde526ca73d1c5c941cc2cb9fecdf0",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_LIVE/submits/push.json",
+      "sha256": "c4af4af40eb07cd46577fabf4c1a9d398be0ce3f1aa1dd97fc44cea85a0bf126",
+      "worktree_equals_head": true
+    },
+    "submit_authorization_record": {
+      "bytes": 11971,
+      "git_blob": "f959d2c31ce15c837bd4530c8ffd5853867dfcf6",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_LIVE/authorization.json",
+      "sha256": "d69fdd001483cd93f88238ebfdf5e01d6fd6db9b70613afc05966804ea1d6c10",
+      "worktree_equals_head": true
+    },
+    "submit_evidence_manifest": {
+      "bytes": 5624,
+      "git_blob": "c057b2f7e1bc9ccd9349c822db220e0b6e8bbd1a",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_LIVE/evidence_manifest.json",
+      "sha256": "4d7a6dac716360cb296fdd237575e8824be712e7527d764422fef6fa09583f0d",
+      "worktree_equals_head": true
+    },
+    "submit_execution_record": {
+      "bytes": 1907,
+      "git_blob": "20c0bc9caac40a3adc8d0739a4f8fc50717989b2",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_LIVE/execution.json",
+      "sha256": "b5f18147b0221aecf30953eec7e9a166091003f1b892f3f123dd64497db2636a",
+      "worktree_equals_head": true
+    },
+    "submit_preflight_record": {
+      "bytes": 16854,
+      "git_blob": "740e0a412fd4a19272fed149a78812bade8b33e7",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_LIVE/preflight.json",
+      "sha256": "9baf00c33d336167c6038c0fb33cb7a27b7c0116d3199a78df45a8659ece0265",
+      "worktree_equals_head": true
+    },
+    "submit_result_report": {
+      "bytes": 5725,
+      "git_blob": "3b286e554e073342f39a3336814e739ac56b879e",
+      "path": "reports/CAL002_RA_V03_C02_SUBMIT_RESULT.md",
+      "sha256": "318b0efe340ccf0d98d099099f6a7fbf14736efaebe55a0419e6f4a5d0024165",
+      "worktree_equals_head": true
+    }
+  },
+  "user_credit_canary": {
+    "parsed": {
+      "auth_failure": false,
+      "logger_failure": false,
+      "parse_mode": "stdout_complete_json",
+      "private_fields_detected_in_memory": true,
+      "private_fields_persisted": false,
+      "stderr_utf8": true,
+      "stdout_utf8": true,
+      "total_credit": 3541,
+      "total_credit_occurrence": "unique"
+    },
+    "process": {
+      "elapsed_seconds": 2.891,
+      "end_utc": "2026-07-26T20:22:24.291789Z",
+      "launch_exception_class": null,
+      "name": "dreamina user_credit",
+      "process_launched": true,
+      "raw_output_persisted": false,
+      "return_code": 0,
+      "start_utc": "2026-07-26T20:22:21.392037Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_byte_length": 103,
+      "stdout_sha256": "789180d59c7cf33607729b83e7a314d262bb13610ee7b75c04ee753d53d875d2",
+      "timeout": false
+    },
+    "result": "PASS"
+  },
+  "version_canary": {
+    "parsed": {
+      "auth_failure": false,
+      "build_time": "2026-06-26T06:36:39Z",
+      "commit": "2a20fff",
+      "logger_failure": false,
+      "parse_mode": "stdout_complete_json",
+      "stderr_utf8": true,
+      "stdout_utf8": true,
+      "version": "2a20fff-dirty"
+    },
+    "process": {
+      "elapsed_seconds": 2.609,
+      "end_utc": "2026-07-26T20:22:21.391037Z",
+      "launch_exception_class": null,
+      "name": "dreamina version",
+      "process_launched": true,
+      "raw_output_persisted": false,
+      "return_code": 0,
+      "start_utc": "2026-07-26T20:22:18.787177Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_byte_length": 96,
+      "stdout_sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0",
+      "timeout": false
+    },
+    "result": "PASS"
+  }
+}
