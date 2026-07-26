@@ -1,0 +1,162 @@
+{
+  "artifact_count": 3,
+  "artifacts": [
+    {
+      "bytes": 18578,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_REVIEW/complete_mp4_human_review_record.json",
+      "sha256": "5606e751f4a382e2b65997290a6aa69262cfbb28cce420648f2eb50ba41f4fc3"
+    },
+    {
+      "bytes": 13145,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_REVIEW/complete_mp4_human_review_report.md",
+      "sha256": "4135e1729c66833495bce994c850f1396b9fa25fb0b61de0eaf7006308165385"
+    },
+    {
+      "bytes": 15201,
+      "path": "reports/CAL002_RA_V02_C01_COMPLETE_MP4_HUMAN_REVIEW_RESULT.md",
+      "sha256": "77ea8964ec3595d5beaec52e9b43a2fdde1042fe0ebbf58c85f233e836e4ad59"
+    }
+  ],
+  "authorization_activated": true,
+  "authorization_consumed": true,
+  "authorization_reusable": false,
+  "committed_input_bindings": {
+    "impact_canonical_media": {
+      "bytes": 2304263,
+      "git_blob": "4cd08ed14a905cdbcc948e3cd472588433e15d9d",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/media/ROUTEA_IMPACT_V02_C01.mp4",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "7368cf7f0748b54e928869de7eeb78c47ad71190cb3ff1d27937bdaa349dfb0e",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "impact_prompt": {
+      "bytes": 3113,
+      "git_blob": "9863fa8b665632d59f27aa2189ea2b2c9b79806e",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/impact.txt",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "a2f03f13ff3c320563f32eb316f5aed3a876d06a452d00c7fd0a7211b8c9ac63",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "impact_salvage_manifest": {
+      "bytes": 7723,
+      "git_blob": "ae12b476e27c3cdad7605759e5731bbf0bad2d5e",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "b9d2965cd629b36efdf2b75824e96eaaed6a24b747ef9c14cc0a147a8494aaec",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "impact_salvage_report": {
+      "bytes": 5334,
+      "git_blob": "7b272213c118e6b9df01dafd380794c1520d7637",
+      "nonempty": true,
+      "path": "reports/CAL002_RA_V02_C01_IMPSALVAGE_RESULT.md",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "3a72352dcf1bd9a0100136024c8bf0b7d4f3a55dc111e01d408cb1cd72849b54",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "impact_technical_record": {
+      "bytes": 3103,
+      "git_blob": "8158b821a7376e0813d71745ba9c68674d6cd6e6",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_IMPSALVAGE/technical/impact.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "df3c1b0c1c15247930b1baceeaa35b174aca3a82ecc77a2801161afc72f4fcef",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "push_canonical_media": {
+      "bytes": 3031614,
+      "git_blob": "a00a0c3b6048fdaa27d6bda4e4f7d4faea58aa69",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/media/ROUTEA_PUSH_V02_C01.mp4",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "015fbb4dcb1624268314466408fc56a61e73a1efe529da774225a4513aae7d40",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "push_prompt": {
+      "bytes": 3071,
+      "git_blob": "40c8d7f6d343844b1d425e308c6e54d6b80d8250",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/push.txt",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "c4dc956951ba49c040258e83fcd3d3afa93aa64434f78e27dee80c813bb28ece",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "push_salvage_manifest": {
+      "bytes": 6518,
+      "git_blob": "0257e67896953b92dd5159d265b110ff860b189b",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "94edf6fce2cda74edf2dc2c51707a63219b7f91d1828e3a56d30d5edbd17033a",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "push_salvage_report": {
+      "bytes": 5118,
+      "git_blob": "b20f4913454385692ab442608d810b86ef93ee7a",
+      "nonempty": true,
+      "path": "reports/CAL002_RA_V02_C01_DLSALVAGE_RESULT.md",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "3750ccc2acc8c14a316cbca9c573985f8debd57bfc4f3b0e46ad4ac3be3b475a",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "push_technical_record": {
+      "bytes": 2966,
+      "git_blob": "015f7aae83e69feeb08e180914620adc9b85474d",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/technical/push.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "b1eb91783ec3a33c57d09db6efc09f640ac779d961aee8e3b49ad702a9383b1f",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "review_contract": {
+      "bytes": 2887,
+      "git_blob": "33454eff43459875d1b7aef9a9c0ddce163bf8a6",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/review_contract.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "e753809ce39f191cdc1c6f779f9754c9fb3db2e3c582611663844df860c84baa",
+      "symlink": false,
+      "worktree_equals_head": true
+    }
+  },
+  "current_checkpoint": "61b6e8a0903574ce0b29cb2710ab19d23aa644f4",
+  "evidence_coverage": "3/3",
+  "execution_id": "CAL002-ROUTE-A-V0-2-C01-COMPLETE-MP4-HUMAN-REVIEW-RECORD-V0-1",
+  "formal_decision": "CANARY_MIXED_RESULT_REQUIRES_HUMAN_DECISION",
+  "goal_identity": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_COMPLETE_MP4_HUMAN_REVIEW_RECORD_V0_1",
+  "included_artifact_count": 3,
+  "matched_pair_id": "CAL002-ROUTE-A-V0-2-C01-MATCHED-PAIR",
+  "next_phase": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_MIXED_RESULT_ROUTE_A_CAPABILITY_HUMAN_DECISION",
+  "private_account_data_persisted": false,
+  "raw_provider_output_persisted": false,
+  "record_decision": "CAL002_ROUTE_A_V0_2_C01_COMPLETE_MP4_HUMAN_REVIEW_RECORDED_MIXED_RESULT_REQUIRES_HUMAN_DECISION",
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_COMPLETE_MP4_HUMAN_REVIEW_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "sensitive_data_result": "PASS",
+  "signed_url_persisted": false,
+  "unique_bound_paths": 3
+}
