@@ -1,0 +1,153 @@
+{
+  "authorities": {
+    "batch": false,
+    "download": false,
+    "new_submit": false,
+    "original_r02": false,
+    "resubmit": false,
+    "retry": false
+  },
+  "authorization_activated": true,
+  "authorization_activated_utc": "2026-07-26T12:24:16.206197Z",
+  "authorization_consumed": true,
+  "authorization_reusable": false,
+  "blocked_query_evidence_bindings": [
+    {
+      "byte_length": 6972,
+      "git_blob": "1a9b6bf3d65995bb8e59d415e187f7d4a263f5be",
+      "path": "reports/CAL002_RA_V02_C01_QUERY_RESULT.md",
+      "role": "blocked_query_report",
+      "sha256": "e5e8d53c0750f49256d38b3058c6c3744649c41480335de2b739b82bfae6dbc7",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 6952,
+      "git_blob": "f108e5f5d82bf44aac923f3b8795407ec8bf09b4",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/evidence_manifest.json",
+      "role": "blocked_query_evidence_manifest",
+      "sha256": "883058437f53a9e1b0f6ca275512af7350baaf67e6edab561705fdd96da5325d",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2273,
+      "git_blob": "b871bbbd8b4c027084856e834a5e1264c8a67198",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/runtime/query_help.json",
+      "role": "prior_help_record",
+      "sha256": "a3a9aee0fbc8b5f39e795695c5425f111b9a17367f3b9c20ff35660252336b0b",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2053,
+      "git_blob": "33569daa3d3ea3ed8099a3160a46a3838c5642d2",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/queries/push.json",
+      "role": "prior_push_not_called_receipt",
+      "sha256": "b5909123a943541abd98e6a8d270fb25d5acdb4969cad03c4f8f291002293ac3",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2005,
+      "git_blob": "7575d8cafe565967dea190bc6ae4c1f288c28fca",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/queries/impact.json",
+      "role": "prior_impact_not_called_receipt",
+      "sha256": "38e29a798493f5d1972714eb422515b5a6b4425611f3fe30e1a2e34a1b9a5db8",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 3061,
+      "git_blob": "526f700e4450d3d83877587c4c85ebf131239e25",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/execution.json",
+      "role": "prior_blocked_execution_record",
+      "sha256": "30ef625611abfdf46f12d3034173a24b5812eeebf9e10a07ce9945edde33f1f0",
+      "worktree_equals_head": true
+    }
+  ],
+  "call_limits": {
+    "help": 0,
+    "impact_query": 1,
+    "push_query": 1,
+    "query_count_per_submit_id": 1,
+    "task_queries": 2,
+    "user_credit": 0,
+    "version": 0
+  },
+  "failed_parser_receipt_facts": {
+    "byte_length": 14418,
+    "expected_failure_fixtures": 8,
+    "parser_invocations": 23,
+    "regex_module_imported": false,
+    "self_referential_false_positive": true,
+    "selftest_passes": 23,
+    "selftest_tests": 24,
+    "sha256": "7d3cb63afefc812fd159f980e23c4b70321c3224b096b762def2d526bd5b48a7",
+    "temporary_parser_cleaned": true
+  },
+  "fresh_approval": {
+    "byte_length": 2869,
+    "sha256": "e11bc420f1bfea80a67828efc4b4a309ee49054a5f3f64a9f72fe7ef4d445991",
+    "text": "APPROVE_CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_QUERY_RECOVERY_AST_NO_REGEX_SELF_TEST_FIX_AND_MAX_TWO_QUERY_V0_1__BIND_CURRENT_CHECKPOINT_6EDDEB7130D9560FABE3197AF0CEDC383D7DA26A__BIND_PRIOR_BLOCKED_DECISION_CAL002_ROUTE_A_V0_2_C01_QUERY_RECOVERY_BLOCKED_PARSER_SELF_TEST__BIND_PRIOR_RECOVERY_APPROVAL_SHA256_3B1C9A3300292AAF3C3C14BE36EBC6AC388244F12EB34C65C71660651C7B5FF1__BIND_FAILED_PARSER_BYTES_14418__BIND_FAILED_PARSER_SHA256_7D3CB63AFEFC812FD159F980E23C4B70321C3224B096B762DEF2D526BD5B48A7__ACCEPT_PRIOR_SELF_TEST_23_OF_24_PASS_EXPECTED_FAILURE_FIXTURES_8_PARSER_INVOCATIONS_23_REGEX_MODULE_IMPORTED_FALSE_TEMPORARY_PARSER_CLEANED_TRUE__ACCEPT_BLOCK_CAUSED_ONLY_BY_SELF_REFERENTIAL_SOURCE_TEXT_SCAN_FOR_LITERAL_IMPORT_RE_WHILE_THE_DETECTOR_SOURCE_ITSELF_CONTAINED_THAT_LITERAL__ACCEPT_ZERO_DREAMINA_ZERO_HELP_ZERO_VERSION_ZERO_USER_CREDIT_ZERO_PUSH_QUERY_ZERO_IMPACT_QUERY_ZERO_REPOSITORY_WRITE_ZERO_STAGE_ZERO_COMMIT_ZERO_PUSH_AND_UNCHANGED_HEAD_ORIGIN_SOURCE_MEDIA_PROTECTED_STATE__SUPERSEDE_PRIOR_UNACTIVATED_UNCONSUMED_NONREUSABLE_RECOVERY_APPROVAL_FOR_THIS_ROUTE_ONLY__AUTHORIZE_PRE_ACTIVATION_STANDARD_LIBRARY_AST_BASED_NO_REGEX_IMPORT_CHECK_THAT_INSPECTS_ONLY_ACTUAL_AST_IMPORT_AND_IMPORTFROM_NODES_AND_FORBIDS_TEXT_SUBSTRING_SELF_INSPECTION__AUTHORIZE_EXACTLY_ONE_CORRECTED_OFFLINE_PARSER_SELF_TEST_RUN_WITH_AT_LEAST_24_FIXTURES_NO_DREAMINA_CALL_NO_REPOSITORY_WRITE_AND_REQUIRE_ALL_EXPECTED_PASS_AND_EXPECTED_FAIL_FIXTURES_TO_PASS__AUTHORIZE_IF_AND_ONLY_IF_SELF_TEST_PASSES_EXACTLY_ONE_QUERY_RESULT_CALL_FOR_ROUTERA_PUSH_V02_C01_SUBMIT_ID_5FF0BA35-5A2C-445A-8343-C95F31CAAF4A_AND_EXACTLY_ONE_QUERY_RESULT_CALL_FOR_ROUTERA_IMPACT_V02_C01_SUBMIT_ID_4C8B6184-7C0A-4B41-95F5-E215E35F195B_IN_PUSH_THEN_IMPACT_ORDER_WITHOUT_DOWNLOAD_DIR__REQUIRE_QUERY_ARGV_FOUR_ELEMENTS_SHELL_FALSE_CAPTURE_BEFORE_PARSE_COMPLETE_JSON_PREFERRED_EXACT_SUBMIT_ID_MATCH_UNAMBIGUOUS_STATUS_AND_SANITIZATION__ALLOW_IMPACT_QUERY_AFTER_ANY_VALID_PUSH_STATUS_SUCCESS_QUERYING_FAIL_OR_OTHER_UNAMBIGUOUS__REQUIRE_NO_HELP_NO_VERSION_NO_USER_CREDIT_NO_POLL_LOOP_NO_IMPLICIT_REQUERY_NO_URL_OPENING_NO_SIGNED_URL_OPENING_NO_MEDIA_DOWNLOAD_NO_RETRY_NO_RESUBMIT_NO_NEW_SUBMIT_NO_BATCH_NO_LOGIN_NO_CHECKLOGIN_NO_SESSION_MUTATION_NO_LIST_TASK_NO_REFERENCE_UPLOAD_NO_R02__AUTHORIZE_SHORT_OUTPUT_ROOT_RA_V02_C01_QRYREC_EXACTLY_SEVEN_JSON_OR_MARKDOWN_ARTIFACTS_EVIDENCE_MANIFEST_GOVERNANCE_REPORT_COMMIT_AND_PUSH_ONLY__NO_MEDIA_CREATION_NO_MEDIA_CHANGE_NO_SOURCE_CHANGE_NO_PRODUCTION_REENTRY_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__SET_SUCCESS_NEXT_PHASE_CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_DOWNLOAD_AUTHORIZATION_HUMAN_DECISION__SET_NONTERMINAL_NEXT_PHASE_CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_REQUERY_HUMAN_DECISION__SET_TERMINAL_FAILURE_NEXT_PHASE_CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_QUERY_FAILURE_HUMAN_DECISION__ONE_TIME_NON_REUSABLE"
+  },
+  "goal_identity": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_QUERY_RECOVERY_AST_NO_REGEX_SELF_TEST_FIX_AND_MAX_TWO_QUERY_V0_1",
+  "live_submit_bindings": [
+    {
+      "byte_length": 8320,
+      "git_blob": "f931deb3e31d0edc59af7d113e62ba296e36b28a",
+      "path": "reports/CAL002_RA_V02_C01_LIVE_RESULT.md",
+      "role": "live_report",
+      "sha256": "5e1062cf4fb8142467166981138ca5307046ed62a99772fdbb29834300b03d13",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 7193,
+      "git_blob": "a6be659a72701d448a5c426aa2be81ae53925f48",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/evidence_manifest.json",
+      "role": "live_evidence_manifest",
+      "sha256": "e3a0ef6c8292230ac3b088b4c425f01cf3235a0d8866df8088be00499b652b4a",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2795,
+      "git_blob": "109f5f6cf48256e5107c3e95a0721a782dda4a1d",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/submissions/push.json",
+      "role": "live_push_submit_receipt",
+      "sha256": "9ab7cbd4e184c3e02a4e4eb47f1af93c36608e5c72c2ddd9b6a57e5c261f8a81",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2808,
+      "git_blob": "eab3b4bf98e1ddbcf0bc3601fa04c9f62d660a0d",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/submissions/impact.json",
+      "role": "live_impact_submit_receipt",
+      "sha256": "c358190eabd6c7e03e561cda92b13e68adbf29e6c2fd0a9821e119493ff5ebc6",
+      "worktree_equals_head": true
+    }
+  ],
+  "matched_pair_id": "CAL002-ROUTE-A-V0-2-C01-MATCHED-PAIR",
+  "prior_query_approval": {
+    "activated": true,
+    "consumed": true,
+    "reusable": false,
+    "sha256": "39efdf04458e6c9c692cfac6f42ff720da558bcd3e8f5b0c1b86451c0bcb1b9d"
+  },
+  "prior_recovery_approval": {
+    "activated": false,
+    "byte_length": 3554,
+    "consumed": false,
+    "reusable": false,
+    "sha256": "3b1c9a3300292aaf3c3c14be36ebc6ac388244f12eb34c65c71660651c7b5ff1",
+    "superseded_for_this_route": true
+  },
+  "prior_recovery_decision": "CAL002_ROUTE_A_V0_2_C01_QUERY_RECOVERY_BLOCKED_PARSER_SELF_TEST",
+  "recovery_execution_id": "CAL002-ROUTE-A-V0-2-C01-QUERY-AST-SELFTEST-RECOVERY-V0-1",
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_AST_QUERY_RECOVERY_AUTHORIZATION_V0_1",
+  "starting_checkpoint": {
+    "branch": "main",
+    "commit_message": "query(cal002): record Route A V0.2 canary status",
+    "head": "6eddeb7130d9560fabe3197af0cedc383d7da26a",
+    "origin_main": "6eddeb7130d9560fabe3197af0cedc383d7da26a",
+    "parent": "1efbf521635b61df26bab834ce987be47f0ce6b2"
+  },
+  "submit_ids": {
+    "impact": "4c8b6184-7c0a-4b41-95f5-e215e35f195b",
+    "push": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a"
+  }
+}

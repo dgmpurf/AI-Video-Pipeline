@@ -1,0 +1,62 @@
+{
+  "actual_cli_call_count": 2,
+  "actual_decision": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_C01_AST_QUERY_RECOVERY_TWO_TASKS_SUCCESS_DOWNLOAD_READY_FOR_HUMAN_AUTHORIZATION",
+  "actual_next_phase": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_DOWNLOAD_AUTHORIZATION_HUMAN_DECISION",
+  "batch_called": false,
+  "download_called": false,
+  "download_ready_task_count": 2,
+  "exact_cli_sequence": [
+    {
+      "alias": "ROUTEA_PUSH_V02_C01",
+      "argv_sha256": "26ec5f92b50f3774cf6b132629e3542b5792b54fd41c348e3eea544e71c3ed0e",
+      "ordinal": 1,
+      "submit_id": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a"
+    },
+    {
+      "alias": "ROUTEA_IMPACT_V02_C01",
+      "argv_sha256": "fb8451414c0fddc66f8e9a5a9bf8088bff46ba2af74a51c4f859d038b79ba11a",
+      "ordinal": 2,
+      "submit_id": "4c8b6184-7c0a-4b41-95f5-e215e35f195b"
+    }
+  ],
+  "failed_task_count": 0,
+  "help_call_count": 0,
+  "impact_query_call_count": 1,
+  "implicit_requery_used": false,
+  "maximum_cli_call_count": 2,
+  "new_submit_called": false,
+  "nonterminal_task_count": 0,
+  "ordered_submit_bindings": [
+    "5ff0ba35-5a2c-445a-8343-c95f31caaf4a",
+    "4c8b6184-7c0a-4b41-95f5-e215e35f195b"
+  ],
+  "per_task": {
+    "impact": {
+      "download_ready": true,
+      "normalized_status": "success",
+      "task_terminal": true,
+      "video_count": 1
+    },
+    "push": {
+      "download_ready": true,
+      "normalized_status": "success",
+      "task_terminal": true,
+      "video_count": 1
+    }
+  },
+  "provider_motion_only_behavior_verified": false,
+  "push_query_call_count": 1,
+  "query_loop_used": false,
+  "recovery_execution_id": "CAL002-ROUTE-A-V0-2-C01-QUERY-AST-SELFTEST-RECOVERY-V0-1",
+  "resubmit_called": false,
+  "retry_called": false,
+  "route_a_capability_proven": false,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_AST_QUERY_RECOVERY_EXECUTION_RECORD_V0_1",
+  "stop_reason": null,
+  "stop_stage": "bounded_query_sequence_complete",
+  "successful_task_count": 2,
+  "terminal_nondownloadable_task_count": 0,
+  "url_opened": false,
+  "user_credit_call_count": 0,
+  "version_call_count": 0
+}

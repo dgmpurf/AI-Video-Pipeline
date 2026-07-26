@@ -1,0 +1,208 @@
+{
+  "artifact_count": 6,
+  "artifacts": [
+    {
+      "byte_length": 8838,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/authorization.json",
+      "sha256": "de0798d91efbfb312a740800480ad62e5c7c2a8bb2d970523704925fcc20735a"
+    },
+    {
+      "byte_length": 2440,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/runtime/recovery_contract.json",
+      "sha256": "af7a4327e72b8118c12deadaf3ddf2ff5ba189ea65730e8bd403f54c3c307480"
+    },
+    {
+      "byte_length": 2334,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/queries/push.json",
+      "sha256": "f694a22ed81d0f885dc22458aaf08fdc7338106269891a1cade777b7c32599ef"
+    },
+    {
+      "byte_length": 2340,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/queries/impact.json",
+      "sha256": "f8407729a21ab68048b5bf3508b1eb047433bcca29e614708d69d8a05de47d45"
+    },
+    {
+      "byte_length": 2072,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/execution.json",
+      "sha256": "d8ac47c2b571dd7dc74a1124a776882d9260fa34b6d4bc9b4c29a0989b59702a"
+    },
+    {
+      "byte_length": 4849,
+      "path": "reports/CAL002_RA_V02_C01_QRYREC_RESULT.md",
+      "sha256": "473aeccab818a2d92d3562b2d8bfcc55d485f015008914a1d866aedbe8ab40ed"
+    }
+  ],
+  "blocked_query_checkpoint": {
+    "branch": "main",
+    "commit_message": "query(cal002): record Route A V0.2 canary status",
+    "head": "6eddeb7130d9560fabe3197af0cedc383d7da26a",
+    "origin_main": "6eddeb7130d9560fabe3197af0cedc383d7da26a",
+    "parent": "1efbf521635b61df26bab834ce987be47f0ce6b2"
+  },
+  "committed_input_bindings": [
+    {
+      "byte_length": 6972,
+      "git_blob": "1a9b6bf3d65995bb8e59d415e187f7d4a263f5be",
+      "path": "reports/CAL002_RA_V02_C01_QUERY_RESULT.md",
+      "role": "blocked_query_report",
+      "sha256": "e5e8d53c0750f49256d38b3058c6c3744649c41480335de2b739b82bfae6dbc7",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 6952,
+      "git_blob": "f108e5f5d82bf44aac923f3b8795407ec8bf09b4",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/evidence_manifest.json",
+      "role": "blocked_query_evidence_manifest",
+      "sha256": "883058437f53a9e1b0f6ca275512af7350baaf67e6edab561705fdd96da5325d",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2273,
+      "git_blob": "b871bbbd8b4c027084856e834a5e1264c8a67198",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/runtime/query_help.json",
+      "role": "prior_help_record",
+      "sha256": "a3a9aee0fbc8b5f39e795695c5425f111b9a17367f3b9c20ff35660252336b0b",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2053,
+      "git_blob": "33569daa3d3ea3ed8099a3160a46a3838c5642d2",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/queries/push.json",
+      "role": "prior_push_not_called_receipt",
+      "sha256": "b5909123a943541abd98e6a8d270fb25d5acdb4969cad03c4f8f291002293ac3",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2005,
+      "git_blob": "7575d8cafe565967dea190bc6ae4c1f288c28fca",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/queries/impact.json",
+      "role": "prior_impact_not_called_receipt",
+      "sha256": "38e29a798493f5d1972714eb422515b5a6b4425611f3fe30e1a2e34a1b9a5db8",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 3061,
+      "git_blob": "526f700e4450d3d83877587c4c85ebf131239e25",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/execution.json",
+      "role": "prior_blocked_execution_record",
+      "sha256": "30ef625611abfdf46f12d3034173a24b5812eeebf9e10a07ce9945edde33f1f0",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 8320,
+      "git_blob": "f931deb3e31d0edc59af7d113e62ba296e36b28a",
+      "path": "reports/CAL002_RA_V02_C01_LIVE_RESULT.md",
+      "role": "live_report",
+      "sha256": "5e1062cf4fb8142467166981138ca5307046ed62a99772fdbb29834300b03d13",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 7193,
+      "git_blob": "a6be659a72701d448a5c426aa2be81ae53925f48",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/evidence_manifest.json",
+      "role": "live_evidence_manifest",
+      "sha256": "e3a0ef6c8292230ac3b088b4c425f01cf3235a0d8866df8088be00499b652b4a",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2795,
+      "git_blob": "109f5f6cf48256e5107c3e95a0721a782dda4a1d",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/submissions/push.json",
+      "role": "live_push_submit_receipt",
+      "sha256": "9ab7cbd4e184c3e02a4e4eb47f1af93c36608e5c72c2ddd9b6a57e5c261f8a81",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2808,
+      "git_blob": "eab3b4bf98e1ddbcf0bc3601fa04c9f62d660a0d",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/submissions/impact.json",
+      "role": "live_impact_submit_receipt",
+      "sha256": "c358190eabd6c7e03e561cda92b13e68adbf29e6c2fd0a9821e119493ff5ebc6",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 11727,
+      "git_blob": "2e9167931cc195ca3a1ade06fbdada09beee4807",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/push.json",
+      "role": "push_package",
+      "sha256": "87fb8d3905b1e16396fe1634bf2728fc632852ee87bd00cf5c324e5aeabd0e07",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 11781,
+      "git_blob": "c6fd59ca06c6c0801529c5d68d1ea94b3ffe02c9",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/impact.json",
+      "role": "impact_package",
+      "sha256": "86c986feef91241f9107b5342dd261efab188c65a4cf43fe8c0a00a660e46bef",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 7619,
+      "git_blob": "7dcc306175610bf132e1adf9f130e8f5cf7a9893",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/matched_pair_index.json",
+      "role": "matched_pair_index",
+      "sha256": "ea1150cfcb60e0a2306401560d2574a94550e22209b60cf868eaa09d417414d4",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2887,
+      "git_blob": "33454eff43459875d1b7aef9a9c0ddce163bf8a6",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/review_contract.json",
+      "role": "review_contract",
+      "sha256": "e753809ce39f191cdc1c6f779f9754c9fb3db2e3c582611663844df860c84baa",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 174235,
+      "git_blob": "d5cfb6ab1d17163d4b9d6174c633af627d4ee866",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "role": "push_reference",
+      "sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 168170,
+      "git_blob": "8aaa470f8485b9aa59cff057c6a143ed765df7ad",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "role": "impact_reference",
+      "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 14494,
+      "git_blob": "a23ca18ac6080e8e8e06d4fb5329a2e8f1611c26",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_lock_manifest.json",
+      "role": "review_lock_manifest",
+      "sha256": "ec2d5a6c264b0c3b54932b8ef88373ba20651ad6d45534355cc568581075a8f6",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 18755,
+      "git_blob": "14c420054afeb905119806fa1cfa391cf0e490cc",
+      "path": "reports/CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_RESULT.md",
+      "role": "review_lock_report",
+      "sha256": "8a6cd332de5ab9b1a16872b84e62ed245e6c80bb088bc8a9151576c3e66eb9de",
+      "worktree_equals_head": true
+    }
+  ],
+  "decision": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_C01_AST_QUERY_RECOVERY_TWO_TASKS_SUCCESS_DOWNLOAD_READY_FOR_HUMAN_AUTHORIZATION",
+  "evidence_coverage": "6/6",
+  "goal_identity": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_QUERY_RECOVERY_AST_NO_REGEX_SELF_TEST_FIX_AND_MAX_TWO_QUERY_V0_1",
+  "included_artifact_count": 6,
+  "matched_pair_id": "CAL002-ROUTE-A-V0-2-C01-MATCHED-PAIR",
+  "recovery_execution_id": "CAL002-ROUTE-A-V0-2-C01-QUERY-AST-SELFTEST-RECOVERY-V0-1",
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_AST_QUERY_RECOVERY_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "unique_bound_paths": 6,
+  "validation": {
+    "all_committed_inputs_match": true,
+    "existing_file_modification_count": 0,
+    "media_output_path_count": 0,
+    "raw_help_persisted": false,
+    "raw_query_output_persisted": false,
+    "sensitive_data_scan": "PASS",
+    "sensitive_fields_persisted": false,
+    "signed_url_persisted": false,
+    "source_path_count": 0
+  }
+}

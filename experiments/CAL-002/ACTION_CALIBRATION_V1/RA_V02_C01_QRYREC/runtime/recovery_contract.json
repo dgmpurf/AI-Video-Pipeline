@@ -1,0 +1,66 @@
+{
+  "ast_inspection": {
+    "dynamic_import_checks": "PASS",
+    "harness_actual_regex_import": false,
+    "inspected_node_classes": [
+      "ast.Import",
+      "ast.ImportFrom",
+      "ast.Call"
+    ],
+    "line_inspection_used": false,
+    "method": "python_standard_library_ast_node_inspection_only",
+    "parser_actual_regex_import": false,
+    "result": "PASS",
+    "text_substring_inspection_used": false
+  },
+  "fresh_calls": {
+    "help": 0,
+    "user_credit": 0,
+    "version": 0
+  },
+  "prior_failed_parser": {
+    "byte_length": 14418,
+    "expected_failure_fixture_count": 8,
+    "parser_invocation_count": 23,
+    "regex_module_imported": false,
+    "self_referential_false_positive_explanation": "The prior detector inspected source text and matched its own import-example diagnostic string; it did not identify an AST import.",
+    "selftest_pass_count": 23,
+    "selftest_test_count": 24,
+    "sha256": "7d3cb63afefc812fd159f980e23c4b70321c3224b096b762def2d526bd5b48a7"
+  },
+  "prior_help_process_binding": {
+    "evidence_reused": true,
+    "exit_code": 0,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QUERY/runtime/query_help.json",
+    "record_byte_length": 2273,
+    "record_sha256": "a3a9aee0fbc8b5f39e795695c5425f111b9a17367f3b9c20ff35660252336b0b",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_byte_length": 388,
+    "stdout_sha256": "74f728cc4d3ae36fb3dcf773e85ed003637c28d048d1cad77a29b59b9bd4b171",
+    "timeout": false
+  },
+  "recovery_execution_id": "CAL002-ROUTE-A-V0-2-C01-QUERY-AST-SELFTEST-RECOVERY-V0-1",
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_AST_QUERY_RECOVERY_CONTRACT_V0_1",
+  "selftest": {
+    "expected_failure_fixture_count": 8,
+    "expected_pass_fixture_count": 20,
+    "failure_count": 0,
+    "fixture_count": 28,
+    "harness_byte_length": 15198,
+    "harness_sha256": "fd3e91eea9a41ccba6e8c3a83fd42cfbddd94f4b619e4d12320de9fab3edff2a",
+    "invocation_count": 1,
+    "overall_result": "PASS",
+    "parser_implementation_byte_length": 10464,
+    "parser_implementation_sha256": "5a6eac34adfc088e7265e40dd2d07d7852df05fbda51d4cf3afc78e05cbb046f",
+    "pass_count": 28,
+    "regex_used": false,
+    "repository_writes": 0
+  },
+  "temporary_cleanup": {
+    "harness_deleted": true,
+    "parser_deleted": true,
+    "temporary_files_remaining": 0,
+    "temporary_root_deleted": true
+  }
+}
