@@ -1,0 +1,208 @@
+{
+  "approval": {
+    "approval_byte_length": 1998,
+    "approval_received": true,
+    "approval_sha256": "66a474ad505be99026ede81aaae2f1a85dc07ee47c1dca0cf244f86f0d0d4e81",
+    "approval_text": "APPROVE_CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_V0_1__BIND_REFERENCE_V0_2_BUILD_CHECKPOINT_DF37CB72D863AB891B5FF95856FB12642A36BCA7__BIND_VISUAL_REVIEW_HANDOFF_BYTES_6768__BIND_VISUAL_REVIEW_HANDOFF_SHA256_D4D3A7E210199CCECD3FA66ED8E768EE51B3597A2138CFE9A4FB09BBA013F01F__BIND_ACTION_REF_PUSH_02_BYTES_174235__BIND_ACTION_REF_PUSH_02_SHA256_6006B7ABC88A53978A9A7993A0B7852179DDBBCD960D13F07EBC68218872ED6__BIND_ACTION_REF_IMPACT_02_BYTES_168170__BIND_ACTION_REF_IMPACT_02_SHA256_A0A2662DC598F4980D3F1F22CFF2C2915A0F422D797F0E09EB53E8E78110623C__BIND_REVIEW_INPUT_ARCHIVE_BYTES_4230__BIND_REVIEW_INPUT_ARCHIVE_SHA256_EC875D169DF5B67ED808C60DBBE166C661F8CB7ABBA3C6AE8C823F7B9C32B4ED__BIND_COMPLETED_REVIEW_RECORD_BYTES_7323__BIND_COMPLETED_REVIEW_RECORD_SHA256_389ED9CF755133FFEF7FF4DF75F8A46440D2E3F656C2FA7A5E08D6C6206675CB__BIND_COMPLETED_REVIEW_REPORT_BYTES_3108__BIND_COMPLETED_REVIEW_REPORT_SHA256_FE8FA9DA286B478CD1B577654C5F5F12A49207CA1B11CB2B561B33CE5B152C66__ACCEPT_ACTION_REF_PUSH_02_PASS_FOR_FUTURE_CANARY_AUTHORIZATION_REQUEST__ACCEPT_ACTION_REF_IMPACT_02_PASS_FOR_FUTURE_CANARY_AUTHORIZATION_REQUEST__ACCEPT_FIVE_SECOND_DURATION_UTILIZATION_MULTI_BEAT_STRUCTURE_ACTIVE_FINAL_SECOND_AND_MARKER_GRID_TEXT_JOINT_NODE_CALIBRATION_STAGE_ABSENCE__ACCEPT_NONBLOCKING_NOTE_SLIGHTLY_LATERAL_CAMERA_AND_STYLIZED_LOW_DISTINCTIVENESS_MOTION__REQUIRE_REFERENCE_SUITABILITY_NOT_TO_BE_INTERPRETED_AS_PROVIDER_MOTION_ONLY_BEHAVIOR_VERIFICATION_OR_ROUTE_A_CAPABILITY_PROOF__AUTHORIZE_BYTE_EXACT_INPUT_INTAKE_REVIEW_RECORD_AND_REPORT_LOCK_MANIFEST_GOVERNANCE_REPORT_COMMIT_AND_PUSH_ONLY__SET_NEXT_PHASE_CAL002_ROUTE_A_REFERENCE_V0_2_REVIEW_LOCKED_READY_FOR_NEW_CANARY_DESIGN_DECISION__NO_DREAMINA_NO_PROVIDER_NO_SUBMIT_NO_QUERY_NO_DOWNLOAD_NO_RETRY_NO_RESUBMIT_NO_BATCH_NO_USER_CREDIT_NO_REFERENCE_UPLOAD_NO_CANARY_NO_R02_NO_MEDIA_CHANGE_NO_SOURCE_CHANGE_NO_PRODUCTION_REENTRY_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__ONE_TIME_NON_REUSABLE",
+    "human_project_owner_acceptance_received": true
+  },
+  "authorization_lifecycle": {
+    "activated": true,
+    "consumed": true,
+    "reusable": false
+  },
+  "bindings": {
+    "build_governance_report": {
+      "byte_length": 10279,
+      "git_blob": "c06d1e5963c82fdb67feabd1af4a9b3869201d35",
+      "path": "reports/CAL002_ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2_LOCAL_DESIGN_AND_CREATION_RESULT.md",
+      "sha256": "833adf08f45fc05fa2074e691af29edf9d34447db09590deb4897bef9d9277b9"
+    },
+    "input_archive": {
+      "byte_length": 4230,
+      "filename": "CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INPUTS.zip",
+      "sha256": "ec875d169df5b67ed808c60dbbe166c661f8cb7abba3c6ae8c823f7b9c32b4ed"
+    },
+    "route_a_reference_v0_2_evidence_manifest": {
+      "byte_length": 15806,
+      "git_blob": "6df249e79dd105708ce025794d6f7c89eaec77a9",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/route_a_reference_v0_2_evidence_manifest.json",
+      "sha256": "888d3f21a54e87a986e26a26508b612d6b82640b8fa1f78143c42749ac58c8e2"
+    },
+    "visual_review_handoff": {
+      "byte_length": 6768,
+      "git_blob": "2ffd6b674067b307c96c2459ac99ed70214fe420",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review/ROUTE_A_REFERENCE_V0_2_VISUAL_REVIEW_HANDOFF.md",
+      "sha256": "d4d3a7e210199ccecd3fa66ed8e768ee51b3597a2138cfe9a4fb09bba013f01f"
+    }
+  },
+  "build_checkpoint": "df37cb72d863ab891b5ff95856fb12642a36bca7",
+  "complete_mp4_review_count": 2,
+  "final_review_markdown": {
+    "byte_length": 3108,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_report.md",
+    "sha256": "fe8fa9da286b478cd1b577654c5f5f12a49207ca1b11cb2b561b33ce5b152c66"
+  },
+  "final_review_record": {
+    "byte_length": 7323,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_record_final.json",
+    "sha256": "389ed9cf755133ffef7ff4df75f8a46440d2e3f656c2fa7a5e08d6c6206675cb"
+  },
+  "goal_identity": "CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_V0_1",
+  "governance": {
+    "automatic_expansion": false,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "locked": false,
+    "new_canary_authorized": false,
+    "original_r02_blocked": true,
+    "production_approved": false,
+    "production_reentry_authorized": false,
+    "provider_motion_only_behavior_verified": false,
+    "r02_authorized": false,
+    "reference_upload_authorized": false,
+    "route_a_capability_proven": false
+  },
+  "lock_id": "CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF",
+  "longpath_recovery": {
+    "actual_git_result": {
+      "commit_hash_and_push_outcome_externalized_to_terminal_receipt": true,
+      "guessed_commit_hash_persisted": false,
+      "guessed_push_result_persisted": false
+    },
+    "automatic_retry": false,
+    "commit_message": "review(cal002): lock Route A V0.2 reference reviews",
+    "failure_class": "WINDOWS_LONG_PATH_REJECTION",
+    "failure_stage": "GIT_STAGE",
+    "fresh_recovery_approval": {
+      "byte_length": 2405,
+      "sha256": "3d5baadf62df6a6fb7d48c0a94f5f621564c1666098e0128e22adcb98c204ab9",
+      "text": "APPROVE_CAL002_ROUTE_A_REFERENCE_V0_2_REVIEW_LOCK_LONGPATH_RECOVERY_V0_1__BIND_FAILED_GOAL_CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_V0_1__BIND_STARTING_AND_CURRENT_CHECKPOINT_DF37CB72D863AB891B5FF95856FB12642A36BCA7__BIND_CONSUMED_PRIOR_APPROVAL_SHA256_66A474AD505BE99026EDE81AAAE2F1A85DC07EE47C1DCA0CF244F86F0D0D4E81__ACCEPT_PRIOR_DECISION_CAL002_ROUTE_A_REFERENCE_V0_2_REVIEW_LOCK_FAILED_AFTER_ACTIVATION__ACCEPT_FAILURE_CAUSE_GIT_WINDOWS_LONG_PATH_REJECTION_AT_262_CHARACTERS_WITH_CORE_LONGPATHS_UNSET__BIND_LOCKED_REVIEW_JSON_BYTES_7323__BIND_LOCKED_REVIEW_JSON_SHA256_389ED9CF755133FFEF7FF4DF75F8A46440D2E3F656C2FA7A5E08D6C6206675CB__BIND_LOCKED_REVIEW_MARKDOWN_BYTES_3108__BIND_LOCKED_REVIEW_MARKDOWN_SHA256_FE8FA9DA286B478CD1B577654C5F5F12A49207CA1B11CB2B561B33CE5B152C66__BIND_PRE_RECOVERY_LOCK_MANIFEST_BYTES_8324__BIND_PRE_RECOVERY_LOCK_MANIFEST_SHA256_F172D38A4ADA012DC5A3B51366C5588991F3691FFB7993C0227D2A5B85D102AC__BIND_PRE_RECOVERY_GOVERNANCE_REPORT_BYTES_12283__BIND_PRE_RECOVERY_GOVERNANCE_REPORT_SHA256_A79CB9776A4B3063A97E63F2311FD54155DAF8F474556520F5CB97AE0A96B206__ACCEPT_VALIDATION_JSON_STRUCTURAL_PASS_JSON_MARKDOWN_CONSISTENCY_PASS_BUILD_EVIDENCE_29_OF_29_AND_UPSTREAM_BINDINGS_9_OF_9_PASS_HUMAN_ACCEPTANCE_RECEIVED_TRUE__AUTHORIZE_PRESERVE_LOCKED_REVIEW_JSON_AND_MARKDOWN_BYTE_EXACT__AUTHORIZE_UPDATE_ONLY_EXISTING_UNTRACKED_LOCK_MANIFEST_AND_GOVERNANCE_REPORT_TO_RECORD_PRIOR_FAILED_AFTER_ACTIVATION_EVENT_FRESH_RECOVERY_AUTHORIZATION_COMMAND_SCOPED_LONGPATH_HANDLING_AND_FINAL_GIT_RESULT__AUTHORIZE_COMMAND_SCOPED_GIT_DASH_C_CORE_DOT_LONGPATHS_EQUALS_TRUE_ONLY_FOR_STATUS_ADD_DIFF_CACHED_AND_COMMIT__AUTHORIZE_STAGE_EXACTLY_FOUR_EXISTING_REVIEW_LOCK_PATHS_VALIDATE_EXACTLY_FOUR_ADDITIONS_COMMIT_MESSAGE_REVIEW_CAL002_LOCK_ROUTE_A_V0_2_REFERENCE_REVIEWS_AND_PUSH_MAIN_ONCE__NO_PERSISTENT_GIT_CONFIG_WRITE_NO_GLOBAL_SYSTEM_OR_REPOSITORY_CORE_LONGPATHS_CHANGE_NO_FETCH_NO_PULL_NO_MERGE_NO_REBASE_NO_RESET_NO_CLEAN_NO_STASH_NO_AMEND_NO_FORCE_PUSH_NO_AUTOMATIC_RETRY__NO_DREAMINA_NO_PROVIDER_NO_SUBMIT_NO_QUERY_NO_DOWNLOAD_NO_RETRY_NO_RESUBMIT_NO_BATCH_NO_USER_CREDIT_NO_REFERENCE_UPLOAD_NO_CANARY_NO_R02_NO_MEDIA_CHANGE_NO_SOURCE_CHANGE_NO_PRODUCTION_REENTRY_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__SET_NEXT_PHASE_CAL002_ROUTE_A_REFERENCE_V0_2_REVIEW_LOCKED_READY_FOR_NEW_CANARY_DESIGN_DECISION__ONE_TIME_NON_REUSABLE"
+    },
+    "governance_report_updated_under_fresh_authority": true,
+    "locked_review_json_byte_preserved": true,
+    "locked_review_markdown_byte_preserved": true,
+    "long_path_handling": {
+      "allowed_command_classes": [
+        "status",
+        "add",
+        "diff_cached",
+        "commit"
+      ],
+      "exact_form": "git -c core.longpaths=true",
+      "mode": "COMMAND_SCOPED_ONLY",
+      "persistent_configuration_changed": false
+    },
+    "manifest_updated_under_fresh_authority": true,
+    "next_phase": "CAL002_ROUTE_A_REFERENCE_V0_2_REVIEW_LOCKED_READY_FOR_NEW_CANARY_DESIGN_DECISION",
+    "persistent_core_longpaths_before": "UNSET",
+    "pre_recovery_bindings": {
+      "governance_report": {
+        "byte_length": 12283,
+        "path": "reports/CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_RESULT.md",
+        "sha256": "a79cb9776a4b3063a97e63f2311fd54155daf8f474556520f5cb97ae0a96b206"
+      },
+      "lock_manifest": {
+        "byte_length": 8324,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_lock_manifest.json",
+        "sha256": "f172d38a4ada012dc5a3b51366c5588991f3691ffb7993c0227d2a5b85d102ac"
+      },
+      "locked_review_json": {
+        "byte_length": 7323,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_record_final.json",
+        "sha256": "389ed9cf755133ffef7ff4df75f8a46440d2e3f656c2fa7a5e08d6c6206675cb"
+      },
+      "locked_review_markdown": {
+        "byte_length": 3108,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_report.md",
+        "sha256": "fe8fa9da286b478cd1b577654c5f5f12a49207ca1b11cb2b561b33ce5b152c66"
+      }
+    },
+    "prior_HEAD": "df37cb72d863ab891b5ff95856fb12642a36bca7",
+    "prior_approval_byte_length": 1998,
+    "prior_approval_sha256": "66a474ad505be99026ede81aaae2f1a85dc07ee47c1dca0cf244f86f0d0d4e81",
+    "prior_authorization_activated": true,
+    "prior_authorization_consumed": true,
+    "prior_authorization_reusable": false,
+    "prior_commit_attempted": false,
+    "prior_decision": "CAL002_ROUTE_A_REFERENCE_V0_2_REVIEW_LOCK_FAILED_AFTER_ACTIVATION",
+    "prior_goal_identity": "CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_V0_1",
+    "prior_index_empty": true,
+    "prior_origin_main": "df37cb72d863ab891b5ff95856fb12642a36bca7",
+    "prior_push_attempted": false,
+    "push_attempts_authorized": 1,
+    "recovery_authorization": {
+      "activated": true,
+      "consumed": true,
+      "reusable": false
+    },
+    "recovery_id": "CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-LONGPATH-RECOVERY-V0-1",
+    "rejected_path_length": 262,
+    "schema_version": "CAL002_ROUTE_A_REFERENCE_V0_2_REVIEW_LOCK_LONGPATH_RECOVERY_V0_1"
+  },
+  "next_phase": "CAL002_ROUTE_A_REFERENCE_V0_2_REVIEW_LOCKED_READY_FOR_NEW_CANARY_DESIGN_DECISION",
+  "reference_build_id": "CAL002-ROUTE-A-REFERENCE-V0-2-BUILD-V0-1",
+  "reference_design_failure_count": 0,
+  "reference_review": {
+    "accepted_reference_count": 2,
+    "active_final_second": {
+      "ACTION_REF_IMPACT_02": "PASS",
+      "ACTION_REF_PUSH_02": "PASS"
+    },
+    "five_second_duration_utilization": "PASS",
+    "json_markdown_consistency": "PASS",
+    "marker_grid_text_joint_node_calibration_stage_absence": "PASS",
+    "multi_beat_structure": "PASS",
+    "reference_review_finalized": true,
+    "reference_review_locked": true,
+    "review_bytes_must_not_change_after_commit": true,
+    "review_json_structural_validation": "PASS"
+  },
+  "references": [
+    {
+      "complete_mp4_review": true,
+      "human_decision": "PASS_FOR_FUTURE_CANARY_AUTHORIZATION_REQUEST",
+      "media_binding": {
+        "byte_length": 174235,
+        "git_blob": "d5cfb6ab1d17163d4b9d6174c633af627d4ee866",
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+        "sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6"
+      },
+      "nonblocking_notes": [
+        "slightly lateral three-quarter camera",
+        "stylized low-distinctiveness motion"
+      ],
+      "reference_id": "ACTION_REF_PUSH_02",
+      "technical_validation_binding": {
+        "byte_length": 3182,
+        "git_blob": "8d94b0bd13234fc47cf2ab0333ba872e701f92f9",
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_PUSH_02_technical_validation.json",
+        "sha256": "ff560f1cff89091dc9a27ab31c5635428af7f37bb86ebcbef2327a81d73fc67d"
+      }
+    },
+    {
+      "complete_mp4_review": true,
+      "human_decision": "PASS_FOR_FUTURE_CANARY_AUTHORIZATION_REQUEST",
+      "media_binding": {
+        "byte_length": 168170,
+        "git_blob": "8aaa470f8485b9aa59cff057c6a143ed765df7ad",
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+        "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c"
+      },
+      "nonblocking_notes": [
+        "slightly lateral three-quarter camera",
+        "stylized low-distinctiveness motion"
+      ],
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "technical_validation_binding": {
+        "byte_length": 3172,
+        "git_blob": "99e8c86ef8b4dd4c27866487baf5a571b97e5157",
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_IMPACT_02_technical_validation.json",
+        "sha256": "45c9f7c034f2afd0b651cafbe6d8563c7a9d0472baf004877d64858c9818eb63"
+      }
+    }
+  ],
+  "review_source": "ChatGPT Pro complete-MP4 review; human project-owner acceptance supplied by exact active approval",
+  "schema_version": "CAL002_ROUTE_A_REFERENCE_V0_2_HUMAN_REVIEW_LOCK_MANIFEST_V0_1",
+  "starting_checkpoint": "df37cb72d863ab891b5ff95856fb12642a36bca7"
+}
