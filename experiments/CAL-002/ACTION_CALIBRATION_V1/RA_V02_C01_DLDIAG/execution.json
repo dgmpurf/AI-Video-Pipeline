@@ -1,0 +1,110 @@
+{
+  "actual_decision": "CAL002_ROUTE_A_V0_2_C01_PUSH_DIAGNOSTIC_DOWNLOAD_RECOVERY_FAILED",
+  "actual_dreamina_calls": 1,
+  "actual_next_phase": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_DOWNLOAD_FAILURE_RECOVERY_HUMAN_DECISION",
+  "checkpoint_written_before_parse": true,
+  "external_checkpoint_bytes": 2371,
+  "external_checkpoint_sha256": "931b2a33fb71fd22ad0fb01bd5fdc78bb5f2ec167f8e279d5fbb5fddb0977030",
+  "external_checkpoint_status": "PASS",
+  "filesystem_summary": {
+    "delta_result": "PASS",
+    "mp4_candidate_count": 1,
+    "regular_file_count": 1,
+    "unexpected_file_count": 0
+  },
+  "help_version_user_credit_query_only_calls": 0,
+  "impact_call_count": 0,
+  "maximum_dreamina_calls": 1,
+  "media_artifact_count": 0,
+  "motion_only_behavior_verified": false,
+  "offline_self_test": {
+    "dreamina_calls": 0,
+    "final_failure_count": 0,
+    "final_pass_count": 60,
+    "final_test_count": 60,
+    "handler": {
+      "bytes": 22344,
+      "sha256": "9fb34a2b06a941077e07a19508c2b5840256475fb13903e3fc2ab904bab40c10"
+    },
+    "harness": {
+      "bytes": 12380,
+      "sha256": "56c8a48f91704170f03de53118050486869509695252c828e9b5a1448f455f28"
+    },
+    "repository_writes": 0,
+    "suite_invocation_count": 2
+  },
+  "process_result_summary": {
+    "launch_exception_class": null,
+    "process_launched": true,
+    "return_code": 1,
+    "timeout": false
+  },
+  "push_call_count": 1,
+  "raw_provider_output_persisted": false,
+  "repository_artifact_count": 7,
+  "response_validation_summary": {
+    "authoritative_remote_status_source": "committed_push_query_receipt",
+    "explicit_failure_contradiction": false,
+    "parse_ambiguity": false,
+    "parse_mode": "none",
+    "parsed_document_count": 0,
+    "raw_provider_result_returned": false,
+    "redacted_field_count": 0,
+    "response_submit_id": null,
+    "response_submit_id_matches_bound_id": false,
+    "result_count": null,
+    "sensitive_field_count": 0,
+    "signed_url_count": 0,
+    "stderr_utf8": "PASS",
+    "stdout_utf8": "PASS",
+    "video_count": null
+  },
+  "route_a_capability_proven": false,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_PUSH_DIAGNOSTIC_DOWNLOAD_EXECUTION_RECORD_V0_1",
+  "second_push_call_count": 0,
+  "sensitive_data_result": "PASS",
+  "signed_url_persisted": false,
+  "starting_checkpoint": "82688756f79aebf34673587d045948ee6ae930ad",
+  "submit_retry_resubmit_batch_calls": 0,
+  "technical_summary": {
+    "candidate_basename": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a_video_1.mp4",
+    "candidate_bytes": 1669872,
+    "candidate_sha256": "f045a4cf65d962f6e19fbf171a2535633a038ed59c33a32a8e7b096fbbc315c3",
+    "ffprobe": {
+      "audio_stream_count": 1,
+      "codec": "h264",
+      "container_names": "mov,mp4,m4a,3gp,3g2,mj2",
+      "duration_seconds": 5.016667,
+      "exit_code": 0,
+      "frame_count": 121,
+      "frame_rate": 24.119601328903656,
+      "height": 720,
+      "metadata_safety": "PASS",
+      "pixel_format": "yuv420p",
+      "rotation": 0,
+      "video_stream_count": 1,
+      "width": 1280
+    },
+    "full_decode": {
+      "exit_code": 0,
+      "fatal_decode_error": false,
+      "nonfatal_decode_diagnostic_present": true,
+      "stderr_bytes": 348,
+      "stderr_sha256": "108dab0b861868b326d3c5755c210d89242e06fc5f6638cb3e79044e9b9c2e42"
+    },
+    "retained_in_repository": false,
+    "technical_result": "PASS"
+  },
+  "temporary_cleanup_result": {
+    "checkpoint_root_cleaned": true,
+    "download_root_cleaned": true,
+    "self_test_root_cleaned": true,
+    "temporary_regular_files_remaining": 0
+  },
+  "toolchain": {
+    "ffmpeg": "2023-03-27-git-f7abe92bd7-full_build-www.gyan.dev",
+    "ffprobe": "2023-03-27-git-f7abe92bd7-full_build-www.gyan.dev",
+    "python": "Python 3.10.11"
+  },
+  "visual_review_complete": false
+}

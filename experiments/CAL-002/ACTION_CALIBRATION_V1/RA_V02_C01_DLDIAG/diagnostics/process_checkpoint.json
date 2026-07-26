@@ -1,0 +1,77 @@
+{
+  "checkpoint_reread_validation": "PASS",
+  "checkpoint_written_before_parse": true,
+  "external_checkpoint_bytes": 2371,
+  "external_checkpoint_path": "G:/AICODING/AI_VIDEO/.tmp/RA_V02_C01_DL_PUSH_DIAG_R1_STATE/process_checkpoint.json",
+  "external_checkpoint_schema": "CAL002_ROUTE_A_V0_2_C01_PUSH_PRE_PARSE_PROCESS_CHECKPOINT_V0_1",
+  "external_checkpoint_sha256": "931b2a33fb71fd22ad0fb01bd5fdc78bb5f2ec167f8e279d5fbb5fddb0977030",
+  "external_process_checkpoint": {
+    "argv_byte_length": 177,
+    "argv_element_count": 6,
+    "argv_sha256": "748ad9f869d79b4379dc98084b900156abcdcee9e8c758e8c4b1f086537cd757",
+    "authorization_activated": true,
+    "authorization_consumed": true,
+    "authorization_reusable": false,
+    "bound_submit_id": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a",
+    "checkpoint_written_before_parse": true,
+    "elapsed_seconds": 34.485,
+    "execution_id": "CAL002-ROUTE-A-V0-2-C01-PUSH-DIAGNOSTIC-DOWNLOAD-R1",
+    "filesystem_delta": {
+      "added": [
+        {
+          "bytes": 1669872,
+          "relative_path": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a_video_1.mp4",
+          "reparse_point": false,
+          "sha256": "f045a4cf65d962f6e19fbf171a2535633a038ed59c33a32a8e7b096fbbc315c3",
+          "symlink": false,
+          "type": "file"
+        }
+      ],
+      "changed": [],
+      "removed": []
+    },
+    "goal_identity": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_PUSH_ONLY_DIAGNOSTIC_DOWNLOAD_RECOVERY_V0_1",
+    "launch_exception_class": null,
+    "output_parsing_started": false,
+    "post_call_filesystem_snapshot": {
+      "entries": [
+        {
+          "bytes": 1669872,
+          "relative_path": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a_video_1.mp4",
+          "reparse_point": false,
+          "sha256": "f045a4cf65d962f6e19fbf171a2535633a038ed59c33a32a8e7b096fbbc315c3",
+          "symlink": false,
+          "type": "file"
+        }
+      ],
+      "entry_count": 1,
+      "root_identifier": "RA_V02_C01_DL_PUSH_DIAG_R1"
+    },
+    "pre_call_filesystem_snapshot": {
+      "entries": [],
+      "entry_count": 0,
+      "root_identifier": "RA_V02_C01_DL_PUSH_DIAG_R1"
+    },
+    "process_end_timestamp": "2026-07-26T14:46:43.378Z",
+    "process_launched": true,
+    "process_start_timestamp": "2026-07-26T14:46:08.897Z",
+    "raw_stderr_persisted": false,
+    "raw_stdout_persisted": false,
+    "return_code": 1,
+    "sanitized_launch_exception_classification": null,
+    "schema_version": "CAL002_ROUTE_A_V0_2_C01_PUSH_PRE_PARSE_PROCESS_CHECKPOINT_V0_1",
+    "sensitive_value_persisted": false,
+    "shell": false,
+    "signed_url_displayed": false,
+    "signed_url_persisted": false,
+    "starting_checkpoint": "82688756f79aebf34673587d045948ee6ae930ad",
+    "stderr_byte_length": 116,
+    "stderr_sha256": "a21c749a55d94c76c89a802807f37dab868b1bacbbfb792450103574094b5631",
+    "stdout_byte_length": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timeout": false
+  },
+  "raw_stderr_persisted": false,
+  "raw_stdout_persisted": false,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_PUSH_REPOSITORY_PROCESS_CHECKPOINT_V0_1"
+}

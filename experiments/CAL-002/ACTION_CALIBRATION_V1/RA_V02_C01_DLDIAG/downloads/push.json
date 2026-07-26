@@ -1,0 +1,111 @@
+{
+  "alias": "ROUTEA_PUSH_V02_C01",
+  "argv_bytes": 177,
+  "argv_element_count": 6,
+  "argv_sha256": "748ad9f869d79b4379dc98084b900156abcdcee9e8c758e8c4b1f086537cd757",
+  "bound_submit_id": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a",
+  "call_count": 1,
+  "called": true,
+  "candidate_basename": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a_video_1.mp4",
+  "candidate_bytes": 1669872,
+  "candidate_count": 1,
+  "candidate_sha256": "f045a4cf65d962f6e19fbf171a2535633a038ed59c33a32a8e7b096fbbc315c3",
+  "canonical_media_binding": null,
+  "download_accepted": false,
+  "elapsed_seconds": 34.485,
+  "execution_id": "CAL002-ROUTE-A-V0-2-C01-PUSH-DIAGNOSTIC-DOWNLOAD-R1",
+  "external_checkpoint_binding": {
+    "bytes": 2371,
+    "checkpoint_written_before_parse": true,
+    "sha256": "931b2a33fb71fd22ad0fb01bd5fdc78bb5f2ec167f8e279d5fbb5fddb0977030"
+  },
+  "filesystem_delta": {
+    "added": [
+      {
+        "bytes": 1669872,
+        "relative_path": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a_video_1.mp4",
+        "reparse_point": false,
+        "sha256": "f045a4cf65d962f6e19fbf171a2535633a038ed59c33a32a8e7b096fbbc315c3",
+        "symlink": false,
+        "type": "file"
+      }
+    ],
+    "changed": [],
+    "removed": []
+  },
+  "launch_exception_class": null,
+  "motion_only_behavior_verified": false,
+  "package_id": "CAL002-ROUTE-A-PUSH-V02-C01",
+  "parse": {
+    "authoritative_remote_status_source": "committed_push_query_receipt",
+    "explicit_failure_contradiction": false,
+    "parse_ambiguity": false,
+    "parse_mode": "none",
+    "parsed_document_count": 0,
+    "raw_provider_result_returned": false,
+    "redacted_field_count": 0,
+    "response_submit_id": null,
+    "response_submit_id_matches_bound_id": false,
+    "result_count": null,
+    "sensitive_field_count": 0,
+    "signed_url_count": 0,
+    "stderr_utf8": "PASS",
+    "stdout_utf8": "PASS",
+    "video_count": null
+  },
+  "primary_outcome_classification": "DREAMINA_CLI_NONZERO_EXIT",
+  "process_end": "2026-07-26T14:46:43.378Z",
+  "process_launched": true,
+  "process_start": "2026-07-26T14:46:08.897Z",
+  "query_receipt_binding": {
+    "bytes": 2334,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/queries/push.json",
+    "sha256": "f694a22ed81d0f885dc22458aaf08fdc7338106269891a1cade777b7c32599ef",
+    "worktree_equals_head": true
+  },
+  "raw_stderr_persisted": false,
+  "raw_stdout_persisted": false,
+  "reference_id": "ACTION_REF_PUSH_02",
+  "return_code": 1,
+  "route_a_capability_proven": false,
+  "sanitization_result": "PASS",
+  "sanitized_exception_classification": null,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_PUSH_DIAGNOSTIC_DOWNLOAD_RECEIPT_V0_1",
+  "second_call": false,
+  "shell": false,
+  "stderr_bytes": 116,
+  "stderr_sha256": "a21c749a55d94c76c89a802807f37dab868b1bacbbfb792450103574094b5631",
+  "stdout_bytes": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "technical_result": {
+    "candidate_basename": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a_video_1.mp4",
+    "candidate_bytes": 1669872,
+    "candidate_sha256": "f045a4cf65d962f6e19fbf171a2535633a038ed59c33a32a8e7b096fbbc315c3",
+    "ffprobe": {
+      "audio_stream_count": 1,
+      "codec": "h264",
+      "container_names": "mov,mp4,m4a,3gp,3g2,mj2",
+      "duration_seconds": 5.016667,
+      "exit_code": 0,
+      "frame_count": 121,
+      "frame_rate": 24.119601328903656,
+      "height": 720,
+      "metadata_safety": "PASS",
+      "pixel_format": "yuv420p",
+      "rotation": 0,
+      "video_stream_count": 1,
+      "width": 1280
+    },
+    "full_decode": {
+      "exit_code": 0,
+      "fatal_decode_error": false,
+      "nonfatal_decode_diagnostic_present": true,
+      "stderr_bytes": 348,
+      "stderr_sha256": "108dab0b861868b326d3c5755c210d89242e06fc5f6638cb3e79044e9b9c2e42"
+    },
+    "retained_in_repository": false,
+    "technical_result": "PASS"
+  },
+  "timeout": false,
+  "visual_success_known": false
+}

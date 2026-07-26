@@ -1,0 +1,154 @@
+{
+  "artifact_count": 6,
+  "artifacts": [
+    {
+      "bytes": 9564,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/authorization.json",
+      "sha256": "7b54ca38e416553789db829078bd4c8d734888b7b6c17ee80182691150159c3c"
+    },
+    {
+      "bytes": 3127,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/diagnostics/process_checkpoint.json",
+      "sha256": "859c3bde40b9fb97538c2a7d501a75a2ff6618355e1ab0ff151af38e996aaf40"
+    },
+    {
+      "bytes": 3932,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/downloads/push.json",
+      "sha256": "2b51267d150e4ca6a169f587f51c0ac6fab6a9f64136c08b9944800272f50cca"
+    },
+    {
+      "bytes": 2960,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/diagnostics/failure_analysis.json",
+      "sha256": "41fa63b1d6608fbef62e9b5f21d457a10bb3b97e327aa3cf2f278938fbd88e80"
+    },
+    {
+      "bytes": 3767,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/execution.json",
+      "sha256": "1a33c16f6c031dd0375aff09a237ebfd675c3c3ed7b6d6db4940ff291136c0fc"
+    },
+    {
+      "bytes": 5186,
+      "path": "reports/CAL002_RA_V02_C01_DLDIAG_RESULT.md",
+      "sha256": "e25b3103ca15f4667fcdcf29798a70989651a2e7fc5b6aac9a749aa366f8fb17"
+    }
+  ],
+  "candidate_technical_result": {
+    "candidate_basename": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a_video_1.mp4",
+    "candidate_bytes": 1669872,
+    "candidate_sha256": "f045a4cf65d962f6e19fbf171a2535633a038ed59c33a32a8e7b096fbbc315c3",
+    "ffprobe": {
+      "audio_stream_count": 1,
+      "codec": "h264",
+      "container_names": "mov,mp4,m4a,3gp,3g2,mj2",
+      "duration_seconds": 5.016667,
+      "exit_code": 0,
+      "frame_count": 121,
+      "frame_rate": 24.119601328903656,
+      "height": 720,
+      "metadata_safety": "PASS",
+      "pixel_format": "yuv420p",
+      "rotation": 0,
+      "video_stream_count": 1,
+      "width": 1280
+    },
+    "full_decode": {
+      "exit_code": 0,
+      "fatal_decode_error": false,
+      "nonfatal_decode_diagnostic_present": true,
+      "stderr_bytes": 348,
+      "stderr_sha256": "108dab0b861868b326d3c5755c210d89242e06fc5f6638cb3e79044e9b9c2e42"
+    },
+    "retained_in_repository": false,
+    "technical_result": "PASS"
+  },
+  "current_checkpoint": "82688756f79aebf34673587d045948ee6ae930ad",
+  "decision": "CAL002_ROUTE_A_V0_2_C01_PUSH_DIAGNOSTIC_DOWNLOAD_RECOVERY_FAILED",
+  "evidence_coverage": "6/6",
+  "external_checkpoint_binding": {
+    "bytes": 2371,
+    "checkpoint_written_before_parse": true,
+    "path": "G:/AICODING/AI_VIDEO/.tmp/RA_V02_C01_DL_PUSH_DIAG_R1_STATE/process_checkpoint.json",
+    "schema_version": "CAL002_ROUTE_A_V0_2_C01_PUSH_PRE_PARSE_PROCESS_CHECKPOINT_V0_1",
+    "sha256": "931b2a33fb71fd22ad0fb01bd5fdc78bb5f2ec167f8e279d5fbb5fddb0977030"
+  },
+  "handler_binding": {
+    "bytes": 22344,
+    "sha256": "9fb34a2b06a941077e07a19508c2b5840256475fb13903e3fc2ab904bab40c10"
+  },
+  "harness_binding": {
+    "bytes": 12380,
+    "sha256": "56c8a48f91704170f03de53118050486869509695252c828e9b5a1448f455f28"
+  },
+  "included_artifact_count": 6,
+  "input_bindings": {
+    "impact_query_receipt": {
+      "bytes": 2340,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/queries/impact.json",
+      "sha256": "f8407729a21ab68048b5bf3508b1eb047433bcca29e614708d69d8a05de47d45",
+      "worktree_equals_head": true
+    },
+    "push_query_receipt": {
+      "bytes": 2334,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/queries/push.json",
+      "sha256": "f694a22ed81d0f885dc22458aaf08fdc7338106269891a1cade777b7c32599ef",
+      "worktree_equals_head": true
+    },
+    "query_recovery_evidence_manifest": {
+      "bytes": 9230,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/evidence_manifest.json",
+      "sha256": "45db71f77c3d0f7450ec206255986fd431064426dcbaec24866c0bffce82d72e",
+      "worktree_equals_head": true
+    },
+    "query_recovery_report": {
+      "bytes": 4849,
+      "path": "reports/CAL002_RA_V02_C01_QRYREC_RESULT.md",
+      "sha256": "473aeccab818a2d92d3562b2d8bfcc55d485f015008914a1d866aedbe8ab40ed",
+      "worktree_equals_head": true
+    }
+  },
+  "next_phase": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_DOWNLOAD_FAILURE_RECOVERY_HUMAN_DECISION",
+  "primary_failure_classification": "DREAMINA_CLI_NONZERO_EXIT",
+  "prior_failed_download": {
+    "approval_bytes": 3284,
+    "approval_sha256": "89030a1022573573b9655097a5d69510fa0cd42bd46b545fdedf3b6927c31653",
+    "authorization_activated": true,
+    "authorization_consumed": true,
+    "authorization_reusable": false,
+    "decision": "CAL002_ROUTE_A_V0_2_C01_DOWNLOAD_FAILED_PUSH_DOWNLOAD_PROCESS_FAILURE",
+    "impact_call_count": 0,
+    "media_obtained": false,
+    "numeric_exit_code_persisted": false,
+    "push_call_count": 1
+  },
+  "raw_provider_output_persisted": false,
+  "read_only_triage": {
+    "approval_bytes": 2085,
+    "approval_sha256": "60193fe1ef6ade4aa1d0c9c1c43aac0fda58a2b11d00976c93db64911089e214",
+    "confidence": "medium",
+    "decision": "CAL002_ROUTE_A_V0_2_C01_PUSH_DOWNLOAD_FAILURE_READ_ONLY_TRIAGE_COMPLETE",
+    "historical_log_bindings": [
+      {
+        "basename": "dreamina.log.2026-07-26_22",
+        "bytes": 1425,
+        "sha256": "a000855bf3a6b5e94b3e0b73c0b3256052e0c596939adeee02cfd73834f8055b"
+      },
+      {
+        "basename": "dreamina.log.2026-07-26_16",
+        "bytes": 10586,
+        "sha256": "17dbf86edb754d0d344ab166698d2f26b078c57ecd6673c21eb816329a09be6a"
+      }
+    ],
+    "primary_classification": "LOCAL_EVIDENCE_HANDLER_RESULT_LOSS"
+  },
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_PUSH_DIAGNOSTIC_DOWNLOAD_FAILURE_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "sensitive_data_result": "PASS",
+  "signed_url_persisted": false,
+  "temporary_cleanup_result": {
+    "checkpoint_root_cleaned": true,
+    "download_root_cleaned": true,
+    "self_test_root_cleaned": true,
+    "temporary_regular_files_remaining": 0
+  },
+  "unique_bound_paths": 6
+}

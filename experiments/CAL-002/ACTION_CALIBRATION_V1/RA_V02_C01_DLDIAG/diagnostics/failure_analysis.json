@@ -1,0 +1,75 @@
+{
+  "automatic_retry_authorized": false,
+  "candidate": {
+    "candidate_basename": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a_video_1.mp4",
+    "candidate_bytes": 1669872,
+    "candidate_sha256": "f045a4cf65d962f6e19fbf171a2535633a038ed59c33a32a8e7b096fbbc315c3",
+    "ffprobe": {
+      "audio_stream_count": 1,
+      "codec": "h264",
+      "container_names": "mov,mp4,m4a,3gp,3g2,mj2",
+      "duration_seconds": 5.016667,
+      "exit_code": 0,
+      "frame_count": 121,
+      "frame_rate": 24.119601328903656,
+      "height": 720,
+      "metadata_safety": "PASS",
+      "pixel_format": "yuv420p",
+      "rotation": 0,
+      "video_stream_count": 1,
+      "width": 1280
+    },
+    "full_decode": {
+      "exit_code": 0,
+      "fatal_decode_error": false,
+      "nonfatal_decode_diagnostic_present": true,
+      "stderr_bytes": 348,
+      "stderr_sha256": "108dab0b861868b326d3c5755c210d89242e06fc5f6638cb3e79044e9b9c2e42"
+    },
+    "retained_in_repository": false,
+    "technical_result": "PASS"
+  },
+  "confidence": "high",
+  "contradictory_evidence": [
+    "The filesystem download itself produced exactly one technically valid MP4.",
+    "Committed remote-task evidence remains success, Finish, terminal, one video, and download-ready."
+  ],
+  "direct_supporting_evidence": [
+    "The bound Dreamina process launched exactly once.",
+    "The process returned exact numeric exit code 1 without timing out.",
+    "stdout was empty and neither output stream contained a parseable JSON response.",
+    "One nonempty MP4 was created in the authorized root and passed bounded technical validation."
+  ],
+  "filesystem_delta": {
+    "added": [
+      {
+        "bytes": 1669872,
+        "relative_path": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a_video_1.mp4",
+        "reparse_point": false,
+        "sha256": "f045a4cf65d962f6e19fbf171a2535633a038ed59c33a32a8e7b096fbbc315c3",
+        "symlink": false,
+        "type": "file"
+      }
+    ],
+    "changed": [],
+    "removed": []
+  },
+  "fresh_authorization_required": true,
+  "launch_exception_class": null,
+  "optional_contributing_factor": "DOWNLOAD_RESPONSE_PARSE_FAILURE",
+  "primary_failure_classification": "DREAMINA_CLI_NONZERO_EXIT",
+  "recommended_next_recovery_gate": "HUMAN_DECISION_REQUIRED_BEFORE_ANY_FURTHER_PROVIDER_CALL",
+  "return_code": 1,
+  "sanitized_excerpts": [],
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_PUSH_DIAGNOSTIC_DOWNLOAD_FAILURE_ANALYSIS_V0_1",
+  "stderr_bytes": 116,
+  "stderr_sha256": "a21c749a55d94c76c89a802807f37dab868b1bacbbfb792450103574094b5631",
+  "stdout_bytes": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "timeout": false,
+  "unresolved_evidence_gaps": [
+    "The exact reason the CLI returned 1 after creating a technically valid MP4 is not present in sanitized evidence.",
+    "No response submit ID, result count, or video count was recoverable from process output.",
+    "Raw stderr was intentionally not persisted."
+  ]
+}
