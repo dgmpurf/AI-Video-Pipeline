@@ -1,0 +1,254 @@
+{
+  "actual_dreamina_process_count": 5,
+  "actual_dreamina_process_order": [
+    "dreamina version",
+    "dreamina user_credit",
+    "dreamina query_result -h",
+    "PUSH query_result --download_dir",
+    "IMPACT query_result --download_dir"
+  ],
+  "authorization_verification": {
+    "base64_character_count": 6924,
+    "base64_decode_count": 1,
+    "bom": false,
+    "byte_length": 5193,
+    "decoded_bytes_equal_original": true,
+    "decoded_sha256_equal_original": true,
+    "sha256": "017a4232798f75f166c87d4fca156dd6d6f0cb103aa023bf262a5582619a7f7b",
+    "trailing_carriage_return": false,
+    "trailing_newline": false,
+    "trailing_space": false,
+    "utf8": true
+  },
+  "download_command_contract_result": "PASS",
+  "download_ready_states": {
+    "impact": true,
+    "push": true
+  },
+  "expected_dreamina_process_order": [
+    "dreamina version",
+    "dreamina user_credit",
+    "dreamina query_result -h",
+    "PUSH query_result --download_dir",
+    "IMPACT query_result --download_dir"
+  ],
+  "maximum_dreamina_process_count": 5,
+  "output_path_absence": true,
+  "protected_state_result": "PASS",
+  "query_evidence_bindings": {
+    "impact_query_receipt": {
+      "binding_result": "PASS",
+      "bytes": 2116,
+      "git_blob": "eb64953e033176e025755ace65becd82ebe060e2",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/queries/impact.json",
+      "sha256": "b7eecdc77cc56883cadab84d7d847414d0afb76feede5618a5216f7f83c37e0c",
+      "strict_json_parse": "PASS",
+      "worktree_equals_head": true
+    },
+    "push_query_receipt": {
+      "binding_result": "PASS",
+      "bytes": 2108,
+      "git_blob": "21ab2af6b53616f404e06243180f44b43c8ef9de",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/queries/push.json",
+      "sha256": "e20b218fe18a223395721dc0e00a94fe40a23a43fd3668b937e6a5aad8fa47ca",
+      "strict_json_parse": "PASS",
+      "worktree_equals_head": true
+    },
+    "query_authorization": {
+      "binding_result": "PASS",
+      "bytes": 5736,
+      "git_blob": "89d436d883f4175cde50b00bc019a2efbaa74378",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/authorization.json",
+      "sha256": "b9d7dda66f6ec090d6a0acd95f5ea6954cf310557bb657ea958ce58707e750aa",
+      "strict_json_parse": "PASS",
+      "worktree_equals_head": true
+    },
+    "query_evidence_manifest": {
+      "binding_result": "PASS",
+      "bytes": 4250,
+      "git_blob": "7982ee6f989d78549b8822cea2bd61cad6d3a9fc",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/evidence_manifest.json",
+      "sha256": "35d2568e9d2c8c8ca6a78a89ed15544731a815013a36f8e5e29e8a1ffe3c37ec",
+      "strict_json_parse": "PASS",
+      "worktree_equals_head": true
+    },
+    "query_execution": {
+      "binding_result": "PASS",
+      "bytes": 1880,
+      "git_blob": "f1cd61d97415dde78d5f75d4c8a56d78d235ce58",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/execution.json",
+      "sha256": "d8548d90e98d3066bd7e7f9e656879534c826dbe15e006ff1c543ae2ddf16659",
+      "strict_json_parse": "PASS",
+      "worktree_equals_head": true
+    },
+    "query_governance_report": {
+      "binding_result": "PASS",
+      "bytes": 4394,
+      "git_blob": "896cad53f83e9e2dbc91b67d35b1e6e4ceb8e36f",
+      "path": "reports/CAL002_RA_V03_C02_QUERY_RESULT.md",
+      "sha256": "9976f5eaf6db28276c5935d4c5d9e03b699f578115f4c51d45265767231ecf95",
+      "strict_json_parse": "NOT_APPLICABLE",
+      "worktree_equals_head": true
+    },
+    "query_preflight": {
+      "binding_result": "PASS",
+      "bytes": 7329,
+      "git_blob": "5aaba93dcdb141a6c1fd024a65c4f2b090c1d5a8",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/preflight.json",
+      "sha256": "e6f9ee7083519f52f47bf973691c191ab28c454478106394bc2bf121e6bcf97d",
+      "strict_json_parse": "PASS",
+      "worktree_equals_head": true
+    }
+  },
+  "query_result_help_canary": {
+    "download_command_contract": "PASS",
+    "extracted_option_facts": {
+      "auth_failure": false,
+      "download_dir_optional": true,
+      "download_dir_supported": true,
+      "download_operation_is_query_result_with_download_dir": true,
+      "download_path_is_local": true,
+      "logger_failure": false,
+      "mandatory_poll_loop_absent": true,
+      "mandatory_retry_absent": true,
+      "one_submit_id_per_call": true,
+      "output_dir_absent": true,
+      "submit_id_supported": true
+    },
+    "process": {
+      "elapsed_seconds": 2.593,
+      "end_utc": "2026-07-26T22:26:28.590663Z",
+      "launch_exception_class": null,
+      "name": "dreamina query_result -h",
+      "process_launched": true,
+      "raw_output_persisted": false,
+      "return_code": 0,
+      "start_utc": "2026-07-26T22:26:26.008615Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_byte_length": 388,
+      "stdout_sha256": "74f728cc4d3ae36fb3dcf773e85ed003637c28d048d1cad77a29b59b9bd4b171",
+      "timeout": false
+    },
+    "result": "PASS"
+  },
+  "repository_result": {
+    "branch": "main",
+    "commit_message": "query(cal002): record Route A V0.3 C02 task status",
+    "head": "e49f67fa514feceaa2baa59775174ab95a54d6d3",
+    "head_origin_aligned": true,
+    "origin_main": "e49f67fa514feceaa2baa59775174ab95a54d6d3",
+    "parent": "08a142d1e4bd65460a5a08b49c0e41fb3651e129",
+    "repository_root": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+    "result": "PASS",
+    "source_status_count": 0,
+    "staged_path_count": 0,
+    "tracked_modification_count": 0,
+    "untracked_count": 26,
+    "untracked_paths_snapshot": [
+      ".vs/",
+      "experiments/CAL-001/execution_records/P3B_R2_T2/evidence/",
+      "experiments/CAL-001/execution_records/P3B_R2_T4/evidence/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH02_EXECUTION/execution_records/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH03_EXECUTION/execution_records/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_EXECUTION/execution_records/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/PILOT_R1/BATCH_01/execution_records/",
+      "productions/chi_yan_tian_qiong/edits/",
+      "productions/chi_yan_tian_qiong/review_artifacts/",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_INDEPENDENT_PACKAGE_REVIEW_RESULT.md",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_QUERY_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH02_DESIGN_REVIEW_RESULT.md",
+      "reports/CAL002_BATCH02_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH02_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH02_QUERY_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH03_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH03_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH03_QUERY_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH04_DOWNLOAD_AUTHORIZATION_EXECUTION_RECONCILIATION_RESULT.md",
+      "reports/CAL002_BATCH04_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH04_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH04_QUERY_EXECUTION_RESULT.md",
+      "reports/context_recovery/",
+      "reports/investor/"
+    ],
+    "untracked_set_sha256": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94"
+  },
+  "result": "PASS",
+  "schema_version": "CAL002_ROUTE_A_V0_3_C02_DOWNLOAD_PREFLIGHT_V0_1",
+  "sensitive_data_precheck": "PASS",
+  "submit_id_uniqueness": true,
+  "temporary_root_absence_and_isolation": {
+    "absent": true,
+    "outside_repository": true,
+    "result": "PASS",
+    "same_g_drive": true
+  },
+  "tool_resolution": {
+    "dreamina": {
+      "bytes": 31879680,
+      "path": "C:/Users/msjpurf/bin/dreamina.exe",
+      "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10"
+    },
+    "ffmpeg": {
+      "bytes": 131534336,
+      "path": "C:/ffmpeg/bin/ffmpeg.exe",
+      "sha256": "9f5c85e070cc2cfdc960c67395a8a47967732e59ddd8850bc56cf5842e7049d4"
+    },
+    "ffprobe": {
+      "bytes": 131407872,
+      "path": "C:/ffmpeg/bin/ffprobe.exe",
+      "sha256": "ba37098df2d55a7464ca344ab806c174be9735c22bf8a487d26fe0c624598695"
+    }
+  },
+  "user_credit_canary": {
+    "auth_failure": false,
+    "logger_failure": false,
+    "parse_mode": "stdout_complete_json",
+    "private_fields_detected_in_memory": true,
+    "private_fields_persisted": false,
+    "process": {
+      "elapsed_seconds": 2.907,
+      "end_utc": "2026-07-26T22:26:26.008615Z",
+      "launch_exception_class": null,
+      "name": "dreamina user_credit",
+      "process_launched": true,
+      "raw_output_persisted": false,
+      "return_code": 0,
+      "start_utc": "2026-07-26T22:26:23.101640Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_byte_length": 103,
+      "stdout_sha256": "789180d59c7cf33607729b83e7a314d262bb13610ee7b75c04ee753d53d875d2",
+      "timeout": false
+    },
+    "result": "PASS",
+    "total_credit": 3541,
+    "total_credit_occurrence": "unique"
+  },
+  "version_canary": {
+    "auth_failure": false,
+    "build_time": "2026-06-26T06:36:39Z",
+    "commit": "2a20fff",
+    "logger_failure": false,
+    "parse_mode": "stdout_complete_json",
+    "process": {
+      "elapsed_seconds": 2.656,
+      "end_utc": "2026-07-26T22:26:23.101640Z",
+      "launch_exception_class": null,
+      "name": "dreamina version",
+      "process_launched": true,
+      "raw_output_persisted": false,
+      "return_code": 0,
+      "start_utc": "2026-07-26T22:26:20.442025Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_byte_length": 96,
+      "stdout_sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0",
+      "timeout": false
+    },
+    "result": "PASS",
+    "version": "2a20fff-dirty"
+  }
+}

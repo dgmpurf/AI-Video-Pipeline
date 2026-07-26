@@ -1,0 +1,131 @@
+{
+  "artifact_count": 10,
+  "committed_input_bindings": {
+    "impact_query_receipt": {
+      "binding_result": "PASS",
+      "bytes": 2116,
+      "git_blob": "eb64953e033176e025755ace65becd82ebe060e2",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/queries/impact.json",
+      "sha256": "b7eecdc77cc56883cadab84d7d847414d0afb76feede5618a5216f7f83c37e0c",
+      "strict_json_parse": "PASS",
+      "worktree_equals_head": true
+    },
+    "push_query_receipt": {
+      "binding_result": "PASS",
+      "bytes": 2108,
+      "git_blob": "21ab2af6b53616f404e06243180f44b43c8ef9de",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/queries/push.json",
+      "sha256": "e20b218fe18a223395721dc0e00a94fe40a23a43fd3668b937e6a5aad8fa47ca",
+      "strict_json_parse": "PASS",
+      "worktree_equals_head": true
+    },
+    "query_authorization": {
+      "binding_result": "PASS",
+      "bytes": 5736,
+      "git_blob": "89d436d883f4175cde50b00bc019a2efbaa74378",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/authorization.json",
+      "sha256": "b9d7dda66f6ec090d6a0acd95f5ea6954cf310557bb657ea958ce58707e750aa",
+      "strict_json_parse": "PASS",
+      "worktree_equals_head": true
+    },
+    "query_evidence_manifest": {
+      "binding_result": "PASS",
+      "bytes": 4250,
+      "git_blob": "7982ee6f989d78549b8822cea2bd61cad6d3a9fc",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/evidence_manifest.json",
+      "sha256": "35d2568e9d2c8c8ca6a78a89ed15544731a815013a36f8e5e29e8a1ffe3c37ec",
+      "strict_json_parse": "PASS",
+      "worktree_equals_head": true
+    },
+    "query_execution": {
+      "binding_result": "PASS",
+      "bytes": 1880,
+      "git_blob": "f1cd61d97415dde78d5f75d4c8a56d78d235ce58",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/execution.json",
+      "sha256": "d8548d90e98d3066bd7e7f9e656879534c826dbe15e006ff1c543ae2ddf16659",
+      "strict_json_parse": "PASS",
+      "worktree_equals_head": true
+    },
+    "query_governance_report": {
+      "binding_result": "PASS",
+      "bytes": 4394,
+      "git_blob": "896cad53f83e9e2dbc91b67d35b1e6e4ceb8e36f",
+      "path": "reports/CAL002_RA_V03_C02_QUERY_RESULT.md",
+      "sha256": "9976f5eaf6db28276c5935d4c5d9e03b699f578115f4c51d45265767231ecf95",
+      "strict_json_parse": "NOT_APPLICABLE",
+      "worktree_equals_head": true
+    },
+    "query_preflight": {
+      "binding_result": "PASS",
+      "bytes": 7329,
+      "git_blob": "5aaba93dcdb141a6c1fd024a65c4f2b090c1d5a8",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_QRY/preflight.json",
+      "sha256": "e6f9ee7083519f52f47bf973691c191ab28c454478106394bc2bf121e6bcf97d",
+      "strict_json_parse": "PASS",
+      "worktree_equals_head": true
+    }
+  },
+  "current_checkpoint": "e49f67fa514feceaa2baa59775174ab95a54d6d3",
+  "decision": "CAL002_ROUTE_A_V0_3_C02_MATCHED_PAIR_DOWNLOAD_SUCCESS_TECHNICAL_VALIDATION_PASS",
+  "evidence_coverage": "10/10",
+  "included_artifact_count": 10,
+  "outcome": "SUCCESS",
+  "output_bindings": [
+    {
+      "bytes": 9586,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/authorization.json",
+      "sha256": "0dae85fbde14e6127c0a03b10b8a1ccc7c633021db3b96d7577d66ab0e27dc43"
+    },
+    {
+      "bytes": 10040,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/preflight.json",
+      "sha256": "57b97209e952c5022688da1a01edfa59c6ce80005760f0b291d82185d64e0e3f"
+    },
+    {
+      "bytes": 2201,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/downloads/push.json",
+      "sha256": "fff065bf39237d50a8a63f2841fc2ba3a28016525ee7ace71f7748acc8efd9be"
+    },
+    {
+      "bytes": 2217,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/downloads/impact.json",
+      "sha256": "165a9ca5f46bd86c0ecce190f187385137cb145c024ca5ac984f0af3e6b14174"
+    },
+    {
+      "bytes": 6666,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/technical/push.json",
+      "sha256": "523277008d544c7b6f6c79c71db305b8a4eb3753d5645afc472d04c3cbf7b858"
+    },
+    {
+      "bytes": 6684,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/technical/impact.json",
+      "sha256": "4fb041772620a9f654d2348ea0fbfa7985d0eca33abf583e0f092545ba432d53"
+    },
+    {
+      "bytes": 2140523,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/media/ROUTEA_PUSH_V03_C02.mp4",
+      "sha256": "814a2a183247b99c28bb86594aa054a7ae3891c4c9ac0612f6081788fdc35e18"
+    },
+    {
+      "bytes": 2217491,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/media/ROUTEA_IMPACT_V03_C02.mp4",
+      "sha256": "d9116ee8798f4f0c0a5957fb1988880c1b1f8d06dfd36005f1de9c327bc8e1cb"
+    },
+    {
+      "bytes": 1967,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/execution.json",
+      "sha256": "84c42366787363a36818772bf6b4abed4a82d788b16810ccf87244189feac726"
+    },
+    {
+      "bytes": 5634,
+      "path": "reports/CAL002_RA_V03_C02_DOWNLOAD_RESULT.md",
+      "sha256": "00c083019fb11e1b95e67f92425a02ee81ab1f60bf2e102bdddbc92fdf967a3e"
+    }
+  ],
+  "raw_provider_output_persisted": false,
+  "schema_version": "CAL002_ROUTE_A_V0_3_C02_DOWNLOAD_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "sensitive_data_scan": "PASS",
+  "signed_url_persisted": false,
+  "unique_bound_paths": 10
+}
