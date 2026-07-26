@@ -1,0 +1,666 @@
+{
+  "approval": {
+    "authorization_activated": true,
+    "authorization_consumed": true,
+    "authorization_reusable": false,
+    "base64_character_count": 5704,
+    "base64_decode_count": 1,
+    "bom": false,
+    "byte_length": 4276,
+    "canonical_authorization_text": "APPROVE_CAL002_ROUTE_A_V0_3_C02_COMPLETE_MP4_HUMAN_REVIEW_RECORD_FINAL_BOUNDED_ROUTE_A_CAPABILITY_DECISION_AND_BRANCH_CLOSURE_V0_1__BIND_CURRENT_CHECKPOINT_4CDA221156F54B4AD9BF01818008AA337503A276__BIND_REVIEW_CONTRACT_BYTES_4013__BIND_REVIEW_CONTRACT_SHA256_B1D226CAF6AD8A8BBE25E169788B09CAB7F788DA261CA0B1205AEA20219D569E__BIND_DOWNLOAD_EVIDENCE_MANIFEST_GIT_BLOB_73E3C965738AEEA685124E02294037C1A2E3034F__BIND_DOWNLOAD_GOVERNANCE_REPORT_BYTES_5634__BIND_DOWNLOAD_GOVERNANCE_REPORT_SHA256_00C083019FB11E1B95E67F92425A02EE81AB1F60BF2E102BDDDBC92FDF967A3E__BIND_PUSH_TECHNICAL_RECORD_BYTES_6666__BIND_PUSH_TECHNICAL_RECORD_SHA256_523277008D544C7B6F6C79C71DB305B8A4EB3753D5645AFC472D04C3CBF7B858__BIND_IMPACT_TECHNICAL_RECORD_BYTES_6684__BIND_IMPACT_TECHNICAL_RECORD_SHA256_4FB041772620A9F654D2348EA0FBFA7985D0ECA33ABF583E0F092545BA432D53__BIND_PUSH_MP4_BYTES_2140523__BIND_PUSH_MP4_SHA256_814A2A183247B99C28BB86594AA054A7AE3891C4C9AC0612F6081788FDC35E18__BIND_IMPACT_MP4_BYTES_2217491__BIND_IMPACT_MP4_SHA256_D9116EE8798F4F0C0A5957FB1988880C1B1F8D06DFD36005F1DE9C327BC8E1CB__ACCEPT_BOTH_COMPLETE_MP4S_TECHNICALLY_VALID_FULL_DECODE_PASS_ONE_HUNDRED_TWENTY_ONE_FRAMES_EACH_AND_COMPLETE_SEQUENCE_VISUALLY_REVIEWED__ACCEPT_FORMAL_DECISION_C02_REFERENCE_SPECIFIC_SIGNAL_ESTABLISHED_READY_FOR_FINAL_ROUTE_A_HUMAN_DECISION__ACCEPT_PUSH_OWN_REFERENCE_SIGNATURE_SCORE_ELEVEN_CROSS_REFERENCE_SIGNATURE_SCORE_SIX_REFERENCE_SPECIFICITY_MARGIN_POSITIVE_FIVE__ACCEPT_IMPACT_OWN_REFERENCE_SIGNATURE_SCORE_ELEVEN_CROSS_REFERENCE_SIGNATURE_SCORE_SIX_REFERENCE_SPECIFICITY_MARGIN_POSITIVE_FIVE__ACCEPT_STRONG_CAUSAL_SIGNAL_GATE_PASS_WITH_BOTH_OWN_SCORES_AT_LEAST_EIGHT_BOTH_MARGINS_AT_LEAST_THREE_OUTPUTS_OBSERVABLY_DIFFERENTIATED_NEITHER_REFERENCE_IGNORED_REFERENCE_OVERDOMINANCE_FALSE_REFERENCE_ROLE_CONFLICT_FALSE_ACTION_FAMILY_FAILURE_COUNT_ZERO_AND_MATERIAL_SENTINEL_COUNT_ZERO__ACCEPT_PUSH_OUTPUT_AS_TWO_HAND_PRESSURE_LIKE_CHEST_LINE_INTERACTION_WITH_GRADUAL_RECEIVER_TORSO_DISPLACEMENT_ONE_REAR_FOOT_RECOVERY_PLACEMENT_RELEASE_RECOVERY_AND_LATE_NONCONTACT_REENTRY__ACCEPT_IMPACT_OUTPUT_AS_COMPACT_SINGLE_ARM_BRIEF_CHEST_LINE_INTERACTION_WITH_QUICKER_UPPER_BODY_RECOIL_ONE_REAR_FOOT_RECOIL_STEP_PROMPT_RETRACTION_RECOVERY_AND_LATE_NONCONTACT_REENTRY__ACCEPT_BOTH_OUTPUTS_HAVE_ONE_PRIMARY_CONTACT_EPISODE_AND_NO_SECOND_CONTACT__ACCEPT_NONBLOCKING_LIMITATIONS_OF_MODEST_RECEIVER_REACTION_AMPLITUDE_GUARD_LINE_INTERCEPTION_INSTEAD_OF_CLEAN_TORSO_CONTACT_AND_LONG_LOW_MOTION_INTERVAL_BEFORE_LATE_REENTRY__ACCEPT_ALL_FOUR_SENTINELS_CONTACT_MARKER_COPY_MANNEQUIN_STYLE_COPY_GRID_SCENE_COPY_AND_FIXED_CAMERA_COMPOSITION_COPY_AS_PRESENT_FALSE_MATERIAL_FALSE__SET_FINAL_HUMAN_CAPABILITY_DECISION_ROUTE_A_BOUNDED_REFERENCE_SPECIFIC_MOTION_DIFFERENTIATION_CAPABILITY_ESTABLISHED_IN_C02_BUT_NOT_GENERALIZED_TO_PRODUCTION__SET_PROVIDER_MOTION_ONLY_ROLE_SEPARATION_SUPPORTED_IN_THIS_CONTROLLED_MATCHED_PAIR_BUT_NOT_PROVEN_AS_A_GENERAL_PROVIDER_CONTRACT__SET_ROUTE_A_BOUNDED_CAPABILITY_ESTABLISHED_TRUE_AND_ROUTE_A_GENERALIZED_CAPABILITY_PROVEN_FALSE__CLOSE_C02_AND_CLOSE_ROUTE_A_CALIBRATION_BRANCH_WITH_NO_C03_NO_RETRY_NO_RESUBMIT_NO_REDOWNLOAD_AND_NO_REVIEW_REOPENING__KEEP_ORIGINAL_R02_BLOCKED_AND_UNAUTHORIZED__AUTHORIZE_RECORD_ONLY_CREATION_OF_COMPLETE_MP4_HUMAN_REVIEW_RECORD_COMPLETE_MP4_HUMAN_REVIEW_REPORT_EVIDENCE_MANIFEST_AND_GOVERNANCE_REPORT_COMMIT_AND_PUSH__REQUIRE_REVIEW_RECORD_TO_PRESERVE_TWELVE_DIMENSION_SCORING_PER_OUTPUT_REFERENCE_SIGNATURE_EVIDENCE_TIMELINE_FINDINGS_FOUR_SENTINELS_STRONG_GATE_RESULT_LIMITATIONS_AND_FINAL_HUMAN_CAPABILITY_DECISION__REQUIRE_EVIDENCE_MANIFEST_TO_BIND_THE_TWO_CANONICAL_MP4S_TWO_TECHNICAL_RECORDS_REVIEW_CONTRACT_DOWNLOAD_EVIDENCE_MANIFEST_DOWNLOAD_GOVERNANCE_REPORT_AND_THREE_NONSELF_REVIEW_OUTPUTS__NO_DREAMINA_NO_PROVIDER_NO_VERSION_NO_USER_CREDIT_NO_HELP_NO_SUBMIT_NO_QUERY_NO_DOWNLOAD_NO_RETRY_NO_RESUBMIT_NO_BATCH_NO_REFERENCE_UPLOAD_NO_LOGIN_NO_CHECKLOGIN_NO_SESSION_MUTATION_NO_LIST_TASK__NO_SOURCE_CHANGE_NO_MEDIA_CHANGE_NO_PROMPT_CHANGE_NO_PACKAGE_CHANGE_NO_REFERENCE_CHANGE_NO_PRODUCTION_REENTRY_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__SET_NEXT_PHASE_CAL002_ROUTE_A_V0_3_C02_FINAL_REVIEW_RECORDED_ROUTE_A_BRANCH_CLOSED_AWAITING_SOURCE_SYNTHESIS_OR_HUMAN_SELECTED_PRODUCTION_RECOVERY__ONE_TIME_NON_REUSABLE",
+    "decoded_bytes_equal_original": true,
+    "decoded_sha256_equal_original": true,
+    "encoding": "UTF-8",
+    "round_trip_verified": true,
+    "sha256": "b817e0a4e217f53cf3eae5a723caeb784869c6a8629b3cd6d47e7e772e68a811",
+    "trailing_carriage_return": false,
+    "trailing_newline": false,
+    "trailing_space": false
+  },
+  "branch_closure": {
+    "C02_closed": true,
+    "C02_redownload_authorized": false,
+    "C02_resubmit_authorized": false,
+    "C02_retry_authorized": false,
+    "C02_review_reopening_authorized": false,
+    "C03_authorized": false,
+    "automatic_expansion_authorized": false,
+    "original_R02_authorized": false,
+    "original_R02_blocked": true,
+    "production_reentry_authorized": false,
+    "route_a_calibration_branch_closed": true
+  },
+  "capability_interpretation": {
+    "bounded_result": "This result establishes a bounded reference-specific motion differentiation capability in this controlled matched pair.",
+    "generalization_boundary": "It does not establish generalized production reliability or a universal Provider motion-only contract.",
+    "provider_motion_only_role_separation_proven_as_general_provider_contract": false,
+    "provider_motion_only_role_separation_supported_in_this_controlled_pair": true,
+    "route_a_bounded_capability_established": true,
+    "route_a_generalized_capability_proven": false
+  },
+  "final_human_capability_decision": "ROUTE_A_BOUNDED_REFERENCE_SPECIFIC_MOTION_DIFFERENTIATION_CAPABILITY_ESTABLISHED_IN_C02_BUT_NOT_GENERALIZED_TO_PRODUCTION",
+  "formal_review_decision": "C02_REFERENCE_SPECIFIC_SIGNAL_ESTABLISHED_READY_FOR_FINAL_ROUTE_A_HUMAN_DECISION",
+  "governance": {
+    "Dreamina_called": false,
+    "Prompt_changed": false,
+    "Provider_called": false,
+    "Source_changed": false,
+    "batch_called": false,
+    "download_called": false,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "help_called": false,
+    "locked": false,
+    "media_changed": false,
+    "package_changed": false,
+    "production_approved": false,
+    "query_called": false,
+    "reference_changed": false,
+    "reference_upload_called": false,
+    "resubmit_called": false,
+    "retry_called": false,
+    "submit_called": false,
+    "user_credit_called": false,
+    "version_called": false
+  },
+  "impact_review": {
+    "approximate_timeline": [
+      {
+        "findings": [
+          "preparation",
+          "initial spacing",
+          "compact approach",
+          "no completed contact"
+        ],
+        "interval": "0.00-0.83 seconds"
+      },
+      {
+        "findings": [
+          "attacker initiates a compact primarily single-arm entry"
+        ],
+        "interval": "0.83-1.00 seconds"
+      },
+      {
+        "findings": [
+          "one brief chest-line or guard-line interaction becomes readable",
+          "interaction is shorter than PUSH",
+          "attacker does not maintain prolonged two-hand pressure"
+        ],
+        "interval": "1.00-1.50 seconds"
+      },
+      {
+        "findings": [
+          "receiver shows quicker upper-body recoil",
+          "exactly one rear-foot recoil step becomes visible",
+          "no multi-step retreat"
+        ],
+        "interval": "1.17-2.00 seconds"
+      },
+      {
+        "findings": [
+          "attacker retracts promptly",
+          "receiver recovers",
+          "both performers reposition"
+        ],
+        "interval": "1.50-2.33 seconds"
+      },
+      {
+        "findings": [
+          "extended low-motion interval",
+          "no second contact"
+        ],
+        "interval": "2.33-3.83 seconds"
+      },
+      {
+        "findings": [
+          "late non-contact re-entry or short hand extension",
+          "no completed second interaction"
+        ],
+        "interval": "3.92-4.42 seconds"
+      },
+      {
+        "findings": [
+          "active guard-level ending",
+          "no second contact",
+          "no fall",
+          "no multi-step retreat"
+        ],
+        "interval": "4.42 seconds through final frame"
+      }
+    ],
+    "canonical_media_binding": {
+      "binding_result": "PASS",
+      "bytes": 2217491,
+      "git_blob": "2c724bc5a4f52d661ac5ea896e6d0cd578b7586c",
+      "name": "impact_canonical_mp4",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/media/ROUTEA_IMPACT_V03_C02.mp4",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "d9116ee8798f4f0c0a5957fb1988880c1b1f8d06dfd36005f1de9c327bc8e1cb",
+      "strict_json_parse": "NOT_APPLICABLE",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "complete_sequence_reviewed": true,
+    "cross_reference_signature_score": 6,
+    "limitations": [
+      "Receiver reaction amplitude is modest.",
+      "Contact reads partly as guard-line interception.",
+      "Long low-motion middle-to-late interval."
+    ],
+    "own_reference_signature_score": 11,
+    "primary_interaction_count": 1,
+    "reference_specificity_margin": 5,
+    "second_contact": false,
+    "summary": {
+      "late_reentry": "present but non-contact",
+      "primary_interaction_character": "brief chest-line or guard-line interaction",
+      "primary_limb_configuration": "compact primarily single-arm",
+      "rear_foot_result": "exactly one recoil step",
+      "receiver_torso_response": "quicker upper-body recoil",
+      "recovery_and_repositioning": "present",
+      "release_or_retraction": "prompt retraction present"
+    },
+    "technical_binding": {
+      "binding_result": "PASS",
+      "bytes": 6684,
+      "git_blob": "85a6e1bf92df95b4b15e7fb2797a515033963cb2",
+      "name": "impact_technical_record",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/technical/impact.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "4fb041772620a9f654d2348ea0fbfa7985d0eca33abf583e0f092545ba432d53",
+      "strict_json_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "twelve_dimension_entries": [
+      {
+        "cross_reference_match": false,
+        "dimension": "initiation_pattern",
+        "evidence": "compact primarily single-arm initiation",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": true,
+        "dimension": "approach_or_setup_pattern",
+        "evidence": "preparation and compact approach are shared structural features",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": false,
+        "dimension": "primary_limb_configuration",
+        "evidence": "primary interaction is led by one arm rather than two-hand pressure",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": false,
+        "dimension": "primary_interaction_character",
+        "evidence": "brief interaction rather than sustained pressure",
+        "limitations": "Contact reads partly as guard-line interception.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": true,
+        "dimension": "interaction_episode_count",
+        "evidence": "exactly one primary interaction episode",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": true,
+        "dimension": "receiver_response_direction",
+        "evidence": "receiver responds backward in both reference families",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": false,
+        "dimension": "torso_response_type",
+        "evidence": "quicker upper-body recoil rather than gradual displacement",
+        "limitations": "Contact reads partly as guard-line interception.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": false,
+        "dimension": "rear_foot_result_type",
+        "evidence": "recoil step rather than recovery placement",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": true,
+        "dimension": "release_or_retraction_pattern",
+        "evidence": "prompt attacker retraction",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": true,
+        "dimension": "recovery_and_repositioning",
+        "evidence": "both performers recover and reposition",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": true,
+        "dimension": "temporal_ordering",
+        "evidence": "setup -> brief interaction -> recoil -> foot step -> retraction -> recovery",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": false,
+        "dimension": "duration_utilization_and_final_phase_activity",
+        "evidence": "long low-motion interval before late non-contact re-entry",
+        "limitations": "Long low-motion interval before late non-contact re-entry.",
+        "own_reference_match": false
+      }
+    ]
+  },
+  "input_bindings": {
+    "download_evidence_manifest": {
+      "binding_result": "PASS",
+      "bytes": 5460,
+      "git_blob": "73e3c965738aeea685124e02294037c1a2e3034f",
+      "name": "download_evidence_manifest",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "30ddbc148090b3080b12166c06b631be94c92e6b45dc3b498c7b90cd02c297ef",
+      "strict_json_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "download_governance_report": {
+      "binding_result": "PASS",
+      "bytes": 5634,
+      "git_blob": "4aa4b5255529c674ff55326b42837542f41288f5",
+      "name": "download_governance_report",
+      "path": "reports/CAL002_RA_V03_C02_DOWNLOAD_RESULT.md",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "00c083019fb11e1b95e67f92425a02ee81ab1f60bf2e102bdddbc92fdf967a3e",
+      "strict_json_parse": "NOT_APPLICABLE",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "impact_canonical_mp4": {
+      "binding_result": "PASS",
+      "bytes": 2217491,
+      "git_blob": "2c724bc5a4f52d661ac5ea896e6d0cd578b7586c",
+      "name": "impact_canonical_mp4",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/media/ROUTEA_IMPACT_V03_C02.mp4",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "d9116ee8798f4f0c0a5957fb1988880c1b1f8d06dfd36005f1de9c327bc8e1cb",
+      "strict_json_parse": "NOT_APPLICABLE",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "impact_technical_record": {
+      "binding_result": "PASS",
+      "bytes": 6684,
+      "git_blob": "85a6e1bf92df95b4b15e7fb2797a515033963cb2",
+      "name": "impact_technical_record",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/technical/impact.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "4fb041772620a9f654d2348ea0fbfa7985d0eca33abf583e0f092545ba432d53",
+      "strict_json_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "push_canonical_mp4": {
+      "binding_result": "PASS",
+      "bytes": 2140523,
+      "git_blob": "f7d9a1bdeaf391609e4c1d2515852912e0cb4445",
+      "name": "push_canonical_mp4",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/media/ROUTEA_PUSH_V03_C02.mp4",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "814a2a183247b99c28bb86594aa054a7ae3891c4c9ac0612f6081788fdc35e18",
+      "strict_json_parse": "NOT_APPLICABLE",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "push_technical_record": {
+      "binding_result": "PASS",
+      "bytes": 6666,
+      "git_blob": "e01f7a2c4f1148c473a6e48354704ae5a7d8c3d4",
+      "name": "push_technical_record",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/technical/push.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "523277008d544c7b6f6c79c71db305b8a4eb3753d5645afc472d04c3cbf7b858",
+      "strict_json_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "review_contract": {
+      "binding_result": "PASS",
+      "bytes": 4013,
+      "git_blob": "dde736dd584a68af9dfc1adf04baa168022e582c",
+      "name": "review_contract",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_PREP/review_contract.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "b1d226caf6ad8a8bbe25e169788b09cab7f788da261ca0b1205aea20219d569e",
+      "strict_json_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    }
+  },
+  "material_copy_sentinels": [
+    {
+      "evidence_rationale": "No visible ring, flash, arrow, target marker, contact overlay or calibration contact marker was copied into either generated output.",
+      "material": false,
+      "present": false,
+      "sentinel": "CONTACT_MARKER_COPY"
+    },
+    {
+      "evidence_rationale": "Both outputs retained realistic adult human performers and did not copy a geometric mannequin or calibration-figure appearance.",
+      "material": false,
+      "present": false,
+      "sentinel": "MANNEQUIN_STYLE_COPY"
+    },
+    {
+      "evidence_rationale": "Neither output contains a copied reference grid, calibration background, joint-node field or diagrammatic stage.",
+      "material": false,
+      "present": false,
+      "sentinel": "GRID_SCENE_COPY"
+    },
+    {
+      "evidence_rationale": "The fixed medium-wide studio composition follows the byte-identical text Prompt. No reference-specific calibration composition was copied.",
+      "material": false,
+      "present": false,
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+    }
+  ],
+  "next_phase": "CAL002_ROUTE_A_V0_3_C02_FINAL_REVIEW_RECORDED_ROUTE_A_BRANCH_CLOSED_AWAITING_SOURCE_SYNTHESIS_OR_HUMAN_SELECTED_PRODUCTION_RECOVERY",
+  "nonblocking_limitations": [
+    "Receiver reaction amplitude is modest in both outputs.",
+    "Primary contact reads partly as guard-line interception rather than clean direct torso contact.",
+    "Both outputs contain a long low-motion interval before late re-entry.",
+    "Both outputs share a broad common martial-arts interaction skeleton.",
+    "Differentiation is strongest in limb configuration, interaction duration, torso response and rear-foot result.",
+    "Late re-entry does not create a second contact.",
+    "This is one controlled matched pair.",
+    "Provider stochasticity remains.",
+    "No exposed deterministic generation seed was available.",
+    "Bounded capability does not establish generalized production reliability."
+  ],
+  "pair_level_findings": {
+    "action_family_failure_count": 0,
+    "causal_interpretation": "The text Prompts were byte-identical and all non-reference package fields were equal, while only the four reference-binding fields differed. The observed action-family differentiation is therefore not affected by the C01 action-specific text-Prompt confound. Provider stochasticity remains, and one matched pair does not prove generalized reliability.",
+    "general_provider_contract_proven": false,
+    "material_sentinel_count": 0,
+    "outputs_observably_differentiated": true,
+    "primary_observed_differentiation": {
+      "IMPACT": [
+        "compact primarily single-arm brief chest-line interaction",
+        "quicker upper-body recoil",
+        "rear-foot recoil step",
+        "prompt retraction"
+      ],
+      "PUSH": [
+        "two-hand sustained or pressure-like chest-line interaction",
+        "gradual receiver displacement",
+        "rear-foot recovery placement"
+      ]
+    },
+    "reference_ignored": false,
+    "reference_overdominance": false,
+    "reference_role_conflict": false,
+    "reference_specific_causal_attribution_supported_in_this_controlled_pair": true,
+    "rights_and_provenance_valid": true
+  },
+  "push_review": {
+    "approximate_timeline": [
+      {
+        "findings": [
+          "preparation",
+          "initial spacing",
+          "guarded approach",
+          "no completed contact"
+        ],
+        "interval": "0.00-0.75 seconds"
+      },
+      {
+        "findings": [
+          "attacker begins a visibly two-hand forward entry",
+          "approach closes distance"
+        ],
+        "interval": "0.75-1.00 seconds"
+      },
+      {
+        "findings": [
+          "one primary chest-line or guard-line interaction becomes readable",
+          "interaction reads as pressure-like rather than a brief strike",
+          "both arms remain involved",
+          "receiver begins gradual backward torso displacement"
+        ],
+        "interval": "1.00-1.67 seconds"
+      },
+      {
+        "findings": [
+          "receiver displacement continues",
+          "exactly one rear-foot recovery placement becomes visible",
+          "no multi-step retreat"
+        ],
+        "interval": "1.33-2.00 seconds"
+      },
+      {
+        "findings": [
+          "pressure releases",
+          "attacker retracts",
+          "both performers recover and reposition"
+        ],
+        "interval": "1.67-2.33 seconds"
+      },
+      {
+        "findings": [
+          "extended low-motion interval",
+          "guard and breathing-level movement remain",
+          "no second contact"
+        ],
+        "interval": "2.33-3.83 seconds"
+      },
+      {
+        "findings": [
+          "late non-contact re-entry or forward hand extension",
+          "no completed second interaction"
+        ],
+        "interval": "3.92-4.42 seconds"
+      },
+      {
+        "findings": [
+          "active guard-level ending",
+          "no second contact",
+          "no fall",
+          "no multi-step retreat"
+        ],
+        "interval": "4.42 seconds through final frame"
+      }
+    ],
+    "canonical_media_binding": {
+      "binding_result": "PASS",
+      "bytes": 2140523,
+      "git_blob": "f7d9a1bdeaf391609e4c1d2515852912e0cb4445",
+      "name": "push_canonical_mp4",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/media/ROUTEA_PUSH_V03_C02.mp4",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "814a2a183247b99c28bb86594aa054a7ae3891c4c9ac0612f6081788fdc35e18",
+      "strict_json_parse": "NOT_APPLICABLE",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "complete_sequence_reviewed": true,
+    "cross_reference_signature_score": 6,
+    "limitations": [
+      "Receiver reaction amplitude is modest.",
+      "Contact reads partly as guard-line interception.",
+      "Long low-motion middle-to-late interval."
+    ],
+    "own_reference_signature_score": 11,
+    "primary_interaction_count": 1,
+    "reference_specificity_margin": 5,
+    "second_contact": false,
+    "summary": {
+      "late_reentry": "present but non-contact",
+      "primary_interaction_character": "pressure-like chest-line or guard-line interaction",
+      "primary_limb_configuration": "two-hand",
+      "rear_foot_result": "exactly one recovery placement",
+      "receiver_torso_response": "gradual backward displacement",
+      "recovery_and_repositioning": "present",
+      "release_or_retraction": "present"
+    },
+    "technical_binding": {
+      "binding_result": "PASS",
+      "bytes": 6666,
+      "git_blob": "e01f7a2c4f1148c473a6e48354704ae5a7d8c3d4",
+      "name": "push_technical_record",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/technical/push.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "523277008d544c7b6f6c79c71db305b8a4eb3753d5645afc472d04c3cbf7b858",
+      "strict_json_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "twelve_dimension_entries": [
+      {
+        "cross_reference_match": false,
+        "dimension": "initiation_pattern",
+        "evidence": "visibly two-hand pressure-oriented initiation",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": true,
+        "dimension": "approach_or_setup_pattern",
+        "evidence": "preparation and compact approach are shared structural features",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": false,
+        "dimension": "primary_limb_configuration",
+        "evidence": "both hands visibly participate in the primary PUSH interaction",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": false,
+        "dimension": "primary_interaction_character",
+        "evidence": "sustained pressure-like interaction rather than brief impact",
+        "limitations": "Contact reads partly as guard-line interception.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": true,
+        "dimension": "interaction_episode_count",
+        "evidence": "exactly one primary interaction episode",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": true,
+        "dimension": "receiver_response_direction",
+        "evidence": "receiver responds backward in both reference families",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": false,
+        "dimension": "torso_response_type",
+        "evidence": "gradual torso displacement rather than immediate recoil",
+        "limitations": "Contact reads partly as guard-line interception.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": false,
+        "dimension": "rear_foot_result_type",
+        "evidence": "recovery placement rather than sharper recoil step",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": true,
+        "dimension": "release_or_retraction_pattern",
+        "evidence": "pressure releases and attacker retracts",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": true,
+        "dimension": "recovery_and_repositioning",
+        "evidence": "both performers recover and reposition",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": true,
+        "dimension": "temporal_ordering",
+        "evidence": "setup -> interaction -> response -> foot result -> release -> recovery",
+        "limitations": "Single controlled matched pair; Provider stochasticity remains.",
+        "own_reference_match": true
+      },
+      {
+        "cross_reference_match": false,
+        "dimension": "duration_utilization_and_final_phase_activity",
+        "evidence": "long low-motion interval before late non-contact re-entry",
+        "limitations": "Long low-motion interval before late non-contact re-entry.",
+        "own_reference_match": false
+      }
+    ]
+  },
+  "review_authority": {
+    "automatic_decision": false,
+    "complete_mp4_visual_review_performed": true,
+    "contact_sheets_assistance_only": true,
+    "human_project_owner_acceptance_received": true
+  },
+  "review_method": {
+    "complete_mp4s_reviewed": "2/2",
+    "contact_sheet_role": "ASSISTANCE_ONLY",
+    "contact_sheets_committed": false,
+    "full_sequences_controlled_decision": true,
+    "method": "COMPLETE_SEQUENCE_VISUAL_REVIEW_WITH_FRAME_LEVEL_COMPARISON_ASSISTANCE",
+    "primary_evidence": [
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/media/ROUTEA_PUSH_V03_C02.mp4",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/media/ROUTEA_IMPACT_V03_C02.mp4"
+    ],
+    "review_covered_first_frame_through_final_frame": true,
+    "review_derivatives_added_to_repository": false,
+    "semantic_and_action_family_findings": "human-reviewed and accepted by exact authorization",
+    "technical_findings_imported_from_technical_records": true
+  },
+  "schema_version": "CAL002_ROUTE_A_V0_3_C02_COMPLETE_MP4_HUMAN_REVIEW_RECORD_V0_1",
+  "starting_checkpoint": "4cda221156f54b4ad9bf01818008aa337503a276",
+  "strong_causal_signal_gate": {
+    "automatic_route_a_production_proof": false,
+    "conditions": {
+      "action_family_failure_count": 0,
+      "both_complete_mp4s_reviewed": true,
+      "both_mp4s_technically_valid": true,
+      "impact_own_score_at_least_8": true,
+      "impact_specificity_margin_at_least_3": true,
+      "material_sentinel_count": 0,
+      "neither_reference_ignored": true,
+      "outputs_observably_differentiated": true,
+      "push_own_score_at_least_8": true,
+      "push_specificity_margin_at_least_3": true,
+      "reference_overdominance": false,
+      "reference_role_conflict": false,
+      "rights_and_provenance_valid": true
+    },
+    "eligible_formal_decision": "C02_REFERENCE_SPECIFIC_SIGNAL_ESTABLISHED_READY_FOR_FINAL_ROUTE_A_HUMAN_DECISION",
+    "interpretation": "PERMITS_FINAL_HUMAN_ROUTE_A_CAPABILITY_DECISION_ONLY",
+    "result": "PASS"
+  }
+}

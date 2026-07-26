@@ -1,0 +1,130 @@
+{
+  "artifact_count": 3,
+  "committed_input_count": 7,
+  "committed_input_coverage": "7/7",
+  "committed_inputs": [
+    {
+      "binding_result": "PASS",
+      "bytes": 4013,
+      "git_blob": "dde736dd584a68af9dfc1adf04baa168022e582c",
+      "name": "review_contract",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_PREP/review_contract.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "b1d226caf6ad8a8bbe25e169788b09cab7f788da261ca0b1205aea20219d569e",
+      "strict_json_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 5460,
+      "git_blob": "73e3c965738aeea685124e02294037c1a2e3034f",
+      "name": "download_evidence_manifest",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "30ddbc148090b3080b12166c06b631be94c92e6b45dc3b498c7b90cd02c297ef",
+      "strict_json_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 5634,
+      "git_blob": "4aa4b5255529c674ff55326b42837542f41288f5",
+      "name": "download_governance_report",
+      "path": "reports/CAL002_RA_V03_C02_DOWNLOAD_RESULT.md",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "00c083019fb11e1b95e67f92425a02ee81ab1f60bf2e102bdddbc92fdf967a3e",
+      "strict_json_parse": "NOT_APPLICABLE",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 6666,
+      "git_blob": "e01f7a2c4f1148c473a6e48354704ae5a7d8c3d4",
+      "name": "push_technical_record",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/technical/push.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "523277008d544c7b6f6c79c71db305b8a4eb3753d5645afc472d04c3cbf7b858",
+      "strict_json_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 6684,
+      "git_blob": "85a6e1bf92df95b4b15e7fb2797a515033963cb2",
+      "name": "impact_technical_record",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/technical/impact.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "4fb041772620a9f654d2348ea0fbfa7985d0eca33abf583e0f092545ba432d53",
+      "strict_json_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2140523,
+      "git_blob": "f7d9a1bdeaf391609e4c1d2515852912e0cb4445",
+      "name": "push_canonical_mp4",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/media/ROUTEA_PUSH_V03_C02.mp4",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "814a2a183247b99c28bb86594aa054a7ae3891c4c9ac0612f6081788fdc35e18",
+      "strict_json_parse": "NOT_APPLICABLE",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2217491,
+      "git_blob": "2c724bc5a4f52d661ac5ea896e6d0cd578b7586c",
+      "name": "impact_canonical_mp4",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_DLOAD/media/ROUTEA_IMPACT_V03_C02.mp4",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "d9116ee8798f4f0c0a5957fb1988880c1b1f8d06dfd36005f1de9c327bc8e1cb",
+      "strict_json_parse": "NOT_APPLICABLE",
+      "symlink": false,
+      "worktree_equals_head": true
+    }
+  ],
+  "contact_sheets_bound": false,
+  "decision": "CAL002_ROUTE_A_V0_3_C02_COMPLETE_MP4_HUMAN_REVIEW_RECORDED_BOUNDED_REFERENCE_SPECIFIC_CAPABILITY_ESTABLISHED_ROUTE_A_BRANCH_CLOSED",
+  "evidence_coverage": "3/3",
+  "included_artifact_count": 3,
+  "nonself_review_outputs": [
+    {
+      "bytes": 30705,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_REVIEW/complete_mp4_human_review_record.json",
+      "sha256": "b31dbd8033bf5a352c0b202d4f57994b9b9b83783a6d7f81734e03cd924b8272"
+    },
+    {
+      "bytes": 11470,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_REVIEW/complete_mp4_human_review_report.md",
+      "sha256": "9577409b355915216633319c80c0f5376fd0133a2f4e5f91cd5fc6298f1c1e4e"
+    },
+    {
+      "bytes": 4164,
+      "path": "reports/CAL002_RA_V03_C02_COMPLETE_MP4_HUMAN_REVIEW_RESULT.md",
+      "sha256": "6971183c9e1151f7bb25a979ed72c4ebf9f0d6ed1a9870eb75a03869d27db83d"
+    }
+  ],
+  "private_account_data_persisted": false,
+  "raw_provider_output_persisted": false,
+  "schema_version": "CAL002_ROUTE_A_V0_3_C02_COMPLETE_MP4_HUMAN_REVIEW_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "sensitive_data_scan": "PASS",
+  "signed_url_persisted": false,
+  "temporary_review_images_bound": false,
+  "temporary_review_paths_persisted": false,
+  "total_unique_bound_paths": 10,
+  "unique_committed_input_paths": 7,
+  "unique_output_paths": 3
+}
