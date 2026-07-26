@@ -1,0 +1,183 @@
+{
+  "allowed_return_codes": [
+    0,
+    1
+  ],
+  "approval_bytes": 3796,
+  "approval_sha256": "b13183c1c5469b7b34d09c23afa053943d88b319f836582316f66dea2df29d29",
+  "approval_text": "APPROVE_CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_PUSH_MEDIA_FIRST_SALVAGE_CROSS_DRIVE_SELF_TEST_FIX_AND_SINGLE_PUSH_DOWNLOAD_V0_1__BIND_CURRENT_CHECKPOINT_2B0AFDAF36B90009D7A2A776AD8559836AE3EA50__BIND_PRIOR_BLOCKED_DECISION_CAL002_ROUTE_A_V0_2_C01_PUSH_MEDIA_FIRST_SALVAGE_BLOCKED_SELF_TEST__BIND_PRIOR_SALVAGE_APPROVAL_BYTES_5176__BIND_PRIOR_SALVAGE_APPROVAL_SHA256_5E43CB7379859F0642192B996CA29A2F895B3C33A5526954DE93A5DC44622302__ACCEPT_PRIOR_STATIC_PREFLIGHT_PASS_SELF_TEST_70_TOTAL_69_PASS_ONE_ERROR_CAUSED_ONLY_BY_WINDOWS_CROSS_DRIVE_OS_PATH_COMMONPATH_C_DRIVE_G_DRIVE_VALUEERROR__ACCEPT_PRIOR_AUTHORIZATION_ACTIVATED_FALSE_CONSUMED_FALSE_DREAMINA_ZERO_PUSH_ZERO_IMPACT_ZERO_REPOSITORY_WRITE_ZERO_STAGE_ZERO_COMMIT_ZERO_PUSH_AND_UNCHANGED_HEAD_ORIGIN_SOURCE_UNTRACKED_AND_PROTECTED_STATE__ACCEPT_USER_DIRECTED_OFFLINE_CORRECTED_SELF_CHECK_73_OF_73_PASS_ZERO_DREAMINA_ZERO_REPOSITORY_WRITE_ZERO_STAGE_ZERO_SOURCE_CHANGE_HEAD_ORIGIN_UNCHANGED_TEMPORARY_FILES_CLEANED__SUPERSEDE_PRIOR_UNACTIVATED_UNCONSUMED_NONREUSABLE_SALVAGE_APPROVAL_FOR_THIS_EXACT_ROUTE_ONLY__AUTHORIZE_PRE_ACTIVATION_CROSS_DRIVE_SAFE_MEDIA_FIRST_SELF_TEST_USING_WINDOWS_PATH_DRIVE_OR_ANCHOR_COMPARISON_BEFORE_ANY_COMMONPATH_OPERATION_AND_REQUIRE_DIFFERENT_DRIVES_TO_CLASSIFY_AS_OUTSIDE_WITHOUT_CALLING_COMMONPATH__AUTHORIZE_EXACTLY_ONE_FORMAL_CORRECTED_OFFLINE_SELF_TEST_RUN_WITH_AT_LEAST_73_TESTS_NO_DREAMINA_CALL_NO_REPOSITORY_WRITE_AND_REQUIRE_ALL_TESTS_PASS__AUTHORIZE_IF_AND_ONLY_IF_FORMAL_SELF_TEST_PASSES_EXACTLY_ONE_PUSH_ONLY_QUERY_RESULT_DOWNLOAD_CALL_FOR_ROUTERA_PUSH_V02_C01_SUBMIT_ID_5FF0BA35-5A2C-445A-8343-C95F31CAAF4A_USING_NEW_ABSENT_EPHEMERAL_SAME_VOLUME_ROOT_G_AICODING_AI_VIDEO_TMP_RA_V02_C01_DL_PUSH_SALVAGE_R3__REQUIRE_EXACT_SIX_ELEMENT_ARGV_SHELL_FALSE_ONE_SUBMIT_ID_ONE_DOWNLOAD_DIR_NO_IMPACT_CALL_NO_SECOND_PUSH_CALL__AUTHORIZE_MEDIA_FIRST_ACCEPTANCE_WHEN_PROCESS_LAUNCHED_TIMEOUT_FALSE_NO_LAUNCH_EXCEPTION_RETURN_CODE_ZERO_OR_ONE_AUTHORITATIVE_QUERY_STATUS_REMAINS_SUCCESS_FINISH_EXACTLY_ONE_NEW_NONEMPTY_REGULAR_MP4_NO_UNEXPECTED_FILES_FFPROBE_PASS_FULL_DECODE_PASS_METADATA_SAFETY_PASS_AND_NO_EXPLICIT_SANITIZED_FAILURE_CONTRADICTION__DO_NOT_REQUIRE_PARSEABLE_STDOUT_RESPONSE_SUBMIT_ID_OR_RETURN_CODE_ZERO_WHEN_BOUND_ARGV_AUTHORITATIVE_QUERY_RECEIPT_FILESYSTEM_DELTA_AND_COMPLETE_MEDIA_VALIDATION_PASS__REQUIRE_RETURN_CODE_ONE_CLASSIFICATION_USABLE_MEDIA_WITH_NONZERO_EXIT_PROVIDER_TASK_FAILURE_INFERRED_FALSE__REQUIRE_DURABLE_PRE_PARSE_PROCESS_CHECKPOINT_WITH_RETURN_CODE_STDOUT_STDERR_LENGTHS_HASHES_TIMESTAMPS_TIMEOUT_EXCEPTION_CLASS_PRE_POST_FILESYSTEM_SNAPSHOTS_BEFORE_ANY_PARSE__REQUIRE_FRESH_CANDIDATE_COMPARISON_TO_PRIOR_BYTES_1669872_SHA256_F045A4CF65D962F6E19FBF171A2535633A038ED59C33A32A8E7B096FBBC315C3_RECORD_EQUALITY_BUT_DO_NOT_BLOCK_SOLELY_ON_DIFFERENCE_WHEN_ALL_CURRENT_SAFETY_AND_TECHNICAL_GATES_PASS__AUTHORIZE_ON_MEDIA_FIRST_SUCCESS_BYTE_PRESERVING_MOVE_ONLY_TO_RA_V02_C01_DLSALVAGE_MEDIA_ROUTERA_PUSH_V02_C01_MP4_POST_MOVE_FFPROBE_FULL_DECODE_AND_EXACTLY_EIGHT_NEW_ARTIFACTS_GOVERNANCE_REPORT_EVIDENCE_MANIFEST_COMMIT_AND_PUSH__AUTHORIZE_ON_FAILURE_EXACTLY_SEVEN_SANITIZED_EVIDENCE_ARTIFACTS_WITH_NO_MEDIA_GOVERNANCE_REPORT_EVIDENCE_MANIFEST_COMMIT_AND_PUSH__STOP_AFTER_SINGLE_PUSH_CALL_NO_IMPACT_NO_HELP_NO_VERSION_NO_USER_CREDIT_NO_ADDITIONAL_QUERY_ONLY_NO_RETRY_NO_RESUBMIT_NO_NEW_SUBMIT_NO_BATCH_NO_LOGIN_NO_CHECKLOGIN_NO_SESSION_MUTATION_NO_LIST_TASK_NO_R02__NO_SOURCE_CHANGE_NO_PRIOR_MEDIA_CHANGE_NO_PRODUCTION_REENTRY_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__SET_PUSH_MEDIA_SUCCESS_NEXT_PHASE_CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_IMPACT_MEDIA_FIRST_DOWNLOAD_RECOVERY_HUMAN_DECISION__SET_PUSH_MEDIA_FAILURE_NEXT_PHASE_CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_DOWNLOAD_FAILURE_RECOVERY_HUMAN_DECISION__ONE_TIME_NON_REUSABLE",
+  "argv": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "query_result",
+    "--submit_id",
+    "5ff0ba35-5a2c-445a-8343-c95f31caaf4a",
+    "--download_dir",
+    "G:/AICODING/AI_VIDEO/.tmp/RA_V02_C01_DL_PUSH_SALVAGE_R3"
+  ],
+  "argv_bytes": 180,
+  "argv_sha256": "b60b3f4babf02c859c1415083e71ae4ddd1399347e5d98532700af6717e20f62",
+  "authorization_activated": true,
+  "authorization_consumed": true,
+  "authorization_reusable": false,
+  "bound_push_submit_id": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a",
+  "checkpoint_root_identifier": "RA_V02_C01_DL_PUSH_SALVAGE_R3_STATE",
+  "continuity_only_impact_submit_id": "4c8b6184-7c0a-4b41-95f5-e215e35f195b",
+  "cross_drive_contract": {
+    "different_anchor_commonpath_called": false,
+    "different_anchor_returns_outside": true,
+    "relative_paths_rejected": true,
+    "same_drive_component_boundary_required": true
+  },
+  "diagnostic_evidence_bindings": {
+    "diagnostic_evidence_manifest": {
+      "bytes": 6052,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/evidence_manifest.json",
+      "sha256": "d83aa3cfcff2fe8bcc40b5fc8e1d9b18e1b1525ba800d2155d28d5326c58ce32",
+      "worktree_equals_head": true
+    },
+    "diagnostic_execution_record": {
+      "bytes": 3767,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/execution.json",
+      "sha256": "1a33c16f6c031dd0375aff09a237ebfd675c3c3ed7b6d6db4940ff291136c0fc",
+      "worktree_equals_head": true
+    },
+    "diagnostic_failure_analysis": {
+      "bytes": 2960,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/diagnostics/failure_analysis.json",
+      "sha256": "41fa63b1d6608fbef62e9b5f21d457a10bb3b97e327aa3cf2f278938fbd88e80",
+      "worktree_equals_head": true
+    },
+    "diagnostic_process_checkpoint": {
+      "bytes": 3127,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/diagnostics/process_checkpoint.json",
+      "sha256": "859c3bde40b9fb97538c2a7d501a75a2ff6618355e1ab0ff151af38e996aaf40",
+      "worktree_equals_head": true
+    },
+    "diagnostic_push_receipt": {
+      "bytes": 3932,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/downloads/push.json",
+      "sha256": "2b51267d150e4ca6a169f587f51c0ac6fab6a9f64136c08b9944800272f50cca",
+      "worktree_equals_head": true
+    },
+    "diagnostic_report": {
+      "bytes": 5186,
+      "path": "reports/CAL002_RA_V02_C01_DLDIAG_RESULT.md",
+      "sha256": "e25b3103ca15f4667fcdcf29798a70989651a2e7fc5b6aac9a749aa366f8fb17",
+      "worktree_equals_head": true
+    }
+  },
+  "download_root_identifier": "RA_V02_C01_DL_PUSH_SALVAGE_R3",
+  "execution_id": "CAL002-ROUTE-A-V0-2-C01-PUSH-MEDIA-FIRST-SALVAGE-R3",
+  "failure_write_set": [
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/authorization.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/diagnostics/process_checkpoint.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/downloads/push.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/diagnostics/failure_analysis.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/execution.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/evidence_manifest.json",
+    "reports/CAL002_RA_V02_C01_DLSALVAGE_RESULT.md"
+  ],
+  "formal_self_test": {
+    "cross_drive_commonpath_call_count": 0,
+    "cross_drive_pass_count": 15,
+    "cross_drive_test_count": 15,
+    "dreamina_calls": 0,
+    "error_count": 0,
+    "error_test_ids": [],
+    "failure_count": 0,
+    "failure_test_ids": [],
+    "handler_filename": "r3_handler.py",
+    "harness_filename": "test_r3_handler.py",
+    "overall_result": "PASS",
+    "pass_count": 141,
+    "provider_calls": 0,
+    "repository_status_unchanged": true,
+    "repository_writes": 0,
+    "schema_version": "CAL002_ROUTE_A_V0_2_C01_R3_FORMAL_SELFTEST_RESULT_V0_1",
+    "skip_count": 0,
+    "skipped_test_ids": [],
+    "suite_invocation_count": 1,
+    "test_count": 141
+  },
+  "goal_identity": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_PUSH_MEDIA_FIRST_SALVAGE_CROSS_DRIVE_SELF_TEST_FIX_AND_SINGLE_PUSH_DOWNLOAD_V0_1",
+  "handler": {
+    "bytes": 74256,
+    "path": "r3_handler.py",
+    "sha256": "240206853ee686721bf68298d5ee71a816c58b44136bdf1a36579dfe8985a2d1"
+  },
+  "harness": {
+    "bytes": 33735,
+    "path": "test_r3_handler.py",
+    "sha256": "641e8d8d5dfacf3f60731e7e1bb60c7e8d1bd8f470f0c6883cdfdad54539f43f"
+  },
+  "help_version_user_credit_query_only_calls_authorized": 0,
+  "impact_calls_authorized": 0,
+  "matched_pair_id": "CAL002-ROUTE-A-V0-2-C01-MATCHED-PAIR",
+  "maximum_dreamina_calls": 1,
+  "prior_blocked_self_test": {
+    "approval_bytes": 5176,
+    "approval_sha256": "5e43cb7379859f0642192b996ca29a2f895b3c33a5526954de93a5dc44622302",
+    "authorization_activated": false,
+    "authorization_consumed": false,
+    "authorization_reusable": false,
+    "cross_drive_error": "C drive versus G drive commonpath ValueError",
+    "decision": "CAL002_ROUTE_A_V0_2_C01_PUSH_MEDIA_FIRST_SALVAGE_BLOCKED_SELF_TEST",
+    "errors": 1,
+    "passes": 69,
+    "tests": 70
+  },
+  "prior_candidate": {
+    "bytes": 1669872,
+    "sha256": "f045a4cf65d962f6e19fbf171a2535633a038ed59c33a32a8e7b096fbbc315c3",
+    "technical_result": "PASS"
+  },
+  "push_calls_authorized": 1,
+  "query_evidence_bindings": {
+    "impact_query_receipt": {
+      "bytes": 2340,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/queries/impact.json",
+      "sha256": "f8407729a21ab68048b5bf3508b1eb047433bcca29e614708d69d8a05de47d45",
+      "worktree_equals_head": true
+    },
+    "push_query_receipt": {
+      "bytes": 2334,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/queries/push.json",
+      "sha256": "f694a22ed81d0f885dc22458aaf08fdc7338106269891a1cade777b7c32599ef",
+      "worktree_equals_head": true
+    },
+    "query_recovery_evidence_manifest": {
+      "bytes": 9230,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/evidence_manifest.json",
+      "sha256": "45db71f77c3d0f7450ec206255986fd431064426dcbaec24866c0bffce82d72e",
+      "worktree_equals_head": true
+    },
+    "query_recovery_report": {
+      "bytes": 4849,
+      "path": "reports/CAL002_RA_V02_C01_QRYREC_RESULT.md",
+      "sha256": "473aeccab818a2d92d3562b2d8bfcc55d485f015008914a1d866aedbe8ab40ed",
+      "worktree_equals_head": true
+    }
+  },
+  "r02_authorized": false,
+  "retry_resubmit_new_submit_batch_authorized": false,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_PUSH_MEDIA_FIRST_R3_AUTHORIZATION_V0_1",
+  "second_push_calls_authorized": 0,
+  "starting_checkpoint": "2b0afdaf36b90009d7a2a776ad8559836ae3ea50",
+  "success_write_set": [
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/authorization.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/diagnostics/process_checkpoint.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/downloads/push.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/technical/push.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/media/ROUTEA_PUSH_V02_C01.mp4",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/execution.json",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/evidence_manifest.json",
+    "reports/CAL002_RA_V02_C01_DLSALVAGE_RESULT.md"
+  ],
+  "user_directed_offline_check": {
+    "dreamina_calls": 0,
+    "failures": 0,
+    "passes": 73,
+    "repository_writes": 0,
+    "tests": 73
+  }
+}

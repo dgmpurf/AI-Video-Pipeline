@@ -1,0 +1,63 @@
+{
+  "checkpoint_reread_validation": "PASS",
+  "checkpoint_written_before_parse": true,
+  "external_checkpoint_bytes": 2624,
+  "external_checkpoint_schema": "CAL002_ROUTE_A_V0_2_C01_PUSH_MEDIA_FIRST_R3_PRE_PARSE_CHECKPOINT_V0_1",
+  "external_checkpoint_sha256": "1cef50250bb2b521f6dabdc8fc1bb1cab21e1fd97b46c107242d7f77a011d77c",
+  "process": {
+    "elapsed_seconds": 11.389,
+    "filesystem_delta": {
+      "added": [
+        {
+          "bytes": 3031614,
+          "path_escape": false,
+          "relative_path": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a_video_1.mp4",
+          "reparse_point": false,
+          "sha256": "015fbb4dcb1624268314466408fc56a61e73a1efe529da774225a4513aae7d40",
+          "symlink": false,
+          "type": "file"
+        }
+      ],
+      "changed": [],
+      "removed": []
+    },
+    "launch_exception_class": null,
+    "post_call_filesystem_snapshot": {
+      "entries": [
+        {
+          "bytes": 3031614,
+          "path_escape": false,
+          "relative_path": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a_video_1.mp4",
+          "reparse_point": false,
+          "sha256": "015fbb4dcb1624268314466408fc56a61e73a1efe529da774225a4513aae7d40",
+          "symlink": false,
+          "type": "file"
+        }
+      ],
+      "entry_count": 1,
+      "regular_file_count": 1,
+      "root_existed": true,
+      "root_identifier": "RA_V02_C01_DL_PUSH_SALVAGE_R3"
+    },
+    "pre_call_filesystem_snapshot": {
+      "entries": [],
+      "entry_count": 0,
+      "regular_file_count": 0,
+      "root_existed": false,
+      "root_identifier": "RA_V02_C01_DL_PUSH_SALVAGE_R3"
+    },
+    "process_end_timestamp": "2026-07-26T15:51:00.903Z",
+    "process_launched": true,
+    "process_start_timestamp": "2026-07-26T15:50:49.513Z",
+    "raw_stderr_persisted": false,
+    "raw_stdout_persisted": false,
+    "return_code": 0,
+    "signed_url_persisted": false,
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_byte_length": 3999,
+    "stdout_sha256": "3348dcba731887b6cf8d44679e9b2e0aa551cd539400ef88534bc9ffa089388f",
+    "timeout": false
+  },
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_PUSH_MEDIA_FIRST_R3_REPOSITORY_PROCESS_CHECKPOINT_V0_1"
+}

@@ -1,0 +1,162 @@
+{
+  "artifact_count": 7,
+  "artifacts": [
+    {
+      "bytes": 11592,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/authorization.json",
+      "sha256": "7105833fc51a2bc434f08eac2edc711cbca8bb59a3405f454201a613bbdfd02b"
+    },
+    {
+      "bytes": 2241,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/diagnostics/process_checkpoint.json",
+      "sha256": "c09de4b29fa7478caa218219a7d9ed55284cd5382057a14cc011fb4552fe97fc"
+    },
+    {
+      "bytes": 5958,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/downloads/push.json",
+      "sha256": "506ae71dcb459a72a59549f8c6bd2a255fdbd58931749c747613f4b3c0a3c2ed"
+    },
+    {
+      "bytes": 2966,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/technical/push.json",
+      "sha256": "b1eb91783ec3a33c57d09db6efc09f640ac779d961aee8e3b49ad702a9383b1f"
+    },
+    {
+      "bytes": 3031614,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/media/ROUTEA_PUSH_V02_C01.mp4",
+      "sha256": "015fbb4dcb1624268314466408fc56a61e73a1efe529da774225a4513aae7d40"
+    },
+    {
+      "bytes": 4209,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLSALVAGE/execution.json",
+      "sha256": "626da903a4d8867a1a824c66bfbe37be48db60e0af71382b5832df5bd28283a3"
+    },
+    {
+      "bytes": 5118,
+      "path": "reports/CAL002_RA_V02_C01_DLSALVAGE_RESULT.md",
+      "sha256": "3750ccc2acc8c14a316cbca9c573985f8debd57bfc4f3b0e46ad4ac3be3b475a"
+    }
+  ],
+  "current_checkpoint": "2b0afdaf36b90009d7a2a776ad8559836ae3ea50",
+  "decision": "CAL002_ROUTE_A_V0_2_C01_PUSH_MEDIA_FIRST_SALVAGE_SUCCESS",
+  "diagnostic_evidence_bindings": {
+    "diagnostic_evidence_manifest": {
+      "bytes": 6052,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/evidence_manifest.json",
+      "sha256": "d83aa3cfcff2fe8bcc40b5fc8e1d9b18e1b1525ba800d2155d28d5326c58ce32",
+      "worktree_equals_head": true
+    },
+    "diagnostic_execution_record": {
+      "bytes": 3767,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/execution.json",
+      "sha256": "1a33c16f6c031dd0375aff09a237ebfd675c3c3ed7b6d6db4940ff291136c0fc",
+      "worktree_equals_head": true
+    },
+    "diagnostic_failure_analysis": {
+      "bytes": 2960,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/diagnostics/failure_analysis.json",
+      "sha256": "41fa63b1d6608fbef62e9b5f21d457a10bb3b97e327aa3cf2f278938fbd88e80",
+      "worktree_equals_head": true
+    },
+    "diagnostic_process_checkpoint": {
+      "bytes": 3127,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/diagnostics/process_checkpoint.json",
+      "sha256": "859c3bde40b9fb97538c2a7d501a75a2ff6618355e1ab0ff151af38e996aaf40",
+      "worktree_equals_head": true
+    },
+    "diagnostic_push_receipt": {
+      "bytes": 3932,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_DLDIAG/downloads/push.json",
+      "sha256": "2b51267d150e4ca6a169f587f51c0ac6fab6a9f64136c08b9944800272f50cca",
+      "worktree_equals_head": true
+    },
+    "diagnostic_report": {
+      "bytes": 5186,
+      "path": "reports/CAL002_RA_V02_C01_DLDIAG_RESULT.md",
+      "sha256": "e25b3103ca15f4667fcdcf29798a70989651a2e7fc5b6aac9a749aa366f8fb17",
+      "worktree_equals_head": true
+    }
+  },
+  "evidence_coverage": "7/7",
+  "formal_self_test": {
+    "cross_drive_commonpath_call_count": 0,
+    "cross_drive_pass_count": 15,
+    "cross_drive_test_count": 15,
+    "dreamina_calls": 0,
+    "error_count": 0,
+    "error_test_ids": [],
+    "failure_count": 0,
+    "failure_test_ids": [],
+    "handler_filename": "r3_handler.py",
+    "harness_filename": "test_r3_handler.py",
+    "overall_result": "PASS",
+    "pass_count": 141,
+    "provider_calls": 0,
+    "repository_status_unchanged": true,
+    "repository_writes": 0,
+    "schema_version": "CAL002_ROUTE_A_V0_2_C01_R3_FORMAL_SELFTEST_RESULT_V0_1",
+    "skip_count": 0,
+    "skipped_test_ids": [],
+    "suite_invocation_count": 1,
+    "test_count": 141
+  },
+  "included_artifact_count": 7,
+  "next_phase": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_IMPACT_MEDIA_FIRST_DOWNLOAD_RECOVERY_HUMAN_DECISION",
+  "prior_blocked_self_test": {
+    "approval_bytes": 5176,
+    "approval_sha256": "5e43cb7379859f0642192b996ca29a2f895b3c33a5526954de93a5dc44622302",
+    "authorization_activated": false,
+    "authorization_consumed": false,
+    "authorization_reusable": false,
+    "cross_drive_error": "C drive versus G drive commonpath ValueError",
+    "decision": "CAL002_ROUTE_A_V0_2_C01_PUSH_MEDIA_FIRST_SALVAGE_BLOCKED_SELF_TEST",
+    "errors": 1,
+    "passes": 69,
+    "tests": 70
+  },
+  "prior_candidate": {
+    "bytes": 1669872,
+    "sha256": "f045a4cf65d962f6e19fbf171a2535633a038ed59c33a32a8e7b096fbbc315c3",
+    "technical_result": "PASS"
+  },
+  "query_evidence_bindings": {
+    "impact_query_receipt": {
+      "bytes": 2340,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/queries/impact.json",
+      "sha256": "f8407729a21ab68048b5bf3508b1eb047433bcca29e614708d69d8a05de47d45",
+      "worktree_equals_head": true
+    },
+    "push_query_receipt": {
+      "bytes": 2334,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/queries/push.json",
+      "sha256": "f694a22ed81d0f885dc22458aaf08fdc7338106269891a1cade777b7c32599ef",
+      "worktree_equals_head": true
+    },
+    "query_recovery_evidence_manifest": {
+      "bytes": 9230,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_QRYREC/evidence_manifest.json",
+      "sha256": "45db71f77c3d0f7450ec206255986fd431064426dcbaec24866c0bffce82d72e",
+      "worktree_equals_head": true
+    },
+    "query_recovery_report": {
+      "bytes": 4849,
+      "path": "reports/CAL002_RA_V02_C01_QRYREC_RESULT.md",
+      "sha256": "473aeccab818a2d92d3562b2d8bfcc55d485f015008914a1d866aedbe8ab40ed",
+      "worktree_equals_head": true
+    }
+  },
+  "raw_process_output_persisted": false,
+  "raw_provider_output_persisted": false,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_PUSH_MEDIA_FIRST_R3_SUCCESS_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "sensitive_data_result": "PASS",
+  "signed_url_persisted": false,
+  "temporary_cleanup_result": {
+    "checkpoint_root_cleaned": true,
+    "download_root_cleaned": true,
+    "selftest_root_cleaned": true,
+    "status": "PASS",
+    "temporary_regular_files_remaining": 0
+  },
+  "unique_bound_paths": 7
+}

@@ -1,0 +1,120 @@
+{
+  "actual_decision": "CAL002_ROUTE_A_V0_2_C01_PUSH_MEDIA_FIRST_SALVAGE_SUCCESS",
+  "actual_dreamina_calls": 1,
+  "actual_next_phase": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_IMPACT_MEDIA_FIRST_DOWNLOAD_RECOVERY_HUMAN_DECISION",
+  "cross_drive_commonpath_call_count": 0,
+  "cross_drive_fixture_count": 15,
+  "cross_drive_pass_count": 15,
+  "download_outcome_classification": "USABLE_MEDIA_WITH_ZERO_EXIT",
+  "external_checkpoint_result": "PASS",
+  "filesystem_result": {
+    "archive_count": 0,
+    "candidate_entries": [
+      {
+        "bytes": 3031614,
+        "path_escape": false,
+        "relative_path": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a_video_1.mp4",
+        "reparse_point": false,
+        "sha256": "015fbb4dcb1624268314466408fc56a61e73a1efe529da774225a4513aae7d40",
+        "symlink": false,
+        "type": "file"
+      }
+    ],
+    "executable_count": 0,
+    "files_outside_root": 0,
+    "junction_count": 0,
+    "mp4_candidate_count": 1,
+    "new_nonempty_regular_file_count": 1,
+    "overwritten_file_count": 0,
+    "path_escape_count": 0,
+    "post_call_entry_count": 1,
+    "pre_call_entry_count": 0,
+    "pre_call_regular_file_count": 0,
+    "regular_file_count": 1,
+    "removed_file_count": 0,
+    "reparse_point_count": 0,
+    "result": "PASS",
+    "sidecar_count": 0,
+    "symlink_count": 0,
+    "unexpected_file_count": 0
+  },
+  "formal_self_test": {
+    "cross_drive_commonpath_call_count": 0,
+    "cross_drive_pass_count": 15,
+    "cross_drive_test_count": 15,
+    "dreamina_calls": 0,
+    "error_count": 0,
+    "error_test_ids": [],
+    "failure_count": 0,
+    "failure_test_ids": [],
+    "handler": {
+      "bytes": 74256,
+      "path": "r3_handler.py",
+      "sha256": "240206853ee686721bf68298d5ee71a816c58b44136bdf1a36579dfe8985a2d1"
+    },
+    "handler_filename": "r3_handler.py",
+    "harness": {
+      "bytes": 33735,
+      "path": "test_r3_handler.py",
+      "sha256": "641e8d8d5dfacf3f60731e7e1bb60c7e8d1bd8f470f0c6883cdfdad54539f43f"
+    },
+    "harness_filename": "test_r3_handler.py",
+    "overall_result": "PASS",
+    "pass_count": 141,
+    "provider_calls": 0,
+    "repository_status_unchanged": true,
+    "repository_writes": 0,
+    "schema_version": "CAL002_ROUTE_A_V0_2_C01_R3_FORMAL_SELFTEST_RESULT_V0_1",
+    "skip_count": 0,
+    "skipped_test_ids": [],
+    "suite_invocation_count": 1,
+    "test_count": 141
+  },
+  "help_version_user_credit_query_only_calls": 0,
+  "impact_call_count": 0,
+  "maximum_dreamina_calls": 1,
+  "media_artifact_count": 1,
+  "media_first_result": {
+    "accepted": true,
+    "cli_nonzero_exit_anomaly": false,
+    "download_outcome_classification": "USABLE_MEDIA_WITH_ZERO_EXIT",
+    "provider_task_failure_inferred": false,
+    "result": "PASS"
+  },
+  "motion_only_behavior_verified": false,
+  "process_result": {
+    "elapsed_seconds": 11.389,
+    "end": "2026-07-26T15:51:00.903Z",
+    "launch_exception_class": null,
+    "process_launched": true,
+    "return_code": 0,
+    "start": "2026-07-26T15:50:49.513Z",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_bytes": 3999,
+    "stdout_sha256": "3348dcba731887b6cf8d44679e9b2e0aa551cd539400ef88534bc9ffa089388f",
+    "timeout": false
+  },
+  "provider_task_failure_inferred": false,
+  "push_call_count": 1,
+  "repository_artifact_count": 8,
+  "retry_resubmit_new_submit_batch_calls": 0,
+  "route_a_capability_proven": false,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_PUSH_MEDIA_FIRST_R3_EXECUTION_RECORD_V0_1",
+  "second_push_call_count": 0,
+  "starting_checkpoint": "2b0afdaf36b90009d7a2a776ad8559836ae3ea50",
+  "technical_result": "PASS",
+  "temporary_cleanup_result": {
+    "checkpoint_root_cleaned": true,
+    "download_root_cleaned": true,
+    "selftest_root_cleaned": true,
+    "status": "PASS",
+    "temporary_regular_files_remaining": 0
+  },
+  "toolchain": {
+    "ffmpeg": "ffmpeg version 2023-03-27-git-f7abe92bd7-full_build-www.gyan.dev Copyright (c) 2000-2023 the FFmpeg developers",
+    "ffprobe": "ffprobe version 2023-03-27-git-f7abe92bd7-full_build-www.gyan.dev Copyright (c) 2007-2023 the FFmpeg developers",
+    "python": "Python 3.10.11"
+  },
+  "visual_review_complete": false
+}
