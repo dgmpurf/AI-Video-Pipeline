@@ -1,0 +1,136 @@
+{
+  "C01_closure": {
+    "C01_R02_authorized": false,
+    "C01_closed": true,
+    "C01_media_locked_by_this_goal": false,
+    "C01_redownload_authorized": false,
+    "C01_retry_authorized": false,
+    "C01_review_record_locked_by_this_goal": false,
+    "C01_review_reopening_authorized": false
+  },
+  "C01_confound_analysis": {
+    "confound": "PUSH and IMPACT text Prompts encoded different action families and different detailed timelines in addition to using different video references.",
+    "confound_present": true,
+    "observed_differentiation_uniquely_attributable_to_video_references": false,
+    "provider_motion_only_role_separation_verified": false,
+    "route_a_capability_proven": false
+  },
+  "C01_formal_decision": "CANARY_MIXED_RESULT_REQUIRES_HUMAN_DECISION",
+  "C01_human_capability_decision": "ROUTE_A_SIGNAL_OBSERVED_BUT_REFERENCE_CAUSAL_ATTRIBUTION_NOT_ESTABLISHED_AND_ROUTE_A_CAPABILITY_NOT_PROVEN",
+  "C01_review_bindings": {
+    "c01_governance_report": {
+      "bytes": 15201,
+      "git_blob": "ff31e8f1ab5881a05dd0f394fcf2a64037a0a666",
+      "nonempty": true,
+      "path": "reports/CAL002_RA_V02_C01_COMPLETE_MP4_HUMAN_REVIEW_RESULT.md",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "77ea8964ec3595d5beaec52e9b43a2fdde1042fe0ebbf58c85f233e836e4ad59",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "c01_review_manifest": {
+      "approval_identifier_interpretation": "GIT_BLOB_NOT_SHA256",
+      "approval_labeled_identifier": "0ef89dd5376b3cd26e2c36d2f7f731365ba6ddd6",
+      "bytes": 6657,
+      "git_blob": "0ef89dd5376b3cd26e2c36d2f7f731365ba6ddd6",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_REVIEW/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "4f95479d07c2d6fb5adbc4f34db2f68aabfe7a8fd973bcb8b501ee9efffbb9a8",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "c01_review_record": {
+      "bytes": 18578,
+      "git_blob": "cd41851e4e51dfa2353e2a70fab54e9558d83d0c",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_REVIEW/complete_mp4_human_review_record.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "5606e751f4a382e2b65997290a6aa69262cfbb28cce420648f2eb50ba41f4fc3",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "c01_review_report": {
+      "bytes": 13145,
+      "git_blob": "5c028ea404b959f59188a37e3db3a4973bbfe2f8",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_REVIEW/complete_mp4_human_review_report.md",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "4135e1729c66833495bce994c850f1396b9fa25fb0b61de0eaf7006308165385",
+      "symlink": false,
+      "worktree_equals_head": true
+    }
+  },
+  "C02_causal_isolation_hypothesis": "With byte-identical action-neutral text and every non-reference package field held constant, observable matched-pair action differentiation may be attributed as evidence about the differing video-reference binding, subject to stochastic generation and human review.",
+  "C02_controlled_variables": "ALL_NON_REFERENCE_FIELDS",
+  "C02_design_authority": {
+    "C02_design_authorized": true,
+    "authorized_phase": "CAL002_ROUTE_A_V0_3_MATCHED_PAIR_CANARY_C02_NO_LIVE_CAUSAL_ISOLATION_DESIGN_AND_STATIC_AUDIT",
+    "exact_output_path_count": 10
+  },
+  "C02_final_bounded_status": {
+    "final_bounded_canary": true,
+    "residual_limitations": [
+      "single matched pair",
+      "stochastic Provider generation when later executed",
+      "no exposed or authorized deterministic seed",
+      "human visual interpretation remains required",
+      "even a successful C02 creates evidence for a final human capability decision, not automatic proof or production authority"
+    ],
+    "single_matched_pair": true
+  },
+  "C02_independent_variable": "VIDEO_REFERENCE_BINDING_ONLY",
+  "C02_no_automatic_C03": {
+    "C03_authorized": false,
+    "automatic_C03_authorized": false
+  },
+  "C02_no_live_authority": {
+    "C02_download_authorized": false,
+    "C02_live_authorized": false,
+    "C02_query_authorized": false,
+    "C02_reference_upload_authorized": false,
+    "C02_review_execution_authorized": false,
+    "C02_submit_authorized": false
+  },
+  "approval": {
+    "byte_length": 3220,
+    "exact_text": "APPROVE_CAL002_ROUTE_A_V0_2_C01_MIXED_RESULT_ROUTE_A_CAPABILITY_HUMAN_DECISION_AND_FINAL_C02_CAUSAL_ISOLATION_DESIGN_ONLY_V0_1__BIND_CURRENT_CHECKPOINT_7C224DABA162F14A3026E2F6DBEF72BB26FBFE34__BIND_C01_REVIEW_RECORD_BYTES_18578__BIND_C01_REVIEW_RECORD_SHA256_5606E751F4A382E2B65997290A6AA69262CFBB28CCE420648F2EB50BA41F4FC3__BIND_C01_REVIEW_REPORT_BYTES_13145__BIND_C01_REVIEW_REPORT_SHA256_4135E1729C66833495BCE994C850F1396B9FA25FB0B61DE0EAF7006308165385__BIND_C01_REVIEW_EVIDENCE_MANIFEST_BYTES_6657__BIND_C01_REVIEW_EVIDENCE_MANIFEST_SHA256_0EF89DD5376B3CD26E2C36D2F7F731365BA6DDD6__BIND_C01_REVIEW_GOVERNANCE_REPORT_BYTES_15201__BIND_C01_REVIEW_GOVERNANCE_REPORT_SHA256_77EA8964EC3595D5BEAEC52E9B43A2FDDE1042FE0EBBF58C85F233E836E4AD59__ACCEPT_FORMAL_DECISION_CANARY_MIXED_RESULT_REQUIRES_HUMAN_DECISION__ACCEPT_PUSH_PARTIAL_PASS_NOT_READY_FOR_SEMANTIC_GATE_PASS_AND_IMPACT_PARTIAL_NOT_READY_FOR_SEMANTIC_GATE_PASS__ACCEPT_ACTION_FAMILY_DIFFERENTIATION_OBSERVED_MOTION_REFERENCE_ADHERENCE_PARTIAL_REFERENCE_IGNORED_FALSE_REFERENCE_OVERDOMINANT_FALSE_REFERENCE_ROLE_CONFLICT_FALSE_MATERIAL_SENTINEL_COUNT_ZERO__SET_HUMAN_CAPABILITY_DECISION_ROUTE_A_SIGNAL_OBSERVED_BUT_REFERENCE_CAUSAL_ATTRIBUTION_NOT_ESTABLISHED_AND_ROUTE_A_CAPABILITY_NOT_PROVEN__ACCEPT_C01_EXPERIMENTAL_CONFOUND_BECAUSE_PUSH_AND_IMPACT_TEXT_PROMPTS_ENCODED_DIFFERENT_ACTION_FAMILIES_AND_DETAILED_TIMELINES_IN_ADDITION_TO_DIFFERENT_VIDEO_REFERENCES__CLOSE_C01_WITH_NO_RETRY_NO_REDOWNLOAD_NO_REVIEW_REOPENING_AND_NO_R02__AUTHORIZE_EXACTLY_ONE_FINAL_ROUTE_A_V0_3_C02_CAUSAL_ISOLATION_MATCHED_PAIR_DESIGN_AND_STATIC_AUDIT_ONLY_WITH_ZERO_DREAMINA_ZERO_PROVIDER_ZERO_LIVE_EXECUTION__REQUIRE_PUSH_AND_IMPACT_TEXT_PROMPTS_BYTE_IDENTICAL_ACTION_FAMILY_NEUTRAL_REFERENCE_NEUTRAL_EXCEPT_FOR_GENERIC_MOTION_ONLY_REFERENCE_DUTY_AND_FORBID_TEXTUAL_PUSH_IMPACT_RECOIL_FEINT_CONTACT_STYLE_CONTACT_TIMING_FOOTSTEP_COUNT_ACTION_TIMELINE_OR_REFERENCE_SPECIFIC_SEMANTIC_CUES__REQUIRE_IDENTICAL_MODEL_RATIO_DURATION_RESOLUTION_IDENTITY_CLOTHING_SCENE_CAMERA_LIGHTING_STYLE_SAFETY_NEGATIVE_CONSTRAINTS_AND_ALL_NONREFERENCE_PACKAGE_FIELDS__REQUIRE_ONLY_REFERENCE_ID_REFERENCE_PATH_REFERENCE_SHA256_AND_REFERENCE_UPLOAD_BINDING_TO_DIFFER_BETWEEN_THE_TWO_PACKAGES__REQUIRE_TEXT_TO_CONTROL_IDENTITY_SCENE_CAMERA_LIGHTING_STYLE_AND_SAFETY_WHILE_SUPPLIED_VIDEO_CONTROLS_MOTION_SEQUENCE_ONLY__REQUIRE_C02_REVIEW_CONTRACT_TO_TEST_REFERENCE_SPECIFIC_ACTION_DIFFERENTIATION_REFERENCE_IGNORED_REFERENCE_OVERDOMINANCE_ROLE_CONFLICT_TECHNICAL_FAILURE_ACTION_FAILURE_AND_THE_FOUR_MATERIAL_COPY_SENTINELS__REQUIRE_C02_TO_BE_THE_FINAL_BOUNDED_CAUSAL_ISOLATION_CANARY_WITH_NO_AUTOMATIC_C03_AND_NO_LIVE_AUTHORITY__REQUIRE_ANY_LATER_C02_LIVE_SUBMIT_QUERY_DOWNLOAD_REVIEW_OR_EXPANSION_TO_USE_SEPARATE_FRESH_HUMAN_AUTHORIZATION__AUTHORIZE_HUMAN_DECISION_RECORD_TWO_BYTE_IDENTICAL_PROMPT_FILES_TWO_PACKAGES_MATCHED_PAIR_INDEX_REVIEW_CONTRACT_STATIC_AUDIT_EVIDENCE_MANIFEST_GOVERNANCE_REPORT_COMMIT_AND_PUSH_ONLY__NO_SOURCE_CHANGE_NO_MEDIA_CHANGE_NO_REFERENCE_CHANGE_NO_PRODUCTION_REENTRY_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__SET_NEXT_PHASE_CAL002_ROUTE_A_V0_3_MATCHED_PAIR_CANARY_C02_NO_LIVE_CAUSAL_ISOLATION_DESIGN_AND_STATIC_AUDIT__ONE_TIME_NON_REUSABLE",
+    "received": true,
+    "sha256": "cb6d7ca1550ee8a750f28b139b743859c4b7aabdd23f39f1f9f4e4e3b7a86bf0"
+  },
+  "authorization_lifecycle": {
+    "activated": true,
+    "activated_immediately_before_first_repository_write": true,
+    "authority": "ONE_TIME_NON_REUSABLE_AFTER_FIRST_REPOSITORY_WRITE",
+    "consumed": true,
+    "reusable": false
+  },
+  "execution_id": "CAL002-ROUTE-A-V0-3-C02-NO-LIVE-CAUSAL-ISOLATION-DESIGN-V0-1",
+  "goal_identity": "CAL002_ROUTE_A_V0_2_C01_MIXED_RESULT_ROUTE_A_CAPABILITY_HUMAN_DECISION_AND_FINAL_C02_CAUSAL_ISOLATION_DESIGN_ONLY_V0_1",
+  "governance": {
+    "R02_authorized": false,
+    "automatic_expansion_authorized": false,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "locked": false,
+    "production_approved": false,
+    "production_reentry_authorized": false,
+    "route_a_capability_proven": false
+  },
+  "next_decision_gate": "CAL002_ROUTE_A_V0_3_MATCHED_PAIR_CANARY_C02_LIVE_AUTHORIZATION_HUMAN_DECISION",
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_CAPABILITY_DECISION_AND_V0_3_C02_DESIGN_AUTHORIZATION_RECORD_V0_1",
+  "starting_checkpoint": {
+    "branch": "main",
+    "commit_message": "review(cal002): record Route A V0.2 C01 mixed result",
+    "head": "7c224daba162f14a3026e2f6dbef72bb26fbfe34",
+    "head_origin_aligned": true,
+    "origin_main": "7c224daba162f14a3026e2f6dbef72bb26fbfe34",
+    "parent": "61b6e8a0903574ce0b29cb2710ab19d23aa644f4",
+    "unrelated_untracked_count": 26,
+    "unrelated_untracked_set_sha256": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94"
+  }
+}

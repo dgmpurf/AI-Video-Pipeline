@@ -1,0 +1,183 @@
+{
+  "R02_calls": 0,
+  "approved_phase": "CAL002_ROUTE_A_V0_3_MATCHED_PAIR_CANARY_C02_NO_LIVE_CAUSAL_ISOLATION_DESIGN_AND_STATIC_AUDIT",
+  "artifact_count": 9,
+  "artifacts": [
+    {
+      "bytes": 9223,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_PREP/human_decision.json",
+      "sha256": "e43a55d8b5733b68525af05356fc071bf0de18d79de20b2c526170a008fcf66a"
+    },
+    {
+      "bytes": 2010,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_PREP/prompts/push.txt",
+      "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+    },
+    {
+      "bytes": 2010,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_PREP/prompts/impact.txt",
+      "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+    },
+    {
+      "bytes": 1451,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_PREP/packages/push.json",
+      "sha256": "995d059bae4588a655d39c95423d3aa87472cddc20b1552d4f91c8f3f85811ed"
+    },
+    {
+      "bytes": 1457,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_PREP/packages/impact.json",
+      "sha256": "0541ae099ced43ef0b21fbecd13728af6fbbe51011af356f59d6bc03e9db659f"
+    },
+    {
+      "bytes": 5069,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_PREP/matched_pair_index.json",
+      "sha256": "0b7f5375e26c9af6650a549597a9d14c8bcdeafc35ba7a4f2761b9f84518297c"
+    },
+    {
+      "bytes": 4013,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_PREP/review_contract.json",
+      "sha256": "b1d226caf6ad8a8bbe25e169788b09cab7f788da261ca0b1205aea20219d569e"
+    },
+    {
+      "bytes": 87819,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_PREP/static_audit.json",
+      "sha256": "0bf5270f0d37d7426b54666e0149cca5de06e13ff97c83405bc5e4a01693a826"
+    },
+    {
+      "bytes": 14923,
+      "path": "reports/CAL002_RA_V03_C02_NO_LIVE_CAUSAL_ISOLATION_DESIGN_RESULT.md",
+      "sha256": "7d31ab3f6a49f6333febd808ea54e08591d2c26e5f821b48d0cb587a4253ef17"
+    }
+  ],
+  "authorization_activated": true,
+  "authorization_consumed": true,
+  "authorization_reusable": false,
+  "batch_calls": 0,
+  "committed_input_bindings": {
+    "c01_governance_report": {
+      "bytes": 15201,
+      "git_blob": "ff31e8f1ab5881a05dd0f394fcf2a64037a0a666",
+      "nonempty": true,
+      "path": "reports/CAL002_RA_V02_C01_COMPLETE_MP4_HUMAN_REVIEW_RESULT.md",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "77ea8964ec3595d5beaec52e9b43a2fdde1042fe0ebbf58c85f233e836e4ad59",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "c01_review_manifest": {
+      "approval_identifier_interpretation": "GIT_BLOB_NOT_SHA256",
+      "approval_labeled_identifier": "0ef89dd5376b3cd26e2c36d2f7f731365ba6ddd6",
+      "bytes": 6657,
+      "git_blob": "0ef89dd5376b3cd26e2c36d2f7f731365ba6ddd6",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_REVIEW/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "4f95479d07c2d6fb5adbc4f34db2f68aabfe7a8fd973bcb8b501ee9efffbb9a8",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "c01_review_record": {
+      "bytes": 18578,
+      "git_blob": "cd41851e4e51dfa2353e2a70fab54e9558d83d0c",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_REVIEW/complete_mp4_human_review_record.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "5606e751f4a382e2b65997290a6aa69262cfbb28cce420648f2eb50ba41f4fc3",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "c01_review_report": {
+      "bytes": 13145,
+      "git_blob": "5c028ea404b959f59188a37e3db3a4973bbfe2f8",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_REVIEW/complete_mp4_human_review_report.md",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "4135e1729c66833495bce994c850f1396b9fa25fb0b61de0eaf7006308165385",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "impact_reference": {
+      "bytes": 168170,
+      "git_blob": "8aaa470f8485b9aa59cff057c6a143ed765df7ad",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "impact_reference_technical": {
+      "bytes": 3172,
+      "git_blob": "99e8c86ef8b4dd4c27866487baf5a571b97e5157",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_IMPACT_02_technical_validation.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "45c9f7c034f2afd0b651cafbe6d8563c7a9d0472baf004877d64858c9818eb63",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "push_reference": {
+      "bytes": 174235,
+      "git_blob": "d5cfb6ab1d17163d4b9d6174c633af627d4ee866",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "push_reference_technical": {
+      "bytes": 3182,
+      "git_blob": "8d94b0bd13234fc47cf2ab0333ba872e701f92f9",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_PUSH_02_technical_validation.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "ff560f1cff89091dc9a27ab31c5635428af7f37bb86ebcbef2327a81d73fc67d",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    "reference_review_lock_record": {
+      "bytes": 7323,
+      "git_blob": "790aaaebf9fb38b0d5b677ff0b014cef1fae2fe9",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_record_final.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "389ed9cf755133ffef7ff4df75f8a46440d2e3f656c2fa7a5e08d6c6206675cb",
+      "symlink": false,
+      "worktree_equals_head": true
+    }
+  },
+  "current_checkpoint": "7c224daba162f14a3026e2f6dbef72bb26fbfe34",
+  "decision": "CAL002_ROUTE_A_V0_3_C02_NO_LIVE_CAUSAL_ISOLATION_DESIGN_AND_STATIC_AUDIT_COMPLETE",
+  "download_calls": 0,
+  "dreamina_calls": 0,
+  "evidence_coverage": "9/9",
+  "execution_id": "CAL002-ROUTE-A-V0-3-C02-NO-LIVE-CAUSAL-ISOLATION-DESIGN-V0-1",
+  "goal_identity": "CAL002_ROUTE_A_V0_2_C01_MIXED_RESULT_ROUTE_A_CAPABILITY_HUMAN_DECISION_AND_FINAL_C02_CAUSAL_ISOLATION_DESIGN_ONLY_V0_1",
+  "included_artifact_count": 9,
+  "next_decision_gate": "CAL002_ROUTE_A_V0_3_MATCHED_PAIR_CANARY_C02_LIVE_AUTHORIZATION_HUMAN_DECISION",
+  "private_account_data_persisted": false,
+  "provider_calls": 0,
+  "query_calls": 0,
+  "raw_provider_output_persisted": false,
+  "reference_upload_calls": 0,
+  "resubmit_calls": 0,
+  "retry_calls": 0,
+  "schema_version": "CAL002_ROUTE_A_V0_3_C02_NO_LIVE_CAUSAL_ISOLATION_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "sensitive_data_result": "PASS",
+  "signed_url_persisted": false,
+  "submit_calls": 0,
+  "unique_bound_paths": 9
+}

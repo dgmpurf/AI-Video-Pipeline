@@ -1,0 +1,2279 @@
+{
+  "category_distribution": {
+    "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING": 30,
+    "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY": 30,
+    "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY": 60,
+    "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST": 60,
+    "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE": 30,
+    "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA": 30
+  },
+  "check_count": 240,
+  "checks": [
+    {
+      "actual": "BOUND_REPOSITORY",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-001",
+      "description": "Repository root matches the authorized checkout",
+      "evidence": "git rev-parse --show-toplevel matched the bound checkout",
+      "expected": "BOUND_REPOSITORY",
+      "result": "PASS"
+    },
+    {
+      "actual": "main",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-002",
+      "description": "Current branch is main",
+      "evidence": "git branch --show-current",
+      "expected": "main",
+      "result": "PASS"
+    },
+    {
+      "actual": "7c224daba162f14a3026e2f6dbef72bb26fbfe34",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-003",
+      "description": "Local HEAD matches the bound checkpoint",
+      "evidence": "git rev-parse HEAD",
+      "expected": "7c224daba162f14a3026e2f6dbef72bb26fbfe34",
+      "result": "PASS"
+    },
+    {
+      "actual": "7c224daba162f14a3026e2f6dbef72bb26fbfe34",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-004",
+      "description": "Locally recorded origin/main matches the bound checkpoint",
+      "evidence": "git rev-parse origin/main without fetch",
+      "expected": "7c224daba162f14a3026e2f6dbef72bb26fbfe34",
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-005",
+      "description": "HEAD and origin/main are aligned",
+      "evidence": "local refs are equal",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": "61b6e8a0903574ce0b29cb2710ab19d23aa644f4",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-006",
+      "description": "HEAD parent matches the expected parent",
+      "evidence": "git rev-parse HEAD^",
+      "expected": "61b6e8a0903574ce0b29cb2710ab19d23aa644f4",
+      "result": "PASS"
+    },
+    {
+      "actual": "review(cal002): record Route A V0.2 C01 mixed result",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-007",
+      "description": "Current commit message matches",
+      "evidence": "git log -1",
+      "expected": "review(cal002): record Route A V0.2 C01 mixed result",
+      "result": "PASS"
+    },
+    {
+      "actual": 1,
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-008",
+      "description": "Parent-to-HEAD commit count is one",
+      "evidence": "git rev-list --count",
+      "expected": 1,
+      "result": "PASS"
+    },
+    {
+      "actual": 0,
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-009",
+      "description": "Staged path count is zero",
+      "evidence": "git diff --cached --name-only",
+      "expected": 0,
+      "result": "PASS"
+    },
+    {
+      "actual": 0,
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-010",
+      "description": "Tracked modification count is zero",
+      "evidence": "git status porcelain",
+      "expected": 0,
+      "result": "PASS"
+    },
+    {
+      "actual": 0,
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-011",
+      "description": "Source tracked modification count is zero",
+      "evidence": "path-scoped Source status",
+      "expected": 0,
+      "result": "PASS"
+    },
+    {
+      "actual": 0,
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-012",
+      "description": "Source staged modification count is zero",
+      "evidence": "path-scoped Source status",
+      "expected": 0,
+      "result": "PASS"
+    },
+    {
+      "actual": 4,
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-013",
+      "description": "Parent-to-HEAD added path count is four",
+      "evidence": "git diff --name-status",
+      "expected": 4,
+      "result": "PASS"
+    },
+    {
+      "actual": 0,
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-014",
+      "description": "Parent-to-HEAD modified path count is zero",
+      "evidence": "git diff --name-status",
+      "expected": 0,
+      "result": "PASS"
+    },
+    {
+      "actual": 0,
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-015",
+      "description": "Parent-to-HEAD deleted path count is zero",
+      "evidence": "git diff --name-status",
+      "expected": 0,
+      "result": "PASS"
+    },
+    {
+      "actual": 0,
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-016",
+      "description": "Parent-to-HEAD renamed path count is zero",
+      "evidence": "git diff --name-status --no-renames",
+      "expected": 0,
+      "result": "PASS"
+    },
+    {
+      "actual": 0,
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-017",
+      "description": "Parent-to-HEAD unexpected path count is zero",
+      "evidence": "exact transition allowlist",
+      "expected": 0,
+      "result": "PASS"
+    },
+    {
+      "actual": 4,
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-018",
+      "description": "Parent-to-HEAD additions equal the four C01 review outputs",
+      "evidence": "exact set equality",
+      "expected": 4,
+      "result": "PASS"
+    },
+    {
+      "actual": 26,
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-019",
+      "description": "Unrelated untracked path count is preserved",
+      "evidence": "sorted porcelain untracked paths",
+      "expected": 26,
+      "result": "PASS"
+    },
+    {
+      "actual": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-020",
+      "description": "Unrelated untracked set digest is preserved",
+      "evidence": "SHA-256 of sorted newline-joined path set",
+      "expected": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94",
+      "result": "PASS"
+    },
+    {
+      "actual": 18578,
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-021",
+      "description": "C01 review record byte length matches",
+      "evidence": "worktree and HEAD blob verified",
+      "expected": 18578,
+      "result": "PASS"
+    },
+    {
+      "actual": "5606e751f4a382e2b65997290a6aa69262cfbb28cce420648f2eb50ba41f4fc3",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-022",
+      "description": "C01 review record SHA-256 matches",
+      "evidence": "fresh worktree SHA-256",
+      "expected": "5606e751f4a382e2b65997290a6aa69262cfbb28cce420648f2eb50ba41f4fc3",
+      "result": "PASS"
+    },
+    {
+      "actual": "cd41851e4e51dfa2353e2a70fab54e9558d83d0c",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-023",
+      "description": "C01 review record Git blob matches",
+      "evidence": "HEAD tree blob",
+      "expected": "cd41851e4e51dfa2353e2a70fab54e9558d83d0c",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-024",
+      "description": "C01 review record strict JSON parse passes",
+      "evidence": "duplicate-key and non-finite rejection parser",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": "MIXED_RESULT_RECORDED",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-025",
+      "description": "C01 record decision matches the approved mixed result",
+      "evidence": "validated record_decision",
+      "expected": "MIXED_RESULT_RECORDED",
+      "result": "PASS"
+    },
+    {
+      "actual": "CANARY_MIXED_RESULT_REQUIRES_HUMAN_DECISION",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-026",
+      "description": "C01 formal decision matches the closed-set choice",
+      "evidence": "validated formal_decision",
+      "expected": "CANARY_MIXED_RESULT_REQUIRES_HUMAN_DECISION",
+      "result": "PASS"
+    },
+    {
+      "actual": "PARTIAL_PASS_NOT_READY_FOR_SEMANTIC_GATE_PASS",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-027",
+      "description": "C01 PUSH semantic result remains partial",
+      "evidence": "validated review record",
+      "expected": "PARTIAL_PASS_NOT_READY_FOR_SEMANTIC_GATE_PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": "PARTIAL_NOT_READY_FOR_SEMANTIC_GATE_PASS",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-028",
+      "description": "C01 IMPACT semantic result remains partial",
+      "evidence": "validated review record",
+      "expected": "PARTIAL_NOT_READY_FOR_SEMANTIC_GATE_PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-029",
+      "description": "C01 review report binding and JSON consistency pass",
+      "evidence": "bytes, SHA-256, HEAD equality, and required decision strings verified",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING",
+      "check_id": "A_REPOSITORY_CHECKPOINT_AND_C01_BINDING-030",
+      "description": "C01 manifest and governance report bindings pass",
+      "evidence": "manifest blob/fresh SHA and governance bytes/SHA/HEAD verified",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-001",
+      "description": "PUSH reference is a regular file",
+      "evidence": "filesystem lstat",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-002",
+      "description": "PUSH reference is nonempty",
+      "evidence": "fresh byte read",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-003",
+      "description": "PUSH reference is not a symlink",
+      "evidence": "filesystem lstat",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-004",
+      "description": "PUSH reference is not a reparse point",
+      "evidence": "Windows file attributes",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": 174235,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-005",
+      "description": "PUSH reference byte length matches",
+      "evidence": "fresh worktree byte count",
+      "expected": 174235,
+      "result": "PASS"
+    },
+    {
+      "actual": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-006",
+      "description": "PUSH reference SHA-256 matches",
+      "evidence": "fresh worktree SHA-256",
+      "expected": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "result": "PASS"
+    },
+    {
+      "actual": "d5cfb6ab1d17163d4b9d6174c633af627d4ee866",
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-007",
+      "description": "PUSH reference Git blob matches",
+      "evidence": "HEAD tree blob",
+      "expected": "d5cfb6ab1d17163d4b9d6174c633af627d4ee866",
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-008",
+      "description": "PUSH reference worktree equals HEAD",
+      "evidence": "byte-for-byte blob comparison",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": 3182,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-009",
+      "description": "PUSH technical-record byte length matches",
+      "evidence": "fresh byte count",
+      "expected": 3182,
+      "result": "PASS"
+    },
+    {
+      "actual": "ff560f1cff89091dc9a27ab31c5635428af7f37bb86ebcbef2327a81d73fc67d",
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-010",
+      "description": "PUSH technical-record SHA-256 matches",
+      "evidence": "fresh SHA-256",
+      "expected": "ff560f1cff89091dc9a27ab31c5635428af7f37bb86ebcbef2327a81d73fc67d",
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-011",
+      "description": "PUSH technical-record HEAD binding matches",
+      "evidence": "HEAD blob comparison",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-012",
+      "description": "PUSH technical-record strict JSON parse passes",
+      "evidence": "strict parser",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-013",
+      "description": "PUSH technical result is PASS",
+      "evidence": "validated push technical record",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-014",
+      "description": "PUSH technical media identity and project-owned rights match",
+      "evidence": "byte length, media SHA, reference ID, and rights class verified",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS_FOR_FUTURE_CANARY_AUTHORIZATION_REQUEST",
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-015",
+      "description": "PUSH locked human reference decision passes",
+      "evidence": "committed review-lock record verified",
+      "expected": "PASS_FOR_FUTURE_CANARY_AUTHORIZATION_REQUEST",
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-016",
+      "description": "IMPACT reference is a regular file",
+      "evidence": "filesystem lstat",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-017",
+      "description": "IMPACT reference is nonempty",
+      "evidence": "fresh byte read",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-018",
+      "description": "IMPACT reference is not a symlink",
+      "evidence": "filesystem lstat",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-019",
+      "description": "IMPACT reference is not a reparse point",
+      "evidence": "Windows file attributes",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": 168170,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-020",
+      "description": "IMPACT reference byte length matches",
+      "evidence": "fresh worktree byte count",
+      "expected": 168170,
+      "result": "PASS"
+    },
+    {
+      "actual": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-021",
+      "description": "IMPACT reference SHA-256 matches",
+      "evidence": "fresh worktree SHA-256",
+      "expected": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "result": "PASS"
+    },
+    {
+      "actual": "8aaa470f8485b9aa59cff057c6a143ed765df7ad",
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-022",
+      "description": "IMPACT reference Git blob matches",
+      "evidence": "HEAD tree blob",
+      "expected": "8aaa470f8485b9aa59cff057c6a143ed765df7ad",
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-023",
+      "description": "IMPACT reference worktree equals HEAD",
+      "evidence": "byte-for-byte blob comparison",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": 3172,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-024",
+      "description": "IMPACT technical-record byte length matches",
+      "evidence": "fresh byte count",
+      "expected": 3172,
+      "result": "PASS"
+    },
+    {
+      "actual": "45c9f7c034f2afd0b651cafbe6d8563c7a9d0472baf004877d64858c9818eb63",
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-025",
+      "description": "IMPACT technical-record SHA-256 matches",
+      "evidence": "fresh SHA-256",
+      "expected": "45c9f7c034f2afd0b651cafbe6d8563c7a9d0472baf004877d64858c9818eb63",
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-026",
+      "description": "IMPACT technical-record HEAD binding matches",
+      "evidence": "HEAD blob comparison",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-027",
+      "description": "IMPACT technical-record strict JSON parse passes",
+      "evidence": "strict parser",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-028",
+      "description": "IMPACT technical result is PASS",
+      "evidence": "validated impact technical record",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-029",
+      "description": "IMPACT technical media identity and project-owned rights match",
+      "evidence": "byte length, media SHA, reference ID, and rights class verified",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS_FOR_FUTURE_CANARY_AUTHORIZATION_REQUEST",
+      "category": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY",
+      "check_id": "B_REFERENCE_IDENTITY_TECHNICAL_RIGHTS_IMMUTABILITY-030",
+      "description": "IMPACT locked human reference decision passes",
+      "evidence": "committed review-lock record verified",
+      "expected": "PASS_FOR_FUTURE_CANARY_AUTHORIZATION_REQUEST",
+      "result": "PASS"
+    },
+    {
+      "actual": 2010,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-001",
+      "description": "PUSH Prompt byte length is exact",
+      "evidence": "in-memory candidate",
+      "expected": 2010,
+      "result": "PASS"
+    },
+    {
+      "actual": 2010,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-002",
+      "description": "IMPACT Prompt byte length is exact",
+      "evidence": "same in-memory candidate",
+      "expected": 2010,
+      "result": "PASS"
+    },
+    {
+      "actual": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d",
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-003",
+      "description": "PUSH Prompt SHA-256 is exact",
+      "evidence": "in-memory candidate",
+      "expected": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d",
+      "result": "PASS"
+    },
+    {
+      "actual": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d",
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-004",
+      "description": "IMPACT Prompt SHA-256 is exact",
+      "evidence": "same in-memory candidate",
+      "expected": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d",
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-005",
+      "description": "Prompt byte-for-byte equality passes",
+      "evidence": "same immutable bytes assigned to both paths",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-006",
+      "description": "Prompt SHA-256 equality passes",
+      "evidence": "same immutable bytes",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-007",
+      "description": "PUSH Prompt strict UTF-8 decode passes",
+      "evidence": "strict decoder",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-008",
+      "description": "IMPACT Prompt strict UTF-8 decode passes",
+      "evidence": "strict decoder",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-009",
+      "description": "PUSH Prompt has no BOM",
+      "evidence": "byte prefix",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-010",
+      "description": "IMPACT Prompt has no BOM",
+      "evidence": "byte prefix",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-011",
+      "description": "PUSH Prompt is LF-only",
+      "evidence": "byte scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-012",
+      "description": "IMPACT Prompt is LF-only",
+      "evidence": "byte scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-013",
+      "description": "PUSH Prompt has exactly one terminal LF",
+      "evidence": "byte suffix",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-014",
+      "description": "IMPACT Prompt has exactly one terminal LF",
+      "evidence": "byte suffix",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-015",
+      "description": "Forbidden action term is absent: push",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-016",
+      "description": "Forbidden action term is absent: impact",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-017",
+      "description": "Forbidden action term is absent: recoil",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-018",
+      "description": "Forbidden action term is absent: feint",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-019",
+      "description": "Forbidden action term is absent: shove",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-020",
+      "description": "Forbidden action term is absent: strike",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-021",
+      "description": "Forbidden action term is absent: punch",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-022",
+      "description": "Forbidden action term is absent: hit",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-023",
+      "description": "Forbidden action term is absent: brace",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-024",
+      "description": "Forbidden action term is absent: retreat",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-025",
+      "description": "Forbidden action term is absent: rear-foot",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-026",
+      "description": "Forbidden action term is absent: rear foot",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-027",
+      "description": "Forbidden action term is absent: footstep",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-028",
+      "description": "Forbidden action term is absent: two-hand push",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-029",
+      "description": "Forbidden action term is absent: single-hand contact",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-030",
+      "description": "Forbidden action term is absent: torso push",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-031",
+      "description": "Forbidden action term is absent: torso impact",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-032",
+      "description": "Forbidden action term is absent: recoil step",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-033",
+      "description": "Forbidden action term is absent: contact onset",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-034",
+      "description": "Forbidden action term is absent: contact duration",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-035",
+      "description": "Forbidden action term is absent: release timing",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-036",
+      "description": "Forbidden action term is absent: retraction timing",
+      "evidence": "case-insensitive whole-word or whole-phrase scan",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-037",
+      "description": "Forbidden Prompt pattern is absent: numeric_timecode",
+      "evidence": "bounded semantic-neutrality regex",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-038",
+      "description": "Forbidden Prompt pattern is absent: decimal_second_instruction",
+      "evidence": "bounded semantic-neutrality regex",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-039",
+      "description": "Forbidden Prompt pattern is absent: second_by_second_clause",
+      "evidence": "bounded semantic-neutrality regex",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-040",
+      "description": "Forbidden Prompt pattern is absent: explicit_interaction_episode_count",
+      "evidence": "bounded semantic-neutrality regex",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-041",
+      "description": "Forbidden Prompt pattern is absent: explicit_footstep_count",
+      "evidence": "bounded semantic-neutrality regex",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-042",
+      "description": "Forbidden Prompt pattern is absent: initiator_receiver_assignment",
+      "evidence": "bounded semantic-neutrality regex",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-043",
+      "description": "Forbidden Prompt pattern is absent: named_reference_id",
+      "evidence": "bounded semantic-neutrality regex",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-044",
+      "description": "Forbidden Prompt pattern is absent: reference_filename",
+      "evidence": "bounded semantic-neutrality regex",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-045",
+      "description": "Forbidden Prompt pattern is absent: reference_hash",
+      "evidence": "bounded semantic-neutrality regex",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-046",
+      "description": "Forbidden Prompt pattern is absent: push_specific_expected_result",
+      "evidence": "bounded semantic-neutrality regex",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-047",
+      "description": "Forbidden Prompt pattern is absent: impact_specific_expected_result",
+      "evidence": "bounded semantic-neutrality regex",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-048",
+      "description": "Forbidden Prompt pattern is absent: c01_action_timeline",
+      "evidence": "bounded semantic-neutrality regex",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-049",
+      "description": "Approved generic motion phrase is present: motion reference",
+      "evidence": "exact phrase scan",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-050",
+      "description": "Approved generic motion phrase is present: full-duration body-motion sequence",
+      "evidence": "exact phrase scan",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-051",
+      "description": "Approved generic motion phrase is present: temporal rhythm",
+      "evidence": "exact phrase scan",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-052",
+      "description": "Approved generic motion phrase is present: relative spacing",
+      "evidence": "exact phrase scan",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-053",
+      "description": "Approved generic motion phrase is present: coordination",
+      "evidence": "exact phrase scan",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-054",
+      "description": "Approved generic motion phrase is present: physical interaction",
+      "evidence": "exact phrase scan",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-055",
+      "description": "Approved generic motion phrase is present: continuous five-second",
+      "evidence": "exact phrase scan",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-056",
+      "description": "Identity and clothing duty is present",
+      "evidence": "required exact Prompt duty phrases",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-057",
+      "description": "Scene, camera, and composition duty is present",
+      "evidence": "required exact Prompt duty phrases",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-058",
+      "description": "Lighting, style, and safety duty is present",
+      "evidence": "required exact Prompt duty phrases",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-059",
+      "description": "Motion-only scope and anti-substitution duty is present",
+      "evidence": "required exact Prompt duty phrases",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY",
+      "check_id": "C_PROMPT_BYTE_IDENTITY_AND_SEMANTIC_NEUTRALITY-060",
+      "description": "Reference visual-copy prohibitions are present",
+      "evidence": "required exact Prompt duty phrases",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-001",
+      "description": "PUSH package strict JSON parse passes",
+      "evidence": "strict in-memory round trip",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-002",
+      "description": "IMPACT package strict JSON parse passes",
+      "evidence": "strict in-memory round trip",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-003",
+      "description": "PUSH package deterministic serialization passes",
+      "evidence": "sorted-key two-space canonical JSON",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-004",
+      "description": "IMPACT package deterministic serialization passes",
+      "evidence": "sorted-key two-space canonical JSON",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": "CAL002_ROUTE_A_V0_3_C02_CAUSAL_ISOLATION_PACKAGE_V0_1",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-005",
+      "description": "Non-reference package field is equal: schema_version",
+      "evidence": "deep value comparison",
+      "expected": "CAL002_ROUTE_A_V0_3_C02_CAUSAL_ISOLATION_PACKAGE_V0_1",
+      "result": "PASS"
+    },
+    {
+      "actual": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-006",
+      "description": "Non-reference package field is equal: experiment_id",
+      "evidence": "deep value comparison",
+      "expected": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION",
+      "result": "PASS"
+    },
+    {
+      "actual": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION-MATCHED-PAIR",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-007",
+      "description": "Non-reference package field is equal: matched_pair_id",
+      "evidence": "deep value comparison",
+      "expected": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION-MATCHED-PAIR",
+      "result": "PASS"
+    },
+    {
+      "actual": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION-COMMON-TEMPLATE",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-008",
+      "description": "Non-reference package field is equal: package_template_id",
+      "evidence": "deep value comparison",
+      "expected": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION-COMMON-TEMPLATE",
+      "result": "PASS"
+    },
+    {
+      "actual": "seedance2.0_vip",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-009",
+      "description": "Non-reference package field is equal: model",
+      "evidence": "deep value comparison",
+      "expected": "seedance2.0_vip",
+      "result": "PASS"
+    },
+    {
+      "actual": "16:9",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-010",
+      "description": "Non-reference package field is equal: ratio",
+      "evidence": "deep value comparison",
+      "expected": "16:9",
+      "result": "PASS"
+    },
+    {
+      "actual": 5,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-011",
+      "description": "Non-reference package field is equal: duration_seconds",
+      "evidence": "deep value comparison",
+      "expected": 5,
+      "result": "PASS"
+    },
+    {
+      "actual": "720p",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-012",
+      "description": "Non-reference package field is equal: resolution",
+      "evidence": "deep value comparison",
+      "expected": "720p",
+      "result": "PASS"
+    },
+    {
+      "actual": 1,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-013",
+      "description": "Non-reference package field is equal: requested_video_count",
+      "evidence": "deep value comparison",
+      "expected": 1,
+      "result": "PASS"
+    },
+    {
+      "actual": {
+        "byte_identical_pair": true,
+        "byte_length": 2010,
+        "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+      },
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-014",
+      "description": "Non-reference package field is equal: prompt_binding",
+      "evidence": "deep value comparison",
+      "expected": {
+        "byte_identical_pair": true,
+        "byte_length": 2010,
+        "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+      },
+      "result": "PASS"
+    },
+    {
+      "actual": "MOTION_ONLY_FULL_DURATION",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-015",
+      "description": "Non-reference package field is equal: motion_reference_duty",
+      "evidence": "deep value comparison",
+      "expected": "MOTION_ONLY_FULL_DURATION",
+      "result": "PASS"
+    },
+    {
+      "actual": "IDENTITY_SCENE_CAMERA_LIGHTING_STYLE_AND_SAFETY_ONLY",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-016",
+      "description": "Non-reference package field is equal: text_duty",
+      "evidence": "deep value comparison",
+      "expected": "IDENTITY_SCENE_CAMERA_LIGHTING_STYLE_AND_SAFETY_ONLY",
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-017",
+      "description": "Non-reference package field is equal: shell",
+      "evidence": "deep value comparison",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-018",
+      "description": "Non-reference package field is equal: live_authority",
+      "evidence": "deep value comparison",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-019",
+      "description": "Non-reference package field is equal: reference_upload_authority",
+      "evidence": "deep value comparison",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-020",
+      "description": "Non-reference package field is equal: submit_authority",
+      "evidence": "deep value comparison",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-021",
+      "description": "Non-reference package field is equal: query_authority",
+      "evidence": "deep value comparison",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-022",
+      "description": "Non-reference package field is equal: download_authority",
+      "evidence": "deep value comparison",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-023",
+      "description": "Non-reference package field is equal: retry_authority",
+      "evidence": "deep value comparison",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-024",
+      "description": "Non-reference package field is equal: resubmit_authority",
+      "evidence": "deep value comparison",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-025",
+      "description": "Non-reference package field is equal: batch_authority",
+      "evidence": "deep value comparison",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-026",
+      "description": "Non-reference package field is equal: R02_authority",
+      "evidence": "deep value comparison",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-027",
+      "description": "Non-reference package field is equal: automatic_C03_authority",
+      "evidence": "deep value comparison",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": "CAL002_ROUTE_A_V0_3_C02_CAUSAL_ISOLATION_PACKAGE_V0_1",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-028",
+      "description": "Common package field has the required value: schema_version",
+      "evidence": "authorized package contract",
+      "expected": "CAL002_ROUTE_A_V0_3_C02_CAUSAL_ISOLATION_PACKAGE_V0_1",
+      "result": "PASS"
+    },
+    {
+      "actual": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-029",
+      "description": "Common package field has the required value: experiment_id",
+      "evidence": "authorized package contract",
+      "expected": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION",
+      "result": "PASS"
+    },
+    {
+      "actual": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION-MATCHED-PAIR",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-030",
+      "description": "Common package field has the required value: matched_pair_id",
+      "evidence": "authorized package contract",
+      "expected": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION-MATCHED-PAIR",
+      "result": "PASS"
+    },
+    {
+      "actual": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION-COMMON-TEMPLATE",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-031",
+      "description": "Common package field has the required value: package_template_id",
+      "evidence": "authorized package contract",
+      "expected": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION-COMMON-TEMPLATE",
+      "result": "PASS"
+    },
+    {
+      "actual": "seedance2.0_vip",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-032",
+      "description": "Common package field has the required value: model",
+      "evidence": "authorized package contract",
+      "expected": "seedance2.0_vip",
+      "result": "PASS"
+    },
+    {
+      "actual": "16:9",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-033",
+      "description": "Common package field has the required value: ratio",
+      "evidence": "authorized package contract",
+      "expected": "16:9",
+      "result": "PASS"
+    },
+    {
+      "actual": 5,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-034",
+      "description": "Common package field has the required value: duration_seconds",
+      "evidence": "authorized package contract",
+      "expected": 5,
+      "result": "PASS"
+    },
+    {
+      "actual": "720p",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-035",
+      "description": "Common package field has the required value: resolution",
+      "evidence": "authorized package contract",
+      "expected": "720p",
+      "result": "PASS"
+    },
+    {
+      "actual": 1,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-036",
+      "description": "Common package field has the required value: requested_video_count",
+      "evidence": "authorized package contract",
+      "expected": 1,
+      "result": "PASS"
+    },
+    {
+      "actual": {
+        "byte_identical_pair": true,
+        "byte_length": 2010,
+        "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+      },
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-037",
+      "description": "Common package field has the required value: prompt_binding",
+      "evidence": "authorized package contract",
+      "expected": {
+        "byte_identical_pair": true,
+        "byte_length": 2010,
+        "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+      },
+      "result": "PASS"
+    },
+    {
+      "actual": "MOTION_ONLY_FULL_DURATION",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-038",
+      "description": "Common package field has the required value: motion_reference_duty",
+      "evidence": "authorized package contract",
+      "expected": "MOTION_ONLY_FULL_DURATION",
+      "result": "PASS"
+    },
+    {
+      "actual": "IDENTITY_SCENE_CAMERA_LIGHTING_STYLE_AND_SAFETY_ONLY",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-039",
+      "description": "Common package field has the required value: text_duty",
+      "evidence": "authorized package contract",
+      "expected": "IDENTITY_SCENE_CAMERA_LIGHTING_STYLE_AND_SAFETY_ONLY",
+      "result": "PASS"
+    },
+    {
+      "actual": 4,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-040",
+      "description": "Exactly four JSON pointers differ",
+      "evidence": "recursive deep diff",
+      "expected": 4,
+      "result": "PASS"
+    },
+    {
+      "actual": 4,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-041",
+      "description": "All differing pointers are allowlisted",
+      "evidence": "exact pointer allowlist",
+      "expected": 4,
+      "result": "PASS"
+    },
+    {
+      "actual": 0,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-042",
+      "description": "No non-allowlisted pointer differs",
+      "evidence": "recursive deep diff",
+      "expected": 0,
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-043",
+      "description": "Canonical equality passes after allowlist removal",
+      "evidence": "deep equality",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-044",
+      "description": "Prompt binding equality passes",
+      "evidence": "deep equality",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-045",
+      "description": "All non-reference field equality passes",
+      "evidence": "deep equality",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-046",
+      "description": "Required differing pointer is present: /reference_binding/reference_id",
+      "evidence": "recursive deep diff",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-047",
+      "description": "Required differing pointer is present: /reference_binding/reference_path",
+      "evidence": "recursive deep diff",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-048",
+      "description": "Required differing pointer is present: /reference_binding/reference_sha256",
+      "evidence": "recursive deep diff",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-049",
+      "description": "Required differing pointer is present: /reference_binding/reference_upload_binding",
+      "evidence": "recursive deep diff",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-050",
+      "description": "Each reference_binding contains exactly the four allowlisted keys",
+      "evidence": "key-set comparison",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-051",
+      "description": "PUSH package omits forbidden alias and package ID fields",
+      "evidence": "top-level key scan",
+      "expected": [],
+      "result": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-052",
+      "description": "PUSH package omits forbidden action family, expected motion, and timeline fields",
+      "evidence": "top-level key scan",
+      "expected": [],
+      "result": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-053",
+      "description": "PUSH package omits forbidden role label and output path fields",
+      "evidence": "top-level key scan",
+      "expected": [],
+      "result": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-054",
+      "description": "PUSH package omits forbidden seed and negative Prompt fields",
+      "evidence": "top-level key scan",
+      "expected": [],
+      "result": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-055",
+      "description": "PUSH package omits forbidden review result and live argv fields",
+      "evidence": "top-level key scan",
+      "expected": [],
+      "result": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-056",
+      "description": "IMPACT package omits forbidden alias and package ID fields",
+      "evidence": "top-level key scan",
+      "expected": [],
+      "result": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-057",
+      "description": "IMPACT package omits forbidden action family, expected motion, and timeline fields",
+      "evidence": "top-level key scan",
+      "expected": [],
+      "result": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-058",
+      "description": "IMPACT package omits forbidden role label and output path fields",
+      "evidence": "top-level key scan",
+      "expected": [],
+      "result": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-059",
+      "description": "IMPACT package omits forbidden seed and negative Prompt fields",
+      "evidence": "top-level key scan",
+      "expected": [],
+      "result": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST",
+      "check_id": "D_PACKAGE_EQUALITY_AND_FOUR_FIELD_ALLOWLIST-060",
+      "description": "IMPACT package omits forbidden review result and live argv fields",
+      "evidence": "top-level key scan",
+      "expected": [],
+      "result": "PASS"
+    },
+    {
+      "actual": "CAL002_ROUTE_A_V0_3_C02_CAUSAL_ISOLATION_MATCHED_PAIR_INDEX_V0_1",
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-001",
+      "description": "Matched-pair index schema is correct",
+      "evidence": "index object",
+      "expected": "CAL002_ROUTE_A_V0_3_C02_CAUSAL_ISOLATION_MATCHED_PAIR_INDEX_V0_1",
+      "result": "PASS"
+    },
+    {
+      "actual": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION",
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-002",
+      "description": "Matched-pair experiment ID is correct",
+      "evidence": "index object",
+      "expected": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION",
+      "result": "PASS"
+    },
+    {
+      "actual": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION-MATCHED-PAIR",
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-003",
+      "description": "Matched-pair ID is correct",
+      "evidence": "index object",
+      "expected": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION-MATCHED-PAIR",
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-004",
+      "description": "C02 is designated the final bounded canary",
+      "evidence": "index governance",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-005",
+      "description": "Automatic C03 is false in the index",
+      "evidence": "index governance",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-006",
+      "description": "Live authority is false in the index",
+      "evidence": "index governance",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": 2,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-007",
+      "description": "Both Prompt paths are bound",
+      "evidence": "index bindings",
+      "expected": 2,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-008",
+      "description": "Both Prompt byte lengths and hashes match",
+      "evidence": "index bindings",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-009",
+      "description": "Prompt byte identity result passes",
+      "evidence": "index binding",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-010",
+      "description": "Both package paths, bytes, and hashes are bound",
+      "evidence": "index bindings",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-011",
+      "description": "Package strict-parse result passes",
+      "evidence": "index binding",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": [
+        "/reference_binding/reference_id",
+        "/reference_binding/reference_path",
+        "/reference_binding/reference_sha256",
+        "/reference_binding/reference_upload_binding"
+      ],
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-012",
+      "description": "Four exact package pointers are recorded",
+      "evidence": "index binding",
+      "expected": [
+        "/reference_binding/reference_id",
+        "/reference_binding/reference_path",
+        "/reference_binding/reference_sha256",
+        "/reference_binding/reference_upload_binding"
+      ],
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-013",
+      "description": "Both reference and technical bindings are recorded",
+      "evidence": "index bindings",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-014",
+      "description": "Independent variable, controls, and C01 confound removal are recorded",
+      "evidence": "index design",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": [
+        "single matched pair",
+        "stochastic Provider generation when later executed",
+        "no exposed or authorized deterministic seed",
+        "human visual interpretation remains required",
+        "even a successful C02 creates evidence for a final human capability decision, not automatic proof or production authority"
+      ],
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-015",
+      "description": "All five residual limitations are recorded",
+      "evidence": "index design",
+      "expected": [
+        "single matched pair",
+        "stochastic Provider generation when later executed",
+        "no exposed or authorized deterministic seed",
+        "human visual interpretation remains required",
+        "even a successful C02 creates evidence for a final human capability decision, not automatic proof or production authority"
+      ],
+      "result": "PASS"
+    },
+    {
+      "actual": "CAL002_ROUTE_A_V0_3_C02_CAUSAL_ISOLATION_REVIEW_CONTRACT_V0_1",
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-016",
+      "description": "Review-contract schema is correct",
+      "evidence": "contract object",
+      "expected": "CAL002_ROUTE_A_V0_3_C02_CAUSAL_ISOLATION_REVIEW_CONTRACT_V0_1",
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-017",
+      "description": "Complete MP4 review is mandatory",
+      "evidence": "contract governance",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": "ASSISTANCE_ONLY",
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-018",
+      "description": "Contact sheets are assistance only",
+      "evidence": "contract governance",
+      "expected": "ASSISTANCE_ONLY",
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-019",
+      "description": "Automatic decision is false",
+      "evidence": "contract governance",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-020",
+      "description": "Automatic expansion is false",
+      "evidence": "contract governance",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-021",
+      "description": "Automatic C03 is false",
+      "evidence": "contract governance",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-022",
+      "description": "Original R02 remains blocked",
+      "evidence": "contract governance",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-023",
+      "description": "Fresh human decision is required",
+      "evidence": "contract governance",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-024",
+      "description": "Both reference signatures exist only in the review contract",
+      "evidence": "contract-only signature scan",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": 12,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-025",
+      "description": "Twelve scored motion dimensions are present",
+      "evidence": "contract scoring",
+      "expected": 12,
+      "result": "PASS"
+    },
+    {
+      "actual": [
+        "cross_reference_signature_score",
+        "own_reference_signature_score",
+        "reference_specificity_margin"
+      ],
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-026",
+      "description": "Own, cross, and specificity-margin score fields are defined",
+      "evidence": "contract scoring",
+      "expected": [
+        "cross_reference_signature_score",
+        "own_reference_signature_score",
+        "reference_specificity_margin"
+      ],
+      "result": "PASS"
+    },
+    {
+      "actual": [
+        8,
+        3
+      ],
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-027",
+      "description": "Strong-signal score thresholds are 8 and 3",
+      "evidence": "contract gate",
+      "expected": [
+        8,
+        3
+      ],
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-028",
+      "description": "Strong gate requires validity, review, differentiation, safety, and no automatic proof",
+      "evidence": "contract gate",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": 8,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-029",
+      "description": "Exactly eight allowed formal decisions are present",
+      "evidence": "closed decision set",
+      "expected": 8,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE",
+      "check_id": "E_MATCHED_PAIR_AND_REVIEW_CONTRACT_COVERAGE-030",
+      "description": "Four sentinels and material blocking are present",
+      "evidence": "contract sentinel rule",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": 10,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-001",
+      "description": "Exact planned output count is ten",
+      "evidence": "authorized allowlist",
+      "expected": 10,
+      "result": "PASS"
+    },
+    {
+      "actual": 10,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-002",
+      "description": "All planned output paths are unique",
+      "evidence": "path-set comparison",
+      "expected": 10,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-003",
+      "description": "Maximum absolute output path length is within 240",
+      "evidence": "maximum=120",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-004",
+      "description": "Output root is absent before activation",
+      "evidence": "filesystem existence check",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-005",
+      "description": "Governance report is absent before activation",
+      "evidence": "filesystem existence check",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": "CAL002_ROUTE_A_V0_2_C01_CAPABILITY_DECISION_AND_V0_3_C02_DESIGN_AUTHORIZATION_RECORD_V0_1",
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-006",
+      "description": "Human-decision schema is correct",
+      "evidence": "in-memory object",
+      "expected": "CAL002_ROUTE_A_V0_2_C01_CAPABILITY_DECISION_AND_V0_3_C02_DESIGN_AUTHORIZATION_RECORD_V0_1",
+      "result": "PASS"
+    },
+    {
+      "actual": [
+        3220,
+        "cb6d7ca1550ee8a750f28b139b743859c4b7aabdd23f39f1f9f4e4e3b7a86bf0"
+      ],
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-007",
+      "description": "Human-decision approval identity is exact",
+      "evidence": "independent approval hash",
+      "expected": [
+        3220,
+        "cb6d7ca1550ee8a750f28b139b743859c4b7aabdd23f39f1f9f4e4e3b7a86bf0"
+      ],
+      "result": "PASS"
+    },
+    {
+      "actual": [
+        true,
+        true,
+        false
+      ],
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-008",
+      "description": "Final authorization lifecycle is one-time consumed",
+      "evidence": "final record state",
+      "expected": [
+        true,
+        true,
+        false
+      ],
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-009",
+      "description": "C01 is closed",
+      "evidence": "human decision",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-010",
+      "description": "C01 retry authority is false",
+      "evidence": "human decision",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-011",
+      "description": "C01 redownload authority is false",
+      "evidence": "human decision",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-012",
+      "description": "C01 review reopening authority is false",
+      "evidence": "human decision",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-013",
+      "description": "C02 design authority is true",
+      "evidence": "human decision",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-014",
+      "description": "C02 live authority is false",
+      "evidence": "human decision",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-015",
+      "description": "C02 reference-upload authority is false",
+      "evidence": "human decision",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-016",
+      "description": "C02 submit authority is false",
+      "evidence": "human decision",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-017",
+      "description": "C02 query authority is false",
+      "evidence": "human decision",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-018",
+      "description": "C02 download authority is false",
+      "evidence": "human decision",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-019",
+      "description": "C02 review-execution authority is false",
+      "evidence": "human decision",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-020",
+      "description": "C03 authority is false",
+      "evidence": "human decision",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-021",
+      "description": "R02 authority is false",
+      "evidence": "human decision",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": false,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-022",
+      "description": "Automatic expansion authority is false",
+      "evidence": "human decision",
+      "expected": false,
+      "result": "PASS"
+    },
+    {
+      "actual": 0,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-023",
+      "description": "Source path changes are zero",
+      "evidence": "pre-activation path scope",
+      "expected": 0,
+      "result": "PASS"
+    },
+    {
+      "actual": 0,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-024",
+      "description": "Media path changes are zero",
+      "evidence": "pre-activation path scope",
+      "expected": 0,
+      "result": "PASS"
+    },
+    {
+      "actual": 0,
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-025",
+      "description": "Reference path changes are zero",
+      "evidence": "pre-activation path scope",
+      "expected": 0,
+      "result": "PASS"
+    },
+    {
+      "actual": [
+        0,
+        0
+      ],
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-026",
+      "description": "Dreamina and Provider calls are zero",
+      "evidence": "no-live operation counters",
+      "expected": [
+        0,
+        0
+      ],
+      "result": "PASS"
+    },
+    {
+      "actual": [
+        0,
+        0,
+        0
+      ],
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-027",
+      "description": "Submit, query, and download calls are zero",
+      "evidence": "no-live operation counters",
+      "expected": [
+        0,
+        0,
+        0
+      ],
+      "result": "PASS"
+    },
+    {
+      "actual": [
+        0,
+        0,
+        0
+      ],
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-028",
+      "description": "Retry, resubmit, and batch calls are zero",
+      "evidence": "no-live operation counters",
+      "expected": [
+        0,
+        0,
+        0
+      ],
+      "result": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-029",
+      "description": "Canonical serialization and sensitive-data validation are required before write",
+      "evidence": "outer candidate validator",
+      "expected": "PASS",
+      "result": "PASS"
+    },
+    {
+      "actual": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "category": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA",
+      "check_id": "F_NO_LIVE_SERIALIZATION_PATH_AND_SENSITIVE_DATA-030",
+      "description": "Production, completion, final, and lock flags are false",
+      "evidence": "human decision governance",
+      "expected": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "result": "PASS"
+    }
+  ],
+  "execution_id": "CAL002-ROUTE-A-V0-3-C02-NO-LIVE-CAUSAL-ISOLATION-DESIGN-V0-1",
+  "failed_check_count": 0,
+  "goal_identity": "CAL002_ROUTE_A_V0_2_C01_MIXED_RESULT_ROUTE_A_CAPABILITY_HUMAN_DECISION_AND_FINAL_C02_CAUSAL_ISOLATION_DESIGN_ONLY_V0_1",
+  "overall_result": "PASS",
+  "passed_check_count": 240,
+  "schema_version": "CAL002_ROUTE_A_V0_3_C02_NO_LIVE_CAUSAL_ISOLATION_STATIC_AUDIT_V0_1",
+  "skipped_check_count": 0,
+  "warning_check_count": 0
+}

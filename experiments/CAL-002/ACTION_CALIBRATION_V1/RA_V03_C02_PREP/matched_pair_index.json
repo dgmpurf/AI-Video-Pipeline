@@ -1,0 +1,112 @@
+{
+  "C01_confound_removed": true,
+  "automatic_C03": false,
+  "controlled_variables": "ALL_NON_REFERENCE_FIELDS",
+  "experiment_id": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION",
+  "final_bounded_canary": true,
+  "independent_variable": "VIDEO_REFERENCE_BINDING_ONLY",
+  "live_authority": false,
+  "matched_pair_id": "CAL002-ROUTE-A-V0-3-C02-CAUSAL-ISOLATION-MATCHED-PAIR",
+  "package_bindings": {
+    "actual_differing_pointers": [
+      "/reference_binding/reference_id",
+      "/reference_binding/reference_path",
+      "/reference_binding/reference_sha256",
+      "/reference_binding/reference_upload_binding"
+    ],
+    "allowlisted_differing_pointer_count": 4,
+    "allowlisted_differing_pointers": [
+      "/reference_binding/reference_id",
+      "/reference_binding/reference_path",
+      "/reference_binding/reference_sha256",
+      "/reference_binding/reference_upload_binding"
+    ],
+    "canonical_equality_after_allowlist_removal": "PASS",
+    "impact": {
+      "bytes": 1457,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_PREP/packages/impact.json",
+      "sha256": "0541ae099ced43ef0b21fbecd13728af6fbbe51011af356f59d6bc03e9db659f"
+    },
+    "non_allowlisted_differing_pointer_count": 0,
+    "non_allowlisted_differing_pointers": [],
+    "non_reference_field_equality": "PASS",
+    "prompt_binding_equality": "PASS",
+    "push": {
+      "bytes": 1451,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_PREP/packages/push.json",
+      "sha256": "995d059bae4588a655d39c95423d3aa87472cddc20b1552d4f91c8f3f85811ed"
+    },
+    "strict_parse_result": "PASS",
+    "total_differing_json_pointers": 4
+  },
+  "prompt_bindings": {
+    "byte_for_byte_identity": "PASS",
+    "impact": {
+      "bytes": 2010,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_PREP/prompts/impact.txt",
+      "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+    },
+    "push": {
+      "bytes": 2010,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V03_C02_PREP/prompts/push.txt",
+      "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+    }
+  },
+  "reference_bindings": {
+    "impact": {
+      "bytes": 168170,
+      "locked_human_decision": "PASS_FOR_FUTURE_CANARY_AUTHORIZATION_REQUEST",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "technical_record": {
+        "bytes": 3172,
+        "git_blob": "99e8c86ef8b4dd4c27866487baf5a571b97e5157",
+        "nonempty": true,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_IMPACT_02_technical_validation.json",
+        "regular_file": true,
+        "reparse_point": false,
+        "sha256": "45c9f7c034f2afd0b651cafbe6d8563c7a9d0472baf004877d64858c9818eb63",
+        "symlink": false,
+        "worktree_equals_head": true
+      }
+    },
+    "push": {
+      "bytes": 174235,
+      "locked_human_decision": "PASS_FOR_FUTURE_CANARY_AUTHORIZATION_REQUEST",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "technical_record": {
+        "bytes": 3182,
+        "git_blob": "8d94b0bd13234fc47cf2ab0333ba872e701f92f9",
+        "nonempty": true,
+        "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_PUSH_02_technical_validation.json",
+        "regular_file": true,
+        "reparse_point": false,
+        "sha256": "ff560f1cff89091dc9a27ab31c5635428af7f37bb86ebcbef2327a81d73fc67d",
+        "symlink": false,
+        "worktree_equals_head": true
+      }
+    },
+    "review_lock_record": {
+      "bytes": 7323,
+      "git_blob": "790aaaebf9fb38b0d5b677ff0b014cef1fae2fe9",
+      "nonempty": true,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_record_final.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "389ed9cf755133ffef7ff4df75f8a46440d2e3f656c2fa7a5e08d6c6206675cb",
+      "symlink": false,
+      "worktree_equals_head": true
+    }
+  },
+  "remaining_residual_limitations": [
+    "single matched pair",
+    "stochastic Provider generation when later executed",
+    "no exposed or authorized deterministic seed",
+    "human visual interpretation remains required",
+    "even a successful C02 creates evidence for a final human capability decision, not automatic proof or production authority"
+  ],
+  "schema_version": "CAL002_ROUTE_A_V0_3_C02_CAUSAL_ISOLATION_MATCHED_PAIR_INDEX_V0_1"
+}

@@ -1,0 +1,132 @@
+{
+  "allowed_decision_count": 8,
+  "allowed_decisions": [
+    "C02_REFERENCE_SPECIFIC_SIGNAL_ESTABLISHED_READY_FOR_FINAL_ROUTE_A_HUMAN_DECISION",
+    "C02_MIXED_REFERENCE_SIGNAL_REQUIRES_FINAL_ROUTE_A_HUMAN_DECISION",
+    "C02_REFERENCE_IGNORED_ROUTE_A_BLOCK",
+    "C02_REFERENCE_OVERDOMINANT_ROUTE_A_BLOCK",
+    "C02_REFERENCE_ROLE_CONFLICT_ROUTE_A_BLOCK",
+    "C02_ACTION_FAILURE_ROUTE_A_BLOCK",
+    "C02_TECHNICAL_FAILURE_NEEDS_SEPARATE_DECISION",
+    "C02_RIGHTS_OR_PROVENANCE_BLOCK"
+  ],
+  "automatic_C03": false,
+  "automatic_decision": false,
+  "automatic_expansion": false,
+  "contact_sheets_role": "ASSISTANCE_ONLY",
+  "fresh_human_decision_required": true,
+  "full_mp4_review_mandatory": true,
+  "material_copy_sentinels": [
+    {
+      "required_fields": [
+        "present",
+        "material",
+        "evidence_rationale"
+      ],
+      "sentinel": "CONTACT_MARKER_COPY"
+    },
+    {
+      "required_fields": [
+        "present",
+        "material",
+        "evidence_rationale"
+      ],
+      "sentinel": "MANNEQUIN_STYLE_COPY"
+    },
+    {
+      "required_fields": [
+        "present",
+        "material",
+        "evidence_rationale"
+      ],
+      "sentinel": "GRID_SCENE_COPY"
+    },
+    {
+      "required_fields": [
+        "present",
+        "material",
+        "evidence_rationale"
+      ],
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+    }
+  ],
+  "material_sentinel_rule": {
+    "block_expansion": true,
+    "block_positive_route_a_capability_conclusion": true,
+    "fresh_human_decision_required": true
+  },
+  "no_decision_may_automatically_authorize": [
+    "C03",
+    "R02",
+    "production",
+    "completion",
+    "final_master",
+    "lock"
+  ],
+  "original_R02_blocked": true,
+  "review_only_reference_signatures": {
+    "ACTION_REF_IMPACT_02": [
+      "preparation",
+      "non-contact feint or compact approach",
+      "one brief torso-directed interaction",
+      "immediate upper-body recoil",
+      "one rear-foot recoil step",
+      "prompt retraction",
+      "recovery and repositioning",
+      "active full-duration ending"
+    ],
+    "ACTION_REF_PUSH_02": [
+      "preparation and approach",
+      "one two-hand torso-directed interaction",
+      "receiver torso displacement after the interaction",
+      "one rear-foot recovery placement",
+      "release or retraction",
+      "recovery and repositioning",
+      "active full-duration ending"
+    ]
+  },
+  "schema_version": "CAL002_ROUTE_A_V0_3_C02_CAUSAL_ISOLATION_REVIEW_CONTRACT_V0_1",
+  "score_fields": {
+    "cross_reference_signature_score": {
+      "maximum": 12,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "own_reference_signature_score": {
+      "maximum": 12,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "reference_specificity_margin": "own_reference_signature_score minus cross_reference_signature_score"
+  },
+  "scored_motion_dimensions": [
+    "initiation_pattern",
+    "approach_or_setup_pattern",
+    "primary_limb_configuration",
+    "primary_interaction_character",
+    "interaction_episode_count",
+    "receiver_response_direction",
+    "torso_response_type",
+    "rear_foot_result_type",
+    "release_or_retraction_pattern",
+    "recovery_and_repositioning",
+    "temporal_ordering",
+    "duration_utilization_and_final_phase_activity"
+  ],
+  "strong_causal_signal_review_gate": {
+    "action_family_failure_count": 0,
+    "automatic_route_a_capability_proof": false,
+    "both_complete_mp4s_reviewed": true,
+    "both_mp4s_technically_valid": true,
+    "eligible_decision": "C02_REFERENCE_SPECIFIC_SIGNAL_ESTABLISHED_READY_FOR_FINAL_ROUTE_A_HUMAN_DECISION",
+    "material_sentinel_count": 0,
+    "minimum_own_reference_signature_score_each": 8,
+    "minimum_reference_specificity_margin_each": 3,
+    "neither_reference_ignored": true,
+    "outputs_observably_differentiated": true,
+    "reference_overdominance": false,
+    "reference_role_conflict": false,
+    "result": "PERMITS_FINAL_HUMAN_ROUTE_A_CAPABILITY_DECISION_ONLY",
+    "rights_and_provenance_valid": true
+  }
+}
