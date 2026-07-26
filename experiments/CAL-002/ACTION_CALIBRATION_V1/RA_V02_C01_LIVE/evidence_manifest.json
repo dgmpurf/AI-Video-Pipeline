@@ -1,0 +1,167 @@
+{
+  "artifact_count": 6,
+  "artifacts": [
+    {
+      "byte_length": 10240,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/authorization.json",
+      "sha256": "a0ce9d4eb452b8ed95c51b772a0c74f3b110d377d83b5b05c52ba56305ffb01a"
+    },
+    {
+      "byte_length": 8089,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/runtime_credit.json",
+      "sha256": "c6e1111381244956017d9e2126a70d76c18406f4579932d34e36d1e6f48734ea"
+    },
+    {
+      "byte_length": 2795,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/submissions/push.json",
+      "sha256": "9ab7cbd4e184c3e02a4e4eb47f1af93c36608e5c72c2ddd9b6a57e5c261f8a81"
+    },
+    {
+      "byte_length": 2808,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/submissions/impact.json",
+      "sha256": "c358190eabd6c7e03e561cda92b13e68adbf29e6c2fd0a9821e119493ff5ebc6"
+    },
+    {
+      "byte_length": 2518,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_LIVE/execution.json",
+      "sha256": "a620e1975cba3654b39734aaf736ea16c383a72543f069687d04ab4a9e5db99a"
+    },
+    {
+      "byte_length": 8320,
+      "path": "reports/CAL002_RA_V02_C01_LIVE_RESULT.md",
+      "sha256": "5e1062cf4fb8142467166981138ca5307046ed62a99772fdbb29834300b03d13"
+    }
+  ],
+  "committed_input_bindings": [
+    {
+      "byte_length": 11936,
+      "path": "reports/CAL002_RA_V02_C01_PREP_RESULT.md",
+      "role": "preparation_report",
+      "sha256": "03c5a80eee2d8f35826f126470f3bdaafcb237f25d4fc9877bb7d9a3aefc6ca0",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 3071,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/push.txt",
+      "role": "push_prompt",
+      "sha256": "c4dc956951ba49c040258e83fcd3d3afa93aa64434f78e27dee80c813bb28ece",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 3113,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/impact.txt",
+      "role": "impact_prompt",
+      "sha256": "a2f03f13ff3c320563f32eb316f5aed3a876d06a452d00c7fd0a7211b8c9ac63",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 11727,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/push.json",
+      "role": "push_package",
+      "sha256": "87fb8d3905b1e16396fe1634bf2728fc632852ee87bd00cf5c324e5aeabd0e07",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 11781,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/impact.json",
+      "role": "impact_package",
+      "sha256": "86c986feef91241f9107b5342dd261efab188c65a4cf43fe8c0a00a660e46bef",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 7619,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/matched_pair_index.json",
+      "role": "matched_pair_index",
+      "sha256": "ea1150cfcb60e0a2306401560d2574a94550e22209b60cf868eaa09d417414d4",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 2887,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/review_contract.json",
+      "role": "review_contract",
+      "sha256": "e753809ce39f191cdc1c6f779f9754c9fb3db2e3c582611663844df860c84baa",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 35113,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/static_audit.json",
+      "role": "static_audit",
+      "sha256": "4343f8988940e4ef190fca2514c7accfee975f48902a7d98105751eb6466b246",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 6323,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/evidence_manifest.json",
+      "role": "preparation_evidence_manifest",
+      "sha256": "7a0b618c9e58413f6596b8c1400c29cb0aeb54ffd6b3a5465acb4a426568f68e",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 174235,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "role": "push_reference",
+      "sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 168170,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "role": "impact_reference",
+      "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 3182,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_PUSH_02_technical_validation.json",
+      "role": "push_technical_record",
+      "sha256": "ff560f1cff89091dc9a27ab31c5635428af7f37bb86ebcbef2327a81d73fc67d",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 3172,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_IMPACT_02_technical_validation.json",
+      "role": "impact_technical_record",
+      "sha256": "45c9f7c034f2afd0b651cafbe6d8563c7a9d0472baf004877d64858c9818eb63",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 14494,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_lock_manifest.json",
+      "role": "review_lock_manifest",
+      "sha256": "ec2d5a6c264b0c3b54932b8ef88373ba20651ad6d45534355cc568581075a8f6",
+      "worktree_equals_head": true
+    },
+    {
+      "byte_length": 18755,
+      "path": "reports/CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_RESULT.md",
+      "role": "review_lock_report",
+      "sha256": "8a6cd332de5ab9b1a16872b84e62ed245e6c80bb088bc8a9151576c3e66eb9de",
+      "worktree_equals_head": true
+    }
+  ],
+  "decision": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_C01_TWO_SUBMITS_ACCEPTED_READY_FOR_QUERY_ONLY_HUMAN_DECISION",
+  "execution_id": "CAL002-ROUTE-A-V0-2-C01-LIVE-SUBMIT-V0-1",
+  "goal_identity": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_REFERENCE_TRANSMISSION_AND_MAX_TWO_SUBMIT_V0_1",
+  "included_artifact_count": 6,
+  "matched_pair_id": "CAL002-ROUTE-A-V0-2-C01-MATCHED-PAIR",
+  "preparation_checkpoint": {
+    "branch": "main",
+    "commit_message": "design(cal002): prepare Route A V0.2 matched-pair canaries",
+    "head": "962ad751cef9b4a51f1aafe91c3e5ba76c3d13da",
+    "origin_main": "962ad751cef9b4a51f1aafe91c3e5ba76c3d13da",
+    "parent": "99f8dded23044729091f7d7553315254db34b9c9"
+  },
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_LIVE_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "unique_bound_paths": 6,
+  "validation": {
+    "all_committed_inputs_match": true,
+    "evidence_coverage": "6/6",
+    "existing_file_modification_count": 0,
+    "media_output_path_count": 0,
+    "raw_output_persisted": false,
+    "sensitive_data_scan": "PASS",
+    "signed_url_persisted": false,
+    "source_path_count": 0
+  }
+}

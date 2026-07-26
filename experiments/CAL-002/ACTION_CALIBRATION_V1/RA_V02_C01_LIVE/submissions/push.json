@@ -1,0 +1,71 @@
+{
+  "accepted": true,
+  "alias": "ROUTEA_PUSH_V02_C01",
+  "argv_element_count": 16,
+  "argv_sha256": "30d9121282bf54dcd06a88bf39f86e5ee6641de706e15db3eb01073b856b1569",
+  "batch_called": false,
+  "called": true,
+  "download_called": false,
+  "execution_id": "CAL002-ROUTE-A-V0-2-C01-LIVE-SUBMIT-V0-1",
+  "final_master": false,
+  "fixed_task_completion": false,
+  "locked": false,
+  "not_called_reason": null,
+  "package_binding": {
+    "byte_length": 11727,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/push.json",
+    "sha256": "87fb8d3905b1e16396fe1634bf2728fc632852ee87bd00cf5c324e5aeabd0e07",
+    "worktree_equals_head": true
+  },
+  "package_id": "CAL002-ROUTE-A-PUSH-V02-C01",
+  "process_metadata": {
+    "argv_element_count": 16,
+    "argv_sha256": "30d9121282bf54dcd06a88bf39f86e5ee6641de706e15db3eb01073b856b1569",
+    "elapsed_seconds": 10.672,
+    "end_utc": "2026-07-26T08:54:14.359056Z",
+    "exit_code": 0,
+    "name": "ROUTEA_PUSH_V02_C01_submit",
+    "parsed_sanitized_fields": {
+      "async_status": "querying",
+      "explicit_failure_contradiction": false,
+      "parse_method": "STRUCTURED_JSON_FIELD_submit_id",
+      "submit_id": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a"
+    },
+    "raw_output_persisted": false,
+    "sensitive_field_detected": false,
+    "sensitive_field_persisted": false,
+    "start_utc": "2026-07-26T08:54:03.693033Z",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_utf8": true,
+    "stdout_byte_length": 3251,
+    "stdout_sha256": "323a1e2945f51b9ef896321ab1b3fca27c0b4bc67b8e9786a251cb3d5db2482c",
+    "stdout_utf8": true,
+    "timed_out": false
+  },
+  "production_approved": false,
+  "prompt_binding": {
+    "byte_length": 3071,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/push.txt",
+    "sha256": "c4dc956951ba49c040258e83fcd3d3afa93aa64434f78e27dee80c813bb28ece",
+    "worktree_equals_head": true
+  },
+  "query_called": false,
+  "raw_provider_output_persisted": false,
+  "reference_binding": {
+    "byte_length": 174235,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+    "sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+    "worktree_equals_head": true
+  },
+  "reference_id": "ACTION_REF_PUSH_02",
+  "reference_transmitted_only_inside_exact_submit": true,
+  "rejection_reason": null,
+  "resubmit_called": false,
+  "retry_called": false,
+  "sanitized_async_status": "querying",
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_SUBMIT_RECEIPT_V0_1",
+  "signed_url_persisted": false,
+  "standalone_reference_upload": false,
+  "submit_id": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a"
+}

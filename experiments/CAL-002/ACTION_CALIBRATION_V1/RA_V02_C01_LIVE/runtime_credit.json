@@ -1,0 +1,227 @@
+{
+  "actual_cli_call_count": 7,
+  "balances": {
+    "post_impact": 3741,
+    "post_push": 3881,
+    "pre_submit": 4021
+  },
+  "budget_gates": {
+    "post_push": "PASS",
+    "pre_submit": "PASS"
+  },
+  "calculated_deltas": {
+    "impact": 140,
+    "push": 140,
+    "total": 280
+  },
+  "call_order": [
+    "version",
+    "multimodal2video_help",
+    "pre_submit_user_credit",
+    "ROUTEA_PUSH_V02_C01_submit",
+    "post_push_user_credit",
+    "ROUTEA_IMPACT_V02_C01_submit",
+    "post_impact_user_credit"
+  ],
+  "calls": [
+    {
+      "argv_element_count": 2,
+      "argv_sha256": "083f6f230d6615edd09db84b08857f8d65c328cb10097086b855e2b3815d8610",
+      "elapsed_seconds": 3.234,
+      "end_utc": "2026-07-26T08:53:56.345666Z",
+      "exit_code": 0,
+      "name": "version",
+      "parsed_sanitized_fields": {
+        "build_time": "2026-06-26T06:36:39Z",
+        "commit": "2a20fff",
+        "version": "2a20fff-dirty"
+      },
+      "raw_output_persisted": false,
+      "sensitive_field_detected": false,
+      "sensitive_field_persisted": false,
+      "start_utc": "2026-07-26T08:53:53.115552Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": true,
+      "stdout_byte_length": 96,
+      "stdout_sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0",
+      "stdout_utf8": true,
+      "timed_out": false
+    },
+    {
+      "argv_element_count": 3,
+      "argv_sha256": "791ef80581bacd916e9647272264669133727b8820d6cf8e8a1708b4524f755b",
+      "elapsed_seconds": 2.563,
+      "end_utc": "2026-07-26T08:53:58.909847Z",
+      "exit_code": 0,
+      "name": "multimodal2video_help",
+      "parsed_sanitized_fields": {
+        "duration_5": true,
+        "model_seedance2_0_vip": true,
+        "poll_0": true,
+        "ratio_16_9": true,
+        "required_flags": {
+          "--duration": true,
+          "--model_version": true,
+          "--poll": true,
+          "--prompt": true,
+          "--ratio": true,
+          "--video": true,
+          "--video_resolution": true
+        },
+        "resolution_720p": true,
+        "target_command": true,
+        "video_input_count_at_least_one": true
+      },
+      "raw_output_persisted": false,
+      "sensitive_field_detected": false,
+      "sensitive_field_persisted": false,
+      "start_utc": "2026-07-26T08:53:56.346190Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": true,
+      "stdout_byte_length": 2739,
+      "stdout_sha256": "fb3aa97d2d33b1d745a52519eac529c4a21a2d90aef9f1f6a452442fcf884277",
+      "stdout_utf8": true,
+      "timed_out": false
+    },
+    {
+      "argv_element_count": 2,
+      "argv_sha256": "388bbc175df0b6dd5d777c5e88ec4ba6154db875b7864fa8535bf95e403b667a",
+      "elapsed_seconds": 4.656,
+      "end_utc": "2026-07-26T08:54:03.570193Z",
+      "exit_code": 0,
+      "name": "pre_submit_user_credit",
+      "parsed_sanitized_fields": {
+        "balance": 4021,
+        "parse_method": "STRICT_OR_EXTRACTED_JSON_TOTAL_CREDIT"
+      },
+      "raw_output_persisted": false,
+      "sensitive_field_detected": true,
+      "sensitive_field_persisted": false,
+      "start_utc": "2026-07-26T08:53:58.909847Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": true,
+      "stdout_byte_length": 103,
+      "stdout_sha256": "9af35d6bc658ecea56dcdf4ecbe01e3bef20ab378af46f13c1814ed9fcf1a202",
+      "stdout_utf8": true,
+      "timed_out": false
+    },
+    {
+      "argv_element_count": 16,
+      "argv_sha256": "30d9121282bf54dcd06a88bf39f86e5ee6641de706e15db3eb01073b856b1569",
+      "elapsed_seconds": 10.672,
+      "end_utc": "2026-07-26T08:54:14.359056Z",
+      "exit_code": 0,
+      "name": "ROUTEA_PUSH_V02_C01_submit",
+      "parsed_sanitized_fields": {
+        "async_status": "querying",
+        "explicit_failure_contradiction": false,
+        "parse_method": "STRUCTURED_JSON_FIELD_submit_id",
+        "submit_id": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a"
+      },
+      "raw_output_persisted": false,
+      "sensitive_field_detected": false,
+      "sensitive_field_persisted": false,
+      "start_utc": "2026-07-26T08:54:03.693033Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": true,
+      "stdout_byte_length": 3251,
+      "stdout_sha256": "323a1e2945f51b9ef896321ab1b3fca27c0b4bc67b8e9786a251cb3d5db2482c",
+      "stdout_utf8": true,
+      "timed_out": false
+    },
+    {
+      "argv_element_count": 2,
+      "argv_sha256": "388bbc175df0b6dd5d777c5e88ec4ba6154db875b7864fa8535bf95e403b667a",
+      "elapsed_seconds": 4.094,
+      "end_utc": "2026-07-26T08:54:18.451407Z",
+      "exit_code": 0,
+      "name": "post_push_user_credit",
+      "parsed_sanitized_fields": {
+        "balance": 3881,
+        "parse_method": "STRICT_OR_EXTRACTED_JSON_TOTAL_CREDIT",
+        "push_credit_delta": 140
+      },
+      "raw_output_persisted": false,
+      "sensitive_field_detected": true,
+      "sensitive_field_persisted": false,
+      "start_utc": "2026-07-26T08:54:14.359056Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": true,
+      "stdout_byte_length": 103,
+      "stdout_sha256": "6505c82f1ed1a30365a96a836e4b533b2802463c85ec9cd27dd64e119e9c0b41",
+      "stdout_utf8": true,
+      "timed_out": false
+    },
+    {
+      "argv_element_count": 16,
+      "argv_sha256": "1e3540d95d2537849e61f9b51dce7fd6f486cba572b94a77f78e67828bfe5f3c",
+      "elapsed_seconds": 9.547,
+      "end_utc": "2026-07-26T08:54:28.123353Z",
+      "exit_code": 0,
+      "name": "ROUTEA_IMPACT_V02_C01_submit",
+      "parsed_sanitized_fields": {
+        "async_status": "querying",
+        "explicit_failure_contradiction": false,
+        "parse_method": "STRUCTURED_JSON_FIELD_submit_id",
+        "submit_id": "4c8b6184-7c0a-4b41-95f5-e215e35f195b"
+      },
+      "raw_output_persisted": false,
+      "sensitive_field_detected": false,
+      "sensitive_field_persisted": false,
+      "start_utc": "2026-07-26T08:54:18.576246Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": true,
+      "stdout_byte_length": 3293,
+      "stdout_sha256": "c53ff640560e9dcd8bae3006413fe989f5524b809ede23d2214a6e961e51a6ea",
+      "stdout_utf8": true,
+      "timed_out": false
+    },
+    {
+      "argv_element_count": 2,
+      "argv_sha256": "388bbc175df0b6dd5d777c5e88ec4ba6154db875b7864fa8535bf95e403b667a",
+      "elapsed_seconds": 3.75,
+      "end_utc": "2026-07-26T08:54:31.873137Z",
+      "exit_code": 0,
+      "name": "post_impact_user_credit",
+      "parsed_sanitized_fields": {
+        "balance": 3741,
+        "impact_credit_delta": 140,
+        "parse_method": "STRICT_OR_EXTRACTED_JSON_TOTAL_CREDIT"
+      },
+      "raw_output_persisted": false,
+      "sensitive_field_detected": true,
+      "sensitive_field_persisted": false,
+      "start_utc": "2026-07-26T08:54:28.123872Z",
+      "stderr_byte_length": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": true,
+      "stdout_byte_length": 103,
+      "stdout_sha256": "10305ad73b9c21a7a62124cd4eb7dfc66c304c468901100be999032b354c67a0",
+      "stdout_utf8": true,
+      "timed_out": false
+    }
+  ],
+  "help_gate": {
+    "model_ratio_duration_resolution_poll_supported": true,
+    "required_flags_supported": true,
+    "result": "PASS"
+  },
+  "not_called_reasons": {},
+  "raw_credit_output_persisted": false,
+  "raw_output_persisted": false,
+  "runtime_version": {
+    "build_time": "2026-06-26T06:36:39Z",
+    "commit": "2a20fff",
+    "gate": "PASS",
+    "version": "2a20fff-dirty"
+  },
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_RUNTIME_AND_CREDIT_V0_1",
+  "sensitive_fields_detected": true,
+  "sensitive_fields_persisted": false
+}

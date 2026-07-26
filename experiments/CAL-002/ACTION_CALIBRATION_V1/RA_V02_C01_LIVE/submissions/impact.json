@@ -1,0 +1,71 @@
+{
+  "accepted": true,
+  "alias": "ROUTEA_IMPACT_V02_C01",
+  "argv_element_count": 16,
+  "argv_sha256": "1e3540d95d2537849e61f9b51dce7fd6f486cba572b94a77f78e67828bfe5f3c",
+  "batch_called": false,
+  "called": true,
+  "download_called": false,
+  "execution_id": "CAL002-ROUTE-A-V0-2-C01-LIVE-SUBMIT-V0-1",
+  "final_master": false,
+  "fixed_task_completion": false,
+  "locked": false,
+  "not_called_reason": null,
+  "package_binding": {
+    "byte_length": 11781,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/impact.json",
+    "sha256": "86c986feef91241f9107b5342dd261efab188c65a4cf43fe8c0a00a660e46bef",
+    "worktree_equals_head": true
+  },
+  "package_id": "CAL002-ROUTE-A-IMPACT-V02-C01",
+  "process_metadata": {
+    "argv_element_count": 16,
+    "argv_sha256": "1e3540d95d2537849e61f9b51dce7fd6f486cba572b94a77f78e67828bfe5f3c",
+    "elapsed_seconds": 9.547,
+    "end_utc": "2026-07-26T08:54:28.123353Z",
+    "exit_code": 0,
+    "name": "ROUTEA_IMPACT_V02_C01_submit",
+    "parsed_sanitized_fields": {
+      "async_status": "querying",
+      "explicit_failure_contradiction": false,
+      "parse_method": "STRUCTURED_JSON_FIELD_submit_id",
+      "submit_id": "4c8b6184-7c0a-4b41-95f5-e215e35f195b"
+    },
+    "raw_output_persisted": false,
+    "sensitive_field_detected": false,
+    "sensitive_field_persisted": false,
+    "start_utc": "2026-07-26T08:54:18.576246Z",
+    "stderr_byte_length": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_utf8": true,
+    "stdout_byte_length": 3293,
+    "stdout_sha256": "c53ff640560e9dcd8bae3006413fe989f5524b809ede23d2214a6e961e51a6ea",
+    "stdout_utf8": true,
+    "timed_out": false
+  },
+  "production_approved": false,
+  "prompt_binding": {
+    "byte_length": 3113,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/impact.txt",
+    "sha256": "a2f03f13ff3c320563f32eb316f5aed3a876d06a452d00c7fd0a7211b8c9ac63",
+    "worktree_equals_head": true
+  },
+  "query_called": false,
+  "raw_provider_output_persisted": false,
+  "reference_binding": {
+    "byte_length": 168170,
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+    "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+    "worktree_equals_head": true
+  },
+  "reference_id": "ACTION_REF_IMPACT_02",
+  "reference_transmitted_only_inside_exact_submit": true,
+  "rejection_reason": null,
+  "resubmit_called": false,
+  "retry_called": false,
+  "sanitized_async_status": "querying",
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_SUBMIT_RECEIPT_V0_1",
+  "signed_url_persisted": false,
+  "standalone_reference_upload": false,
+  "submit_id": "4c8b6184-7c0a-4b41-95f5-e215e35f195b"
+}

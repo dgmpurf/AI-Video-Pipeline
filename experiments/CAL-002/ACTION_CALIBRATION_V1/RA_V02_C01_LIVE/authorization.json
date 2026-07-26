@@ -1,0 +1,172 @@
+{
+  "R02_authorized": false,
+  "approval": {
+    "byte_length": 3438,
+    "exact_text": "APPROVE_CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_REFERENCE_TRANSMISSION_AND_MAX_TWO_SUBMIT_V0_1__BIND_PREPARATION_CHECKPOINT_962AD751CEF9B4A51F1AAFE91C3E5BA76C3D13DA__BIND_PREPARATION_REPORT_BYTES_11936__BIND_PREPARATION_REPORT_SHA256_03C5A80EEE2D8F35826F126470F3BDAAFCB237F25D4FC9877BB7D9A3AEFC6CA0__BIND_PUSH_PROMPT_BYTES_3071__BIND_PUSH_PROMPT_SHA256_C4DC956951BA49C040258E83FCD3D3AFA93AA64434F78E27DEE80C813BB28ECE__BIND_IMPACT_PROMPT_BYTES_3113__BIND_IMPACT_PROMPT_SHA256_A2F03F13FF3C320563F32EB316F5AED3A876D06A452D00C7FD0A7211B8C9AC63__BIND_PUSH_PACKAGE_BYTES_11727__BIND_PUSH_PACKAGE_SHA256_87FB8D3905B1E16396FE1634BF2728FC632852EE87BD00CF5C324E5AEABD0E07__BIND_IMPACT_PACKAGE_BYTES_11781__BIND_IMPACT_PACKAGE_SHA256_86C986FEEF91241F9107B5342DD261EFAB188C65A4CF43FE8C0A00A660E46BEF__BIND_MATCHED_PAIR_INDEX_BYTES_7619__BIND_MATCHED_PAIR_INDEX_SHA256_EA1150CFCB60E0A2306401560D2574A94550E22209B60CF868EAA09D417414D4__BIND_REVIEW_CONTRACT_BYTES_2887__BIND_REVIEW_CONTRACT_SHA256_E753809CE39F191CDC1C6F779F9754C9FB3DB2E3C582611663844DF860C84BAA__BIND_STATIC_AUDIT_BYTES_35113__BIND_STATIC_AUDIT_SHA256_4343F8988940E4EF190FCA2514C7ACCFEE975F48902A7D98105751EB6466B246__BIND_EVIDENCE_MANIFEST_BYTES_6323__BIND_EVIDENCE_MANIFEST_SHA256_7A0B618C9E58413F6596B8C1400C29CB0AEB54FFD6B3A5465ACB4A426568F68E__BIND_ACTION_REF_PUSH_02_BYTES_174235__BIND_ACTION_REF_PUSH_02_SHA256_6006B7ABC88A53978A9A7993A0B7852179DDBBCD960D13F07EBC68218872ED6__BIND_ACTION_REF_IMPACT_02_BYTES_168170__BIND_ACTION_REF_IMPACT_02_SHA256_A0A2662DC598F4980D3F1F22CFF2C2915A0F422D797F0E09EB53E8E78110623C__ACCEPT_MATCHED_PAIR_STATIC_AUDIT_240_OF_240_PASS_ZERO_NON_ALLOWLISTED_DIFFERENCES_AND_REVIEW_CONTRACT_PASS__AUTHORIZE_FIXED_WINDOWS_CLI_C_USERS_MSJPURF_BIN_DREAMINA_EXE__AUTHORIZE_MAXIMUM_SEVEN_TOTAL_DREAMINA_CLI_CALLS_IN_FIXED_ORDER_VERSION_MULTIMODAL2VIDEO_HELP_PRE_SUBMIT_USER_CREDIT_ROUTERA_PUSH_V02_C01_SUBMIT_POST_FIRST_USER_CREDIT_ROUTERA_IMPACT_V02_C01_SUBMIT_POST_SECOND_USER_CREDIT__AUTHORIZE_REFERENCE_TRANSMISSION_ONLY_INSIDE_EXACTLY_ONE_ROUTERA_PUSH_V02_C01_MULTIMODAL2VIDEO_SUBMIT_AND_EXACTLY_ONE_ROUTERA_IMPACT_V02_C01_MULTIMODAL2VIDEO_SUBMIT_IN_THAT_ORDER__AUTHORIZE_MAXIMUM_TWO_TOTAL_SUBMITS_USING_THE_TWO_AUDITED_16_ELEMENT_ARGV_ARRAYS_WITH_EXPLICIT_POLL_0__REQUIRE_PRE_SUBMIT_BALANCE_UNAMBIGUOUS_AND_AT_LEAST_1000__REQUIRE_FIRST_SUBMIT_ACCEPTED_WITH_NONEMPTY_SUBMIT_ID_FIRST_CREDIT_DELTA_UNAMBIGUOUS_NONNEGATIVE_AND_NOT_GREATER_THAN_500_AND_POST_FIRST_BALANCE_AT_LEAST_1000_BEFORE_SECOND_SUBMIT__REQUIRE_SECOND_SUBMIT_ACCEPTED_WITH_NONEMPTY_SUBMIT_ID_AND_POST_SECOND_CREDIT_DELTA_RECORDED__STOP_ON_RUNTIME_DRIFT_HELP_DRIFT_PACKAGE_PROMPT_REFERENCE_OR_MATCHED_PAIR_BINDING_MISMATCH_SUBMIT_FAILURE_MISSING_SUBMIT_ID_AMBIGUOUS_CREDIT_DELTA_SENSITIVE_DATA_OR_BUDGET_GATE_FAILURE__RECORD_EXACT_SUBMIT_IDS_CREDIT_BALANCES_AND_DELTAS_WITHOUT_PERSISTING_RAW_CREDIT_OUTPUT_SIGNED_URLS_COOKIES_TOKENS_OR_PRIVATE_ACCOUNT_DATA__AUTHORIZE_SHORT_OUTPUT_ROOT_RA_V02_C01_LIVE_EXACTLY_SEVEN_JSON_OR_MARKDOWN_ARTIFACTS_GOVERNANCE_REPORT_COMMIT_AND_PUSH_ONLY__NO_QUERY_NO_DOWNLOAD_NO_RETRY_NO_RESUBMIT_NO_BATCH_NO_LOGIN_NO_CHECKLOGIN_NO_SESSION_MUTATION_NO_LIST_TASK_NO_STANDALONE_REFERENCE_UPLOAD_NO_R02_NO_MEDIA_CREATION_NO_MEDIA_CHANGE_NO_SOURCE_CHANGE_NO_PRODUCTION_REENTRY_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__SET_NEXT_PHASE_CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_QUERY_ONLY_HUMAN_DECISION__ONE_TIME_NON_REUSABLE",
+    "sha256": "83a1c31825c2dcce775cec32515182f12c4db8b0e505a6b4db7ba654eb50f22f"
+  },
+  "authorization_lifecycle": {
+    "activated": true,
+    "activation_utc": "2026-07-26T08:53:53.115552Z",
+    "consumed": true,
+    "reusable": false
+  },
+  "budget_gates": {
+    "post_push_balance_minimum": 1000,
+    "pre_submit_balance_minimum": 1000,
+    "push_credit_delta_maximum": 500,
+    "push_credit_delta_minimum": 0
+  },
+  "download_authorized": false,
+  "execution_id": "CAL002-ROUTE-A-V0-2-C01-LIVE-SUBMIT-V0-1",
+  "final_master": false,
+  "fixed_call_order": [
+    "version",
+    "multimodal2video -h",
+    "pre-submit user_credit",
+    "ROUTEA_PUSH_V02_C01 submit",
+    "post-PUSH user_credit",
+    "ROUTEA_IMPACT_V02_C01 submit",
+    "post-IMPACT user_credit"
+  ],
+  "fixed_task_completion": false,
+  "forbidden_operations": [
+    "query_result",
+    "download",
+    "retry",
+    "resubmit",
+    "batch",
+    "login",
+    "checklogin",
+    "logout",
+    "relogin",
+    "session mutation",
+    "list_task",
+    "standalone reference upload",
+    "R02 execution",
+    "media creation",
+    "media change",
+    "Source change"
+  ],
+  "goal_identity": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_REFERENCE_TRANSMISSION_AND_MAX_TWO_SUBMIT_V0_1",
+  "locked": false,
+  "matched_pair_id": "CAL002-ROUTE-A-V0-2-C01-MATCHED-PAIR",
+  "maximum_call_counts": {
+    "multimodal2video_help": 1,
+    "multimodal2video_submit": 2,
+    "total": 7,
+    "user_credit": 3,
+    "version": 1
+  },
+  "original_R02_blocked": true,
+  "preparation_bindings": {
+    "impact_package": {
+      "byte_length": 11781,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/impact.json",
+      "sha256": "86c986feef91241f9107b5342dd261efab188c65a4cf43fe8c0a00a660e46bef",
+      "worktree_equals_head": true
+    },
+    "impact_prompt": {
+      "byte_length": 3113,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/impact.txt",
+      "sha256": "a2f03f13ff3c320563f32eb316f5aed3a876d06a452d00c7fd0a7211b8c9ac63",
+      "worktree_equals_head": true
+    },
+    "matched_pair_index": {
+      "byte_length": 7619,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/matched_pair_index.json",
+      "sha256": "ea1150cfcb60e0a2306401560d2574a94550e22209b60cf868eaa09d417414d4",
+      "worktree_equals_head": true
+    },
+    "preparation_evidence_manifest": {
+      "byte_length": 6323,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/evidence_manifest.json",
+      "sha256": "7a0b618c9e58413f6596b8c1400c29cb0aeb54ffd6b3a5465acb4a426568f68e",
+      "worktree_equals_head": true
+    },
+    "preparation_report": {
+      "byte_length": 11936,
+      "path": "reports/CAL002_RA_V02_C01_PREP_RESULT.md",
+      "sha256": "03c5a80eee2d8f35826f126470f3bdaafcb237f25d4fc9877bb7d9a3aefc6ca0",
+      "worktree_equals_head": true
+    },
+    "push_package": {
+      "byte_length": 11727,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/packages/push.json",
+      "sha256": "87fb8d3905b1e16396fe1634bf2728fc632852ee87bd00cf5c324e5aeabd0e07",
+      "worktree_equals_head": true
+    },
+    "push_prompt": {
+      "byte_length": 3071,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/prompts/push.txt",
+      "sha256": "c4dc956951ba49c040258e83fcd3d3afa93aa64434f78e27dee80c813bb28ece",
+      "worktree_equals_head": true
+    },
+    "review_contract": {
+      "byte_length": 2887,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/review_contract.json",
+      "sha256": "e753809ce39f191cdc1c6f779f9754c9fb3db2e3c582611663844df860c84baa",
+      "worktree_equals_head": true
+    },
+    "static_audit": {
+      "byte_length": 35113,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RA_V02_C01_PREP/static_audit.json",
+      "sha256": "4343f8988940e4ef190fca2514c7accfee975f48902a7d98105751eb6466b246",
+      "worktree_equals_head": true
+    }
+  },
+  "production_approved": false,
+  "query_authorized": false,
+  "reference_bindings": {
+    "impact_reference": {
+      "byte_length": 168170,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "worktree_equals_head": true
+    },
+    "impact_technical_record": {
+      "byte_length": 3172,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_IMPACT_02_technical_validation.json",
+      "sha256": "45c9f7c034f2afd0b651cafbe6d8563c7a9d0472baf004877d64858c9818eb63",
+      "worktree_equals_head": true
+    },
+    "push_reference": {
+      "byte_length": 174235,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "worktree_equals_head": true
+    },
+    "push_technical_record": {
+      "byte_length": 3182,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_PUSH_02_technical_validation.json",
+      "sha256": "ff560f1cff89091dc9a27ab31c5635428af7f37bb86ebcbef2327a81d73fc67d",
+      "worktree_equals_head": true
+    },
+    "review_lock_manifest": {
+      "byte_length": 14494,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/review_records/CAL002-ROUTE-A-REF-V0-2-REVIEW-LOCK-389ED9CF/route_a_reference_v0_2_complete_mp4_human_review_lock_manifest.json",
+      "sha256": "ec2d5a6c264b0c3b54932b8ef88373ba20651ad6d45534355cc568581075a8f6",
+      "worktree_equals_head": true
+    },
+    "review_lock_report": {
+      "byte_length": 18755,
+      "path": "reports/CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_RESULT.md",
+      "sha256": "8a6cd332de5ab9b1a16872b84e62ed245e6c80bb088bc8a9151576c3e66eb9de",
+      "worktree_equals_head": true
+    }
+  },
+  "reference_transmission_permitted_only_inside_exact_submit": true,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_LIVE_AUTHORIZATION_V0_1",
+  "standalone_upload_authorized": false,
+  "starting_checkpoint": {
+    "branch": "main",
+    "commit_message": "design(cal002): prepare Route A V0.2 matched-pair canaries",
+    "head": "962ad751cef9b4a51f1aafe91c3e5ba76c3d13da",
+    "origin_main": "962ad751cef9b4a51f1aafe91c3e5ba76c3d13da",
+    "parent": "99f8dded23044729091f7d7553315254db34b9c9"
+  },
+  "submit_order": [
+    "ROUTEA_PUSH_V02_C01",
+    "ROUTEA_IMPACT_V02_C01"
+  ]
+}

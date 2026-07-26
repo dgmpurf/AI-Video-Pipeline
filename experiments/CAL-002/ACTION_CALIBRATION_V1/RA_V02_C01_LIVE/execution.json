@@ -1,0 +1,79 @@
+{
+  "accepted_submit_count": 2,
+  "actual_call_counts": {
+    "help": 1,
+    "submit": 2,
+    "total": 7,
+    "user_credit": 3,
+    "version": 1
+  },
+  "authorization_activated": true,
+  "authorization_consumed": true,
+  "authorization_reusable": false,
+  "balances": {
+    "post_impact": 3741,
+    "post_push": 3881,
+    "pre_submit": 4021
+  },
+  "batch_called": false,
+  "chronological_call_sequence": [
+    "version",
+    "multimodal2video_help",
+    "pre_submit_user_credit",
+    "ROUTEA_PUSH_V02_C01_submit",
+    "post_push_user_credit",
+    "ROUTEA_IMPACT_V02_C01_submit",
+    "post_impact_user_credit"
+  ],
+  "credit_deltas": {
+    "impact": 140,
+    "push": 140,
+    "total": 280
+  },
+  "decision": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_C01_TWO_SUBMITS_ACCEPTED_READY_FOR_QUERY_ONLY_HUMAN_DECISION",
+  "download_called": false,
+  "execution_id": "CAL002-ROUTE-A-V0-2-C01-LIVE-SUBMIT-V0-1",
+  "final_master": false,
+  "fixed_task_completion": false,
+  "goal_identity": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_REFERENCE_TRANSMISSION_AND_MAX_TWO_SUBMIT_V0_1",
+  "impact_submit_id": "4c8b6184-7c0a-4b41-95f5-e215e35f195b",
+  "locked": false,
+  "matched_pair_id": "CAL002-ROUTE-A-V0-2-C01-MATCHED-PAIR",
+  "maximum_call_counts": {
+    "help": 1,
+    "submit": 2,
+    "total": 7,
+    "user_credit": 3,
+    "version": 1
+  },
+  "media_changed": false,
+  "media_created_locally": 0,
+  "next_phase": "CAL002_ROUTE_A_V0_2_MATCHED_PAIR_CANARY_C01_QUERY_ONLY_HUMAN_DECISION",
+  "production_approved": false,
+  "production_reentry_authorized": false,
+  "protected_files_changed": false,
+  "provider_motion_only_behavior_verified": false,
+  "push_submit_id": "5ff0ba35-5a2c-445a-8343-c95f31caaf4a",
+  "query_called": false,
+  "reference_transmission_count": 2,
+  "reference_upload_performed_only_inside_exact_submits": true,
+  "resubmit_called": false,
+  "retry_called": false,
+  "route_a_capability_proven": false,
+  "schema_version": "CAL002_ROUTE_A_V0_2_C01_LIVE_EXECUTION_RECORD_V0_1",
+  "sources_changed": false,
+  "standalone_upload_performed": false,
+  "starting_checkpoint": {
+    "branch": "main",
+    "commit_message": "design(cal002): prepare Route A V0.2 matched-pair canaries",
+    "head": "962ad751cef9b4a51f1aafe91c3e5ba76c3d13da",
+    "origin_main": "962ad751cef9b4a51f1aafe91c3e5ba76c3d13da",
+    "parent": "99f8dded23044729091f7d7553315254db34b9c9"
+  },
+  "stop_reason": null,
+  "stop_stage": "authorized_sequence_complete",
+  "submit_order": [
+    "ROUTEA_PUSH_V02_C01",
+    "ROUTEA_IMPACT_V02_C01"
+  ]
+}
