@@ -1,0 +1,86 @@
+{
+  "complete_mp4_review_required": true,
+  "contact_sheets_role": "ASSISTANCE_ONLY",
+  "experiment_label": "CAL-003 R1",
+  "items": [
+    {
+      "alias": "B01",
+      "bytes": 4194304,
+      "complete_decode": "PASS",
+      "decoded_equivalence_verified": true,
+      "media_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/media/B01.mp4",
+      "published_diagnostic_hash_anti_linkage": "PASS",
+      "sha256": "eb16d7cf4373e2836396d3988c66279535079e1eeb0cff8ab09dfb3a252d9b49",
+      "technical_record_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/technical/B01.json",
+      "technical_result": "PASS"
+    },
+    {
+      "alias": "B02",
+      "bytes": 4194304,
+      "complete_decode": "PASS",
+      "decoded_equivalence_verified": true,
+      "media_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/media/B02.mp4",
+      "published_diagnostic_hash_anti_linkage": "PASS",
+      "sha256": "6fae42fc64c3283fbbae4d9f950e84c5148948307fae2e28d76d4f27bd569912",
+      "technical_record_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/technical/B02.json",
+      "technical_result": "PASS"
+    },
+    {
+      "alias": "B03",
+      "bytes": 4194304,
+      "complete_decode": "PASS",
+      "decoded_equivalence_verified": true,
+      "media_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/media/B03.mp4",
+      "published_diagnostic_hash_anti_linkage": "PASS",
+      "sha256": "4047f8e59a1e412c6a01730a4be11669f4a7ec3329e9c107a85fc6c85c327aa3",
+      "technical_record_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/technical/B03.json",
+      "technical_result": "PASS"
+    },
+    {
+      "alias": "B04",
+      "bytes": 4194304,
+      "complete_decode": "PASS",
+      "decoded_equivalence_verified": true,
+      "media_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/media/B04.mp4",
+      "published_diagnostic_hash_anti_linkage": "PASS",
+      "sha256": "a1abf78035df2c2ab51ba86d58c0c2f2d8e61e437967b57be33d7017d49e2fca",
+      "technical_record_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/technical/B04.json",
+      "technical_result": "PASS"
+    },
+    {
+      "alias": "B05",
+      "bytes": 4194304,
+      "complete_decode": "PASS",
+      "decoded_equivalence_verified": true,
+      "media_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/media/B05.mp4",
+      "published_diagnostic_hash_anti_linkage": "PASS",
+      "sha256": "eee48542a9f83b6bc7c431821966e6c36d8e0181501b610d33cbc6d7f56bf56e",
+      "technical_record_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/technical/B05.json",
+      "technical_result": "PASS"
+    },
+    {
+      "alias": "B06",
+      "bytes": 4194304,
+      "complete_decode": "PASS",
+      "decoded_equivalence_verified": true,
+      "media_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/media/B06.mp4",
+      "published_diagnostic_hash_anti_linkage": "PASS",
+      "sha256": "e90c417aa11c4d5e64f072136a0d9c3e33bbe7e5ed18009fcdf0ce6ccfc7139f",
+      "technical_record_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/technical/B06.json",
+      "technical_result": "PASS"
+    }
+  ],
+  "review_contract_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/review_contract.json",
+  "review_instructions_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/reviewer_instructions.md",
+  "review_order": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06"
+  ],
+  "review_package_status": "READY_FOR_BLIND_REVIEW",
+  "review_package_version": "V0.3",
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_REVIEWER_MANIFEST_V0_3"
+}

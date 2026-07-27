@@ -1,0 +1,44 @@
+{
+  "alias_set": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06"
+  ],
+  "commitment_algorithm": "SHA-256",
+  "commitment_formula": "SHA256(CANONICAL_MAPPING_BYTES + LF + LOWERCASE_SALT_HEX_BYTES)",
+  "commitment_hex": "166e02c63c651134dbc291dcff84732516ffb80b8d0832ead515622a3f5a729f",
+  "experiment_id": "CAL-003",
+  "mapping_entry_count": 6,
+  "non_disclosure": {
+    "mapping_bytes_persisted_publicly": false,
+    "mapping_hash_persisted_publicly": false,
+    "mapping_persisted_publicly": false,
+    "salt_hash_persisted_publicly": false,
+    "salt_persisted_publicly": false,
+    "source_alias_bindings_public": false,
+    "source_specific_equivalence_values_public": false,
+    "terminal_receipt_may_reveal_mapping": false
+  },
+  "package_version": "V0.3",
+  "padding_derivation_profile": "CAL003_R1_BLIND_PADDING_HMAC_SHA256_HEX_STREAM_V0_3",
+  "program": "REFERENCE_CONTROL_REPEATABILITY_V1",
+  "round": "R1",
+  "salt_byte_count": 32,
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_PUBLIC_BLIND_COMMITMENT_V0_3",
+  "sealed_package": {
+    "bytes": 5328,
+    "commitment_verified": true,
+    "exists": true,
+    "final_name_contains_do_not_open_warning": true,
+    "integrity": "PASS",
+    "member_count": 6,
+    "outside_repository": true,
+    "path": "G:/AICODING/AI_VIDEO/_sealed/CAL003_R1_BLIND_MAPPING_V0_3/CAL003_R1_BLIND_MAPPING_DO_NOT_OPEN_UNTIL_REVIEW_FREEZE_V0_3.zip",
+    "repaired_runner_used": true,
+    "review_visible": false,
+    "sha256": "4a3d0cc7ed9f098224458df8f261803b3637b7c97ec7e289e8497ede287d6440"
+  }
+}
