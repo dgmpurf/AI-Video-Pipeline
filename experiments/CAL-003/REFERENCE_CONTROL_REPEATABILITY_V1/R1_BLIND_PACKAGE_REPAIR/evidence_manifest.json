@@ -1,0 +1,150 @@
+{
+  "artifact_count": 11,
+  "artifacts": [
+    {
+      "bytes": 859,
+      "path": "tools/cal003_blind_package/__init__.py",
+      "sha256": "f8e45f33b04455759d04216de76bd25c18a6819be01bd9d522326c105fed1c1b"
+    },
+    {
+      "bytes": 7291,
+      "path": "tools/cal003_blind_package/durability.py",
+      "sha256": "01fe4d8f9d6cc7497413a2483179e1d49800e78a2f3b91ee2a9ef32b77d0fd45"
+    },
+    {
+      "bytes": 4586,
+      "path": "tools/cal003_blind_package/failure_state.py",
+      "sha256": "9351497533588c65d5a93f96573a05d6d10399a066ca365cc260c223f775c74a"
+    },
+    {
+      "bytes": 3933,
+      "path": "tools/cal003_blind_package/runner.py",
+      "sha256": "912f8dd5e9824c83bcf2e2d72e05213d3381751fb992506be24553128cefbe44"
+    },
+    {
+      "bytes": 5254,
+      "path": "tests/cal003_blind_package/test_windows_fsync_regression.py",
+      "sha256": "c3a6a1defc38ae24eccfc2fc4023a6dc178b18b18d8bb37c6e21457d1b571b93"
+    },
+    {
+      "bytes": 11194,
+      "path": "tests/cal003_blind_package/test_atomic_zip_persistence.py",
+      "sha256": "fcfb91c60cc63aa448f4a70632130272faccb4ce20de94856f59521e31dcc7ed"
+    },
+    {
+      "bytes": 4510,
+      "path": "tests/cal003_blind_package/test_failure_state_sanitization.py",
+      "sha256": "90e4c3cdb97c73a6cda91a5c4465d05ba7e8670c353ea4ee4ab17be6d4a894cb"
+    },
+    {
+      "bytes": 4921,
+      "path": "tests/cal003_blind_package/test_runner_nondisclosure.py",
+      "sha256": "d2d21c8e7b0fb1227d757ce80e65e6f52df17a80cecfa304d8db4ce1852fd1d1"
+    },
+    {
+      "bytes": 16226,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_REPAIR/repair_record.json",
+      "sha256": "86a899b89c25c120280cbb9f3621e9948e36059531b370130df6d3fd8245317b"
+    },
+    {
+      "bytes": 26241,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_REPAIR/static_audit.json",
+      "sha256": "4801cd276f603c4b7e497c4a4a3ccea592bf423161da77d3108b49f0b52997b5"
+    },
+    {
+      "bytes": 6998,
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_WINDOWS_DURABILITY_REPAIR_RESULT.md",
+      "sha256": "6e0e44d04b21bb721454d8236d1af0e00e1a8e6d4e05ff6f59a78c0b8e1fbbc6"
+    }
+  ],
+  "committed_input_count": 6,
+  "committed_input_coverage": "6/6",
+  "committed_inputs": [
+    {
+      "binding_result": "PASS",
+      "bytes": 7878,
+      "git_blob": "980b2d67a4a807bc68f12b96816ad0785083bce5",
+      "name": "prior_failure_authorization",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE/authorization.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "3c3cf4c459b8ff00cfca30a43f581074eeb8840811ee25c4ac51817b0a2a18a9",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 7075,
+      "git_blob": "600154fe77483efe6c8d937da565a16f91290c90",
+      "name": "prior_failure_preflight",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE/preflight.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "8f9a460e0106341ad8a1cdb3cc47c9a799e127991dc7d7bf40ece76f1ddace80",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 1010,
+      "git_blob": "8b2cb6f4458f4db71f257e131914d861f7ef57ab",
+      "name": "prior_failure_execution",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE/execution.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "934754bec24d0ec219e7e70153377ee124ff453a4a49ef434b91dcdca9a6907c",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 7774,
+      "git_blob": "7bd796970db67f93321c58d9e8d2f4f070b86eae",
+      "name": "prior_failure_evidence_manifest",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "3a053c64dfa19232ac519ba7db4ead35e5a33ee20b21f794ebcb1e86da00f3d8",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 800,
+      "git_blob": "a21865c276f6fbe9c7740ebbfa7bf7bb654e8ceb",
+      "name": "prior_failure_governance_report",
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_RESULT.md",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "3a83e6e9c8333599af35849bf60408f0e358dbac7f56ec65f6d7d5f49d5c592e",
+      "strict_parse": "not_applicable",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 14382,
+      "git_blob": "37bff0f5537ad51e609c536bd34f83824e859176",
+      "name": "last_successful_download_evidence_manifest",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "6a5ee0106eb946d600e36475da1e81b8a323212da64daa44914eb05d66ca03e9",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    }
+  ],
+  "decision": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_WINDOWS_DURABILITY_REPAIR_AND_AUDIT_COMPLETE",
+  "included_artifact_count": 11,
+  "output_coverage": "11/11",
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_WINDOWS_DURABILITY_REPAIR_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "total_unique_bound_paths": 17,
+  "unique_committed_input_paths": 6,
+  "unique_output_paths": 11
+}

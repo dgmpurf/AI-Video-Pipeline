@@ -1,0 +1,787 @@
+{
+  "category_distribution": {
+    "atomic_zip_persistence": 20,
+    "failure_phase_and_error_sanitization": 16,
+    "nondisclosure_and_synthetic_fixtures": 12,
+    "output_path_and_protected_state": 12,
+    "repository_and_input_bindings": 12,
+    "windows_file_durability": 24
+  },
+  "checks": [
+    {
+      "assertion": "branch is main",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-REPAIR-001",
+      "evidence": "main",
+      "result": "PASS"
+    },
+    {
+      "assertion": "starting HEAD matches bound checkpoint",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-REPAIR-002",
+      "evidence": "900bc32e3b90fbfbc1b182c332c8181a77c3c987",
+      "result": "PASS"
+    },
+    {
+      "assertion": "origin/main matches starting checkpoint",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-REPAIR-003",
+      "evidence": "900bc32e3b90fbfbc1b182c332c8181a77c3c987",
+      "result": "PASS"
+    },
+    {
+      "assertion": "HEAD parent matches bound parent",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-REPAIR-004",
+      "evidence": "5ea7fa6399e892e2e465c2a7847644d7aa61c4b0",
+      "result": "PASS"
+    },
+    {
+      "assertion": "tracked state was clean before activation",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-REPAIR-005",
+      "evidence": "0 tracked modifications",
+      "result": "PASS"
+    },
+    {
+      "assertion": "staged state was clean before activation",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-REPAIR-006",
+      "evidence": "0 staged paths",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no repository operation was active",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-REPAIR-007",
+      "evidence": "merge/rebase/cherry-pick/revert/bisect false",
+      "result": "PASS"
+    },
+    {
+      "assertion": "untracked baseline count and hash match",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-REPAIR-008",
+      "evidence": "26 / 619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94",
+      "result": "PASS"
+    },
+    {
+      "assertion": "five prior failure paths remain unchanged",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-REPAIR-009",
+      "evidence": "five Git blobs unchanged",
+      "result": "PASS"
+    },
+    {
+      "assertion": "six committed inputs are bound",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-REPAIR-010",
+      "evidence": "6/6 PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "twelve proposed paths were absent before activation",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-REPAIR-011",
+      "evidence": "12/12 absent",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Source state is clean",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-REPAIR-012",
+      "evidence": "sources/ clean",
+      "result": "PASS"
+    },
+    {
+      "assertion": "legacy read-only fsync defect reproduced",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-013",
+      "evidence": "synthetic Windows regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "legacy safe numeric errno is 9",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-014",
+      "evidence": "errno 9",
+      "result": "PASS"
+    },
+    {
+      "assertion": "durability helper uses r+b",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-015",
+      "evidence": "path.open(\"r+b\")",
+      "result": "PASS"
+    },
+    {
+      "assertion": "durability helper has no rb open",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-016",
+      "evidence": "no path.open(\"rb\") in durability helper",
+      "result": "PASS"
+    },
+    {
+      "assertion": "flush occurs before fsync",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-017",
+      "evidence": "event-order assertion PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "writable flush preserves bytes",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-018",
+      "evidence": "byte equality PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "writable flush preserves SHA-256",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-019",
+      "evidence": "SHA equality PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "regular-file check enforced",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-020",
+      "evidence": "existing regular file required",
+      "result": "PASS"
+    },
+    {
+      "assertion": "symlink rejection enforced",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-021",
+      "evidence": "symlink test PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "reparse-point rejection implemented",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-022",
+      "evidence": "st_file_attributes guard",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no read-only fsync call site",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-023",
+      "evidence": "source and regression scan PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no Windows directory fsync",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-024",
+      "evidence": "atomic helper contains no directory fsync",
+      "result": "PASS"
+    },
+    {
+      "assertion": "partial ZIP flush phase explicit",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-025",
+      "evidence": "SEALED_PACKAGE_FILE_FLUSH / FLUSH_PARTIAL_ZIP",
+      "result": "PASS"
+    },
+    {
+      "assertion": "final ZIP flush phase explicit",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-026",
+      "evidence": "FINAL_PACKAGE_FILE_FLUSH / FLUSH_FINAL_ZIP",
+      "result": "PASS"
+    },
+    {
+      "assertion": "writable handle closes normally",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-027",
+      "evidence": "context-managed writable handle",
+      "result": "PASS"
+    },
+    {
+      "assertion": "numeric errno is sanitized",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-028",
+      "evidence": "bounded 32-bit integer filter",
+      "result": "PASS"
+    },
+    {
+      "assertion": "numeric winerror is sanitized when supported",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-029",
+      "evidence": "bounded 32-bit integer filter",
+      "result": "PASS"
+    },
+    {
+      "assertion": "raw exception text is excluded",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-030",
+      "evidence": "SanitizedFailure exact fields",
+      "result": "PASS"
+    },
+    {
+      "assertion": "r+b mode regression passes",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-031",
+      "evidence": "unit test PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "flush ordering regression passes",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-032",
+      "evidence": "unit test PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "phase recording regression passes",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-033",
+      "evidence": "unit test PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Windows reproduction is not skipped",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-034",
+      "evidence": "actual Windows branch executed",
+      "result": "PASS"
+    },
+    {
+      "assertion": "non-Windows simulation is not skipped",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-035",
+      "evidence": "deterministic OSError branch present",
+      "result": "PASS"
+    },
+    {
+      "assertion": "implementation uses Python standard library only",
+      "blocking_severity": "blocking",
+      "category": "windows_file_durability",
+      "check_id": "CAL003-REPAIR-036",
+      "evidence": "imports limited to standard library and local package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "partial and final paths must share one volume",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-037",
+      "evidence": "volume identity comparison",
+      "result": "PASS"
+    },
+    {
+      "assertion": "final path must be absent",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-038",
+      "evidence": "FileExistsError guard",
+      "result": "PASS"
+    },
+    {
+      "assertion": "partial path must exist as regular file",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-039",
+      "evidence": "regular-file guard",
+      "result": "PASS"
+    },
+    {
+      "assertion": "partial ZIP is flushed through writable handle",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-040",
+      "evidence": "r+b flush before validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "exact member set is verified",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-041",
+      "evidence": "set equality regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "duplicate members are rejected",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-042",
+      "evidence": "duplicate-member regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "traversal names are rejected",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-043",
+      "evidence": "traversal regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "absolute member names are rejected",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-044",
+      "evidence": "absolute-name regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "member SHA-256 values are verified",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-045",
+      "evidence": "wrong-hash regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "commitment callback must return true",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-046",
+      "evidence": "false-commitment regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "partial verification precedes publication",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-047",
+      "evidence": "ordered implementation sequence",
+      "result": "PASS"
+    },
+    {
+      "assertion": "publication uses exactly one os.replace",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-048",
+      "evidence": "mock call count 1",
+      "result": "PASS"
+    },
+    {
+      "assertion": "partial path is absent after publication",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-049",
+      "evidence": "success regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "final path exists after publication",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-050",
+      "evidence": "success regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "final ZIP is flushed through writable handle",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-051",
+      "evidence": "r+b final phase history PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "final ZIP integrity is revalidated",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-052",
+      "evidence": "final validation regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no copy-delete fallback exists",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-053",
+      "evidence": "source scan PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no internal retry exists",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-054",
+      "evidence": "replace failure call count 1",
+      "result": "PASS"
+    },
+    {
+      "assertion": "cleanup is confined to explicit allowed root",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-055",
+      "evidence": "escape and repository guards PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "ZIP fixtures are synthetic only",
+      "blocking_severity": "blocking",
+      "category": "atomic_zip_persistence",
+      "check_id": "CAL003-REPAIR-056",
+      "evidence": "fixture_alpha/beta/manifest only",
+      "result": "PASS"
+    },
+    {
+      "assertion": "all declared failure phases are present",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-057",
+      "evidence": "9/9 phases",
+      "result": "PASS"
+    },
+    {
+      "assertion": "all declared operation codes are present",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-058",
+      "evidence": "7/7 operation codes",
+      "result": "PASS"
+    },
+    {
+      "assertion": "tracker leaves STARTUP on first explicit transition",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-059",
+      "evidence": "phase history regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "phase and operation are set before risky work",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-060",
+      "evidence": "transition precedes open/verify/replace",
+      "result": "PASS"
+    },
+    {
+      "assertion": "exception class is retained",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-061",
+      "evidence": "type(exc).__name__",
+      "result": "PASS"
+    },
+    {
+      "assertion": "safe numeric errno is retained",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-062",
+      "evidence": "safe integer filter",
+      "result": "PASS"
+    },
+    {
+      "assertion": "safe numeric winerror is retained when available",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-063",
+      "evidence": "safe integer filter",
+      "result": "PASS"
+    },
+    {
+      "assertion": "raw message is excluded",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-064",
+      "evidence": "sanitization regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "exception args are excluded",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-065",
+      "evidence": "as_dict exact keys",
+      "result": "PASS"
+    },
+    {
+      "assertion": "traceback is excluded",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-066",
+      "evidence": "no traceback field",
+      "result": "PASS"
+    },
+    {
+      "assertion": "path text is excluded",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-067",
+      "evidence": "no raw text field",
+      "result": "PASS"
+    },
+    {
+      "assertion": "secret text is excluded",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-068",
+      "evidence": "no raw text field",
+      "result": "PASS"
+    },
+    {
+      "assertion": "CLEANUP is permitted after activated failure",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-069",
+      "evidence": "cleanup transition regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "COMPLETE requires final verification",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-070",
+      "evidence": "completion gate regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "STARTUP cannot be re-entered",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-071",
+      "evidence": "reset regression PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "sanitized model contains exactly five fields",
+      "blocking_severity": "blocking",
+      "category": "failure_phase_and_error_sanitization",
+      "check_id": "CAL003-REPAIR-072",
+      "evidence": "exception_class/errno/winerror/failure_phase/operation_code",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no real task identities in implementation or fixtures",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_and_synthetic_fixtures",
+      "check_id": "CAL003-REPAIR-073",
+      "evidence": "synthetic identities only",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no real alias-to-task binding",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_and_synthetic_fixtures",
+      "check_id": "CAL003-REPAIR-074",
+      "evidence": "no identity-binding fields",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no real salt",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_and_synthetic_fixtures",
+      "check_id": "CAL003-REPAIR-075",
+      "evidence": "no salt field or value",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no secrets execution",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_and_synthetic_fixtures",
+      "check_id": "CAL003-REPAIR-076",
+      "evidence": "AST import scan PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no random execution",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_and_synthetic_fixtures",
+      "check_id": "CAL003-REPAIR-077",
+      "evidence": "AST import scan PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no canonical media read",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_and_synthetic_fixtures",
+      "check_id": "CAL003-REPAIR-078",
+      "evidence": "no MP4 path or read",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no Dreamina surface",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_and_synthetic_fixtures",
+      "check_id": "CAL003-REPAIR-079",
+      "evidence": "source scan PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no Provider surface",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_and_synthetic_fixtures",
+      "check_id": "CAL003-REPAIR-080",
+      "evidence": "source scan PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no subprocess surface",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_and_synthetic_fixtures",
+      "check_id": "CAL003-REPAIR-081",
+      "evidence": "AST import scan PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no ffmpeg or ffprobe surface",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_and_synthetic_fixtures",
+      "check_id": "CAL003-REPAIR-082",
+      "evidence": "source scan PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no governed sealed-package path",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_and_synthetic_fixtures",
+      "check_id": "CAL003-REPAIR-083",
+      "evidence": "source scan PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no raw exception persistence",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_and_synthetic_fixtures",
+      "check_id": "CAL003-REPAIR-084",
+      "evidence": "SanitizedFailure-only result",
+      "result": "PASS"
+    },
+    {
+      "assertion": "exact twelve-path allowlist is enforced",
+      "blocking_severity": "blocking",
+      "category": "output_path_and_protected_state",
+      "check_id": "CAL003-REPAIR-085",
+      "evidence": "12 approved file paths",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no unexpected output path is permitted",
+      "blocking_severity": "blocking",
+      "category": "output_path_and_protected_state",
+      "check_id": "CAL003-REPAIR-086",
+      "evidence": "post-write exact-scope gate",
+      "result": "PASS"
+    },
+    {
+      "assertion": "four implementation files exist",
+      "blocking_severity": "blocking",
+      "category": "output_path_and_protected_state",
+      "check_id": "CAL003-REPAIR-087",
+      "evidence": "4/4",
+      "result": "PASS"
+    },
+    {
+      "assertion": "four unit-test files exist",
+      "blocking_severity": "blocking",
+      "category": "output_path_and_protected_state",
+      "check_id": "CAL003-REPAIR-088",
+      "evidence": "4/4",
+      "result": "PASS"
+    },
+    {
+      "assertion": "repair record path is present",
+      "blocking_severity": "blocking",
+      "category": "output_path_and_protected_state",
+      "check_id": "CAL003-REPAIR-089",
+      "evidence": "repair_record.json",
+      "result": "PASS"
+    },
+    {
+      "assertion": "static audit path is present",
+      "blocking_severity": "blocking",
+      "category": "output_path_and_protected_state",
+      "check_id": "CAL003-REPAIR-090",
+      "evidence": "static_audit.json",
+      "result": "PASS"
+    },
+    {
+      "assertion": "evidence manifest path is reserved and generated last",
+      "blocking_severity": "blocking",
+      "category": "output_path_and_protected_state",
+      "check_id": "CAL003-REPAIR-091",
+      "evidence": "evidence_manifest.json final output",
+      "result": "PASS"
+    },
+    {
+      "assertion": "governance report path is reserved",
+      "blocking_severity": "blocking",
+      "category": "output_path_and_protected_state",
+      "check_id": "CAL003-REPAIR-092",
+      "evidence": "one new report only",
+      "result": "PASS"
+    },
+    {
+      "assertion": "existing failure records remain unchanged",
+      "blocking_severity": "blocking",
+      "category": "output_path_and_protected_state",
+      "check_id": "CAL003-REPAIR-093",
+      "evidence": "five bound Git blobs unchanged",
+      "result": "PASS"
+    },
+    {
+      "assertion": "existing media remains unread and unchanged",
+      "blocking_severity": "blocking",
+      "category": "output_path_and_protected_state",
+      "check_id": "CAL003-REPAIR-094",
+      "evidence": "canonical media operations 0",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Source remains unchanged",
+      "blocking_severity": "blocking",
+      "category": "output_path_and_protected_state",
+      "check_id": "CAL003-REPAIR-095",
+      "evidence": "sources/ clean",
+      "result": "PASS"
+    },
+    {
+      "assertion": "untracked baseline remains unchanged",
+      "blocking_severity": "blocking",
+      "category": "output_path_and_protected_state",
+      "check_id": "CAL003-REPAIR-096",
+      "evidence": "26 / 619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94",
+      "result": "PASS"
+    }
+  ],
+  "failures": 0,
+  "overall_result": "PASS",
+  "passes": 96,
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_WINDOWS_DURABILITY_STATIC_AUDIT_V0_1",
+  "skips": 0,
+  "total_checks": 96,
+  "warnings": 0
+}

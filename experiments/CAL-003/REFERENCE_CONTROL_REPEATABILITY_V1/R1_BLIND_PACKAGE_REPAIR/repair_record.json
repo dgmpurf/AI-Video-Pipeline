@@ -1,0 +1,316 @@
+{
+  "accepted_bounded_repair_target": [
+    "Windows read-only rb file fsync reproduces OSError",
+    "observed safe numeric errno is 9",
+    "writable r+b flush followed by os.fsync is the bounded correction"
+  ],
+  "actual_decision": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_WINDOWS_DURABILITY_REPAIR_AND_AUDIT_COMPLETE",
+  "actual_next_phase": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_REPAIR_AUDIT_COMPLETE_REEXECUTION_AUTHORIZATION_HUMAN_DECISION",
+  "authorization_lifecycle": {
+    "activated": true,
+    "activation_event": "first creation of the exact repair temporary root",
+    "consumed": true,
+    "reusable": false
+  },
+  "authorization_profile": {
+    "base64_character_count": 6384,
+    "bom": false,
+    "bytes": 4788,
+    "round_trip_verified": true,
+    "sha256": "f2096d7c1ed298aa2a2f31374ca09cc5ff729ed2a7a67b8c070436db4b391015",
+    "trailing_cr": false,
+    "trailing_lf": false,
+    "trailing_space": false
+  },
+  "canonical_authorization": "APPROVE_CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_WINDOWS_FSYNC_NO_LIVE_REPAIR_AND_INDEPENDENT_AUDIT_V0_1__BIND_CURRENT_CHECKPOINT_900BC32E3B90FBFBC1B182C332C8181A77C3C987__BIND_FAILURE_AUTHORIZATION_RECORD_BYTES_7878__BIND_FAILURE_AUTHORIZATION_RECORD_SHA256_3C3CF4C459B8FF00CFCA30A43F581074EEB8840811EE25C4AC51817B0A2A18A9__BIND_FAILURE_PREFLIGHT_RECORD_BYTES_7075__BIND_FAILURE_PREFLIGHT_RECORD_SHA256_8F9A460E0106341AD8A1CDB3CC47C9A799E127991DC7D7BF40ECE76F1DDACE80__BIND_FAILURE_EXECUTION_RECORD_BYTES_1010__BIND_FAILURE_EXECUTION_RECORD_SHA256_934754BEC24D0EC219E7E70153377EE124FF453A4A49EF434B91DCDCA9A6907C__BIND_FAILURE_EVIDENCE_MANIFEST_BYTES_7774__BIND_FAILURE_EVIDENCE_MANIFEST_GIT_BLOB_7BD796970DB67F93321C58D9E8D2F4F070B86EAE__BIND_FAILURE_GOVERNANCE_REPORT_BYTES_800__BIND_FAILURE_GOVERNANCE_REPORT_SHA256_3A83E6E9C8333599AF35849BF60408F0E358DBAC7F56EC65F6D7D5F49D5C592E__BIND_LAST_SUCCESSFUL_DOWNLOAD_EVIDENCE_MANIFEST_BYTES_14382__BIND_LAST_SUCCESSFUL_DOWNLOAD_EVIDENCE_MANIFEST_SHA256_6A5EE0106EB946D600E36475DA1E81B8A323212DA64DAA44914EB05D66CA03E9__ACCEPT_PRIOR_BLIND_PACKAGE_AUTHORIZATION_CONSUMED_AND_NON_REUSABLE_RANDOM_PERMUTATION_ATTEMPT_ONE_SALT_GENERATION_ATTEMPT_ONE_REVIEW_VISIBLE_MEDIA_ZERO_SEALED_ZIP_ABSENT_TEMP_ROOT_ABSENT_AND_MAPPING_SALT_NOT_DISCLOSED__ACCEPT_REPOSITORY_FAILURE_RECORD_AS_PROVING_OSERROR_WITH_FAILURE_PHASE_RECORDED_STARTUP_ONLY__ACCEPT_HIGH_CONFIDENCE_LOCAL_WINDOWS_REPRODUCTION_THAT_OS_FSYNC_ON_A_READ_ONLY_RB_FILE_HANDLE_PRODUCES_ERRNO_NINE_BAD_FILE_DESCRIPTOR_AS_THE_BOUNDED_REPAIR_TARGET_WITHOUT_CLAIMING_THE_UNCOMMITTED_TRANSIENT_SCRIPT_AS_DURABLE_EVIDENCE__ACCEPT_NO_RUN_BLIND_PACKAGE_IMPLEMENTATION_FILE_IS_CURRENTLY_COMMITTED_AND_REQUIRE_A_PERSISTENT_TESTABLE_REPOSITORY_IMPLEMENTATION_NOT_AN_AD_HOC_TEMPORARY_SCRIPT__AUTHORIZE_NO_LIVE_CREATION_OF_A_PERSISTENT_CAL003_BLIND_PACKAGE_RUNNER_DURABILITY_HELPER_FAILURE_STATE_MODEL_AND_STANDARD_LIBRARY_UNIT_TESTS__REQUIRE_PARTIAL_AND_FINAL_SEALED_ZIP_FILE_DURABILITY_TO_USE_WRITABLE_BINARY_HANDLES_R_PLUS_B_OR_EQUIVALENT_FLUSH_THEN_OS_FSYNC_AND_FORBID_OS_FSYNC_ON_READ_ONLY_HANDLES__REQUIRE_ATOMIC_SAME_VOLUME_PARTIAL_TO_FINAL_OS_REPLACE_ONLY_AFTER_FILE_FLUSH_ZIP_INTEGRITY_EXACT_MEMBER_SET_MEMBER_HASH_AND_COMMITMENT_VERIFICATION_PASS__REQUIRE_NO_UNSUPPORTED_WINDOWS_DIRECTORY_FSYNC_AND_REQUIRE_FINAL_ZIP_OPTIONAL_DURABILITY_VERIFICATION_TO_USE_A_WRITABLE_HANDLE__REQUIRE_EXPLICIT_FAILURE_PHASE_TRANSITIONS_INCLUDING_SEALED_ZIP_WRITE_SEALED_PACKAGE_FILE_FLUSH_SEALED_ZIP_INTEGRITY_ATOMIC_RENAME_FINAL_PACKAGE_FILE_FLUSH_AND_CLEANUP__REQUIRE_SANITIZED_FAILURE_RECORDING_OF_EXCEPTION_CLASS_SAFE_NUMERIC_ERRNO_SAFE_NUMERIC_WINERROR_FAILURE_PHASE_AND_OPERATION_CODE_WITHOUT_RAW_EXCEPTION_TEXT_MAPPING_SALT_SOURCE_ALIAS_BINDING_OR_PRIVATE_DATA__REQUIRE_DETERMINISTIC_SYNTHETIC_TEST_FIXTURES_ONLY_AND_NO_CRYPTOGRAPHIC_RANDOMNESS_GENERATION_NO_REAL_MAPPING_NO_REAL_SALT_NO_CANONICAL_MEDIA_READ_NO_REMUX_NO_PADDING_NO_SEALED_PRODUCTION_PACKAGE__REQUIRE_WINDOWS_REGRESSION_TEST_TO_REPRODUCE_THE_OLD_READ_ONLY_FSYNC_FAILURE_AND_PROVE_THE_NEW_WRITABLE_FLUSH_HELPER_PARTIAL_ZIP_FLUSH_FINAL_ZIP_FLUSH_ATOMIC_RENAME_INTEGRITY_VALIDATION_FAILURE_PHASE_RECORDING_CLEANUP_AND_NONDISCLOSURE__AUTHORIZE_EXACTLY_TWELVE_NEW_REPOSITORY_ARTIFACTS_COMPRISING_FOUR_PERSISTENT_IMPLEMENTATION_FILES_FOUR_UNIT_TEST_FILES_REPAIR_RECORD_STATIC_AUDIT_EVIDENCE_MANIFEST_AND_GOVERNANCE_REPORT__REQUIRE_STATIC_AUDIT_EXACTLY_NINETY_SIX_CHECKS_WITH_NINETY_SIX_PASS_ZERO_FAILURE_ZERO_SKIP_ZERO_WARNING_ACROSS_REPOSITORY_AND_INPUT_BINDINGS_TWELVE_WINDOWS_FILE_DURABILITY_TWENTY_FOUR_ATOMIC_ZIP_PERSISTENCE_TWENTY_FAILURE_PHASE_AND_ERROR_SANITIZATION_SIXTEEN_NONDISCLOSURE_AND_SYNTHETIC_FIXTURES_TWELVE_OUTPUT_PATH_AND_PROTECTED_STATE_TWELVE__REQUIRE_EVIDENCE_MANIFEST_TO_BIND_ELEVEN_NONSELF_OUTPUTS_AND_SIX_COMMITTED_INPUTS_WITH_COVERAGE_ELEVEN_OF_ELEVEN_AND_SIX_OF_SIX__AUTHORIZE_EXACTLY_ONE_COMMIT_AND_ONE_PUSH_AFTER_ALL_TESTS_STATIC_AUDIT_SENSITIVE_DATA_AND_PROTECTED_STATE_VALIDATION__SET_COMMIT_MESSAGE_FIX_CAL003_HARDEN_BLIND_PACKAGE_WINDOWS_DURABILITY__NO_DREAMINA_NO_PROVIDER_NO_CREDIT_NO_VERSION_NO_USER_CREDIT_NO_HELP_NO_RANDOM_PERMUTATION_NO_RANDOM_SALT_NO_SEALED_ZIP_AT_THE_GOVERNED_FINAL_PATH_NO_BLINDED_MEDIA_NO_SEMANTIC_REVIEW_NO_FREEZE_NO_UNBLINDING_NO_GATE_DERIVATION__NO_SOURCE_CHANGE_NO_EXISTING_FAILURE_RECORD_CHANGE_NO_EXISTING_MEDIA_CHANGE_NO_EXISTING_PROMPT_CHANGE_NO_EXISTING_PACKAGE_CHANGE_NO_REFERENCE_CHANGE_NO_PRODUCTION_REENTRY_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__SET_SUCCESS_NEXT_PHASE_CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_REPAIR_AUDIT_COMPLETE_REEXECUTION_AUTHORIZATION_HUMAN_DECISION__SET_FAILURE_NEXT_PHASE_CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_REPAIR_FAILURE_HUMAN_DECISION__ONE_TIME_NON_REUSABLE",
+  "committed_input_bindings": [
+    {
+      "binding_result": "PASS",
+      "bytes": 7878,
+      "git_blob": "980b2d67a4a807bc68f12b96816ad0785083bce5",
+      "name": "prior_failure_authorization",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE/authorization.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "3c3cf4c459b8ff00cfca30a43f581074eeb8840811ee25c4ac51817b0a2a18a9",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 7075,
+      "git_blob": "600154fe77483efe6c8d937da565a16f91290c90",
+      "name": "prior_failure_preflight",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE/preflight.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "8f9a460e0106341ad8a1cdb3cc47c9a799e127991dc7d7bf40ece76f1ddace80",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 1010,
+      "git_blob": "8b2cb6f4458f4db71f257e131914d861f7ef57ab",
+      "name": "prior_failure_execution",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE/execution.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "934754bec24d0ec219e7e70153377ee124ff453a4a49ef434b91dcdca9a6907c",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 7774,
+      "git_blob": "7bd796970db67f93321c58d9e8d2f4f070b86eae",
+      "name": "prior_failure_evidence_manifest",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "3a053c64dfa19232ac519ba7db4ead35e5a33ee20b21f794ebcb1e86da00f3d8",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 800,
+      "git_blob": "a21865c276f6fbe9c7740ebbfa7bf7bb654e8ceb",
+      "name": "prior_failure_governance_report",
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_RESULT.md",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "3a83e6e9c8333599af35849bf60408f0e358dbac7f56ec65f6d7d5f49d5c592e",
+      "strict_parse": "not_applicable",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 14382,
+      "git_blob": "37bff0f5537ad51e609c536bd34f83824e859176",
+      "name": "last_successful_download_evidence_manifest",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "6a5ee0106eb946d600e36475da1e81b8a323212da64daa44914eb05d66ca03e9",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    }
+  ],
+  "committed_input_coverage": "6/6",
+  "durable_repository_evidence": [
+    "prior blind-package goal failed",
+    "failure class OSError",
+    "persisted failure phase startup",
+    "permutation attempt count one",
+    "salt-generation attempt count one",
+    "prior authorization consumed and non-reusable",
+    "zero review-visible media",
+    "no sealed ZIP remained",
+    "no public mapping or salt"
+  ],
+  "execution_id": "CAL003-REFERENCE-CONTROL-REPEATABILITY-R1-BLIND-PACKAGE-WINDOWS-DURABILITY-REPAIR-V0-1",
+  "experiment_id": "CAL-003",
+  "failure_phases": [
+    "STARTUP",
+    "SEALED_ZIP_WRITE",
+    "SEALED_PACKAGE_FILE_FLUSH",
+    "SEALED_ZIP_INTEGRITY",
+    "ATOMIC_RENAME",
+    "FINAL_PACKAGE_FILE_FLUSH",
+    "FINAL_ZIP_INTEGRITY",
+    "CLEANUP",
+    "COMPLETE"
+  ],
+  "goal_identity": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_WINDOWS_FSYNC_NO_LIVE_REPAIR_AND_INDEPENDENT_AUDIT_V0_1",
+  "implementation_files": [
+    {
+      "bytes": 859,
+      "path": "tools/cal003_blind_package/__init__.py",
+      "sha256": "f8e45f33b04455759d04216de76bd25c18a6819be01bd9d522326c105fed1c1b"
+    },
+    {
+      "bytes": 7291,
+      "path": "tools/cal003_blind_package/durability.py",
+      "sha256": "01fe4d8f9d6cc7497413a2483179e1d49800e78a2f3b91ee2a9ef32b77d0fd45"
+    },
+    {
+      "bytes": 4586,
+      "path": "tools/cal003_blind_package/failure_state.py",
+      "sha256": "9351497533588c65d5a93f96573a05d6d10399a066ca365cc260c223f775c74a"
+    },
+    {
+      "bytes": 3933,
+      "path": "tools/cal003_blind_package/runner.py",
+      "sha256": "912f8dd5e9824c83bcf2e2d72e05213d3381751fb992506be24553128cefbe44"
+    }
+  ],
+  "mirror_validation": {
+    "compile": {
+      "command": "python -m compileall -q tools/cal003_blind_package tests/cal003_blind_package",
+      "return_code": 0,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "preliminary_static_inspection": "12/12 PASS",
+    "unit_tests": {
+      "command": "python -W error -m unittest discover -s tests/cal003_blind_package -p \"test_*.py\" -v",
+      "errors": 0,
+      "expected_failures": 0,
+      "failures": 0,
+      "result": "PASS",
+      "skips": 0,
+      "stderr_bytes": 4355,
+      "stderr_sha256": "4a11ae8a0e1caa8532952700d91c9c1e1b6b6154062bf70b07f88affb99c8069",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "test_files": 4,
+      "test_methods": 40,
+      "unexpected_successes": 0,
+      "warnings": 0
+    }
+  },
+  "no_live_operation_counts": {
+    "blinded_media_creations": 0,
+    "canonical_media_reads": 0,
+    "credit_operations": 0,
+    "dreamina_calls": 0,
+    "ffmpeg_calls": 0,
+    "ffprobe_calls": 0,
+    "gate_derivations": 0,
+    "help_calls": 0,
+    "padding_operations": 0,
+    "production_sealed_zip_creations": 0,
+    "provider_calls": 0,
+    "random_permutation_generations": 0,
+    "random_salt_generations": 0,
+    "real_mapping_creations": 0,
+    "remux_calls": 0,
+    "review_freezes": 0,
+    "semantic_reviews": 0,
+    "unblinding_operations": 0,
+    "user_credit_calls": 0,
+    "version_calls": 0
+  },
+  "operation_codes": [
+    "WRITE_PARTIAL_ZIP",
+    "FLUSH_PARTIAL_ZIP",
+    "VERIFY_PARTIAL_ZIP",
+    "ATOMIC_REPLACE",
+    "FLUSH_FINAL_ZIP",
+    "VERIFY_FINAL_ZIP",
+    "CLEANUP_TASK_CREATED_PATHS"
+  ],
+  "persistent_implementation_version": "CAL003_BLIND_PACKAGE_WINDOWS_DURABILITY_V0_1",
+  "program": "REFERENCE_CONTROL_REPEATABILITY_V1",
+  "regression_results": {
+    "atomic_zip": "PASS",
+    "cleanup": "PASS",
+    "commitment_verification": "PASS",
+    "exact_member_verification": "PASS",
+    "failure_phase_recording": "PASS",
+    "final_zip_durability": "PASS",
+    "legacy_read_only_fsync_reproduced": true,
+    "member_hash_verification": "PASS",
+    "nondisclosure": "PASS",
+    "observed_or_simulated_legacy_errno": 9,
+    "partial_zip_durability": "PASS",
+    "sanitization": "PASS",
+    "writable_flush": "PASS"
+  },
+  "repository_validation": {
+    "compile": {
+      "command": "python -m compileall -q tools/cal003_blind_package tests/cal003_blind_package",
+      "return_code": 0,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "unit_tests": {
+      "command": "python -W error -m unittest discover -s tests/cal003_blind_package -p \"test_*.py\" -v",
+      "errors": 0,
+      "expected_failures": 0,
+      "failures": 0,
+      "result": "PASS",
+      "skips": 0,
+      "stderr_bytes": 4353,
+      "stderr_sha256": "021ae3c57042b7da1707188f5b58168df65313c6bb569e63456c89dc558da58d",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "test_files": 4,
+      "test_methods": 40,
+      "unexpected_successes": 0,
+      "warnings": 0
+    }
+  },
+  "round": "R1",
+  "sanitized_error_model": {
+    "fields": [
+      "exception_class",
+      "errno",
+      "winerror",
+      "failure_phase",
+      "operation_code"
+    ],
+    "raw_exception_text": false,
+    "safe_numeric_errno": true,
+    "safe_numeric_winerror": true
+  },
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_WINDOWS_DURABILITY_REPAIR_RECORD_V0_1",
+  "starting_checkpoint": {
+    "branch": "main",
+    "commit_message": "diagnose(cal003): record R1 blind package failure",
+    "head": "900bc32e3b90fbfbc1b182c332c8181a77c3c987",
+    "origin_main": "900bc32e3b90fbfbc1b182c332c8181a77c3c987",
+    "parent": "5ea7fa6399e892e2e465c2a7847644d7aa61c4b0",
+    "unrelated_untracked_count": 26,
+    "unrelated_untracked_set_sha256": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94"
+  },
+  "static_audit_result": {
+    "checks": 96,
+    "failures": 0,
+    "passes": 96,
+    "result": "PASS",
+    "skips": 0,
+    "warnings": 0
+  },
+  "test_files": [
+    {
+      "bytes": 5254,
+      "path": "tests/cal003_blind_package/test_windows_fsync_regression.py",
+      "sha256": "c3a6a1defc38ae24eccfc2fc4023a6dc178b18b18d8bb37c6e21457d1b571b93"
+    },
+    {
+      "bytes": 11194,
+      "path": "tests/cal003_blind_package/test_atomic_zip_persistence.py",
+      "sha256": "fcfb91c60cc63aa448f4a70632130272faccb4ce20de94856f59521e31dcc7ed"
+    },
+    {
+      "bytes": 4510,
+      "path": "tests/cal003_blind_package/test_failure_state_sanitization.py",
+      "sha256": "90e4c3cdb97c73a6cda91a5c4465d05ba7e8670c353ea4ee4ab17be6d4a894cb"
+    },
+    {
+      "bytes": 4921,
+      "path": "tests/cal003_blind_package/test_runner_nondisclosure.py",
+      "sha256": "d2d21c8e7b0fb1227d757ce80e65e6f52df17a80cecfa304d8db4ce1852fd1d1"
+    }
+  ],
+  "transient_script_durable_evidence": false,
+  "writable_durability": {
+    "atomic_publication": "same-volume os.replace after partial verification",
+    "final_flush_sequence": "r+b open, flush, os.fsync, close, final integrity verification",
+    "partial_flush_sequence": "r+b open, flush, os.fsync, close, partial integrity verification",
+    "windows_directory_fsync": false,
+    "writable_file_mode": "r+b"
+  }
+}
