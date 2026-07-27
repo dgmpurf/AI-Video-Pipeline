@@ -1,0 +1,72 @@
+{
+  "automatic_continuation": false,
+  "download_gate_separate": true,
+  "failure_stops_later_submissions": true,
+  "fixed_order": [
+    {
+      "family": "PUSH",
+      "ordinal_pair_index": 1,
+      "position": 1,
+      "task_id": "PUSH-01"
+    },
+    {
+      "family": "IMPACT",
+      "ordinal_pair_index": 1,
+      "position": 2,
+      "task_id": "IMPACT-01"
+    },
+    {
+      "family": "IMPACT",
+      "ordinal_pair_index": 2,
+      "position": 3,
+      "task_id": "IMPACT-02"
+    },
+    {
+      "family": "PUSH",
+      "ordinal_pair_index": 2,
+      "position": 4,
+      "task_id": "PUSH-02"
+    },
+    {
+      "family": "PUSH",
+      "ordinal_pair_index": 3,
+      "position": 5,
+      "task_id": "PUSH-03"
+    },
+    {
+      "family": "IMPACT",
+      "ordinal_pair_index": 3,
+      "position": 6,
+      "task_id": "IMPACT-03"
+    }
+  ],
+  "maximum_in_flight_submit_processes": 1,
+  "ordinal_analysis_pairs": [
+    {
+      "impact_task_id": "IMPACT-01",
+      "pair_index": 1,
+      "push_task_id": "PUSH-01"
+    },
+    {
+      "impact_task_id": "IMPACT-02",
+      "pair_index": 2,
+      "push_task_id": "PUSH-02"
+    },
+    {
+      "impact_task_id": "IMPACT-03",
+      "pair_index": 3,
+      "push_task_id": "PUSH-03"
+    }
+  ],
+  "parallelism": 0,
+  "query_gate_separate": true,
+  "rationale": [
+    "INTERLEAVE_FAMILIES",
+    "AVOID_THREE_CONSECUTIVE_FAMILY_SUBMISSIONS",
+    "REDUCE_SIMPLE_MONOTONIC_TEMPORAL_DRIFT",
+    "PRESERVE_THREE_ORDINAL_ANALYSIS_PAIRS",
+    "AVOID_PARALLEL_ENVIRONMENT_CONFOUNDS"
+  ],
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_SUBMISSION_ORDER_V0_1",
+  "submit_count_ceiling": 6
+}

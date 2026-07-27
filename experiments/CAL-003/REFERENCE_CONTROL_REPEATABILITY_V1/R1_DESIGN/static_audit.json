@@ -1,0 +1,2903 @@
+{
+  "category_distribution": {
+    "blind_review_and_derivation": 18,
+    "common_prompt_and_duty_separation": 60,
+    "equality_isolation_and_repeatability": 48,
+    "governance_sensitive_data_and_output_paths": 12,
+    "reference_integrity": 30,
+    "repository_and_input_bindings": 30,
+    "six_task_package_and_future_argv": 144,
+    "submission_order_and_budget": 18
+  },
+  "check_count": 360,
+  "checks": [
+    {
+      "assertion": "repository root is bound",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-001",
+      "evidence": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+      "result": "PASS"
+    },
+    {
+      "assertion": "branch is main",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-002",
+      "evidence": "main",
+      "result": "PASS"
+    },
+    {
+      "assertion": "HEAD matches checkpoint",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-003",
+      "evidence": "b16c6522c3f09a3b3f81ff816b2090d4cefe5efb",
+      "result": "PASS"
+    },
+    {
+      "assertion": "origin/main matches checkpoint",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-004",
+      "evidence": "b16c6522c3f09a3b3f81ff816b2090d4cefe5efb",
+      "result": "PASS"
+    },
+    {
+      "assertion": "HEAD and origin/main aligned",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-005",
+      "evidence": "True",
+      "result": "PASS"
+    },
+    {
+      "assertion": "parent matches",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-006",
+      "evidence": "4cda221156f54b4ad9bf01818008aa337503a276",
+      "result": "PASS"
+    },
+    {
+      "assertion": "commit message matches",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-007",
+      "evidence": "review(cal002): close final Route A V0.3 C02 branch",
+      "result": "PASS"
+    },
+    {
+      "assertion": "tracked modifications zero",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-008",
+      "evidence": "0",
+      "result": "PASS"
+    },
+    {
+      "assertion": "staged paths zero",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-009",
+      "evidence": "0",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Source status zero",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-010",
+      "evidence": "0",
+      "result": "PASS"
+    },
+    {
+      "assertion": "HEAD is not detached",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-011",
+      "evidence": "False",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no active Git operation",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-012",
+      "evidence": "0",
+      "result": "PASS"
+    },
+    {
+      "assertion": "untracked count bound",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-013",
+      "evidence": "26",
+      "result": "PASS"
+    },
+    {
+      "assertion": "untracked hash bound",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-014",
+      "evidence": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94",
+      "result": "PASS"
+    },
+    {
+      "assertion": "all output paths absent",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-015",
+      "evidence": "True",
+      "result": "PASS"
+    },
+    {
+      "assertion": "authorization byte length",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-016",
+      "evidence": "5866",
+      "result": "PASS"
+    },
+    {
+      "assertion": "authorization SHA-256",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-017",
+      "evidence": "3c63594bbfb9325958ea846796fe37efdb462e6ded3fa74f4ac118ef47797601",
+      "result": "PASS"
+    },
+    {
+      "assertion": "authorization Base64 length",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-018",
+      "evidence": "7824",
+      "result": "PASS"
+    },
+    {
+      "assertion": "authorization round trip",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-019",
+      "evidence": "True",
+      "result": "PASS"
+    },
+    {
+      "assertion": "cal002_final_review_record exact binding",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-020",
+      "evidence": "30705 bytes / b31dbd8033bf5a352c0b202d4f57994b9b9b83783a6d7f81734e03cd924b8272 / d4ec9175a081c90847f6230bcd02da807d87a62a",
+      "result": "PASS"
+    },
+    {
+      "assertion": "cal002_final_review_report exact binding",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-021",
+      "evidence": "11470 bytes / 9577409b355915216633319c80c0f5376fd0133a2f4e5f91cd5fc6298f1c1e4e / 1b9f387c70eb9c8096154f0a651b2db3bbb305e7",
+      "result": "PASS"
+    },
+    {
+      "assertion": "cal002_final_review_evidence_manifest exact binding",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-022",
+      "evidence": "5040 bytes / 77e2bb865ce3621b247aa5ef12e2d462cb97b0baf85919f4dd0041fe7520a4cc / 068ec549eacbfcb38ed562940565dc868f7cbc0d",
+      "result": "PASS"
+    },
+    {
+      "assertion": "cal002_final_governance_report exact binding",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-023",
+      "evidence": "4164 bytes / 6971183c9e1151f7bb25a979ed72c4ebf9f0d6ed1a9870eb75a03869d27db83d / 4c4dd0e26f3d6900018a61b0228caf33d277a797",
+      "result": "PASS"
+    },
+    {
+      "assertion": "c02_review_contract exact binding",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-024",
+      "evidence": "4013 bytes / b1d226caf6ad8a8bbe25e169788b09cab7f788da261ca0b1205aea20219d569e / dde736dd584a68af9dfc1adf04baa168022e582c",
+      "result": "PASS"
+    },
+    {
+      "assertion": "canonical_common_prompt_source exact binding",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-025",
+      "evidence": "2010 bytes / bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d / 193173d1d9a2409920faf16b603b1873071628c2",
+      "result": "PASS"
+    },
+    {
+      "assertion": "push_reference exact binding",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-026",
+      "evidence": "174235 bytes / 6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6 / d5cfb6ab1d17163d4b9d6174c633af627d4ee866",
+      "result": "PASS"
+    },
+    {
+      "assertion": "impact_reference exact binding",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-027",
+      "evidence": "168170 bytes / a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c / 8aaa470f8485b9aa59cff057c6a143ed765df7ad",
+      "result": "PASS"
+    },
+    {
+      "assertion": "all inputs equal HEAD",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-028",
+      "evidence": "8/8 worktree blobs equal HEAD",
+      "result": "PASS"
+    },
+    {
+      "assertion": "all JSON inputs strict parse",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-029",
+      "evidence": "all applicable committed JSON inputs parsed strictly",
+      "result": "PASS"
+    },
+    {
+      "assertion": "protected-state precheck",
+      "blocking_severity": "BLOCKING",
+      "category": "repository_and_input_bindings",
+      "check_id": "A-030",
+      "evidence": "tracked/staged/Source zero; output paths absent",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Prompt byte length",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-001",
+      "evidence": "2010",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Prompt SHA-256",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-002",
+      "evidence": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Prompt strict UTF-8",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-003",
+      "evidence": "decoded successfully",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Prompt BOM absent",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-004",
+      "evidence": "no UTF-8 BOM",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Prompt CR absent",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-005",
+      "evidence": "CR count 0",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Prompt terminal LF",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-006",
+      "evidence": "terminal LF present",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Prompt exactly one terminal LF",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-007",
+      "evidence": "no double terminal LF",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Prompt raw-copy plan",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-008",
+      "evidence": "output bytes equal committed source",
+      "result": "PASS"
+    },
+    {
+      "assertion": "action-family semantic count zero",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-009",
+      "evidence": "family-specific token count 0",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Prompt output path exact",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-010",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/prompts/common.txt",
+      "result": "PASS"
+    },
+    {
+      "assertion": "text duty exact",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-011",
+      "evidence": "identity/clothing/scene/camera/composition/lighting/style/safety only",
+      "result": "PASS"
+    },
+    {
+      "assertion": "reference duty exact",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-012",
+      "evidence": "complete motion sequence/rhythm/spacing/coordination/interaction only",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 Prompt path",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-013",
+      "evidence": "PUSH-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 Prompt bytes",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-014",
+      "evidence": "PUSH-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 Prompt SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-015",
+      "evidence": "PUSH-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 Prompt terminal LF",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-016",
+      "evidence": "PUSH-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 text duty",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-017",
+      "evidence": "PUSH-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 motion duty",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-018",
+      "evidence": "PUSH-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 argv carries exact Prompt",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-019",
+      "evidence": "PUSH-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 argv has one Prompt flag",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-020",
+      "evidence": "PUSH-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 Prompt path",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-021",
+      "evidence": "IMPACT-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 Prompt bytes",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-022",
+      "evidence": "IMPACT-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 Prompt SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-023",
+      "evidence": "IMPACT-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 Prompt terminal LF",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-024",
+      "evidence": "IMPACT-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 text duty",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-025",
+      "evidence": "IMPACT-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 motion duty",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-026",
+      "evidence": "IMPACT-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 argv carries exact Prompt",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-027",
+      "evidence": "IMPACT-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 argv has one Prompt flag",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-028",
+      "evidence": "IMPACT-01 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 Prompt path",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-029",
+      "evidence": "IMPACT-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 Prompt bytes",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-030",
+      "evidence": "IMPACT-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 Prompt SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-031",
+      "evidence": "IMPACT-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 Prompt terminal LF",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-032",
+      "evidence": "IMPACT-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 text duty",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-033",
+      "evidence": "IMPACT-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 motion duty",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-034",
+      "evidence": "IMPACT-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 argv carries exact Prompt",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-035",
+      "evidence": "IMPACT-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 argv has one Prompt flag",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-036",
+      "evidence": "IMPACT-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 Prompt path",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-037",
+      "evidence": "PUSH-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 Prompt bytes",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-038",
+      "evidence": "PUSH-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 Prompt SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-039",
+      "evidence": "PUSH-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 Prompt terminal LF",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-040",
+      "evidence": "PUSH-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 text duty",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-041",
+      "evidence": "PUSH-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 motion duty",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-042",
+      "evidence": "PUSH-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 argv carries exact Prompt",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-043",
+      "evidence": "PUSH-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 argv has one Prompt flag",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-044",
+      "evidence": "PUSH-02 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 Prompt path",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-045",
+      "evidence": "PUSH-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 Prompt bytes",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-046",
+      "evidence": "PUSH-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 Prompt SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-047",
+      "evidence": "PUSH-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 Prompt terminal LF",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-048",
+      "evidence": "PUSH-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 text duty",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-049",
+      "evidence": "PUSH-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 motion duty",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-050",
+      "evidence": "PUSH-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 argv carries exact Prompt",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-051",
+      "evidence": "PUSH-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 argv has one Prompt flag",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-052",
+      "evidence": "PUSH-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 Prompt path",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-053",
+      "evidence": "IMPACT-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 Prompt bytes",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-054",
+      "evidence": "IMPACT-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 Prompt SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-055",
+      "evidence": "IMPACT-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 Prompt terminal LF",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-056",
+      "evidence": "IMPACT-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 text duty",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-057",
+      "evidence": "IMPACT-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 motion duty",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-058",
+      "evidence": "IMPACT-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 argv carries exact Prompt",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-059",
+      "evidence": "IMPACT-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 argv has one Prompt flag",
+      "blocking_severity": "BLOCKING",
+      "category": "common_prompt_and_duty_separation",
+      "check_id": "B-060",
+      "evidence": "IMPACT-03 package in-memory validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH reference bytes",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-001",
+      "evidence": "174235",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH reference SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-002",
+      "evidence": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH reference blob",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-003",
+      "evidence": "d5cfb6ab1d17163d4b9d6174c633af627d4ee866",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT reference bytes",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-004",
+      "evidence": "168170",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT reference SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-005",
+      "evidence": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT reference blob",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-006",
+      "evidence": "8aaa470f8485b9aa59cff057c6a143ed765df7ad",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 reference_id",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-007",
+      "evidence": "ACTION_REF_PUSH_02",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 reference_path",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-008",
+      "evidence": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 reference_sha256",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-009",
+      "evidence": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 reference_upload_binding",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-010",
+      "evidence": "EXACT_ONE_LOCAL_VIDEO_REFERENCE_PUSH_ONLY",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 reference_id",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-011",
+      "evidence": "ACTION_REF_IMPACT_02",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 reference_path",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-012",
+      "evidence": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 reference_sha256",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-013",
+      "evidence": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 reference_upload_binding",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-014",
+      "evidence": "EXACT_ONE_LOCAL_VIDEO_REFERENCE_IMPACT_ONLY",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 reference_id",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-015",
+      "evidence": "ACTION_REF_IMPACT_02",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 reference_path",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-016",
+      "evidence": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 reference_sha256",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-017",
+      "evidence": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 reference_upload_binding",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-018",
+      "evidence": "EXACT_ONE_LOCAL_VIDEO_REFERENCE_IMPACT_ONLY",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 reference_id",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-019",
+      "evidence": "ACTION_REF_PUSH_02",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 reference_path",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-020",
+      "evidence": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 reference_sha256",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-021",
+      "evidence": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 reference_upload_binding",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-022",
+      "evidence": "EXACT_ONE_LOCAL_VIDEO_REFERENCE_PUSH_ONLY",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 reference_id",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-023",
+      "evidence": "ACTION_REF_PUSH_02",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 reference_path",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-024",
+      "evidence": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 reference_sha256",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-025",
+      "evidence": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 reference_upload_binding",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-026",
+      "evidence": "EXACT_ONE_LOCAL_VIDEO_REFERENCE_PUSH_ONLY",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 reference_id",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-027",
+      "evidence": "ACTION_REF_IMPACT_02",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 reference_path",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-028",
+      "evidence": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 reference_sha256",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-029",
+      "evidence": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 reference_upload_binding",
+      "blocking_severity": "BLOCKING",
+      "category": "reference_integrity",
+      "check_id": "C-030",
+      "evidence": "EXACT_ONE_LOCAL_VIDEO_REFERENCE_IMPACT_ONLY",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 strict JSON",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-001",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 task identity",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-002",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 family",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-003",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 replicate index",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-004",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 ordinal pair",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-005",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 submission position",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-006",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 Prompt path",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-007",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 Prompt bytes",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-008",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 Prompt SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-009",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 model",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-010",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 ratio",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-011",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 duration",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-012",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 resolution",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-013",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 video count",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-014",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 reference ID",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-015",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 reference path",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-016",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 reference SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-017",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 reference upload binding",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-018",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 future argv list form",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-019",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 shell=false",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-020",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 one Prompt flag",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-021",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 one video flag",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-022",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 no download/output flags",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-023",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 live authority false",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-024",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 strict JSON",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-025",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 task identity",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-026",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 family",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-027",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 replicate index",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-028",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 ordinal pair",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-029",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 submission position",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-030",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 Prompt path",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-031",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 Prompt bytes",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-032",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 Prompt SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-033",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 model",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-034",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 ratio",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-035",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 duration",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-036",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 resolution",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-037",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 video count",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-038",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 reference ID",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-039",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 reference path",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-040",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 reference SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-041",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 reference upload binding",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-042",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 future argv list form",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-043",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 shell=false",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-044",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 one Prompt flag",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-045",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 one video flag",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-046",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 no download/output flags",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-047",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 live authority false",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-048",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 strict JSON",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-049",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 task identity",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-050",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 family",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-051",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 replicate index",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-052",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 ordinal pair",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-053",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 submission position",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-054",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 Prompt path",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-055",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 Prompt bytes",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-056",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 Prompt SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-057",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 model",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-058",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 ratio",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-059",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 duration",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-060",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 resolution",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-061",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 video count",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-062",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 reference ID",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-063",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 reference path",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-064",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 reference SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-065",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 reference upload binding",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-066",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 future argv list form",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-067",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 shell=false",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-068",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 one Prompt flag",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-069",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 one video flag",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-070",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 no download/output flags",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-071",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 live authority false",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-072",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 strict JSON",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-073",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 task identity",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-074",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 family",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-075",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 replicate index",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-076",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 ordinal pair",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-077",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 submission position",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-078",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 Prompt path",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-079",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 Prompt bytes",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-080",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 Prompt SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-081",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 model",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-082",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 ratio",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-083",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 duration",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-084",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 resolution",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-085",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 video count",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-086",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 reference ID",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-087",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 reference path",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-088",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 reference SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-089",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 reference upload binding",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-090",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 future argv list form",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-091",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 shell=false",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-092",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 one Prompt flag",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-093",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 one video flag",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-094",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 no download/output flags",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-095",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 live authority false",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-096",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 strict JSON",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-097",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 task identity",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-098",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 family",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-099",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 replicate index",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-100",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 ordinal pair",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-101",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 submission position",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-102",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 Prompt path",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-103",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 Prompt bytes",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-104",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 Prompt SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-105",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 model",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-106",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 ratio",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-107",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 duration",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-108",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 resolution",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-109",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 video count",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-110",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 reference ID",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-111",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 reference path",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-112",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 reference SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-113",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 reference upload binding",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-114",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 future argv list form",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-115",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 shell=false",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-116",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 one Prompt flag",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-117",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 one video flag",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-118",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 no download/output flags",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-119",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 live authority false",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-120",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 strict JSON",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-121",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 task identity",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-122",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 family",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-123",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 replicate index",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-124",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 ordinal pair",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-125",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 submission position",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-126",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 Prompt path",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-127",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 Prompt bytes",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-128",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 Prompt SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-129",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 model",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-130",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 ratio",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-131",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 duration",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-132",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 resolution",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-133",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 video count",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-134",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 reference ID",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-135",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 reference path",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-136",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 reference SHA",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-137",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 reference upload binding",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-138",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 future argv list form",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-139",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 shell=false",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-140",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 one Prompt flag",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-141",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 one video flag",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-142",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 no download/output flags",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-143",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 live authority false",
+      "blocking_severity": "BLOCKING",
+      "category": "six_task_package_and_future_argv",
+      "check_id": "D-144",
+      "evidence": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json in-memory package",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 PUSH provider equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-001",
+      "evidence": "equals PUSH-01",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 PUSH provider equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-002",
+      "evidence": "equals PUSH-01",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 PUSH provider equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-003",
+      "evidence": "equals PUSH-01",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 IMPACT provider equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-004",
+      "evidence": "equals IMPACT-01",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 IMPACT provider equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-005",
+      "evidence": "equals IMPACT-01",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 IMPACT provider equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-006",
+      "evidence": "equals IMPACT-01",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 PUSH argv equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-007",
+      "evidence": "equals PUSH-01",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 PUSH argv equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-008",
+      "evidence": "equals PUSH-01",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 PUSH argv equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-009",
+      "evidence": "equals PUSH-01",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 IMPACT argv equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-010",
+      "evidence": "equals IMPACT-01",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 IMPACT argv equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-011",
+      "evidence": "equals IMPACT-01",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 IMPACT argv equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-012",
+      "evidence": "equals IMPACT-01",
+      "result": "PASS"
+    },
+    {
+      "assertion": "cross-family pointer /reference_binding/reference_id",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-013",
+      "evidence": "/reference_binding/reference_id",
+      "result": "PASS"
+    },
+    {
+      "assertion": "cross-family pointer /reference_binding/reference_path",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-014",
+      "evidence": "/reference_binding/reference_path",
+      "result": "PASS"
+    },
+    {
+      "assertion": "cross-family pointer /reference_binding/reference_sha256",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-015",
+      "evidence": "/reference_binding/reference_sha256",
+      "result": "PASS"
+    },
+    {
+      "assertion": "cross-family pointer /reference_binding/reference_upload_binding",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-016",
+      "evidence": "/reference_binding/reference_upload_binding",
+      "result": "PASS"
+    },
+    {
+      "assertion": "cross-family differing pointer set exact",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-017",
+      "evidence": "/reference_binding/reference_id,/reference_binding/reference_path,/reference_binding/reference_sha256,/reference_binding/reference_upload_binding",
+      "result": "PASS"
+    },
+    {
+      "assertion": "non-allowlisted Provider differences zero",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-018",
+      "evidence": "0",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 Prompt byte identity",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-019",
+      "evidence": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 Prompt byte identity",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-020",
+      "evidence": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 Prompt byte identity",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-021",
+      "evidence": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 Prompt byte identity",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-022",
+      "evidence": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 Prompt byte identity",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-023",
+      "evidence": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 Prompt byte identity",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-024",
+      "evidence": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-01 non-reference equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-025",
+      "evidence": "non-reference payload equals baseline",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-01 non-reference equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-026",
+      "evidence": "non-reference payload equals baseline",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-02 non-reference equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-027",
+      "evidence": "non-reference payload equals baseline",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-02 non-reference equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-028",
+      "evidence": "non-reference payload equals baseline",
+      "result": "PASS"
+    },
+    {
+      "assertion": "PUSH-03 non-reference equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-029",
+      "evidence": "non-reference payload equals baseline",
+      "result": "PASS"
+    },
+    {
+      "assertion": "IMPACT-03 non-reference equality",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-030",
+      "evidence": "non-reference payload equals baseline",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 1 replicate metadata excluded",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-031",
+      "evidence": "provider payload has no replicate keys",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 2 replicate metadata excluded",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-032",
+      "evidence": "provider payload has no replicate keys",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 3 replicate metadata excluded",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-033",
+      "evidence": "provider payload has no replicate keys",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 1 blind metadata excluded",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-034",
+      "evidence": "provider payload and argv have no blind alias",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 2 blind metadata excluded",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-035",
+      "evidence": "provider payload and argv have no blind alias",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 3 blind metadata excluded",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-036",
+      "evidence": "provider payload and argv have no blind alias",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 1 task ID excluded",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-037",
+      "evidence": "task IDs absent from payload and argv",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 2 task ID excluded",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-038",
+      "evidence": "task IDs absent from payload and argv",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 3 task ID excluded",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-039",
+      "evidence": "task IDs absent from payload and argv",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 1 submission position excluded",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-040",
+      "evidence": "submission_position key absent from payload and argv",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 2 submission position excluded",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-041",
+      "evidence": "submission_position key absent from payload and argv",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 3 submission position excluded",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-042",
+      "evidence": "submission_position key absent from payload and argv",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 1 reference cross-contamination absent",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-043",
+      "evidence": "ACTION_REF_PUSH_02 / ACTION_REF_IMPACT_02",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 2 reference cross-contamination absent",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-044",
+      "evidence": "ACTION_REF_PUSH_02 / ACTION_REF_IMPACT_02",
+      "result": "PASS"
+    },
+    {
+      "assertion": "pair 3 reference cross-contamination absent",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-045",
+      "evidence": "ACTION_REF_PUSH_02 / ACTION_REF_IMPACT_02",
+      "result": "PASS"
+    },
+    {
+      "assertion": "task identity uniqueness",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-046",
+      "evidence": "6 unique task IDs",
+      "result": "PASS"
+    },
+    {
+      "assertion": "ordinal pair completeness",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-047",
+      "evidence": "pairs 1,2,3 each have PUSH and IMPACT",
+      "result": "PASS"
+    },
+    {
+      "assertion": "family replicate completeness",
+      "blocking_severity": "BLOCKING",
+      "category": "equality_isolation_and_repeatability",
+      "check_id": "E-048",
+      "evidence": "PUSH=3 IMPACT=3",
+      "result": "PASS"
+    },
+    {
+      "assertion": "submission order count",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-001",
+      "evidence": "6",
+      "result": "PASS"
+    },
+    {
+      "assertion": "position 1",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-002",
+      "evidence": "PUSH-01",
+      "result": "PASS"
+    },
+    {
+      "assertion": "position 2",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-003",
+      "evidence": "IMPACT-01",
+      "result": "PASS"
+    },
+    {
+      "assertion": "position 3",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-004",
+      "evidence": "IMPACT-02",
+      "result": "PASS"
+    },
+    {
+      "assertion": "position 4",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-005",
+      "evidence": "PUSH-02",
+      "result": "PASS"
+    },
+    {
+      "assertion": "position 5",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-006",
+      "evidence": "PUSH-03",
+      "result": "PASS"
+    },
+    {
+      "assertion": "position 6",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-007",
+      "evidence": "IMPACT-03",
+      "result": "PASS"
+    },
+    {
+      "assertion": "parallelism zero",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-008",
+      "evidence": "0",
+      "result": "PASS"
+    },
+    {
+      "assertion": "maximum in-flight one",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-009",
+      "evidence": "1",
+      "result": "PASS"
+    },
+    {
+      "assertion": "submit ceiling six",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-010",
+      "evidence": "6",
+      "result": "PASS"
+    },
+    {
+      "assertion": "automatic continuation false",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-011",
+      "evidence": "False",
+      "result": "PASS"
+    },
+    {
+      "assertion": "failure stops later submissions",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-012",
+      "evidence": "True",
+      "result": "PASS"
+    },
+    {
+      "assertion": "query gate separate",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-013",
+      "evidence": "True",
+      "result": "PASS"
+    },
+    {
+      "assertion": "download gate separate",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-014",
+      "evidence": "True",
+      "result": "PASS"
+    },
+    {
+      "assertion": "unit credit ceiling",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-015",
+      "evidence": "160",
+      "result": "PASS"
+    },
+    {
+      "assertion": "total credit ceiling",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-016",
+      "evidence": "960",
+      "result": "PASS"
+    },
+    {
+      "assertion": "budget inactive",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-017",
+      "evidence": "false",
+      "result": "PASS"
+    },
+    {
+      "assertion": "fresh runtime credit and Help required",
+      "blocking_severity": "BLOCKING",
+      "category": "submission_order_and_budget",
+      "check_id": "F-018",
+      "evidence": "true/true",
+      "result": "PASS"
+    },
+    {
+      "assertion": "mapping status",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-001",
+      "evidence": "NOT_MATERIALIZED",
+      "result": "PASS"
+    },
+    {
+      "assertion": "mapping not materialized",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-002",
+      "evidence": "False",
+      "result": "PASS"
+    },
+    {
+      "assertion": "blind alias count",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-003",
+      "evidence": "6",
+      "result": "PASS"
+    },
+    {
+      "assertion": "blind aliases exact",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-004",
+      "evidence": "B01,B02,B03,B04,B05,B06",
+      "result": "PASS"
+    },
+    {
+      "assertion": "blind aliases unique",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-005",
+      "evidence": "6 unique",
+      "result": "PASS"
+    },
+    {
+      "assertion": "mapping generation phase",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-006",
+      "evidence": "AFTER_ALL_SIX_DOWNLOADS_AND_TECHNICAL_VALIDATIONS_BEFORE_VISUAL_REVIEW",
+      "result": "PASS"
+    },
+    {
+      "assertion": "secure permutation future step",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-007",
+      "evidence": "present",
+      "result": "PASS"
+    },
+    {
+      "assertion": "salt minimum 32",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-008",
+      "evidence": "32",
+      "result": "PASS"
+    },
+    {
+      "assertion": "commitment formula",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-009",
+      "evidence": "SHA256(CANONICAL_MAPPING_BYTES + LF + LOWERCASE_SALT_HEX_BYTES)",
+      "result": "PASS"
+    },
+    {
+      "assertion": "plaintext mapping sealed externally",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-010",
+      "evidence": "HUMAN_CONTROLLED_SEALED_PACKAGE_OUTSIDE_REVIEW_VISIBLE_REPOSITORY",
+      "result": "PASS"
+    },
+    {
+      "assertion": "reviewer filenames blind",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-011",
+      "evidence": "family/reference/replicate names removed",
+      "result": "PASS"
+    },
+    {
+      "assertion": "complete MP4 mandatory",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-012",
+      "evidence": "True",
+      "result": "PASS"
+    },
+    {
+      "assertion": "dual-signature scoring",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-013",
+      "evidence": "PUSH and IMPACT",
+      "result": "PASS"
+    },
+    {
+      "assertion": "freeze before unblinding",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-014",
+      "evidence": "required",
+      "result": "PASS"
+    },
+    {
+      "assertion": "reveal after freeze",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-015",
+      "evidence": "required",
+      "result": "PASS"
+    },
+    {
+      "assertion": "own/cross after unblinding",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-016",
+      "evidence": "FORBIDDEN",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Gates after unblinding",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-017",
+      "evidence": "required",
+      "result": "PASS"
+    },
+    {
+      "assertion": "contact sheets assistance and fresh authorization",
+      "blocking_severity": "BLOCKING",
+      "category": "blind_review_and_derivation",
+      "check_id": "G-018",
+      "evidence": "ASSISTANCE_ONLY / true",
+      "result": "PASS"
+    },
+    {
+      "assertion": "planned path count",
+      "blocking_severity": "BLOCKING",
+      "category": "governance_sensitive_data_and_output_paths",
+      "check_id": "H-001",
+      "evidence": "16",
+      "result": "PASS"
+    },
+    {
+      "assertion": "unexpected planned paths zero",
+      "blocking_severity": "BLOCKING",
+      "category": "governance_sensitive_data_and_output_paths",
+      "check_id": "H-002",
+      "evidence": "0",
+      "result": "PASS"
+    },
+    {
+      "assertion": "sensitive-data scan",
+      "blocking_severity": "BLOCKING",
+      "category": "governance_sensitive_data_and_output_paths",
+      "check_id": "H-003",
+      "evidence": "PASS",
+      "result": "PASS"
+    },
+    {
+      "assertion": "raw Provider output persisted false",
+      "blocking_severity": "BLOCKING",
+      "category": "governance_sensitive_data_and_output_paths",
+      "check_id": "H-004",
+      "evidence": "false",
+      "result": "PASS"
+    },
+    {
+      "assertion": "signed URL persisted false",
+      "blocking_severity": "BLOCKING",
+      "category": "governance_sensitive_data_and_output_paths",
+      "check_id": "H-005",
+      "evidence": "false",
+      "result": "PASS"
+    },
+    {
+      "assertion": "private account data persisted false",
+      "blocking_severity": "BLOCKING",
+      "category": "governance_sensitive_data_and_output_paths",
+      "check_id": "H-006",
+      "evidence": "false",
+      "result": "PASS"
+    },
+    {
+      "assertion": "blind mapping persisted false",
+      "blocking_severity": "BLOCKING",
+      "category": "governance_sensitive_data_and_output_paths",
+      "check_id": "H-007",
+      "evidence": "false",
+      "result": "PASS"
+    },
+    {
+      "assertion": "blind salt persisted false",
+      "blocking_severity": "BLOCKING",
+      "category": "governance_sensitive_data_and_output_paths",
+      "check_id": "H-008",
+      "evidence": "false",
+      "result": "PASS"
+    },
+    {
+      "assertion": "live authority false",
+      "blocking_severity": "BLOCKING",
+      "category": "governance_sensitive_data_and_output_paths",
+      "check_id": "H-009",
+      "evidence": "false",
+      "result": "PASS"
+    },
+    {
+      "assertion": "production approval false",
+      "blocking_severity": "BLOCKING",
+      "category": "governance_sensitive_data_and_output_paths",
+      "check_id": "H-010",
+      "evidence": "false",
+      "result": "PASS"
+    },
+    {
+      "assertion": "C02/C03/R02 governance preserved",
+      "blocking_severity": "BLOCKING",
+      "category": "governance_sensitive_data_and_output_paths",
+      "check_id": "H-011",
+      "evidence": "C02 not reopened; C03 false; R02 blocked",
+      "result": "PASS"
+    },
+    {
+      "assertion": "protected existing state immutable",
+      "blocking_severity": "BLOCKING",
+      "category": "governance_sensitive_data_and_output_paths",
+      "check_id": "H-012",
+      "evidence": "only exact 16 new paths may differ",
+      "result": "PASS"
+    }
+  ],
+  "execution_id": "CAL003-REFERENCE-CONTROL-REPEATABILITY-R1-NO-LIVE-DESIGN-V0-1",
+  "failed_check_count": 0,
+  "goal_identity": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_SIX_TASK_NO_LIVE_DESIGN_AND_STATIC_AUDIT_V0_1",
+  "overall_result": "PASS",
+  "passed_check_count": 360,
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_STATIC_AUDIT_V0_1",
+  "skipped_check_count": 0,
+  "warning_check_count": 0
+}

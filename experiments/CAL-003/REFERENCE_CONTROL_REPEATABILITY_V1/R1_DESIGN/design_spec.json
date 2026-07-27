@@ -1,0 +1,201 @@
+{
+  "blind_review_design": {
+    "aliases": [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "complete_mp4_review_mandatory": true,
+    "mapping_materialized": false,
+    "mapping_reveal_after_review_freeze": true,
+    "own_cross_derivation_after_unblinding": true
+  },
+  "controlled_variables": {
+    "all_non_reference_provider_fields": "BYTE_IDENTICAL",
+    "duration_seconds": 5,
+    "future_async_poll": 0,
+    "model_version": "seedance2.0_vip",
+    "one_local_video_reference_per_task": true,
+    "prompt_bytes": 2010,
+    "prompt_sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d",
+    "prompt_terminal_lf": true,
+    "ratio": "16:9",
+    "requested_video_count": 1,
+    "video_resolution": "720p"
+  },
+  "decision_boundaries": {
+    "automatic_decision": false,
+    "automatic_expansion": false,
+    "fresh_human_decision_required": true,
+    "maximum_positive_result": "CAL003_R1_INITIAL_WITHIN_PAIR_REPEATABILITY_EVIDENCE_ESTABLISHED_REQUIRES_NEXT_EXPERIMENT_HUMAN_DECISION",
+    "must_not_establish": [
+      "GENERALIZED_PROVIDER_RELIABILITY",
+      "PRODUCTION_READINESS",
+      "UNIVERSAL_MOTION_ONLY_REFERENCE_CONTRACT",
+      "CROSS_ACTION_FAMILY_GENERALIZATION",
+      "CROSS_SCENE_GENERALIZATION",
+      "DETERMINISTIC_PROVIDER_BEHAVIOR"
+    ]
+  },
+  "dependent_variables": [
+    "technically_valid_complete_mp4",
+    "complete_mp4_reviewed",
+    "push_signature_score",
+    "impact_signature_score",
+    "assigned_own_reference_signature_score_after_unblinding",
+    "assigned_cross_reference_signature_score_after_unblinding",
+    "reference_specificity_margin_after_unblinding",
+    "sample_pass",
+    "family_repeatability_pass",
+    "ordinal_pair_observably_differentiated",
+    "material_copy_sentinel_count",
+    "reference_ignored",
+    "reference_role_conflict",
+    "action_family_failure"
+  ],
+  "evidence_basis": {
+    "cal002_bounded_capability_established": true,
+    "cal002_final_decision": "ROUTE_A_BOUNDED_REFERENCE_SPECIFIC_MOTION_DIFFERENTIATION_CAPABILITY_ESTABLISHED_IN_C02_BUT_NOT_GENERALIZED_TO_PRODUCTION",
+    "generalized_reliability_unproven": true,
+    "provider_stochasticity_remaining": true
+  },
+  "experiment_identity": {
+    "design_id": "CAL003-REFERENCE-CONTROL-REPEATABILITY-R1",
+    "experiment_id": "CAL-003",
+    "program": "REFERENCE_CONTROL_REPEATABILITY_V1",
+    "round": "R1"
+  },
+  "family_repeatability_gate": {
+    "all_six_material_sentinel_count": 0,
+    "minimum_family_median_margin": 3,
+    "minimum_family_median_own_score": 8,
+    "minimum_sample_passes_per_family": 2,
+    "reference_ignored_maximum_per_family": 1,
+    "rights_and_provenance_valid": true
+  },
+  "future_budget_design": {
+    "active": false,
+    "fresh_runtime_credit_required": true,
+    "fresh_runtime_model_help_required": true,
+    "maximum_total_decrement": 960,
+    "maximum_unit_credit_decrement": 160
+  },
+  "future_operation_gates": {
+    "automatic_continuation": false,
+    "batch_authority": false,
+    "download_gate_separate": true,
+    "live_authority": false,
+    "query_gate_separate": true,
+    "retry_authority": false,
+    "submit_gate_separate": true
+  },
+  "governance": {
+    "C02_reopened": false,
+    "C03_authorized": false,
+    "R02_authorized": false,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "locked": false,
+    "production_approved": false,
+    "production_reentry_authorized": false
+  },
+  "hypothesis": "A fixed family-specific motion reference will produce repeatable reference-specific differentiation in at least two of three replicates per family while preserving the controlled Prompt and non-reference Provider fields.",
+  "independent_variables": {
+    "family_assignment": "PUSH_OR_IMPACT_REFERENCE_BINDING",
+    "replicate_outcome": "PROVIDER_STOCHASTIC_REPLICATE_OUTCOME_UNDER_A_FIXED_FAMILY_SPECIFIC_REFERENCE"
+  },
+  "null_hypothesis": "Observed CAL-002 differentiation does not repeat reliably across three replicates per family under the fixed design.",
+  "ordinal_pair_gate": {
+    "minimum_observably_differentiated_pairs": 2,
+    "pair_count": 3,
+    "pairing": [
+      [
+        "PUSH-01",
+        "IMPACT-01"
+      ],
+      [
+        "PUSH-02",
+        "IMPACT-02"
+      ],
+      [
+        "PUSH-03",
+        "IMPACT-03"
+      ]
+    ]
+  },
+  "provider_payload_contract": {
+    "allowed_cross_family_differences": [
+      "/reference_binding/reference_id",
+      "/reference_binding/reference_path",
+      "/reference_binding/reference_sha256",
+      "/reference_binding/reference_upload_binding"
+    ],
+    "blind_metadata_excluded": true,
+    "non_allowlisted_difference_count": 0,
+    "replicate_metadata_excluded": true,
+    "within_family_future_argv_byte_identical": true,
+    "within_family_provider_payload_byte_identical": true
+  },
+  "reference_duty_contract": {
+    "prompt_duty": "IDENTITY_CLOTHING_SCENE_CAMERA_COMPOSITION_LIGHTING_VISUAL_STYLE_AND_SAFETY_ONLY",
+    "reference_duty": "COMPLETE_MOTION_SEQUENCE_TEMPORAL_RHYTHM_SPACING_COORDINATION_AND_PHYSICAL_INTERACTION_ONLY",
+    "reference_must_not_control": [
+      "identity",
+      "face",
+      "body_appearance",
+      "colors",
+      "clothing",
+      "scene",
+      "background",
+      "camera",
+      "lighting",
+      "visual_style"
+    ]
+  },
+  "replicate_structure": {
+    "family_replicate_count": 3,
+    "impact_tasks": [
+      "IMPACT-01",
+      "IMPACT-02",
+      "IMPACT-03"
+    ],
+    "push_tasks": [
+      "PUSH-01",
+      "PUSH-02",
+      "PUSH-03"
+    ],
+    "total_task_count": 6
+  },
+  "sample_pass_gate": {
+    "action_family_failure": false,
+    "complete_mp4_reviewed": true,
+    "material_sentinel_count": 0,
+    "minimum_own_score": 8,
+    "minimum_specificity_margin": 3,
+    "reference_role_conflict": false,
+    "technically_valid_complete_mp4": true
+  },
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_DESIGN_SPEC_V0_1",
+  "scientific_question": "Under byte-identical text Prompts, identical non-reference Provider fields, and unchanged PUSH or IMPACT motion references, does reference-specific motion differentiation repeat across three independently generated replicates per family?",
+  "submission_order_rationale": {
+    "fixed_order": [
+      "PUSH-01",
+      "IMPACT-01",
+      "IMPACT-02",
+      "PUSH-02",
+      "PUSH-03",
+      "IMPACT-03"
+    ],
+    "goals": [
+      "INTERLEAVE_FAMILIES",
+      "AVOID_THREE_CONSECUTIVE_FAMILY_SUBMISSIONS",
+      "REDUCE_SIMPLE_MONOTONIC_TEMPORAL_DRIFT",
+      "PRESERVE_THREE_ORDINAL_ANALYSIS_PAIRS",
+      "AVOID_PARALLEL_ENVIRONMENT_CONFOUNDS"
+    ],
+    "parallelism": 0
+  }
+}

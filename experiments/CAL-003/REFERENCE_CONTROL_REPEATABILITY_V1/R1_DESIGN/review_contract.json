@@ -1,0 +1,148 @@
+{
+  "allowed_decisions": [
+    "CAL003_R1_INITIAL_WITHIN_PAIR_REPEATABILITY_EVIDENCE_ESTABLISHED_REQUIRES_NEXT_EXPERIMENT_HUMAN_DECISION",
+    "CAL003_R1_MIXED_REPEATABILITY_SIGNAL_REQUIRES_HUMAN_DECISION",
+    "CAL003_R1_REFERENCE_IGNORED_REPEATABILITY_BLOCK",
+    "CAL003_R1_REFERENCE_OVERDOMINANT_BLOCK",
+    "CAL003_R1_REFERENCE_ROLE_CONFLICT_BLOCK",
+    "CAL003_R1_ACTION_FAMILY_FAILURE_BLOCK",
+    "CAL003_R1_TECHNICAL_FAILURE_NEEDS_SEPARATE_DECISION",
+    "CAL003_R1_RIGHTS_OR_PROVENANCE_BLOCK"
+  ],
+  "automatic_decision": false,
+  "automatic_expansion": false,
+  "complete_mp4_review_mandatory": true,
+  "contact_sheets_role": "ASSISTANCE_ONLY",
+  "family_repeatability_gate": {
+    "all_six_material_sentinel_count": 0,
+    "minimum_median_margin_each_family": 3,
+    "minimum_median_own_score_each_family": 8,
+    "minimum_sample_passes_each_family": 2,
+    "reference_ignored_maximum_each_family": 1,
+    "rights_and_provenance_valid": true
+  },
+  "fresh_human_decision_required": true,
+  "material_copy_sentinels": [
+    {
+      "required_fields": [
+        "present",
+        "material",
+        "evidence_rationale"
+      ],
+      "sentinel": "CONTACT_MARKER_COPY"
+    },
+    {
+      "required_fields": [
+        "present",
+        "material",
+        "evidence_rationale"
+      ],
+      "sentinel": "MANNEQUIN_STYLE_COPY"
+    },
+    {
+      "required_fields": [
+        "present",
+        "material",
+        "evidence_rationale"
+      ],
+      "sentinel": "GRID_SCENE_COPY"
+    },
+    {
+      "required_fields": [
+        "present",
+        "material",
+        "evidence_rationale"
+      ],
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+    }
+  ],
+  "ordinal_matched_pair_gate": {
+    "conditions": [
+      "BOTH_SAMPLES_TECHNICALLY_VALID",
+      "BOTH_COMPLETE_MP4S_REVIEWED",
+      "BOTH_SAMPLES_PASS_ASSIGNED_SAMPLE_GATE",
+      "MATERIALLY_DISTINGUISHABLE_FAMILY_SIGNATURE_BEHAVIOR",
+      "NO_REFERENCE_ROLE_CONFLICT",
+      "NO_MATERIAL_SENTINEL"
+    ],
+    "minimum_observably_differentiated_pairs": 2,
+    "pair_count": 3
+  },
+  "positive_result_interpretation": "CAL003_R1_INITIAL_WITHIN_PAIR_REPEATABILITY_EVIDENCE_ESTABLISHED_REQUIRES_NEXT_EXPERIMENT_HUMAN_DECISION",
+  "positive_result_must_not_authorize": [
+    "ANOTHER_ROUND",
+    "NEW_ACTION_FAMILIES",
+    "PRODUCTION",
+    "SOURCE_PROMOTION",
+    "C03",
+    "R02",
+    "RETRY",
+    "RESUBMIT",
+    "REDOWNLOAD",
+    "FINAL_MASTER",
+    "LOCK"
+  ],
+  "pre_unblinding_review_fields": [
+    "push_signature_score_0_to_12",
+    "impact_signature_score_0_to_12",
+    "dimension_level_evidence",
+    "complete_mp4_timeline",
+    "technical_validity_binding",
+    "reference_ignored_observation",
+    "reference_overdominance_observation",
+    "reference_role_conflict_observation",
+    "action_family_failure_observation",
+    "four_material_copy_sentinels",
+    "limitations"
+  ],
+  "reference_signatures": {
+    "ACTION_REF_IMPACT_02": [
+      "preparation",
+      "non-contact feint or compact approach",
+      "one brief torso-directed interaction",
+      "immediate upper-body recoil",
+      "one rear-foot recoil step",
+      "prompt retraction",
+      "recovery and repositioning",
+      "active full-duration ending"
+    ],
+    "ACTION_REF_PUSH_02": [
+      "preparation and approach",
+      "one two-hand torso-directed interaction",
+      "receiver torso displacement after the interaction",
+      "one rear-foot recovery placement",
+      "release or retraction",
+      "recovery and repositioning",
+      "active full-duration ending"
+    ]
+  },
+  "sample_pass_gate": {
+    "action_family_failure": false,
+    "complete_mp4_reviewed": true,
+    "material_sentinel_count": 0,
+    "minimum_own_reference_signature_score": 8,
+    "minimum_reference_specificity_margin": 3,
+    "reference_role_conflict": false,
+    "technically_valid_complete_mp4": true
+  },
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_REVIEW_CONTRACT_V0_1",
+  "score_derivation_after_unblinding": {
+    "cross_reference_signature_score": "ASSIGNED_CROSS_FAMILY_SCORE",
+    "own_reference_signature_score": "ASSIGNED_FAMILY_SCORE",
+    "reference_specificity_margin": "OWN_MINUS_CROSS"
+  },
+  "scored_motion_dimensions": [
+    "initiation_pattern",
+    "approach_or_setup_pattern",
+    "primary_limb_configuration",
+    "primary_interaction_character",
+    "interaction_episode_count",
+    "receiver_response_direction",
+    "torso_response_type",
+    "rear_foot_result_type",
+    "release_or_retraction_pattern",
+    "recovery_and_repositioning",
+    "temporal_ordering",
+    "duration_utilization_and_final_phase_activity"
+  ]
+}

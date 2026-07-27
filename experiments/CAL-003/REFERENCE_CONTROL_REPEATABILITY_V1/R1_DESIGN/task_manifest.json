@@ -1,0 +1,266 @@
+{
+  "artifact_binding_boundary": "TASK_MANIFEST_BINDS_PROMPT_PACKAGES_AND_PREEXISTING_PROSPECTIVE_DESIGN_ARTIFACTS; SELF_STATIC_AUDIT_AND_EVIDENCE_MANIFEST_ARE_BOUND_BY_THE_FINAL_EVIDENCE_MANIFEST_TO_AVOID_HASH_CYCLES",
+  "experiment_id": "CAL-003",
+  "future_argv_equality": {
+    "impact": "3/3",
+    "push": "3/3"
+  },
+  "live_authority": false,
+  "program": "REFERENCE_CONTROL_REPEATABILITY_V1",
+  "prompt_binding": {
+    "bytes": 2010,
+    "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/prompts/common.txt",
+    "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+  },
+  "prospective_design_artifact_bindings": [
+    {
+      "bytes": 2017,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/blind_review_protocol.json",
+      "sha256": "0fa75644c2067f8a42c3e689c558fd27618a6297d8010d7b6e1f8c628886e614"
+    },
+    {
+      "bytes": 6626,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/design_spec.json",
+      "sha256": "4525038bdf8bad37f34ea772b103150d36c28a367103739e63968cce1a6402b7"
+    },
+    {
+      "bytes": 9428,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/human_decision.json",
+      "sha256": "cd3a986259a6c86fbb310856f63278085f099ec31b735fd9bbd71e804cb74f35"
+    },
+    {
+      "bytes": 4419,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json",
+      "sha256": "c6731efcb812606936441ddb8373b6661880a2f1247b712e5fc50c1f4897eff3"
+    },
+    {
+      "bytes": 4419,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json",
+      "sha256": "1394679054aeb6f55624a62fb0f9eb7240723ec5fab73931ca60d1a613b80af2"
+    },
+    {
+      "bytes": 4419,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json",
+      "sha256": "3852f0980377d4f23812699773333fe5bbf7c0b49f339da521d8d41a012b8355"
+    },
+    {
+      "bytes": 4405,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json",
+      "sha256": "a5223677e136143e1bf35d88e1d6c4fec32482c6deef2e00c3a6757f76af87f4"
+    },
+    {
+      "bytes": 4405,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json",
+      "sha256": "42100a035729f9e3b0ac27bbdb5ed06ab1d96cade0e5679fcfc2adc97a6434c2"
+    },
+    {
+      "bytes": 4405,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json",
+      "sha256": "5b82f70bb231c0486de04de2f97310fdd735479aa1ea844689b1116cebbd4883"
+    },
+    {
+      "bytes": 2010,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/prompts/common.txt",
+      "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+    },
+    {
+      "bytes": 4609,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/review_contract.json",
+      "sha256": "e8855d71ddc39efc07f8db7317d770d76c0ffbda829cee55fde662e18b26c8f4"
+    },
+    {
+      "bytes": 1638,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/submission_order.json",
+      "sha256": "af3401122c5847aab9158c445768e99a6eb65602384c5342489b74026f785d1a"
+    },
+    {
+      "bytes": 6594,
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_NO_LIVE_DESIGN_RESULT.md",
+      "sha256": "c452b5d9d9267d942e40c4cfb19a825cd8e667462d6a3a629ee6b4c28c3f576d"
+    }
+  ],
+  "provider_payload_equality": {
+    "allowed_cross_family_differing_pointers": [
+      "/reference_binding/reference_id",
+      "/reference_binding/reference_path",
+      "/reference_binding/reference_sha256",
+      "/reference_binding/reference_upload_binding"
+    ],
+    "impact": "3/3",
+    "non_allowlisted_difference_count": 0,
+    "push": "3/3"
+  },
+  "round": "R1",
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_TASK_MANIFEST_V0_1",
+  "task_count": 6,
+  "tasks": [
+    {
+      "blind_alias": null,
+      "download_state": null,
+      "family": "PUSH",
+      "future_argv_canonical_sha256": "d8836d007a57abde39fff545597e5ce8b3441e8fddb489e066455be4dd693010",
+      "live_authority": false,
+      "ordinal_pair_index": 1,
+      "package_bytes": 4405,
+      "package_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_01.json",
+      "package_sha256": "a5223677e136143e1bf35d88e1d6c4fec32482c6deef2e00c3a6757f76af87f4",
+      "prompt_binding": {
+        "bytes": 2010,
+        "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/prompts/common.txt",
+        "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+      },
+      "provider_payload_canonical_sha256": "a9b0e8acc9992169db29df3fb2660af3e3cdefcc5f7eef591b4fa885bc9e2ecc",
+      "query_state": null,
+      "reference_binding": {
+        "reference_id": "ACTION_REF_PUSH_02",
+        "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+        "reference_sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+        "reference_upload_binding": "EXACT_ONE_LOCAL_VIDEO_REFERENCE_PUSH_ONLY"
+      },
+      "replicate_index": 1,
+      "submission_position": 1,
+      "submit_id": null,
+      "task_id": "PUSH-01"
+    },
+    {
+      "blind_alias": null,
+      "download_state": null,
+      "family": "IMPACT",
+      "future_argv_canonical_sha256": "0ff0ca4f3ad80be62f8b6ce026ac151c56e39732679d377b188e7fc9303b906a",
+      "live_authority": false,
+      "ordinal_pair_index": 1,
+      "package_bytes": 4419,
+      "package_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_01.json",
+      "package_sha256": "c6731efcb812606936441ddb8373b6661880a2f1247b712e5fc50c1f4897eff3",
+      "prompt_binding": {
+        "bytes": 2010,
+        "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/prompts/common.txt",
+        "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+      },
+      "provider_payload_canonical_sha256": "c7ca252e19590bafe8322db95a711e8a7a8a391c58a445121eec701d59a7be73",
+      "query_state": null,
+      "reference_binding": {
+        "reference_id": "ACTION_REF_IMPACT_02",
+        "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+        "reference_sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+        "reference_upload_binding": "EXACT_ONE_LOCAL_VIDEO_REFERENCE_IMPACT_ONLY"
+      },
+      "replicate_index": 1,
+      "submission_position": 2,
+      "submit_id": null,
+      "task_id": "IMPACT-01"
+    },
+    {
+      "blind_alias": null,
+      "download_state": null,
+      "family": "IMPACT",
+      "future_argv_canonical_sha256": "0ff0ca4f3ad80be62f8b6ce026ac151c56e39732679d377b188e7fc9303b906a",
+      "live_authority": false,
+      "ordinal_pair_index": 2,
+      "package_bytes": 4419,
+      "package_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_02.json",
+      "package_sha256": "1394679054aeb6f55624a62fb0f9eb7240723ec5fab73931ca60d1a613b80af2",
+      "prompt_binding": {
+        "bytes": 2010,
+        "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/prompts/common.txt",
+        "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+      },
+      "provider_payload_canonical_sha256": "c7ca252e19590bafe8322db95a711e8a7a8a391c58a445121eec701d59a7be73",
+      "query_state": null,
+      "reference_binding": {
+        "reference_id": "ACTION_REF_IMPACT_02",
+        "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+        "reference_sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+        "reference_upload_binding": "EXACT_ONE_LOCAL_VIDEO_REFERENCE_IMPACT_ONLY"
+      },
+      "replicate_index": 2,
+      "submission_position": 3,
+      "submit_id": null,
+      "task_id": "IMPACT-02"
+    },
+    {
+      "blind_alias": null,
+      "download_state": null,
+      "family": "PUSH",
+      "future_argv_canonical_sha256": "d8836d007a57abde39fff545597e5ce8b3441e8fddb489e066455be4dd693010",
+      "live_authority": false,
+      "ordinal_pair_index": 2,
+      "package_bytes": 4405,
+      "package_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_02.json",
+      "package_sha256": "42100a035729f9e3b0ac27bbdb5ed06ab1d96cade0e5679fcfc2adc97a6434c2",
+      "prompt_binding": {
+        "bytes": 2010,
+        "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/prompts/common.txt",
+        "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+      },
+      "provider_payload_canonical_sha256": "a9b0e8acc9992169db29df3fb2660af3e3cdefcc5f7eef591b4fa885bc9e2ecc",
+      "query_state": null,
+      "reference_binding": {
+        "reference_id": "ACTION_REF_PUSH_02",
+        "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+        "reference_sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+        "reference_upload_binding": "EXACT_ONE_LOCAL_VIDEO_REFERENCE_PUSH_ONLY"
+      },
+      "replicate_index": 2,
+      "submission_position": 4,
+      "submit_id": null,
+      "task_id": "PUSH-02"
+    },
+    {
+      "blind_alias": null,
+      "download_state": null,
+      "family": "PUSH",
+      "future_argv_canonical_sha256": "d8836d007a57abde39fff545597e5ce8b3441e8fddb489e066455be4dd693010",
+      "live_authority": false,
+      "ordinal_pair_index": 3,
+      "package_bytes": 4405,
+      "package_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/push_03.json",
+      "package_sha256": "5b82f70bb231c0486de04de2f97310fdd735479aa1ea844689b1116cebbd4883",
+      "prompt_binding": {
+        "bytes": 2010,
+        "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/prompts/common.txt",
+        "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+      },
+      "provider_payload_canonical_sha256": "a9b0e8acc9992169db29df3fb2660af3e3cdefcc5f7eef591b4fa885bc9e2ecc",
+      "query_state": null,
+      "reference_binding": {
+        "reference_id": "ACTION_REF_PUSH_02",
+        "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+        "reference_sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+        "reference_upload_binding": "EXACT_ONE_LOCAL_VIDEO_REFERENCE_PUSH_ONLY"
+      },
+      "replicate_index": 3,
+      "submission_position": 5,
+      "submit_id": null,
+      "task_id": "PUSH-03"
+    },
+    {
+      "blind_alias": null,
+      "download_state": null,
+      "family": "IMPACT",
+      "future_argv_canonical_sha256": "0ff0ca4f3ad80be62f8b6ce026ac151c56e39732679d377b188e7fc9303b906a",
+      "live_authority": false,
+      "ordinal_pair_index": 3,
+      "package_bytes": 4419,
+      "package_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json",
+      "package_sha256": "3852f0980377d4f23812699773333fe5bbf7c0b49f339da521d8d41a012b8355",
+      "prompt_binding": {
+        "bytes": 2010,
+        "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/prompts/common.txt",
+        "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d"
+      },
+      "provider_payload_canonical_sha256": "c7ca252e19590bafe8322db95a711e8a7a8a391c58a445121eec701d59a7be73",
+      "query_state": null,
+      "reference_binding": {
+        "reference_id": "ACTION_REF_IMPACT_02",
+        "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+        "reference_sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+        "reference_upload_binding": "EXACT_ONE_LOCAL_VIDEO_REFERENCE_IMPACT_ONLY"
+      },
+      "replicate_index": 3,
+      "submission_position": 6,
+      "submit_id": null,
+      "task_id": "IMPACT-03"
+    }
+  ]
+}

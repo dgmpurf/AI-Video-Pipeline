@@ -1,0 +1,66 @@
+{
+  "authority": {
+    "batch_authority": false,
+    "download_authority": false,
+    "live_authority": false,
+    "query_authority": false,
+    "reference_upload_authority": false,
+    "resubmit_authority": false,
+    "retry_authority": false,
+    "submit_authority": false
+  },
+  "future_submit_argv": [
+    "C:/Users/msjpurf/bin/dreamina.exe",
+    "multimodal2video",
+    "--model_version",
+    "seedance2.0_vip",
+    "--ratio",
+    "16:9",
+    "--duration",
+    "5",
+    "--video_resolution",
+    "720p",
+    "--prompt",
+    "Create one continuous five-second realistic live-action-looking synthetic shot of two fictional, non-identifying adult martial-arts performers. The performer beginning on camera-left wears a deep navy training jacket and black training pants. The performer beginning on camera-right wears a muted rust-orange training jacket and charcoal training pants. Both have ordinary realistic human faces and bodies, no resemblance to geometric mannequins, no branded clothing, and no identifying features.\n\nPlace them in a clean indoor training studio with a warm beige seamless wall and matte wooden floor. Use soft natural-looking studio illumination. Use a static three-quarter-front medium-wide camera at approximately chest height. Keep both complete bodies and both sets of feet visible with generous margins throughout. Use a stable 16:9 composition with no camera movement, zoom, shake, crop change, visible text, diagram, grid, prop, weapon, blood, injury detail, or calibration-stage appearance.\n\nUse the supplied video only as the motion reference for the complete full-duration body-motion sequence, temporal rhythm, relative spacing, coordination, and physical interaction of the two performers. Follow the supplied motion as faithfully as the model allows. Do not infer a specific action category from this text, and do not replace the supplied motion with a generic martial-arts routine. The supplied video must not control identity, face, body appearance, colors, clothing, scene, background, camera angle, framing, lighting, props, text, story, or visual style. Do not copy any ring, flash, arrow, grid, joint node, calibration-stage cue, color palette, mannequin appearance, or reference composition.\n\nPreserve realistic anatomy, coherent balance, stable identities, and physically plausible movement. Keep the shot continuous through the final frame. This text controls identity, clothing, scene, camera, composition, lighting, visual style, and safety only; the supplied video controls motion only.\n",
+    "--video",
+    "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+    "--poll",
+    "0"
+  ],
+  "future_submit_shell": false,
+  "provider_payload": {
+    "duration_seconds": 5,
+    "future_async_poll": 0,
+    "model_version": "seedance2.0_vip",
+    "motion_reference_duty": "COMPLETE_MOTION_SEQUENCE_TEMPORAL_RHYTHM_SPACING_COORDINATION_AND_PHYSICAL_INTERACTION_ONLY",
+    "prompt_binding": {
+      "bytes": 2010,
+      "exact_raw_bytes": true,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/prompts/common.txt",
+      "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d",
+      "terminal_lf_preserved": true
+    },
+    "ratio": "16:9",
+    "reference_binding": {
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "reference_sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "reference_upload_binding": "EXACT_ONE_LOCAL_VIDEO_REFERENCE_IMPACT_ONLY"
+    },
+    "requested_video_count": 1,
+    "text_duty": "IDENTITY_CLOTHING_SCENE_CAMERA_COMPOSITION_LIGHTING_VISUAL_STYLE_AND_SAFETY_ONLY",
+    "video_resolution": "720p"
+  },
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_TASK_PACKAGE_V0_1",
+  "task_metadata": {
+    "blind_alias_status": "NOT_ASSIGNED",
+    "family": "IMPACT",
+    "future_live_authorization_required": true,
+    "live_authority": false,
+    "ordinal_pair_index": 3,
+    "package_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/packages/impact_03.json",
+    "replicate_index": 3,
+    "submission_position": 6,
+    "task_id": "IMPACT-03"
+  }
+}
