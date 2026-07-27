@@ -1,0 +1,229 @@
+{
+  "C02_reopened": false,
+  "C03_authorized": false,
+  "R02_authorized": false,
+  "actual_decision": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_SIX_TASK_QUERY_SUCCESS_DOWNLOAD_READY",
+  "actual_dreamina_process_count": 9,
+  "actual_next_phase": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_SIX_TASK_DOWNLOAD_AUTHORIZATION_HUMAN_DECISION",
+  "actual_process_order": [
+    "dreamina version",
+    "dreamina user_credit",
+    "dreamina query_result -h",
+    "PUSH-01",
+    "IMPACT-01",
+    "IMPACT-02",
+    "PUSH-02",
+    "PUSH-03",
+    "IMPACT-03"
+  ],
+  "all_six_success_with_video_results": true,
+  "any_local_query_failure": false,
+  "any_nonterminal": false,
+  "any_provider_terminal_failure": false,
+  "batch_calls": 0,
+  "blind_aliases_assigned": false,
+  "blind_mapping_materialized": false,
+  "cal003_r1_experiment_complete": false,
+  "cal003_r1_submit_phase_complete": true,
+  "called_task_ids": [
+    "PUSH-01",
+    "IMPACT-01",
+    "IMPACT-02",
+    "PUSH-02",
+    "PUSH-03",
+    "IMPACT-03"
+  ],
+  "download_authorization_active": false,
+  "download_calls": 0,
+  "final_master": false,
+  "fixed_task_completion": false,
+  "help_call_count": 1,
+  "locked": false,
+  "maximum_dreamina_process_count": 9,
+  "maximum_task_query_count": 6,
+  "media_locally_available": false,
+  "new_submit_calls": 0,
+  "original_R02_blocked": true,
+  "production_approved": false,
+  "production_reentry_authorized": false,
+  "provider_final_six_task_state": "ALL_SIX_TERMINAL_SUCCESS_WITH_VIDEO_RESULT",
+  "query_call_count": 6,
+  "repeatability_conclusion_known": false,
+  "resubmit_calls": 0,
+  "retry_calls": 0,
+  "review_performed": false,
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_QUERY_EXECUTION_RECORD_V0_1",
+  "six_download_ready_states": [
+    {
+      "download_ready": true,
+      "task_id": "PUSH-01"
+    },
+    {
+      "download_ready": true,
+      "task_id": "IMPACT-01"
+    },
+    {
+      "download_ready": true,
+      "task_id": "IMPACT-02"
+    },
+    {
+      "download_ready": true,
+      "task_id": "PUSH-02"
+    },
+    {
+      "download_ready": true,
+      "task_id": "PUSH-03"
+    },
+    {
+      "download_ready": true,
+      "task_id": "IMPACT-03"
+    }
+  ],
+  "six_provider_classifications": [
+    {
+      "provider_task_classification": "PROVIDER_TASK_SUCCESS_WITH_VIDEO_RESULT",
+      "task_id": "PUSH-01"
+    },
+    {
+      "provider_task_classification": "PROVIDER_TASK_SUCCESS_WITH_VIDEO_RESULT",
+      "task_id": "IMPACT-01"
+    },
+    {
+      "provider_task_classification": "PROVIDER_TASK_SUCCESS_WITH_VIDEO_RESULT",
+      "task_id": "IMPACT-02"
+    },
+    {
+      "provider_task_classification": "PROVIDER_TASK_SUCCESS_WITH_VIDEO_RESULT",
+      "task_id": "PUSH-02"
+    },
+    {
+      "provider_task_classification": "PROVIDER_TASK_SUCCESS_WITH_VIDEO_RESULT",
+      "task_id": "PUSH-03"
+    },
+    {
+      "provider_task_classification": "PROVIDER_TASK_SUCCESS_WITH_VIDEO_RESULT",
+      "task_id": "IMPACT-03"
+    }
+  ],
+  "six_query_receipt_summaries": [
+    {
+      "download_ready": true,
+      "gen_status": "success",
+      "local_query_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/push_01.json",
+      "provider_task_classification": "PROVIDER_TASK_SUCCESS_WITH_VIDEO_RESULT",
+      "queue_status": "Finish",
+      "result_count": 1,
+      "submit_id": "65aa46f5-0125-4d07-8c6e-3fd5112d29a7",
+      "task_id": "PUSH-01",
+      "terminal_state": true,
+      "video_count": 1
+    },
+    {
+      "download_ready": true,
+      "gen_status": "success",
+      "local_query_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/impact_01.json",
+      "provider_task_classification": "PROVIDER_TASK_SUCCESS_WITH_VIDEO_RESULT",
+      "queue_status": "Finish",
+      "result_count": 1,
+      "submit_id": "b10cf271-288e-4fdb-925c-b4bd45856979",
+      "task_id": "IMPACT-01",
+      "terminal_state": true,
+      "video_count": 1
+    },
+    {
+      "download_ready": true,
+      "gen_status": "success",
+      "local_query_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/impact_02.json",
+      "provider_task_classification": "PROVIDER_TASK_SUCCESS_WITH_VIDEO_RESULT",
+      "queue_status": "Finish",
+      "result_count": 1,
+      "submit_id": "3cfa385f-99c9-4e1f-871e-d52ff154ebae",
+      "task_id": "IMPACT-02",
+      "terminal_state": true,
+      "video_count": 1
+    },
+    {
+      "download_ready": true,
+      "gen_status": "success",
+      "local_query_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/push_02.json",
+      "provider_task_classification": "PROVIDER_TASK_SUCCESS_WITH_VIDEO_RESULT",
+      "queue_status": "Finish",
+      "result_count": 1,
+      "submit_id": "2258abca-2de6-4394-903f-7de609a7e711",
+      "task_id": "PUSH-02",
+      "terminal_state": true,
+      "video_count": 1
+    },
+    {
+      "download_ready": true,
+      "gen_status": "success",
+      "local_query_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/push_03.json",
+      "provider_task_classification": "PROVIDER_TASK_SUCCESS_WITH_VIDEO_RESULT",
+      "queue_status": "Finish",
+      "result_count": 1,
+      "submit_id": "3fbcdb18-24d2-4a43-9cd5-5c7d1de41011",
+      "task_id": "PUSH-03",
+      "terminal_state": true,
+      "video_count": 1
+    },
+    {
+      "download_ready": true,
+      "gen_status": "success",
+      "local_query_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/impact_03.json",
+      "provider_task_classification": "PROVIDER_TASK_SUCCESS_WITH_VIDEO_RESULT",
+      "queue_status": "Finish",
+      "result_count": 1,
+      "submit_id": "10193c64-b91e-454e-9118-6ab3a0cf1fb9",
+      "task_id": "IMPACT-03",
+      "terminal_state": true,
+      "video_count": 1
+    }
+  ],
+  "six_terminal_states": [
+    {
+      "task_id": "PUSH-01",
+      "terminal_state": true
+    },
+    {
+      "task_id": "IMPACT-01",
+      "terminal_state": true
+    },
+    {
+      "task_id": "IMPACT-02",
+      "terminal_state": true
+    },
+    {
+      "task_id": "PUSH-02",
+      "terminal_state": true
+    },
+    {
+      "task_id": "PUSH-03",
+      "terminal_state": true
+    },
+    {
+      "task_id": "IMPACT-03",
+      "terminal_state": true
+    }
+  ],
+  "starting_checkpoint": {
+    "branch": "main",
+    "commit_message": "live(cal003): submit reference repeatability R1",
+    "head": "8b833947dc58d459a8c8e238219b768107b6f048",
+    "origin_main": "8b833947dc58d459a8c8e238219b768107b6f048",
+    "parent": "d54c6cad666ae2733a685159ec17714704f8d1a1",
+    "unrelated_untracked_count": 26,
+    "unrelated_untracked_set_sha256": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94"
+  },
+  "stop_position": null,
+  "stop_reason": null,
+  "task_query_call_count": 6,
+  "uncalled_task_ids": [],
+  "user_credit_call_count": 1,
+  "version_call_count": 1
+}

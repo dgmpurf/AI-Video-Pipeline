@@ -1,0 +1,239 @@
+{
+  "artifact_count": 10,
+  "artifacts": [
+    {
+      "bytes": 17355,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/authorization.json",
+      "sha256": "cdc6d56dda5b1f62ee14770eeca3f4f42b46f59dcba912d5168de859649c2b05"
+    },
+    {
+      "bytes": 10343,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/preflight.json",
+      "sha256": "ef487da64e46842324632b2bccd740477eb7a691b48985eb06beca566e11c5b9"
+    },
+    {
+      "bytes": 2061,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/push_01.json",
+      "sha256": "893859eac2742eb4f974b469f5e711286bbc22c699cd99562cc87f45b86e6e8d"
+    },
+    {
+      "bytes": 2069,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/impact_01.json",
+      "sha256": "9b269a3cb9cc5e34a64a1b1c2fdb298fe206ccb79c392030ae5a154cd84547ab"
+    },
+    {
+      "bytes": 2068,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/impact_02.json",
+      "sha256": "90b80608768937bc821bb2eb830142db8c10f53ea339d0cbef07e82b2fab64ab"
+    },
+    {
+      "bytes": 2061,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/push_02.json",
+      "sha256": "6ce456897b474f5beb820ded4e40bc006a32cfddb8e71d9326785475e016f320"
+    },
+    {
+      "bytes": 2060,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/push_03.json",
+      "sha256": "cd620eed46637c3ac37297dd76cea20e388981948b8a7e787bd0ed6acbadab17"
+    },
+    {
+      "bytes": 2069,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/impact_03.json",
+      "sha256": "9d817384ec36c03ea03d7e80211431a44c6d4dc951a7bc3d0235ffb3d59ebca1"
+    },
+    {
+      "bytes": 7017,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/execution.json",
+      "sha256": "478ac0fff25d4b4a8e649e3c71f17b58c7c9e22248be5ac90ef67cf8fb366dc0"
+    },
+    {
+      "bytes": 9658,
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_QUERY_RESULT.md",
+      "sha256": "4643052ffa17410cd547a83ace642acecd7171e5aad9e98db54acbe698f79e7b"
+    }
+  ],
+  "batch_calls": 0,
+  "blind_commitment_persisted": false,
+  "blind_mapping_persisted": false,
+  "blind_salt_persisted": false,
+  "committed_input_count": 11,
+  "committed_input_coverage": "11/11",
+  "committed_inputs": [
+    {
+      "binding_result": "PASS",
+      "bytes": 17009,
+      "git_blob": "2ce6363c05cba610b6203a9b59e8a1e7cdf9baf7",
+      "name": "submit_authorization_record",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_SUBMIT/authorization.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "6c0e0a6762135e74accaedbf137c83b7d0c37e4714667ef70b26c486eab4c73d",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 15872,
+      "git_blob": "91bc6d66c860795435cf7fc07ad249100c7835cb",
+      "name": "submit_preflight_record",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_SUBMIT/preflight.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "3277239e9309cf4dff281b41b351aa9f8cad46463562dda7681d6b1278a87cce",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 3382,
+      "git_blob": "1a47603a70df80db2772e0a2595db6a66420ddf2",
+      "name": "push_01_submit_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_SUBMIT/submits/push_01.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "a19c261f30aa84ae487b21c08ff92e096476d388f7440063a8c99ffd89bc4777",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 3396,
+      "git_blob": "f51a3a9f0c04dca33849e86ec1f1fa97f5e4a4eb",
+      "name": "impact_01_submit_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_SUBMIT/submits/impact_01.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "8b39741b72891f72eea399565054dfaf0f43404ee0f1a472307ca0e4bdc36906",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 3396,
+      "git_blob": "eb2da40abfadc6f9b5acda543145c72417ca25d6",
+      "name": "impact_02_submit_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_SUBMIT/submits/impact_02.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "c861cbe205add7f1089bfc4813247c2151171f8d4190e47a8404f2c313219050",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 3384,
+      "git_blob": "584c08d4d3c35af779130d56389555475fd049c5",
+      "name": "push_02_submit_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_SUBMIT/submits/push_02.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "5d90d71fae237060a5430e7973caf85e0a6e0d9693ddfd038d00ddee7bd7cf7e",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 3384,
+      "git_blob": "0dd9aea35b90d9d18b834ce5bce6f97b59437b59",
+      "name": "push_03_submit_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_SUBMIT/submits/push_03.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "c8bb6db5c3dffa2b13eba1289d3cc9fb8046c4359a515fe021295e33e494e3b7",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 3394,
+      "git_blob": "f2fab7a916f213ce54bffcdab22f903c49790d27",
+      "name": "impact_03_submit_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_SUBMIT/submits/impact_03.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "a238fb38923f41023a4330e41bde65461ced688be2186f8c499122d02783e73e",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 4463,
+      "git_blob": "7df58ac8ac199436a1959e7686253633fe6c8ab1",
+      "name": "submit_execution_record",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_SUBMIT/execution.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "4d4a6b0c62b4cbeb6b8456028ffe5a778bbab15dd9191ded11d1dfb8da6568ad",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 12793,
+      "git_blob": "f6eff0d8c76da01e39d30d3e72257c062d6ce0db",
+      "name": "submit_evidence_manifest",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_SUBMIT/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "da59752e10bf454c6acbab36a86248ef26adede7ed5862b19adfc13b274d2fd8",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 6962,
+      "git_blob": "9ff473617303aeb81d37133a11ff6bccac73822a",
+      "name": "submit_governance_report",
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_SUBMIT_RESULT.md",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "f68fb8f19f6867991c1953b18cc64dea53e969134dd6cc7e5e749ba2e820697d",
+      "strict_parse": "NOT_APPLICABLE",
+      "symlink": false,
+      "worktree_equals_head": true
+    }
+  ],
+  "decision": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_SIX_TASK_QUERY_SUCCESS_DOWNLOAD_READY",
+  "download_calls": 0,
+  "dreamina_processes": 9,
+  "evidence_coverage": "10/10",
+  "execution_id": "CAL003-REFERENCE-CONTROL-REPEATABILITY-R1-MAX-SIX-QUERY-ONLY-V0-1",
+  "final_master": false,
+  "fixed_task_completion": false,
+  "goal_identity": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_MAX_SIX_QUERY_ONLY_STATUS_SNAPSHOT_V0_1",
+  "help_calls": 1,
+  "included_artifact_count": 10,
+  "live_download_authority": false,
+  "locked": false,
+  "media_locally_available": false,
+  "new_submit_calls": 0,
+  "next_phase": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_SIX_TASK_DOWNLOAD_AUTHORIZATION_HUMAN_DECISION",
+  "private_account_data_persisted": false,
+  "production_approved": false,
+  "provider_final_six_task_state": "ALL_SIX_TERMINAL_SUCCESS_WITH_VIDEO_RESULT",
+  "query_calls": 6,
+  "raw_provider_output_persisted": false,
+  "repeatability_conclusion_known": false,
+  "resubmit_calls": 0,
+  "retry_calls": 0,
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_QUERY_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "sensitive_data_scan": "PASS",
+  "signed_url_persisted": false,
+  "task_query_calls": 6,
+  "total_unique_bound_paths": 21,
+  "unique_committed_input_paths": 11,
+  "unique_output_paths": 10,
+  "user_credit_calls": 1,
+  "version_calls": 1
+}
