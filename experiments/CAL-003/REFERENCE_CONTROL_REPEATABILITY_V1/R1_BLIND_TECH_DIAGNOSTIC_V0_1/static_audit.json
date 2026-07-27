@@ -1,0 +1,595 @@
+{
+  "category_distribution": {
+    "decimal_duration_and_check_model": 18,
+    "deterministic_reproduction_pipeline": 14,
+    "nondisclosure_cleanup_and_sensitive_data": 8,
+    "output_scope_protected_state_and_git": 8,
+    "real_media_diagnostic_and_classification": 14,
+    "repository_and_input_bindings": 10
+  },
+  "check_count": 72,
+  "checks": [
+    {
+      "assertion": "authorization identity verified",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-DIAG-01",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "repository root verified",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-DIAG-02",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "branch main verified",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-DIAG-03",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "HEAD and origin aligned",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-DIAG-04",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "parent and commit message verified",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-DIAG-05",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "tracked and staged state clean",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-DIAG-06",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "ten committed inputs bound",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-DIAG-07",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "six runtime media bound",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-DIAG-08",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "untracked baseline preserved",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-DIAG-09",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "target paths absent before activation",
+      "blocking_severity": "blocking",
+      "category": "repository_and_input_bindings",
+      "check_id": "CAL003-DIAG-10",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Decimal is used for duration",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-11",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "expected duration is exact",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-12",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "duration tolerance is exact",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-13",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "inclusive comparison is used",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-14",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "math.isclose is absent from duration gate",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-15",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "exact expected duration passes",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-16",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "positive boundary passes",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-17",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "negative boundary passes",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-18",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "positive beyond-boundary fails",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-19",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "negative beyond-boundary fails",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-20",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "NaN fails safely",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-21",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "positive Infinity fails safely",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-22",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "negative Infinity fails safely",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-23",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "malformed text fails safely",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-24",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "empty and non-text values fail safely",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-25",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "duration evidence is bounded",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-26",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "original ffprobe duration text is preserved",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-27",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "technical error model omits raw payload",
+      "blocking_severity": "blocking",
+      "category": "decimal_duration_and_check_model",
+      "check_id": "CAL003-DIAG-28",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "fixed C01 through C06 order",
+      "blocking_severity": "blocking",
+      "category": "deterministic_reproduction_pipeline",
+      "check_id": "CAL003-DIAG-29",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "six stream-copy remux calls",
+      "blocking_severity": "blocking",
+      "category": "deterministic_reproduction_pipeline",
+      "check_id": "CAL003-DIAG-30",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "metadata stripping applied",
+      "blocking_severity": "blocking",
+      "category": "deterministic_reproduction_pipeline",
+      "check_id": "CAL003-DIAG-31",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "chapter stripping applied",
+      "blocking_severity": "blocking",
+      "category": "deterministic_reproduction_pipeline",
+      "check_id": "CAL003-DIAG-32",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "faststart applied",
+      "blocking_severity": "blocking",
+      "category": "deterministic_reproduction_pipeline",
+      "check_id": "CAL003-DIAG-33",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "six exact free boxes appended",
+      "blocking_severity": "blocking",
+      "category": "deterministic_reproduction_pipeline",
+      "check_id": "CAL003-DIAG-34",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "six outputs equal target size",
+      "blocking_severity": "blocking",
+      "category": "deterministic_reproduction_pipeline",
+      "check_id": "CAL003-DIAG-35",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "six ffprobe calls completed",
+      "blocking_severity": "blocking",
+      "category": "deterministic_reproduction_pipeline",
+      "check_id": "CAL003-DIAG-36",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "ordered check catalog contains 23 codes",
+      "blocking_severity": "blocking",
+      "category": "deterministic_reproduction_pipeline",
+      "check_id": "CAL003-DIAG-37",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "first-failure behavior enforced",
+      "blocking_severity": "blocking",
+      "category": "deterministic_reproduction_pipeline",
+      "check_id": "CAL003-DIAG-38",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "later inputs continue after ordinary failure",
+      "blocking_severity": "blocking",
+      "category": "deterministic_reproduction_pipeline",
+      "check_id": "CAL003-DIAG-39",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "full decode follows metadata gate",
+      "blocking_severity": "blocking",
+      "category": "deterministic_reproduction_pipeline",
+      "check_id": "CAL003-DIAG-40",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "video equivalence precedes audio equivalence",
+      "blocking_severity": "blocking",
+      "category": "deterministic_reproduction_pipeline",
+      "check_id": "CAL003-DIAG-41",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no subprocess retry occurred",
+      "blocking_severity": "blocking",
+      "category": "deterministic_reproduction_pipeline",
+      "check_id": "CAL003-DIAG-42",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "C01 passed 21 checks",
+      "blocking_severity": "blocking",
+      "category": "real_media_diagnostic_and_classification",
+      "check_id": "CAL003-DIAG-43",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "C02 passed 21 checks",
+      "blocking_severity": "blocking",
+      "category": "real_media_diagnostic_and_classification",
+      "check_id": "CAL003-DIAG-44",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "C03 passed 21 checks",
+      "blocking_severity": "blocking",
+      "category": "real_media_diagnostic_and_classification",
+      "check_id": "CAL003-DIAG-45",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "C04 passed 21 checks",
+      "blocking_severity": "blocking",
+      "category": "real_media_diagnostic_and_classification",
+      "check_id": "CAL003-DIAG-46",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "C05 passed 21 checks",
+      "blocking_severity": "blocking",
+      "category": "real_media_diagnostic_and_classification",
+      "check_id": "CAL003-DIAG-47",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "C06 passed 21 checks",
+      "blocking_severity": "blocking",
+      "category": "real_media_diagnostic_and_classification",
+      "check_id": "CAL003-DIAG-48",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "six duration texts equal expected",
+      "blocking_severity": "blocking",
+      "category": "real_media_diagnostic_and_classification",
+      "check_id": "CAL003-DIAG-49",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "six video equivalence checks passed",
+      "blocking_severity": "blocking",
+      "category": "real_media_diagnostic_and_classification",
+      "check_id": "CAL003-DIAG-50",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "six audio equivalence checks passed",
+      "blocking_severity": "blocking",
+      "category": "real_media_diagnostic_and_classification",
+      "check_id": "CAL003-DIAG-51",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "technical pass count is six",
+      "blocking_severity": "blocking",
+      "category": "real_media_diagnostic_and_classification",
+      "check_id": "CAL003-DIAG-52",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "local safety failure count is zero",
+      "blocking_severity": "blocking",
+      "category": "real_media_diagnostic_and_classification",
+      "check_id": "CAL003-DIAG-53",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "15 pairwise comparisons completed",
+      "blocking_severity": "blocking",
+      "category": "real_media_diagnostic_and_classification",
+      "check_id": "CAL003-DIAG-54",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "36 canonical comparisons completed",
+      "blocking_severity": "blocking",
+      "category": "real_media_diagnostic_and_classification",
+      "check_id": "CAL003-DIAG-55",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "classification follows all-six-pass rule",
+      "blocking_severity": "blocking",
+      "category": "real_media_diagnostic_and_classification",
+      "check_id": "CAL003-DIAG-56",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "raw process output not persisted",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_cleanup_and_sensitive_data",
+      "check_id": "CAL003-DIAG-57",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "raw ffprobe JSON not persisted",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_cleanup_and_sensitive_data",
+      "check_id": "CAL003-DIAG-58",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "raw framemd5 not persisted",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_cleanup_and_sensitive_data",
+      "check_id": "CAL003-DIAG-59",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "framemd5 hashes not persisted",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_cleanup_and_sensitive_data",
+      "check_id": "CAL003-DIAG-60",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "mapping and salt not created",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_cleanup_and_sensitive_data",
+      "check_id": "CAL003-DIAG-61",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "semantic review not performed",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_cleanup_and_sensitive_data",
+      "check_id": "CAL003-DIAG-62",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "temporary media removed",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_cleanup_and_sensitive_data",
+      "check_id": "CAL003-DIAG-63",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "sensitive-data scan passed",
+      "blocking_severity": "blocking",
+      "category": "nondisclosure_cleanup_and_sensitive_data",
+      "check_id": "CAL003-DIAG-64",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "exact ten output paths created",
+      "blocking_severity": "blocking",
+      "category": "output_scope_protected_state_and_git",
+      "check_id": "CAL003-DIAG-65",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "no existing tracked file modified",
+      "blocking_severity": "blocking",
+      "category": "output_scope_protected_state_and_git",
+      "check_id": "CAL003-DIAG-66",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "canonical media unchanged",
+      "blocking_severity": "blocking",
+      "category": "output_scope_protected_state_and_git",
+      "check_id": "CAL003-DIAG-67",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "repair implementation unchanged",
+      "blocking_severity": "blocking",
+      "category": "output_scope_protected_state_and_git",
+      "check_id": "CAL003-DIAG-68",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "Source Prompt package and reference state unchanged",
+      "blocking_severity": "blocking",
+      "category": "output_scope_protected_state_and_git",
+      "check_id": "CAL003-DIAG-69",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "repository tests passed",
+      "blocking_severity": "blocking",
+      "category": "output_scope_protected_state_and_git",
+      "check_id": "CAL003-DIAG-70",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "output and input coverage complete",
+      "blocking_severity": "blocking",
+      "category": "output_scope_protected_state_and_git",
+      "check_id": "CAL003-DIAG-71",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    },
+    {
+      "assertion": "staging scope ready for one commit",
+      "blocking_severity": "blocking",
+      "category": "output_scope_protected_state_and_git",
+      "check_id": "CAL003-DIAG-72",
+      "evidence": "verified by bound preflight, deterministic tests, runtime record, or exact-scope validation",
+      "result": "PASS"
+    }
+  ],
+  "failures": 0,
+  "overall_result": "PASS",
+  "passes": 72,
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_TECHNICAL_DIAGNOSTIC_STATIC_AUDIT_V0_2",
+  "skips": 0,
+  "warnings": 0
+}

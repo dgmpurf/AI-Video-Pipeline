@@ -1,0 +1,202 @@
+{
+  "artifact_count": 9,
+  "artifacts": [
+    {
+      "bytes": 20542,
+      "included": true,
+      "path": "tools/cal003_blind_package/technical_validation.py",
+      "sha256": "d853c12133de38adf3ffbb93ef87b0651ac3d137fa0f97b005612a44a749c40c"
+    },
+    {
+      "bytes": 7440,
+      "included": true,
+      "path": "tests/cal003_blind_package/test_technical_validation_check_catalog.py",
+      "sha256": "ff656087dd72696391642b12cb0bcae4b48dc5562820ee2dbc3641a96c030eab"
+    },
+    {
+      "bytes": 7802,
+      "included": true,
+      "path": "tests/cal003_blind_package/test_technical_validation_ffprobe_contract.py",
+      "sha256": "a95529572e39ee6ae9e2496f83f6857c57467cc93ada459d9d9f8a254e5f742e"
+    },
+    {
+      "bytes": 5197,
+      "included": true,
+      "path": "tests/cal003_blind_package/test_technical_validation_equivalence_and_nondisclosure.py",
+      "sha256": "6564416fc6f9dad4be11c5e4cccd8b63d6d17137fa863512fdef4aa91533c149"
+    },
+    {
+      "bytes": 15829,
+      "included": true,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_TECH_DIAGNOSTIC_V0_1/authorization.json",
+      "sha256": "d569d70e920e9f0abf0a0329db9e917741c8e086508c9095a5dd624ea4cfe3b9"
+    },
+    {
+      "bytes": 10324,
+      "included": true,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_TECH_DIAGNOSTIC_V0_1/preflight.json",
+      "sha256": "feb38efbfae51f66b705bfb7baeaa4197d5a36586202ad0501ad2514be5bd681"
+    },
+    {
+      "bytes": 45643,
+      "included": true,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_TECH_DIAGNOSTIC_V0_1/diagnostic_record.json",
+      "sha256": "44430ebe00d9a90c6a39393abe01c4a9799d8a6f89de40fd3b2508547abe23a8"
+    },
+    {
+      "bytes": 24566,
+      "included": true,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_TECH_DIAGNOSTIC_V0_1/static_audit.json",
+      "sha256": "5593ce1c88cb2c991afd26e27824672b3a69d8f469c0d526494a1a55e9ebe77d"
+    },
+    {
+      "bytes": 7671,
+      "included": true,
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_TECHNICAL_DIAGNOSTIC_RESULT.md",
+      "sha256": "c4b09913e2753016213e2695f738b74b8ea93086896f7a180e114c6ae0187a74"
+    }
+  ],
+  "committed_input_count": 10,
+  "committed_input_coverage": "10/10",
+  "committed_inputs": [
+    {
+      "binding_result": "PASS",
+      "bytes": 7971,
+      "git_blob": "c186857452d34b865ec8f42229d074a7ac35eb05",
+      "name": "v0_2_failure_authorization",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_2/authorization.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "f6a691c9be4010c23ac7eff31db9073959f6d9b9d37e5471eeaa5377a8fef789",
+      "strict_json_parse": true,
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 1435,
+      "git_blob": "964c30f55bf54e7ddee918cccf07fefc5525cb3e",
+      "name": "v0_2_failure_preflight",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_2/preflight.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "3871980a260e5ad9bc1909f499145c6cf189c2ebfdeca1b043959260ff6582eb",
+      "strict_json_parse": true,
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 1342,
+      "git_blob": "5d3c4c459a47a45868718336206c99c9cb13eaa5",
+      "name": "v0_2_failure_execution",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_2/execution.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "4048f5a7a271c2dae696ba18e01387e9a173e77277faa7973b6973b03d0d9215",
+      "strict_json_parse": true,
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 12318,
+      "git_blob": "d269076e25b3efcdc6e9277b966c6e9a0efab291",
+      "name": "v0_2_failure_evidence_manifest",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_2/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "e8f0d943610215c35cb2a025a64c955364b100ac114b7e4e14e5607b8f5b30ee",
+      "strict_json_parse": true,
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 1021,
+      "git_blob": "806880150f443e9c00612f9fbf8bf6e968131b0d",
+      "name": "v0_2_failure_report",
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_V0_2_RESULT.md",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "c95d95864912a4f5466222ff50a2722d5bfddd8368200b1a2f4492873fef9cd3",
+      "strict_json_parse": null,
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 5820,
+      "git_blob": "7642b26b20f9d85b9e2bed2495d72e0b0931c313",
+      "name": "repair_evidence_manifest",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_REPAIR/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "82768ca7993e8fb22c85530dd95d966895a6e2d45eeef92c0f3b0d1db8ae5a28",
+      "strict_json_parse": true,
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 7291,
+      "git_blob": "5100feabe0613c7fc86a124b2ad5cd0a5f85a379",
+      "name": "repair_durability",
+      "path": "tools/cal003_blind_package/durability.py",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "01fe4d8f9d6cc7497413a2483179e1d49800e78a2f3b91ee2a9ef32b77d0fd45",
+      "strict_json_parse": null,
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 4586,
+      "git_blob": "34c85b57bcb1aa38f2203d31032fbc90101ca087",
+      "name": "repair_failure_state",
+      "path": "tools/cal003_blind_package/failure_state.py",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "9351497533588c65d5a93f96573a05d6d10399a066ca365cc260c223f775c74a",
+      "strict_json_parse": null,
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 3933,
+      "git_blob": "664616132c84177e3606437e390c633df1cb21a8",
+      "name": "repair_runner",
+      "path": "tools/cal003_blind_package/runner.py",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "912f8dd5e9824c83bcf2e2d72e05213d3381751fb992506be24553128cefbe44",
+      "strict_json_parse": null,
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 14382,
+      "git_blob": "37bff0f5537ad51e609c536bd34f83824e859176",
+      "name": "download_evidence_manifest",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "6a5ee0106eb946d600e36475da1e81b8a323212da64daa44914eb05d66ca03e9",
+      "strict_json_parse": true,
+      "symlink": false,
+      "worktree_equals_head": true
+    }
+  ],
+  "decision": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_TECHNICAL_DIAGNOSTIC_COMPLETE",
+  "included_artifact_count": 9,
+  "output_coverage": "9/9",
+  "recursive_runtime_media_coverage": "6/6",
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_TECHNICAL_DIAGNOSTIC_EVIDENCE_MANIFEST_V0_2",
+  "self_excluded": true,
+  "total_unique_bound_paths": 19,
+  "unique_committed_input_paths": 10,
+  "unique_output_paths": 9
+}

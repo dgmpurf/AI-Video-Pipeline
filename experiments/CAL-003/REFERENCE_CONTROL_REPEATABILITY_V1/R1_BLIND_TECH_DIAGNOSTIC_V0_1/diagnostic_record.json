@@ -1,0 +1,1479 @@
+{
+  "actual_decision": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_TECHNICAL_DIAGNOSTIC_COMPLETE",
+  "actual_next_phase": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_TECHNICAL_DIAGNOSTIC_COMPLETE_REPAIR_OR_V0_3_AUTHORIZATION_HUMAN_DECISION",
+  "boundaries": {
+    "commitment_created": false,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "gate_derivation": false,
+    "locked": false,
+    "mapping_created": false,
+    "production_approved": false,
+    "production_reentry_authorized": false,
+    "random_permutation_generated": false,
+    "random_salt_generated": false,
+    "repeatability_conclusion_known": false,
+    "review_freeze": false,
+    "review_visible_media_created": false,
+    "sealed_zip_created": false,
+    "semantic_review": false,
+    "unblinding": false
+  },
+  "classification": "TRANSIENT_V0_2_ORCHESTRATION_OR_PARSE_DEFECT_HIGH_CONFIDENCE",
+  "classification_rationale": "All six deterministic reproductions passed the explicit technical contract using exact decimal duration arithmetic.",
+  "decimal_implementation": {
+    "binary_float_math_isclose_used": false,
+    "expected_duration_text": "5.085011",
+    "inclusive_comparison": true,
+    "model": "EXACT_DECIMAL_TEXT",
+    "original_ffprobe_text_preserved": true,
+    "tolerance_text": "0.000001"
+  },
+  "failed_check_histogram": {},
+  "fixed_order": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06"
+  ],
+  "global": {
+    "canonical_comparison_count": 36,
+    "diagnostic_hashes": [
+      "25003635fd8aa8290e038d4820dd773f4f695882aea24179a7e6d3b13937ec91",
+      "708b38e0f6019620621db02a45dc58b987afe4a092b5a5ce8531d25536a0c259",
+      "b5c8ad4bf6426af47d738646c2fa17dc64d33c52647caa8dc9f610e38f1dc7e9",
+      "11ae7266fcdaea4c111ff7de7815402de4ff5f93965e85ba3b2c7dae2d2c77ad",
+      "87b399536ffe25e888e1c843c6cbc54ceea5b5efc4d9fa23cb9e8f9ef3e1dab3",
+      "c34d0c36c68099a9e74dfb5fc41d2745ac16e36f4deb4f0cd4dd1caaafac92e6"
+    ],
+    "global_checks": [
+      {
+        "check_code": "HASH_UNIQUE_AMONG_DIAGNOSTIC_OUTPUTS",
+        "execution_phase": "GLOBAL_HASH_CHECKS",
+        "expected": true,
+        "observed": true,
+        "result": true
+      },
+      {
+        "check_code": "HASH_DIFFERS_FROM_ALL_CANONICAL_MEDIA",
+        "execution_phase": "GLOBAL_HASH_CHECKS",
+        "expected": true,
+        "observed": true,
+        "result": true
+      }
+    ],
+    "pairwise_comparison_count": 15
+  },
+  "local_safety_failure_count": 0,
+  "mirror_validation": {
+    "compile": {
+      "command": "python -m compileall -q tools/cal003_blind_package tests/cal003_blind_package",
+      "result": "PASS",
+      "return_code": 0
+    },
+    "tests": {
+      "command": "python -W error -m unittest discover -s tests/cal003_blind_package -p \"test_technical_validation_*.py\" -v",
+      "errors": 0,
+      "failures": 0,
+      "files": 3,
+      "methods": 106,
+      "result": "PASS",
+      "skips": 0,
+      "warnings": 0
+    }
+  },
+  "operation_counts": {
+    "credit": 0,
+    "dreamina": 0,
+    "ffmpeg_diagnostic": 36,
+    "ffmpeg_preflight": 1,
+    "ffprobe_diagnostic": 6,
+    "ffprobe_preflight": 1,
+    "provider": 0
+  },
+  "prior_attempt": {
+    "authorization_activated": true,
+    "authorization_consumed": true,
+    "authorization_reusable": false,
+    "failure_classification": "DURATION_INCLUSIVE_TOLERANCE_BOUNDARY_BINARY_FLOAT_DEFECT",
+    "media_reproductions_started": 0,
+    "mirror_compile": "PASS",
+    "repository_commits": 0,
+    "repository_outputs_created": 0,
+    "repository_pushes": 0,
+    "temporary_root_remaining": false,
+    "test_errors": 0,
+    "test_failures": 2,
+    "test_files": 3,
+    "test_methods": 73,
+    "test_passed": 71,
+    "test_skips": 0,
+    "test_warnings": 0
+  },
+  "records": [
+    {
+      "audio_equivalence": {
+        "diagnostic_record_count": 219,
+        "equivalent": true,
+        "source_record_count": 219
+      },
+      "canonical_bytes": 2299169,
+      "canonical_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_01.mp4",
+      "canonical_sha256": "888bb1a27951cbe211b8a0506a5decb20c4f9aa2e9ba255a7832c1735836380c",
+      "duration_decimal_difference": "0.000000",
+      "duration_original_text": "5.085011",
+      "evaluated_check_count": 21,
+      "evaluated_checks": [
+        {
+          "check_code": "FILE_PRESENT",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FILE_REGULAR",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FILE_NONEMPTY",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "TARGET_SIZE_EXACT",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": 4194304,
+          "observed": 4194304,
+          "result": true
+        },
+        {
+          "check_code": "TOP_LEVEL_FREE_BOX_VALID",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FFPROBE_JSON_PARSE",
+          "execution_phase": "FFPROBE_PARSE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "CONTAINER_MP4",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "VIDEO_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 1,
+          "observed": 1,
+          "result": true
+        },
+        {
+          "check_code": "AUDIO_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 1,
+          "observed": 1,
+          "result": true
+        },
+        {
+          "check_code": "OTHER_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "CODEC_H264",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "h264",
+          "observed": "h264",
+          "result": true
+        },
+        {
+          "check_code": "PIXEL_FORMAT_YUV420P",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "yuv420p",
+          "observed": "yuv420p",
+          "result": true
+        },
+        {
+          "check_code": "WIDTH_1280",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 1280,
+          "observed": 1280,
+          "result": true
+        },
+        {
+          "check_code": "HEIGHT_720",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 720,
+          "observed": 720,
+          "result": true
+        },
+        {
+          "check_code": "DURATION_5_085011",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "5.085011±0.000001",
+          "observed": "5.085011",
+          "result": true
+        },
+        {
+          "check_code": "ROTATION_ZERO",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "FRAME_EVIDENCE_121",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 121,
+          "observed": 121,
+          "result": true
+        },
+        {
+          "check_code": "METADATA_SAFETY",
+          "execution_phase": "METADATA_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "FULL_DECODE_PASS",
+          "execution_phase": "FULL_DECODE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "VIDEO_FRAMEMD5_EQUIVALENCE",
+          "execution_phase": "VIDEO_EQUIVALENCE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "AUDIO_FRAMEMD5_EQUIVALENCE",
+          "execution_phase": "AUDIO_EQUIVALENCE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        }
+      ],
+      "ffprobe_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 4489,
+        "stdout_sha256": "faa22a04cafc7edd8d9ddb0fa833254f8133f374b82730fb28f8c4ae00792298",
+        "timeout": false
+      },
+      "first_failed_check": null,
+      "first_failed_expected": null,
+      "first_failed_observed": null,
+      "first_failed_phase": null,
+      "full_decode_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 0,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      "identity": "C01",
+      "padded_bytes": 4194304,
+      "padded_sha256": "25003635fd8aa8290e038d4820dd773f4f695882aea24179a7e6d3b13937ec91",
+      "padding_box_bytes": 1895686,
+      "probe_facts": {
+        "audio_stream_count": 1,
+        "codec": "h264",
+        "duration_text": "5.085011",
+        "forbidden_metadata_marker_count": 0,
+        "format_is_mp4": true,
+        "frame_evidence": 121,
+        "height": 720,
+        "other_stream_count": 0,
+        "pixel_format": "yuv420p",
+        "rotation": 0,
+        "safe_metadata_key_count": 10,
+        "video_stream_count": 1,
+        "width": 1280
+      },
+      "remux_bytes": 2298618,
+      "remux_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 0,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      "technical_result": "PASS",
+      "temporary_identity": "C01_DIAGNOSTIC.mp4",
+      "unevaluated_checks": [],
+      "video_equivalence": {
+        "diagnostic_record_count": 121,
+        "equivalent": true,
+        "source_record_count": 121
+      }
+    },
+    {
+      "audio_equivalence": {
+        "diagnostic_record_count": 219,
+        "equivalent": true,
+        "source_record_count": 219
+      },
+      "canonical_bytes": 2365925,
+      "canonical_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_01.mp4",
+      "canonical_sha256": "86505a14f9afbb48db44b429e5b60b36094cb896acf34a23f19a4299785d591f",
+      "duration_decimal_difference": "0.000000",
+      "duration_original_text": "5.085011",
+      "evaluated_check_count": 21,
+      "evaluated_checks": [
+        {
+          "check_code": "FILE_PRESENT",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FILE_REGULAR",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FILE_NONEMPTY",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "TARGET_SIZE_EXACT",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": 4194304,
+          "observed": 4194304,
+          "result": true
+        },
+        {
+          "check_code": "TOP_LEVEL_FREE_BOX_VALID",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FFPROBE_JSON_PARSE",
+          "execution_phase": "FFPROBE_PARSE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "CONTAINER_MP4",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "VIDEO_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 1,
+          "observed": 1,
+          "result": true
+        },
+        {
+          "check_code": "AUDIO_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 1,
+          "observed": 1,
+          "result": true
+        },
+        {
+          "check_code": "OTHER_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "CODEC_H264",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "h264",
+          "observed": "h264",
+          "result": true
+        },
+        {
+          "check_code": "PIXEL_FORMAT_YUV420P",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "yuv420p",
+          "observed": "yuv420p",
+          "result": true
+        },
+        {
+          "check_code": "WIDTH_1280",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 1280,
+          "observed": 1280,
+          "result": true
+        },
+        {
+          "check_code": "HEIGHT_720",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 720,
+          "observed": 720,
+          "result": true
+        },
+        {
+          "check_code": "DURATION_5_085011",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "5.085011±0.000001",
+          "observed": "5.085011",
+          "result": true
+        },
+        {
+          "check_code": "ROTATION_ZERO",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "FRAME_EVIDENCE_121",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 121,
+          "observed": 121,
+          "result": true
+        },
+        {
+          "check_code": "METADATA_SAFETY",
+          "execution_phase": "METADATA_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "FULL_DECODE_PASS",
+          "execution_phase": "FULL_DECODE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "VIDEO_FRAMEMD5_EQUIVALENCE",
+          "execution_phase": "VIDEO_EQUIVALENCE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "AUDIO_FRAMEMD5_EQUIVALENCE",
+          "execution_phase": "AUDIO_EQUIVALENCE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        }
+      ],
+      "ffprobe_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 4489,
+        "stdout_sha256": "375fdad52f206778c4c48179eb0c80528478204a7d0d46864b1e0104f7946c2c",
+        "timeout": false
+      },
+      "first_failed_check": null,
+      "first_failed_expected": null,
+      "first_failed_observed": null,
+      "first_failed_phase": null,
+      "full_decode_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 0,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      "identity": "C02",
+      "padded_bytes": 4194304,
+      "padded_sha256": "708b38e0f6019620621db02a45dc58b987afe4a092b5a5ce8531d25536a0c259",
+      "padding_box_bytes": 1828930,
+      "probe_facts": {
+        "audio_stream_count": 1,
+        "codec": "h264",
+        "duration_text": "5.085011",
+        "forbidden_metadata_marker_count": 0,
+        "format_is_mp4": true,
+        "frame_evidence": 121,
+        "height": 720,
+        "other_stream_count": 0,
+        "pixel_format": "yuv420p",
+        "rotation": 0,
+        "safe_metadata_key_count": 10,
+        "video_stream_count": 1,
+        "width": 1280
+      },
+      "remux_bytes": 2365374,
+      "remux_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 0,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      "technical_result": "PASS",
+      "temporary_identity": "C02_DIAGNOSTIC.mp4",
+      "unevaluated_checks": [],
+      "video_equivalence": {
+        "diagnostic_record_count": 121,
+        "equivalent": true,
+        "source_record_count": 121
+      }
+    },
+    {
+      "audio_equivalence": {
+        "diagnostic_record_count": 219,
+        "equivalent": true,
+        "source_record_count": 219
+      },
+      "canonical_bytes": 3147949,
+      "canonical_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_02.mp4",
+      "canonical_sha256": "5bff5f8fe963d2db826b2195194a648ebe8823fb53078ee82d43f2adf9ff5ca9",
+      "duration_decimal_difference": "0.000000",
+      "duration_original_text": "5.085011",
+      "evaluated_check_count": 21,
+      "evaluated_checks": [
+        {
+          "check_code": "FILE_PRESENT",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FILE_REGULAR",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FILE_NONEMPTY",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "TARGET_SIZE_EXACT",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": 4194304,
+          "observed": 4194304,
+          "result": true
+        },
+        {
+          "check_code": "TOP_LEVEL_FREE_BOX_VALID",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FFPROBE_JSON_PARSE",
+          "execution_phase": "FFPROBE_PARSE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "CONTAINER_MP4",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "VIDEO_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 1,
+          "observed": 1,
+          "result": true
+        },
+        {
+          "check_code": "AUDIO_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 1,
+          "observed": 1,
+          "result": true
+        },
+        {
+          "check_code": "OTHER_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "CODEC_H264",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "h264",
+          "observed": "h264",
+          "result": true
+        },
+        {
+          "check_code": "PIXEL_FORMAT_YUV420P",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "yuv420p",
+          "observed": "yuv420p",
+          "result": true
+        },
+        {
+          "check_code": "WIDTH_1280",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 1280,
+          "observed": 1280,
+          "result": true
+        },
+        {
+          "check_code": "HEIGHT_720",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 720,
+          "observed": 720,
+          "result": true
+        },
+        {
+          "check_code": "DURATION_5_085011",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "5.085011±0.000001",
+          "observed": "5.085011",
+          "result": true
+        },
+        {
+          "check_code": "ROTATION_ZERO",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "FRAME_EVIDENCE_121",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 121,
+          "observed": 121,
+          "result": true
+        },
+        {
+          "check_code": "METADATA_SAFETY",
+          "execution_phase": "METADATA_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "FULL_DECODE_PASS",
+          "execution_phase": "FULL_DECODE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "VIDEO_FRAMEMD5_EQUIVALENCE",
+          "execution_phase": "VIDEO_EQUIVALENCE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "AUDIO_FRAMEMD5_EQUIVALENCE",
+          "execution_phase": "AUDIO_EQUIVALENCE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        }
+      ],
+      "ffprobe_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 4489,
+        "stdout_sha256": "8de13a8b89152b0f462c468dca46792786c2165fcee8b7452b9150c4b74bfedb",
+        "timeout": false
+      },
+      "first_failed_check": null,
+      "first_failed_expected": null,
+      "first_failed_observed": null,
+      "first_failed_phase": null,
+      "full_decode_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 0,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      "identity": "C03",
+      "padded_bytes": 4194304,
+      "padded_sha256": "b5c8ad4bf6426af47d738646c2fa17dc64d33c52647caa8dc9f610e38f1dc7e9",
+      "padding_box_bytes": 1046906,
+      "probe_facts": {
+        "audio_stream_count": 1,
+        "codec": "h264",
+        "duration_text": "5.085011",
+        "forbidden_metadata_marker_count": 0,
+        "format_is_mp4": true,
+        "frame_evidence": 121,
+        "height": 720,
+        "other_stream_count": 0,
+        "pixel_format": "yuv420p",
+        "rotation": 0,
+        "safe_metadata_key_count": 10,
+        "video_stream_count": 1,
+        "width": 1280
+      },
+      "remux_bytes": 3147398,
+      "remux_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 0,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      "technical_result": "PASS",
+      "temporary_identity": "C03_DIAGNOSTIC.mp4",
+      "unevaluated_checks": [],
+      "video_equivalence": {
+        "diagnostic_record_count": 121,
+        "equivalent": true,
+        "source_record_count": 121
+      }
+    },
+    {
+      "audio_equivalence": {
+        "diagnostic_record_count": 219,
+        "equivalent": true,
+        "source_record_count": 219
+      },
+      "canonical_bytes": 2852365,
+      "canonical_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_02.mp4",
+      "canonical_sha256": "9db1d8dff40c5b69641be0e49f1ff107231bce88f618b218089a38214e85af21",
+      "duration_decimal_difference": "0.000000",
+      "duration_original_text": "5.085011",
+      "evaluated_check_count": 21,
+      "evaluated_checks": [
+        {
+          "check_code": "FILE_PRESENT",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FILE_REGULAR",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FILE_NONEMPTY",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "TARGET_SIZE_EXACT",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": 4194304,
+          "observed": 4194304,
+          "result": true
+        },
+        {
+          "check_code": "TOP_LEVEL_FREE_BOX_VALID",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FFPROBE_JSON_PARSE",
+          "execution_phase": "FFPROBE_PARSE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "CONTAINER_MP4",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "VIDEO_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 1,
+          "observed": 1,
+          "result": true
+        },
+        {
+          "check_code": "AUDIO_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 1,
+          "observed": 1,
+          "result": true
+        },
+        {
+          "check_code": "OTHER_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "CODEC_H264",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "h264",
+          "observed": "h264",
+          "result": true
+        },
+        {
+          "check_code": "PIXEL_FORMAT_YUV420P",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "yuv420p",
+          "observed": "yuv420p",
+          "result": true
+        },
+        {
+          "check_code": "WIDTH_1280",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 1280,
+          "observed": 1280,
+          "result": true
+        },
+        {
+          "check_code": "HEIGHT_720",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 720,
+          "observed": 720,
+          "result": true
+        },
+        {
+          "check_code": "DURATION_5_085011",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "5.085011±0.000001",
+          "observed": "5.085011",
+          "result": true
+        },
+        {
+          "check_code": "ROTATION_ZERO",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "FRAME_EVIDENCE_121",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 121,
+          "observed": 121,
+          "result": true
+        },
+        {
+          "check_code": "METADATA_SAFETY",
+          "execution_phase": "METADATA_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "FULL_DECODE_PASS",
+          "execution_phase": "FULL_DECODE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "VIDEO_FRAMEMD5_EQUIVALENCE",
+          "execution_phase": "VIDEO_EQUIVALENCE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "AUDIO_FRAMEMD5_EQUIVALENCE",
+          "execution_phase": "AUDIO_EQUIVALENCE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        }
+      ],
+      "ffprobe_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 4489,
+        "stdout_sha256": "8e2371c2ace5e7396a87193c6d30a4600b173c33368f2f20547adcfc74ed2f45",
+        "timeout": false
+      },
+      "first_failed_check": null,
+      "first_failed_expected": null,
+      "first_failed_observed": null,
+      "first_failed_phase": null,
+      "full_decode_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 0,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      "identity": "C04",
+      "padded_bytes": 4194304,
+      "padded_sha256": "11ae7266fcdaea4c111ff7de7815402de4ff5f93965e85ba3b2c7dae2d2c77ad",
+      "padding_box_bytes": 1342490,
+      "probe_facts": {
+        "audio_stream_count": 1,
+        "codec": "h264",
+        "duration_text": "5.085011",
+        "forbidden_metadata_marker_count": 0,
+        "format_is_mp4": true,
+        "frame_evidence": 121,
+        "height": 720,
+        "other_stream_count": 0,
+        "pixel_format": "yuv420p",
+        "rotation": 0,
+        "safe_metadata_key_count": 10,
+        "video_stream_count": 1,
+        "width": 1280
+      },
+      "remux_bytes": 2851814,
+      "remux_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 0,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      "technical_result": "PASS",
+      "temporary_identity": "C04_DIAGNOSTIC.mp4",
+      "unevaluated_checks": [],
+      "video_equivalence": {
+        "diagnostic_record_count": 121,
+        "equivalent": true,
+        "source_record_count": 121
+      }
+    },
+    {
+      "audio_equivalence": {
+        "diagnostic_record_count": 219,
+        "equivalent": true,
+        "source_record_count": 219
+      },
+      "canonical_bytes": 2417274,
+      "canonical_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_03.mp4",
+      "canonical_sha256": "196945461a5a7c748e75911e962dde8523f99762bc64e0ffa2bb506d4f52f921",
+      "duration_decimal_difference": "0.000000",
+      "duration_original_text": "5.085011",
+      "evaluated_check_count": 21,
+      "evaluated_checks": [
+        {
+          "check_code": "FILE_PRESENT",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FILE_REGULAR",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FILE_NONEMPTY",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "TARGET_SIZE_EXACT",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": 4194304,
+          "observed": 4194304,
+          "result": true
+        },
+        {
+          "check_code": "TOP_LEVEL_FREE_BOX_VALID",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FFPROBE_JSON_PARSE",
+          "execution_phase": "FFPROBE_PARSE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "CONTAINER_MP4",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "VIDEO_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 1,
+          "observed": 1,
+          "result": true
+        },
+        {
+          "check_code": "AUDIO_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 1,
+          "observed": 1,
+          "result": true
+        },
+        {
+          "check_code": "OTHER_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "CODEC_H264",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "h264",
+          "observed": "h264",
+          "result": true
+        },
+        {
+          "check_code": "PIXEL_FORMAT_YUV420P",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "yuv420p",
+          "observed": "yuv420p",
+          "result": true
+        },
+        {
+          "check_code": "WIDTH_1280",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 1280,
+          "observed": 1280,
+          "result": true
+        },
+        {
+          "check_code": "HEIGHT_720",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 720,
+          "observed": 720,
+          "result": true
+        },
+        {
+          "check_code": "DURATION_5_085011",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "5.085011±0.000001",
+          "observed": "5.085011",
+          "result": true
+        },
+        {
+          "check_code": "ROTATION_ZERO",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "FRAME_EVIDENCE_121",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 121,
+          "observed": 121,
+          "result": true
+        },
+        {
+          "check_code": "METADATA_SAFETY",
+          "execution_phase": "METADATA_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "FULL_DECODE_PASS",
+          "execution_phase": "FULL_DECODE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "VIDEO_FRAMEMD5_EQUIVALENCE",
+          "execution_phase": "VIDEO_EQUIVALENCE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "AUDIO_FRAMEMD5_EQUIVALENCE",
+          "execution_phase": "AUDIO_EQUIVALENCE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        }
+      ],
+      "ffprobe_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 4489,
+        "stdout_sha256": "ec1110aec04029ac242009a9bfe1b849cac6bd572d2f41e32dfd4cdb1d586718",
+        "timeout": false
+      },
+      "first_failed_check": null,
+      "first_failed_expected": null,
+      "first_failed_observed": null,
+      "first_failed_phase": null,
+      "full_decode_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 0,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      "identity": "C05",
+      "padded_bytes": 4194304,
+      "padded_sha256": "87b399536ffe25e888e1c843c6cbc54ceea5b5efc4d9fa23cb9e8f9ef3e1dab3",
+      "padding_box_bytes": 1777581,
+      "probe_facts": {
+        "audio_stream_count": 1,
+        "codec": "h264",
+        "duration_text": "5.085011",
+        "forbidden_metadata_marker_count": 0,
+        "format_is_mp4": true,
+        "frame_evidence": 121,
+        "height": 720,
+        "other_stream_count": 0,
+        "pixel_format": "yuv420p",
+        "rotation": 0,
+        "safe_metadata_key_count": 10,
+        "video_stream_count": 1,
+        "width": 1280
+      },
+      "remux_bytes": 2416723,
+      "remux_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 0,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      "technical_result": "PASS",
+      "temporary_identity": "C05_DIAGNOSTIC.mp4",
+      "unevaluated_checks": [],
+      "video_equivalence": {
+        "diagnostic_record_count": 121,
+        "equivalent": true,
+        "source_record_count": 121
+      }
+    },
+    {
+      "audio_equivalence": {
+        "diagnostic_record_count": 219,
+        "equivalent": true,
+        "source_record_count": 219
+      },
+      "canonical_bytes": 2419698,
+      "canonical_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_03.mp4",
+      "canonical_sha256": "36bfa241c6262daccce1c87df53e8e589ef63a46fdfeef385a560ee55ea74cd9",
+      "duration_decimal_difference": "0.000000",
+      "duration_original_text": "5.085011",
+      "evaluated_check_count": 21,
+      "evaluated_checks": [
+        {
+          "check_code": "FILE_PRESENT",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FILE_REGULAR",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FILE_NONEMPTY",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "TARGET_SIZE_EXACT",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": 4194304,
+          "observed": 4194304,
+          "result": true
+        },
+        {
+          "check_code": "TOP_LEVEL_FREE_BOX_VALID",
+          "execution_phase": "FILE_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "FFPROBE_JSON_PARSE",
+          "execution_phase": "FFPROBE_PARSE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "CONTAINER_MP4",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "VIDEO_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 1,
+          "observed": 1,
+          "result": true
+        },
+        {
+          "check_code": "AUDIO_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 1,
+          "observed": 1,
+          "result": true
+        },
+        {
+          "check_code": "OTHER_STREAM_COUNT",
+          "execution_phase": "STREAM_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "CODEC_H264",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "h264",
+          "observed": "h264",
+          "result": true
+        },
+        {
+          "check_code": "PIXEL_FORMAT_YUV420P",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "yuv420p",
+          "observed": "yuv420p",
+          "result": true
+        },
+        {
+          "check_code": "WIDTH_1280",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 1280,
+          "observed": 1280,
+          "result": true
+        },
+        {
+          "check_code": "HEIGHT_720",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 720,
+          "observed": 720,
+          "result": true
+        },
+        {
+          "check_code": "DURATION_5_085011",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": "5.085011±0.000001",
+          "observed": "5.085011",
+          "result": true
+        },
+        {
+          "check_code": "ROTATION_ZERO",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "FRAME_EVIDENCE_121",
+          "execution_phase": "VIDEO_CONTRACT",
+          "expected": 121,
+          "observed": 121,
+          "result": true
+        },
+        {
+          "check_code": "METADATA_SAFETY",
+          "execution_phase": "METADATA_CONTRACT",
+          "expected": 0,
+          "observed": 0,
+          "result": true
+        },
+        {
+          "check_code": "FULL_DECODE_PASS",
+          "execution_phase": "FULL_DECODE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "VIDEO_FRAMEMD5_EQUIVALENCE",
+          "execution_phase": "VIDEO_EQUIVALENCE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        },
+        {
+          "check_code": "AUDIO_FRAMEMD5_EQUIVALENCE",
+          "execution_phase": "AUDIO_EQUIVALENCE",
+          "expected": true,
+          "observed": true,
+          "result": true
+        }
+      ],
+      "ffprobe_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 4489,
+        "stdout_sha256": "bbf004b5342534cb72c1cc72fc3e6c655af5c1f2e1512d73528c2a545f172f46",
+        "timeout": false
+      },
+      "first_failed_check": null,
+      "first_failed_expected": null,
+      "first_failed_observed": null,
+      "first_failed_phase": null,
+      "full_decode_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 0,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      "identity": "C06",
+      "padded_bytes": 4194304,
+      "padded_sha256": "c34d0c36c68099a9e74dfb5fc41d2745ac16e36f4deb4f0cd4dd1caaafac92e6",
+      "padding_box_bytes": 1775157,
+      "probe_facts": {
+        "audio_stream_count": 1,
+        "codec": "h264",
+        "duration_text": "5.085011",
+        "forbidden_metadata_marker_count": 0,
+        "format_is_mp4": true,
+        "frame_evidence": 121,
+        "height": 720,
+        "other_stream_count": 0,
+        "pixel_format": "yuv420p",
+        "rotation": 0,
+        "safe_metadata_key_count": 10,
+        "video_stream_count": 1,
+        "width": 1280
+      },
+      "remux_bytes": 2419147,
+      "remux_process": {
+        "launched": true,
+        "return_code": 0,
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 0,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      "technical_result": "PASS",
+      "temporary_identity": "C06_DIAGNOSTIC.mp4",
+      "unevaluated_checks": [],
+      "video_equivalence": {
+        "diagnostic_record_count": 121,
+        "equivalent": true,
+        "source_record_count": 121
+      }
+    }
+  ],
+  "repository_validation": {
+    "compile": {
+      "command": "python -m compileall -q tools/cal003_blind_package tests/cal003_blind_package",
+      "result": "PASS",
+      "return_code": 0,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests": {
+      "command": "python -W error -m unittest discover -s tests/cal003_blind_package -p \"test_technical_validation_*.py\" -v",
+      "errors": 0,
+      "failures": 0,
+      "files": 3,
+      "methods": 106,
+      "result": "PASS",
+      "return_code": 0,
+      "skips": 0,
+      "stderr_bytes": 11962,
+      "stderr_sha256": "eaa5eda41d630823415db4a6b1898eec84f7e683921e4664ead03e82b51bf71f",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "warnings": 0
+    }
+  },
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_TECHNICAL_DIAGNOSTIC_RECORD_V0_2",
+  "starting_checkpoint": "bafb50cf84e2d53186b02ef066fb690aab7ed051",
+  "summary": {
+    "all_six_technical_pass": true,
+    "local_safety_failures": 0,
+    "technical_fail_count": 0,
+    "technical_pass_count": 6,
+    "temporary_cleanup": "PASS",
+    "temporary_reproductions": 6
+  }
+}
