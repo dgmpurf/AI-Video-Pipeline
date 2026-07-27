@@ -1,0 +1,164 @@
+{
+  "authorization_verification": "PASS",
+  "committed_input_bindings": [
+    {
+      "bytes": 14382,
+      "git_blob": "37bff0f5537ad51e609c536bd34f83824e859176",
+      "label": "download_evidence_manifest",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/evidence_manifest.json",
+      "sha256": "6a5ee0106eb946d600e36475da1e81b8a323212da64daa44914eb05d66ca03e9",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 12124,
+      "git_blob": "41ae77bf9e7584b8b2d4c4167d37b4890b6c39de",
+      "label": "download_execution_record",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/execution.json",
+      "sha256": "ebf54f9610b49b151c0610468cc22294f9ff6dffbf0e2ecbac0f6d83476fe765",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 22825,
+      "git_blob": "491fa14c8cdd88ed814e1691ee84929a6d9538d4",
+      "label": "download_governance_report",
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_DOWNLOAD_RESULT.md",
+      "sha256": "1ed8d753a250079851e0511e24ca0dd170b8788be92ab8a23758ae0f35f60991",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2017,
+      "git_blob": "1ca410f2fcb37b9d2be4e835bc188bfd068933ae",
+      "label": "blind_review_protocol",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/blind_review_protocol.json",
+      "sha256": "0fa75644c2067f8a42c3e689c558fd27618a6297d8010d7b6e1f8c628886e614",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 4609,
+      "git_blob": "286e424b486331f862eea934ed0a53f070f3d35b",
+      "label": "review_contract",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/review_contract.json",
+      "sha256": "e8855d71ddc39efc07f8db7317d770d76c0ffbda829cee55fde662e18b26c8f4",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 4971,
+      "git_blob": "520d9d88ba20f4393e6abcd40129e63f1100ba6d",
+      "label": "PUSH-01_technical",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/technical/push_01.json",
+      "sha256": "630aee78633a203301d29997c9f0deb8ee32993c70518c637a98d52b3ac380fd",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2299169,
+      "git_blob": "5e0d9c373e5c828ecdaa93760ade3d06669a6452",
+      "label": "PUSH-01_canonical_media",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_01.mp4",
+      "sha256": "888bb1a27951cbe211b8a0506a5decb20c4f9aa2e9ba255a7832c1735836380c",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 4989,
+      "git_blob": "870771b6b182d6073acc18d75ab268babfcacaac",
+      "label": "IMPACT-01_technical",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/technical/impact_01.json",
+      "sha256": "6312ec95b046272a45d495fd0d9a1472200e0eec70113bd580e5cbf5e152c5c2",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2365925,
+      "git_blob": "03dc60273c89f023cdaee3f1e1c0400db71805b5",
+      "label": "IMPACT-01_canonical_media",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_01.mp4",
+      "sha256": "86505a14f9afbb48db44b429e5b60b36094cb896acf34a23f19a4299785d591f",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 4989,
+      "git_blob": "d71a113da63aeb3516cf75e3445abca7439308fb",
+      "label": "IMPACT-02_technical",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/technical/impact_02.json",
+      "sha256": "6076351e4f3b7c88a77c4f68e4191cf8f567aa7a15ca3296bc52209608c258ee",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 3147949,
+      "git_blob": "49675ec0e2146d58c426e51c11a4337fd4cf11e0",
+      "label": "IMPACT-02_canonical_media",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_02.mp4",
+      "sha256": "5bff5f8fe963d2db826b2195194a648ebe8823fb53078ee82d43f2adf9ff5ca9",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 4971,
+      "git_blob": "b2c02c654accf726280392124878b0734877cc2c",
+      "label": "PUSH-02_technical",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/technical/push_02.json",
+      "sha256": "ea677e62d32e9448148d9a94405790e68e35494466230000dc1332a7436ffa03",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2852365,
+      "git_blob": "78a47b640191c804d9f32fbf419e3f91adbf39b6",
+      "label": "PUSH-02_canonical_media",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_02.mp4",
+      "sha256": "9db1d8dff40c5b69641be0e49f1ff107231bce88f618b218089a38214e85af21",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 4971,
+      "git_blob": "7c5fb692ef453976fd74f1c20ff36a9c7a1ab257",
+      "label": "PUSH-03_technical",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/technical/push_03.json",
+      "sha256": "9e232897268c87b692bbedebf701b471635730167ace975523c35490ac9d47ff",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2417274,
+      "git_blob": "9cb15b427a007ee09022cbfba543395caa434243",
+      "label": "PUSH-03_canonical_media",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_03.mp4",
+      "sha256": "196945461a5a7c748e75911e962dde8523f99762bc64e0ffa2bb506d4f52f921",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 4989,
+      "git_blob": "6087bce4a865f990389101e59f65d979504795fd",
+      "label": "IMPACT-03_technical",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/technical/impact_03.json",
+      "sha256": "a1056fb41eed7ffe27026ae50f8c1a194656990b6da55a938a69e4870f82b1d4",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2419698,
+      "git_blob": "28160e45065bede131b37ef485ef006ebb394604",
+      "label": "IMPACT-03_canonical_media",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_03.mp4",
+      "sha256": "36bfa241c6262daccce1c87df53e8e589ef63a46fdfeef385a560ee55ea74cd9",
+      "worktree_equals_head": true
+    }
+  ],
+  "committed_input_coverage": "17/17",
+  "pre_activation_result": "PASS",
+  "repository_checkpoint": {
+    "active_git_operations": {
+      "bisect": false,
+      "cherry_pick": false,
+      "merge": false,
+      "rebase": false,
+      "revert": false
+    },
+    "branch": "main",
+    "commit_message": "download(cal003): retrieve reference repeatability R1",
+    "head": "5ea7fa6399e892e2e465c2a7847644d7aa61c4b0",
+    "head_origin_aligned": true,
+    "origin_main": "5ea7fa6399e892e2e465c2a7847644d7aa61c4b0",
+    "parent": "6e3ee71dbc608d6eb3d27e41601ccd68524a44ab",
+    "parent_to_head_added_paths": 23,
+    "parent_to_head_commit_count": 1,
+    "parent_to_head_deleted_paths": 0,
+    "parent_to_head_modified_paths": 0,
+    "parent_to_head_renamed_paths": 0
+  },
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_PREFLIGHT_V0_1"
+}
