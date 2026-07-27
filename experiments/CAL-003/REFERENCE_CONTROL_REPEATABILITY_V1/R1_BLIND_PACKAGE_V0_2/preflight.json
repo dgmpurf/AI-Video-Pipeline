@@ -1,0 +1,31 @@
+{
+  "authorization_verification": "PASS",
+  "committed_input_count": 21,
+  "committed_input_coverage": "21/21",
+  "ffmpeg_preflight": {
+    "path": "C:/ffmpeg/bin/ffmpeg.exe",
+    "regular_file": true,
+    "return_code": 0,
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_bytes": 1986,
+    "stdout_sha256": "b0b7fc8be5000b4f04dce2969021b5ac4d0c8388ed12ecffb98e92f28d04c854",
+    "version_line": "ffmpeg version 2023-03-27-git-f7abe92bd7-full_build-www.gyan.dev Copyright (c) 2000-2023 the FFmpeg developers"
+  },
+  "ffprobe_preflight": {
+    "path": "C:/ffmpeg/bin/ffprobe.exe",
+    "regular_file": true,
+    "return_code": 0,
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_bytes": 1987,
+    "stdout_sha256": "0239227128c28074a4344bacb2dd570782d7fa14af42a1c54cec46a3c139082c",
+    "version_line": "ffprobe version 2023-03-27-git-f7abe92bd7-full_build-www.gyan.dev Copyright (c) 2007-2023 the FFmpeg developers"
+  },
+  "planned_repository_paths": 20,
+  "planned_sealed_artifacts": 1,
+  "repository_checkpoint": "ca70075f536eed2aada050b16640f3e4d3d396d0",
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_PREFLIGHT_V0_2",
+  "untracked_baseline_count": 26,
+  "untracked_baseline_sha256": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94"
+}

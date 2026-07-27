@@ -1,0 +1,29 @@
+# CAL003 Reference Control Repeatability R1 Blind Package V0.2 Failure
+
+- Actual decision: `CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_V0_2_FAILURE_RECORDED`
+- Next phase: `CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_V0_2_FAILURE_HUMAN_DECISION`
+- Starting checkpoint: `ca70075f536eed2aada050b16640f3e4d3d396d0`
+- Authorization activated: true
+- Authorization consumed: true
+- Authorization reusable: false
+- Random permutation attempts: 1
+- Salt-generation attempts: 1
+- Failed V0.1 randomness reused: false
+- Safe failure class: `ValueError`
+- Safe failure phase: `TECHNICAL_VALIDATION_B01`
+- Review-visible media count: 0
+- Public commitment exists: false
+- Sealed partial exists: false
+- Sealed final exists: false
+- Temporary root exists: false
+- Plaintext mapping copies: 0
+- Salt copies: 0
+- Mapping disclosed: false
+- Salt disclosed: false
+- Dreamina calls: 0
+- Provider calls: 0
+- Semantic review: false
+- Unblinding: false
+- Gate derivation: false
+- final_master: false
+- locked: false
