@@ -1,0 +1,340 @@
+{
+  "C02_reopened": false,
+  "C03_authorized": false,
+  "R02_authorized": false,
+  "actual_decision": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_SIX_TASK_DOWNLOAD_SUCCESS_TECHNICAL_VALIDATION_PASS",
+  "actual_dreamina_process_count": 9,
+  "actual_next_phase": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_MAPPING_COMMITMENT_AUTHORIZATION_HUMAN_DECISION",
+  "actual_process_order": [
+    "dreamina version",
+    "dreamina user_credit",
+    "dreamina query_result -h",
+    "PUSH-01 download",
+    "IMPACT-01 download",
+    "IMPACT-02 download",
+    "PUSH-02 download",
+    "PUSH-03 download",
+    "IMPACT-03 download"
+  ],
+  "all_six_gate_result": "PASS",
+  "batch_calls": 0,
+  "blind_aliases_assigned": false,
+  "blind_commitment_created": false,
+  "blind_mapping_materialized": false,
+  "blind_salt_generated": false,
+  "cal003_r1_download_phase_complete": true,
+  "cal003_r1_experiment_complete": false,
+  "called_task_ids": [
+    "PUSH-01",
+    "IMPACT-01",
+    "IMPACT-02",
+    "PUSH-02",
+    "PUSH-03",
+    "IMPACT-03"
+  ],
+  "canonical_media_bindings": [
+    {
+      "bytes": 2299169,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_01.mp4",
+      "sha256": "888bb1a27951cbe211b8a0506a5decb20c4f9aa2e9ba255a7832c1735836380c",
+      "task_id": "PUSH-01",
+      "worktree_regular_file": true
+    },
+    {
+      "bytes": 2365925,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_01.mp4",
+      "sha256": "86505a14f9afbb48db44b429e5b60b36094cb896acf34a23f19a4299785d591f",
+      "task_id": "IMPACT-01",
+      "worktree_regular_file": true
+    },
+    {
+      "bytes": 3147949,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_02.mp4",
+      "sha256": "5bff5f8fe963d2db826b2195194a648ebe8823fb53078ee82d43f2adf9ff5ca9",
+      "task_id": "IMPACT-02",
+      "worktree_regular_file": true
+    },
+    {
+      "bytes": 2852365,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_02.mp4",
+      "sha256": "9db1d8dff40c5b69641be0e49f1ff107231bce88f618b218089a38214e85af21",
+      "task_id": "PUSH-02",
+      "worktree_regular_file": true
+    },
+    {
+      "bytes": 2417274,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_03.mp4",
+      "sha256": "196945461a5a7c748e75911e962dde8523f99762bc64e0ffa2bb506d4f52f921",
+      "task_id": "PUSH-03",
+      "worktree_regular_file": true
+    },
+    {
+      "bytes": 2419698,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_03.mp4",
+      "sha256": "36bfa241c6262daccce1c87df53e8e589ef63a46fdfeef385a560ee55ea74cd9",
+      "task_id": "IMPACT-03",
+      "worktree_regular_file": true
+    }
+  ],
+  "canonical_media_count": 6,
+  "canonicalization_performed": true,
+  "complete_mp4_review_performed": false,
+  "download_call_count": 6,
+  "final_master": false,
+  "fixed_task_completion": false,
+  "help_call_count": 1,
+  "identical_hash_human_decision_flag": false,
+  "identical_hash_pair_count": 0,
+  "identical_hash_task_pairs": [],
+  "local_gate_evaluation": {
+    "corrected_explicit_contract_result": "PASS",
+    "downloads_repeated": 0,
+    "initial_generic_aggregation_issue": "EXPECTED_FALSE_FIELDS_WERE_NOT_POLARITY_AWARE",
+    "provider_calls_added": 0
+  },
+  "locked": false,
+  "maximum_download_calls": 6,
+  "maximum_dreamina_process_count": 9,
+  "media_locally_available": true,
+  "new_submit_calls": 0,
+  "original_R02_blocked": true,
+  "post_move_technical_summaries": [
+    {
+      "bytes": 2299169,
+      "ffprobe_result": "PASS",
+      "full_decode_result": "PASS",
+      "metadata_safety_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_01.mp4",
+      "sha256": "888bb1a27951cbe211b8a0506a5decb20c4f9aa2e9ba255a7832c1735836380c",
+      "stream_result": "PASS",
+      "task_id": "PUSH-01",
+      "technical_result": "PASS"
+    },
+    {
+      "bytes": 2365925,
+      "ffprobe_result": "PASS",
+      "full_decode_result": "PASS",
+      "metadata_safety_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_01.mp4",
+      "sha256": "86505a14f9afbb48db44b429e5b60b36094cb896acf34a23f19a4299785d591f",
+      "stream_result": "PASS",
+      "task_id": "IMPACT-01",
+      "technical_result": "PASS"
+    },
+    {
+      "bytes": 3147949,
+      "ffprobe_result": "PASS",
+      "full_decode_result": "PASS",
+      "metadata_safety_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_02.mp4",
+      "sha256": "5bff5f8fe963d2db826b2195194a648ebe8823fb53078ee82d43f2adf9ff5ca9",
+      "stream_result": "PASS",
+      "task_id": "IMPACT-02",
+      "technical_result": "PASS"
+    },
+    {
+      "bytes": 2852365,
+      "ffprobe_result": "PASS",
+      "full_decode_result": "PASS",
+      "metadata_safety_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_02.mp4",
+      "sha256": "9db1d8dff40c5b69641be0e49f1ff107231bce88f618b218089a38214e85af21",
+      "stream_result": "PASS",
+      "task_id": "PUSH-02",
+      "technical_result": "PASS"
+    },
+    {
+      "bytes": 2417274,
+      "ffprobe_result": "PASS",
+      "full_decode_result": "PASS",
+      "metadata_safety_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_03.mp4",
+      "sha256": "196945461a5a7c748e75911e962dde8523f99762bc64e0ffa2bb506d4f52f921",
+      "stream_result": "PASS",
+      "task_id": "PUSH-03",
+      "technical_result": "PASS"
+    },
+    {
+      "bytes": 2419698,
+      "ffprobe_result": "PASS",
+      "full_decode_result": "PASS",
+      "metadata_safety_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_03.mp4",
+      "sha256": "36bfa241c6262daccce1c87df53e8e589ef63a46fdfeef385a560ee55ea74cd9",
+      "stream_result": "PASS",
+      "task_id": "IMPACT-03",
+      "technical_result": "PASS"
+    }
+  ],
+  "production_approved": false,
+  "production_reentry_authorized": false,
+  "provider_visual_content_reviewed": false,
+  "query_loop_calls": 0,
+  "query_only_calls": 0,
+  "repeatability_conclusion_known": false,
+  "resubmit_calls": 0,
+  "retry_calls": 0,
+  "review_performed": false,
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_DOWNLOAD_EXECUTION_RECORD_V0_1",
+  "six_download_receipt_summaries": [
+    {
+      "acceptance_result": "PASS",
+      "bytes": 2299169,
+      "called": true,
+      "media_first_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/downloads/push_01.json",
+      "sha256": "888bb1a27951cbe211b8a0506a5decb20c4f9aa2e9ba255a7832c1735836380c",
+      "submit_id": "65aa46f5-0125-4d07-8c6e-3fd5112d29a7",
+      "task_id": "PUSH-01"
+    },
+    {
+      "acceptance_result": "PASS",
+      "bytes": 2365925,
+      "called": true,
+      "media_first_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/downloads/impact_01.json",
+      "sha256": "86505a14f9afbb48db44b429e5b60b36094cb896acf34a23f19a4299785d591f",
+      "submit_id": "b10cf271-288e-4fdb-925c-b4bd45856979",
+      "task_id": "IMPACT-01"
+    },
+    {
+      "acceptance_result": "PASS",
+      "bytes": 3147949,
+      "called": true,
+      "media_first_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/downloads/impact_02.json",
+      "sha256": "5bff5f8fe963d2db826b2195194a648ebe8823fb53078ee82d43f2adf9ff5ca9",
+      "submit_id": "3cfa385f-99c9-4e1f-871e-d52ff154ebae",
+      "task_id": "IMPACT-02"
+    },
+    {
+      "acceptance_result": "PASS",
+      "bytes": 2852365,
+      "called": true,
+      "media_first_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/downloads/push_02.json",
+      "sha256": "9db1d8dff40c5b69641be0e49f1ff107231bce88f618b218089a38214e85af21",
+      "submit_id": "2258abca-2de6-4394-903f-7de609a7e711",
+      "task_id": "PUSH-02"
+    },
+    {
+      "acceptance_result": "PASS",
+      "bytes": 2417274,
+      "called": true,
+      "media_first_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/downloads/push_03.json",
+      "sha256": "196945461a5a7c748e75911e962dde8523f99762bc64e0ffa2bb506d4f52f921",
+      "submit_id": "3fbcdb18-24d2-4a43-9cd5-5c7d1de41011",
+      "task_id": "PUSH-03"
+    },
+    {
+      "acceptance_result": "PASS",
+      "bytes": 2419698,
+      "called": true,
+      "media_first_result": "PASS",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/downloads/impact_03.json",
+      "sha256": "36bfa241c6262daccce1c87df53e8e589ef63a46fdfeef385a560ee55ea74cd9",
+      "submit_id": "10193c64-b91e-454e-9118-6ab3a0cf1fb9",
+      "task_id": "IMPACT-03"
+    }
+  ],
+  "six_temporary_technical_summaries": [
+    {
+      "bytes": 2299169,
+      "codec_name": "h264",
+      "duration": 5.085011,
+      "full_decode_result": "PASS",
+      "height": 720,
+      "pixel_format": "yuv420p",
+      "sha256": "888bb1a27951cbe211b8a0506a5decb20c4f9aa2e9ba255a7832c1735836380c",
+      "task_id": "PUSH-01",
+      "technical_result": "PASS",
+      "width": 1280
+    },
+    {
+      "bytes": 2365925,
+      "codec_name": "h264",
+      "duration": 5.085011,
+      "full_decode_result": "PASS",
+      "height": 720,
+      "pixel_format": "yuv420p",
+      "sha256": "86505a14f9afbb48db44b429e5b60b36094cb896acf34a23f19a4299785d591f",
+      "task_id": "IMPACT-01",
+      "technical_result": "PASS",
+      "width": 1280
+    },
+    {
+      "bytes": 3147949,
+      "codec_name": "h264",
+      "duration": 5.085011,
+      "full_decode_result": "PASS",
+      "height": 720,
+      "pixel_format": "yuv420p",
+      "sha256": "5bff5f8fe963d2db826b2195194a648ebe8823fb53078ee82d43f2adf9ff5ca9",
+      "task_id": "IMPACT-02",
+      "technical_result": "PASS",
+      "width": 1280
+    },
+    {
+      "bytes": 2852365,
+      "codec_name": "h264",
+      "duration": 5.085011,
+      "full_decode_result": "PASS",
+      "height": 720,
+      "pixel_format": "yuv420p",
+      "sha256": "9db1d8dff40c5b69641be0e49f1ff107231bce88f618b218089a38214e85af21",
+      "task_id": "PUSH-02",
+      "technical_result": "PASS",
+      "width": 1280
+    },
+    {
+      "bytes": 2417274,
+      "codec_name": "h264",
+      "duration": 5.085011,
+      "full_decode_result": "PASS",
+      "height": 720,
+      "pixel_format": "yuv420p",
+      "sha256": "196945461a5a7c748e75911e962dde8523f99762bc64e0ffa2bb506d4f52f921",
+      "task_id": "PUSH-03",
+      "technical_result": "PASS",
+      "width": 1280
+    },
+    {
+      "bytes": 2419698,
+      "codec_name": "h264",
+      "duration": 5.085011,
+      "full_decode_result": "PASS",
+      "height": 720,
+      "pixel_format": "yuv420p",
+      "sha256": "36bfa241c6262daccce1c87df53e8e589ef63a46fdfeef385a560ee55ea74cd9",
+      "task_id": "IMPACT-03",
+      "technical_result": "PASS",
+      "width": 1280
+    }
+  ],
+  "starting_checkpoint": {
+    "branch": "main",
+    "commit_message": "query(cal003): record reference repeatability R1 task status",
+    "head": "6e3ee71dbc608d6eb3d27e41601ccd68524a44ab",
+    "origin_main": "6e3ee71dbc608d6eb3d27e41601ccd68524a44ab",
+    "parent": "8b833947dc58d459a8c8e238219b768107b6f048",
+    "unrelated_untracked_count": 26,
+    "unrelated_untracked_set_sha256": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94"
+  },
+  "stop_position": null,
+  "stop_reason": null,
+  "temporary_cleanup_result": {
+    "directories_remaining": 0,
+    "pre_cleanup_regular_or_special_entries": 0,
+    "regular_files_remaining": 0,
+    "reparse_points_remaining": 0,
+    "result": "PASS",
+    "symlinks_remaining": 0,
+    "target": "G:/AICODING/AI_VIDEO/_temp/CAL003_R1_DLOAD_V0_1",
+    "target_guard": "PASS",
+    "temporary_root_exists": false
+  },
+  "uncalled_task_ids": [],
+  "user_credit_call_count": 1,
+  "version_call_count": 1
+}

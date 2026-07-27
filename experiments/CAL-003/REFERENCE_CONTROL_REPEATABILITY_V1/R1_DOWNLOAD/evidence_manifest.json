@@ -1,0 +1,370 @@
+{
+  "artifact_count": 22,
+  "artifacts": [
+    {
+      "bytes": 18963,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/authorization.json",
+      "sha256": "edb49250e56e95c044d1506af9fafe6c140781a6f87b9b967f5f0bafa246aa64"
+    },
+    {
+      "bytes": 13476,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/preflight.json",
+      "sha256": "4a10d6689a0cf6a36c72d46b38c562b244df23f1ebaf9db128241080117d2bdd"
+    },
+    {
+      "bytes": 2476,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/downloads/push_01.json",
+      "sha256": "678b00c2341f5471a741a03974cd0c2cb93388e1bb6d5e887823b300a933363a"
+    },
+    {
+      "bytes": 2490,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/downloads/impact_01.json",
+      "sha256": "750c8c328f79c5f536f68881368e2da4fc41cdfa92874480eaf7790fd82ea3a2"
+    },
+    {
+      "bytes": 2490,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/downloads/impact_02.json",
+      "sha256": "c1f498f7d32494bc91b46e3a9630a558c84183390dbc2755f75f9f5711fa9725"
+    },
+    {
+      "bytes": 2476,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/downloads/push_02.json",
+      "sha256": "d8f2e4a83c9131b97b033b3b2d6a91ed6f4abcf29bd2f3c1ea1e6888ab8b51df"
+    },
+    {
+      "bytes": 2476,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/downloads/push_03.json",
+      "sha256": "d20e23b41e325faeb76743e2d7a9da527735cf2b01d63c61ae36725733db8bf7"
+    },
+    {
+      "bytes": 2489,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/downloads/impact_03.json",
+      "sha256": "5537c6fd1c5f11f92b2d16b6f8cd625a8cbbfb856fa7a13ec4d07ccf56db637a"
+    },
+    {
+      "bytes": 4971,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/technical/push_01.json",
+      "sha256": "630aee78633a203301d29997c9f0deb8ee32993c70518c637a98d52b3ac380fd"
+    },
+    {
+      "bytes": 4989,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/technical/impact_01.json",
+      "sha256": "6312ec95b046272a45d495fd0d9a1472200e0eec70113bd580e5cbf5e152c5c2"
+    },
+    {
+      "bytes": 4989,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/technical/impact_02.json",
+      "sha256": "6076351e4f3b7c88a77c4f68e4191cf8f567aa7a15ca3296bc52209608c258ee"
+    },
+    {
+      "bytes": 4971,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/technical/push_02.json",
+      "sha256": "ea677e62d32e9448148d9a94405790e68e35494466230000dc1332a7436ffa03"
+    },
+    {
+      "bytes": 4971,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/technical/push_03.json",
+      "sha256": "9e232897268c87b692bbedebf701b471635730167ace975523c35490ac9d47ff"
+    },
+    {
+      "bytes": 4989,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/technical/impact_03.json",
+      "sha256": "a1056fb41eed7ffe27026ae50f8c1a194656990b6da55a938a69e4870f82b1d4"
+    },
+    {
+      "bytes": 2299169,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_01.mp4",
+      "sha256": "888bb1a27951cbe211b8a0506a5decb20c4f9aa2e9ba255a7832c1735836380c"
+    },
+    {
+      "bytes": 2365925,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_01.mp4",
+      "sha256": "86505a14f9afbb48db44b429e5b60b36094cb896acf34a23f19a4299785d591f"
+    },
+    {
+      "bytes": 3147949,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_02.mp4",
+      "sha256": "5bff5f8fe963d2db826b2195194a648ebe8823fb53078ee82d43f2adf9ff5ca9"
+    },
+    {
+      "bytes": 2852365,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_02.mp4",
+      "sha256": "9db1d8dff40c5b69641be0e49f1ff107231bce88f618b218089a38214e85af21"
+    },
+    {
+      "bytes": 2417274,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/PUSH_03.mp4",
+      "sha256": "196945461a5a7c748e75911e962dde8523f99762bc64e0ffa2bb506d4f52f921"
+    },
+    {
+      "bytes": 2419698,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_03.mp4",
+      "sha256": "36bfa241c6262daccce1c87df53e8e589ef63a46fdfeef385a560ee55ea74cd9"
+    },
+    {
+      "bytes": 12124,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/execution.json",
+      "sha256": "ebf54f9610b49b151c0610468cc22294f9ff6dffbf0e2ecbac0f6d83476fe765"
+    },
+    {
+      "bytes": 22825,
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_DOWNLOAD_RESULT.md",
+      "sha256": "1ed8d753a250079851e0511e24ca0dd170b8788be92ab8a23758ae0f35f60991"
+    }
+  ],
+  "boundaries": {
+    "blind_aliases_assigned": false,
+    "blind_mapping_materialized": false,
+    "complete_mp4_review_performed": false,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "locked": false,
+    "production_approved": false,
+    "production_reentry_authorized": false,
+    "repeatability_conclusion_known": false
+  },
+  "committed_input_count": 13,
+  "committed_input_coverage": "13/13",
+  "committed_inputs": [
+    {
+      "binding_result": "PASS",
+      "bytes": 17355,
+      "git_blob": "8ac58ce41a0c5051bcae4a2119ba2769de225f08",
+      "name": "query_authorization",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/authorization.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "cdc6d56dda5b1f62ee14770eeca3f4f42b46f59dcba912d5168de859649c2b05",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 10343,
+      "git_blob": "85697887e3c7d3e56584624d6088537f889cb045",
+      "name": "query_preflight",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/preflight.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "ef487da64e46842324632b2bccd740477eb7a691b48985eb06beca566e11c5b9",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2061,
+      "git_blob": "baa9b70054e9a7f2107253a81b560b13bd721e70",
+      "name": "push_01_query_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/push_01.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "893859eac2742eb4f974b469f5e711286bbc22c699cd99562cc87f45b86e6e8d",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2069,
+      "git_blob": "bf1c5fc32e7f6c644552d15f4d44c67147f5e033",
+      "name": "impact_01_query_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/impact_01.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "9b269a3cb9cc5e34a64a1b1c2fdb298fe206ccb79c392030ae5a154cd84547ab",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2068,
+      "git_blob": "cf0eeb06ca8791c8c8ad2321bb96627c5c6206a3",
+      "name": "impact_02_query_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/impact_02.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "90b80608768937bc821bb2eb830142db8c10f53ea339d0cbef07e82b2fab64ab",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2061,
+      "git_blob": "b9042116b8f7627bfa135ea2830fe61c13cfb253",
+      "name": "push_02_query_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/push_02.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "6ce456897b474f5beb820ded4e40bc006a32cfddb8e71d9326785475e016f320",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2060,
+      "git_blob": "5680f93a6f50ad22f84f4c19ca594bf503725a55",
+      "name": "push_03_query_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/push_03.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "cd620eed46637c3ac37297dd76cea20e388981948b8a7e787bd0ed6acbadab17",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2069,
+      "git_blob": "6e05bf3e3a5abc75d6f4e2d0b1d4eaf4a51a2664",
+      "name": "impact_03_query_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/impact_03.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "9d817384ec36c03ea03d7e80211431a44c6d4dc951a7bc3d0235ffb3d59ebca1",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 7017,
+      "git_blob": "ec4343558608121c3eabafbdcbe85dedf5e080fc",
+      "name": "query_execution",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/execution.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "478ac0fff25d4b4a8e649e3c71f17b58c7c9e22248be5ac90ef67cf8fb366dc0",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 9334,
+      "git_blob": "47a80e13ccd9c36614921d71386e5ff0e00298fb",
+      "name": "query_evidence_manifest",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "8aa0cccafb1da4aee7d3337481441df0a1b2062e1c241907480294e0325c457c",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 9658,
+      "git_blob": "cad619ebf51d315d47cf3ab668d14f4be18fd717",
+      "name": "query_governance_report",
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_QUERY_RESULT.md",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "4643052ffa17410cd547a83ace642acecd7171e5aad9e98db54acbe698f79e7b",
+      "strict_parse": "NOT_APPLICABLE",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2017,
+      "git_blob": "1ca410f2fcb37b9d2be4e835bc188bfd068933ae",
+      "name": "blind_review_protocol",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/blind_review_protocol.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "0fa75644c2067f8a42c3e689c558fd27618a6297d8010d7b6e1f8c628886e614",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 4609,
+      "git_blob": "286e424b486331f862eea934ed0a53f070f3d35b",
+      "name": "review_contract",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/review_contract.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "e8855d71ddc39efc07f8db7317d770d76c0ffbda829cee55fde662e18b26c8f4",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    }
+  ],
+  "decision": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_SIX_TASK_DOWNLOAD_SUCCESS_TECHNICAL_VALIDATION_PASS",
+  "evidence_coverage": "22/22",
+  "identical_hash_analysis": {
+    "human_decision_flag": false,
+    "identical_pair_count": 0,
+    "identical_task_pairs": [],
+    "pair_comparisons": 15
+  },
+  "included_artifact_count": 22,
+  "next_phase": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_MAPPING_COMMITMENT_AUTHORIZATION_HUMAN_DECISION",
+  "operation_counts": {
+    "batch_calls": 0,
+    "download_calls": 6,
+    "dreamina_processes": 9,
+    "new_submit_calls": 0,
+    "query_loop_calls": 0,
+    "query_only_calls": 0,
+    "query_result_help_calls": 1,
+    "resubmit_calls": 0,
+    "retry_calls": 0,
+    "user_credit_calls": 1,
+    "version_calls": 1
+  },
+  "protected_state": {
+    "blind_artifacts_created": 0,
+    "existing_paths_deleted": 0,
+    "existing_paths_modified": 0,
+    "existing_paths_renamed": 0,
+    "package_paths_changed": 0,
+    "prior_media_paths_changed": 0,
+    "prompt_paths_changed": 0,
+    "reference_paths_changed": 0,
+    "result": "PASS",
+    "review_artifacts_created": 0,
+    "source_paths_changed": 0
+  },
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_DOWNLOAD_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "sensitive_data": {
+    "blind_commitment_persisted": false,
+    "blind_mapping_persisted": false,
+    "blind_salt_persisted": false,
+    "private_account_data_persisted": false,
+    "raw_provider_output_persisted": false,
+    "raw_stderr_persisted": false,
+    "raw_stdout_persisted": false,
+    "scan_result": "PASS",
+    "signed_url_persisted": false
+  },
+  "starting_checkpoint": {
+    "branch": "main",
+    "commit_message": "query(cal003): record reference repeatability R1 task status",
+    "head": "6e3ee71dbc608d6eb3d27e41601ccd68524a44ab",
+    "origin_main": "6e3ee71dbc608d6eb3d27e41601ccd68524a44ab",
+    "parent": "8b833947dc58d459a8c8e238219b768107b6f048",
+    "unrelated_untracked_count": 26,
+    "unrelated_untracked_set_sha256": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94"
+  },
+  "technical_coverage": {
+    "all_six_gate": "PASS",
+    "canonical_media_count": 6,
+    "full_decode_pass": "6/6",
+    "post_move_pass": "6/6",
+    "pre_post_byte_equality": "6/6",
+    "pre_post_sha256_equality": "6/6",
+    "temporary_cleanup": "PASS",
+    "temporary_media_pass": "6/6"
+  },
+  "total_unique_bound_path_count": 35,
+  "unique_committed_input_path_count": 13,
+  "unique_output_path_count": 22
+}

@@ -1,0 +1,151 @@
+{
+  "all_six_gate_result": "PASS",
+  "called": true,
+  "canonicalization": {
+    "byte_equality": true,
+    "canonical_path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/media/IMPACT_03.mp4",
+    "performed": true,
+    "post_move_bytes": 2419698,
+    "post_move_sha256": "36bfa241c6262daccce1c87df53e8e589ef63a46fdfeef385a560ee55ea74cd9",
+    "pre_move_bytes": 2419698,
+    "pre_move_sha256": "36bfa241c6262daccce1c87df53e8e589ef63a46fdfeef385a560ee55ea74cd9",
+    "sha256_equality": true,
+    "source_temporary_file_absent": true
+  },
+  "download_receipt_binding": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DOWNLOAD/downloads/impact_03.json",
+  "final_technical_result": "PASS",
+  "identical_hash_comparisons": [
+    {
+      "identical": false,
+      "task_a": "PUSH-01",
+      "task_b": "IMPACT-03"
+    },
+    {
+      "identical": false,
+      "task_a": "IMPACT-01",
+      "task_b": "IMPACT-03"
+    },
+    {
+      "identical": false,
+      "task_a": "IMPACT-02",
+      "task_b": "IMPACT-03"
+    },
+    {
+      "identical": false,
+      "task_a": "PUSH-02",
+      "task_b": "IMPACT-03"
+    },
+    {
+      "identical": false,
+      "task_a": "PUSH-03",
+      "task_b": "IMPACT-03"
+    }
+  ],
+  "identical_hash_human_flag": false,
+  "post_move_validation": {
+    "ffprobe_result": "PASS",
+    "full_decode_result": "PASS",
+    "metadata_safety_result": "PASS",
+    "stream_result": "PASS",
+    "technical_facts": {
+      "attachment_stream_count": 0,
+      "audio_stream_count": 1,
+      "bytes": 2419698,
+      "codec_name": "h264",
+      "container_mp4": true,
+      "data_stream_count": 0,
+      "duration": 5.085011,
+      "extra_video_stream_count": 0,
+      "ffprobe_process": {
+        "return_code": 0,
+        "stderr_byte_length": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_byte_length": 4856,
+        "stdout_sha256": "69b46a0f2a0e4dd63471631ee9e293dbecd8a2923c2a3412a7f27bd085a0022a",
+        "timeout": false
+      },
+      "ffprobe_result": "PASS",
+      "frame_count": 121,
+      "full_decode_process": {
+        "return_code": 0,
+        "stderr_byte_length": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_byte_length": 0,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      "full_decode_result": "PASS",
+      "height": 720,
+      "metadata_safety_result": "PASS",
+      "pixel_format": "yuv420p",
+      "positive_frame_evidence": true,
+      "regular_file": true,
+      "reparse_point": false,
+      "rotation": 0,
+      "sha256": "36bfa241c6262daccce1c87df53e8e589ef63a46fdfeef385a560ee55ea74cd9",
+      "stream_validation_result": "PASS",
+      "subtitle_stream_count": 0,
+      "symlink": false,
+      "technical_result": "PASS",
+      "video_stream_count": 1,
+      "width": 1280
+    },
+    "technical_result": "PASS"
+  },
+  "reason_not_validated": null,
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_MEDIA_TECHNICAL_RECORD_V0_1",
+  "submit_id": "10193c64-b91e-454e-9118-6ab3a0cf1fb9",
+  "task_identity": {
+    "family": "IMPACT",
+    "ordinal_pair_index": 3,
+    "replicate_index": 3,
+    "submission_position": 6,
+    "task_id": "IMPACT-03"
+  },
+  "temporary_media": {
+    "path_identity": "impact_03/10193c64-b91e-454e-9118-6ab3a0cf1fb9_video_1.mp4",
+    "technical_facts": {
+      "attachment_stream_count": 0,
+      "audio_stream_count": 1,
+      "bytes": 2419698,
+      "codec_name": "h264",
+      "container_mp4": true,
+      "data_stream_count": 0,
+      "duration": 5.085011,
+      "extra_video_stream_count": 0,
+      "ffprobe_process": {
+        "return_code": 0,
+        "stderr_byte_length": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_byte_length": 4837,
+        "stdout_sha256": "a0243176676386b4674c2d2de1c0e5613af79af18dd4805ac5954eaba184d444",
+        "timeout": false
+      },
+      "ffprobe_result": "PASS",
+      "frame_count": 121,
+      "full_decode_process": {
+        "return_code": 0,
+        "stderr_byte_length": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_byte_length": 0,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      "full_decode_result": "PASS",
+      "height": 720,
+      "metadata_safety_result": "PASS",
+      "pixel_format": "yuv420p",
+      "positive_frame_evidence": true,
+      "regular_file": true,
+      "reparse_point": false,
+      "rotation": 0,
+      "sha256": "36bfa241c6262daccce1c87df53e8e589ef63a46fdfeef385a560ee55ea74cd9",
+      "stream_validation_result": "PASS",
+      "subtitle_stream_count": 0,
+      "symlink": false,
+      "technical_result": "PASS",
+      "video_stream_count": 1,
+      "width": 1280
+    }
+  }
+}

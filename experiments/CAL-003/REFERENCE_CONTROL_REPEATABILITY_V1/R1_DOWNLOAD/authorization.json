@@ -1,0 +1,345 @@
+{
+  "all_committed_input_bindings": [
+    {
+      "binding_result": "PASS",
+      "bytes": 17355,
+      "git_blob": "8ac58ce41a0c5051bcae4a2119ba2769de225f08",
+      "name": "query_authorization",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/authorization.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "cdc6d56dda5b1f62ee14770eeca3f4f42b46f59dcba912d5168de859649c2b05",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 10343,
+      "git_blob": "85697887e3c7d3e56584624d6088537f889cb045",
+      "name": "query_preflight",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/preflight.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "ef487da64e46842324632b2bccd740477eb7a691b48985eb06beca566e11c5b9",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2061,
+      "git_blob": "baa9b70054e9a7f2107253a81b560b13bd721e70",
+      "name": "push_01_query_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/push_01.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "893859eac2742eb4f974b469f5e711286bbc22c699cd99562cc87f45b86e6e8d",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2069,
+      "git_blob": "bf1c5fc32e7f6c644552d15f4d44c67147f5e033",
+      "name": "impact_01_query_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/impact_01.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "9b269a3cb9cc5e34a64a1b1c2fdb298fe206ccb79c392030ae5a154cd84547ab",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2068,
+      "git_blob": "cf0eeb06ca8791c8c8ad2321bb96627c5c6206a3",
+      "name": "impact_02_query_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/impact_02.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "90b80608768937bc821bb2eb830142db8c10f53ea339d0cbef07e82b2fab64ab",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2061,
+      "git_blob": "b9042116b8f7627bfa135ea2830fe61c13cfb253",
+      "name": "push_02_query_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/push_02.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "6ce456897b474f5beb820ded4e40bc006a32cfddb8e71d9326785475e016f320",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2060,
+      "git_blob": "5680f93a6f50ad22f84f4c19ca594bf503725a55",
+      "name": "push_03_query_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/push_03.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "cd620eed46637c3ac37297dd76cea20e388981948b8a7e787bd0ed6acbadab17",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2069,
+      "git_blob": "6e05bf3e3a5abc75d6f4e2d0b1d4eaf4a51a2664",
+      "name": "impact_03_query_receipt",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/queries/impact_03.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "9d817384ec36c03ea03d7e80211431a44c6d4dc951a7bc3d0235ffb3d59ebca1",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 7017,
+      "git_blob": "ec4343558608121c3eabafbdcbe85dedf5e080fc",
+      "name": "query_execution",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/execution.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "478ac0fff25d4b4a8e649e3c71f17b58c7c9e22248be5ac90ef67cf8fb366dc0",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 9334,
+      "git_blob": "47a80e13ccd9c36614921d71386e5ff0e00298fb",
+      "name": "query_evidence_manifest",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_QUERY/evidence_manifest.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "8aa0cccafb1da4aee7d3337481441df0a1b2062e1c241907480294e0325c457c",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 9658,
+      "git_blob": "cad619ebf51d315d47cf3ab668d14f4be18fd717",
+      "name": "query_governance_report",
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_QUERY_RESULT.md",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "4643052ffa17410cd547a83ace642acecd7171e5aad9e98db54acbe698f79e7b",
+      "strict_parse": "NOT_APPLICABLE",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 2017,
+      "git_blob": "1ca410f2fcb37b9d2be4e835bc188bfd068933ae",
+      "name": "blind_review_protocol",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/blind_review_protocol.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "0fa75644c2067f8a42c3e689c558fd27618a6297d8010d7b6e1f8c628886e614",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    },
+    {
+      "binding_result": "PASS",
+      "bytes": 4609,
+      "git_blob": "286e424b486331f862eea934ed0a53f070f3d35b",
+      "name": "review_contract",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/review_contract.json",
+      "regular_file": true,
+      "reparse_point": false,
+      "sha256": "e8855d71ddc39efc07f8db7317d770d76c0ffbda829cee55fde662e18b26c8f4",
+      "strict_parse": "PASS",
+      "symlink": false,
+      "worktree_equals_head": true
+    }
+  ],
+  "authority": {
+    "batch": false,
+    "blind_alias": false,
+    "blind_mapping": false,
+    "new_submit": false,
+    "production": false,
+    "query_loop": false,
+    "query_only": false,
+    "resubmit": false,
+    "retry": false,
+    "review": false
+  },
+  "authorization_lifecycle": {
+    "activated": true,
+    "activation_point": "FIRST_DREAMINA_VERSION_PROCESS_ATTEMPT",
+    "consumed": true,
+    "reusable": false
+  },
+  "authorized_process_counts": {
+    "download": 6,
+    "maximum_dreamina_processes": 9,
+    "query_result_help": 1,
+    "user_credit": 1,
+    "version": 1
+  },
+  "base64_character_count": 8736,
+  "base64_decode_count": 1,
+  "byte_length": 6552,
+  "canonical_authorization": "APPROVE_CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_MAX_SIX_DOWNLOAD_ONLY_MEDIA_FIRST_TECHNICAL_VALIDATION_V0_1__BIND_CURRENT_CHECKPOINT_6E3EE71DBC608D6EB3D27E41601CCD68524A44AB__BIND_QUERY_AUTHORIZATION_RECORD_BYTES_17355__BIND_QUERY_AUTHORIZATION_RECORD_SHA256_CDC6D56DDA5B1F62EE14770EECA3F4F42B46F59DCBA912D5168DE859649C2B05__BIND_QUERY_PREFLIGHT_RECORD_BYTES_10343__BIND_QUERY_PREFLIGHT_RECORD_SHA256_EF487DA64E46842324632B2BCCD740477EB7A691B48985EB06BECA566E11C5B9__BIND_PUSH_01_QUERY_RECEIPT_BYTES_2061__BIND_PUSH_01_QUERY_RECEIPT_SHA256_893859EAC2742EB4F974B469F5E711286BBC22C699CD99562CC87F45B86E6E8D__BIND_IMPACT_01_QUERY_RECEIPT_BYTES_2069__BIND_IMPACT_01_QUERY_RECEIPT_SHA256_9B269A3CB9CC5E34A64A1B1C2FDB298FE206CCB79C392030AE5A154CD84547AB__BIND_IMPACT_02_QUERY_RECEIPT_BYTES_2068__BIND_IMPACT_02_QUERY_RECEIPT_SHA256_90B80608768937BC821BB2EB830142DB8C10F53EA339D0CBEF07E82B2FAB64AB__BIND_PUSH_02_QUERY_RECEIPT_BYTES_2061__BIND_PUSH_02_QUERY_RECEIPT_SHA256_6CE456897B474F5BEB820DED4E40BC006A32CFDDB8E71D9326785475E016F320__BIND_PUSH_03_QUERY_RECEIPT_BYTES_2060__BIND_PUSH_03_QUERY_RECEIPT_SHA256_CD620EED46637C3AC37297DD76CEA20E388981948B8A7E787BD0ED6ACBADAB17__BIND_IMPACT_03_QUERY_RECEIPT_BYTES_2069__BIND_IMPACT_03_QUERY_RECEIPT_SHA256_9D817384EC36C03EA03D7E80211431A44C6D4DC951A7BC3D0235FFB3D59EBCA1__BIND_QUERY_EXECUTION_RECORD_BYTES_7017__BIND_QUERY_EXECUTION_RECORD_SHA256_478AC0FFF25D4B4A8E649E3C71F17B58C7C9E22248BE5AC90EF67CF8FB366DC0__BIND_QUERY_EVIDENCE_MANIFEST_BYTES_9334__BIND_QUERY_EVIDENCE_MANIFEST_SHA256_8AA0CCCAFB1DA4AEE7D3337481441DF0A1B2062E1C241907480294E0325C457C__BIND_QUERY_EVIDENCE_MANIFEST_GIT_BLOB_47A80E13CCD9C36614921D71386E5FF0E00298FB__BIND_QUERY_GOVERNANCE_REPORT_BYTES_9658__BIND_QUERY_GOVERNANCE_REPORT_SHA256_4643052FFA17410CD547A83ACE642ACECD7171E5AAD9E98DB54ACBE698F79E7B__BIND_BLIND_REVIEW_PROTOCOL_BYTES_2017__BIND_BLIND_REVIEW_PROTOCOL_SHA256_0FA75644C2067F8A42C3E689C558FD27618A6297D8010D7B6E1F8C628886E614__BIND_REVIEW_CONTRACT_BYTES_4609__BIND_REVIEW_CONTRACT_SHA256_E8855D71DDC39EFC07F8DB7317D770D76C0FFBDA829CEE55FDE662E18B26C8F4__BIND_PUSH_01_SUBMIT_ID_65AA46F5_0125_4D07_8C6E_3FD5112D29A7__BIND_IMPACT_01_SUBMIT_ID_B10CF271_288E_4FDB_925C_B4BD45856979__BIND_IMPACT_02_SUBMIT_ID_3CFA385F_99C9_4E1F_871E_D52FF154EBAE__BIND_PUSH_02_SUBMIT_ID_2258ABCA_2DE6_4394_903F_7DE609A7E711__BIND_PUSH_03_SUBMIT_ID_3FBCDB18_24D2_4A43_9CD5_5C7D1DE41011__BIND_IMPACT_03_SUBMIT_ID_10193C64_B91E_454E_9118_6AB3A0CF1FB9__ACCEPT_ALL_SIX_QUERY_RECEIPTS_AS_LOCAL_PASS_SUBMIT_ID_MATCH_TERMINAL_SUCCESS_FINISH_ONE_RESULT_ONE_VIDEO_AND_DOWNLOAD_READY__ACCEPT_QUERY_COMMIT_REMOTE_DURABLE_HEAD_ORIGIN_ALIGNED_QUERY_EVIDENCE_COVERAGE_TEN_OF_TEN_COMMITTED_INPUT_COVERAGE_ELEVEN_OF_ELEVEN_AND_SENSITIVE_DATA_PASS__AUTHORIZE_FIXED_WINDOWS_CLI_C_USERS_MSJPURF_BIN_DREAMINA_EXE__AUTHORIZE_PRE_ACTIVATION_READ_ONLY_GIT_QUERY_EVIDENCE_OUTPUT_PATH_TEMP_ROOT_MEDIA_TOOL_AND_DOWNLOAD_COMMAND_PREFLIGHT__AUTHORIZE_EXACTLY_ONE_DREAMINA_VERSION_CALL_ONE_DREAMINA_USER_CREDIT_CALL_AND_ONE_DREAMINA_QUERY_RESULT_HELP_CALL_IN_THE_ACTUAL_WINDOWS_EXECUTION_ENVIRONMENT__AUTHORIZE_EXACTLY_SIX_QUERY_RESULT_DOWNLOAD_CALLS_WITH_DOWNLOAD_DIR_IN_FIXED_ORDER_PUSH_01_IMPACT_01_IMPACT_02_PUSH_02_PUSH_03_IMPACT_03_USING_THE_EXACT_BOUND_SUBMIT_IDS__REQUIRE_FIXED_TASK_SPECIFIC_TEMP_ROOT_G_AICODING_AI_VIDEO_TEMP_CAL003_R1_DLOAD_V0_1_OUTSIDE_REPOSITORY_ON_G_DRIVE_WITH_SIX_INITIALLY_EMPTY_ISOLATED_TASK_SUBDIRECTORIES__REQUIRE_EACH_DOWNLOAD_ARGV_LIST_FORM_SHELL_FALSE_EXACTLY_ONE_BOUND_SUBMIT_ID_EXACTLY_ONE_BOUND_DOWNLOAD_DIR_ZERO_OUTPUT_DIR_ZERO_RETRY_ZERO_POLL_LOOP_AND_ZERO_CROSS_TASK_ID_CONTAMINATION__REQUIRE_SEQUENTIAL_NO_PARALLELISM_AND_STOP_BEFORE_ANY_LATER_DOWNLOAD_AFTER_THE_FIRST_LOCAL_COMMAND_TRANSPORT_AUTH_SUBMIT_ID_MEDIA_MATERIALIZATION_OR_TECHNICAL_VALIDATION_FAILURE__REQUIRE_MEDIA_FIRST_VALIDATION_FOR_EACH_CALLED_TASK_WITH_EXACTLY_ONE_NEW_REGULAR_NONEMPTY_MP4_IN_ITS_ISOLATED_TEMP_DIRECTORY_AND_PROCESS_RETURN_OR_STRUCTURED_PARSE_SECONDARY_ONLY_WHEN_THE_EXACT_EXPECTED_MEDIA_PASSES_ALL_LOCAL_VALIDATION__REQUIRE_EACH_TEMP_MP4_MP4_CONTAINER_H264_YUV420P_EXACTLY_ONE_VIDEO_STREAM_ZERO_OR_ONE_AUDIO_STREAM_ZERO_SUBTITLE_DATA_ATTACHMENT_OR_EXTRA_VIDEO_STREAMS_1280_BY_720_DURATION_BETWEEN_FOUR_AND_SIX_SECONDS_ROTATION_ZERO_POSITIVE_FRAME_EVIDENCE_FULL_DECODE_PASS_AND_METADATA_SAFETY_PASS__REQUIRE_ALL_SIX_TEMP_MEDIA_TO_PASS_BEFORE_ANY_CANONICAL_MEDIA_WRITE__AUTHORIZE_ONLY_AFTER_THE_ALL_SIX_MEDIA_GATE_BYTE_PRESERVING_SAME_G_DRIVE_MOVES_TO_EXACT_CANONICAL_PATHS_R1_DOWNLOAD_MEDIA_PUSH_01_MP4_IMPACT_01_MP4_IMPACT_02_MP4_PUSH_02_MP4_PUSH_03_MP4_AND_IMPACT_03_MP4__REQUIRE_PRE_MOVE_AND_POST_MOVE_BYTE_LENGTH_AND_SHA256_EQUALITY_FOR_EACH_MEDIA_AND_POST_MOVE_FFPROBE_FULL_DECODE_METADATA_AND_STREAM_REVALIDATION_PASS__REQUIRE_ALL_SIX_CANONICAL_MEDIA_HASHES_RECORDED_WITHOUT_REQUIRING_HASH_UNIQUENESS_BUT_REQUIRE_ANY_IDENTICAL_HASH_PAIR_TO_BE_FLAGGED_FOR_HUMAN_DECISION__REQUIRE_TEMP_ROOT_COMPLETE_CLEANUP_AFTER_SUCCESS_OR_FAILURE_AND_NO_TEMP_FILE_REMAINS__AUTHORIZE_EXACTLY_TWENTY_THREE_NEW_ARTIFACTS_COMPRISING_AUTHORIZATION_PREFLIGHT_SIX_DOWNLOAD_RECEIPTS_SIX_TECHNICAL_RECORDS_SIX_CANONICAL_MP4S_EXECUTION_EVIDENCE_MANIFEST_AND_GOVERNANCE_REPORT_COMMIT_AND_PUSH_ON_SUCCESS__AUTHORIZE_FAILURE_RECORD_WITH_EXACTLY_SEVENTEEN_TEXT_OR_JSON_ARTIFACTS_AND_ZERO_CANONICAL_MEDIA_WHEN_THE_ALL_SIX_MEDIA_GATE_FAILS__REQUIRE_SUCCESS_EVIDENCE_MANIFEST_TO_BIND_TWENTY_TWO_NONSELF_OUTPUTS_AND_THIRTEEN_COMMITTED_INPUTS_WITH_COVERAGE_TWENTY_TWO_OF_TWENTY_TWO_AND_THIRTEEN_OF_THIRTEEN__REQUIRE_NO_RAW_PROVIDER_OUTPUT_NO_SIGNED_URL_VALUE_NO_TOKEN_COOKIE_AUTHORIZATION_SESSION_ACCOUNT_OR_PRIVATE_PAYLOAD_PERSISTENCE__STOP_AFTER_SIX_VALID_DOWNLOADS_AND_TECHNICAL_VALIDATIONS_WITH_NO_QUERY_ONLY_NO_QUERY_LOOP_NO_RETRY_NO_RESUBMIT_NO_BATCH_NO_NEW_SUBMIT_NO_REFERENCE_UPLOAD_NO_LOGIN_NO_CHECKLOGIN_NO_SESSION_MUTATION_NO_LIST_TASK__KEEP_BLIND_MAPPING_NOT_MATERIALIZED_BLIND_ALIASES_UNASSIGNED_AND_DO_NOT_CREATE_MAPPING_SALT_COMMITMENT_BLINDED_MEDIA_REVIEW_MEDIA_OR_REVIEW_RECORDS__NO_SOURCE_CHANGE_NO_EXISTING_MEDIA_CHANGE_NO_EXISTING_PROMPT_CHANGE_NO_EXISTING_PACKAGE_CHANGE_NO_REFERENCE_CHANGE_NO_PRODUCTION_REENTRY_NO_PRODUCTION_APPROVAL_NO_FIXED_TASK_COMPLETION_NO_FINAL_MASTER_NO_LOCK__NO_REPEATABILITY_CONCLUSION_BEFORE_BLIND_MAPPING_COMMITMENT_COMPLETE_MP4_BLIND_REVIEW_FREEZE_UNBLINDING_AND_GATE_DERIVATION__SET_SUCCESS_NEXT_PHASE_CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_MAPPING_COMMITMENT_AUTHORIZATION_HUMAN_DECISION__SET_FAILURE_NEXT_PHASE_CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_DOWNLOAD_FAILURE_HUMAN_DECISION__ONE_TIME_NON_REUSABLE",
+  "decoded_bytes_equal_original": true,
+  "decoded_sha256_equal_original": true,
+  "execution_id": "CAL003-REFERENCE-CONTROL-REPEATABILITY-R1-MAX-SIX-DOWNLOAD-ONLY-MEDIA-FIRST-V0-1",
+  "experiment_id": "CAL-003",
+  "fixed_download_order": [
+    "PUSH-01",
+    "IMPACT-01",
+    "IMPACT-02",
+    "PUSH-02",
+    "PUSH-03",
+    "IMPACT-03"
+  ],
+  "goal_identity": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_MAX_SIX_DOWNLOAD_ONLY_MEDIA_FIRST_TECHNICAL_VALIDATION_V0_1",
+  "maximum_download_calls": 6,
+  "maximum_dreamina_processes": 9,
+  "program": "REFERENCE_CONTROL_REPEATABILITY_V1",
+  "round": "R1",
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_DOWNLOAD_AUTHORIZATION_V0_1",
+  "sha256": "1f22117473fe06e33a0ed00fbe32b320868cbac4dc22135cfa1d9529c9639d4a",
+  "six_exact_download_authorities": [
+    {
+      "argv_byte_length": 180,
+      "argv_sha256": "4cc01207978e351ea58054142a07ece4e36d71e4ebab44e50bfdf3d0b79a4d99",
+      "submit_id": "65aa46f5-0125-4d07-8c6e-3fd5112d29a7",
+      "task_id": "PUSH-01",
+      "temporary_directory": "G:/AICODING/AI_VIDEO/_temp/CAL003_R1_DLOAD_V0_1/push_01"
+    },
+    {
+      "argv_byte_length": 182,
+      "argv_sha256": "0b08d9f597bed62dd7ce405e8a698214d7203dca5a46f6bd6aa6b0200e0871df",
+      "submit_id": "b10cf271-288e-4fdb-925c-b4bd45856979",
+      "task_id": "IMPACT-01",
+      "temporary_directory": "G:/AICODING/AI_VIDEO/_temp/CAL003_R1_DLOAD_V0_1/impact_01"
+    },
+    {
+      "argv_byte_length": 182,
+      "argv_sha256": "379ad6a0a0082b0244302753baea94a301f51f907462f14707916dac70829385",
+      "submit_id": "3cfa385f-99c9-4e1f-871e-d52ff154ebae",
+      "task_id": "IMPACT-02",
+      "temporary_directory": "G:/AICODING/AI_VIDEO/_temp/CAL003_R1_DLOAD_V0_1/impact_02"
+    },
+    {
+      "argv_byte_length": 180,
+      "argv_sha256": "3cb5b4aaadcb87d0d54a2dedceecfabfbbbb2eb089267933719b0d25ad409cd2",
+      "submit_id": "2258abca-2de6-4394-903f-7de609a7e711",
+      "task_id": "PUSH-02",
+      "temporary_directory": "G:/AICODING/AI_VIDEO/_temp/CAL003_R1_DLOAD_V0_1/push_02"
+    },
+    {
+      "argv_byte_length": 180,
+      "argv_sha256": "ae4a9e8d5381574064863bdfc3845458d5e89fcfb638576d6ca5f4b603c1c68d",
+      "submit_id": "3fbcdb18-24d2-4a43-9cd5-5c7d1de41011",
+      "task_id": "PUSH-03",
+      "temporary_directory": "G:/AICODING/AI_VIDEO/_temp/CAL003_R1_DLOAD_V0_1/push_03"
+    },
+    {
+      "argv_byte_length": 182,
+      "argv_sha256": "07b91a9531d669c86d0a6c9d506c5a51bcedb2300a9aac842871b45435e6b1f6",
+      "submit_id": "10193c64-b91e-454e-9118-6ab3a0cf1fb9",
+      "task_id": "IMPACT-03",
+      "temporary_directory": "G:/AICODING/AI_VIDEO/_temp/CAL003_R1_DLOAD_V0_1/impact_03"
+    }
+  ],
+  "six_submit_ids": [
+    "65aa46f5-0125-4d07-8c6e-3fd5112d29a7",
+    "b10cf271-288e-4fdb-925c-b4bd45856979",
+    "3cfa385f-99c9-4e1f-871e-d52ff154ebae",
+    "2258abca-2de6-4394-903f-7de609a7e711",
+    "3fbcdb18-24d2-4a43-9cd5-5c7d1de41011",
+    "10193c64-b91e-454e-9118-6ab3a0cf1fb9"
+  ],
+  "starting_checkpoint": {
+    "branch": "main",
+    "commit_message": "query(cal003): record reference repeatability R1 task status",
+    "head": "6e3ee71dbc608d6eb3d27e41601ccd68524a44ab",
+    "origin_main": "6e3ee71dbc608d6eb3d27e41601ccd68524a44ab",
+    "parent": "8b833947dc58d459a8c8e238219b768107b6f048",
+    "unrelated_untracked_count": 26,
+    "unrelated_untracked_set_sha256": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94"
+  },
+  "task_identities": [
+    {
+      "family": "PUSH",
+      "ordinal_pair_index": 1,
+      "reference_id": "ACTION_REF_PUSH_02",
+      "replicate_index": 1,
+      "submission_position": 1,
+      "submit_id": "65aa46f5-0125-4d07-8c6e-3fd5112d29a7",
+      "task_id": "PUSH-01"
+    },
+    {
+      "family": "IMPACT",
+      "ordinal_pair_index": 1,
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "replicate_index": 1,
+      "submission_position": 2,
+      "submit_id": "b10cf271-288e-4fdb-925c-b4bd45856979",
+      "task_id": "IMPACT-01"
+    },
+    {
+      "family": "IMPACT",
+      "ordinal_pair_index": 2,
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "replicate_index": 2,
+      "submission_position": 3,
+      "submit_id": "3cfa385f-99c9-4e1f-871e-d52ff154ebae",
+      "task_id": "IMPACT-02"
+    },
+    {
+      "family": "PUSH",
+      "ordinal_pair_index": 2,
+      "reference_id": "ACTION_REF_PUSH_02",
+      "replicate_index": 2,
+      "submission_position": 4,
+      "submit_id": "2258abca-2de6-4394-903f-7de609a7e711",
+      "task_id": "PUSH-02"
+    },
+    {
+      "family": "PUSH",
+      "ordinal_pair_index": 3,
+      "reference_id": "ACTION_REF_PUSH_02",
+      "replicate_index": 3,
+      "submission_position": 5,
+      "submit_id": "3fbcdb18-24d2-4a43-9cd5-5c7d1de41011",
+      "task_id": "PUSH-03"
+    },
+    {
+      "family": "IMPACT",
+      "ordinal_pair_index": 3,
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "replicate_index": 3,
+      "submission_position": 6,
+      "submit_id": "10193c64-b91e-454e-9118-6ab3a0cf1fb9",
+      "task_id": "IMPACT-03"
+    }
+  ],
+  "utf8_profile": {
+    "bom": false,
+    "encoding": "UTF-8",
+    "trailing_carriage_return": false,
+    "trailing_newline": false,
+    "trailing_space": false
+  }
+}
