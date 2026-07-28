@@ -1,0 +1,184 @@
+{
+  "contrast_coverage": "8/8",
+  "primary_within_command_count": 4,
+  "records": [
+    {
+      "classification": "PRIMARY_WITHIN_COMMAND_CONTRAST",
+      "comparison": "NI versus NP",
+      "condition_gate_pair": {
+        "left": "FAIL",
+        "right": "FAIL"
+      },
+      "contrast_id": "C01",
+      "description": "reference-family effect under neutral action text",
+      "descriptive_direction": "LEFT_FAVORS_IMPACT_SPECIFICITY",
+      "left_condition": "NI",
+      "left_minus_right": {
+        "impact_median_delta": 2,
+        "impact_specificity_margin_delta": 3,
+        "material_sentinel_count_delta": 0,
+        "push_median_delta": -1,
+        "sample_pass_count_delta": 0
+      },
+      "no_generalized_provider_reliability_claim": true,
+      "no_statistical_significance_claim": true,
+      "right_condition": "NP"
+    },
+    {
+      "classification": "PRIMARY_WITHIN_COMMAND_CONTRAST",
+      "comparison": "II versus IP",
+      "condition_gate_pair": {
+        "left": "FAIL",
+        "right": "FAIL"
+      },
+      "contrast_id": "C02",
+      "description": "reference-family effect under IMPACT-specific text",
+      "descriptive_direction": "NO_IMPACT_SPECIFICITY_MARGIN_DIFFERENCE",
+      "left_condition": "II",
+      "left_minus_right": {
+        "impact_median_delta": 1,
+        "impact_specificity_margin_delta": 0,
+        "material_sentinel_count_delta": 1,
+        "push_median_delta": 0,
+        "sample_pass_count_delta": 0
+      },
+      "no_generalized_provider_reliability_claim": true,
+      "no_statistical_significance_claim": true,
+      "right_condition": "IP"
+    },
+    {
+      "classification": "PRIMARY_WITHIN_COMMAND_CONTRAST",
+      "comparison": "I0 versus N0",
+      "condition_gate_pair": {
+        "left": "FAIL",
+        "right": "FAIL"
+      },
+      "contrast_id": "C03",
+      "description": "IMPACT-text effect without reference",
+      "descriptive_direction": "LEFT_FAVORS_IMPACT_SPECIFICITY",
+      "left_condition": "I0",
+      "left_minus_right": {
+        "impact_median_delta": 4,
+        "impact_specificity_margin_delta": 2,
+        "material_sentinel_count_delta": 0,
+        "push_median_delta": 0,
+        "sample_pass_count_delta": 1
+      },
+      "no_generalized_provider_reliability_claim": true,
+      "no_statistical_significance_claim": true,
+      "right_condition": "N0"
+    },
+    {
+      "classification": "REFERENCE_PLUS_COMMAND_ROUTE_BUNDLE_CONTRAST",
+      "comparison": "II versus I0",
+      "condition_gate_pair": {
+        "left": "FAIL",
+        "right": "FAIL"
+      },
+      "contrast_id": "C04",
+      "description": "incremental IMPACT-reference plus command-route bundle under IMPACT text",
+      "descriptive_direction": "RIGHT_FAVORS_IMPACT_SPECIFICITY",
+      "left_condition": "II",
+      "left_minus_right": {
+        "impact_median_delta": -4,
+        "impact_specificity_margin_delta": -6,
+        "material_sentinel_count_delta": 2,
+        "push_median_delta": 4,
+        "sample_pass_count_delta": -1
+      },
+      "no_generalized_provider_reliability_claim": true,
+      "no_statistical_significance_claim": true,
+      "right_condition": "I0"
+    },
+    {
+      "classification": "REFERENCE_PLUS_COMMAND_ROUTE_BUNDLE_CONTRAST",
+      "comparison": "IP versus I0",
+      "condition_gate_pair": {
+        "left": "FAIL",
+        "right": "FAIL"
+      },
+      "contrast_id": "C05",
+      "description": "PUSH-reference plus command-route interference bundle under IMPACT text",
+      "descriptive_direction": "RIGHT_FAVORS_IMPACT_SPECIFICITY",
+      "left_condition": "IP",
+      "left_minus_right": {
+        "impact_median_delta": -5,
+        "impact_specificity_margin_delta": -6,
+        "material_sentinel_count_delta": 1,
+        "push_median_delta": 4,
+        "sample_pass_count_delta": -1
+      },
+      "no_generalized_provider_reliability_claim": true,
+      "no_statistical_significance_claim": true,
+      "right_condition": "I0"
+    },
+    {
+      "classification": "REFERENCE_PLUS_COMMAND_ROUTE_BUNDLE_CONTRAST",
+      "comparison": "NI versus N0",
+      "condition_gate_pair": {
+        "left": "FAIL",
+        "right": "FAIL"
+      },
+      "contrast_id": "C06",
+      "description": "IMPACT-reference plus command-route bundle without IMPACT text",
+      "descriptive_direction": "RIGHT_FAVORS_IMPACT_SPECIFICITY",
+      "left_condition": "NI",
+      "left_minus_right": {
+        "impact_median_delta": 1,
+        "impact_specificity_margin_delta": -3,
+        "material_sentinel_count_delta": 0,
+        "push_median_delta": 4,
+        "sample_pass_count_delta": 0
+      },
+      "no_generalized_provider_reliability_claim": true,
+      "no_statistical_significance_claim": true,
+      "right_condition": "N0"
+    },
+    {
+      "classification": "REFERENCE_PLUS_COMMAND_ROUTE_BUNDLE_CONTRAST",
+      "comparison": "NP versus N0",
+      "condition_gate_pair": {
+        "left": "FAIL",
+        "right": "FAIL"
+      },
+      "contrast_id": "C07",
+      "description": "PUSH-reference plus command-route bundle without PUSH text",
+      "descriptive_direction": "RIGHT_FAVORS_IMPACT_SPECIFICITY",
+      "left_condition": "NP",
+      "left_minus_right": {
+        "impact_median_delta": -1,
+        "impact_specificity_margin_delta": -6,
+        "material_sentinel_count_delta": 0,
+        "push_median_delta": 5,
+        "sample_pass_count_delta": 0
+      },
+      "no_generalized_provider_reliability_claim": true,
+      "no_statistical_significance_claim": true,
+      "right_condition": "N0"
+    },
+    {
+      "classification": "PRIMARY_WITHIN_COMMAND_CONTRAST",
+      "comparison": "II versus NI",
+      "condition_gate_pair": {
+        "left": "FAIL",
+        "right": "FAIL"
+      },
+      "contrast_id": "C08",
+      "description": "IMPACT-text effect with the IMPACT reference",
+      "descriptive_direction": "RIGHT_FAVORS_IMPACT_SPECIFICITY",
+      "left_condition": "II",
+      "left_minus_right": {
+        "impact_median_delta": -1,
+        "impact_specificity_margin_delta": -1,
+        "material_sentinel_count_delta": 2,
+        "push_median_delta": 0,
+        "sample_pass_count_delta": 0
+      },
+      "no_generalized_provider_reliability_claim": true,
+      "no_statistical_significance_claim": true,
+      "right_condition": "NI"
+    }
+  ],
+  "route_bundle_count": 4,
+  "schema_version": "CAL004_R1_CONTRAST_RESULTS_V0_1"
+}

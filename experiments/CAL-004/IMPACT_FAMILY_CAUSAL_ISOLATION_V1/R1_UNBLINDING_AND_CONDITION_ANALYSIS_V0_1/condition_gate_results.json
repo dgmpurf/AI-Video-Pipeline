@@ -1,0 +1,366 @@
+{
+  "condition_coverage": "6/6",
+  "records": [
+    {
+      "alias_ids": [
+        "B15",
+        "B14",
+        "B08"
+      ],
+      "condition_gate": "FAIL",
+      "condition_id": "N0",
+      "effective_reference_ignored_count": 0,
+      "failed_predicates": [
+        "sample_pass_count_at_least_2",
+        "median_impact_score_at_least_8",
+        "median_margin_at_least_3"
+      ],
+      "governed_rights_and_provenance_validation": true,
+      "impact_score_values": [
+        5,
+        5,
+        8
+      ],
+      "impact_specificity_margin_values": [
+        -4,
+        -1,
+        5
+      ],
+      "material_sentinel_counts": [
+        0,
+        0,
+        0
+      ],
+      "median_impact_score": 5,
+      "median_impact_specificity_margin": -1,
+      "median_push_score": 6,
+      "predicates": {
+        "all_material_sentinel_counts_zero": true,
+        "effective_reference_ignored_count_at_most_1": true,
+        "governed_rights_and_provenance_validation": true,
+        "median_impact_score_at_least_8": false,
+        "median_margin_at_least_3": false,
+        "sample_count_equals_3": true,
+        "sample_pass_count_at_least_2": false
+      },
+      "prompt_stratum": "N",
+      "push_score_values": [
+        9,
+        6,
+        3
+      ],
+      "reference_stratum": "0",
+      "route": "text2video",
+      "sample_count": 3,
+      "sample_pass_count": 0,
+      "task_ids": [
+        "N0-01",
+        "N0-02",
+        "N0-03"
+      ],
+      "total_material_sentinel_count": 0
+    },
+    {
+      "alias_ids": [
+        "B11",
+        "B02",
+        "B07"
+      ],
+      "condition_gate": "FAIL",
+      "condition_id": "NI",
+      "effective_reference_ignored_count": 0,
+      "failed_predicates": [
+        "sample_pass_count_at_least_2",
+        "median_impact_score_at_least_8",
+        "median_margin_at_least_3"
+      ],
+      "governed_rights_and_provenance_validation": true,
+      "impact_score_values": [
+        6,
+        10,
+        6
+      ],
+      "impact_specificity_margin_values": [
+        -4,
+        2,
+        -4
+      ],
+      "material_sentinel_counts": [
+        0,
+        0,
+        0
+      ],
+      "median_impact_score": 6,
+      "median_impact_specificity_margin": -4,
+      "median_push_score": 10,
+      "predicates": {
+        "all_material_sentinel_counts_zero": true,
+        "effective_reference_ignored_count_at_most_1": true,
+        "governed_rights_and_provenance_validation": true,
+        "median_impact_score_at_least_8": false,
+        "median_margin_at_least_3": false,
+        "sample_count_equals_3": true,
+        "sample_pass_count_at_least_2": false
+      },
+      "prompt_stratum": "N",
+      "push_score_values": [
+        10,
+        8,
+        10
+      ],
+      "reference_stratum": "I",
+      "route": "multimodal2video",
+      "sample_count": 3,
+      "sample_pass_count": 0,
+      "task_ids": [
+        "NI-01",
+        "NI-02",
+        "NI-03"
+      ],
+      "total_material_sentinel_count": 0
+    },
+    {
+      "alias_ids": [
+        "B05",
+        "B17",
+        "B12"
+      ],
+      "condition_gate": "FAIL",
+      "condition_id": "NP",
+      "effective_reference_ignored_count": 0,
+      "failed_predicates": [
+        "sample_pass_count_at_least_2",
+        "median_impact_score_at_least_8",
+        "median_margin_at_least_3"
+      ],
+      "governed_rights_and_provenance_validation": true,
+      "impact_score_values": [
+        4,
+        4,
+        5
+      ],
+      "impact_specificity_margin_values": [
+        -7,
+        -7,
+        -7
+      ],
+      "material_sentinel_counts": [
+        0,
+        0,
+        0
+      ],
+      "median_impact_score": 4,
+      "median_impact_specificity_margin": -7,
+      "median_push_score": 11,
+      "predicates": {
+        "all_material_sentinel_counts_zero": true,
+        "effective_reference_ignored_count_at_most_1": true,
+        "governed_rights_and_provenance_validation": true,
+        "median_impact_score_at_least_8": false,
+        "median_margin_at_least_3": false,
+        "sample_count_equals_3": true,
+        "sample_pass_count_at_least_2": false
+      },
+      "prompt_stratum": "N",
+      "push_score_values": [
+        11,
+        11,
+        12
+      ],
+      "reference_stratum": "P",
+      "route": "multimodal2video",
+      "sample_count": 3,
+      "sample_pass_count": 0,
+      "task_ids": [
+        "NP-01",
+        "NP-02",
+        "NP-03"
+      ],
+      "total_material_sentinel_count": 0
+    },
+    {
+      "alias_ids": [
+        "B04",
+        "B16",
+        "B09"
+      ],
+      "condition_gate": "FAIL",
+      "condition_id": "I0",
+      "effective_reference_ignored_count": 0,
+      "failed_predicates": [
+        "sample_pass_count_at_least_2",
+        "median_margin_at_least_3"
+      ],
+      "governed_rights_and_provenance_validation": true,
+      "impact_score_values": [
+        9,
+        7,
+        11
+      ],
+      "impact_specificity_margin_values": [
+        1,
+        1,
+        5
+      ],
+      "material_sentinel_counts": [
+        0,
+        0,
+        0
+      ],
+      "median_impact_score": 9,
+      "median_impact_specificity_margin": 1,
+      "median_push_score": 6,
+      "predicates": {
+        "all_material_sentinel_counts_zero": true,
+        "effective_reference_ignored_count_at_most_1": true,
+        "governed_rights_and_provenance_validation": true,
+        "median_impact_score_at_least_8": true,
+        "median_margin_at_least_3": false,
+        "sample_count_equals_3": true,
+        "sample_pass_count_at_least_2": false
+      },
+      "prompt_stratum": "I",
+      "push_score_values": [
+        8,
+        6,
+        6
+      ],
+      "reference_stratum": "0",
+      "route": "text2video",
+      "sample_count": 3,
+      "sample_pass_count": 1,
+      "task_ids": [
+        "I0-01",
+        "I0-02",
+        "I0-03"
+      ],
+      "total_material_sentinel_count": 0
+    },
+    {
+      "alias_ids": [
+        "B10",
+        "B06",
+        "B03"
+      ],
+      "condition_gate": "FAIL",
+      "condition_id": "II",
+      "effective_reference_ignored_count": 0,
+      "failed_predicates": [
+        "sample_pass_count_at_least_2",
+        "median_impact_score_at_least_8",
+        "median_margin_at_least_3",
+        "all_material_sentinel_counts_zero"
+      ],
+      "governed_rights_and_provenance_validation": true,
+      "impact_score_values": [
+        6,
+        4,
+        5
+      ],
+      "impact_specificity_margin_values": [
+        -5,
+        -2,
+        -5
+      ],
+      "material_sentinel_counts": [
+        1,
+        0,
+        1
+      ],
+      "median_impact_score": 5,
+      "median_impact_specificity_margin": -5,
+      "median_push_score": 10,
+      "predicates": {
+        "all_material_sentinel_counts_zero": false,
+        "effective_reference_ignored_count_at_most_1": true,
+        "governed_rights_and_provenance_validation": true,
+        "median_impact_score_at_least_8": false,
+        "median_margin_at_least_3": false,
+        "sample_count_equals_3": true,
+        "sample_pass_count_at_least_2": false
+      },
+      "prompt_stratum": "I",
+      "push_score_values": [
+        11,
+        6,
+        10
+      ],
+      "reference_stratum": "I",
+      "route": "multimodal2video",
+      "sample_count": 3,
+      "sample_pass_count": 0,
+      "task_ids": [
+        "II-01",
+        "II-02",
+        "II-03"
+      ],
+      "total_material_sentinel_count": 2
+    },
+    {
+      "alias_ids": [
+        "B13",
+        "B18",
+        "B01"
+      ],
+      "condition_gate": "FAIL",
+      "condition_id": "IP",
+      "effective_reference_ignored_count": 0,
+      "failed_predicates": [
+        "sample_pass_count_at_least_2",
+        "median_impact_score_at_least_8",
+        "median_margin_at_least_3",
+        "all_material_sentinel_counts_zero"
+      ],
+      "governed_rights_and_provenance_validation": true,
+      "impact_score_values": [
+        2,
+        5,
+        4
+      ],
+      "impact_specificity_margin_values": [
+        -1,
+        -5,
+        -7
+      ],
+      "material_sentinel_counts": [
+        0,
+        0,
+        1
+      ],
+      "median_impact_score": 4,
+      "median_impact_specificity_margin": -5,
+      "median_push_score": 10,
+      "predicates": {
+        "all_material_sentinel_counts_zero": false,
+        "effective_reference_ignored_count_at_most_1": true,
+        "governed_rights_and_provenance_validation": true,
+        "median_impact_score_at_least_8": false,
+        "median_margin_at_least_3": false,
+        "sample_count_equals_3": true,
+        "sample_pass_count_at_least_2": false
+      },
+      "prompt_stratum": "I",
+      "push_score_values": [
+        3,
+        10,
+        11
+      ],
+      "reference_stratum": "P",
+      "route": "multimodal2video",
+      "sample_count": 3,
+      "sample_pass_count": 0,
+      "task_ids": [
+        "IP-01",
+        "IP-02",
+        "IP-03"
+      ],
+      "total_material_sentinel_count": 1
+    }
+  ],
+  "rights_and_provenance": {
+    "ACTION_REF_IMPACT_02": "PASS",
+    "ACTION_REF_PUSH_02": "PASS",
+    "governed_rights_and_provenance_validation": true
+  },
+  "schema_version": "CAL004_R1_CONDITION_GATE_RESULTS_V0_1"
+}

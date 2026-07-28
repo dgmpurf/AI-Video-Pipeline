@@ -1,0 +1,24 @@
+{
+  "automatic_decision": false,
+  "automatic_expansion": false,
+  "condition_gate_pass": {
+    "I0": false,
+    "II": false,
+    "IP": false,
+    "N0": false,
+    "NI": false,
+    "NP": false
+  },
+  "fresh_human_final_decision_required": true,
+  "next_experiment_authorized": false,
+  "next_phase": "CAL004_R1_UNBLINDED_CONDITION_RESULT_AND_HUMAN_FINAL_DECISION",
+  "outcome_status": "PROPOSED_PENDING_FRESH_HUMAN_FINAL_DECISION",
+  "precedence_branch": 6,
+  "proposed_outcome": "PROVIDER_OR_SCENE_PUSH_PRIOR_DOMINANT",
+  "push_reference_override_pattern": false,
+  "reference_pair_impact_text": false,
+  "reference_pair_neutral": false,
+  "schema_version": "CAL004_R1_DERIVED_OUTCOME_V0_1",
+  "text_pair_impact_reference": false,
+  "text_pair_no_reference": false
+}

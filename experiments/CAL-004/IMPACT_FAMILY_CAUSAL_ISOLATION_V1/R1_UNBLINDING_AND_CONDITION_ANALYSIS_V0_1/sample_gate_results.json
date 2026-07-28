@@ -1,0 +1,388 @@
+{
+  "record_coverage": "18/18",
+  "records": [
+    {
+      "alias": "B01",
+      "condition_id": "IP",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3",
+        "material_sentinel_count_zero"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": false,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 3,
+      "sample_gate": "FAIL",
+      "task_id": "IP-03"
+    },
+    {
+      "alias": "B02",
+      "condition_id": "NI",
+      "failed_predicates": [
+        "impact_minus_push_margin_at_least_3"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": true,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 2,
+      "sample_gate": "FAIL",
+      "task_id": "NI-02"
+    },
+    {
+      "alias": "B03",
+      "condition_id": "II",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3",
+        "material_sentinel_count_zero"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": false,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 3,
+      "sample_gate": "FAIL",
+      "task_id": "II-03"
+    },
+    {
+      "alias": "B04",
+      "condition_id": "I0",
+      "failed_predicates": [
+        "impact_minus_push_margin_at_least_3"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": true,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 1,
+      "sample_gate": "FAIL",
+      "task_id": "I0-01"
+    },
+    {
+      "alias": "B05",
+      "condition_id": "NP",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 1,
+      "sample_gate": "FAIL",
+      "task_id": "NP-01"
+    },
+    {
+      "alias": "B06",
+      "condition_id": "II",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3",
+        "effective_reference_role_conflict_is_false",
+        "action_family_failure_is_false"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": false,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": false,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 2,
+      "sample_gate": "FAIL",
+      "task_id": "II-02"
+    },
+    {
+      "alias": "B07",
+      "condition_id": "NI",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 3,
+      "sample_gate": "FAIL",
+      "task_id": "NI-03"
+    },
+    {
+      "alias": "B08",
+      "condition_id": "N0",
+      "failed_predicates": [
+        "action_family_failure_is_false"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": false,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": true,
+        "impact_score_at_least_8": true,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 3,
+      "sample_gate": "FAIL",
+      "task_id": "N0-03"
+    },
+    {
+      "alias": "B09",
+      "condition_id": "I0",
+      "failed_predicates": [],
+      "predicates": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": true,
+        "impact_score_at_least_8": true,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 3,
+      "sample_gate": "PASS",
+      "task_id": "I0-03"
+    },
+    {
+      "alias": "B10",
+      "condition_id": "II",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3",
+        "material_sentinel_count_zero"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": false,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 1,
+      "sample_gate": "FAIL",
+      "task_id": "II-01"
+    },
+    {
+      "alias": "B11",
+      "condition_id": "NI",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 1,
+      "sample_gate": "FAIL",
+      "task_id": "NI-01"
+    },
+    {
+      "alias": "B12",
+      "condition_id": "NP",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 3,
+      "sample_gate": "FAIL",
+      "task_id": "NP-03"
+    },
+    {
+      "alias": "B13",
+      "condition_id": "IP",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3",
+        "action_family_failure_is_false"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": false,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 1,
+      "sample_gate": "FAIL",
+      "task_id": "IP-01"
+    },
+    {
+      "alias": "B14",
+      "condition_id": "N0",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3",
+        "action_family_failure_is_false"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": false,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 2,
+      "sample_gate": "FAIL",
+      "task_id": "N0-02"
+    },
+    {
+      "alias": "B15",
+      "condition_id": "N0",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3",
+        "action_family_failure_is_false"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": false,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 1,
+      "sample_gate": "FAIL",
+      "task_id": "N0-01"
+    },
+    {
+      "alias": "B16",
+      "condition_id": "I0",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3",
+        "action_family_failure_is_false"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": false,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 2,
+      "sample_gate": "FAIL",
+      "task_id": "I0-02"
+    },
+    {
+      "alias": "B17",
+      "condition_id": "NP",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 2,
+      "sample_gate": "FAIL",
+      "task_id": "NP-02"
+    },
+    {
+      "alias": "B18",
+      "condition_id": "IP",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3",
+        "action_family_failure_is_false"
+      ],
+      "predicates": {
+        "action_family_failure_is_false": false,
+        "complete_mp4_reviewed": true,
+        "complete_mp4_viewable_through_end": true,
+        "effective_reference_role_conflict_is_false": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4": true
+      },
+      "replicate": 2,
+      "sample_gate": "FAIL",
+      "task_id": "IP-02"
+    }
+  ],
+  "schema_version": "CAL004_R1_SAMPLE_GATE_RESULTS_V0_1"
+}

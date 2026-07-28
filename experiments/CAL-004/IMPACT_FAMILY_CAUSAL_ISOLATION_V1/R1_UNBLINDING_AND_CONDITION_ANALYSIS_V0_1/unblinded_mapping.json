@@ -1,0 +1,390 @@
+{
+  "mapping_coverage": "18/18",
+  "mapping_reveal": "AUTHORIZED_AND_COMPLETE",
+  "producer_fields_not_publicly_persisted": [
+    "batch",
+    "fixed_submission_position",
+    "submit_id"
+  ],
+  "records": [
+    {
+      "alias": "B01",
+      "batch_assignment": "A",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_A/B01.mp4",
+      "blind_media_sha256": "6971bd63f880df5c12f5161a30dccb8fbe9313963a5aad6529400b230ee07da9",
+      "canonical_media_bytes": 2107914,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/016_IP-03.mp4",
+      "canonical_media_sha256": "a4bb8ce6a71ce4f1ea3c66d66e1fb8c32e2e25d8ca4a3096fe3c759e218fcb45",
+      "condition_id": "IP",
+      "frozen_review": {
+        "bytes": 13037,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B01_review.json",
+        "sha256": "119797db8f3bbee3dfa7db4c672e69a476b63d5ae8df8b5e2d0ab82fac28ea6f"
+      },
+      "prompt_stratum": "I",
+      "reference_stratum": "P",
+      "replicate": 3,
+      "route": "multimodal2video",
+      "task_id": "IP-03"
+    },
+    {
+      "alias": "B02",
+      "batch_assignment": "A",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_A/B02.mp4",
+      "blind_media_sha256": "de4d193e3cb961669e59bcc65ee251ef05d36e7957885f8b6254f1a3a2ad23f2",
+      "canonical_media_bytes": 3507322,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/008_NI-02.mp4",
+      "canonical_media_sha256": "d49d98f5f7862aba2a512346ce85927f2810e1e7e258d591df16acb8102820b0",
+      "condition_id": "NI",
+      "frozen_review": {
+        "bytes": 12994,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B02_review.json",
+        "sha256": "c314cfb44923165c423539de30d8d014f607e6485ab4d75708b0c398b3cdee67"
+      },
+      "prompt_stratum": "N",
+      "reference_stratum": "I",
+      "replicate": 2,
+      "route": "multimodal2video",
+      "task_id": "NI-02"
+    },
+    {
+      "alias": "B03",
+      "batch_assignment": "A",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_A/B03.mp4",
+      "blind_media_sha256": "c370961d02d7de8d3d5fe4c04b8a07994c479f903a82cd76336826a46c27931c",
+      "canonical_media_bytes": 1714355,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/018_II-03.mp4",
+      "canonical_media_sha256": "4bd8ff4642845006aa7e91284595f0aebb1674115dd724f4cda4ff78c8bdce49",
+      "condition_id": "II",
+      "frozen_review": {
+        "bytes": 12443,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B03_review.json",
+        "sha256": "568992cf8c8f994f731a45909fe3fd341f210afa90b400cb3e5cc5dd2d874ef4"
+      },
+      "prompt_stratum": "I",
+      "reference_stratum": "I",
+      "replicate": 3,
+      "route": "multimodal2video",
+      "task_id": "II-03"
+    },
+    {
+      "alias": "B04",
+      "batch_assignment": "A",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_A/B04.mp4",
+      "blind_media_sha256": "8f166f7a041ed3dbbe943c461a668ed3a628be6ff1c83fa2237100ed8f259c4c",
+      "canonical_media_bytes": 4530876,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/004_I0-01.mp4",
+      "canonical_media_sha256": "23865256cc0eabb49973460606950e8f7d1213bf5c43fd16bcc17e972b224bc6",
+      "condition_id": "I0",
+      "frozen_review": {
+        "bytes": 12244,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B04_review.json",
+        "sha256": "f12b5c291e9272a7f32cf43214befdebf1b4c98287e0c725b497a036268089b9"
+      },
+      "prompt_stratum": "I",
+      "reference_stratum": "0",
+      "replicate": 1,
+      "route": "text2video",
+      "task_id": "I0-01"
+    },
+    {
+      "alias": "B05",
+      "batch_assignment": "A",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_A/B05.mp4",
+      "blind_media_sha256": "d5a6ec91d7c8fcde8e7f90a56029f6b70720d99b547c02b0c5422b672510d78a",
+      "canonical_media_bytes": 2876008,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/003_NP-01.mp4",
+      "canonical_media_sha256": "fbee1682148682405b0ed8cd2253386b4b99c023c2689ccd7f2ff21ee16958d7",
+      "condition_id": "NP",
+      "frozen_review": {
+        "bytes": 12785,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B05_review.json",
+        "sha256": "7003a84e9b1e100330953fb46ee88e9ae3356748e6e7e063c8b4004e503ae603"
+      },
+      "prompt_stratum": "N",
+      "reference_stratum": "P",
+      "replicate": 1,
+      "route": "multimodal2video",
+      "task_id": "NP-01"
+    },
+    {
+      "alias": "B06",
+      "batch_assignment": "A",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_A/B06.mp4",
+      "blind_media_sha256": "86ece7770e9ed5e20d74826223ad86f797d60b7bb209beb4d4a293b37d08bd75",
+      "canonical_media_bytes": 2476577,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/011_II-02.mp4",
+      "canonical_media_sha256": "cef1efd9bd93be99d3d7cab4fb6c24e856f2850da8c9c77239970f6c6bdb084b",
+      "condition_id": "II",
+      "frozen_review": {
+        "bytes": 13764,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B06_review.json",
+        "sha256": "4c2071c8289d0333b0346133f991e2760eb681b00d16b6b6813b3a3f57c12cb0"
+      },
+      "prompt_stratum": "I",
+      "reference_stratum": "I",
+      "replicate": 2,
+      "route": "multimodal2video",
+      "task_id": "II-02"
+    },
+    {
+      "alias": "B07",
+      "batch_assignment": "B",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_B/B07.mp4",
+      "blind_media_sha256": "30be8e5dc0a5934b5f6af4e2a6b433636a305fe9de8d699bfa6e90e7533603fa",
+      "canonical_media_bytes": 2236832,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/015_NI-03.mp4",
+      "canonical_media_sha256": "49863212d71c80081e97cec0e315cf5b93c5082efc3f8ac9f4ee582d42aa4927",
+      "condition_id": "NI",
+      "frozen_review": {
+        "bytes": 11928,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B07_review.json",
+        "sha256": "72dba05f504f4751cfedd9d91ad4a1d9236d198a0f53fc500103ee8320edc048"
+      },
+      "prompt_stratum": "N",
+      "reference_stratum": "I",
+      "replicate": 3,
+      "route": "multimodal2video",
+      "task_id": "NI-03"
+    },
+    {
+      "alias": "B08",
+      "batch_assignment": "B",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_B/B08.mp4",
+      "blind_media_sha256": "f4f1fae6cddff3b983d1e637947813c47a07111e58e3e7adde777d73d360b073",
+      "canonical_media_bytes": 3972175,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/017_N0-03.mp4",
+      "canonical_media_sha256": "7f1e69426f17ecba9590839797bbe1190dad0f6581fe1a228aaee68ee58c0b01",
+      "condition_id": "N0",
+      "frozen_review": {
+        "bytes": 13496,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B08_review.json",
+        "sha256": "e523236d8382d6ca3104d049079d63a4324c9d36fb292c056a27c8884cd79404"
+      },
+      "prompt_stratum": "N",
+      "reference_stratum": "0",
+      "replicate": 3,
+      "route": "text2video",
+      "task_id": "N0-03"
+    },
+    {
+      "alias": "B09",
+      "batch_assignment": "B",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_B/B09.mp4",
+      "blind_media_sha256": "d7e2ee7c8a3be2e7e079590734bff296dcc8a154ea5a2d0a96e27a5a339bba6e",
+      "canonical_media_bytes": 4019404,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/014_I0-03.mp4",
+      "canonical_media_sha256": "dc2911d30d639a172d4a2348649d22b063ba0e678413d66549278ce85e3868c9",
+      "condition_id": "I0",
+      "frozen_review": {
+        "bytes": 10731,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B09_review.json",
+        "sha256": "f1c11228e2bae44cdbfd86486fdf9158d833da0c79e52c58936a0189d106f5f6"
+      },
+      "prompt_stratum": "I",
+      "reference_stratum": "0",
+      "replicate": 3,
+      "route": "text2video",
+      "task_id": "I0-03"
+    },
+    {
+      "alias": "B10",
+      "batch_assignment": "B",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_B/B10.mp4",
+      "blind_media_sha256": "31cc7dc78c9f00b92740d14779837880c5bc29e47546423ecc6d1e6560f71b1d",
+      "canonical_media_bytes": 2087416,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/002_II-01.mp4",
+      "canonical_media_sha256": "c5e446f19445928441d6737b7fd06c280e927c3ad66696486e03a2898dc9a1b7",
+      "condition_id": "II",
+      "frozen_review": {
+        "bytes": 11069,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B10_review.json",
+        "sha256": "6fdd7104b902bd907c7517e90ec60b112bb11690ecc46cbb74b60818dff71b0f"
+      },
+      "prompt_stratum": "I",
+      "reference_stratum": "I",
+      "replicate": 1,
+      "route": "multimodal2video",
+      "task_id": "II-01"
+    },
+    {
+      "alias": "B11",
+      "batch_assignment": "B",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_B/B11.mp4",
+      "blind_media_sha256": "acca3ae8f36de4f3c6bddf9373a2980abdd65df98fafae33fcd2743f89398e2c",
+      "canonical_media_bytes": 1981288,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/005_NI-01.mp4",
+      "canonical_media_sha256": "a72ee024b662858e8d35a705b852c9e127c85bec0f4422b5ff2866c94cdf453f",
+      "condition_id": "NI",
+      "frozen_review": {
+        "bytes": 10474,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B11_review.json",
+        "sha256": "2919f35963469bed66bf3bd17876ca8262e3a029afbaf30130fd742b38adde57"
+      },
+      "prompt_stratum": "N",
+      "reference_stratum": "I",
+      "replicate": 1,
+      "route": "multimodal2video",
+      "task_id": "NI-01"
+    },
+    {
+      "alias": "B12",
+      "batch_assignment": "B",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_B/B12.mp4",
+      "blind_media_sha256": "c2ea0da1b547faabd297b977236c404e9f62e85f1a31261f2c56e8560e320922",
+      "canonical_media_bytes": 2978086,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/013_NP-03.mp4",
+      "canonical_media_sha256": "198b7eba11c2745b2244e02f7597a21dc09532a8543dc740bd86e50081ccb403",
+      "condition_id": "NP",
+      "frozen_review": {
+        "bytes": 10877,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B12_review.json",
+        "sha256": "65d5363b35cb3a83ba25db0a814ba29fc1b8dd2a282d497f3e874a25aca35d6b"
+      },
+      "prompt_stratum": "N",
+      "reference_stratum": "P",
+      "replicate": 3,
+      "route": "multimodal2video",
+      "task_id": "NP-03"
+    },
+    {
+      "alias": "B13",
+      "batch_assignment": "C",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_C/B13.mp4",
+      "blind_media_sha256": "6fc9b6633af3c31c7650d2de77444fb9cbc52cff2f15b516e34004ce50749efd",
+      "canonical_media_bytes": 3180297,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/006_IP-01.mp4",
+      "canonical_media_sha256": "cacc11a20789e87e5224bc6c2968991c4b6e0961a597c751bbe891123f31eb28",
+      "condition_id": "IP",
+      "frozen_review": {
+        "bytes": 11435,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B13_review.json",
+        "sha256": "6b500956266af5a5058ac984d4bd5e251b50382da495b5ca66304ed3af60b9f2"
+      },
+      "prompt_stratum": "I",
+      "reference_stratum": "P",
+      "replicate": 1,
+      "route": "multimodal2video",
+      "task_id": "IP-01"
+    },
+    {
+      "alias": "B14",
+      "batch_assignment": "C",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_C/B14.mp4",
+      "blind_media_sha256": "0f13aec57ef3dff7861ac31e8375b04583cec08c9b6cfbf9d57eb76435713c78",
+      "canonical_media_bytes": 3643763,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/012_N0-02.mp4",
+      "canonical_media_sha256": "ae63d22b3ecbf9b1fa6ba646ae42391ad65ba9bcb88d0391041382076e488925",
+      "condition_id": "N0",
+      "frozen_review": {
+        "bytes": 12299,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B14_review.json",
+        "sha256": "e450b9f380e4b97e4c958491c9570518a0d4caf454cc378f21a27ab9442f7611"
+      },
+      "prompt_stratum": "N",
+      "reference_stratum": "0",
+      "replicate": 2,
+      "route": "text2video",
+      "task_id": "N0-02"
+    },
+    {
+      "alias": "B15",
+      "batch_assignment": "C",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_C/B15.mp4",
+      "blind_media_sha256": "a82315ff25ac25d45794ea7bf0064fe65483d4589dcc2abbae5044f34ff34bfc",
+      "canonical_media_bytes": 3836839,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/001_N0-01.mp4",
+      "canonical_media_sha256": "b6f728b3f24052985d3cc6c2c647a64b8c3a206622e67c9cd008ab355b3928a0",
+      "condition_id": "N0",
+      "frozen_review": {
+        "bytes": 12544,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B15_review.json",
+        "sha256": "a9bd301c3ea3443bdb7e21ee32de09c553c659ec6a34b9b14c11c48a89c4cf53"
+      },
+      "prompt_stratum": "N",
+      "reference_stratum": "0",
+      "replicate": 1,
+      "route": "text2video",
+      "task_id": "N0-01"
+    },
+    {
+      "alias": "B16",
+      "batch_assignment": "C",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_C/B16.mp4",
+      "blind_media_sha256": "521599203a0dfb4942e6df205acfeca0ca7ed74dcc076433d909bfad20d26f0e",
+      "canonical_media_bytes": 4845910,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/009_I0-02.mp4",
+      "canonical_media_sha256": "89dc85d36f75d32563617e84285271aa55027beba2948be31886c440ff07a95a",
+      "condition_id": "I0",
+      "frozen_review": {
+        "bytes": 11819,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B16_review.json",
+        "sha256": "eaca79e78f6d4314cf522f8638e309d6cbd1ce8aa7a7f5c341b4cd34b3408061"
+      },
+      "prompt_stratum": "I",
+      "reference_stratum": "0",
+      "replicate": 2,
+      "route": "text2video",
+      "task_id": "I0-02"
+    },
+    {
+      "alias": "B17",
+      "batch_assignment": "C",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_C/B17.mp4",
+      "blind_media_sha256": "9ed20e00eb6637fd65ce38d5f1e70a37493db1d595822975f3245ca96bfa730f",
+      "canonical_media_bytes": 2542322,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/010_NP-02.mp4",
+      "canonical_media_sha256": "4fc70823ab6b5383e9bf2951c271d1ef899de58f40af4ff5363d7f091fe2a135",
+      "condition_id": "NP",
+      "frozen_review": {
+        "bytes": 12188,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B17_review.json",
+        "sha256": "852f050e5fb91412297c728ab520a085f406eed9c3af2c56aec9de0d647c7e74"
+      },
+      "prompt_stratum": "N",
+      "reference_stratum": "P",
+      "replicate": 2,
+      "route": "multimodal2video",
+      "task_id": "NP-02"
+    },
+    {
+      "alias": "B18",
+      "batch_assignment": "C",
+      "blind_media_bytes": 8388608,
+      "blind_media_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_C/B18.mp4",
+      "blind_media_sha256": "ff8d310354ef10e7ecfc6bc1cd638ccfab61c2ed2bb93cfb4b86ef691ce0dd65",
+      "canonical_media_bytes": 2146559,
+      "canonical_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/007_IP-02.mp4",
+      "canonical_media_sha256": "544899c508af9dcb1f8b442052384beef053ad1b653cd272dffeb7386968a9b6",
+      "condition_id": "IP",
+      "frozen_review": {
+        "bytes": 11877,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B18_review.json",
+        "sha256": "4664ed42ac57d0c115cc4d93c7a56f8ea8ffd72b3932ecd3a8a5b0c788a4f5bf"
+      },
+      "prompt_stratum": "I",
+      "reference_stratum": "P",
+      "replicate": 2,
+      "route": "multimodal2video",
+      "task_id": "IP-02"
+    }
+  ],
+  "schema_version": "CAL004_R1_SANITIZED_UNBLINDED_MAPPING_V0_1"
+}

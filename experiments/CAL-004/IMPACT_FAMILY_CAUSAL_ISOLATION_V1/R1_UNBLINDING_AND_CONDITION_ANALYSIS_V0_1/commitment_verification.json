@@ -1,0 +1,12 @@
+{
+  "algorithm": "SHA-256",
+  "canonical_mapping_profile": "PASS",
+  "expected_commitment": "8f1acc67acfc9d96a38b29762ce6c54949006f09d608c9548e00f9fbb96676b8",
+  "formula": "SHA256(CANONICAL_MAPPING_BYTES + LF + LOWERCASE_SALT_HEX_BYTES)",
+  "four_way_equality": "PASS",
+  "public_record_commitment": "8f1acc67acfc9d96a38b29762ce6c54949006f09d608c9548e00f9fbb96676b8",
+  "recomputed_commitment": "8f1acc67acfc9d96a38b29762ce6c54949006f09d608c9548e00f9fbb96676b8",
+  "schema_version": "CAL004_R1_COMMITMENT_VERIFICATION_V0_1",
+  "sealed_manifest_commitment": "8f1acc67acfc9d96a38b29762ce6c54949006f09d608c9548e00f9fbb96676b8",
+  "verification": "PASS"
+}

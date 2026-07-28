@@ -1,0 +1,1682 @@
+{
+  "arithmetic_verification": "18/18 PASS",
+  "new_semantic_scoring": false,
+  "records": [
+    {
+      "action_family_failure": false,
+      "alias": "B01",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "IP",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": true,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "A readable body-directed sustained displacement action remains present.",
+          "present": false
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The attacker releases and retracts after contact, then also retracts the later noncontact reach.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "The transition from visible hand-body separation to upper-torso overlap is readable near 1.05 seconds.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "One distinct rear/right placement occurs during the interaction; no second interaction-result step is visible.",
+          "status": "true"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "The figures are visibly separated at 0.00 seconds.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "Receiver motion builds gradually during sustained pressure rather than snapping back at onset.",
+          "status": "false"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "Two-hand contact remains visibly engaged for roughly 0.63 seconds.",
+          "present": true
+        },
+        "reference_ignored": {
+          "evidence_rationale": "The visible result contains a coherent preparation, interaction, receiver displacement, release, and recovery sequence.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "The mannequin-like rendering dominates the entire clip and constitutes a substantial visible material-copy concern without identifying any hidden source.",
+          "present": true
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The visible attacker and receiver roles remain coherent and the interaction is directed toward the receiver torso.",
+          "present": false
+        },
+        "static_tail_duration_seconds": 0.59
+      },
+      "frozen_review_bytes": 13037,
+      "frozen_review_sha256": "119797db8f3bbee3dfa7db4c672e69a476b63d5ae8df8b5e2d0ab82fac28ea6f",
+      "impact_score": 4,
+      "impact_specificity_margin": -7,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No dot, flash, ring, overlay, or other added visible marker appears at the interaction point.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The entire clip uses simplified rigid mannequin-like bodies, so the visible style is a substantial whole-clip copying concern.",
+          "material": true,
+          "present": true,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "No dominant grid-based scene or regular scene-wide grid is visible.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera position and framing remain locked, but fixed camera alone is not material and no additional composition-specific copying concern is visible.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 1,
+      "prompt_stratum": "I",
+      "push_score": 11,
+      "reference_observation_applicable": true,
+      "reference_stratum": "P",
+      "replicate": 3,
+      "route": "multimodal2video",
+      "task_id": "IP-03",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": false,
+      "alias": "B02",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "NI",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "A readable brief upper-body interaction with immediate receiver recoil remains present.",
+          "present": false
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The attacker promptly retracts and re-crosses the arm after separation.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "The first overlap/contact interval is readable near 1.05 seconds, although the exact torso-versus-forearm surface is partly occluded.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "One distinct rear/right recoil step follows the interaction, with no second result step.",
+          "status": "true"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "The performers are visibly separated at 0.00 seconds.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "The receiver upper body moves back/right immediately after the brief interaction.",
+          "status": "true"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "The visible interaction is brief and separates promptly.",
+          "present": false
+        },
+        "reference_ignored": {
+          "evidence_rationale": "The clip visibly stages preparation, a single interaction, receiver response, retraction, and recovery.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No substantial visible copying concern dominates the clip beyond the non-material fixed camera.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The attacker and receiver roles remain coherent and the action is directed toward the receiver upper body.",
+          "present": false
+        },
+        "static_tail_duration_seconds": 0.59
+      },
+      "frozen_review_bytes": 12994,
+      "frozen_review_sha256": "c314cfb44923165c423539de30d8d014f607e6485ab4d75708b0c398b3cdee67",
+      "impact_score": 10,
+      "impact_specificity_margin": 2,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No dot, flash, ring, overlay, or other added visible marker appears at the interaction point.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The figures are rendered as natural human performers rather than mannequin-like bodies.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "No dominant grid-based scene or regular scene-wide grid is visible.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera position and framing remain locked, but fixed camera alone is not material and no additional composition-specific copying concern is visible.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "N",
+      "push_score": 8,
+      "reference_observation_applicable": true,
+      "reference_stratum": "I",
+      "replicate": 2,
+      "route": "multimodal2video",
+      "task_id": "NI-02",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": false,
+      "alias": "B03",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "II",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": true,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "A readable sustained body-directed displacement action remains present despite the one-hand configuration.",
+          "present": false
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The attacker releases and retracts after contact, then retracts the later noncontact reach.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "The transition to upper-torso hand overlap is readable near 1.05 seconds.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "One distinct rear/right placement occurs during the interaction; no second result step is visible.",
+          "status": "true"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "The figures are visibly separated at 0.00 seconds.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "Receiver displacement develops gradually during maintained contact.",
+          "status": "false"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "One-hand contact remains visibly engaged for roughly 0.58 seconds.",
+          "present": true
+        },
+        "reference_ignored": {
+          "evidence_rationale": "A coherent preparation, contact, receiver displacement, release, and recovery sequence is visible.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "The low-poly mannequin-like treatment dominates the entire clip and is a substantial visible material-copy concern without identifying any hidden source.",
+          "present": true
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The visible attacker and receiver roles remain coherent and the interaction is torso-directed.",
+          "present": false
+        },
+        "static_tail_duration_seconds": 0.59
+      },
+      "frozen_review_bytes": 12443,
+      "frozen_review_sha256": "568992cf8c8f994f731a45909fe3fd341f210afa90b400cb3e5cc5dd2d874ef4",
+      "impact_score": 5,
+      "impact_specificity_margin": -5,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No dot, flash, ring, overlay, or other added visible marker appears at the interaction point.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The entire clip uses simplified rigid mannequin-like bodies, so the visible style is a substantial whole-clip copying concern.",
+          "material": true,
+          "present": true,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "A regular floor-seam grid is visibly present, but it is limited to ordinary floor geometry and does not dominate the scene.",
+          "material": false,
+          "present": true,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera position and framing remain locked, but fixed camera alone is not material and no additional composition-specific copying concern is visible.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 1,
+      "prompt_stratum": "I",
+      "push_score": 10,
+      "reference_observation_applicable": true,
+      "reference_stratum": "I",
+      "replicate": 3,
+      "route": "multimodal2video",
+      "task_id": "II-03",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": false,
+      "alias": "B04",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "I0",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "A readable brief impact-like body interaction and immediate receiver recoil remain present.",
+          "present": false
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The attacker eventually retracts to guard, but only after holding the arm extended well after release.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "The first overlap interval is readable near 0.67 seconds, although the exact forearm-versus-chest surface is partly occluded.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "The frame crops the relevant feet and lower-leg result, so the count and type cannot be verified.",
+          "status": "unclear"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "The performers are visibly separated at 0.00 seconds.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "Receiver upper-body recoil begins immediately after the brief interaction.",
+          "status": "true"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "The visible contact interval is brief and separates quickly.",
+          "present": false
+        },
+        "reference_ignored": {
+          "evidence_rationale": "A coherent compact approach, brief upper-body interaction, recoil, release, retraction, and recovery sequence is visible.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No substantial visible copying concern dominates the clip beyond the non-material fixed camera.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The visible attacker and receiver roles remain coherent and the action is upper-body-directed.",
+          "present": false
+        },
+        "static_tail_duration_seconds": 1.56
+      },
+      "frozen_review_bytes": 12244,
+      "frozen_review_sha256": "f12b5c291e9272a7f32cf43214befdebf1b4c98287e0c725b497a036268089b9",
+      "impact_score": 9,
+      "impact_specificity_margin": 1,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No dot, flash, ring, overlay, or other added visible marker appears at the interaction point.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The figures are rendered as natural human performers rather than mannequin-like bodies.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "No dominant grid-based scene or regular scene-wide grid is visible.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera position and framing remain locked, but fixed camera alone is not material and no additional composition-specific copying concern is visible.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "I",
+      "push_score": 8,
+      "reference_observation_applicable": false,
+      "reference_stratum": "0",
+      "replicate": 1,
+      "route": "text2video",
+      "task_id": "I0-01",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": false,
+      "alias": "B05",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "NP",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "A readable sustained two-hand displacement action remains present.",
+          "present": false
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The attacker releases and retracts after contact, then retracts the later noncontact reach.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "The onset of hand overlap at the crossed-forearm/upper-torso region is readable near 1.05 seconds.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "One distinct rear/right placement occurs; a small pivot of the other foot is not a second rear-foot result.",
+          "status": "true"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "The performers are visibly separated at 0.00 seconds.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "Receiver displacement develops gradually during maintained pressure.",
+          "status": "false"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "Two-hand contact remains visibly engaged for roughly 0.62 seconds.",
+          "present": true
+        },
+        "reference_ignored": {
+          "evidence_rationale": "The clip visibly stages preparation, a body-directed interaction, receiver displacement, release, and recovery.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No substantial visible copying concern dominates the clip beyond the non-material fixed camera.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The attacker and receiver roles remain coherent and the interaction is torso-directed.",
+          "present": false
+        },
+        "static_tail_duration_seconds": 0.59
+      },
+      "frozen_review_bytes": 12785,
+      "frozen_review_sha256": "7003a84e9b1e100330953fb46ee88e9ae3356748e6e7e063c8b4004e503ae603",
+      "impact_score": 4,
+      "impact_specificity_margin": -7,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No dot, flash, ring, overlay, or other added visible marker appears at the interaction point.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The figures are rendered as natural human performers rather than mannequin-like bodies.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "No dominant grid-based scene or regular scene-wide grid is visible.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera position and framing remain locked, but fixed camera alone is not material and no additional composition-specific copying concern is visible.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "N",
+      "push_score": 11,
+      "reference_observation_applicable": true,
+      "reference_stratum": "P",
+      "replicate": 1,
+      "route": "multimodal2video",
+      "task_id": "NP-01",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": true,
+      "alias": "B06",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "II",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": true,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "No torso-directed PUSH or IMPACT interaction and no qualifying receiver torso response are visible.",
+          "present": true
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The navy performer releases and retracts after limb contact, then retracts the later noncontact extension.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "The transition from hand/fist separation to sustained limb-to-limb contact is readable near 1.70 seconds.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "One lateral foot placement is visible, but the front-facing orientation prevents confident rear-foot identification or recoil-versus-recovery classification.",
+          "status": "unclear"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "The performers are visibly separated at 0.00 seconds.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "The rust performer torso remains upright without immediate upper-body recoil.",
+          "status": "false"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "Hand-to-fist/forearm contact remains visibly engaged for roughly 0.52 seconds.",
+          "present": true
+        },
+        "reference_ignored": {
+          "evidence_rationale": "The clip still attempts an approach, one interaction episode, release, and recovery sequence.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No substantial visible copying concern dominates the clip beyond the non-material fixed camera.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The rust performer remains front-facing with a fist already extended, and the visible interaction targets that limb rather than presenting a neutral torso-directed receiver role.",
+          "present": true
+        },
+        "static_tail_duration_seconds": 0.59
+      },
+      "frozen_review_bytes": 13764,
+      "frozen_review_sha256": "4c2071c8289d0333b0346133f991e2760eb681b00d16b6b6813b3a3f57c12cb0",
+      "impact_score": 4,
+      "impact_specificity_margin": -2,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No dot, flash, ring, overlay, or other added visible marker appears at the interaction point.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The figures are rendered as natural human performers rather than mannequin-like bodies.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "No dominant grid-based scene or regular scene-wide grid is visible.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera position and framing remain locked, but fixed camera alone is not material and no additional composition-specific copying concern is visible.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "I",
+      "push_score": 6,
+      "reference_observation_applicable": true,
+      "reference_stratum": "I",
+      "replicate": 2,
+      "route": "multimodal2video",
+      "task_id": "II-02",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": false,
+      "alias": "B07",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "NI",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "The clip remains a standing single-contact displacement action despite the one-hand, guard-level mismatch.",
+          "present": false
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The initiator withdraws the extended arm to guard after separation and again retracts the late non-contact gesture.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "The advancing open hand visibly reaches the crossed guard near 1.17 s, though the exact overlap point is partly occluded.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "The receiver makes one rightmost/rear-foot outward-back placement and no second rear-foot step.",
+          "status": "true"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "At 0.00 s there is clear space between both bodies and all hands.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "The receiver shifts gradually and stays upright rather than snapping back immediately.",
+          "status": "false"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "The guard-level contact/near-contact lasts only about 0.33 s before visible separation.",
+          "present": false
+        },
+        "reference_ignored": {
+          "evidence_rationale": "A coherent preparation-to-contact-to-step-to-release sequence remains visible, so the neutral motion role is not visibly discarded.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No material visual-copy sentinel is present and the clip remains a normal live-action studio presentation.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The blue-clad performer initiates and the orange-clad performer receives throughout the single contact episode.",
+          "present": false
+        },
+        "static_tail_duration_seconds": 0.56
+      },
+      "frozen_review_bytes": 11928,
+      "frozen_review_sha256": "72dba05f504f4751cfedd9d91ad4a1d9236d198a0f53fc500103ee8320edc048",
+      "impact_score": 6,
+      "impact_specificity_margin": -4,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No visible crosshair, dot, flash, overlay, or other contact-marker graphic appears at contact.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The figures are visibly human performers rather than abstract or segmented mannequins.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "The scene is a plain studio wall and wood floor with no visible grid environment.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera is locked in a centered wide composition, but fixed camera alone is not treated as material copying.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "N",
+      "push_score": 10,
+      "reference_observation_applicable": true,
+      "reference_stratum": "I",
+      "replicate": 3,
+      "route": "multimodal2video",
+      "task_id": "NI-03",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": true,
+      "alias": "B08",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "N0",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "The dominant action is a counter-kick followed by a fall to the floor rather than a standing PUSH or brief standing IMPACT with one rear-foot result.",
+          "present": true
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The blue-clad attacker withdraws/lands the kicking leg after contact and breaks the arm engagement.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "First arm contact is readable near 1.67 s and the later kick contact is separately readable near 2.58 s.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "The receiver collapses through multiple leg motions instead of completing one rear-foot step.",
+          "status": "false"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "At 0.00 s both open hands and bodies are visibly separated.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "The orange-clad receiver recoils immediately after the kick and falls.",
+          "status": "true"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "The initial arm/forearm engagement persists for roughly 0.9 s before the separate kick contact.",
+          "present": true
+        },
+        "reference_ignored": {
+          "evidence_rationale": "The visible result departs from both neutral standing signatures by changing roles and resolving through a kick-driven takedown.",
+          "present": true
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No material style, scene, marker, or camera-composition copying concern is visible.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The orange-clad performer initiates the first arm action, but the blue-clad performer becomes the dominant attacker with the kick, reversing roles within the clip.",
+          "present": true
+        },
+        "static_tail_duration_seconds": 0.0
+      },
+      "frozen_review_bytes": 13496,
+      "frozen_review_sha256": "e523236d8382d6ca3104d049079d63a4324c9d36fb292c056a27c8884cd79404",
+      "impact_score": 8,
+      "impact_specificity_margin": 5,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No visible crosshair, dot, flash, overlay, or other contact-marker graphic appears at contact.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The figures are visibly human performers rather than abstract or segmented mannequins.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "The scene is a plain studio wall and wood floor with no visible grid environment.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera remains fixed in a medium-wide studio composition, but fixed framing alone is not material copying.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "N",
+      "push_score": 3,
+      "reference_observation_applicable": false,
+      "reference_stratum": "0",
+      "replicate": 3,
+      "route": "text2video",
+      "task_id": "N0-03",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": false,
+      "alias": "B09",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "I0",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "The standing one-contact torso interaction remains within the neutral IMPACT family.",
+          "present": false
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The initiator promptly withdraws the fist and restores guard after the contact.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "The closed fist visibly enters the upper chest/torso area near 1.33 s.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "The camera crops out both feet, so the number and type of rear-foot steps cannot be determined.",
+          "status": "unclear"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "A small visible gap remains between the nearest fists at 0.00 s.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "The receiver’s upper body begins moving back and folding as contact occurs.",
+          "status": "true"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "The torso interaction lasts roughly 0.4 s and is followed by prompt retraction.",
+          "present": false
+        },
+        "reference_ignored": {
+          "evidence_rationale": "The clip visibly preserves a coherent compact single-impact sequence with recoil, retraction, and recovery.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No material visual-copy sentinel is present.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The blue-clad performer initiates and the orange-clad performer receives throughout the single interaction.",
+          "present": false
+        },
+        "static_tail_duration_seconds": 0.0
+      },
+      "frozen_review_bytes": 10731,
+      "frozen_review_sha256": "f1c11228e2bae44cdbfd86486fdf9158d833da0c79e52c58936a0189d106f5f6",
+      "impact_score": 11,
+      "impact_specificity_margin": 5,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No visible crosshair, dot, flash, overlay, or other contact-marker graphic appears at contact.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The figures are visibly human performers rather than abstract or segmented mannequins.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "The scene is a plain studio wall and wood floor with no visible grid environment.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera is fixed in a close two-person composition, but fixed camera alone is not material copying.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "I",
+      "push_score": 6,
+      "reference_observation_applicable": false,
+      "reference_stratum": "0",
+      "replicate": 3,
+      "route": "text2video",
+      "task_id": "I0-03",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": false,
+      "alias": "B10",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "II",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": true,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "The motion remains a standing single-contact displacement action despite the one-arm mismatch.",
+          "present": false
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The blue arm retracts after the contact and also retracts the late non-contact gesture.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "The arm visibly overlaps the receiver’s upper body, but simplified block geometry prevents precise surface-contact confirmation.",
+          "status": "unclear"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "One rightmost/rear block leg moves outward/back and no second rear-leg step follows.",
+          "status": "true"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "The figures and arms are visibly separated at 0.00 s.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "The receiver moves gradually during held contact rather than recoiling sharply.",
+          "status": "false"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "The single held contact lasts about 0.67 s and releases as the one rear-leg placement completes.",
+          "present": false
+        },
+        "reference_ignored": {
+          "evidence_rationale": "The visible motion retains a coherent standing displacement, rear-leg placement, release, and recovery sequence.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "The entire result is rendered as abstract segmented block mannequins, making the visual-reference form materially dominant over a neutral motion-only role.",
+          "present": true
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The blue figure initiates and the orange figure receives throughout the contact.",
+          "present": false
+        },
+        "static_tail_duration_seconds": 0.59
+      },
+      "frozen_review_bytes": 11069,
+      "frozen_review_sha256": "6fdd7104b902bd907c7517e90ec60b112bb11690ecc46cbb74b60818dff71b0f",
+      "impact_score": 6,
+      "impact_specificity_margin": -5,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No visible contact marker, crosshair, flash, or overlay appears.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "Both actors are abstract low-poly block mannequins with featureless oval heads and segmented rectangular limbs; this substantially dominates the visible presentation.",
+          "material": true,
+          "present": true,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "The scene is a plain wall and wood floor with no visible grid environment.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera is locked in a centered wide composition, but fixed camera alone is not treated as material copying.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 1,
+      "prompt_stratum": "I",
+      "push_score": 11,
+      "reference_observation_applicable": true,
+      "reference_stratum": "I",
+      "replicate": 1,
+      "route": "multimodal2video",
+      "task_id": "II-01",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": false,
+      "alias": "B11",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "NI",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "The action remains within the standing PUSH/IMPACT family despite the one-hand guard contact.",
+          "present": false
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The initiator withdraws the right arm after separation and retracts the late non-contact gesture.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "The right hand/forearm visibly reaches the crossed guard near 1.17 s; direct torso contact remains obscured.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "One rear/right-foot outward-back placement occurs and no second rear-foot step follows.",
+          "status": "true"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "Clear space exists between both bodies and hands at 0.00 s.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "The receiver shifts gradually without a sharp upper-body snap.",
+          "status": "false"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "The guard-level contact lasts only about 0.33 s before separation.",
+          "present": false
+        },
+        "reference_ignored": {
+          "evidence_rationale": "The clip retains a coherent standing single-contact displacement and recovery sequence.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No material style or scene-copy sentinel is present.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The blue-clad performer initiates and the orange-clad performer receives throughout.",
+          "present": false
+        },
+        "static_tail_duration_seconds": 0.56
+      },
+      "frozen_review_bytes": 10474,
+      "frozen_review_sha256": "2919f35963469bed66bf3bd17876ca8262e3a029afbaf30130fd742b38adde57",
+      "impact_score": 6,
+      "impact_specificity_margin": -4,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No visible crosshair, dot, flash, overlay, or other contact-marker graphic appears at contact.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The figures are visibly human performers rather than abstract or segmented mannequins.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "The scene is a plain studio wall and wood floor with no visible grid environment.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera is locked in a centered wide studio composition, but fixed camera alone is not material copying.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "N",
+      "push_score": 10,
+      "reference_observation_applicable": true,
+      "reference_stratum": "I",
+      "replicate": 1,
+      "route": "multimodal2video",
+      "task_id": "NI-01",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": false,
+      "alias": "B12",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "NP",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "The action remains a standing single-contact displacement within the neutral PUSH family.",
+          "present": false
+        },
+        "attacker_retract": {
+          "evidence_rationale": "Both arms retract after the main contact and after the late non-contact gesture.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "Both arms visibly reach the receiver’s upper-torso/guard region near 1.05 s.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "One rear/right-foot outward-back placement occurs and no second rear-foot step follows.",
+          "status": "true"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "Clear space exists between both performers and their hands at 0.00 s.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "The receiver moves gradually while staying upright rather than recoiling sharply.",
+          "status": "false"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "The two-arm contact lasts about 0.58 s and releases as the receiver completes one rear-foot placement.",
+          "present": false
+        },
+        "reference_ignored": {
+          "evidence_rationale": "The visible sequence preserves the full neutral PUSH progression of preparation, two-arm interaction, one rear-foot placement, release, and recovery.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No material copy sentinel is present.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The blue-clad performer initiates and the orange-clad performer receives throughout.",
+          "present": false
+        },
+        "static_tail_duration_seconds": 0.59
+      },
+      "frozen_review_bytes": 10877,
+      "frozen_review_sha256": "65d5363b35cb3a83ba25db0a814ba29fc1b8dd2a282d497f3e874a25aca35d6b",
+      "impact_score": 5,
+      "impact_specificity_margin": -7,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No visible crosshair, dot, flash, overlay, or other contact-marker graphic appears at contact.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The figures are visibly human performers rather than abstract or segmented mannequins.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "The scene is a plain studio wall and wood floor with no visible grid environment.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera is fixed in a centered wide studio composition, but fixed camera alone is not material copying.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "N",
+      "push_score": 12,
+      "reference_observation_applicable": true,
+      "reference_stratum": "P",
+      "replicate": 3,
+      "route": "multimodal2video",
+      "task_id": "NP-03",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": true,
+      "alias": "B13",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "IP",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "The primary action is a slow single-hand reach that never contacts the torso or any body part, so neither neutral action family is completed.",
+          "present": true
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The initiating arm visibly retracts from about 2.50 s to 3.15 s, although the retraction is gradual.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "No contact onset exists; the hand remains visibly separated from the receiver.",
+          "status": "false"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "Only the nearer/front foot briefly moves; no rear-foot step or placement is visible.",
+          "status": "false"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "The first frame shows a clear air gap between both performers.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "There is no contact-linked snap or immediate upper-body recoil.",
+          "status": "false"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "No visible contact occurs at any point.",
+          "present": false
+        },
+        "reference_ignored": {
+          "evidence_rationale": "A coordinated initiator/receiver setup and a relevant reaching attempt are visible, so the visible result does not establish that the neutral reference role was ignored.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No distinctive visual element appears to dominate as literal reference copying; the scene remains generic live-action staging.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "One performer visibly initiates and the other remains the receiver; the role assignment stays clear despite the missed interaction.",
+          "present": false
+        },
+        "static_tail_duration_seconds": 1.45
+      },
+      "frozen_review_bytes": 11435,
+      "frozen_review_sha256": "6b500956266af5a5058ac984d4bd5e251b50382da495b5ca66304ed3af60b9f2",
+      "impact_score": 2,
+      "impact_specificity_margin": -1,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No visible dot, target, overlay, flash, or other explicit contact marker appears anywhere in the MP4.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The scene contains live human performers with articulated clothing and natural body motion; no mannequin-like model or mannequin staging is visible.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "The background is a plain beige wall above a wooden floor, with no grid scene or grid-line structure.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera is locked off in a stable full-body composition, but fixed framing alone is generic and is not a substantial copying concern.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "I",
+      "push_score": 3,
+      "reference_observation_applicable": true,
+      "reference_stratum": "P",
+      "replicate": 1,
+      "route": "multimodal2video",
+      "task_id": "IP-01",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": true,
+      "alias": "B14",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "N0",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "The main event is a prolonged arm-to-arm block/bind with no clear torso-directed PUSH or brief torso-directed IMPACT.",
+          "present": true
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The blue-clad initiator visibly withdraws the contacting arm after the bind releases near 2.50 s.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "The first hand/forearm meeting is readable at approximately 0.75 s.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "Both feet are outside the frame, so the number and type of rear-foot results cannot be verified.",
+          "status": "unclear"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "The first frame shows a clear gap between the performers and their hands.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "Receiver motion is gradual and rotational during the bind, not an immediate upper-body recoil.",
+          "status": "false"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "Visible arm contact is maintained from roughly 0.75 s to 2.50 s.",
+          "present": true
+        },
+        "reference_ignored": {
+          "evidence_rationale": "A deliberate two-person interaction sequence is visible; the result is mismatched in form but does not visibly ignore the neutral reference role altogether.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No material visual copying feature dominates the result; the live-action staging remains generic.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The receiver actively parries and sustains a reciprocal arm bind, obscuring a simple attacker-to-receiver motion role.",
+          "present": true
+        },
+        "static_tail_duration_seconds": 0.3
+      },
+      "frozen_review_bytes": 12299,
+      "frozen_review_sha256": "e450b9f380e4b97e4c958491c9570518a0d4caf454cc378f21a27ab9442f7611",
+      "impact_score": 5,
+      "impact_specificity_margin": -1,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No visible dot, target, overlay, flash, or other explicit contact marker appears anywhere in the MP4.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The scene contains live human performers with articulated clothing and natural body motion; no mannequin-like model or mannequin staging is visible.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "The background is a plain beige wall above a wooden floor, with no grid scene or grid-line structure.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera is locked off in a stable medium composition, but fixed framing by itself is not a material copying concern.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "N",
+      "push_score": 6,
+      "reference_observation_applicable": false,
+      "reference_stratum": "0",
+      "replicate": 2,
+      "route": "text2video",
+      "task_id": "N0-02",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": true,
+      "alias": "B15",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "N0",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "The central event is reciprocal single-arm shoulder/chest bracing rather than one clear two-hand PUSH or one brief torso IMPACT.",
+          "present": true
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The blue-clad contacting arm clearly retracts, but the earlier orange-clad approach makes the attacker label visually ambiguous.",
+          "status": "unclear"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "The onset occurs around 1.71-1.80 s, but overlapping hands and motion blur obscure the exact first-touch frame.",
+          "status": "unclear"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "One backward placement by the orange-clad rear/screen-right foot is visible during recovery.",
+          "status": "true"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "The performers begin with a clear gap.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "No immediate upper-body snap follows the first contact; displacement develops later.",
+          "status": "false"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "Continuous reciprocal contact lasts from approximately 1.75 s to 3.25 s.",
+          "present": true
+        },
+        "reference_ignored": {
+          "evidence_rationale": "The clip visibly attempts a coordinated preparation, approach, interaction, and recovery sequence, so the neutral reference role is not visibly ignored.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No material visual feature appears to be overcopied; the setting and human motion remain generic.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The orange-clad performer initiates the approach, but the blue-clad performer becomes the main forward contact source and both maintain reciprocal contact, creating a visible role conflict.",
+          "present": true
+        },
+        "static_tail_duration_seconds": 0.25
+      },
+      "frozen_review_bytes": 12544,
+      "frozen_review_sha256": "a9bd301c3ea3443bdb7e21ee32de09c553c659ec6a34b9b14c11c48a89c4cf53",
+      "impact_score": 5,
+      "impact_specificity_margin": -4,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No visible dot, target, overlay, flash, or other explicit contact marker appears anywhere in the MP4.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The scene contains live human performers with articulated clothing and natural body motion; no mannequin-like model or mannequin staging is visible.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "The background is a plain beige wall above a wooden floor, with no grid scene or grid-line structure.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera remains fixed in a stable full-body composition, but that generic locked-off choice is not materially distinctive.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "N",
+      "push_score": 9,
+      "reference_observation_applicable": false,
+      "reference_stratum": "0",
+      "replicate": 1,
+      "route": "text2video",
+      "task_id": "N0-01",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": true,
+      "alias": "B16",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "I0",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "The primary contact is one open palm to the receiver's forearm/wrist and is held, rather than a torso-directed two-hand PUSH or brief torso IMPACT.",
+          "present": true
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The initiating arm eventually retracts into guard, but only after a long extended hold.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "The open palm visibly reaches the raised forearm around 0.67-0.75 s.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "The camera crops out both feet, preventing verification of any rear-foot step.",
+          "status": "unclear"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "The first frame shows a clear hand and body gap.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "The receiver's upper body leans screen-right/back immediately after contact.",
+          "status": "true"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "Forearm contact is visibly maintained from approximately 0.75 s to 1.85 s.",
+          "present": true
+        },
+        "reference_ignored": {
+          "evidence_rationale": "A deliberate initiator-to-receiver interaction and recovery sequence is visible, so the neutral reference role is not visibly ignored.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No material reference-copying feature dominates the live-action result.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The blue-clad performer consistently initiates and the orange-clad performer consistently receives.",
+          "present": false
+        },
+        "static_tail_duration_seconds": 0.25
+      },
+      "frozen_review_bytes": 11819,
+      "frozen_review_sha256": "eaca79e78f6d4314cf522f8638e309d6cbd1ce8aa7a7f5c341b4cd34b3408061",
+      "impact_score": 7,
+      "impact_specificity_margin": 1,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No visible dot, target, overlay, flash, or other explicit contact marker appears anywhere in the MP4.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The scene contains live human performers with articulated clothing and natural body motion; no mannequin-like model or mannequin staging is visible.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "The background is a plain beige wall above a wooden floor, with no grid scene or grid-line structure.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera is fixed in a stable medium composition, but the generic locked-off framing is not material copying by itself.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "I",
+      "push_score": 6,
+      "reference_observation_applicable": false,
+      "reference_stratum": "0",
+      "replicate": 2,
+      "route": "text2video",
+      "task_id": "I0-02",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": false,
+      "alias": "B17",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "NP",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "A coherent two-hand upper-torso PUSH-family interaction with receiver displacement and one rear-foot result is visible.",
+          "present": false
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The initiator releases near 1.88 s and retracts both arms into guard.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "Both hands visibly reach the receiver's upper torso/shoulder area near 1.05 s.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "The receiver rear/screen-right foot lifts and lands once during the contact phase.",
+          "status": "true"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "The first frame shows a large clear gap.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "The receiver yields gradually under sustained contact rather than snapping back immediately.",
+          "status": "false"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "Two-hand contact is visibly held from approximately 1.05 s to 1.88 s rather than being momentary.",
+          "present": true
+        },
+        "reference_ignored": {
+          "evidence_rationale": "The clip visibly follows a coherent preparation, approach, interaction, response, release, and recovery role sequence.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No material visual element appears to overcopy a neutral reference; the presentation remains generic live action.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The blue-clad performer remains the initiator and the orange-clad performer remains the receiver throughout the main episode.",
+          "present": false
+        },
+        "static_tail_duration_seconds": 0.6
+      },
+      "frozen_review_bytes": 12188,
+      "frozen_review_sha256": "852f050e5fb91412297c728ab520a085f406eed9c3af2c56aec9de0d647c7e74",
+      "impact_score": 4,
+      "impact_specificity_margin": -7,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No visible dot, target, overlay, flash, or other explicit contact marker appears anywhere in the MP4.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The scene contains live human performers with articulated clothing and natural body motion; no mannequin-like model or mannequin staging is visible.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "The background is a plain beige wall above a wooden floor, with no grid scene or grid-line structure.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera is locked off in a centered full-body composition, but fixed-camera presentation alone is generic and non-material.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "N",
+      "push_score": 11,
+      "reference_observation_applicable": true,
+      "reference_stratum": "P",
+      "replicate": 2,
+      "route": "multimodal2video",
+      "task_id": "NP-02",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    },
+    {
+      "action_family_failure": true,
+      "alias": "B18",
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "condition_id": "IP",
+      "effective_reference_ignored": false,
+      "effective_reference_overdominance": false,
+      "effective_reference_role_conflict": false,
+      "frozen_observations": {
+        "action_family_failure": {
+          "evidence_rationale": "Although the action is two-handed and displacing, the visible contact is on the receiver's forearms/wrists rather than the torso required by the neutral PUSH family.",
+          "present": true
+        },
+        "attacker_retract": {
+          "evidence_rationale": "The initiator releases near 1.80 s and retracts both arms by about 2.30 s.",
+          "status": "true"
+        },
+        "contact_onset_readability": {
+          "evidence_rationale": "Both hands visibly meet the receiver's forearms near 1.00 s.",
+          "status": "true"
+        },
+        "exactly_one_rear_foot_result": {
+          "evidence_rationale": "One rear/screen-right foot lift and placement is visible during the contact phase.",
+          "status": "true"
+        },
+        "first_frame_separation": {
+          "evidence_rationale": "The first frame shows a large clear gap.",
+          "status": "true"
+        },
+        "immediate_recoil": {
+          "evidence_rationale": "The receiver rotates and steps away gradually rather than recoiling immediately.",
+          "status": "false"
+        },
+        "prolonged_contact": {
+          "evidence_rationale": "Two-hand arm contact is visibly maintained from approximately 1.00 s to 1.80 s.",
+          "present": true
+        },
+        "reference_ignored": {
+          "evidence_rationale": "A deliberate two-person preparation, interaction, response, release, and recovery sequence is visible.",
+          "present": false
+        },
+        "reference_overdominance": {
+          "evidence_rationale": "No material visual feature appears to dominate as copied reference content.",
+          "present": false
+        },
+        "reference_role_conflict": {
+          "evidence_rationale": "The blue-clad performer remains the initiator and the orange-clad performer remains the receiver.",
+          "present": false
+        },
+        "static_tail_duration_seconds": 0.6
+      },
+      "frozen_review_bytes": 11877,
+      "frozen_review_sha256": "4664ed42ac57d0c115cc4d93c7a56f8ea8ffd72b3932ecd3a8a5b0c788a4f5bf",
+      "impact_score": 5,
+      "impact_specificity_margin": -5,
+      "material_copy_sentinels": [
+        {
+          "evidence_rationale": "No visible dot, target, overlay, flash, or other explicit contact marker appears anywhere in the MP4.",
+          "material": false,
+          "present": false,
+          "sentinel": "CONTACT_MARKER_COPY"
+        },
+        {
+          "evidence_rationale": "The scene contains live human performers with articulated clothing and natural body motion; no mannequin-like model or mannequin staging is visible.",
+          "material": false,
+          "present": false,
+          "sentinel": "MANNEQUIN_STYLE_COPY"
+        },
+        {
+          "evidence_rationale": "The background is a plain beige wall above a wooden floor, with no grid scene or grid-line structure.",
+          "material": false,
+          "present": false,
+          "sentinel": "GRID_SCENE_COPY"
+        },
+        {
+          "evidence_rationale": "The camera remains locked off in a wide centered composition, but fixed framing alone is generic and not materially copied.",
+          "material": false,
+          "present": true,
+          "sentinel": "FIXED_CAMERA_COMPOSITION_COPY"
+        }
+      ],
+      "material_sentinel_count": 0,
+      "prompt_stratum": "I",
+      "push_score": 10,
+      "reference_observation_applicable": true,
+      "reference_stratum": "P",
+      "replicate": 2,
+      "route": "multimodal2video",
+      "task_id": "IP-02",
+      "technical_validity_binding": "PASS",
+      "technically_valid_complete_mp4": true
+    }
+  ],
+  "schema_version": "CAL004_R1_UNBLINDED_SAMPLE_SCORES_V0_1",
+  "score_source": "IMMUTABLE_FROZEN_REVIEW_SCORES_ONLY"
+}

@@ -1,0 +1,46 @@
+{
+  "batch_assignment_coverage": "18/18",
+  "crc": "PASS",
+  "equivalence_coverage": "18/18",
+  "mapping_coverage": "18/18",
+  "mapping_schema": {
+    "container_path": "$.aliases",
+    "entry_count": 18,
+    "producer_entry_field_count": 16,
+    "public_projection_field_count": 13
+  },
+  "member_count": 6,
+  "member_order": [
+    "mapping.json",
+    "equivalence.json",
+    "batch_assignment.json",
+    "salt.txt",
+    "sealed_manifest.json",
+    "SHA256SUMS"
+  ],
+  "member_read_counts": {
+    "SHA256SUMS": 1,
+    "batch_assignment.json": 1,
+    "equivalence.json": 1,
+    "mapping.json": 1,
+    "salt.txt": 1,
+    "sealed_manifest.json": 1
+  },
+  "no_raw_secret_persistence": true,
+  "open_count": 1,
+  "outer_identity": {
+    "bytes": 41207,
+    "path": "G:/AICODING/AI_VIDEO/_sealed/CAL004_R1_BLIND_MAPPING_V0_1/CAL004_R1_BLIND_MAPPING_DO_NOT_OPEN_UNTIL_REVIEW_FREEZE_V0_1.zip",
+    "sha256": "0eb2eb74397431799658103d1f3e9b03b476c2e5b49aa5bfd36aa0398412fb40"
+  },
+  "postactivation_parser_corrections": 0,
+  "prewrite_in_memory_sensitive_data_validation": "PASS",
+  "salt_decoded_byte_count": 32,
+  "salt_syntax": "PASS",
+  "schema_version": "CAL004_R1_SEALED_PACKAGE_VALIDATION_V0_1",
+  "sealed_manifest_exclusions": {
+    "manifest_self_hash_excluded": true,
+    "sha256sums_hash_excluded_from_manifest": true
+  },
+  "sha256sums": "5/5 PASS"
+}

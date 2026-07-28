@@ -1,0 +1,414 @@
+{
+  "branch": "main",
+  "committed_input_bindings": [
+    {
+      "bytes": 5123,
+      "git_blob": "dfed2a13fcc2a671719f0656957a919751094ef4",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/design_spec.json",
+      "sha256": "fe0cc08ad00b156a829b1886832abe282f5644f51904e6c84bc08a60c7f165a2",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 5797,
+      "git_blob": "6e2fb424d4e2b9f4d5975cbc1144fbefa5851b5b",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/condition_matrix.json",
+      "sha256": "23c214545678009f4f10cf106cc03e2654cd3d816aa3853b3d08aebd2eea5f93",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 28607,
+      "git_blob": "e832e52e23e8fb69e9bbe8de00f55efef2afa389",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/task_manifest.json",
+      "sha256": "7be3db682668c1d5c2b33976d583347f57bcd355c7cc7590d797e4405002bdcf",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 3762,
+      "git_blob": "74730115e37d6f5b1c27d789d15e460b55d0be4e",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/review_contract.json",
+      "sha256": "9f3dcbabbada07e64b229813f04b28bbdff5bbb013e5db97578c9a1b7d0c89c9",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 6197,
+      "git_blob": "b5a08cb00b910a2d35851f98e45cd9f08fd94667",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DOWNLOAD_V0_1/media_manifest.json",
+      "sha256": "84547ee195573ac8028cfb1e30fef94e5e8f3b5619ef952c7df2368626bab886",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 1256,
+      "git_blob": "ec219a8176bb80841c6365bf7d157a878cf9784d",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DOWNLOAD_V0_1/technical_validation_summary.json",
+      "sha256": "a745db24ce7968bc23edb862a51346eae84f55bdb297f6eb61b1ea180c658cf6",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 576,
+      "git_blob": "3c4144bc11eeb3d6caf45602eae2f50a52405fab",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/public_commitment.json",
+      "sha256": "99433203967037120cc9de27a668d6b7e7d955af1dcae5d278236318b04bd480",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 22639,
+      "git_blob": "bb580f872f56ad7e2756bb9d0e2a8f41f52daa52",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/evidence_manifest.json",
+      "sha256": "2b37201801c0aca11fe9256af4ad7837aa0b94df1292d377b01886a5ebace71c",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 6044,
+      "git_blob": "d1a611334ba6937d91e7625c6981cc5658b4fde5",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/execution.json",
+      "sha256": "f546c1be37bba97db87c532712bbcb97829b9513fcd444fff923d58829466c6c",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 15901,
+      "git_blob": "1d944121577a21047c9e96aea3c41c34c13aad73",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/review_freeze_manifest.json",
+      "sha256": "049287fbf77d5ccbd766c53243083475d02baf65b0f02e254a4f3abdc6faf4e9",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 10924,
+      "git_blob": "670ef91d9c8706acfc090118e38fa6617b6723f9",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/review_summary.json",
+      "sha256": "a6b47aa624959df7a0044d473f9a5da060fbc58da170d81b466079d590f11b31",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 21740,
+      "git_blob": "7f1bd5ecbd4d254f2e1f71532a09585cda4f4fb8",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/evidence_manifest.json",
+      "sha256": "1d604ebc0e2094a57fdb80c6630b7fc474a50c66b8fcc7e89779f03202dade41",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 3892,
+      "git_blob": "c9bed0f162c4086af2a4bbf8468698b6ccf8a61f",
+      "path": "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_BLIND_REVIEW_FREEZE_V0_1_RESULT.md",
+      "sha256": "22b9c5174f7d31951322a517706c9c5ed21ea07dd7654385a7c776a04b0ef171",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 3182,
+      "git_blob": "8d94b0bd13234fc47cf2ab0333ba872e701f92f9",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_PUSH_02_technical_validation.json",
+      "sha256": "ff560f1cff89091dc9a27ab31c5635428af7f37bb86ebcbef2327a81d73fc67d",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 3172,
+      "git_blob": "99e8c86ef8b4dd4c27866487baf5a571b97e5157",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/technical/ACTION_REF_IMPACT_02_technical_validation.json",
+      "sha256": "45c9f7c034f2afd0b651cafbe6d8563c7a9d0472baf004877d64858c9818eb63",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "76c5b77cc82860e6448e36078cfd95dc9c4997ba",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B01.json",
+      "sha256": "f0ef123b7aa97058433d27ec4386249391c5e227c02f2642d0d92082a98a3cc7",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "2e5b557bffa2caf08d4b1fee71b42c1374064fc6",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B02.json",
+      "sha256": "ea46af3125c6868cf34a48eca16b4a00f4070827fb414ab41639233e58f329be",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "4033724a602c8955f9a1ebdf3c5891f3e9cbaa29",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B03.json",
+      "sha256": "0d6c072ab8fc48dddb5c96400902b1b89c87a1173792dbb654a216a3daac7ed4",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "e5869f09995b84c7805a849015d8ec8c8ee12855",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B04.json",
+      "sha256": "5061841894cf85ce1ce20dde763523850e0735eb84bc6f8540ffa0afa930cbc0",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "a21b50db39942717bd992bb81f52857d0f73b7e0",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B05.json",
+      "sha256": "171193baa07a49b49ce92a8a2bf0c596462cb705a3ba3588cd6c1907debfe5f6",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "a583faac7f24bd150e7782aefa00acba0a71c77d",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B06.json",
+      "sha256": "6a9913543a7dd3e64581704ad60fb48ab472c6ae51d45ed2f714af58ae282a5a",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "97f2e48010ec41acb94a827382bcc5890233c62b",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B07.json",
+      "sha256": "a0f4c8fdf4b52c20c1567ee3b97635b5831b558b1dfdd67f2bce8e9398be8b4e",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "9e1377bf82dbd6d17d676edfcedb45dddf95d1a7",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B08.json",
+      "sha256": "483821e673101dec7783cecf6c6544b5a50647ac910bf53aa1fd6618da27619c",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "6195fc6f225434cc7ad91ee361441388cdc7b6a1",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B09.json",
+      "sha256": "cdc35c2993bbf25c4109acadbfda2bded6ddb313dcbaba5fe0252d591e44458d",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "6fbf8f622b9ee744ece7cc49b6a66bc6c1c5d378",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B10.json",
+      "sha256": "4432f148fea9c0b2a47b3930d94d68dcf8df2a48b58cf94cd750eac6fc18bb07",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "2f3e9eae2b8025c9bb5e1732507e1757194ae26d",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B11.json",
+      "sha256": "b98096f923dd0c433972ce2e3265d617daf74380e3fad46563398f17588b7dcc",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "95ae06a04f92b6d2db9114faeb3f766dfe0f648d",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B12.json",
+      "sha256": "a903f79b745f23860e3820d1e519bf215b5da0c7498aedb58ab3f91e97409a4d",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "920c430f7e6efd1f1a9b7b2acc63c5eafc5d8ef4",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B13.json",
+      "sha256": "4ecd97d2715ef8bbd0826db69784d8d65dae3258c688b325eb82746dea6e193f",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "bc403effa10799f59c235ed04c9faaab55aba392",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B14.json",
+      "sha256": "817473416e0f409ea253571afe3474335eb96b86b642364b89a86af6c5801da9",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "c3c7eb160ab92caa6056102053c23cfcc9582b8a",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B15.json",
+      "sha256": "61f93a6900d93178173fd8e5716e5d514d5db2258d8168b8b44696389174c98b",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "a5a9bbe9a5652e435fdd82d1dbb9e59029e0d83c",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B16.json",
+      "sha256": "d32b2159722cd602d8abcd8aa3c6210a12cbf0b50afb07eaef080be579b059c6",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "6a0e9918b60f7a66fb72f33cca83397f71c68f32",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B17.json",
+      "sha256": "95de2a6f26c2a669d912acbb0e4276c32ae81bc7f4eb2c1b36b9a2b446cebe5d",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 809,
+      "git_blob": "6b804ba90ab89cf6313e7d605a6e37cde838f616",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B18.json",
+      "sha256": "53104deeef1f58f51e9dc11600f42503b6829a12cb1cee4d9d96e96a4ffd30f1",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 13037,
+      "git_blob": "d8f39db4b6e326e081ff27ede95a876638e25ca0",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B01_review.json",
+      "sha256": "119797db8f3bbee3dfa7db4c672e69a476b63d5ae8df8b5e2d0ab82fac28ea6f",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 12994,
+      "git_blob": "385ce6ea29079a41df3ff1c28507f356665c5c84",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B02_review.json",
+      "sha256": "c314cfb44923165c423539de30d8d014f607e6485ab4d75708b0c398b3cdee67",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 12443,
+      "git_blob": "f30c73ab49387944a3663d183cd27157231da222",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B03_review.json",
+      "sha256": "568992cf8c8f994f731a45909fe3fd341f210afa90b400cb3e5cc5dd2d874ef4",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 12244,
+      "git_blob": "5f6262318fb75007b091cd4dc3c504d850548f71",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B04_review.json",
+      "sha256": "f12b5c291e9272a7f32cf43214befdebf1b4c98287e0c725b497a036268089b9",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 12785,
+      "git_blob": "497413a60d05ad3327c07f998ddb61380723ac12",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B05_review.json",
+      "sha256": "7003a84e9b1e100330953fb46ee88e9ae3356748e6e7e063c8b4004e503ae603",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 13764,
+      "git_blob": "ee7ccf4511c026e912edbb0904271f932a8cd5f4",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B06_review.json",
+      "sha256": "4c2071c8289d0333b0346133f991e2760eb681b00d16b6b6813b3a3f57c12cb0",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 11928,
+      "git_blob": "cda9f1e02ed13618c0276349769f26aad4ed76c8",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B07_review.json",
+      "sha256": "72dba05f504f4751cfedd9d91ad4a1d9236d198a0f53fc500103ee8320edc048",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 13496,
+      "git_blob": "1cca8a5dede172cc7419ff23cd84bf663ffb0892",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B08_review.json",
+      "sha256": "e523236d8382d6ca3104d049079d63a4324c9d36fb292c056a27c8884cd79404",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 10731,
+      "git_blob": "c78daef7852a56218bef36679e065dab29c8caaa",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B09_review.json",
+      "sha256": "f1c11228e2bae44cdbfd86486fdf9158d833da0c79e52c58936a0189d106f5f6",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 11069,
+      "git_blob": "dfd2eb71618264daa5c3555e128ad8fc128ed1cf",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B10_review.json",
+      "sha256": "6fdd7104b902bd907c7517e90ec60b112bb11690ecc46cbb74b60818dff71b0f",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 10474,
+      "git_blob": "9cadac30ed4b2095992aeed259bc697dcfbeddfd",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B11_review.json",
+      "sha256": "2919f35963469bed66bf3bd17876ca8262e3a029afbaf30130fd742b38adde57",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 10877,
+      "git_blob": "5fd1ad3aea6e53a7ff5bfee8d970af1388d757e9",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B12_review.json",
+      "sha256": "65d5363b35cb3a83ba25db0a814ba29fc1b8dd2a282d497f3e874a25aca35d6b",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 11435,
+      "git_blob": "87e0bd3164a88142ddee489881422299e6a265ca",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B13_review.json",
+      "sha256": "6b500956266af5a5058ac984d4bd5e251b50382da495b5ca66304ed3af60b9f2",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 12299,
+      "git_blob": "e89d704660c586ed9cc4eebc86adc8e6923eea32",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B14_review.json",
+      "sha256": "e450b9f380e4b97e4c958491c9570518a0d4caf454cc378f21a27ab9442f7611",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 12544,
+      "git_blob": "793f4678d9a02ed786fe51f1b12280cbb46f2a8e",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B15_review.json",
+      "sha256": "a9bd301c3ea3443bdb7e21ee32de09c553c659ec6a34b9b14c11c48a89c4cf53",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 11819,
+      "git_blob": "56dd05352d8ff31c4302f44465db3c809ed7d028",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B16_review.json",
+      "sha256": "eaca79e78f6d4314cf522f8638e309d6cbd1ce8aa7a7f5c341b4cd34b3408061",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 12188,
+      "git_blob": "098c6b22a59ecb65919d774f8fde6d89fe07adac",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B17_review.json",
+      "sha256": "852f050e5fb91412297c728ab520a085f406eed9c3af2c56aec9de0d647c7e74",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 11877,
+      "git_blob": "2aa8f8e1f8780bf025266795e46e7ff8b5c18a4f",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B18_review.json",
+      "sha256": "4664ed42ac57d0c115cc4d93c7a56f8ea8ffd72b3932ecd3a8a5b0c788a4f5bf",
+      "worktree_equals_head": true
+    }
+  ],
+  "head_origin_aligned": true,
+  "locally_recorded_origin_main": "194809d01825e2a3408f0dcda4d21ac44a5dfa4a",
+  "preactivation_schema_correction": {
+    "correction_count": 1,
+    "producer_mapping_entry_fields": 16,
+    "public_projection_fields": 13,
+    "reason": "archived producer implementation includes batch, fixed_submission_position and submit_id; these are validated but excluded from the authorized public projection"
+  },
+  "producer_schema_source": {
+    "creator_source_archive_sha256": "ab6a5adf184ee5a9ed0383bf7fc037b0acf6987d361266f0f5bd843f4a20342f",
+    "source": "SAME_CODEX_CHAT_ARCHIVED_CREATOR_IMPLEMENTATION"
+  },
+  "recovery_prewrite_validator_correction": {
+    "correction_count": 2,
+    "prior_partial_outputs_cleaned": true,
+    "reason": "replace blanket and raw-count member-name checks with exact JSON key/value location validation"
+  },
+  "recovery_sensitive_scan_fixtures": {
+    "dual_location_positive": "PASS",
+    "sealed_zip_opened": false,
+    "status": "4/4 PASS",
+    "third_key_location_negative": "PASS",
+    "third_report_location_negative": "PASS",
+    "third_value_location_negative": "PASS"
+  },
+  "repository": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+  "review_freeze_outer_identity": {
+    "bytes": 67775,
+    "path": "G:/AICODING/AI_VIDEO/_review_freeze/CAL004_R1_BLIND_REVIEW_FREEZE_V0_1.zip",
+    "sha256": "33ab3bdb6fc64d7c37d86a7298eb8a8640213fc8509251ee2dd2549b4836fb5e"
+  },
+  "schema_version": "CAL004_R1_UNBLINDING_PREFLIGHT_V0_1",
+  "sealed_outer_identity": {
+    "bytes": 41207,
+    "path": "G:/AICODING/AI_VIDEO/_sealed/CAL004_R1_BLIND_MAPPING_V0_1/CAL004_R1_BLIND_MAPPING_DO_NOT_OPEN_UNTIL_REVIEW_FREEZE_V0_1.zip",
+    "sha256": "0eb2eb74397431799658103d1f3e9b03b476c2e5b49aa5bfd36aa0398412fb40"
+  },
+  "sealed_zip_open_count_before_activation": 0,
+  "sources_changed": false,
+  "staged_changes": 0,
+  "starting_head": "194809d01825e2a3408f0dcda4d21ac44a5dfa4a",
+  "synthetic_tests": {
+    "condition_count": 6,
+    "mapping_producer_entry_field_count": 16,
+    "mapping_public_projection_field_count": 13,
+    "preactivation_schema_fixture_corrections": 1,
+    "replicates_per_condition": 3,
+    "status": "12/12 PASS",
+    "test_count": 12
+  },
+  "target_paths_absent": true,
+  "tracked_modifications": 0
+}

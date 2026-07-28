@@ -1,0 +1,28 @@
+{
+  "bundle_contrast_ids": [
+    "C04",
+    "C05",
+    "C06",
+    "C07"
+  ],
+  "bundle_contrasts_are_descriptive_exploratory_only": true,
+  "bundle_contrasts_are_pure_reference_causal_effects": false,
+  "multimodal2video_conditions": [
+    "NI",
+    "NP",
+    "II",
+    "IP"
+  ],
+  "no_causal_claim_relies_solely_on_bundle_contrasts": true,
+  "primary_controlled_contrast_ids": [
+    "C01",
+    "C02",
+    "C03",
+    "C08"
+  ],
+  "schema_version": "CAL004_R1_ROUTE_BUNDLE_ANALYSIS_V0_1",
+  "text2video_conditions": [
+    "N0",
+    "I0"
+  ]
+}
