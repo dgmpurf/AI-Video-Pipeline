@@ -1,0 +1,187 @@
+{
+  "committed_input_bindings": [
+    {
+      "bytes": 6626,
+      "git_blob": "f90f50024989fd55b28aac4a46d98220231bfbe6",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/design_spec.json",
+      "role": "CAL003_COMMITTED_DESIGN_SPEC",
+      "sha256": "4525038bdf8bad37f34ea772b103150d36c28a367103739e63968cce1a6402b7",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 4609,
+      "git_blob": "286e424b486331f862eea934ed0a53f070f3d35b",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/review_contract.json",
+      "role": "CAL003_COMMITTED_REVIEW_CONTRACT",
+      "sha256": "e8855d71ddc39efc07f8db7317d770d76c0ffbda829cee55fde662e18b26c8f4",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 12496,
+      "git_blob": "9f9d19af50c30a6b5b1e970e3e2f4ee12b3479b8",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/task_manifest.json",
+      "role": "CAL003_COMMITTED_TASK_AND_REFERENCE_BINDINGS",
+      "sha256": "a702d5328ee2b8036b9e1c23b01241f5f5cd991ef0f1d5025b246f1e388059a5",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 11209,
+      "git_blob": "d16f2af2cd01b37d248d9673b9ea7eba74f1a4a4",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/authorization.json",
+      "role": "CAL003_UNBLINDING_AUTHORIZATION_RECORD",
+      "sha256": "84178a83aafaa1362e093e074358003b4a44987cda75c95581b3a35df7f92c21",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 855,
+      "git_blob": "7c7052c096e09e021d4f4f5dd5b5f1600ff43910",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/derived_outcome.json",
+      "role": "CAL003_COMMITTED_PROPOSED_OUTCOME",
+      "sha256": "861c5a703f6cbaa37c1302ec7df382ce97f82e8cf83164f0f2a15c30037d93de",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 5849,
+      "git_blob": "0adffe97d1a6c5700a6d68eac9061e728998e683",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/evidence_manifest.json",
+      "role": "CAL003_COMMITTED_GATE_EVIDENCE_MANIFEST",
+      "sha256": "8c2b9df5fbd3b0aa98f67f0d62b651faf595e259c4161862cf5e926107a54b95",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2107,
+      "git_blob": "2112316898f3e3dd8feef2674b4c9707a2f23bd4",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/family_gate_results.json",
+      "role": "CAL003_COMMITTED_FAMILY_GATES",
+      "sha256": "19fae9d67f1454719281e1ff259d6f40254302efea68b3817225e2bb0a1a9be7",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 1856,
+      "git_blob": "a280a701e347da5c7a3523e068541d8c70002ac2",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/ordinal_pair_gate_results.json",
+      "role": "CAL003_COMMITTED_ORDINAL_PAIR_GATES",
+      "sha256": "cb07b01aa8ed81be435cb501315842d8a3c7227169fe869ead8f04d0822cedda",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 3328,
+      "git_blob": "5f387c90188d4cea3e3766bd19cde7f3bb4d1cd8",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/sample_gate_results.json",
+      "role": "CAL003_COMMITTED_SAMPLE_GATES",
+      "sha256": "2d152463f1f431df819a55bb32eac31b230d81cbb9a5eb8188e5c8d82d9388b0",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 5369,
+      "git_blob": "eb2ee09e493946b8b7c7a134c5e28879f148a030",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/unblinded_mapping.json",
+      "role": "CAL003_COMMITTED_UNBLINDED_MAPPING_RECORD",
+      "sha256": "8d8530e0f99e411fb0aeee7a6b94b08df2e39ae467ad8362a751b7236fc78138",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 4678,
+      "git_blob": "88fd137fac509d3e6dbf095c951e5e38f8a353bd",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/unblinded_scores.json",
+      "role": "CAL003_COMMITTED_UNBLINDED_SCORES",
+      "sha256": "33861cdb52d3165efccfcb380102196c6d2eaaf7a1082628e17ff463bca863dc",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 4085,
+      "git_blob": "692aced42d64d4eda2ed921468ae8c38192119ab",
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_UNBLINDING_AND_GATE_RESULT.md",
+      "role": "CAL003_COMMITTED_GATE_REPORT",
+      "sha256": "197da541f26cea52e16a0ec947c7277322d127d8e8ea7434103766e8b815ffd2",
+      "worktree_equals_head": true
+    }
+  ],
+  "coverage": {
+    "committed_input_binding_count": 12,
+    "other_output_binding_count": 12,
+    "self_excluded": true,
+    "total_bound_artifact_count": 24,
+    "unique_bound_path_count": 24
+  },
+  "experiment": "CAL-004",
+  "manifest_path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/evidence_manifest.json",
+  "other_output_bindings": [
+    {
+      "bytes": 2869,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+      "role": "CAL003_FINAL_HUMAN_DECISION_INPUT_AND_OUTPUT",
+      "sha256": "030b2c1b00ebd1f14ceed035cc4266b33913aebb5b4a64a713e04acdaad5afcd"
+    },
+    {
+      "bytes": 3243,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/authorization.json",
+      "role": "CAL004_AUTHORIZATION_RECORD",
+      "sha256": "712e1a3614e9aadbe0f3738461d877842794c880bce1d804e0b423f19805ae73"
+    },
+    {
+      "bytes": 1085,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/budget_activation_plan.json",
+      "role": "CAL004_BUDGET_ACTIVATION_PLAN",
+      "sha256": "2056fc4cac50f3fd23a10b0c8831bed9de8a9338c7367f79fb55e9f81d8f5b43"
+    },
+    {
+      "bytes": 5797,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/condition_matrix.json",
+      "role": "CAL004_CONDITION_MATRIX",
+      "sha256": "23c214545678009f4f10cf106cc03e2654cd3d816aa3853b3d08aebd2eea5f93"
+    },
+    {
+      "bytes": 5123,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/design_spec.json",
+      "role": "CAL004_DESIGN_SPEC",
+      "sha256": "fe0cc08ad00b156a829b1886832abe282f5644f51904e6c84bc08a60c7f165a2"
+    },
+    {
+      "bytes": 1978,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+      "role": "CAL004_NEUTRAL_PROMPT",
+      "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0"
+    },
+    {
+      "bytes": 2287,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+      "role": "CAL004_IMPACT_PROMPT",
+      "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5"
+    },
+    {
+      "bytes": 3762,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/review_contract.json",
+      "role": "CAL004_REVIEW_CONTRACT",
+      "sha256": "9f3dcbabbada07e64b229813f04b28bbdff5bbb013e5db97578c9a1b7d0c89c9"
+    },
+    {
+      "bytes": 2060,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/submission_order.json",
+      "role": "CAL004_SUBMISSION_ORDER",
+      "sha256": "81d9cae872e6f6ce5e64e4728fe47b232b26da639f2c8e8f9674076b68e0f4ad"
+    },
+    {
+      "bytes": 28607,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/task_manifest.json",
+      "role": "CAL004_TASK_MANIFEST",
+      "sha256": "7be3db682668c1d5c2b33976d583347f57bcd355c7cc7590d797e4405002bdcf"
+    },
+    {
+      "bytes": 1742,
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_HUMAN_FINAL_DECISION.md",
+      "role": "CAL003_FINAL_HUMAN_DECISION_REPORT",
+      "sha256": "121e04ca403ee4dd78a6b26b8d88c5efcdfc72925d5a35608b270d12c28d6b6b"
+    },
+    {
+      "bytes": 3253,
+      "path": "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_NO_LIVE_DESIGN_RESULT.md",
+      "role": "CAL004_NO_LIVE_DESIGN_REPORT",
+      "sha256": "78c16ec08d08d521405746f59b48bd55aa6953fc4d293a76133e56e3c361bd94"
+    }
+  ],
+  "program": "IMPACT_FAMILY_CAUSAL_ISOLATION_V1",
+  "round": "R1",
+  "schema_version": "CAL004_R1_EVIDENCE_MANIFEST_V0_1",
+  "status": "NO_LIVE_DESIGN_ONLY"
+}

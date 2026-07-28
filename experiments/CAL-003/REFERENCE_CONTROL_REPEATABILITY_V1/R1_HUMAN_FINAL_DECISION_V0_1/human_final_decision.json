@@ -1,0 +1,91 @@
+{
+  "accepted_committed_evidence": {
+    "family_gates": {
+      "IMPACT": {
+        "family_gate": "FAIL",
+        "margin_values_by_replicate": [
+          -6,
+          -8,
+          -6
+        ],
+        "median_margin": -6,
+        "median_own_score": 6,
+        "own_score_values_by_replicate": [
+          6,
+          4,
+          6
+        ],
+        "reference_ignored_count": 0,
+        "sample_count": 3,
+        "sample_pass_count": 0
+      },
+      "PUSH": {
+        "family_gate": "PASS",
+        "margin_values_by_replicate": [
+          6,
+          8,
+          8
+        ],
+        "median_margin": 8,
+        "median_own_score": 12,
+        "own_score_values_by_replicate": [
+          12,
+          12,
+          12
+        ],
+        "reference_ignored_count": 0,
+        "sample_count": 3,
+        "sample_pass_count": 3
+      }
+    },
+    "ordinal_pair_gate": {
+      "aggregate_gate": "FAIL",
+      "pair_count": 3,
+      "passing_pair_count": 0
+    },
+    "precedence_branch": "PRIORITY_8_MIXED_RESULT"
+  },
+  "authorization_binding": {
+    "approval_bytes": 749,
+    "approval_sha256": "7be11dccfaf7064d7aaa6eddc2e9544a3d305683b18ec965061829b5fcd6a0b1",
+    "starting_head": "e29917a1e677f2aceeb6a259268d415e1508e863"
+  },
+  "decision_id": "CAL003_R1_HUMAN_FINAL_DECISION_V0_1",
+  "excluded_single_cause_claims": [
+    "common Prompt dominance",
+    "weak IMPACT-reference signal",
+    "Provider action-family bias",
+    "scene or actor prior",
+    "any single Prompt component"
+  ],
+  "experiment": "CAL-003",
+  "governance_deviation": {
+    "classification": "NON_SCIENTIFIC_TEMPORARY_CLEANUP_TIMING_DEVIATION",
+    "committed_path_set_remained_exact_13_of_13": true,
+    "description": "The temporary recovery helper was deleted after push rather than before staging.",
+    "experiment_input_review_score_gate_mapping_or_outcome_changed": false,
+    "helper_committed": false,
+    "helper_staged": false,
+    "historical_report_silently_rewritten": false,
+    "scientific_result_remains_accepted": true,
+    "sealed_bytes_salt_raw_mapping_raw_equivalence_or_secret_entered_helper": false
+  },
+  "human_final_decision": "CAL003_R1_MIXED_REPEATABILITY_SIGNAL_REQUIRES_HUMAN_DECISION",
+  "program": "REFERENCE_CONTROL_REPEATABILITY_V1",
+  "round": "R1",
+  "schema_version": "CAL003_R1_HUMAN_FINAL_DECISION_RECORD_V0_1",
+  "scientific_interpretation": [
+    "PUSH reference produced repeatable PUSH-like differentiation.",
+    "IMPACT reference did not produce IMPACT-specific differentiation.",
+    "The six outputs collectively showed asymmetric collapse toward PUSH-like behavior."
+  ],
+  "state": {
+    "automatic_expansion": false,
+    "cal003_r1_human_decision_complete": true,
+    "cal003_r1_round_closed": true,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "locked": false,
+    "production_approved": false
+  }
+}

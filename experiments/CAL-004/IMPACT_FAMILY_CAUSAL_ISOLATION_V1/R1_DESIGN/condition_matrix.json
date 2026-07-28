@@ -1,0 +1,173 @@
+{
+  "balance_validation": {
+    "all_conditions_have_three_replicates": true,
+    "condition_count": 6,
+    "planned_task_count": 18,
+    "prompt_stratum_task_counts": {
+      "I": 9,
+      "N": 9
+    },
+    "reference_stratum_task_counts": {
+      "0": 6,
+      "I": 6,
+      "P": 6
+    }
+  },
+  "conditions": [
+    {
+      "condition_id": "N0",
+      "description": "neutral Prompt / no reference",
+      "motion_reference_count": 0,
+      "motion_references": [],
+      "prompt_binding": {
+        "bytes": 1978,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "N",
+      "reference_stratum": "0",
+      "replicate_count": 3,
+      "task_ids": [
+        "N0-01",
+        "N0-02",
+        "N0-03"
+      ]
+    },
+    {
+      "condition_id": "NI",
+      "description": "neutral Prompt / IMPACT reference",
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_IMPACT_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+          "reference_sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c"
+        }
+      ],
+      "prompt_binding": {
+        "bytes": 1978,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "N",
+      "reference_stratum": "I",
+      "replicate_count": 3,
+      "task_ids": [
+        "NI-01",
+        "NI-02",
+        "NI-03"
+      ]
+    },
+    {
+      "condition_id": "NP",
+      "description": "neutral Prompt / PUSH reference",
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_PUSH_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+          "reference_sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6"
+        }
+      ],
+      "prompt_binding": {
+        "bytes": 1978,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "N",
+      "reference_stratum": "P",
+      "replicate_count": 3,
+      "task_ids": [
+        "NP-01",
+        "NP-02",
+        "NP-03"
+      ]
+    },
+    {
+      "condition_id": "I0",
+      "description": "IMPACT Prompt / no reference",
+      "motion_reference_count": 0,
+      "motion_references": [],
+      "prompt_binding": {
+        "bytes": 2287,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "I",
+      "reference_stratum": "0",
+      "replicate_count": 3,
+      "task_ids": [
+        "I0-01",
+        "I0-02",
+        "I0-03"
+      ]
+    },
+    {
+      "condition_id": "II",
+      "description": "IMPACT Prompt / IMPACT reference",
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_IMPACT_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+          "reference_sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c"
+        }
+      ],
+      "prompt_binding": {
+        "bytes": 2287,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "I",
+      "reference_stratum": "I",
+      "replicate_count": 3,
+      "task_ids": [
+        "II-01",
+        "II-02",
+        "II-03"
+      ]
+    },
+    {
+      "condition_id": "IP",
+      "description": "IMPACT Prompt / PUSH reference",
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_PUSH_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+          "reference_sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6"
+        }
+      ],
+      "prompt_binding": {
+        "bytes": 2287,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "I",
+      "reference_stratum": "P",
+      "replicate_count": 3,
+      "task_ids": [
+        "IP-01",
+        "IP-02",
+        "IP-03"
+      ]
+    }
+  ],
+  "experiment": "CAL-004",
+  "program": "IMPACT_FAMILY_CAUSAL_ISOLATION_V1",
+  "round": "R1",
+  "schema_version": "CAL004_R1_CONDITION_MATRIX_V0_1",
+  "status": "NO_LIVE_DESIGN_ONLY"
+}

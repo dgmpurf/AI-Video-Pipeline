@@ -1,0 +1,107 @@
+{
+  "experiment": "CAL-004",
+  "fixed_order": [
+    {
+      "condition_id": "N0",
+      "position": 1,
+      "task_id": "N0-01"
+    },
+    {
+      "condition_id": "II",
+      "position": 2,
+      "task_id": "II-01"
+    },
+    {
+      "condition_id": "NP",
+      "position": 3,
+      "task_id": "NP-01"
+    },
+    {
+      "condition_id": "I0",
+      "position": 4,
+      "task_id": "I0-01"
+    },
+    {
+      "condition_id": "NI",
+      "position": 5,
+      "task_id": "NI-01"
+    },
+    {
+      "condition_id": "IP",
+      "position": 6,
+      "task_id": "IP-01"
+    },
+    {
+      "condition_id": "IP",
+      "position": 7,
+      "task_id": "IP-02"
+    },
+    {
+      "condition_id": "NI",
+      "position": 8,
+      "task_id": "NI-02"
+    },
+    {
+      "condition_id": "I0",
+      "position": 9,
+      "task_id": "I0-02"
+    },
+    {
+      "condition_id": "NP",
+      "position": 10,
+      "task_id": "NP-02"
+    },
+    {
+      "condition_id": "II",
+      "position": 11,
+      "task_id": "II-02"
+    },
+    {
+      "condition_id": "N0",
+      "position": 12,
+      "task_id": "N0-02"
+    },
+    {
+      "condition_id": "NP",
+      "position": 13,
+      "task_id": "NP-03"
+    },
+    {
+      "condition_id": "I0",
+      "position": 14,
+      "task_id": "I0-03"
+    },
+    {
+      "condition_id": "NI",
+      "position": 15,
+      "task_id": "NI-03"
+    },
+    {
+      "condition_id": "IP",
+      "position": 16,
+      "task_id": "IP-03"
+    },
+    {
+      "condition_id": "N0",
+      "position": 17,
+      "task_id": "N0-03"
+    },
+    {
+      "condition_id": "II",
+      "position": 18,
+      "task_id": "II-03"
+    }
+  ],
+  "order_count": 18,
+  "planning_only": true,
+  "rationale": [
+    "every six-task block contains every condition once",
+    "reference and Prompt strata are interleaved",
+    "condition positions vary across blocks",
+    "no randomness is generated",
+    "no family is submitted as one monotonic group"
+  ],
+  "round": "R1",
+  "schema_version": "CAL004_R1_DETERMINISTIC_SUBMISSION_ORDER_V0_1",
+  "submit_authority_created": false
+}

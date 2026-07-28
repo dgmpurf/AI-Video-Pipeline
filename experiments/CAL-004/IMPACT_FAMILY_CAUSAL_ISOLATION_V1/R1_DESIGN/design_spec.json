@@ -1,0 +1,131 @@
+{
+  "analysis_boundary": {
+    "causal_certainty_claimed": false,
+    "generalized_provider_reliability_claimed": false,
+    "replicates_per_condition": 3,
+    "result_derived_now": false
+  },
+  "controlled_variables": {
+    "actor_identity": "two fictional non-identifying adult martial-arts performers",
+    "camera": "static three-quarter-front medium-wide camera at chest height",
+    "clothing": {
+      "camera_left": "deep navy training jacket and black training pants",
+      "camera_right": "muted rust-orange training jacket and charcoal training pants"
+    },
+    "composition": "both complete bodies and both sets of feet visible with generous margins",
+    "duration_planning_target_seconds": 5,
+    "lighting": "soft natural-looking studio illumination",
+    "model_planning_target": "seedance2.0_vip",
+    "provider_values_are_planning_only": true,
+    "ratio_planning_target": "16:9",
+    "requested_video_count": 1,
+    "scene": "clean indoor training studio with warm beige seamless wall and matte wooden floor",
+    "technical_output_contract": {
+      "complete_mp4_required_for_future_review": true,
+      "continuous_shot": true,
+      "full_body_visibility": true,
+      "identity_stability_required": true,
+      "one_video_requested": true,
+      "static_camera": true
+    },
+    "video_resolution_planning_target": "720p",
+    "visual_style": "realistic cinematic live-action-looking synthetic shot"
+  },
+  "experiment_identity": {
+    "experiment": "CAL-004",
+    "planned_task_count": 18,
+    "program": "IMPACT_FAMILY_CAUSAL_ISOLATION_V1",
+    "round": "R1",
+    "status": "NO_LIVE_DESIGN_ONLY"
+  },
+  "factorial_design": {
+    "condition_count": 6,
+    "conditions": [
+      "N0",
+      "NI",
+      "NP",
+      "I0",
+      "II",
+      "IP"
+    ],
+    "prompt_strata": {
+      "I": "IMPACT_CAUSAL_HARD",
+      "N": "ACTION_NEUTRAL_MINIMAL"
+    },
+    "reference_strata": {
+      "0": "NO_MOTION_REFERENCE",
+      "I": "ACTION_REF_IMPACT_02",
+      "P": "ACTION_REF_PUSH_02"
+    },
+    "replicates_per_condition": 3,
+    "structure": "BALANCED_2_X_3"
+  },
+  "future_activation_requirements": {
+    "actual_execution_environment_verification": true,
+    "actual_unit_cost_confirmation": true,
+    "current_target_command_help": true,
+    "fresh_human_decision": true,
+    "fresh_user_credit": true,
+    "login_verification": true,
+    "runtime_help_verification": true
+  },
+  "future_decision_labels": [
+    "IMPACT_REFERENCE_SPECIFIC_SIGNAL",
+    "IMPACT_TEXT_DOMINANT_SIGNAL",
+    "REFERENCE_FAMILY_CONTROLS_ACTION_SIGNAL",
+    "PUSH_REFERENCE_OVERRIDES_IMPACT_TEXT",
+    "PROVIDER_OR_SCENE_PUSH_PRIOR_DOMINANT",
+    "LOW_SIGNAL_OR_UNSTABLE",
+    "MIXED_REQUIRES_HUMAN_DECISION"
+  ],
+  "governance": {
+    "automatic_decision": false,
+    "live_authority": false,
+    "no_current_cli_fact_asserted": true,
+    "no_current_credit_fact_asserted": true,
+    "no_media_or_reference_operation": true,
+    "no_randomness": true,
+    "no_source_change": true
+  },
+  "prompt_design": {
+    "common_block": {
+      "bytes": 1763,
+      "family_specific_action_language": false,
+      "sha256": "ce155b5d30650e38a889efcf8f81e644dc7b682756b50545b9033ab3ba78454b",
+      "shared_byte_identically": true
+    },
+    "prompt_bindings": {
+      "ACTION_NEUTRAL_MINIMAL": {
+        "bytes": 1978,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "terminal_lf": true
+      },
+      "IMPACT_CAUSAL_HARD": {
+        "bytes": 2287,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "terminal_lf": true
+      }
+    },
+    "prompt_count": 2
+  },
+  "reference_bindings": {
+    "ACTION_REF_IMPACT_02": {
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "reference_sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c"
+    },
+    "ACTION_REF_PUSH_02": {
+      "reference_id": "ACTION_REF_PUSH_02",
+      "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "reference_sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6"
+    },
+    "reference_files_read_or_transformed": false,
+    "source": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/task_manifest.json"
+  },
+  "schema_version": "CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_DESIGN_V0_1",
+  "scientific_question": "Under the same actor, scene, camera, duration, model-planning profile and technical output contract, how do action-text specificity and motion-reference family independently affect IMPACT-versus-PUSH signature behavior?"
+}

@@ -1,0 +1,735 @@
+{
+  "condition_count": 6,
+  "experiment": "CAL-004",
+  "future_provider_command_generated": false,
+  "live_authority": false,
+  "program": "IMPACT_FAMILY_CAUSAL_ISOLATION_V1",
+  "provider_planning_fields_equal_across_all_tasks": true,
+  "replicates_per_condition": 3,
+  "round": "R1",
+  "schema_version": "CAL004_R1_TASK_MANIFEST_V0_1",
+  "status": "NO_LIVE_DESIGN_ONLY",
+  "task_count": 18,
+  "tasks": [
+    {
+      "condition_id": "N0",
+      "future_submission_position": 1,
+      "live_authority": false,
+      "motion_reference_count": 0,
+      "motion_references": [],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 1978,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "N",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "NO_MOTION_REFERENCE",
+      "reference_stratum": "0",
+      "replicate": 1,
+      "task_id": "N0-01"
+    },
+    {
+      "condition_id": "II",
+      "future_submission_position": 2,
+      "live_authority": false,
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_IMPACT_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+          "reference_sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c"
+        }
+      ],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 2287,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "I",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "MOTION_SEQUENCE_RHYTHM_SPACING_COORDINATION_AND_PHYSICAL_INTERACTION_ONLY",
+      "reference_stratum": "I",
+      "replicate": 1,
+      "task_id": "II-01"
+    },
+    {
+      "condition_id": "NP",
+      "future_submission_position": 3,
+      "live_authority": false,
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_PUSH_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+          "reference_sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6"
+        }
+      ],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 1978,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "N",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "MOTION_SEQUENCE_RHYTHM_SPACING_COORDINATION_AND_PHYSICAL_INTERACTION_ONLY",
+      "reference_stratum": "P",
+      "replicate": 1,
+      "task_id": "NP-01"
+    },
+    {
+      "condition_id": "I0",
+      "future_submission_position": 4,
+      "live_authority": false,
+      "motion_reference_count": 0,
+      "motion_references": [],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 2287,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "I",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "NO_MOTION_REFERENCE",
+      "reference_stratum": "0",
+      "replicate": 1,
+      "task_id": "I0-01"
+    },
+    {
+      "condition_id": "NI",
+      "future_submission_position": 5,
+      "live_authority": false,
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_IMPACT_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+          "reference_sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c"
+        }
+      ],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 1978,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "N",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "MOTION_SEQUENCE_RHYTHM_SPACING_COORDINATION_AND_PHYSICAL_INTERACTION_ONLY",
+      "reference_stratum": "I",
+      "replicate": 1,
+      "task_id": "NI-01"
+    },
+    {
+      "condition_id": "IP",
+      "future_submission_position": 6,
+      "live_authority": false,
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_PUSH_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+          "reference_sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6"
+        }
+      ],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 2287,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "I",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "MOTION_SEQUENCE_RHYTHM_SPACING_COORDINATION_AND_PHYSICAL_INTERACTION_ONLY",
+      "reference_stratum": "P",
+      "replicate": 1,
+      "task_id": "IP-01"
+    },
+    {
+      "condition_id": "IP",
+      "future_submission_position": 7,
+      "live_authority": false,
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_PUSH_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+          "reference_sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6"
+        }
+      ],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 2287,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "I",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "MOTION_SEQUENCE_RHYTHM_SPACING_COORDINATION_AND_PHYSICAL_INTERACTION_ONLY",
+      "reference_stratum": "P",
+      "replicate": 2,
+      "task_id": "IP-02"
+    },
+    {
+      "condition_id": "NI",
+      "future_submission_position": 8,
+      "live_authority": false,
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_IMPACT_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+          "reference_sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c"
+        }
+      ],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 1978,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "N",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "MOTION_SEQUENCE_RHYTHM_SPACING_COORDINATION_AND_PHYSICAL_INTERACTION_ONLY",
+      "reference_stratum": "I",
+      "replicate": 2,
+      "task_id": "NI-02"
+    },
+    {
+      "condition_id": "I0",
+      "future_submission_position": 9,
+      "live_authority": false,
+      "motion_reference_count": 0,
+      "motion_references": [],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 2287,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "I",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "NO_MOTION_REFERENCE",
+      "reference_stratum": "0",
+      "replicate": 2,
+      "task_id": "I0-02"
+    },
+    {
+      "condition_id": "NP",
+      "future_submission_position": 10,
+      "live_authority": false,
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_PUSH_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+          "reference_sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6"
+        }
+      ],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 1978,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "N",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "MOTION_SEQUENCE_RHYTHM_SPACING_COORDINATION_AND_PHYSICAL_INTERACTION_ONLY",
+      "reference_stratum": "P",
+      "replicate": 2,
+      "task_id": "NP-02"
+    },
+    {
+      "condition_id": "II",
+      "future_submission_position": 11,
+      "live_authority": false,
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_IMPACT_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+          "reference_sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c"
+        }
+      ],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 2287,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "I",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "MOTION_SEQUENCE_RHYTHM_SPACING_COORDINATION_AND_PHYSICAL_INTERACTION_ONLY",
+      "reference_stratum": "I",
+      "replicate": 2,
+      "task_id": "II-02"
+    },
+    {
+      "condition_id": "N0",
+      "future_submission_position": 12,
+      "live_authority": false,
+      "motion_reference_count": 0,
+      "motion_references": [],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 1978,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "N",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "NO_MOTION_REFERENCE",
+      "reference_stratum": "0",
+      "replicate": 2,
+      "task_id": "N0-02"
+    },
+    {
+      "condition_id": "NP",
+      "future_submission_position": 13,
+      "live_authority": false,
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_PUSH_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+          "reference_sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6"
+        }
+      ],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 1978,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "N",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "MOTION_SEQUENCE_RHYTHM_SPACING_COORDINATION_AND_PHYSICAL_INTERACTION_ONLY",
+      "reference_stratum": "P",
+      "replicate": 3,
+      "task_id": "NP-03"
+    },
+    {
+      "condition_id": "I0",
+      "future_submission_position": 14,
+      "live_authority": false,
+      "motion_reference_count": 0,
+      "motion_references": [],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 2287,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "I",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "NO_MOTION_REFERENCE",
+      "reference_stratum": "0",
+      "replicate": 3,
+      "task_id": "I0-03"
+    },
+    {
+      "condition_id": "NI",
+      "future_submission_position": 15,
+      "live_authority": false,
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_IMPACT_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+          "reference_sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c"
+        }
+      ],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 1978,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "N",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "MOTION_SEQUENCE_RHYTHM_SPACING_COORDINATION_AND_PHYSICAL_INTERACTION_ONLY",
+      "reference_stratum": "I",
+      "replicate": 3,
+      "task_id": "NI-03"
+    },
+    {
+      "condition_id": "IP",
+      "future_submission_position": 16,
+      "live_authority": false,
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_PUSH_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+          "reference_sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6"
+        }
+      ],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 2287,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "I",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "MOTION_SEQUENCE_RHYTHM_SPACING_COORDINATION_AND_PHYSICAL_INTERACTION_ONLY",
+      "reference_stratum": "P",
+      "replicate": 3,
+      "task_id": "IP-03"
+    },
+    {
+      "condition_id": "N0",
+      "future_submission_position": 17,
+      "live_authority": false,
+      "motion_reference_count": 0,
+      "motion_references": [],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 1978,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "N",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "NO_MOTION_REFERENCE",
+      "reference_stratum": "0",
+      "replicate": 3,
+      "task_id": "N0-03"
+    },
+    {
+      "condition_id": "II",
+      "future_submission_position": 18,
+      "live_authority": false,
+      "motion_reference_count": 1,
+      "motion_references": [
+        {
+          "reference_id": "ACTION_REF_IMPACT_02",
+          "reference_path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+          "reference_sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c"
+        }
+      ],
+      "output_technical_contract": {
+        "complete_mp4_required_for_future_review": true,
+        "continuous_shot": true,
+        "full_body_visibility": true,
+        "identity_stability_required": true,
+        "one_video_requested": true,
+        "static_camera": true
+      },
+      "prompt_binding": {
+        "bytes": 2287,
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "I",
+      "provider_planning_fields": {
+        "duration_planning_target_seconds": 5,
+        "fresh_activation_verification_required": true,
+        "model_planning_target": "seedance2.0_vip",
+        "planning_only": true,
+        "ratio_planning_target": "16:9",
+        "requested_video_count": 1,
+        "video_resolution_planning_target": "720p"
+      },
+      "reference_duty": "MOTION_SEQUENCE_RHYTHM_SPACING_COORDINATION_AND_PHYSICAL_INTERACTION_ONLY",
+      "reference_stratum": "I",
+      "replicate": 3,
+      "task_id": "II-03"
+    }
+  ]
+}

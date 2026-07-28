@@ -1,0 +1,121 @@
+{
+  "blind_review": {
+    "blind_permutation_created_now": false,
+    "complete_mp4_review_required": true,
+    "freeze_all_records_before_mapping_reveal": true,
+    "future_review_blinded": true,
+    "review_performed_now": false,
+    "salt_created_now": false
+  },
+  "condition_analysis_fields": [
+    "sample_count",
+    "sample_pass_count",
+    "three_IMPACT_scores",
+    "median_IMPACT_score",
+    "three_PUSH_scores",
+    "median_PUSH_score",
+    "three_IMPACT_minus_PUSH_margins",
+    "median_margin",
+    "reference_ignored_count",
+    "material_sentinel_count",
+    "condition_result"
+  ],
+  "condition_pass_gate": {
+    "all_three_material_sentinel_counts_equal_zero": true,
+    "governed_rights_and_provenance_validation": true,
+    "median_IMPACT_minus_PUSH_margin_at_least": 3,
+    "median_IMPACT_score_at_least": 8,
+    "minimum_sample_pass_count": 2,
+    "reference_ignored_count_at_most": 1,
+    "sample_count": 3
+  },
+  "contrasts": [
+    {
+      "comparison": "NI versus NP",
+      "contrast_id": "C01",
+      "purpose": "reference-family effect under neutral action text"
+    },
+    {
+      "comparison": "II versus IP",
+      "contrast_id": "C02",
+      "purpose": "reference-family effect under IMPACT-specific text"
+    },
+    {
+      "comparison": "I0 versus N0",
+      "contrast_id": "C03",
+      "purpose": "IMPACT text effect without reference"
+    },
+    {
+      "comparison": "II versus I0",
+      "contrast_id": "C04",
+      "purpose": "incremental IMPACT-reference effect under IMPACT text"
+    },
+    {
+      "comparison": "IP versus I0",
+      "contrast_id": "C05",
+      "purpose": "PUSH-reference interference or override under IMPACT text"
+    },
+    {
+      "comparison": "NI versus N0",
+      "contrast_id": "C06",
+      "purpose": "IMPACT-reference effect without IMPACT text"
+    },
+    {
+      "comparison": "NP versus N0",
+      "contrast_id": "C07",
+      "purpose": "PUSH-reference effect without PUSH text"
+    },
+    {
+      "comparison": "II versus NI",
+      "contrast_id": "C08",
+      "purpose": "alignment gain from adding IMPACT-specific text to the IMPACT reference"
+    }
+  ],
+  "decision_boundary": {
+    "automatic_decisions": false,
+    "causal_certainty_from_three_replicates": false,
+    "complete_mp4_review_required": true,
+    "controlled_unblinding_required": true,
+    "fresh_human_decision_required": true,
+    "generalized_provider_reliability_claim": false
+  },
+  "future_decision_labels": [
+    "IMPACT_REFERENCE_SPECIFIC_SIGNAL",
+    "IMPACT_TEXT_DOMINANT_SIGNAL",
+    "REFERENCE_FAMILY_CONTROLS_ACTION_SIGNAL",
+    "PUSH_REFERENCE_OVERRIDES_IMPACT_TEXT",
+    "PROVIDER_OR_SCENE_PUSH_PRIOR_DOMINANT",
+    "LOW_SIGNAL_OR_UNSTABLE",
+    "MIXED_REQUIRES_HUMAN_DECISION"
+  ],
+  "measurements_per_future_output": [
+    "PUSH signature score",
+    "IMPACT signature score",
+    "IMPACT specificity margin = IMPACT score minus PUSH score",
+    "complete MP4 reviewed",
+    "technically valid complete MP4",
+    "material sentinel count",
+    "reference ignored",
+    "reference overdominance",
+    "reference role conflict",
+    "action-family failure",
+    "prolonged contact",
+    "first-frame separation",
+    "contact-onset readability",
+    "immediate recoil",
+    "exactly-one rear-foot result",
+    "attacker retract",
+    "static-tail duration"
+  ],
+  "sample_pass_gate": {
+    "IMPACT_minus_PUSH_margin_at_least": 3,
+    "IMPACT_score_at_least": 8,
+    "action_family_failure": false,
+    "complete_mp4_reviewed": true,
+    "material_sentinel_count": 0,
+    "reference_role_conflict": false,
+    "technically_valid_complete_mp4": true
+  },
+  "schema_version": "CAL004_R1_PRE_REGISTERED_REVIEW_CONTRACT_V0_1",
+  "signature_framework_source": "CAL003 neutral dual-signature review framework"
+}

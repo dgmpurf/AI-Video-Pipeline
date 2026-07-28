@@ -1,0 +1,35 @@
+{
+  "balanced_live_counts": {
+    "allowed_counts_after_fresh_human_decision": [
+      6,
+      12,
+      18
+    ],
+    "automatic_task_count_reduction": false,
+    "reduced_design_must_remain_balanced_across_all_six_conditions": true
+  },
+  "historical_planning_evidence": {
+    "arithmetic": "18 * 140 = 2520; 2761 - 2520 = 241",
+    "human_reported_balance_date": "2026-07-28",
+    "human_reported_balance_points": 2761,
+    "observed_cal003_unit_decrement_points_per_video": 140,
+    "planned_18_task_decrement_points": 2520,
+    "planning_remainder_points": 241
+  },
+  "live_activation_authority": false,
+  "live_activation_requirements": [
+    "fresh user_credit",
+    "current target-command help",
+    "actual unit-cost confirmation",
+    "fresh human decision"
+  ],
+  "no_live_task_asserts_fresh_runtime_facts": false,
+  "resubmit_maximum": 0,
+  "retry_maximum": 0,
+  "scheduling": {
+    "internal_safety_deadline": "2026-07-29",
+    "stated_expiry_date": "2026-07-30"
+  },
+  "schema_version": "CAL004_R1_BUDGET_ACTIVATION_PLAN_V0_1",
+  "status": "HISTORICAL_PLANNING_ONLY"
+}
