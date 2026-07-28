@@ -1,0 +1,130 @@
+{
+  "committed_input_count": 7,
+  "committed_input_coverage": "7/7",
+  "committed_inputs": [
+    {
+      "bytes": 16385,
+      "git_blob": "93fe846e09f2f7f171e38461a1ff157751d9073a",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/evidence_manifest.json",
+      "sha256": "e8b6dc50b898f0c6fb690789ae03fd2b7898231c5d2df0c64acddc1eba8098ef"
+    },
+    {
+      "bytes": 12272,
+      "git_blob": "abc7e88b4e614f15eec07cddf8443360e6e62a26",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/execution.json",
+      "sha256": "477a4e34c9b872e0ea604243901531c6bbe8f6b6ec313991a62bf764b039da89"
+    },
+    {
+      "bytes": 1571,
+      "git_blob": "13ef48b14b243b540ed621061c36f816f13eba5f",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_BLIND_PACKAGE_V0_3/public_commitment.json",
+      "sha256": "959db326853eb1a5a5d5772a33cf68a35d221c64e0d672be312538bf88152c79"
+    },
+    {
+      "bytes": 5089,
+      "git_blob": "9283db3740a095af93eaf77fe86a7c86228f5f2c",
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_BLIND_PACKAGE_V0_3_RESULT.md",
+      "sha256": "6d932521b420816fb339e7e313ca4e84d6a7ce61018e72a7f80dca00d7c6d692"
+    },
+    {
+      "bytes": 4609,
+      "git_blob": "286e424b486331f862eea934ed0a53f070f3d35b",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/review_contract.json",
+      "sha256": "e8855d71ddc39efc07f8db7317d770d76c0ffbda829cee55fde662e18b26c8f4"
+    },
+    {
+      "bytes": 6626,
+      "git_blob": "f90f50024989fd55b28aac4a46d98220231bfbe6",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/design_spec.json",
+      "sha256": "4525038bdf8bad37f34ea772b103150d36c28a367103739e63968cce1a6402b7"
+    },
+    {
+      "bytes": 12496,
+      "git_blob": "9f9d19af50c30a6b5b1e970e3e2f4ee12b3479b8",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/task_manifest.json",
+      "sha256": "a702d5328ee2b8036b9e1c23b01241f5f5cd991ef0f1d5025b246f1e388059a5"
+    }
+  ],
+  "execution_id": "CAL003-R1-UNBLINDING-GATE-SCHEMA-BOUND-SINGLE-PROCESS-RECOVERY-V0-6",
+  "external_zip_count": 2,
+  "external_zip_coverage": "2/2",
+  "external_zips": [
+    {
+      "bytes": 27741,
+      "path": "G:/AICODING/AI_VIDEO/_review_freeze/CAL003_R1_BLIND_REVIEW_FREEZE_V0_1.zip",
+      "sha256": "001cf8c5d4fb7742c9f6a6f3dbff31a5c31f4b69674320831573120be1a138d4"
+    },
+    {
+      "bytes": 5328,
+      "path": "G:/AICODING/AI_VIDEO/_sealed/CAL003_R1_BLIND_MAPPING_V0_3/CAL003_R1_BLIND_MAPPING_DO_NOT_OPEN_UNTIL_REVIEW_FREEZE_V0_3.zip",
+      "sha256": "4a3d0cc7ed9f098224458df8f261803b3637b7c97ec7e289e8497ede287d6440"
+    }
+  ],
+  "output_count": 12,
+  "output_coverage": "12/12",
+  "outputs": [
+    {
+      "bytes": 11209,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/authorization.json",
+      "sha256": "84178a83aafaa1362e093e074358003b4a44987cda75c95581b3a35df7f92c21"
+    },
+    {
+      "bytes": 1612,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/preflight.json",
+      "sha256": "d4080f91f2afd26a6d6b24788266bbc3cf7649c28931c72f21e3762f20dd1b8a"
+    },
+    {
+      "bytes": 2901,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/freeze_package_validation.json",
+      "sha256": "5f2e32be5165035c61f47497028fdda37801756d9ae74d8f84ba4ca86f34afac"
+    },
+    {
+      "bytes": 1832,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/sealed_package_validation.json",
+      "sha256": "6a38e46416b011087e7d6b1729eafd667e105772101ffd198313ccb7454ef8cc"
+    },
+    {
+      "bytes": 774,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/commitment_verification.json",
+      "sha256": "696c533dfc8027bb92de90273dd6ab3aa98f45b19ea133992d894c3982da2a7f"
+    },
+    {
+      "bytes": 5369,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/unblinded_mapping.json",
+      "sha256": "8d8530e0f99e411fb0aeee7a6b94b08df2e39ae467ad8362a751b7236fc78138"
+    },
+    {
+      "bytes": 4678,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/unblinded_scores.json",
+      "sha256": "33861cdb52d3165efccfcb380102196c6d2eaaf7a1082628e17ff463bca863dc"
+    },
+    {
+      "bytes": 3328,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/sample_gate_results.json",
+      "sha256": "2d152463f1f431df819a55bb32eac31b230d81cbb9a5eb8188e5c8d82d9388b0"
+    },
+    {
+      "bytes": 2107,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/family_gate_results.json",
+      "sha256": "19fae9d67f1454719281e1ff259d6f40254302efea68b3817225e2bb0a1a9be7"
+    },
+    {
+      "bytes": 1856,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/ordinal_pair_gate_results.json",
+      "sha256": "cb07b01aa8ed81be435cb501315842d8a3c7227169fe869ead8f04d0822cedda"
+    },
+    {
+      "bytes": 855,
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/derived_outcome.json",
+      "sha256": "861c5a703f6cbaa37c1302ec7df382ce97f82e8cf83164f0f2a15c30037d93de"
+    },
+    {
+      "bytes": 4085,
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_UNBLINDING_AND_GATE_RESULT.md",
+      "sha256": "197da541f26cea52e16a0ec947c7277322d127d8e8ea7434103766e8b815ffd2"
+    }
+  ],
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_UNBLINDING_GATE_EVIDENCE_MANIFEST_V0_1",
+  "self_excluded": true,
+  "total_unique_bound_identities": 21
+}

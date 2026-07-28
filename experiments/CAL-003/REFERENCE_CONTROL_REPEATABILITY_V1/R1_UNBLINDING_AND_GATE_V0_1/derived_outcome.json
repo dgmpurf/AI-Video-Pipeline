@@ -1,0 +1,18 @@
+{
+  "automatic_decision": false,
+  "automatic_expansion": false,
+  "execution_decision": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_UNBLINDING_AND_GATE_DERIVATION_COMPLETE",
+  "execution_id": "CAL003-R1-UNBLINDING-GATE-SCHEMA-BOUND-SINGLE-PROCESS-RECOVERY-V0-6",
+  "family_gate_summary": {
+    "IMPACT": "FAIL",
+    "PUSH": "PASS"
+  },
+  "fresh_human_decision_required": true,
+  "next_experiment_authorized": false,
+  "next_phase": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_UNBLINDED_GATE_RESULT_AND_NEXT_EXPERIMENT_HUMAN_DECISION",
+  "ordinal_pair_gate": "FAIL",
+  "outcome_status": "PROPOSED_PENDING_FRESH_HUMAN_FINAL_DECISION",
+  "precedence_branch": "PRIORITY_8_MIXED_RESULT",
+  "proposed_outcome": "CAL003_R1_MIXED_REPEATABILITY_SIGNAL_REQUIRES_HUMAN_DECISION",
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_DERIVED_OUTCOME_V0_1"
+}

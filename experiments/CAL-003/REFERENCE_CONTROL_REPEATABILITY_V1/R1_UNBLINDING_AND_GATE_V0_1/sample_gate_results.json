@@ -1,0 +1,112 @@
+{
+  "execution_id": "CAL003-R1-UNBLINDING-GATE-SCHEMA-BOUND-SINGLE-PROCESS-RECOVERY-V0-6",
+  "record_coverage": "6/6",
+  "records": [
+    {
+      "alias": "B01",
+      "conditions": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "margin_at_least_3": true,
+        "material_sentinel_count_zero": true,
+        "own_score_at_least_8": true,
+        "reference_role_conflict_is_false": true,
+        "technically_valid_complete_mp4": true
+      },
+      "failed_conditions": [],
+      "family": "PUSH",
+      "sample_gate": "PASS",
+      "task_id": "PUSH-02"
+    },
+    {
+      "alias": "B02",
+      "conditions": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "margin_at_least_3": false,
+        "material_sentinel_count_zero": true,
+        "own_score_at_least_8": false,
+        "reference_role_conflict_is_false": true,
+        "technically_valid_complete_mp4": true
+      },
+      "failed_conditions": [
+        "margin_at_least_3",
+        "own_score_at_least_8"
+      ],
+      "family": "IMPACT",
+      "sample_gate": "FAIL",
+      "task_id": "IMPACT-03"
+    },
+    {
+      "alias": "B03",
+      "conditions": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "margin_at_least_3": false,
+        "material_sentinel_count_zero": true,
+        "own_score_at_least_8": false,
+        "reference_role_conflict_is_false": true,
+        "technically_valid_complete_mp4": true
+      },
+      "failed_conditions": [
+        "margin_at_least_3",
+        "own_score_at_least_8"
+      ],
+      "family": "IMPACT",
+      "sample_gate": "FAIL",
+      "task_id": "IMPACT-01"
+    },
+    {
+      "alias": "B04",
+      "conditions": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "margin_at_least_3": false,
+        "material_sentinel_count_zero": true,
+        "own_score_at_least_8": false,
+        "reference_role_conflict_is_false": true,
+        "technically_valid_complete_mp4": true
+      },
+      "failed_conditions": [
+        "margin_at_least_3",
+        "own_score_at_least_8"
+      ],
+      "family": "IMPACT",
+      "sample_gate": "FAIL",
+      "task_id": "IMPACT-02"
+    },
+    {
+      "alias": "B05",
+      "conditions": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "margin_at_least_3": true,
+        "material_sentinel_count_zero": true,
+        "own_score_at_least_8": true,
+        "reference_role_conflict_is_false": true,
+        "technically_valid_complete_mp4": true
+      },
+      "failed_conditions": [],
+      "family": "PUSH",
+      "sample_gate": "PASS",
+      "task_id": "PUSH-03"
+    },
+    {
+      "alias": "B06",
+      "conditions": {
+        "action_family_failure_is_false": true,
+        "complete_mp4_reviewed": true,
+        "margin_at_least_3": true,
+        "material_sentinel_count_zero": true,
+        "own_score_at_least_8": true,
+        "reference_role_conflict_is_false": true,
+        "technically_valid_complete_mp4": true
+      },
+      "failed_conditions": [],
+      "family": "PUSH",
+      "sample_gate": "PASS",
+      "task_id": "PUSH-01"
+    }
+  ],
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_SAMPLE_GATE_RESULTS_V0_1"
+}

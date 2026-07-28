@@ -1,0 +1,61 @@
+{
+  "aggregate_gate": "FAIL",
+  "execution_id": "CAL003-R1-UNBLINDING-GATE-SCHEMA-BOUND-SINGLE-PROCESS-RECOVERY-V0-6",
+  "minimum_passing_pairs": 2,
+  "passing_pair_count": 0,
+  "record_coverage": "3/3",
+  "records": [
+    {
+      "conditions": {
+        "both_complete_mp4s_reviewed": true,
+        "both_sample_gates_pass": false,
+        "both_technically_valid": true,
+        "impact_margin_at_least_3": false,
+        "no_material_sentinel": true,
+        "no_reference_role_conflict": true,
+        "push_margin_at_least_3": true
+      },
+      "impact_margin": -6,
+      "impact_task_id": "IMPACT-01",
+      "ordinal_pair_index": 1,
+      "pair_gate": "FAIL",
+      "push_margin": 6,
+      "push_task_id": "PUSH-01"
+    },
+    {
+      "conditions": {
+        "both_complete_mp4s_reviewed": true,
+        "both_sample_gates_pass": false,
+        "both_technically_valid": true,
+        "impact_margin_at_least_3": false,
+        "no_material_sentinel": true,
+        "no_reference_role_conflict": true,
+        "push_margin_at_least_3": true
+      },
+      "impact_margin": -8,
+      "impact_task_id": "IMPACT-02",
+      "ordinal_pair_index": 2,
+      "pair_gate": "FAIL",
+      "push_margin": 8,
+      "push_task_id": "PUSH-02"
+    },
+    {
+      "conditions": {
+        "both_complete_mp4s_reviewed": true,
+        "both_sample_gates_pass": false,
+        "both_technically_valid": true,
+        "impact_margin_at_least_3": false,
+        "no_material_sentinel": true,
+        "no_reference_role_conflict": true,
+        "push_margin_at_least_3": true
+      },
+      "impact_margin": -6,
+      "impact_task_id": "IMPACT-03",
+      "ordinal_pair_index": 3,
+      "pair_gate": "FAIL",
+      "push_margin": 8,
+      "push_task_id": "PUSH-03"
+    }
+  ],
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_ORDINAL_PAIR_GATE_RESULTS_V0_1"
+}

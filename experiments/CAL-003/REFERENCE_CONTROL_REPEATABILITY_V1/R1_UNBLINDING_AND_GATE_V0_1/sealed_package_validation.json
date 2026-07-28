@@ -1,0 +1,69 @@
+{
+  "crc_and_integrity": "PASS",
+  "equivalence_coverage": {
+    "audio": "6/6",
+    "entries": "6/6",
+    "mapping_agreement": "6/6",
+    "padding": "6/6",
+    "published_diagnostic_anti_linkage": "6/6",
+    "video": "6/6"
+  },
+  "equivalence_schema_shape": {
+    "alias_order": [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "container_path": "$.aliases",
+    "container_type": "list",
+    "entry_count": 6,
+    "entry_field_count": 23,
+    "producer_schema_bound": true,
+    "top_level_field_count": 4
+  },
+  "execution_id": "CAL003-R1-UNBLINDING-GATE-SCHEMA-BOUND-SINGLE-PROCESS-RECOVERY-V0-6",
+  "mapping_coverage": "6/6",
+  "mapping_schema_shape": {
+    "alias_order": [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "container_path": "$.aliases",
+    "container_type": "list",
+    "entry_count": 6,
+    "entry_field_count": 13,
+    "producer_schema_bound": true,
+    "top_level_field_count": 10
+  },
+  "member_count": 6,
+  "member_order": [
+    "README_DO_NOT_OPEN_UNTIL_REVIEW_FREEZE.md",
+    "mapping.json",
+    "salt.txt",
+    "equivalence.json",
+    "SHA256SUMS.txt",
+    "sealed_manifest.json"
+  ],
+  "member_read_count": 6,
+  "no_raw_secret_persistence": true,
+  "open_count": 1,
+  "outer_identity": {
+    "bytes": 5328,
+    "path": "G:/AICODING/AI_VIDEO/_sealed/CAL003_R1_BLIND_MAPPING_V0_3/CAL003_R1_BLIND_MAPPING_DO_NOT_OPEN_UNTIL_REVIEW_FREEZE_V0_3.zip",
+    "sha256": "4a3d0cc7ed9f098224458df8f261803b3637b7c97ec7e289e8497ede287d6440"
+  },
+  "parser_corrections_used": 0,
+  "salt_decoded_byte_count": 32,
+  "salt_syntax": "PASS",
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_SEALED_PACKAGE_VALIDATION_V0_1",
+  "sealed_manifest_validation": "PASS",
+  "sha256sums": "4/4_PASS",
+  "task_binding_coverage": "6/6"
+}

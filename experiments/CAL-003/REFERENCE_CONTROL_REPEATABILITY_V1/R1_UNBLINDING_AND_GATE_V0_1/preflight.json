@@ -1,0 +1,42 @@
+{
+  "authorization_validation": "PASS",
+  "committed_input_coverage": "7/7",
+  "execution_id": "CAL003-R1-UNBLINDING-GATE-SCHEMA-BOUND-SINGLE-PROCESS-RECOVERY-V0-6",
+  "external_zip_outer_bindings": [
+    {
+      "bytes": 27741,
+      "member_count": 9,
+      "open_count": 1,
+      "path": "G:/AICODING/AI_VIDEO/_review_freeze/CAL003_R1_BLIND_REVIEW_FREEZE_V0_1.zip",
+      "sha256": "001cf8c5d4fb7742c9f6a6f3dbff31a5c31f4b69674320831573120be1a138d4"
+    },
+    {
+      "bytes": 5328,
+      "member_count": 6,
+      "member_read_count": 6,
+      "open_count": 1,
+      "path": "G:/AICODING/AI_VIDEO/_sealed/CAL003_R1_BLIND_MAPPING_V0_3/CAL003_R1_BLIND_MAPPING_DO_NOT_OPEN_UNTIL_REVIEW_FREEZE_V0_3.zip",
+      "sha256": "4a3d0cc7ed9f098224458df8f261803b3637b7c97ec7e289e8497ede287d6440"
+    }
+  ],
+  "freeze_zip_member_reads_before_activation": 9,
+  "parser_profile": "PRODUCER_BOUND_MAPPING_AND_EQUIVALENCE_SCHEMA_V0_6",
+  "parser_self_tests": "13/13_PASS",
+  "protected_state_precheck": "PASS",
+  "repository": {
+    "branch": "main",
+    "head": "c0be22e06bb79fa036b6619b27c7a0b0be6414cc",
+    "head_origin_aligned": true,
+    "origin_main": "c0be22e06bb79fa036b6619b27c7a0b0be6414cc",
+    "source_changes": 0,
+    "staged_changes": 0,
+    "tracked_modifications": 0
+  },
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_UNBLINDING_GATE_PREFLIGHT_V0_1",
+  "sealed_zip_member_reads_before_activation": 0,
+  "target_paths_absent_before_activation": "13/13",
+  "untracked_baseline": {
+    "count": 26,
+    "path_set_sha256": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94"
+  }
+}

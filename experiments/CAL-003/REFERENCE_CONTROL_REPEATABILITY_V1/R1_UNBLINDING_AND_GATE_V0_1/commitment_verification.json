@@ -1,0 +1,13 @@
+{
+  "algorithm": "SHA-256",
+  "canonical_mapping_profile": "PASS",
+  "execution_id": "CAL003-R1-UNBLINDING-GATE-SCHEMA-BOUND-SINGLE-PROCESS-RECOVERY-V0-6",
+  "expected_commitment": "166e02c63c651134dbc291dcff84732516ffb80b8d0832ead515622a3f5a729f",
+  "formula": "SHA256(CANONICAL_MAPPING_BYTES + LF + LOWERCASE_SALT_HEX_BYTES)",
+  "four_way_equality": "PASS",
+  "public_record_commitment": "166e02c63c651134dbc291dcff84732516ffb80b8d0832ead515622a3f5a729f",
+  "recomputed_commitment": "166e02c63c651134dbc291dcff84732516ffb80b8d0832ead515622a3f5a729f",
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_COMMITMENT_VERIFICATION_V0_1",
+  "sealed_manifest_commitment": "166e02c63c651134dbc291dcff84732516ffb80b8d0832ead515622a3f5a729f",
+  "verification": "PASS"
+}

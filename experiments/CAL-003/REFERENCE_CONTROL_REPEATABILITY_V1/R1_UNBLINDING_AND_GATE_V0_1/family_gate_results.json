@@ -1,0 +1,74 @@
+{
+  "execution_id": "CAL003-R1-UNBLINDING-GATE-SCHEMA-BOUND-SINGLE-PROCESS-RECOVERY-V0-6",
+  "global_material_sentinel_count": 0,
+  "record_coverage": "2/2",
+  "records": [
+    {
+      "conditions": {
+        "global_material_sentinel_count_zero": true,
+        "median_margin_at_least_3": true,
+        "median_own_score_at_least_8": true,
+        "reference_ignored_count_at_most_1": true,
+        "rights_and_provenance_valid": true,
+        "sample_pass_count_at_least_2": true
+      },
+      "family": "PUSH",
+      "family_gate": "PASS",
+      "margin_values_by_replicate": [
+        6,
+        8,
+        8
+      ],
+      "median_margin": 8,
+      "median_own_score": 12,
+      "own_score_values_by_replicate": [
+        12,
+        12,
+        12
+      ],
+      "reference_ignored_count": 0,
+      "sample_count": 3,
+      "sample_pass_count": 3
+    },
+    {
+      "conditions": {
+        "global_material_sentinel_count_zero": true,
+        "median_margin_at_least_3": false,
+        "median_own_score_at_least_8": false,
+        "reference_ignored_count_at_most_1": true,
+        "rights_and_provenance_valid": true,
+        "sample_pass_count_at_least_2": false
+      },
+      "family": "IMPACT",
+      "family_gate": "FAIL",
+      "margin_values_by_replicate": [
+        -6,
+        -8,
+        -6
+      ],
+      "median_margin": -6,
+      "median_own_score": 6,
+      "own_score_values_by_replicate": [
+        6,
+        4,
+        6
+      ],
+      "reference_ignored_count": 0,
+      "sample_count": 3,
+      "sample_pass_count": 0
+    }
+  ],
+  "rights_and_provenance": {
+    "checks": {
+      "design_and_task_committed_bound": true,
+      "design_declares_rights_and_provenance_valid": true,
+      "exact_governed_reference_identities": true,
+      "reference_artifact_hash_and_commit_binding": true,
+      "review_contract_requires_rights_and_provenance": true
+    },
+    "governed_validation": "PASS",
+    "independent_legal_ownership_claimed": false,
+    "rights_and_provenance_valid": true
+  },
+  "schema_version": "CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_FAMILY_GATE_RESULTS_V0_1"
+}
