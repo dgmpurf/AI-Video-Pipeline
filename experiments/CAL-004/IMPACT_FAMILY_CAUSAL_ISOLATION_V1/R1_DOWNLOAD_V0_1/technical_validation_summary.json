@@ -1,0 +1,58 @@
+{
+  "all_eighteen_complete": true,
+  "all_eighteen_technically_valid": true,
+  "attempted_downloads": 18,
+  "condition_coverage": {
+    "I0": {
+      "downloaded": 3,
+      "task_count": 3,
+      "technically_valid": 3
+    },
+    "II": {
+      "downloaded": 3,
+      "task_count": 3,
+      "technically_valid": 3
+    },
+    "IP": {
+      "downloaded": 3,
+      "task_count": 3,
+      "technically_valid": 3
+    },
+    "N0": {
+      "downloaded": 3,
+      "task_count": 3,
+      "technically_valid": 3
+    },
+    "NI": {
+      "downloaded": 3,
+      "task_count": 3,
+      "technically_valid": 3
+    },
+    "NP": {
+      "downloaded": 3,
+      "task_count": 3,
+      "technically_valid": 3
+    }
+  },
+  "duplicate_hash_count": 0,
+  "duplicate_hash_detected": false,
+  "failed_downloads": 0,
+  "route_coverage": {
+    "multimodal2video": {
+      "downloaded": 12,
+      "task_count": 12,
+      "technically_valid": 12
+    },
+    "text2video": {
+      "downloaded": 6,
+      "task_count": 6,
+      "technically_valid": 6
+    }
+  },
+  "schema_version": "CAL004_R1_TECHNICAL_VALIDATION_SUMMARY_V0_1",
+  "successful_downloads": 18,
+  "technically_invalid_files": 0,
+  "technically_valid_files": 18,
+  "total_media_bytes": 54683943,
+  "unique_media_hashes": 18
+}

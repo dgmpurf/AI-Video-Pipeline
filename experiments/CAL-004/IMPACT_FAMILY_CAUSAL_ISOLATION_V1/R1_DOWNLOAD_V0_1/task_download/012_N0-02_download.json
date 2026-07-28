@@ -1,0 +1,122 @@
+{
+  "audio_codec": "aac",
+  "audio_stream_count": 1,
+  "condition_id": "N0",
+  "dimensions": {
+    "height": 720,
+    "width": 1280
+  },
+  "download_command": {
+    "argv": [
+      "dreamina",
+      "query_result",
+      "--submit_id",
+      "59cb2e47-7162-4317-94df-764a3f1eaec8",
+      "--download_dir",
+      "<EXTERNAL_TEMP>/.tmp_012_N0-02"
+    ],
+    "download_dir_present": true,
+    "parse_mode": "stdout_complete_json",
+    "process": {
+      "elapsed_seconds": 4.54,
+      "end_utc": "2026-07-28T16:17:30.253001Z",
+      "launch_exception_class": null,
+      "return_code": 0,
+      "start_utc": "2026-07-28T16:17:25.712722Z",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 931,
+      "stdout_sha256": "377b5c0e6c621f07b514dd85c47933ebc0f74d81d3792f39213fd75a4f37d2e5",
+      "timeout": false
+    },
+    "provider_gen_status": "success",
+    "provider_queue_status": null,
+    "raw_output_persisted": false,
+    "response_keys": [
+      "credit_count",
+      "gen_status",
+      "queue_info",
+      "result_json",
+      "submit_id"
+    ],
+    "signed_url_persisted": false
+  },
+  "download_command_result": "PASS",
+  "download_invocation_count": 1,
+  "duration_seconds": 5.06195,
+  "duration_text": "5.061950",
+  "failure_reason_summary": null,
+  "ffprobe_metadata_summary": {
+    "audio_codec": "aac",
+    "audio_stream_count": 1,
+    "average_frame_rate": "7260/301",
+    "container_format_names": "mov,mp4,m4a,3gp,3g2,mj2",
+    "duration_finite_positive": true,
+    "duration_seconds": 5.06195,
+    "duration_text": "5.061950",
+    "ffprobe_json_parse_result": "PASS",
+    "ffprobe_process": {
+      "elapsed_seconds": 0.026,
+      "end_utc": "2026-07-28T16:17:30.282002Z",
+      "launch_exception_class": null,
+      "return_code": 0,
+      "start_utc": "2026-07-28T16:17:30.256001Z",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 4749,
+      "stdout_sha256": "84f122e331698977c6099dfffdabf5675d2e972dac992655b536bf1908ab4fbc",
+      "timeout": false
+    },
+    "height": 720,
+    "pixel_format": "yuv420p",
+    "raw_frame_rate": "60/1",
+    "stream_count": 2,
+    "video_codec": "h264",
+    "video_stream_count": 1,
+    "width": 1280
+  },
+  "final_external_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/012_N0-02.mp4",
+  "fixed_submission_position": 12,
+  "full_decode_result": "PASS",
+  "media_bytes": 3643763,
+  "media_sha256": "ae63d22b3ecbf9b1fa6ba646ae42391ad65ba9bcb88d0391041382076e488925",
+  "nonempty_file": true,
+  "pixel_format": "yuv420p",
+  "planned_duration_conformance": {
+    "absolute_delta_seconds": 0.06195,
+    "observed_duration_seconds": 5.06195,
+    "planned_duration_seconds": 5.0,
+    "status": "WITHIN_0_25_SECONDS",
+    "within_0_25_seconds": true
+  },
+  "redownload_authorized": false,
+  "regular_file": true,
+  "resubmit_authorized": false,
+  "result_file_count": 1,
+  "retry_authorized": false,
+  "route": "text2video",
+  "schema_version": "CAL004_R1_TASK_DOWNLOAD_RECORD_V0_1",
+  "semantic_review_performed": false,
+  "source_bindings": {
+    "query_success_record": {
+      "bytes": 2811,
+      "git_blob": "36980df905e9e36c61582c492b419680facae09d",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_QUERY_V0_1/task_status/012_N0-02_query.json",
+      "role": "COMMITTED_QUERY_SUCCESS_IDENTITY",
+      "sha256": "1ee6e213d8a620be0cd3e73550a61433528c2a6188ca78b3e82cd12499596d70"
+    },
+    "submit_receipt": {
+      "bytes": 1969,
+      "git_blob": "10c34ba423c8dfb93bac6f1e99ad25d0de713972",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/012_N0-02_submit_receipt.json",
+      "role": "COMMITTED_SUBMIT_IDENTITY",
+      "sha256": "7a4a20a4ff85b4353680b03f35b6831d9286d9cffb7cb006c801c682b522a7f2"
+    }
+  },
+  "stream_count": 2,
+  "submit_id": "59cb2e47-7162-4317-94df-764a3f1eaec8",
+  "task_id": "N0-02",
+  "technical_validity": "PASS",
+  "video_codec": "h264",
+  "video_stream_count": 1
+}

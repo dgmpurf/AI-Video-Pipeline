@@ -1,0 +1,53 @@
+{
+  "authorization": {
+    "base64_character_count": 1708,
+    "bytes": 1279,
+    "sha256": "d2f8ca7e36417b5f5f16b0eee96d746bed4f9f3083fcd85ad90d22c7a4156886",
+    "verified": true
+  },
+  "branch": "main",
+  "cli_contract": {
+    "download_dir_flag_present": true,
+    "help_call_count": 1,
+    "query_result_help": "PASS"
+  },
+  "completed_before_first_download_utc": "2026-07-28T16:16:36.721964Z",
+  "external_media_prestate": {
+    "final_path_conflict_count": 0,
+    "root_existed": false,
+    "unexpected_entry_count": 0
+  },
+  "ffmpeg": {
+    "bytes": 131534336,
+    "path": "C:/ffmpeg/bin/ffmpeg.exe",
+    "sha256": "9f5c85e070cc2cfdc960c67395a8a47967732e59ddd8850bc56cf5842e7049d4",
+    "version": "2023-03-27-git-f7abe92bd7-full_build-www.gyan.dev"
+  },
+  "ffprobe": {
+    "bytes": 131407872,
+    "path": "C:/ffmpeg/bin/ffprobe.exe",
+    "sha256": "ba37098df2d55a7464ca344ab806c174be9735c22bf8a487d26fe0c624598695",
+    "version": "2023-03-27-git-f7abe92bd7-full_build-www.gyan.dev"
+  },
+  "head": "a32cb9d940a720b7b012b9d1207f05a1f731ce21",
+  "head_origin_aligned": true,
+  "merge_rebase_cherry_pick_revert_bisect_active": false,
+  "origin_main": "a32cb9d940a720b7b012b9d1207f05a1f731ce21",
+  "query_evidence": {
+    "one_video_result_each": true,
+    "submit_ids_unique": true,
+    "success_count": 18,
+    "task_count": 18,
+    "terminal_success_count": 18
+  },
+  "repository_output_prestate_absent": true,
+  "schema_version": "CAL004_R1_DOWNLOAD_PREFLIGHT_V0_1",
+  "sources_clean": true,
+  "staged_change_count": 0,
+  "temporary_recovery_attempts_used": 1,
+  "temporary_recovery_summary": "Captured complete ffmpeg version output before selecting the first line to avoid a PowerShell broken-pipe exit-code false positive.",
+  "tracked_modification_count": 0,
+  "unrelated_untracked_count": 541,
+  "unrelated_untracked_set_sha256": "2461e0ead62392e35189fe177bdaf23e3c67efa5765b38ae69eebdbe0e5e0d81",
+  "user_credit_called": false
+}

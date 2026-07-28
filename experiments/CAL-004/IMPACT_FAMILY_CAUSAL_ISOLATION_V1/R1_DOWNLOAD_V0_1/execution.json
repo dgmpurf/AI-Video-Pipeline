@@ -1,0 +1,37 @@
+{
+  "all_eighteen_complete": true,
+  "all_eighteen_technically_valid": true,
+  "authorization_lifecycle": {
+    "activated": true,
+    "consumed": true,
+    "reusable": false
+  },
+  "command_counts": {
+    "download": 18,
+    "query_only": 0,
+    "resubmit": 0,
+    "retry": 0,
+    "submit": 0,
+    "user_credit": 0
+  },
+  "decision": "CAL004_R1_ALL_MEDIA_DOWNLOADED_AND_TECHNICALLY_VALID",
+  "download_end_utc": "2026-07-28T16:17:56.422048Z",
+  "download_start_utc": "2026-07-28T16:16:36.721964Z",
+  "external_media_root": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1",
+  "failed_downloads": 0,
+  "final_master": false,
+  "fixed_task_completion": false,
+  "locked": false,
+  "media_access_scope": "NON_SEMANTIC_TECHNICAL_VALIDATION_ONLY",
+  "next_phase": "CAL004_R1_ALL_MEDIA_TECHNICALLY_VALID_BLIND_PACKAGE_AUTHORIZATION_HUMAN_DECISION",
+  "production_approved": false,
+  "randomness_generated": false,
+  "schema_version": "CAL004_R1_DOWNLOAD_EXECUTION_V0_1",
+  "scientific_result_derived": false,
+  "semantic_review_performed": false,
+  "starting_checkpoint": "a32cb9d940a720b7b012b9d1207f05a1f731ce21",
+  "successful_downloads": 18,
+  "task_count": 18,
+  "temporary_recovery_attempts_used": 1,
+  "total_download_invocations": 18
+}

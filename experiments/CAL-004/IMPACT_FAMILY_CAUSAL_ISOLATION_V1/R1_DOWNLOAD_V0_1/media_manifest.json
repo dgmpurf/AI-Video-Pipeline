@@ -1,0 +1,155 @@
+{
+  "external_media_root": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1",
+  "media_count": 18,
+  "media_embedded": false,
+  "media_entries": [
+    {
+      "bytes": 3836839,
+      "fixed_submission_position": 1,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/001_N0-01.mp4",
+      "sha256": "b6f728b3f24052985d3cc6c2c647a64b8c3a206622e67c9cd008ab355b3928a0",
+      "task_id": "N0-01",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 2087416,
+      "fixed_submission_position": 2,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/002_II-01.mp4",
+      "sha256": "c5e446f19445928441d6737b7fd06c280e927c3ad66696486e03a2898dc9a1b7",
+      "task_id": "II-01",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 2876008,
+      "fixed_submission_position": 3,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/003_NP-01.mp4",
+      "sha256": "fbee1682148682405b0ed8cd2253386b4b99c023c2689ccd7f2ff21ee16958d7",
+      "task_id": "NP-01",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 4530876,
+      "fixed_submission_position": 4,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/004_I0-01.mp4",
+      "sha256": "23865256cc0eabb49973460606950e8f7d1213bf5c43fd16bcc17e972b224bc6",
+      "task_id": "I0-01",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 1981288,
+      "fixed_submission_position": 5,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/005_NI-01.mp4",
+      "sha256": "a72ee024b662858e8d35a705b852c9e127c85bec0f4422b5ff2866c94cdf453f",
+      "task_id": "NI-01",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 3180297,
+      "fixed_submission_position": 6,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/006_IP-01.mp4",
+      "sha256": "cacc11a20789e87e5224bc6c2968991c4b6e0961a597c751bbe891123f31eb28",
+      "task_id": "IP-01",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 2146559,
+      "fixed_submission_position": 7,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/007_IP-02.mp4",
+      "sha256": "544899c508af9dcb1f8b442052384beef053ad1b653cd272dffeb7386968a9b6",
+      "task_id": "IP-02",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 3507322,
+      "fixed_submission_position": 8,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/008_NI-02.mp4",
+      "sha256": "d49d98f5f7862aba2a512346ce85927f2810e1e7e258d591df16acb8102820b0",
+      "task_id": "NI-02",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 4845910,
+      "fixed_submission_position": 9,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/009_I0-02.mp4",
+      "sha256": "89dc85d36f75d32563617e84285271aa55027beba2948be31886c440ff07a95a",
+      "task_id": "I0-02",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 2542322,
+      "fixed_submission_position": 10,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/010_NP-02.mp4",
+      "sha256": "4fc70823ab6b5383e9bf2951c271d1ef899de58f40af4ff5363d7f091fe2a135",
+      "task_id": "NP-02",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 2476577,
+      "fixed_submission_position": 11,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/011_II-02.mp4",
+      "sha256": "cef1efd9bd93be99d3d7cab4fb6c24e856f2850da8c9c77239970f6c6bdb084b",
+      "task_id": "II-02",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 3643763,
+      "fixed_submission_position": 12,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/012_N0-02.mp4",
+      "sha256": "ae63d22b3ecbf9b1fa6ba646ae42391ad65ba9bcb88d0391041382076e488925",
+      "task_id": "N0-02",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 2978086,
+      "fixed_submission_position": 13,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/013_NP-03.mp4",
+      "sha256": "198b7eba11c2745b2244e02f7597a21dc09532a8543dc740bd86e50081ccb403",
+      "task_id": "NP-03",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 4019404,
+      "fixed_submission_position": 14,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/014_I0-03.mp4",
+      "sha256": "dc2911d30d639a172d4a2348649d22b063ba0e678413d66549278ce85e3868c9",
+      "task_id": "I0-03",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 2236832,
+      "fixed_submission_position": 15,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/015_NI-03.mp4",
+      "sha256": "49863212d71c80081e97cec0e315cf5b93c5082efc3f8ac9f4ee582d42aa4927",
+      "task_id": "NI-03",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 2107914,
+      "fixed_submission_position": 16,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/016_IP-03.mp4",
+      "sha256": "a4bb8ce6a71ce4f1ea3c66d66e1fb8c32e2e25d8ca4a3096fe3c759e218fcb45",
+      "task_id": "IP-03",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 3972175,
+      "fixed_submission_position": 17,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/017_N0-03.mp4",
+      "sha256": "7f1e69426f17ecba9590839797bbe1190dad0f6581fe1a228aaee68ee58c0b01",
+      "task_id": "N0-03",
+      "technical_status": "PASS"
+    },
+    {
+      "bytes": 1714355,
+      "fixed_submission_position": 18,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_V1_R1/018_II-03.mp4",
+      "sha256": "4bd8ff4642845006aa7e91284595f0aebb1674115dd724f4cda4ff78c8bdce49",
+      "task_id": "II-03",
+      "technical_status": "PASS"
+    }
+  ],
+  "schema_version": "CAL004_R1_EXTERNAL_MEDIA_MANIFEST_V0_1",
+  "signed_urls_persisted": false,
+  "total_media_bytes": 54683943,
+  "unique_media_hashes": 18
+}
