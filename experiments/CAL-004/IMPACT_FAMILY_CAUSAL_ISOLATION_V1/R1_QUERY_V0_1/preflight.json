@@ -1,0 +1,41 @@
+{
+  "authorization": {
+    "base64_character_count": 1816,
+    "bytes": 1362,
+    "sha256": "1ffb509b8abe972641d9b614309ceb94b91e586147381cae2fab2a34e18b4626",
+    "verified": true
+  },
+  "branch": "main",
+  "cli_contract": {
+    "download_dir_passed": false,
+    "help_call_count": 1,
+    "query_result_help": "PASS",
+    "submit_id_flag_present": true
+  },
+  "committed_submit_evidence": {
+    "accepted_submit_count": 18,
+    "failed_submit_count": 0,
+    "historical_download_count": 0,
+    "historical_query_count": 0,
+    "historical_resubmit_count": 0,
+    "historical_retry_count": 0,
+    "submit_ids_unique": true,
+    "task_ids_unique": true
+  },
+  "completed_before_first_query_utc": "2026-07-28T15:50:22.9982644Z",
+  "head": "c62a347f6835820ddbb0a0c96326f009da413204",
+  "head_origin_aligned": true,
+  "local_correction_count": 1,
+  "local_correction_summary": "Replaced unavailable PowerShell static SHA256 HashData API with SHA256.Create ComputeHash before activation.",
+  "merge_rebase_cherry_pick_revert_bisect_active": false,
+  "origin_main": "c62a347f6835820ddbb0a0c96326f009da413204",
+  "output_prestate_absent": true,
+  "schema_version": "CAL004_R1_QUERY_PREFLIGHT_V0_1",
+  "sources_clean": true,
+  "staged_change_count": 0,
+  "task_count": 18,
+  "tracked_modification_count": 0,
+  "unrelated_untracked_count": 541,
+  "unrelated_untracked_set_sha256": "2461e0ead62392e35189fe177bdaf23e3c67efa5765b38ae69eebdbe0e5e0d81",
+  "user_credit_called": false
+}

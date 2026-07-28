@@ -1,0 +1,133 @@
+{
+  "all_terminal": true,
+  "authorization_lifecycle": {
+    "activated": true,
+    "consumed": true,
+    "reusable": false
+  },
+  "balanced_condition_terminal_coverage": true,
+  "command_counts": {
+    "download": 0,
+    "query_result": 18,
+    "resubmit": 0,
+    "retry": 0,
+    "submit": 0,
+    "user_credit": 0
+  },
+  "condition_status_summary": {
+    "I0": {
+      "other_terminal": 0,
+      "querying": 0,
+      "remote_failure": 0,
+      "success": 3,
+      "task_count": 3,
+      "terminal_coverage": 3,
+      "unknown": 0
+    },
+    "II": {
+      "other_terminal": 0,
+      "querying": 0,
+      "remote_failure": 0,
+      "success": 3,
+      "task_count": 3,
+      "terminal_coverage": 3,
+      "unknown": 0
+    },
+    "IP": {
+      "other_terminal": 0,
+      "querying": 0,
+      "remote_failure": 0,
+      "success": 3,
+      "task_count": 3,
+      "terminal_coverage": 3,
+      "unknown": 0
+    },
+    "N0": {
+      "other_terminal": 0,
+      "querying": 0,
+      "remote_failure": 0,
+      "success": 3,
+      "task_count": 3,
+      "terminal_coverage": 3,
+      "unknown": 0
+    },
+    "NI": {
+      "other_terminal": 0,
+      "querying": 0,
+      "remote_failure": 0,
+      "success": 3,
+      "task_count": 3,
+      "terminal_coverage": 3,
+      "unknown": 0
+    },
+    "NP": {
+      "other_terminal": 0,
+      "querying": 0,
+      "remote_failure": 0,
+      "success": 3,
+      "task_count": 3,
+      "terminal_coverage": 3,
+      "unknown": 0
+    }
+  },
+  "decision": "CAL004_R1_QUERY_COMPLETE_ALL_EIGHTEEN_REMOTE_SUCCESS",
+  "final_master": false,
+  "fixed_task_completion": false,
+  "last_query_utc": "2026-07-28T15:51:12.7334493Z",
+  "locked": false,
+  "maximum_query_invocations": 432,
+  "maximum_query_rounds": 24,
+  "media_accessed": false,
+  "next_phase": "CAL004_R1_QUERY_COMPLETE_DOWNLOAD_SELECTION_HUMAN_DECISION",
+  "other_terminal_count": 0,
+  "production_approved": false,
+  "query_rounds_used": 1,
+  "remote_failure_count": 0,
+  "route_status_summary": {
+    "multimodal2video": {
+      "other_terminal": 0,
+      "querying": 0,
+      "remote_failure": 0,
+      "success": 12,
+      "task_count": 12,
+      "unknown": 0
+    },
+    "text2video": {
+      "other_terminal": 0,
+      "querying": 0,
+      "remote_failure": 0,
+      "success": 6,
+      "task_count": 6,
+      "unknown": 0
+    }
+  },
+  "schema_version": "CAL004_R1_BOUNDED_QUERY_EXECUTION_V0_1",
+  "scientific_result_derived": false,
+  "starting_checkpoint": "c62a347f6835820ddbb0a0c96326f009da413204",
+  "still_querying_count": 0,
+  "success_count": 18,
+  "success_task_ids": [
+    "N0-01",
+    "II-01",
+    "NP-01",
+    "I0-01",
+    "NI-01",
+    "IP-01",
+    "IP-02",
+    "NI-02",
+    "I0-02",
+    "NP-02",
+    "II-02",
+    "N0-02",
+    "NP-03",
+    "I0-03",
+    "NI-03",
+    "IP-03",
+    "N0-03",
+    "II-03"
+  ],
+  "task_count": 18,
+  "total_query_invocations": 18,
+  "unknown_count": 0,
+  "visual_success_claimed": false
+}

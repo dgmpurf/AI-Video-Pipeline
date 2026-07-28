@@ -1,0 +1,84 @@
+{
+  "condition_id": "II",
+  "download_authorized": false,
+  "downloadable_result_indicated": true,
+  "failure_reason_summary": null,
+  "final_observed_status": "success",
+  "fixed_submission_position": 2,
+  "media_inspected": false,
+  "query_command": {
+    "argv": [
+      "dreamina",
+      "query_result",
+      "--submit_id",
+      "9f794478-badd-4c96-ace0-269b6a249217"
+    ],
+    "argv_sha256": "d7859d70767dca68e37443397e2643fbc5e0615b480b136292fab7300dba5179",
+    "download_dir_present": false,
+    "shell": false
+  },
+  "query_invocation_count": 1,
+  "resubmit_authorized": false,
+  "result_images_count": 0,
+  "result_url_present": true,
+  "result_videos_count": 1,
+  "retry_authorized": false,
+  "route": "multimodal2video",
+  "schema_version": "CAL004_R1_TASK_QUERY_STATUS_V0_1",
+  "source_bindings": {
+    "live_package": {
+      "bytes": 2349,
+      "git_blob": "5beb230aec2af9ee13e4a3f9a0864aafc767aa7c",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/002_II-01_live_package.json",
+      "role": "COMMITTED_CAL004_LIVE_PACKAGE",
+      "sha256": "c4c7b39f4712b368c8696ab16b25ba600f36a8e3c432f26de417ba356efeb4bd"
+    },
+    "submit_receipt": {
+      "bytes": 1990,
+      "git_blob": "3fe5933527487fdb82a5fdbb74827b5a292d4612",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/002_II-01_submit_receipt.json",
+      "role": "COMMITTED_CAL004_SUBMIT_RECEIPT",
+      "sha256": "095a334dc9e976171e5b515cf18c1b3a9c43b72bc99b579c324d2905485dd395"
+    }
+  },
+  "status_history": [
+    {
+      "elapsed_seconds": 2.792,
+      "end_utc": "2026-07-28T15:50:28.6550671Z",
+      "failure_reason_summary": null,
+      "gen_status": "success",
+      "launch_exception_class": null,
+      "normalized_observed_status": "success",
+      "parse_mode": "stdout_complete_json",
+      "process_launched": true,
+      "provider_status": null,
+      "queue_status": null,
+      "raw_output_persisted": false,
+      "response_keys": [
+        "credit_count",
+        "gen_status",
+        "prompt",
+        "queue_info",
+        "result_json",
+        "submit_id"
+      ],
+      "result_images_count": 0,
+      "result_url_present": true,
+      "result_videos_count": 1,
+      "return_code": 0,
+      "round": 1,
+      "signed_url_persisted": false,
+      "start_utc": "2026-07-28T15:50:25.8634848Z",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 3599,
+      "stdout_sha256": "e3396476a1ecb28d2a1ac398b73b7834b1e2f8623d747aba712a292a1705c17e",
+      "terminal_class": "SUCCESS",
+      "timeout": false
+    }
+  ],
+  "submit_id": "9f794478-badd-4c96-ace0-269b6a249217",
+  "task_id": "II-01",
+  "terminal_class": "SUCCESS",
+  "terminal_status": true
+}
