@@ -1,0 +1,129 @@
+{
+  "alias_filenames_in_order": [
+    "B07.mp4",
+    "B08.mp4",
+    "B09.mp4",
+    "B10.mp4",
+    "B11.mp4",
+    "B12.mp4"
+  ],
+  "batch_label": "B",
+  "blind_package_version": "V0.1",
+  "complete_mp4_review_required": true,
+  "exact_expected_nine_file_input_set": [
+    "B07.mp4",
+    "B08.mp4",
+    "B09.mp4",
+    "B10.mp4",
+    "B11.mp4",
+    "B12.mp4",
+    "reviewer_manifest.json",
+    "reviewer_instructions.md",
+    "review_contract.json"
+  ],
+  "experiment_label": "CAL-004 R1",
+  "items": [
+    {
+      "blind_media_bytes": 8388608,
+      "blind_media_sha256": "30be8e5dc0a5934b5f6af4e2a6b433636a305fe9de8d699bfa6e90e7533603fa",
+      "dimensions": {
+        "height": 720,
+        "width": 1280
+      },
+      "duration": "5.061995",
+      "filename": "B07.mp4",
+      "stream_counts": {
+        "audio": 1,
+        "other": 0,
+        "total": 2,
+        "video": 1
+      },
+      "technical_validity": "PASS"
+    },
+    {
+      "blind_media_bytes": 8388608,
+      "blind_media_sha256": "f4f1fae6cddff3b983d1e637947813c47a07111e58e3e7adde777d73d360b073",
+      "dimensions": {
+        "height": 720,
+        "width": 1280
+      },
+      "duration": "5.085011",
+      "filename": "B08.mp4",
+      "stream_counts": {
+        "audio": 1,
+        "other": 0,
+        "total": 2,
+        "video": 1
+      },
+      "technical_validity": "PASS"
+    },
+    {
+      "blind_media_bytes": 8388608,
+      "blind_media_sha256": "d7e2ee7c8a3be2e7e079590734bff296dcc8a154ea5a2d0a96e27a5a339bba6e",
+      "dimensions": {
+        "height": 720,
+        "width": 1280
+      },
+      "duration": "5.085011",
+      "filename": "B09.mp4",
+      "stream_counts": {
+        "audio": 1,
+        "other": 0,
+        "total": 2,
+        "video": 1
+      },
+      "technical_validity": "PASS"
+    },
+    {
+      "blind_media_bytes": 8388608,
+      "blind_media_sha256": "31cc7dc78c9f00b92740d14779837880c5bc29e47546423ecc6d1e6560f71b1d",
+      "dimensions": {
+        "height": 720,
+        "width": 1280
+      },
+      "duration": "5.085011",
+      "filename": "B10.mp4",
+      "stream_counts": {
+        "audio": 1,
+        "other": 0,
+        "total": 2,
+        "video": 1
+      },
+      "technical_validity": "PASS"
+    },
+    {
+      "blind_media_bytes": 8388608,
+      "blind_media_sha256": "acca3ae8f36de4f3c6bddf9373a2980abdd65df98fafae33fcd2743f89398e2c",
+      "dimensions": {
+        "height": 720,
+        "width": 1280
+      },
+      "duration": "5.061995",
+      "filename": "B11.mp4",
+      "stream_counts": {
+        "audio": 1,
+        "other": 0,
+        "total": 2,
+        "video": 1
+      },
+      "technical_validity": "PASS"
+    },
+    {
+      "blind_media_bytes": 8388608,
+      "blind_media_sha256": "c2ea0da1b547faabd297b977236c404e9f62e85f1a31261f2c56e8560e320922",
+      "dimensions": {
+        "height": 720,
+        "width": 1280
+      },
+      "duration": "5.085011",
+      "filename": "B12.mp4",
+      "stream_counts": {
+        "audio": 1,
+        "other": 0,
+        "total": 2,
+        "video": 1
+      },
+      "technical_validity": "PASS"
+    }
+  ]
+}

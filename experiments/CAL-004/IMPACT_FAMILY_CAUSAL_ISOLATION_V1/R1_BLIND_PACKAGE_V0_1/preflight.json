@@ -1,0 +1,71 @@
+{
+  "authorization": {
+    "base64_character_count": 2072,
+    "bom": false,
+    "bytes": 1552,
+    "round_trip": true,
+    "sha256": "99274501441fd57a599602163b81e0d56e361f388def5a121bce5d47b48ce960",
+    "trailing_newline": false
+  },
+  "canonical_media_hashes_unique": true,
+  "canonical_media_validated": 18,
+  "committed_inputs": {
+    "cal003_neutral_review_contract": {
+      "bytes": 4609,
+      "git_blob": "286e424b486331f862eea934ed0a53f070f3d35b",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/review_contract.json",
+      "sha256": "e8855d71ddc39efc07f8db7317d770d76c0ffbda829cee55fde662e18b26c8f4"
+    },
+    "cal004_design_spec": {
+      "bytes": 5123,
+      "git_blob": "dfed2a13fcc2a671719f0656957a919751094ef4",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/design_spec.json",
+      "sha256": "fe0cc08ad00b156a829b1886832abe282f5644f51904e6c84bc08a60c7f165a2"
+    },
+    "cal004_download_media_manifest": {
+      "bytes": 6197,
+      "git_blob": "b5a08cb00b910a2d35851f98e45cd9f08fd94667",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DOWNLOAD_V0_1/media_manifest.json",
+      "sha256": "84547ee195573ac8028cfb1e30fef94e5e8f3b5619ef952c7df2368626bab886"
+    },
+    "cal004_review_contract": {
+      "bytes": 3762,
+      "git_blob": "74730115e37d6f5b1c27d789d15e460b55d0be4e",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/review_contract.json",
+      "sha256": "9f3dcbabbada07e64b229813f04b28bbdff5bbb013e5db97578c9a1b7d0c89c9"
+    },
+    "cal004_task_manifest": {
+      "bytes": 28607,
+      "git_blob": "e832e52e23e8fb69e9bbe8de00f55efef2afa389",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/task_manifest.json",
+      "sha256": "7be3db682668c1d5c2b33976d583347f57bcd355c7cc7590d797e4405002bdcf"
+    },
+    "cal004_technical_validation_summary": {
+      "bytes": 1256,
+      "git_blob": "ec219a8176bb80841c6365bf7d157a878cf9784d",
+      "path": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE/experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DOWNLOAD_V0_1/technical_validation_summary.json",
+      "sha256": "a745db24ce7968bc23edb862a51346eae84f55bdb297f6eb61b1ea180c658cf6"
+    }
+  },
+  "feasibility": {
+    "audio_framemd5_equivalence": "18/18_PASS",
+    "below_target_bytes": "18/18_PASS",
+    "full_decode": "18/18_PASS",
+    "metadata_stripped_remux": "18/18_PASS",
+    "video_framemd5_equivalence": "18/18_PASS"
+  },
+  "repository_guard": {
+    "active_git_operation_count": 0,
+    "branch": "main",
+    "head": "2fa3147635c5c1d482cbf1e38fad1f56c9b16853",
+    "head_origin_aligned": true,
+    "origin_main": "2fa3147635c5c1d482cbf1e38fad1f56c9b16853",
+    "repository": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+    "sources_clean": true,
+    "staged_change_count": 0,
+    "tracked_modification_count": 0
+  },
+  "schema_version": "CAL004_R1_BLIND_PACKAGE_PREFLIGHT_V0_1",
+  "synthetic_schema_tests": "11/11_PASS",
+  "temporary_recovery_attempts_before_activation": 3
+}

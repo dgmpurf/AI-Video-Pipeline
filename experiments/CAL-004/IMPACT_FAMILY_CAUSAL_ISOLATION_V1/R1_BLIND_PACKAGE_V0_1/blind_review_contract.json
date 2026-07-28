@@ -1,0 +1,83 @@
+{
+  "automatic_condition_decision": false,
+  "blind_package_version": "V0.1",
+  "complete_mp4_review_mandatory": true,
+  "experiment_label": "CAL-004 R1",
+  "freeze_requirement": {
+    "all_eighteen_records_required_before_unblinding": true,
+    "mapping_reveal_during_review": false
+  },
+  "material_copy_sentinels": [
+    "CONTACT_MARKER_COPY",
+    "MANNEQUIN_STYLE_COPY",
+    "GRID_SCENE_COPY",
+    "FIXED_CAMERA_COMPOSITION_COPY"
+  ],
+  "required_observations": [
+    "technical_validity_binding",
+    "reference_ignored",
+    "reference_overdominance",
+    "reference_role_conflict",
+    "action_family_failure",
+    "prolonged_contact",
+    "first_frame_separation",
+    "contact_onset_readability",
+    "immediate_recoil",
+    "exactly_one_rear_foot_result",
+    "attacker_retract",
+    "static_tail_duration",
+    "limitations"
+  ],
+  "review_record_requirements": {
+    "complete_mp4_timeline_required": true,
+    "dimension_level_evidence_required": true,
+    "one_record_per_alias": true,
+    "record_count_per_batch": 6
+  },
+  "schema_version": "CAL004_R1_BLIND_REVIEW_CONTRACT_V0_1",
+  "score_ranges": {
+    "IMPACT_signature_score": {
+      "maximum": 12,
+      "minimum": 0
+    },
+    "PUSH_signature_score": {
+      "maximum": 12,
+      "minimum": 0
+    }
+  },
+  "scored_motion_dimensions": [
+    "initiation_pattern",
+    "approach_or_setup_pattern",
+    "primary_limb_configuration",
+    "primary_interaction_character",
+    "interaction_episode_count",
+    "receiver_response_direction",
+    "torso_response_type",
+    "rear_foot_result_type",
+    "release_or_retraction_pattern",
+    "recovery_and_repositioning",
+    "temporal_ordering",
+    "duration_utilization_and_final_phase_activity"
+  ],
+  "signature_definitions": {
+    "IMPACT": [
+      "preparation",
+      "non-contact feint or compact approach",
+      "one brief torso-directed interaction",
+      "immediate upper-body recoil",
+      "one rear-foot recoil step",
+      "prompt retraction",
+      "recovery and repositioning",
+      "active full-duration ending"
+    ],
+    "PUSH": [
+      "preparation and approach",
+      "one two-hand torso-directed interaction",
+      "receiver torso displacement after the interaction",
+      "one rear-foot recovery placement",
+      "release or retraction",
+      "recovery and repositioning",
+      "active full-duration ending"
+    ]
+  }
+}

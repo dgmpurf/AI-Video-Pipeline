@@ -1,0 +1,182 @@
+{
+  "alias_count": 18,
+  "authorization_lifecycle": {
+    "activated": true,
+    "consumed": true,
+    "reusable": false
+  },
+  "batch_count": 3,
+  "blind_hashes_different_from_canonical": true,
+  "blind_hashes_unique": true,
+  "blind_media_created": 18,
+  "decision": "CAL004_R1_RANDOMIZED_BLIND_PACKAGE_READY_FOR_COMPLETE_MP4_REVIEW",
+  "four_way_commitment_equality": "PASS",
+  "mapping_disclosed": false,
+  "next_phase": "CAL004_R1_BLIND_COMPLETE_MP4_REVIEW_AND_RECORD_FREEZE_HUMAN_DECISION",
+  "production_approved": false,
+  "random_permutation_generated_count": 1,
+  "random_salt_generated_count": 1,
+  "randomness_regenerated": false,
+  "review_directories": [
+    {
+      "batch": "A",
+      "directory": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_A",
+      "file_count": 9,
+      "files": [
+        {
+          "bytes": 8388608,
+          "filename": "B01.mp4",
+          "sha256": "6971bd63f880df5c12f5161a30dccb8fbe9313963a5aad6529400b230ee07da9"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B02.mp4",
+          "sha256": "de4d193e3cb961669e59bcc65ee251ef05d36e7957885f8b6254f1a3a2ad23f2"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B03.mp4",
+          "sha256": "c370961d02d7de8d3d5fe4c04b8a07994c479f903a82cd76336826a46c27931c"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B04.mp4",
+          "sha256": "8f166f7a041ed3dbbe943c461a668ed3a628be6ff1c83fa2237100ed8f259c4c"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B05.mp4",
+          "sha256": "d5a6ec91d7c8fcde8e7f90a56029f6b70720d99b547c02b0c5422b672510d78a"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B06.mp4",
+          "sha256": "86ece7770e9ed5e20d74826223ad86f797d60b7bb209beb4d4a293b37d08bd75"
+        },
+        {
+          "bytes": 2366,
+          "filename": "review_contract.json",
+          "sha256": "c75b7feb5dc998e6c8fb76cc1f43fdc71d797b521dce5b6243ca147b529a6415"
+        },
+        {
+          "bytes": 1038,
+          "filename": "reviewer_instructions.md",
+          "sha256": "533e91fd6899a2f239fba00be9edfb14c89f6311d2a889234997b351365c4546"
+        },
+        {
+          "bytes": 3073,
+          "filename": "reviewer_manifest.json",
+          "sha256": "6b026afb312f308fac46225124cec05aa67f81dd4ae1712f8a3e23fead0ace30"
+        }
+      ]
+    },
+    {
+      "batch": "B",
+      "directory": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_B",
+      "file_count": 9,
+      "files": [
+        {
+          "bytes": 8388608,
+          "filename": "B07.mp4",
+          "sha256": "30be8e5dc0a5934b5f6af4e2a6b433636a305fe9de8d699bfa6e90e7533603fa"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B08.mp4",
+          "sha256": "f4f1fae6cddff3b983d1e637947813c47a07111e58e3e7adde777d73d360b073"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B09.mp4",
+          "sha256": "d7e2ee7c8a3be2e7e079590734bff296dcc8a154ea5a2d0a96e27a5a339bba6e"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B10.mp4",
+          "sha256": "31cc7dc78c9f00b92740d14779837880c5bc29e47546423ecc6d1e6560f71b1d"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B11.mp4",
+          "sha256": "acca3ae8f36de4f3c6bddf9373a2980abdd65df98fafae33fcd2743f89398e2c"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B12.mp4",
+          "sha256": "c2ea0da1b547faabd297b977236c404e9f62e85f1a31261f2c56e8560e320922"
+        },
+        {
+          "bytes": 2366,
+          "filename": "review_contract.json",
+          "sha256": "c75b7feb5dc998e6c8fb76cc1f43fdc71d797b521dce5b6243ca147b529a6415"
+        },
+        {
+          "bytes": 1038,
+          "filename": "reviewer_instructions.md",
+          "sha256": "533e91fd6899a2f239fba00be9edfb14c89f6311d2a889234997b351365c4546"
+        },
+        {
+          "bytes": 3073,
+          "filename": "reviewer_manifest.json",
+          "sha256": "8beaba0f64ddbfa86a87d2e10573e27e513c32ee3d5680f1509307cd1ad9ddf0"
+        }
+      ]
+    },
+    {
+      "batch": "C",
+      "directory": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_C",
+      "file_count": 9,
+      "files": [
+        {
+          "bytes": 8388608,
+          "filename": "B13.mp4",
+          "sha256": "6fc9b6633af3c31c7650d2de77444fb9cbc52cff2f15b516e34004ce50749efd"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B14.mp4",
+          "sha256": "0f13aec57ef3dff7861ac31e8375b04583cec08c9b6cfbf9d57eb76435713c78"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B15.mp4",
+          "sha256": "a82315ff25ac25d45794ea7bf0064fe65483d4589dcc2abbae5044f34ff34bfc"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B16.mp4",
+          "sha256": "521599203a0dfb4942e6df205acfeca0ca7ed74dcc076433d909bfad20d26f0e"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B17.mp4",
+          "sha256": "9ed20e00eb6637fd65ce38d5f1e70a37493db1d595822975f3245ca96bfa730f"
+        },
+        {
+          "bytes": 8388608,
+          "filename": "B18.mp4",
+          "sha256": "ff8d310354ef10e7ecfc6bc1cd638ccfab61c2ed2bb93cfb4b86ef691ce0dd65"
+        },
+        {
+          "bytes": 2366,
+          "filename": "review_contract.json",
+          "sha256": "c75b7feb5dc998e6c8fb76cc1f43fdc71d797b521dce5b6243ca147b529a6415"
+        },
+        {
+          "bytes": 1038,
+          "filename": "reviewer_instructions.md",
+          "sha256": "533e91fd6899a2f239fba00be9edfb14c89f6311d2a889234997b351365c4546"
+        },
+        {
+          "bytes": 3073,
+          "filename": "reviewer_manifest.json",
+          "sha256": "0cd70d6b504d953c2307e1b35a88bfa30761e6dbc99823e1bd799958ff2cee07"
+        }
+      ]
+    }
+  ],
+  "schema_version": "CAL004_R1_BLIND_PACKAGE_EXECUTION_V0_1",
+  "semantic_review_performed": false,
+  "source_changed": false,
+  "temporary_recovery_attempts_after_activation": 0
+}

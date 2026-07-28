@@ -1,0 +1,32 @@
+{
+  "alias": "B07",
+  "audio_equivalence": "PASS",
+  "batch": "B",
+  "blind_bytes": 8388608,
+  "blind_filename": "B07.mp4",
+  "blind_sha256": "30be8e5dc0a5934b5f6af4e2a6b433636a305fe9de8d699bfa6e90e7533603fa",
+  "canonical_difference": "PASS",
+  "dimensions": {
+    "height": 720,
+    "width": 1280
+  },
+  "duration": "5.061995",
+  "external_review_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL004_R1_BLIND_REVIEW_V0_1/BATCH_B/B07.mp4",
+  "ffprobe_summary": {
+    "audio_codec": "aac",
+    "container": "mp4",
+    "pixel_format": "yuv420p",
+    "video_codec": "h264"
+  },
+  "full_decode": "PASS",
+  "global_uniqueness": "PASS",
+  "metadata_safety": "PASS",
+  "stream_counts": {
+    "audio": 1,
+    "other": 0,
+    "total": 2,
+    "video": 1
+  },
+  "technical_status": "PASS",
+  "video_equivalence": "PASS"
+}
