@@ -1,0 +1,35 @@
+{
+  "balance_after_canaries_derived": 2551,
+  "canaries_remain_valid_experimental_samples": true,
+  "canary_cost": 210,
+  "complete_six_condition_block_cost": 700,
+  "formula": "2 * observed_text2video_unit_cost + 4 * observed_multimodal2video_unit_cost",
+  "multimodal2video_unit_cost": 140,
+  "schema_version": "CAL004_R1_BALANCED_TARGET_SELECTION_V0_1",
+  "selected_balanced_target": 18,
+  "starting_balance": 2761,
+  "target_calculations": [
+    {
+      "affordable_after_canaries": true,
+      "balanced_target": 18,
+      "complete_block_count": 3,
+      "remaining_cost_after_canaries": 1890,
+      "total_cost": 2100
+    },
+    {
+      "affordable_after_canaries": true,
+      "balanced_target": 12,
+      "complete_block_count": 2,
+      "remaining_cost_after_canaries": 1190,
+      "total_cost": 1400
+    },
+    {
+      "affordable_after_canaries": true,
+      "balanced_target": 6,
+      "complete_block_count": 1,
+      "remaining_cost_after_canaries": 490,
+      "total_cost": 700
+    }
+  ],
+  "text2video_unit_cost": 70
+}

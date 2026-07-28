@@ -1,0 +1,17 @@
+{
+  "allowance_consumed_on_provider_invocation_start": true,
+  "authorization_sha256": "8d8cebd5ed12d1063bb5e8e1819c5865165a5e16b38f11d55ca5bda7834a2e47",
+  "claim_created_utc": "2026-07-28T15:26:39.738660Z",
+  "execution_id": "CAL004-R1-CONDITIONAL-BALANCED-SUBMIT-8D8CEBD5",
+  "fixed_submission_position": 16,
+  "no_retry_or_resubmit": true,
+  "package_binding": {
+    "bytes": 2344,
+    "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/016_IP-03_live_package.json",
+    "role": "CAL004_LIVE_PACKAGE",
+    "sha256": "022cc1af770700cfce3bba029f06509218decb6e9949b66212a6eddfd6af5f14"
+  },
+  "schema_version": "CAL004_R1_EXCLUSIVE_SUBMIT_CLAIM_V0_1",
+  "submit_allowance": 1,
+  "task_id": "IP-03"
+}

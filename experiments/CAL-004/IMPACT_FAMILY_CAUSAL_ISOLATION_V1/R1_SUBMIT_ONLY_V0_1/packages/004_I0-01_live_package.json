@@ -1,0 +1,60 @@
+{
+  "authorization": {
+    "authorization_sha256": "8d8cebd5ed12d1063bb5e8e1819c5865165a5e16b38f11d55ca5bda7834a2e47",
+    "conditional_balanced_target_selection": true,
+    "maximum_submit_count": 18,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_allowance_per_task": 1
+  },
+  "command_contract": {
+    "actual_argv_canonical_sha256": "8b3d92da9b56fac91ab0a0741b62cc29e07b80e5586174af1529fc6fb36e2dda",
+    "argv_element_count": 14,
+    "argv_hash_encoding": "UTF8_LENGTH_PREFIXED_UINT32_BE",
+    "display_argv": [
+      "dreamina",
+      "text2video",
+      "--prompt",
+      "<BOUND_IMPACT_CAUSAL_HARD_BYTES>",
+      "--duration",
+      "5",
+      "--ratio",
+      "16:9",
+      "--video_resolution",
+      "720p",
+      "--model_version",
+      "seedance2.0_vip",
+      "--poll",
+      "0"
+    ],
+    "poll_seconds": 0,
+    "route": "text2video",
+    "shell": false
+  },
+  "condition_id": "I0",
+  "execution_id": "CAL004-R1-CONDITIONAL-BALANCED-SUBMIT-8D8CEBD5",
+  "fixed_submission_position": 4,
+  "live_authority_created_by_package": false,
+  "prompt_binding": {
+    "bytes": 2287,
+    "git_blob": "e079625f088f60aeb576ddea3a07abc682463373",
+    "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+    "role": "PROMPT_IMPACT_CAUSAL_HARD",
+    "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+    "worktree_equals_head": true
+  },
+  "provider_parameters": {
+    "duration_seconds": 5,
+    "model_version": "seedance2.0_vip",
+    "ratio": "16:9",
+    "requested_video_count": 1,
+    "video_resolution": "720p"
+  },
+  "reference_binding": null,
+  "reference_count": 0,
+  "replicate": 1,
+  "route_difference": "ZERO_REFERENCE_TEXT2VIDEO",
+  "schema_version": "CAL004_R1_LIVE_PACKAGE_V0_1",
+  "task_id": "I0-01"
+}

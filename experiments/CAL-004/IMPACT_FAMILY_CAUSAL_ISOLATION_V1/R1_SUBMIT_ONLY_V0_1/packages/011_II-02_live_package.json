@@ -1,0 +1,69 @@
+{
+  "authorization": {
+    "authorization_sha256": "8d8cebd5ed12d1063bb5e8e1819c5865165a5e16b38f11d55ca5bda7834a2e47",
+    "conditional_balanced_target_selection": true,
+    "maximum_submit_count": 18,
+    "query_authorized": false,
+    "resubmit_authorized": false,
+    "retry_authorized": false,
+    "submit_allowance_per_task": 1
+  },
+  "command_contract": {
+    "actual_argv_canonical_sha256": "0c2af30c1e56d1b8bd0b4075d227081f5bc675745ce0f35d756e218a8a64f2b7",
+    "argv_element_count": 16,
+    "argv_hash_encoding": "UTF8_LENGTH_PREFIXED_UINT32_BE",
+    "display_argv": [
+      "dreamina",
+      "multimodal2video",
+      "--video",
+      "<BOUND_ACTION_REF_IMPACT_02>",
+      "--prompt",
+      "<BOUND_IMPACT_CAUSAL_HARD_BYTES>",
+      "--duration",
+      "5",
+      "--ratio",
+      "16:9",
+      "--video_resolution",
+      "720p",
+      "--model_version",
+      "seedance2.0_vip",
+      "--poll",
+      "0"
+    ],
+    "poll_seconds": 0,
+    "route": "multimodal2video",
+    "shell": false
+  },
+  "condition_id": "II",
+  "execution_id": "CAL004-R1-CONDITIONAL-BALANCED-SUBMIT-8D8CEBD5",
+  "fixed_submission_position": 11,
+  "live_authority_created_by_package": false,
+  "prompt_binding": {
+    "bytes": 2287,
+    "git_blob": "e079625f088f60aeb576ddea3a07abc682463373",
+    "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+    "role": "PROMPT_IMPACT_CAUSAL_HARD",
+    "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+    "worktree_equals_head": true
+  },
+  "provider_parameters": {
+    "duration_seconds": 5,
+    "model_version": "seedance2.0_vip",
+    "ratio": "16:9",
+    "requested_video_count": 1,
+    "video_resolution": "720p"
+  },
+  "reference_binding": {
+    "bytes": 168170,
+    "git_blob": "8aaa470f8485b9aa59cff057c6a143ed765df7ad",
+    "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+    "role": "GOVERNED_REFERENCE_ACTION_REF_IMPACT_02",
+    "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+    "worktree_equals_head": true
+  },
+  "reference_count": 1,
+  "replicate": 2,
+  "route_difference": "EXACTLY_ONE_GOVERNED_VIDEO_REFERENCE_MULTIMODAL2VIDEO",
+  "schema_version": "CAL004_R1_LIVE_PACKAGE_V0_1",
+  "task_id": "II-02"
+}

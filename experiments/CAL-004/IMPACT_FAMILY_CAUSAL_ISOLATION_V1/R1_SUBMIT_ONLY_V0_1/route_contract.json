@@ -1,0 +1,74 @@
+{
+  "bundle_contrasts": [
+    {
+      "classification": "REFERENCE_PLUS_COMMAND_ROUTE_BUNDLE_CONTRAST",
+      "comparison": "II versus I0"
+    },
+    {
+      "classification": "REFERENCE_PLUS_COMMAND_ROUTE_BUNDLE_CONTRAST",
+      "comparison": "IP versus I0"
+    },
+    {
+      "classification": "REFERENCE_PLUS_COMMAND_ROUTE_BUNDLE_CONTRAST",
+      "comparison": "NI versus N0"
+    },
+    {
+      "classification": "REFERENCE_PLUS_COMMAND_ROUTE_BUNDLE_CONTRAST",
+      "comparison": "NP versus N0"
+    }
+  ],
+  "condition_routes": {
+    "I0": {
+      "reference_count": 0,
+      "route": "text2video"
+    },
+    "II": {
+      "reference_count": 1,
+      "route": "multimodal2video"
+    },
+    "IP": {
+      "reference_count": 1,
+      "route": "multimodal2video"
+    },
+    "N0": {
+      "reference_count": 0,
+      "route": "text2video"
+    },
+    "NI": {
+      "reference_count": 1,
+      "route": "multimodal2video"
+    },
+    "NP": {
+      "reference_count": 1,
+      "route": "multimodal2video"
+    }
+  },
+  "fixed_order": [
+    "N0-01",
+    "II-01",
+    "NP-01",
+    "I0-01",
+    "NI-01",
+    "IP-01",
+    "IP-02",
+    "NI-02",
+    "I0-02",
+    "NP-02",
+    "II-02",
+    "N0-02",
+    "NP-03",
+    "I0-03",
+    "NI-03",
+    "IP-03",
+    "N0-03",
+    "II-03"
+  ],
+  "primary_within_command_contrasts": [
+    "NI versus NP",
+    "II versus IP",
+    "I0 versus N0",
+    "II versus NI"
+  ],
+  "route_difference_recorded": true,
+  "schema_version": "CAL004_R1_COMMAND_ROUTE_CONTRACT_V0_1"
+}

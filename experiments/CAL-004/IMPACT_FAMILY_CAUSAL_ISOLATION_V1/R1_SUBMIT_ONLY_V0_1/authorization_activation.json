@@ -1,0 +1,50 @@
+{
+  "approval": {
+    "base64_character_count": 1468,
+    "bytes": 1100,
+    "canonical_text": "APPROVE_CAL004_R1_CONDITIONAL_BALANCED_SUBMIT_ONLY_ACTIVATION_V0_1__BIND_HEAD_89A51BFF9CD68E87D7BEF1B46361781DE62BD545__ACCEPT_NO_LIVE_DESIGN_EIGHTEEN_TASKS_SIX_CONDITIONS_THREE_REPLICATES__ACCEPT_PRIMARY_WITHIN_COMMAND_CONTRASTS_NI_VS_NP_II_VS_IP_I0_VS_N0_AND_II_VS_NI__REQUIRE_II_VS_I0_IP_VS_I0_NI_VS_N0_AND_NP_VS_N0_TO_BE_RECORDED_AS_REFERENCE_PLUS_COMMAND_ROUTE_BUNDLE_CONTRASTS_NOT_PURE_REFERENCE_CAUSAL_EFFECTS__AUTHORIZE_FRESH_VERSION_USER_CREDIT_TEXT2VIDEO_HELP_MULTIMODAL2VIDEO_HELP_REFERENCE_HASH_AND_PROMPT_BYTE_PREFLIGHT__AUTHORIZE_N0_01_TEXT2VIDEO_AND_II_01_MULTIMODAL2VIDEO_AS_FORMAL_DUAL_ROUTE_CANARIES__AUTHORIZE_FIXED_ORDER_SUBMIT_ONLY_TO_THE_LARGEST_FRESHLY_AFFORDABLE_BALANCED_TARGET_OF_EIGHTEEN_TWELVE_OR_SIX_TASKS__REQUIRE_EACH_SIX_TASK_BLOCK_TO_CONTAIN_EVERY_CONDITION_EXACTLY_ONCE__STOP_BEFORE_SUBMISSION_IF_FRESH_BALANCE_CANNOT_FUND_SIX__STOP_ON_COMMAND_CONTRACT_AUTH_LOGIN_REFERENCE_PROMPT_PROVIDER_OR_CREDIT_FAILURE__NO_QUERY_NO_DOWNLOAD_NO_RETRY_NO_RESUBMIT_NO_RANDOMNESS_NO_REVIEW_NO_UNBLINDING_NO_SOURCE_CHANGE_NO_PRODUCTION_NO_FINAL_MASTER_NO_LOCK__ONE_TIME_NON_REUSABLE",
+    "sha256": "8d8cebd5ed12d1063bb5e8e1819c5865165a5e16b38f11d55ca5bda7834a2e47",
+    "utf8": true,
+    "verified": true
+  },
+  "authorization_lifecycle": {
+    "activated_at_first_provider_submit": true,
+    "automatic_retry_or_resume": false,
+    "one_time_non_reusable": true,
+    "provider_allowance_consumed_on_invocation_regardless_of_result": true
+  },
+  "authorized_operations": {
+    "conditional_balanced_submit_target": [
+      18,
+      12,
+      6
+    ],
+    "download": 0,
+    "query": 0,
+    "randomness": 0,
+    "resubmit": 0,
+    "retry": 0,
+    "submit_maximum": 18
+  },
+  "canaries": {
+    "multimodal2video": "II-01",
+    "text2video": "N0-01"
+  },
+  "execution_id": "CAL004-R1-CONDITIONAL-BALANCED-SUBMIT-8D8CEBD5",
+  "final_master": false,
+  "fixed_task_completion": false,
+  "locked": false,
+  "production_approved": false,
+  "schema_version": "CAL004_R1_SUBMIT_ONLY_ACTIVATION_V0_1",
+  "starting_checkpoint": {
+    "branch": "main",
+    "head": "89a51bff9cd68e87d7bef1b46361781de62bd545",
+    "head_origin_aligned": true,
+    "origin_main": "89a51bff9cd68e87d7bef1b46361781de62bd545",
+    "sources_clean": true,
+    "staged_path_count": 0,
+    "tracked_modification_count": 0,
+    "unrelated_untracked_count": 26,
+    "unrelated_untracked_sha256": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94"
+  }
+}

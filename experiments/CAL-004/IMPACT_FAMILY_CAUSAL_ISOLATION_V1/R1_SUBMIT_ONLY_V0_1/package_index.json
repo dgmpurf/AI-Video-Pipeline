@@ -1,0 +1,152 @@
+{
+  "execution_id": "CAL004-R1-CONDITIONAL-BALANCED-SUBMIT-8D8CEBD5",
+  "live_authority_created_by_index": false,
+  "package_bindings": [
+    {
+      "bytes": 1872,
+      "condition_id": "N0",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/001_N0-01_live_package.json",
+      "route": "text2video",
+      "sha256": "15a144698622d97be386e5a88b8138b49434f73024aa3961e9698df1636bcb10",
+      "task_id": "N0-01"
+    },
+    {
+      "bytes": 2349,
+      "condition_id": "II",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/002_II-01_live_package.json",
+      "route": "multimodal2video",
+      "sha256": "c4c7b39f4712b368c8696ab16b25ba600f36a8e3c432f26de417ba356efeb4bd",
+      "task_id": "II-01"
+    },
+    {
+      "bytes": 2355,
+      "condition_id": "NP",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/003_NP-01_live_package.json",
+      "route": "multimodal2video",
+      "sha256": "680bc16e2317eee9cb7cfa21260acac66e94c30b031ceaccfbcaec09e3b49593",
+      "task_id": "NP-01"
+    },
+    {
+      "bytes": 1860,
+      "condition_id": "I0",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/004_I0-01_live_package.json",
+      "route": "text2video",
+      "sha256": "bd20278c69bf286b6b25bbc762295ef84d55645be8b9eabcab21aabbe64dcbf8",
+      "task_id": "I0-01"
+    },
+    {
+      "bytes": 2361,
+      "condition_id": "NI",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/005_NI-01_live_package.json",
+      "route": "multimodal2video",
+      "sha256": "a0f62d73cb03c9dcd8bf28ad2ae48da0c772f3ebcb948f73390986d34be85a21",
+      "task_id": "NI-01"
+    },
+    {
+      "bytes": 2343,
+      "condition_id": "IP",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/006_IP-01_live_package.json",
+      "route": "multimodal2video",
+      "sha256": "aff42ad0f6947a65f70ad5440a1b0dadfc39643f4fca38f429edcc6ce207a554",
+      "task_id": "IP-01"
+    },
+    {
+      "bytes": 2343,
+      "condition_id": "IP",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/007_IP-02_live_package.json",
+      "route": "multimodal2video",
+      "sha256": "b7c0b67dddc55834815ae960b1600d78920bd3a34b0139bc37918f37f9573f8e",
+      "task_id": "IP-02"
+    },
+    {
+      "bytes": 2361,
+      "condition_id": "NI",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/008_NI-02_live_package.json",
+      "route": "multimodal2video",
+      "sha256": "3c2e60363f2fecbc573b260dccae03606de43f787969a22da42c479e0b165294",
+      "task_id": "NI-02"
+    },
+    {
+      "bytes": 1860,
+      "condition_id": "I0",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/009_I0-02_live_package.json",
+      "route": "text2video",
+      "sha256": "5fb98d89efe70a5adec3fff248e4c1ff6af73dac0a7bde8350ee4c0cbccba3dd",
+      "task_id": "I0-02"
+    },
+    {
+      "bytes": 2356,
+      "condition_id": "NP",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/010_NP-02_live_package.json",
+      "route": "multimodal2video",
+      "sha256": "0c0aa3e09592909e0251cb905096aeb1393e22416f1eed7f7c60b2378d8decbf",
+      "task_id": "NP-02"
+    },
+    {
+      "bytes": 2350,
+      "condition_id": "II",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/011_II-02_live_package.json",
+      "route": "multimodal2video",
+      "sha256": "ee88ebca01a77c34ae765a4d8a8be2099fc5dbe03b2b6674a1bae66d1418e312",
+      "task_id": "II-02"
+    },
+    {
+      "bytes": 1873,
+      "condition_id": "N0",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/012_N0-02_live_package.json",
+      "route": "text2video",
+      "sha256": "787365c8ea54ad9828313583c665e1be71857442302151f174f5f7e5b1763905",
+      "task_id": "N0-02"
+    },
+    {
+      "bytes": 2356,
+      "condition_id": "NP",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/013_NP-03_live_package.json",
+      "route": "multimodal2video",
+      "sha256": "20bd7c26f3c20223a841d61d672d8bac8cc653d3b9148b52e6ba75d23e0c79e9",
+      "task_id": "NP-03"
+    },
+    {
+      "bytes": 1861,
+      "condition_id": "I0",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/014_I0-03_live_package.json",
+      "route": "text2video",
+      "sha256": "d96060e5c70fd9b4df2c10a5d786288880b55e8cc47187a52c150f3b732d5ca9",
+      "task_id": "I0-03"
+    },
+    {
+      "bytes": 2362,
+      "condition_id": "NI",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/015_NI-03_live_package.json",
+      "route": "multimodal2video",
+      "sha256": "07c0a3ef344cf6c3c5b17bb48dbe3aa9c8b6f8fa406eeb8487543e0b302746f6",
+      "task_id": "NI-03"
+    },
+    {
+      "bytes": 2344,
+      "condition_id": "IP",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/016_IP-03_live_package.json",
+      "route": "multimodal2video",
+      "sha256": "022cc1af770700cfce3bba029f06509218decb6e9949b66212a6eddfd6af5f14",
+      "task_id": "IP-03"
+    },
+    {
+      "bytes": 1873,
+      "condition_id": "N0",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/017_N0-03_live_package.json",
+      "route": "text2video",
+      "sha256": "7673edadee1c52d67bd4a9d33e21574cc43385aacbd6b5d90e3fef7d161cc850",
+      "task_id": "N0-03"
+    },
+    {
+      "bytes": 2350,
+      "condition_id": "II",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/018_II-03_live_package.json",
+      "route": "multimodal2video",
+      "sha256": "c675bdd5646b1b229b3371e414461516af695560201b9065026b68aed6595648",
+      "task_id": "II-03"
+    }
+  ],
+  "package_count": 18,
+  "schema_version": "CAL004_R1_LIVE_PACKAGE_INDEX_V0_1"
+}

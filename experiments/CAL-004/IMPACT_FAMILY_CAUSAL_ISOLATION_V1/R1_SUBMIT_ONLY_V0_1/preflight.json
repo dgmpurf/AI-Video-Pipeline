@@ -1,0 +1,241 @@
+{
+  "authorization": {
+    "bytes": 1100,
+    "sha256": "8d8cebd5ed12d1063bb5e8e1819c5865165a5e16b38f11d55ca5bda7834a2e47",
+    "verified": true
+  },
+  "command_counts_before_submit": {
+    "dreamina_multimodal2video_help": 1,
+    "dreamina_text2video_help": 1,
+    "dreamina_user_credit": 1,
+    "dreamina_version": 1,
+    "provider_submit": 0
+  },
+  "committed_input_bindings": [
+    {
+      "bytes": 2869,
+      "git_blob": "b428c968b500e822e6f1a740aa01c222e82477fa",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+      "role": "COMMITTED_CAL004_DESIGN_INPUT",
+      "sha256": "030b2c1b00ebd1f14ceed035cc4266b33913aebb5b4a64a713e04acdaad5afcd",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 1742,
+      "git_blob": "880d5d1df4d8818ef2c4991cded699df5b69dab2",
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_HUMAN_FINAL_DECISION.md",
+      "role": "COMMITTED_CAL004_DESIGN_INPUT",
+      "sha256": "121e04ca403ee4dd78a6b26b8d88c5efcdfc72925d5a35608b270d12c28d6b6b",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 3243,
+      "git_blob": "8383c14071239000dd7ebc8c4966c545751a175f",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/authorization.json",
+      "role": "COMMITTED_CAL004_DESIGN_INPUT",
+      "sha256": "712e1a3614e9aadbe0f3738461d877842794c880bce1d804e0b423f19805ae73",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 5123,
+      "git_blob": "dfed2a13fcc2a671719f0656957a919751094ef4",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/design_spec.json",
+      "role": "COMMITTED_CAL004_DESIGN_INPUT",
+      "sha256": "fe0cc08ad00b156a829b1886832abe282f5644f51904e6c84bc08a60c7f165a2",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 5797,
+      "git_blob": "6e2fb424d4e2b9f4d5975cbc1144fbefa5851b5b",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/condition_matrix.json",
+      "role": "COMMITTED_CAL004_DESIGN_INPUT",
+      "sha256": "23c214545678009f4f10cf106cc03e2654cd3d816aa3853b3d08aebd2eea5f93",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 1978,
+      "git_blob": "3bac37b19db431779d3ea8cdd488dccda6f73e3c",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+      "role": "COMMITTED_CAL004_DESIGN_INPUT",
+      "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2287,
+      "git_blob": "e079625f088f60aeb576ddea3a07abc682463373",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+      "role": "COMMITTED_CAL004_DESIGN_INPUT",
+      "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 28607,
+      "git_blob": "e832e52e23e8fb69e9bbe8de00f55efef2afa389",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/task_manifest.json",
+      "role": "COMMITTED_CAL004_DESIGN_INPUT",
+      "sha256": "7be3db682668c1d5c2b33976d583347f57bcd355c7cc7590d797e4405002bdcf",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2060,
+      "git_blob": "de5268da515d133f0bc4e04703ea7377855c408f",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/submission_order.json",
+      "role": "COMMITTED_CAL004_DESIGN_INPUT",
+      "sha256": "81d9cae872e6f6ce5e64e4728fe47b232b26da639f2c8e8f9674076b68e0f4ad",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 3762,
+      "git_blob": "74730115e37d6f5b1c27d789d15e460b55d0be4e",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/review_contract.json",
+      "role": "COMMITTED_CAL004_DESIGN_INPUT",
+      "sha256": "9f3dcbabbada07e64b229813f04b28bbdff5bbb013e5db97578c9a1b7d0c89c9",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 1085,
+      "git_blob": "4f6eecc00eb86d3e8e8844f42e9a40e37f15b68c",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/budget_activation_plan.json",
+      "role": "COMMITTED_CAL004_DESIGN_INPUT",
+      "sha256": "2056fc4cac50f3fd23a10b0c8831bed9de8a9338c7367f79fb55e9f81d8f5b43",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 8342,
+      "git_blob": "226cdcd895009c889cffd7abbbc7f3da30035180",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/evidence_manifest.json",
+      "role": "COMMITTED_CAL004_DESIGN_INPUT",
+      "sha256": "f9d3cf6485a3337f0b578335c0a59e695a855ab5d1daa684e669e65dee137d5e",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 3253,
+      "git_blob": "0b15c06ba234667b66d9fb021d9aeba33e4c0314",
+      "path": "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_NO_LIVE_DESIGN_RESULT.md",
+      "role": "COMMITTED_CAL004_DESIGN_INPUT",
+      "sha256": "78c16ec08d08d521405746f59b48bd55aa6953fc4d293a76133e56e3c361bd94",
+      "worktree_equals_head": true
+    }
+  ],
+  "design_validation": {
+    "condition_count": 6,
+    "contrast_count": 8,
+    "fixed_order_count": 18,
+    "replicates_per_condition": 3,
+    "status": "PASS",
+    "task_count": 18
+  },
+  "execution_id": "CAL004-R1-CONDITIONAL-BALANCED-SUBMIT-8D8CEBD5",
+  "fresh_runtime_preflight": {
+    "dreamina_executable": {
+      "bytes": 31879680,
+      "path": "C:\\Users\\msjpurf\\bin\\dreamina.exe",
+      "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10"
+    },
+    "multimodal2video_help": {
+      "at_least_one_image_or_video_required": true,
+      "required_flags": [
+        "--video",
+        "--prompt",
+        "--duration",
+        "--ratio",
+        "--video_resolution",
+        "--model_version",
+        "--poll"
+      ],
+      "return_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "fb3aa97d2d33b1d745a52519eac529c4a21a2d90aef9f1f6a452442fcf884277",
+      "validation": "PASS"
+    },
+    "text2video_help": {
+      "required_flags": [
+        "--prompt",
+        "--duration",
+        "--ratio",
+        "--video_resolution",
+        "--model_version",
+        "--poll"
+      ],
+      "return_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "17e92789fc0633fa2563a3f3260865a955c08813d55deb681f4c7936ba2ecde4",
+      "validation": "PASS"
+    },
+    "user_credit": {
+      "fresh_total_credit": 2761,
+      "private_account_fields_persisted": false,
+      "return_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7d4be6a9e906f4658981a5be4ed5610ba54fe582bfdd41e442a7321924ab993c"
+    },
+    "version": {
+      "build_time": "2026-06-26T06:36:39Z",
+      "commit": "2a20fff",
+      "return_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0",
+      "version": "2a20fff-dirty"
+    }
+  },
+  "historical_pre_submit_affordability_gate": {
+    "fresh_balance": 2761,
+    "historical_complete_six_condition_block_cost": 840,
+    "historical_unit_cost": 140,
+    "result": "PASS",
+    "used_only_to_permit_dual_route_canaries": true
+  },
+  "prompt_bindings": {
+    "ACTION_NEUTRAL_MINIMAL": {
+      "bytes": 1978,
+      "git_blob": "3bac37b19db431779d3ea8cdd488dccda6f73e3c",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+      "role": "PROMPT_ACTION_NEUTRAL_MINIMAL",
+      "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+      "worktree_equals_head": true
+    },
+    "IMPACT_CAUSAL_HARD": {
+      "bytes": 2287,
+      "git_blob": "e079625f088f60aeb576ddea3a07abc682463373",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+      "role": "PROMPT_IMPACT_CAUSAL_HARD",
+      "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+      "worktree_equals_head": true
+    }
+  },
+  "reference_bindings": {
+    "ACTION_REF_IMPACT_02": {
+      "bytes": 168170,
+      "git_blob": "8aaa470f8485b9aa59cff057c6a143ed765df7ad",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "role": "GOVERNED_REFERENCE_ACTION_REF_IMPACT_02",
+      "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "worktree_equals_head": true
+    },
+    "ACTION_REF_PUSH_02": {
+      "bytes": 174235,
+      "git_blob": "d5cfb6ab1d17163d4b9d6174c633af627d4ee866",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "role": "GOVERNED_REFERENCE_ACTION_REF_PUSH_02",
+      "sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "worktree_equals_head": true
+    }
+  },
+  "repository": {
+    "branch": "main",
+    "head": "89a51bff9cd68e87d7bef1b46361781de62bd545",
+    "head_origin_aligned": true,
+    "origin_main": "89a51bff9cd68e87d7bef1b46361781de62bd545",
+    "sources_clean": true,
+    "staged_path_count": 0,
+    "tracked_modification_count": 0,
+    "unrelated_untracked_count": 26,
+    "unrelated_untracked_sha256": "619b91a4981d8000f769bba3d15739ec2b0496df1109a98d809735aaf8abef94"
+  },
+  "schema_version": "CAL004_R1_SUBMIT_ONLY_PREFLIGHT_V0_1",
+  "sensitive_data": {
+    "private_account_fields_persisted": false,
+    "signed_urls_persisted": false
+  },
+  "status": "PASS_READY_FOR_FORMAL_DUAL_ROUTE_CANARIES"
+}

@@ -1,0 +1,57 @@
+{
+  "acceptance_result": "PASS",
+  "argv_binding": {
+    "canonical_sha256": "8b3d92da9b56fac91ab0a0741b62cc29e07b80e5586174af1529fc6fb36e2dda",
+    "element_count": 14,
+    "shell": false
+  },
+  "claim_binding": {
+    "bytes": 741,
+    "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/004_I0-01_claim.json",
+    "role": "EXCLUSIVE_SUBMIT_CLAIM",
+    "sha256": "179a798bcd4ebd97693caa267040d9b01edc0d64baee5658a6e2181a710ff733"
+  },
+  "command_route": "text2video",
+  "condition_id": "I0",
+  "credit_count": 70,
+  "download_called": false,
+  "download_url_present": false,
+  "elapsed_seconds": 3.109,
+  "end_utc": "2026-07-28T15:25:51.045967Z",
+  "execution_id": "CAL004-R1-CONDITIONAL-BALANCED-SUBMIT-8D8CEBD5",
+  "fail_reason_present": false,
+  "failure_reasons": [],
+  "fixed_submission_position": 4,
+  "gen_status": "querying",
+  "launch_exception_class": null,
+  "logid": "202607282325481692540470080290B52",
+  "package_binding": {
+    "bytes": 1860,
+    "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/004_I0-01_live_package.json",
+    "role": "CAL004_LIVE_PACKAGE",
+    "sha256": "bd20278c69bf286b6b25bbc762295ef84d55645be8b9eabcab21aabbe64dcbf8"
+  },
+  "process_launched": true,
+  "query_called": false,
+  "queue_status": null,
+  "raw_output_persisted": false,
+  "response_keys": [
+    "credit_count",
+    "gen_status",
+    "logid",
+    "submit_id"
+  ],
+  "resubmit_called": false,
+  "retry_called": false,
+  "return_code": 0,
+  "schema_version": "CAL004_R1_SUBMIT_RECEIPT_V0_1",
+  "signed_url_persisted": false,
+  "start_utc": "2026-07-28T15:25:47.935990Z",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 156,
+  "stdout_sha256": "e39f99842b02d5e8dc1339a6d1dbbee8a9456a038e1ddec4b280857ccfd11f9c",
+  "submit_id": "52b93a7b-a2bc-408c-924a-e49324ddee9b",
+  "task_id": "I0-01",
+  "timeout": false
+}

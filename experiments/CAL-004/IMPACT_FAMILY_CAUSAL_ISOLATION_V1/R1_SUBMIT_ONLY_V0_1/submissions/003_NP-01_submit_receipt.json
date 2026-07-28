@@ -1,0 +1,58 @@
+{
+  "acceptance_result": "PASS",
+  "argv_binding": {
+    "canonical_sha256": "1162487ee3d4c70009cd6d2cf4ff62be378a67156e1b3181ab8e23e68148ad0a",
+    "element_count": 16,
+    "shell": false
+  },
+  "claim_binding": {
+    "bytes": 741,
+    "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/003_NP-01_claim.json",
+    "role": "EXCLUSIVE_SUBMIT_CLAIM",
+    "sha256": "7d1616bb2a16b881182a5174fac301ff82d787e0784ca649919547b02fbdeb1c"
+  },
+  "command_route": "multimodal2video",
+  "condition_id": "NP",
+  "credit_count": 140,
+  "download_called": false,
+  "download_url_present": false,
+  "elapsed_seconds": 4.484,
+  "end_utc": "2026-07-28T15:25:47.793101Z",
+  "execution_id": "CAL004-R1-CONDITIONAL-BALANCED-SUBMIT-8D8CEBD5",
+  "fail_reason_present": false,
+  "failure_reasons": [],
+  "fixed_submission_position": 3,
+  "gen_status": "querying",
+  "launch_exception_class": null,
+  "logid": "20260728232543169254047008402F660",
+  "package_binding": {
+    "bytes": 2355,
+    "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/003_NP-01_live_package.json",
+    "role": "CAL004_LIVE_PACKAGE",
+    "sha256": "680bc16e2317eee9cb7cfa21260acac66e94c30b031ceaccfbcaec09e3b49593"
+  },
+  "process_launched": true,
+  "query_called": false,
+  "queue_status": null,
+  "raw_output_persisted": false,
+  "response_keys": [
+    "credit_count",
+    "gen_status",
+    "logid",
+    "prompt",
+    "submit_id"
+  ],
+  "resubmit_called": false,
+  "retry_called": false,
+  "return_code": 0,
+  "schema_version": "CAL004_R1_SUBMIT_RECEIPT_V0_1",
+  "signed_url_persisted": false,
+  "start_utc": "2026-07-28T15:25:43.307881Z",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 2159,
+  "stdout_sha256": "42b1fa7b321d0161f522b84a1a0d61cda9aaf7f04b132a303d0767e9a7774926",
+  "submit_id": "f85812b1-d3f3-4a11-979d-af869db66beb",
+  "task_id": "NP-01",
+  "timeout": false
+}

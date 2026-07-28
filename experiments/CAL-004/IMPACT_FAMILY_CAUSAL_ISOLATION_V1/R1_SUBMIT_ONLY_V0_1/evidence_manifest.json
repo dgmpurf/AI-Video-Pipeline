@@ -1,0 +1,509 @@
+{
+  "committed_input_bindings": [
+    {
+      "bytes": 2869,
+      "git_blob": "b428c968b500e822e6f1a740aa01c222e82477fa",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+      "role": "COMMITTED_CAL004_INPUT",
+      "sha256": "030b2c1b00ebd1f14ceed035cc4266b33913aebb5b4a64a713e04acdaad5afcd",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 1742,
+      "git_blob": "880d5d1df4d8818ef2c4991cded699df5b69dab2",
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_HUMAN_FINAL_DECISION.md",
+      "role": "COMMITTED_CAL004_INPUT",
+      "sha256": "121e04ca403ee4dd78a6b26b8d88c5efcdfc72925d5a35608b270d12c28d6b6b",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 3243,
+      "git_blob": "8383c14071239000dd7ebc8c4966c545751a175f",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/authorization.json",
+      "role": "COMMITTED_CAL004_INPUT",
+      "sha256": "712e1a3614e9aadbe0f3738461d877842794c880bce1d804e0b423f19805ae73",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 5123,
+      "git_blob": "dfed2a13fcc2a671719f0656957a919751094ef4",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/design_spec.json",
+      "role": "COMMITTED_CAL004_INPUT",
+      "sha256": "fe0cc08ad00b156a829b1886832abe282f5644f51904e6c84bc08a60c7f165a2",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 5797,
+      "git_blob": "6e2fb424d4e2b9f4d5975cbc1144fbefa5851b5b",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/condition_matrix.json",
+      "role": "COMMITTED_CAL004_INPUT",
+      "sha256": "23c214545678009f4f10cf106cc03e2654cd3d816aa3853b3d08aebd2eea5f93",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 1978,
+      "git_blob": "3bac37b19db431779d3ea8cdd488dccda6f73e3c",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+      "role": "COMMITTED_CAL004_INPUT",
+      "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2287,
+      "git_blob": "e079625f088f60aeb576ddea3a07abc682463373",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+      "role": "COMMITTED_CAL004_INPUT",
+      "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 28607,
+      "git_blob": "e832e52e23e8fb69e9bbe8de00f55efef2afa389",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/task_manifest.json",
+      "role": "COMMITTED_CAL004_INPUT",
+      "sha256": "7be3db682668c1d5c2b33976d583347f57bcd355c7cc7590d797e4405002bdcf",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2060,
+      "git_blob": "de5268da515d133f0bc4e04703ea7377855c408f",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/submission_order.json",
+      "role": "COMMITTED_CAL004_INPUT",
+      "sha256": "81d9cae872e6f6ce5e64e4728fe47b232b26da639f2c8e8f9674076b68e0f4ad",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 3762,
+      "git_blob": "74730115e37d6f5b1c27d789d15e460b55d0be4e",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/review_contract.json",
+      "role": "COMMITTED_CAL004_INPUT",
+      "sha256": "9f3dcbabbada07e64b229813f04b28bbdff5bbb013e5db97578c9a1b7d0c89c9",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 1085,
+      "git_blob": "4f6eecc00eb86d3e8e8844f42e9a40e37f15b68c",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/budget_activation_plan.json",
+      "role": "COMMITTED_CAL004_INPUT",
+      "sha256": "2056fc4cac50f3fd23a10b0c8831bed9de8a9338c7367f79fb55e9f81d8f5b43",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 8342,
+      "git_blob": "226cdcd895009c889cffd7abbbc7f3da30035180",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/evidence_manifest.json",
+      "role": "COMMITTED_CAL004_INPUT",
+      "sha256": "f9d3cf6485a3337f0b578335c0a59e695a855ab5d1daa684e669e65dee137d5e",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 3253,
+      "git_blob": "0b15c06ba234667b66d9fb021d9aeba33e4c0314",
+      "path": "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_NO_LIVE_DESIGN_RESULT.md",
+      "role": "COMMITTED_CAL004_INPUT",
+      "sha256": "78c16ec08d08d521405746f59b48bd55aa6953fc4d293a76133e56e3c361bd94",
+      "worktree_equals_head": true
+    }
+  ],
+  "coverage": {
+    "committed_input_count": 13,
+    "governed_reference_count": 2,
+    "output_binding_count": 61,
+    "self_excluded": true,
+    "unique_bound_path_count": 76
+  },
+  "execution_id": "CAL004-R1-CONDITIONAL-BALANCED-SUBMIT-8D8CEBD5",
+  "governed_reference_bindings": [
+    {
+      "bytes": 168170,
+      "git_blob": "8aaa470f8485b9aa59cff057c6a143ed765df7ad",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "role": "GOVERNED_REFERENCE_ACTION_REF_IMPACT_02",
+      "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 174235,
+      "git_blob": "d5cfb6ab1d17163d4b9d6174c633af627d4ee866",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "role": "GOVERNED_REFERENCE_ACTION_REF_PUSH_02",
+      "sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "worktree_equals_head": true
+    }
+  ],
+  "output_bindings": [
+    {
+      "bytes": 2544,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/authorization_activation.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "352045ac0d0f42ac09f7c40ebc040df4f26f8b747dfe32d81ca8001d92d1dbd1"
+    },
+    {
+      "bytes": 741,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/001_N0-01_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "264c9875137c77ac7bf48fce335275d99d2e58a25243bd22136ed0ed3e84fda6"
+    },
+    {
+      "bytes": 741,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/002_II-01_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "b9d39aae5e8dddb5cdc937a32984af30950b0e0631409bad1b99f0236824bc2c"
+    },
+    {
+      "bytes": 741,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/003_NP-01_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "7d1616bb2a16b881182a5174fac301ff82d787e0784ca649919547b02fbdeb1c"
+    },
+    {
+      "bytes": 741,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/004_I0-01_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "179a798bcd4ebd97693caa267040d9b01edc0d64baee5658a6e2181a710ff733"
+    },
+    {
+      "bytes": 741,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/005_NI-01_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "555b664072f47e028e074bf702be915c6dba67ed0939e4cb5b5791161c23909b"
+    },
+    {
+      "bytes": 741,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/006_IP-01_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "12c354bb017bd9a79a177002f73a2d3af87ebd580117666e7ba0b4e8655d4e44"
+    },
+    {
+      "bytes": 741,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/007_IP-02_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "c42a49288dc98e603d47cf13a4ff6525abfd656a5e566800ecd501be487cf691"
+    },
+    {
+      "bytes": 741,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/008_NI-02_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "ebbfaefb3844d02e7b21deee7cf45e5bf9a0e0bfed93a5d46073217cb9223be4"
+    },
+    {
+      "bytes": 741,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/009_I0-02_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "eb8b44e354f298d3127f264c06909fb1aed112c6ae576d8897cbde5b1a4f1132"
+    },
+    {
+      "bytes": 742,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/010_NP-02_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "2271c6e3880e1b5f6568cae48761c8cb5d6412b91546778578cc95198743808c"
+    },
+    {
+      "bytes": 742,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/011_II-02_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "86658998a99eda9b3a9bc247c75c84e57ce31b9bf7b00b3b27fe432a92e98ee7"
+    },
+    {
+      "bytes": 742,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/012_N0-02_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "9102df3dd7427b80f2e2e83c301bc10eac32969343ab1f62e1d12e8377b34c40"
+    },
+    {
+      "bytes": 742,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/013_NP-03_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "681dce09a0b71e791d26aa08d8768d31e872b8861a6ec0ce4b7bfdb8e7cebc23"
+    },
+    {
+      "bytes": 742,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/014_I0-03_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "af91d7da23d072dce05be0d99f22a7789f673e4d9a9d6b5734aedfad584eba99"
+    },
+    {
+      "bytes": 742,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/015_NI-03_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "5feb48e7a37fd2a068654601c86d967c24229b335e04cfba402be6fe5fb977a6"
+    },
+    {
+      "bytes": 742,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/016_IP-03_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "6a048fe911953ad051e20d3bc37ea424fb8100d524760acf7ffa1625efee2981"
+    },
+    {
+      "bytes": 742,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/017_N0-03_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "c3903b9affa2d17079d0c77e5d2adc776ce21e9f445666d0d5b03e82a15d5eec"
+    },
+    {
+      "bytes": 742,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/claims/018_II-03_claim.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "fafc4be9464ccd848d868e9d2909394bf25b109072f92fcb671b0d06cb312d50"
+    },
+    {
+      "bytes": 9803,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/execution_summary.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "fb121d54af3cb1bd0ed61500c7752474557db73eb046bd39d43fe13d75f06cd6"
+    },
+    {
+      "bytes": 6199,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/package_index.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "669447af3121c597c131aeec8d2c58e3368b1a6bbcd14dc9b8b63efd887fedef"
+    },
+    {
+      "bytes": 1872,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/001_N0-01_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "15a144698622d97be386e5a88b8138b49434f73024aa3961e9698df1636bcb10"
+    },
+    {
+      "bytes": 2349,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/002_II-01_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "c4c7b39f4712b368c8696ab16b25ba600f36a8e3c432f26de417ba356efeb4bd"
+    },
+    {
+      "bytes": 2355,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/003_NP-01_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "680bc16e2317eee9cb7cfa21260acac66e94c30b031ceaccfbcaec09e3b49593"
+    },
+    {
+      "bytes": 1860,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/004_I0-01_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "bd20278c69bf286b6b25bbc762295ef84d55645be8b9eabcab21aabbe64dcbf8"
+    },
+    {
+      "bytes": 2361,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/005_NI-01_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "a0f62d73cb03c9dcd8bf28ad2ae48da0c772f3ebcb948f73390986d34be85a21"
+    },
+    {
+      "bytes": 2343,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/006_IP-01_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "aff42ad0f6947a65f70ad5440a1b0dadfc39643f4fca38f429edcc6ce207a554"
+    },
+    {
+      "bytes": 2343,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/007_IP-02_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "b7c0b67dddc55834815ae960b1600d78920bd3a34b0139bc37918f37f9573f8e"
+    },
+    {
+      "bytes": 2361,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/008_NI-02_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "3c2e60363f2fecbc573b260dccae03606de43f787969a22da42c479e0b165294"
+    },
+    {
+      "bytes": 1860,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/009_I0-02_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "5fb98d89efe70a5adec3fff248e4c1ff6af73dac0a7bde8350ee4c0cbccba3dd"
+    },
+    {
+      "bytes": 2356,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/010_NP-02_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "0c0aa3e09592909e0251cb905096aeb1393e22416f1eed7f7c60b2378d8decbf"
+    },
+    {
+      "bytes": 2350,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/011_II-02_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "ee88ebca01a77c34ae765a4d8a8be2099fc5dbe03b2b6674a1bae66d1418e312"
+    },
+    {
+      "bytes": 1873,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/012_N0-02_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "787365c8ea54ad9828313583c665e1be71857442302151f174f5f7e5b1763905"
+    },
+    {
+      "bytes": 2356,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/013_NP-03_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "20bd7c26f3c20223a841d61d672d8bac8cc653d3b9148b52e6ba75d23e0c79e9"
+    },
+    {
+      "bytes": 1861,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/014_I0-03_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "d96060e5c70fd9b4df2c10a5d786288880b55e8cc47187a52c150f3b732d5ca9"
+    },
+    {
+      "bytes": 2362,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/015_NI-03_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "07c0a3ef344cf6c3c5b17bb48dbe3aa9c8b6f8fa406eeb8487543e0b302746f6"
+    },
+    {
+      "bytes": 2344,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/016_IP-03_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "022cc1af770700cfce3bba029f06509218decb6e9949b66212a6eddfd6af5f14"
+    },
+    {
+      "bytes": 1873,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/017_N0-03_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "7673edadee1c52d67bd4a9d33e21574cc43385aacbd6b5d90e3fef7d161cc850"
+    },
+    {
+      "bytes": 2350,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/packages/018_II-03_live_package.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "c675bdd5646b1b229b3371e414461516af695560201b9065026b68aed6595648"
+    },
+    {
+      "bytes": 9865,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/preflight.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "b13b5c91c2af8b425f5374abf3ec03be9d70b9dbd26b1c86cbf049557cd2b0e1"
+    },
+    {
+      "bytes": 1492,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/route_contract.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "4c3ad9c6280eccbc6f5b9487368d53cafc3976c276ce0e393f16deaca92cf2c3"
+    },
+    {
+      "bytes": 1968,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/001_N0-01_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "f1201dfdf0a4201fb276ddb7ddcd09c8619ffd9e8b240915a3a1fae8c6d177ee"
+    },
+    {
+      "bytes": 1990,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/002_II-01_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "095a334dc9e976171e5b515cf18c1b3a9c43b72bc99b579c324d2905485dd395"
+    },
+    {
+      "bytes": 1990,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/003_NP-01_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "e080073dfbbdf22bbff8d894c4fbb59bbc7dd6001bf30739f791f7fcbdc03024"
+    },
+    {
+      "bytes": 1968,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/004_I0-01_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "0e0302572a6b22f177be56c1a49c7be8fd1015c639d296b50da064489a5a7058"
+    },
+    {
+      "bytes": 1990,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/005_NI-01_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "9e3ffbe65f979ac724ef14f16c77122b9eb03c9df75370339aa926c643f9e069"
+    },
+    {
+      "bytes": 1990,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/006_IP-01_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "6b3381f518d272e8d68d3804759da67e3057bfc50e7fe79ea912c33e0e02a4b5"
+    },
+    {
+      "bytes": 1990,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/007_IP-02_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "3e334e9b71fa0ee2d2a3d27081d9e9a8e29b9872bdb032504325a5faa7a97a54"
+    },
+    {
+      "bytes": 1990,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/008_NI-02_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "1dca77824a9b1cbc5867dccce03ec230ea761225f065b32d6bf7c1e82fcbd98b"
+    },
+    {
+      "bytes": 1967,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/009_I0-02_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "e853f64b54ca899daf29914aead7d17036d3af634fcc3e5b6009d80918ed45df"
+    },
+    {
+      "bytes": 1990,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/010_NP-02_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "9a95bb741b3f155679233df8f70d173fd87a79786630d2a50da795e2cbf33c85"
+    },
+    {
+      "bytes": 1991,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/011_II-02_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "667316e4b3fe0b3566db3c36130186933cd8413732169bcfbbc5261d05a125c1"
+    },
+    {
+      "bytes": 1969,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/012_N0-02_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "7a4a20a4ff85b4353680b03f35b6831d9286d9cffb7cb006c801c682b522a7f2"
+    },
+    {
+      "bytes": 1991,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/013_NP-03_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "365998c177d0152948474d6472404a254d23c525831be37a113f3f6fe09bd2f3"
+    },
+    {
+      "bytes": 1969,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/014_I0-03_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "53ba8351d4d4ff9d595ba4e4cde40e399a31b1acd3f777177801e01cf742e526"
+    },
+    {
+      "bytes": 1989,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/015_NI-03_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "1918ec1ea123e5efc91b26c151657f4bf285baf7475d19fa47487ae35e81d3a7"
+    },
+    {
+      "bytes": 1991,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/016_IP-03_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "a39ced266bbd000ba5257bf12ec35459f1e61643c71ca82e51d85c205525a8ed"
+    },
+    {
+      "bytes": 1969,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/017_N0-03_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "8503d93167a5111fece731ac0e126662a87edd2611a6cb83cdc9462e75fae3be"
+    },
+    {
+      "bytes": 1991,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/018_II-03_submit_receipt.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "cd20c3369945acd7b0752659da8c5e7f6196c821ad560c2d5ac60993a9dd5bff"
+    },
+    {
+      "bytes": 1036,
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/target_selection.json",
+      "role": "CAL004_R1_SUBMIT_ONLY_OUTPUT",
+      "sha256": "d2b63f2e4d599ed3fa90f9d6c7cbc79a6f49622be952857f9abfc643ef5999d3"
+    },
+    {
+      "bytes": 3718,
+      "path": "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_CONDITIONAL_BALANCED_SUBMIT_ONLY_RESULT.md",
+      "role": "CAL004_R1_SUBMIT_ONLY_REPORT",
+      "sha256": "e402e3ea1376f9676c9bb6100d5ddd997060a17b16d23b11d3723b066850a20c"
+    }
+  ],
+  "schema_version": "CAL004_R1_SUBMIT_ONLY_EVIDENCE_MANIFEST_V0_1",
+  "summary_binding": {
+    "bytes": 9803,
+    "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/execution_summary.json",
+    "role": "CAL004_R1_EXECUTION_SUMMARY",
+    "sha256": "fb121d54af3cb1bd0ed61500c7752474557db73eb046bd39d43fe13d75f06cd6"
+  }
+}
