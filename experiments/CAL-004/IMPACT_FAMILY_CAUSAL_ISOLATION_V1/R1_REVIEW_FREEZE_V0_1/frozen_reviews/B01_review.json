@@ -1,0 +1,272 @@
+{
+  "schema_version": "CAL004_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+  "experiment_label": "CAL-004 R1",
+  "blind_package_version": "V0.1",
+  "batch_label": "A",
+  "alias": "B01",
+  "blind_filename": "B01.mp4",
+  "blind_media_bytes": 8388608,
+  "blind_media_sha256": "6971bd63f880df5c12f5161a30dccb8fbe9313963a5aad6529400b230ee07da9",
+  "complete_mp4_reviewed": true,
+  "complete_mp4_viewable_through_end": true,
+  "technical_validity_binding": "PASS",
+  "push_signature_score_0_to_12": 11,
+  "impact_signature_score_0_to_12": 4,
+  "dimension_level_evidence": [
+    {
+      "dimension": "initiation_pattern",
+      "observed_evidence": "Both figures begin separated in held guard-like poses; the attacker initiates purposeful motion at about 0.72 seconds.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The stylized rigid bodies reduce subtle preparatory cues, but the onset of purposeful motion is clear."
+    },
+    {
+      "dimension": "approach_or_setup_pattern",
+      "observed_evidence": "The attacker makes a direct short advance and raises both arms toward the receiver.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "This is a direct push-like approach; no readable non-contact feint or compact impact setup is visible."
+    },
+    {
+      "dimension": "primary_limb_configuration",
+      "observed_evidence": "Both attacker arms and hands extend together toward the receiver.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Rigid block geometry limits hand detail, but the two-arm configuration is unambiguous."
+    },
+    {
+      "dimension": "primary_interaction_character",
+      "observed_evidence": "One sustained two-hand upper-torso-directed press remains engaged from roughly 1.05 to 1.68 seconds.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Exact depth is unavailable in the single camera view; the long contact is nevertheless visibly press-like rather than brief."
+    },
+    {
+      "dimension": "interaction_episode_count",
+      "observed_evidence": "There is exactly one visible contact episode; the later arm reach remains separated and noncontact.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "No second contact episode is visible."
+    },
+    {
+      "dimension": "receiver_response_direction",
+      "observed_evidence": "The receiver shifts image-right and backward, away from the attacker.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Direction is clear even though the response is gradual rather than abrupt."
+    },
+    {
+      "dimension": "torso_response_type",
+      "observed_evidence": "Receiver torso displacement accumulates while pressure is maintained; there is no snap-like immediate recoil.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Stylized articulation limits fine torso mechanics, but the gradual displacement pattern is clear."
+    },
+    {
+      "dimension": "rear_foot_result_type",
+      "observed_evidence": "The receiver makes one rear/right recovery placement during the sustained displacement.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Perspective limits anatomical foot detail, but one distinct rearward-side placement is visible."
+    },
+    {
+      "dimension": "release_or_retraction_pattern",
+      "observed_evidence": "The attacker releases and retracts after the sustained press.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Retraction is present but is not prompt after a brief impact."
+    },
+    {
+      "dimension": "recovery_and_repositioning",
+      "observed_evidence": "After separation, the receiver stabilizes the wider stance and the attacker returns toward guard.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Recovery is simplified by the rigid animation but remains visible."
+    },
+    {
+      "dimension": "temporal_ordering",
+      "observed_evidence": "Preparation leads to direct approach, sustained two-hand contact, gradual displacement and one foot placement, then release and recovery.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The ordering lacks the brief contact, immediate recoil, and prompt retraction expected for the impact sequence."
+    },
+    {
+      "dimension": "duration_utilization_and_final_phase_activity",
+      "observed_evidence": "A late noncontact reach and retraction end by about 4.50 seconds, followed by an approximately 0.59-second near-static tail.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The clip does not remain actively animated through its complete ending."
+    }
+  ],
+  "complete_mp4_timeline": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 0.72,
+      "visible_action": "Separated guard-like hold with both figures facing one another.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver remains stable.",
+      "footwork": "Both sets of feet remain planted.",
+      "release_or_retraction_state": "No release or retraction yet.",
+      "relevant_PUSH_IMPACT_evidence": "Preparation and first-frame separation are visible."
+    },
+    {
+      "start_seconds": 0.72,
+      "end_seconds": 1.05,
+      "visible_action": "Attacker advances directly and unfolds both arms toward the receiver.",
+      "contact_state": "No contact until the end of the interval.",
+      "receiver_response": "Receiver remains mostly stationary.",
+      "footwork": "Attacker makes a short forward placement; receiver feet remain planted.",
+      "release_or_retraction_state": "Arms are extending, not retracting.",
+      "relevant_PUSH_IMPACT_evidence": "Clear PUSH preparation and approach; no readable impact feint."
+    },
+    {
+      "start_seconds": 1.05,
+      "end_seconds": 1.5,
+      "visible_action": "Both hands engage the receiver upper torso and maintain pressure.",
+      "contact_state": "Sustained two-hand contact.",
+      "receiver_response": "Receiver begins gradual image-right/back torso displacement.",
+      "footwork": "Feet are mostly planted during the initial pressure.",
+      "release_or_retraction_state": "Attacker maintains extension.",
+      "relevant_PUSH_IMPACT_evidence": "Strong sustained PUSH evidence; contact is too long for a brief IMPACT interaction."
+    },
+    {
+      "start_seconds": 1.5,
+      "end_seconds": 1.68,
+      "visible_action": "Pressure continues while the receiver completes one rear/right placement.",
+      "contact_state": "Sustained contact continues.",
+      "receiver_response": "Torso displacement continues without immediate snap recoil.",
+      "footwork": "One distinct rear/right foot placement occurs.",
+      "release_or_retraction_state": "Attacker remains engaged.",
+      "relevant_PUSH_IMPACT_evidence": "PUSH rear-foot recovery result; not an immediate IMPACT recoil step."
+    },
+    {
+      "start_seconds": 1.68,
+      "end_seconds": 2.25,
+      "visible_action": "The figures separate and the attacker draws the arms back.",
+      "contact_state": "Contact ends at the start of the interval.",
+      "receiver_response": "Receiver holds the displaced lean and begins settling.",
+      "footwork": "Receiver stabilizes the wider stance.",
+      "release_or_retraction_state": "Visible release and retraction.",
+      "relevant_PUSH_IMPACT_evidence": "PUSH release/retraction and recovery evidence."
+    },
+    {
+      "start_seconds": 2.25,
+      "end_seconds": 3.75,
+      "visible_action": "Both figures recover and hold separated positions with minor settling.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver steadies in place.",
+      "footwork": "No new interaction-related step.",
+      "release_or_retraction_state": "Retraction is complete.",
+      "relevant_PUSH_IMPACT_evidence": "Recovery and repositioning are visible for both signatures."
+    },
+    {
+      "start_seconds": 3.75,
+      "end_seconds": 4.25,
+      "visible_action": "Attacker performs an additional two-arm reach that stops short of the receiver.",
+      "contact_state": "No contact; visible separation remains.",
+      "receiver_response": "Receiver does not react.",
+      "footwork": "Feet remain planted.",
+      "release_or_retraction_state": "Arms extend again.",
+      "relevant_PUSH_IMPACT_evidence": "Final-phase activity is present, but it is not a second interaction episode."
+    },
+    {
+      "start_seconds": 4.25,
+      "end_seconds": 4.5,
+      "visible_action": "Attacker retracts the noncontact reach back toward guard.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver remains unchanged.",
+      "footwork": "Feet remain planted.",
+      "release_or_retraction_state": "Noncontact retraction completes.",
+      "relevant_PUSH_IMPACT_evidence": "Late recovery activity occurs before the static tail."
+    },
+    {
+      "start_seconds": 4.5,
+      "end_seconds": 5.09,
+      "visible_action": "Both figures hold nearly static final poses.",
+      "contact_state": "No contact.",
+      "receiver_response": "No further receiver response.",
+      "footwork": "No further footwork.",
+      "release_or_retraction_state": "No further release or retraction.",
+      "relevant_PUSH_IMPACT_evidence": "Approximately 0.59 seconds of static tail; active full-duration ending does not match."
+    }
+  ],
+  "observations": {
+    "reference_ignored": {
+      "present": false,
+      "evidence_rationale": "The visible result contains a coherent preparation, interaction, receiver displacement, release, and recovery sequence."
+    },
+    "reference_overdominance": {
+      "present": true,
+      "evidence_rationale": "The mannequin-like rendering dominates the entire clip and constitutes a substantial visible material-copy concern without identifying any hidden source."
+    },
+    "reference_role_conflict": {
+      "present": false,
+      "evidence_rationale": "The visible attacker and receiver roles remain coherent and the interaction is directed toward the receiver torso."
+    },
+    "action_family_failure": {
+      "present": false,
+      "evidence_rationale": "A readable body-directed sustained displacement action remains present."
+    },
+    "prolonged_contact": {
+      "present": true,
+      "evidence_rationale": "Two-hand contact remains visibly engaged for roughly 0.63 seconds."
+    },
+    "first_frame_separation": {
+      "status": "true",
+      "evidence_rationale": "The figures are visibly separated at 0.00 seconds."
+    },
+    "contact_onset_readability": {
+      "status": "true",
+      "evidence_rationale": "The transition from visible hand-body separation to upper-torso overlap is readable near 1.05 seconds."
+    },
+    "immediate_recoil": {
+      "status": "false",
+      "evidence_rationale": "Receiver motion builds gradually during sustained pressure rather than snapping back at onset."
+    },
+    "exactly_one_rear_foot_result": {
+      "status": "true",
+      "evidence_rationale": "One distinct rear/right placement occurs during the interaction; no second interaction-result step is visible."
+    },
+    "attacker_retract": {
+      "status": "true",
+      "evidence_rationale": "The attacker releases and retracts after contact, then also retracts the later noncontact reach."
+    },
+    "static_tail_duration_seconds": 0.59
+  },
+  "material_copy_sentinels": [
+    {
+      "sentinel": "CONTACT_MARKER_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No dot, flash, ring, overlay, or other added visible marker appears at the interaction point."
+    },
+    {
+      "sentinel": "MANNEQUIN_STYLE_COPY",
+      "present": true,
+      "material": true,
+      "evidence_rationale": "The entire clip uses simplified rigid mannequin-like bodies, so the visible style is a substantial whole-clip copying concern."
+    },
+    {
+      "sentinel": "GRID_SCENE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No dominant grid-based scene or regular scene-wide grid is visible."
+    },
+    {
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY",
+      "present": true,
+      "material": false,
+      "evidence_rationale": "The camera position and framing remain locked, but fixed camera alone is not material and no additional composition-specific copying concern is visible."
+    }
+  ],
+  "material_sentinel_count": 1,
+  "limitations": [
+    "Rigid stylized geometry limits fine-grained torso, hand, and foot mechanics.",
+    "The single fixed view does not provide depth confirmation of the exact contact surface.",
+    "Static-tail timing is based on the end of the last purposeful visible retraction."
+  ],
+  "mapping_requested_or_inferred": false,
+  "condition_inference_performed": false,
+  "experiment_level_conclusion_performed": false,
+  "review_record_complete": true
+}

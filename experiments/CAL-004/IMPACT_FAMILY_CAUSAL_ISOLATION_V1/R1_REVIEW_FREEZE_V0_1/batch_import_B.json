@@ -1,0 +1,87 @@
+{
+  "actual_input_filename": "CAL004_R1_BLIND_REVIEW_BATCH_B_V0_1.zip",
+  "alias_order": [
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11",
+    "B12"
+  ],
+  "batch_label": "B",
+  "canonical_filename": "CAL004_R1_BLIND_REVIEW_BATCH_B_V0_1.zip",
+  "crc": "PASS",
+  "member_count": 8,
+  "member_identities": [
+    {
+      "bytes": 11928,
+      "crc32": "21085b93",
+      "name": "B07_review.json",
+      "sha256": "72dba05f504f4751cfedd9d91ad4a1d9236d198a0f53fc500103ee8320edc048"
+    },
+    {
+      "bytes": 13496,
+      "crc32": "09111e2c",
+      "name": "B08_review.json",
+      "sha256": "e523236d8382d6ca3104d049079d63a4324c9d36fb292c056a27c8884cd79404"
+    },
+    {
+      "bytes": 10731,
+      "crc32": "a7504c02",
+      "name": "B09_review.json",
+      "sha256": "f1c11228e2bae44cdbfd86486fdf9158d833da0c79e52c58936a0189d106f5f6"
+    },
+    {
+      "bytes": 11069,
+      "crc32": "dd1e3b81",
+      "name": "B10_review.json",
+      "sha256": "6fdd7104b902bd907c7517e90ec60b112bb11690ecc46cbb74b60818dff71b0f"
+    },
+    {
+      "bytes": 10474,
+      "crc32": "c957dc8c",
+      "name": "B11_review.json",
+      "sha256": "2919f35963469bed66bf3bd17876ca8262e3a029afbaf30130fd742b38adde57"
+    },
+    {
+      "bytes": 10877,
+      "crc32": "93bb79a8",
+      "name": "B12_review.json",
+      "sha256": "65d5363b35cb3a83ba25db0a814ba29fc1b8dd2a282d497f3e874a25aca35d6b"
+    },
+    {
+      "bytes": 3510,
+      "crc32": "95108fbe",
+      "name": "batch_review_summary.json",
+      "sha256": "4ca087e827aea8fc75f8e05dd2c5acafd09ec08dd714512ff2947d3608aff93f"
+    },
+    {
+      "bytes": 584,
+      "crc32": "602639b4",
+      "name": "SHA256SUMS",
+      "sha256": "1f8ad531e21c8ccd73c5ef28856d3d08fa11202fc6b5e1be581f7ca27b8c5589"
+    }
+  ],
+  "member_order": [
+    "B07_review.json",
+    "B08_review.json",
+    "B09_review.json",
+    "B10_review.json",
+    "B11_review.json",
+    "B12_review.json",
+    "batch_review_summary.json",
+    "SHA256SUMS"
+  ],
+  "outer_bytes": 21348,
+  "outer_sha256": "8cba64f6f89d01474980fc2a58059c1000e5246af384d85b5dd8c1b0147a9342",
+  "review_record_bytes_preserved": true,
+  "review_records_validated": "6/6",
+  "schema_version": "CAL004_R1_BLIND_REVIEW_BATCH_IMPORT_V0_1",
+  "sha256sums": "7/7 PASS",
+  "summary_variant": {
+    "accepted_hash_key": "per_alias_record_SHA256",
+    "accepted_score_key": "per_alias_PUSH_and_IMPACT_scores",
+    "schema_version": "CAL004_R1_BLIND_COMPLETE_MP4_BATCH_REVIEW_SUMMARY_V0_1",
+    "summary_consistency": "PASS"
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "schema_version": "CAL004_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+  "experiment_label": "CAL-004 R1",
+  "blind_package_version": "V0.1",
+  "batch_label": "A",
+  "alias": "B06",
+  "blind_filename": "B06.mp4",
+  "blind_media_bytes": 8388608,
+  "blind_media_sha256": "86ece7770e9ed5e20d74826223ad86f797d60b7bb209beb4d4a293b37d08bd75",
+  "complete_mp4_reviewed": true,
+  "complete_mp4_viewable_through_end": true,
+  "technical_validity_binding": "PASS",
+  "push_signature_score_0_to_12": 6,
+  "impact_signature_score_0_to_12": 4,
+  "dimension_level_evidence": [
+    {
+      "dimension": "initiation_pattern",
+      "observed_evidence": "Both performers begin separated in deliberate held poses; the navy performer initiates a lateral approach at about 0.45 seconds.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Preparation is visible, although the front-facing role orientation is unusual."
+    },
+    {
+      "dimension": "approach_or_setup_pattern",
+      "observed_evidence": "The navy performer makes a direct lateral walk and long reach toward the rust performer pre-extended fist.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "This is a direct extended approach, not a compact feint or impact setup."
+    },
+    {
+      "dimension": "primary_limb_configuration",
+      "observed_evidence": "One open hand performs the visible interaction.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The configuration is not two-handed."
+    },
+    {
+      "dimension": "primary_interaction_character",
+      "observed_evidence": "The contact is sustained hand-to-fist/forearm contact rather than a torso-directed push or brief torso interaction.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Both torso-specific signature matches are absent."
+    },
+    {
+      "dimension": "interaction_episode_count",
+      "observed_evidence": "Exactly one visible contact episode occurs; the later arm extension remains separated and noncontact.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "No second contact episode is visible."
+    },
+    {
+      "dimension": "receiver_response_direction",
+      "observed_evidence": "The rust performer does not show clear torso displacement away from the navy performer.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "A lateral stance change occurs, but not a clear receiver torso response direction."
+    },
+    {
+      "dimension": "torso_response_type",
+      "observed_evidence": "The rust performer torso remains upright without gradual torso displacement or immediate upper-body recoil.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "No qualifying torso response is visible."
+    },
+    {
+      "dimension": "rear_foot_result_type",
+      "observed_evidence": "One foot moves laterally outward during contact, but the front-facing stance makes rear-foot identity and response type unclear.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Both matches are scored 0 rather than guessing whether the movement is rear-foot recovery or recoil."
+    },
+    {
+      "dimension": "release_or_retraction_pattern",
+      "observed_evidence": "The navy performer releases the limb contact and draws the arm back to a crossed position.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Retraction is present, but the preceding contact is prolonged rather than a brief impact with prompt retraction."
+    },
+    {
+      "dimension": "recovery_and_repositioning",
+      "observed_evidence": "The rust performer gradually narrows the widened stance and both performers settle after release.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Recovery and repositioning are visibly present."
+    },
+    {
+      "dimension": "temporal_ordering",
+      "observed_evidence": "The gross sequence is direct approach, one contact episode, release, and later repositioning.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The sequence lacks torso interaction, immediate recoil, a readable rear recoil step, and prompt impact-style retraction."
+    },
+    {
+      "dimension": "duration_utilization_and_final_phase_activity",
+      "observed_evidence": "A late noncontact arm extension and retraction finish by about 4.50 seconds, followed by an approximately 0.59-second near-static tail.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The clip does not remain active through its complete ending."
+    }
+  ],
+  "complete_mp4_timeline": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 0.45,
+      "visible_action": "Separated front-facing held poses; the rust performer already presents one fist forward.",
+      "contact_state": "No contact.",
+      "receiver_response": "No receiver response.",
+      "footwork": "Both performers hold their initial foot positions.",
+      "release_or_retraction_state": "No release or retraction yet.",
+      "relevant_PUSH_IMPACT_evidence": "Preparation and first-frame separation are visible, but the receiver role is front-facing rather than torso-receptive."
+    },
+    {
+      "start_seconds": 0.45,
+      "end_seconds": 1.0,
+      "visible_action": "Navy performer walks laterally toward the rust performer while the arms remain mostly crossed.",
+      "contact_state": "No contact.",
+      "receiver_response": "Rust performer remains upright and front-facing.",
+      "footwork": "Navy performer makes a direct lateral approach.",
+      "release_or_retraction_state": "No retraction; interaction arm has not fully opened.",
+      "relevant_PUSH_IMPACT_evidence": "General direct approach supports PUSH setup more than compact IMPACT setup."
+    },
+    {
+      "start_seconds": 1.0,
+      "end_seconds": 1.7,
+      "visible_action": "Navy performer opens one hand and reaches toward the rust performer pre-extended fist/forearm.",
+      "contact_state": "No contact until the end of the interval.",
+      "receiver_response": "Rust performer remains upright without torso recoil.",
+      "footwork": "Feet remain mostly planted until contact onset.",
+      "release_or_retraction_state": "One arm continues extending.",
+      "relevant_PUSH_IMPACT_evidence": "Single-limb configuration is visible, but the target is the presented limb rather than torso."
+    },
+    {
+      "start_seconds": 1.7,
+      "end_seconds": 2.22,
+      "visible_action": "The navy hand remains in sustained contact with the rust fist/forearm.",
+      "contact_state": "Sustained limb-to-limb contact.",
+      "receiver_response": "Rust torso remains upright; stance widens laterally without a clear torso displacement.",
+      "footwork": "One foot moves laterally outward once; rear-foot identity is unclear.",
+      "release_or_retraction_state": "Navy arm remains engaged.",
+      "relevant_PUSH_IMPACT_evidence": "One contact episode is present, but neither torso-directed PUSH nor brief IMPACT character is visible."
+    },
+    {
+      "start_seconds": 2.22,
+      "end_seconds": 2.5,
+      "visible_action": "Navy performer releases the limb contact and draws the arm back across the torso.",
+      "contact_state": "Contact ends.",
+      "receiver_response": "Rust performer holds the widened stance.",
+      "footwork": "No additional interaction-result step.",
+      "release_or_retraction_state": "Visible release and retraction.",
+      "relevant_PUSH_IMPACT_evidence": "PUSH-style release is present; impact-style prompt retraction after a brief torso interaction is not."
+    },
+    {
+      "start_seconds": 2.5,
+      "end_seconds": 3.5,
+      "visible_action": "Rust performer gradually narrows the stance while both performers settle.",
+      "contact_state": "No contact.",
+      "receiver_response": "No torso recoil; only stance recovery and minor settling.",
+      "footwork": "The laterally moved foot returns inward during recovery.",
+      "release_or_retraction_state": "Retraction is complete.",
+      "relevant_PUSH_IMPACT_evidence": "Recovery and repositioning are visible."
+    },
+    {
+      "start_seconds": 3.5,
+      "end_seconds": 3.75,
+      "visible_action": "Both performers hold nearly static front-facing poses.",
+      "contact_state": "No contact.",
+      "receiver_response": "No response.",
+      "footwork": "Feet are planted.",
+      "release_or_retraction_state": "No release or retraction.",
+      "relevant_PUSH_IMPACT_evidence": "Brief hold before late noncontact activity."
+    },
+    {
+      "start_seconds": 3.75,
+      "end_seconds": 4.33,
+      "visible_action": "Navy performer performs an additional arm/fist extension toward open space near the rust performer forward fist.",
+      "contact_state": "No contact; visible separation remains.",
+      "receiver_response": "Rust performer does not react.",
+      "footwork": "Feet remain planted.",
+      "release_or_retraction_state": "Arm extends without interaction.",
+      "relevant_PUSH_IMPACT_evidence": "Late activity remains noncontact and does not create a second interaction episode."
+    },
+    {
+      "start_seconds": 4.33,
+      "end_seconds": 4.5,
+      "visible_action": "Navy performer retracts and re-crosses the noncontact extension.",
+      "contact_state": "No contact.",
+      "receiver_response": "Rust performer remains unchanged.",
+      "footwork": "Feet remain planted.",
+      "release_or_retraction_state": "Noncontact retraction completes.",
+      "relevant_PUSH_IMPACT_evidence": "Final purposeful motion ends before the static tail."
+    },
+    {
+      "start_seconds": 4.5,
+      "end_seconds": 5.09,
+      "visible_action": "Both performers hold nearly static final poses.",
+      "contact_state": "No contact.",
+      "receiver_response": "No further response.",
+      "footwork": "No further footwork.",
+      "release_or_retraction_state": "No further release or retraction.",
+      "relevant_PUSH_IMPACT_evidence": "Approximately 0.59 seconds of static tail; active full-duration ending does not match."
+    }
+  ],
+  "observations": {
+    "reference_ignored": {
+      "present": false,
+      "evidence_rationale": "The clip still attempts an approach, one interaction episode, release, and recovery sequence."
+    },
+    "reference_overdominance": {
+      "present": false,
+      "evidence_rationale": "No substantial visible copying concern dominates the clip beyond the non-material fixed camera."
+    },
+    "reference_role_conflict": {
+      "present": true,
+      "evidence_rationale": "The rust performer remains front-facing with a fist already extended, and the visible interaction targets that limb rather than presenting a neutral torso-directed receiver role."
+    },
+    "action_family_failure": {
+      "present": true,
+      "evidence_rationale": "No torso-directed PUSH or IMPACT interaction and no qualifying receiver torso response are visible."
+    },
+    "prolonged_contact": {
+      "present": true,
+      "evidence_rationale": "Hand-to-fist/forearm contact remains visibly engaged for roughly 0.52 seconds."
+    },
+    "first_frame_separation": {
+      "status": "true",
+      "evidence_rationale": "The performers are visibly separated at 0.00 seconds."
+    },
+    "contact_onset_readability": {
+      "status": "true",
+      "evidence_rationale": "The transition from hand/fist separation to sustained limb-to-limb contact is readable near 1.70 seconds."
+    },
+    "immediate_recoil": {
+      "status": "false",
+      "evidence_rationale": "The rust performer torso remains upright without immediate upper-body recoil."
+    },
+    "exactly_one_rear_foot_result": {
+      "status": "unclear",
+      "evidence_rationale": "One lateral foot placement is visible, but the front-facing orientation prevents confident rear-foot identification or recoil-versus-recovery classification."
+    },
+    "attacker_retract": {
+      "status": "true",
+      "evidence_rationale": "The navy performer releases and retracts after limb contact, then retracts the later noncontact extension."
+    },
+    "static_tail_duration_seconds": 0.59
+  },
+  "material_copy_sentinels": [
+    {
+      "sentinel": "CONTACT_MARKER_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No dot, flash, ring, overlay, or other added visible marker appears at the interaction point."
+    },
+    {
+      "sentinel": "MANNEQUIN_STYLE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The figures are rendered as natural human performers rather than mannequin-like bodies."
+    },
+    {
+      "sentinel": "GRID_SCENE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No dominant grid-based scene or regular scene-wide grid is visible."
+    },
+    {
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY",
+      "present": true,
+      "material": false,
+      "evidence_rationale": "The camera position and framing remain locked, but fixed camera alone is not material and no additional composition-specific copying concern is visible."
+    }
+  ],
+  "material_sentinel_count": 0,
+  "limitations": [
+    "The front-facing role orientation makes front-versus-rear foot identity unclear.",
+    "The visible interaction lands on the presented fist/forearm rather than the torso.",
+    "The fixed single view limits depth confirmation of contact pressure and exact separation."
+  ],
+  "mapping_requested_or_inferred": false,
+  "condition_inference_performed": false,
+  "experiment_level_conclusion_performed": false,
+  "review_record_complete": true
+}

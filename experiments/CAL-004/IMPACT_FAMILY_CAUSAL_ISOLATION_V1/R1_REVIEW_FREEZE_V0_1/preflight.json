@@ -1,0 +1,36 @@
+{
+  "branch": "main",
+  "external_freeze_target_absent": true,
+  "git_operation_in_progress": false,
+  "head_origin_aligned": true,
+  "input_root": "G:/AICODING/AI_VIDEO/_review_inputs/CAL004_R1_BLIND_REVIEW_V0_1",
+  "normalized_inputs": [
+    {
+      "actual_filename": "CAL004_R1_BLIND_REVIEW_BATCH_A_V0_1.zip",
+      "canonical_filename": "CAL004_R1_BLIND_REVIEW_BATCH_A_V0_1.zip"
+    },
+    {
+      "actual_filename": "CAL004_R1_BLIND_REVIEW_BATCH_B_V0_1.zip",
+      "canonical_filename": "CAL004_R1_BLIND_REVIEW_BATCH_B_V0_1.zip"
+    },
+    {
+      "actual_filename": "CAL004_R1_BLIND_REVIEW_BATCH_C_V0_1.zip",
+      "canonical_filename": "CAL004_R1_BLIND_REVIEW_BATCH_C_V0_1.zip"
+    }
+  ],
+  "repository": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+  "schema_version": "CAL004_R1_REVIEW_FREEZE_PREFLIGHT_V0_1",
+  "sealed_mapping_zip": {
+    "bytes": 41207,
+    "open_count": 0,
+    "path": "G:/AICODING/AI_VIDEO/_sealed/CAL004_R1_BLIND_MAPPING_V0_1/CAL004_R1_BLIND_MAPPING_DO_NOT_OPEN_UNTIL_REVIEW_FREEZE_V0_1.zip",
+    "sha256": "0eb2eb74397431799658103d1f3e9b03b476c2e5b49aa5bfd36aa0398412fb40",
+    "verified_from_committed_public_record": true
+  },
+  "sealed_mapping_zip_open_count": 0,
+  "sources_changed": false,
+  "staged_changes": 0,
+  "starting_head": "af04a1fc4c0902d58ada9f12932d5517c29ccf40",
+  "target_repository_paths_absent": true,
+  "tracked_modifications": 0
+}

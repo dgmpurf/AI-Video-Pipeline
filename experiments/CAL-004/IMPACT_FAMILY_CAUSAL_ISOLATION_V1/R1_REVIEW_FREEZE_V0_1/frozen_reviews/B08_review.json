@@ -1,0 +1,272 @@
+{
+  "schema_version": "CAL004_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+  "experiment_label": "CAL-004 R1",
+  "blind_package_version": "V0.1",
+  "batch_label": "B",
+  "alias": "B08",
+  "blind_filename": "B08.mp4",
+  "blind_media_bytes": 8388608,
+  "blind_media_sha256": "f4f1fae6cddff3b983d1e637947813c47a07111e58e3e7adde777d73d360b073",
+  "complete_mp4_reviewed": true,
+  "complete_mp4_viewable_through_end": true,
+  "technical_validity_binding": "PASS",
+  "push_signature_score_0_to_12": 3,
+  "impact_signature_score_0_to_12": 8,
+  "dimension_level_evidence": [
+    {
+      "dimension": "initiation_pattern",
+      "observed_evidence": "Both performers begin in separated open-hand guards and make visible preparatory weight shifts.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Preparation is present, but the later role switch prevents a clean single-signature reading."
+    },
+    {
+      "dimension": "approach_or_setup_pattern",
+      "observed_evidence": "The orange-clad performer advances a compact palm/arm action before a countering hand engagement and kick.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The setup is compact and IMPACT-like, but it is not a clean PUSH approach."
+    },
+    {
+      "dimension": "primary_limb_configuration",
+      "observed_evidence": "The dominant force-producing action is a raised-leg kick after arm engagement.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "This does not match the neutral two-hand PUSH configuration or the neutral compact upper-body IMPACT configuration."
+    },
+    {
+      "dimension": "primary_interaction_character",
+      "observed_evidence": "The dominant kick is a brief, forceful torso/hip-directed interaction that produces an immediate fall.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The interaction is impact-like but belongs to a kick/takedown sequence rather than the neutral standing action."
+    },
+    {
+      "dimension": "interaction_episode_count",
+      "observed_evidence": "An initial hand/forearm engagement is followed by a separate kick contact.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "More than one interaction episode is visible."
+    },
+    {
+      "dimension": "receiver_response_direction",
+      "observed_evidence": "After the kick, the orange-clad receiver moves sharply away and downward to the floor.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The response is a collapse rather than a standing PUSH displacement."
+    },
+    {
+      "dimension": "torso_response_type",
+      "observed_evidence": "The receiver’s upper body recoils immediately and continues into a fall.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The recoil is stronger than the neutral one-step response and ends on the floor."
+    },
+    {
+      "dimension": "rear_foot_result_type",
+      "observed_evidence": "No single rear-foot recovery or recoil step is completed; the receiver collapses through multiple lower-body motions.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The neutral rear-foot result is absent."
+    },
+    {
+      "dimension": "release_or_retraction_pattern",
+      "observed_evidence": "The kicking leg withdraws/lands after contact and the hand engagement breaks.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Retraction is visible for the kick, but it follows a role-switching multi-contact sequence."
+    },
+    {
+      "dimension": "recovery_and_repositioning",
+      "observed_evidence": "The standing performer regains stance while the fallen performer rolls and works toward sitting.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Recovery occurs, although it is floor-based for the receiver."
+    },
+    {
+      "dimension": "temporal_ordering",
+      "observed_evidence": "Preparation is followed by hand contact, role change, kick, collapse, and floor recovery.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Multiple contacts and the role reversal break both neutral temporal orders."
+    },
+    {
+      "dimension": "duration_utilization_and_final_phase_activity",
+      "observed_evidence": "The fallen performer continues rolling, lowering the legs, and rising toward a seated position through the ending.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "No static tail is visible."
+    }
+  ],
+  "complete_mp4_timeline": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.33,
+      "visible_action": "Both performers hold open-hand guards with small weight and hand adjustments.",
+      "contact_state": "No contact.",
+      "receiver_response": "No designated receiver response yet.",
+      "footwork": "Lower legs are partly cropped; both remain standing.",
+      "release_or_retraction_state": "No release is applicable.",
+      "relevant_PUSH_IMPACT_evidence": "Preparation is visible for both signatures."
+    },
+    {
+      "start_seconds": 1.33,
+      "end_seconds": 1.67,
+      "visible_action": "Orange-clad performer advances a compact palm/arm action; blue-clad performer raises a guard/counter.",
+      "contact_state": "Gap closes to first arm contact.",
+      "receiver_response": "Blue-clad performer braces rather than recoiling.",
+      "footwork": "Both remain in standing stances.",
+      "release_or_retraction_state": "Arms extend into engagement.",
+      "relevant_PUSH_IMPACT_evidence": "Compact setup is IMPACT-like; not a two-hand PUSH."
+    },
+    {
+      "start_seconds": 1.67,
+      "end_seconds": 2.25,
+      "visible_action": "The performers maintain hand/forearm engagement and adjust their upper bodies.",
+      "contact_state": "Sustained initial arm contact.",
+      "receiver_response": "Roles are visually ambiguous during the engagement.",
+      "footwork": "Small stance adjustments; feet remain mostly out of the lower frame.",
+      "release_or_retraction_state": "No clean release yet.",
+      "relevant_PUSH_IMPACT_evidence": "Prolonged first engagement conflicts with either neutral single brief episode."
+    },
+    {
+      "start_seconds": 2.25,
+      "end_seconds": 2.58,
+      "visible_action": "Blue-clad performer chambers the right knee while arm contact continues.",
+      "contact_state": "Arm contact persists; kick contact has not yet begun.",
+      "receiver_response": "Orange-clad performer remains upright and engaged.",
+      "footwork": "Blue-clad performer lifts one leg; orange remains planted.",
+      "release_or_retraction_state": "No retraction; role shift becomes visible.",
+      "relevant_PUSH_IMPACT_evidence": "Setup transitions into a kick rather than neutral PUSH/IMPACT choreography."
+    },
+    {
+      "start_seconds": 2.58,
+      "end_seconds": 2.88,
+      "visible_action": "Blue-clad performer drives the raised leg into the orange-clad performer’s lower torso/hip area.",
+      "contact_state": "Second, brief kick contact.",
+      "receiver_response": "Orange-clad performer immediately recoils and starts falling.",
+      "footwork": "Kicking leg extends then begins to withdraw; receiver loses standing support.",
+      "release_or_retraction_state": "Kicking leg begins prompt withdrawal.",
+      "relevant_PUSH_IMPACT_evidence": "Brief forceful contact and immediate recoil support IMPACT dimensions, but not the neutral action family."
+    },
+    {
+      "start_seconds": 2.88,
+      "end_seconds": 3.25,
+      "visible_action": "Orange-clad performer collapses to the floor; blue-clad performer returns the leg to the floor.",
+      "contact_state": "Contact ends.",
+      "receiver_response": "Receiver falls onto the side/back.",
+      "footwork": "Attacker regains a two-foot stance; receiver’s legs move during the fall.",
+      "release_or_retraction_state": "Kick retraction is complete.",
+      "relevant_PUSH_IMPACT_evidence": "No one rear-foot result; recovery begins from the floor."
+    },
+    {
+      "start_seconds": 3.25,
+      "end_seconds": 4.0,
+      "visible_action": "Receiver rolls onto the back with legs raised while the standing performer watches and adjusts stance.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver continues strong floor recoil/repositioning.",
+      "footwork": "Receiver’s legs cycle upward; standing performer makes small steps.",
+      "release_or_retraction_state": "No further attack retraction.",
+      "relevant_PUSH_IMPACT_evidence": "Active recovery continues."
+    },
+    {
+      "start_seconds": 4.0,
+      "end_seconds": 4.5,
+      "visible_action": "Receiver lowers and turns the legs/body toward the side; standing performer shifts closer.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver transitions from supine toward side-supported posture.",
+      "footwork": "Multiple floor-based leg movements; standing performer takes a small step.",
+      "release_or_retraction_state": "No new release.",
+      "relevant_PUSH_IMPACT_evidence": "Final-phase activity remains substantial."
+    },
+    {
+      "start_seconds": 4.5,
+      "end_seconds": 5.085011,
+      "visible_action": "Receiver pushes toward a seated/partly upright position while the standing performer remains active nearby.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver continues recovery through the final visible frame.",
+      "footwork": "Receiver folds legs under/near the body; standing performer remains balanced.",
+      "release_or_retraction_state": "No further retraction.",
+      "relevant_PUSH_IMPACT_evidence": "Active full-duration ending; no static tail."
+    }
+  ],
+  "observations": {
+    "reference_ignored": {
+      "present": true,
+      "evidence_rationale": "The visible result departs from both neutral standing signatures by changing roles and resolving through a kick-driven takedown."
+    },
+    "reference_overdominance": {
+      "present": false,
+      "evidence_rationale": "No material style, scene, marker, or camera-composition copying concern is visible."
+    },
+    "reference_role_conflict": {
+      "present": true,
+      "evidence_rationale": "The orange-clad performer initiates the first arm action, but the blue-clad performer becomes the dominant attacker with the kick, reversing roles within the clip."
+    },
+    "action_family_failure": {
+      "present": true,
+      "evidence_rationale": "The dominant action is a counter-kick followed by a fall to the floor rather than a standing PUSH or brief standing IMPACT with one rear-foot result."
+    },
+    "prolonged_contact": {
+      "present": true,
+      "evidence_rationale": "The initial arm/forearm engagement persists for roughly 0.9 s before the separate kick contact."
+    },
+    "first_frame_separation": {
+      "status": "true",
+      "evidence_rationale": "At 0.00 s both open hands and bodies are visibly separated."
+    },
+    "contact_onset_readability": {
+      "status": "true",
+      "evidence_rationale": "First arm contact is readable near 1.67 s and the later kick contact is separately readable near 2.58 s."
+    },
+    "immediate_recoil": {
+      "status": "true",
+      "evidence_rationale": "The orange-clad receiver recoils immediately after the kick and falls."
+    },
+    "exactly_one_rear_foot_result": {
+      "status": "false",
+      "evidence_rationale": "The receiver collapses through multiple leg motions instead of completing one rear-foot step."
+    },
+    "attacker_retract": {
+      "status": "true",
+      "evidence_rationale": "The blue-clad attacker withdraws/lands the kicking leg after contact and breaks the arm engagement."
+    },
+    "static_tail_duration_seconds": 0.0
+  },
+  "material_copy_sentinels": [
+    {
+      "sentinel": "CONTACT_MARKER_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No visible crosshair, dot, flash, overlay, or other contact-marker graphic appears at contact."
+    },
+    {
+      "sentinel": "MANNEQUIN_STYLE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The figures are visibly human performers rather than abstract or segmented mannequins."
+    },
+    {
+      "sentinel": "GRID_SCENE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The scene is a plain studio wall and wood floor with no visible grid environment."
+    },
+    {
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY",
+      "present": true,
+      "material": false,
+      "evidence_rationale": "The camera remains fixed in a medium-wide studio composition, but fixed framing alone is not material copying."
+    }
+  ],
+  "material_sentinel_count": 0,
+  "limitations": [
+    "The clip contains two contact episodes and a visible role reversal; attacker/receiver wording in the record refers to the dominant kick episode where needed.",
+    "The lower feet are partly cropped during the early standing phase, although the kick, fall, and floor recovery are viewable.",
+    "Timeline boundaries are rounded to the nearest 0.01 s from the decoded visible-frame sequence."
+  ],
+  "mapping_requested_or_inferred": false,
+  "condition_inference_performed": false,
+  "experiment_level_conclusion_performed": false,
+  "review_record_complete": true
+}

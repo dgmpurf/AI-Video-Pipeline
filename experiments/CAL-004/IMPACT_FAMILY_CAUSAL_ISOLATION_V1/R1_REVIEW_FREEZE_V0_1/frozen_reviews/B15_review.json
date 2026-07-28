@@ -1,0 +1,262 @@
+{
+  "schema_version": "CAL004_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+  "experiment_label": "CAL-004 R1",
+  "blind_package_version": "V0.1",
+  "batch_label": "C",
+  "alias": "B15",
+  "blind_filename": "B15.mp4",
+  "blind_media_bytes": 8388608,
+  "blind_media_sha256": "a82315ff25ac25d45794ea7bf0064fe65483d4589dcc2abbae5044f34ff34bfc",
+  "complete_mp4_reviewed": true,
+  "complete_mp4_viewable_through_end": true,
+  "technical_validity_binding": "PASS",
+  "push_signature_score_0_to_12": 9,
+  "impact_signature_score_0_to_12": 5,
+  "dimension_level_evidence": [
+    {
+      "dimension": "initiation_pattern",
+      "observed_evidence": "Both begin in guard; the orange-clad performer closes distance beginning near 1.20 s, followed by a blue-clad counter-extension.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Preparation is clear, but initiator/receiver roles later become reciprocal."
+    },
+    {
+      "dimension": "approach_or_setup_pattern",
+      "observed_evidence": "The orange-clad performer steps in compactly, the hands meet, and the blue-clad performer then lunges into upper-body contact.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The closing action supports both setup dimensions."
+    },
+    {
+      "dimension": "primary_limb_configuration",
+      "observed_evidence": "Each performer uses one principal arm in reciprocal upper-body contact; no single performer applies a two-hand action.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The one-arm configuration is compatible with IMPACT at the limb level, but not with two-hand PUSH."
+    },
+    {
+      "dimension": "primary_interaction_character",
+      "observed_evidence": "The main event is sustained mutual bracing at the upper chest/shoulder region rather than one clear push or one brief impact.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Reciprocal force and long duration prevent a character match."
+    },
+    {
+      "dimension": "interaction_episode_count",
+      "observed_evidence": "One continuous interaction episode extends from the first hand meeting near 1.75 s through release near 3.25 s.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The episode count is one."
+    },
+    {
+      "dimension": "receiver_response_direction",
+      "observed_evidence": "The orange-clad participant ultimately moves screen-right/back away from the blue-clad participant.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The displacement is delayed and gradual, not immediate recoil."
+    },
+    {
+      "dimension": "torso_response_type",
+      "observed_evidence": "The orange-clad torso gradually translates and leans away after the sustained contact.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "This resembles PUSH displacement rather than IMPACT recoil."
+    },
+    {
+      "dimension": "rear_foot_result_type",
+      "observed_evidence": "The orange-clad participant makes one visible backward placement with the rear/screen-right foot during recovery around 3.75-4.30 s.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The step is a delayed recovery placement, not an immediate recoil step."
+    },
+    {
+      "dimension": "release_or_retraction_pattern",
+      "observed_evidence": "The blue-clad contacting arm retracts beginning near 3.25 s and both arms separate.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Release is visible but follows prolonged mutual contact, so it is not prompt IMPACT retraction."
+    },
+    {
+      "dimension": "recovery_and_repositioning",
+      "observed_evidence": "Both participants restore guard and re-establish spacing by late in the clip.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Recovery and repositioning are clear."
+    },
+    {
+      "dimension": "temporal_ordering",
+      "observed_evidence": "Preparation, approach, sustained contact, gradual displacement, one rear-foot placement, release, and recovery occur in that broad order.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The order is PUSH-like, but reciprocal roles and delayed response prevent IMPACT ordering."
+    },
+    {
+      "dimension": "duration_utilization_and_final_phase_activity",
+      "observed_evidence": "Meaningful stance settling continues to about 4.81 s, followed by an approximately 0.25 s static tail.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The ending is not active through the complete duration."
+    }
+  ],
+  "complete_mp4_timeline": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.2,
+      "visible_action": "Separated guarded opening.",
+      "contact_state": "No contact.",
+      "receiver_response": "Both performers hold ready stances.",
+      "footwork": "Feet remain planted.",
+      "release_retraction_state": "No release or retraction.",
+      "relevant_PUSH_IMPACT_evidence": "Preparation evidence for both signatures."
+    },
+    {
+      "start_seconds": 1.2,
+      "end_seconds": 1.67,
+      "visible_action": "Orange-clad performer advances toward the blue-clad performer with compact steps.",
+      "contact_state": "No contact until the interval end.",
+      "receiver_response": "Blue-clad performer remains braced and begins raising the lead hand.",
+      "footwork": "Orange-clad front-side advance closes the gap.",
+      "release_retraction_state": "Extension/setup phase.",
+      "relevant_PUSH_IMPACT_evidence": "Approach/setup evidence; role assignment begins with orange as initiator."
+    },
+    {
+      "start_seconds": 1.67,
+      "end_seconds": 2.3,
+      "visible_action": "The hands meet and transition into reciprocal forearm/hand engagement; blue then drives a contacting arm forward.",
+      "contact_state": "Continuous contact begins; exact first-touch frame is partly occluded.",
+      "receiver_response": "Orange-clad participant braces rather than recoils.",
+      "footwork": "Both establish wider stances.",
+      "release_retraction_state": "No release.",
+      "relevant_PUSH_IMPACT_evidence": "One continuous episode; single-arm IMPACT-like configuration without brief interaction character."
+    },
+    {
+      "start_seconds": 2.3,
+      "end_seconds": 3.25,
+      "visible_action": "Both participants maintain upper chest/shoulder-region contact in a mutual braced pose.",
+      "contact_state": "Prolonged reciprocal upper-body contact.",
+      "receiver_response": "Orange-clad torso is held and gradually begins to yield away.",
+      "footwork": "Feet remain planted during the held phase.",
+      "release_retraction_state": "Release remains delayed.",
+      "relevant_PUSH_IMPACT_evidence": "Gradual PUSH-like displacement, not immediate IMPACT recoil."
+    },
+    {
+      "start_seconds": 3.25,
+      "end_seconds": 3.75,
+      "visible_action": "The blue-clad arm retracts; both arms separate and guards begin to reform.",
+      "contact_state": "Contact ends near 3.25 s.",
+      "receiver_response": "Orange-clad participant starts moving away without a snap recoil.",
+      "footwork": "Initial retreat begins.",
+      "release_retraction_state": "Release/retraction underway.",
+      "relevant_PUSH_IMPACT_evidence": "PUSH-compatible release; delayed for IMPACT."
+    },
+    {
+      "start_seconds": 3.75,
+      "end_seconds": 4.38,
+      "visible_action": "Orange-clad participant takes one backward rear-foot placement while both restore spacing.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver moves screen-right/back and stabilizes.",
+      "footwork": "One rear/screen-right foot placement is visible.",
+      "release_retraction_state": "Retraction complete; recovery and repositioning continue.",
+      "relevant_PUSH_IMPACT_evidence": "One PUSH-like rear-foot recovery result."
+    },
+    {
+      "start_seconds": 4.38,
+      "end_seconds": 4.81,
+      "visible_action": "Final guard and stance settling.",
+      "contact_state": "No contact.",
+      "receiver_response": "No new receiver response.",
+      "footwork": "Feet finish settling.",
+      "release_retraction_state": "Recovery completes.",
+      "relevant_PUSH_IMPACT_evidence": "No new interaction evidence."
+    },
+    {
+      "start_seconds": 4.81,
+      "end_seconds": 5.061995,
+      "visible_action": "Both performers hold the final guarded spacing.",
+      "contact_state": "No contact.",
+      "receiver_response": "No response.",
+      "footwork": "No footwork.",
+      "release_retraction_state": "No additional release or retraction.",
+      "relevant_PUSH_IMPACT_evidence": "Approximately 0.25 s static tail."
+    }
+  ],
+  "observations": {
+    "reference_ignored": {
+      "present": false,
+      "evidence_rationale": "The clip visibly attempts a coordinated preparation, approach, interaction, and recovery sequence, so the neutral reference role is not visibly ignored."
+    },
+    "reference_overdominance": {
+      "present": false,
+      "evidence_rationale": "No material visual feature appears to be overcopied; the setting and human motion remain generic."
+    },
+    "reference_role_conflict": {
+      "present": true,
+      "evidence_rationale": "The orange-clad performer initiates the approach, but the blue-clad performer becomes the main forward contact source and both maintain reciprocal contact, creating a visible role conflict."
+    },
+    "action_family_failure": {
+      "present": true,
+      "evidence_rationale": "The central event is reciprocal single-arm shoulder/chest bracing rather than one clear two-hand PUSH or one brief torso IMPACT."
+    },
+    "prolonged_contact": {
+      "present": true,
+      "evidence_rationale": "Continuous reciprocal contact lasts from approximately 1.75 s to 3.25 s."
+    },
+    "first_frame_separation": {
+      "status": "true",
+      "evidence_rationale": "The performers begin with a clear gap."
+    },
+    "contact_onset_readability": {
+      "status": "unclear",
+      "evidence_rationale": "The onset occurs around 1.71-1.80 s, but overlapping hands and motion blur obscure the exact first-touch frame."
+    },
+    "immediate_recoil": {
+      "status": "false",
+      "evidence_rationale": "No immediate upper-body snap follows the first contact; displacement develops later."
+    },
+    "exactly_one_rear_foot_result": {
+      "status": "true",
+      "evidence_rationale": "One backward placement by the orange-clad rear/screen-right foot is visible during recovery."
+    },
+    "attacker_retract": {
+      "status": "unclear",
+      "evidence_rationale": "The blue-clad contacting arm clearly retracts, but the earlier orange-clad approach makes the attacker label visually ambiguous."
+    },
+    "static_tail_duration_seconds": 0.25
+  },
+  "material_copy_sentinels": [
+    {
+      "sentinel": "CONTACT_MARKER_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No visible dot, target, overlay, flash, or other explicit contact marker appears anywhere in the MP4."
+    },
+    {
+      "sentinel": "MANNEQUIN_STYLE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The scene contains live human performers with articulated clothing and natural body motion; no mannequin-like model or mannequin staging is visible."
+    },
+    {
+      "sentinel": "GRID_SCENE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The background is a plain beige wall above a wooden floor, with no grid scene or grid-line structure."
+    },
+    {
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY",
+      "present": true,
+      "material": false,
+      "evidence_rationale": "The camera remains fixed in a stable full-body composition, but that generic locked-off choice is not materially distinctive."
+    }
+  ],
+  "material_sentinel_count": 0,
+  "limitations": [
+    "Reciprocal motion makes a single attacker/receiver assignment ambiguous during the central interaction.",
+    "The exact first-touch frame is partly occluded by overlapping arms and motion blur.",
+    "The static-tail estimate is rounded to approximately 0.05 s."
+  ],
+  "mapping_requested_or_inferred": false,
+  "condition_inference_performed": false,
+  "experiment_level_conclusion_performed": false,
+  "review_record_complete": true
+}

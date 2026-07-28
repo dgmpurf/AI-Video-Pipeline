@@ -1,0 +1,262 @@
+{
+  "schema_version": "CAL004_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+  "experiment_label": "CAL-004 R1",
+  "blind_package_version": "V0.1",
+  "batch_label": "C",
+  "alias": "B14",
+  "blind_filename": "B14.mp4",
+  "blind_media_bytes": 8388608,
+  "blind_media_sha256": "0f13aec57ef3dff7861ac31e8375b04583cec08c9b6cfbf9d57eb76435713c78",
+  "complete_mp4_reviewed": true,
+  "complete_mp4_viewable_through_end": true,
+  "technical_validity_binding": "PASS",
+  "push_signature_score_0_to_12": 6,
+  "impact_signature_score_0_to_12": 5,
+  "dimension_level_evidence": [
+    {
+      "dimension": "initiation_pattern",
+      "observed_evidence": "Both performers begin in guard; the blue-clad performer initiates a direct right-arm action at about 0.63 s.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Preparation and initiation are clear."
+    },
+    {
+      "dimension": "approach_or_setup_pattern",
+      "observed_evidence": "The initiating arm and upper body close compactly while the orange-clad receiver raises a parry.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The compact closing action can support either setup dimension, although it becomes a block-and-bind exchange."
+    },
+    {
+      "dimension": "primary_limb_configuration",
+      "observed_evidence": "The initiating motion is led by one right arm/fist; the receiver uses both arms to parry and bind.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "It is not a two-hand PUSH configuration; the single leading limb is compatible with an IMPACT configuration only at the limb level."
+    },
+    {
+      "dimension": "primary_interaction_character",
+      "observed_evidence": "First contact is hand/forearm-to-hand/forearm and develops into a sustained reciprocal arm bind rather than a torso-directed push or brief torso interaction.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "No clear torso contact is visible."
+    },
+    {
+      "dimension": "interaction_episode_count",
+      "observed_evidence": "One continuous contact episode runs from about 0.75 s to 2.50 s despite internal arm changes.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The episode count is one; the episode character is the main mismatch."
+    },
+    {
+      "dimension": "receiver_response_direction",
+      "observed_evidence": "The orange-clad participant shifts screen-right and slightly backward while the arms remain connected.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Direction is compatible with displacement but is not an immediate recoil response."
+    },
+    {
+      "dimension": "torso_response_type",
+      "observed_evidence": "The receiver rotates and repositions laterally without a clean torso translation or snap recoil.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The response is dominated by reciprocal arm engagement."
+    },
+    {
+      "dimension": "rear_foot_result_type",
+      "observed_evidence": "The frame crops both performers below the lower legs, preventing verification of a rear-foot placement or recoil step.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Foot outcome is genuinely unclear and therefore scored 0 for both signatures."
+    },
+    {
+      "dimension": "release_or_retraction_pattern",
+      "observed_evidence": "The bind releases near 2.50 s; the blue-clad initiator retracts while the receiver keeps one arm extended before returning to guard.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Release/retraction occurs, but it is delayed after prolonged contact and is not prompt IMPACT retraction."
+    },
+    {
+      "dimension": "recovery_and_repositioning",
+      "observed_evidence": "Both performers separate and return to guarded positions.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Recovery is visible for both."
+    },
+    {
+      "dimension": "temporal_ordering",
+      "observed_evidence": "The sequence is preparation, parry, prolonged bind, lateral shift, release, and recovery rather than either clean neutral sequence.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The reciprocal bind interrupts signature ordering."
+    },
+    {
+      "dimension": "duration_utilization_and_final_phase_activity",
+      "observed_evidence": "Guard settling continues late, but the last approximately 0.30 s is static.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The ending is not active through the full duration."
+    }
+  ],
+  "complete_mp4_timeline": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 0.63,
+      "visible_action": "Separated guarded opening.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver holds a raised open-hand guard.",
+      "footwork": "Lower legs and feet are outside the frame.",
+      "release_retraction_state": "No release or retraction.",
+      "relevant_PUSH_IMPACT_evidence": "Clear preparation for both signatures."
+    },
+    {
+      "start_seconds": 0.63,
+      "end_seconds": 0.75,
+      "visible_action": "Blue-clad initiator extends a right-arm action; receiver raises and turns a parrying hand.",
+      "contact_state": "Contact approaches and begins near the interval end.",
+      "receiver_response": "Receiver starts the block without torso recoil.",
+      "footwork": "Foot result not visible because of framing.",
+      "release_retraction_state": "Extension phase.",
+      "relevant_PUSH_IMPACT_evidence": "Compact approach; one-limb IMPACT-like configuration but no torso interaction yet."
+    },
+    {
+      "start_seconds": 0.75,
+      "end_seconds": 1.55,
+      "visible_action": "Initial hand/forearm contact becomes a two-person arm engagement as the initiator advances.",
+      "contact_state": "Continuous arm-to-arm contact.",
+      "receiver_response": "Receiver rotates and begins shifting screen-right/back.",
+      "footwork": "Foot result remains outside frame.",
+      "release_retraction_state": "No release; arms remain bound.",
+      "relevant_PUSH_IMPACT_evidence": "One interaction episode, but not a two-hand torso PUSH or brief IMPACT."
+    },
+    {
+      "start_seconds": 1.55,
+      "end_seconds": 2.5,
+      "visible_action": "The reciprocal arm bind is held while the receiver settles into a more displaced stance.",
+      "contact_state": "Prolonged continuous arm contact.",
+      "receiver_response": "Gradual lateral/back displacement; no immediate recoil.",
+      "footwork": "Feet not viewable.",
+      "release_retraction_state": "Release is delayed.",
+      "relevant_PUSH_IMPACT_evidence": "Displacement direction supports PUSH only at the response-direction level."
+    },
+    {
+      "start_seconds": 2.5,
+      "end_seconds": 3.13,
+      "visible_action": "Contact breaks; the initiator retracts and the receiver remains with one arm extended.",
+      "contact_state": "Contact ends near 2.50 s.",
+      "receiver_response": "Receiver stabilizes with no snap response.",
+      "footwork": "Feet not viewable.",
+      "release_retraction_state": "Initiator retracts; receiver begins a slower return.",
+      "relevant_PUSH_IMPACT_evidence": "Visible release/retraction and early recovery."
+    },
+    {
+      "start_seconds": 3.13,
+      "end_seconds": 4.38,
+      "visible_action": "Both performers progressively restore their guarded stances.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver brings the extended arm back into guard.",
+      "footwork": "Foot result not viewable.",
+      "release_retraction_state": "Recovery continues.",
+      "relevant_PUSH_IMPACT_evidence": "Recovery/repositioning evidence."
+    },
+    {
+      "start_seconds": 4.38,
+      "end_seconds": 4.76,
+      "visible_action": "Final small hand and posture settling.",
+      "contact_state": "No contact.",
+      "receiver_response": "No new receiver response.",
+      "footwork": "Feet not viewable.",
+      "release_retraction_state": "Retraction and recovery are complete by the end.",
+      "relevant_PUSH_IMPACT_evidence": "No new signature event."
+    },
+    {
+      "start_seconds": 4.76,
+      "end_seconds": 5.061995,
+      "visible_action": "Both performers hold guarded poses through the ending.",
+      "contact_state": "No contact.",
+      "receiver_response": "No response.",
+      "footwork": "Feet not viewable.",
+      "release_retraction_state": "No additional release or retraction.",
+      "relevant_PUSH_IMPACT_evidence": "Approximately 0.30 s static tail."
+    }
+  ],
+  "observations": {
+    "reference_ignored": {
+      "present": false,
+      "evidence_rationale": "A deliberate two-person interaction sequence is visible; the result is mismatched in form but does not visibly ignore the neutral reference role altogether."
+    },
+    "reference_overdominance": {
+      "present": false,
+      "evidence_rationale": "No material visual copying feature dominates the result; the live-action staging remains generic."
+    },
+    "reference_role_conflict": {
+      "present": true,
+      "evidence_rationale": "The receiver actively parries and sustains a reciprocal arm bind, obscuring a simple attacker-to-receiver motion role."
+    },
+    "action_family_failure": {
+      "present": true,
+      "evidence_rationale": "The main event is a prolonged arm-to-arm block/bind with no clear torso-directed PUSH or brief torso-directed IMPACT."
+    },
+    "prolonged_contact": {
+      "present": true,
+      "evidence_rationale": "Visible arm contact is maintained from roughly 0.75 s to 2.50 s."
+    },
+    "first_frame_separation": {
+      "status": "true",
+      "evidence_rationale": "The first frame shows a clear gap between the performers and their hands."
+    },
+    "contact_onset_readability": {
+      "status": "true",
+      "evidence_rationale": "The first hand/forearm meeting is readable at approximately 0.75 s."
+    },
+    "immediate_recoil": {
+      "status": "false",
+      "evidence_rationale": "Receiver motion is gradual and rotational during the bind, not an immediate upper-body recoil."
+    },
+    "exactly_one_rear_foot_result": {
+      "status": "unclear",
+      "evidence_rationale": "Both feet are outside the frame, so the number and type of rear-foot results cannot be verified."
+    },
+    "attacker_retract": {
+      "status": "true",
+      "evidence_rationale": "The blue-clad initiator visibly withdraws the contacting arm after the bind releases near 2.50 s."
+    },
+    "static_tail_duration_seconds": 0.3
+  },
+  "material_copy_sentinels": [
+    {
+      "sentinel": "CONTACT_MARKER_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No visible dot, target, overlay, flash, or other explicit contact marker appears anywhere in the MP4."
+    },
+    {
+      "sentinel": "MANNEQUIN_STYLE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The scene contains live human performers with articulated clothing and natural body motion; no mannequin-like model or mannequin staging is visible."
+    },
+    {
+      "sentinel": "GRID_SCENE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The background is a plain beige wall above a wooden floor, with no grid scene or grid-line structure."
+    },
+    {
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY",
+      "present": true,
+      "material": false,
+      "evidence_rationale": "The camera is locked off in a stable medium composition, but fixed framing by itself is not a material copying concern."
+    }
+  ],
+  "material_sentinel_count": 0,
+  "limitations": [
+    "Both performers are cropped below the lower legs, so rear-foot behavior cannot be scored positively.",
+    "Arm overlap during the bind limits exact anatomical contact-point precision.",
+    "The static-tail estimate is rounded to approximately 0.05 s."
+  ],
+  "mapping_requested_or_inferred": false,
+  "condition_inference_performed": false,
+  "experiment_level_conclusion_performed": false,
+  "review_record_complete": true
+}

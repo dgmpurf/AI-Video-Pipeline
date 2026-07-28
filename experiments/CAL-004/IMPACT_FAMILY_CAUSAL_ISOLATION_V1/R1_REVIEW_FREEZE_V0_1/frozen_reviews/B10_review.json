@@ -1,0 +1,251 @@
+{
+  "schema_version": "CAL004_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+  "experiment_label": "CAL-004 R1",
+  "blind_package_version": "V0.1",
+  "batch_label": "B",
+  "alias": "B10",
+  "blind_filename": "B10.mp4",
+  "blind_media_bytes": 8388608,
+  "blind_media_sha256": "31cc7dc78c9f00b92740d14779837880c5bc29e47546423ecc6d1e6560f71b1d",
+  "complete_mp4_reviewed": true,
+  "complete_mp4_viewable_through_end": true,
+  "technical_validity_binding": "PASS",
+  "push_signature_score_0_to_12": 11,
+  "impact_signature_score_0_to_12": 6,
+  "dimension_level_evidence": [
+    {
+      "dimension": "initiation_pattern",
+      "observed_evidence": "Two abstract figures begin separated in guarded poses; the blue figure shifts and initiates a measured reach.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Preparation is visible despite the simplified geometry."
+    },
+    {
+      "dimension": "approach_or_setup_pattern",
+      "observed_evidence": "The blue figure makes a measured body approach and extends an arm toward the receiver.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "No compact feint/strike setup is visible."
+    },
+    {
+      "dimension": "primary_limb_configuration",
+      "observed_evidence": "One long blue arm extends while the second arm remains folded.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The two-hand PUSH configuration is absent."
+    },
+    {
+      "dimension": "primary_interaction_character",
+      "observed_evidence": "The extended arm presses/holds against the receiver’s upper torso/shoulder area while the receiver gradually moves away.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Segmented geometry reduces fine contact-point precision but the pressing character is readable."
+    },
+    {
+      "dimension": "interaction_episode_count",
+      "observed_evidence": "One contact episode occurs; the late arm extension remains non-contact.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "No second contact is visible."
+    },
+    {
+      "dimension": "receiver_response_direction",
+      "observed_evidence": "The orange figure shifts away from the blue figure.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Direction is clear."
+    },
+    {
+      "dimension": "torso_response_type",
+      "observed_evidence": "The receiver leans/translates gradually rather than snapping backward.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "No immediate upper-body recoil is visible."
+    },
+    {
+      "dimension": "rear_foot_result_type",
+      "observed_evidence": "The receiver makes one outward/back placement with the rightmost rear leg and holds the widened stance.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The movement reads as recovery placement, not a sharp recoil step."
+    },
+    {
+      "dimension": "release_or_retraction_pattern",
+      "observed_evidence": "The blue arm separates and returns toward guard after the receiver’s step.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Retraction is visible but not strike-fast."
+    },
+    {
+      "dimension": "recovery_and_repositioning",
+      "observed_evidence": "Both figures return to separated guarded poses.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Recovery is clearly represented."
+    },
+    {
+      "dimension": "temporal_ordering",
+      "observed_evidence": "Preparation, approach, one press, receiver displacement/rear-leg placement, release, and recovery occur in order.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Immediate recoil and prompt IMPACT retraction are absent."
+    },
+    {
+      "dimension": "duration_utilization_and_final_phase_activity",
+      "observed_evidence": "The blue figure performs a late non-contact arm extension/retraction around 3.75–4.50 s, then holds briefly.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The final static tail is approximately 0.59 s."
+    }
+  ],
+  "complete_mp4_timeline": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 0.55,
+      "visible_action": "Two segmented mannequin-like figures hold separated guards.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver remains upright.",
+      "footwork": "Block feet/legs remain planted.",
+      "release_or_retraction_state": "No release is applicable.",
+      "relevant_PUSH_IMPACT_evidence": "Visible preparation supports both signatures."
+    },
+    {
+      "start_seconds": 0.55,
+      "end_seconds": 1.0,
+      "visible_action": "Blue figure approaches and extends one long arm.",
+      "contact_state": "Gap closes toward contact.",
+      "receiver_response": "Orange figure holds guard.",
+      "footwork": "Blue figure makes a small approach; orange remains planted.",
+      "release_or_retraction_state": "Arm is extending.",
+      "relevant_PUSH_IMPACT_evidence": "Measured approach favors PUSH."
+    },
+    {
+      "start_seconds": 1.0,
+      "end_seconds": 1.67,
+      "visible_action": "The extended arm contacts/presses the orange figure’s upper torso/shoulder region.",
+      "contact_state": "Single held contact.",
+      "receiver_response": "Orange figure gradually shifts away and begins widening stance.",
+      "footwork": "Orange rear/right leg starts one outward-back placement.",
+      "release_or_retraction_state": "No retraction yet.",
+      "relevant_PUSH_IMPACT_evidence": "Pressing contact and gradual displacement support PUSH."
+    },
+    {
+      "start_seconds": 1.67,
+      "end_seconds": 2.08,
+      "visible_action": "Contact breaks; receiver completes the rear-leg placement while the blue arm returns.",
+      "contact_state": "Contact ends.",
+      "receiver_response": "Receiver stabilizes in a widened stance.",
+      "footwork": "Exactly one rear-leg result is completed.",
+      "release_or_retraction_state": "Blue arm retracts toward guard.",
+      "relevant_PUSH_IMPACT_evidence": "Release and recovery support PUSH."
+    },
+    {
+      "start_seconds": 2.08,
+      "end_seconds": 3.75,
+      "visible_action": "Both figures hold separated recovered poses with minor animation drift.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver remains stable.",
+      "footwork": "No meaningful leg change.",
+      "release_or_retraction_state": "Retraction is complete.",
+      "relevant_PUSH_IMPACT_evidence": "Recovery hold."
+    },
+    {
+      "start_seconds": 3.75,
+      "end_seconds": 4.5,
+      "visible_action": "Blue figure extends an arm partway toward the receiver and retracts without closing the gap.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver does not move away.",
+      "footwork": "Legs remain planted.",
+      "release_or_retraction_state": "Late non-contact gesture retracts.",
+      "relevant_PUSH_IMPACT_evidence": "Final-phase activity without a second episode."
+    },
+    {
+      "start_seconds": 4.5,
+      "end_seconds": 5.085011,
+      "visible_action": "Both figures hold the final separated poses through the end.",
+      "contact_state": "No contact.",
+      "receiver_response": "No new response.",
+      "footwork": "Legs remain planted.",
+      "release_or_retraction_state": "No further retraction.",
+      "relevant_PUSH_IMPACT_evidence": "Short static tail."
+    }
+  ],
+  "observations": {
+    "reference_ignored": {
+      "present": false,
+      "evidence_rationale": "The visible motion retains a coherent standing displacement, rear-leg placement, release, and recovery sequence."
+    },
+    "reference_overdominance": {
+      "present": true,
+      "evidence_rationale": "The entire result is rendered as abstract segmented block mannequins, making the visual-reference form materially dominant over a neutral motion-only role."
+    },
+    "reference_role_conflict": {
+      "present": false,
+      "evidence_rationale": "The blue figure initiates and the orange figure receives throughout the contact."
+    },
+    "action_family_failure": {
+      "present": false,
+      "evidence_rationale": "The motion remains a standing single-contact displacement action despite the one-arm mismatch."
+    },
+    "prolonged_contact": {
+      "present": false,
+      "evidence_rationale": "The single held contact lasts about 0.67 s and releases as the one rear-leg placement completes."
+    },
+    "first_frame_separation": {
+      "status": "true",
+      "evidence_rationale": "The figures and arms are visibly separated at 0.00 s."
+    },
+    "contact_onset_readability": {
+      "status": "unclear",
+      "evidence_rationale": "The arm visibly overlaps the receiver’s upper body, but simplified block geometry prevents precise surface-contact confirmation."
+    },
+    "immediate_recoil": {
+      "status": "false",
+      "evidence_rationale": "The receiver moves gradually during held contact rather than recoiling sharply."
+    },
+    "exactly_one_rear_foot_result": {
+      "status": "true",
+      "evidence_rationale": "One rightmost/rear block leg moves outward/back and no second rear-leg step follows."
+    },
+    "attacker_retract": {
+      "status": "true",
+      "evidence_rationale": "The blue arm retracts after the contact and also retracts the late non-contact gesture."
+    },
+    "static_tail_duration_seconds": 0.59
+  },
+  "material_copy_sentinels": [
+    {
+      "sentinel": "CONTACT_MARKER_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No visible contact marker, crosshair, flash, or overlay appears."
+    },
+    {
+      "sentinel": "MANNEQUIN_STYLE_COPY",
+      "present": true,
+      "material": true,
+      "evidence_rationale": "Both actors are abstract low-poly block mannequins with featureless oval heads and segmented rectangular limbs; this substantially dominates the visible presentation."
+    },
+    {
+      "sentinel": "GRID_SCENE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The scene is a plain wall and wood floor with no visible grid environment."
+    },
+    {
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY",
+      "present": true,
+      "material": false,
+      "evidence_rationale": "The camera is locked in a centered wide composition, but fixed camera alone is not treated as material copying."
+    }
+  ],
+  "material_sentinel_count": 1,
+  "limitations": [
+    "The abstract segmented geometry removes hands, facial detail, and anatomical joints, limiting exact contact-point and foot-plant precision.",
+    "Timeline boundaries are rounded to the nearest 0.01 s from the decoded visible-frame sequence."
+  ],
+  "mapping_requested_or_inferred": false,
+  "condition_inference_performed": false,
+  "experiment_level_conclusion_performed": false,
+  "review_record_complete": true
+}

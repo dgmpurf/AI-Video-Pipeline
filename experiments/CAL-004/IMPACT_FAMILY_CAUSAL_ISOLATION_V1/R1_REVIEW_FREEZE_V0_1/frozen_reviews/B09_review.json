@@ -1,0 +1,242 @@
+{
+  "schema_version": "CAL004_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+  "experiment_label": "CAL-004 R1",
+  "blind_package_version": "V0.1",
+  "batch_label": "B",
+  "alias": "B09",
+  "blind_filename": "B09.mp4",
+  "blind_media_bytes": 8388608,
+  "blind_media_sha256": "d7e2ee7c8a3be2e7e079590734bff296dcc8a154ea5a2d0a96e27a5a339bba6e",
+  "complete_mp4_reviewed": true,
+  "complete_mp4_viewable_through_end": true,
+  "technical_validity_binding": "PASS",
+  "push_signature_score_0_to_12": 6,
+  "impact_signature_score_0_to_12": 11,
+  "dimension_level_evidence": [
+    {
+      "dimension": "initiation_pattern",
+      "observed_evidence": "Both performers begin in close separated guards; the blue-clad initiator makes a compact preparatory hand motion.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Preparation is clear."
+    },
+    {
+      "dimension": "approach_or_setup_pattern",
+      "observed_evidence": "The initiator uses a compact direct extension from the existing stance rather than a measured body approach.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "No distinct PUSH approach step is visible."
+    },
+    {
+      "dimension": "primary_limb_configuration",
+      "observed_evidence": "One closed right fist is the primary interacting limb.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The two-hand PUSH configuration is absent."
+    },
+    {
+      "dimension": "primary_interaction_character",
+      "observed_evidence": "The fist makes one brief upper-torso/chest interaction and the receiver begins recoil during the contact.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The interaction reads as a compact impact rather than a two-hand press."
+    },
+    {
+      "dimension": "interaction_episode_count",
+      "observed_evidence": "There is one torso-directed interaction and no later contact episode.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The later guard motion remains separated."
+    },
+    {
+      "dimension": "receiver_response_direction",
+      "observed_evidence": "The orange-clad receiver moves backward/away from the fist.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Feet are cropped, but upper-body direction is clear."
+    },
+    {
+      "dimension": "torso_response_type",
+      "observed_evidence": "The receiver’s upper body recoils promptly, folds slightly, and shifts back.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "This is immediate recoil rather than gradual PUSH displacement."
+    },
+    {
+      "dimension": "rear_foot_result_type",
+      "observed_evidence": "The framing excludes both performers’ feet throughout the relevant interval.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "A rear-foot result cannot be verified and is scored 0 for both signatures."
+    },
+    {
+      "dimension": "release_or_retraction_pattern",
+      "observed_evidence": "The initiator promptly withdraws the fist after the brief contact and returns to guard.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Retraction is clearly visible."
+    },
+    {
+      "dimension": "recovery_and_repositioning",
+      "observed_evidence": "Both performers re-establish separated guards and continue small posture adjustments.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Recovery is visible even though the feet remain out of frame."
+    },
+    {
+      "dimension": "temporal_ordering",
+      "observed_evidence": "Preparation, compact extension, one torso interaction, immediate recoil, prompt retraction, and recovery occur in sequence.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The sequence is IMPACT-like and lacks the two-hand PUSH/rear-foot recovery chain."
+    },
+    {
+      "dimension": "duration_utilization_and_final_phase_activity",
+      "observed_evidence": "Both performers continue subtle guard, torso, and weight-shift activity through the final visible frame.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "No static tail is visible."
+    }
+  ],
+  "complete_mp4_timeline": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.17,
+      "visible_action": "Both performers hold close separated guards with small preparatory hand and torso adjustments.",
+      "contact_state": "No contact; a narrow but visible hand gap remains.",
+      "receiver_response": "Receiver stays ready and upright.",
+      "footwork": "Feet are outside the frame.",
+      "release_or_retraction_state": "No release is applicable.",
+      "relevant_PUSH_IMPACT_evidence": "Preparation supports both signatures; compact framing limits foot evidence."
+    },
+    {
+      "start_seconds": 1.17,
+      "end_seconds": 1.33,
+      "visible_action": "Blue-clad initiator rapidly extends one closed right fist toward the receiver’s upper torso.",
+      "contact_state": "Gap closes to contact.",
+      "receiver_response": "Receiver begins bracing.",
+      "footwork": "Feet remain out of frame.",
+      "release_or_retraction_state": "Fist is extending.",
+      "relevant_PUSH_IMPACT_evidence": "Compact setup and one primary limb support IMPACT."
+    },
+    {
+      "start_seconds": 1.33,
+      "end_seconds": 1.72,
+      "visible_action": "The fist contacts the upper chest/torso area for one brief episode.",
+      "contact_state": "Single torso-directed contact.",
+      "receiver_response": "Receiver immediately recoils, folds slightly, and shifts backward.",
+      "footwork": "Rear-foot behavior is not visible.",
+      "release_or_retraction_state": "Contact is brief; retraction begins at the end.",
+      "relevant_PUSH_IMPACT_evidence": "Brief torso interaction and immediate recoil strongly support IMPACT."
+    },
+    {
+      "start_seconds": 1.72,
+      "end_seconds": 2.08,
+      "visible_action": "Initiator withdraws the fist; both restore separated guards.",
+      "contact_state": "Contact ends.",
+      "receiver_response": "Receiver stabilizes and returns guard.",
+      "footwork": "Feet remain out of frame.",
+      "release_or_retraction_state": "Prompt retraction completes.",
+      "relevant_PUSH_IMPACT_evidence": "Release/retraction and recovery support IMPACT."
+    },
+    {
+      "start_seconds": 2.08,
+      "end_seconds": 3.5,
+      "visible_action": "Both remain separated in guard with continuing small upper-body adjustments.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver stays stable.",
+      "footwork": "Footwork cannot be seen.",
+      "release_or_retraction_state": "Retraction is complete.",
+      "relevant_PUSH_IMPACT_evidence": "Recovery/repositioning continues."
+    },
+    {
+      "start_seconds": 3.5,
+      "end_seconds": 5.085011,
+      "visible_action": "Subtle guard, torso, and weight-shift motion continues through the ending.",
+      "contact_state": "No contact.",
+      "receiver_response": "No new recoil or displacement.",
+      "footwork": "Feet remain outside the frame.",
+      "release_or_retraction_state": "No new release/retraction.",
+      "relevant_PUSH_IMPACT_evidence": "Active final phase; no static tail."
+    }
+  ],
+  "observations": {
+    "reference_ignored": {
+      "present": false,
+      "evidence_rationale": "The clip visibly preserves a coherent compact single-impact sequence with recoil, retraction, and recovery."
+    },
+    "reference_overdominance": {
+      "present": false,
+      "evidence_rationale": "No material visual-copy sentinel is present."
+    },
+    "reference_role_conflict": {
+      "present": false,
+      "evidence_rationale": "The blue-clad performer initiates and the orange-clad performer receives throughout the single interaction."
+    },
+    "action_family_failure": {
+      "present": false,
+      "evidence_rationale": "The standing one-contact torso interaction remains within the neutral IMPACT family."
+    },
+    "prolonged_contact": {
+      "present": false,
+      "evidence_rationale": "The torso interaction lasts roughly 0.4 s and is followed by prompt retraction."
+    },
+    "first_frame_separation": {
+      "status": "true",
+      "evidence_rationale": "A small visible gap remains between the nearest fists at 0.00 s."
+    },
+    "contact_onset_readability": {
+      "status": "true",
+      "evidence_rationale": "The closed fist visibly enters the upper chest/torso area near 1.33 s."
+    },
+    "immediate_recoil": {
+      "status": "true",
+      "evidence_rationale": "The receiver’s upper body begins moving back and folding as contact occurs."
+    },
+    "exactly_one_rear_foot_result": {
+      "status": "unclear",
+      "evidence_rationale": "The camera crops out both feet, so the number and type of rear-foot steps cannot be determined."
+    },
+    "attacker_retract": {
+      "status": "true",
+      "evidence_rationale": "The initiator promptly withdraws the fist and restores guard after the contact."
+    },
+    "static_tail_duration_seconds": 0.0
+  },
+  "material_copy_sentinels": [
+    {
+      "sentinel": "CONTACT_MARKER_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No visible crosshair, dot, flash, overlay, or other contact-marker graphic appears at contact."
+    },
+    {
+      "sentinel": "MANNEQUIN_STYLE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The figures are visibly human performers rather than abstract or segmented mannequins."
+    },
+    {
+      "sentinel": "GRID_SCENE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The scene is a plain studio wall and wood floor with no visible grid environment."
+    },
+    {
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY",
+      "present": true,
+      "material": false,
+      "evidence_rationale": "The camera is fixed in a close two-person composition, but fixed camera alone is not material copying."
+    }
+  ],
+  "material_sentinel_count": 0,
+  "limitations": [
+    "Both performers’ feet are outside the frame, preventing any reliable rear-foot assessment.",
+    "The receiver’s guarding forearms overlap the fist near contact, but the upper-torso interaction and recoil remain readable.",
+    "Timeline boundaries are rounded to the nearest 0.01 s from the decoded visible-frame sequence."
+  ],
+  "mapping_requested_or_inferred": false,
+  "condition_inference_performed": false,
+  "experiment_level_conclusion_performed": false,
+  "review_record_complete": true
+}

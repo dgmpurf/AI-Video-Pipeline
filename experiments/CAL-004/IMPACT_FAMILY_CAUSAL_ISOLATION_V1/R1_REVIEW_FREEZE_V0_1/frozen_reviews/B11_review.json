@@ -1,0 +1,251 @@
+{
+  "schema_version": "CAL004_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+  "experiment_label": "CAL-004 R1",
+  "blind_package_version": "V0.1",
+  "batch_label": "B",
+  "alias": "B11",
+  "blind_filename": "B11.mp4",
+  "blind_media_bytes": 8388608,
+  "blind_media_sha256": "acca3ae8f36de4f3c6bddf9373a2980abdd65df98fafae33fcd2743f89398e2c",
+  "complete_mp4_reviewed": true,
+  "complete_mp4_viewable_through_end": true,
+  "technical_validity_binding": "PASS",
+  "push_signature_score_0_to_12": 10,
+  "impact_signature_score_0_to_12": 6,
+  "dimension_level_evidence": [
+    {
+      "dimension": "initiation_pattern",
+      "observed_evidence": "Both performers begin separated in crossed-forearm guards; the blue-clad initiator shifts and begins a measured reach.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Preparation is clear."
+    },
+    {
+      "dimension": "approach_or_setup_pattern",
+      "observed_evidence": "The initiator makes a measured approach and extends the right arm.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "No compact feint or strike setup is visible."
+    },
+    {
+      "dimension": "primary_limb_configuration",
+      "observed_evidence": "One right arm extends while the other remains folded.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "This fails the two-hand PUSH configuration."
+    },
+    {
+      "dimension": "primary_interaction_character",
+      "observed_evidence": "The extended hand/forearm meets the receiver’s crossed guard rather than clearly pressing the torso; the response is gradual.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The crossed arms obscure any direct torso contact."
+    },
+    {
+      "dimension": "interaction_episode_count",
+      "observed_evidence": "There is one main contact; the late arm gesture remains separated.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "No second contact episode."
+    },
+    {
+      "dimension": "receiver_response_direction",
+      "observed_evidence": "The orange-clad receiver shifts right/back away from the initiator.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Direction is clear."
+    },
+    {
+      "dimension": "torso_response_type",
+      "observed_evidence": "The receiver remains upright and gradually translates/weight-shifts.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "No immediate recoil."
+    },
+    {
+      "dimension": "rear_foot_result_type",
+      "observed_evidence": "The receiver makes one rear/right-foot outward-back placement and holds the widened stance.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Reads as recovery placement rather than recoil step."
+    },
+    {
+      "dimension": "release_or_retraction_pattern",
+      "observed_evidence": "The initiator separates and returns the right arm toward guard after the step.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Retraction is not strike-fast."
+    },
+    {
+      "dimension": "recovery_and_repositioning",
+      "observed_evidence": "Both performers settle into separated guards.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Recovery is complete."
+    },
+    {
+      "dimension": "temporal_ordering",
+      "observed_evidence": "Preparation, approach, one guard contact, gradual displacement/rear-foot placement, separation, and recovery occur in sequence.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The ordering is PUSH-like but lacks a two-hand torso interaction."
+    },
+    {
+      "dimension": "duration_utilization_and_final_phase_activity",
+      "observed_evidence": "A late non-contact arm extension/retraction occurs around 3.75–4.50 s before a short final hold.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The final static tail is approximately 0.56 s."
+    }
+  ],
+  "complete_mp4_timeline": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 0.55,
+      "visible_action": "Both performers hold separated crossed-forearm guards.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver remains upright.",
+      "footwork": "Feet planted.",
+      "release_or_retraction_state": "No release is applicable.",
+      "relevant_PUSH_IMPACT_evidence": "Preparation supports both signatures."
+    },
+    {
+      "start_seconds": 0.55,
+      "end_seconds": 1.17,
+      "visible_action": "Blue-clad initiator approaches and extends one right arm.",
+      "contact_state": "Gap closes; contact not yet definite.",
+      "receiver_response": "Receiver holds crossed guard.",
+      "footwork": "Small initiator approach; receiver planted.",
+      "release_or_retraction_state": "Arm extends.",
+      "relevant_PUSH_IMPACT_evidence": "Measured approach favors PUSH."
+    },
+    {
+      "start_seconds": 1.17,
+      "end_seconds": 1.5,
+      "visible_action": "The hand/forearm meets the receiver’s crossed guard.",
+      "contact_state": "Single short guard-level contact.",
+      "receiver_response": "Receiver begins shifting right/back while upright.",
+      "footwork": "Receiver initiates one rear/right-foot placement.",
+      "release_or_retraction_state": "No retraction yet.",
+      "relevant_PUSH_IMPACT_evidence": "Gradual displacement favors PUSH, but direct torso contact is not clear."
+    },
+    {
+      "start_seconds": 1.5,
+      "end_seconds": 2.08,
+      "visible_action": "Contact breaks; receiver completes the widened stance and initiator retracts.",
+      "contact_state": "Contact ends.",
+      "receiver_response": "Receiver stabilizes.",
+      "footwork": "One rear-foot result completes.",
+      "release_or_retraction_state": "Right arm retracts to guard.",
+      "relevant_PUSH_IMPACT_evidence": "Release/recovery support PUSH."
+    },
+    {
+      "start_seconds": 2.08,
+      "end_seconds": 3.75,
+      "visible_action": "Both hold recovered guards with minor sway.",
+      "contact_state": "No contact.",
+      "receiver_response": "No new response.",
+      "footwork": "No meaningful foot change.",
+      "release_or_retraction_state": "Retraction complete.",
+      "relevant_PUSH_IMPACT_evidence": "Recovery hold."
+    },
+    {
+      "start_seconds": 3.75,
+      "end_seconds": 4.5,
+      "visible_action": "Initiator makes a small non-contact arm extension and retracts.",
+      "contact_state": "No contact.",
+      "receiver_response": "Receiver remains stable.",
+      "footwork": "Feet planted.",
+      "release_or_retraction_state": "Late gesture retracts.",
+      "relevant_PUSH_IMPACT_evidence": "Final-phase activity without a second interaction."
+    },
+    {
+      "start_seconds": 4.5,
+      "end_seconds": 5.061995,
+      "visible_action": "Both hold final separated guards to the ending.",
+      "contact_state": "No contact.",
+      "receiver_response": "No new response.",
+      "footwork": "Feet planted.",
+      "release_or_retraction_state": "No further retraction.",
+      "relevant_PUSH_IMPACT_evidence": "Short static tail."
+    }
+  ],
+  "observations": {
+    "reference_ignored": {
+      "present": false,
+      "evidence_rationale": "The clip retains a coherent standing single-contact displacement and recovery sequence."
+    },
+    "reference_overdominance": {
+      "present": false,
+      "evidence_rationale": "No material style or scene-copy sentinel is present."
+    },
+    "reference_role_conflict": {
+      "present": false,
+      "evidence_rationale": "The blue-clad performer initiates and the orange-clad performer receives throughout."
+    },
+    "action_family_failure": {
+      "present": false,
+      "evidence_rationale": "The action remains within the standing PUSH/IMPACT family despite the one-hand guard contact."
+    },
+    "prolonged_contact": {
+      "present": false,
+      "evidence_rationale": "The guard-level contact lasts only about 0.33 s before separation."
+    },
+    "first_frame_separation": {
+      "status": "true",
+      "evidence_rationale": "Clear space exists between both bodies and hands at 0.00 s."
+    },
+    "contact_onset_readability": {
+      "status": "true",
+      "evidence_rationale": "The right hand/forearm visibly reaches the crossed guard near 1.17 s; direct torso contact remains obscured."
+    },
+    "immediate_recoil": {
+      "status": "false",
+      "evidence_rationale": "The receiver shifts gradually without a sharp upper-body snap."
+    },
+    "exactly_one_rear_foot_result": {
+      "status": "true",
+      "evidence_rationale": "One rear/right-foot outward-back placement occurs and no second rear-foot step follows."
+    },
+    "attacker_retract": {
+      "status": "true",
+      "evidence_rationale": "The initiator withdraws the right arm after separation and retracts the late non-contact gesture."
+    },
+    "static_tail_duration_seconds": 0.56
+  },
+  "material_copy_sentinels": [
+    {
+      "sentinel": "CONTACT_MARKER_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No visible crosshair, dot, flash, overlay, or other contact-marker graphic appears at contact."
+    },
+    {
+      "sentinel": "MANNEQUIN_STYLE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The figures are visibly human performers rather than abstract or segmented mannequins."
+    },
+    {
+      "sentinel": "GRID_SCENE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The scene is a plain studio wall and wood floor with no visible grid environment."
+    },
+    {
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY",
+      "present": true,
+      "material": false,
+      "evidence_rationale": "The camera is locked in a centered wide studio composition, but fixed camera alone is not material copying."
+    }
+  ],
+  "material_sentinel_count": 0,
+  "limitations": [
+    "The crossed guard obscures whether the primary hand reaches only the forearm or also the upper torso behind it.",
+    "Timeline boundaries are rounded to the nearest 0.01 s from the decoded visible-frame sequence."
+  ],
+  "mapping_requested_or_inferred": false,
+  "condition_inference_performed": false,
+  "experiment_level_conclusion_performed": false,
+  "review_record_complete": true
+}
