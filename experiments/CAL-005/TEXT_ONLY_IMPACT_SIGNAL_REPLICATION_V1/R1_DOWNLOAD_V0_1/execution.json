@@ -1,0 +1,75 @@
+{
+  "all_six_downloaded": false,
+  "all_six_technically_valid": false,
+  "attempted_downloads": 6,
+  "authorization_lifecycle": {
+    "activated": true,
+    "activation_boundary": "IMMEDIATELY_BEFORE_FIRST_QUERY_RESULT_WITH_DOWNLOAD_DIR",
+    "activation_utc": "2026-07-29T12:18:47.789006Z",
+    "consumed": true,
+    "reusable": false
+  },
+  "command_counts": {
+    "download": 6,
+    "query_without_download": 0,
+    "resubmit": 0,
+    "retry": 0,
+    "submit": 0,
+    "user_credit": 0
+  },
+  "condition_technical_coverage": {
+    "I0R": {
+      "downloaded": 1,
+      "task_count": 3,
+      "technically_valid": 1
+    },
+    "N0R": {
+      "downloaded": 1,
+      "task_count": 3,
+      "technically_valid": 1
+    }
+  },
+  "credits_queried_or_consumed": false,
+  "decision": "CAL005_R1_PARTIAL_DOWNLOAD_FAILURE_HUMAN_DECISION",
+  "download_end_utc": "2026-07-29T12:21:44.553666Z",
+  "download_start_utc": "2026-07-29T12:18:47.789006Z",
+  "duplicate_hash_detection": false,
+  "external_media_root": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1",
+  "failed_downloads": 4,
+  "final_master": false,
+  "fixed_task_completion": false,
+  "locked": false,
+  "media_access_scope": "NON_SEMANTIC_TECHNICAL_VALIDATION_ONLY",
+  "next_phase": "CAL005_R1_PARTIAL_DOWNLOAD_ROUTE_RESET_HUMAN_DECISION",
+  "production_approved": false,
+  "query_result_help": {
+    "command": [
+      "C:\\Users\\msjpurf\\bin\\dreamina.EXE",
+      "query_result",
+      "-h"
+    ],
+    "download_dir_supported": true,
+    "invocation_count": 1,
+    "raw_help_persisted": false,
+    "return_code": 0,
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_bytes": 388,
+    "stdout_sha256": "74f728cc4d3ae36fb3dcf773e85ed003637c28d048d1cad77a29b59b9bd4b171",
+    "submit_id_supported": true
+  },
+  "randomness": 0,
+  "schema_version": "CAL005_R1_DOWNLOAD_EXECUTION_V0_1",
+  "scientific_result_derived": false,
+  "semantic_review_performed": false,
+  "signed_urls_persisted": false,
+  "starting_checkpoint": "45eb075e7f41c2f633f6bcc34a4dcf5ea3c256b7",
+  "successful_downloads": 2,
+  "task_count": 6,
+  "technically_invalid_files": 0,
+  "technically_valid_files": 2,
+  "total_download_invocations": 6,
+  "total_media_bytes": 8167777,
+  "unique_media_hash_count": 2,
+  "visual_success_claimed": false
+}

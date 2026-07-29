@@ -1,0 +1,75 @@
+{
+  "authorization": {
+    "base64_character_count": 1748,
+    "bytes": 1309,
+    "sha256": "42df89081b3a21f880a2960e64c773a12ec20b41f1c5e2df08eb2b84e2a6265b",
+    "verified": true
+  },
+  "branch": "main",
+  "cli_contract": {
+    "download_dir_flag_present": true,
+    "historical_unretained_help_invocation_count": 1,
+    "query_result_help": "PASS",
+    "replacement_help_call_count": 1,
+    "replacement_help_evidence": {
+      "command": [
+        "C:\\Users\\msjpurf\\bin\\dreamina.EXE",
+        "query_result",
+        "-h"
+      ],
+      "download_dir_supported": true,
+      "invocation_count": 1,
+      "raw_help_persisted": false,
+      "return_code": 0,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 388,
+      "stdout_sha256": "74f728cc4d3ae36fb3dcf773e85ed003637c28d048d1cad77a29b59b9bd4b171",
+      "submit_id_supported": true
+    },
+    "submit_id_flag_present": true
+  },
+  "committed_evidence": {
+    "one_video_result_each": true,
+    "prior_download_retry_resubmit": [
+      0,
+      0,
+      0
+    ],
+    "query_terminal_success_count": 6,
+    "submit_accepted_count": 6,
+    "submit_ids_unique": true,
+    "task_count": 6,
+    "task_ids_unique": true
+  },
+  "completed_before_first_download_utc": "2026-07-29T12:18:47.789006Z",
+  "external_media_prestate": {
+    "final_path_conflict_count": 0,
+    "root_existed": false,
+    "unexpected_entry_count": 0
+  },
+  "ffmpeg": {
+    "bytes": 131534336,
+    "path": "C:/ffmpeg/bin/ffmpeg.exe",
+    "sha256": "9f5c85e070cc2cfdc960c67395a8a47967732e59ddd8850bc56cf5842e7049d4",
+    "version": "2023-03-27-git-f7abe92bd7-full_build-www.gyan.dev"
+  },
+  "ffprobe": {
+    "bytes": 131407872,
+    "path": "C:/ffmpeg/bin/ffprobe.exe",
+    "sha256": "ba37098df2d55a7464ca344ab806c174be9735c22bf8a487d26fe0c624598695",
+    "version": "2023-03-27-git-f7abe92bd7-full_build-www.gyan.dev"
+  },
+  "head": "45eb075e7f41c2f633f6bcc34a4dcf5ea3c256b7",
+  "head_origin_aligned": true,
+  "merge_rebase_cherry_pick_revert_bisect_active": false,
+  "origin_main": "45eb075e7f41c2f633f6bcc34a4dcf5ea3c256b7",
+  "repository_output_prestate_absent": true,
+  "schema_version": "CAL005_R1_DOWNLOAD_PREFLIGHT_V0_1",
+  "sources_clean": true,
+  "staged_change_count": 0,
+  "temporary_correction_cycles_used": 2,
+  "temporary_correction_summary": "Resolved ffprobe and ffmpeg through the governed C:/ffmpeg/bin absolute paths, then replaced an unsupported cross-volume directory rename with byte-verified exclusive file copies. No Provider operation was repeated.",
+  "tracked_modification_count": 0,
+  "user_credit_called": false
+}

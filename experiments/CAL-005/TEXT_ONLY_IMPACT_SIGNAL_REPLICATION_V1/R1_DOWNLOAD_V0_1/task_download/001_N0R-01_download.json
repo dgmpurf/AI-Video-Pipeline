@@ -1,0 +1,91 @@
+{
+  "audio_codec": null,
+  "audio_stream_count": 0,
+  "complete_decode_process": null,
+  "complete_decode_result": "NOT_RUN",
+  "condition_id": "N0R",
+  "dimensions": {
+    "height": 0,
+    "width": 0
+  },
+  "download_command": {
+    "argv": [
+      "C:/Users/msjpurf/bin/dreamina.EXE",
+      "query_result",
+      "--submit_id",
+      "5dc990df-da16-40f6-87e1-7aa1922df108",
+      "--download_dir",
+      "<EXTERNAL_TEMP>/.tmp_001_N0R-01"
+    ],
+    "download_dir_present": true,
+    "process": {
+      "elapsed_seconds": 33.719,
+      "end_utc": "2026-07-29T12:19:21.712311Z",
+      "launch_exception_class": null,
+      "return_code": 1,
+      "start_utc": "2026-07-29T12:18:47.991788Z",
+      "stderr_bytes": 116,
+      "stdout_bytes": 0,
+      "timeout": false
+    },
+    "raw_output_persisted": false,
+    "signed_url_persisted": false
+  },
+  "download_command_exit_code": 1,
+  "download_invocation_count": 1,
+  "duration_seconds": null,
+  "duration_text": null,
+  "failure_reason_summary": "DOWNLOAD_COMMAND_NONZERO_EXIT",
+  "ffprobe_metadata_summary": null,
+  "final_external_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/001_N0R-01.mp4",
+  "fixed_position": 1,
+  "initial_query_status": "SUCCESS",
+  "media_bytes": 0,
+  "media_sha256": null,
+  "nonempty_file": false,
+  "other_stream_count": 0,
+  "pixel_format": null,
+  "planned_duration_conformance": {
+    "absolute_delta_seconds": null,
+    "observed_duration_seconds": null,
+    "planned_duration_seconds": 5.0,
+    "status": "NOT_EVALUATED",
+    "within_0_25_seconds": false
+  },
+  "redownload_authorized": false,
+  "regular_file": false,
+  "replicate": 1,
+  "resubmit_authorized": false,
+  "result_video_file_count": 1,
+  "retry_authorized": false,
+  "sanitized_download_result": "FAIL",
+  "schema_version": "CAL005_R1_TASK_DOWNLOAD_RECORD_V0_1",
+  "scientific_result_derived": false,
+  "semantic_review_performed": false,
+  "signed_url_persisted": false,
+  "source_bindings": {
+    "query_success_record": {
+      "bytes": 2350,
+      "git_blob": "233b68066f2da81a84d5d3db22ff4e5a3f31ee2e",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_QUERY_V0_1/task_status/001_N0R-01_query.json",
+      "role": "COMMITTED_QUERY_SUCCESS_IDENTITY",
+      "sha256": "8027bd13d0744a104d1815bd00d6ae32cb90f609a09c5043cafdb03b0c1d19a5",
+      "worktree_equals_head": true
+    },
+    "submit_receipt": {
+      "bytes": 2266,
+      "git_blob": "c90380ea8c9ae4d563f2b9aa536054e9e8a60b38",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/001_N0R-01_submit_receipt.json",
+      "role": "COMMITTED_SUBMIT_IDENTITY",
+      "sha256": "69537d134374042c159662f517f8f3ec466d05db5774f67bca3a891350d6be91",
+      "worktree_equals_head": true
+    }
+  },
+  "stream_count": 0,
+  "submit_id": "5dc990df-da16-40f6-87e1-7aa1922df108",
+  "task_id": "N0R-01",
+  "technical_validity": "FAIL",
+  "video_codec": null,
+  "video_stream_count": 0,
+  "visual_success_claimed": false
+}

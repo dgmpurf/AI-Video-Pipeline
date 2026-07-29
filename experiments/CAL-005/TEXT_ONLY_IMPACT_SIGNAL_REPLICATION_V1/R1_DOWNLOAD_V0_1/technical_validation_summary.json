@@ -1,0 +1,31 @@
+{
+  "all_six_complete": false,
+  "all_six_technically_valid": false,
+  "attempted_download_count": 6,
+  "complete_decode_pass_count": 2,
+  "condition_coverage": {
+    "I0R": {
+      "downloaded": 1,
+      "task_count": 3,
+      "technically_valid": 1
+    },
+    "N0R": {
+      "downloaded": 1,
+      "task_count": 3,
+      "technically_valid": 1
+    }
+  },
+  "duplicate_hash_groups": [],
+  "exact_final_path_coverage": 2,
+  "failed_download_count": 4,
+  "i0r_coverage": 1,
+  "n0r_coverage": 1,
+  "planned_duration_conformance_count": 2,
+  "schema_version": "CAL005_R1_TECHNICAL_VALIDATION_SUMMARY_V0_1",
+  "successful_download_count": 2,
+  "task_count": 6,
+  "technically_invalid_count": 0,
+  "technically_valid_count": 2,
+  "total_media_bytes": 8167777,
+  "unique_media_hashes": 2
+}

@@ -1,0 +1,59 @@
+{
+  "external_media_root": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1",
+  "media_count": 2,
+  "media_embedded": false,
+  "media_entries": [
+    {
+      "audio_codec": "aac",
+      "bytes": 4737910,
+      "condition_id": "N0R",
+      "dimensions": {
+        "height": 720,
+        "width": 1280
+      },
+      "duration_seconds": 5.06195,
+      "fixed_position": 5,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/005_N0R-03.mp4",
+      "replicate": 3,
+      "sha256": "8464de889293d8a92164ba8c81e59585afa3a037cbc03748ff687671bd860023",
+      "stream_counts": {
+        "audio": 1,
+        "other": 0,
+        "total": 2,
+        "video": 1
+      },
+      "submit_id": "79d78266-f8c4-483a-aada-efece59f389b",
+      "task_id": "N0R-03",
+      "technical_status": "PASS",
+      "video_codec": "h264"
+    },
+    {
+      "audio_codec": "aac",
+      "bytes": 3429867,
+      "condition_id": "I0R",
+      "dimensions": {
+        "height": 720,
+        "width": 1280
+      },
+      "duration_seconds": 5.06195,
+      "fixed_position": 6,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/006_I0R-03.mp4",
+      "replicate": 3,
+      "sha256": "83d26fc63b0d7e7ba8c3cac0114ac6124a43378ffa790c60e61078ccc898c3b7",
+      "stream_counts": {
+        "audio": 1,
+        "other": 0,
+        "total": 2,
+        "video": 1
+      },
+      "submit_id": "45efc667-7831-4657-9249-f60a80966b07",
+      "task_id": "I0R-03",
+      "technical_status": "PASS",
+      "video_codec": "h264"
+    }
+  ],
+  "schema_version": "CAL005_R1_EXTERNAL_MEDIA_MANIFEST_V0_1",
+  "signed_urls_persisted": false,
+  "total_media_bytes": 8167777,
+  "unique_media_hashes": 2
+}
