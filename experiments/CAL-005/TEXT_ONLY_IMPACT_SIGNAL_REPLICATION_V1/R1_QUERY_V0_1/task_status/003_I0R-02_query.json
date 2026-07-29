@@ -1,0 +1,78 @@
+{
+  "condition_id": "I0R",
+  "download_count": 0,
+  "failure_or_unknown_reason": null,
+  "final_raw_state_label": "success",
+  "first_queried_round": 1,
+  "fixed_position": 3,
+  "initial_committed_state": "querying",
+  "last_queried_round": 1,
+  "local_parser_corrections_used": 0,
+  "media_accessed": false,
+  "normalized_governed_status": "SUCCESS",
+  "provider_terminal": true,
+  "query_command_exit_code_history": [
+    0
+  ],
+  "query_history": [
+    {
+      "argv_binding": {
+        "canonical_sha256": "021de065f3c54fdd01ecaa6cfba62ddb725d38cf3d9adc90b3d0b951e0ba11a3",
+        "download_dir_present": false,
+        "element_count": 4,
+        "shell": false
+      },
+      "elapsed_seconds": 3.094,
+      "end_utc": "2026-07-29T11:19:14.652377Z",
+      "failure_or_unknown_reason": null,
+      "final_raw_state_label": "success",
+      "launch_exception_class": null,
+      "local_parser_corrections_used": 0,
+      "normalized_status": "SUCCESS",
+      "parse_mode": "COMPLETE_STDOUT_JSON",
+      "provider_error_field_paths": [],
+      "provider_terminal": true,
+      "query_invocation": 1,
+      "query_round": 1,
+      "remote_failure_class": null,
+      "response_keys": [
+        "credit_count",
+        "gen_status",
+        "queue_info",
+        "result_json",
+        "submit_id"
+      ],
+      "result_count": 1,
+      "result_media_type": "video",
+      "result_present": true,
+      "return_code": 0,
+      "start_utc": "2026-07-29T11:19:11.570510Z",
+      "stderr_bytes": 0,
+      "stdout_bytes": 1277,
+      "temporary_result_url_observed_but_not_persisted": true,
+      "timeout": false,
+      "unknown_requiring_human_decision": false,
+      "video_result_count": 1,
+      "video_result_indicated": true
+    }
+  ],
+  "query_invocation_count": 1,
+  "replicate": 2,
+  "resubmit_count": 0,
+  "result_count": 1,
+  "result_media_type": "video",
+  "result_present": true,
+  "retry_count": 0,
+  "sanitized_sequence_of_provider_states": [
+    "success"
+  ],
+  "schema_version": "CAL005_R1_TASK_QUERY_STATUS_V0_1",
+  "scientific_result_derived": false,
+  "submit_id": "8c5e91a6-cee0-4401-bf4a-c1a3450b0d8d",
+  "task_id": "I0R-02",
+  "temporary_result_url_observed_but_not_persisted": true,
+  "unknown_requiring_human_decision": false,
+  "video_result_count": 1,
+  "video_result_indicated": true,
+  "visual_success_claimed": false
+}

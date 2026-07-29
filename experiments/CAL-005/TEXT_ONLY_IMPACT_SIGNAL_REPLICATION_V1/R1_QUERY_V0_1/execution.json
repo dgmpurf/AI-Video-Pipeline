@@ -1,0 +1,108 @@
+{
+  "all_six_provider_terminal": true,
+  "all_six_resolved_for_goal": true,
+  "authorization_lifecycle": {
+    "activated": true,
+    "activated_at_utc": "2026-07-29T11:19:05.566819Z",
+    "consumed": true,
+    "reusable": false
+  },
+  "condition_terminal_coverage": {
+    "I0R": {
+      "provider_terminal_count": 3,
+      "resolved_for_goal_count": 3,
+      "task_count": 3
+    },
+    "N0R": {
+      "provider_terminal_count": 3,
+      "resolved_for_goal_count": 3,
+      "task_count": 3
+    }
+  },
+  "credits_queried_or_consumed": false,
+  "decision": "CAL005_R1_QUERY_COMPLETE_ALL_SIX_REMOTE_SUCCESS",
+  "dreamina_executable": "C:\\Users\\msjpurf\\bin\\dreamina.EXE",
+  "execution_id": "CAL005-R1-BOUNDED-QUERY-07B129D2",
+  "final_master": false,
+  "fixed_task_completion": false,
+  "locked": false,
+  "maximum_query_invocations": 144,
+  "maximum_query_rounds": 24,
+  "media_accessed": false,
+  "minimum_inter_round_delay_compliance": true,
+  "minimum_inter_round_delay_seconds": 300,
+  "next_phase": "CAL005_R1_ALL_MEDIA_REMOTE_SUCCESS_DOWNLOAD_AUTHORIZATION_HUMAN_DECISION",
+  "normalized_status_counts": {
+    "other_terminal": 0,
+    "querying": 0,
+    "remote_failure": 0,
+    "success": 6,
+    "unknown": 0
+  },
+  "per_task_query_invocation_totals": {
+    "I0R-01": 1,
+    "I0R-02": 1,
+    "I0R-03": 1,
+    "N0R-01": 1,
+    "N0R-02": 1,
+    "N0R-03": 1
+  },
+  "production_approved": false,
+  "query_command_contract": {
+    "download_dir_omitted": true,
+    "single_submit_id_per_invocation": true
+  },
+  "query_download_retry_resubmit_counts": [
+    6,
+    0,
+    0,
+    0
+  ],
+  "query_result_help": {
+    "command": [
+      "C:\\Users\\msjpurf\\bin\\dreamina.EXE",
+      "query_result",
+      "-h"
+    ],
+    "download_dir_optional_and_will_be_omitted": true,
+    "raw_help_persisted": false,
+    "required_flags_present": {
+      "--download_dir": true,
+      "--submit_id": true
+    },
+    "return_code": 0,
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_bytes": 388,
+    "stdout_sha256": "74f728cc4d3ae36fb3dcf773e85ed003637c28d048d1cad77a29b59b9bd4b171",
+    "validation": "PASS"
+  },
+  "query_round_records": [
+    {
+      "end_utc": "2026-07-29T11:19:24.193616Z",
+      "minimum_delay_compliance": true,
+      "round": 1,
+      "start_utc": "2026-07-29T11:19:05.567819Z",
+      "task_ids_queried": [
+        "N0R-01",
+        "I0R-01",
+        "I0R-02",
+        "N0R-02",
+        "N0R-03",
+        "I0R-03"
+      ],
+      "waited_since_previous_round_end_seconds": 0.0
+    }
+  ],
+  "result_present_task_count": 6,
+  "result_video_count": 6,
+  "rounds_used": 1,
+  "schema_version": "CAL005_R1_QUERY_EXECUTION_V0_1",
+  "scientific_result_derived": false,
+  "signed_urls_persisted": false,
+  "starting_checkpoint": "464c737ad46fdf1265b35f54db359e72757c79a7",
+  "submit_count": 0,
+  "total_query_invocations": 6,
+  "user_credit_calls": 0,
+  "visual_success_claimed": false
+}
