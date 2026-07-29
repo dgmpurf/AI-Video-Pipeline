@@ -1,0 +1,16 @@
+{
+  "all_six_media_present": false,
+  "all_six_technically_valid": false,
+  "complete_decode_pass_count": 2,
+  "duplicate_hashes": [],
+  "existing_success_revalidation_count": 2,
+  "media_count": 2,
+  "replacement_attempted": 4,
+  "replacement_failed": 4,
+  "replacement_successful": 0,
+  "schema_version": "CAL005_R1_DOWNLOAD_RECOVERY_TECHNICAL_SUMMARY_V0_1",
+  "task_count": 6,
+  "technically_valid_count": 2,
+  "total_media_bytes": 8167777,
+  "unique_media_hashes": 2
+}

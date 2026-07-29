@@ -1,0 +1,72 @@
+{
+  "authorization": {
+    "base64_character_count": 2788,
+    "bom": false,
+    "bytes": 2089,
+    "sha256": "c37f7266de548e332a28efd75e1f70cafd394bcdaf8f64d19cce0da6f6f0d36f",
+    "trailing_newline": false,
+    "verified": true
+  },
+  "existing_success_media_identity": [
+    {
+      "bytes": 4737910,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/005_N0R-03.mp4",
+      "sha256": "8464de889293d8a92164ba8c81e59585afa3a037cbc03748ff687671bd860023",
+      "task_id": "N0R-03"
+    },
+    {
+      "bytes": 3429867,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/006_I0R-03.mp4",
+      "sha256": "83d26fc63b0d7e7ba8c3cac0114ac6124a43378ffa790c60e61078ccc898c3b7",
+      "task_id": "I0R-03"
+    }
+  ],
+  "fixed_tools": {
+    "ffmpeg": {
+      "bytes": 131534336,
+      "path": "C:/ffmpeg/bin/ffmpeg.exe",
+      "sha256": "9f5c85e070cc2cfdc960c67395a8a47967732e59ddd8850bc56cf5842e7049d4"
+    },
+    "ffprobe": {
+      "bytes": 131407872,
+      "path": "C:/ffmpeg/bin/ffprobe.exe",
+      "sha256": "ba37098df2d55a7464ca344ab806c174be9735c22bf8a487d26fe0c624598695"
+    }
+  },
+  "help_evidence": {
+    "command": [
+      "C:/Users/msjpurf/bin/dreamina.EXE",
+      "query_result",
+      "-h"
+    ],
+    "download_dir_supported": true,
+    "help_rerun": false,
+    "return_code": 0,
+    "stdout_bytes": 388,
+    "stdout_sha256": "74f728cc4d3ae36fb3dcf773e85ed003637c28d048d1cad77a29b59b9bd4b171",
+    "submit_id_supported": true
+  },
+  "prior_evidence": {
+    "committed_help_evidence": "PASS_NO_RERUN",
+    "failed_final_media_absent": 4,
+    "prior_failure_classification": "DOWNLOAD_COMMAND_NONZERO_EXIT",
+    "prior_failure_exact_root_cause_established": false,
+    "prior_failure_stderr_bytes_each": 116,
+    "prior_failure_stdout_bytes_each": 0,
+    "prior_package_worktree_equals_head": "13/13",
+    "prior_temp_file_count_recorded_each": 1,
+    "successful_prior_media_count": 2
+  },
+  "repository": {
+    "branch": "main",
+    "head": "0a024cf19d5e28c14701dc4847ec8c4629eec988",
+    "head_origin_aligned": true,
+    "origin_main": "0a024cf19d5e28c14701dc4847ec8c4629eec988",
+    "repository_operation_active": false,
+    "source_changes": 0,
+    "staged_changes": 0,
+    "tracked_modifications": 0
+  },
+  "schema_version": "CAL005_R1_DOWNLOAD_RECOVERY_PREFLIGHT_V0_1",
+  "temporary_corrections_used": 3
+}

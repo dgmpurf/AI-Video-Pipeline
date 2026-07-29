@@ -1,0 +1,106 @@
+{
+  "audio_codec": null,
+  "audio_stream_count": 0,
+  "complete_decode_process": null,
+  "complete_decode_result": "NOT_RUN",
+  "condition_id": "N0R",
+  "container_format_names": null,
+  "dimensions": {
+    "height": 0,
+    "width": 0
+  },
+  "duration_seconds": null,
+  "duration_text": null,
+  "ffprobe_json_parse_result": "NOT_RUN",
+  "ffprobe_process": null,
+  "final_external_media_path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/004_N0R-02.mp4",
+  "fixed_position": 4,
+  "frame_rate_evidence": {
+    "average": null,
+    "raw": null
+  },
+  "local_transfer": null,
+  "media_bytes": 0,
+  "media_sha256": null,
+  "nonempty_file": false,
+  "other_stream_count": 0,
+  "pixel_format": null,
+  "planned_duration_conformance": {
+    "absolute_delta_seconds": null,
+    "observed_duration_seconds": null,
+    "planned_duration_seconds": 5.0,
+    "status": "NOT_EVALUATED",
+    "within_0_25_seconds": false
+  },
+  "prior_failure": {
+    "download_invocation_count": 1,
+    "failure_classification": "DOWNLOAD_COMMAND_NONZERO_EXIT",
+    "final_media_present": false,
+    "record": {
+      "bytes": 3043,
+      "git_blob": "d2bbd23c459414007a934cc331f4cb61d3a243a6",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/task_download/004_N0R-02_download.json",
+      "role": "COMMITTED_PRIOR_FAILED_DOWNLOAD_RECORD",
+      "sha256": "0aa57be10dc40d0d1bb73a9f16fa658fb8b769ec2ab308523f152038239cc371",
+      "worktree_equals_head": true
+    },
+    "result_video_file_count_recorded": 1,
+    "stderr_bytes": 116,
+    "stdout_bytes": 0
+  },
+  "provenance": "RECOVERED_REPLACEMENT_DOWNLOAD",
+  "regular_file": false,
+  "replacement_command": {
+    "argv": [
+      "C:/Users/msjpurf/bin/dreamina.EXE",
+      "query_result",
+      "--submit_id",
+      "46042e22-266f-4cb5-9c57-29aa2bc8934e",
+      "--download_dir",
+      "<RECOVERY_TEMP>/004_N0R-02"
+    ],
+    "download_dir_present": true,
+    "parse_mode": "EMPTY",
+    "process": {
+      "elapsed_seconds": 33.953,
+      "end_utc": "2026-07-29T13:00:54.660235Z",
+      "launch_exception_class": null,
+      "return_code": 1,
+      "start_utc": "2026-07-29T13:00:20.701762Z",
+      "stderr_bytes": 116,
+      "stderr_sha256": "a21c749a55d94c76c89a802807f37dab868b1bacbbfb792450103574094b5631",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timeout": false
+    },
+    "provider_error_field_paths": [],
+    "provider_gen_status": null,
+    "raw_output_persisted": false,
+    "sanitized_failure_class": "DOWNLOAD_TRANSPORT_BODY_READ_TIMEOUT",
+    "sanitized_failure_message": "download video 1: write file: context deadline exceeded (Client.Timeout or context cancellation while reading body)",
+    "signed_url_persisted": false,
+    "stderr_raw_persisted": false,
+    "stdout_raw_persisted": false
+  },
+  "replacement_download_result": "FAIL",
+  "replacement_invocation_count": 1,
+  "replicate": 2,
+  "schema_version": "CAL005_R1_TASK_DOWNLOAD_RECOVERY_RECORD_V0_1",
+  "scientific_result_derived": false,
+  "semantic_review_performed": false,
+  "stream_count": 0,
+  "submit_id": "46042e22-266f-4cb5-9c57-29aa2bc8934e",
+  "task_id": "N0R-02",
+  "technical_validity": "FAIL",
+  "temporary_file_count_observed": 1,
+  "temporary_file_observations": [
+    {
+      "bytes": 1649536,
+      "extension": ".mp4",
+      "sha256": "5948213430c80b8862f1a6b835be1783732b802f4f56c9ce3f83a80e3f4d438f"
+    }
+  ],
+  "video_codec": null,
+  "video_stream_count": 0,
+  "visual_success_claimed": false
+}

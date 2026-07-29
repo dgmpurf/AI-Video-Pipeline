@@ -1,0 +1,70 @@
+{
+  "all_six_media_present": false,
+  "all_six_technically_valid": false,
+  "authorization_lifecycle": {
+    "activated": true,
+    "activation_boundary": "IMMEDIATELY_BEFORE_FIRST_REPLACEMENT_QUERY_RESULT_WITH_DOWNLOAD_DIR",
+    "activation_utc": "2026-07-29T12:58:37.072923Z",
+    "consumed": true,
+    "reusable": false
+  },
+  "command_counts": {
+    "dreamina_positions_5_6": 0,
+    "query_without_download": 0,
+    "replacement_download": 4,
+    "resubmit": 0,
+    "retry": 0,
+    "submit": 0,
+    "user_credit": 0
+  },
+  "cross_volume_fallback_used": false,
+  "decision": "CAL005_R1_DOWNLOAD_RECOVERY_PARTIAL_FAILURE_HUMAN_DECISION",
+  "download_end_utc": "2026-07-29T13:00:54.660235Z",
+  "established_root_cause": {
+    "classification": "DOWNLOAD_TRANSPORT_BODY_READ_TIMEOUT",
+    "evidence_count": 4,
+    "message": "download video 1: write file: context deadline exceeded (Client.Timeout or context cancellation while reading body)",
+    "scope": "ALL_FOUR_REPLACEMENT_DOWNLOAD_COMMANDS"
+  },
+  "exact_root_cause_established": true,
+  "final_master": false,
+  "fixed_task_completion": false,
+  "help_rerun": false,
+  "local_learning_entries": [
+    {
+      "candidate": "Persist successful help-command evidence before launching the next independent preflight check.",
+      "source_update_candidate": true
+    },
+    {
+      "candidate": "Resolve and identity-verify ffmpeg and ffprobe before a combined preflight script depends on them.",
+      "source_update_candidate": true
+    },
+    {
+      "candidate": "Do not use cross-volume directory rename on Windows; use same-volume temporary paths or exclusive copy with byte and SHA-256 verification.",
+      "source_update_candidate": true
+    },
+    {
+      "candidate": "Retain a structurally redacted failure message for failed CLI or Provider commands, not only byte counts.",
+      "source_update_candidate": true
+    },
+    {
+      "candidate": "Keep the first four prior failures root-cause unresolved unless new sanitized evidence supports a narrower classification.",
+      "source_update_candidate": true
+    }
+  ],
+  "locked": false,
+  "next_phase": "CAL005_R1_PERSISTENT_PARTIAL_DOWNLOAD_ROUTE_RESET_HUMAN_DECISION",
+  "production_approved": false,
+  "provider_operation_repeated_for_local_copy_failure": false,
+  "randomness": 0,
+  "replacement_downloads_attempted": 4,
+  "replacement_downloads_failed": 4,
+  "replacement_downloads_successful": 0,
+  "schema_version": "CAL005_R1_DOWNLOAD_RECOVERY_EXECUTION_V0_1",
+  "scientific_result_derived": false,
+  "semantic_review_performed": false,
+  "source_update_candidates_recorded": 5,
+  "sources_changed": false,
+  "starting_checkpoint": "0a024cf19d5e28c14701dc4847ec8c4629eec988",
+  "temporary_corrections_used": 3
+}

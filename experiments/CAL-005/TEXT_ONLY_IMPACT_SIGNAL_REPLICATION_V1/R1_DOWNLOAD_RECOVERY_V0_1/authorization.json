@@ -1,0 +1,30 @@
+{
+  "authorization_lifecycle": {
+    "activated": true,
+    "activation_boundary": "IMMEDIATELY_BEFORE_FIRST_REPLACEMENT_QUERY_RESULT_WITH_DOWNLOAD_DIR",
+    "activation_utc": "2026-07-29T12:58:37.072923Z",
+    "consumed": true,
+    "reusable": false
+  },
+  "canonical_authorization": {
+    "base64_character_count": 2788,
+    "bom": false,
+    "bytes": 2089,
+    "sha256": "c37f7266de548e332a28efd75e1f70cafd394bcdaf8f64d19cce0da6f6f0d36f",
+    "trailing_newline": false,
+    "verified": true
+  },
+  "execution_id": "CAL005-R1-DOWNLOAD-RECOVERY-C37F7266",
+  "prior_download_authorization_sha256": "42df89081b3a21f880a2960e64c773a12ec20b41f1c5e2df08eb2b84e2a6265b",
+  "schema_version": "CAL005_R1_DOWNLOAD_RECOVERY_AUTHORIZATION_V0_1",
+  "scope": {
+    "dreamina_invocations_positions_5_6_max": 0,
+    "query_without_download_max": 0,
+    "replacement_download_max": 4,
+    "replacement_download_max_per_failed_submit_id": 1,
+    "resubmit_max": 0,
+    "retry_max": 0,
+    "submit_max": 0,
+    "user_credit_max": 0
+  }
+}
