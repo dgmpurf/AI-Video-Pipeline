@@ -1,0 +1,66 @@
+{
+  "accepted_evidence": {
+    "all_six_condition_gates": "FAIL",
+    "condition_gate_fail_count": 6,
+    "condition_gate_total": 6,
+    "five_of_six_condition_median_margins_negative": true,
+    "i0_text2video_no_reference": {
+      "condition_gate": "FAIL",
+      "median_impact_score": 9,
+      "median_impact_specificity_margin": 1,
+      "sample_pass_count": 1,
+      "sample_total": 3
+    },
+    "material_sentinels": "FROZEN_EVIDENCE_NOT_WAIVED",
+    "primary_controlled_contrast_c03": {
+      "comparison": "I0 versus N0",
+      "condition_gate_pair": {
+        "left": "FAIL",
+        "right": "FAIL"
+      },
+      "impact_median_delta": 4,
+      "impact_specificity_margin_delta": 2,
+      "push_median_delta": 0,
+      "sample_pass_count_delta": 1
+    },
+    "sample_gate_pass_count": 1,
+    "sample_gate_total": 18
+  },
+  "authority_boundary": {
+    "automatic_expansion": false,
+    "next_live_experiment_authorized": false,
+    "production_approved": false,
+    "source_promotion_authorized": false
+  },
+  "causal_limitations": {
+    "multimodal_reference_present_conditions": [
+      "NI",
+      "NP",
+      "II",
+      "IP"
+    ],
+    "negative_results_unique_cause_identified": false,
+    "unresolved_causes": [
+      "reference content",
+      "command route",
+      "Provider behavior",
+      "scene prior"
+    ]
+  },
+  "closure": {
+    "CAL004_R1_human_final_decision_complete": true,
+    "CAL004_R1_round_closed": true,
+    "automatic_expansion": false,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "locked": false,
+    "production_approved": false
+  },
+  "experiment": "CAL-004",
+  "formal_pre_registered_outcome": "PROVIDER_OR_SCENE_PUSH_PRIOR_DOMINANT",
+  "human_bounded_interpretation": "PUSH_LIKE_PRIOR_DOMINANT_IN_CURRENT_CAL004_SETUP_WITH_PARTIAL_TEXT_ONLY_IMPACT_SIGNAL_AND_UNRESOLVED_REFERENCE_COMMAND_ROUTE_CAUSATION",
+  "program": "IMPACT_FAMILY_CAUSAL_ISOLATION_V1",
+  "round": "R1",
+  "schema_version": "CAL004_R1_HUMAN_FINAL_DECISION_V0_1",
+  "status": "HUMAN_FINAL_DECISION_COMPLETE_ROUND_CLOSED"
+}

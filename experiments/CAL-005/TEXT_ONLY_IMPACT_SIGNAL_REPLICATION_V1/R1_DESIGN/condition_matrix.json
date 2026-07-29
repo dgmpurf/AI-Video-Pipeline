@@ -1,0 +1,82 @@
+{
+  "balance_validation": {
+    "all_conditions_have_three_replicates": true,
+    "condition_count": 2,
+    "planned_task_count": 6,
+    "prompt_stratum_task_counts": {
+      "I": 3,
+      "N": 3
+    },
+    "reference_stratum_task_counts": {
+      "0": 6
+    },
+    "route_task_counts": {
+      "text2video": 6
+    }
+  },
+  "conditions": [
+    {
+      "condition_id": "N0R",
+      "description": "neutral Prompt / text2video / no motion reference",
+      "future_submission_positions": [
+        1,
+        4,
+        5
+      ],
+      "motion_reference_count": 0,
+      "motion_references": [],
+      "prompt_binding": {
+        "bytes": 1978,
+        "copied_byte_identically": true,
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "source_path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "N",
+      "reference_stratum": "0",
+      "replicate_count": 3,
+      "route": "text2video",
+      "task_ids": [
+        "N0R-01",
+        "N0R-02",
+        "N0R-03"
+      ]
+    },
+    {
+      "condition_id": "I0R",
+      "description": "IMPACT-hard Prompt / text2video / no motion reference",
+      "future_submission_positions": [
+        2,
+        3,
+        6
+      ],
+      "motion_reference_count": 0,
+      "motion_references": [],
+      "prompt_binding": {
+        "bytes": 2287,
+        "copied_byte_identically": true,
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "source_path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "terminal_lf": true
+      },
+      "prompt_stratum": "I",
+      "reference_stratum": "0",
+      "replicate_count": 3,
+      "route": "text2video",
+      "task_ids": [
+        "I0R-01",
+        "I0R-02",
+        "I0R-03"
+      ]
+    }
+  ],
+  "experiment": "CAL-005",
+  "program": "TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1",
+  "round": "R1",
+  "schema_version": "CAL005_R1_CONDITION_MATRIX_V0_1",
+  "status": "NO_LIVE_DESIGN_ONLY"
+}

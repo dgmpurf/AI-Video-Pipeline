@@ -1,0 +1,47 @@
+{
+  "experiment": "CAL-005",
+  "fixed_order": [
+    {
+      "condition_id": "N0R",
+      "position": 1,
+      "task_id": "N0R-01"
+    },
+    {
+      "condition_id": "I0R",
+      "position": 2,
+      "task_id": "I0R-01"
+    },
+    {
+      "condition_id": "I0R",
+      "position": 3,
+      "task_id": "I0R-02"
+    },
+    {
+      "condition_id": "N0R",
+      "position": 4,
+      "task_id": "N0R-02"
+    },
+    {
+      "condition_id": "N0R",
+      "position": 5,
+      "task_id": "N0R-03"
+    },
+    {
+      "condition_id": "I0R",
+      "position": 6,
+      "task_id": "I0R-03"
+    }
+  ],
+  "order_count": 6,
+  "planning_only": true,
+  "randomness_generated": false,
+  "rationale": [
+    "three N0R and three I0R tasks are preserved",
+    "within-pair ordering varies deterministically",
+    "no randomness is generated",
+    "the exact order is fixed before future activation"
+  ],
+  "round": "R1",
+  "schema_version": "CAL005_R1_DETERMINISTIC_SUBMISSION_ORDER_V0_1",
+  "submit_authority_created": false
+}

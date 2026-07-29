@@ -1,0 +1,24 @@
+{
+  "historical_planning_evidence": {
+    "arithmetic": "6 * 70 = 420; 661 - 420 = 241",
+    "arithmetic_remainder": 241,
+    "last_observed_balance": 661,
+    "last_observed_text2video_unit_cost": 70,
+    "six_task_planned_decrement": 420,
+    "source": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_SUBMIT_ONLY_V0_1/execution_summary.json"
+  },
+  "live_activation_authority": false,
+  "live_activation_requirements": [
+    "fresh user_credit",
+    "current text2video help",
+    "login and canary verification",
+    "actual unit-cost confirmation",
+    "fresh human submit authorization"
+  ],
+  "no_fresh_balance_asserted": true,
+  "no_live_task_asserts_fresh_runtime_facts": true,
+  "planned_generation_count": 6,
+  "provider_operation_count_now": 0,
+  "schema_version": "CAL005_R1_BUDGET_ACTIVATION_PLAN_V0_1",
+  "status": "HISTORICAL_PLANNING_ONLY"
+}

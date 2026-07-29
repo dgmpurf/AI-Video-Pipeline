@@ -1,0 +1,114 @@
+{
+  "analysis_boundary": {
+    "causal_certainty_claimed": false,
+    "generalized_provider_reliability_claimed": false,
+    "replicates_per_condition": 3,
+    "result_derived_now": false,
+    "statistical_significance_claimed": false
+  },
+  "controlled_variables": {
+    "actor_identity": "two fictional non-identifying adult martial-arts performers",
+    "camera": "static three-quarter-front medium-wide camera at chest height",
+    "clothing": {
+      "camera_left": "deep navy training jacket and black training pants",
+      "camera_right": "muted rust-orange training jacket and charcoal training pants"
+    },
+    "command_route_planning_target": "text2video",
+    "composition": "both complete bodies and both sets of feet visible with generous margins",
+    "duration_planning_target_seconds": 5,
+    "lighting": "soft natural-looking studio illumination",
+    "local_audio_reference_count": 0,
+    "local_image_reference_count": 0,
+    "local_video_reference_count": 0,
+    "model_planning_target": "seedance2.0_vip",
+    "motion_reference_count": 0,
+    "no_motion_reference": true,
+    "provider_values_are_planning_only": true,
+    "ratio_planning_target": "16:9",
+    "requested_video_count": 1,
+    "scene": "clean indoor training studio with warm beige seamless wall and matte wooden floor",
+    "technical_output_contract": {
+      "complete_mp4_required_for_future_review": true,
+      "continuous_shot": true,
+      "full_body_visibility": true,
+      "identity_stability_required": true,
+      "one_video_requested": true,
+      "static_camera": true
+    },
+    "video_resolution_planning_target": "720p",
+    "visual_style": "realistic cinematic live-action-looking synthetic shot"
+  },
+  "experiment_identity": {
+    "experiment": "CAL-005",
+    "planned_task_count": 6,
+    "program": "TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1",
+    "round": "R1",
+    "status": "NO_LIVE_DESIGN_ONLY"
+  },
+  "factorial_design": {
+    "condition_count": 2,
+    "conditions": [
+      "N0R",
+      "I0R"
+    ],
+    "prompt_strata": {
+      "I": "IMPACT_CAUSAL_HARD",
+      "N": "ACTION_NEUTRAL_MINIMAL"
+    },
+    "reference_strata": {
+      "0": "NO_MOTION_REFERENCE"
+    },
+    "replicates_per_condition": 3,
+    "structure": "BALANCED_TEXT_ONLY_TWO_CONDITION_REPLICATION"
+  },
+  "future_activation_requirements": {
+    "actual_unit_cost_confirmation": true,
+    "current_text2video_help": true,
+    "fresh_human_submit_authorization": true,
+    "fresh_user_credit": true,
+    "login_and_canary_verification": true
+  },
+  "governance": {
+    "automatic_expansion": false,
+    "live_authority": false,
+    "no_current_cli_fact_asserted": true,
+    "no_current_credit_fact_asserted": true,
+    "no_media_or_reference_operation": true,
+    "no_randomness": true,
+    "no_source_change": true,
+    "provider_command_generated": false
+  },
+  "prompt_design": {
+    "prompt_bindings": {
+      "ACTION_NEUTRAL_MINIMAL": {
+        "bytes": 1978,
+        "copied_byte_identically": true,
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "prompt_id": "ACTION_NEUTRAL_MINIMAL",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "source_path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "terminal_lf": true
+      },
+      "IMPACT_CAUSAL_HARD": {
+        "bytes": 2287,
+        "copied_byte_identically": true,
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "prompt_id": "IMPACT_CAUSAL_HARD",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "source_path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "terminal_lf": true
+      }
+    },
+    "prompt_count": 2,
+    "replication_not_new_prompt_version": true,
+    "wording_revised": false
+  },
+  "reference_strategy": {
+    "active_generation_reference": false,
+    "local_image_video_audio_reference_count": 0,
+    "motion_reference": "NONE",
+    "text_only": true
+  },
+  "schema_version": "CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_DESIGN_V0_1",
+  "scientific_question": "Does the CAL-004 text-only IMPACT signal repeat when neutral and IMPACT-hard Prompts are compared under the same text2video route with no motion reference?"
+}

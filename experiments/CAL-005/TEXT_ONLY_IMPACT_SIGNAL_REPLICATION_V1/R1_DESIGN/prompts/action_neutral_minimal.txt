@@ -1,0 +1,10 @@
+Create one continuous five-second realistic live-action-looking synthetic shot of two fictional, non-identifying adult martial-arts performers. The performer beginning on camera-left wears a deep navy training jacket and black training pants. The performer beginning on camera-right wears a muted rust-orange training jacket and charcoal training pants. Both have ordinary realistic human faces and bodies, no branded clothing, no identifying features, and stable identity throughout.
+
+Place them in a clean indoor training studio with a warm beige seamless wall and matte wooden floor. Use soft natural-looking studio illumination and a realistic cinematic visual style. Use a static three-quarter-front medium-wide camera at approximately chest height. Keep both complete bodies and both sets of feet visible with generous margins throughout. Preserve a stable 16:9 composition with no camera movement, zoom, shake, crop change, visible text, diagram, grid, prop, weapon, blood, injury detail, or calibration-stage appearance.
+
+If one governed motion-reference video is supplied, use it exclusively to control the body-motion sequence, temporal rhythm, relative spacing, coordination, and physical interaction. The reference must not control identity, face, body appearance, colors, clothing, scene, background, camera, framing, lighting, props, text, story, or visual style. Do not copy any ring, flash, arrow, grid, joint node, calibration-stage cue, color palette, mannequin appearance, or reference composition.
+
+Preserve realistic anatomy, coherent balance, stable identities, and physically plausible movement. Keep the shot continuous through the final frame. Produce one video only at the planned five-second duration, 16:9 ratio, and 720p resolution.
+
+Action directive:
+Show one brief, controlled close-range physical interaction between the two performers. Keep the event readable, compact, and continuous, then let both performers settle naturally within the shot.

@@ -1,0 +1,75 @@
+{
+  "blind_review": {
+    "blind_permutation_created_now": false,
+    "complete_mp4_review_required": true,
+    "freeze_all_records_before_mapping_reveal": true,
+    "future_review_blinded": true,
+    "review_performed_now": false,
+    "salt_created_now": false
+  },
+  "condition_analysis_fields": [
+    "sample_count",
+    "sample_pass_count",
+    "three_IMPACT_scores",
+    "median_IMPACT_score",
+    "three_PUSH_scores",
+    "median_PUSH_score",
+    "three_IMPACT_minus_PUSH_margins",
+    "median_margin",
+    "three_material_sentinel_counts",
+    "condition_gate"
+  ],
+  "condition_pass_gate": {
+    "all_three_material_sentinel_counts_equal_zero": true,
+    "governed_rights_and_provenance_validation": true,
+    "median_IMPACT_minus_PUSH_margin_at_least": 3,
+    "median_IMPACT_score_at_least": 8,
+    "minimum_sample_pass_count": 2,
+    "sample_count": 3
+  },
+  "decision_boundary": {
+    "automatic_decisions": false,
+    "causal_certainty_from_three_replicates": false,
+    "complete_mp4_review_required": true,
+    "controlled_unblinding_required": true,
+    "fresh_human_decision_required": true,
+    "generalized_provider_reliability_claim": false,
+    "statistical_significance_claim": false
+  },
+  "measurements_per_future_output": [
+    "PUSH signature score",
+    "IMPACT signature score",
+    "IMPACT specificity margin = IMPACT score minus PUSH score",
+    "complete MP4 reviewed and viewable through end",
+    "technically valid complete MP4",
+    "material sentinel count",
+    "action-family failure"
+  ],
+  "primary_contrast": {
+    "classification": "PRIMARY_WITHIN_COMMAND_CONTRAST",
+    "comparison": "I0R versus N0R",
+    "contrast_id": "CAL005-C01",
+    "left_minus_right_metrics": [
+      "IMPACT median delta",
+      "PUSH median delta",
+      "IMPACT specificity margin median delta",
+      "sample-pass delta",
+      "condition-Gate pair"
+    ]
+  },
+  "reference_observations": {
+    "applicable": false,
+    "reason": "both conditions use text2video with no motion reference"
+  },
+  "sample_pass_gate": {
+    "IMPACT_minus_PUSH_margin_at_least": 3,
+    "IMPACT_score_at_least": 8,
+    "action_family_failure": false,
+    "complete_mp4_reviewed": true,
+    "complete_mp4_viewable_through_end": true,
+    "material_sentinel_count": 0,
+    "technically_valid_complete_mp4": true
+  },
+  "schema_version": "CAL005_R1_PRE_REGISTERED_REVIEW_CONTRACT_V0_1",
+  "signature_framework_source": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/review_contract.json"
+}
