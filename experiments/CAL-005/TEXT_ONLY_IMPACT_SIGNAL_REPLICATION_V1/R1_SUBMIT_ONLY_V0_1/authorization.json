@@ -1,0 +1,73 @@
+{
+  "authorization_lifecycle": {
+    "activated": true,
+    "activated_at_utc": "2026-07-29T10:25:29.528580Z",
+    "consumed": true,
+    "reusable": false
+  },
+  "authorized_scope": {
+    "fixed_order": [
+      "N0R-01",
+      "I0R-01",
+      "I0R-02",
+      "N0R-02",
+      "N0R-03",
+      "I0R-03"
+    ],
+    "maximum_text2video_submit_invocations": 6,
+    "output_paths": [
+      "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/authorization.json",
+      "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/preflight.json",
+      "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/budget_selection.json",
+      "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/001_N0R-01_submit_receipt.json",
+      "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/002_I0R-01_submit_receipt.json",
+      "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/003_I0R-02_submit_receipt.json",
+      "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/004_N0R-02_submit_receipt.json",
+      "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/005_N0R-03_submit_receipt.json",
+      "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/006_I0R-03_submit_receipt.json",
+      "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/execution_summary.json",
+      "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/evidence_manifest.json",
+      "reports/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_SUBMIT_ONLY_RESULT.md"
+    ],
+    "query_download_retry_resubmit": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "execution_id": "CAL005-R1-CONDITIONAL-BALANCED-SUBMIT-A9D86918",
+  "forbidden_operations": {
+    "download": true,
+    "final_master": true,
+    "lock": true,
+    "media_access": true,
+    "production": true,
+    "query": true,
+    "randomness": true,
+    "resubmit": true,
+    "retry": true,
+    "source_change": true,
+    "visual_or_scientific_result": true
+  },
+  "original_authorization": {
+    "base64_character_count": 2668,
+    "bytes": 1999,
+    "canonical_text": "APPROVE_CAL005_R1_CONDITIONAL_BALANCED_TEXT2VIDEO_SUBMIT_ONLY_V0_1__BIND_HEAD_B01515E7A1980BA687DD55EB9D3303E972D6F3E7__BIND_CAL004_FINAL_AND_CAL005_DESIGN_AUTH_SHA256_3DA1CFEC7C8A621BB96C1F9B83676BA97E266F52D140EE8564E287A0E7A082FD__BIND_NEUTRAL_PROMPT_SHA256_C15F93EE8EE55FCCB827CBEA8683C0538E13CEFD138D0AE1A22761DCE7C20CE0__BIND_IMPACT_PROMPT_SHA256_C38E8BB135D6D9F29D510C2FB059B8F4A9CE7948626C19F43F98AD564B8422A5__ACCEPT_CAL005_R1_NO_LIVE_DESIGN_TWO_CONDITIONS_N0R_AND_I0R_THREE_REPLICATES_EACH_TEXT2VIDEO_ONLY_NO_REFERENCE_FIXED_ORDER_N0R_01_I0R_01_I0R_02_N0R_02_N0R_03_I0R_03__AUTHORIZE_ONE_DREAMINA_VERSION_ONE_LOGIN_CHECKLOGIN_ONE_USER_CREDIT_AND_ONE_TEXT2VIDEO_HELP_PREFLIGHT_IN_ONE_SELECTED_AUTHENTICATED_ENVIRONMENT__REQUIRE_FRESH_BALANCE_AT_LEAST_420_BEFORE_ANY_SUBMIT__AUTHORIZE_EXACTLY_ONE_INITIAL_CANARY_SUBMIT_N0R_01_WITHOUT_POLL_QUERY_OR_DOWNLOAD__CONTINUE_WITH_EXACTLY_THE_REMAINING_FIVE_FIXED_ORDER_SUBMITS_ONLY_IF_THE_CANARY_IS_ACCEPTED_WITH_NONEMPTY_SUBMIT_ID_NO_PROVIDER_ERROR_OBSERVED_CREDIT_COUNT_EXACTLY_70_AND_THE_FRESH_STARTING_BALANCE_COVERS_EXACTLY_SIX_TIMES_THE_OBSERVED_UNIT_COST__REQUIRE_EACH_CONTINUED_SUBMIT_TO_USE_IDENTICAL_RUNTIME_PARAMETERS_EXCEPT_EXACT_PROMPT_BINDING_AND_TO_REPORT_NONEMPTY_UNIQUE_SUBMIT_ID_NO_PROVIDER_ERROR_AND_CREDIT_COUNT_EXACTLY_70__AUTHORIZE_MAXIMUM_SIX_TOTAL_TEXT2VIDEO_SUBMIT_INVOCATIONS_AND_FULL_BLOCK_EXPECTED_CREDIT_DECREMENT_420__ANY_SUBMIT_FAILURE_DUPLICATE_OR_MISSING_SUBMIT_ID_OR_CREDIT_COUNT_VARIANCE_MUST_STOP_ALL_REMAINING_SUBMITS_WITHOUT_RETRY__AUTHORIZE_EXACTLY_TWELVE_NEW_REPOSITORY_PATHS_FOR_AUTHORIZATION_PREFLIGHT_BUDGET_SELECTION_SIX_TASK_RECEIPTS_EXECUTION_SUMMARY_EVIDENCE_MANIFEST_AND_REPORT__AUTHORIZE_ONE_COMMIT_AND_ONE_PUSH_AFTER_ANY_ACTIVATED_SUBMIT_RUN_WITH_ATTEMPTED_AND_NOT_ATTEMPTED_TASK_STATES_RECORDED_EXACTLY__NO_QUERY_NO_DOWNLOAD_NO_RETRY_NO_RESUBMIT_NO_MEDIA_ACCESS_NO_VISUAL_SUCCESS_CLAIM_NO_SCIENTIFIC_RESULT_NO_RANDOMNESS_NO_SOURCE_CHANGE_NO_PRODUCTION_NO_FINAL_MASTER_NO_LOCK__ONE_TIME_NON_REUSABLE",
+    "sha256": "a9d869188126764149a5b1ae2cccc72335f0b51af2b7cda0148dd9f94331d3a3",
+    "verified": true
+  },
+  "recovery_authorization": {
+    "bytes": 1456,
+    "classification": "USER_DIRECTED_ONE_TIME_RECOVERY",
+    "sha256": "ab234f8813883da72d477083142834ec15fba0061633908a1154a0e64b617853",
+    "text": "我直接授权恢复 CAL005 R1 conditional balanced submit-only execution。\n\n绑定当前 HEAD：\nb01515e7a1980ba687dd55eb9d3303e972d6f3e7\n\n接受此前 preflight 事实：\n\n- Dreamina executable、version 和 text2video help 已验证通过；\n- dreamina user_credit 已成功，fresh balance=741；\n- dreamina login checklogin 因当前 CLI 要求 device_code 而返回 exit code 1、无输出；\n- 该失败属于 login-check command-contract mismatch，不视为当前账户未认证；\n- 接受成功的 user_credit 作为当前选定 Dreamina 环境的账户认证与可用性证据；\n- 目前 submit/query/download/retry/resubmit 均为 0；\n- 原授权尚未进入首次 submit 激活边界；\n- 0/12 输出，仓库、Source、Prompt 和设计均未变化。\n\n禁止重新执行 version、login、checklogin、user_credit 或 text2video help。\n\n授权从 N0R-01 canary 激活边界继续：\n\n- 最多六次 text2video submit；\n- 固定顺序：\n  N0R-01\n  I0R-01\n  I0R-02\n  N0R-02\n  N0R-03\n  I0R-03\n- canary 必须返回非空 submit_id、无 Provider error、credit_count=70；\n- canary 通过后才允许继续剩余五项；\n- 任一失败、歧义、重复或缺失 submit_id、credit_count 不等于 70，立即停止；\n- 不允许 retry、resubmit、query、download 或替代任务；\n- 保持原 Prompt 字节、运行参数、12 个输出路径、一次 commit 和一次 push 不变。\n\n本恢复授权仅限一次，不可复用。",
+    "trailing_newline": false
+  },
+  "schema_version": "CAL005_R1_SUBMIT_ONLY_AUTHORIZATION_V0_1",
+  "starting_checkpoint": {
+    "branch": "main",
+    "head": "b01515e7a1980ba687dd55eb9d3303e972d6f3e7",
+    "origin_main": "b01515e7a1980ba687dd55eb9d3303e972d6f3e7"
+  }
+}

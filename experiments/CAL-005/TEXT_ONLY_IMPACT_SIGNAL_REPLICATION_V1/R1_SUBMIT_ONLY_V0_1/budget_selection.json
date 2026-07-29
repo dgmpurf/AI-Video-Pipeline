@@ -1,0 +1,29 @@
+{
+  "accepted_credit_counts": [
+    70,
+    70,
+    70,
+    70,
+    70,
+    70
+  ],
+  "derived_ending_balance": 321,
+  "derived_total_credit_decrement": 420,
+  "fresh_canary_unit_cost": 70,
+  "fresh_starting_balance": 741,
+  "full_block_affordable": true,
+  "full_six_task_required_cost": 420,
+  "historical_balance": {
+    "treated_as_current": false,
+    "value": 661
+  },
+  "historical_unit_cost": {
+    "treated_as_current": false,
+    "value": 70
+  },
+  "no_second_user_credit_call": true,
+  "observed_accepted_unit_cost_consistent": true,
+  "schema_version": "CAL005_R1_BUDGET_SELECTION_V0_1",
+  "selected_target_count": 6,
+  "stop_reason": null
+}

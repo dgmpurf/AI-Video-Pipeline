@@ -1,0 +1,170 @@
+{
+  "committed_input_binding_count": 10,
+  "committed_input_bindings": [
+    {
+      "bytes": 4051,
+      "git_blob": "3ba56a01c108e03189eac1b5bb7176019c9ee203",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/authorization.json",
+      "role": "CAL005_COMMITTED_DESIGN_AUTHORIZATION",
+      "sha256": "56909ba25f95c04631021e568571658325f4a12ca4a7151c36923d9142b65033",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 4455,
+      "git_blob": "1ef28b94dac193bbab9ea51230704134b8af8b46",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/design_spec.json",
+      "role": "CAL005_COMMITTED_DESIGN_SPEC",
+      "sha256": "de144ada8b71057c09fb601e8ea41d6584af3c84ab03ac964be1bb0d5e61a4d1",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2464,
+      "git_blob": "2bf6b4217b2b29eb44b816502625338fa992aa81",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/condition_matrix.json",
+      "role": "CAL005_COMMITTED_CONDITION_MATRIX",
+      "sha256": "851b227e280a75bcfaa57e3ee5466201e55079f39b0ca9ff84f14630ddb3ba86",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 10944,
+      "git_blob": "6ce3de338c188a2605ffee122498cc9122f9b00e",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/task_manifest.json",
+      "role": "CAL005_COMMITTED_TASK_MANIFEST",
+      "sha256": "412a43c51201e4c6b82dc301537d03dccdd956d0798351cdc09c97b4f2b6d042",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 1004,
+      "git_blob": "5eabcdde52fab9898219b550d202db614d8f3e42",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/submission_order.json",
+      "role": "CAL005_COMMITTED_SUBMISSION_ORDER",
+      "sha256": "2181f1edd03a806537e788d17796264a9a5af2e34dfe7fb3c2dd943ff6299ffb",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2503,
+      "git_blob": "11472f7bc05bc86abac52a264bdc68200d3d5664",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/review_contract.json",
+      "role": "CAL005_COMMITTED_REVIEW_CONTRACT",
+      "sha256": "a4855c90e303d3bfa72c8bbeb0a716bcdb14eaa7bf1e31b714c3afd33818d367",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 868,
+      "git_blob": "829ee274c970f1f1572d09f675196a97f7eca847",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/budget_activation_plan.json",
+      "role": "CAL005_COMMITTED_BUDGET_ACTIVATION_PLAN",
+      "sha256": "771309a90962ddeff3d59403e2046e0a68b4a701b932d24d2107e1ceccb99f5c",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 1978,
+      "git_blob": "3bac37b19db431779d3ea8cdd488dccda6f73e3c",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+      "role": "CAL005_COMMITTED_NEUTRAL_PROMPT",
+      "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2287,
+      "git_blob": "e079625f088f60aeb576ddea3a07abc682463373",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+      "role": "CAL005_COMMITTED_IMPACT_PROMPT",
+      "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2058,
+      "git_blob": "0b4eada2543b7cd08d02d44b344fac78c52a7445",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+      "role": "CAL004_COMMITTED_HUMAN_FINAL_DECISION",
+      "sha256": "fa47dc6f6d8870fe1cf45ebbe88d6f9c9b22eae74aa7475f694c1a5807c41eb2",
+      "worktree_equals_head": true
+    }
+  ],
+  "coverage": {
+    "created_path_count": 12,
+    "other_output_binding_count": 11,
+    "self_excluded": true,
+    "unique_bound_path_count": 21
+  },
+  "execution_id": "CAL005-R1-CONDITIONAL-BALANCED-SUBMIT-A9D86918",
+  "other_output_bindings": [
+    {
+      "bytes": 6433,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/authorization.json",
+      "role": "CAL005_SUBMIT_AUTHORIZATION",
+      "sha256": "b156e26feb3e470fcd0b27758daef425b557fa830dc2daa1b85b43b6dcddda24"
+    },
+    {
+      "bytes": 3120,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/preflight.json",
+      "role": "CAL005_SUBMIT_PREFLIGHT",
+      "sha256": "fc65af3cf5ffa2d26bb4241725b598b6f52f55e1eea9a6b3bdf54fa9204f91bc"
+    },
+    {
+      "bytes": 654,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/budget_selection.json",
+      "role": "CAL005_BUDGET_SELECTION",
+      "sha256": "9c75a72b971f9a4fd2e17bb0adc930f4b691d226c136481b63db994bc7519cad"
+    },
+    {
+      "bytes": 2266,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/001_N0R-01_submit_receipt.json",
+      "role": "CAL005_N0R_01_SUBMIT_RECEIPT",
+      "sha256": "69537d134374042c159662f517f8f3ec466d05db5774f67bca3a891350d6be91"
+    },
+    {
+      "bytes": 2252,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/002_I0R-01_submit_receipt.json",
+      "role": "CAL005_I0R_01_SUBMIT_RECEIPT",
+      "sha256": "33e73ffc9b2619d41687710754509192139014346d2188cb4ee8a997a2883699"
+    },
+    {
+      "bytes": 2252,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/003_I0R-02_submit_receipt.json",
+      "role": "CAL005_I0R_02_SUBMIT_RECEIPT",
+      "sha256": "ce8093bce7642f630abf23fba68f659c21a96cec139a388327732d2fc153ca2e"
+    },
+    {
+      "bytes": 2266,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/004_N0R-02_submit_receipt.json",
+      "role": "CAL005_N0R_02_SUBMIT_RECEIPT",
+      "sha256": "f237292e874399bf0edfd74fc4335da5ba5c386b893ed6cb2d42ea47104e2a0d"
+    },
+    {
+      "bytes": 2266,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/005_N0R-03_submit_receipt.json",
+      "role": "CAL005_N0R_03_SUBMIT_RECEIPT",
+      "sha256": "4766a045435de100ed5ffbd8dbb1d8c7257dc5ae52314aacf891fe2135a448ef"
+    },
+    {
+      "bytes": 2253,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/submissions/006_I0R-03_submit_receipt.json",
+      "role": "CAL005_I0R_03_SUBMIT_RECEIPT",
+      "sha256": "a442ac95ce7efb129dc2b0c6c4104338bbdee09e294595f64dc27fa8be7305b6"
+    },
+    {
+      "bytes": 4041,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_SUBMIT_ONLY_V0_1/execution_summary.json",
+      "role": "CAL005_EXECUTION_SUMMARY",
+      "sha256": "e072a026d647809f8bd30d2ca09ca82a02aa1cc61e6ddb0201ec738a69ced2fd"
+    },
+    {
+      "bytes": 2428,
+      "path": "reports/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_SUBMIT_ONLY_RESULT.md",
+      "role": "CAL005_SUBMIT_ONLY_REPORT",
+      "sha256": "3c522afcc370527287f16fe13af355d2d54f15f570cff772da7d91e9a7db71b2"
+    }
+  ],
+  "runtime_preflight_identities": {
+    "dreamina_executable_sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10",
+    "login_checklogin_return_code": 1,
+    "text2video_help_stdout_sha256": "17e92789fc0633fa2563a3f3260865a955c08813d55deb681f4c7936ba2ecde4",
+    "user_credit_stdout_sha256": "63249929d4493337a70942524d35aa223d9d0e0a9f98f15600c808707062003b",
+    "version_stdout_sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0"
+  },
+  "schema_version": "CAL005_R1_SUBMIT_ONLY_EVIDENCE_MANIFEST_V0_1",
+  "sensitive_provider_or_account_data_persisted": false,
+  "starting_checkpoint": "b01515e7a1980ba687dd55eb9d3303e972d6f3e7"
+}

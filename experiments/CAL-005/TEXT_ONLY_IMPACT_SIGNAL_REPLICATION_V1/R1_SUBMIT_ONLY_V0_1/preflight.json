@@ -1,0 +1,92 @@
+{
+  "accepted_runtime_preflight": {
+    "authentication_evidence": {
+      "accepted_by_recovery_authorization": true,
+      "evidence": "SUCCESSFUL_USER_CREDIT_IN_SELECTED_ENVIRONMENT",
+      "fresh_balance": 741,
+      "login_checklogin": {
+        "classification": "COMMAND_CONTRACT_MISMATCH_DEVICE_CODE_REQUIRED",
+        "return_code": 1,
+        "stderr_bytes": 0,
+        "stdout_bytes": 0
+      }
+    },
+    "command_counts": {
+      "dreamina_login_checklogin": 1,
+      "dreamina_text2video_help": 1,
+      "dreamina_user_credit": 1,
+      "dreamina_version": 1,
+      "preflight_reruns_after_recovery_authorization": 0
+    },
+    "dreamina_executable": {
+      "bytes": 31879680,
+      "path": "C:\\Users\\msjpurf\\bin\\dreamina.EXE",
+      "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10"
+    },
+    "text2video_help": {
+      "asynchronous_submit": true,
+      "forbidden_poll_flag_not_passed": true,
+      "required_semantics_pass": true,
+      "return_code": 0,
+      "stdout_bytes": 1708,
+      "stdout_sha256": "17e92789fc0633fa2563a3f3260865a955c08813d55deb681f4c7936ba2ecde4"
+    },
+    "user_credit": {
+      "fresh_total_credit": 741,
+      "private_account_fields_persisted": false,
+      "return_code": 0,
+      "stdout_bytes": 102,
+      "stdout_sha256": "63249929d4493337a70942524d35aa223d9d0e0a9f98f15600c808707062003b"
+    },
+    "version": {
+      "build_time": "2026-06-26T06:36:39Z",
+      "commit": "2a20fff",
+      "return_code": 0,
+      "stdout_bytes": 96,
+      "stdout_sha256": "25bbb1bdc706cb4e6fd486316b89b98a0d29c07fa34c8c51d0f860da2f29d8f0",
+      "version": "2a20fff-dirty"
+    }
+  },
+  "design_validation": {
+    "all_six_text2video": true,
+    "all_six_zero_reference": true,
+    "fixed_order": [
+      "N0R-01",
+      "I0R-01",
+      "I0R-02",
+      "N0R-02",
+      "N0R-03",
+      "I0R-03"
+    ],
+    "prompt_bindings": {
+      "ACTION_NEUTRAL_MINIMAL": {
+        "bytes": 1978,
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+        "worktree_equals_head": true
+      },
+      "IMPACT_CAUSAL_HARD": {
+        "bytes": 2287,
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+        "worktree_equals_head": true
+      }
+    },
+    "task_count": 6,
+    "task_identities_unique": true
+  },
+  "execution_id": "CAL005-R1-CONDITIONAL-BALANCED-SUBMIT-A9D86918",
+  "preactivation_fixture_tests": "PASS",
+  "repository": {
+    "branch": "main",
+    "head": "b01515e7a1980ba687dd55eb9d3303e972d6f3e7",
+    "head_origin_aligned": true,
+    "origin_main": "b01515e7a1980ba687dd55eb9d3303e972d6f3e7",
+    "source_changes": 0,
+    "staged_changes": 0,
+    "target_paths_absent_before_activation": 12,
+    "tracked_modifications": 0
+  },
+  "schema_version": "CAL005_R1_SUBMIT_ONLY_PREFLIGHT_V0_1",
+  "status": "PASS_READY_FOR_N0R_01_CANARY"
+}
