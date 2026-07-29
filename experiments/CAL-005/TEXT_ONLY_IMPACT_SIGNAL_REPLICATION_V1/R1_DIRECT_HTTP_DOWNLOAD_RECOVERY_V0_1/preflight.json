@@ -1,0 +1,351 @@
+{
+  "all_eleven_target_paths_absent": true,
+  "branch": "main",
+  "curl_capability_preflight": {
+    "bytes": 711736,
+    "help_exit_code": 0,
+    "help_output_sha256": "c9da93749f94c4fae7f8a2764a45f3b0770e2c4c89bf0957e6f5332dd58fdfa2",
+    "help_validation": "PASS",
+    "path": "C:/Windows/system32/curl.exe",
+    "sha256": "3345339164cf384eff527b6c3160fea8d849a4231ec6ca80513e3a739e505168",
+    "supported_options": [
+      "--location",
+      "--fail",
+      "--silent",
+      "--show-error",
+      "--connect-timeout",
+      "--max-time",
+      "--speed-time",
+      "--speed-limit",
+      "--output",
+      "--continue-at",
+      "--config"
+    ],
+    "version_exit_code": 0,
+    "version_first_line": "curl 8.13.0 (Windows) libcurl/8.13.0 Schannel zlib/1.3.1 WinIDN",
+    "version_output_sha256": "261f29654a93da0bcee32cbe755361d32629dcc63aa380e37e9f85d4c3ecd410"
+  },
+  "dreamina_executable": {
+    "bytes": 31879680,
+    "path": "C:/Users/msjpurf/bin/dreamina.EXE",
+    "sha256": "0d41930c93e3961b9eb017d5b5eedfa186f2b2025fa0037c19c3a29fc6249d10"
+  },
+  "existing_media_read_only_validation": [
+    {
+      "bytes": 4737910,
+      "condition_id": "N0R",
+      "fixed_position": 5,
+      "identity_match": true,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/005_N0R-03.mp4",
+      "read_only_technical_revalidation": {
+        "audio_codec": "aac",
+        "audio_stream_count": 1,
+        "avg_frame_rate": "7260/301",
+        "complete_decode_exit_code": 0,
+        "complete_decode_process": {
+          "exit_code": 0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 0,
+          "timeout": false
+        },
+        "complete_decode_result": "PASS",
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "dimensions": {
+          "height": 720,
+          "width": 1280
+        },
+        "duration_seconds": 5.06195,
+        "ffprobe_json_parse_result": "PASS",
+        "ffprobe_process": {
+          "exit_code": 0,
+          "stdout_bytes": 4618,
+          "stdout_sha256": "6fb94528fe1ed19be2f989d0299472c5647d374adf524b23cb8e6ba02ea5038d",
+          "timeout": false
+        },
+        "five_second_duration_conformance": true,
+        "other_stream_count": 0,
+        "pixel_format": "yuv420p",
+        "r_frame_rate": "60/1",
+        "technical_validity": "PASS",
+        "video_codec": "h264",
+        "video_stream_count": 1
+      },
+      "replicate": 3,
+      "sha256": "8464de889293d8a92164ba8c81e59585afa3a037cbc03748ff687671bd860023",
+      "task_id": "N0R-03"
+    },
+    {
+      "bytes": 3429867,
+      "condition_id": "I0R",
+      "fixed_position": 6,
+      "identity_match": true,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/006_I0R-03.mp4",
+      "read_only_technical_revalidation": {
+        "audio_codec": "aac",
+        "audio_stream_count": 1,
+        "avg_frame_rate": "7260/301",
+        "complete_decode_exit_code": 0,
+        "complete_decode_process": {
+          "exit_code": 0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 0,
+          "timeout": false
+        },
+        "complete_decode_result": "PASS",
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "dimensions": {
+          "height": 720,
+          "width": 1280
+        },
+        "duration_seconds": 5.06195,
+        "ffprobe_json_parse_result": "PASS",
+        "ffprobe_process": {
+          "exit_code": 0,
+          "stdout_bytes": 4618,
+          "stdout_sha256": "edc69aed2f49b5381d65059991bb53d95a045276c3b55369d043a7fff1941527",
+          "timeout": false
+        },
+        "five_second_duration_conformance": true,
+        "other_stream_count": 0,
+        "pixel_format": "yuv420p",
+        "r_frame_rate": "60/1",
+        "technical_validity": "PASS",
+        "video_codec": "h264",
+        "video_stream_count": 1
+      },
+      "replicate": 3,
+      "sha256": "83d26fc63b0d7e7ba8c3cac0114ac6124a43378ffa790c60e61078ccc898c3b7",
+      "task_id": "I0R-03"
+    }
+  ],
+  "ffmpeg_identity": {
+    "bytes": 131534336,
+    "path": "C:/ffmpeg/bin/ffmpeg.exe",
+    "sha256": "9f5c85e070cc2cfdc960c67395a8a47967732e59ddd8850bc56cf5842e7049d4"
+  },
+  "ffprobe_identity": {
+    "bytes": 131407872,
+    "path": "C:/ffmpeg/bin/ffprobe.exe",
+    "sha256": "ba37098df2d55a7464ca344ab806c174be9735c22bf8a487d26fe0c624598695"
+  },
+  "final_media_001_through_004_absent": true,
+  "head_origin_aligned": true,
+  "local_head": "771ddbd31529ebd06e3873a4487a9e247f2bfdb4",
+  "locally_recorded_origin_main": "771ddbd31529ebd06e3873a4487a9e247f2bfdb4",
+  "merge_or_rewrite_operation": false,
+  "prior_packages": [
+    {
+      "file_count": 12,
+      "files": [
+        {
+          "bytes": 1085,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/authorization.json",
+          "sha256": "e9b0f84659578ca615c4368081da82e0228596e3c4519c880fbc249cb6ff88fe"
+        },
+        {
+          "bytes": 12826,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/evidence_manifest.json",
+          "sha256": "be9f874a5ff529a1959a1ab812f2d0470c4eccaf46f2bd6805700710074907c6"
+        },
+        {
+          "bytes": 2372,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/execution.json",
+          "sha256": "5c78d29048b6d21835c266b87f0cdb3970010a22bd239f6c101dddd258965ab1"
+        },
+        {
+          "bytes": 1764,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/media_manifest.json",
+          "sha256": "4d4daf5f8e0b42ad6cac507fca84f3d0156ddd622ca52a3f3de35b6093f7d06a"
+        },
+        {
+          "bytes": 2658,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/preflight.json",
+          "sha256": "fb50fc5103a37785e5b7303f6261237c50211e071f49f7a2924b86d37e4d1652"
+        },
+        {
+          "bytes": 3043,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/task_download/001_N0R-01_download.json",
+          "sha256": "79f8166e55171fb3bbf99d43207f9716cbc4b428eb9972614342f63e38b15aec"
+        },
+        {
+          "bytes": 3043,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/task_download/002_I0R-01_download.json",
+          "sha256": "130b3658e8afc99aa7a48bd54f9fe5cd00c2da66314b1d4132ba728614ca05e1"
+        },
+        {
+          "bytes": 3043,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/task_download/003_I0R-02_download.json",
+          "sha256": "99fd9e3c404d007096a4b8212e9a6ffee308085497a9c88a90a559b7f3ce3c27"
+        },
+        {
+          "bytes": 3043,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/task_download/004_N0R-02_download.json",
+          "sha256": "0aa57be10dc40d0d1bb73a9f16fa658fb8b769ec2ab308523f152038239cc371"
+        },
+        {
+          "bytes": 4534,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/task_download/005_N0R-03_download.json",
+          "sha256": "d0618af8ce4aac0f8a4499a2377465a3ed815a32efe608aaf9f01e81de2aa044"
+        },
+        {
+          "bytes": 4533,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/task_download/006_I0R-03_download.json",
+          "sha256": "1ef4808d2d40871b011372a2395ff421597f98cb927d84c28a289e81d803aff0"
+        },
+        {
+          "bytes": 784,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/technical_validation_summary.json",
+          "sha256": "fc495dd5ce9c722e181b777a306586af4657546e4bfff787895dedcf6705eda5"
+        }
+      ],
+      "root": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1",
+      "worktree_equals_head": true
+    },
+    {
+      "file_count": 10,
+      "files": [
+        {
+          "bytes": 1021,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/authorization.json",
+          "sha256": "ad90698e8249e14d7f9ec8ec718e6e07308d1022fa8fb28fbe5ae92e11237d4c"
+        },
+        {
+          "bytes": 12296,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/evidence_manifest.json",
+          "sha256": "ebb09f348a13a5ebab02ccaf165fe1f4941dca66fc045d838d6684d3b1a3c911"
+        },
+        {
+          "bytes": 2739,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/execution.json",
+          "sha256": "10673d64f0fccd93aaaf2210767e50df7fc91ca5684180cd8e8a12e7fb3f23ba"
+        },
+        {
+          "bytes": 4526,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/media_manifest.json",
+          "sha256": "46fe57e59129b0e2aabd41c80a5942e9dbb8a7f5e85f19ef00fd97f0718c5daa"
+        },
+        {
+          "bytes": 2406,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/preflight.json",
+          "sha256": "4c977125e6928cb80454c2ab9430cf2d3be22eb35d4336822bb82ec3f80e0851"
+        },
+        {
+          "bytes": 3578,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/task_recovery/001_N0R-01_recovery.json",
+          "sha256": "a343489f6978221f05e17a6a5f59218fbb7b3bf8ca980f0d3b92a6ea01e5f200"
+        },
+        {
+          "bytes": 3578,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/task_recovery/002_I0R-01_recovery.json",
+          "sha256": "5680d00cbeb7ac4d80cb4d1babedae05bcbc6c8865ee636ecfa203cf65ab3128"
+        },
+        {
+          "bytes": 3578,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/task_recovery/003_I0R-02_recovery.json",
+          "sha256": "8d1b1ad602d13d45b74d62c518309f469dde80c733f2b9ca780649eeaa3c06f1"
+        },
+        {
+          "bytes": 3578,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/task_recovery/004_N0R-02_recovery.json",
+          "sha256": "fc00c366220e1255068a31a438c1af12b6e539eff9b85c965fd57ebaecd3ec6f"
+        },
+        {
+          "bytes": 473,
+          "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/technical_validation_summary.json",
+          "sha256": "f7b704972edb331e9c6c9142fda669d0574d2ca469b016fa77e47e39d33ca9e4"
+        }
+      ],
+      "root": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1",
+      "worktree_equals_head": true
+    }
+  ],
+  "prior_task_bindings": [
+    {
+      "original_download_record": {
+        "bytes": 3043,
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/task_download/001_N0R-01_download.json",
+        "sha256": "79f8166e55171fb3bbf99d43207f9716cbc4b428eb9972614342f63e38b15aec"
+      },
+      "original_download_result": "FAIL",
+      "original_invocation_count": 1,
+      "prior_partial_bytes": 3276800,
+      "prior_partial_sha256": "fbf73a39090561b4935e09b312a7bdb44c8d1f7d273b4b20c3d35594102a2b4e",
+      "replacement_download_record": {
+        "bytes": 3578,
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/task_recovery/001_N0R-01_recovery.json",
+        "sha256": "a343489f6978221f05e17a6a5f59218fbb7b3bf8ca980f0d3b92a6ea01e5f200"
+      },
+      "replacement_download_result": "FAIL",
+      "replacement_invocation_count": 1,
+      "root_cause_classification": "DOWNLOAD_TRANSPORT_BODY_READ_TIMEOUT",
+      "sanitized_message": "download video 1: write file: context deadline exceeded (Client.Timeout or context cancellation while reading body)"
+    },
+    {
+      "original_download_record": {
+        "bytes": 3043,
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/task_download/002_I0R-01_download.json",
+        "sha256": "130b3658e8afc99aa7a48bd54f9fe5cd00c2da66314b1d4132ba728614ca05e1"
+      },
+      "original_download_result": "FAIL",
+      "original_invocation_count": 1,
+      "prior_partial_bytes": 2882418,
+      "prior_partial_sha256": "1947050c28a0e9da3874e772d17fcfae4d6ab2621d586fbef926da37e7a22eba",
+      "replacement_download_record": {
+        "bytes": 3578,
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/task_recovery/002_I0R-01_recovery.json",
+        "sha256": "5680d00cbeb7ac4d80cb4d1babedae05bcbc6c8865ee636ecfa203cf65ab3128"
+      },
+      "replacement_download_result": "FAIL",
+      "replacement_invocation_count": 1,
+      "root_cause_classification": "DOWNLOAD_TRANSPORT_BODY_READ_TIMEOUT",
+      "sanitized_message": "download video 1: write file: context deadline exceeded (Client.Timeout or context cancellation while reading body)"
+    },
+    {
+      "original_download_record": {
+        "bytes": 3043,
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/task_download/003_I0R-02_download.json",
+        "sha256": "99fd9e3c404d007096a4b8212e9a6ffee308085497a9c88a90a559b7f3ce3c27"
+      },
+      "original_download_result": "FAIL",
+      "original_invocation_count": 1,
+      "prior_partial_bytes": 1997189,
+      "prior_partial_sha256": "22f792fcb282ab94ba48a6eee6b46d4fe29806b013cf012258838c200f05ac1c",
+      "replacement_download_record": {
+        "bytes": 3578,
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/task_recovery/003_I0R-02_recovery.json",
+        "sha256": "8d1b1ad602d13d45b74d62c518309f469dde80c733f2b9ca780649eeaa3c06f1"
+      },
+      "replacement_download_result": "FAIL",
+      "replacement_invocation_count": 1,
+      "root_cause_classification": "DOWNLOAD_TRANSPORT_BODY_READ_TIMEOUT",
+      "sanitized_message": "download video 1: write file: context deadline exceeded (Client.Timeout or context cancellation while reading body)"
+    },
+    {
+      "original_download_record": {
+        "bytes": 3043,
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/task_download/004_N0R-02_download.json",
+        "sha256": "0aa57be10dc40d0d1bb73a9f16fa658fb8b769ec2ab308523f152038239cc371"
+      },
+      "original_download_result": "FAIL",
+      "original_invocation_count": 1,
+      "prior_partial_bytes": 1649536,
+      "prior_partial_sha256": "5948213430c80b8862f1a6b835be1783732b802f4f56c9ce3f83a80e3f4d438f",
+      "replacement_download_record": {
+        "bytes": 3578,
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/task_recovery/004_N0R-02_recovery.json",
+        "sha256": "fc00c366220e1255068a31a438c1af12b6e539eff9b85c965fd57ebaecd3ec6f"
+      },
+      "replacement_download_result": "FAIL",
+      "replacement_invocation_count": 1,
+      "root_cause_classification": "DOWNLOAD_TRANSPORT_BODY_READ_TIMEOUT",
+      "sanitized_message": "download video 1: write file: context deadline exceeded (Client.Timeout or context cancellation while reading body)"
+    }
+  ],
+  "repository_root": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+  "source_changes": 0,
+  "staged_changes": 0,
+  "tracked_changes": 0,
+  "unrelated_untracked_paths_preserved": 27
+}

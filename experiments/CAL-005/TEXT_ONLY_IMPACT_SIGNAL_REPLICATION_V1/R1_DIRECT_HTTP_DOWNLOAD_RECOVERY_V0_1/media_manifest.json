@@ -1,0 +1,78 @@
+{
+  "all_six_media_present": true,
+  "all_six_technically_valid": true,
+  "duplicate_hash_count": 0,
+  "duplicate_hashes": [],
+  "media": [
+    {
+      "bytes": 4170601,
+      "condition_id": "N0R",
+      "fixed_position": 1,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/001_N0R-01.mp4",
+      "provenance": "DIRECT_HTTP_RECOVERY",
+      "replicate": 1,
+      "sha256": "3da6be0116fe5e3bd1bcc180dee4ae024aa473b9707304f487a3f57786fed8f8",
+      "task_id": "N0R-01",
+      "technical_validity": "PASS"
+    },
+    {
+      "bytes": 3560166,
+      "condition_id": "I0R",
+      "fixed_position": 2,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/002_I0R-01.mp4",
+      "provenance": "DIRECT_HTTP_RECOVERY",
+      "replicate": 1,
+      "sha256": "3f430ce95674faa73d1d5198017a59687271f7a315167d4fb131bb1698c2569d",
+      "task_id": "I0R-01",
+      "technical_validity": "PASS"
+    },
+    {
+      "bytes": 3762453,
+      "condition_id": "I0R",
+      "fixed_position": 3,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/003_I0R-02.mp4",
+      "provenance": "DIRECT_HTTP_RECOVERY",
+      "replicate": 2,
+      "sha256": "cb257b021f9793bbd6b368c942c875f8cafd9a66408cc3f26c5e9ebc84923b19",
+      "task_id": "I0R-02",
+      "technical_validity": "PASS"
+    },
+    {
+      "bytes": 3270117,
+      "condition_id": "N0R",
+      "fixed_position": 4,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/004_N0R-02.mp4",
+      "provenance": "DIRECT_HTTP_RECOVERY",
+      "replicate": 2,
+      "sha256": "2fd189900d8da8e32186339bc439488507eba1297c19b1797d47bf3a0fed9b6e",
+      "task_id": "N0R-02",
+      "technical_validity": "PASS"
+    },
+    {
+      "bytes": 4737910,
+      "condition_id": "N0R",
+      "fixed_position": 5,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/005_N0R-03.mp4",
+      "provenance": "PRIOR_SUCCESS_READ_ONLY_REVALIDATION",
+      "replicate": 3,
+      "sha256": "8464de889293d8a92164ba8c81e59585afa3a037cbc03748ff687671bd860023",
+      "task_id": "N0R-03",
+      "technical_validity": "PASS"
+    },
+    {
+      "bytes": 3429867,
+      "condition_id": "I0R",
+      "fixed_position": 6,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/006_I0R-03.mp4",
+      "provenance": "PRIOR_SUCCESS_READ_ONLY_REVALIDATION",
+      "replicate": 3,
+      "sha256": "83d26fc63b0d7e7ba8c3cac0114ac6124a43378ffa790c60e61078ccc898c3b7",
+      "task_id": "I0R-03",
+      "technical_validity": "PASS"
+    }
+  ],
+  "media_count": 6,
+  "schema_version": "CAL005_R1_DIRECT_HTTP_MEDIA_MANIFEST_V0_1",
+  "total_media_bytes": 22931114,
+  "unique_media_hash_count": 6
+}

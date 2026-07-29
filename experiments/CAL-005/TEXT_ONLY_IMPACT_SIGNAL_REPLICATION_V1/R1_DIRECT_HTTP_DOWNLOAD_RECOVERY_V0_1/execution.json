@@ -1,0 +1,81 @@
+{
+  "all_six_media_present": true,
+  "all_six_technically_valid": true,
+  "authorization_lifecycle": {
+    "activated": true,
+    "activation_boundary": "IMMEDIATELY_BEFORE_FIRST_DREAMINA_QUERY_ONLY",
+    "activation_utc": "2026-07-29T14:21:42.558206Z",
+    "consumed": true,
+    "reusable": false
+  },
+  "checkpoint": "COMPLETE",
+  "command_counts": {
+    "curl_initial": 4,
+    "curl_resume": 0,
+    "curl_total": 4,
+    "dreamina_positions_5_6": 0,
+    "fresh_query_only": 4,
+    "generation_retry": 0,
+    "query_result_with_download_dir": 0,
+    "resubmit": 0,
+    "submit": 0,
+    "user_credit": 0
+  },
+  "decision": "CAL005_R1_DIRECT_HTTP_DOWNLOAD_RECOVERY_COMPLETE_ALL_SIX_TECHNICALLY_VALID",
+  "direct_http_recoveries_attempted": 4,
+  "direct_http_recoveries_failed": 0,
+  "direct_http_recoveries_successful": 4,
+  "end_utc": "2026-07-29T14:22:01.542818Z",
+  "final_master": false,
+  "fixed_task_completion": false,
+  "local_learning_entries": [
+    {
+      "candidate": "Dreamina CLI version 2a20fff-dirty on the selected Windows environment produced repeatable body-read timeout failures near 34 seconds for four successful video results.",
+      "source_update_candidate": true
+    },
+    {
+      "candidate": "Nonzero partial MP4 output plus identical timeout errors establishes a download transport failure, not a generation or query failure.",
+      "source_update_candidate": true
+    },
+    {
+      "candidate": "After two exhausted query_result --download_dir attempts per task, the same route must not be tried again.",
+      "source_update_candidate": true
+    },
+    {
+      "candidate": "A fresh query-only URL may be handed directly and ephemerally to a longer-timeout HTTP transport without persisting the URL.",
+      "source_update_candidate": true
+    },
+    {
+      "candidate": "Result URLs must be passed through stdin or process memory rather than command-line arguments, files, logs or environment variables.",
+      "source_update_candidate": true
+    },
+    {
+      "candidate": "Direct HTTP transfers should use same-volume partial files and one bounded resume attempt.",
+      "source_update_candidate": true
+    }
+  ],
+  "local_validator_correction": {
+    "correction_scope": "POSTWRITE_SENSITIVE_SCAN_PREDICATE_ONLY",
+    "network_operations_repeated": false,
+    "original_false_positive": "A governance field asserting raw_provider_response_persisted=false was incorrectly rejected by a field-name-only predicate.",
+    "resolution": "Reject raw response content fields while allowing explicit false persistence assertions.",
+    "same_eleven_outputs_read_only_revalidated": true,
+    "sensitive_data_scan_after_correction": "PASS"
+  },
+  "locked": false,
+  "next_phase": "CAL005_R1_ALL_MEDIA_TECHNICALLY_VALID_BLIND_PACKAGE_AUTHORIZATION_HUMAN_DECISION",
+  "old_cli_download_route_invoked": false,
+  "old_cli_download_route_status": "EXHAUSTED",
+  "production_approved": false,
+  "randomness": 0,
+  "result_url_hashes_persisted": false,
+  "result_urls_persisted": false,
+  "schema_version": "CAL005_R1_DIRECT_HTTP_DOWNLOAD_EXECUTION_V0_1",
+  "scientific_result_derived": false,
+  "semantic_review_performed": false,
+  "source_update_candidates_recorded": 6,
+  "sources_changed": false,
+  "start_utc": "2026-07-29T14:21:42.054839Z",
+  "starting_checkpoint": "771ddbd31529ebd06e3873a4487a9e247f2bfdb4",
+  "temporary_corrections_used": 3
+}

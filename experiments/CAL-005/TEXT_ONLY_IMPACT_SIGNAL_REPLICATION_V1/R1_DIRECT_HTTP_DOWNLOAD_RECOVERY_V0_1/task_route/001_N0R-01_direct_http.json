@@ -1,0 +1,165 @@
+{
+  "condition_id": "N0R",
+  "current_provider_status": "success",
+  "direct_http_transfer_completed": true,
+  "failure_reason_sanitized": null,
+  "final_media": {
+    "bytes": 4170601,
+    "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/001_N0R-01.mp4",
+    "sha256": "3da6be0116fe5e3bd1bcc180dee4ae024aa473b9707304f487a3f57786fed8f8"
+  },
+  "fixed_position": 1,
+  "fresh_query": {
+    "argv": [
+      "C:/Users/msjpurf/bin/dreamina.EXE",
+      "query_result",
+      "--submit_id",
+      "5dc990df-da16-40f6-87e1-7aa1922df108"
+    ],
+    "download_dir_present": false,
+    "elapsed_seconds": 2.984,
+    "end_utc": "2026-07-29T14:21:45.542322Z",
+    "exit_code": 0,
+    "gen_status": "success",
+    "invocation_index": 1,
+    "local_parser_corrections_used": 0,
+    "provider_error_field_paths": [],
+    "provider_terminal": true,
+    "queue_status": "Finish",
+    "raw_response_persisted": false,
+    "response_keys": [
+      "credit_count",
+      "gen_status",
+      "queue_info",
+      "result_json",
+      "submit_id"
+    ],
+    "result_media_type": "video",
+    "returned_submit_id_match": true,
+    "start_utc": "2026-07-29T14:21:42.558206Z",
+    "stderr_bytes": 0,
+    "stderr_raw_persisted": false,
+    "stdout_bytes": 1277,
+    "stdout_raw_persisted": false,
+    "timeout": false,
+    "url_field_path": "$.video_url",
+    "url_hash_persisted": false,
+    "url_observed_in_memory": true,
+    "url_persisted": false,
+    "url_scheme": "HTTPS",
+    "video_result_count": 1
+  },
+  "fresh_query_invocation_count": 1,
+  "local_parser_corrections_used": 0,
+  "old_cli_download_route": {
+    "invocation_count": 2,
+    "invoked_in_current_phase": false,
+    "status": "EXHAUSTED"
+  },
+  "prior_failures": {
+    "original_download_record": {
+      "bytes": 3043,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_V0_1/task_download/001_N0R-01_download.json",
+      "sha256": "79f8166e55171fb3bbf99d43207f9716cbc4b428eb9972614342f63e38b15aec"
+    },
+    "original_download_result": "FAIL",
+    "original_invocation_count": 1,
+    "prior_partial_bytes": 3276800,
+    "prior_partial_sha256": "fbf73a39090561b4935e09b312a7bdb44c8d1f7d273b4b20c3d35594102a2b4e",
+    "replacement_download_record": {
+      "bytes": 3578,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DOWNLOAD_RECOVERY_V0_1/task_recovery/001_N0R-01_recovery.json",
+      "sha256": "a343489f6978221f05e17a6a5f59218fbb7b3bf8ca980f0d3b92a6ea01e5f200"
+    },
+    "replacement_download_result": "FAIL",
+    "replacement_invocation_count": 1,
+    "root_cause_classification": "DOWNLOAD_TRANSPORT_BODY_READ_TIMEOUT",
+    "sanitized_message": "download video 1: write file: context deadline exceeded (Client.Timeout or context cancellation while reading body)"
+  },
+  "provider_terminal": true,
+  "replicate": 1,
+  "resume_attempted": false,
+  "route": "QUERY_ONLY_URL_TO_CURL_STDIN_CONFIG",
+  "schema_version": "CAL005_R1_DIRECT_HTTP_TASK_ROUTE_V0_1",
+  "signed_url_hash_persisted": false,
+  "signed_url_observed_in_memory": true,
+  "signed_url_persisted": false,
+  "submit_id": "5dc990df-da16-40f6-87e1-7aa1922df108",
+  "task_id": "N0R-01",
+  "technical_validation": {
+    "audio_codec": "aac",
+    "audio_stream_count": 1,
+    "avg_frame_rate": "7260/301",
+    "complete_decode_process": {
+      "elapsed_seconds": 0.093,
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timeout": false
+    },
+    "complete_decode_result": "PASS",
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "dimensions": {
+      "height": 720,
+      "width": 1280
+    },
+    "duration_seconds": 5.06195,
+    "failure_reasons": [],
+    "ffprobe_json_parse_result": "PASS",
+    "ffprobe_process": {
+      "elapsed_seconds": 0.016,
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 4755,
+      "stdout_sha256": "488a78c400108e4855544dc9a3d2a34252eb20b8055ba389cc36d4a7e4e750e8",
+      "timeout": false
+    },
+    "five_second_duration_conformance": true,
+    "media_bytes": 4170601,
+    "media_sha256": "3da6be0116fe5e3bd1bcc180dee4ae024aa473b9707304f487a3f57786fed8f8",
+    "nonempty_file": true,
+    "other_stream_count": 0,
+    "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/001_N0R-01.mp4",
+    "pixel_format": "yuv420p",
+    "r_frame_rate": "60/1",
+    "regular_file": true,
+    "technical_validity": "PASS",
+    "video_codec": "h264",
+    "video_stream_count": 1
+  },
+  "temporary_failure_partial": {
+    "bytes": 0,
+    "present": false,
+    "sha256": null
+  },
+  "total_curl_process_invocation_count": 1,
+  "transfers": [
+    {
+      "argv_contains_url": false,
+      "classification": "TRANSFER_PROCESS_SUCCESS",
+      "elapsed_seconds": 1.625,
+      "exit_code": 0,
+      "invocation_number": 1,
+      "partial_file": {
+        "bytes": 4170601,
+        "present": true,
+        "sha256": "3da6be0116fe5e3bd1bcc180dee4ae024aa473b9707304f487a3f57786fed8f8"
+      },
+      "resume": false,
+      "sanitized_message": null,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdin_configuration_persisted": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timeout": false,
+      "url_hash_persisted": false,
+      "url_persisted": false,
+      "url_transport": "STDIN_CONFIG"
+    }
+  ],
+  "url_scheme": "HTTPS"
+}

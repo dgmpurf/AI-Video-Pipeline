@@ -1,0 +1,339 @@
+{
+  "all_six_media_present": true,
+  "all_six_technically_valid": true,
+  "duration_conformance_rule": "abs(observed_duration_seconds - 5.0) <= 0.25",
+  "ffmpeg_identity": {
+    "bytes": 131534336,
+    "path": "C:/ffmpeg/bin/ffmpeg.exe",
+    "sha256": "9f5c85e070cc2cfdc960c67395a8a47967732e59ddd8850bc56cf5842e7049d4"
+  },
+  "ffprobe_identity": {
+    "bytes": 131407872,
+    "path": "C:/ffmpeg/bin/ffprobe.exe",
+    "sha256": "ba37098df2d55a7464ca344ab806c174be9735c22bf8a487d26fe0c624598695"
+  },
+  "media": [
+    {
+      "bytes": 4170601,
+      "condition_id": "N0R",
+      "fixed_position": 1,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/001_N0R-01.mp4",
+      "provenance": "DIRECT_HTTP_RECOVERY",
+      "replicate": 1,
+      "sha256": "3da6be0116fe5e3bd1bcc180dee4ae024aa473b9707304f487a3f57786fed8f8",
+      "task_id": "N0R-01",
+      "technical_validation": {
+        "audio_codec": "aac",
+        "audio_stream_count": 1,
+        "avg_frame_rate": "7260/301",
+        "complete_decode_process": {
+          "elapsed_seconds": 0.093,
+          "exit_code": 0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timeout": false
+        },
+        "complete_decode_result": "PASS",
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "dimensions": {
+          "height": 720,
+          "width": 1280
+        },
+        "duration_seconds": 5.06195,
+        "failure_reasons": [],
+        "ffprobe_json_parse_result": "PASS",
+        "ffprobe_process": {
+          "elapsed_seconds": 0.016,
+          "exit_code": 0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 4755,
+          "stdout_sha256": "488a78c400108e4855544dc9a3d2a34252eb20b8055ba389cc36d4a7e4e750e8",
+          "timeout": false
+        },
+        "five_second_duration_conformance": true,
+        "media_bytes": 4170601,
+        "media_sha256": "3da6be0116fe5e3bd1bcc180dee4ae024aa473b9707304f487a3f57786fed8f8",
+        "nonempty_file": true,
+        "other_stream_count": 0,
+        "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/001_N0R-01.mp4",
+        "pixel_format": "yuv420p",
+        "r_frame_rate": "60/1",
+        "regular_file": true,
+        "technical_validity": "PASS",
+        "video_codec": "h264",
+        "video_stream_count": 1
+      }
+    },
+    {
+      "bytes": 3560166,
+      "condition_id": "I0R",
+      "fixed_position": 2,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/002_I0R-01.mp4",
+      "provenance": "DIRECT_HTTP_RECOVERY",
+      "replicate": 1,
+      "sha256": "3f430ce95674faa73d1d5198017a59687271f7a315167d4fb131bb1698c2569d",
+      "task_id": "I0R-01",
+      "technical_validation": {
+        "audio_codec": "aac",
+        "audio_stream_count": 1,
+        "avg_frame_rate": "7260/301",
+        "complete_decode_process": {
+          "elapsed_seconds": 0.093,
+          "exit_code": 0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timeout": false
+        },
+        "complete_decode_result": "PASS",
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "dimensions": {
+          "height": 720,
+          "width": 1280
+        },
+        "duration_seconds": 5.06195,
+        "failure_reasons": [],
+        "ffprobe_json_parse_result": "PASS",
+        "ffprobe_process": {
+          "elapsed_seconds": 0.016,
+          "exit_code": 0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 4755,
+          "stdout_sha256": "63ec8be8219b03fca47d0b4537c893fad3a7f3e4f785009b69eeb8c29d14b97f",
+          "timeout": false
+        },
+        "five_second_duration_conformance": true,
+        "media_bytes": 3560166,
+        "media_sha256": "3f430ce95674faa73d1d5198017a59687271f7a315167d4fb131bb1698c2569d",
+        "nonempty_file": true,
+        "other_stream_count": 0,
+        "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/002_I0R-01.mp4",
+        "pixel_format": "yuv420p",
+        "r_frame_rate": "60/1",
+        "regular_file": true,
+        "technical_validity": "PASS",
+        "video_codec": "h264",
+        "video_stream_count": 1
+      }
+    },
+    {
+      "bytes": 3762453,
+      "condition_id": "I0R",
+      "fixed_position": 3,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/003_I0R-02.mp4",
+      "provenance": "DIRECT_HTTP_RECOVERY",
+      "replicate": 2,
+      "sha256": "cb257b021f9793bbd6b368c942c875f8cafd9a66408cc3f26c5e9ebc84923b19",
+      "task_id": "I0R-02",
+      "technical_validation": {
+        "audio_codec": "aac",
+        "audio_stream_count": 1,
+        "avg_frame_rate": "7260/301",
+        "complete_decode_process": {
+          "elapsed_seconds": 0.078,
+          "exit_code": 0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timeout": false
+        },
+        "complete_decode_result": "PASS",
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "dimensions": {
+          "height": 720,
+          "width": 1280
+        },
+        "duration_seconds": 5.085011,
+        "failure_reasons": [],
+        "ffprobe_json_parse_result": "PASS",
+        "ffprobe_process": {
+          "elapsed_seconds": 0.032,
+          "exit_code": 0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 4755,
+          "stdout_sha256": "bd0d5d8196a57fec37b122c034629cfc756ebd6c4bd79e768bf1cf56b3d543e2",
+          "timeout": false
+        },
+        "five_second_duration_conformance": true,
+        "media_bytes": 3762453,
+        "media_sha256": "cb257b021f9793bbd6b368c942c875f8cafd9a66408cc3f26c5e9ebc84923b19",
+        "nonempty_file": true,
+        "other_stream_count": 0,
+        "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/003_I0R-02.mp4",
+        "pixel_format": "yuv420p",
+        "r_frame_rate": "60/1",
+        "regular_file": true,
+        "technical_validity": "PASS",
+        "video_codec": "h264",
+        "video_stream_count": 1
+      }
+    },
+    {
+      "bytes": 3270117,
+      "condition_id": "N0R",
+      "fixed_position": 4,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/004_N0R-02.mp4",
+      "provenance": "DIRECT_HTTP_RECOVERY",
+      "replicate": 2,
+      "sha256": "2fd189900d8da8e32186339bc439488507eba1297c19b1797d47bf3a0fed9b6e",
+      "task_id": "N0R-02",
+      "technical_validation": {
+        "audio_codec": "aac",
+        "audio_stream_count": 1,
+        "avg_frame_rate": "7260/301",
+        "complete_decode_process": {
+          "elapsed_seconds": 0.078,
+          "exit_code": 0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timeout": false
+        },
+        "complete_decode_result": "PASS",
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "dimensions": {
+          "height": 720,
+          "width": 1280
+        },
+        "duration_seconds": 5.085011,
+        "failure_reasons": [],
+        "ffprobe_json_parse_result": "PASS",
+        "ffprobe_process": {
+          "elapsed_seconds": 0.032,
+          "exit_code": 0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 4755,
+          "stdout_sha256": "f3ab46bea192931b8fe3d20315d12ebb8f055c364717610d9ab28a35ec1da9d7",
+          "timeout": false
+        },
+        "five_second_duration_conformance": true,
+        "media_bytes": 3270117,
+        "media_sha256": "2fd189900d8da8e32186339bc439488507eba1297c19b1797d47bf3a0fed9b6e",
+        "nonempty_file": true,
+        "other_stream_count": 0,
+        "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/004_N0R-02.mp4",
+        "pixel_format": "yuv420p",
+        "r_frame_rate": "60/1",
+        "regular_file": true,
+        "technical_validity": "PASS",
+        "video_codec": "h264",
+        "video_stream_count": 1
+      }
+    },
+    {
+      "bytes": 4737910,
+      "condition_id": "N0R",
+      "fixed_position": 5,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/005_N0R-03.mp4",
+      "provenance": "PRIOR_SUCCESS_READ_ONLY_REVALIDATION",
+      "replicate": 3,
+      "sha256": "8464de889293d8a92164ba8c81e59585afa3a037cbc03748ff687671bd860023",
+      "task_id": "N0R-03",
+      "technical_validation": {
+        "audio_codec": "aac",
+        "audio_stream_count": 1,
+        "avg_frame_rate": "7260/301",
+        "complete_decode_exit_code": 0,
+        "complete_decode_process": {
+          "exit_code": 0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 0,
+          "timeout": false
+        },
+        "complete_decode_result": "PASS",
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "dimensions": {
+          "height": 720,
+          "width": 1280
+        },
+        "duration_seconds": 5.06195,
+        "failure_reasons": [],
+        "ffprobe_json_parse_result": "PASS",
+        "ffprobe_process": {
+          "exit_code": 0,
+          "stdout_bytes": 4618,
+          "stdout_sha256": "6fb94528fe1ed19be2f989d0299472c5647d374adf524b23cb8e6ba02ea5038d",
+          "timeout": false
+        },
+        "five_second_duration_conformance": true,
+        "media_bytes": 4737910,
+        "media_sha256": "8464de889293d8a92164ba8c81e59585afa3a037cbc03748ff687671bd860023",
+        "nonempty_file": true,
+        "other_stream_count": 0,
+        "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/005_N0R-03.mp4",
+        "pixel_format": "yuv420p",
+        "r_frame_rate": "60/1",
+        "regular_file": true,
+        "technical_validity": "PASS",
+        "video_codec": "h264",
+        "video_stream_count": 1
+      }
+    },
+    {
+      "bytes": 3429867,
+      "condition_id": "I0R",
+      "fixed_position": 6,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/006_I0R-03.mp4",
+      "provenance": "PRIOR_SUCCESS_READ_ONLY_REVALIDATION",
+      "replicate": 3,
+      "sha256": "83d26fc63b0d7e7ba8c3cac0114ac6124a43378ffa790c60e61078ccc898c3b7",
+      "task_id": "I0R-03",
+      "technical_validation": {
+        "audio_codec": "aac",
+        "audio_stream_count": 1,
+        "avg_frame_rate": "7260/301",
+        "complete_decode_exit_code": 0,
+        "complete_decode_process": {
+          "exit_code": 0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 0,
+          "timeout": false
+        },
+        "complete_decode_result": "PASS",
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "dimensions": {
+          "height": 720,
+          "width": 1280
+        },
+        "duration_seconds": 5.06195,
+        "failure_reasons": [],
+        "ffprobe_json_parse_result": "PASS",
+        "ffprobe_process": {
+          "exit_code": 0,
+          "stdout_bytes": 4618,
+          "stdout_sha256": "edc69aed2f49b5381d65059991bb53d95a045276c3b55369d043a7fff1941527",
+          "timeout": false
+        },
+        "five_second_duration_conformance": true,
+        "media_bytes": 3429867,
+        "media_sha256": "83d26fc63b0d7e7ba8c3cac0114ac6124a43378ffa790c60e61078ccc898c3b7",
+        "nonempty_file": true,
+        "other_stream_count": 0,
+        "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/006_I0R-03.mp4",
+        "pixel_format": "yuv420p",
+        "r_frame_rate": "60/1",
+        "regular_file": true,
+        "technical_validity": "PASS",
+        "video_codec": "h264",
+        "video_stream_count": 1
+      }
+    }
+  ],
+  "media_count": 6,
+  "read_only_revalidation_positions": [
+    5,
+    6
+  ],
+  "schema_version": "CAL005_R1_DIRECT_HTTP_TECHNICAL_VALIDATION_SUMMARY_V0_1"
+}

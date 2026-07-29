@@ -1,0 +1,36 @@
+{
+  "authorization_lifecycle": {
+    "activated": true,
+    "activation_boundary": "IMMEDIATELY_BEFORE_FIRST_DREAMINA_QUERY_ONLY",
+    "activation_utc": "2026-07-29T14:21:42.558206Z",
+    "consumed": true,
+    "reusable": false
+  },
+  "canonical_authorization": {
+    "base64_character_count": 2416,
+    "bom": false,
+    "bytes": 1810,
+    "sha256": "20fa855777c4c5edf817729d8664c075a78e8bce902ddf84da18f24d2997d354",
+    "trailing_newline": false,
+    "verified": true
+  },
+  "canonical_prompt_attachment": {
+    "bytes": 21790,
+    "filename": "pasted-text.txt",
+    "sha256": "42c4cf2f8475a9578470f5bae926c795dc61daff9d833631be670b02afd574be"
+  },
+  "execution_id": "CAL005-R1-DIRECT-HTTP-20FA8557",
+  "schema_version": "CAL005_R1_DIRECT_HTTP_DOWNLOAD_AUTHORIZATION_V0_1",
+  "scope": {
+    "curl_invocation_max": 8,
+    "curl_invocation_max_per_task": 2,
+    "download_dir_query_max": 0,
+    "fresh_query_only_max": 4,
+    "fresh_query_only_max_per_task": 1,
+    "generation_retry_max": 0,
+    "resubmit_max": 0,
+    "submit_max": 0,
+    "user_credit_max": 0
+  },
+  "starting_checkpoint": "771ddbd31529ebd06e3873a4487a9e247f2bfdb4"
+}
