@@ -1,0 +1,18 @@
+{
+  "authorization_lifecycle": {
+    "activated": true,
+    "consumed": true,
+    "reusable": false
+  },
+  "canonical_authorization_profile": {
+    "base64_character_count": 2488,
+    "bom": false,
+    "bytes": 1864,
+    "round_trip": true,
+    "sha256": "23e6a77a9676378688c5ffda97dcebad1896d5e4ae8b107c4f80f55859a60ccc",
+    "trailing_newline": false
+  },
+  "goal": "CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_RANDOMIZED_BLIND_COMPLETE_MP4_PACKAGE_V0_1",
+  "no_live_operations": true,
+  "schema_version": "CAL005_R1_BLIND_PACKAGE_AUTHORIZATION_V0_1"
+}

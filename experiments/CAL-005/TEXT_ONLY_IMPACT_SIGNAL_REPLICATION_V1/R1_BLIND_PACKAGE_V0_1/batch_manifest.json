@@ -1,0 +1,68 @@
+{
+  "alias_count": 6,
+  "all_blind_mp4s_exactly_8388608_bytes": true,
+  "batch_label": "A",
+  "exact_external_directory": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A",
+  "exact_file_count": 9,
+  "exact_file_inventory": [
+    {
+      "bytes": 8388608,
+      "path": "B01.mp4",
+      "sha256": "0def78da109f2125597db78987f4b3d03df18388e105e47e6acf8ae5751ab089"
+    },
+    {
+      "bytes": 8388608,
+      "path": "B02.mp4",
+      "sha256": "1afb9c570a8b9595269f77b3d81824b0b6a114fe2586cfe187a50714f95ed9d1"
+    },
+    {
+      "bytes": 8388608,
+      "path": "B03.mp4",
+      "sha256": "ce0af25385595c30a08a50e40aeec2abce926acedcf5e440a396f9877120f132"
+    },
+    {
+      "bytes": 8388608,
+      "path": "B04.mp4",
+      "sha256": "8132793472be18241db6d9eb0fffc3c50de5861d96425ad85f01bd8a092166d9"
+    },
+    {
+      "bytes": 8388608,
+      "path": "B05.mp4",
+      "sha256": "dbd4c8d155c77e4c00d964e758f5a3845a51ab17960a03965dddb2b4ab3f5088"
+    },
+    {
+      "bytes": 8388608,
+      "path": "B06.mp4",
+      "sha256": "9d0f54d1a95995ab594e653e8cbf3d61d5edf108651ca223fb7b89907950d810"
+    },
+    {
+      "bytes": 3234,
+      "path": "reviewer_manifest.json",
+      "sha256": "fb867dd7c47b76b3c5cc555e70f492275112de2d0ff06c1cf904089bb9cf8e32"
+    },
+    {
+      "bytes": 1294,
+      "path": "reviewer_instructions.md",
+      "sha256": "490a29cf2879838296c2074ed8f60e737ed08a0d1e4d3e41caf9481f0fe1c36a"
+    },
+    {
+      "bytes": 2959,
+      "path": "review_contract.json",
+      "sha256": "f8b1e71d0abc508553b14e8cd080079f52dbccbb66c93f1a2f8bde65fcd971dc"
+    }
+  ],
+  "exact_file_order": [
+    "B01.mp4",
+    "B02.mp4",
+    "B03.mp4",
+    "B04.mp4",
+    "B05.mp4",
+    "B06.mp4",
+    "reviewer_manifest.json",
+    "reviewer_instructions.md",
+    "review_contract.json"
+  ],
+  "mapping_disclosed": false,
+  "review_ready": true,
+  "schema_version": "CAL005_R1_PUBLIC_BATCH_MANIFEST_V0_1"
+}

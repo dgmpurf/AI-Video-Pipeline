@@ -1,0 +1,14 @@
+{
+  "alias_count": 6,
+  "all_zero_padding": "6/6 PASS",
+  "audio_framemd5_equivalence": "6/6 PASS",
+  "canonical_prefix_equality": "6/6 PASS",
+  "complete_decode": "6/6 PASS",
+  "duration_equality": "6/6 PASS",
+  "ffprobe": "6/6 PASS",
+  "private_equivalence_persisted_only_in_sealed_zip": true,
+  "schema_version": "CAL005_R1_EQUIVALENCE_SUMMARY_V0_1",
+  "semantic_review_performed": false,
+  "stream_count_equality": "6/6 PASS",
+  "video_framemd5_equivalence": "6/6 PASS"
+}

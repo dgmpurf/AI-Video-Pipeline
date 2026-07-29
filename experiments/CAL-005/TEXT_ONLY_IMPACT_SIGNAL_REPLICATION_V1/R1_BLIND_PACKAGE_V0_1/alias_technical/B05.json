@@ -1,0 +1,14 @@
+{
+  "alias": "B05",
+  "all_zero_padding": "PASS",
+  "audio_framemd5_equivalence": "PASS",
+  "blind_bytes": 8388608,
+  "blind_filename": "B05.mp4",
+  "blind_sha256": "dbd4c8d155c77e4c00d964e758f5a3845a51ab17960a03965dddb2b4ab3f5088",
+  "canonical_prefix_equality": "PASS",
+  "complete_decode": "PASS",
+  "duration_equality": "PASS",
+  "stream_count_equality": "PASS",
+  "technical_validity": "PASS",
+  "video_framemd5_equivalence": "PASS"
+}

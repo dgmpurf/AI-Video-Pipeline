@@ -1,0 +1,57 @@
+{
+  "alias_count": 6,
+  "all_blind_media_exact_target_bytes": true,
+  "blind_hashes_disjoint_from_canonical": true,
+  "blind_hashes_unique": true,
+  "items": [
+    {
+      "alias": "B01",
+      "blind_bytes": 8388608,
+      "blind_filename": "B01.mp4",
+      "blind_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/B01.mp4",
+      "blind_sha256": "0def78da109f2125597db78987f4b3d03df18388e105e47e6acf8ae5751ab089",
+      "technical_validity": "PASS"
+    },
+    {
+      "alias": "B02",
+      "blind_bytes": 8388608,
+      "blind_filename": "B02.mp4",
+      "blind_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/B02.mp4",
+      "blind_sha256": "1afb9c570a8b9595269f77b3d81824b0b6a114fe2586cfe187a50714f95ed9d1",
+      "technical_validity": "PASS"
+    },
+    {
+      "alias": "B03",
+      "blind_bytes": 8388608,
+      "blind_filename": "B03.mp4",
+      "blind_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/B03.mp4",
+      "blind_sha256": "ce0af25385595c30a08a50e40aeec2abce926acedcf5e440a396f9877120f132",
+      "technical_validity": "PASS"
+    },
+    {
+      "alias": "B04",
+      "blind_bytes": 8388608,
+      "blind_filename": "B04.mp4",
+      "blind_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/B04.mp4",
+      "blind_sha256": "8132793472be18241db6d9eb0fffc3c50de5861d96425ad85f01bd8a092166d9",
+      "technical_validity": "PASS"
+    },
+    {
+      "alias": "B05",
+      "blind_bytes": 8388608,
+      "blind_filename": "B05.mp4",
+      "blind_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/B05.mp4",
+      "blind_sha256": "dbd4c8d155c77e4c00d964e758f5a3845a51ab17960a03965dddb2b4ab3f5088",
+      "technical_validity": "PASS"
+    },
+    {
+      "alias": "B06",
+      "blind_bytes": 8388608,
+      "blind_filename": "B06.mp4",
+      "blind_path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/B06.mp4",
+      "blind_sha256": "9d0f54d1a95995ab594e653e8cbf3d61d5edf108651ca223fb7b89907950d810",
+      "technical_validity": "PASS"
+    }
+  ],
+  "schema_version": "CAL005_R1_BLIND_MEDIA_MANIFEST_V0_1"
+}

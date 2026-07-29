@@ -1,0 +1,13 @@
+{
+  "alias_count": 6,
+  "blind_package_version": "V0.1",
+  "commitment_algorithm": "SHA-256",
+  "commitment_formula_id": "SHA256_CANONICAL_MAPPING_BYTES_LF_LOWERCASE_SALT_HEX",
+  "commitment_value": "0bbe6d8afa76b2363573b787f0be6ea0a089ad732b8119f95a00be33a499d945",
+  "mapping_disclosed": false,
+  "sealed_zip_outer_identity": {
+    "bytes": 5556,
+    "path": "G:/AICODING/AI_VIDEO/_sealed/CAL005_R1_BLIND_MAPPING_V0_1/CAL005_R1_BLIND_MAPPING_DO_NOT_OPEN_UNTIL_REVIEW_FREEZE_V0_1.zip",
+    "sha256": "63361ae4f965c029d416cdb83927b997f9663519e0107902a53b378146b2d0d4"
+  }
+}

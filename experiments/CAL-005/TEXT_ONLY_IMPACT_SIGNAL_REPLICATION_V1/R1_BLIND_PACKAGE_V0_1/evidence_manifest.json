@@ -1,0 +1,242 @@
+{
+  "blind_external_media_identities": [
+    {
+      "bytes": 8388608,
+      "path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/B01.mp4",
+      "sha256": "0def78da109f2125597db78987f4b3d03df18388e105e47e6acf8ae5751ab089"
+    },
+    {
+      "bytes": 8388608,
+      "path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/B02.mp4",
+      "sha256": "1afb9c570a8b9595269f77b3d81824b0b6a114fe2586cfe187a50714f95ed9d1"
+    },
+    {
+      "bytes": 8388608,
+      "path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/B03.mp4",
+      "sha256": "ce0af25385595c30a08a50e40aeec2abce926acedcf5e440a396f9877120f132"
+    },
+    {
+      "bytes": 8388608,
+      "path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/B04.mp4",
+      "sha256": "8132793472be18241db6d9eb0fffc3c50de5861d96425ad85f01bd8a092166d9"
+    },
+    {
+      "bytes": 8388608,
+      "path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/B05.mp4",
+      "sha256": "dbd4c8d155c77e4c00d964e758f5a3845a51ab17960a03965dddb2b4ab3f5088"
+    },
+    {
+      "bytes": 8388608,
+      "path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/B06.mp4",
+      "sha256": "9d0f54d1a95995ab594e653e8cbf3d61d5edf108651ca223fb7b89907950d810"
+    }
+  ],
+  "canonical_external_media_identities": [
+    {
+      "bytes": 4170601,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/001_N0R-01.mp4",
+      "sha256": "3da6be0116fe5e3bd1bcc180dee4ae024aa473b9707304f487a3f57786fed8f8"
+    },
+    {
+      "bytes": 3560166,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/002_I0R-01.mp4",
+      "sha256": "3f430ce95674faa73d1d5198017a59687271f7a315167d4fb131bb1698c2569d"
+    },
+    {
+      "bytes": 3762453,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/003_I0R-02.mp4",
+      "sha256": "cb257b021f9793bbd6b368c942c875f8cafd9a66408cc3f26c5e9ebc84923b19"
+    },
+    {
+      "bytes": 3270117,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/004_N0R-02.mp4",
+      "sha256": "2fd189900d8da8e32186339bc439488507eba1297c19b1797d47bf3a0fed9b6e"
+    },
+    {
+      "bytes": 4737910,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/005_N0R-03.mp4",
+      "sha256": "8464de889293d8a92164ba8c81e59585afa3a037cbc03748ff687671bd860023"
+    },
+    {
+      "bytes": 3429867,
+      "path": "G:/AICODING/AI_VIDEO/_downloads/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1_R1/006_I0R-03.mp4",
+      "sha256": "83d26fc63b0d7e7ba8c3cac0114ac6124a43378ffa790c60e61078ccc898c3b7"
+    }
+  ],
+  "committed_input_bindings": {
+    "condition_matrix.json": {
+      "bytes": 2464,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/condition_matrix.json",
+      "sha256": "851b227e280a75bcfaa57e3ee5466201e55079f39b0ca9ff84f14630ddb3ba86"
+    },
+    "design_spec.json": {
+      "bytes": 4455,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/design_spec.json",
+      "sha256": "de144ada8b71057c09fb601e8ea41d6584af3c84ab03ac964be1bb0d5e61a4d1"
+    },
+    "evidence_manifest.json": {
+      "bytes": 9063,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/evidence_manifest.json",
+      "sha256": "68909cf7abffd188b9f00139ef721ce69d73cf31197b5732d748810fe3d870db"
+    },
+    "prompts/action_neutral_minimal.txt": {
+      "bytes": 1978,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+      "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0"
+    },
+    "prompts/impact_causal_hard.txt": {
+      "bytes": 2287,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+      "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5"
+    },
+    "review_contract.json": {
+      "bytes": 2503,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/review_contract.json",
+      "sha256": "a4855c90e303d3bfa72c8bbeb0a716bcdb14eaa7bf1e31b714c3afd33818d367"
+    },
+    "six_media_technical_manifest": {
+      "bytes": 12968,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DIRECT_HTTP_DOWNLOAD_RECOVERY_V0_1/technical_validation_summary.json",
+      "sha256": "d3240f20b9d012078e053876e2b81449312d1a87034425e205fa6611acf15f11"
+    },
+    "task_manifest.json": {
+      "bytes": 10944,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/task_manifest.json",
+      "sha256": "412a43c51201e4c6b82dc301537d03dccdd956d0798351cdc09c97b4f2b6d042"
+    }
+  },
+  "exact_repository_path_allowlist": [
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/authorization.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/preflight.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/public_commitment.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/execution.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/blind_media_manifest.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/equivalence_summary.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/batch_manifest.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/evidence_manifest.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B01.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B02.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B03.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B04.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B05.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B06.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/reviewer_materials/reviewer_manifest.json",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/reviewer_materials/reviewer_instructions.md",
+    "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/reviewer_materials/review_contract.json",
+    "reports/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_RANDOMIZED_BLIND_PACKAGE_RESULT.md"
+  ],
+  "external_reviewer_document_identities": [
+    {
+      "bytes": 3234,
+      "path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/reviewer_manifest.json",
+      "sha256": "fb867dd7c47b76b3c5cc555e70f492275112de2d0ff06c1cf904089bb9cf8e32"
+    },
+    {
+      "bytes": 1294,
+      "path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/reviewer_instructions.md",
+      "sha256": "490a29cf2879838296c2074ed8f60e737ed08a0d1e4d3e41caf9481f0fe1c36a"
+    },
+    {
+      "bytes": 2959,
+      "path": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A/review_contract.json",
+      "sha256": "f8b1e71d0abc508553b14e8cd080079f52dbccbb66c93f1a2f8bde65fcd971dc"
+    }
+  ],
+  "nonself_repository_output_bindings": [
+    {
+      "bytes": 557,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/authorization.json",
+      "sha256": "82e1259d47a8aa75567ebc7d49091d1b653f0efa784b1878f3fc0e407127e1b1"
+    },
+    {
+      "bytes": 4199,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/preflight.json",
+      "sha256": "ba4ba190f8b01540b126d9a344f1bcab5ccaea8d4776af2ac311bec2cc6eb1f5"
+    },
+    {
+      "bytes": 574,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/public_commitment.json",
+      "sha256": "da3c5bab1ebf2d1f0115852fc75c634c851b60dd10d9cda380120b52c30d0739"
+    },
+    {
+      "bytes": 2695,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/execution.json",
+      "sha256": "19d2fb7990318790cd2924daaf57aad6fd9abb6e4fb3f64968ce8cb98f4a8bbb"
+    },
+    {
+      "bytes": 2186,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/blind_media_manifest.json",
+      "sha256": "dbe6fa2836baeb058f0924c1b4c657f1f852266fa9c403ab6addd7683c4a4246"
+    },
+    {
+      "bytes": 476,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/equivalence_summary.json",
+      "sha256": "2af2530121eb6c44fa8a7e0f0eef58acb68e02ca7b7e389f06e50f0ee54d3dbc"
+    },
+    {
+      "bytes": 1917,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/batch_manifest.json",
+      "sha256": "7bf8c3bdb8b69e8d6dc1e3100f683a5b8613606fb26d17e2cd190c11cf4ed3a9"
+    },
+    {
+      "bytes": 440,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B01.json",
+      "sha256": "24a5d4c36c27cca4fa850a87729d12c330cd3409508bf4fe5ffd88b04c8f3573"
+    },
+    {
+      "bytes": 440,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B02.json",
+      "sha256": "88a97ca4b3f07e396d1d026fd263f1f2d190acf206caf59f249d0c3bfd13164b"
+    },
+    {
+      "bytes": 440,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B03.json",
+      "sha256": "00f547050207298fb2f42b625cc313be9de224e2c4074e359cc9d515a0481b5f"
+    },
+    {
+      "bytes": 440,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B04.json",
+      "sha256": "8659e33a0df2603f7d81560adc049e6dbb8512293006ed221669b31d5b3604db"
+    },
+    {
+      "bytes": 440,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B05.json",
+      "sha256": "79295b85e8ac51c40c9234c512913ab5c05659a3687da665a9a80b31208aed26"
+    },
+    {
+      "bytes": 440,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/alias_technical/B06.json",
+      "sha256": "879f60c24bb79f1b1652853ed7510f115b76b67a9020b55cbc71c9f73987f6d3"
+    },
+    {
+      "bytes": 3234,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/reviewer_materials/reviewer_manifest.json",
+      "sha256": "fb867dd7c47b76b3c5cc555e70f492275112de2d0ff06c1cf904089bb9cf8e32"
+    },
+    {
+      "bytes": 1294,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/reviewer_materials/reviewer_instructions.md",
+      "sha256": "490a29cf2879838296c2074ed8f60e737ed08a0d1e4d3e41caf9481f0fe1c36a"
+    },
+    {
+      "bytes": 2959,
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/reviewer_materials/review_contract.json",
+      "sha256": "f8b1e71d0abc508553b14e8cd080079f52dbccbb66c93f1a2f8bde65fcd971dc"
+    },
+    {
+      "bytes": 2812,
+      "path": "reports/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_RANDOMIZED_BLIND_PACKAGE_RESULT.md",
+      "sha256": "948e43f4b78b00070a2b1f04c13db121d5f4cea42f0fba3731ddf5ff5f42b0b7"
+    }
+  ],
+  "nonself_repository_output_count": 17,
+  "public_commitment": "0bbe6d8afa76b2363573b787f0be6ea0a089ad732b8119f95a00be33a499d945",
+  "schema_version": "CAL005_R1_BLIND_PACKAGE_EVIDENCE_MANIFEST_V0_1",
+  "sealed_zip_outer_identity": {
+    "bytes": 5556,
+    "path": "G:/AICODING/AI_VIDEO/_sealed/CAL005_R1_BLIND_MAPPING_V0_1/CAL005_R1_BLIND_MAPPING_DO_NOT_OPEN_UNTIL_REVIEW_FREEZE_V0_1.zip",
+    "sha256": "63361ae4f965c029d416cdb83927b997f9663519e0107902a53b378146b2d0d4"
+  },
+  "self_excluded": true,
+  "starting_checkpoint": "a63560a1ba3bb7d304469fea53fbff02eeef85ff"
+}

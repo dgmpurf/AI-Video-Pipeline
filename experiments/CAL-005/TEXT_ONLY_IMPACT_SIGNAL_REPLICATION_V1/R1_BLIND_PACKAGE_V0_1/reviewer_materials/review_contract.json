@@ -1,0 +1,116 @@
+{
+  "alias_set": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06"
+  ],
+  "batch_label": "A",
+  "blind_package_version": "V0.1",
+  "complete_mp4_review_mandatory": true,
+  "experiment_label": "CAL-005 R1",
+  "filename_normalization": {
+    "accepted_terminal_suffix_forms": [
+      "(n)",
+      " (n)",
+      "（n）",
+      " （n）"
+    ],
+    "n_must_be_positive_integer": true,
+    "normalization_must_be_unambiguous": true
+  },
+  "material_copy_sentinels": [
+    "CONTACT_MARKER_COPY",
+    "MANNEQUIN_STYLE_COPY",
+    "GRID_SCENE_COPY",
+    "FIXED_CAMERA_COMPOSITION_COPY"
+  ],
+  "observations": [
+    "action_family_failure",
+    "prolonged_contact",
+    "first_frame_separation",
+    "contact_onset_readability",
+    "immediate_recoil",
+    "exactly_one_rear_foot_result",
+    "attacker_retract",
+    "static_tail_duration_seconds"
+  ],
+  "output_zip_contract": {
+    "exact_member_count": 8,
+    "exact_member_order": [
+      "B01_review.json",
+      "B02_review.json",
+      "B03_review.json",
+      "B04_review.json",
+      "B05_review.json",
+      "B06_review.json",
+      "batch_review_summary.json",
+      "SHA256SUMS"
+    ],
+    "filename": "CAL005_R1_BLIND_REVIEW_BATCH_A_V0_1.zip",
+    "mp4_members_forbidden": true,
+    "sha256sums_nonself_coverage": "7/7"
+  },
+  "review_record_controls": {
+    "condition_inference_performed": false,
+    "experiment_level_conclusion_performed": false,
+    "mapping_requested_or_inferred": false,
+    "review_record_complete": true
+  },
+  "review_record_schema": {
+    "dimension_fields": [
+      "dimension",
+      "observed_evidence",
+      "PUSH_match",
+      "IMPACT_match",
+      "uncertainty_or_limitation"
+    ],
+    "dimension_match_values": [
+      0,
+      1
+    ],
+    "material_sentinel_fields": [
+      "sentinel",
+      "present",
+      "material",
+      "evidence_rationale"
+    ],
+    "schema_version": "CAL005_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+    "score_range": {
+      "maximum": 12,
+      "minimum": 0
+    },
+    "timeline_fields": [
+      "start_seconds",
+      "end_seconds",
+      "action_and_contact",
+      "receiver_response",
+      "footwork",
+      "release_or_retraction",
+      "PUSH_evidence",
+      "IMPACT_evidence"
+    ],
+    "timeline_gapless_from_zero_to_complete_observed_ending": true
+  },
+  "schema_version": "CAL005_R1_BLIND_COMPLETE_MP4_REVIEW_CONTRACT_V0_1",
+  "score_arithmetic": {
+    "IMPACT_score": "sum of twelve IMPACT_match values",
+    "PUSH_score": "sum of twelve PUSH_match values"
+  },
+  "scored_motion_dimensions": [
+    "initiation_pattern",
+    "approach_or_setup_pattern",
+    "primary_limb_configuration",
+    "primary_interaction_character",
+    "interaction_episode_count",
+    "receiver_response_direction",
+    "torso_response_type",
+    "rear_foot_result_type",
+    "release_or_retraction_pattern",
+    "recovery_and_repositioning",
+    "temporal_ordering",
+    "duration_utilization_and_final_phase_activity"
+  ]
+}

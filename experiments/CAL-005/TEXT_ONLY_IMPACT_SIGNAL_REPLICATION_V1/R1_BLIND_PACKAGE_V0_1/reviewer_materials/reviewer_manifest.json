@@ -1,0 +1,119 @@
+{
+  "alias_set": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06"
+  ],
+  "batch_label": "A",
+  "blind_package_version": "V0.1",
+  "complete_mp4_review_required": true,
+  "condition_inference_forbidden": true,
+  "exact_expected_nine_file_input_set": [
+    "B01.mp4",
+    "B02.mp4",
+    "B03.mp4",
+    "B04.mp4",
+    "B05.mp4",
+    "B06.mp4",
+    "reviewer_manifest.json",
+    "reviewer_instructions.md",
+    "review_contract.json"
+  ],
+  "exact_file_order": [
+    "B01.mp4",
+    "B02.mp4",
+    "B03.mp4",
+    "B04.mp4",
+    "B05.mp4",
+    "B06.mp4",
+    "reviewer_manifest.json",
+    "reviewer_instructions.md",
+    "review_contract.json"
+  ],
+  "expected_output_zip": {
+    "exact_member_count": 8,
+    "exact_member_order": [
+      "B01_review.json",
+      "B02_review.json",
+      "B03_review.json",
+      "B04_review.json",
+      "B05_review.json",
+      "B06_review.json",
+      "batch_review_summary.json",
+      "SHA256SUMS"
+    ],
+    "filename": "CAL005_R1_BLIND_REVIEW_BATCH_A_V0_1.zip",
+    "sha256sums_nonself_coverage": "7/7"
+  },
+  "experiment_label": "CAL-005 R1",
+  "filename_normalization_contract": {
+    "accepted_terminal_positive_integer_suffix_forms": [
+      "(n)",
+      " (n)",
+      "（n）",
+      " （n）"
+    ],
+    "canonical_and_suffixed_collision_forbidden": true,
+    "extension_change_forbidden": true,
+    "normalized_name_collision_forbidden": true
+  },
+  "integrity_model": {
+    "manifest_self_hash_excluded": true,
+    "model": "CYCLE_SAFE_NONSELF_HASH_BINDING"
+  },
+  "mapping_unrevealed": true,
+  "media": [
+    {
+      "blind_media_bytes": 8388608,
+      "blind_media_sha256": "0def78da109f2125597db78987f4b3d03df18388e105e47e6acf8ae5751ab089",
+      "filename": "B01.mp4",
+      "technical_validity": "PASS"
+    },
+    {
+      "blind_media_bytes": 8388608,
+      "blind_media_sha256": "1afb9c570a8b9595269f77b3d81824b0b6a114fe2586cfe187a50714f95ed9d1",
+      "filename": "B02.mp4",
+      "technical_validity": "PASS"
+    },
+    {
+      "blind_media_bytes": 8388608,
+      "blind_media_sha256": "ce0af25385595c30a08a50e40aeec2abce926acedcf5e440a396f9877120f132",
+      "filename": "B03.mp4",
+      "technical_validity": "PASS"
+    },
+    {
+      "blind_media_bytes": 8388608,
+      "blind_media_sha256": "8132793472be18241db6d9eb0fffc3c50de5861d96425ad85f01bd8a092166d9",
+      "filename": "B04.mp4",
+      "technical_validity": "PASS"
+    },
+    {
+      "blind_media_bytes": 8388608,
+      "blind_media_sha256": "dbd4c8d155c77e4c00d964e758f5a3845a51ab17960a03965dddb2b4ab3f5088",
+      "filename": "B05.mp4",
+      "technical_validity": "PASS"
+    },
+    {
+      "blind_media_bytes": 8388608,
+      "blind_media_sha256": "9d0f54d1a95995ab594e653e8cbf3d61d5edf108651ca223fb7b89907950d810",
+      "filename": "B06.mp4",
+      "technical_validity": "PASS"
+    }
+  ],
+  "reviewer_documents": [
+    {
+      "bytes": 1294,
+      "path": "reviewer_instructions.md",
+      "sha256": "490a29cf2879838296c2074ed8f60e737ed08a0d1e4d3e41caf9481f0fe1c36a"
+    },
+    {
+      "bytes": 2959,
+      "path": "review_contract.json",
+      "sha256": "f8b1e71d0abc508553b14e8cd080079f52dbccbb66c93f1a2f8bde65fcd971dc"
+    }
+  ],
+  "schema_version": "CAL005_R1_BLIND_REVIEWER_MANIFEST_V0_1"
+}

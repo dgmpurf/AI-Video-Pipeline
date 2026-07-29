@@ -1,0 +1,80 @@
+{
+  "alias_count": 6,
+  "authorization_lifecycle": {
+    "activated": true,
+    "consumed": true,
+    "reusable": false
+  },
+  "blind_media_created": 6,
+  "decision": "CAL005_R1_RANDOMIZED_BLIND_PACKAGE_READY_FOR_COMPLETE_MP4_REVIEW",
+  "dreamina_called": false,
+  "four_way_commitment_equality": "PASS",
+  "mapping_disclosed": false,
+  "next_phase": "CAL005_R1_BLIND_COMPLETE_MP4_REVIEW_AND_RECORD_FREEZE_HUMAN_DECISION",
+  "provider_called": false,
+  "random_permutation_generated_count": 1,
+  "random_salt_generated_count": 1,
+  "randomness_regenerated": false,
+  "review_batch": {
+    "directory": "G:/AICODING/AI_VIDEO/_blind_review/CAL005_R1_BLIND_REVIEW_V0_1/BATCH_A",
+    "file_count": 9,
+    "files": [
+      {
+        "bytes": 8388608,
+        "path": "B01.mp4",
+        "sha256": "0def78da109f2125597db78987f4b3d03df18388e105e47e6acf8ae5751ab089"
+      },
+      {
+        "bytes": 8388608,
+        "path": "B02.mp4",
+        "sha256": "1afb9c570a8b9595269f77b3d81824b0b6a114fe2586cfe187a50714f95ed9d1"
+      },
+      {
+        "bytes": 8388608,
+        "path": "B03.mp4",
+        "sha256": "ce0af25385595c30a08a50e40aeec2abce926acedcf5e440a396f9877120f132"
+      },
+      {
+        "bytes": 8388608,
+        "path": "B04.mp4",
+        "sha256": "8132793472be18241db6d9eb0fffc3c50de5861d96425ad85f01bd8a092166d9"
+      },
+      {
+        "bytes": 8388608,
+        "path": "B05.mp4",
+        "sha256": "dbd4c8d155c77e4c00d964e758f5a3845a51ab17960a03965dddb2b4ab3f5088"
+      },
+      {
+        "bytes": 8388608,
+        "path": "B06.mp4",
+        "sha256": "9d0f54d1a95995ab594e653e8cbf3d61d5edf108651ca223fb7b89907950d810"
+      },
+      {
+        "bytes": 3234,
+        "path": "reviewer_manifest.json",
+        "sha256": "fb867dd7c47b76b3c5cc555e70f492275112de2d0ff06c1cf904089bb9cf8e32"
+      },
+      {
+        "bytes": 1294,
+        "path": "reviewer_instructions.md",
+        "sha256": "490a29cf2879838296c2074ed8f60e737ed08a0d1e4d3e41caf9481f0fe1c36a"
+      },
+      {
+        "bytes": 2959,
+        "path": "review_contract.json",
+        "sha256": "f8b1e71d0abc508553b14e8cd080079f52dbccbb66c93f1a2f8bde65fcd971dc"
+      }
+    ]
+  },
+  "schema_version": "CAL005_R1_BLIND_PACKAGE_EXECUTION_V0_1",
+  "scoring_performed": false,
+  "sealed_zip_outer_identity": {
+    "bytes": 5556,
+    "path": "G:/AICODING/AI_VIDEO/_sealed/CAL005_R1_BLIND_MAPPING_V0_1/CAL005_R1_BLIND_MAPPING_DO_NOT_OPEN_UNTIL_REVIEW_FREEZE_V0_1.zip",
+    "sha256": "63361ae4f965c029d416cdb83927b997f9663519e0107902a53b378146b2d0d4"
+  },
+  "semantic_review_performed": false,
+  "source_changed": false,
+  "submit_query_download_retry_resubmit": "0/0/0/0/0",
+  "temporary_recovery_attempts_after_activation": 0
+}
