@@ -1,0 +1,229 @@
+{
+  "schema_version": "CAL005_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+  "experiment_label": "CAL-005 R1",
+  "blind_package_version": "V0.1",
+  "batch_label": "A",
+  "alias": "B02",
+  "blind_filename": "B02.mp4",
+  "blind_media_bytes": 8388608,
+  "blind_media_sha256": "1afb9c570a8b9595269f77b3d81824b0b6a114fe2586cfe187a50714f95ed9d1",
+  "complete_mp4_reviewed": true,
+  "complete_mp4_viewable_through_end": true,
+  "technical_validity_binding": "PASS",
+  "push_signature_score_0_to_12": 1,
+  "impact_signature_score_0_to_12": 7,
+  "dimension_level_evidence": [
+    {
+      "dimension": "initiation_pattern",
+      "observed_evidence": "From a separated stance, the blue-clad initiator draws the closed fist slightly back and accelerates it directly forward.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The small preparatory motion is brief but visible."
+    },
+    {
+      "dimension": "approach_or_setup_pattern",
+      "observed_evidence": "A short fist retraction and forward body drive form a compact strike setup.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Lower-body setup cannot be evaluated because the feet are cropped."
+    },
+    {
+      "dimension": "primary_limb_configuration",
+      "observed_evidence": "The primary limb terminates in a closed fist aimed at the receiver upper torso or lower neck area.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Motion blur softens the fist outline during peak speed."
+    },
+    {
+      "dimension": "primary_interaction_character",
+      "observed_evidence": "The initial interaction is a direct punch-like impulse, although the arm remains extended afterward rather than rebounding immediately.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The prolonged extension weakens a clean impact-only reading."
+    },
+    {
+      "dimension": "interaction_episode_count",
+      "observed_evidence": "One principal forward-strike contact episode is visible.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The exact transition from contact to a very small gap is approximate."
+    },
+    {
+      "dimension": "receiver_response_direction",
+      "observed_evidence": "The receiver bends downward and slightly forward more than translating backward.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The response direction is not a clear sustained push displacement or clean backward impact displacement."
+    },
+    {
+      "dimension": "torso_response_type",
+      "observed_evidence": "The receiver shows prompt knee and torso flexion after the fist reaches the upper torso.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The response is controlled rather than a large recoil."
+    },
+    {
+      "dimension": "rear_foot_result_type",
+      "observed_evidence": "No receiver rear-foot result is visible because the frame excludes both performers below approximately mid-thigh.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Feet are entirely outside the image."
+    },
+    {
+      "dimension": "release_or_retraction_pattern",
+      "observed_evidence": "The fist stays extended for an extended interval and retracts only after approximately 2.25 seconds.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Delayed retraction does not show an immediate impact release."
+    },
+    {
+      "dimension": "recovery_and_repositioning",
+      "observed_evidence": "The initiator deliberately retracts the arm and restores a guarded posture while the receiver steadies.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Recovery occurs well after the initial contact."
+    },
+    {
+      "dimension": "temporal_ordering",
+      "observed_evidence": "Wind-up and punch onset are clear, but prolonged extension interrupts a compact strike-recoil sequence.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The late withdrawal makes the full ordering atypical for a brief impact."
+    },
+    {
+      "dimension": "duration_utilization_and_final_phase_activity",
+      "observed_evidence": "Movement concludes around 3.33 seconds and the final 1.69 seconds are static.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The static tail contributes no further action evidence."
+    }
+  ],
+  "complete_mp4_timeline": [
+    {
+      "start_seconds": 0.00,
+      "end_seconds": 0.38,
+      "action_and_contact": "The performers begin separated; the initiator holds a closed fist forward and draws it slightly back.",
+      "receiver_response": "The receiver remains upright and watchful.",
+      "footwork": "Lower-body movement is outside the crop.",
+      "release_or_retraction": "No contact; the striking arm prepares.",
+      "PUSH_evidence": "No sustained pressure is visible.",
+      "IMPACT_evidence": "Closed-fist preparation supports an impact-style initiation."
+    },
+    {
+      "start_seconds": 0.38,
+      "end_seconds": 0.55,
+      "action_and_contact": "The fist accelerates forward toward the receiver upper torso or lower neck.",
+      "receiver_response": "The receiver remains mostly upright until contact.",
+      "footwork": "Feet remain out of frame; upper-body drive is visible.",
+      "release_or_retraction": "No release yet; the arm is extending.",
+      "PUSH_evidence": "Little PUSH evidence beyond direct forward travel.",
+      "IMPACT_evidence": "Rapid closed-fist acceleration is clear IMPACT evidence."
+    },
+    {
+      "start_seconds": 0.55,
+      "end_seconds": 0.95,
+      "action_and_contact": "The fist reaches the receiver upper torso or lower neck and remains there briefly.",
+      "receiver_response": "The receiver bends at the knees and torso, moving downward and slightly forward.",
+      "footwork": "Footwork cannot be observed.",
+      "release_or_retraction": "The striking arm stays extended rather than recoiling immediately.",
+      "PUSH_evidence": "Sustained extension gives limited push-like duration evidence.",
+      "IMPACT_evidence": "The readable fist contact and prompt torso flexion support IMPACT."
+    },
+    {
+      "start_seconds": 0.95,
+      "end_seconds": 2.25,
+      "action_and_contact": "A small separation or near-contact state develops while the fist remains extended.",
+      "receiver_response": "The receiver holds the lowered posture and then begins to steady.",
+      "footwork": "Footwork remains unavailable.",
+      "release_or_retraction": "Retraction is delayed; the fist stays forward.",
+      "PUSH_evidence": "The prolonged hold does not produce continuing receiver displacement.",
+      "IMPACT_evidence": "The delayed hold weakens immediate impact-release evidence."
+    },
+    {
+      "start_seconds": 2.25,
+      "end_seconds": 3.33,
+      "action_and_contact": "The initiator retracts the fist and returns toward guard; no new contact occurs.",
+      "receiver_response": "The receiver returns toward a stable stance.",
+      "footwork": "Only upper-body recovery is visible.",
+      "release_or_retraction": "Arm retraction and recovery complete.",
+      "PUSH_evidence": "No additional PUSH evidence occurs.",
+      "IMPACT_evidence": "Post-strike recovery is visible, though delayed."
+    },
+    {
+      "start_seconds": 3.33,
+      "end_seconds": 5.02,
+      "action_and_contact": "No further material action or contact occurs.",
+      "receiver_response": "The receiver remains still.",
+      "footwork": "Footwork is not visible and the upper bodies are static.",
+      "release_or_retraction": "Retraction is complete.",
+      "PUSH_evidence": "No additional PUSH evidence appears during the static tail.",
+      "IMPACT_evidence": "No additional IMPACT evidence appears during the static tail."
+    }
+  ],
+  "observations": {
+    "action_family_failure": {
+      "present": false,
+      "evidence_rationale": "The clip maintains a recognizable single closed-fist forward-strike family, despite the unusually prolonged extension after contact."
+    },
+    "prolonged_contact": {
+      "present": true,
+      "evidence_rationale": "The fist remains at or immediately adjacent to the receiver from roughly 0.55 through 0.95 seconds, followed by a prolonged extended-arm hold."
+    },
+    "first_frame_separation": {
+      "status": "true",
+      "evidence_rationale": "A visible gap separates the fist and receiver at 0.00 seconds."
+    },
+    "contact_onset_readability": {
+      "status": "true",
+      "evidence_rationale": "Forward acceleration and first arrival at the upper torso are visible around 0.55 seconds."
+    },
+    "immediate_recoil": {
+      "status": "false",
+      "evidence_rationale": "The receiver flexes downward in a controlled progression rather than snapping immediately backward."
+    },
+    "exactly_one_rear_foot_result": {
+      "status": "uncertain",
+      "evidence_rationale": "Both performers feet are outside the frame, so rear-foot behavior cannot be counted."
+    },
+    "attacker_retract": {
+      "status": "true",
+      "evidence_rationale": "The initiator visibly draws the fist back and restores guard from approximately 2.25 to 3.33 seconds."
+    },
+    "static_tail_duration_seconds": 1.69
+  },
+  "material_copy_sentinels": [
+    {
+      "sentinel": "CONTACT_MARKER_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No overlaid contact dot, target, flash, ring, or other explicit contact marker is visible."
+    },
+    {
+      "sentinel": "MANNEQUIN_STYLE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The scene uses photoreal human performers rather than mannequin-like figures or mannequin surface treatment."
+    },
+    {
+      "sentinel": "GRID_SCENE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The beige wall and wood floor contain no visible grid, measurement lattice, or gridded stage."
+    },
+    {
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY",
+      "present": true,
+      "material": false,
+      "evidence_rationale": "The camera remains locked in a side-on medium-wide composition, but this generic fixed framing alone is not a material copied element."
+    }
+  ],
+  "material_sentinel_count": 0,
+  "limitations": [
+    "Both performers feet are excluded, preventing any rear-foot assessment.",
+    "The exact contact-to-gap transition around 0.95 seconds is approximate because the fist and garment overlap at small scale."
+  ],
+  "mapping_requested_or_inferred": false,
+  "condition_inference_performed": false,
+  "experiment_level_conclusion_performed": false,
+  "review_record_complete": true
+}

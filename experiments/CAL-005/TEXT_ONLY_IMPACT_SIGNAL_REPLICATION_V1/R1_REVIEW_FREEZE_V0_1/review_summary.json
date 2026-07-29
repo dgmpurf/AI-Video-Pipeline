@@ -1,0 +1,142 @@
+{
+  "alias_order": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06"
+  ],
+  "all_records_frozen": true,
+  "blind_package_public_commitment": "0bbe6d8afa76b2363573b787f0be6ea0a089ad732b8119f95a00be33a499d945",
+  "blind_package_version": "V0.1",
+  "condition_inference_performed": false,
+  "experiment_label": "CAL-005 R1",
+  "experiment_level_conclusion_performed": false,
+  "global_material_sentinel_count": 0,
+  "global_record_count": 6,
+  "mapping_remained_unrevealed": true,
+  "records": [
+    {
+      "alias": "B01",
+      "blind_media": {
+        "bytes": 8388608,
+        "filename": "B01.mp4",
+        "sha256": "0def78da109f2125597db78987f4b3d03df18388e105e47e6acf8ae5751ab089"
+      },
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "impact_score": 1,
+      "material_sentinel_count": 0,
+      "push_score": 9,
+      "review_record": {
+        "bytes": 10064,
+        "name": "B01_review.json",
+        "sha256": "321fb9e970d648aba093ca8d2affc0c15c3c797fc4f3aeddd3dc1c88b37d170c"
+      },
+      "source_batch_label": "A",
+      "technical_validity_binding": "PASS"
+    },
+    {
+      "alias": "B02",
+      "blind_media": {
+        "bytes": 8388608,
+        "filename": "B02.mp4",
+        "sha256": "1afb9c570a8b9595269f77b3d81824b0b6a114fe2586cfe187a50714f95ed9d1"
+      },
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "impact_score": 7,
+      "material_sentinel_count": 0,
+      "push_score": 1,
+      "review_record": {
+        "bytes": 10874,
+        "name": "B02_review.json",
+        "sha256": "dc715c15f2505e3ff6f87b578fe992bcc2880e7a0b36008fffb86621edf07d3f"
+      },
+      "source_batch_label": "A",
+      "technical_validity_binding": "PASS"
+    },
+    {
+      "alias": "B03",
+      "blind_media": {
+        "bytes": 8388608,
+        "filename": "B03.mp4",
+        "sha256": "ce0af25385595c30a08a50e40aeec2abce926acedcf5e440a396f9877120f132"
+      },
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "impact_score": 0,
+      "material_sentinel_count": 0,
+      "push_score": 6,
+      "review_record": {
+        "bytes": 12444,
+        "name": "B03_review.json",
+        "sha256": "11de7f630c69f58b87fdc3034883862f58b0e86c1c099478c6b1778fe7ce07d3"
+      },
+      "source_batch_label": "A",
+      "technical_validity_binding": "PASS"
+    },
+    {
+      "alias": "B04",
+      "blind_media": {
+        "bytes": 8388608,
+        "filename": "B04.mp4",
+        "sha256": "8132793472be18241db6d9eb0fffc3c50de5861d96425ad85f01bd8a092166d9"
+      },
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "impact_score": 5,
+      "material_sentinel_count": 0,
+      "push_score": 1,
+      "review_record": {
+        "bytes": 10368,
+        "name": "B04_review.json",
+        "sha256": "5763ead032feff4753c36986edd3c9d9ca4c7c016cf2b4bd6fc8a7d2e80b80af"
+      },
+      "source_batch_label": "A",
+      "technical_validity_binding": "PASS"
+    },
+    {
+      "alias": "B05",
+      "blind_media": {
+        "bytes": 8388608,
+        "filename": "B05.mp4",
+        "sha256": "dbd4c8d155c77e4c00d964e758f5a3845a51ab17960a03965dddb2b4ab3f5088"
+      },
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "impact_score": 0,
+      "material_sentinel_count": 0,
+      "push_score": 4,
+      "review_record": {
+        "bytes": 11052,
+        "name": "B05_review.json",
+        "sha256": "c5ae74274ff127e08dac9a23656e024e90ed25e8349bf7e9cb4954e176510785"
+      },
+      "source_batch_label": "A",
+      "technical_validity_binding": "PASS"
+    },
+    {
+      "alias": "B06",
+      "blind_media": {
+        "bytes": 8388608,
+        "filename": "B06.mp4",
+        "sha256": "9d0f54d1a95995ab594e653e8cbf3d61d5edf108651ca223fb7b89907950d810"
+      },
+      "complete_mp4_reviewed": true,
+      "complete_mp4_viewable_through_end": true,
+      "impact_score": 7,
+      "material_sentinel_count": 0,
+      "push_score": 10,
+      "review_record": {
+        "bytes": 10284,
+        "name": "B06_review.json",
+        "sha256": "fb968161ad2fd0227266576d305fdfc7a5430ed81cbf5a77c002a18689b968e1"
+      },
+      "source_batch_label": "A",
+      "technical_validity_binding": "PASS"
+    }
+  ],
+  "schema_version": "CAL005_R1_BLIND_REVIEW_FREEZE_SUMMARY_V0_1"
+}

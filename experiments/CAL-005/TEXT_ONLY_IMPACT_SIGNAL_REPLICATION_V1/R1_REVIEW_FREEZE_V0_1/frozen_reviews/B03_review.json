@@ -1,0 +1,259 @@
+{
+  "schema_version": "CAL005_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+  "experiment_label": "CAL-005 R1",
+  "blind_package_version": "V0.1",
+  "batch_label": "A",
+  "alias": "B03",
+  "blind_filename": "B03.mp4",
+  "blind_media_bytes": 8388608,
+  "blind_media_sha256": "ce0af25385595c30a08a50e40aeec2abce926acedcf5e440a396f9877120f132",
+  "complete_mp4_reviewed": true,
+  "complete_mp4_viewable_through_end": true,
+  "technical_validity_binding": "PASS",
+  "push_signature_score_0_to_12": 6,
+  "impact_signature_score_0_to_12": 0,
+  "dimension_level_evidence": [
+    {
+      "dimension": "initiation_pattern",
+      "observed_evidence": "After an initially separated guard, the blue-clad performer initiates with a forward open-hand step-in.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Later role reversal means this initiation does not define the whole clip."
+    },
+    {
+      "dimension": "approach_or_setup_pattern",
+      "observed_evidence": "The initial actor closes distance with a visible forward step and extended open palm.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Subsequent exchanges use different setup directions."
+    },
+    {
+      "dimension": "primary_limb_configuration",
+      "observed_evidence": "The visible engagements are led by open palms and forearms rather than closed fists.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Hands overlap during blocks and chest contacts."
+    },
+    {
+      "dimension": "primary_interaction_character",
+      "observed_evidence": "The contacts use broad palm or forearm surfaces with maintained pressure instead of a brief fist impulse.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The sequence becomes an exchange rather than one unilateral push."
+    },
+    {
+      "dimension": "interaction_episode_count",
+      "observed_evidence": "At least three materially distinct contact episodes are visible, separated by release or role change.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Contact boundaries are rounded because hands overlap during transitions."
+    },
+    {
+      "dimension": "receiver_response_direction",
+      "observed_evidence": "No single consistent receiver direction exists because the active and receiving roles reverse.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Role reversal prevents one receiver trajectory from describing the full clip."
+    },
+    {
+      "dimension": "torso_response_type",
+      "observed_evidence": "The performers show modest controlled torso adjustments without a singular dominant recoil or sustained displacement.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Multiple interactions produce different small responses."
+    },
+    {
+      "dimension": "rear_foot_result_type",
+      "observed_evidence": "Several stepping and stance changes occur across both performers; no single rear-foot result characterizes the sequence.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Multiple actors and episodes make a singular rear-foot result inapplicable."
+    },
+    {
+      "dimension": "release_or_retraction_pattern",
+      "observed_evidence": "The first actor releases, the roles reverse, and later contact releases and re-engages; there is no single clean retraction pattern.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Several release and re-entry phases are present."
+    },
+    {
+      "dimension": "recovery_and_repositioning",
+      "observed_evidence": "Both performers visibly reposition between the first palm contact and the later chest-press exchanges.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Repositioning is distributed across multiple episodes."
+    },
+    {
+      "dimension": "temporal_ordering",
+      "observed_evidence": "The clip changes from one actor initiating to the other actor pressing twice, breaking a single initiation-contact-response-recovery order.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Role reversal is the principal ordering limitation."
+    },
+    {
+      "dimension": "duration_utilization_and_final_phase_activity",
+      "observed_evidence": "Material interaction continues through approximately 4.30 seconds before a short 0.72-second static tail.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Late activity consists of repeated exchanges rather than one continuous action."
+    }
+  ],
+  "complete_mp4_timeline": [
+    {
+      "start_seconds": 0.00,
+      "end_seconds": 1.25,
+      "action_and_contact": "The performers remain separated in guarded stances.",
+      "receiver_response": "Neither performer shows a material response.",
+      "footwork": "Minor stance readiness is visible.",
+      "release_or_retraction": "No contact or retraction occurs.",
+      "PUSH_evidence": "Open-hand guard and stable spacing provide only setup context.",
+      "IMPACT_evidence": "No impact event occurs."
+    },
+    {
+      "start_seconds": 1.25,
+      "end_seconds": 1.63,
+      "action_and_contact": "The blue-clad performer steps forward and extends an open palm.",
+      "receiver_response": "The red-clad performer raises an open hand to meet the approach.",
+      "footwork": "A pronounced forward step closes the distance.",
+      "release_or_retraction": "No release yet; contact is approaching.",
+      "PUSH_evidence": "Measured step-in with open palm supports PUSH setup.",
+      "IMPACT_evidence": "No closed-fist or impulse-led evidence appears."
+    },
+    {
+      "start_seconds": 1.63,
+      "end_seconds": 2.25,
+      "action_and_contact": "The first palm meets the other raised palm or forearm and remains engaged briefly.",
+      "receiver_response": "The red-clad performer yields only slightly while maintaining guard.",
+      "footwork": "Both stabilize their stances during contact.",
+      "release_or_retraction": "The first actor begins to withdraw near the end.",
+      "PUSH_evidence": "Broad palm contact and maintained engagement support PUSH.",
+      "IMPACT_evidence": "No abrupt receiver recoil supports IMPACT."
+    },
+    {
+      "start_seconds": 2.25,
+      "end_seconds": 2.50,
+      "action_and_contact": "The first contact releases and the active roles reverse.",
+      "receiver_response": "Both performers reset their upper bodies.",
+      "footwork": "Small repositioning steps occur.",
+      "release_or_retraction": "The blue-clad actor retracts the initial hand.",
+      "PUSH_evidence": "Release and repositioning are visible.",
+      "IMPACT_evidence": "No impact event occurs."
+    },
+    {
+      "start_seconds": 2.50,
+      "end_seconds": 3.05,
+      "action_and_contact": "The red-clad performer places an open palm against the blue-clad performer chest and presses.",
+      "receiver_response": "The blue-clad performer gives slightly without a sharp recoil.",
+      "footwork": "Both adjust stance under the chest contact.",
+      "release_or_retraction": "Contact releases near 3.05 seconds.",
+      "PUSH_evidence": "Broad chest pressure is push-like.",
+      "IMPACT_evidence": "The receiver response is controlled rather than impact-like."
+    },
+    {
+      "start_seconds": 3.05,
+      "end_seconds": 3.25,
+      "action_and_contact": "The performers separate briefly and reset.",
+      "receiver_response": "No material receiver response continues.",
+      "footwork": "Short stance adjustments occur.",
+      "release_or_retraction": "The prior contact is fully released.",
+      "PUSH_evidence": "No active PUSH evidence during the reset.",
+      "IMPACT_evidence": "No active IMPACT evidence during the reset."
+    },
+    {
+      "start_seconds": 3.25,
+      "end_seconds": 4.17,
+      "action_and_contact": "The red-clad performer applies a second open-palm chest press.",
+      "receiver_response": "The blue-clad performer shifts modestly while remaining balanced.",
+      "footwork": "Both maintain and adjust broad stances.",
+      "release_or_retraction": "The second press releases near 4.17 seconds.",
+      "PUSH_evidence": "A second sustained broad-surface pressure episode supports PUSH.",
+      "IMPACT_evidence": "No abrupt impulse or recoil supports IMPACT."
+    },
+    {
+      "start_seconds": 4.17,
+      "end_seconds": 4.30,
+      "action_and_contact": "The second contact ends and both return to separated guards.",
+      "receiver_response": "The receiving performer steadies.",
+      "footwork": "Small reset steps complete.",
+      "release_or_retraction": "Hands withdraw to guard.",
+      "PUSH_evidence": "Recovery after the final pressure episode is visible.",
+      "IMPACT_evidence": "No additional impact evidence occurs."
+    },
+    {
+      "start_seconds": 4.30,
+      "end_seconds": 5.02,
+      "action_and_contact": "No further material action or contact occurs.",
+      "receiver_response": "Both remain still.",
+      "footwork": "Foot positions remain static.",
+      "release_or_retraction": "Retraction is complete.",
+      "PUSH_evidence": "No additional PUSH evidence appears during the static tail.",
+      "IMPACT_evidence": "No additional IMPACT evidence appears during the static tail."
+    }
+  ],
+  "observations": {
+    "action_family_failure": {
+      "present": true,
+      "evidence_rationale": "The clip does not preserve one unilateral action family: the initial actor releases, the roles reverse, and two later chest-press episodes follow."
+    },
+    "prolonged_contact": {
+      "present": true,
+      "evidence_rationale": "Each principal contact persists across multiple frames, including the later chest contacts from about 2.50 to 3.05 and 3.25 to 4.17 seconds."
+    },
+    "first_frame_separation": {
+      "status": "true",
+      "evidence_rationale": "A clear gap separates the performers hands and bodies at the first frame."
+    },
+    "contact_onset_readability": {
+      "status": "true",
+      "evidence_rationale": "The initial forward step and first palm-to-palm or forearm contact are readable around 1.63 seconds."
+    },
+    "immediate_recoil": {
+      "status": "false",
+      "evidence_rationale": "All receiver adjustments are controlled and progressive; no immediate snap-back response is visible."
+    },
+    "exactly_one_rear_foot_result": {
+      "status": "false",
+      "evidence_rationale": "Multiple stepping and stance adjustments occur across both performers and across several episodes, not exactly one rear-foot result."
+    },
+    "attacker_retract": {
+      "status": "true",
+      "evidence_rationale": "The initial blue-clad actor withdraws the extended hand after the first contact between approximately 2.17 and 2.50 seconds."
+    },
+    "static_tail_duration_seconds": 0.72
+  },
+  "material_copy_sentinels": [
+    {
+      "sentinel": "CONTACT_MARKER_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No overlaid contact dot, target, flash, ring, or other explicit contact marker is visible."
+    },
+    {
+      "sentinel": "MANNEQUIN_STYLE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The scene uses photoreal human performers rather than mannequin-like figures or mannequin surface treatment."
+    },
+    {
+      "sentinel": "GRID_SCENE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The beige wall and wood floor contain no visible grid, measurement lattice, or gridded stage."
+    },
+    {
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY",
+      "present": true,
+      "material": false,
+      "evidence_rationale": "The camera remains locked in a side-on medium-wide composition, but this generic fixed framing alone is not a material copied element."
+    }
+  ],
+  "material_sentinel_count": 0,
+  "limitations": [
+    "The active and receiving roles reverse, so observations describe the visible sequence rather than one persistent initiator-receiver pair.",
+    "Overlapping hands make exact contact boundaries approximate by a few frames."
+  ],
+  "mapping_requested_or_inferred": false,
+  "condition_inference_performed": false,
+  "experiment_level_conclusion_performed": false,
+  "review_record_complete": true
+}

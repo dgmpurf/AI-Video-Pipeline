@@ -1,0 +1,219 @@
+{
+  "schema_version": "CAL005_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+  "experiment_label": "CAL-005 R1",
+  "blind_package_version": "V0.1",
+  "batch_label": "A",
+  "alias": "B06",
+  "blind_filename": "B06.mp4",
+  "blind_media_bytes": 8388608,
+  "blind_media_sha256": "9d0f54d1a95995ab594e653e8cbf3d61d5edf108651ca223fb7b89907950d810",
+  "complete_mp4_reviewed": true,
+  "complete_mp4_viewable_through_end": true,
+  "technical_validity_binding": "PASS",
+  "push_signature_score_0_to_12": 10,
+  "impact_signature_score_0_to_12": 7,
+  "dimension_level_evidence": [
+    {
+      "dimension": "initiation_pattern",
+      "observed_evidence": "From clear separation, the blue-clad initiator rapidly steps in and drives an open palm forward.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The onset combines a push-form limb with impact-like speed."
+    },
+    {
+      "dimension": "approach_or_setup_pattern",
+      "observed_evidence": "A short direct step-in rapidly closes distance immediately before contact.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The setup is compact and contains little preparatory pause."
+    },
+    {
+      "dimension": "primary_limb_configuration",
+      "observed_evidence": "The primary limb terminates in an open palm placed on the receiver upper chest.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Motion blur occurs during the fastest extension frames."
+    },
+    {
+      "dimension": "primary_interaction_character",
+      "observed_evidence": "Broad palm contact is sustained for more than one second while the receiver is driven backward and leans away.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The initial arrival is fast, but the maintained contact dominates the interaction character."
+    },
+    {
+      "dimension": "interaction_episode_count",
+      "observed_evidence": "One continuous palm-to-chest contact episode occurs before release.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The exact final contact frame is rounded between approximately 1.58 and 1.63 seconds."
+    },
+    {
+      "dimension": "receiver_response_direction",
+      "observed_evidence": "The receiver moves and leans backward away from the initiator along the line of force.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The response combines torso lean with a lead-foot adjustment."
+    },
+    {
+      "dimension": "torso_response_type",
+      "observed_evidence": "The receiver shows an immediate pronounced backward torso lean soon after palm contact.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The response is strong but remains controlled."
+    },
+    {
+      "dimension": "rear_foot_result_type",
+      "observed_evidence": "The visible rear foot remains planted while the lead foot lifts or steps; there is no distinct rear-foot result.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Foot assignment is based on the visible stance orientation."
+    },
+    {
+      "dimension": "release_or_retraction_pattern",
+      "observed_evidence": "After sustained contact, the initiator releases and retracts the palm in a controlled return.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Retraction is not an immediate bounce from contact."
+    },
+    {
+      "dimension": "recovery_and_repositioning",
+      "observed_evidence": "Both performers recover toward upright separated positions after release.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Recovery is complete by approximately 2.50 seconds."
+    },
+    {
+      "dimension": "temporal_ordering",
+      "observed_evidence": "Separated setup, rapid step-in, readable contact, immediate backward response, sustained pressure, release, and recovery occur in clear order.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The same sequence contains both sustained-pressure and abrupt-response cues."
+    },
+    {
+      "dimension": "duration_utilization_and_final_phase_activity",
+      "observed_evidence": "Material action ends around 2.50 seconds, followed by a 2.52-second static tail.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The long static tail provides no additional action evidence."
+    }
+  ],
+  "complete_mp4_timeline": [
+    {
+      "start_seconds": 0.00,
+      "end_seconds": 0.35,
+      "action_and_contact": "The performers begin separated; the initiator readies an open hand.",
+      "receiver_response": "The receiver stands upright and still.",
+      "footwork": "Both hold broad stances before the step-in.",
+      "release_or_retraction": "No contact or retraction occurs.",
+      "PUSH_evidence": "Open-hand setup supports PUSH form.",
+      "IMPACT_evidence": "Clear separation provides a readable pre-impact phase."
+    },
+    {
+      "start_seconds": 0.35,
+      "end_seconds": 0.50,
+      "action_and_contact": "The initiator steps in rapidly and accelerates the open palm toward the receiver chest.",
+      "receiver_response": "The receiver remains upright until the palm arrives.",
+      "footwork": "A direct forward step closes distance.",
+      "release_or_retraction": "No release yet; extension is accelerating.",
+      "PUSH_evidence": "Open-palm forward drive supports PUSH.",
+      "IMPACT_evidence": "Rapid approach and abrupt contact onset support IMPACT."
+    },
+    {
+      "start_seconds": 0.50,
+      "end_seconds": 1.63,
+      "action_and_contact": "The palm contacts and remains on the upper chest while forward pressure continues.",
+      "receiver_response": "The receiver immediately leans backward and adjusts the lead foot while the rear foot stays planted.",
+      "footwork": "The initiator holds a deep forward stance; the receiver makes one visible lead-foot adjustment.",
+      "release_or_retraction": "Contact remains sustained until near 1.63 seconds.",
+      "PUSH_evidence": "Sustained broad contact and continued backward displacement strongly support PUSH.",
+      "IMPACT_evidence": "Immediate backward torso response at readable onset supports IMPACT."
+    },
+    {
+      "start_seconds": 1.63,
+      "end_seconds": 2.50,
+      "action_and_contact": "The initiator releases and retracts the palm; no new contact occurs.",
+      "receiver_response": "The receiver returns toward upright while both regain spacing.",
+      "footwork": "Both reposition toward stable separated stances.",
+      "release_or_retraction": "The initiating arm retracts and recovery completes.",
+      "PUSH_evidence": "Controlled release and repositioning complete the push-like sequence.",
+      "IMPACT_evidence": "Post-contact recovery follows the abrupt response."
+    },
+    {
+      "start_seconds": 2.50,
+      "end_seconds": 5.02,
+      "action_and_contact": "No further material action or contact occurs.",
+      "receiver_response": "Both remain still.",
+      "footwork": "Foot positions remain static.",
+      "release_or_retraction": "Retraction and recovery are complete.",
+      "PUSH_evidence": "No additional PUSH evidence appears during the static tail.",
+      "IMPACT_evidence": "No additional IMPACT evidence appears during the static tail."
+    }
+  ],
+  "observations": {
+    "action_family_failure": {
+      "present": false,
+      "evidence_rationale": "The clip presents one coherent direct open-palm chest interaction from separated setup through contact, response, release, and recovery."
+    },
+    "prolonged_contact": {
+      "present": true,
+      "evidence_rationale": "Palm-to-chest contact persists from approximately 0.50 through 1.63 seconds."
+    },
+    "first_frame_separation": {
+      "status": "true",
+      "evidence_rationale": "A clear body and hand gap is visible at 0.00 seconds."
+    },
+    "contact_onset_readability": {
+      "status": "true",
+      "evidence_rationale": "The palm approach and first chest contact are readable around 0.50 seconds."
+    },
+    "immediate_recoil": {
+      "status": "true",
+      "evidence_rationale": "The receiver begins a pronounced backward torso lean immediately after contact becomes visible."
+    },
+    "exactly_one_rear_foot_result": {
+      "status": "false",
+      "evidence_rationale": "The visible rear foot remains planted while the lead foot lifts or steps, so there is not exactly one rear-foot result."
+    },
+    "attacker_retract": {
+      "status": "true",
+      "evidence_rationale": "The initiator visibly releases and draws the palm back between approximately 1.63 and 2.50 seconds."
+    },
+    "static_tail_duration_seconds": 2.52
+  },
+  "material_copy_sentinels": [
+    {
+      "sentinel": "CONTACT_MARKER_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No overlaid contact dot, target, flash, ring, or other explicit contact marker is visible."
+    },
+    {
+      "sentinel": "MANNEQUIN_STYLE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The scene uses photoreal human performers rather than mannequin-like figures or mannequin surface treatment."
+    },
+    {
+      "sentinel": "GRID_SCENE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The beige wall and wood floor contain no visible grid, measurement lattice, or gridded stage."
+    },
+    {
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY",
+      "present": true,
+      "material": false,
+      "evidence_rationale": "The camera remains locked in a side-on medium-wide composition, but this generic fixed framing alone is not a material copied element."
+    }
+  ],
+  "material_sentinel_count": 0,
+  "limitations": [
+    "The exact final contact boundary lies between approximately 1.58 and 1.63 seconds and is represented at supported frame-level precision.",
+    "Minor motion blur is present during the fastest approach frames."
+  ],
+  "mapping_requested_or_inferred": false,
+  "condition_inference_performed": false,
+  "experiment_level_conclusion_performed": false,
+  "review_record_complete": true
+}

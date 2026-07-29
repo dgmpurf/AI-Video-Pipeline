@@ -1,0 +1,209 @@
+{
+  "schema_version": "CAL005_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+  "experiment_label": "CAL-005 R1",
+  "blind_package_version": "V0.1",
+  "batch_label": "A",
+  "alias": "B01",
+  "blind_filename": "B01.mp4",
+  "blind_media_bytes": 8388608,
+  "blind_media_sha256": "0def78da109f2125597db78987f4b3d03df18388e105e47e6acf8ae5751ab089",
+  "complete_mp4_reviewed": true,
+  "complete_mp4_viewable_through_end": true,
+  "technical_validity_binding": "PASS",
+  "push_signature_score_0_to_12": 9,
+  "impact_signature_score_0_to_12": 1,
+  "dimension_level_evidence": [
+    {
+      "dimension": "initiation_pattern",
+      "observed_evidence": "The first frame already shows hand and forearm contact; the blue-clad initiator then increases forward pressure progressively without a sharp wind-up.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The original contact onset occurs before the first visible frame."
+    },
+    {
+      "dimension": "approach_or_setup_pattern",
+      "observed_evidence": "No separated approach is visible because both performers begin in an established close-range contact configuration.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Pre-contact setup cannot be assessed from this clip."
+    },
+    {
+      "dimension": "primary_limb_configuration",
+      "observed_evidence": "The initiator uses an open lead palm and forearm against the receiver rather than a closed-fist strike.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The forearm and hands overlap during the earliest frames."
+    },
+    {
+      "dimension": "primary_interaction_character",
+      "observed_evidence": "The interaction is a continuous broad-surface press that steadily displaces and turns the receiver.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Contact begins before the clip, so the earliest pressure ramp is unavailable."
+    },
+    {
+      "dimension": "interaction_episode_count",
+      "observed_evidence": "One continuous interaction episode is visible, ending with separation at approximately 1.30 seconds.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The episode may have begun before the first frame."
+    },
+    {
+      "dimension": "receiver_response_direction",
+      "observed_evidence": "The receiver moves backward and toward screen right while rotating away from the pressure.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The rightward edge limits the final foot view."
+    },
+    {
+      "dimension": "torso_response_type",
+      "observed_evidence": "The receiver shows a gradual backward lean and torso rotation rather than an abrupt snap or rebound.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The response is progressive across several frames."
+    },
+    {
+      "dimension": "rear_foot_result_type",
+      "observed_evidence": "No unambiguous discrete receiver rear-foot result can be resolved; the relevant foot approaches the right frame boundary.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Rear-foot visibility is incomplete near the frame edge."
+    },
+    {
+      "dimension": "release_or_retraction_pattern",
+      "observed_evidence": "Pressure releases gradually; the initiator holds the open palm extended briefly and then lowers the arm.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The exact separation frame is rounded to the nearest supported timeline boundary."
+    },
+    {
+      "dimension": "recovery_and_repositioning",
+      "observed_evidence": "After separation, both performers settle progressively into separated stances without a sudden reset.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Only a modest recovery movement is visible."
+    },
+    {
+      "dimension": "temporal_ordering",
+      "observed_evidence": "Established contact is followed by increasing sustained pressure, gradual separation, arm lowering, and final settling.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The sequence lacks the unseen pre-contact phase."
+    },
+    {
+      "dimension": "duration_utilization_and_final_phase_activity",
+      "observed_evidence": "Visible action is complete by about 2.25 seconds, followed by a 2.77-second static tail.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The long static tail limits late-phase action evidence."
+    }
+  ],
+  "complete_mp4_timeline": [
+    {
+      "start_seconds": 0.00,
+      "end_seconds": 0.75,
+      "action_and_contact": "Existing open-hand and forearm contact continues while the initiator applies increasing forward pressure.",
+      "receiver_response": "The receiver begins a gradual backward-right drift and rotation.",
+      "footwork": "Both maintain broad stances with only small weight shifts.",
+      "release_or_retraction": "No release; contact remains continuous.",
+      "PUSH_evidence": "Sustained broad-surface pressure supports a push-like interaction.",
+      "IMPACT_evidence": "No distinct impact onset or sharp impulse is visible."
+    },
+    {
+      "start_seconds": 0.75,
+      "end_seconds": 1.30,
+      "action_and_contact": "The initiator extends more fully through the receiver torso and arm line; contact then breaks.",
+      "receiver_response": "Backward-right displacement and rotation become most visible before separation.",
+      "footwork": "The receiver adjusts position toward the right edge; the rear-foot outcome is partly obscured.",
+      "release_or_retraction": "Contact ends near 1.30 seconds, with the initiating palm still extended.",
+      "PUSH_evidence": "Progressive displacement under maintained contact is strong PUSH evidence.",
+      "IMPACT_evidence": "The response remains gradual rather than impact-like."
+    },
+    {
+      "start_seconds": 1.30,
+      "end_seconds": 2.25,
+      "action_and_contact": "The performers are separated; the initiator briefly holds the palm out and then lowers it.",
+      "receiver_response": "The receiver steadies in the displaced position.",
+      "footwork": "Both make minor stance-settling movements.",
+      "release_or_retraction": "The initiator completes arm lowering and partial retraction.",
+      "PUSH_evidence": "Gradual release and settling remain consistent with a completed push.",
+      "IMPACT_evidence": "No recoil burst or secondary impact occurs."
+    },
+    {
+      "start_seconds": 2.25,
+      "end_seconds": 5.02,
+      "action_and_contact": "No further material action or contact occurs.",
+      "receiver_response": "The receiver remains still.",
+      "footwork": "Foot positions remain static.",
+      "release_or_retraction": "Retraction is complete; both hold final positions.",
+      "PUSH_evidence": "No additional PUSH evidence appears during the static tail.",
+      "IMPACT_evidence": "No additional IMPACT evidence appears during the static tail."
+    }
+  ],
+  "observations": {
+    "action_family_failure": {
+      "present": false,
+      "evidence_rationale": "The visible sequence remains one coherent progressive open-hand shove despite beginning after contact has already formed."
+    },
+    "prolonged_contact": {
+      "present": true,
+      "evidence_rationale": "Contact is present from the first frame through approximately 1.30 seconds, substantially longer than a momentary touch."
+    },
+    "first_frame_separation": {
+      "status": "false",
+      "evidence_rationale": "The performers are already connected by hand and forearm contact in the first frame."
+    },
+    "contact_onset_readability": {
+      "status": "false",
+      "evidence_rationale": "Contact onset precedes the first frame and therefore cannot be read directly."
+    },
+    "immediate_recoil": {
+      "status": "false",
+      "evidence_rationale": "The receiver moves and rotates progressively instead of showing an immediate snap-back response."
+    },
+    "exactly_one_rear_foot_result": {
+      "status": "uncertain",
+      "evidence_rationale": "The relevant receiver foot approaches or crosses the right frame boundary, preventing an exact rear-foot result count."
+    },
+    "attacker_retract": {
+      "status": "true",
+      "evidence_rationale": "After separation, the initiator lowers and draws the extended arm back between approximately 1.30 and 2.25 seconds."
+    },
+    "static_tail_duration_seconds": 2.77
+  },
+  "material_copy_sentinels": [
+    {
+      "sentinel": "CONTACT_MARKER_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No overlaid contact dot, target, flash, ring, or other explicit contact marker is visible."
+    },
+    {
+      "sentinel": "MANNEQUIN_STYLE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The scene uses photoreal human performers rather than mannequin-like figures or mannequin surface treatment."
+    },
+    {
+      "sentinel": "GRID_SCENE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The beige wall and wood floor contain no visible grid, measurement lattice, or gridded stage."
+    },
+    {
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY",
+      "present": true,
+      "material": false,
+      "evidence_rationale": "The camera remains locked in a side-on medium-wide composition, but this generic fixed framing alone is not a material copied element."
+    }
+  ],
+  "material_sentinel_count": 0,
+  "limitations": [
+    "Contact is already established at the first frame, so pre-contact setup and exact onset are unavailable.",
+    "The receiver rear foot is partly unavailable near the right frame edge during the displacement phase."
+  ],
+  "mapping_requested_or_inferred": false,
+  "condition_inference_performed": false,
+  "experiment_level_conclusion_performed": false,
+  "review_record_complete": true
+}

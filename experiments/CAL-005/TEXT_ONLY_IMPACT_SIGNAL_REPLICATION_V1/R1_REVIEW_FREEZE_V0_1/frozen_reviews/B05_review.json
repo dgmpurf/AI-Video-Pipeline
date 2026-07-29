@@ -1,0 +1,229 @@
+{
+  "schema_version": "CAL005_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+  "experiment_label": "CAL-005 R1",
+  "blind_package_version": "V0.1",
+  "batch_label": "A",
+  "alias": "B05",
+  "blind_filename": "B05.mp4",
+  "blind_media_bytes": 8388608,
+  "blind_media_sha256": "dbd4c8d155c77e4c00d964e758f5a3845a51ab17960a03965dddb2b4ab3f5088",
+  "complete_mp4_reviewed": true,
+  "complete_mp4_viewable_through_end": true,
+  "technical_validity_binding": "PASS",
+  "push_signature_score_0_to_12": 4,
+  "impact_signature_score_0_to_12": 0,
+  "dimension_level_evidence": [
+    {
+      "dimension": "initiation_pattern",
+      "observed_evidence": "From separation, the red-clad performer initiates with a measured open-hand advance.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "A later second approach changes the interaction structure."
+    },
+    {
+      "dimension": "approach_or_setup_pattern",
+      "observed_evidence": "The initiator closes hand distance with both palms presented, then later extends one open hand again.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The feet are cropped, so lower-body approach mechanics are unavailable."
+    },
+    {
+      "dimension": "primary_limb_configuration",
+      "observed_evidence": "Open palms and forearms are used throughout; no closed-fist primary strike is visible.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Hand overlap during the trap obscures individual finger orientation."
+    },
+    {
+      "dimension": "primary_interaction_character",
+      "observed_evidence": "The first palm meeting is brief, while the second approach becomes an interception and prolonged arm trap rather than a receiver push.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The controlling phase dominates the clip."
+    },
+    {
+      "dimension": "interaction_episode_count",
+      "observed_evidence": "Two distinct contact episodes are visible: an early palm meeting and a later prolonged arm-control episode.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The second episode contains changing hand and forearm contact points."
+    },
+    {
+      "dimension": "receiver_response_direction",
+      "observed_evidence": "Neither performer shows clear sustained receiver displacement; the blue-clad performer redirects and controls the arm.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The action is mainly limb control rather than body displacement."
+    },
+    {
+      "dimension": "torso_response_type",
+      "observed_evidence": "Both torsos remain comparatively upright with no clear progressive pushed lean or abrupt recoil.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Upper-body rotation occurs as part of the trap."
+    },
+    {
+      "dimension": "rear_foot_result_type",
+      "observed_evidence": "Rear-foot behavior cannot be seen because the frame excludes the performers lower legs and feet.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Feet are outside the image."
+    },
+    {
+      "dimension": "release_or_retraction_pattern",
+      "observed_evidence": "The first contact releases, a second contact is trapped for several seconds, and final disengagement occurs late; there is no single clean release pattern.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Multiple episodes prevent one release classification."
+    },
+    {
+      "dimension": "recovery_and_repositioning",
+      "observed_evidence": "After the trapped arm is released, both performers visibly reposition their hands and restore guarded spacing.",
+      "PUSH_match": 1,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Recovery remains active through the final frame rather than reaching a static hold."
+    },
+    {
+      "dimension": "temporal_ordering",
+      "observed_evidence": "An initial palm meeting is followed by release, a second approach, prolonged arm control, and final disengagement.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The multi-episode control sequence is not a single push or impact ordering."
+    },
+    {
+      "dimension": "duration_utilization_and_final_phase_activity",
+      "observed_evidence": "The performers continue disengagement and guard recovery through the final frame, with no static tail.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Late activity is recovery rather than a completed primary interaction."
+    }
+  ],
+  "complete_mp4_timeline": [
+    {
+      "start_seconds": 0.00,
+      "end_seconds": 0.42,
+      "action_and_contact": "The performers begin separated in open-hand guards.",
+      "receiver_response": "Neither performer shows a material response.",
+      "footwork": "Feet are out of frame; upper bodies remain poised.",
+      "release_or_retraction": "No contact or retraction occurs.",
+      "PUSH_evidence": "Open-hand setup provides limited PUSH context.",
+      "IMPACT_evidence": "No impact evidence occurs."
+    },
+    {
+      "start_seconds": 0.42,
+      "end_seconds": 0.75,
+      "action_and_contact": "The red-clad performer advances both palms and meets the blue-clad performer raised palm briefly.",
+      "receiver_response": "The blue-clad performer absorbs or meets the hand without body displacement.",
+      "footwork": "Footwork is unavailable because of the crop.",
+      "release_or_retraction": "The brief first contact releases by approximately 0.75 seconds.",
+      "PUSH_evidence": "Open-palm approach and broad hand contact are push-like in form.",
+      "IMPACT_evidence": "No abrupt impulse or recoil is visible."
+    },
+    {
+      "start_seconds": 0.75,
+      "end_seconds": 1.67,
+      "action_and_contact": "The first contact is released; the red-clad performer prepares and extends one open hand again.",
+      "receiver_response": "The blue-clad performer raises an arm to intercept.",
+      "footwork": "Lower-body approach remains outside the frame.",
+      "release_or_retraction": "The first hand is reset and the second approach begins.",
+      "PUSH_evidence": "Measured open-hand re-entry supports PUSH setup.",
+      "IMPACT_evidence": "No impact setup is visible."
+    },
+    {
+      "start_seconds": 1.67,
+      "end_seconds": 4.25,
+      "action_and_contact": "The blue-clad performer intercepts and controls the extended arm with forearm, hand, and elbow contact.",
+      "receiver_response": "The red-clad performer remains mostly in place while the arm is redirected and held.",
+      "footwork": "Footwork is not visible; upper-body rotation accompanies the control.",
+      "release_or_retraction": "Contact remains prolonged with no clean release until near 4.25 seconds.",
+      "PUSH_evidence": "Broad-surface contact is present, but it functions as limb control rather than body pushing.",
+      "IMPACT_evidence": "No brief delivered impulse or receiver recoil occurs."
+    },
+    {
+      "start_seconds": 4.25,
+      "end_seconds": 4.63,
+      "action_and_contact": "The arm trap disengages and the performers separate.",
+      "receiver_response": "Both steady their upper bodies.",
+      "footwork": "Lower-body behavior remains unavailable.",
+      "release_or_retraction": "The controlled arm is released and withdrawn.",
+      "PUSH_evidence": "Release from prolonged contact is visible.",
+      "IMPACT_evidence": "No impact evidence occurs."
+    },
+    {
+      "start_seconds": 4.63,
+      "end_seconds": 5.02,
+      "action_and_contact": "Both performers continue restoring open-hand guards through the final frame.",
+      "receiver_response": "No further receiver response occurs.",
+      "footwork": "Footwork remains outside the crop.",
+      "release_or_retraction": "Retraction and guard recovery remain active at the ending.",
+      "PUSH_evidence": "Recovery after open-hand contact is visible.",
+      "IMPACT_evidence": "No impact evidence occurs."
+    }
+  ],
+  "observations": {
+    "action_family_failure": {
+      "present": true,
+      "evidence_rationale": "The sequence changes from a brief palm meeting into a separate prolonged limb-control episode, rather than completing one coherent receiver-directed push or impact action."
+    },
+    "prolonged_contact": {
+      "present": true,
+      "evidence_rationale": "The second arm-control contact persists from approximately 1.67 through 4.25 seconds."
+    },
+    "first_frame_separation": {
+      "status": "true",
+      "evidence_rationale": "A visible gap separates the performers hands at the first frame."
+    },
+    "contact_onset_readability": {
+      "status": "true",
+      "evidence_rationale": "The first palm meeting is readable around 0.42 seconds, and the later interception is readable around 1.67 seconds."
+    },
+    "immediate_recoil": {
+      "status": "false",
+      "evidence_rationale": "Neither performer shows an immediate torso snap or backward recoil at either contact onset."
+    },
+    "exactly_one_rear_foot_result": {
+      "status": "uncertain",
+      "evidence_rationale": "The crop excludes both performers feet, so rear-foot results cannot be observed."
+    },
+    "attacker_retract": {
+      "status": "true",
+      "evidence_rationale": "The red-clad performer arm is released and withdrawn during the disengagement from approximately 4.25 to 4.63 seconds."
+    },
+    "static_tail_duration_seconds": 0.00
+  },
+  "material_copy_sentinels": [
+    {
+      "sentinel": "CONTACT_MARKER_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No overlaid contact dot, target, flash, ring, or other explicit contact marker is visible."
+    },
+    {
+      "sentinel": "MANNEQUIN_STYLE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The scene uses photoreal human performers rather than mannequin-like figures or mannequin surface treatment."
+    },
+    {
+      "sentinel": "GRID_SCENE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The beige wall and wood floor contain no visible grid, measurement lattice, or gridded stage."
+    },
+    {
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY",
+      "present": true,
+      "material": false,
+      "evidence_rationale": "The camera remains locked in a side-on medium-wide composition, but this generic fixed framing alone is not a material copied element."
+    }
+  ],
+  "material_sentinel_count": 0,
+  "limitations": [
+    "Both performers lower legs and feet are cropped, preventing foot-result assessment.",
+    "Two separate contact episodes and prolonged limb control prevent a single clean interaction characterization."
+  ],
+  "mapping_requested_or_inferred": false,
+  "condition_inference_performed": false,
+  "experiment_level_conclusion_performed": false,
+  "review_record_complete": true
+}

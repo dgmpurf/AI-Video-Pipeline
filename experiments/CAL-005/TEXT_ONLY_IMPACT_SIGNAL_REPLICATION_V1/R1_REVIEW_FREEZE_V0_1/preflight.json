@@ -1,0 +1,36 @@
+{
+  "activation_boundary": "immediately_before_first_final_output_write",
+  "branch": "main",
+  "committed_blind_package_bindings": "15/15 PASS",
+  "external_freeze_target_absent": true,
+  "git_operation_in_progress": false,
+  "head_origin_aligned": true,
+  "input_review_zip": {
+    "actual_filename": "CAL005_R1_BLIND_REVIEW_BATCH_A_V0_1(1).zip",
+    "bytes": 20991,
+    "canonical_filename": "CAL005_R1_BLIND_REVIEW_BATCH_A_V0_1.zip",
+    "filename_normalization": "PASS",
+    "sha256": "d43ef64d4450325602cad2615f6a76562d0aac7dc4a49cba64a849bebd74265b"
+  },
+  "path_aware_sensitive_scan_fixtures": {
+    "canonical_media_leak_negative_fixture": "PASS",
+    "input_review_zip_provenance_positive_fixtures": "4/4 PASS",
+    "validator_model": "STRUCTURED_PATH_AWARE"
+  },
+  "prior_failed_attempt_cleanup": "PASS_0_OF_13_OUTPUTS",
+  "repository": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+  "schema_version": "CAL005_R1_REVIEW_FREEZE_PREFLIGHT_V0_1",
+  "sealed_mapping_zip": {
+    "bytes": 5556,
+    "open_count": 0,
+    "outer_identity_only": true,
+    "path": "G:/AICODING/AI_VIDEO/_sealed/CAL005_R1_BLIND_MAPPING_V0_1/CAL005_R1_BLIND_MAPPING_DO_NOT_OPEN_UNTIL_REVIEW_FREEZE_V0_1.zip",
+    "sha256": "63361ae4f965c029d416cdb83927b997f9663519e0107902a53b378146b2d0d4"
+  },
+  "sealed_mapping_zip_open_count": 0,
+  "sources_changed": false,
+  "staged_changes": 0,
+  "starting_head": "13013801220cb44749f393d03faa44341ade66e8",
+  "target_repository_paths_absent": true,
+  "tracked_modifications": 0
+}

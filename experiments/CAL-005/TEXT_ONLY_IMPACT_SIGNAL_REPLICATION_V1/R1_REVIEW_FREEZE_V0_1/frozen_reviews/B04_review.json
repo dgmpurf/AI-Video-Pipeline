@@ -1,0 +1,219 @@
+{
+  "schema_version": "CAL005_R1_BLIND_COMPLETE_MP4_REVIEW_RECORD_V0_1",
+  "experiment_label": "CAL-005 R1",
+  "blind_package_version": "V0.1",
+  "batch_label": "A",
+  "alias": "B04",
+  "blind_filename": "B04.mp4",
+  "blind_media_bytes": 8388608,
+  "blind_media_sha256": "8132793472be18241db6d9eb0fffc3c50de5861d96425ad85f01bd8a092166d9",
+  "complete_mp4_reviewed": true,
+  "complete_mp4_viewable_through_end": true,
+  "technical_validity_binding": "PASS",
+  "push_signature_score_0_to_12": 1,
+  "impact_signature_score_0_to_12": 5,
+  "dimension_level_evidence": [
+    {
+      "dimension": "initiation_pattern",
+      "observed_evidence": "From separation, the red-clad initiator launches a rapid closed-fist forward action with a pronounced body lunge.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The defending hands obscure the exact first-contact instant."
+    },
+    {
+      "dimension": "approach_or_setup_pattern",
+      "observed_evidence": "A direct forward step and body drive rapidly close the distance before arm interception.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The lunge and hand extension occur nearly simultaneously."
+    },
+    {
+      "dimension": "primary_limb_configuration",
+      "observed_evidence": "The advancing limb is configured as a closed fist on a straight path.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The fist becomes partly covered by the defender hands."
+    },
+    {
+      "dimension": "primary_interaction_character",
+      "observed_evidence": "The apparent strike is intercepted at the hand or wrist and becomes a prolonged arm-to-arm hold instead of reaching the receiver torso cleanly.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Interception prevents a clear delivered-contact character."
+    },
+    {
+      "dimension": "interaction_episode_count",
+      "observed_evidence": "One principal lunge-and-interception engagement occurs before final separation.",
+      "PUSH_match": 1,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "The held phase is continuous within that engagement."
+    },
+    {
+      "dimension": "receiver_response_direction",
+      "observed_evidence": "The blue-clad receiver remains largely planted and does not show clear backward displacement.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The receiver function is dominated by the interception."
+    },
+    {
+      "dimension": "torso_response_type",
+      "observed_evidence": "The receiver torso stays upright with no visible abrupt recoil or progressive pushed lean.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Upper-body blocking movement is present but not a receiver recoil."
+    },
+    {
+      "dimension": "rear_foot_result_type",
+      "observed_evidence": "The initiator lunges and later takes multiple recovery steps; no single receiver rear-foot result is visible.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "Foot behavior belongs mainly to the advancing actor and includes more than one adjustment."
+    },
+    {
+      "dimension": "release_or_retraction_pattern",
+      "observed_evidence": "The arms remain connected for an extended hold, followed by delayed withdrawal rather than immediate post-contact retraction.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The prolonged interception dominates the release pattern."
+    },
+    {
+      "dimension": "recovery_and_repositioning",
+      "observed_evidence": "After the hold breaks, the initiator withdraws the arm, steps back, and restores a guarded stance.",
+      "PUSH_match": 0,
+      "IMPACT_match": 1,
+      "uncertainty_or_limitation": "Recovery follows an intercepted action rather than a completed receiver strike."
+    },
+    {
+      "dimension": "temporal_ordering",
+      "observed_evidence": "The sequence is lunge, interception, prolonged hold, release, and recovery, not a clean delivered-strike and receiver-response sequence.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "The interception interrupts the expected middle phase."
+    },
+    {
+      "dimension": "duration_utilization_and_final_phase_activity",
+      "observed_evidence": "Material movement ends around 4.05 seconds, leaving a 0.97-second static tail.",
+      "PUSH_match": 0,
+      "IMPACT_match": 0,
+      "uncertainty_or_limitation": "No late secondary action is present."
+    }
+  ],
+  "complete_mp4_timeline": [
+    {
+      "start_seconds": 0.00,
+      "end_seconds": 1.47,
+      "action_and_contact": "The performers remain separated in guarded stances.",
+      "receiver_response": "The receiver stays upright and ready.",
+      "footwork": "Both maintain stable foot positions with minor readiness shifts.",
+      "release_or_retraction": "No contact or retraction occurs.",
+      "PUSH_evidence": "No sustained pressure appears.",
+      "IMPACT_evidence": "The separated guard establishes pre-strike setup."
+    },
+    {
+      "start_seconds": 1.47,
+      "end_seconds": 1.92,
+      "action_and_contact": "The red-clad initiator lunges forward and extends a closed fist on a straight path.",
+      "receiver_response": "The blue-clad receiver raises both hands to intercept.",
+      "footwork": "The initiator takes a large forward lunge step; the receiver remains mostly planted.",
+      "release_or_retraction": "No release yet; the arm is fully extending.",
+      "PUSH_evidence": "Little push-like evidence is present.",
+      "IMPACT_evidence": "Rapid lunge, closed fist, and straight-line acceleration support IMPACT initiation."
+    },
+    {
+      "start_seconds": 1.92,
+      "end_seconds": 3.42,
+      "action_and_contact": "The defender catches or blocks the fist and wrist; the two arms remain in prolonged contact.",
+      "receiver_response": "The receiver stays upright with little displacement.",
+      "footwork": "Both stabilize their stances during the hold; the initiator makes small balance adjustments.",
+      "release_or_retraction": "No immediate retraction; contact is held.",
+      "PUSH_evidence": "The hold does not create progressive receiver displacement.",
+      "IMPACT_evidence": "Interception prevents a clean delivered impact, although the strike setup remains visible."
+    },
+    {
+      "start_seconds": 3.42,
+      "end_seconds": 4.05,
+      "action_and_contact": "The arm contact breaks and the initiator withdraws from the intercepted position.",
+      "receiver_response": "The receiver remains stable and returns hands toward guard.",
+      "footwork": "The initiator steps back and both reset their stances.",
+      "release_or_retraction": "The striking arm retracts fully.",
+      "PUSH_evidence": "No additional PUSH evidence occurs.",
+      "IMPACT_evidence": "Withdrawal and recovery complete the strike-like attempt."
+    },
+    {
+      "start_seconds": 4.05,
+      "end_seconds": 5.02,
+      "action_and_contact": "No further material action or contact occurs.",
+      "receiver_response": "Both remain still.",
+      "footwork": "Foot positions remain static.",
+      "release_or_retraction": "Retraction and repositioning are complete.",
+      "PUSH_evidence": "No additional PUSH evidence appears during the static tail.",
+      "IMPACT_evidence": "No additional IMPACT evidence appears during the static tail."
+    }
+  ],
+  "observations": {
+    "action_family_failure": {
+      "present": true,
+      "evidence_rationale": "The forward closed-fist action is intercepted and held at the hand or wrist, so it does not develop into a clean receiver-directed contact-and-response episode."
+    },
+    "prolonged_contact": {
+      "present": true,
+      "evidence_rationale": "Arm-to-arm interception contact persists from approximately 1.92 through 3.42 seconds."
+    },
+    "first_frame_separation": {
+      "status": "true",
+      "evidence_rationale": "The performers are clearly separated at 0.00 seconds."
+    },
+    "contact_onset_readability": {
+      "status": "true",
+      "evidence_rationale": "The lunge and first defender interception are readable around 1.92 seconds."
+    },
+    "immediate_recoil": {
+      "status": "false",
+      "evidence_rationale": "The receiver remains upright and planted without an immediate backward torso response."
+    },
+    "exactly_one_rear_foot_result": {
+      "status": "false",
+      "evidence_rationale": "The sequence contains a forward lunge and multiple recovery steps, while no single receiver rear-foot result occurs."
+    },
+    "attacker_retract": {
+      "status": "true",
+      "evidence_rationale": "After release, the initiator visibly withdraws the extended arm and steps back between approximately 3.42 and 4.05 seconds."
+    },
+    "static_tail_duration_seconds": 0.97
+  },
+  "material_copy_sentinels": [
+    {
+      "sentinel": "CONTACT_MARKER_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "No overlaid contact dot, target, flash, ring, or other explicit contact marker is visible."
+    },
+    {
+      "sentinel": "MANNEQUIN_STYLE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The scene uses photoreal human performers rather than mannequin-like figures or mannequin surface treatment."
+    },
+    {
+      "sentinel": "GRID_SCENE_COPY",
+      "present": false,
+      "material": false,
+      "evidence_rationale": "The beige wall and wood floor contain no visible grid, measurement lattice, or gridded stage."
+    },
+    {
+      "sentinel": "FIXED_CAMERA_COMPOSITION_COPY",
+      "present": true,
+      "material": false,
+      "evidence_rationale": "The camera remains locked in a side-on medium-wide composition, but this generic fixed framing alone is not a material copied element."
+    }
+  ],
+  "material_sentinel_count": 0,
+  "limitations": [
+    "The defender hands obscure the exact first point of hand or wrist contact.",
+    "Because the forward action is intercepted, receiver-directed contact evidence is limited."
+  ],
+  "mapping_requested_or_inferred": false,
+  "condition_inference_performed": false,
+  "experiment_level_conclusion_performed": false,
+  "review_record_complete": true
+}
