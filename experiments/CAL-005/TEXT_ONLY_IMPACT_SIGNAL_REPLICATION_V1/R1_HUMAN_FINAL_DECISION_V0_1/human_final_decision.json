@@ -1,0 +1,177 @@
+{
+  "accepted_evidence": {
+    "conditions": {
+      "I0R": {
+        "condition_gate": "FAIL",
+        "impact_scores": [
+          7,
+          1,
+          7
+        ],
+        "margins": [
+          6,
+          -8,
+          -3
+        ],
+        "median_impact_score": 7,
+        "median_margin": -3,
+        "median_push_score": 9,
+        "push_scores": [
+          1,
+          9,
+          10
+        ],
+        "sample_pass_count": 0,
+        "sample_total": 3
+      },
+      "N0R": {
+        "condition_gate": "FAIL",
+        "impact_scores": [
+          0,
+          5,
+          0
+        ],
+        "margins": [
+          -6,
+          4,
+          -4
+        ],
+        "median_impact_score": 0,
+        "median_margin": -4,
+        "median_push_score": 4,
+        "push_scores": [
+          6,
+          1,
+          4
+        ],
+        "sample_pass_count": 0,
+        "sample_total": 3
+      }
+    },
+    "directional_partial_signal": false,
+    "integrity": {
+      "batch_assignment_coverage": "6/6",
+      "controlled_unblinding": "COMPLETE",
+      "equivalence_coverage": "6/6",
+      "four_way_commitment_equality": "PASS",
+      "frozen_review_byte_identity": "6/6 PASS",
+      "frozen_score_arithmetic": "6/6 PASS",
+      "mapping_coverage": "6/6",
+      "review_records_changed": 0,
+      "schema_recovery": "COMPLETE"
+    },
+    "near_threshold_observation": {
+      "condition_level_result_overridden": false,
+      "failed_predicate": "IMPACT score >= 8",
+      "impact_score": 7,
+      "impact_specificity_margin": 6,
+      "promoted_to_replicated_signal": false,
+      "push_score": 1,
+      "sample_gate": "FAIL",
+      "task_id": "I0R-01"
+    },
+    "primary_contrast": {
+      "classification": "PRIMARY_WITHIN_COMMAND_CONTRAST",
+      "comparison": "I0R versus N0R",
+      "condition_gate_pair": {
+        "I0R": "FAIL",
+        "N0R": "FAIL"
+      },
+      "contrast_id": "CAL005-C01",
+      "median_impact_score_delta": 7,
+      "median_margin_delta": 1,
+      "median_push_score_delta": 5,
+      "sample_pass_count_delta": 0
+    },
+    "sample_gates": [
+      {
+        "impact_score": 0,
+        "impact_specificity_margin": -6,
+        "push_score": 6,
+        "sample_gate": "FAIL",
+        "task_id": "N0R-01"
+      },
+      {
+        "impact_score": 5,
+        "impact_specificity_margin": 4,
+        "push_score": 1,
+        "sample_gate": "FAIL",
+        "task_id": "N0R-02"
+      },
+      {
+        "impact_score": 0,
+        "impact_specificity_margin": -4,
+        "push_score": 4,
+        "sample_gate": "FAIL",
+        "task_id": "N0R-03"
+      },
+      {
+        "impact_score": 7,
+        "impact_specificity_margin": 6,
+        "push_score": 1,
+        "sample_gate": "FAIL",
+        "task_id": "I0R-01"
+      },
+      {
+        "impact_score": 1,
+        "impact_specificity_margin": -8,
+        "push_score": 9,
+        "sample_gate": "FAIL",
+        "task_id": "I0R-02"
+      },
+      {
+        "impact_score": 7,
+        "impact_specificity_margin": -3,
+        "push_score": 10,
+        "sample_gate": "FAIL",
+        "task_id": "I0R-03"
+      }
+    ],
+    "semantic_rereview": false,
+    "total_sample_passes": 0,
+    "total_samples": 6
+  },
+  "authority_boundary": {
+    "automatic_expansion": false,
+    "next_live_experiment_authorized": false,
+    "production_reentry_authorized": false,
+    "source_promotion_authorized": false
+  },
+  "causal_limitations": {
+    "causal_certainty_claimed": false,
+    "generalized_provider_reliability_claimed": false,
+    "replicates_per_condition": 3,
+    "result_scope": [
+      "current committed CAL-005 setup only",
+      "text2video",
+      "no image, video or audio reference",
+      "committed model and run design",
+      "frozen PUSH and IMPACT signature framework"
+    ],
+    "statistical_significance_claimed": false,
+    "universal_prompt_causality_claimed": false
+  },
+  "closure": {
+    "CAL005_R1_human_final_decision_complete": true,
+    "CAL005_R1_round_closed": true,
+    "automatic_expansion": false,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "future_live_experiment_requires_fresh_human_design_and_authorization": true,
+    "future_source_promotion_requires_separate_source_synthesis_and_human_manual_application": true,
+    "locked": false,
+    "main_production_line_remains_paused": true,
+    "next_live_experiment_authorized": false,
+    "production_approved": false,
+    "production_reentry_authorized": false,
+    "source_promotion_authorized": false
+  },
+  "experiment": "CAL-005",
+  "formal_pre_registered_outcome": "CAL005_R1_TEXT_ONLY_IMPACT_SIGNAL_NOT_CONDITION_GATE_REPLICATED",
+  "human_bounded_interpretation": "CAL005_R1_TEXT_ONLY_IMPACT_HARD_PROMPT_INCREASED_BOTH_IMPACT_AND_PUSH_SIGNATURES_BUT_DID_NOT_REPLICATE_AN_IMPACT_SPECIFIC_CONDITION_LEVEL_SIGNAL_IN_THE_CURRENT_TEXT2VIDEO_NO_REFERENCE_SETUP",
+  "next_recommended_phase": "CAL005_R1_CLOSED_ROLLING_STATE_UPDATE_AND_CAL003_CAL004_CAL005_SYNTHESIS_HUMAN_DECISION",
+  "program": "TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1",
+  "round": "R1",
+  "schema_version": "CAL005_R1_HUMAN_FINAL_DECISION_V0_1",
+  "status": "HUMAN_FINAL_DECISION_COMPLETE_ROUND_CLOSED"
+}
