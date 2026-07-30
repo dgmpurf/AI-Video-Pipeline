@@ -1,0 +1,15 @@
+{
+  "crc_validation": "9/9 PASS",
+  "frozen_review_byte_identity": "6/6 PASS",
+  "frozen_score_arithmetic": "6/6 PASS",
+  "global_material_sentinel_count": 0,
+  "member_count": 9,
+  "outer_identity": {
+    "bytes": 23149,
+    "path": "G:/AICODING/AI_VIDEO/_review_freeze/CAL005_R1_BLIND_REVIEW_FREEZE_V0_1.zip",
+    "regular_file": true,
+    "sha256": "69190ec33f20125ac0f3e806cd2a9df82ef57965d3160c040ccf0e1da390c918"
+  },
+  "schema_version": "CAL005_R1_FREEZE_PACKAGE_VALIDATION_V0_1",
+  "sha256sums_validation": "8/8 PASS"
+}

@@ -1,0 +1,27 @@
+{
+  "authorization_lifecycle": {
+    "activated": true,
+    "consumed": true,
+    "reusable": false
+  },
+  "automatic_rerun_forbidden": true,
+  "commitment_validation_completed": false,
+  "decision": "CAL005_R1_CONTROLLED_UNBLINDING_BLOCKED_AFTER_ACTIVATION",
+  "dreamina_called": false,
+  "failure_classification": "SEALED_MANIFEST_MEMBER_RECORD_CONTAINER",
+  "final_master": false,
+  "fixed_task_completion": false,
+  "locked": false,
+  "mapping_persisted": false,
+  "media_operations": 0,
+  "production_approved": false,
+  "provider_called": false,
+  "raw_sealed_bytes_persisted": false,
+  "salt_disclosed": false,
+  "schema_version": "CAL005_R1_CONTROLLED_UNBLINDING_EXECUTION_V0_1",
+  "sealed_member_count": 6,
+  "sealed_member_read_count": 6,
+  "sealed_zip_open_count": 1,
+  "sealed_zip_reopen_forbidden": true,
+  "sources_changed": false
+}

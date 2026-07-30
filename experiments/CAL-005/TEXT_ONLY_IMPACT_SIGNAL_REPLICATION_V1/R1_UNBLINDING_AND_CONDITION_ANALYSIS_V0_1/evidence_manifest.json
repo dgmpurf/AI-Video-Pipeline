@@ -1,0 +1,60 @@
+{
+  "nonself_output_bindings": [
+    {
+      "bytes": 4082,
+      "git_blob": "2ca5db1271fe4dfd8e6179bbb4d3f103e2d7e418",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/authorization.json",
+      "schema_role": "sanitized_blocked_output",
+      "sha256": "0ff226a146cc764c1c25e5d52c793f56d64125609c85ccbd29fc863ae2b8f933"
+    },
+    {
+      "bytes": 847,
+      "git_blob": "ff702fccc24b02adb2ea8282b4211032395caf80",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/execution.json",
+      "schema_role": "sanitized_blocked_output",
+      "sha256": "f7ee238b654ce65b174c8fdd61c1a0aa8ec1648094ea37f56c701b2558b5752a"
+    },
+    {
+      "bytes": 528,
+      "git_blob": "828680e15f664c8a2f8820122eb05fbb81698205",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/freeze_package_validation.json",
+      "schema_role": "sanitized_blocked_output",
+      "sha256": "7a76e4538afc84593788db5196e5cd6589e7c4c6b0d98f80b01ffc19b84b8fe0"
+    },
+    {
+      "bytes": 4467,
+      "git_blob": "a836d935c4eca2b8c75eafee9e60cae3cccdb02b",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/preflight.json",
+      "schema_role": "sanitized_blocked_output",
+      "sha256": "bc317ab76a88c1c3fd3351083262ad1b49fbb8ce6af92770037db033f1fbe4e0"
+    },
+    {
+      "bytes": 681,
+      "git_blob": "26261f8353c421818f2024e9ba32c05320675be4",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/sealed_package_validation.json",
+      "schema_role": "sanitized_blocked_output",
+      "sha256": "581dd3530128b9b183094fc0bcc23e623c949999942329999825761c62f586b7"
+    },
+    {
+      "bytes": 579,
+      "git_blob": "2eae20027de63f8a2508e42980c683cc048d8542",
+      "path": "reports/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_UNBLINDING_AND_CONDITION_ANALYSIS_RESULT.md",
+      "schema_role": "sanitized_blocked_output",
+      "sha256": "0cf89f9488e044eae06d5d1568bf6659dc2317af4af67ec9526cff14d244e415"
+    }
+  ],
+  "nonself_output_count": 6,
+  "protected_value_persistence": {
+    "framemd5_values_persisted": false,
+    "raw_equivalence_persisted": false,
+    "raw_provider_response_persisted": false,
+    "raw_sealed_bytes_persisted": false,
+    "salt_persisted": false,
+    "signed_url_persisted": false
+  },
+  "public_commitment": "0bbe6d8afa76b2363573b787f0be6ea0a089ad732b8119f95a00be33a499d945",
+  "schema_version": "CAL005_R1_CONTROLLED_UNBLINDING_EVIDENCE_MANIFEST_V0_1",
+  "sealed_zip_open_count": 1,
+  "self_excluded": true,
+  "starting_checkpoint": "46bb02a38d34c790b70fb9566ff3509a34edda7f"
+}
