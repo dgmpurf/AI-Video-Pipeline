@@ -1,0 +1,195 @@
+{
+  "reference_ctrl_record_count": 12,
+  "references": [
+    {
+      "case_associations": [
+        "CASE-002",
+        "CASE-033",
+        "CASE-036",
+        "CASE-037"
+      ],
+      "current_status": "LOCKED_HUMAN_APPROVED_REFERENCE",
+      "duty": "scene geometry, true frontal axis, wet temple continuity",
+      "forbidden_duty": "character identity, action motion, impact causality",
+      "observed_outcome": "supports stable geometry/axis in F03 and spatial blocking; does not guarantee action quality",
+      "path_or_registry_identity": "productions/chi_yan_tian_qiong/locked_refs/A-SC-TEMPLE-COURTYARD-004_locked_main_hall_true_frontal_axis_stage.png",
+      "reference_id": "A-SC-TEMPLE-COURTYARD-004",
+      "reference_type": "scene_layout_camera_axis",
+      "rights_or_provenance_if_recorded": "origin_project=AI_VIDEO_PIPELINE; locked after human review",
+      "used_as_active_generation_input": true
+    },
+    {
+      "case_associations": [
+        "CASE-005",
+        "CASE-008",
+        "CASE-025",
+        "CASE-032",
+        "CASE-036",
+        "CASE-037"
+      ],
+      "current_status": "LOCKED_HUMAN_APPROVED_REFERENCE",
+      "duty": "Fenshou identity, silhouette and costume",
+      "forbidden_duty": "camera, scene, action rhythm or force mechanics",
+      "observed_outcome": "identity often improved but action success remained independent",
+      "path_or_registry_identity": "productions/chi_yan_tian_qiong/locked_refs/A-CH-A-SUBJECT-001_locked_fenshou_full_body_subject.png",
+      "reference_id": "A-CH-A-SUBJECT-001",
+      "reference_type": "identity",
+      "rights_or_provenance_if_recorded": "origin_project=AI_VIDEO_PIPELINE; locked after human review",
+      "used_as_active_generation_input": true
+    },
+    {
+      "case_associations": [
+        "CASE-005",
+        "CASE-008",
+        "CASE-025"
+      ],
+      "current_status": "LOCKED_HUMAN_APPROVED_REFERENCE",
+      "duty": "Shuangji full-body costume, silhouette and proportions",
+      "forbidden_duty": "camera, scene, action rhythm and damage",
+      "observed_outcome": "full-body identity support did not prevent V011 identity/rhythm failure",
+      "path_or_registry_identity": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-SUBJECT-001_locked_shuangji_full_body_subject.png",
+      "reference_id": "A-CH-B-SUBJECT-001",
+      "reference_type": "identity_full_body",
+      "rights_or_provenance_if_recorded": "origin_project=AI_VIDEO_PIPELINE; locked after human review",
+      "used_as_active_generation_input": true
+    },
+    {
+      "case_associations": [
+        "CASE-006",
+        "CASE-025",
+        "CASE-036",
+        "CASE-037"
+      ],
+      "current_status": "LOCKED_HUMAN_APPROVED_REFERENCE",
+      "duty": "highest-priority Shuangji face and upper-body identity",
+      "forbidden_duty": "action rhythm, combat pose, scene layout, camera motion",
+      "observed_outcome": "V012 identity recovered while impact/rhythm remained weak",
+      "path_or_registry_identity": "productions/chi_yan_tian_qiong/locked_refs/A-CH-B-IDENTITY-002_locked_shuangji_face_upper_body_identity_anchor.png",
+      "reference_id": "A-CH-B-IDENTITY-002",
+      "reference_type": "identity_face_upper_body",
+      "rights_or_provenance_if_recorded": "origin_project=AI_VIDEO_PIPELINE; locked after human review",
+      "used_as_active_generation_input": true
+    },
+    {
+      "case_associations": [
+        "CASE-001"
+      ],
+      "current_status": "LOCKED_HUMAN_APPROVED_REFERENCE",
+      "duty": "SHOT-01 starting identity, scene and composition",
+      "forbidden_duty": "prove camera motion or action outcome",
+      "observed_outcome": "slow push-in establishing candidate accepted",
+      "path_or_registry_identity": "productions/chi_yan_tian_qiong/locked_refs/SHOT-01-KF-004-rerun-03_locked_official_shot_01_keyframe.png",
+      "reference_id": "SHOT-01-KF-004-rerun-03",
+      "reference_type": "first_frame_identity_scene_composition",
+      "rights_or_provenance_if_recorded": "origin_project=AI_VIDEO_PIPELINE; locked after human review",
+      "used_as_active_generation_input": true
+    },
+    {
+      "case_associations": [
+        "CASE-002",
+        "CASE-034"
+      ],
+      "current_status": "LOCKED_HUMAN_APPROVED_REFERENCE",
+      "duty": "SHOT-02 first-clash composition and starting pose",
+      "forbidden_duty": "prove full action progression",
+      "observed_outcome": "stable fallback motion and wet-environment canary; hard-impact action not guaranteed",
+      "path_or_registry_identity": "productions/chi_yan_tian_qiong/locked_refs/SHOT-02-KF-002_locked_main_hall_first_clash.png",
+      "reference_id": "SHOT-02-KF-002",
+      "reference_type": "first_frame_composition_action_pose",
+      "rights_or_provenance_if_recorded": "project production keyframe locked after human review",
+      "used_as_active_generation_input": true
+    },
+    {
+      "case_associations": [
+        "CASE-035"
+      ],
+      "current_status": "CALIBRATION_FIXTURE",
+      "duty": "aftershock-energy initial state to settled-recovery final state",
+      "forbidden_duty": "identity source outside the calibrated case; camera-motion proof",
+      "observed_outcome": "smooth state transition with identity/scene stability",
+      "path_or_registry_identity": [
+        "productions/chi_yan_tian_qiong/derived_refs/SHOT-02-V008_start_frame_candidates/SHOT-02-V008_start_candidate_1p15s.png",
+        "productions/chi_yan_tian_qiong/derived_refs/SHOT-02-V008_start_frame_candidates/SHOT-02-V008_start_candidate_1p30s.png"
+      ],
+      "reference_id": "CAL001-F05-FIRST-LAST",
+      "reference_type": "first_last_frame_control",
+      "rights_or_provenance_if_recorded": "project-derived frames; registry records use restrictions",
+      "used_as_active_generation_input": true
+    },
+    {
+      "case_associations": [
+        "CASE-053",
+        "CASE-056",
+        "CASE-060",
+        "CASE-063"
+      ],
+      "current_status": "HUMAN_ACCEPTED_PROJECT_OWNED_ACTION_REFERENCE",
+      "duty": "push initiation, contact, body response, one foot result, release and active final phase",
+      "forbidden_duty": "identity, face, clothing, scene, camera, lighting or style",
+      "observed_outcome": "C02 differentiated PUSH strongly; CAL003 PUSH repeated 3/3; CAL004 still showed broader PUSH prior",
+      "path_or_registry_identity": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "reference_id": "ACTION_REF_PUSH_02",
+      "reference_type": "action_motion",
+      "rights_or_provenance_if_recorded": "project-owned procedural reference; human-accepted for governed canary",
+      "used_as_active_generation_input": true
+    },
+    {
+      "case_associations": [
+        "CASE-054",
+        "CASE-057",
+        "CASE-059",
+        "CASE-062"
+      ],
+      "current_status": "HUMAN_ACCEPTED_PROJECT_OWNED_ACTION_REFERENCE",
+      "duty": "brief impact onset, recoil, one foot result, release and recovery",
+      "forbidden_duty": "identity, face, clothing, scene, camera, lighting or style",
+      "observed_outcome": "C02 differentiated IMPACT in one bounded pair; repeatability and six-condition isolation later failed",
+      "path_or_registry_identity": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "reference_id": "ACTION_REF_IMPACT_02",
+      "reference_type": "action_motion",
+      "rights_or_provenance_if_recorded": "project-owned procedural reference; human-accepted for governed canary",
+      "used_as_active_generation_input": true
+    },
+    {
+      "case_associations": [
+        "CASE-020",
+        "CASE-021",
+        "CASE-022"
+      ],
+      "current_status": "GOVERNED_REFERENCE_PACK",
+      "duty": "architecture geometry and separate character identities",
+      "forbidden_duty": "action pose, impact causality or damage pattern",
+      "observed_outcome": "identity/environment support did not solve wall-impact causality; keyframe route also failed remotely",
+      "path_or_registry_identity": "productions/chi_yan_tian_qiong/packages/SHOT-04-R02-wall-impact/reference_duty_map.md",
+      "reference_id": "SHOT04-R02-WALL-PANEL-REFERENCE-PACK",
+      "reference_type": "architecture_plus_identity_pack",
+      "rights_or_provenance_if_recorded": "project-local originals and upload-safe derivatives; per-reference hashes recorded",
+      "used_as_active_generation_input": true
+    },
+    {
+      "case_associations": [],
+      "current_status": "PACKAGE_ONLY_PLANNING",
+      "duty": "planned isolated camera-path control",
+      "forbidden_duty": "claiming an executed or human-accepted CTRL_CAM result",
+      "observed_outcome": "NO_CURRENT_REPOSITORY_EVIDENCE of an executed CTRL_CAM reference result",
+      "path_or_registry_identity": "reports/PHASE_K1_COMBAT_RHYTHM_AND_CAMERA_REQUIREMENTS.md",
+      "reference_id": "CTRL_CAM_CONCEPT",
+      "reference_type": "camera_reference_planning_only",
+      "rights_or_provenance_if_recorded": "planning concept; no concrete active CTRL_CAM asset outcome found",
+      "used_as_active_generation_input": false
+    },
+    {
+      "case_associations": [],
+      "current_status": "UNKNOWN",
+      "duty": "none established",
+      "forbidden_duty": "inventing a missing reference",
+      "observed_outcome": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "path_or_registry_identity": null,
+      "reference_id": "AUDIO_RHYTHM_REFERENCE",
+      "reference_type": "audio_or_rhythm",
+      "rights_or_provenance_if_recorded": "not recorded",
+      "used_as_active_generation_input": false
+    }
+  ],
+  "schema_version": "AI_VIDEO_REFERENCE_CTRL_INVENTORY_V0_1"
+}

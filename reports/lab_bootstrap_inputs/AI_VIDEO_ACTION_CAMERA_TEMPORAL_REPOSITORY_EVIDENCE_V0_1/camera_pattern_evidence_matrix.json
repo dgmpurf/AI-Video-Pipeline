@@ -1,0 +1,168 @@
+{
+  "camera_pattern_count": 13,
+  "patterns": [
+    {
+      "camera_pattern": "fixed",
+      "evidence_level": "mixed direct evidence",
+      "finding": "fixed framing can protect axis/identity but does not create action causality",
+      "requested_in_prompt_cases": [
+        "CASE-031",
+        "CASE-038",
+        "CASE-041",
+        "CASE-043",
+        "CASE-045",
+        "CASE-058",
+        "CASE-064"
+      ],
+      "unknown_cases": [
+        "CASE-030",
+        "CASE-037"
+      ],
+      "visible_but_failed_cases": [
+        "CASE-015",
+        "CASE-021",
+        "CASE-034"
+      ],
+      "visible_human_accepted_cases": [
+        "CASE-016",
+        "CASE-036"
+      ]
+    },
+    {
+      "camera_pattern": "slow_push_in",
+      "evidence_level": "direct positive evidence",
+      "finding": "the clearest camera-only success pattern in the repository",
+      "requested_in_prompt_cases": [
+        "CASE-001",
+        "CASE-002",
+        "CASE-033"
+      ],
+      "unknown_cases": [],
+      "visible_but_failed_cases": [],
+      "visible_human_accepted_cases": [
+        "CASE-001",
+        "CASE-033"
+      ]
+    },
+    {
+      "camera_pattern": "slow_pull_out",
+      "evidence_level": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "finding": "no governed outcome found",
+      "requested_in_prompt_cases": [],
+      "unknown_cases": [],
+      "visible_but_failed_cases": [],
+      "visible_human_accepted_cases": []
+    },
+    {
+      "camera_pattern": "tracking",
+      "evidence_level": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "finding": "camera/framing praise in V017 is insufficient to classify a tracking move",
+      "requested_in_prompt_cases": [],
+      "unknown_cases": [],
+      "visible_but_failed_cases": [],
+      "visible_human_accepted_cases": []
+    },
+    {
+      "camera_pattern": "lateral_move",
+      "evidence_level": "bounded reference-asset observation only",
+      "finding": "slight lateral movement in accepted procedural references was nonblocking, but camera was a forbidden reference duty",
+      "requested_in_prompt_cases": [],
+      "unknown_cases": [],
+      "visible_but_failed_cases": [],
+      "visible_human_accepted_cases": []
+    },
+    {
+      "camera_pattern": "low_angle_tracking",
+      "evidence_level": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "finding": "no governed outcome found",
+      "requested_in_prompt_cases": [],
+      "unknown_cases": [],
+      "visible_but_failed_cases": [],
+      "visible_human_accepted_cases": []
+    },
+    {
+      "camera_pattern": "handheld_micro_shake",
+      "evidence_level": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "finding": "no governed outcome found",
+      "requested_in_prompt_cases": [],
+      "unknown_cases": [],
+      "visible_but_failed_cases": [],
+      "visible_human_accepted_cases": []
+    },
+    {
+      "camera_pattern": "impact_shake",
+      "evidence_level": "prompt/edit planning only",
+      "finding": "impact/aftershock editing was reviewed, but a distinct accepted impact-shake camera execution was not established",
+      "requested_in_prompt_cases": [
+        "CASE-003"
+      ],
+      "unknown_cases": [],
+      "visible_but_failed_cases": [],
+      "visible_human_accepted_cases": []
+    },
+    {
+      "camera_pattern": "short_orbit",
+      "evidence_level": "PACKAGE_ONLY planning",
+      "finding": "K1 discusses orbit risk; no governed execution result",
+      "requested_in_prompt_cases": [],
+      "unknown_cases": [],
+      "visible_but_failed_cases": [],
+      "visible_human_accepted_cases": []
+    },
+    {
+      "camera_pattern": "camera_following_knockback",
+      "evidence_level": "negative/unknown",
+      "finding": "no accepted receiver-trajectory follow was demonstrated",
+      "requested_in_prompt_cases": [
+        "CASE-030"
+      ],
+      "unknown_cases": [
+        "CASE-030"
+      ],
+      "visible_but_failed_cases": [
+        "CASE-021",
+        "CASE-026"
+      ],
+      "visible_human_accepted_cases": []
+    },
+    {
+      "camera_pattern": "camera_subject_axis_control",
+      "evidence_level": "direct positive plus overload failure",
+      "finding": "frontal axis and stable corridor framing help continuity; multi-location progression can still break it",
+      "requested_in_prompt_cases": [
+        "CASE-001",
+        "CASE-002",
+        "CASE-033"
+      ],
+      "unknown_cases": [],
+      "visible_but_failed_cases": [
+        "CASE-014"
+      ],
+      "visible_human_accepted_cases": [
+        "CASE-001",
+        "CASE-033",
+        "CASE-036"
+      ]
+    },
+    {
+      "camera_pattern": "viewpoint_reconstruction",
+      "evidence_level": "still-reference evidence only",
+      "finding": "A-SC-TEMPLE-COURTYARD-004 is a human-approved true-frontal still anchor; no camera-motion execution is implied",
+      "requested_in_prompt_cases": [],
+      "unknown_cases": [],
+      "visible_but_failed_cases": [],
+      "visible_human_accepted_cases": []
+    },
+    {
+      "camera_pattern": "CTRL_CAM",
+      "evidence_level": "PACKAGE_ONLY planning",
+      "finding": "repository contains CTRL_CAM planning/terms but no concrete governed active-generation result",
+      "requested_in_prompt_cases": [],
+      "unknown_cases": [],
+      "visible_but_failed_cases": [],
+      "visible_human_accepted_cases": []
+    }
+  ],
+  "schema_version": "AI_VIDEO_CAMERA_PATTERN_EVIDENCE_MATRIX_V0_1",
+  "warning": "camera requested in Prompt is not camera executed or human-accepted"
+}

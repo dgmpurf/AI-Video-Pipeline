@@ -1,0 +1,200 @@
+{
+  "patterns": [
+    {
+      "finding": "late or first-frame contact destroys causal readability",
+      "negative_cases": [
+        "CASE-015",
+        "CASE-044",
+        "CASE-046"
+      ],
+      "pattern": "action_onset_timing",
+      "positive_cases": [
+        "CASE-007",
+        "CASE-012",
+        "CASE-053",
+        "CASE-054"
+      ]
+    },
+    {
+      "finding": "readable onset is necessary but not sufficient for proportional response",
+      "negative_cases": [
+        "CASE-020",
+        "CASE-021",
+        "CASE-044"
+      ],
+      "pattern": "contact_onset_timing",
+      "positive_cases": [
+        "CASE-029",
+        "CASE-053",
+        "CASE-054"
+      ]
+    },
+    {
+      "finding": "short pauses can be edit-supporting; no complete hit-stop-to-flyout success",
+      "negative_cases": [
+        "CASE-021",
+        "CASE-026"
+      ],
+      "partial_cases": [
+        "CASE-003",
+        "CASE-027",
+        "CASE-028",
+        "CASE-029"
+      ],
+      "pattern": "hit_stop",
+      "positive_cases": []
+    },
+    {
+      "finding": "speed helps only when the base motion already contains usable beats",
+      "negative_cases": [
+        "CASE-015"
+      ],
+      "partial_cases": [
+        "CASE-006"
+      ],
+      "pattern": "speed_up_diagnostic",
+      "positive_cases": [
+        "CASE-012"
+      ]
+    },
+    {
+      "finding": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "negative_cases": [],
+      "partial_cases": [],
+      "pattern": "speed_ramp",
+      "positive_cases": []
+    },
+    {
+      "finding": "cuts can concentrate existing evidence but cannot manufacture missing causality",
+      "negative_cases": [
+        "CASE-026"
+      ],
+      "partial_cases": [
+        "CASE-003",
+        "CASE-006",
+        "CASE-019",
+        "CASE-024",
+        "CASE-029"
+      ],
+      "pattern": "cut_window",
+      "positive_cases": [
+        "CASE-007",
+        "CASE-012"
+      ]
+    },
+    {
+      "finding": "recurring failure across production and calibration",
+      "negative_cases": [
+        "CASE-006",
+        "CASE-009",
+        "CASE-015",
+        "CASE-031",
+        "CASE-038",
+        "CASE-047",
+        "CASE-049",
+        "CASE-051"
+      ],
+      "partial_cases": [],
+      "pattern": "static_tail",
+      "positive_cases": []
+    },
+    {
+      "finding": "readable endpoint wording can induce an unproductive final pose",
+      "negative_cases": [
+        "CASE-006",
+        "CASE-015",
+        "CASE-031"
+      ],
+      "partial_cases": [],
+      "pattern": "idle_tail",
+      "positive_cases": []
+    },
+    {
+      "finding": "positive final-state motion must remain active when the shot requires continuation",
+      "negative_cases": [
+        "CASE-006",
+        "CASE-009",
+        "CASE-015",
+        "CASE-017"
+      ],
+      "partial_cases": [],
+      "pattern": "pose_out",
+      "positive_cases": []
+    },
+    {
+      "finding": "aftermath works best as a separate editorial duty",
+      "negative_cases": [
+        "CASE-021"
+      ],
+      "partial_cases": [
+        "CASE-026",
+        "CASE-028"
+      ],
+      "pattern": "aftermath_duration",
+      "positive_cases": [
+        "CASE-003"
+      ]
+    },
+    {
+      "finding": "recommended after failures, but no complete controlled two-shot experiment yet",
+      "negative_cases": [
+        "CASE-026"
+      ],
+      "partial_cases": [
+        "CASE-003"
+      ],
+      "pattern": "two_shot_decomposition",
+      "positive_cases": []
+    },
+    {
+      "finding": "complete-MP4 review prevents favorable short windows from hiding weak tails or disconnected reactions",
+      "negative_cases": [
+        "CASE-006",
+        "CASE-026",
+        "CASE-049",
+        "CASE-051"
+      ],
+      "partial_cases": [
+        "CASE-029"
+      ],
+      "pattern": "complete_MP4_vs_short_cut_review",
+      "positive_cases": [
+        "CASE-007",
+        "CASE-012"
+      ]
+    },
+    {
+      "finding": "salvage is evidence-backed but must remain scoped",
+      "negative_cases": [
+        "CASE-006",
+        "CASE-026"
+      ],
+      "partial_cases": [
+        "CASE-003",
+        "CASE-019",
+        "CASE-029"
+      ],
+      "pattern": "edit_only_salvage",
+      "positive_cases": [
+        "CASE-007",
+        "CASE-012"
+      ]
+    },
+    {
+      "finding": "endpoint or spatial-route continuity needs independent evaluation",
+      "negative_cases": [
+        "CASE-014"
+      ],
+      "partial_cases": [
+        "CASE-013"
+      ],
+      "pattern": "transition_continuity",
+      "positive_cases": [
+        "CASE-001",
+        "CASE-035"
+      ]
+    }
+  ],
+  "schema_version": "AI_VIDEO_TEMPORAL_EDIT_PATTERN_EVIDENCE_MATRIX_V0_1",
+  "temporal_edit_pattern_count": 14
+}

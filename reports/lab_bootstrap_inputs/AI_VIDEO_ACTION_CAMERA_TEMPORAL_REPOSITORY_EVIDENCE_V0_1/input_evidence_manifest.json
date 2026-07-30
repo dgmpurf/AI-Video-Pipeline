@@ -1,0 +1,1001 @@
+{
+  "committed_input_count": 95,
+  "input_evidence_file_count": 104,
+  "inputs": [
+    {
+      "bytes": 12313,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "374807d80e7e33109d1bd431308a0d4a4365ab40",
+      "path": "experiments/CAL-001/fixtures/CAL001_fixture_registry.json",
+      "role": "repository_evidence_record",
+      "sha256": "cf35a7ea15e4c51e4d6936f9a796f90215445f059503cd29bd6eccb8c7658142",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 23651,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "3cc52621ee88efc1b6c96d31d3c137746f5778c9",
+      "path": "experiments/CAL-001/matrices/CAL001_fixed_experiment_matrix.md",
+      "role": "repository_evidence_record",
+      "sha256": "d047b9fc6a1b9e2a97598ad9d13383b9f8f2f173712b15941e866025593e3209",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 4282,
+      "evidence_classification": "PROVISIONAL_RULE",
+      "git_blob": "033e538621052aeea4609a45b80d44aa84b1737f",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/CAL002-A05_RUN_STOP.json",
+      "role": "repository_evidence_record",
+      "sha256": "922d8c2f6e6ec73ada4518f5a9111c166d69d9e9207fa9e40d6f180aa37e3c1f",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 5435,
+      "evidence_classification": "BOUNDED_REPOSITORY_INFERENCE",
+      "git_blob": "067d72b73808262dfc75475b467684d86a0438b9",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CAPABILITY_AND_CALIBRATION_DESIGN_V0_1/CAL002_ROUTE_A_SELECTION_RECORD.md",
+      "role": "repository_evidence_record",
+      "sha256": "4cc596510b35712c7f2f5300ac685526eb3bec18799cecdd4eb7ebee0fad8bc8",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 168170,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "existing_visual_review_status": "human-accepted project-owned motion reference",
+      "git_blob": "8aaa470f8485b9aa59cff057c6a143ed765df7ad",
+      "media_decoded": false,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_IMPACT_02.mp4",
+      "referencing_record": "reports/CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_RESULT.md",
+      "referencing_record_or_case": "CASE-052/CASE-054",
+      "regular_file": true,
+      "role": "referenced_media_identity",
+      "sha256": "a0a2662dc598f4980d3f1f22cff2c2915a0f422d797f0e09eb53e8e78110623c",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 174235,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "existing_visual_review_status": "human-accepted project-owned motion reference",
+      "git_blob": "d5cfb6ab1d17163d4b9d6174c633af627d4ee866",
+      "media_decoded": false,
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2/media/ACTION_REF_PUSH_02.mp4",
+      "referencing_record": "reports/CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_RESULT.md",
+      "referencing_record_or_case": "CASE-051/CASE-053",
+      "regular_file": true,
+      "role": "referenced_media_identity",
+      "sha256": "6006b7abc88a53978a9a7993a0b7852179ddbbbcd960d13f07ebc68218872ed6",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 5387,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "git_blob": "3d8033ec62d9f268719594cbaa82ffe4215eb7a7",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.1.md",
+      "role": "repository_evidence_record",
+      "sha256": "a10d28af271155b0fb32c3c8feb204ca487a82c9a60822884ffc576e19126337",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 7533,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "b14e627bf2437493f2333ffed7d42b00f790e40f",
+      "path": "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.3.md",
+      "role": "repository_evidence_record",
+      "sha256": "0fdda04117d076fcb8e05f2a9a094d4302112c5539b3d1ddf878ed5c03c93464",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 6626,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "f90f50024989fd55b28aac4a46d98220231bfbe6",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/design_spec.json",
+      "role": "repository_evidence_record",
+      "sha256": "4525038bdf8bad37f34ea772b103150d36c28a367103739e63968cce1a6402b7",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 2010,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "193173d1d9a2409920faf16b603b1873071628c2",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/prompts/common.txt",
+      "role": "repository_evidence_record",
+      "sha256": "bbaadf89c81a60336742a17925bc6d3cf54009e1f99818c2300b90920af6b93d",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 855,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "7c7052c096e09e021d4f4f5dd5b5f1600ff43910",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/derived_outcome.json",
+      "role": "repository_evidence_record",
+      "sha256": "861c5a703f6cbaa37c1302ec7df382ce97f82e8cf83164f0f2a15c30037d93de",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 2107,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "2112316898f3e3dd8feef2674b4c9707a2f23bd4",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/family_gate_results.json",
+      "role": "repository_evidence_record",
+      "sha256": "19fae9d67f1454719281e1ff259d6f40254302efea68b3817225e2bb0a1a9be7",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 1856,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "a280a701e347da5c7a3523e068541d8c70002ac2",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/ordinal_pair_gate_results.json",
+      "role": "repository_evidence_record",
+      "sha256": "cb07b01aa8ed81be435cb501315842d8a3c7227169fe869ead8f04d0822cedda",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 5797,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "6e2fb424d4e2b9f4d5975cbc1144fbefa5851b5b",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/condition_matrix.json",
+      "role": "repository_evidence_record",
+      "sha256": "23c214545678009f4f10cf106cc03e2654cd3d816aa3853b3d08aebd2eea5f93",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 5123,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "dfed2a13fcc2a671719f0656957a919751094ef4",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/design_spec.json",
+      "role": "repository_evidence_record",
+      "sha256": "fe0cc08ad00b156a829b1886832abe282f5644f51904e6c84bc08a60c7f165a2",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 1978,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "3bac37b19db431779d3ea8cdd488dccda6f73e3c",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+      "role": "repository_evidence_record",
+      "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 2287,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "e079625f088f60aeb576ddea3a07abc682463373",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+      "role": "repository_evidence_record",
+      "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 28607,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "e832e52e23e8fb69e9bbe8de00f55efef2afa389",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/task_manifest.json",
+      "role": "repository_evidence_record",
+      "sha256": "7be3db682668c1d5c2b33976d583347f57bcd355c7cc7590d797e4405002bdcf",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 9138,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "3e9adad910361be0d61361286738b43f3c4dd439",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+      "role": "repository_evidence_record",
+      "sha256": "5e4b700450915b6c23a0737d981cd855e9727654d6cd4432492229c7b182f685",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 6371,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "abef6553d4b4d1ba59955b993186e006df01d5c8",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/contrast_results.json",
+      "role": "repository_evidence_record",
+      "sha256": "2e174e1519d1a6ba9e5375112b1120ce59319af6d615afceb927ffe4bf241fe7",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 768,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "459be2e533c5eb7a7367a7e7b53e418860fad772",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/derived_outcome.json",
+      "role": "repository_evidence_record",
+      "sha256": "56c368249f8fb1a049a5deb2c42d8bdd79951c7cdc742615cc69579f4c174ba9",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 2464,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "2bf6b4217b2b29eb44b816502625338fa992aa81",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/condition_matrix.json",
+      "role": "repository_evidence_record",
+      "sha256": "851b227e280a75bcfaa57e3ee5466201e55079f39b0ca9ff84f14630ddb3ba86",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 4455,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "1ef28b94dac193bbab9ea51230704134b8af8b46",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/design_spec.json",
+      "role": "repository_evidence_record",
+      "sha256": "de144ada8b71057c09fb601e8ea41d6584af3c84ab03ac964be1bb0d5e61a4d1",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 1978,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "3bac37b19db431779d3ea8cdd488dccda6f73e3c",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+      "role": "repository_evidence_record",
+      "sha256": "c15f93ee8ee55fccb827cbea8683c0538e13cefd138d0ae1a22761dce7c20ce0",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 2287,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "e079625f088f60aeb576ddea3a07abc682463373",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+      "role": "repository_evidence_record",
+      "sha256": "c38e8bb135d6d9f29d510c2fb059b8f4a9ce7948626c19f43f98ad564b8422a5",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 10944,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "6ce3de338c188a2605ffee122498cc9122f9b00e",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/task_manifest.json",
+      "role": "repository_evidence_record",
+      "sha256": "412a43c51201e4c6b82dc301537d03dccdd956d0798351cdc09c97b4f2b6d042",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 2674,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "70dc2303c91214dcc682c9014c0963f686a958cf",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+      "role": "repository_evidence_record",
+      "sha256": "4e89ed3c5448dabc36a856e2f2272d996353bac0bff008fd659b9528f44677e9",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 852,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "5f0f8de3b9380a16eda407edf84015ffd3412bea",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/primary_contrast_result.json",
+      "role": "repository_evidence_record",
+      "sha256": "c7784b7d7c8def3b07132a51db7b01b3d0c2690885870ecd8779f78f81bdf866",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 729,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "27ee4ebd108ac0f4a40add76c0cbb9ceb612cfb8",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/proposed_outcome.json",
+      "role": "repository_evidence_record",
+      "sha256": "039a736bddaa224398c48e5720d12dd2ba576c1aef40a15eefae357327f3c7f8",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 8172,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "3e94b3f9025a69ee352faf4f98f1f2aaac98932c",
+      "path": "productions/chi_yan_tian_qiong/PRODUCTION_STATUS.md",
+      "role": "repository_evidence_record",
+      "sha256": "e8538a0640cd43aacc4a8a9918c639c195094c1408a09f141c88a427c75bec4e",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 14459,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "5e3dbd318e11c192533cd4eb3db58f4314dd8866",
+      "path": "productions/chi_yan_tian_qiong/assets/asset_registry.json",
+      "role": "repository_evidence_record",
+      "sha256": "4071372db166f77e8e6a4f8a3f2b25a4ade18a175d39169ab10061af32878524",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 10768451,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "existing_visual_review_status": "partial diagnostic, not primary",
+      "git_blob": null,
+      "media_decoded": false,
+      "path": "productions/chi_yan_tian_qiong/downloads/SHOT-04-R02A/K269I_VARIANT_C_TEXT2VIDEO/5691a273-9c96-41c0-b3cc-4919476e0633_video_1.mp4",
+      "referencing_record": "reports/PHASE_K269L_SHOT04_R02A_VARIANT_C_TEXT2VIDEO_VISUAL_REVIEW.md",
+      "referencing_record_or_case": "CASE-027",
+      "regular_file": true,
+      "role": "referenced_media_identity",
+      "sha256": "2ee78a5809771d93a115eb289ecb46e3ea2cb5ad0a38d01e4db1f1dd7a614483",
+      "tracked_or_untracked": "LOCAL_UNTRACKED_EVIDENCE"
+    },
+    {
+      "bytes": 10559020,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "existing_visual_review_status": "edit candidate with caveats",
+      "git_blob": null,
+      "media_decoded": false,
+      "path": "productions/chi_yan_tian_qiong/downloads/SHOT-04-R02A/K269S_VARIANT_A_SIMPLIFIED_M2V/df668f21-6bf2-416e-964f-7dfc73995518_video_1.mp4",
+      "referencing_record": "reports/PHASE_K269V_SHOT04_R02A_VARIANT_A_SIMPLIFIED_M2V_VISUAL_REVIEW.md",
+      "referencing_record_or_case": "CASE-028",
+      "regular_file": true,
+      "role": "referenced_media_identity",
+      "sha256": "e463971bf481e0cf17550a1c2d1ab279e91d3fbf0e54c5c43aeb400a1cebe9c0",
+      "tracked_or_untracked": "LOCAL_UNTRACKED_EVIDENCE"
+    },
+    {
+      "bytes": 8954620,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "existing_visual_review_status": "VISUAL_STATE_UNKNOWN_REQUIRES_FUTURE_LAB_OR_HUMAN_REVIEW",
+      "git_blob": null,
+      "media_decoded": false,
+      "path": "productions/chi_yan_tian_qiong/downloads/SHOT-04-R02A2/K270Q_B3_SAFE_REVISION/8f38063d-a790-408a-b270-0cef5df981e0_video_1.mp4",
+      "referencing_record": "reports/PHASE_K270R_SHOT04_R02A2_B3_SAFE_REVISION_REVIEW_ARTIFACT_AUTHORIZATION_DECISION.md",
+      "referencing_record_or_case": "CASE-030",
+      "regular_file": true,
+      "role": "referenced_media_identity",
+      "sha256": "93446c7f181400001810906629ebd972a2016222f283b5975536f3fc07e40097",
+      "tracked_or_untracked": "LOCAL_UNTRACKED_EVIDENCE"
+    },
+    {
+      "bytes": 468589,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "existing_visual_review_status": "supporting contact/hit-stop cut with caveats",
+      "git_blob": null,
+      "media_decoded": false,
+      "path": "productions/chi_yan_tian_qiong/edits/SHOT-04-R02A/K269Y_VARIANT_A_CUT_WINDOW_DIAGNOSTICS/K269Y_CONTACT_HITSTOP_SHORT_0p50_1p00.mp4",
+      "referencing_record": "reports/PHASE_K269Z_SHOT04_R02A_VARIANT_A_CUT_WINDOW_VISUAL_REVIEW.md",
+      "referencing_record_or_case": "CASE-029",
+      "regular_file": true,
+      "role": "referenced_media_identity",
+      "sha256": "ace57b50c6e3b28aecff8c495ced690aa560b4c3744f95812487f1fcd48d8ab8",
+      "tracked_or_untracked": "LOCAL_UNTRACKED_EVIDENCE"
+    },
+    {
+      "bytes": 1755232,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "existing_visual_review_status": "locked human-approved scoped segment",
+      "git_blob": null,
+      "media_decoded": false,
+      "path": "productions/chi_yan_tian_qiong/edits/extracts/SHOT-02-V013/SHOT-02-V013_CUT01_0p00_to_2p20_best_close_combat_candidate.mp4",
+      "referencing_record": "reports/PHASE_K54_SHOT02_V013_CUT01_LOCKED_CURRENT_PASS.md",
+      "referencing_record_or_case": "CASE-007",
+      "regular_file": true,
+      "role": "referenced_media_identity",
+      "sha256": "dae11211fa19818a947d865d789b16a35126da91de71b7ae5eb026b315548c23",
+      "tracked_or_untracked": "LOCAL_UNTRACKED_EVIDENCE"
+    },
+    {
+      "bytes": 2244060,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "existing_visual_review_status": "human-selected preferred recut, not final",
+      "git_blob": null,
+      "media_decoded": false,
+      "path": "productions/chi_yan_tian_qiong/edits/shot03_v004_continuous_recut/K179_180/SHOT-03_K180_V004_CONTINUOUS_0p60_3p10_tighter_preview.mp4",
+      "referencing_record": "reports/PHASE_K181_SHOT03_K180_CONTINUOUS_RECUT_REVIEW_SELECTION.md",
+      "referencing_record_or_case": "CASE-019",
+      "regular_file": true,
+      "role": "referenced_media_identity",
+      "sha256": "c1bdb0d0c0642cb7a8c4062c37e5e8d37dd66a7fee593ef581a01cc8bbcfe319",
+      "tracked_or_untracked": "LOCAL_UNTRACKED_EVIDENCE"
+    },
+    {
+      "bytes": 5164289,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "existing_visual_review_status": "locked current edit candidate",
+      "git_blob": null,
+      "media_decoded": false,
+      "path": "productions/chi_yan_tian_qiong/edits/speed_diagnostics/SHOT-02-V018/SHOT-02-V018_speed_1p18x.mp4",
+      "referencing_record": "reports/PHASE_K91_SHOT02_V018_1P18X_LOCKED_CURRENT_EDIT_CANDIDATE.md",
+      "referencing_record_or_case": "CASE-012",
+      "regular_file": true,
+      "role": "referenced_media_identity",
+      "sha256": "f48ed132f0d8ff9a7c853698e4102900ebedcc86dbfb2f1ad680de96fb044a08",
+      "tracked_or_untracked": "LOCAL_UNTRACKED_EVIDENCE"
+    },
+    {
+      "bytes": 3464,
+      "evidence_classification": "BOUNDED_REPOSITORY_INFERENCE",
+      "git_blob": "bbfcd71902087d06f9d76119fcd50007055466e9",
+      "path": "productions/chi_yan_tian_qiong/packages/SHOT-04-R02-wall-impact/reference_duty_map.md",
+      "role": "repository_evidence_record",
+      "sha256": "44ea7f60d12e619470bb703db64b26130ffea2f91f9aa28aeb03bc54b12e0844",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 6234,
+      "evidence_classification": "BOUNDED_REPOSITORY_INFERENCE",
+      "git_blob": "a1939b27465cf48ce03387aff5a2a7f6ca716523",
+      "path": "productions/chi_yan_tian_qiong/prompts/shot_02_keyframe_prompt_SHOT-02-KF-002.json",
+      "role": "repository_evidence_record",
+      "sha256": "c8fb2566cb444ed57dfc7f324e014fa4881bfc5db600c3f18c38681ef1bd9bd8",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 7447,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "5e3d553db51ff8a0e4d5ff9e565ded009c3bc6d7",
+      "path": "productions/chi_yan_tian_qiong/prompts/shot_02_video_prompt_SHOT-02-V001.json",
+      "role": "repository_evidence_record",
+      "sha256": "5ce06ebf92d197a6746e2b890c56c0d6759915637172d69d04ae62440a0ccd50",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 4301497,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "existing_visual_review_status": "human-approved usable establishing motion shot",
+      "git_blob": null,
+      "media_decoded": false,
+      "path": "productions/chi_yan_tian_qiong/runs/live/20260616_114203_SHOT-01-V001/output/SHOT-01-V001_stable_standoff_slow_pushin.mp4",
+      "referencing_record": "productions/chi_yan_tian_qiong/assets/asset_registry.json",
+      "referencing_record_or_case": "CASE-001",
+      "regular_file": true,
+      "role": "referenced_media_identity",
+      "sha256": "f8a68395ff05b78c92a7f667ed68e16182bd1406a6be336fa14e224cdda2d672",
+      "tracked_or_untracked": "LOCAL_UNTRACKED_EVIDENCE"
+    },
+    {
+      "bytes": 7158147,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "existing_visual_review_status": "human-approved fallback motion candidate",
+      "git_blob": null,
+      "media_decoded": false,
+      "path": "productions/chi_yan_tian_qiong/runs/live/SHOT-02-V001_20260617_230616/SHOT-02-V001_stable_first_clash_motion.mp4",
+      "referencing_record": "productions/chi_yan_tian_qiong/PRODUCTION_STATUS.md",
+      "referencing_record_or_case": "CASE-002",
+      "regular_file": true,
+      "role": "referenced_media_identity",
+      "sha256": "9fb9e5a3734c374b64f098a9e9ff0972463e52cb68ad11f96f4611e3d2a2fefe",
+      "tracked_or_untracked": "LOCAL_UNTRACKED_EVIDENCE"
+    },
+    {
+      "bytes": 5151,
+      "evidence_classification": "PROVISIONAL_RULE",
+      "git_blob": "65d6ddb67f09d0d07ece02f6c2e1b885d48eca0d",
+      "path": "reports/CAL002_ACTION_CALIBRATION_V1_NO_LIVE_PACKAGE_CREATION_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "7c8877253921e7a2441a656164006908e70411e21f79d701b7fc577600e736b7",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 4902,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "eb47fd533a7420cf30180a0d52de6cff65ea7505",
+      "path": "reports/CAL002_BATCH02_HUMAN_VISUAL_REVIEW_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "5ec69ecb91e8892b60e3794a920136d95eb4d055b702004feb0e7b03db35f77d",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 6965,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "84d9d23cd159f728703a323405813cc9e16f3c7d",
+      "path": "reports/CAL002_BATCH03_HUMAN_VISUAL_REVIEW_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "d6ae8e0828e6be76679a69224481d92529b4d1435fc536f960e8be8b24c7affd",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 47950,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "40eb81ec52b553fe0769ca96057d7b0d2445fbfc",
+      "path": "reports/CAL002_BATCH04_POST_VISUAL_REVIEW_SOURCE_UPDATE_EVIDENCE_PACK.md",
+      "role": "repository_evidence_record",
+      "sha256": "ccba5ed2d0c4c98ca3135ec8e4cb2bf995ca552ee20bb854bd1e3472797519e0",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 13556,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "b56a4ec8ce82cc64e4ee0c9271ffb9815e25d6fe",
+      "path": "reports/CAL002_BATCH05_EXPERIMENT_RESULT_ACCEPTANCE_AND_ROUTE_RESET_DECISION_V0_2_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "ddd7887c1afe60ec0a5afc44b2bf61fe7b67f66f39fd040668a197ed49b0b404",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 10379,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "0b25d094f2f61175c4fafdc9ad2b82ed6e8da7a7",
+      "path": "reports/CAL002_BATCH05_POST_UNBLINDING_DERIVATION_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "770596838323dcb8259d9342871d01656987a002523036921a01d061db111267",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 9237,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "fee2057917da2266636f77513e9a21c5bbf160c2",
+      "path": "reports/CAL002_BATCH05_POST_UNBLINDING_DERIVATION_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "dab379be9b7bcbcd4339e036074c74d4792064332e58bb52026279f717b46109",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 15201,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "ff31e8f1ab5881a05dd0f394fcf2a64037a0a666",
+      "path": "reports/CAL002_RA_V02_C01_COMPLETE_MP4_HUMAN_REVIEW_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "77ea8964ec3595d5beaec52e9b43a2fdde1042fe0ebbf58c85f233e836e4ad59",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 4164,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "4c4dd0e26f3d6900018a61b0228caf33d277a797",
+      "path": "reports/CAL002_RA_V03_C02_COMPLETE_MP4_HUMAN_REVIEW_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "6971183c9e1151f7bb25a979ed72c4ebf9f0d6ed1a9870eb75a03869d27db83d",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 13141,
+      "evidence_classification": "BOUNDED_REPOSITORY_INFERENCE",
+      "git_blob": "1d53bbaf99da4e63b63e8298c1941cd5470e1c1a",
+      "path": "reports/CAL002_ROUTE_A_CAPABILITY_AUDIT_AND_MINIMUM_CALIBRATION_DESIGN_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "dfbfc04ad1f6b6997fc7034363f0ab4fb1f7697c46aa0918a8afcf60253d8b56",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 10279,
+      "evidence_classification": "BOUNDED_REPOSITORY_INFERENCE",
+      "git_blob": "c06d1e5963c82fdb67feabd1af4a9b3869201d35",
+      "path": "reports/CAL002_ROUTE_A_CLEAN_FULL_DURATION_MULTI_BEAT_REFERENCE_V0_2_LOCAL_DESIGN_AND_CREATION_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "833adf08f45fc05fa2074e691af29edf9d34447db09590deb4897bef9d9277b9",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 5083,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "70a5b83a981934d81cfae079986a5dfff1ec0d8d",
+      "path": "reports/CAL002_ROUTE_A_R01_FULL_MP4_VISUAL_SEMANTIC_REVIEW_INTAKE_AND_LOCK_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "45f884c5b38bd41fca118af9993767c981941009b94ed959d197cf7ffd68a9be",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 18755,
+      "evidence_classification": "BOUNDED_REPOSITORY_INFERENCE",
+      "git_blob": "14c420054afeb905119806fa1cfa391cf0e490cc",
+      "path": "reports/CAL002_ROUTE_A_REFERENCE_V0_2_COMPLETE_MP4_HUMAN_REVIEW_INTAKE_AND_LOCK_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "8a6cd332de5ab9b1a16872b84e62ed245e6c80bb088bc8a9151576c3e66eb9de",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 1742,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "880d5d1df4d8818ef2c4991cded699df5b69dab2",
+      "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_HUMAN_FINAL_DECISION.md",
+      "role": "repository_evidence_record",
+      "sha256": "121e04ca403ee4dd78a6b26b8d88c5efcdfc72925d5a35608b270d12c28d6b6b",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 1524,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "14257ca7fdac941f27e1f5c20fa241d28eade6cc",
+      "path": "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_HUMAN_FINAL_DECISION.md",
+      "role": "repository_evidence_record",
+      "sha256": "3e2afd590c6721a98add88c09afaf8a934f52d3466631526b6bb38689b1722fe",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 3993,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "35b9024585cc4a4a6f1e15b78de0b1176c680dc5",
+      "path": "reports/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_HUMAN_FINAL_DECISION.md",
+      "role": "repository_evidence_record",
+      "sha256": "9e488d46e8e813476e937500049a3d2f6ea8f696a7b26e86435ce6f833af5d9a",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 11586,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "f782e9684fc7ecd3b9008b0f3c2047141bfa26a2",
+      "path": "reports/PHASE_CAL001_P3B_R2_T3A_F01_VISUAL_REVIEW_AND_REMAINING_CANARY_READINESS_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "eae13c218e5b4d267b679a7df1a9ed8b706afcb3c7fa9536fee4581276192321",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 15154,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "c099bd902f88331f08e146f2e58d6f857f76b306",
+      "path": "reports/PHASE_CAL001_P3B_R2_T5C_F02_F07_VISUAL_REVIEW_RECORDING_AND_SEVEN_FAMILY_POST_CANARY_READINESS_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "89728377eed0a4345a3e2d1636e545fa2444a613af344436a1dd3abdb91adf5a",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 7935,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "bbc80adb032c0d018ff85072b2454df2c3464b7a",
+      "path": "reports/PHASE_CAL001_P3D_W01_F06_RECOVERY_VISUAL_REVIEW_RECORD_AND_TECHNICAL_COMPLETION_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "3fa157f12b47f7be4f05687fb263c591432df99a1671099ea2ee5517f1cdbf59",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 14665,
+      "evidence_classification": "DIRECT_EXPERIMENT_EVIDENCE",
+      "git_blob": "a3d1954c14228d50f5f986b8f167edb246c3fba5",
+      "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_DOWNLOAD_ONLY_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "2353371eea08e9d24a84a86b192d4568dc495dd134e8d5361ed39a490aa00334",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 6977,
+      "evidence_classification": "DIRECT_EXPERIMENT_EVIDENCE",
+      "git_blob": "f71c91b01a5b5512423e6cbf9986dcdb574c81db",
+      "path": "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_QUERY_ONLY_RESULT.md",
+      "role": "repository_evidence_record",
+      "sha256": "0d060c13a76ca1e545b6fd554c2e4aeaa450f4f203dd9e4d8eba659bc0de61e1",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 5260,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "e056a04a52ddfa100cd4bcf5e374f2314f8c041a",
+      "path": "reports/PHASE_K103_SHOT03_V001_HUMAN_REVIEW_AND_V002_DIRECTION.md",
+      "role": "repository_evidence_record",
+      "sha256": "7256a7c2cfd10484c7a08c2e2cf35a1088576a8ee8cd6e0cb2600b6de6fe8f16",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 4455,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "0d3a32181329bacb1c45553c4c5923a436a0467e",
+      "path": "reports/PHASE_K108_SHOT03_V002_HUMAN_REVIEW_AND_V003_DIRECTION.md",
+      "role": "repository_evidence_record",
+      "sha256": "fe6c7cbdeb326030910875ff9bb5eeca1950674cc9c13bffec62bec4a03ee8a3",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 4885,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "b77f5d5fec035bcc698c1eecabc2e8db79bff09e",
+      "path": "reports/PHASE_K113_SHOT03_V003_HUMAN_REVIEW_AND_PROMPT_AUDIT.md",
+      "role": "repository_evidence_record",
+      "sha256": "a0ea54dd852072d8eea8daf83a9ecc3ca1f475b16d9e4f84def614d22163ef03",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 3359,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "4657699e1cf5e543e1435986953997eaa81b9ca3",
+      "path": "reports/PHASE_K11_SHOT02_V007_COMBO_EDIT_REVIEW.md",
+      "role": "repository_evidence_record",
+      "sha256": "2243280c8bc6d5a04cfe5fa707d2fc7cf3bb589af91272621450542c2568f903",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 4241,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "ea43ad22cd7196c06fec25c06c03b4d1445a92c6",
+      "path": "reports/PHASE_K121_SHOT03_V004_HUMAN_REVIEW_AND_V005_TERRAIN_AFFORDANCE_DIRECTION.md",
+      "role": "repository_evidence_record",
+      "sha256": "71d139f193965455030cc54adc6eb20b049650a75d1d797d5ae3e7c80d394bf1",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 3953,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "6c0bf91d8d3632a9a0ec1ef1ac907456163d21dc",
+      "path": "reports/PHASE_K128_SHOT03_V005_HUMAN_REVIEW_SOFT_FORCE_AND_SPEED_DIAGNOSTIC_PLAN.md",
+      "role": "repository_evidence_record",
+      "sha256": "ed4c5623c56c797e35b89ef27946a46caf3da9f11b5b68e42f8143e006f3c2fa",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 6009,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "4b5138ffe44424588a312af89251a2fa2984fedc",
+      "path": "reports/PHASE_K138_SHOT03_V006_HUMAN_AND_CHATGPT_REVIEW_FAILED_FORCE_CHAIN_AND_TERRAIN_ANCHOR.md",
+      "role": "repository_evidence_record",
+      "sha256": "809a9c35ce3487397308025a78b84c7252e7bdb4e863de22960ec2f25600381e",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 13678,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "9b2f0190c66bee3c1cd38afeb6cdb2ac691933d3",
+      "path": "reports/PHASE_K139_SHOT03_V004_V005_V006_COMPARATIVE_STRATEGY_REVIEW.md",
+      "role": "repository_evidence_record",
+      "sha256": "4300f603f30dc41db1bc56bd283f16a157d81eadbbc2087d7ffe4a26a4f0dbbb",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 2208,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "4c43f039697cccf1519b0925f66b9bfdce8f6985",
+      "path": "reports/PHASE_K13_SHOT02_FULL_IMPACT_BEAT_REVIEW.md",
+      "role": "repository_evidence_record",
+      "sha256": "a06b518641cf7d58e0de5f4c1fc69becc52dda06a9b4e56c4f4f9e68b751b966",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 5930,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "2e24fb08c2d393b3274d70e368a9f96d095e1ad7",
+      "path": "reports/PHASE_K181_SHOT03_K180_CONTINUOUS_RECUT_REVIEW_SELECTION.md",
+      "role": "repository_evidence_record",
+      "sha256": "8770a8d33df5439f2ca8ae0f4eade6eb5ef0554f381d4cdb9551d170310e1e17",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 8188,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "fca8e06311598c980790d6c53009aab7b6504014",
+      "path": "reports/PHASE_K190_SHOT04_ROUTE_A_VISUAL_REVIEW_FAILED_CORE_ACTION.md",
+      "role": "repository_evidence_record",
+      "sha256": "50bed862b8a4bd1244e8d131a7553dfe4f9bfe8bab810b05c1cbf0e86fd37405",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 12866,
+      "evidence_classification": "BOUNDED_REPOSITORY_INFERENCE",
+      "git_blob": "61c71d2209c3aa0797510d46b79b70bf6daa2c9e",
+      "path": "reports/PHASE_K1_COMBAT_RHYTHM_AND_CAMERA_REQUIREMENTS.md",
+      "role": "repository_evidence_record",
+      "sha256": "fdd639efa3b3d5780f434d8acca8c87b3ef835fb1318685c4544a6a154e8d6c5",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 2072,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "ed17ea7a042d872e2b38a8a89926bc8a10da6f30",
+      "path": "reports/PHASE_K20_SHOT02_V009_REVIEW_EXTRACT_AND_FULL_COMBO_TEST.md",
+      "role": "repository_evidence_record",
+      "sha256": "85006a58030da9515db97b02b28357673c22260aa80a9162c8b006614c05d5ee",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 13975,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "3a6d57879af393b202cb05d38749e488c0c85cf6",
+      "path": "reports/PHASE_K220B_SHOT04_R02_VISUAL_REVIEW_FAILED_CORE_ACTION.md",
+      "role": "repository_evidence_record",
+      "sha256": "52ec8a6bf194b4c15c169b2be53d9fbae51102d3b50b22475e7e73516cb0658f",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 14306,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "9b0a31b7585599581fd45ff0d75927c3fafd2306",
+      "path": "reports/PHASE_K221_SHOT04_R02_ROUTE_DECISION_AFTER_VISUAL_FAILURE.md",
+      "role": "repository_evidence_record",
+      "sha256": "659c534f83c5ec931488ebf8e48310333ad775f2fdb57aab84df355aa8df226e",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 14710,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "git_blob": "763cddfacba76dd41d1190f973f12380c5024222",
+      "path": "reports/PHASE_K226F_SHOT04_R02_MICRO_IMPACT_KEYFRAME_FAILURE_REVIEW_AND_ROUTE_DECISION.md",
+      "role": "repository_evidence_record",
+      "sha256": "59366fb47eccffb4a778b7af17d41c1eef5a6202e297b1cb16af5a59512fd150",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 16167,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "git_blob": "fcb0debd56b57c63064d11b4dbed157d12e46496",
+      "path": "reports/PHASE_K230F_SHOT04_R02_REPEATED_IMAGE2IMAGE_FAILURE_REVIEW_AND_ROUTE_RESET.md",
+      "role": "repository_evidence_record",
+      "sha256": "99778a4dad7408bfcb316145327548f32a0adfd20ccb025a1e01e2693728bf56",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 15654,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "git_blob": "68c11096f6782b152de63098b2e222f96f8171da",
+      "path": "reports/PHASE_K241F_SHOT04_R02_NEAR_WALL_GUARD_CLASH_TEXT2IMAGE_FAILURE_REVIEW.md",
+      "role": "repository_evidence_record",
+      "sha256": "77e4f5190825df5ef94019ce07d39f06819382defb195714dc65e2c7cfc5a26d",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 7139,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "4440571420ea5a37993709d1e45346352f830fc5",
+      "path": "reports/PHASE_K249_SHOT04_R02_NEAR_WALL_GUARD_CLASH_TEXT2VIDEO_VISUAL_REVIEW.md",
+      "role": "repository_evidence_record",
+      "sha256": "e74707af9ca715393944fe693bff037aeb8e47f2bebfca256f780e4601c5d048",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 9751,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "a5e18619e00b938cdfab1c79ab92d59276e4d3b3",
+      "path": "reports/PHASE_K259_SHOT04_R02_IDENTITY_ANCHORED_MULTIMODAL2VIDEO_VISUAL_REVIEW.md",
+      "role": "repository_evidence_record",
+      "sha256": "cbfaca3205465ce11c8cf4bf7ef86ae1be83880e108dfb2dcee5f2e93e1bfda9",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 11340,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "342e24b5da68c6750040b76fd193e00cedfea14c",
+      "path": "reports/PHASE_K261_SHOT04_R02_IDENTITY_ANCHORED_M2V_CUT_VISUAL_REVIEW.md",
+      "role": "repository_evidence_record",
+      "sha256": "41401512b6e4823565b92d398ce7b6fee1b9cff234602f31c1b2e995ef70822a",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 8786,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "9f19671cb65258d3bb5de14c14959ddaa6bd2553",
+      "path": "reports/PHASE_K269L_SHOT04_R02A_VARIANT_C_TEXT2VIDEO_VISUAL_REVIEW.md",
+      "role": "repository_evidence_record",
+      "sha256": "793c8361e823c9f19b4c0912916cc1cdebf65e1b595264cc86455e8c3a39195d",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 10034,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "8d5f12084897de2266f7459228d3411a39ec3d7b",
+      "path": "reports/PHASE_K269V_SHOT04_R02A_VARIANT_A_SIMPLIFIED_M2V_VISUAL_REVIEW.md",
+      "role": "repository_evidence_record",
+      "sha256": "39de56252de7cf8fa02351facb009d594c30ca32a977204d3f9b3d7ff9051f4f",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 13903,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "927d84f9faec6d122dc6961be665bb7a0fdb0c83",
+      "path": "reports/PHASE_K269Z_SHOT04_R02A_VARIANT_A_CUT_WINDOW_VISUAL_REVIEW.md",
+      "role": "repository_evidence_record",
+      "sha256": "6c9bb4617cdb1c694faf006bb0fbe55a3a966eee411625a23eee83387baf1bb7",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 12967,
+      "evidence_classification": "TECHNICAL_EXECUTION_EVIDENCE",
+      "git_blob": "9fecc7ba30e809c2a47dab0d484ab73c6808d0ed",
+      "path": "reports/PHASE_K270R_SHOT04_R02A2_B3_SAFE_REVISION_REVIEW_ARTIFACT_AUTHORIZATION_DECISION.md",
+      "role": "repository_evidence_record",
+      "sha256": "3401aeabb1e19c348fb3108754c66c12b9a28c9cb5e4fceb098c50acc120de36",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 1863,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "3ba3fe554e353a016a1553e9b683835ab6da08a5",
+      "path": "reports/PHASE_K27_SHOT02_V010_HUMAN_REVIEW_REJECTION.md",
+      "role": "repository_evidence_record",
+      "sha256": "14ad621b6e6dcd7fdeac3412c9a727f32eebddbfecde615ea0edcd5df9798ab7",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 6682,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "fb6aaa5e7d1c5ab61313c84f3df221524dd12adf",
+      "path": "reports/PHASE_K31_SHOT02_V011_HUMAN_REVIEW_AND_V012_DIRECTION.md",
+      "role": "repository_evidence_record",
+      "sha256": "8c5adc2f7b8dd02525df1bd5211a7ba94c77d1521aa1e224323fd4efe55ff820",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 7763,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "5bdae62d4d9fb2e86b66b73d87afce0266f5dfbc",
+      "path": "reports/PHASE_K42_SHOT02_V012_VISUAL_REVIEW.md",
+      "role": "repository_evidence_record",
+      "sha256": "0a805c94580059174da910fd7ec4ffb504ff55b6b8da4645dc6532d25880784b",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 7495,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "c1a9c61ddc852e553520d769bccd000f4bb65dd6",
+      "path": "reports/PHASE_K43_SHOT02_V012_HUMAN_REVIEW_AND_V013_DIRECTION.md",
+      "role": "repository_evidence_record",
+      "sha256": "149653bd18a3e7e888e5b3f2b89975434080f26f2e40fddee95d47d5b413e62d",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 5096,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "37d55e17c3757d96e04dade001e57d148bc98b10",
+      "path": "reports/PHASE_K45_SHOT02_V012_CUT_SPEED_VISUAL_REVIEW.md",
+      "role": "repository_evidence_record",
+      "sha256": "8cd0ac5f0d3f139ae99f9d6c4d74195a84550208b78327da5365d259e4e3de11",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 9433,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "ebbea5eb5bfc1d3737e9f99a1d9a29901bc976ed",
+      "path": "reports/PHASE_K50_SHOT02_V013_VISUAL_REVIEW.md",
+      "role": "repository_evidence_record",
+      "sha256": "ac250e2fde03bd0dcdc62eaf6686781b2c81a4bc9677c8f5530c0680c0bd4187",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 3626,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "e259dd25b223c614fa3b2e5967634b8d9ef7a666",
+      "path": "reports/PHASE_K54_SHOT02_V013_CUT01_LOCKED_CURRENT_PASS.md",
+      "role": "repository_evidence_record",
+      "sha256": "efa9bead497805e519a506f7f5f308a5e36bc8430625c61b5ff9990c6b8f4a87",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 6309,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "c5f854f348d6b3e5134498d14a269e787d0cfa14",
+      "path": "reports/PHASE_K65_SHOT02_V014_R02_HUMAN_REVIEW_AND_LONG_FAST_COMBAT_DIRECTION.md",
+      "role": "repository_evidence_record",
+      "sha256": "70ab08e1c87b9e7036bd08cae90a3177e09ce48564bb3ec6687c254e150bfb08",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 5027,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "1750cd00b8de66674ecd491bba52cd14609161a9",
+      "path": "reports/PHASE_K72_SHOT02_V015_HUMAN_REVIEW_REJECTION_AND_V016_DIRECTION.md",
+      "role": "repository_evidence_record",
+      "sha256": "46e83789dce389ac2ebf851c265be52b6fb32d2b9eea016bd0f4659a38f1fd42",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 4940,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "bdde75b32cb1ce48c8f3f54d22662444c2ecfa69",
+      "path": "reports/PHASE_K77_SHOT02_V016_HUMAN_REVIEW_AND_V017_PARTICLE_DIRECTION.md",
+      "role": "repository_evidence_record",
+      "sha256": "99d32525aa66d05703b0104c78ddded83c7b93dd461364809798b63c8bce82ea",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 5857,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "2ffc53f6c3fa38aa669dcf7aa7d79a34a2fef39d",
+      "path": "reports/PHASE_K82_SHOT02_V017_HUMAN_REVIEW_AND_V018_HARD_IMPACT_DIRECTION.md",
+      "role": "repository_evidence_record",
+      "sha256": "d4bd988788347067ba761a53717362d66a510b6d999786890fbda84826d90f42",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 3339,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "9a85da6f07a5a9e2571bf785aa0d17ccb458d454",
+      "path": "reports/PHASE_K87_SHOT02_V018_HUMAN_REVIEW_STRONG_POSITIVE_WITH_SPEED_NOTE.md",
+      "role": "repository_evidence_record",
+      "sha256": "84ab439cc18fab89067289583846df3935bf55d200bd02390da6d0f1690912be",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 2700,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "d428da2df97619c2df9e04620b188abe6a95f94d",
+      "path": "reports/PHASE_K89_SHOT02_V018_SPEED_DIAGNOSTIC_HUMAN_REVIEW.md",
+      "role": "repository_evidence_record",
+      "sha256": "c8e579cc62026d8c217088b0c6774fb055fa21ed381ae6e0da1c2e0a9e832c74",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 3646,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "d731fcdbee9dd1f8963593c424add49c4b62fc63",
+      "path": "reports/PHASE_K91_SHOT02_V018_1P18X_LOCKED_CURRENT_EDIT_CANDIDATE.md",
+      "role": "repository_evidence_record",
+      "sha256": "90758c191da6107fc21851617d5719be81a83369e97de55ffa6c1d653ed6a888",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    },
+    {
+      "bytes": 4532,
+      "evidence_classification": "HUMAN_VISUAL_REVIEW_EVIDENCE",
+      "git_blob": "05ac10b01da4b4201c5a5f0eef6e6ad87c508414",
+      "path": "reports/PHASE_K92_SHOT02_CURRENT_EDIT_MAP_AFTER_V018_LOCK.md",
+      "role": "repository_evidence_record",
+      "sha256": "9e0f7090c25f07b1d52855dbc7d4f0c7504a1d3a0940675b0141b2770de4ca96",
+      "tracked_or_untracked": "COMMITTED_REPOSITORY_EVIDENCE"
+    }
+  ],
+  "local_untracked_input_count": 9,
+  "media_decode_count": 0,
+  "referenced_media_identity_count": 11,
+  "schema_version": "AI_VIDEO_ACTION_CAMERA_TEMPORAL_INPUT_EVIDENCE_MANIFEST_V0_1"
+}

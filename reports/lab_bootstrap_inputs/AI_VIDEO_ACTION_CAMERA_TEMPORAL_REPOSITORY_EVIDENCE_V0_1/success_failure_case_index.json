@@ -1,0 +1,2865 @@
+{
+  "case_count": 65,
+  "cases": [
+    {
+      "action_camera_coupling": "camera movement supports a stable standoff rather than hiding contact",
+      "action_family": "transition_or_other",
+      "artifact_type": "video_candidate",
+      "camera_family": "slow_push_in",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-001",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE",
+        "TECHNICAL_EXECUTION_EVIDENCE"
+      ],
+      "failure_elements": [],
+      "human_decision": "official usable video candidate; not locked",
+      "limitations": [
+        "not a dynamic action test",
+        "not final or locked"
+      ],
+      "phase_or_batch": "establishing motion candidate",
+      "primary_evidence_paths": [
+        "productions/chi_yan_tian_qiong/PRODUCTION_STATUS.md",
+        "productions/chi_yan_tian_qiong/assets/asset_registry.json"
+      ],
+      "production_relevance": "drama, acting, camera research",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Dreamina image2video; 5.0167s; 1280x720",
+      "reference_duties": [
+        "official SHOT-01 keyframe controls identity, scene and starting composition"
+      ],
+      "result_classification": "VISUALLY_ACCEPTED_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "origin_project=AI_VIDEO_PIPELINE in asset registry",
+      "route": "image2video",
+      "shot_or_experiment": "SHOT-01-V001",
+      "success_elements": [
+        "stable identity",
+        "readable establishing motion",
+        "human-accepted slow push-in"
+      ],
+      "technical_status": "downloaded and recorded technically valid",
+      "temporal_edit_pattern": "continuous_5s_ambient_motion",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE_WITH_LOCAL_UNTRACKED_MEDIA_IDENTITY",
+      "transferability": "direct camera-grammar evidence for drama/acting and establishing shots",
+      "visual_status": "human-approved usable establishing motion shot"
+    },
+    {
+      "action_camera_coupling": "composition protection preserved identity but limited impact rhythm",
+      "action_family": "pressure_guard_clash",
+      "artifact_type": "video_candidate",
+      "camera_family": "fixed_or_extremely_slow_push_in",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-002",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE",
+        "ROLLING_STATE"
+      ],
+      "failure_elements": [
+        "insufficient high-impact rhythm"
+      ],
+      "human_decision": "retain as fallback only",
+      "limitations": [
+        "not evidence for hard contact"
+      ],
+      "phase_or_batch": "first clash fallback",
+      "primary_evidence_paths": [
+        "productions/chi_yan_tian_qiong/PRODUCTION_STATUS.md",
+        "productions/chi_yan_tian_qiong/prompts/shot_02_video_prompt_SHOT-02-V001.json"
+      ],
+      "production_relevance": "combat fallback and continuity",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Dreamina image2video; 5.0167s; 1280x720",
+      "reference_duties": [
+        "locked SHOT-02 keyframe as sole input and composition anchor"
+      ],
+      "result_classification": "VISUALLY_ACCEPTED_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project production derivative; separate rights statement absent",
+      "route": "image2video",
+      "shot_or_experiment": "SHOT-02-V001",
+      "success_elements": [
+        "continuity and identity stability",
+        "usable low-motion fallback"
+      ],
+      "technical_status": "downloaded and technically recorded",
+      "temporal_edit_pattern": "stable_low_motion_extension",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE_WITH_LOCAL_UNTRACKED_MEDIA_IDENTITY",
+      "transferability": "negative/positive boundary for continuity-first camera and action tradeoff",
+      "visual_status": "human-decision record calls it usable fallback motion, not high-impact"
+    },
+    {
+      "action_camera_coupling": "cuts separated contact, body reaction and aftermath while preserving the frontal axis",
+      "action_family": "pressure_guard_clash",
+      "artifact_type": "edit_candidates",
+      "camera_family": "fixed_axis",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-003",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE",
+        "BOUNDED_REPOSITORY_INFERENCE"
+      ],
+      "failure_elements": [
+        "not one continuous generated causal action"
+      ],
+      "human_decision": "preserve as edit evidence, not final",
+      "limitations": [
+        "edit assembly evidence cannot prove generation-level action causality"
+      ],
+      "phase_or_batch": "K11/K13/K20",
+      "primary_evidence_paths": [
+        "reports/PHASE_K11_SHOT02_V007_COMBO_EDIT_REVIEW.md",
+        "reports/PHASE_K13_SHOT02_FULL_IMPACT_BEAT_REVIEW.md",
+        "reports/PHASE_K20_SHOT02_V009_REVIEW_EXTRACT_AND_FULL_COMBO_TEST.md"
+      ],
+      "production_relevance": "combat editing",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "local edit only",
+      "reference_duties": [
+        "locked keyframe and generated shot extracts"
+      ],
+      "result_classification": "PARTIAL_SUCCESS_EDIT_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project-local derivatives; rights not separately recorded",
+      "route": "local edit assembly",
+      "shot_or_experiment": "SHOT-02 V007-V009 edit assembly",
+      "success_elements": [
+        "layered impact beat became more readable",
+        "body/footwork reaction extract identified"
+      ],
+      "technical_status": "existing media assembled locally",
+      "temporal_edit_pattern": "preimpact_charge_to_shockwave_to_aftershock_with_body_reaction_cut",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "strong evidence for temporal decomposition and edit salvage",
+      "visual_status": "FULL_B preferred as an edit assembly; V009 reaction cut useful, combined review still bounded"
+    },
+    {
+      "action_camera_coupling": "camera/action coupling not accepted because identity failed",
+      "action_family": "continuous_combat",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "unknown",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-004",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "identity instability"
+      ],
+      "human_decision": "reject for final and identity/reference use",
+      "limitations": [
+        "not suitable as generation reference"
+      ],
+      "phase_or_batch": "K27",
+      "primary_evidence_paths": [
+        "reports/PHASE_K27_SHOT02_V010_HUMAN_REVIEW_REJECTION.md"
+      ],
+      "production_relevance": "combat",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "recorded generated route",
+      "reference_duties": [
+        "generated visual composition only; forbidden as identity reference"
+      ],
+      "result_classification": "VISUAL_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "generated video",
+      "shot_or_experiment": "SHOT-02-V010",
+      "success_elements": [
+        "loose action/composition relationship only"
+      ],
+      "technical_status": "media existed",
+      "temporal_edit_pattern": "action_and_final_relationship_only",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "failure example for identity drift under action",
+      "visual_status": "rejected for identity instability"
+    },
+    {
+      "action_camera_coupling": "reference-heavy identity protection did not prevent action/identity failure",
+      "action_family": "continuous_combat",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "unknown",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-005",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE",
+        "DIRECT_EXPERIMENT_EVIDENCE"
+      ],
+      "failure_elements": [
+        "identity drift",
+        "staged sparring",
+        "static arm-lock rhythm"
+      ],
+      "human_decision": "do not use as final or visual reference",
+      "limitations": [
+        "failure despite correct submitted references"
+      ],
+      "phase_or_batch": "K31",
+      "primary_evidence_paths": [
+        "reports/PHASE_K31_SHOT02_V011_HUMAN_REVIEW_AND_V012_DIRECTION.md"
+      ],
+      "production_relevance": "combat and multimodal reference study",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "multimodal generation",
+      "reference_duties": [
+        "locked Fenshou, Shuangji and temple references"
+      ],
+      "result_classification": "VISUAL_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "multimodal video",
+      "shot_or_experiment": "SHOT-02-V011",
+      "success_elements": [],
+      "technical_status": "submitted, queried, downloaded and validated",
+      "temporal_edit_pattern": "staged_sparring_and_pose_rhythm",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "reference presence is not reference adherence",
+      "visual_status": "rejected: identity and rhythm failed"
+    },
+    {
+      "action_camera_coupling": "identity framing improved while action softened and settled into a held pose",
+      "action_family": "continuous_combat",
+      "artifact_type": "reviewed_video_and_edits",
+      "camera_family": "portrait_drift_late",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-006",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE",
+        "REJECTED_OVERCLAIM"
+      ],
+      "failure_elements": [
+        "soft impact",
+        "single held exchange",
+        "idle final second"
+      ],
+      "human_decision": "human rejection overrides Codex usable-with-cut suggestion",
+      "limitations": [
+        "speed-up did not create missing contact beats or recoil"
+      ],
+      "phase_or_batch": "K42-K45",
+      "primary_evidence_paths": [
+        "reports/PHASE_K42_SHOT02_V012_VISUAL_REVIEW.md",
+        "reports/PHASE_K43_SHOT02_V012_HUMAN_REVIEW_AND_V013_DIRECTION.md",
+        "reports/PHASE_K45_SHOT02_V012_CUT_SPEED_VISUAL_REVIEW.md"
+      ],
+      "production_relevance": "combat and edit diagnostics",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "multimodal generation; local speed edits",
+      "reference_duties": [
+        "stronger Shuangji identity anchor plus scene/character references"
+      ],
+      "result_classification": "VISUAL_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project production derivative",
+      "route": "multimodal video plus local cut/speed tests",
+      "shot_or_experiment": "SHOT-02-V012",
+      "success_elements": [
+        "identity recovery",
+        "coherent contact relation"
+      ],
+      "technical_status": "technically valid plus edit diagnostics",
+      "temporal_edit_pattern": "tight_cut_and_1p5x_diagnostic",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "core evidence that edit speed cannot repair structural choreography",
+      "visual_status": "human rejected full clip; cuts diagnostic only"
+    },
+    {
+      "action_camera_coupling": "tight framing concentrates readable combat at the cost of wider scene context",
+      "action_family": "continuous_combat",
+      "artifact_type": "locked_edit_segment",
+      "camera_family": "close_combat_framing",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-007",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "scene context secondary"
+      ],
+      "human_decision": "locked passed SHOT-02 segment; not whole-film final",
+      "limitations": [
+        "approval is scoped to the cut"
+      ],
+      "phase_or_batch": "K50/K54",
+      "primary_evidence_paths": [
+        "reports/PHASE_K50_SHOT02_V013_VISUAL_REVIEW.md",
+        "reports/PHASE_K54_SHOT02_V013_CUT01_LOCKED_CURRENT_PASS.md"
+      ],
+      "production_relevance": "combat editing",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "multimodal generation; local edit",
+      "reference_duties": [
+        "identity and scene anchors"
+      ],
+      "result_classification": "LOCKED_HUMAN_APPROVED",
+      "rights_or_provenance_status_if_recorded": "project-local derivative; rights not separately recorded",
+      "route": "multimodal generation plus local cut",
+      "shot_or_experiment": "SHOT-02-V013 CUT01",
+      "success_elements": [
+        "strong identity",
+        "readable concentrated close combat",
+        "usable edit bridge"
+      ],
+      "technical_status": "technically valid local cut",
+      "temporal_edit_pattern": "0p00_to_2p20_concentrated_cut",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE_WITH_LOCAL_UNTRACKED_MEDIA_IDENTITY",
+      "transferability": "strong positive case for short-cut selection with explicit scope",
+      "visual_status": "human explicitly approved and locked scoped segment"
+    },
+    {
+      "action_camera_coupling": "camera supports readable realistic combat but action duration still bounded",
+      "action_family": "continuous_combat",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "close_action_camera",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-008",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "slight cutoff",
+        "could be modestly faster"
+      ],
+      "human_decision": "preserve; not final or locked",
+      "limitations": [
+        "not proof of long continuous choreography"
+      ],
+      "phase_or_batch": "K65",
+      "primary_evidence_paths": [
+        "reports/PHASE_K65_SHOT02_V014_R02_HUMAN_REVIEW_AND_LONG_FAST_COMBAT_DIRECTION.md"
+      ],
+      "production_relevance": "combat",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "multimodal generation",
+      "reference_duties": [
+        "locked character/scene identity anchors"
+      ],
+      "result_classification": "VISUALLY_ACCEPTED_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "multimodal video",
+      "shot_or_experiment": "SHOT-02-V014-R02",
+      "success_elements": [
+        "realistic combat",
+        "strong identity",
+        "usable full sequence"
+      ],
+      "technical_status": "downloaded and reviewed",
+      "temporal_edit_pattern": "full_clip_positive_with_optional_speed_up",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "positive production-oriented combat reference",
+      "visual_status": "human positive enhancement candidate"
+    },
+    {
+      "action_camera_coupling": "camera did not compensate for structurally weak choreography",
+      "action_family": "continuous_combat",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "unknown",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-009",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "slow repetitive exchange",
+        "low impact",
+        "static hand exchange",
+        "pose-out"
+      ],
+      "human_decision": "failure reference only",
+      "limitations": [
+        "structural failure, not a simple speed defect"
+      ],
+      "phase_or_batch": "K72",
+      "primary_evidence_paths": [
+        "reports/PHASE_K72_SHOT02_V015_HUMAN_REVIEW_REJECTION_AND_V016_DIRECTION.md"
+      ],
+      "production_relevance": "combat",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "generated route recorded",
+      "reference_duties": [
+        "prior positive references"
+      ],
+      "result_classification": "VISUAL_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "generated video",
+      "shot_or_experiment": "SHOT-02-V015",
+      "success_elements": [],
+      "technical_status": "media reviewed",
+      "temporal_edit_pattern": "slow_repetitive_pose_out",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "negative choreography reference",
+      "visual_status": "human rejected"
+    },
+    {
+      "action_camera_coupling": "camera/action relationship acceptable enough for insert use",
+      "action_family": "continuous_combat",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "unknown",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-010",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "lower-body duration too long"
+      ],
+      "human_decision": "local edit/insert candidate; not final",
+      "limitations": [
+        "identity only generally acceptable"
+      ],
+      "phase_or_batch": "K77",
+      "primary_evidence_paths": [
+        "reports/PHASE_K77_SHOT02_V016_HUMAN_REVIEW_AND_V017_PARTICLE_DIRECTION.md"
+      ],
+      "production_relevance": "combat",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "generated route recorded",
+      "reference_duties": [
+        "existing identity/scene references"
+      ],
+      "result_classification": "VISUALLY_ACCEPTED_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "generated video",
+      "shot_or_experiment": "SHOT-02-V016",
+      "success_elements": [
+        "more action variety",
+        "usable lower-body motion"
+      ],
+      "technical_status": "media reviewed",
+      "temporal_edit_pattern": "positive_with_long_lower_body_phase",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "positive-with-notes combat insert",
+      "visual_status": "human positive with notes"
+    },
+    {
+      "action_camera_coupling": "good camera/framing preserved readability but action remained soft",
+      "action_family": "continuous_combat",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "good_camera_and_framing",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-011",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "slow speed",
+        "weak forced displacement and recoil"
+      ],
+      "human_decision": "retain as choreography/camera reference; not final",
+      "limitations": [
+        "positive camera does not imply positive impact mechanics"
+      ],
+      "phase_or_batch": "K82",
+      "primary_evidence_paths": [
+        "reports/PHASE_K82_SHOT02_V017_HUMAN_REVIEW_AND_V018_HARD_IMPACT_DIRECTION.md"
+      ],
+      "production_relevance": "combat and camera coupling",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "generated route recorded",
+      "reference_duties": [
+        "existing identity/scene references"
+      ],
+      "result_classification": "VISUALLY_ACCEPTED_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "generated video",
+      "shot_or_experiment": "SHOT-02-V017",
+      "success_elements": [
+        "camera and framing",
+        "readable controlled exchange"
+      ],
+      "technical_status": "media reviewed",
+      "temporal_edit_pattern": "controlled_exchange_with_soft_impact",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "camera-positive/action-limited comparison case",
+      "visual_status": "human positive with notes but slow/soft"
+    },
+    {
+      "action_camera_coupling": "good framing plus already-present hard-impact motion allowed a modest speed edit to improve rhythm",
+      "action_family": "continuous_combat",
+      "artifact_type": "locked_edit_candidate",
+      "camera_family": "good_camera_and_framing",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-012",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "original slightly slow"
+      ],
+      "human_decision": "scoped locked edit candidate; V013 retained historically",
+      "limitations": [
+        "not whole-film final master"
+      ],
+      "phase_or_batch": "K87-K92",
+      "primary_evidence_paths": [
+        "reports/PHASE_K87_SHOT02_V018_HUMAN_REVIEW_STRONG_POSITIVE_WITH_SPEED_NOTE.md",
+        "reports/PHASE_K89_SHOT02_V018_SPEED_DIAGNOSTIC_HUMAN_REVIEW.md",
+        "reports/PHASE_K91_SHOT02_V018_1P18X_LOCKED_CURRENT_EDIT_CANDIDATE.md",
+        "reports/PHASE_K92_SHOT02_CURRENT_EDIT_MAP_AFTER_V018_LOCK.md"
+      ],
+      "production_relevance": "combat editing",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "generated video; local speed edit",
+      "reference_duties": [
+        "identity/scene references"
+      ],
+      "result_classification": "LOCKED_HUMAN_APPROVED",
+      "rights_or_provenance_status_if_recorded": "project-local derivative",
+      "route": "generated video plus local speed edit",
+      "shot_or_experiment": "SHOT-02-V018 and 1.18x edit",
+      "success_elements": [
+        "harder impact",
+        "good camera/framing",
+        "rhythm improved at 1.18x"
+      ],
+      "technical_status": "technically valid local edit",
+      "temporal_edit_pattern": "original_strong_positive_then_1p18x_local_speed_edit",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE_WITH_LOCAL_UNTRACKED_MEDIA_IDENTITY",
+      "transferability": "best current evidence that speed editing helps when base choreography already works",
+      "visual_status": "human strong positive; 1.18x preferred and locked as current edit candidate"
+    },
+    {
+      "action_camera_coupling": "camera/route progression made spatial continuity jumpy",
+      "action_family": "continuous_combat",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "route_progression_camera",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-013",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "abrupt spatial progression",
+        "compressed route"
+      ],
+      "human_decision": "direction reference only",
+      "limitations": [
+        "not final or locked"
+      ],
+      "phase_or_batch": "K103",
+      "primary_evidence_paths": [
+        "reports/PHASE_K103_SHOT03_V001_HUMAN_REVIEW_AND_V002_DIRECTION.md"
+      ],
+      "production_relevance": "combat and traditional-story continuity",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "generated route recorded",
+      "reference_duties": [
+        "SHOT-02 continuity context"
+      ],
+      "result_classification": "PARTIAL_SUCCESS_EDIT_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "generated video",
+      "shot_or_experiment": "SHOT-03-V001",
+      "success_elements": [
+        "acceptable early combat",
+        "architecture participates somewhat"
+      ],
+      "technical_status": "media reviewed",
+      "temporal_edit_pattern": "compressed_multi_location_progression",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "evidence against overloading one 5s shot with multiple locations",
+      "visual_status": "mixed positive; continuity fix required"
+    },
+    {
+      "action_camera_coupling": "camera movement and location progression competed with face/action stability",
+      "action_family": "continuous_combat",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "medium_or_medium_wide_requested",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-014",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "visual chaos",
+        "face instability",
+        "too many locations in 5s"
+      ],
+      "human_decision": "failure reference",
+      "limitations": [
+        "not a usable direction reference"
+      ],
+      "phase_or_batch": "K108",
+      "primary_evidence_paths": [
+        "reports/PHASE_K108_SHOT03_V002_HUMAN_REVIEW_AND_V003_DIRECTION.md"
+      ],
+      "production_relevance": "combat and continuity",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "generated route recorded",
+      "reference_duties": [
+        "character and scene continuity references"
+      ],
+      "result_classification": "VISUAL_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "generated video",
+      "shot_or_experiment": "SHOT-03-V002",
+      "success_elements": [
+        "partially fixed exterior start"
+      ],
+      "technical_status": "media reviewed",
+      "temporal_edit_pattern": "overloaded_route_progression",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "strong negative evidence for overloaded choreography",
+      "visual_status": "human rejected"
+    },
+    {
+      "action_camera_coupling": "stable framing helped faces but did not create action density",
+      "action_family": "continuous_combat",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "medium_or_medium_wide",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-015",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE",
+        "PROVISIONAL_RULE"
+      ],
+      "failure_elements": [
+        "weak slow action",
+        "incorrect damage causality",
+        "final idle second"
+      ],
+      "human_decision": "failure reference only",
+      "limitations": [
+        "speed-up cannot create missing beats"
+      ],
+      "phase_or_batch": "K113",
+      "primary_evidence_paths": [
+        "reports/PHASE_K113_SHOT03_V003_HUMAN_REVIEW_AND_PROMPT_AUDIT.md"
+      ],
+      "production_relevance": "combat and temporal grammar",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "generated route recorded",
+      "reference_duties": [
+        "character/scene references"
+      ],
+      "result_classification": "VISUAL_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "generated video",
+      "shot_or_experiment": "SHOT-03-V003",
+      "success_elements": [],
+      "technical_status": "media reviewed",
+      "temporal_edit_pattern": "setup_heavy_then_idle_tail",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "core prompt-timing failure case",
+      "visual_status": "human failure"
+    },
+    {
+      "action_camera_coupling": "stable space/camera improved identity, continuity and rhythm",
+      "action_family": "continuous_combat",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "stable_corridor_camera",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-016",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "terrain not used tactically"
+      ],
+      "human_decision": "preserve as positive reference; not final",
+      "limitations": [
+        "positive for ordinary combat, not terrain affordance"
+      ],
+      "phase_or_batch": "K121",
+      "primary_evidence_paths": [
+        "reports/PHASE_K121_SHOT03_V004_HUMAN_REVIEW_AND_V005_TERRAIN_AFFORDANCE_DIRECTION.md"
+      ],
+      "production_relevance": "combat and traditional-story production",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "generated route recorded",
+      "reference_duties": [
+        "identity/scene continuity references"
+      ],
+      "result_classification": "VISUALLY_ACCEPTED_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "generated video",
+      "shot_or_experiment": "SHOT-03-V004",
+      "success_elements": [
+        "action density",
+        "continuity",
+        "identity",
+        "stable exterior corridor"
+      ],
+      "technical_status": "media reviewed",
+      "temporal_edit_pattern": "continuous_corridor_combat",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "positive continuous-action baseline",
+      "visual_status": "human positive clean-corridor candidate"
+    },
+    {
+      "action_camera_coupling": "terrain framing remained readable while force chain softened",
+      "action_family": "continuous_combat",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "stable_corridor_camera",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-017",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "soft force",
+        "jump-like pose",
+        "low burst rhythm"
+      ],
+      "human_decision": "learning case only",
+      "limitations": [
+        "speed may not fix force-chain structure"
+      ],
+      "phase_or_batch": "K128",
+      "primary_evidence_paths": [
+        "reports/PHASE_K128_SHOT03_V005_HUMAN_REVIEW_SOFT_FORCE_AND_SPEED_DIAGNOSTIC_PLAN.md"
+      ],
+      "production_relevance": "combat and environment interaction",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "generated route recorded",
+      "reference_duties": [
+        "identity/scene references"
+      ],
+      "result_classification": "VISUAL_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "generated video",
+      "shot_or_experiment": "SHOT-03-V005",
+      "success_elements": [
+        "terrain-affordance attempt visible",
+        "scene/identity broadly usable"
+      ],
+      "technical_status": "media reviewed",
+      "temporal_edit_pattern": "terrain_setup_dilutes_contact_density",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "negative terrain/action-coupling case",
+      "visual_status": "mixed terrain attempt; human rejected as passed solution"
+    },
+    {
+      "action_camera_coupling": "camera preserved the scene but ambiguous terrain anchor broke causal readability",
+      "action_family": "continuous_combat",
+      "artifact_type": "human_and_chatgpt_reviewed_video",
+      "camera_family": "stable_corridor_camera",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-018",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE",
+        "DIRECT_EXPERIMENT_EVIDENCE"
+      ],
+      "failure_elements": [
+        "ambiguous column-base action",
+        "ordinary guard-punch",
+        "weak body consequence"
+      ],
+      "human_decision": "strategy pivot required",
+      "limitations": [
+        "bounded to precise prompt-only terrain choreography in one 5s shot"
+      ],
+      "phase_or_batch": "K138/K139",
+      "primary_evidence_paths": [
+        "reports/PHASE_K138_SHOT03_V006_HUMAN_AND_CHATGPT_REVIEW_FAILED_FORCE_CHAIN_AND_TERRAIN_ANCHOR.md",
+        "reports/PHASE_K139_SHOT03_V004_V005_V006_COMPARATIVE_STRATEGY_REVIEW.md"
+      ],
+      "production_relevance": "combat and environment interaction",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "multimodal route recorded",
+      "reference_duties": [
+        "identity/scene references; no action reference"
+      ],
+      "result_classification": "VISUAL_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "prompt-only force-chain video",
+      "shot_or_experiment": "SHOT-03-V006",
+      "success_elements": [],
+      "technical_status": "media reviewed",
+      "temporal_edit_pattern": "terrain_trigger_force_chain_failed",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "strong negative action/environment causality case",
+      "visual_status": "human and ChatGPT agree failure"
+    },
+    {
+      "action_camera_coupling": "stable camera and continuous window preserved screen direction and momentum",
+      "action_family": "continuous_combat",
+      "artifact_type": "edit_candidate",
+      "camera_family": "stable_corridor_camera",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-019",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [],
+      "human_decision": "preferred candidate; not final or locked",
+      "limitations": [
+        "selection is editorial, not a new generation success"
+      ],
+      "phase_or_batch": "K181",
+      "primary_evidence_paths": [
+        "reports/PHASE_K181_SHOT03_K180_CONTINUOUS_RECUT_REVIEW_SELECTION.md"
+      ],
+      "production_relevance": "combat editing",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "local edit only",
+      "reference_duties": [
+        "V004 generated source"
+      ],
+      "result_classification": "PARTIAL_SUCCESS_EDIT_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project-local derivative",
+      "route": "local edit",
+      "shot_or_experiment": "SHOT-03 V004 K180 recut",
+      "success_elements": [
+        "better momentum",
+        "continuity and rhythm balance"
+      ],
+      "technical_status": "existing edit file",
+      "temporal_edit_pattern": "0p60_to_3p10_continuous_recut",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE_WITH_LOCAL_UNTRACKED_MEDIA_IDENTITY",
+      "transferability": "direct edit-window evidence",
+      "visual_status": "Candidate B selected for best rhythm/continuity balance"
+    },
+    {
+      "action_camera_coupling": "framing did not make wall-contact causality readable",
+      "action_family": "pressure_guard_clash",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "unknown",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-020",
+      "evidence_classifications": [
+        "TECHNICAL_EXECUTION_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "sustained push/wrestling",
+        "wall impact and damage causality failed"
+      ],
+      "human_decision": "route failed",
+      "limitations": [
+        "technical success is not visual success"
+      ],
+      "phase_or_batch": "K190",
+      "primary_evidence_paths": [
+        "reports/PHASE_K190_SHOT04_ROUTE_A_VISUAL_REVIEW_FAILED_CORE_ACTION.md"
+      ],
+      "production_relevance": "combat and architecture interaction",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "multimodal generation",
+      "reference_duties": [
+        "identity, scene and architecture references"
+      ],
+      "result_classification": "VISUAL_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "multimodal video",
+      "shot_or_experiment": "SHOT-04 Route A",
+      "success_elements": [
+        "media existed",
+        "prompt compliance elements"
+      ],
+      "technical_status": "downloaded and technically valid",
+      "temporal_edit_pattern": "sustained_push_instead_of_wall_impact",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "central visual-failure case for wall impact",
+      "visual_status": "visual core-action failure"
+    },
+    {
+      "action_camera_coupling": "camera preserved architecture/identity only partially while core trajectory remained absent",
+      "action_family": "knockback_flyout",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "medium_wide_requested",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-021",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE",
+        "PROVISIONAL_RULE"
+      ],
+      "failure_elements": [
+        "received force",
+        "body-wall contact",
+        "damage causality",
+        "rebound",
+        "action density"
+      ],
+      "human_decision": "micro-impact route only, no primary success",
+      "limitations": [
+        "speed-up cannot repair absent causal chain"
+      ],
+      "phase_or_batch": "K220B/K221",
+      "primary_evidence_paths": [
+        "reports/PHASE_K220B_SHOT04_R02_VISUAL_REVIEW_FAILED_CORE_ACTION.md",
+        "reports/PHASE_K221_SHOT04_R02_ROUTE_DECISION_AFTER_VISUAL_FAILURE.md"
+      ],
+      "production_relevance": "combat and architecture interaction",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "multimodal generation",
+      "reference_duties": [
+        "wall architecture and character identity references"
+      ],
+      "result_classification": "VISUAL_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "multimodal video",
+      "shot_or_experiment": "SHOT-04-R02",
+      "success_elements": [
+        "small contact fragments around 0.35-1.2s"
+      ],
+      "technical_status": "downloaded and technically valid",
+      "temporal_edit_pattern": "setup_hold_tail_with_microimpact_fragments",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "negative complete-MP4 flyout/wall-impact case",
+      "visual_status": "human and ChatGPT core-action failure"
+    },
+    {
+      "action_camera_coupling": "dense exact body-wall composition coincided with repeated remote final-generation failures",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "remote_failure_chain",
+      "camera_family": "static_keyframe_composition",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-022",
+      "evidence_classifications": [
+        "TECHNICAL_EXECUTION_EVIDENCE",
+        "BOUNDED_REPOSITORY_INFERENCE"
+      ],
+      "failure_elements": [
+        "zero media",
+        "repeated remote failure"
+      ],
+      "human_decision": "route reset; no retry",
+      "limitations": [
+        "cannot infer visual quality from provider failure"
+      ],
+      "phase_or_batch": "K226F/K230F",
+      "primary_evidence_paths": [
+        "reports/PHASE_K226F_SHOT04_R02_MICRO_IMPACT_KEYFRAME_FAILURE_REVIEW_AND_ROUTE_DECISION.md",
+        "reports/PHASE_K230F_SHOT04_R02_REPEATED_IMAGE2IMAGE_FAILURE_REVIEW_AND_ROUTE_RESET.md"
+      ],
+      "production_relevance": "keyframe and route diagnostics",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Dreamina image2image 4-ref then 3-ref",
+      "reference_duties": [
+        "wall architecture plus character identity refs"
+      ],
+      "result_classification": "REMOTE_OR_TRANSPORT_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "image2image with 4 then 3 refs",
+      "shot_or_experiment": "SHOT-04 micro-impact keyframe image2image ladder",
+      "success_elements": [],
+      "technical_status": "valid submits accepted; remote final generation failed twice",
+      "temporal_edit_pattern": "single_contact_keyframe",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "provider/route brittleness evidence only",
+      "visual_status": "no visual result"
+    },
+    {
+      "action_camera_coupling": "route still failed after wall-contact wording and references were removed",
+      "action_family": "pressure_guard_clash",
+      "artifact_type": "remote_failure_chain",
+      "camera_family": "static_keyframe_composition",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-023",
+      "evidence_classifications": [
+        "TECHNICAL_EXECUTION_EVIDENCE",
+        "BOUNDED_REPOSITORY_INFERENCE"
+      ],
+      "failure_elements": [
+        "zero media",
+        "dual-character contact staging brittle in this route"
+      ],
+      "human_decision": "reset to video route",
+      "limitations": [
+        "not proof that all text2image or all close combat fails"
+      ],
+      "phase_or_batch": "K241F",
+      "primary_evidence_paths": [
+        "reports/PHASE_K241F_SHOT04_R02_NEAR_WALL_GUARD_CLASH_TEXT2IMAGE_FAILURE_REVIEW.md"
+      ],
+      "production_relevance": "keyframe route diagnostics",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Dreamina text2image 5.0/2k",
+      "reference_duties": [
+        "no active generation reference in latest attempt"
+      ],
+      "result_classification": "REMOTE_OR_TRANSPORT_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "text2image zero-ref",
+      "shot_or_experiment": "SHOT-04 prompt-only keyframe ladder",
+      "success_elements": [],
+      "technical_status": "fourth valid-submit remote final-generation failure across keyframe routes",
+      "temporal_edit_pattern": "single_keyframe",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "negative route-selection evidence",
+      "visual_status": "no visual result"
+    },
+    {
+      "action_camera_coupling": "prompt-only route gave readable setup/contact but weak receiver reaction and floor feedback",
+      "action_family": "pressure_guard_clash",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "medium_wide",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-024",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "weak sustained pressure",
+        "receiver reaction failed",
+        "wet-floor feedback failed"
+      ],
+      "human_decision": "diagnostic insert only; not primary",
+      "limitations": [
+        "tiny window only"
+      ],
+      "phase_or_batch": "K249",
+      "primary_evidence_paths": [
+        "reports/PHASE_K249_SHOT04_R02_NEAR_WALL_GUARD_CLASH_TEXT2VIDEO_VISUAL_REVIEW.md"
+      ],
+      "production_relevance": "combat editing",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Dreamina text2video",
+      "reference_duties": [
+        "no active generation reference"
+      ],
+      "result_classification": "PARTIAL_SUCCESS_EDIT_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "text2video",
+      "shot_or_experiment": "SHOT-04 near-wall guard clash text2video",
+      "success_elements": [
+        "first frame and guard relationship",
+        "small contact insert"
+      ],
+      "technical_status": "downloaded and technically valid",
+      "temporal_edit_pattern": "front_loaded_0p10_to_0p65_insert",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "prompt-only guard-clash diagnostic",
+      "visual_status": "partial motion probe"
+    },
+    {
+      "action_camera_coupling": "identity references stabilized characters but did not complete force/skid mechanics",
+      "action_family": "pressure_guard_clash",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "medium_wide",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-025",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "force transfer incomplete",
+        "skid/wet-floor response incomplete",
+        "wall-contact risk"
+      ],
+      "human_decision": "edit candidate with caveats",
+      "limitations": [
+        "not primary action success"
+      ],
+      "phase_or_batch": "K259",
+      "primary_evidence_paths": [
+        "reports/PHASE_K259_SHOT04_R02_IDENTITY_ANCHORED_MULTIMODAL2VIDEO_VISUAL_REVIEW.md"
+      ],
+      "production_relevance": "combat and multimodal reference research",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Dreamina multimodal2video",
+      "reference_duties": [
+        "two identity references"
+      ],
+      "result_classification": "PARTIAL_SUCCESS_EDIT_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "multimodal2video",
+      "shot_or_experiment": "SHOT-04 identity-anchored M2V",
+      "success_elements": [
+        "identity stability",
+        "character separation",
+        "readable contact window"
+      ],
+      "technical_status": "downloaded and technically valid",
+      "temporal_edit_pattern": "0p35_to_1p50_candidate_window",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "reference-duty tradeoff case",
+      "visual_status": "meaningful identity improvement; action partial"
+    },
+    {
+      "action_camera_coupling": "cutting could isolate contact or aftermath but not connect them causally",
+      "action_family": "knockback_flyout",
+      "artifact_type": "reviewed_edit_candidates",
+      "camera_family": "medium_wide",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-026",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE",
+        "REJECTED_OVERCLAIM"
+      ],
+      "failure_elements": [
+        "sustained push",
+        "no explosive knockback",
+        "causal gap remains"
+      ],
+      "human_decision": "two-shot route recommended",
+      "limitations": [
+        "short cut cannot prove complete-MP4 causality"
+      ],
+      "phase_or_batch": "K261",
+      "primary_evidence_paths": [
+        "reports/PHASE_K261_SHOT04_R02_IDENTITY_ANCHORED_M2V_CUT_VISUAL_REVIEW.md"
+      ],
+      "production_relevance": "combat editing",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "local edit only",
+      "reference_duties": [
+        "K259 M2V source"
+      ],
+      "result_classification": "VISUAL_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project-local derivative",
+      "route": "local cuts",
+      "shot_or_experiment": "SHOT-04 identity-anchored cut review",
+      "success_elements": [
+        "contact and reaction fragments separately visible"
+      ],
+      "technical_status": "local cuts existed",
+      "temporal_edit_pattern": "contact_cut_then_late_reaction_candidate",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "direct evidence for and against edit salvage",
+      "visual_status": "cuts rejected as primary"
+    },
+    {
+      "action_camera_coupling": "prompt-only route produced readable guard contact but lost attacker continuity during late reaction",
+      "action_family": "pressure_guard_clash",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "medium_wide",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-027",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "sustained pressure",
+        "late reaction",
+        "identity continuity weak"
+      ],
+      "human_decision": "edit candidate with strong caveats",
+      "limitations": [
+        "uploaded frame/contact-sheet review, not a fresh audit here"
+      ],
+      "phase_or_batch": "K269L",
+      "primary_evidence_paths": [
+        "reports/PHASE_K269L_SHOT04_R02A_VARIANT_C_TEXT2VIDEO_VISUAL_REVIEW.md"
+      ],
+      "production_relevance": "combat route comparison",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Dreamina text2video",
+      "reference_duties": [
+        "no active generation reference"
+      ],
+      "result_classification": "PARTIAL_SUCCESS_EDIT_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "text2video",
+      "shot_or_experiment": "SHOT-04 R02A Variant C",
+      "success_elements": [
+        "readable guard contact",
+        "character separation"
+      ],
+      "technical_status": "downloaded and technically valid",
+      "temporal_edit_pattern": "0p50_to_1p50_contact_then_late_3p5_to_4p5_reaction",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE_WITH_LOCAL_UNTRACKED_MEDIA_IDENTITY",
+      "transferability": "valuable prompt-only comparator",
+      "visual_status": "partial diagnostic, not primary"
+    },
+    {
+      "action_camera_coupling": "two-reference M2V improved identity/framing while preserving the same late, weak causal response",
+      "action_family": "pressure_guard_clash",
+      "artifact_type": "human_reviewed_video",
+      "camera_family": "strong_framing",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-028",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "prolonged pressure",
+        "late backward response",
+        "no explosive force"
+      ],
+      "human_decision": "retain as diagnostic/edit source",
+      "limitations": [
+        "reference route and identity change together versus text-only comparator"
+      ],
+      "phase_or_batch": "K269V",
+      "primary_evidence_paths": [
+        "reports/PHASE_K269V_SHOT04_R02A_VARIANT_A_SIMPLIFIED_M2V_VISUAL_REVIEW.md"
+      ],
+      "production_relevance": "combat and multimodal reference research",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Dreamina multimodal2video",
+      "reference_duties": [
+        "Fenshou and Shuangji identity references"
+      ],
+      "result_classification": "PARTIAL_SUCCESS_EDIT_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "two-reference multimodal2video",
+      "shot_or_experiment": "SHOT-04 R02A Variant A",
+      "success_elements": [
+        "identity",
+        "separation",
+        "guard contact",
+        "image quality/framing"
+      ],
+      "technical_status": "downloaded and technically valid",
+      "temporal_edit_pattern": "0p50_to_1p50_contact_plus_3p75_to_4p50_late_reaction",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE_WITH_LOCAL_UNTRACKED_MEDIA_IDENTITY",
+      "transferability": "reference/camera/action tradeoff case",
+      "visual_status": "edit candidate with caveats, not primary"
+    },
+    {
+      "action_camera_coupling": "short cut concentrates readable contact but excludes the delayed reaction",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "reviewed_edit_candidate",
+      "camera_family": "strong_framing",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-029",
+      "evidence_classifications": [
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "received force absent",
+        "no connected flyout"
+      ],
+      "human_decision": "not primary/final",
+      "limitations": [
+        "supporting insert only"
+      ],
+      "phase_or_batch": "K269Z",
+      "primary_evidence_paths": [
+        "reports/PHASE_K269Z_SHOT04_R02A_VARIANT_A_CUT_WINDOW_VISUAL_REVIEW.md"
+      ],
+      "production_relevance": "combat editing",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "local edit only",
+      "reference_duties": [
+        "K269V generated source"
+      ],
+      "result_classification": "PARTIAL_SUCCESS_EDIT_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project-local derivative",
+      "route": "local cut",
+      "shot_or_experiment": "SHOT-04 R02A K269Y contact cut",
+      "success_elements": [
+        "contact readability",
+        "partial hit-stop"
+      ],
+      "technical_status": "local cut technically present",
+      "temporal_edit_pattern": "0p50_to_1p00_contact_hitstop_cut",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE_WITH_LOCAL_UNTRACKED_MEDIA_IDENTITY",
+      "transferability": "high-value temporal/edit diagnostic",
+      "visual_status": "usable supporting contact/hit-stop with caveats"
+    },
+    {
+      "action_camera_coupling": "unknown until governed full-MP4 visual review",
+      "action_family": "knockback_flyout",
+      "artifact_type": "downloaded_video_identity",
+      "camera_family": "wide_side_planned",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-030",
+      "evidence_classifications": [
+        "TECHNICAL_EXECUTION_EVIDENCE",
+        "UNKNOWN"
+      ],
+      "failure_elements": [],
+      "human_decision": "no visual success claim",
+      "limitations": [
+        "no media decode or visual review in this audit"
+      ],
+      "phase_or_batch": "K270Q/K270R",
+      "primary_evidence_paths": [
+        "reports/PHASE_K270R_SHOT04_R02A2_B3_SAFE_REVISION_REVIEW_ARTIFACT_AUTHORIZATION_DECISION.md"
+      ],
+      "production_relevance": "combat flyout research",
+      "program_or_production": "chi_yan_tian_qiong",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Dreamina multimodal2video",
+      "reference_duties": [
+        "result-only/identity reference package as recorded"
+      ],
+      "result_classification": "TECHNICAL_SUCCESS_VISUAL_UNKNOWN",
+      "rights_or_provenance_status_if_recorded": "project production record",
+      "route": "multimodal2video",
+      "shot_or_experiment": "SHOT-04 R02A2 B3 safe flyout",
+      "success_elements": [],
+      "technical_status": "downloaded; file identity verified",
+      "temporal_edit_pattern": "result_first_flyout_after_hit",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE_WITH_LOCAL_UNTRACKED_MEDIA_IDENTITY",
+      "transferability": "priority unknown-state candidate for Lab",
+      "visual_status": "VISUAL_STATE_UNKNOWN_REQUIRES_FUTURE_LAB_OR_HUMAN_REVIEW"
+    },
+    {
+      "action_camera_coupling": "camera clause did not produce sufficient action intensity",
+      "action_family": "transition_or_other",
+      "artifact_type": "calibration_canary",
+      "camera_family": "prompt_requested_only",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-031",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "low intensity",
+        "insufficient endpoint",
+        "long static tail"
+      ],
+      "human_decision": "visual failure, not family winner",
+      "limitations": [
+        "one canary"
+      ],
+      "phase_or_batch": "P3B R2",
+      "primary_evidence_paths": [
+        "experiments/CAL-001/matrices/CAL001_fixed_experiment_matrix.md",
+        "reports/PHASE_CAL001_P3B_R2_T3A_F01_VISUAL_REVIEW_AND_REMAINING_CANARY_READINESS_RESULT.md"
+      ],
+      "production_relevance": "general action prompt research",
+      "program_or_production": "CAL-001",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance route recorded",
+      "reference_duties": [
+        "text only"
+      ],
+      "result_classification": "VISUAL_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project calibration",
+      "route": "text2video",
+      "shot_or_experiment": "F01 text2video world/style/action",
+      "success_elements": [
+        "action present and readable"
+      ],
+      "technical_status": "technically valid",
+      "temporal_edit_pattern": "slow_progression_with_static_tail",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "baseline text2video failure case",
+      "visual_status": "B_VALID_FAILURE"
+    },
+    {
+      "action_camera_coupling": "camera anchoring contributed to a low-motion result",
+      "action_family": "walking_running_entry",
+      "artifact_type": "calibration_canary",
+      "camera_family": "identity_anchor_camera",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-032",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "leg motion and foot plant weak",
+        "underpowered step"
+      ],
+      "human_decision": "family canary failure",
+      "limitations": [
+        "one canary"
+      ],
+      "phase_or_batch": "P3B R2 T4",
+      "primary_evidence_paths": [
+        "experiments/CAL-001/matrices/CAL001_fixed_experiment_matrix.md",
+        "reports/PHASE_CAL001_P3B_R2_T5C_F02_F07_VISUAL_REVIEW_RECORDING_AND_SEVEN_FAMILY_POST_CANARY_READINESS_RESULT.md"
+      ],
+      "production_relevance": "drama and acting",
+      "program_or_production": "CAL-001",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance image2video",
+      "reference_duties": [
+        "sole full-body identity reference"
+      ],
+      "result_classification": "VISUAL_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project calibration",
+      "route": "image2video",
+      "shot_or_experiment": "F02 single-identity grounded step",
+      "success_elements": [
+        "identity remained recognizable"
+      ],
+      "technical_status": "technically valid",
+      "temporal_edit_pattern": "grounded_step_underpowered",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "walking/acting negative case",
+      "visual_status": "visual failure"
+    },
+    {
+      "action_camera_coupling": "camera movement preserved frontal axis, geometry and spatial continuity",
+      "action_family": "transition_or_other",
+      "artifact_type": "calibration_canary",
+      "camera_family": "slow_push_in",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-033",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [],
+      "human_decision": "family canary visually accepted, not final",
+      "limitations": [
+        "single calibrated case"
+      ],
+      "phase_or_batch": "P3B R2 T4",
+      "primary_evidence_paths": [
+        "experiments/CAL-001/matrices/CAL001_fixed_experiment_matrix.md",
+        "experiments/CAL-001/fixtures/CAL001_fixture_registry.json",
+        "reports/PHASE_CAL001_P3B_R2_T5C_F02_F07_VISUAL_REVIEW_RECORDING_AND_SEVEN_FAMILY_POST_CANARY_READINESS_RESULT.md"
+      ],
+      "production_relevance": "camera-only/control research",
+      "program_or_production": "CAL-001",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance image2video",
+      "reference_duties": [
+        "sole scene and camera-axis anchor"
+      ],
+      "result_classification": "VISUALLY_ACCEPTED_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project calibration",
+      "route": "image2video",
+      "shot_or_experiment": "F03 camera control",
+      "success_elements": [
+        "continuous frontal push-in",
+        "center axis",
+        "geometry and symmetry stable"
+      ],
+      "technical_status": "technically valid",
+      "temporal_edit_pattern": "continuous_camera_move",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "strongest direct camera-control evidence",
+      "visual_status": "visual positive"
+    },
+    {
+      "action_camera_coupling": "rain/environment remained legible but competed with the action feedback",
+      "action_family": "walking_running_entry",
+      "artifact_type": "calibration_canary",
+      "camera_family": "fixed_scene_anchor",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-034",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "causal link and splash timing weak",
+        "rain dominates"
+      ],
+      "human_decision": "family canary failure",
+      "limitations": [
+        "one canary"
+      ],
+      "phase_or_batch": "P3B R2 T4",
+      "primary_evidence_paths": [
+        "experiments/CAL-001/matrices/CAL001_fixed_experiment_matrix.md",
+        "experiments/CAL-001/fixtures/CAL001_fixture_registry.json",
+        "reports/PHASE_CAL001_P3B_R2_T5C_F02_F07_VISUAL_REVIEW_RECORDING_AND_SEVEN_FAMILY_POST_CANARY_READINESS_RESULT.md"
+      ],
+      "production_relevance": "environment interaction",
+      "program_or_production": "CAL-001",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance image2video",
+      "reference_duties": [
+        "wet environment and subject-structure anchor"
+      ],
+      "result_classification": "VISUAL_FAILURE",
+      "rights_or_provenance_status_if_recorded": "project calibration",
+      "route": "image2video",
+      "shot_or_experiment": "F04 wet-floor environment interaction",
+      "success_elements": [
+        "movement and floor response visible"
+      ],
+      "technical_status": "technically valid",
+      "temporal_edit_pattern": "movement_with_weak_floor_causality",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "environment-action causality negative case",
+      "visual_status": "visual failure"
+    },
+    {
+      "action_camera_coupling": "fixed endpoints protected identity and scene continuity",
+      "action_family": "transition_or_other",
+      "artifact_type": "calibration_canary",
+      "camera_family": "fixed_between_keyframes",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-035",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [],
+      "human_decision": "family canary visually accepted",
+      "limitations": [
+        "not a complex action or camera-motion test"
+      ],
+      "phase_or_batch": "P3B R2 T4",
+      "primary_evidence_paths": [
+        "experiments/CAL-001/matrices/CAL001_fixed_experiment_matrix.md",
+        "experiments/CAL-001/fixtures/CAL001_fixture_registry.json",
+        "reports/PHASE_CAL001_P3B_R2_T5C_F02_F07_VISUAL_REVIEW_RECORDING_AND_SEVEN_FAMILY_POST_CANARY_READINESS_RESULT.md"
+      ],
+      "production_relevance": "transition/effects",
+      "program_or_production": "CAL-001",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance frames2video",
+      "reference_duties": [
+        "first aftershock-energy frame",
+        "last settled-recovery frame"
+      ],
+      "result_classification": "VISUALLY_ACCEPTED_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project calibration",
+      "route": "frames2video",
+      "shot_or_experiment": "F05 first/last-frame state transition",
+      "success_elements": [
+        "smooth state transition",
+        "identity and scene stable"
+      ],
+      "technical_status": "technically valid",
+      "temporal_edit_pattern": "controlled_state_transition",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "direct first/last-frame control evidence",
+      "visual_status": "visual positive"
+    },
+    {
+      "action_camera_coupling": "stable camera/layout protected left-right blocking while cinematic motion remained limited",
+      "action_family": "pressure_guard_clash",
+      "artifact_type": "calibration_canary",
+      "camera_family": "fixed_layout",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-036",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "motion/cinematic action limited"
+      ],
+      "human_decision": "visual pass with motion limitation; not final",
+      "limitations": [
+        "recovery run and single canary"
+      ],
+      "phase_or_batch": "P3D recovery",
+      "primary_evidence_paths": [
+        "experiments/CAL-001/matrices/CAL001_fixed_experiment_matrix.md",
+        "experiments/CAL-001/fixtures/CAL001_fixture_registry.json",
+        "reports/PHASE_CAL001_P3D_W01_F06_RECOVERY_VISUAL_REVIEW_RECORD_AND_TECHNICAL_COMPLETION_RESULT.md"
+      ],
+      "production_relevance": "dual-character blocking",
+      "program_or_production": "CAL-001",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance multimodal2video",
+      "reference_duties": [
+        "Fenshou identity",
+        "Shuangji identity",
+        "scene layout"
+      ],
+      "result_classification": "VISUALLY_ACCEPTED_CANDIDATE",
+      "rights_or_provenance_status_if_recorded": "project calibration",
+      "route": "multimodal2video",
+      "shot_or_experiment": "F06 dual-identity spatial blocking",
+      "success_elements": [
+        "identity",
+        "left-right blocking",
+        "depth and scene continuity"
+      ],
+      "technical_status": "technically valid",
+      "temporal_edit_pattern": "dual_identity_advance",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "positive spatial-blocking reference case",
+      "visual_status": "PASS_WITH_LIMITATIONS"
+    },
+    {
+      "action_camera_coupling": "camera/layout stable but force transfer and immediate response remained weak",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "calibration_canary_and_technical_recovery",
+      "camera_family": "fixed_layout",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-037",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "TECHNICAL_EXECUTION_EVIDENCE",
+        "UNKNOWN"
+      ],
+      "failure_elements": [
+        "contact held too long",
+        "half-step and force transfer underpowered"
+      ],
+      "human_decision": "do not transfer F07R technical success into visual pass",
+      "limitations": [
+        "F07R not visually reviewed"
+      ],
+      "phase_or_batch": "P3B and P3D F07R",
+      "primary_evidence_paths": [
+        "experiments/CAL-001/matrices/CAL001_fixed_experiment_matrix.md",
+        "experiments/CAL-001/fixtures/CAL001_fixture_registry.json",
+        "reports/PHASE_CAL001_P3B_R2_T5C_F02_F07_VISUAL_REVIEW_RECORDING_AND_SEVEN_FAMILY_POST_CANARY_READINESS_RESULT.md",
+        "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_QUERY_ONLY_RESULT.md",
+        "reports/PHASE_CAL001_P3D_W01_F07R_WEBPREREVIEW_CLI_DIAG_DOWNLOAD_ONLY_RESULT.md"
+      ],
+      "production_relevance": "impact research",
+      "program_or_production": "CAL-001",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance multimodal2video",
+      "reference_duties": [
+        "two identity refs and scene; no impact-motion reference"
+      ],
+      "result_classification": "TECHNICAL_SUCCESS_VISUAL_UNKNOWN",
+      "rights_or_provenance_status_if_recorded": "project calibration",
+      "route": "multimodal2video",
+      "shot_or_experiment": "F07/F07R force reaction",
+      "success_elements": [
+        "pressure/recovery visible in F07"
+      ],
+      "technical_status": "F07 reviewed failure; F07R downloaded technical success",
+      "temporal_edit_pattern": "pressure_and_recovery_underpowered",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "mixed direct/unknown force-reaction evidence",
+      "visual_status": "F07 visual failure; F07R visual unknown"
+    },
+    {
+      "action_camera_coupling": "fixed camera preserved readable interaction but not grounded mechanics",
+      "action_family": "push_reaction",
+      "artifact_type": "provisional_rule_extraction",
+      "camera_family": "static_medium",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-038",
+      "evidence_classifications": [
+        "PROVISIONAL_RULE",
+        "TECHNICAL_EXECUTION_EVIDENCE"
+      ],
+      "failure_elements": [
+        "intent/contact/spatial relation readable; force transfer and grounded recovery weak"
+      ],
+      "human_decision": "provisional capability boundary only",
+      "limitations": [
+        "rule explicitly says separate human visual acceptance remained required"
+      ],
+      "phase_or_batch": "PILOT_R1_BATCH_01",
+      "primary_evidence_paths": [
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.1.md"
+      ],
+      "production_relevance": "action calibration",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip text2video",
+      "reference_duties": [
+        "text-only treatment"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "text2video V3",
+      "shot_or_experiment": "Batch01 A01 PUSH_REACTION",
+      "success_elements": [
+        "action intent/contact/spatial relation"
+      ],
+      "technical_status": "three outputs technically created",
+      "temporal_edit_pattern": "5s causal-chain prompt",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "provisional prompt-design evidence",
+      "visual_status": "human visual acceptance not recorded in V0.1 rule"
+    },
+    {
+      "action_camera_coupling": "fixed camera preserved readable interaction but not grounded mechanics",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "provisional_rule_extraction",
+      "camera_family": "static_medium",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-039",
+      "evidence_classifications": [
+        "PROVISIONAL_RULE",
+        "TECHNICAL_EXECUTION_EVIDENCE"
+      ],
+      "failure_elements": [
+        "impact intent readable; proportional reaction and one-step stabilization weak"
+      ],
+      "human_decision": "provisional capability boundary only",
+      "limitations": [
+        "rule explicitly says separate human visual acceptance remained required"
+      ],
+      "phase_or_batch": "PILOT_R1_BATCH_01",
+      "primary_evidence_paths": [
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.1.md"
+      ],
+      "production_relevance": "action calibration",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip text2video",
+      "reference_duties": [
+        "text-only treatment"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "text2video V3",
+      "shot_or_experiment": "Batch01 A04 IMPACT_STEP_BACK",
+      "success_elements": [
+        "action intent/contact/spatial relation"
+      ],
+      "technical_status": "three outputs technically created",
+      "temporal_edit_pattern": "5s causal-chain prompt",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "provisional prompt-design evidence",
+      "visual_status": "human visual acceptance not recorded in V0.1 rule"
+    },
+    {
+      "action_camera_coupling": "fixed camera preserved readable interaction but not grounded mechanics",
+      "action_family": "transition_or_other",
+      "artifact_type": "provisional_rule_extraction",
+      "camera_family": "static_medium",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-040",
+      "evidence_classifications": [
+        "PROVISIONAL_RULE",
+        "TECHNICAL_EXECUTION_EVIDENCE"
+      ],
+      "failure_elements": [
+        "grip/spatial linkage readable; whole-body tension transfer weak"
+      ],
+      "human_decision": "provisional capability boundary only",
+      "limitations": [
+        "rule explicitly says separate human visual acceptance remained required"
+      ],
+      "phase_or_batch": "PILOT_R1_BATCH_01",
+      "primary_evidence_paths": [
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.1.md"
+      ],
+      "production_relevance": "action calibration",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip text2video",
+      "reference_duties": [
+        "text-only treatment"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "text2video V3",
+      "shot_or_experiment": "Batch01 A03 GRAB_PULL",
+      "success_elements": [
+        "action intent/contact/spatial relation"
+      ],
+      "technical_status": "three outputs technically created",
+      "temporal_edit_pattern": "5s causal-chain prompt",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "provisional prompt-design evidence",
+      "visual_status": "human visual acceptance not recorded in V0.1 rule"
+    },
+    {
+      "action_camera_coupling": "camera fixed across treatment",
+      "action_family": "push_reaction",
+      "artifact_type": "controlled_prompt_experiment",
+      "camera_family": "static_medium",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-041",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "physical realism not improved"
+      ],
+      "human_decision": "structured wording improves readability, not realism",
+      "limitations": [
+        "two action pairs"
+      ],
+      "phase_or_batch": "BATCH02",
+      "primary_evidence_paths": [
+        "reports/CAL002_BATCH02_HUMAN_VISUAL_REVIEW_RESULT.md"
+      ],
+      "production_relevance": "prompt/action research",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip text2video",
+      "reference_duties": [
+        "text only"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "text2video control/candidate",
+      "shot_or_experiment": "Batch02 A01 structure-only",
+      "success_elements": [
+        "clearer organization and push readability; no major physics gain"
+      ],
+      "technical_status": "4/4 generated and downloaded",
+      "temporal_edit_pattern": "section_labels_only",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "direct prompt-organization evidence",
+      "visual_status": "human control/candidate review"
+    },
+    {
+      "action_camera_coupling": "camera fixed across treatment",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "controlled_prompt_experiment",
+      "camera_family": "static_medium",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-042",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "physical realism not improved"
+      ],
+      "human_decision": "structured wording improves readability, not realism",
+      "limitations": [
+        "two action pairs"
+      ],
+      "phase_or_batch": "BATCH02",
+      "primary_evidence_paths": [
+        "reports/CAL002_BATCH02_HUMAN_VISUAL_REVIEW_RESULT.md"
+      ],
+      "production_relevance": "prompt/action research",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip text2video",
+      "reference_duties": [
+        "text only"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "text2video control/candidate",
+      "shot_or_experiment": "Batch02 A04 structure-only",
+      "success_elements": [
+        "clearer event progression; impact physics still limited"
+      ],
+      "technical_status": "4/4 generated and downloaded",
+      "temporal_edit_pattern": "section_labels_only",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "direct prompt-organization evidence",
+      "visual_status": "human control/candidate review"
+    },
+    {
+      "action_camera_coupling": "fixed camera; treatment suffix only by design",
+      "action_family": "push_reaction",
+      "artifact_type": "controlled_prompt_experiment",
+      "camera_family": "static_medium",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-043",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "no clear gain; control slightly better"
+      ],
+      "human_decision": "generic causality suffix unsupported",
+      "limitations": [
+        "fixed-variable drift limits strong attribution"
+      ],
+      "phase_or_batch": "BATCH03",
+      "primary_evidence_paths": [
+        "reports/CAL002_BATCH03_HUMAN_VISUAL_REVIEW_RESULT.md",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.3.md"
+      ],
+      "production_relevance": "prompt/action research",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip text2video",
+      "reference_duties": [
+        "text only"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "text2video control/candidate",
+      "shot_or_experiment": "Batch03 A01 generic causality suffix",
+      "success_elements": [],
+      "technical_status": "4/4 generated and downloaded",
+      "temporal_edit_pattern": "control_plus_generic_causality_suffix",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "negative prompt-layer evidence",
+      "visual_status": "human review"
+    },
+    {
+      "action_camera_coupling": "fixed camera; treatment suffix only by design",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "controlled_prompt_experiment",
+      "camera_family": "static_medium",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-044",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "candidate regressed and began in contact"
+      ],
+      "human_decision": "generic causality suffix unsupported",
+      "limitations": [
+        "fixed-variable drift limits strong attribution"
+      ],
+      "phase_or_batch": "BATCH03",
+      "primary_evidence_paths": [
+        "reports/CAL002_BATCH03_HUMAN_VISUAL_REVIEW_RESULT.md",
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/RULES/ACTION_RULE_V0.3.md"
+      ],
+      "production_relevance": "prompt/action research",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip text2video",
+      "reference_duties": [
+        "text only"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "text2video control/candidate",
+      "shot_or_experiment": "Batch03 A04 generic causality suffix",
+      "success_elements": [],
+      "technical_status": "4/4 generated and downloaded",
+      "temporal_edit_pattern": "control_plus_generic_causality_suffix",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "negative prompt-layer evidence",
+      "visual_status": "human review"
+    },
+    {
+      "action_camera_coupling": "camera fixed by design",
+      "action_family": "push_reaction",
+      "artifact_type": "compound_prompt_bundle_experiment",
+      "camera_family": "static_medium",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-045",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE",
+        "BOUNDED_REPOSITORY_INFERENCE"
+      ],
+      "failure_elements": [],
+      "human_decision": "partial positive",
+      "limitations": [
+        "compound bundle prevents component-level causal attribution"
+      ],
+      "phase_or_batch": "BATCH04",
+      "primary_evidence_paths": [
+        "reports/CAL002_BATCH04_POST_VISUAL_REVIEW_SOURCE_UPDATE_EVIDENCE_PACK.md"
+      ],
+      "production_relevance": "prompt/action research",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip text2video",
+      "reference_duties": [
+        "text only"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "text2video control/candidate",
+      "shot_or_experiment": "Batch04 A01 result-first compiler",
+      "success_elements": [
+        "candidate improved sequence, torso/shoulder displacement and one rear-foot placement"
+      ],
+      "technical_status": "4/4 generated and downloaded",
+      "temporal_edit_pattern": "result_first_action_specific_bundle",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "action-specific compiler evidence",
+      "visual_status": "human visual review"
+    },
+    {
+      "action_camera_coupling": "camera fixed by design",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "compound_prompt_bundle_experiment",
+      "camera_family": "static_medium",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-046",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE",
+        "BOUNDED_REPOSITORY_INFERENCE"
+      ],
+      "failure_elements": [
+        "candidate regressed: first-frame contact, missing onset and foot result"
+      ],
+      "human_decision": "negative",
+      "limitations": [
+        "compound bundle prevents component-level causal attribution"
+      ],
+      "phase_or_batch": "BATCH04",
+      "primary_evidence_paths": [
+        "reports/CAL002_BATCH04_POST_VISUAL_REVIEW_SOURCE_UPDATE_EVIDENCE_PACK.md"
+      ],
+      "production_relevance": "prompt/action research",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip text2video",
+      "reference_duties": [
+        "text only"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "text2video control/candidate",
+      "shot_or_experiment": "Batch04 A04 result-first compiler",
+      "success_elements": [],
+      "technical_status": "4/4 generated and downloaded",
+      "temporal_edit_pattern": "result_first_action_specific_bundle",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "action-specific compiler evidence",
+      "visual_status": "human visual review"
+    },
+    {
+      "action_camera_coupling": "camera and text-only route fixed across pair",
+      "action_family": "push_reaction",
+      "artifact_type": "frozen_blind_experiment",
+      "camera_family": "locked_medium_wide",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-047",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "candidate advantage 0/4",
+        "delayed/weak response",
+        "contact hold",
+        "tail/foot errors"
+      ],
+      "human_decision": "controls clearly better in 4/4 pairs; all primary endpoints failed",
+      "limitations": [
+        "route-specific; does not generalize provider reliability"
+      ],
+      "phase_or_batch": "BATCH05",
+      "primary_evidence_paths": [
+        "reports/CAL002_BATCH05_POST_UNBLINDING_DERIVATION_RESULT.md",
+        "reports/CAL002_BATCH05_POST_UNBLINDING_DERIVATION_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+        "reports/CAL002_BATCH05_EXPERIMENT_RESULT_ACCEPTANCE_AND_ROUTE_RESET_DECISION_V0_2_RESULT.md"
+      ],
+      "production_relevance": "action calibration",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip text2video",
+      "reference_duties": [
+        "text only"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "text2video blinded paired comparison",
+      "shot_or_experiment": "Batch05 push family",
+      "success_elements": [],
+      "technical_status": "8/8 records frozen and derived",
+      "temporal_edit_pattern": "5s compound family compiler",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "strong negative controlled experiment",
+      "visual_status": "blind human review then controlled unblinding"
+    },
+    {
+      "action_camera_coupling": "camera and text-only route fixed across pair",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "frozen_blind_experiment",
+      "camera_family": "locked_medium_wide",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-048",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "candidate advantage 0/4",
+        "delayed/weak response",
+        "contact hold",
+        "tail/foot errors"
+      ],
+      "human_decision": "controls clearly better in 4/4 pairs; all primary endpoints failed",
+      "limitations": [
+        "route-specific; does not generalize provider reliability"
+      ],
+      "phase_or_batch": "BATCH05",
+      "primary_evidence_paths": [
+        "reports/CAL002_BATCH05_POST_UNBLINDING_DERIVATION_RESULT.md",
+        "reports/CAL002_BATCH05_POST_UNBLINDING_DERIVATION_INDEPENDENT_NO_LIVE_AUDIT_RESULT.md",
+        "reports/CAL002_BATCH05_EXPERIMENT_RESULT_ACCEPTANCE_AND_ROUTE_RESET_DECISION_V0_2_RESULT.md"
+      ],
+      "production_relevance": "action calibration",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip text2video",
+      "reference_duties": [
+        "text only"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "text2video blinded paired comparison",
+      "shot_or_experiment": "Batch05 impact family",
+      "success_elements": [],
+      "technical_status": "8/8 records frozen and derived",
+      "temporal_edit_pattern": "5s compound family compiler",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "strong negative controlled experiment",
+      "visual_status": "blind human review then controlled unblinding"
+    },
+    {
+      "action_camera_coupling": "reference camera/composition was forbidden but output still showed attention conflicts",
+      "action_family": "push_reaction",
+      "artifact_type": "reference_canary",
+      "camera_family": "reference_camera_forbidden",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-049",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "reference mostly ignored; no foot result; <0.2s action and ~4.86s tail"
+      ],
+      "human_decision": "Route A not proven",
+      "limitations": [
+        "R01 reference assets themselves had material limitations"
+      ],
+      "phase_or_batch": "ROUTE_A_R01",
+      "primary_evidence_paths": [
+        "reports/CAL002_ROUTE_A_R01_FULL_MP4_VISUAL_SEMANTIC_REVIEW_INTAKE_AND_LOCK_RESULT.md"
+      ],
+      "production_relevance": "motion-reference research",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip multimodal2video",
+      "reference_duties": [
+        "motion timing/contact/footwork/recoil/release only"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "multimodal2video with project motion reference",
+      "shot_or_experiment": "Route A R01 PUSH reference",
+      "success_elements": [],
+      "technical_status": "downloaded and technically valid",
+      "temporal_edit_pattern": "complete_mp4_reference_transfer",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "reference failure boundary",
+      "visual_status": "complete-MP4 human review failure"
+    },
+    {
+      "action_camera_coupling": "reference camera/composition was forbidden but output still showed attention conflicts",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "reference_canary",
+      "camera_family": "reference_camera_forbidden",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-050",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "action family readable but reference overdominant with material marker copy and long tail"
+      ],
+      "human_decision": "Route A not proven",
+      "limitations": [
+        "R01 reference assets themselves had material limitations"
+      ],
+      "phase_or_batch": "ROUTE_A_R01",
+      "primary_evidence_paths": [
+        "reports/CAL002_ROUTE_A_R01_FULL_MP4_VISUAL_SEMANTIC_REVIEW_INTAKE_AND_LOCK_RESULT.md"
+      ],
+      "production_relevance": "motion-reference research",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip multimodal2video",
+      "reference_duties": [
+        "motion timing/contact/footwork/recoil/release only"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "multimodal2video with project motion reference",
+      "shot_or_experiment": "Route A R01 IMPACT reference",
+      "success_elements": [],
+      "technical_status": "downloaded and technically valid",
+      "temporal_edit_pattern": "complete_mp4_reference_transfer",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "reference failure boundary",
+      "visual_status": "complete-MP4 human review failure"
+    },
+    {
+      "action_camera_coupling": "camera fixed but complete duration exposed weak activity",
+      "action_family": "push_reaction",
+      "artifact_type": "matched_pair_canary",
+      "camera_family": "static_prompt_camera",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-051",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "long low-motion tail"
+      ],
+      "human_decision": "no causal attribution; production blocked",
+      "limitations": [
+        "single matched pair"
+      ],
+      "phase_or_batch": "ROUTE_A_V0_2_C01",
+      "primary_evidence_paths": [
+        "reports/CAL002_RA_V02_C01_COMPLETE_MP4_HUMAN_REVIEW_RESULT.md"
+      ],
+      "production_relevance": "motion-reference research",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0 matched command routes",
+      "reference_duties": [
+        "ACTION_REF_PUSH_02 or ACTION_REF_IMPACT_02"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project-owned reference rights recorded",
+      "route": "matched text-only/reference pair",
+      "shot_or_experiment": "Route A C01 PUSH",
+      "success_elements": [
+        "action family differentiated but duration weak and long low-motion tail"
+      ],
+      "technical_status": "downloaded and technically valid",
+      "temporal_edit_pattern": "complete_mp4_with_long_low_motion_tail",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "partial motion-reference evidence",
+      "visual_status": "mixed partial"
+    },
+    {
+      "action_camera_coupling": "camera fixed but complete duration exposed weak activity",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "matched_pair_canary",
+      "camera_family": "static_prompt_camera",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-052",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "long low-motion tail"
+      ],
+      "human_decision": "no causal attribution; production blocked",
+      "limitations": [
+        "single matched pair"
+      ],
+      "phase_or_batch": "ROUTE_A_V0_2_C01",
+      "primary_evidence_paths": [
+        "reports/CAL002_RA_V02_C01_COMPLETE_MP4_HUMAN_REVIEW_RESULT.md"
+      ],
+      "production_relevance": "motion-reference research",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0 matched command routes",
+      "reference_duties": [
+        "ACTION_REF_PUSH_02 or ACTION_REF_IMPACT_02"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project-owned reference rights recorded",
+      "route": "matched text-only/reference pair",
+      "shot_or_experiment": "Route A C01 IMPACT",
+      "success_elements": [
+        "action family differentiated but causal attribution and duration remained weak"
+      ],
+      "technical_status": "downloaded and technically valid",
+      "temporal_edit_pattern": "complete_mp4_with_long_low_motion_tail",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "partial motion-reference evidence",
+      "visual_status": "mixed partial"
+    },
+    {
+      "action_camera_coupling": "fixed camera and byte-identical prompt/nonreference fields support bounded reference comparison",
+      "action_family": "push_reaction",
+      "artifact_type": "matched_pair_canary",
+      "camera_family": "static_prompt_camera",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-053",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [],
+      "human_decision": "bounded reference-specific differentiation established",
+      "limitations": [
+        "two samples only; not generalized to production"
+      ],
+      "phase_or_batch": "ROUTE_A_V0_3_C02",
+      "primary_evidence_paths": [
+        "reports/CAL002_RA_V03_C02_COMPLETE_MP4_HUMAN_REVIEW_RESULT.md"
+      ],
+      "production_relevance": "motion-reference research",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip multimodal2video",
+      "reference_duties": [
+        "project-owned ACTION_REF_PUSH_02 or ACTION_REF_IMPACT_02"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project-owned reference rights recorded",
+      "route": "matched multimodal reference canary",
+      "shot_or_experiment": "Route A C02 PUSH",
+      "success_elements": [
+        "own score 11",
+        "cross score 6",
+        "margin +5",
+        "no sentinels"
+      ],
+      "technical_status": "downloaded and technically valid",
+      "temporal_edit_pattern": "complete_mp4_reference_specific_motion",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "strongest bounded motion-reference differentiation evidence",
+      "visual_status": "strong gate PASS"
+    },
+    {
+      "action_camera_coupling": "fixed camera and byte-identical prompt/nonreference fields support bounded reference comparison",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "matched_pair_canary",
+      "camera_family": "static_prompt_camera",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-054",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [],
+      "human_decision": "bounded reference-specific differentiation established",
+      "limitations": [
+        "two samples only; not generalized to production"
+      ],
+      "phase_or_batch": "ROUTE_A_V0_3_C02",
+      "primary_evidence_paths": [
+        "reports/CAL002_RA_V03_C02_COMPLETE_MP4_HUMAN_REVIEW_RESULT.md"
+      ],
+      "production_relevance": "motion-reference research",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip multimodal2video",
+      "reference_duties": [
+        "project-owned ACTION_REF_PUSH_02 or ACTION_REF_IMPACT_02"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project-owned reference rights recorded",
+      "route": "matched multimodal reference canary",
+      "shot_or_experiment": "Route A C02 IMPACT",
+      "success_elements": [
+        "own score 11",
+        "cross score 6",
+        "margin +5",
+        "no sentinels"
+      ],
+      "technical_status": "downloaded and technically valid",
+      "temporal_edit_pattern": "complete_mp4_reference_specific_motion",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "strongest bounded motion-reference differentiation evidence",
+      "visual_status": "strong gate PASS"
+    },
+    {
+      "action_camera_coupling": "camera is fixed by design only",
+      "action_family": "walking_running_entry",
+      "artifact_type": "experiment_design",
+      "camera_family": "static_medium",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-055",
+      "evidence_classifications": [
+        "PROVISIONAL_RULE",
+        "UNKNOWN"
+      ],
+      "failure_elements": [],
+      "human_decision": "package/design only",
+      "limitations": [
+        "not executed"
+      ],
+      "phase_or_batch": "design only",
+      "primary_evidence_paths": [
+        "experiments/CAL-002/ACTION_CALIBRATION_V1/CAL002-A05_RUN_STOP.json",
+        "reports/CAL002_ACTION_CALIBRATION_V1_NO_LIVE_PACKAGE_CREATION_RESULT.md"
+      ],
+      "production_relevance": "sports/drama movement research",
+      "program_or_production": "CAL-002",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "provider-ready=false",
+      "reference_duties": [
+        "text only planned"
+      ],
+      "result_classification": "PACKAGE_ONLY",
+      "rights_or_provenance_status_if_recorded": "project design",
+      "route": "no-live prompt versions",
+      "shot_or_experiment": "A05 RUN_STOP",
+      "success_elements": [],
+      "technical_status": "no provider operation",
+      "temporal_edit_pattern": "three_steps_plant_brake_skid_recover",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "future noncombat Lab question",
+      "visual_status": "no media and no visual review"
+    },
+    {
+      "action_camera_coupling": "camera and prompt fixed; reference family was the planned variable",
+      "action_family": "push_reaction",
+      "artifact_type": "frozen_blind_experiment",
+      "camera_family": "static_three_quarter_front",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-056",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [],
+      "human_decision": "mixed result; round closed",
+      "limitations": [
+        "PUSH and IMPACT asymmetry; cause not identified"
+      ],
+      "phase_or_batch": "R1 blind repeatability",
+      "primary_evidence_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/design_spec.json",
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/prompts/common.txt",
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/family_gate_results.json",
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/ordinal_pair_gate_results.json",
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/derived_outcome.json",
+        "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_HUMAN_FINAL_DECISION.md"
+      ],
+      "production_relevance": "reference repeatability",
+      "program_or_production": "CAL-003",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip multimodal2video; 5s",
+      "reference_duties": [
+        "ACTION_REF_PUSH_02 motion-only duty"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project-owned references",
+      "route": "multimodal2video with one fixed motion reference",
+      "shot_or_experiment": "R1 PUSH repeatability",
+      "success_elements": [
+        "3/3 sample gates PASS; own score 12 each; margins 6/8/8"
+      ],
+      "technical_status": "6/6 submitted, queried, downloaded and frozen",
+      "temporal_edit_pattern": "three_replicates_fixed_reference",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "repeatability evidence, not production approval",
+      "visual_status": "blind complete-MP4 scores and human final decision"
+    },
+    {
+      "action_camera_coupling": "camera and prompt fixed; reference family was the planned variable",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "frozen_blind_experiment",
+      "camera_family": "static_three_quarter_front",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-057",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "0/3 sample gates PASS; own scores 6/4/6; margins -6/-8/-6; outputs collapsed toward PUSH"
+      ],
+      "human_decision": "mixed result; round closed",
+      "limitations": [
+        "PUSH and IMPACT asymmetry; cause not identified"
+      ],
+      "phase_or_batch": "R1 blind repeatability",
+      "primary_evidence_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/design_spec.json",
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_DESIGN/prompts/common.txt",
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/family_gate_results.json",
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/ordinal_pair_gate_results.json",
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_UNBLINDING_AND_GATE_V0_1/derived_outcome.json",
+        "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_HUMAN_FINAL_DECISION.md"
+      ],
+      "production_relevance": "reference repeatability",
+      "program_or_production": "CAL-003",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip multimodal2video; 5s",
+      "reference_duties": [
+        "ACTION_REF_IMPACT_02 motion-only duty"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project-owned references",
+      "route": "multimodal2video with one fixed motion reference",
+      "shot_or_experiment": "R1 IMPACT repeatability",
+      "success_elements": [],
+      "technical_status": "6/6 submitted, queried, downloaded and frozen",
+      "temporal_edit_pattern": "three_replicates_fixed_reference",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "repeatability evidence, not production approval",
+      "visual_status": "blind complete-MP4 scores and human final decision"
+    },
+    {
+      "action_camera_coupling": "static camera fixed; reference-present conditions also changed command route",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "frozen_blind_experiment",
+      "camera_family": "static_three_quarter_front",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-058",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "median PUSH=6; IMPACT=5; margin=-1; gate FAIL"
+      ],
+      "human_decision": "neutral text, no reference, text2video; condition gate FAIL",
+      "limitations": [
+        "C04-C07 reference contrasts are confounded with command route"
+      ],
+      "phase_or_batch": "R1 six-condition causal isolation",
+      "primary_evidence_paths": [
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/design_spec.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/condition_matrix.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/task_manifest.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/contrast_results.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/derived_outcome.json",
+        "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_HUMAN_FINAL_DECISION.md"
+      ],
+      "production_relevance": "causal isolation",
+      "program_or_production": "CAL-004",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip; 5s",
+      "reference_duties": [
+        "none"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment and project-owned refs",
+      "route": "text2video",
+      "shot_or_experiment": "R1 condition N0",
+      "success_elements": [],
+      "technical_status": "18/18 technical success and frozen reviews",
+      "temporal_edit_pattern": "three_replicates_complete_mp4",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "condition-level action-family evidence",
+      "visual_status": "condition derived from blind review"
+    },
+    {
+      "action_camera_coupling": "static camera fixed; reference-present conditions also changed command route",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "frozen_blind_experiment",
+      "camera_family": "static_three_quarter_front",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-059",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "median PUSH=10; IMPACT=6; margin=-4; gate FAIL"
+      ],
+      "human_decision": "neutral text, IMPACT reference, multimodal2video; condition gate FAIL",
+      "limitations": [
+        "C04-C07 reference contrasts are confounded with command route"
+      ],
+      "phase_or_batch": "R1 six-condition causal isolation",
+      "primary_evidence_paths": [
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/design_spec.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/condition_matrix.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/task_manifest.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/contrast_results.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/derived_outcome.json",
+        "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_HUMAN_FINAL_DECISION.md"
+      ],
+      "production_relevance": "causal isolation",
+      "program_or_production": "CAL-004",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip; 5s",
+      "reference_duties": [
+        "IMPACT motion ref"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment and project-owned refs",
+      "route": "multimodal2video",
+      "shot_or_experiment": "R1 condition NI",
+      "success_elements": [],
+      "technical_status": "18/18 technical success and frozen reviews",
+      "temporal_edit_pattern": "three_replicates_complete_mp4",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "condition-level action-family evidence",
+      "visual_status": "condition derived from blind review"
+    },
+    {
+      "action_camera_coupling": "static camera fixed; reference-present conditions also changed command route",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "frozen_blind_experiment",
+      "camera_family": "static_three_quarter_front",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-060",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "median PUSH=11; IMPACT=4; margin=-7; gate FAIL"
+      ],
+      "human_decision": "neutral text, PUSH reference, multimodal2video; condition gate FAIL",
+      "limitations": [
+        "C04-C07 reference contrasts are confounded with command route"
+      ],
+      "phase_or_batch": "R1 six-condition causal isolation",
+      "primary_evidence_paths": [
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/design_spec.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/condition_matrix.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/task_manifest.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/contrast_results.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/derived_outcome.json",
+        "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_HUMAN_FINAL_DECISION.md"
+      ],
+      "production_relevance": "causal isolation",
+      "program_or_production": "CAL-004",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip; 5s",
+      "reference_duties": [
+        "PUSH motion ref"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment and project-owned refs",
+      "route": "multimodal2video",
+      "shot_or_experiment": "R1 condition NP",
+      "success_elements": [],
+      "technical_status": "18/18 technical success and frozen reviews",
+      "temporal_edit_pattern": "three_replicates_complete_mp4",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "condition-level action-family evidence",
+      "visual_status": "condition derived from blind review"
+    },
+    {
+      "action_camera_coupling": "static camera fixed; reference-present conditions also changed command route",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "frozen_blind_experiment",
+      "camera_family": "static_three_quarter_front",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-061",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "median PUSH=6; IMPACT=9; margin=1; gate FAIL"
+      ],
+      "human_decision": "IMPACT text, no reference, text2video; condition gate FAIL",
+      "limitations": [
+        "C04-C07 reference contrasts are confounded with command route"
+      ],
+      "phase_or_batch": "R1 six-condition causal isolation",
+      "primary_evidence_paths": [
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/design_spec.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/condition_matrix.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/task_manifest.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/contrast_results.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/derived_outcome.json",
+        "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_HUMAN_FINAL_DECISION.md"
+      ],
+      "production_relevance": "causal isolation",
+      "program_or_production": "CAL-004",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip; 5s",
+      "reference_duties": [
+        "none"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment and project-owned refs",
+      "route": "text2video",
+      "shot_or_experiment": "R1 condition I0",
+      "success_elements": [
+        "median IMPACT=9; sample passes=1"
+      ],
+      "technical_status": "18/18 technical success and frozen reviews",
+      "temporal_edit_pattern": "three_replicates_complete_mp4",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "condition-level action-family evidence",
+      "visual_status": "condition derived from blind review"
+    },
+    {
+      "action_camera_coupling": "static camera fixed; reference-present conditions also changed command route",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "frozen_blind_experiment",
+      "camera_family": "static_three_quarter_front",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-062",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "median PUSH=10; IMPACT=5; margin=-5; gate FAIL"
+      ],
+      "human_decision": "IMPACT text, IMPACT reference, multimodal2video; condition gate FAIL",
+      "limitations": [
+        "C04-C07 reference contrasts are confounded with command route"
+      ],
+      "phase_or_batch": "R1 six-condition causal isolation",
+      "primary_evidence_paths": [
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/design_spec.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/condition_matrix.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/task_manifest.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/contrast_results.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/derived_outcome.json",
+        "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_HUMAN_FINAL_DECISION.md"
+      ],
+      "production_relevance": "causal isolation",
+      "program_or_production": "CAL-004",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip; 5s",
+      "reference_duties": [
+        "IMPACT motion ref"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment and project-owned refs",
+      "route": "multimodal2video",
+      "shot_or_experiment": "R1 condition II",
+      "success_elements": [],
+      "technical_status": "18/18 technical success and frozen reviews",
+      "temporal_edit_pattern": "three_replicates_complete_mp4",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "condition-level action-family evidence",
+      "visual_status": "condition derived from blind review"
+    },
+    {
+      "action_camera_coupling": "static camera fixed; reference-present conditions also changed command route",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "frozen_blind_experiment",
+      "camera_family": "static_three_quarter_front",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-063",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "median PUSH=10; IMPACT=4; margin=-5; gate FAIL"
+      ],
+      "human_decision": "IMPACT text, PUSH reference, multimodal2video; condition gate FAIL",
+      "limitations": [
+        "C04-C07 reference contrasts are confounded with command route"
+      ],
+      "phase_or_batch": "R1 six-condition causal isolation",
+      "primary_evidence_paths": [
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/design_spec.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/condition_matrix.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/task_manifest.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/contrast_results.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/derived_outcome.json",
+        "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_HUMAN_FINAL_DECISION.md"
+      ],
+      "production_relevance": "causal isolation",
+      "program_or_production": "CAL-004",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip; 5s",
+      "reference_duties": [
+        "PUSH motion ref"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment and project-owned refs",
+      "route": "multimodal2video",
+      "shot_or_experiment": "R1 condition IP",
+      "success_elements": [],
+      "technical_status": "18/18 technical success and frozen reviews",
+      "temporal_edit_pattern": "three_replicates_complete_mp4",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "condition-level action-family evidence",
+      "visual_status": "condition derived from blind review"
+    },
+    {
+      "action_camera_coupling": "camera and route fixed; text stratum was the only treatment",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "frozen_blind_experiment",
+      "camera_family": "static_three_quarter_front",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-064",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "PUSH=[6, 1, 4]; IMPACT=[0, 5, 0]; median margin=-4"
+      ],
+      "human_decision": "neutral text baseline; condition gate FAIL",
+      "limitations": [
+        "I0R increased median IMPACT by 7 but also PUSH by 5; neither condition passed"
+      ],
+      "phase_or_batch": "text-only replication",
+      "primary_evidence_paths": [
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/design_spec.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/condition_matrix.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/task_manifest.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/primary_contrast_result.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/proposed_outcome.json",
+        "reports/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_HUMAN_FINAL_DECISION.md"
+      ],
+      "production_relevance": "prompt/action research",
+      "program_or_production": "CAL-005",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip text2video; 5s",
+      "reference_duties": [
+        "no motion reference"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "text2video",
+      "shot_or_experiment": "R1 condition N0R",
+      "success_elements": [],
+      "technical_status": "6/6 technical success and frozen reviews",
+      "temporal_edit_pattern": "three_replicates_complete_mp4",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "text-only replication evidence",
+      "visual_status": "blind human review and final decision"
+    },
+    {
+      "action_camera_coupling": "camera and route fixed; text stratum was the only treatment",
+      "action_family": "brief_impact_recoil",
+      "artifact_type": "frozen_blind_experiment",
+      "camera_family": "static_three_quarter_front",
+      "candidate_for_future_Lab_reanalysis": true,
+      "case_id": "CASE-065",
+      "evidence_classifications": [
+        "DIRECT_EXPERIMENT_EVIDENCE",
+        "HUMAN_VISUAL_REVIEW_EVIDENCE"
+      ],
+      "failure_elements": [
+        "PUSH=[1, 9, 10]; IMPACT=[7, 1, 7]; median margin=-3"
+      ],
+      "human_decision": "IMPACT-hard text; condition gate FAIL",
+      "limitations": [
+        "I0R increased median IMPACT by 7 but also PUSH by 5; neither condition passed"
+      ],
+      "phase_or_batch": "text-only replication",
+      "primary_evidence_paths": [
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/design_spec.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/condition_matrix.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/task_manifest.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/action_neutral_minimal.txt",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/prompts/impact_causal_hard.txt",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/primary_contrast_result.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/proposed_outcome.json",
+        "reports/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_HUMAN_FINAL_DECISION.md"
+      ],
+      "production_relevance": "prompt/action research",
+      "program_or_production": "CAL-005",
+      "project": "AI_VIDEO_PIPELINE",
+      "provider_model_command_route_if_recorded": "Seedance2.0_vip text2video; 5s",
+      "reference_duties": [
+        "no motion reference"
+      ],
+      "result_classification": "FROZEN_EXPERIMENT_EVIDENCE",
+      "rights_or_provenance_status_if_recorded": "project experiment",
+      "route": "text2video",
+      "shot_or_experiment": "R1 condition I0R",
+      "success_elements": [],
+      "technical_status": "6/6 technical success and frozen reviews",
+      "temporal_edit_pattern": "three_replicates_complete_mp4",
+      "tracked_untracked_status": "COMMITTED_REPOSITORY_EVIDENCE",
+      "transferability": "text-only replication evidence",
+      "visual_status": "blind human review and final decision"
+    }
+  ],
+  "deduplication_rule": "one case per materially distinct action/camera/temporal outcome; submit/query/download phases do not create duplicate cases",
+  "result_classification_counts": {
+    "FROZEN_EXPERIMENT_EVIDENCE": 27,
+    "LOCKED_HUMAN_APPROVED": 2,
+    "PACKAGE_ONLY": 1,
+    "PARTIAL_SUCCESS_EDIT_CANDIDATE": 8,
+    "REMOTE_OR_TRANSPORT_FAILURE": 2,
+    "TECHNICAL_SUCCESS_VISUAL_UNKNOWN": 2,
+    "VISUALLY_ACCEPTED_CANDIDATE": 9,
+    "VISUAL_FAILURE": 14
+  },
+  "schema_version": "AI_VIDEO_ACTION_CAMERA_TEMPORAL_CASE_INDEX_V0_1"
+}

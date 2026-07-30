@@ -1,0 +1,46 @@
+{
+  "approval_status": "APPROVED_AND_ACTIVE",
+  "authorization_activated": true,
+  "authorization_consumed": true,
+  "authorization_reusable": false,
+  "canonical_authorization": "APPROVE_AI_VIDEO_ACTION_CAMERA_TEMPORAL_REPOSITORY_EVIDENCE_AUDIT_V0_1__BIND_HEAD_495EA6659A8EB123715418E8D3A47861654AFD60__BIND_PROGRAM_AI_VIDEO_ACTION_CAMERA_TEMPORAL_REFERENCE_LAB__ACCEPT_EXACTLY_TWENTY_SEVEN_PREEXISTING_UNTRACKED_STATUS_ENTRIES_AS_READ_ONLY_AND_UNTOUCHED__AUTHORIZE_INDEPENDENT_READ_ONLY_REPOSITORY_EVIDENCE_AUDIT_ACROSS_EXISTING_PROJECT_RECORDS_FOR_ACTION_CAMERA_TEMPORAL_EDIT_AND_ACTION_CAMERA_COUPLING_PATTERNS__REQUIRE_SEPARATION_OF_COMMITTED_REPOSITORY_EVIDENCE_LOCAL_UNTRACKED_EVIDENCE_HUMAN_REVIEW_EVIDENCE_DIRECT_EXPERIMENT_EVIDENCE_BOUNDED_INFERENCE_PROVISIONAL_RULE_AND_REJECTED_OVERCLAIM__REQUIRE_SUCCESS_FAILURE_PARTIAL_SUCCESS_TECHNICAL_ONLY_VISUAL_FAILURE_FINAL_LOCK_AND_UNKNOWN_STATES_TO_REMAIN_DISTINCT__AUTHORIZE_TARGETED_TEXT_METADATA_MANIFEST_REPORT_PACKAGE_PROMPT_AND_EXISTING_ARTIFACT_IDENTITY_INSPECTION_WITH_PATH_BYTES_SHA256_ONLY_FOR_EXACT_REFERENCED_MEDIA__AUTHORIZE_EXACTLY_NINETEEN_NEW_REPORT_PATHS_ONE_COMMIT_AND_ONE_PUSH__FORBID_USE_OF_WORK_SOURCE_AUDIT_OR_ANY_FUTURE_LAB_BOOTSTRAP_AS_INPUT__NO_WEB_NO_EXTERNAL_RESEARCH_NO_DREAMINA_NO_PROVIDER_NO_CREDIT_NO_SUBMIT_NO_QUERY_NO_DOWNLOAD_NO_RETRY_NO_RESUBMIT_NO_BATCH_NO_MEDIA_DECODE_NO_VISUAL_REREVIEW_NO_RESCORING_NO_MEDIA_COPY_NO_MEDIA_IN_ZIP_NO_SOURCE_CHANGE_NO_PRODUCTION_CHANGE_NO_FINAL_MASTER_NO_LOCK__ONE_TIME_NON_REUSABLE",
+  "canonical_authorization_profile": {
+    "base64_character_count": 1772,
+    "bom": false,
+    "bytes": 1327,
+    "last_byte_hex": "45",
+    "last_character": "E",
+    "round_trip_verified": true,
+    "sha256": "17de9bc3ed47ea3743ab09e9c9d4682cb07a0584c50594d9da6323b913740b29",
+    "trailing_carriage_return": false,
+    "trailing_newline": false,
+    "trailing_space": false
+  },
+  "goal": "AI_VIDEO_ACTION_CAMERA_TEMPORAL_REPOSITORY_EVIDENCE_AUDIT_V0_1",
+  "governance_state": {
+    "final_master": false,
+    "locked": false,
+    "production_authorized": false
+  },
+  "hard_zero_boundary": {
+    "credits_consumed": 0,
+    "dreamina_calls": 0,
+    "media_decode_count": 0,
+    "provider_calls": 0,
+    "submit_query_download_retry_resubmit": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "visual_rereview_count": 0
+  },
+  "independence": {
+    "future_Lab_bootstrap_used": false,
+    "memory_used": false,
+    "web_or_external_research_used": false,
+    "work_source_audit_used": false
+  },
+  "starting_checkpoint": "495ea6659a8eb123715418e8d3a47861654afd60"
+}

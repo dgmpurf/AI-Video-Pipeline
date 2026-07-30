@@ -1,0 +1,98 @@
+{
+  "action_camera_coupling_pattern_count": 8,
+  "patterns": [
+    {
+      "bounded_inference_cases": [
+        "CASE-021",
+        "CASE-026"
+      ],
+      "direct_cases": [],
+      "finding": "no accepted direct case",
+      "relationship": "camera follows receiver trajectory",
+      "unknown_cases": [
+        "CASE-030"
+      ]
+    },
+    {
+      "bounded_inference_cases": [
+        "CASE-003"
+      ],
+      "direct_cases": [],
+      "finding": "edit concept only; not proven camera execution",
+      "relationship": "micro-shake at contact",
+      "unknown_cases": []
+    },
+    {
+      "bounded_inference_cases": [
+        "CASE-013",
+        "CASE-014"
+      ],
+      "direct_cases": [],
+      "finding": "multi-location progression and scale change can dilute action readability; bounded inference",
+      "relationship": "camera movement hides weak contact",
+      "unknown_cases": []
+    },
+    {
+      "bounded_inference_cases": [],
+      "direct_cases": [
+        "CASE-003",
+        "CASE-026",
+        "CASE-029"
+      ],
+      "finding": "direct edit evidence; separation helps readability but may expose causal discontinuity",
+      "relationship": "cut separates contact from aftermath",
+      "unknown_cases": []
+    },
+    {
+      "bounded_inference_cases": [
+        "CASE-006"
+      ],
+      "direct_cases": [
+        "CASE-002",
+        "CASE-011"
+      ],
+      "finding": "stable/good framing can coexist with underpowered action",
+      "relationship": "slow camera conflicts with fast action",
+      "unknown_cases": []
+    },
+    {
+      "bounded_inference_cases": [
+        "CASE-014"
+      ],
+      "direct_cases": [
+        "CASE-001",
+        "CASE-033",
+        "CASE-036"
+      ],
+      "finding": "frontal/stable axis is supported; overloaded route progression breaks spatial continuity",
+      "relationship": "camera axis preserves or breaks screen direction",
+      "unknown_cases": []
+    },
+    {
+      "bounded_inference_cases": [],
+      "direct_cases": [
+        "CASE-006",
+        "CASE-011",
+        "CASE-025",
+        "CASE-028"
+      ],
+      "finding": "repeated direct observation",
+      "relationship": "camera framing protects identity but weakens action readability",
+      "unknown_cases": []
+    },
+    {
+      "bounded_inference_cases": [
+        "CASE-051",
+        "CASE-052"
+      ],
+      "direct_cases": [
+        "CASE-049",
+        "CASE-050"
+      ],
+      "finding": "R01 showed overdominance/ignoring; V0.2 references explicitly forbid camera duty",
+      "relationship": "reference camera motion conflicts with action-reference duties",
+      "unknown_cases": []
+    }
+  ],
+  "schema_version": "AI_VIDEO_ACTION_CAMERA_COUPLING_MATRIX_V0_1"
+}

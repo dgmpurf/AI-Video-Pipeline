@@ -1,0 +1,174 @@
+{
+  "domains": [
+    {
+      "case_ids": [
+        "CASE-002",
+        "CASE-003",
+        "CASE-004",
+        "CASE-005",
+        "CASE-006",
+        "CASE-007",
+        "CASE-008",
+        "CASE-009",
+        "CASE-010",
+        "CASE-011",
+        "CASE-012",
+        "CASE-013",
+        "CASE-014",
+        "CASE-015",
+        "CASE-016",
+        "CASE-017",
+        "CASE-018",
+        "CASE-019",
+        "CASE-020",
+        "CASE-021",
+        "CASE-022",
+        "CASE-023",
+        "CASE-024",
+        "CASE-025",
+        "CASE-026",
+        "CASE-027",
+        "CASE-028",
+        "CASE-029",
+        "CASE-030",
+        "CASE-036",
+        "CASE-037",
+        "CASE-038",
+        "CASE-039",
+        "CASE-041",
+        "CASE-042",
+        "CASE-043",
+        "CASE-044",
+        "CASE-045",
+        "CASE-046",
+        "CASE-047",
+        "CASE-048",
+        "CASE-049",
+        "CASE-050",
+        "CASE-051",
+        "CASE-052",
+        "CASE-053",
+        "CASE-054",
+        "CASE-056",
+        "CASE-057",
+        "CASE-058",
+        "CASE-059",
+        "CASE-060",
+        "CASE-061",
+        "CASE-062",
+        "CASE-063",
+        "CASE-064",
+        "CASE-065"
+      ],
+      "current_evidence": "extensive positive, partial, negative and locked-edit evidence",
+      "domain": "combat",
+      "evidence_state": "current evidence",
+      "potential_relevance": "high"
+    },
+    {
+      "case_ids": [
+        "CASE-001",
+        "CASE-032"
+      ],
+      "current_evidence": "SHOT-01 slow push-in accepted; CAL001 grounded-step case failed",
+      "domain": "drama and acting",
+      "evidence_state": "current evidence",
+      "potential_relevance": "medium"
+    },
+    {
+      "case_ids": [],
+      "current_evidence": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "domain": "advertising and product video",
+      "evidence_state": "no evidence",
+      "potential_relevance": "high but untested"
+    },
+    {
+      "case_ids": [
+        "CASE-055"
+      ],
+      "current_evidence": "NO_CURRENT_REPOSITORY_EVIDENCE; run-stop is design-only",
+      "domain": "sports",
+      "evidence_state": "no executed evidence",
+      "potential_relevance": "medium"
+    },
+    {
+      "case_ids": [],
+      "current_evidence": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "domain": "dance/music video",
+      "evidence_state": "no evidence",
+      "potential_relevance": "camera/rhythm methods may transfer but are untested"
+    },
+    {
+      "case_ids": [],
+      "current_evidence": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "domain": "creatures/monsters",
+      "evidence_state": "no evidence",
+      "potential_relevance": "unknown"
+    },
+    {
+      "case_ids": [],
+      "current_evidence": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "domain": "vehicles/mechanical",
+      "evidence_state": "no evidence",
+      "potential_relevance": "unknown"
+    },
+    {
+      "case_ids": [
+        "CASE-001",
+        "CASE-002",
+        "CASE-003",
+        "CASE-004",
+        "CASE-005",
+        "CASE-006",
+        "CASE-007",
+        "CASE-008",
+        "CASE-009",
+        "CASE-010",
+        "CASE-011",
+        "CASE-012",
+        "CASE-013",
+        "CASE-014",
+        "CASE-015",
+        "CASE-016",
+        "CASE-017",
+        "CASE-018",
+        "CASE-019",
+        "CASE-020",
+        "CASE-021",
+        "CASE-022",
+        "CASE-023",
+        "CASE-024",
+        "CASE-025",
+        "CASE-026",
+        "CASE-027",
+        "CASE-028",
+        "CASE-029",
+        "CASE-030"
+      ],
+      "current_evidence": "Chi Yan Tian Qiong production supplies extensive scene/action/camera evidence",
+      "domain": "traditional story/myth",
+      "evidence_state": "current evidence",
+      "potential_relevance": "high"
+    },
+    {
+      "case_ids": [
+        "CASE-035"
+      ],
+      "current_evidence": "CAL001 F05 state transition positive; no transformation action family",
+      "domain": "transformation/effects",
+      "evidence_state": "partial current evidence",
+      "potential_relevance": "medium"
+    },
+    {
+      "case_ids": [
+        "CASE-001",
+        "CASE-033"
+      ],
+      "current_evidence": "SHOT-01 and CAL001 F03 slow push-ins accepted; CTRL_CAM remains planning-only",
+      "domain": "camera-only/control research",
+      "evidence_state": "current evidence plus gaps",
+      "potential_relevance": "high"
+    }
+  ],
+  "schema_version": "AI_VIDEO_PRODUCTION_RELEVANCE_MAP_V0_1"
+}

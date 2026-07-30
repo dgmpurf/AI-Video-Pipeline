@@ -1,0 +1,75 @@
+{
+  "audit_id": "AI_VIDEO_ACTION_CAMERA_TEMPORAL_REPOSITORY_EVIDENCE_AUDIT_V0_1",
+  "camera_evidence_gaps": [
+    "no accepted slow pull-out, tracking, low-angle tracking, handheld micro-shake or short-orbit outcome",
+    "CTRL_CAM exists as planning terminology, not an executed accepted reference result",
+    "camera-following-knockback remains failed or visually unknown"
+  ],
+  "case_counts": {
+    "by_result": {
+      "FROZEN_EXPERIMENT_EVIDENCE": 27,
+      "LOCKED_HUMAN_APPROVED": 2,
+      "PACKAGE_ONLY": 1,
+      "PARTIAL_SUCCESS_EDIT_CANDIDATE": 8,
+      "REMOTE_OR_TRANSPORT_FAILURE": 2,
+      "TECHNICAL_SUCCESS_VISUAL_UNKNOWN": 2,
+      "VISUALLY_ACCEPTED_CANDIDATE": 9,
+      "VISUAL_FAILURE": 14
+    },
+    "total": 65
+  },
+  "forbidden_overclaims": [
+    "technical success equals visual success",
+    "readable contact proves physical causality",
+    "one favorable sample proves repeatability",
+    "short cut proves complete-MP4 success",
+    "human-selected edit candidate is a final master"
+  ],
+  "most_important_contradictions": [
+    "CAL-002 C02 showed bounded PUSH and IMPACT differentiation, but CAL-003 IMPACT repeatability failed and CAL-004/CAL-005 condition gates all failed",
+    "identity references repeatedly improved identity while action mechanics remained weak",
+    "speed editing succeeded for V018 but failed to repair V012/V003 structural omissions"
+  ],
+  "package_identity": {
+    "member_count": 18,
+    "outer_zip_path": "reports/lab_bootstrap_inputs/AI_VIDEO_ACTION_CAMERA_TEMPORAL_REPOSITORY_EVIDENCE_V0_1/AI_VIDEO_ACTION_CAMERA_TEMPORAL_REPOSITORY_EVIDENCE_V0_1.zip",
+    "package_id": "AI_VIDEO_ACTION_CAMERA_TEMPORAL_REPOSITORY_EVIDENCE_V0_1",
+    "sha256_recorded_outside_the_cycle": true
+  },
+  "questions_for_cross_audit_synthesis": [
+    "Which claims agree with the independent Work Source audit without promoting Source text into outcome evidence?",
+    "Which Batch 001 cases isolate camera from action and edit variables?",
+    "Which unknown media should receive governed complete-MP4 review first?",
+    "How should the Lab separate command-route effects from reference-family effects?"
+  ],
+  "recommended_cases_for_Lab_Batch_001": [
+    "LAB-CAND-001",
+    "LAB-CAND-002",
+    "LAB-CAND-003",
+    "LAB-CAND-004",
+    "LAB-CAND-005",
+    "LAB-CAND-006",
+    "LAB-CAND-007",
+    "LAB-CAND-008"
+  ],
+  "repository_checkpoint": "495ea6659a8eb123715418e8d3a47861654afd60",
+  "strongest_negative_evidence": [
+    "CAL-002 Batch05 controls beat candidates 4/4 while no primary endpoint passed",
+    "CAL-003 IMPACT repeatability failed 0/3 and collapsed toward PUSH",
+    "CAL-004 all six condition gates failed; five of six median margins were negative",
+    "SHOT-04 complete wall-impact/flyout causality remained failed or unknown"
+  ],
+  "strongest_positive_evidence": [
+    "SHOT-01 and CAL-001 F03 slow push-in camera evidence",
+    "CAL-001 F05 first/last-frame state transition",
+    "scoped locked SHOT-02 V013 and V018 edit candidates",
+    "CAL-002 C02 bounded reference-specific differentiation"
+  ],
+  "target_chat": "current main AI-video Project Chat",
+  "temporal_evidence_gaps": [
+    "no accepted complete hit-stop-to-flyout chain",
+    "no controlled two-shot decomposition experiment",
+    "speed ramp lacks governed evidence",
+    "long-tail suppression is not replicated across action families"
+  ]
+}

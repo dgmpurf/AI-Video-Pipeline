@@ -1,0 +1,42 @@
+{
+  "absent_expected_top_level_areas": [
+    "prompts",
+    "packages",
+    "manifests",
+    "controls",
+    "datasets"
+  ],
+  "allowed_scope_roots_used": [
+    "productions",
+    "experiments",
+    "reports"
+  ],
+  "branch": "main",
+  "committed_file_count_at_start": 2491,
+  "excluded_paths": [
+    ".vs/**",
+    "_tmp_cal005_unblind_executor.py",
+    "reports/investor/**",
+    "external sealed/freeze ZIP contents"
+  ],
+  "head": "495ea6659a8eb123715418e8d3a47861654afd60",
+  "project_wide_coverage": {
+    "calibration_programs": [
+      "CAL-001",
+      "CAL-002",
+      "CAL-003",
+      "CAL-004",
+      "CAL-005"
+    ],
+    "production": "chi_yan_tian_qiong",
+    "production_shots": [
+      "SHOT-01",
+      "SHOT-02",
+      "SHOT-03",
+      "SHOT-04"
+    ]
+  },
+  "remote": "dgmpurf/AI-Video-Pipeline",
+  "repository": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+  "source_files_used_as_outcome_evidence": false
+}

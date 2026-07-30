@@ -1,0 +1,108 @@
+{
+  "content_member_count": 16,
+  "content_members": [
+    {
+      "bytes": 2588,
+      "path": "authorization.json",
+      "role": "authorization",
+      "sha256": "d55978f9f2c326a115670c22e754ec797a45f93ecce9caae2247d613e0654f60"
+    },
+    {
+      "bytes": 2226,
+      "path": "preflight.json",
+      "role": "preflight",
+      "sha256": "f6411100299a1ddc16d020ebc848e71ec9fb2414af0c55fd184a9c81943bb3d5"
+    },
+    {
+      "bytes": 922,
+      "path": "repository_anchor.json",
+      "role": "repository_anchor",
+      "sha256": "1442ace2f5d500b00385110363968905fc5205cdc7e3c06046b1c8bda8dc1565"
+    },
+    {
+      "bytes": 50188,
+      "path": "input_evidence_manifest.json",
+      "role": "input_evidence_manifest",
+      "sha256": "9e0e10eaf38e1e1b778369e646a975af1991ceaa5baf3f41b106a02f44d0672d"
+    },
+    {
+      "bytes": 128938,
+      "path": "success_failure_case_index.json",
+      "role": "success_failure_case_index",
+      "sha256": "ea71bd5b992ac936e13d05ee3a44ab0aa8edfa4b8c4dd4c7333eb6e53b91f14e"
+    },
+    {
+      "bytes": 15587,
+      "path": "action_family_outcome_matrix.json",
+      "role": "action_family_outcome_matrix",
+      "sha256": "2bdf98b50a4a9e36d6cc2fadb9bcc5578e3106aeb77e8539fb406d491083874d"
+    },
+    {
+      "bytes": 5433,
+      "path": "camera_pattern_evidence_matrix.json",
+      "role": "camera_pattern_evidence_matrix",
+      "sha256": "7d325213163238071b3a9f40758e8c5041936fad23c48ea23ef780d9742f072a"
+    },
+    {
+      "bytes": 4693,
+      "path": "temporal_edit_pattern_evidence_matrix.json",
+      "role": "temporal_edit_pattern_evidence_matrix",
+      "sha256": "6563f17aa8614b56343f4f1456543f6c0641a1ada0ce3a65b443ae6c9020f801"
+    },
+    {
+      "bytes": 2714,
+      "path": "action_camera_coupling_matrix.json",
+      "role": "action_camera_coupling_matrix",
+      "sha256": "bca8e28fd9bb6654c8c617c86f19b9aded6d85c8fb24d9313b14a91d633eefc2"
+    },
+    {
+      "bytes": 9729,
+      "path": "reference_ctrl_inventory.json",
+      "role": "reference_ctrl_inventory",
+      "sha256": "603aba7afbf14692c087aa773ee20713bc5f6d3e9cfca272a05d51bc82e2b06c"
+    },
+    {
+      "bytes": 2698,
+      "path": "prompt_outcome_pattern_summary.md",
+      "role": "prompt_outcome_pattern_summary",
+      "sha256": "dc7ffd8125b05e814814495cbd741c37d7a3ed951889e0674aec774c2d1581b9"
+    },
+    {
+      "bytes": 2792,
+      "path": "known_failure_modes.md",
+      "role": "known_failure_modes",
+      "sha256": "b7eb35d8d8c239c9959e54625fc47f88d61f08d32914007dea2a02f6a159737c"
+    },
+    {
+      "bytes": 22173,
+      "path": "candidate_cases_for_lab_reanalysis.json",
+      "role": "candidate_cases_for_lab_reanalysis",
+      "sha256": "36624da7d95910c353b1bb5ab5f996148b6debbcdf991633493933f4c2225655"
+    },
+    {
+      "bytes": 4410,
+      "path": "production_relevance_map.json",
+      "role": "production_relevance_map",
+      "sha256": "aa1ecc59e46cbf523c8cc4911916c6761a50a403b56d48b8ce90f39ad033cb17"
+    },
+    {
+      "bytes": 3381,
+      "path": "handoff.json",
+      "role": "handoff",
+      "sha256": "5d8fdcbea90a3dc1fad7b0b70b3bf51ad7cdc7d912253ac422224ca2d5d81b52"
+    },
+    {
+      "bytes": 1352,
+      "path": "README.md",
+      "role": "README",
+      "sha256": "0bd1cd18d231cc80ac2550a25a6f19199c1bbd20ded057984e8d10c68dcf659c"
+    }
+  ],
+  "integrity_model": {
+    "manifest_self_hash_excluded": true,
+    "model": "CYCLE_SAFE_NONSELF_HASH_BINDING",
+    "sha256sums_hash_excluded_from_manifest": true
+  },
+  "package_id": "AI_VIDEO_ACTION_CAMERA_TEMPORAL_REPOSITORY_EVIDENCE_V0_1",
+  "schema_version": "AI_VIDEO_ACTION_CAMERA_TEMPORAL_PACKAGE_MANIFEST_V0_1"
+}

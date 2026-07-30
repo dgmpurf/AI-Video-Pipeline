@@ -1,0 +1,343 @@
+{
+  "action_family_count": 13,
+  "families": [
+    {
+      "action_family": "push_reaction",
+      "contradictory_findings": "single-pair or single-shot positives frequently fail to repeat across later balanced experiments",
+      "current_evidence_level": "high but route-dependent",
+      "known_scene_route_reference_dependencies": "see associated cases; text2video/multimodal route and reference family are not interchangeable",
+      "negative_cases": [
+        "CASE-043",
+        "CASE-047",
+        "CASE-064"
+      ],
+      "partial_cases": [
+        "CASE-038",
+        "CASE-041",
+        "CASE-045",
+        "CASE-051"
+      ],
+      "positive_cases": [
+        "CASE-053",
+        "CASE-056"
+      ],
+      "production_promotion_status": "not promoted",
+      "recommended_Lab_questions": [
+        "Can a complete-MP4 test preserve onset, contact, consequence, recovery and an active ending?",
+        "Which result survives at least three controlled replicates without command-route confounding?"
+      ],
+      "repeated_findings": {
+        "negative": "contact intent is easier than force transfer, grounded recovery and a non-idle ending",
+        "positive": "readability improves when the event is bounded and the successful motion already exists"
+      },
+      "unknown_cases": []
+    },
+    {
+      "action_family": "brief_impact_recoil",
+      "contradictory_findings": "single-pair or single-shot positives frequently fail to repeat across later balanced experiments",
+      "current_evidence_level": "high contradictory evidence; mostly negative",
+      "known_scene_route_reference_dependencies": "see associated cases; text2video/multimodal route and reference family are not interchangeable",
+      "negative_cases": [
+        "CASE-044",
+        "CASE-046",
+        "CASE-048",
+        "CASE-057",
+        "CASE-058",
+        "CASE-059",
+        "CASE-060",
+        "CASE-062",
+        "CASE-063",
+        "CASE-065"
+      ],
+      "partial_cases": [
+        "CASE-039",
+        "CASE-042",
+        "CASE-029",
+        "CASE-061"
+      ],
+      "positive_cases": [
+        "CASE-054"
+      ],
+      "production_promotion_status": "not promoted",
+      "recommended_Lab_questions": [
+        "Can a complete-MP4 test preserve onset, contact, consequence, recovery and an active ending?",
+        "Which result survives at least three controlled replicates without command-route confounding?"
+      ],
+      "repeated_findings": {
+        "negative": "contact intent is easier than force transfer, grounded recovery and a non-idle ending",
+        "positive": "readability improves when the event is bounded and the successful motion already exists"
+      },
+      "unknown_cases": [
+        "CASE-037"
+      ]
+    },
+    {
+      "action_family": "pressure_guard_clash",
+      "contradictory_findings": "single-pair or single-shot positives frequently fail to repeat across later balanced experiments",
+      "current_evidence_level": "moderate-to-high",
+      "known_scene_route_reference_dependencies": "see associated cases; text2video/multimodal route and reference family are not interchangeable",
+      "negative_cases": [
+        "CASE-020"
+      ],
+      "partial_cases": [
+        "CASE-002",
+        "CASE-010",
+        "CASE-011",
+        "CASE-024",
+        "CASE-025",
+        "CASE-027",
+        "CASE-028"
+      ],
+      "positive_cases": [
+        "CASE-007",
+        "CASE-008",
+        "CASE-036"
+      ],
+      "production_promotion_status": "scoped edit candidates only",
+      "recommended_Lab_questions": [
+        "Can a complete-MP4 test preserve onset, contact, consequence, recovery and an active ending?",
+        "Which result survives at least three controlled replicates without command-route confounding?"
+      ],
+      "repeated_findings": {
+        "negative": "contact intent is easier than force transfer, grounded recovery and a non-idle ending",
+        "positive": "readability improves when the event is bounded and the successful motion already exists"
+      },
+      "unknown_cases": []
+    },
+    {
+      "action_family": "continuous_combat",
+      "contradictory_findings": "single-pair or single-shot positives frequently fail to repeat across later balanced experiments",
+      "current_evidence_level": "high",
+      "known_scene_route_reference_dependencies": "see associated cases; text2video/multimodal route and reference family are not interchangeable",
+      "negative_cases": [
+        "CASE-004",
+        "CASE-005",
+        "CASE-006",
+        "CASE-009",
+        "CASE-014",
+        "CASE-015",
+        "CASE-017",
+        "CASE-018"
+      ],
+      "partial_cases": [
+        "CASE-010",
+        "CASE-011",
+        "CASE-013",
+        "CASE-019"
+      ],
+      "positive_cases": [
+        "CASE-007",
+        "CASE-008",
+        "CASE-012",
+        "CASE-016"
+      ],
+      "production_promotion_status": "two scoped locked edits; no project final",
+      "recommended_Lab_questions": [
+        "Can a complete-MP4 test preserve onset, contact, consequence, recovery and an active ending?",
+        "Which result survives at least three controlled replicates without command-route confounding?"
+      ],
+      "repeated_findings": {
+        "negative": "contact intent is easier than force transfer, grounded recovery and a non-idle ending",
+        "positive": "readability improves when the event is bounded and the successful motion already exists"
+      },
+      "unknown_cases": []
+    },
+    {
+      "action_family": "knockback_flyout",
+      "contradictory_findings": "single-pair or single-shot positives frequently fail to repeat across later balanced experiments",
+      "current_evidence_level": "low-to-moderate; no accepted complete flyout",
+      "known_scene_route_reference_dependencies": "see associated cases; text2video/multimodal route and reference family are not interchangeable",
+      "negative_cases": [
+        "CASE-021"
+      ],
+      "partial_cases": [
+        "CASE-026",
+        "CASE-029"
+      ],
+      "positive_cases": [],
+      "production_promotion_status": "not promoted",
+      "recommended_Lab_questions": [
+        "Can a complete-MP4 test preserve onset, contact, consequence, recovery and an active ending?",
+        "Which result survives at least three controlled replicates without command-route confounding?"
+      ],
+      "repeated_findings": {
+        "negative": "contact intent is easier than force transfer, grounded recovery and a non-idle ending",
+        "positive": "readability improves when the event is bounded and the successful motion already exists"
+      },
+      "unknown_cases": [
+        "CASE-030"
+      ]
+    },
+    {
+      "action_family": "ground_slide_or_fall_aftermath",
+      "contradictory_findings": "single-pair or single-shot positives frequently fail to repeat across later balanced experiments",
+      "current_evidence_level": "low",
+      "known_scene_route_reference_dependencies": "see associated cases; text2video/multimodal route and reference family are not interchangeable",
+      "negative_cases": [
+        "CASE-021",
+        "CASE-025"
+      ],
+      "partial_cases": [],
+      "positive_cases": [],
+      "production_promotion_status": "not promoted",
+      "recommended_Lab_questions": [
+        "Can a complete-MP4 test preserve onset, contact, consequence, recovery and an active ending?",
+        "Which result survives at least three controlled replicates without command-route confounding?"
+      ],
+      "repeated_findings": {
+        "negative": "contact intent is easier than force transfer, grounded recovery and a non-idle ending",
+        "positive": "readability improves when the event is bounded and the successful motion already exists"
+      },
+      "unknown_cases": [
+        "CASE-030"
+      ]
+    },
+    {
+      "action_family": "walking_running_entry",
+      "contradictory_findings": "single-pair or single-shot positives frequently fail to repeat across later balanced experiments",
+      "current_evidence_level": "low",
+      "known_scene_route_reference_dependencies": "see associated cases; text2video/multimodal route and reference family are not interchangeable",
+      "negative_cases": [
+        "CASE-032"
+      ],
+      "partial_cases": [
+        "CASE-034"
+      ],
+      "positive_cases": [],
+      "production_promotion_status": "not promoted",
+      "recommended_Lab_questions": [
+        "Can a complete-MP4 test preserve onset, contact, consequence, recovery and an active ending?",
+        "Which result survives at least three controlled replicates without command-route confounding?"
+      ],
+      "repeated_findings": {
+        "negative": "contact intent is easier than force transfer, grounded recovery and a non-idle ending",
+        "positive": "readability improves when the event is bounded and the successful motion already exists"
+      },
+      "unknown_cases": [
+        "CASE-055"
+      ]
+    },
+    {
+      "action_family": "falling_landing_recovery",
+      "contradictory_findings": "single-pair or single-shot positives frequently fail to repeat across later balanced experiments",
+      "current_evidence_level": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "known_scene_route_reference_dependencies": "see associated cases; text2video/multimodal route and reference family are not interchangeable",
+      "negative_cases": [],
+      "partial_cases": [],
+      "positive_cases": [],
+      "production_promotion_status": "not promoted",
+      "recommended_Lab_questions": [
+        "Can a complete-MP4 test preserve onset, contact, consequence, recovery and an active ending?",
+        "Which result survives at least three controlled replicates without command-route confounding?"
+      ],
+      "repeated_findings": {
+        "negative": "contact intent is easier than force transfer, grounded recovery and a non-idle ending",
+        "positive": "readability improves when the event is bounded and the successful motion already exists"
+      },
+      "unknown_cases": []
+    },
+    {
+      "action_family": "transformation",
+      "contradictory_findings": "single-pair or single-shot positives frequently fail to repeat across later balanced experiments",
+      "current_evidence_level": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "known_scene_route_reference_dependencies": "see associated cases; text2video/multimodal route and reference family are not interchangeable",
+      "negative_cases": [],
+      "partial_cases": [],
+      "positive_cases": [],
+      "production_promotion_status": "not promoted",
+      "recommended_Lab_questions": [
+        "Can a complete-MP4 test preserve onset, contact, consequence, recovery and an active ending?",
+        "Which result survives at least three controlled replicates without command-route confounding?"
+      ],
+      "repeated_findings": {
+        "negative": "contact intent is easier than force transfer, grounded recovery and a non-idle ending",
+        "positive": "readability improves when the event is bounded and the successful motion already exists"
+      },
+      "unknown_cases": []
+    },
+    {
+      "action_family": "product_or_prop_interaction",
+      "contradictory_findings": "single-pair or single-shot positives frequently fail to repeat across later balanced experiments",
+      "current_evidence_level": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "known_scene_route_reference_dependencies": "see associated cases; text2video/multimodal route and reference family are not interchangeable",
+      "negative_cases": [],
+      "partial_cases": [],
+      "positive_cases": [],
+      "production_promotion_status": "not promoted",
+      "recommended_Lab_questions": [
+        "Can a complete-MP4 test preserve onset, contact, consequence, recovery and an active ending?",
+        "Which result survives at least three controlled replicates without command-route confounding?"
+      ],
+      "repeated_findings": {
+        "negative": "contact intent is easier than force transfer, grounded recovery and a non-idle ending",
+        "positive": "readability improves when the event is bounded and the successful motion already exists"
+      },
+      "unknown_cases": []
+    },
+    {
+      "action_family": "sports_motion",
+      "contradictory_findings": "single-pair or single-shot positives frequently fail to repeat across later balanced experiments",
+      "current_evidence_level": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "known_scene_route_reference_dependencies": "see associated cases; text2video/multimodal route and reference family are not interchangeable",
+      "negative_cases": [],
+      "partial_cases": [],
+      "positive_cases": [],
+      "production_promotion_status": "not promoted",
+      "recommended_Lab_questions": [
+        "Can a complete-MP4 test preserve onset, contact, consequence, recovery and an active ending?",
+        "Which result survives at least three controlled replicates without command-route confounding?"
+      ],
+      "repeated_findings": {
+        "negative": "contact intent is easier than force transfer, grounded recovery and a non-idle ending",
+        "positive": "readability improves when the event is bounded and the successful motion already exists"
+      },
+      "unknown_cases": []
+    },
+    {
+      "action_family": "creature_or_large_scale_motion",
+      "contradictory_findings": "single-pair or single-shot positives frequently fail to repeat across later balanced experiments",
+      "current_evidence_level": "NO_CURRENT_REPOSITORY_EVIDENCE",
+      "known_scene_route_reference_dependencies": "see associated cases; text2video/multimodal route and reference family are not interchangeable",
+      "negative_cases": [],
+      "partial_cases": [],
+      "positive_cases": [],
+      "production_promotion_status": "not promoted",
+      "recommended_Lab_questions": [
+        "Can a complete-MP4 test preserve onset, contact, consequence, recovery and an active ending?",
+        "Which result survives at least three controlled replicates without command-route confounding?"
+      ],
+      "repeated_findings": {
+        "negative": "contact intent is easier than force transfer, grounded recovery and a non-idle ending",
+        "positive": "readability improves when the event is bounded and the successful motion already exists"
+      },
+      "unknown_cases": []
+    },
+    {
+      "action_family": "transition_or_other",
+      "contradictory_findings": "single-pair or single-shot positives frequently fail to repeat across later balanced experiments",
+      "current_evidence_level": "moderate",
+      "known_scene_route_reference_dependencies": "see associated cases; text2video/multimodal route and reference family are not interchangeable",
+      "negative_cases": [
+        "CASE-031"
+      ],
+      "partial_cases": [
+        "CASE-040"
+      ],
+      "positive_cases": [
+        "CASE-001",
+        "CASE-035"
+      ],
+      "production_promotion_status": "camera/state-transition evidence only",
+      "recommended_Lab_questions": [
+        "Can a complete-MP4 test preserve onset, contact, consequence, recovery and an active ending?",
+        "Which result survives at least three controlled replicates without command-route confounding?"
+      ],
+      "repeated_findings": {
+        "negative": "contact intent is easier than force transfer, grounded recovery and a non-idle ending",
+        "positive": "readability improves when the event is bounded and the successful motion already exists"
+      },
+      "unknown_cases": []
+    }
+  ],
+  "schema_version": "AI_VIDEO_ACTION_FAMILY_OUTCOME_MATRIX_V0_1"
+}
