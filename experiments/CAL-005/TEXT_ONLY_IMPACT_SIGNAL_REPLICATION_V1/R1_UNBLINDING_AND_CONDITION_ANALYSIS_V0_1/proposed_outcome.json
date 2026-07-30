@@ -1,0 +1,20 @@
+{
+  "automatic_decision": false,
+  "causal_certainty_claimed": false,
+  "condition_gate_pair": {
+    "I0R": "FAIL",
+    "N0R": "FAIL"
+  },
+  "directional_partial_signal": false,
+  "directional_partial_signal_does_not_override_gate_classification": true,
+  "final_master": false,
+  "fixed_task_completion": false,
+  "generalized_provider_reliability_claimed": false,
+  "human_final_decision_required": true,
+  "locked": false,
+  "next_phase": "CAL005_R1_UNBLINDED_CONDITION_RESULT_AND_HUMAN_FINAL_DECISION",
+  "production_approved": false,
+  "proposed_outcome": "CAL005_R1_TEXT_ONLY_IMPACT_SIGNAL_NOT_CONDITION_GATE_REPLICATED",
+  "schema_version": "CAL005_R1_PROPOSED_OUTCOME_V0_1",
+  "statistical_significance_claimed": false
+}

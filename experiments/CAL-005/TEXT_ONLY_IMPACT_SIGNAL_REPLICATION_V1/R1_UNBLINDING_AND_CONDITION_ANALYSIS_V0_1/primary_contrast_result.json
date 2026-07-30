@@ -1,0 +1,28 @@
+{
+  "contrast_count": 1,
+  "result": {
+    "changed_design_factor": "prompt_stratum",
+    "classification": "PRIMARY_WITHIN_COMMAND_CONTRAST",
+    "comparison": "I0R versus N0R",
+    "condition_gate_pair": {
+      "I0R": "FAIL",
+      "N0R": "FAIL"
+    },
+    "contrast_id": "CAL005-C01",
+    "left_condition": "I0R",
+    "left_minus_right": {
+      "median_impact_score_delta": 7,
+      "median_margin_delta": 1,
+      "median_push_score_delta": 5,
+      "sample_pass_count_delta": 0
+    },
+    "provider_wide_reliability_claimed": false,
+    "right_condition": "N0R",
+    "same_command_route": true,
+    "same_model_run_design_as_committed": true,
+    "same_reference_stratum": true,
+    "statistical_significance_calculated": false,
+    "universal_prompt_causality_claimed": false
+  },
+  "schema_version": "CAL005_R1_PRIMARY_CONTRAST_RESULT_V0_1"
+}

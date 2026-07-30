@@ -1,0 +1,126 @@
+{
+  "condition_gate_count": 2,
+  "condition_order": [
+    "N0R",
+    "I0R"
+  ],
+  "results": [
+    {
+      "aliases": [
+        "B03",
+        "B04",
+        "B05"
+      ],
+      "condition_gate": "FAIL",
+      "condition_id": "N0R",
+      "failed_predicates": [
+        "sample_pass_count_at_least_2",
+        "median_impact_score_at_least_8",
+        "median_margin_at_least_3"
+      ],
+      "governed_rights_and_provenance_validation": true,
+      "impact_minus_push_margins": [
+        -6,
+        4,
+        -4
+      ],
+      "impact_scores": [
+        0,
+        5,
+        0
+      ],
+      "material_sentinel_counts": [
+        0,
+        0,
+        0
+      ],
+      "median_impact_score": 0,
+      "median_margin": -4,
+      "median_push_score": 4,
+      "predicates": {
+        "all_material_sentinel_counts_zero": true,
+        "governed_rights_and_provenance_validation_true": true,
+        "median_impact_score_at_least_8": false,
+        "median_margin_at_least_3": false,
+        "sample_count_equals_3": true,
+        "sample_pass_count_at_least_2": false
+      },
+      "push_scores": [
+        6,
+        1,
+        4
+      ],
+      "replicates": [
+        1,
+        2,
+        3
+      ],
+      "sample_count": 3,
+      "sample_pass_count": 0,
+      "task_ids": [
+        "N0R-01",
+        "N0R-02",
+        "N0R-03"
+      ]
+    },
+    {
+      "aliases": [
+        "B02",
+        "B01",
+        "B06"
+      ],
+      "condition_gate": "FAIL",
+      "condition_id": "I0R",
+      "failed_predicates": [
+        "sample_pass_count_at_least_2",
+        "median_impact_score_at_least_8",
+        "median_margin_at_least_3"
+      ],
+      "governed_rights_and_provenance_validation": true,
+      "impact_minus_push_margins": [
+        6,
+        -8,
+        -3
+      ],
+      "impact_scores": [
+        7,
+        1,
+        7
+      ],
+      "material_sentinel_counts": [
+        0,
+        0,
+        0
+      ],
+      "median_impact_score": 7,
+      "median_margin": -3,
+      "median_push_score": 9,
+      "predicates": {
+        "all_material_sentinel_counts_zero": true,
+        "governed_rights_and_provenance_validation_true": true,
+        "median_impact_score_at_least_8": false,
+        "median_margin_at_least_3": false,
+        "sample_count_equals_3": true,
+        "sample_pass_count_at_least_2": false
+      },
+      "push_scores": [
+        1,
+        9,
+        10
+      ],
+      "replicates": [
+        1,
+        2,
+        3
+      ],
+      "sample_count": 3,
+      "sample_pass_count": 0,
+      "task_ids": [
+        "I0R-01",
+        "I0R-02",
+        "I0R-03"
+      ]
+    }
+  ],
+  "schema_version": "CAL005_R1_CONDITION_GATE_RESULTS_V0_1"
+}

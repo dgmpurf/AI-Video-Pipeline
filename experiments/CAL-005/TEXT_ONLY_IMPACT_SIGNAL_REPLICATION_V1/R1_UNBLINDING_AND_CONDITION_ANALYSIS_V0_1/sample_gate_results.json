@@ -1,0 +1,146 @@
+{
+  "pass_count": 0,
+  "results": [
+    {
+      "alias": "B03",
+      "condition_id": "N0R",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3",
+        "action_family_failure_false"
+      ],
+      "impact_score": 0,
+      "impact_specificity_margin": -6,
+      "predicates": {
+        "action_family_failure_false": false,
+        "complete_mp4_reviewed_true": true,
+        "complete_mp4_viewable_through_end_true": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4_true": true
+      },
+      "push_score": 6,
+      "replicate": 1,
+      "sample_gate": "FAIL",
+      "task_id": "N0R-01"
+    },
+    {
+      "alias": "B04",
+      "condition_id": "N0R",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "action_family_failure_false"
+      ],
+      "impact_score": 5,
+      "impact_specificity_margin": 4,
+      "predicates": {
+        "action_family_failure_false": false,
+        "complete_mp4_reviewed_true": true,
+        "complete_mp4_viewable_through_end_true": true,
+        "impact_minus_push_margin_at_least_3": true,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4_true": true
+      },
+      "push_score": 1,
+      "replicate": 2,
+      "sample_gate": "FAIL",
+      "task_id": "N0R-02"
+    },
+    {
+      "alias": "B05",
+      "condition_id": "N0R",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3",
+        "action_family_failure_false"
+      ],
+      "impact_score": 0,
+      "impact_specificity_margin": -4,
+      "predicates": {
+        "action_family_failure_false": false,
+        "complete_mp4_reviewed_true": true,
+        "complete_mp4_viewable_through_end_true": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4_true": true
+      },
+      "push_score": 4,
+      "replicate": 3,
+      "sample_gate": "FAIL",
+      "task_id": "N0R-03"
+    },
+    {
+      "alias": "B02",
+      "condition_id": "I0R",
+      "failed_predicates": [
+        "impact_score_at_least_8"
+      ],
+      "impact_score": 7,
+      "impact_specificity_margin": 6,
+      "predicates": {
+        "action_family_failure_false": true,
+        "complete_mp4_reviewed_true": true,
+        "complete_mp4_viewable_through_end_true": true,
+        "impact_minus_push_margin_at_least_3": true,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4_true": true
+      },
+      "push_score": 1,
+      "replicate": 1,
+      "sample_gate": "FAIL",
+      "task_id": "I0R-01"
+    },
+    {
+      "alias": "B01",
+      "condition_id": "I0R",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3"
+      ],
+      "impact_score": 1,
+      "impact_specificity_margin": -8,
+      "predicates": {
+        "action_family_failure_false": true,
+        "complete_mp4_reviewed_true": true,
+        "complete_mp4_viewable_through_end_true": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4_true": true
+      },
+      "push_score": 9,
+      "replicate": 2,
+      "sample_gate": "FAIL",
+      "task_id": "I0R-02"
+    },
+    {
+      "alias": "B06",
+      "condition_id": "I0R",
+      "failed_predicates": [
+        "impact_score_at_least_8",
+        "impact_minus_push_margin_at_least_3"
+      ],
+      "impact_score": 7,
+      "impact_specificity_margin": -3,
+      "predicates": {
+        "action_family_failure_false": true,
+        "complete_mp4_reviewed_true": true,
+        "complete_mp4_viewable_through_end_true": true,
+        "impact_minus_push_margin_at_least_3": false,
+        "impact_score_at_least_8": false,
+        "material_sentinel_count_zero": true,
+        "technically_valid_complete_mp4_true": true
+      },
+      "push_score": 10,
+      "replicate": 3,
+      "sample_gate": "FAIL",
+      "task_id": "I0R-03"
+    }
+  ],
+  "sample_gate_count": 6,
+  "schema_version": "CAL005_R1_SAMPLE_GATE_RESULTS_V0_1"
+}

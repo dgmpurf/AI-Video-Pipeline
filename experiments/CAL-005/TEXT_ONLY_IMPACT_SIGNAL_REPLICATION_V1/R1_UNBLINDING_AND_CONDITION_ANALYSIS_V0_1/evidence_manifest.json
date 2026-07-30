@@ -1,49 +1,189 @@
 {
+  "attempt_accounting": {
+    "cumulative_preactivation_correction_count": 5,
+    "cumulative_sealed_member_read_count": 12,
+    "cumulative_sealed_zip_open_count": 2,
+    "prior_preactivation_correction_count": 3,
+    "prior_sealed_member_read_count": 6,
+    "prior_sealed_zip_open_count": 1,
+    "recovery_postactivation_correction_count": 0,
+    "recovery_preactivation_correction_count": 2,
+    "recovery_sealed_member_read_count": 6,
+    "recovery_sealed_zip_open_count": 1
+  },
+  "external_zip_outer_identities": [
+    {
+      "bytes": 23149,
+      "path": "G:/AICODING/AI_VIDEO/_review_freeze/CAL005_R1_BLIND_REVIEW_FREEZE_V0_1.zip",
+      "regular_file": true,
+      "sha256": "69190ec33f20125ac0f3e806cd2a9df82ef57965d3160c040ccf0e1da390c918"
+    },
+    {
+      "bytes": 5556,
+      "path": "G:/AICODING/AI_VIDEO/_sealed/CAL005_R1_BLIND_MAPPING_V0_1/CAL005_R1_BLIND_MAPPING_DO_NOT_OPEN_UNTIL_REVIEW_FREEZE_V0_1.zip",
+      "regular_file": true,
+      "sha256": "63361ae4f965c029d416cdb83927b997f9663519e0107902a53b378146b2d0d4"
+    }
+  ],
   "nonself_output_bindings": [
+    {
+      "bytes": 6820,
+      "git_blob": "edb1fa8c9ed2a29e1b80238ca2525de1fdd01e2b",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/authorization.json",
+      "role": "schema_recovery_output",
+      "sha256": "787c7b068a7b8f95d916c0beaf54364cb28ba923e5f6639f1b9bf8feb6f8ce63"
+    },
+    {
+      "bytes": 645,
+      "git_blob": "256984ea80f155334141afa1feea2d19ec281507",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/commitment_verification.json",
+      "role": "schema_recovery_output",
+      "sha256": "f21b6ab626d108215f6dbc39d7d7adea57b9c92f63784edeed578918929e88d3"
+    },
+    {
+      "bytes": 2674,
+      "git_blob": "70dc2303c91214dcc682c9014c0963f686a958cf",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+      "role": "schema_recovery_output",
+      "sha256": "4e89ed3c5448dabc36a856e2f2272d996353bac0bff008fd659b9528f44677e9"
+    },
+    {
+      "bytes": 1795,
+      "git_blob": "c58fbdb68a58dd2e73441bd99905a0c88f966b51",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/execution.json",
+      "role": "schema_recovery_output",
+      "sha256": "a0584be4f8684ee22fcd364404d47da0eeccfd17f76c820b1402827a0b87153e"
+    },
+    {
+      "bytes": 3278,
+      "git_blob": "e3ba7e06c1f4173d593c732732249257a8e90d2f",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/freeze_package_validation.json",
+      "role": "schema_recovery_output",
+      "sha256": "a34d5bcc4068ee5a110a71f4dd8bff0c502b55e0c1d314ed794d3e814badd7d7"
+    },
+    {
+      "bytes": 13160,
+      "git_blob": "849588bfd09e54474f1ec78999d8167f4dfdc93e",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/preflight.json",
+      "role": "schema_recovery_output",
+      "sha256": "56602dd8f42f44433ba21b47170502ddc92628d71f2032840e4036cd1fa6e7fb"
+    },
+    {
+      "bytes": 852,
+      "git_blob": "5f0f8de3b9380a16eda407edf84015ffd3412bea",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/primary_contrast_result.json",
+      "role": "schema_recovery_output",
+      "sha256": "c7784b7d7c8def3b07132a51db7b01b3d0c2690885870ecd8779f78f81bdf866"
+    },
+    {
+      "bytes": 729,
+      "git_blob": "27ee4ebd108ac0f4a40add76c0cbb9ceb612cfb8",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/proposed_outcome.json",
+      "role": "schema_recovery_output",
+      "sha256": "039a736bddaa224398c48e5720d12dd2ba576c1aef40a15eefae357327f3c7f8"
+    },
+    {
+      "bytes": 4450,
+      "git_blob": "e97ca25910ae1bbcfc3c9be1a1fe060628d0c3e8",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/sample_gate_results.json",
+      "role": "schema_recovery_output",
+      "sha256": "5341cdb99f4ed0ca62e78982ec066e67d6ecf4bb535415eed76cb3066092fbb8"
+    },
+    {
+      "bytes": 3090,
+      "git_blob": "6623c684ec1dfcb04e5305b048a3b94bf1624534",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/sealed_package_validation.json",
+      "role": "schema_recovery_output",
+      "sha256": "9a3569b59a892cf8595f3798b4d76b03c55128b094cb238a0e484a5c42d46829"
+    },
+    {
+      "bytes": 3462,
+      "git_blob": "9a73e05f6499a0b56de9ace18ec14cd9a10a7ee9",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/unblinded_mapping.json",
+      "role": "schema_recovery_output",
+      "sha256": "035c31c75e15d2c5812f04edaca5a736c282d532b74b6c5c3741edbe79481aa6"
+    },
+    {
+      "bytes": 4145,
+      "git_blob": "8cea98c3bf268495f52d58342cf3fa98494abb0b",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/unblinded_sample_scores.json",
+      "role": "schema_recovery_output",
+      "sha256": "1f31ea4972a350b28f89b711dc101f46b6f0d85965b044b45b364cf4fafa3de1"
+    },
+    {
+      "bytes": 4590,
+      "git_blob": "05772144f0463f1b1debb7f0ebf3ec92080540a1",
+      "path": "reports/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_UNBLINDING_AND_CONDITION_ANALYSIS_RESULT.md",
+      "role": "schema_recovery_output",
+      "sha256": "a0bd755bbf1a6a365ac203865fa2db7b0fccf199209f4b81a87a44018a09c83d"
+    }
+  ],
+  "nonself_output_count": 13,
+  "prior_block_commit": "557e1ca35e0239a1f72dfb3faa08f4b2b265baa6",
+  "prior_blocked_output_bindings": [
     {
       "bytes": 4082,
       "git_blob": "2ca5db1271fe4dfd8e6179bbb4d3f103e2d7e418",
       "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/authorization.json",
-      "schema_role": "sanitized_blocked_output",
+      "role": "prior_blocked_output_at_recovery_checkpoint",
       "sha256": "0ff226a146cc764c1c25e5d52c793f56d64125609c85ccbd29fc863ae2b8f933"
+    },
+    {
+      "bytes": 2810,
+      "git_blob": "e5dfd149578b3da5ef2dfa72bf946ee5d0aa8983",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/evidence_manifest.json",
+      "role": "prior_blocked_output_at_recovery_checkpoint",
+      "sha256": "832977d18114a5374e91e71b75cb9abea46313fc5bd6e64e201e52549ccdab5f"
     },
     {
       "bytes": 847,
       "git_blob": "ff702fccc24b02adb2ea8282b4211032395caf80",
       "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/execution.json",
-      "schema_role": "sanitized_blocked_output",
+      "role": "prior_blocked_output_at_recovery_checkpoint",
       "sha256": "f7ee238b654ce65b174c8fdd61c1a0aa8ec1648094ea37f56c701b2558b5752a"
     },
     {
       "bytes": 528,
       "git_blob": "828680e15f664c8a2f8820122eb05fbb81698205",
       "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/freeze_package_validation.json",
-      "schema_role": "sanitized_blocked_output",
+      "role": "prior_blocked_output_at_recovery_checkpoint",
       "sha256": "7a76e4538afc84593788db5196e5cd6589e7c4c6b0d98f80b01ffc19b84b8fe0"
     },
     {
       "bytes": 4467,
       "git_blob": "a836d935c4eca2b8c75eafee9e60cae3cccdb02b",
       "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/preflight.json",
-      "schema_role": "sanitized_blocked_output",
+      "role": "prior_blocked_output_at_recovery_checkpoint",
       "sha256": "bc317ab76a88c1c3fd3351083262ad1b49fbb8ce6af92770037db033f1fbe4e0"
     },
     {
       "bytes": 681,
       "git_blob": "26261f8353c421818f2024e9ba32c05320675be4",
       "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/sealed_package_validation.json",
-      "schema_role": "sanitized_blocked_output",
+      "role": "prior_blocked_output_at_recovery_checkpoint",
       "sha256": "581dd3530128b9b183094fc0bcc23e623c949999942329999825761c62f586b7"
     },
     {
       "bytes": 579,
       "git_blob": "2eae20027de63f8a2508e42980c683cc048d8542",
       "path": "reports/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_UNBLINDING_AND_CONDITION_ANALYSIS_RESULT.md",
-      "schema_role": "sanitized_blocked_output",
+      "role": "prior_blocked_output_at_recovery_checkpoint",
       "sha256": "0cf89f9488e044eae06d5d1568bf6659dc2317af4af67ec9526cff14d244e415"
     }
   ],
-  "nonself_output_count": 6,
+  "producer_source_validation": {
+    "batch_assignment_schema_derived": true,
+    "bytes": 76034,
+    "equivalence_schema_derived": true,
+    "logical_path": "G:\\AICODING\\AI_VIDEO\\AI_VIDEO_PIPELINE\\_cal005_blind_package_v01_executor.py",
+    "retained_context_line": 71777,
+    "retained_context_path": "C:/Users/msjpurf/.codex/sessions/2026/06/30/rollout-2026-06-30T02-12-00-019f1494-ad1a-7572-b199-e9aab2d734a2.jsonl",
+    "sealed_manifest_schema_derived": true,
+    "sealed_zip_opened": false,
+    "sha256": "ad8700c9e3d87ceb3a7920645f5b3c4525cff9ca1f65ee47450e032d2555fb8d",
+    "strict_utf8": true,
+    "syntax_validation": "PASS"
+  },
   "protected_value_persistence": {
     "framemd5_values_persisted": false,
     "raw_equivalence_persisted": false,
@@ -53,8 +193,149 @@
     "signed_url_persisted": false
   },
   "public_commitment": "0bbe6d8afa76b2363573b787f0be6ea0a089ad732b8119f95a00be33a499d945",
-  "schema_version": "CAL005_R1_CONTROLLED_UNBLINDING_EVIDENCE_MANIFEST_V0_1",
-  "sealed_zip_open_count": 1,
-  "self_excluded": true,
-  "starting_checkpoint": "46bb02a38d34c790b70fb9566ff3509a34edda7f"
+  "recovery_starting_checkpoint": "557e1ca35e0239a1f72dfb3faa08f4b2b265baa6",
+  "required_committed_input_bindings": [
+    {
+      "bytes": 4455,
+      "git_blob": "1ef28b94dac193bbab9ea51230704134b8af8b46",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/design_spec.json",
+      "sha256": "de144ada8b71057c09fb601e8ea41d6584af3c84ab03ac964be1bb0d5e61a4d1",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2464,
+      "git_blob": "2bf6b4217b2b29eb44b816502625338fa992aa81",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/condition_matrix.json",
+      "sha256": "851b227e280a75bcfaa57e3ee5466201e55079f39b0ca9ff84f14630ddb3ba86",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 10944,
+      "git_blob": "6ce3de338c188a2605ffee122498cc9122f9b00e",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/task_manifest.json",
+      "sha256": "412a43c51201e4c6b82dc301537d03dccdd956d0798351cdc09c97b4f2b6d042",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 1004,
+      "git_blob": "5eabcdde52fab9898219b550d202db614d8f3e42",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/submission_order.json",
+      "sha256": "2181f1edd03a806537e788d17796264a9a5af2e34dfe7fb3c2dd943ff6299ffb",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2503,
+      "git_blob": "11472f7bc05bc86abac52a264bdc68200d3d5664",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_DESIGN/review_contract.json",
+      "sha256": "a4855c90e303d3bfa72c8bbeb0a716bcdb14eaa7bf1e31b714c3afd33818d367",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 574,
+      "git_blob": "3ab154cf762abbb62aad276e18f4e1f59646ca8e",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/public_commitment.json",
+      "sha256": "da3c5bab1ebf2d1f0115852fc75c634c851b60dd10d9cda380120b52c30d0739",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2186,
+      "git_blob": "308067a8dcd59c1dea6f4eb623a32d1757c95670",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/blind_media_manifest.json",
+      "sha256": "dbe6fa2836baeb058f0924c1b4c657f1f852266fa9c403ab6addd7683c4a4246",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 1917,
+      "git_blob": "d6fef7fb7914ced4b0f10da677a01eae01ae6933",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/batch_manifest.json",
+      "sha256": "7bf8c3bdb8b69e8d6dc1e3100f683a5b8613606fb26d17e2cd190c11cf4ed3a9",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 12401,
+      "git_blob": "56d832589447400d96e4e46fa41964367d2e7146",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_BLIND_PACKAGE_V0_1/evidence_manifest.json",
+      "sha256": "6542d0ef94bc26884d5d62e14cb11cdced89fe7d2b00288fd59ec20117962e0d",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 2593,
+      "git_blob": "48cb7f80044096f19f22c4098d496b78f76675d3",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_REVIEW_FREEZE_V0_1/authorization.json",
+      "sha256": "2556bf573348437e316a55dfabb36fd12fdf29785041407431a46e49e4293cd5",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 1500,
+      "git_blob": "42fb7c1a1bedd8821ad0497fdeedba4385d913ad",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_REVIEW_FREEZE_V0_1/preflight.json",
+      "sha256": "44508388b92087318e4031004ff6f48071eddc1a0021b811695691ace259fbf1",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 6656,
+      "git_blob": "b7239ecc920598a72a5054cc502e09e7ad6883de",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_REVIEW_FREEZE_V0_1/review_freeze_manifest.json",
+      "sha256": "ad37f0c64f18a2d54526671a252fce48bb5d3158c195079baf3d4603b4510fd0",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 4380,
+      "git_blob": "471a400aad8b273be7cc5f9d2e79003092b83a7c",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_REVIEW_FREEZE_V0_1/review_summary.json",
+      "sha256": "b27800fef74b1c57434e1b0394317df790539c36489ec2ba874bb4ee60c5a909",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 10064,
+      "git_blob": "fdf7c135e1088f4ac258b239e79d1f82b38c0afc",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B01_review.json",
+      "sha256": "321fb9e970d648aba093ca8d2affc0c15c3c797fc4f3aeddd3dc1c88b37d170c",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 10874,
+      "git_blob": "6485b7d468a530febfc6df9c58d80e2fb316d766",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B02_review.json",
+      "sha256": "dc715c15f2505e3ff6f87b578fe992bcc2880e7a0b36008fffb86621edf07d3f",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 12444,
+      "git_blob": "60a425dec91219d21377e17ae77908ecfdb52f41",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B03_review.json",
+      "sha256": "11de7f630c69f58b87fdc3034883862f58b0e86c1c099478c6b1778fe7ce07d3",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 10368,
+      "git_blob": "b6d8541a768ecde05bc296d3cd637842c8cb9831",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B04_review.json",
+      "sha256": "5763ead032feff4753c36986edd3c9d9ca4c7c016cf2b4bd6fc8a7d2e80b80af",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 11052,
+      "git_blob": "384b8b172eeb9f809eaa404551fd923ab3e90c93",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B05_review.json",
+      "sha256": "c5ae74274ff127e08dac9a23656e024e90ed25e8349bf7e9cb4954e176510785",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 10284,
+      "git_blob": "9225cd0c635152957da0052df6abb1fb42e37d07",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_REVIEW_FREEZE_V0_1/frozen_reviews/B06_review.json",
+      "sha256": "fb968161ad2fd0227266576d305fdfc7a5430ed81cbf5a77c002a18689b968e1",
+      "worktree_equals_head": true
+    },
+    {
+      "bytes": 3664,
+      "git_blob": "2b13f9939d76caaf23d6465c1c8b69c5e1a91f53",
+      "path": "reports/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_BLIND_REVIEW_FREEZE_V0_1_RESULT.md",
+      "sha256": "9afbc0d45a810f38b024e864a59c04680f90d31b4975c8aa84f486339c2751ad",
+      "worktree_equals_head": true
+    }
+  ],
+  "schema_version": "CAL005_R1_CONTROLLED_UNBLINDING_SCHEMA_RECOVERY_EVIDENCE_V0_1",
+  "self_excluded": true
 }

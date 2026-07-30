@@ -1,15 +1,103 @@
 {
+  "alias_coverage": "6/6",
+  "condition_inference_performed": false,
   "crc_validation": "9/9 PASS",
+  "dimension_coverage": "12/12 each",
   "frozen_review_byte_identity": "6/6 PASS",
   "frozen_score_arithmetic": "6/6 PASS",
   "global_material_sentinel_count": 0,
+  "integrity_model": {
+    "content_member_hash_coverage": "7/7",
+    "manifest_self_hash_excluded": true,
+    "model": "CYCLE_SAFE_NONSELF_HASH_BINDING",
+    "package_member_identity_coverage": "9/9",
+    "review_record_hash_coverage": "6/6",
+    "sha256sums_hash_excluded_from_manifest": true,
+    "sha256sums_nonself_coverage_required": "8/8"
+  },
+  "json_parse": "8/8 PASS",
+  "mapping_remained_unrevealed_before_activation": true,
+  "material_sentinel_arithmetic": "6/6 PASS",
   "member_count": 9,
+  "member_identities": [
+    {
+      "bytes": 10064,
+      "crc32": "4a12ef71",
+      "name": "B01_review.json",
+      "sha256": "321fb9e970d648aba093ca8d2affc0c15c3c797fc4f3aeddd3dc1c88b37d170c"
+    },
+    {
+      "bytes": 10874,
+      "crc32": "9b0c1305",
+      "name": "B02_review.json",
+      "sha256": "dc715c15f2505e3ff6f87b578fe992bcc2880e7a0b36008fffb86621edf07d3f"
+    },
+    {
+      "bytes": 12444,
+      "crc32": "48260c0b",
+      "name": "B03_review.json",
+      "sha256": "11de7f630c69f58b87fdc3034883862f58b0e86c1c099478c6b1778fe7ce07d3"
+    },
+    {
+      "bytes": 10368,
+      "crc32": "a8d32cab",
+      "name": "B04_review.json",
+      "sha256": "5763ead032feff4753c36986edd3c9d9ca4c7c016cf2b4bd6fc8a7d2e80b80af"
+    },
+    {
+      "bytes": 11052,
+      "crc32": "af9e144f",
+      "name": "B05_review.json",
+      "sha256": "c5ae74274ff127e08dac9a23656e024e90ed25e8349bf7e9cb4954e176510785"
+    },
+    {
+      "bytes": 10284,
+      "crc32": "b5bdeb09",
+      "name": "B06_review.json",
+      "sha256": "fb968161ad2fd0227266576d305fdfc7a5430ed81cbf5a77c002a18689b968e1"
+    },
+    {
+      "bytes": 6656,
+      "crc32": "d18dd6be",
+      "name": "review_freeze_manifest.json",
+      "sha256": "ad37f0c64f18a2d54526671a252fce48bb5d3158c195079baf3d4603b4510fd0"
+    },
+    {
+      "bytes": 4380,
+      "crc32": "7b303b14",
+      "name": "review_summary.json",
+      "sha256": "b27800fef74b1c57434e1b0394317df790539c36489ec2ba874bb4ee60c5a909"
+    },
+    {
+      "bytes": 672,
+      "crc32": "c04378d9",
+      "name": "SHA256SUMS",
+      "sha256": "3b534b22aa3549e5c70688c6aa24ed1bd0cf996b71cc29de774aa0e558fc8590"
+    }
+  ],
+  "member_order": [
+    "B01_review.json",
+    "B02_review.json",
+    "B03_review.json",
+    "B04_review.json",
+    "B05_review.json",
+    "B06_review.json",
+    "review_freeze_manifest.json",
+    "review_summary.json",
+    "SHA256SUMS"
+  ],
   "outer_identity": {
     "bytes": 23149,
     "path": "G:/AICODING/AI_VIDEO/_review_freeze/CAL005_R1_BLIND_REVIEW_FREEZE_V0_1.zip",
     "regular_file": true,
     "sha256": "69190ec33f20125ac0f3e806cd2a9df82ef57965d3160c040ccf0e1da390c918"
   },
+  "prior_blocked_record_preserved_until_recovery_write": true,
+  "recovery_checkpoint": "557e1ca35e0239a1f72dfb3faa08f4b2b265baa6",
+  "recovery_validation_status": "PASS",
+  "rescoring_performed": false,
   "schema_version": "CAL005_R1_FREEZE_PACKAGE_VALIDATION_V0_1",
-  "sha256sums_validation": "8/8 PASS"
+  "semantic_rereview_performed": false,
+  "sha256sums_validation": "8/8 PASS",
+  "timeline_validation": "6/6 PASS"
 }

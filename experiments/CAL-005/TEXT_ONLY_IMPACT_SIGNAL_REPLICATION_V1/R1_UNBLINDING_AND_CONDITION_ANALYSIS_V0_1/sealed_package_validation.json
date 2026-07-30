@@ -1,7 +1,46 @@
 {
-  "commitment_validation_completed": false,
-  "failure_classification": "SEALED_MANIFEST_MEMBER_RECORD_CONTAINER",
-  "mapping_persisted": false,
+  "archive_safety": {
+    "no_directories": true,
+    "no_duplicate_members": true,
+    "no_encrypted_members": true,
+    "no_nested_archive": true,
+    "no_path_traversal": true,
+    "no_symlinks": true
+  },
+  "attempt_history": [
+    {
+      "attempt": 1,
+      "checkpoint": "46bb02a38d34c790b70fb9566ff3509a34edda7f",
+      "commitment_validation_completed": false,
+      "failure_classification": "SEALED_MANIFEST_MEMBER_RECORD_CONTAINER",
+      "mapping_persisted": false,
+      "raw_sealed_bytes_persisted": false,
+      "result": "BLOCKED",
+      "salt_disclosed": false,
+      "sealed_member_read_count": 6,
+      "sealed_zip_open_count": 1
+    },
+    {
+      "attempt": 2,
+      "checkpoint": "557e1ca35e0239a1f72dfb3faa08f4b2b265baa6",
+      "commitment_validation_completed": true,
+      "failure_classification": null,
+      "mapping_persisted": true,
+      "raw_sealed_bytes_persisted": false,
+      "result": "PASS",
+      "salt_disclosed": false,
+      "sealed_member_read_count": 6,
+      "sealed_zip_open_count": 1
+    }
+  ],
+  "batch_assignment_coverage": "6/6",
+  "crc_validation": "6/6 PASS",
+  "cumulative_sealed_member_read_count": 12,
+  "cumulative_sealed_zip_open_count": 2,
+  "each_distinct_regular_member_read_exactly_once": true,
+  "equivalence_coverage": "6/6",
+  "failure_classification": null,
+  "mapping_coverage": "6/6",
   "member_count": 6,
   "member_read_count": 6,
   "open_count": 1,
@@ -11,8 +50,39 @@
     "regular_file": true,
     "sha256": "63361ae4f965c029d416cdb83927b997f9663519e0107902a53b378146b2d0d4"
   },
-  "process_exit_prevented_completion": false,
-  "raw_sealed_bytes_persisted": false,
-  "salt_disclosed": false,
-  "schema_version": "CAL005_R1_SEALED_PACKAGE_VALIDATION_V0_1"
+  "postactivation_parser_correction_count": 0,
+  "prior_sealed_member_read_count": 6,
+  "prior_sealed_zip_open_count": 1,
+  "producer_bound_equivalence_schema": "PASS",
+  "producer_bound_member_binding_container": "member_bindings",
+  "protected_values": {
+    "framemd5_values_persisted": false,
+    "raw_equivalence_persisted": false,
+    "raw_mapping_persisted": false,
+    "raw_sealed_bytes_persisted": false,
+    "salt_disclosed": false,
+    "salt_persisted": false
+  },
+  "recovery_checkpoint": "557e1ca35e0239a1f72dfb3faa08f4b2b265baa6",
+  "recovery_sealed_member_read_count": 6,
+  "recovery_sealed_zip_open_count": 1,
+  "role_validation": "6/6 PASS",
+  "schema_version": "CAL005_R1_SEALED_PACKAGE_SCHEMA_RECOVERY_VALIDATION_V0_1",
+  "sealed_manifest_validation": {
+    "alias_coverage": "6/6",
+    "commitment_formula": "SHA256_CANONICAL_MAPPING_BYTES_LF_LOWERCASE_SALT_HEX",
+    "commitment_value": "0bbe6d8afa76b2363573b787f0be6ea0a089ad732b8119f95a00be33a499d945",
+    "integrity_model": "CYCLE_SAFE_NONSELF_HASH_BINDING",
+    "manifest_self_hash_excluded": true,
+    "member_binding_container": "member_bindings",
+    "member_binding_fields": [
+      "bytes",
+      "path",
+      "sha256"
+    ],
+    "member_identity_coverage": "4/4",
+    "parser_correction_count": 0,
+    "sha256sums_hash_excluded_from_manifest": true
+  },
+  "sha256sums_validation": "5/5 PASS"
 }
