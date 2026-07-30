@@ -1,0 +1,68 @@
+{
+  "branch": "main",
+  "fetch": {
+    "command": "git fetch origin main",
+    "count": 1,
+    "exit_code": 0
+  },
+  "git_operation_state": {
+    "bisect_active": false,
+    "cherry_pick_active": false,
+    "merge_active": false,
+    "rebase_active": false,
+    "revert_active": false
+  },
+  "goal_state": {
+    "fresh_goal_activated": true,
+    "goal_before_activation": null,
+    "unrelated_goal_cleared": false
+  },
+  "head": "291854b40083456c86316ff59a5caa910f24a99a",
+  "head_message": "source: apply V1.15 project source pack",
+  "head_origin_aligned": true,
+  "origin_main": "291854b40083456c86316ff59a5caa910f24a99a",
+  "preexisting_untracked_expanded_file_count": 542,
+  "preexisting_untracked_status_entries": [
+    ".vs/",
+    "_tmp_cal005_unblind_executor.py",
+    "experiments/CAL-001/execution_records/P3B_R2_T2/evidence/",
+    "experiments/CAL-001/execution_records/P3B_R2_T4/evidence/",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH02_EXECUTION/execution_records/",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH03_EXECUTION/execution_records/",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_EXECUTION/execution_records/",
+    "experiments/CAL-002/ACTION_CALIBRATION_V1/PILOT_R1/BATCH_01/execution_records/",
+    "productions/chi_yan_tian_qiong/edits/",
+    "productions/chi_yan_tian_qiong/review_artifacts/",
+    "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_DOWNLOAD_EXECUTION_RESULT.md",
+    "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_INDEPENDENT_PACKAGE_REVIEW_RESULT.md",
+    "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_LIVE_EXECUTION_RESULT.md",
+    "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_QUERY_EXECUTION_RESULT.md",
+    "reports/CAL002_BATCH02_DESIGN_REVIEW_RESULT.md",
+    "reports/CAL002_BATCH02_DOWNLOAD_EXECUTION_RESULT.md",
+    "reports/CAL002_BATCH02_LIVE_EXECUTION_RESULT.md",
+    "reports/CAL002_BATCH02_QUERY_EXECUTION_RESULT.md",
+    "reports/CAL002_BATCH03_DOWNLOAD_EXECUTION_RESULT.md",
+    "reports/CAL002_BATCH03_LIVE_EXECUTION_RESULT.md",
+    "reports/CAL002_BATCH03_QUERY_EXECUTION_RESULT.md",
+    "reports/CAL002_BATCH04_DOWNLOAD_AUTHORIZATION_EXECUTION_RECONCILIATION_RESULT.md",
+    "reports/CAL002_BATCH04_DOWNLOAD_EXECUTION_RESULT.md",
+    "reports/CAL002_BATCH04_LIVE_EXECUTION_RESULT.md",
+    "reports/CAL002_BATCH04_QUERY_EXECUTION_RESULT.md",
+    "reports/context_recovery/",
+    "reports/investor/"
+  ],
+  "preexisting_untracked_status_entry_count": 27,
+  "preexisting_untracked_treatment": "RECORDED_AND_UNTOUCHED",
+  "repository": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+  "schema_version": "CHI_YAN_TIAN_QIONG_CONTEXT_RECOVERY_PREFLIGHT_V0_2",
+  "source_settlement_commit": {
+    "commit": "291854b40083456c86316ff59a5caa910f24a99a",
+    "message": "source: apply V1.15 project source pack",
+    "parent": "2dfd67e6b6318133c0b342ebc99edb2dd32921c3"
+  },
+  "sources_staged_changes": 0,
+  "sources_tracked_modifications": 0,
+  "staged_changes": 0,
+  "target_paths_absent_before_activation": true,
+  "tracked_modifications": 0
+}

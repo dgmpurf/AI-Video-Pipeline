@@ -1,0 +1,68 @@
+{
+  "authorization": {
+    "activated": true,
+    "activation_boundary": "first authorized output creation",
+    "canonical_text_base64_character_count": 3176,
+    "canonical_text_bytes": 2380,
+    "canonical_text_last_byte_hex": "45",
+    "canonical_text_last_character": "E",
+    "canonical_text_sha256": "aff4d92a425622b8857889f46d05144a9fd18be6bf4ffe883d5effdda6650ac8",
+    "consumed": true,
+    "encoding": "UTF-8",
+    "profile_verified_independently": true,
+    "reusable": false,
+    "round_trip_verified": true,
+    "trailing_carriage_return": false,
+    "trailing_newline": false,
+    "trailing_space": false,
+    "utf8_bom": false
+  },
+  "bound_branch": "main",
+  "bound_repository": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+  "bound_starting_head": "291854b40083456c86316ff59a5caa910f24a99a",
+  "goal": "CHI_YAN_TIAN_QIONG_POST_SOURCE_SETTLEMENT_READ_ONLY_PRODUCTION_CONTEXT_RECOVERY_V0_2",
+  "hard_zero_operations": {
+    "batch": 0,
+    "credits_consumed": 0,
+    "download": 0,
+    "dreamina_calls": 0,
+    "media_decode": 0,
+    "media_generation": 0,
+    "provider_calls": 0,
+    "query": 0,
+    "resubmit": 0,
+    "retry": 0,
+    "submit": 0
+  },
+  "one_time_non_reusable": true,
+  "production_approved": false,
+  "production_reentry_authorized": false,
+  "scope": {
+    "allowed": [
+      "read-only repository and local production context recovery",
+      "targeted text, metadata, manifest, report, and local artifact inventory",
+      "targeted stat and SHA-256 for exact referenced local artifacts",
+      "exactly seven new report paths",
+      "one commit",
+      "one push"
+    ],
+    "forbidden": [
+      "Dreamina or Provider calls",
+      "credit, submit, query, download, retry, resubmit, or batch operations",
+      "media decode, playback, generation, transformation, or modification",
+      "Source modification",
+      "production Prompt or package modification",
+      "production reentry",
+      "automatic route selection",
+      "production approval, final master, or lock"
+    ]
+  },
+  "schema_version": "CHI_YAN_TIAN_QIONG_CONTEXT_RECOVERY_AUTHORIZATION_V0_2",
+  "stale_authorization": {
+    "activated": false,
+    "bound_checkpoint": "2dfd67e6b6318133c0b342ebc99edb2dd32921c3",
+    "consumed": false,
+    "sha256": "c42cecf3806346be1a1415a7c56d02311516e66748f452d08af7b591df298270",
+    "treatment": "SUPERSEDED_STALE_NONACTIVATABLE"
+  }
+}

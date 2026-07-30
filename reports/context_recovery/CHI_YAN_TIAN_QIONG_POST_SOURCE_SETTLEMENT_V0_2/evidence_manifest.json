@@ -1,0 +1,447 @@
+{
+  "committed_inputs": {
+    "head_worktree_byte_identity": "PASS",
+    "other_committed_files": [
+      {
+        "bytes": 13502,
+        "path": "sources/AI视频制作_项目蓝图与产品化路线_V0.1.md",
+        "sha256": "7606417f968a2655652066f4d33234f4894d6f2a86c551dff728582b03cb8934"
+      },
+      {
+        "bytes": 7583,
+        "path": "sources/AI视频制作_实测规则库_V1.12_失败台账与路线重置规则增补稿.md",
+        "sha256": "bcf034b496bd0ad35c8fff48fb8de73105e823cd197338a4eea3ae6b10ac09d4"
+      },
+      {
+        "bytes": 8172,
+        "path": "productions/chi_yan_tian_qiong/PRODUCTION_STATUS.md",
+        "sha256": "e8538a0640cd43aacc4a8a9918c639c195094c1408a09f141c88a427c75bec4e"
+      },
+      {
+        "bytes": 1067,
+        "path": "productions/chi_yan_tian_qiong/PRODUCTION_WORKFLOW.md",
+        "sha256": "72f9246a93ad6b9dfc1962dde998678913cd11ff3fa72a080439eb151048c359"
+      },
+      {
+        "bytes": 10930,
+        "path": "reports/PHASE_K269K_SHOT04_R02A_VARIANT_C_TEXT2VIDEO_REVIEW_ARTIFACTS_ONLY_RESULT.md",
+        "sha256": "0e006190edc721ddd8610b265b1b7ea95f43c513f7a8ff2a095a685eda717bcd"
+      },
+      {
+        "bytes": 8786,
+        "path": "reports/PHASE_K269L_SHOT04_R02A_VARIANT_C_TEXT2VIDEO_VISUAL_REVIEW.md",
+        "sha256": "793c8361e823c9f19b4c0912916cc1cdebf65e1b595264cc86455e8c3a39195d"
+      },
+      {
+        "bytes": 12709,
+        "path": "reports/PHASE_K269U_SHOT04_R02A_VARIANT_A_SIMPLIFIED_M2V_REVIEW_ARTIFACTS_ONLY_RESULT.md",
+        "sha256": "fb00475e89bb7474ae05a759e6719eaf88d2294c4d84189632d4ee17141aa3e5"
+      },
+      {
+        "bytes": 10034,
+        "path": "reports/PHASE_K269V_SHOT04_R02A_VARIANT_A_SIMPLIFIED_M2V_VISUAL_REVIEW.md",
+        "sha256": "39de56252de7cf8fa02351facb009d594c30ca32a977204d3f9b3d7ff9051f4f"
+      },
+      {
+        "bytes": 7378,
+        "path": "reports/PHASE_K269Y_SHOT04_R02A_VARIANT_A_CUT_WINDOW_DIAGNOSTICS_ONLY_RESULT.md",
+        "sha256": "bab3ed18249ea8e865c683d7e4e867169cd7b722bf6947cf330bfc37ef0a2b68"
+      },
+      {
+        "bytes": 13903,
+        "path": "reports/PHASE_K269Z_SHOT04_R02A_VARIANT_A_CUT_WINDOW_VISUAL_REVIEW.md",
+        "sha256": "6c9bb4617cdb1c694faf006bb0fbe55a3a966eee411625a23eee83387baf1bb7"
+      },
+      {
+        "bytes": 11523,
+        "path": "reports/PHASE_K270A_SHOT04_R02A_STATIC_DYNAMIC_BURST_ROUTE_DECISION.md",
+        "sha256": "eec390c45d1e27193119a9183d6242caec57a8eb93288e8346efd525823642d7"
+      },
+      {
+        "bytes": 12811,
+        "path": "reports/PHASE_K270B_SHOT04_R02A_STATIC_DYNAMIC_BURST_TWO_SHOT_ROUTE_PLANNING.md",
+        "sha256": "037fd93cde24fae0f4a4c275b9877ed40e3b4afe49ea99b01db1e32ca2a5458f"
+      },
+      {
+        "bytes": 14389,
+        "path": "reports/PHASE_K270J_SHOT04_R02A2_DYNAMIC_FLYOUT_B3_SAFE_REVISION_NO_SUBMIT_PACKAGE_CREATION_RESULT.md",
+        "sha256": "27814925d8175493c3d82a8b7a897cde2993b62758f3d1abc9a072bb30fae3a1"
+      },
+      {
+        "bytes": 16794,
+        "path": "reports/PHASE_K270K_SHOT04_R02A2_DYNAMIC_FLYOUT_B3_SAFE_REVISION_PACKAGE_REVIEW.md",
+        "sha256": "b9fc3f090d6bb902da902b12aef5ebccd3377cbd869cc425dbc9c69518d52140"
+      },
+      {
+        "bytes": 15237,
+        "path": "reports/PHASE_K270M_SHOT04_R02A2_B3_SAFE_REVISION_ONE_SUBMIT_RESULT.md",
+        "sha256": "cafc265e0ccdfb18d7d7d5b956ff3275d5f8e3ccb930c472868db8db2e708194"
+      },
+      {
+        "bytes": 10656,
+        "path": "reports/PHASE_K270O_SHOT04_R02A2_B3_SAFE_REVISION_QUERY_ONLY_RESULT.md",
+        "sha256": "409d80c15eb827febf8eae183d7d5772f1a235e18cbe06e0c7acf5aa94fd7021"
+      },
+      {
+        "bytes": 10703,
+        "path": "reports/PHASE_K270Q_SHOT04_R02A2_B3_SAFE_REVISION_DOWNLOAD_ONLY_RESULT.md",
+        "sha256": "a64cae570c3b73a0b97d0f772cf047805d14842b589ced984ae41362f828b490"
+      },
+      {
+        "bytes": 12967,
+        "path": "reports/PHASE_K270R_SHOT04_R02A2_B3_SAFE_REVISION_REVIEW_ARTIFACT_AUTHORIZATION_DECISION.md",
+        "sha256": "3401aeabb1e19c348fb3108754c66c12b9a28c9cb5e4fceb098c50acc120de36"
+      },
+      {
+        "bytes": 13556,
+        "path": "reports/CAL002_BATCH05_EXPERIMENT_RESULT_ACCEPTANCE_AND_ROUTE_RESET_DECISION_V0_2_RESULT.md",
+        "sha256": "ddd7887c1afe60ec0a5afc44b2bf61fe7b67f66f39fd040668a197ed49b0b404"
+      },
+      {
+        "bytes": 1742,
+        "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_HUMAN_FINAL_DECISION.md",
+        "sha256": "121e04ca403ee4dd78a6b26b8d88c5efcdfc72925d5a35608b270d12c28d6b6b"
+      },
+      {
+        "bytes": 1524,
+        "path": "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_HUMAN_FINAL_DECISION.md",
+        "sha256": "3e2afd590c6721a98add88c09afaf8a934f52d3466631526b6bb38689b1722fe"
+      },
+      {
+        "bytes": 3993,
+        "path": "reports/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_HUMAN_FINAL_DECISION.md",
+        "sha256": "9e488d46e8e813476e937500049a3d2f6ea8f696a7b26e86435ce6f833af5d9a"
+      },
+      {
+        "bytes": 1320,
+        "path": "productions/chi_yan_tian_qiong/prompts/manual/SHOT-04-R02A2-V-DYNAMIC-FLYOUT-B3-SAFE-SIMPLIFIED-M2V-001_multimodal2video_no_submit_prompt.txt",
+        "sha256": "69b2ee28c4430e7c99c68925c8ed3388c4927777073405463adeed8a4c06f602"
+      },
+      {
+        "bytes": 5152,
+        "path": "productions/chi_yan_tian_qiong/packages/SHOT-04-R02A2-dynamic-flyout/K270J/SHOT-04-R02A2-V-DYNAMIC-FLYOUT-B3-SAFE-SIMPLIFIED-M2V-001_package.json",
+        "sha256": "bab5397310565df352526da563e7aa27b61c8d698ec9083b6ff0189634d9d7f9"
+      },
+      {
+        "bytes": 1148,
+        "path": "productions/chi_yan_tian_qiong/packages/SHOT-04-R02A2-dynamic-flyout/K270J/SHOT-04-R02A2-K270J_B3_safe_simplified_no_submit_manifest.csv",
+        "sha256": "4d26c64ce7c76025b2580d1193a175967cf1514a593438dd52846daebb9a10c9"
+      },
+      {
+        "bytes": 3409,
+        "path": "productions/chi_yan_tian_qiong/packages/SHOT-04-R02A2-dynamic-flyout/K270J/SHOT-04-R02A2-K270J_B3_safe_simplified_no_submit_review_notes.md",
+        "sha256": "b70a7f127161cdf2b05869bd0965ee93520f7f2678d7d33637966a253bdd1464"
+      }
+    ],
+    "source_files": [
+      {
+        "bytes": 9609,
+        "path": "sources/AI视频制作_Source索引与使用优先级_V1.15.md",
+        "sha256": "8a4f44b388ddd9f9cea830e2c5dd46b7c8a7ab434b254184d1015e16f9c7b929"
+      },
+      {
+        "bytes": 8601,
+        "path": "sources/AI视频制作_当前项目状态与双轨切换_V0.3.md",
+        "sha256": "1f57ad3ff966369c9020ac10964912be8b9cab3030edb1eccb5d4ed182cc4852"
+      },
+      {
+        "bytes": 9325,
+        "path": "sources/AI视频制作_结构化验证器与盲审冻结治理规则_V0.2.md",
+        "sha256": "68474b1f86bef7b7c95d23d6cf3d55a5997dc3698a492d68a05d28ab3a0b21b7"
+      },
+      {
+        "bytes": 5490,
+        "path": "sources/AI视频制作_动作家族校准实验综合与生产边界_V0.1.md",
+        "sha256": "f62e92451932ed11a50790ce23d9a22424f0ff9ace3fdcbcb5132e457bdc0de7"
+      },
+      {
+        "bytes": 14030,
+        "path": "sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.3.md",
+        "sha256": "0322929721af2695069fe19a50c59a40d0d5b1930a7d18dd4a7e11e43b471ec2"
+      },
+      {
+        "bytes": 5400,
+        "path": "sources/Dreamina_CLI执行契约_V1.5_下载传输恢复与证据保全补丁.md",
+        "sha256": "1cf422c0d1205536a2904904e997b60c343aed210c39b5b846c94647d9a42ee5"
+      }
+    ],
+    "total": 32
+  },
+  "decision": "PRODUCTION_CONTEXT_RECOVERED_READY_FOR_HUMAN_ROUTE_DECISION",
+  "hard_zero_operations": {
+    "Dreamina_calls": 0,
+    "Provider_calls": 0,
+    "credits_consumed": 0,
+    "download": 0,
+    "media_decode_count": 0,
+    "query": 0,
+    "resubmit": 0,
+    "retry": 0,
+    "submit": 0
+  },
+  "local_artifact_inventory": {
+    "bindings": [
+      {
+        "bytes": 10768451,
+        "path": "productions/chi_yan_tian_qiong/downloads/SHOT-04-R02A/K269I_VARIANT_C_TEXT2VIDEO/5691a273-9c96-41c0-b3cc-4919476e0633_video_1.mp4",
+        "sha256": "2ee78a5809771d93a115eb289ecb46e3ea2cb5ad0a38d01e4db1f1dd7a614483"
+      },
+      {
+        "bytes": 10559020,
+        "path": "productions/chi_yan_tian_qiong/downloads/SHOT-04-R02A/K269S_VARIANT_A_SIMPLIFIED_M2V/df668f21-6bf2-416e-964f-7dfc73995518_video_1.mp4",
+        "sha256": "e463971bf481e0cf17550a1c2d1ab279e91d3fbf0e54c5c43aeb400a1cebe9c0"
+      },
+      {
+        "bytes": 8954620,
+        "path": "productions/chi_yan_tian_qiong/downloads/SHOT-04-R02A2/K270Q_B3_SAFE_REVISION/8f38063d-a790-408a-b270-0cef5df981e0_video_1.mp4",
+        "sha256": "93446c7f181400001810906629ebd972a2016222f283b5975536f3fc07e40097"
+      },
+      {
+        "bytes": 971768,
+        "path": "productions/chi_yan_tian_qiong/edits/SHOT-04-R02A/K269Y_VARIANT_A_CUT_WINDOW_DIAGNOSTICS/K269Y_CONTACT_EVIDENCE_LONGER_0p50_1p50.mp4",
+        "sha256": "e55b55368837519f063ef525654ae0847c365a154f19b6eaac8933073a398a49"
+      },
+      {
+        "bytes": 752314,
+        "path": "productions/chi_yan_tian_qiong/edits/SHOT-04-R02A/K269Y_VARIANT_A_CUT_WINDOW_DIAGNOSTICS/K269Y_CONTACT_HITSTOP_PADDED_0p50_1p25.mp4",
+        "sha256": "ce00c6fba08406ce04220bb2a41d0ee97a6aacbc0bc6fb25ade782458e7c168f"
+      },
+      {
+        "bytes": 468589,
+        "path": "productions/chi_yan_tian_qiong/edits/SHOT-04-R02A/K269Y_VARIANT_A_CUT_WINDOW_DIAGNOSTICS/K269Y_CONTACT_HITSTOP_SHORT_0p50_1p00.mp4",
+        "sha256": "ace57b50c6e3b28aecff8c495ced690aa560b4c3744f95812487f1fcd48d8ab8"
+      },
+      {
+        "bytes": 867410,
+        "path": "productions/chi_yan_tian_qiong/edits/SHOT-04-R02A/K269Y_VARIANT_A_CUT_WINDOW_DIAGNOSTICS/K269Y_LATE_REACTION_EVIDENCE_3p75_4p50.mp4",
+        "sha256": "1de952c841eb8505b64d8488218ba2d7ea48ad6dd2151d27174541b106271f8f"
+      },
+      {
+        "bytes": 1596,
+        "path": "productions/chi_yan_tian_qiong/edits/SHOT-04-R02A/K269Y_VARIANT_A_CUT_WINDOW_DIAGNOSTICS/K269Y_VARIANT_A_CUT_WINDOW_DIAGNOSTICS_inventory.md",
+        "sha256": "47d4784c118d884836c2bf9d4bc65701a63273e55f7e672c9cd3bb2f10928636"
+      },
+      {
+        "bytes": 6934,
+        "path": "productions/chi_yan_tian_qiong/edits/SHOT-04-R02A/K269Y_VARIANT_A_CUT_WINDOW_DIAGNOSTICS/K269Y_VARIANT_A_CUT_WINDOW_DIAGNOSTICS_metadata.json",
+        "sha256": "26862a334b3aa053874c8e37284c0af3c384a44b8c0366fb363ed6db7cb0b184"
+      },
+      {
+        "bytes": 150533,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269K_VARIANT_C_TEXT2VIDEO/frame_000_0p00s.jpg",
+        "sha256": "983d596c9cb2bb733a271260d09cbcaf3f23dfd236c1c9a3d379301dd5378460"
+      },
+      {
+        "bytes": 136675,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269K_VARIANT_C_TEXT2VIDEO/frame_001_0p50s.jpg",
+        "sha256": "323e422cd98c7d2154e65d7f6eeb3d58f26468e1428a25ff39bc6dbb5ca40186"
+      },
+      {
+        "bytes": 148652,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269K_VARIANT_C_TEXT2VIDEO/frame_002_1p00s.jpg",
+        "sha256": "dc12233e7e199f0dfd1503f9d6b07685c2e35ce46ad63181a4e90a5868db0039"
+      },
+      {
+        "bytes": 132377,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269K_VARIANT_C_TEXT2VIDEO/frame_003_1p50s.jpg",
+        "sha256": "2676d6fe2b68ebb2fe5dc1385338115418ff82892fd3e9c117a941419662e1d3"
+      },
+      {
+        "bytes": 148327,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269K_VARIANT_C_TEXT2VIDEO/frame_004_2p00s.jpg",
+        "sha256": "4f568ea6260ad70d1008c262806e48d089cc979e9fde098d93c4067dc59fbb81"
+      },
+      {
+        "bytes": 159265,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269K_VARIANT_C_TEXT2VIDEO/frame_005_2p50s.jpg",
+        "sha256": "4db375fdaeee7965b10fcfefb3c974f54361266a548dc086a8c0f04772a3d5cf"
+      },
+      {
+        "bytes": 152382,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269K_VARIANT_C_TEXT2VIDEO/frame_006_3p00s.jpg",
+        "sha256": "656fb9a1f0b11936c28eb8fb1e333303eaa87947f6280662d946150023b58dec"
+      },
+      {
+        "bytes": 143870,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269K_VARIANT_C_TEXT2VIDEO/frame_007_3p50s.jpg",
+        "sha256": "72ad6b39f3ae7cc0164e34f4d7f06506e5b321285b29af707b687ed5127a45d0"
+      },
+      {
+        "bytes": 99059,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269K_VARIANT_C_TEXT2VIDEO/frame_008_4p00s.jpg",
+        "sha256": "a5d11dfb772e7331bfbaae620ce88de4e65984e140b88e5cf77051fdbbd39ca6"
+      },
+      {
+        "bytes": 124580,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269K_VARIANT_C_TEXT2VIDEO/frame_009_4p50s.jpg",
+        "sha256": "95279aa1b972a82af38db617f7658635b4c11728fc9e018fea7117a370c8edba"
+      },
+      {
+        "bytes": 136115,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269K_VARIANT_C_TEXT2VIDEO/frame_010_5p00s.jpg",
+        "sha256": "713959efe3fe1130ae550099e09a00bf4ceccc7ac5b2d3a0ab3e34fa40884195"
+      },
+      {
+        "bytes": 245730,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269K_VARIANT_C_TEXT2VIDEO/K269K_VARIANT_C_TEXT2VIDEO_contact_sheet.jpg",
+        "sha256": "c7767e81f3796e7cfe156c818775a3a58a2744cf3363352beca333413360904a"
+      },
+      {
+        "bytes": 3097,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269K_VARIANT_C_TEXT2VIDEO/K269K_VARIANT_C_TEXT2VIDEO_file_inventory.md",
+        "sha256": "39143fced57d91c89bf4bcd7b73397420ea41fc0ef5e893f22d4a91c2eaeec20"
+      },
+      {
+        "bytes": 5472,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269K_VARIANT_C_TEXT2VIDEO/K269K_VARIANT_C_TEXT2VIDEO_metadata.json",
+        "sha256": "b1d5fabfc105b4ba707cfbbbbdfe679f35c5db70153ebf13e44e88260243b47b"
+      },
+      {
+        "bytes": 130311,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269U_VARIANT_A_SIMPLIFIED_M2V/frames/frame_000_0.00s.jpg",
+        "sha256": "e8e289bf3a4a249a6f1ebcb0008187426b89fd4a0725a9fe76d48f6d49742647"
+      },
+      {
+        "bytes": 170858,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269U_VARIANT_A_SIMPLIFIED_M2V/frames/frame_001_0.50s.jpg",
+        "sha256": "075910d6dd23c0cb2c4de71e005b2ea800414f0706efdf9a547947b1261424a7"
+      },
+      {
+        "bytes": 186886,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269U_VARIANT_A_SIMPLIFIED_M2V/frames/frame_002_1.00s.jpg",
+        "sha256": "baae3160557a7b0fa58c83cd4ddd934e6f3ac1ad7953e339d65dfbb762802e23"
+      },
+      {
+        "bytes": 190928,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269U_VARIANT_A_SIMPLIFIED_M2V/frames/frame_003_1.50s.jpg",
+        "sha256": "bd717930307496bb0fa79106b05bebfbff91dfd1125494ea877aa0f367c80b9a"
+      },
+      {
+        "bytes": 198220,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269U_VARIANT_A_SIMPLIFIED_M2V/frames/frame_004_2.00s.jpg",
+        "sha256": "8d28a23f481111ddf68eb271f0671741e213e6172e87b7472b6317a910713e22"
+      },
+      {
+        "bytes": 209955,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269U_VARIANT_A_SIMPLIFIED_M2V/frames/frame_005_2.50s.jpg",
+        "sha256": "bb94f9a18c027eec71d31c9f415b7ed74396b3cea2db78d392fc9acb639384a9"
+      },
+      {
+        "bytes": 199077,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269U_VARIANT_A_SIMPLIFIED_M2V/frames/frame_006_3.00s.jpg",
+        "sha256": "7e94032eeaaef754988c626905c0e9d380dd733ac268a34cb41d7a21514c4296"
+      },
+      {
+        "bytes": 195944,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269U_VARIANT_A_SIMPLIFIED_M2V/frames/frame_007_3.50s.jpg",
+        "sha256": "fc9c77424326b59613611c0446882d8f29f1abf30414a43eadd1da33182963f8"
+      },
+      {
+        "bytes": 126034,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269U_VARIANT_A_SIMPLIFIED_M2V/frames/frame_008_4.00s.jpg",
+        "sha256": "2a68561b9a1ca74b4613db21e369e39c41fc1f891c943a302366839068e31a1f"
+      },
+      {
+        "bytes": 126264,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269U_VARIANT_A_SIMPLIFIED_M2V/frames/frame_009_4.50s.jpg",
+        "sha256": "0e5e3aa01a0fdcc5142a881179be89a14ddbbee3001037b9e213094487aee253"
+      },
+      {
+        "bytes": 127081,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269U_VARIANT_A_SIMPLIFIED_M2V/frames/frame_010_5.00s.jpg",
+        "sha256": "2d37f72671ec3c802f3c3193c436327521eff1c0122c096820dd67fa29aea3c3"
+      },
+      {
+        "bytes": 243341,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269U_VARIANT_A_SIMPLIFIED_M2V/K269U_VARIANT_A_SIMPLIFIED_M2V_contact_sheet.jpg",
+        "sha256": "0c39c28d1a3d2fd2efa1eab5ab62979fc55074ea1c0645027a8719df9f8de313"
+      },
+      {
+        "bytes": 4139,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269U_VARIANT_A_SIMPLIFIED_M2V/K269U_VARIANT_A_SIMPLIFIED_M2V_inventory.md",
+        "sha256": "e4e2a90eeeb4003c2a9aa12f215cbf3676cbad9bf4955c7b145ead6ec0c26d2d"
+      },
+      {
+        "bytes": 8024,
+        "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A/K269U_VARIANT_A_SIMPLIFIED_M2V/K269U_VARIANT_A_SIMPLIFIED_M2V_metadata.json",
+        "sha256": "08396021aa4a08935b2084aa1e802c818e30f91d0217a63897ec22aaf8eafc5f"
+      }
+    ],
+    "count": 37,
+    "k269y_edit_files": {
+      "bytes": 3068611,
+      "count": 6
+    },
+    "modified_by_goal": 0,
+    "review_artifact_files": {
+      "bytes": 3903196,
+      "count": 28
+    },
+    "total_bytes": 37253898
+  },
+  "manifest_self_hash_excluded": true,
+  "nonself_outputs": [
+    {
+      "bytes": 2384,
+      "path": "reports/context_recovery/CHI_YAN_TIAN_QIONG_POST_SOURCE_SETTLEMENT_V0_2/authorization.json",
+      "sha256": "bb8ca03edb77141985d68aef762f697dfec9d475feb2c4f4c5518f5db86d25f6"
+    },
+    {
+      "bytes": 3038,
+      "path": "reports/context_recovery/CHI_YAN_TIAN_QIONG_POST_SOURCE_SETTLEMENT_V0_2/preflight.json",
+      "sha256": "3ebf183f82c5858f8d8a94d66494e9b6e6e3e44534b758fd051e68df4b7e9f17"
+    },
+    {
+      "bytes": 4395,
+      "path": "reports/context_recovery/CHI_YAN_TIAN_QIONG_POST_SOURCE_SETTLEMENT_V0_2/source_application_verification.json",
+      "sha256": "3d56ea7e707c1f78f0a24033e7d61d7a5fc31dcf929d759969413b1debcafece"
+    },
+    {
+      "bytes": 20535,
+      "path": "reports/context_recovery/CHI_YAN_TIAN_QIONG_POST_SOURCE_SETTLEMENT_V0_2/production_state_inventory.json",
+      "sha256": "5b55d640997ceaab427f6e6c54b5ab06f670b0534c15d836979acee084bde01a"
+    },
+    {
+      "bytes": 5800,
+      "path": "reports/context_recovery/CHI_YAN_TIAN_QIONG_POST_SOURCE_SETTLEMENT_V0_2/production_route_options.json",
+      "sha256": "cb8ef2070a9532f8ab1a0261d33e69a41e2084381b43b636cfb19fbeec93d2f3"
+    },
+    {
+      "bytes": 8488,
+      "path": "reports/CHI_YAN_TIAN_QIONG_POST_SOURCE_SETTLEMENT_PRODUCTION_CONTEXT_RECOVERY_V0_2.md",
+      "sha256": "585ad6a75436b9c0978cc1c777432c0b581cdc3f1f48279faead6ca34717c6ef"
+    }
+  ],
+  "output_allowlist": [
+    "reports/context_recovery/CHI_YAN_TIAN_QIONG_POST_SOURCE_SETTLEMENT_V0_2/authorization.json",
+    "reports/context_recovery/CHI_YAN_TIAN_QIONG_POST_SOURCE_SETTLEMENT_V0_2/preflight.json",
+    "reports/context_recovery/CHI_YAN_TIAN_QIONG_POST_SOURCE_SETTLEMENT_V0_2/source_application_verification.json",
+    "reports/context_recovery/CHI_YAN_TIAN_QIONG_POST_SOURCE_SETTLEMENT_V0_2/production_state_inventory.json",
+    "reports/context_recovery/CHI_YAN_TIAN_QIONG_POST_SOURCE_SETTLEMENT_V0_2/production_route_options.json",
+    "reports/context_recovery/CHI_YAN_TIAN_QIONG_POST_SOURCE_SETTLEMENT_V0_2/evidence_manifest.json",
+    "reports/CHI_YAN_TIAN_QIONG_POST_SOURCE_SETTLEMENT_PRODUCTION_CONTEXT_RECOVERY_V0_2.md"
+  ],
+  "output_manifest_model": "SELF_EXCLUDED_NONSELF_OUTPUT_BINDING",
+  "production_files_modified": 0,
+  "production_route_selected": false,
+  "repository": {
+    "branch": "main",
+    "origin_main_at_preflight": "291854b40083456c86316ff59a5caa910f24a99a",
+    "starting_head": "291854b40083456c86316ff59a5caa910f24a99a",
+    "starting_head_message": "source: apply V1.15 project source pack"
+  },
+  "schema_version": "CHI_YAN_TIAN_QIONG_CONTEXT_RECOVERY_EVIDENCE_MANIFEST_V0_2",
+  "source_files_modified": 0,
+  "targeted_absence_checks": [
+    {
+      "exists": false,
+      "path": "productions/chi_yan_tian_qiong/review_artifacts/SHOT-04-R02A2/K270S_B3_SAFE_REVISION_REVIEW_ARTIFACTS",
+      "meaning": "K270Q has no generated review-artifact set and remains visually unknown."
+    },
+    {
+      "exists": false,
+      "path": null,
+      "meaning": "No assembled two-shot output for R02a plus R02a2 exists."
+    }
+  ]
+}

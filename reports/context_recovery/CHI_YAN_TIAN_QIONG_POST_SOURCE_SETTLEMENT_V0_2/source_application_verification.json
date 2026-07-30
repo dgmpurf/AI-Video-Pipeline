@@ -1,0 +1,99 @@
+{
+  "chatgpt_project_source_application": "HUMAN_CONFIRMED_AND_CHATGPT_CHAT_VERIFIED",
+  "codex_project_source_verification_scope": "LOCAL_TRACKED_MIRROR_ONLY",
+  "human_application_state": "SOURCE_PACK_V1_15_V0_3_V0_2_APPLIED",
+  "old_active_version_checks": [
+    {
+      "active_tracked_copy_exists": false,
+      "path": "sources/AI视频制作_Source索引与使用优先级_V1.12.md"
+    },
+    {
+      "active_tracked_copy_exists": false,
+      "path": "sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md"
+    },
+    {
+      "active_tracked_copy_exists": false,
+      "path": "sources/AI视频制作_Source索引与使用优先级_V1.14.md"
+    },
+    {
+      "active_tracked_copy_exists": false,
+      "path": "sources/AI视频制作_当前项目状态与双轨切换_V0.2.md"
+    },
+    {
+      "active_tracked_copy_exists": false,
+      "path": "sources/AI视频制作_结构化验证器与盲审冻结治理规则_V0.1.md"
+    }
+  ],
+  "rolling_state_precedence_note": "Rolling State V0.3 retains immediately preceding manual-application wording; the human confirmation and settlement commit are newer evidence. No Rolling State file was modified.",
+  "schema_version": "CHI_YAN_TIAN_QIONG_SOURCE_APPLICATION_VERIFICATION_V0_2",
+  "settlement_transition": {
+    "added_paths": [
+      "sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.3.md",
+      "sources/AI视频制作_Source索引与使用优先级_V1.15.md",
+      "sources/AI视频制作_动作家族校准实验综合与生产边界_V0.1.md",
+      "sources/AI视频制作_当前项目状态与双轨切换_V0.3.md",
+      "sources/AI视频制作_结构化验证器与盲审冻结治理规则_V0.2.md",
+      "sources/Dreamina_CLI执行契约_V1.5_下载传输恢复与证据保全补丁.md"
+    ],
+    "commit": "291854b40083456c86316ff59a5caa910f24a99a",
+    "deleted_paths": [
+      "sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.2.md",
+      "sources/AI视频制作_Source索引与使用优先级_V1.12.md"
+    ],
+    "message": "source: apply V1.15 project source pack",
+    "parent": "2dfd67e6b6318133c0b342ebc99edb2dd32921c3"
+  },
+  "source_files_modified_by_goal": 0,
+  "source_identity_results": [
+    {
+      "bytes": 9609,
+      "git_blob": "1a6ff91ef39ab72c6ff60ee73ef4857f65410345",
+      "head_bytes_equal_worktree_bytes": true,
+      "path": "sources/AI视频制作_Source索引与使用优先级_V1.15.md",
+      "result": "PASS",
+      "sha256": "8a4f44b388ddd9f9cea830e2c5dd46b7c8a7ab434b254184d1015e16f9c7b929"
+    },
+    {
+      "bytes": 8601,
+      "git_blob": "28576c1e33f2f51a2387e4e1d745bea5c3a103bf",
+      "head_bytes_equal_worktree_bytes": true,
+      "path": "sources/AI视频制作_当前项目状态与双轨切换_V0.3.md",
+      "result": "PASS",
+      "sha256": "1f57ad3ff966369c9020ac10964912be8b9cab3030edb1eccb5d4ed182cc4852"
+    },
+    {
+      "bytes": 9325,
+      "git_blob": "3fcbda0d1845a751d0aca06fc9efb2f07182683e",
+      "head_bytes_equal_worktree_bytes": true,
+      "path": "sources/AI视频制作_结构化验证器与盲审冻结治理规则_V0.2.md",
+      "result": "PASS",
+      "sha256": "68474b1f86bef7b7c95d23d6cf3d55a5997dc3698a492d68a05d28ab3a0b21b7"
+    },
+    {
+      "bytes": 5490,
+      "git_blob": "9ba5bf020bfba399afc5450ea63d5e4f38a67949",
+      "head_bytes_equal_worktree_bytes": true,
+      "path": "sources/AI视频制作_动作家族校准实验综合与生产边界_V0.1.md",
+      "result": "PASS",
+      "sha256": "f62e92451932ed11a50790ce23d9a22424f0ff9ace3fdcbcb5132e457bdc0de7"
+    },
+    {
+      "bytes": 14030,
+      "git_blob": "703660ea363cd67bbae513551687aae974efe20a",
+      "head_bytes_equal_worktree_bytes": true,
+      "path": "sources/AI视频制作_Prompt编译器与结果优先动作语法_V0.3.md",
+      "result": "PASS",
+      "sha256": "0322929721af2695069fe19a50c59a40d0d5b1930a7d18dd4a7e11e43b471ec2"
+    },
+    {
+      "bytes": 5400,
+      "git_blob": "bfbb8c195bd7ad731253d9dd43a571dce9da9ff3",
+      "head_bytes_equal_worktree_bytes": true,
+      "path": "sources/Dreamina_CLI执行契约_V1.5_下载传输恢复与证据保全补丁.md",
+      "result": "PASS",
+      "sha256": "1cf422c0d1205536a2904904e997b60c343aed210c39b5b846c94647d9a42ee5"
+    }
+  ],
+  "source_identity_summary": "PASS_6_OF_6",
+  "worktree_eol_identity_result": "PASS_BYTE_IDENTICAL_TO_HEAD"
+}

@@ -1,0 +1,116 @@
+{
+  "automatic_route_selection": false,
+  "evidence_preferred_route": "ROUTE_A_LOCAL_EDIT_REVIEW_ONLY",
+  "human_route_decision_required": true,
+  "routes": [
+    {
+      "Provider_access_required": false,
+      "Source_update_required": false,
+      "benefits": [
+        "Clears the largest current uncertainty without spending credits.",
+        "Uses the accepted K269Y contact/hit-stop insert and the already downloaded K270Q Beat B.",
+        "Preserves the two-shot route while respecting calibration limits."
+      ],
+      "current_viability": "VIABLE_BOUNDED_LOCAL_ONLY",
+      "first_fresh_Goal_if_selected": "CHI_YAN_TIAN_QIONG_K270Q_COMPLETE_MP4_HUMAN_VISUAL_REVIEW_RECORD_INTAKE_NO_LIVE",
+      "forbidden_automatic_actions": [
+        "Do not infer K270Q quality from metadata or hash.",
+        "Do not create review artifacts or an assembly without fresh human authorization.",
+        "Do not mark any cut, assembly, or video final or locked."
+      ],
+      "human_visual_review_required": true,
+      "new_design_required": false,
+      "prerequisites": [
+        "Human reviews the complete K270Q MP4.",
+        "The review is recorded without changing the media.",
+        "If accepted, a fresh Goal separately authorizes any local assembly."
+      ],
+      "risks": [
+        "K270Q may fail the dynamic-flyout objective.",
+        "A two-shot assembly may still have weak causality or continuity.",
+        "Existing cuts remain supporting material, not a complete action solution."
+      ],
+      "route_id": "ROUTE_A_LOCAL_EDIT_REVIEW_ONLY",
+      "supporting_evidence": [
+        "K269Z explicitly accepted CONTACT_HITSTOP_SHORT as the best supporting edit insert.",
+        "K270Q downloaded one hash-matched B3 safe/simplified Beat B video.",
+        "K270R confirms that K270Q has not yet received visual review.",
+        "CAL-002 Route C found editorial decomposition partially supported as planning evidence."
+      ]
+    },
+    {
+      "Provider_access_required": true,
+      "Source_update_required": false,
+      "benefits": [
+        "Can generate a replacement Beat B if K270Q is rejected.",
+        "Can audit the production Prompt against V0.3 before spending credits.",
+        "Keeps calibration authorities separate from production authority."
+      ],
+      "current_viability": "BLOCKED_PENDING_PROVIDER_ACCESS_AND_FRESH_GOVERNANCE",
+      "first_fresh_Goal_if_selected": "CHI_YAN_TIAN_QIONG_PROVIDER_REENTRY_READ_ONLY_RUNTIME_AND_PRODUCTION_PROMPT_AUDIT_NO_LIVE",
+      "forbidden_automatic_actions": [
+        "Do not reuse CAL-002 through CAL-005 authorities.",
+        "Do not reuse a historical production submit authorization.",
+        "Do not submit, query, download, retry, or resubmit without a fresh bounded live authorization.",
+        "Do not promote provisional calibration findings into the production Prompt."
+      ],
+      "human_visual_review_required": true,
+      "new_design_required": true,
+      "prerequisites": [
+        "Renewed or otherwise valid Provider access.",
+        "Fresh runtime version, help, login, and user_credit verification.",
+        "Production-context Prompt audit under Prompt Compiler V0.3.",
+        "Fresh package with deterministic bindings.",
+        "Fresh human live authorization.",
+        "No reuse of calibration authorities."
+      ],
+      "risks": [
+        "Provider access or command contracts may have changed.",
+        "A fresh generation may repeat sustained-pressure or PUSH-like collapse.",
+        "Credits may be consumed without solving the condition-level action Gate.",
+        "IMPACT reference and text-only IMPACT-hard recipes remain provisional."
+      ],
+      "route_id": "ROUTE_B_FRESH_PROVIDER_ACCESS_PRODUCTION_REENTRY",
+      "supporting_evidence": [
+        "The historical K270J package chain completed submit, query, and download once.",
+        "K270Q remains unreviewed and may require replacement.",
+        "Source V0.3 requires action-family-first compilation and explicit result-state separation.",
+        "CAL-003 through CAL-005 do not establish stable IMPACT production guidance."
+      ]
+    },
+    {
+      "Provider_access_required": false,
+      "Source_update_required": false,
+      "benefits": [
+        "Preserves all local media, edits, reports, and Source settlement evidence.",
+        "Avoids premature production claims and additional credit spend.",
+        "Allows another workstream to proceed without weakening SHOT-04 governance."
+      ],
+      "current_viability": "VIABLE_PRESERVATION_OPTION",
+      "first_fresh_Goal_if_selected": "NONE_REQUIRED_UNLESS_A_NEW_CHECKPOINT_RECORD_IS_REQUESTED",
+      "forbidden_automatic_actions": [
+        "Do not delete, normalize, move, or stage existing local media or artifacts.",
+        "Do not treat the pause as rejection or completion.",
+        "Do not update Source merely to restate the pause."
+      ],
+      "human_visual_review_required": false,
+      "new_design_required": false,
+      "prerequisites": [
+        "Human explicitly chooses to continue the pause or switch workstreams.",
+        "Production evidence remains preserved and no route is implied as selected."
+      ],
+      "risks": [
+        "SHOT-04 remains unresolved.",
+        "K270Q remains an unknown candidate until reviewed.",
+        "Production continuity may require another context refresh after a long pause."
+      ],
+      "route_id": "ROUTE_C_CONTINUE_PAUSE_OR_SWITCH_WORKSTREAM",
+      "supporting_evidence": [
+        "CAL-005 closure explicitly kept the main production line paused.",
+        "No production reentry authority is active.",
+        "All current components and evidence remain locally preserved."
+      ]
+    }
+  ],
+  "schema_version": "CHI_YAN_TIAN_QIONG_PRODUCTION_ROUTE_OPTIONS_V0_2"
+}
