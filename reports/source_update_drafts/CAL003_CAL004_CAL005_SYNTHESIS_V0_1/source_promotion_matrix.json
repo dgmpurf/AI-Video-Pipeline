@@ -1,0 +1,542 @@
+{
+  "chatgpt_project_source_application_status": "UNKNOWN_REQUIRES_HUMAN_CONFIRMATION",
+  "classification_counts": {
+    "NOT_SOURCE": 7,
+    "PROVISIONAL_EXPERIMENTAL_RULE": 3,
+    "REJECTED_OVERCLAIM": 6,
+    "ROLLING_ONLY_FACT": 8,
+    "STABLE_SOURCE_CANDIDATE": 3
+  },
+  "rows": [
+    {
+      "candidate_id": "S01",
+      "claim": "A single favorable sample, median uplift or directional delta cannot override a failed pre-registered family or condition gate.",
+      "classification": "STABLE_SOURCE_CANDIDATE",
+      "human_manual_application_required": true,
+      "limitations": [
+        "Candidate only",
+        "Not applied by this Goal"
+      ],
+      "official_application": false,
+      "promotion_rationale": "CAL-004 and CAL-005 both contain favorable local values that did not satisfy the governing condition Gate.",
+      "source_destination_recommendation": "GOVERNANCE_AND_EVIDENCE_RULES_CANDIDATE",
+      "supporting_experiments": [
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": [
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ]
+    },
+    {
+      "candidate_id": "S02",
+      "claim": "An action-family Prompt, reference or route must not be promoted to stable production guidance until it passes its own gate and demonstrates cross-experiment replication under bounded comparable conditions.",
+      "classification": "STABLE_SOURCE_CANDIDATE",
+      "human_manual_application_required": true,
+      "limitations": [
+        "Candidate only",
+        "Comparable conditions must be assessed explicitly"
+      ],
+      "official_application": false,
+      "promotion_rationale": "CAL-003 supplied a positive PUSH-family result, while CAL-004 and CAL-005 show why an isolated positive experiment is insufficient for stable production promotion.",
+      "source_destination_recommendation": "GOVERNANCE_AND_EVIDENCE_RULES_CANDIDATE",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ]
+    },
+    {
+      "candidate_id": "S03",
+      "claim": "Action-family calibration conclusions must remain setup-bounded unless separate evidence supports Provider-wide, model-wide or universal causality.",
+      "classification": "STABLE_SOURCE_CANDIDATE",
+      "human_manual_application_required": true,
+      "limitations": [
+        "Candidate only",
+        "Does not itself establish any Provider-wide behavior"
+      ],
+      "official_application": false,
+      "promotion_rationale": "All three accepted decisions explicitly retain causal and generalization limitations.",
+      "source_destination_recommendation": "GOVERNANCE_AND_EVIDENCE_RULES_CANDIDATE",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ]
+    },
+    {
+      "candidate_id": "P01",
+      "claim": "PUSH-like differentiation was more repeatable than IMPACT-specific differentiation across the current CAL-003 through CAL-005 setups.",
+      "classification": "PROVISIONAL_EXPERIMENTAL_RULE",
+      "human_manual_application_required": true,
+      "limitations": [
+        "Setup-bounded",
+        "Not Provider-wide",
+        "Not statistically significant"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Supported as a bounded synthesis, but the unique cause and broader generality remain unresolved.",
+      "source_destination_recommendation": "PROVISIONAL_EXPERIMENTAL_FINDINGS_CANDIDATE",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ]
+    },
+    {
+      "candidate_id": "P02",
+      "claim": "ACTION_REF_PUSH_02 has positive repeatability evidence inside CAL-003, but is not production-stable and does not authorize production use.",
+      "classification": "PROVISIONAL_EXPERIMENTAL_RULE",
+      "human_manual_application_required": true,
+      "limitations": [
+        "CAL-003 setup only",
+        "No cross-experiment production replication",
+        "No production authority"
+      ],
+      "official_application": false,
+      "promotion_rationale": "The CAL-003 PUSH family passed, but the evidence does not satisfy the stable production-promotion requirement.",
+      "source_destination_recommendation": "PROVISIONAL_EXPERIMENTAL_FINDINGS_CANDIDATE",
+      "supporting_experiments": [
+        "CAL-003 R1"
+      ],
+      "supporting_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ]
+    },
+    {
+      "candidate_id": "P03",
+      "claim": "The current IMPACT reference and text-only IMPACT-hard recipes do not have condition-level replication evidence sufficient for stable promotion.",
+      "classification": "PROVISIONAL_EXPERIMENTAL_RULE",
+      "human_manual_application_required": true,
+      "limitations": [
+        "Current CAL-003 through CAL-005 designs only",
+        "Does not prove IMPACT generation is impossible"
+      ],
+      "official_application": false,
+      "promotion_rationale": "CAL-003 IMPACT failed, all CAL-004 conditions failed, and CAL-005 did not replicate the text-only IMPACT-specific signal.",
+      "source_destination_recommendation": "PROVISIONAL_EXPERIMENTAL_FINDINGS_CANDIDATE",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ]
+    },
+    {
+      "candidate_id": "R01",
+      "claim": "The synthesis Goal started at repository HEAD 24f6e6e30832c0473a4ef01bf11ebd7197fb6b1a with HEAD aligned to origin/main.",
+      "classification": "ROLLING_ONLY_FACT",
+      "human_manual_application_required": true,
+      "limitations": [
+        "Replaceable repository state"
+      ],
+      "official_application": false,
+      "promotion_rationale": "A repository checkpoint changes over time and belongs only in replaceable current state.",
+      "source_destination_recommendation": "ROLLING_CURRENT_STATE_ONLY",
+      "supporting_experiments": [],
+      "supporting_paths": [
+        "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/preflight.json"
+      ]
+    },
+    {
+      "candidate_id": "R02",
+      "claim": "CAL-003 R1, CAL-004 R1 and CAL-005 R1 are all human-final-decision complete and closed.",
+      "classification": "ROLLING_ONLY_FACT",
+      "human_manual_application_required": true,
+      "limitations": [
+        "Current program state"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Round closure is current project state rather than a durable technical rule.",
+      "source_destination_recommendation": "ROLLING_CURRENT_STATE_ONLY",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ]
+    },
+    {
+      "candidate_id": "R03",
+      "claim": "The exact CAL-003, CAL-004 and CAL-005 outcomes and metrics are current evidence anchors.",
+      "classification": "ROLLING_ONLY_FACT",
+      "human_manual_application_required": true,
+      "limitations": [
+        "Metrics remain experiment-specific"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Exact scores and Gate counts are replaceable evidence facts, not general rules.",
+      "source_destination_recommendation": "ROLLING_CURRENT_STATE_ONLY",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": [
+        "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/cross_experiment_synthesis.json"
+      ]
+    },
+    {
+      "candidate_id": "R04",
+      "claim": "The proposed phase is CAL003_CAL004_CAL005_SYNTHESIS_COMPLETE_SOURCE_CANDIDATE_GENERATION_HUMAN_DECISION.",
+      "classification": "ROLLING_ONLY_FACT",
+      "human_manual_application_required": true,
+      "limitations": [
+        "Phase changes at the next accepted transition"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Phase identity belongs in replaceable current state.",
+      "source_destination_recommendation": "ROLLING_CURRENT_STATE_ONLY",
+      "supporting_experiments": [],
+      "supporting_paths": [
+        "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/rolling_state_update_evidence.json"
+      ]
+    },
+    {
+      "candidate_id": "R05",
+      "claim": "Provider, submit, query, download, retry, resubmit, batch, unblind and Codex Source-write authorities are false.",
+      "classification": "ROLLING_ONLY_FACT",
+      "human_manual_application_required": true,
+      "limitations": [
+        "Authority state can change only through a fresh explicit authorization"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Authority values are current governance state.",
+      "source_destination_recommendation": "ROLLING_CURRENT_STATE_ONLY",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": [
+        "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/authorization.json",
+        "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/rolling_state_update_evidence.json"
+      ]
+    },
+    {
+      "candidate_id": "R06",
+      "claim": "The main production line is paused for calibration synthesis and Source decision.",
+      "classification": "ROLLING_ONLY_FACT",
+      "human_manual_application_required": true,
+      "limitations": [
+        "Current production-routing state only"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Production pause is replaceable current state.",
+      "source_destination_recommendation": "ROLLING_CURRENT_STATE_ONLY",
+      "supporting_experiments": [
+        "CAL-005 R1"
+      ],
+      "supporting_paths": [
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ]
+    },
+    {
+      "candidate_id": "R07",
+      "claim": "Exact decision, report, commit and Git-blob identities are evidence anchors for the current checkpoint.",
+      "classification": "ROLLING_ONLY_FACT",
+      "human_manual_application_required": true,
+      "limitations": [
+        "Identity values change when governed records change"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Artifact identities support auditability but are not stable project rules.",
+      "source_destination_recommendation": "ROLLING_CURRENT_STATE_ONLY",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": [
+        "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/evidence_manifest.json"
+      ]
+    },
+    {
+      "candidate_id": "R08",
+      "claim": "The user reports Dreamina auto-renewal cancelled and paid CLI access expected to end at 2026-07-30T20:00:00+08:00.",
+      "classification": "ROLLING_ONLY_FACT",
+      "human_manual_application_required": true,
+      "limitations": [
+        "HUMAN_REPORTED",
+        "Provider not verified",
+        "Volatile operational fact"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Subscription status is volatile and must not enter stable Source.",
+      "source_destination_recommendation": "ROLLING_CURRENT_STATE_ONLY",
+      "supporting_experiments": [],
+      "supporting_paths": [
+        "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/rolling_state_update_evidence.json"
+      ]
+    },
+    {
+      "candidate_id": "N01",
+      "claim": "Alias-to-task mappings are not Source.",
+      "classification": "NOT_SOURCE",
+      "human_manual_application_required": false,
+      "limitations": [
+        "Experiment-specific controlled-unblinding evidence"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Mappings are evidence internals and do not define reusable guidance.",
+      "source_destination_recommendation": "DO_NOT_PROMOTE",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": []
+    },
+    {
+      "candidate_id": "N02",
+      "claim": "Sealed-package identities are not Source.",
+      "classification": "NOT_SOURCE",
+      "human_manual_application_required": false,
+      "limitations": [
+        "Package-specific integrity evidence"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Sealed-package identities belong only to governed evidence history.",
+      "source_destination_recommendation": "DO_NOT_PROMOTE",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": []
+    },
+    {
+      "candidate_id": "N03",
+      "claim": "Public commitments and salt-related identities are not Source.",
+      "classification": "NOT_SOURCE",
+      "human_manual_application_required": false,
+      "limitations": [
+        "Sensitive or package-specific integrity material"
+      ],
+      "official_application": false,
+      "promotion_rationale": "These values are not reusable creative or governance guidance.",
+      "source_destination_recommendation": "DO_NOT_PROMOTE",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": []
+    },
+    {
+      "candidate_id": "N04",
+      "claim": "Submit IDs and signed URLs are not Source.",
+      "classification": "NOT_SOURCE",
+      "human_manual_application_required": false,
+      "limitations": [
+        "Execution-specific and potentially sensitive"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Execution handles and URLs must remain outside stable Source.",
+      "source_destination_recommendation": "DO_NOT_PROMOTE",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": []
+    },
+    {
+      "candidate_id": "N05",
+      "claim": "Exact per-alias scores are not Source.",
+      "classification": "NOT_SOURCE",
+      "human_manual_application_required": false,
+      "limitations": [
+        "Experiment-specific rolling evidence"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Per-alias scores belong in frozen evidence and analysis records.",
+      "source_destination_recommendation": "DO_NOT_PROMOTE",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": []
+    },
+    {
+      "candidate_id": "N06",
+      "claim": "Temporary helper paths are not Source.",
+      "classification": "NOT_SOURCE",
+      "human_manual_application_required": false,
+      "limitations": [
+        "Transient local orchestration detail"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Temporary paths do not define stable project behavior.",
+      "source_destination_recommendation": "DO_NOT_PROMOTE",
+      "supporting_experiments": [],
+      "supporting_paths": []
+    },
+    {
+      "candidate_id": "N07",
+      "claim": "The current untracked path inventory is not Source.",
+      "classification": "NOT_SOURCE",
+      "human_manual_application_required": false,
+      "limitations": [
+        "Local workspace state"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Untracked workspace inventory is local and replaceable.",
+      "source_destination_recommendation": "DO_NOT_PROMOTE",
+      "supporting_experiments": [],
+      "supporting_paths": [
+        "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/preflight.json"
+      ]
+    },
+    {
+      "candidate_id": "O01",
+      "claim": "The Provider is universally biased toward PUSH.",
+      "classification": "REJECTED_OVERCLAIM",
+      "human_manual_application_required": false,
+      "limitations": [
+        "Unsupported universal attribution"
+      ],
+      "official_application": false,
+      "promotion_rationale": "The experiments are setup-bounded and do not uniquely identify Provider behavior.",
+      "source_destination_recommendation": "EXPLICITLY_REJECT",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": [
+        "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/cross_experiment_synthesis.json"
+      ]
+    },
+    {
+      "candidate_id": "O02",
+      "claim": "IMPACT generation is impossible.",
+      "classification": "REJECTED_OVERCLAIM",
+      "human_manual_application_required": false,
+      "limitations": [
+        "Unsupported impossibility claim"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Failed Gates in the current setups do not establish impossibility.",
+      "source_destination_recommendation": "EXPLICITLY_REJECT",
+      "supporting_experiments": [
+        "CAL-003 R1",
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": [
+        "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/cross_experiment_synthesis.json"
+      ]
+    },
+    {
+      "candidate_id": "O03",
+      "claim": "The IMPACT-hard Prompt is universally ineffective.",
+      "classification": "REJECTED_OVERCLAIM",
+      "human_manual_application_required": false,
+      "limitations": [
+        "Unsupported universal Prompt claim"
+      ],
+      "official_application": false,
+      "promotion_rationale": "CAL-005 is one bounded text2video no-reference setup.",
+      "source_destination_recommendation": "EXPLICITLY_REJECT",
+      "supporting_experiments": [
+        "CAL-005 R1"
+      ],
+      "supporting_paths": [
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ]
+    },
+    {
+      "candidate_id": "O04",
+      "claim": "ACTION_REF_PUSH_02 is production-approved.",
+      "classification": "REJECTED_OVERCLAIM",
+      "human_manual_application_required": false,
+      "limitations": [
+        "No production authority exists"
+      ],
+      "official_application": false,
+      "promotion_rationale": "Positive CAL-003 repeatability evidence does not constitute production approval.",
+      "source_destination_recommendation": "EXPLICITLY_REJECT",
+      "supporting_experiments": [
+        "CAL-003 R1"
+      ],
+      "supporting_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ]
+    },
+    {
+      "candidate_id": "O05",
+      "claim": "CAL-003 alone proves a stable production rule.",
+      "classification": "REJECTED_OVERCLAIM",
+      "human_manual_application_required": false,
+      "limitations": [
+        "Cross-experiment replication is absent"
+      ],
+      "official_application": false,
+      "promotion_rationale": "A single bounded experiment cannot establish stable production guidance.",
+      "source_destination_recommendation": "EXPLICITLY_REJECT",
+      "supporting_experiments": [
+        "CAL-003 R1"
+      ],
+      "supporting_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ]
+    },
+    {
+      "candidate_id": "O06",
+      "claim": "A higher median IMPACT score alone proves replication.",
+      "classification": "REJECTED_OVERCLAIM",
+      "human_manual_application_required": false,
+      "limitations": [
+        "Ignores pre-registered Gate precedence"
+      ],
+      "official_application": false,
+      "promotion_rationale": "CAL-004 I0 and CAL-005 I0R retained failed condition Gates despite local score increases.",
+      "source_destination_recommendation": "EXPLICITLY_REJECT",
+      "supporting_experiments": [
+        "CAL-004 R1",
+        "CAL-005 R1"
+      ],
+      "supporting_paths": [
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ]
+    }
+  ],
+  "schema_version": "CAL003_CAL004_CAL005_SOURCE_PROMOTION_MATRIX_V0_1",
+  "source_observation": {
+    "local_source_file_count": 28,
+    "local_source_index_path": "sources/AI视频制作_Source索引与使用优先级_V1.12.md",
+    "local_source_index_version": "V1.12",
+    "newer_project_source_candidate_files_observed": false,
+    "observed_rolling_current_state_version": null,
+    "repository_source_differs_from_current_experiment_evidence": true,
+    "source_files_modified": 0,
+    "stale_candidate_or_pending_wording_observed": true
+  }
+}

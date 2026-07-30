@@ -1,0 +1,182 @@
+{
+  "Dreamina_called": false,
+  "Provider_called": false,
+  "bounded_interpretation": "PUSH_LIKE_SIGNATURES_WERE_MORE_REPEATABLE_THAN_IMPACT_SPECIFIC_SIGNATURES_ACROSS_THE_CURRENT_CAL003_CAL004_CAL005_SETUPS_WHILE_THE_UNIQUE_CAUSE_REMAINS_UNRESOLVED_AND_NO_PROVIDER_WIDE_BIAS_OR_UNIVERSAL_PROMPT_CAUSALITY_IS_CLAIMED",
+  "credits_consumed": 0,
+  "exact_output_paths": [
+    "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/authorization.json",
+    "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/preflight.json",
+    "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/cross_experiment_synthesis.json",
+    "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/source_promotion_matrix.json",
+    "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/rolling_state_update_evidence.json",
+    "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/evidence_manifest.json",
+    "reports/CAL003_CAL004_CAL005_CROSS_EXPERIMENT_SYNTHESIS_AND_SOURCE_UPDATE_EVIDENCE_PACK.md"
+  ],
+  "file_bindings": {
+    "inputs": [
+      {
+        "bytes": 2869,
+        "git_blob_after_commit": "b428c968b500e822e6f1a740aa01c222e82477fa",
+        "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "role": "CAL003 accepted human-final-decision record",
+        "sha256": "030b2c1b00ebd1f14ceed035cc4266b33913aebb5b4a64a713e04acdaad5afcd",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 1742,
+        "git_blob_after_commit": "880d5d1df4d8818ef2c4991cded699df5b69dab2",
+        "path": "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_HUMAN_FINAL_DECISION.md",
+        "role": "CAL003 accepted human-final-decision report",
+        "sha256": "121e04ca403ee4dd78a6b26b8d88c5efcdfc72925d5a35608b270d12c28d6b6b",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 2058,
+        "git_blob_after_commit": "0b4eada2543b7cd08d02d44b344fac78c52a7445",
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "role": "CAL004 accepted human-final-decision record",
+        "sha256": "fa47dc6f6d8870fe1cf45ebbe88d6f9c9b22eae74aa7475f694c1a5807c41eb2",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 1524,
+        "git_blob_after_commit": "14257ca7fdac941f27e1f5c20fa241d28eade6cc",
+        "path": "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_HUMAN_FINAL_DECISION.md",
+        "role": "CAL004 accepted human-final-decision report",
+        "sha256": "3e2afd590c6721a98add88c09afaf8a934f52d3466631526b6bb38689b1722fe",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 9138,
+        "git_blob_after_commit": "3e9adad910361be0d61361286738b43f3c4dd439",
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+        "role": "CAL004 supporting condition Gate evidence",
+        "sha256": "5e4b700450915b6c23a0737d981cd855e9727654d6cd4432492229c7b182f685",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 6371,
+        "git_blob_after_commit": "abef6553d4b4d1ba59955b993186e006df01d5c8",
+        "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/contrast_results.json",
+        "role": "CAL004 supporting contrast evidence",
+        "sha256": "2e174e1519d1a6ba9e5375112b1120ce59319af6d615afceb927ffe4bf241fe7",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 5172,
+        "git_blob_after_commit": "7335e80ae7e1639cd685d188491dbd2d5b9fdc77",
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "role": "CAL005 accepted human-final-decision record",
+        "sha256": "76b0eb9d6b675f8f13f182dfae06309cd5812894f24e20dbd83ef143cf795289",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 7008,
+        "git_blob_after_commit": "809c07f58d1e6046aef708786be627208b7bdee5",
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/evidence_manifest.json",
+        "role": "CAL005 human-final-decision provenance manifest",
+        "sha256": "4776569d7a672e3f3abe0684688d46296eb9915963a8021d09d85e2bd957132c",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 3993,
+        "git_blob_after_commit": "35b9024585cc4a4a6f1e15b78de0b1176c680dc5",
+        "path": "reports/CAL005_TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_R1_HUMAN_FINAL_DECISION.md",
+        "role": "CAL005 accepted human-final-decision report",
+        "sha256": "9e488d46e8e813476e937500049a3d2f6ea8f696a7b26e86435ce6f833af5d9a",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 2674,
+        "git_blob_after_commit": "70dc2303c91214dcc682c9014c0963f686a958cf",
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+        "role": "CAL005 supporting condition Gate evidence",
+        "sha256": "4e89ed3c5448dabc36a856e2f2272d996353bac0bff008fd659b9528f44677e9",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 852,
+        "git_blob_after_commit": "5f0f8de3b9380a16eda407edf84015ffd3412bea",
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/primary_contrast_result.json",
+        "role": "CAL005 supporting primary contrast evidence",
+        "sha256": "c7784b7d7c8def3b07132a51db7b01b3d0c2690885870ecd8779f78f81bdf866",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 729,
+        "git_blob_after_commit": "27ee4ebd108ac0f4a40add76c0cbb9ceb612cfb8",
+        "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/proposed_outcome.json",
+        "role": "CAL005 supporting proposed outcome evidence",
+        "sha256": "039a736bddaa224398c48e5720d12dd2ba576c1aef40a15eefae357327f3c7f8",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 11038,
+        "git_blob_after_commit": "c533386576332f0429fb637f890ef9d3c174bbec",
+        "path": "sources/AI视频制作_Source索引与使用优先级_V1.12.md",
+        "role": "Read-only local Source index observation",
+        "sha256": "e13a98c4a12fab8ba3267b3074acf103e1458798fb865b6363ee3e732d275022",
+        "worktree_equals_head": true
+      }
+    ],
+    "nonself_outputs": [
+      {
+        "bytes": 4726,
+        "git_blob_after_commit": "8bf471c6e1aaff4e7f77c3dbbacf395a4882e160",
+        "path": "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/authorization.json",
+        "role": "Authorization record",
+        "sha256": "b8d5edeecb0a123a9eba4296983af17f76075f0a738a75578b97604314107c1e",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 7156,
+        "git_blob_after_commit": "cd75dbc7371548705748a4f8341d3f6fd05bff10",
+        "path": "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/preflight.json",
+        "role": "Repository and evidence preflight",
+        "sha256": "e03690088f4d286cdc2a011d767f5bf6a53485fcc67d5d16ce29c9da1d65414f",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 17402,
+        "git_blob_after_commit": "3d10807d47b96a28b7dbece8cb0e441207c20068",
+        "path": "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/cross_experiment_synthesis.json",
+        "role": "Cross-experiment evidence and bounded synthesis",
+        "sha256": "bcb091337d4a99221a1cf5182570f75151c88f86a1643db18d5bd388f1c6397f",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 22896,
+        "git_blob_after_commit": "974435f88e1981b8d36a98e75260e00c3d29b38c",
+        "path": "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/source_promotion_matrix.json",
+        "role": "Source eligibility and rejection matrix",
+        "sha256": "7fe1f2a6c21e295a9b354524d4d5f637372be85bcfd64cda677e7b140253e203",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 5847,
+        "git_blob_after_commit": "975e9824f0387c2f4b35c56d1995b6db04fe3281",
+        "path": "reports/source_update_drafts/CAL003_CAL004_CAL005_SYNTHESIS_V0_1/rolling_state_update_evidence.json",
+        "role": "Rolling Current State replacement evidence",
+        "sha256": "9288ec919fdc26d8de309c3fed7ab656d5b5c8d4ca8d5a6a630b2c24779a3b8b",
+        "worktree_equals_head": true
+      },
+      {
+        "bytes": 10639,
+        "git_blob_after_commit": "23e2aa0d2d128fc1f167d82c8da1119d69d5354e",
+        "path": "reports/CAL003_CAL004_CAL005_CROSS_EXPERIMENT_SYNTHESIS_AND_SOURCE_UPDATE_EVIDENCE_PACK.md",
+        "role": "Human-readable answer-first evidence pack",
+        "sha256": "0c6f622daaa4e23b59d55e3642724980f532fd3b16703f276e121abebf4fa12f",
+        "worktree_equals_head": true
+      }
+    ]
+  },
+  "formal_synthesis_label": "CURRENT_CAL003_CAL004_CAL005_EVIDENCE_SUPPORTS_REPEATABLE_PUSH_LIKE_DIFFERENTIATION_BUT_NOT_IMPACT_SPECIFIC_CONDITION_LEVEL_REPLICATION",
+  "media_accessed": false,
+  "nonself_output_count": 6,
+  "output_count_including_manifest": 7,
+  "schema_version": "CAL003_CAL004_CAL005_SYNTHESIS_EVIDENCE_MANIFEST_V0_1",
+  "sealed_zip_accessed": false,
+  "self_excluded": true,
+  "source_files_modified": 0,
+  "starting_checkpoint": "24f6e6e30832c0473a4ef01bf11ebd7197fb6b1a"
+}

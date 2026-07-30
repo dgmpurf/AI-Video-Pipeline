@@ -1,0 +1,177 @@
+{
+  "authorization_profile_verification": {
+    "base64_character_count": 3008,
+    "byte_length": 2256,
+    "decoded_exactly_once": true,
+    "decoded_sha256_equal": true,
+    "forbidden_byte_checks": "PASS",
+    "last_byte_hex": "45",
+    "round_trip_byte_equality": true,
+    "sha256": "5c7abde065d499491e1fb6725482a5b11bd377579f2bc71d4f04b59bd03ca833",
+    "status": "PASS"
+  },
+  "branch": "main",
+  "decision_blob_verification": {
+    "CAL003": {
+      "actual_git_blob": "b428c968b500e822e6f1a740aa01c222e82477fa",
+      "expected_git_blob": "b428c968b500e822e6f1a740aa01c222e82477fa",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+      "status": "PASS",
+      "worktree_equals_head": true
+    },
+    "CAL004": {
+      "actual_git_blob": "0b4eada2543b7cd08d02d44b344fac78c52a7445",
+      "expected_git_blob": "0b4eada2543b7cd08d02d44b344fac78c52a7445",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+      "status": "PASS",
+      "worktree_equals_head": true
+    },
+    "CAL005": {
+      "actual_git_blob": "7335e80ae7e1639cd685d188491dbd2d5b9fdc77",
+      "expected_git_blob": "7335e80ae7e1639cd685d188491dbd2d5b9fdc77",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+      "status": "PASS",
+      "worktree_equals_head": true
+    }
+  },
+  "dreamina_and_media_access": {
+    "Dreamina_called": false,
+    "Provider_called": false,
+    "credits_consumed": 0,
+    "media_accessed": false,
+    "sealed_zip_accessed": false
+  },
+  "fetch": {
+    "command": "git fetch origin main",
+    "count": 1,
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  "fresh_goal": {
+    "activated_after_all_preactivation_checks": true,
+    "goal": "CAL003_CAL004_CAL005_CROSS_EXPERIMENT_SYNTHESIS_AND_SOURCE_UPDATE_EVIDENCE_PACK_V0_1",
+    "prior_goal_cleared": true
+  },
+  "input_parsing_status": {
+    "CAL003_human_decision": "PASS",
+    "CAL004_condition_gate_results": "PASS",
+    "CAL004_contrast_results": "PASS",
+    "CAL004_human_decision": "PASS",
+    "CAL005_condition_gate_results": "PASS",
+    "CAL005_human_decision": "PASS",
+    "CAL005_primary_contrast_result": "PASS",
+    "CAL005_proposed_outcome": "PASS"
+  },
+  "operation_state_checks": {
+    "bisect_active": false,
+    "cherry_pick_active": false,
+    "merge_active": false,
+    "rebase_active": false,
+    "revert_active": false,
+    "status": "PASS"
+  },
+  "origin_main": "24f6e6e30832c0473a4ef01bf11ebd7197fb6b1a",
+  "pre_existing_untracked_inventory": {
+    "expanded_untracked_file_count": 542,
+    "git_status_entries": [
+      ".vs/",
+      "_tmp_cal005_unblind_executor.py",
+      "experiments/CAL-001/execution_records/P3B_R2_T2/evidence/",
+      "experiments/CAL-001/execution_records/P3B_R2_T4/evidence/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH02_EXECUTION/execution_records/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH03_EXECUTION/execution_records/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/BATCH04_EXECUTION/execution_records/",
+      "experiments/CAL-002/ACTION_CALIBRATION_V1/PILOT_R1/BATCH_01/execution_records/",
+      "productions/chi_yan_tian_qiong/edits/",
+      "productions/chi_yan_tian_qiong/review_artifacts/",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_INDEPENDENT_PACKAGE_REVIEW_RESULT.md",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_ACTION_CALIBRATION_PILOT_R1_BATCH01_QUERY_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH02_DESIGN_REVIEW_RESULT.md",
+      "reports/CAL002_BATCH02_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH02_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH02_QUERY_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH03_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH03_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH03_QUERY_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH04_DOWNLOAD_AUTHORIZATION_EXECUTION_RECONCILIATION_RESULT.md",
+      "reports/CAL002_BATCH04_DOWNLOAD_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH04_LIVE_EXECUTION_RESULT.md",
+      "reports/CAL002_BATCH04_QUERY_EXECUTION_RESULT.md",
+      "reports/context_recovery/",
+      "reports/investor/"
+    ],
+    "inventory_mode": "git status --porcelain=v1 --untracked-files=normal",
+    "status_entry_count": 27,
+    "touched": false
+  },
+  "remote": "dgmpurf/AI-Video-Pipeline",
+  "remote_url": "https://github.com/dgmpurf/AI-Video-Pipeline.git",
+  "repository": "G:/AICODING/AI_VIDEO/AI_VIDEO_PIPELINE",
+  "round_closure_and_authority_verification": {
+    "CAL003": {
+      "automatic_expansion": false,
+      "final_master": false,
+      "fixed_task_completion": false,
+      "human_final_decision_complete": true,
+      "locked": false,
+      "production_approved": false,
+      "round_closed": true
+    },
+    "CAL004": {
+      "automatic_expansion": false,
+      "final_master": false,
+      "fixed_task_completion": false,
+      "human_final_decision_complete": true,
+      "locked": false,
+      "next_live_experiment_authorized": false,
+      "production_approved": false,
+      "round_closed": true,
+      "source_promotion_authorized": false
+    },
+    "CAL005": {
+      "automatic_expansion": false,
+      "final_master": false,
+      "fixed_task_completion": false,
+      "human_final_decision_complete": true,
+      "locked": false,
+      "next_live_experiment_authorized": false,
+      "production_approved": false,
+      "production_reentry_authorized": false,
+      "round_closed": true,
+      "source_promotion_authorized": false
+    },
+    "status": "PASS"
+  },
+  "source_inspection": {
+    "chatgpt_project_source_application_status": "UNKNOWN_REQUIRES_HUMAN_CONFIRMATION",
+    "local_source_file_count": 28,
+    "local_source_index_git_blob": "c533386576332f0429fb637f890ef9d3c174bbec",
+    "local_source_index_path": "sources/AI视频制作_Source索引与使用优先级_V1.12.md",
+    "local_source_index_sha256": "e13a98c4a12fab8ba3267b3074acf103e1458798fb865b6363ee3e732d275022",
+    "local_source_index_version": "V1.12",
+    "observed_rolling_current_state_version": null,
+    "repository_source_differs_from_current_experiment_evidence": true,
+    "stale_candidate_or_pending_wording_observed": true,
+    "stale_evidence": [
+      "Source index records repository checkpoint a838723b8824a1003b6abab220257d0e20fa31ad",
+      "Source index records CAL001-F07-P1-R1 and F07_task_state pending_preflight",
+      "Source index contains no CAL-003, CAL-004 or CAL-005 state"
+    ],
+    "status": "PASS_READ_ONLY"
+  },
+  "source_status": {
+    "source_files_modified": 0,
+    "sources_staged_changes": 0,
+    "sources_tracked_modifications": 0
+  },
+  "staged_changes": 0,
+  "starting_head": "24f6e6e30832c0473a4ef01bf11ebd7197fb6b1a",
+  "target_path_absence": {
+    "absent_count": 7,
+    "expected_count": 7,
+    "status": "PASS"
+  },
+  "tracked_modifications": 0
+}

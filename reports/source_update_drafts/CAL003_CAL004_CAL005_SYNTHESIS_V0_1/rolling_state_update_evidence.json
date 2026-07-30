@@ -1,0 +1,126 @@
+{
+  "chatgpt_project_source_application_status": "UNKNOWN_REQUIRES_HUMAN_CONFIRMATION",
+  "exact_repository_anchors": {
+    "CAL003_human_decision": {
+      "git_blob": "b428c968b500e822e6f1a740aa01c222e82477fa",
+      "path": "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+      "sha256": "030b2c1b00ebd1f14ceed035cc4266b33913aebb5b4a64a713e04acdaad5afcd"
+    },
+    "CAL004_human_decision": {
+      "git_blob": "0b4eada2543b7cd08d02d44b344fac78c52a7445",
+      "path": "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+      "sha256": "fa47dc6f6d8870fe1cf45ebbe88d6f9c9b22eae74aa7475f694c1a5807c41eb2"
+    },
+    "CAL005_human_decision": {
+      "git_blob": "7335e80ae7e1639cd685d188491dbd2d5b9fdc77",
+      "path": "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+      "sha256": "76b0eb9d6b675f8f13f182dfae06309cd5812894f24e20dbd83ef143cf795289"
+    },
+    "head_origin_aligned": true,
+    "repository_head": "24f6e6e30832c0473a4ef01bf11ebd7197fb6b1a"
+  },
+  "experiment_closure_summaries": {
+    "CAL003": {
+      "formal_result": "CAL003_R1_MIXED_REPEATABILITY_SIGNAL_REQUIRES_HUMAN_DECISION",
+      "human_final_decision_complete": true,
+      "round_closed": true
+    },
+    "CAL004": {
+      "formal_result": "PROVIDER_OR_SCENE_PUSH_PRIOR_DOMINANT",
+      "human_bounded_interpretation": "PUSH_LIKE_PRIOR_DOMINANT_IN_CURRENT_CAL004_SETUP_WITH_PARTIAL_TEXT_ONLY_IMPACT_SIGNAL_AND_UNRESOLVED_REFERENCE_COMMAND_ROUTE_CAUSATION",
+      "human_final_decision_complete": true,
+      "round_closed": true
+    },
+    "CAL005": {
+      "formal_result": "CAL005_R1_TEXT_ONLY_IMPACT_SIGNAL_NOT_CONDITION_GATE_REPLICATED",
+      "human_final_decision_complete": true,
+      "round_closed": true
+    }
+  },
+  "facts_to_remove_from_prior_capsule": [
+    {
+      "fact": "repository HEAD 46bb02a...",
+      "reason": "Superseded by the bound repository checkpoint."
+    },
+    {
+      "fact": "CAL005 mapping_revealed = false",
+      "reason": "Controlled unblinding completed; mapping details remain governed evidence and are not reproduced here."
+    },
+    {
+      "fact": "CAL005 condition_analysis_complete = false",
+      "reason": "Condition analysis completed and was accepted by the human-final-decision record."
+    },
+    {
+      "fact": "CAL005 human_final_decision_complete = false",
+      "reason": "The CAL-005 human-final-decision record is complete and the round is closed."
+    },
+    {
+      "fact": "sealed open count = 0 as current total",
+      "reason": "The completed controlled-unblinding phase opened the sealed package under its governed contract; retain historical attempt accounting in the phase evidence rather than a stale current-total zero."
+    },
+    {
+      "fact": "current controlled-unblinding phase",
+      "reason": "Controlled unblinding, condition analysis and human final decision are complete."
+    }
+  ],
+  "facts_to_replace": {
+    "CAL003_R1_human_final_decision_complete": true,
+    "CAL003_R1_round_closed": true,
+    "CAL004_R1_human_final_decision_complete": true,
+    "CAL004_R1_round_closed": true,
+    "CAL005_R1_condition_analysis_complete": true,
+    "CAL005_R1_human_final_decision_complete": true,
+    "CAL005_R1_mapping_revealed_under_governed_unblinding": true,
+    "CAL005_R1_round_closed": true,
+    "current_phase": "CAL003_CAL004_CAL005_SYNTHESIS_COMPLETE_SOURCE_CANDIDATE_GENERATION_HUMAN_DECISION",
+    "historical_sealed_open_attempt_accounting_must_be_preserved": true,
+    "repository_head": "24f6e6e30832c0473a4ef01bf11ebd7197fb6b1a"
+  },
+  "facts_to_retain": [
+    "All prior governed attempt and recovery accounting remains historical evidence.",
+    "Exact alias mappings, sealed-package identities, commitments, submit IDs and per-alias scores remain outside stable Source.",
+    "production_approved=false",
+    "production_reentry_authorized=false",
+    "fixed_task_completion=false",
+    "final_master=false",
+    "locked=false",
+    "Future live work requires fresh human authorization and fresh runtime verification."
+  ],
+  "next_phase": "CHATGPT_GENERATE_ROLLING_CURRENT_STATE_V0_3_AND_SOURCE_UPDATE_CANDIDATE_PACK_FOR_HUMAN_MANUAL_APPLICATION",
+  "proposed_replacement_state": {
+    "CAL003_R1_round_closed": true,
+    "CAL004_R1_round_closed": true,
+    "CAL005_R1_round_closed": true,
+    "batch_authority": false,
+    "current_phase": "CAL003_CAL004_CAL005_SYNTHESIS_COMPLETE_SOURCE_CANDIDATE_GENERATION_HUMAN_DECISION",
+    "download_authority": false,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "head_origin_aligned": true,
+    "locked": false,
+    "main_production_line": "paused_for_calibration_synthesis_and_source_decision",
+    "production_approved": false,
+    "production_reentry_authorized": false,
+    "provider_authority": false,
+    "query_authority": false,
+    "repository_head": "24f6e6e30832c0473a4ef01bf11ebd7197fb6b1a",
+    "resubmit_authority": false,
+    "retry_authority": false,
+    "source_write_authority_for_codex": false,
+    "submit_authority": false,
+    "unblind_authority": false
+  },
+  "schema_version": "CAL003_CAL004_CAL005_ROLLING_STATE_UPDATE_EVIDENCE_V0_1",
+  "subscription_and_cli_operational_notes": [
+    "CLI installation may remain present after paid access ends.",
+    "No current live experiment requires CLI access.",
+    "Any future live operation requires a new subscription or valid access, fresh runtime verification and fresh human authorization."
+  ],
+  "volatile_subscription_fact": {
+    "dreamina_auto_renewal_cancelled": true,
+    "fact_source": "HUMAN_REPORTED",
+    "paid_cli_access_expected_end": "2026-07-30T20:00:00+08:00",
+    "provider_verified": false,
+    "rolling_only": true
+  }
+}

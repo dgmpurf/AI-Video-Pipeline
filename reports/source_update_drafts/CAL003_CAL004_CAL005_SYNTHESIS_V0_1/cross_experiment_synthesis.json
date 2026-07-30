@@ -1,0 +1,396 @@
+{
+  "authority_boundary": {
+    "automatic_CAL006": false,
+    "batch_authority": false,
+    "download_authority": false,
+    "final_master": false,
+    "fixed_task_completion": false,
+    "locked": false,
+    "production_approved": false,
+    "production_reentry_authorized": false,
+    "provider_authority": false,
+    "query_authority": false,
+    "resubmit_authority": false,
+    "retry_authority": false,
+    "source_write_authority_for_codex": false,
+    "submit_authority": false,
+    "unblind_authority": false
+  },
+  "causal_limitations": [
+    "not Provider-wide",
+    "not model-version universal",
+    "not scene-independent",
+    "not actor-independent",
+    "not Prompt-universal",
+    "not statistical significance",
+    "not proof that IMPACT generation is impossible"
+  ],
+  "cross_experiment_claims": [
+    {
+      "allowed_use": "Record the accepted CAL-003 family-level result.",
+      "claim_id": "D01",
+      "claim_text": "CAL-003 PUSH family passed 3/3 with median own score 12 and median margin 8.",
+      "classification": "DIRECT_EXPERIMENT_EVIDENCE",
+      "direct_supporting_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_HUMAN_FINAL_DECISION.md"
+      ],
+      "forbidden_overclaims": [
+        "ACTION_REF_PUSH_02 is production-approved",
+        "CAL-003 alone proves a stable production rule"
+      ],
+      "inference_level": "DIRECT",
+      "limitations": [
+        "Three samples in the current CAL-003 setup only",
+        "No production approval follows from the family Gate"
+      ],
+      "supporting_fields": [
+        "accepted_committed_evidence.family_gates.PUSH.family_gate",
+        "accepted_committed_evidence.family_gates.PUSH.sample_pass_count",
+        "accepted_committed_evidence.family_gates.PUSH.median_own_score",
+        "accepted_committed_evidence.family_gates.PUSH.median_margin"
+      ]
+    },
+    {
+      "allowed_use": "Record the accepted CAL-003 IMPACT-family failure.",
+      "claim_id": "D02",
+      "claim_text": "CAL-003 IMPACT family failed 0/3 with median own score 6 and median margin -6; the ordinal-pair aggregate also failed 0/3.",
+      "classification": "DIRECT_EXPERIMENT_EVIDENCE",
+      "direct_supporting_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "reports/CAL003_REFERENCE_CONTROL_REPEATABILITY_R1_HUMAN_FINAL_DECISION.md"
+      ],
+      "forbidden_overclaims": [
+        "IMPACT generation is impossible",
+        "The Provider is universally biased toward PUSH"
+      ],
+      "inference_level": "DIRECT",
+      "limitations": [
+        "Current CAL-003 reference-control setup only",
+        "Failure does not identify a unique cause"
+      ],
+      "supporting_fields": [
+        "accepted_committed_evidence.family_gates.IMPACT",
+        "accepted_committed_evidence.ordinal_pair_gate"
+      ]
+    },
+    {
+      "allowed_use": "Record the accepted CAL-004 Gate outcome.",
+      "claim_id": "D03",
+      "claim_text": "CAL-004 had 0/6 passing condition Gates and 1/18 passing sample Gates; five of six condition median margins were negative.",
+      "classification": "DIRECT_EXPERIMENT_EVIDENCE",
+      "direct_supporting_paths": [
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+        "reports/CAL004_IMPACT_FAMILY_CAUSAL_ISOLATION_R1_HUMAN_FINAL_DECISION.md"
+      ],
+      "forbidden_overclaims": [
+        "The Provider is universally biased toward PUSH",
+        "One unique negative cause was established"
+      ],
+      "inference_level": "DIRECT",
+      "limitations": [
+        "Current CAL-004 setup only",
+        "Reference-present conditions also changed command route"
+      ],
+      "supporting_fields": [
+        "accepted_evidence.condition_gate_fail_count",
+        "accepted_evidence.sample_gate_pass_count",
+        "accepted_evidence.five_of_six_condition_median_margins_negative"
+      ]
+    },
+    {
+      "allowed_use": "Describe the bounded CAL-004 I0 partial signal without overriding its Gate.",
+      "claim_id": "D04",
+      "claim_text": "CAL-004 I0 showed a partial text-only signal with median IMPACT 9, median margin 1 and 1/3 sample passes, but its condition Gate failed.",
+      "classification": "DIRECT_EXPERIMENT_EVIDENCE",
+      "direct_supporting_paths": [
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/contrast_results.json"
+      ],
+      "forbidden_overclaims": [
+        "A higher median IMPACT score alone proves replication",
+        "The I0 recipe passed"
+      ],
+      "inference_level": "DIRECT",
+      "limitations": [
+        "Condition Gate remained FAIL",
+        "Only one of three samples passed"
+      ],
+      "supporting_fields": [
+        "accepted_evidence.i0_text2video_no_reference",
+        "accepted_evidence.primary_controlled_contrast_c03"
+      ]
+    },
+    {
+      "allowed_use": "Record that CAL-005 did not replicate a condition-level text-only IMPACT-specific signal.",
+      "claim_id": "D05",
+      "claim_text": "CAL-005 N0R and I0R both failed 0/3; I0R versus N0R increased IMPACT by 7 and PUSH by 5 with margin delta 1, but directional_partial_signal was false.",
+      "classification": "DIRECT_EXPERIMENT_EVIDENCE",
+      "direct_supporting_paths": [
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/condition_gate_results.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/primary_contrast_result.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_UNBLINDING_AND_CONDITION_ANALYSIS_V0_1/proposed_outcome.json"
+      ],
+      "forbidden_overclaims": [
+        "The IMPACT-hard Prompt is universally ineffective",
+        "I0R-01 proves replication"
+      ],
+      "inference_level": "DIRECT",
+      "limitations": [
+        "Current text2video no-reference setup only",
+        "Three replicates per condition",
+        "I0R-01 is a near-threshold individual sample only"
+      ],
+      "supporting_fields": [
+        "accepted_evidence.conditions.N0R",
+        "accepted_evidence.conditions.I0R",
+        "accepted_evidence.primary_contrast",
+        "accepted_evidence.directional_partial_signal",
+        "formal_pre_registered_outcome"
+      ]
+    },
+    {
+      "allowed_use": "Guide bounded project-level calibration planning and future Source review.",
+      "claim_id": "B01",
+      "claim_text": "Across the current CAL-003, CAL-004 and CAL-005 setups, PUSH-like signatures were more repeatable than IMPACT-specific signatures.",
+      "classification": "BOUNDED_CROSS_EXPERIMENT_INFERENCE",
+      "direct_supporting_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ],
+      "forbidden_overclaims": [
+        "The Provider is universally biased toward PUSH",
+        "The result is scene-independent or actor-independent",
+        "The result is statistically significant"
+      ],
+      "inference_level": "BOUNDED_CROSS_EXPERIMENT_INFERENCE",
+      "limitations": [
+        "not Provider-wide",
+        "not model-version universal",
+        "not scene-independent",
+        "not actor-independent",
+        "not Prompt-universal",
+        "not statistical significance"
+      ],
+      "supporting_fields": [
+        "CAL003 PUSH and IMPACT family Gates",
+        "CAL004 condition and sample Gates",
+        "CAL005 N0R and I0R condition Gates"
+      ]
+    },
+    {
+      "allowed_use": "Maintain the open causal question and constrain future claims.",
+      "claim_id": "B02",
+      "claim_text": "The current evidence does not uniquely identify why PUSH-like signatures were more repeatable.",
+      "classification": "BOUNDED_CROSS_EXPERIMENT_INFERENCE",
+      "direct_supporting_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ],
+      "forbidden_overclaims": [
+        "Provider behavior is the unique cause",
+        "Prompt wording is the unique cause",
+        "Reference content is the unique cause"
+      ],
+      "inference_level": "BOUNDED_CROSS_EXPERIMENT_INFERENCE",
+      "limitations": [
+        "Several design factors differ across experiments",
+        "Small replicate counts",
+        "No committed experiment uniquely ranked all candidate causes"
+      ],
+      "supporting_fields": [
+        "CAL003 excluded_single_cause_claims",
+        "CAL004 causal_limitations",
+        "CAL005 causal_limitations"
+      ]
+    },
+    {
+      "allowed_use": "Candidate governance rule for human Source review.",
+      "claim_id": "S01",
+      "claim_text": "A single favorable sample, median uplift or directional delta cannot override a failed pre-registered family or condition gate.",
+      "classification": "STABLE_SOURCE_CANDIDATE",
+      "direct_supporting_paths": [
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ],
+      "forbidden_overclaims": [
+        "A favorable median proves replication",
+        "A near-threshold sample overrides a failed Gate"
+      ],
+      "inference_level": "GOVERNANCE_RULE_CANDIDATE",
+      "limitations": [
+        "Candidate only until ChatGPT synthesis and human manual application"
+      ],
+      "supporting_fields": [
+        "CAL004 I0 Gate and C03",
+        "CAL005 I0R Gate, CAL005-C01 and near_threshold_observation"
+      ]
+    },
+    {
+      "allowed_use": "Candidate governance rule for human Source review.",
+      "claim_id": "S02",
+      "claim_text": "An action-family Prompt, reference or route must not be promoted to stable production guidance until it passes its own gate and demonstrates cross-experiment replication under bounded comparable conditions.",
+      "classification": "STABLE_SOURCE_CANDIDATE",
+      "direct_supporting_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ],
+      "forbidden_overclaims": [
+        "CAL-003 alone proves a stable production rule",
+        "ACTION_REF_PUSH_02 is production-approved"
+      ],
+      "inference_level": "GOVERNANCE_RULE_CANDIDATE",
+      "limitations": [
+        "Candidate only until ChatGPT synthesis and human manual application"
+      ],
+      "supporting_fields": [
+        "Three round-closure records",
+        "Three production and source-promotion boundaries"
+      ]
+    },
+    {
+      "allowed_use": "Candidate governance rule for human Source review.",
+      "claim_id": "S03",
+      "claim_text": "Action-family calibration conclusions must remain setup-bounded unless separate evidence supports Provider-wide, model-wide or universal causality.",
+      "classification": "STABLE_SOURCE_CANDIDATE",
+      "direct_supporting_paths": [
+        "experiments/CAL-003/REFERENCE_CONTROL_REPEATABILITY_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-004/IMPACT_FAMILY_CAUSAL_ISOLATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json",
+        "experiments/CAL-005/TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1/R1_HUMAN_FINAL_DECISION_V0_1/human_final_decision.json"
+      ],
+      "forbidden_overclaims": [
+        "The Provider is universally biased toward PUSH",
+        "IMPACT generation is impossible"
+      ],
+      "inference_level": "GOVERNANCE_RULE_CANDIDATE",
+      "limitations": [
+        "Candidate only until ChatGPT synthesis and human manual application"
+      ],
+      "supporting_fields": [
+        "CAL003 excluded_single_cause_claims",
+        "CAL004 causal_limitations",
+        "CAL005 causal_limitations"
+      ]
+    }
+  ],
+  "evidence_to_inference_separation": {
+    "bounded_cross_experiment_inference_claim_ids": [
+      "B01",
+      "B02"
+    ],
+    "direct_experiment_evidence_claim_ids": [
+      "D01",
+      "D02",
+      "D03",
+      "D04",
+      "D05"
+    ],
+    "stable_source_candidate_claim_ids": [
+      "S01",
+      "S02",
+      "S03"
+    ]
+  },
+  "experiment_summaries": {
+    "CAL003": {
+      "IMPACT_family_gate": "FAIL",
+      "IMPACT_median_margin": -6,
+      "IMPACT_median_own_score": 6,
+      "IMPACT_sample_passes": "0/3",
+      "PUSH_family_gate": "PASS",
+      "PUSH_median_margin": 8,
+      "PUSH_median_own_score": 12,
+      "PUSH_sample_passes": "3/3",
+      "bounded_interpretation": [
+        "PUSH reference produced repeatable PUSH-like differentiation.",
+        "IMPACT reference did not produce IMPACT-specific differentiation.",
+        "The six outputs showed asymmetric collapse toward PUSH-like behavior."
+      ],
+      "experiment": "CAL-003",
+      "ordinal_pair_aggregate_gate": "FAIL",
+      "passing_ordinal_pairs": "0/3",
+      "program": "REFERENCE_CONTROL_REPEATABILITY_V1",
+      "round": "R1",
+      "round_closed": true
+    },
+    "CAL004": {
+      "bounded_interpretation": "PUSH_LIKE_PRIOR_DOMINANT_IN_CURRENT_CAL004_SETUP_WITH_PARTIAL_TEXT_ONLY_IMPACT_SIGNAL_AND_UNRESOLVED_REFERENCE_COMMAND_ROUTE_CAUSATION",
+      "condition_gates": "0/6 PASS",
+      "experiment": "CAL-004",
+      "five_of_six_condition_median_margins_negative": true,
+      "i0": {
+        "condition_gate": "FAIL",
+        "median_IMPACT": 9,
+        "median_specificity_margin": 1,
+        "sample_passes": "1/3"
+      },
+      "i0_vs_n0": {
+        "condition_gate_pair": "FAIL / FAIL",
+        "impact_median_delta": 4,
+        "push_median_delta": 0,
+        "sample_pass_delta": 1,
+        "specificity_margin_delta": 2
+      },
+      "program": "IMPACT_FAMILY_CAUSAL_ISOLATION_V1",
+      "round": "R1",
+      "round_closed": true,
+      "sample_gates": "1/18 PASS"
+    },
+    "CAL005": {
+      "I0R": {
+        "condition_gate": "FAIL",
+        "median_IMPACT": 7,
+        "median_PUSH": 9,
+        "median_margin": -3,
+        "sample_passes": "0/3"
+      },
+      "N0R": {
+        "condition_gate": "FAIL",
+        "median_IMPACT": 0,
+        "median_PUSH": 4,
+        "median_margin": -4,
+        "sample_passes": "0/3"
+      },
+      "directional_partial_signal": false,
+      "experiment": "CAL-005",
+      "formal_outcome": "CAL005_R1_TEXT_ONLY_IMPACT_SIGNAL_NOT_CONDITION_GATE_REPLICATED",
+      "primary_contrast": {
+        "condition_gate_pair": "FAIL / FAIL",
+        "contrast_id": "CAL005-C01",
+        "impact_median_delta": 7,
+        "margin_delta": 1,
+        "push_median_delta": 5,
+        "sample_pass_delta": 0
+      },
+      "program": "TEXT_ONLY_IMPACT_SIGNAL_REPLICATION_V1",
+      "round": "R1",
+      "round_closed": true
+    }
+  },
+  "formal_synthesis_label": "CURRENT_CAL003_CAL004_CAL005_EVIDENCE_SUPPORTS_REPEATABLE_PUSH_LIKE_DIFFERENTIATION_BUT_NOT_IMPACT_SPECIFIC_CONDITION_LEVEL_REPLICATION",
+  "human_bounded_interpretation": "PUSH_LIKE_SIGNATURES_WERE_MORE_REPEATABLE_THAN_IMPACT_SPECIFIC_SIGNATURES_ACROSS_THE_CURRENT_CAL003_CAL004_CAL005_SETUPS_WHILE_THE_UNIQUE_CAUSE_REMAINS_UNRESOLVED_AND_NO_PROVIDER_WIDE_BIAS_OR_UNIVERSAL_PROMPT_CAUSALITY_IS_CLAIMED",
+  "next_recommended_phase": "CHATGPT_GENERATE_ROLLING_CURRENT_STATE_V0_3_AND_SOURCE_UPDATE_CANDIDATE_PACK_FOR_HUMAN_MANUAL_APPLICATION",
+  "production_implications": {
+    "ACTION_REF_PUSH_02_production_approved": false,
+    "automatic_CAL006": false,
+    "current_IMPACT_production_recipe_promoted": false,
+    "fresh_production_context_recovery_required_before_reentry": true,
+    "main_production_line": "paused_for_calibration_synthesis_and_source_decision"
+  },
+  "schema_version": "CAL003_CAL004_CAL005_CROSS_EXPERIMENT_SYNTHESIS_V0_1",
+  "unique_cause_candidates": [
+    "Provider or model behavior",
+    "Prompt wording and action decomposition",
+    "reference content and reference-motion quality",
+    "command route and reference conditioning",
+    "scene and actor prior",
+    "review framework sensitivity",
+    "small replicate count"
+  ],
+  "unique_cause_identified": false
+}
