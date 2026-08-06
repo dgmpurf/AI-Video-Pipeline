@@ -7,13 +7,15 @@ from .enums import EventType
 from .errors import ProjectionError
 
 
-def _event_record(event: dict[str, Any], position: int) -> dict[str, Any]:
+def _event_record(
+    event: dict[str, Any], position: int, *, active: bool = True
+) -> dict[str, Any]:
     return {
         "event_id": event["event_id"],
         "ledger_position": position,
         "payload": copy.deepcopy(event["payload"]),
         "source_event_ids": list(event["source_trace_ids"]),
-        "active": True,
+        "active": active,
         "superseded_by": None,
         "retracted_by": None,
     }
@@ -55,8 +57,10 @@ def _append_overlay(
     event: dict[str, Any],
     position: int,
     bucket: str,
+    *,
+    active: bool = True,
 ) -> dict[str, Any]:
-    record = _event_record(event, position)
+    record = _event_record(event, position, active=active)
     state["records"][event["pilot_clip_id"]][bucket].append(record)
     return record
 
@@ -131,7 +135,9 @@ def apply_reducer(
             allowed_types={EventType.SCORE_RECORD_ADDED.value},
             pilot_clip_id=pilot_clip_id,
         )
-        overlay_record = _append_overlay(state, event, position, "score_records")
+        overlay_record = _append_overlay(
+            state, event, position, "score_records", active=False
+        )
         _mark_prior(
             state,
             prior_id,
@@ -153,7 +159,9 @@ def apply_reducer(
             allowed_types={EventType.STORAGE_PROPOSAL_ADDED.value},
             pilot_clip_id=pilot_clip_id,
         )
-        overlay_record = _append_overlay(state, event, position, "storage_proposals")
+        overlay_record = _append_overlay(
+            state, event, position, "storage_proposals", active=False
+        )
         _mark_prior(
             state,
             prior_id,
@@ -202,7 +210,7 @@ def apply_reducer(
             pilot_clip_id=pilot_clip_id,
         )
         overlay_record = _append_overlay(
-            state, event, position, "relationship_assertions"
+            state, event, position, "relationship_assertions", active=False
         )
         _mark_prior(
             state,
@@ -248,7 +256,7 @@ def apply_reducer(
         "event_type": event_type,
         "pilot_clip_id": pilot_clip_id,
         "ledger_position": position,
-        "active": True,
+        "active": bool(overlay_record["active"]),
         "superseded_by": None,
         "retracted_by": None,
         "overlay_record": overlay_record,

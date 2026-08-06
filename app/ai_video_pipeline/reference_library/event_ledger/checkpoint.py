@@ -7,7 +7,7 @@ from typing import Any, Iterable
 from .canonical import canonical_sha256, require_exact_keys
 from .enums import CHECKPOINT_SCHEMA_VERSION
 from .errors import CheckpointError
-from .models import LedgerEntry, ProjectionResult
+from .models import RL_P0_COMMIT, LedgerEntry, ProjectionResult
 
 
 CHECKPOINT_FIELDS = frozenset(
@@ -63,11 +63,14 @@ def _checkpoint_body(
         for record in records
         for item in record["execution_receipts"]
     ]
+    base_catalog_identity = copy.deepcopy(state["base_catalog"])
+    if base_catalog_identity.get("rl_p0_commit") != RL_P0_COMMIT:
+        raise CheckpointError("checkpoint base identity has the wrong RL-P0 commit")
     body: dict[str, Any] = {
         "checkpoint_schema_version": CHECKPOINT_SCHEMA_VERSION,
         "prefix_position": selected[-1].position if selected else 0,
         "prefix_entry_hash": selected[-1].entry_hash if selected else "0" * 64,
-        "base_catalog_identity": copy.deepcopy(state["base_catalog"]),
+        "base_catalog_identity": base_catalog_identity,
         "ledger_prefix_hash": canonical_sha256(
             [entry.entry_hash for entry in selected]
         ),
@@ -100,7 +103,7 @@ def _checkpoint_body(
             "active_generation_input_allowed": dict(sorted(generation.items())),
         },
         "open_proposal_count": sum(
-            item["active"]
+            item["active"] is True
             for record in records
             for bucket in ("score_records", "storage_proposals")
             for item in record[bucket]

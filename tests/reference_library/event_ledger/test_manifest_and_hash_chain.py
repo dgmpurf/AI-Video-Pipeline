@@ -12,6 +12,7 @@ from app.ai_video_pipeline.reference_library.event_ledger import (
 )
 from app.ai_video_pipeline.reference_library.event_ledger.canonical import (
     canonical_json_bytes,
+    canonical_sha256,
     strict_json_loads,
 )
 from app.ai_video_pipeline.reference_library.event_ledger.errors import (
@@ -26,7 +27,11 @@ from app.ai_video_pipeline.reference_library.event_ledger.ledger import (
 from app.ai_video_pipeline.reference_library.event_ledger.manifest import (
     EVENTS_FILENAME,
     MANIFEST_FILENAME,
+    build_manifest,
+    derive_ledger_id,
+    validate_manifest,
 )
+from app.ai_video_pipeline.reference_library.event_ledger.models import RL_P0_COMMIT
 
 
 def test_manifest_and_ledger_ids_are_deterministic(tmp_path: Path, base_adapter) -> None:
@@ -45,6 +50,56 @@ def test_manifest_and_ledger_ids_are_deterministic(tmp_path: Path, base_adapter)
     assert first == second
     assert first["ledger_id"].startswith("RL-LEDGER-")
     assert first["base_catalog"] == base_adapter.binding.to_dict()
+    assert first["base_catalog"]["rl_p0_commit"] == RL_P0_COMMIT
+
+
+def test_base_catalog_hash_explicitly_binds_rl_p0_commit(base_adapter) -> None:
+    binding = base_adapter.binding
+    expected_input = {
+        "package_filename": binding.package_filename,
+        "package_bytes": binding.package_bytes,
+        "package_sha256": binding.package_sha256,
+        "record_count": binding.record_count,
+        "record_schema_version": binding.record_schema_version,
+        "rl_p0_commit": RL_P0_COMMIT,
+        "records": list(base_adapter.records),
+    }
+    assert binding.rl_p0_commit == RL_P0_COMMIT
+    assert binding.base_catalog_hash == canonical_sha256(expected_input)
+    expected_input.pop("rl_p0_commit")
+    assert binding.base_catalog_hash != canonical_sha256(expected_input)
+
+
+def _refresh_ledger_id(manifest: dict) -> None:
+    body = {key: value for key, value in manifest.items() if key != "ledger_id"}
+    manifest["ledger_id"] = derive_ledger_id(body)
+
+
+def test_manifest_rejects_missing_rl_p0_commit(base_adapter) -> None:
+    manifest = build_manifest(
+        base_adapter,
+        created_by="CODEX_SYNTHETIC_TEST",
+        created_at="2026-08-07T00:00:00Z",
+    )
+    del manifest["base_catalog"]["rl_p0_commit"]
+    _refresh_ledger_id(manifest)
+    with pytest.raises(ManifestValidationError):
+        validate_manifest(manifest, adapter=base_adapter)
+
+
+@pytest.mark.parametrize("commit", ["not-a-commit", "0" * 40])
+def test_manifest_rejects_malformed_or_different_rl_p0_commit(
+    base_adapter, commit
+) -> None:
+    manifest = build_manifest(
+        base_adapter,
+        created_by="CODEX_SYNTHETIC_TEST",
+        created_at="2026-08-07T00:00:00Z",
+    )
+    manifest["base_catalog"]["rl_p0_commit"] = commit
+    _refresh_ledger_id(manifest)
+    with pytest.raises(ManifestValidationError, match="RL-P0 commit"):
+        validate_manifest(manifest, adapter=base_adapter)
 
 
 def test_manifest_is_canonical_and_immutable(initialized_ledger, base_adapter) -> None:

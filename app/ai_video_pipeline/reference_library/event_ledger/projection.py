@@ -3,6 +3,7 @@ from __future__ import annotations
 import copy
 from typing import Any, Iterable
 
+from .base_catalog import validate_base_binding
 from .canonical import canonical_sha256
 from .enums import EventType, PROJECTION_SCHEMA_VERSION
 from .errors import PreconditionError, ProjectionError
@@ -16,8 +17,10 @@ ZERO_HASH = "0" * 64
 def initial_projection(
     manifest: dict[str, Any], adapter: BaseCatalogAdapter
 ) -> ProjectionResult:
+    validate_base_binding(manifest["base_catalog"], adapter)
     records: dict[str, Any] = {}
-    for base_record in adapter.records:
+    base_records = adapter.records
+    for base_record in base_records:
         pilot_clip_id = str(base_record["record_identity"]["pilot_clip_id"])
         records[pilot_clip_id] = {
             "base_record_id": base_record["record_identity"]["record_id"],

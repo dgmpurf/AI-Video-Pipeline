@@ -1,9 +1,13 @@
 from __future__ import annotations
 
 import copy
+import json
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Mapping
+
+
+RL_P0_COMMIT = "1b86aae6ff08d74ce2993ef92721c9ef585854f8"
 
 
 @dataclass(frozen=True)
@@ -13,7 +17,12 @@ class BaseCatalogBinding:
     package_sha256: str
     record_count: int
     record_schema_version: str
+    rl_p0_commit: str
     base_catalog_hash: str
+
+    def __post_init__(self) -> None:
+        if self.rl_p0_commit != RL_P0_COMMIT:
+            raise ValueError("RL-P0 commit does not match the accepted base commit")
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -22,6 +31,7 @@ class BaseCatalogBinding:
             "package_sha256": self.package_sha256,
             "record_count": self.record_count,
             "record_schema_version": self.record_schema_version,
+            "rl_p0_commit": self.rl_p0_commit,
             "base_catalog_hash": self.base_catalog_hash,
         }
 
@@ -79,11 +89,23 @@ class ProjectionResult:
 class BaseCatalogAdapter:
     package_path: Path
     binding: BaseCatalogBinding
-    records: tuple[Mapping[str, Any], ...]
-    validation: Mapping[str, Any]
+    _record_bytes: tuple[bytes, ...]
+    _validation_bytes: bytes
+
+    @property
+    def records(self) -> tuple[Mapping[str, Any], ...]:
+        return tuple(json.loads(raw.decode("utf-8")) for raw in self._record_bytes)
+
+    @property
+    def validation(self) -> Mapping[str, Any]:
+        return json.loads(self._validation_bytes.decode("utf-8"))
+
+    @property
+    def canonical_record_bytes(self) -> tuple[bytes, ...]:
+        return self._record_bytes
 
     def record_map(self) -> dict[str, Mapping[str, Any]]:
         return {
-            str(record["record_identity"]["pilot_clip_id"]): copy.deepcopy(record)
+            str(record["record_identity"]["pilot_clip_id"]): record
             for record in self.records
         }

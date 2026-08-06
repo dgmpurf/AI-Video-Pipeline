@@ -17,6 +17,12 @@ from app.ai_video_pipeline.reference_library.event_ledger.errors import (
     CanonicalizationError,
     SchemaValidationError,
 )
+from app.ai_video_pipeline.reference_library.event_ledger.manifest import (
+    build_manifest,
+)
+from app.ai_video_pipeline.reference_library.event_ledger.projection import (
+    initial_projection,
+)
 from app.ai_video_pipeline.reference_library.event_ledger.registry import (
     EVENT_TYPE_REGISTRY,
     registry_document,
@@ -44,6 +50,15 @@ EXPECTED_REGISTRY = {
     "STORAGE_PROPOSAL_SUPERSEDED": "MODEL_PROPOSAL",
     "TAXONOMY_SNAPSHOT_BOUND": "OBSERVATION_ONLY",
 }
+
+
+def _mutate_first_nested_list(value) -> bool:
+    if isinstance(value, list):
+        value.append("DETACHED_MUTATION")
+        return True
+    if isinstance(value, dict):
+        return any(_mutate_first_nested_list(child) for child in value.values())
+    return False
 
 
 def test_exact_fourteen_event_registry() -> None:
@@ -149,3 +164,36 @@ def test_possible_overlap_cannot_assert_exact_duplicate(make_event) -> None:
         validate_event_draft(
             make_event(EventType.RELATIONSHIP_ASSERTION_ADDED.value, payload=payload)
         )
+
+
+def test_base_adapter_exposes_only_detached_deep_copies(base_adapter) -> None:
+    before_records = tuple(
+        canonical_json_bytes(record) for record in base_adapter.records
+    )
+    before_validation = canonical_json_bytes(base_adapter.validation)
+    before_record_bytes = base_adapter.canonical_record_bytes
+    before_hash = base_adapter.binding.base_catalog_hash
+    manifest = build_manifest(
+        base_adapter,
+        created_by="CODEX_SYNTHETIC_TEST",
+        created_at="2026-08-07T00:00:00Z",
+    )
+    projection_before = initial_projection(manifest, base_adapter)
+
+    detached_records = base_adapter.records
+    detached_records[0]["record_identity"]["pilot_clip_id"] = "MUTATED"
+    assert _mutate_first_nested_list(detached_records[0]) is True
+    detached_map = base_adapter.record_map()
+    detached_map["G01D-CLIP-001"]["record_identity"]["record_id"] = "MUTATED"
+    detached_validation = base_adapter.validation
+    detached_validation["detached_mutation"] = True
+
+    assert tuple(canonical_json_bytes(record) for record in base_adapter.records) == (
+        before_records
+    )
+    assert canonical_json_bytes(base_adapter.validation) == before_validation
+    assert base_adapter.canonical_record_bytes == before_record_bytes
+    assert base_adapter.binding.base_catalog_hash == before_hash
+    projection_after = initial_projection(manifest, base_adapter)
+    assert projection_after.to_dict() == projection_before.to_dict()
+    assert projection_after.projection_hash == projection_before.projection_hash

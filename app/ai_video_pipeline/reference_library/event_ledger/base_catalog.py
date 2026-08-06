@@ -7,9 +7,9 @@ from typing import Any
 
 from app.ai_video_pipeline.reference_library import ReferenceCatalog
 
-from .canonical import canonical_sha256
+from .canonical import canonical_json_bytes, canonical_sha256
 from .errors import ManifestValidationError
-from .models import BaseCatalogAdapter, BaseCatalogBinding
+from .models import RL_P0_COMMIT, BaseCatalogAdapter, BaseCatalogBinding
 
 
 def _require_regular_file(path: Path) -> None:
@@ -33,12 +33,15 @@ def load_base_catalog(path: str | Path) -> BaseCatalogAdapter:
     }
     if len(schema_versions) != 1:
         raise ManifestValidationError("base records do not share one schema version")
+    record_bytes = tuple(canonical_json_bytes(record) for record in records)
+    validation_bytes = canonical_json_bytes(catalog.validation.to_dict())
     catalog_hash_input: dict[str, Any] = {
         "package_filename": package_path.name,
         "package_bytes": package_bytes,
         "package_sha256": package_sha256,
         "record_count": len(records),
         "record_schema_version": next(iter(schema_versions)),
+        "rl_p0_commit": RL_P0_COMMIT,
         "records": list(records),
     }
     binding = BaseCatalogBinding(
@@ -47,18 +50,33 @@ def load_base_catalog(path: str | Path) -> BaseCatalogAdapter:
         package_sha256=package_sha256,
         record_count=len(records),
         record_schema_version=next(iter(schema_versions)),
+        rl_p0_commit=RL_P0_COMMIT,
         base_catalog_hash=canonical_sha256(catalog_hash_input),
     )
     return BaseCatalogAdapter(
         package_path=package_path,
         binding=binding,
-        records=records,
-        validation=catalog.validation.to_dict(),
+        _record_bytes=record_bytes,
+        _validation_bytes=validation_bytes,
     )
 
 
 def validate_base_binding(
     manifest_binding: dict[str, Any], adapter: BaseCatalogAdapter
 ) -> None:
+    binding = adapter.binding
+    expected_hash = canonical_sha256(
+        {
+            "package_filename": binding.package_filename,
+            "package_bytes": binding.package_bytes,
+            "package_sha256": binding.package_sha256,
+            "record_count": binding.record_count,
+            "record_schema_version": binding.record_schema_version,
+            "rl_p0_commit": binding.rl_p0_commit,
+            "records": list(adapter.records),
+        }
+    )
+    if binding.base_catalog_hash != expected_hash:
+        raise ManifestValidationError("base-catalog snapshot hash does not match binding")
     if manifest_binding != adapter.binding.to_dict():
         raise ManifestValidationError("base-catalog identity does not match manifest")

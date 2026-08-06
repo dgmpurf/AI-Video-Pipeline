@@ -20,7 +20,7 @@ from .enums import (
     PROJECTION_SCHEMA_VERSION,
 )
 from .errors import ManifestValidationError
-from .models import BaseCatalogAdapter
+from .models import RL_P0_COMMIT, BaseCatalogAdapter
 
 
 MANIFEST_FILENAME = "ledger_manifest.json"
@@ -45,6 +45,7 @@ BASE_BINDING_FIELDS = frozenset(
         "package_sha256",
         "record_count",
         "record_schema_version",
+        "rl_p0_commit",
         "base_catalog_hash",
     }
 )
@@ -98,6 +99,8 @@ def validate_manifest(
         require_exact_keys(
             value["base_catalog"], BASE_BINDING_FIELDS, field="base_catalog"
         )
+        if value["base_catalog"]["rl_p0_commit"] != RL_P0_COMMIT:
+            raise ManifestValidationError("RL-P0 commit does not match accepted base")
         body = {key: child for key, child in value.items() if key != "ledger_id"}
         if value["ledger_id"] != derive_ledger_id(body):
             raise ManifestValidationError("ledger ID does not match manifest body")

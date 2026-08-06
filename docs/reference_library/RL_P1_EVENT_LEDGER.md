@@ -68,9 +68,16 @@ events.jsonl.lock  # present only while one append invocation owns the lock
 ```
 
 The manifest binds the RL-P0 package filename, bytes, SHA-256, record count,
-record schema version, and deterministic base-catalog hash. Its ledger ID is
-derived from the canonical manifest body excluding `ledger_id`. The manifest
-is created exclusively and is immutable.
+record schema version, exact accepted RL-P0 commit
+`1b86aae6ff08d74ce2993ef92721c9ef585854f8`, and deterministic base-catalog
+hash. The commit is also part of the base-catalog hash input and checkpoint
+base identity. Its ledger ID is derived from the canonical manifest body
+excluding `ledger_id`. The manifest is created exclusively and is immutable.
+
+The adapter owns canonical JSON byte snapshots of every base record and the
+validation summary. Public record, map, and validation accessors return
+detached values, so caller mutation cannot change the bytes consumed by replay
+or make projection diverge from the bound base-catalog hash.
 
 Each JSONL entry contains:
 
@@ -122,6 +129,12 @@ prior history and mark prior facts inactive from the later position forward.
 Projection hashes are SHA-256 over canonical projection JSON without a final
 LF. Replay can stop at an exact position, entry hash, or accepted checkpoint
 ID without editing the ledger.
+
+`SCORE_RECORD_SUPERSEDED`, `STORAGE_PROPOSAL_SUPERSEDED`, and
+`RELATIONSHIP_ASSERTION_RETRACTED` remain in history as inactive transition
+rows. They deactivate the compatible prior fact but never become a new active
+score, open proposal, or relationship assertion. Checkpoint counts include
+only active domain facts and exclude these transition rows.
 
 `CHECKPOINT_CREATED` summarizes the validated prefix immediately before the
 checkpoint event. Its payload binds the prefix identity, projection hash,

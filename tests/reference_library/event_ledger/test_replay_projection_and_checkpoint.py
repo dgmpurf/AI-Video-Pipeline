@@ -1,11 +1,14 @@
 from __future__ import annotations
 
+import copy
+
 from app.ai_video_pipeline.reference_library.event_ledger import (
     append_event,
     build_checkpoint_payload,
     load_validated_ledger,
     read_manifest,
     replay_entries,
+    validate_checkpoint_payload,
 )
 from app.ai_video_pipeline.reference_library.event_ledger.enums import EventType
 from app.ai_video_pipeline.reference_library.event_ledger.errors import (
@@ -13,6 +16,7 @@ from app.ai_video_pipeline.reference_library.event_ledger.errors import (
     PreconditionError,
 )
 from app.ai_video_pipeline.reference_library.event_ledger.manifest import EVENTS_FILENAME
+from app.ai_video_pipeline.reference_library.event_ledger.models import RL_P0_COMMIT
 from app.ai_video_pipeline.reference_library.event_ledger.projection import (
     initial_projection,
 )
@@ -62,7 +66,7 @@ def test_correction_supersession_and_retraction_preserve_history(
             recorded_at="2026-08-07T00:00:05Z",
         ),
     )
-    append_event(
+    score_transition = append_event(
         initialized_ledger,
         base_adapter,
         make_event(
@@ -72,37 +76,72 @@ def test_correction_supersession_and_retraction_preserve_history(
             recorded_at="2026-08-07T00:00:07Z",
         ),
     )
+    storage = append_event(
+        initialized_ledger,
+        base_adapter,
+        make_event(
+            EventType.STORAGE_PROPOSAL_ADDED.value,
+            occurred_at="2026-08-07T00:00:08Z",
+            recorded_at="2026-08-07T00:00:09Z",
+        ),
+    )
+    storage_transition = append_event(
+        initialized_ledger,
+        base_adapter,
+        make_event(
+            EventType.STORAGE_PROPOSAL_SUPERSEDED.value,
+            supersedes_event_ids=[storage.event.event_id],
+            occurred_at="2026-08-07T00:00:10Z",
+            recorded_at="2026-08-07T00:00:11Z",
+        ),
+    )
     relationship = append_event(
         initialized_ledger,
         base_adapter,
         make_event(
             EventType.RELATIONSHIP_ASSERTION_ADDED.value,
-            occurred_at="2026-08-07T00:00:08Z",
-            recorded_at="2026-08-07T00:00:09Z",
+            occurred_at="2026-08-07T00:00:12Z",
+            recorded_at="2026-08-07T00:00:13Z",
         ),
     )
-    append_event(
+    relationship_transition = append_event(
         initialized_ledger,
         base_adapter,
         make_event(
             EventType.RELATIONSHIP_ASSERTION_RETRACTED.value,
             retracts_event_ids=[relationship.event.event_id],
-            occurred_at="2026-08-07T00:00:10Z",
-            recorded_at="2026-08-07T00:00:11Z",
+            occurred_at="2026-08-07T00:00:14Z",
+            recorded_at="2026-08-07T00:00:15Z",
         ),
     )
     manifest, entries = load_validated_ledger(initialized_ledger, base_adapter)
-    record = projection_record(
-        replay_entries(manifest, base_adapter, entries), "G01D-CLIP-001"
-    )
+    projection = replay_entries(manifest, base_adapter, entries)
+    state = projection.to_dict()
+    record = projection_record(projection, "G01D-CLIP-001")
     assert len(record["review_observations"]) == 2
     assert record["review_observations"][0]["active"] is False
     assert record["review_observations"][1]["active"] is True
     assert len(record["score_records"]) == 2
     assert record["score_records"][0]["active"] is False
+    assert record["score_records"][1]["active"] is False
+    assert sum(item["active"] is True for item in record["score_records"]) == 0
+    assert len(record["storage_proposals"]) == 2
+    assert all(item["active"] is False for item in record["storage_proposals"])
     assert len(record["relationship_assertions"]) == 2
     assert record["relationship_assertions"][0]["active"] is False
+    assert record["relationship_assertions"][1]["active"] is False
+    assert sum(
+        item["active"] is True for item in record["relationship_assertions"]
+    ) == 0
     assert record["relationship_assertions"][0]["retracted_by"] is not None
+    for transition in (
+        score_transition,
+        storage_transition,
+        relationship_transition,
+    ):
+        assert state["event_index"][transition.event.event_id]["active"] is False
+    assert build_checkpoint_payload(projection, entries)["open_proposal_count"] == 0
+    assert len(entries) == 8
 
 
 def test_projection_hash_precondition_is_checked_against_immediate_prefix(
@@ -189,6 +228,15 @@ def test_checkpoint_summarizes_preceding_prefix_and_verifies_completely(
     assert payload["prefix_position"] == 1
     assert payload["event_count"] == 1
     assert payload["projection_hash"] == projection.projection_hash
+    assert payload["base_catalog_identity"]["rl_p0_commit"] == RL_P0_COMMIT
+    tampered = copy.deepcopy(payload)
+    tampered["base_catalog_identity"]["rl_p0_commit"] = "0" * 40
+    try:
+        validate_checkpoint_payload(tampered, projection, prefix)
+    except CheckpointError:
+        pass
+    else:
+        raise AssertionError("checkpoint accepted a different RL-P0 commit")
 
 
 def test_incorrect_checkpoint_payload_is_no_write(
