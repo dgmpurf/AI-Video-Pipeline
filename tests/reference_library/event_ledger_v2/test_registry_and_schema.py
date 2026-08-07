@@ -25,4 +25,4 @@ def test_unknown_payload_field_is_rejected(scenario):
 def test_ascii_unrevoked_contract_has_no_cyrillic_lookalike():
     contract = "human_decision_not_current_active_unrevoked_accept"
     assert "unrevoked" in contract
-    assert "о" not in contract
+    assert chr(0x043E) not in contract
