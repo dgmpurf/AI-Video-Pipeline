@@ -18,6 +18,7 @@ from app.ai_video_pipeline.reference_library.event_ledger import (
 )
 from app.ai_video_pipeline.reference_library.persistent_index.builder import (
     BuildResult,
+    RuntimeStateProtectionPolicy,
     build_generation,
 )
 from app.ai_video_pipeline.reference_library.persistent_index.mapper import (
@@ -182,5 +183,22 @@ def mapped_empty(ledger_harness: LedgerHarness) -> MappedReadModel:
 
 
 @pytest.fixture
-def built_generation(tmp_path: Path, mapped_empty: MappedReadModel) -> BuildResult:
-    return build_generation(tmp_path / "state", mapped_empty)
+def runtime_state_policy(tmp_path: Path) -> RuntimeStateProtectionPolicy:
+    return RuntimeStateProtectionPolicy(
+        repository_root=tmp_path / "protected-repository",
+        source_root=tmp_path / "protected-source",
+        media_roots=(tmp_path / "protected-media",),
+    )
+
+
+@pytest.fixture
+def built_generation(
+    tmp_path: Path,
+    mapped_empty: MappedReadModel,
+    runtime_state_policy: RuntimeStateProtectionPolicy,
+) -> BuildResult:
+    return build_generation(
+        tmp_path / "state",
+        mapped_empty,
+        protection_policy=runtime_state_policy,
+    )

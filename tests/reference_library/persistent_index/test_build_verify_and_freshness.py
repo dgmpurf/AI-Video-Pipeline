@@ -17,9 +17,15 @@ from app.ai_video_pipeline.reference_library.persistent_index.promotion import P
 from app.ai_video_pipeline.reference_library.persistent_index.verify import verify_generation
 
 
-def test_repeated_full_rebuilds_have_same_logical_identity(tmp_path: Path, mapped_empty):
-    first = build_generation(tmp_path / "first", mapped_empty)
-    second = build_generation(tmp_path / "second", mapped_empty)
+def test_repeated_full_rebuilds_have_same_logical_identity(
+    tmp_path: Path, mapped_empty, runtime_state_policy
+):
+    first = build_generation(
+        tmp_path / "first", mapped_empty, protection_policy=runtime_state_policy
+    )
+    second = build_generation(
+        tmp_path / "second", mapped_empty, protection_policy=runtime_state_policy
+    )
     assert first.logical_content_hash == second.logical_content_hash
     assert first.materialization_generation_id == second.materialization_generation_id
     assert first.generation_path.name == second.generation_path.name
@@ -49,11 +55,13 @@ def test_divergent_or_incomplete_upstream_identity_is_incompatible(built_generat
     assert missing.state == GenerationState.INCOMPATIBLE_GENERATION
 
 
-def test_generation_collision_never_creates_or_changes_pointer(tmp_path: Path, mapped_empty):
+def test_generation_collision_never_creates_or_changes_pointer(
+    tmp_path: Path, mapped_empty, runtime_state_policy
+):
     state = tmp_path / "state"
-    first = build_generation(state, mapped_empty)
+    first = build_generation(state, mapped_empty, protection_policy=runtime_state_policy)
     with pytest.raises(BuildError, match="immutable generation filename collision"):
-        build_generation(state, mapped_empty)
+        build_generation(state, mapped_empty, protection_policy=runtime_state_policy)
     assert first.generation_path.exists()
     assert not (state / POINTER_FILENAME).exists()
     assert (state / LOCK_FILENAME).exists()

@@ -49,7 +49,9 @@ def test_document_and_query_cjk_preparation_are_symmetric():
     assert prepare_match_query("UNKNOWN") == '"unknown"'
 
 
-def test_current_and_history_fts_are_separate(tmp_path: Path, ledger_harness):
+def test_current_and_history_fts_are_separate(
+    tmp_path: Path, ledger_harness, runtime_state_policy
+):
     history_marker = "zzrlp2historyonlymarkerq9v7"
     current_marker = "zzrlp2currentmarkerq9v7"
     base_documents = ledger_harness.mapped().table("search_document")
@@ -75,7 +77,9 @@ def test_current_and_history_fts_are_separate(tmp_path: Path, ledger_harness):
         supersedes=(first.event.event_id,),
     )
     mapped = ledger_harness.mapped()
-    built = build_generation(tmp_path / "state", mapped)
+    built = build_generation(
+        tmp_path / "state", mapped, protection_policy=runtime_state_policy
+    )
     with ReadModel.open_generation(built.generation_path) as reader:
         current = reader.search(SearchQuery(current_marker, scope=SearchScope.CURRENT))
         old_current = reader.search(
@@ -90,7 +94,9 @@ def test_current_and_history_fts_are_separate(tmp_path: Path, ledger_harness):
     assert history.rows[0]["active_state"] == "HISTORY"
 
 
-def test_equal_relevance_ties_use_binary_identity_order(tmp_path: Path, ledger_harness):
+def test_equal_relevance_ties_use_binary_identity_order(
+    tmp_path: Path, ledger_harness, runtime_state_policy
+):
     statement = {
         "observation_type": "PLAIN_LANGUAGE_DESCRIPTION",
         "statement": "same deterministic ranking token",
@@ -105,7 +111,11 @@ def test_equal_relevance_ties_use_binary_identity_order(tmp_path: Path, ledger_h
         pilot_clip_id="G01D-CLIP-001",
         payload=statement,
     )
-    built = build_generation(tmp_path / "state", ledger_harness.mapped())
+    built = build_generation(
+        tmp_path / "state",
+        ledger_harness.mapped(),
+        protection_policy=runtime_state_policy,
+    )
     with ReadModel.open_generation(built.generation_path) as reader:
         page = reader.search(SearchQuery("deterministic ranking token"))
     assert [row["pilot_clip_id"] for row in page.rows] == [

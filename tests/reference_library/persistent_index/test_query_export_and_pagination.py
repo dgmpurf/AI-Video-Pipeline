@@ -78,7 +78,9 @@ def test_facet_keyset_pages_concatenate_to_full_order(built_generation):
     assert len(seen) == len(set(seen)) == 30
 
 
-def test_fts_offset_pagination_and_cursor_binding(tmp_path: Path, ledger_harness):
+def test_fts_offset_pagination_and_cursor_binding(
+    tmp_path: Path, ledger_harness, runtime_state_policy
+):
     for index in range(1, 16):
         ledger_harness.append(
             "REVIEW_OBSERVATION_ADDED",
@@ -88,7 +90,11 @@ def test_fts_offset_pagination_and_cursor_binding(tmp_path: Path, ledger_harness
                 "statement": "pagedtoken same document length",
             },
         )
-    built = build_generation(tmp_path / "state", ledger_harness.mapped())
+    built = build_generation(
+        tmp_path / "state",
+        ledger_harness.mapped(),
+        protection_policy=runtime_state_policy,
+    )
     with ReadModel.open_generation(built.generation_path) as reader:
         first = reader.search(SearchQuery("pagedtoken", page_size=5))
         second = reader.search(
@@ -141,12 +147,22 @@ def test_deterministic_json_and_jsonl_exports(built_generation):
     assert manifest["row_count"] == 4
 
 
-def test_cursor_from_another_generation_is_rejected(tmp_path: Path, ledger_harness):
-    first = build_generation(tmp_path / "first", ledger_harness.mapped())
+def test_cursor_from_another_generation_is_rejected(
+    tmp_path: Path, ledger_harness, runtime_state_policy
+):
+    first = build_generation(
+        tmp_path / "first",
+        ledger_harness.mapped(),
+        protection_policy=runtime_state_policy,
+    )
     with ReadModel.open_generation(first.generation_path) as reader:
         page = reader.facet(FacetQuery(page_size=2))
     ledger_harness.append("REVIEW_OBSERVATION_ADDED")
-    second = build_generation(tmp_path / "second", ledger_harness.mapped())
+    second = build_generation(
+        tmp_path / "second",
+        ledger_harness.mapped(),
+        protection_policy=runtime_state_policy,
+    )
     with ReadModel.open_generation(second.generation_path) as reader:
         with pytest.raises(QueryError, match="generation or mode differs"):
             reader.facet(FacetQuery(page_size=2, cursor=page.next_cursor))

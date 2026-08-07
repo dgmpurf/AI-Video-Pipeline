@@ -32,7 +32,9 @@ def test_rl_p0_mapping_parity_and_closed_table_coverage(base_adapter, mapped_emp
     assert mapped_ids == source_ids
 
 
-def test_rl_p1_history_current_and_checkpoint_mapping(tmp_path, ledger_harness):
+def test_rl_p1_history_current_and_checkpoint_mapping(
+    tmp_path, ledger_harness, runtime_state_policy
+):
     first = ledger_harness.append("REVIEW_OBSERVATION_ADDED")
     ledger_harness.append(
         "REVIEW_OBSERVATION_CORRECTED",
@@ -71,7 +73,11 @@ def test_rl_p1_history_current_and_checkpoint_mapping(tmp_path, ledger_harness):
     checkpoint = mapped.table("checkpoint_history")[0]
     assert "total_unknown_values" in checkpoint[11]
     assert len(mapped.table("ledger_event_provenance")) == 7
-    assert build_generation(tmp_path / "state", mapped).verification.valid
+    assert build_generation(
+        tmp_path / "state",
+        mapped,
+        protection_policy=runtime_state_policy,
+    ).verification.valid
 
 
 def test_physical_schema_constraints_and_fts_parity(built_generation):

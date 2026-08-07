@@ -92,10 +92,16 @@ The accepted BM25 weights are description 5, observation 3, taxonomy 2, duty
 
 ## Build Lifecycle
 
-The builder requires an explicit absolute external state root. Callers can
-provide protected roots; any state path inside one is rejected. Symlink and
-Windows reparse traversal is rejected. There is no repository-relative,
-Source-relative, user-profile, or machine-global default.
+Every build and promotion requires a complete `RuntimeStateProtectionPolicy`.
+It contains exactly one explicit absolute repository root, exactly one explicit
+absolute Source root, and one or more explicit absolute media roots. Missing,
+incomplete, empty, or relative protection context fails before the first
+runtime-state write. The state root must itself be explicit and absolute, and
+must be external to every protected root and descendant. Normalized,
+case-aware resolved containment rejects equal paths, descendants, and apparent
+external paths that traverse symlinks, junctions, or Windows reparse points.
+There is no repository-relative, Source-relative, user-profile, machine-global,
+or unprotected fallback.
 
 A build:
 
@@ -181,10 +187,14 @@ python -m app.ai_video_pipeline.reference_library.persistent_index <command>
 ```
 
 Commands are `build`, `verify`, `promote`, `facet`, `search`, and `export`.
-Paths are explicit. Unknown arguments fail. Build writes only a new immutable
-generation under the supplied external state root. Promotion writes only the
-pointer after verification. Query/export are read-only and write results only
-to stdout. No cleanup command is included in this bounded implementation.
+Paths are explicit. Unknown arguments fail. The write-capable `build` and
+`promote` commands require `--repository-root` exactly once, `--source-root`
+exactly once, and `--media-root` one or more times. These role-specific roots
+form the same mandatory policy used by the library API; no generic empty list
+can bypass it. Build writes only a new immutable generation under the supplied
+external state root. Promotion writes only the pointer after verification.
+Query/export are read-only and write results only to stdout. No cleanup command
+is included in this bounded implementation.
 
 ## Recovery and Operator Receipt
 

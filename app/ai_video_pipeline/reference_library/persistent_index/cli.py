@@ -10,7 +10,7 @@ from app.ai_video_pipeline.reference_library.event_ledger import (
     replay_entries,
 )
 
-from .builder import build_generation
+from .builder import RuntimeStateProtectionPolicy, build_generation
 from .enums import SearchScope
 from .exports import export_page_json, export_rows_jsonl
 from .identity import canonical_json_bytes
@@ -18,6 +18,13 @@ from .mapper import map_projection
 from .promotion import promote_generation
 from .query import FacetQuery, ReadModel, SearchQuery
 from .verify import verify_generation
+
+
+class _SingleUseAction(argparse.Action):
+    def __call__(self, parser, namespace, values, option_string=None):
+        if getattr(namespace, self.dest, None) is not None:
+            parser.error(f"{option_string} must be specified exactly once")
+        setattr(namespace, self.dest, values)
 
 
 def _parser() -> argparse.ArgumentParser:
@@ -31,7 +38,7 @@ def _parser() -> argparse.ArgumentParser:
     build.add_argument("--ledger-root", required=True)
     build.add_argument("--state-root", required=True)
     build.add_argument("--builder-source-identity", required=True)
-    build.add_argument("--forbidden-root", action="append", default=[])
+    _writer_protection_arguments(build)
 
     verify = commands.add_parser("verify", help="verify one exact generation")
     verify.add_argument("--database", required=True)
@@ -39,6 +46,7 @@ def _parser() -> argparse.ArgumentParser:
 
     promote = commands.add_parser("promote", help="atomically promote one verified generation")
     promote.add_argument("--database", required=True)
+    _writer_protection_arguments(promote)
 
     facet = commands.add_parser("facet", help="run a deterministic exact/faceted query")
     _reader_arguments(facet)
@@ -55,6 +63,22 @@ def _parser() -> argparse.ArgumentParser:
     _facet_arguments(export)
     _search_arguments(export, text_required=False, include_common=False)
     return parser
+
+
+def _writer_protection_arguments(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument("--repository-root", required=True, action=_SingleUseAction)
+    parser.add_argument("--source-root", required=True, action=_SingleUseAction)
+    parser.add_argument("--media-root", required=True, action="append")
+
+
+def _runtime_state_protection_policy(
+    arguments: argparse.Namespace,
+) -> RuntimeStateProtectionPolicy:
+    return RuntimeStateProtectionPolicy(
+        repository_root=arguments.repository_root,
+        source_root=arguments.source_root,
+        media_roots=tuple(arguments.media_root),
+    )
 
 
 def _reader_arguments(parser: argparse.ArgumentParser) -> None:
@@ -177,7 +201,7 @@ def main(argv: list[str] | None = None) -> int:
         result = build_generation(
             arguments.state_root,
             mapped,
-            forbidden_roots=arguments.forbidden_root,
+            protection_policy=_runtime_state_protection_policy(arguments),
         )
         _write_json(
             {
@@ -201,7 +225,14 @@ def main(argv: list[str] | None = None) -> int:
         )
         return 0 if result.valid else 2
     if arguments.command == "promote":
-        _write_json(dict(promote_generation(arguments.database)))
+        _write_json(
+            dict(
+                promote_generation(
+                    arguments.database,
+                    protection_policy=_runtime_state_protection_policy(arguments),
+                )
+            )
+        )
         return 0
     with _open_reader(arguments) as reader:
         if arguments.command == "facet":

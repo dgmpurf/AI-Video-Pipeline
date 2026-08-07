@@ -5,11 +5,21 @@ from pathlib import Path
 
 import pytest
 
+from app.ai_video_pipeline.reference_library.persistent_index import builder as builder_module
 from app.ai_video_pipeline.reference_library.persistent_index.builder import (
+    LOCK_FILENAME,
+    RuntimeStateProtectionPolicy,
     build_generation,
     validate_state_root,
 )
+from app.ai_video_pipeline.reference_library.persistent_index.cli import (
+    main as cli_main,
+)
 from app.ai_video_pipeline.reference_library.persistent_index.errors import UnsafePathError
+from app.ai_video_pipeline.reference_library.persistent_index.promotion import (
+    POINTER_FILENAME,
+    POINTER_TEMP_FILENAME,
+)
 from app.ai_video_pipeline.reference_library.persistent_index.query import (
     FacetQuery,
     ReadModel,
@@ -93,7 +103,7 @@ def test_human_decision_and_execution_receipt_remain_separate(ledger_harness):
 
 
 def test_search_relevance_is_read_only_and_never_changes_authority(
-    tmp_path: Path, ledger_harness
+    tmp_path: Path, ledger_harness, runtime_state_policy
 ):
     marker = "zzrlp2authoritymarkerq9v7"
     base_documents = ledger_harness.mapped().table("search_document")
@@ -105,7 +115,11 @@ def test_search_relevance_is_read_only_and_never_changes_authority(
             "statement": marker,
         },
     )
-    built_generation = build_generation(tmp_path / "state", ledger_harness.mapped())
+    built_generation = build_generation(
+        tmp_path / "state",
+        ledger_harness.mapped(),
+        protection_policy=runtime_state_policy,
+    )
     before = _sha256(built_generation.generation_path)
     authority_tables = (
         "rights_current",
@@ -143,25 +157,134 @@ def test_search_relevance_is_read_only_and_never_changes_authority(
     assert all(tuple(row) == (0, "UNKNOWN") for row in rights_before_close)
 
 
-def test_state_root_requires_absolute_external_nonprotected_path(tmp_path: Path):
-    with pytest.raises(UnsafePathError, match="explicit absolute"):
-        validate_state_root("relative/state")
-    protected = tmp_path / "repository"
-    with pytest.raises(UnsafePathError, match="protected boundary"):
-        validate_state_root(protected / "runtime", forbidden_roots=(protected,))
+def test_state_root_requires_absolute_external_nonprotected_path(
+    tmp_path: Path, mapped_empty
+):
+    repository = tmp_path / "repository"
+    source = tmp_path / "Source"
+    media = tmp_path / "media"
+    policy = RuntimeStateProtectionPolicy(repository, source, (media,))
     external = tmp_path / "external" / "runtime"
-    assert validate_state_root(external, forbidden_roots=(protected,)) == external.resolve()
+
+    with pytest.raises(UnsafePathError, match="complete runtime-state protection"):
+        build_generation(external, mapped_empty)
+    assert not external.exists()
+
+    incomplete = RuntimeStateProtectionPolicy(repository, source, ())
+    with pytest.raises(UnsafePathError, match="one or more media roots"):
+        build_generation(external, mapped_empty, protection_policy=incomplete)
+    assert not external.exists()
+
+    with pytest.raises(UnsafePathError, match="explicit absolute"):
+        validate_state_root("relative/state", protection_policy=policy)
+
+    relative_policies = (
+        RuntimeStateProtectionPolicy("relative-repository", source, (media,)),
+        RuntimeStateProtectionPolicy(repository, "relative-source", (media,)),
+        RuntimeStateProtectionPolicy(repository, source, ("relative-media",)),
+    )
+    for relative_policy in relative_policies:
+        with pytest.raises(UnsafePathError, match="explicit absolute"):
+            build_generation(
+                external,
+                mapped_empty,
+                protection_policy=relative_policy,
+            )
+        assert not external.exists()
+
+    for boundary in (repository, source, media):
+        for rejected in (boundary, boundary / "runtime"):
+            with pytest.raises(UnsafePathError, match="protected boundary"):
+                build_generation(
+                    rejected,
+                    mapped_empty,
+                    protection_policy=policy,
+                )
+            assert not rejected.exists()
+
+    built = build_generation(external, mapped_empty, protection_policy=policy)
+    assert built.generation_path.exists()
+    assert not (external / LOCK_FILENAME).exists()
+
+    common_cli = ["promote", "--database", str(built.generation_path)]
+    role_arguments = {
+        "--repository-root": str(repository),
+        "--source-root": str(source),
+        "--media-root": str(media),
+    }
+    for missing_role in role_arguments:
+        arguments = list(common_cli)
+        for role, value in role_arguments.items():
+            if role != missing_role:
+                arguments.extend((role, value))
+        with pytest.raises(SystemExit):
+            cli_main(arguments)
+        assert not (external / POINTER_FILENAME).exists()
+        assert not (external / POINTER_TEMP_FILENAME).exists()
+
+    for relative_role in role_arguments:
+        arguments = list(common_cli)
+        for role, value in role_arguments.items():
+            arguments.extend((role, "relative-protected-root" if role == relative_role else value))
+        with pytest.raises(UnsafePathError, match="explicit absolute"):
+            cli_main(arguments)
+        assert not (external / POINTER_FILENAME).exists()
+        assert not (external / POINTER_TEMP_FILENAME).exists()
+
+    duplicate_repository = [
+        *common_cli,
+        "--repository-root",
+        str(repository),
+        "--repository-root",
+        str(repository),
+        "--source-root",
+        str(source),
+        "--media-root",
+        str(media),
+    ]
+    with pytest.raises(SystemExit):
+        cli_main(duplicate_repository)
+    assert not (external / POINTER_FILENAME).exists()
+
+    complete_cli = list(common_cli)
+    for role, value in role_arguments.items():
+        complete_cli.extend((role, value))
+    assert cli_main(complete_cli) == 0
+    assert (external / POINTER_FILENAME).is_file()
+    assert not (external / POINTER_TEMP_FILENAME).exists()
 
 
-def test_symlink_policy_fails_before_build(tmp_path: Path, monkeypatch):
-    state = tmp_path / "state"
-    state.mkdir()
+def test_symlink_policy_fails_before_build(
+    tmp_path: Path, monkeypatch, mapped_empty, runtime_state_policy
+):
+    state = tmp_path / "external" / "state"
+    state.mkdir(parents=True)
     concrete_path_type = type(state)
     original = concrete_path_type.is_symlink
 
     def synthetic_symlink(path):
         return path == state or original(path)
 
-    monkeypatch.setattr(concrete_path_type, "is_symlink", synthetic_symlink)
-    with pytest.raises(UnsafePathError, match="symlink"):
-        validate_state_root(state)
+    with monkeypatch.context() as context:
+        context.setattr(concrete_path_type, "is_symlink", synthetic_symlink)
+        with pytest.raises(UnsafePathError, match="symlink"):
+            build_generation(
+                state,
+                mapped_empty,
+                protection_policy=runtime_state_policy,
+            )
+    assert list(state.iterdir()) == []
+
+    with monkeypatch.context() as context:
+        context.setattr(
+            builder_module,
+            "_is_reparse_point",
+            lambda path: path == state,
+        )
+        with pytest.raises(UnsafePathError, match="reparse point"):
+            build_generation(
+                state,
+                mapped_empty,
+                protection_policy=runtime_state_policy,
+            )
+    assert list(state.iterdir()) == []

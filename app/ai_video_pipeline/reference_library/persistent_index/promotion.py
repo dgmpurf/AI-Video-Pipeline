@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 from typing import Any, Callable, Mapping
 
+from .builder import RuntimeStateProtectionPolicy, validate_state_root
 from .errors import PromotionError
 from .identity import canonical_json_bytes, pointer_from_meta, validate_pointer
 from .verify import require_valid_generation
@@ -50,11 +51,18 @@ def _write_exclusive(path: Path, data: bytes) -> None:
 def promote_generation(
     generation_path: str | Path,
     *,
+    protection_policy: RuntimeStateProtectionPolicy | None = None,
     replace_operation: Callable[[str | bytes | Path, str | bytes | Path], None] = os.replace,
 ) -> Mapping[str, Any]:
-    generation = Path(generation_path).resolve(strict=True)
+    requested_generation = Path(generation_path)
+    root = validate_state_root(
+        requested_generation.parent,
+        protection_policy=protection_policy,
+    )
+    generation = requested_generation.resolve(strict=True)
+    if generation.parent != root:
+        raise PromotionError("generation must resolve inside the validated state root")
     validation = require_valid_generation(generation)
-    root = generation.parent
     pointer_path = root / POINTER_FILENAME
     temporary = root / POINTER_TEMP_FILENAME
     if temporary.exists():

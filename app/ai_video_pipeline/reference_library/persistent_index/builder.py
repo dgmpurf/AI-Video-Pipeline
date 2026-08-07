@@ -5,7 +5,6 @@ import sqlite3
 import stat
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable
 
 from .enums import READ_MODEL_SCHEMA_VERSION
 from .errors import BuildError, UnsafePathError
@@ -26,25 +25,77 @@ class BuildResult:
     verification: VerificationResult
 
 
-def validate_state_root(path: str | Path, *, forbidden_roots: Iterable[str | Path] = ()) -> Path:
+@dataclass(frozen=True)
+class RuntimeStateProtectionPolicy:
+    repository_root: str | Path
+    source_root: str | Path
+    media_roots: tuple[str | Path, ...]
+
+
+def _resolve_protected_root(value: str | Path, *, role: str) -> Path:
+    try:
+        root = Path(value)
+    except TypeError as error:
+        raise UnsafePathError(f"{role} must be an explicit absolute path") from error
+    if not root.is_absolute():
+        raise UnsafePathError(f"{role} must be an explicit absolute path")
+    return root.resolve(strict=False)
+
+
+def _protected_roots(policy: RuntimeStateProtectionPolicy | None) -> tuple[Path, ...]:
+    if not isinstance(policy, RuntimeStateProtectionPolicy):
+        raise UnsafePathError("complete runtime-state protection policy is required")
+    if isinstance(policy.media_roots, (str, bytes, Path)) or not policy.media_roots:
+        raise UnsafePathError("runtime-state protection policy requires one or more media roots")
+    repository = _resolve_protected_root(policy.repository_root, role="repository root")
+    source = _resolve_protected_root(policy.source_root, role="Source root")
+    media = tuple(
+        _resolve_protected_root(root, role="media root") for root in policy.media_roots
+    )
+    return (repository, source, *media)
+
+
+def _is_within(path: Path, boundary: Path) -> bool:
+    candidate_text = os.path.normcase(str(path))
+    boundary_text = os.path.normcase(str(boundary))
+    try:
+        return os.path.commonpath((candidate_text, boundary_text)) == boundary_text
+    except ValueError:
+        return False
+
+
+def _is_reparse_point(path: Path) -> bool:
+    reparse = getattr(stat, "FILE_ATTRIBUTE_REPARSE_POINT", 0)
+    attributes = getattr(os.lstat(path), "st_file_attributes", 0)
+    return bool(reparse and attributes & reparse)
+
+
+def _reject_link_or_reparse_traversal(path: Path) -> None:
+    for parent in (path, *path.parents):
+        if parent.is_symlink():
+            raise UnsafePathError("state root may not traverse a symlink")
+        try:
+            reparse_point = _is_reparse_point(parent)
+        except FileNotFoundError:
+            continue
+        if reparse_point:
+            raise UnsafePathError("state root may not traverse a reparse point")
+
+
+def validate_state_root(
+    path: str | Path,
+    *,
+    protection_policy: RuntimeStateProtectionPolicy | None = None,
+) -> Path:
+    protected_roots = _protected_roots(protection_policy)
     raw = Path(path)
     if not raw.is_absolute():
         raise UnsafePathError("state root must be an explicit absolute path")
+    _reject_link_or_reparse_traversal(raw)
     resolved = raw.resolve(strict=False)
-    for parent in (resolved, *resolved.parents):
-        if parent.exists() and parent.is_symlink():
-            raise UnsafePathError("state root may not traverse a symlink")
-        attributes = getattr(parent.stat(), "st_file_attributes", 0) if parent.exists() else 0
-        reparse = getattr(stat, "FILE_ATTRIBUTE_REPARSE_POINT", 0)
-        if reparse and attributes & reparse:
-            raise UnsafePathError("state root may not traverse a reparse point")
-    for forbidden in forbidden_roots:
-        boundary = Path(forbidden).resolve(strict=False)
-        try:
-            resolved.relative_to(boundary)
-        except ValueError:
-            continue
-        raise UnsafePathError(f"state root is inside a protected boundary: {boundary}")
+    for boundary in protected_roots:
+        if _is_within(resolved, boundary):
+            raise UnsafePathError(f"state root is inside a protected boundary: {boundary}")
     return resolved
 
 
@@ -57,9 +108,9 @@ def build_generation(
     state_root: str | Path,
     mapped: MappedReadModel,
     *,
-    forbidden_roots: Iterable[str | Path] = (),
+    protection_policy: RuntimeStateProtectionPolicy | None = None,
 ) -> BuildResult:
-    root = validate_state_root(state_root, forbidden_roots=forbidden_roots)
+    root = validate_state_root(state_root, protection_policy=protection_policy)
     root.mkdir(parents=True, exist_ok=True)
     lock_path = root / LOCK_FILENAME
     lock_descriptor = _exclusive_lock(lock_path)
